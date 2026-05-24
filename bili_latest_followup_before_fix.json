@@ -1,0 +1,55 @@
+{
+  "schemaVersion": 1,
+  "kind": "skill_json_ai_follow_up_run_report",
+  "id": "ai_follow_up_run_1778530863346",
+  "skillId": "direct.command.1778530861446",
+  "failedSkillId": "bilibili.search.search_in_app",
+  "appPackage": "tv.danmaku.bili",
+  "instruction": "打开哔哩哔哩搜索王老菊打开第一个视频",
+  "engine": "ai_runtime_replan",
+  "phase": "REPLAN",
+  "trigger": "GOAL_UNVERIFIED_LOOP_2",
+  "previousStatus": "FAILED_GOAL_UNVERIFIED",
+  "previousMessage": "没有看到播放器\/视频详情资源或播放控件证据，不能把普通内容详情页当成第一个视频。",
+  "previousRuntimeReportFile": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/runtime\/run_reports\/tv.danmaku.bili\/ai_follow_up_run_1778530816220.json",
+  "aiJobFile": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ai_jobs\/2026-05-12\/factory_ai_replan_1778530861428.json",
+  "decision": {
+    "goalCompleted": false,
+    "screenAssessment": "当前在“我的消息-系统通知”页面，显示了bilibili游戏健康系统通知，顶部有“我的消息”标题，选项卡包括我的游戏、回复、态度、系统通知，当前选中系统通知。没有搜索功能或首页入口。",
+    "failureDiagnosis": "之前的FindEntryByBottomTabSweep无法找到“首页”条目，因为当前界面是游戏中心的消息详情页，不是B站主界面。需要退出此层回到首页。",
+    "confidence": "HIGH",
+    "nextActionReason": "点击左上角返回按钮（转到上一层级）逐步返回到B站主界面，以便重新执行搜索。"
+  },
+  "approvedRequired": false,
+  "status": "SUCCESS_MEDIUM_CONFIDENCE",
+  "message": "Macro atoms completed; reactiveDismissed=1",
+  "durationMs": 1800,
+  "usedCoordinate": false,
+  "details": {
+    "macroSkillId": "direct.command.1778530861446",
+    "atomTrace": [
+      {
+        "index": 0,
+        "skillId": "direct.1778530861446.1.clickselector",
+        "actionType": "ClickSelector",
+        "status": "SUCCESS_MEDIUM_CONFIDENCE",
+        "message": "Window\/node state changed",
+        "usedCoordinate": false,
+        "details": null
+      },
+      {
+        "index": 1,
+        "skillId": "direct.1778530861446.2.wait",
+        "actionType": "Wait",
+        "status": "SUCCESS_MEDIUM_CONFIDENCE",
+        "message": "Waited 800ms; reactiveDismissed=1",
+        "usedCoordinate": false,
+        "details": null
+      }
+    ],
+    "reactiveDismissed": 1
+  },
+  "allowSideEffect": true,
+  "skillFile": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_candidates\/tv.danmaku.bili\/direct.command.1778530861446.json",
+  "createdAt": 1778530863346
+}

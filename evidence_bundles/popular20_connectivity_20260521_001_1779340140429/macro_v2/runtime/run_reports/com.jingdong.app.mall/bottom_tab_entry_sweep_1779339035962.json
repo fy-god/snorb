@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "kind": "skill_json_bottom_tab_entry_sweep_report",
+  "id": "bottom_tab_entry_sweep_1779339035962",
+  "skillId": "patched.command.1779338980649",
+  "appPackage": "com.jingdong.app.mall",
+  "instruction": "在京东搜索耳机，停在商品结果页并记录筛选、店铺、价格入口。\n\n约束：目标 App=京东，包名=com.jingdong.app.mall。必须由 MacroPilot 手机端自己用无障碍、输入法、AI\/Skill JSON 执行，不允许依赖 ADB 手点目标 App。执行前先读取当前 UI；如果遇到广告、弹窗、小字提示，先记录文字并安全关闭。任务完成必须用当前 UI 证据验证，不能只因为步骤执行完就报成功。如果没有现成 skill，先复用已有相似 Skill JSON\/archetype，只改关键槽位如入口文字、坐标、目标文本、验证规则，再组装 atomic\/macro skill。需要探索入口时优先遍历底部标签、顶部小图标、图形化入口、侧边操作和子页面。本任务 stopBeforeSubmit=true：写草稿、评论、订单、支付类流程必须停在提交前，不点击最终发布、发送、提交订单、支付、确认授权。期望证据包括：耳机、商品。",
+  "engine": "bottom_tab_entry_sweep",
+  "approvedRequired": false,
+  "status": "FAILED_ELEMENT_NOT_FOUND",
+  "message": "Bottom-tab sweep did not find entry aliases=发帖\/发布\/创作\/写\/加号\/+; tabsVisited=5; events=[{\"phase\":\"open_before_recover\",\"packageName\":\"com.jingdong.app.mall\",\"success\":true,\"message\":\"Launch intent sent for com.jingdong.app.mall\"},{\"phase\":\"home_back\",\"index\":1,\"fromPackage\":\"com.jingdong.app.mall\",\"window\":\"android.widget.FrameLayout\",\"success\":true,\"message\":\"GLOBAL_ACTION_BACK performed\"},{\"phase\":\"home_back\",\"index\":2,\"fromPackage\":\"com.jingdong.app.mall\",\"window\":\"android.widget.ImageView\",\"success\":true,\"message\":\"GLOBAL_ACTION_BACK performed\"},{\"phase\":\"home_back\",\"index\":3,\"fromPackage\":\"com.jingdong.app.mall\",\"window\":null,\"success\":true,\"message\":\"GLOBAL_ACTION_BACK performed\"},{\"phase\":\"open_after_recover\",\"packageName\":\"com.jingdong.app.mall\",\"success\":true,\"message\":\"Launch intent sent for com.jingdong.app.mall\"},{\"phase\":\"recover_current_package\",\"packageName\":\"com.jingdong.app.mall\"},{\"phase\":\"reactive_after_recover\",\"dismissed\":3},{\"phase\":\"click_bottom_tab\",\"index\":0,\"label\":\"首页\",\"x\":0.1,\"y\":0.94823235,\"success\":true,\"message\":\"dispatchGesture tap sent (normalized=0.100,0.948 px=144,3004 screen=1440x3168)\"},{\"phase\":\"reactive_after_tab\",\"index\":0,\"dismissed\":2},{\"phase\":\"click_bottom_tab\",\"index\":1,\"label\":\"逛\",\"x\":0.3,\"y\":0.94823235,\"success\":true,\"message\":\"dispatchGesture tap sent (normalized=0.300,0.948 px=432,3004 screen=1440x3168)\"},{\"phase\":\"click_bottom_tab\",\"index\":2,\"label\":\"立即购买\",\"x\":0.40208334,\"y\":0.86742425,\"success\":true,\"message\":\"dispatchGesture tap sent (normalized=0.402,0.867 px=579,2748 screen=1440x3168)\"},{\"phase\":\"click_bottom_tab\",\"index\":3,\"label\":\"消息5+\",\"x\":0.5,\"y\":0.94823235,\"success\":true,\"message\":\"dispatchGesture tap sent (normalized=0.500,0.948 px=720,3004 screen=1440x3168)\"},{\"phase\":\"click_bottom_tab\",\"index\":4,\"label\":\"¥4.9\",\"x\":0.6013889,\"y\":0.8541667,\"success\":true,\"message\":\"dispatchGesture tap sent (norma; reactiveDismissedBeforeAction=1",
+  "durationMs": 53591,
+  "usedCoordinate": true,
+  "entryAliases": [
+    "发帖",
+    "发布",
+    "创作",
+    "写",
+    "加号",
+    "+"
+  ],
+  "skillFile": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_candidates\/com.jingdong.app.mall\/patched.command.1779338980649.json",
+  "createdAt": 1779339035962
+}

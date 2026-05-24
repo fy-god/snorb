@@ -1,0 +1,880 @@
+{
+  "schemaVersion": 1,
+  "kind": "app_side_ai_direct_instruction_flow_report",
+  "operation": "APP_SIDE_AI_DIRECT_INSTRUCTION",
+  "id": "ai_direct_flow_1778524994602",
+  "instruction": "微信发一条朋友圈，内容是我是AI，设置为仅自己可见，然后发表",
+  "appPackage": "com.tencent.mm",
+  "query": "微信发一条朋友圈，内容是我是AI，设置为仅自己可见，然后发表",
+  "status": "FAILED_GOAL_UNVERIFIED",
+  "durationMs": 399153,
+  "steps": [
+    {
+      "title": "用户指令进入手机端执行器",
+      "status": "RUNNING",
+      "message": "主输入不再只生成文件：App 将调用 AI，生成可审计 JSON，再由 SkillJsonExecutor 直接执行候选能力。",
+      "path": null,
+      "timestamp": 1778524595450
+    },
+    {
+      "title": "手机端相似 Skill 自适应规划",
+      "status": "SUCCESS",
+      "message": "本机先复用抖音\/小红书成功模式：识别 intent=wechat_moment_private_post，改写出 19 个细粒度步骤；AI v4pro 只在失败或二次判断时接管。",
+      "path": null,
+      "timestamp": 1778524595779,
+      "extra": {
+        "planner": "PHONE_SIDE_SIMILAR_SKILL_ADAPTER_V1",
+        "intentId": "wechat_moment_private_post",
+        "appPackage": "com.tencent.mm",
+        "instruction": "微信发一条朋友圈，内容是我是AI，设置为仅自己可见，然后发表",
+        "source": "local_rules_plus_existing_skill_similarity",
+        "similarCases": [
+          {
+            "skillId": "direct.command.1778524394250",
+            "kind": "macro_skill",
+            "appPackage": "com.tencent.mm",
+            "implements": "AiDirectInstructionSkill",
+            "intentId": "ai_direct_instruction",
+            "score": 49,
+            "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_candidates\/com.tencent.mm\/direct.command.1778524394250.json"
+          },
+          {
+            "skillId": "direct.command.1778523372529",
+            "kind": "macro_skill",
+            "appPackage": "com.tencent.mm",
+            "implements": "AiDirectInstructionSkill",
+            "intentId": "ai_direct_instruction",
+            "score": 49,
+            "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_candidates\/com.tencent.mm\/direct.command.1778523372529.json"
+          },
+          {
+            "skillId": "direct.command.1778522888739",
+            "kind": "macro_skill",
+            "appPackage": "com.tencent.mm",
+            "implements": "AiDirectInstructionSkill",
+            "intentId": "ai_direct_instruction",
+            "score": 49,
+            "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_candidates\/com.tencent.mm\/direct.command.1778522888739.json"
+          },
+          {
+            "skillId": "direct.command.1778522175572",
+            "kind": "macro_skill",
+            "appPackage": "com.tencent.mm",
+            "implements": "AiDirectInstructionSkill",
+            "intentId": "ai_direct_instruction",
+            "score": 49,
+            "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_candidates\/com.tencent.mm\/direct.command.1778522175572.json"
+          },
+          {
+            "skillId": "direct.command.1778521377050",
+            "kind": "macro_skill",
+            "appPackage": "com.tencent.mm",
+            "implements": "AiDirectInstructionSkill",
+            "intentId": "ai_direct_instruction",
+            "score": 49,
+            "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_candidates\/com.tencent.mm\/direct.command.1778521377050.json"
+          },
+          {
+            "skillId": "direct.command.1778520428171",
+            "kind": "macro_skill",
+            "appPackage": "com.tencent.mm",
+            "implements": "AiDirectInstructionSkill",
+            "intentId": "ai_direct_instruction",
+            "score": 49,
+            "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_candidates\/com.tencent.mm\/direct.command.1778520428171.json"
+          },
+          {
+            "skillId": "direct.command.1778394435224",
+            "kind": "macro_skill",
+            "appPackage": "com.tencent.mm",
+            "implements": "AiDirectInstructionSkill",
+            "intentId": "ai_direct_instruction",
+            "score": 41,
+            "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_candidates\/com.tencent.mm\/direct.command.1778394435224.json"
+          },
+          {
+            "skillId": "direct.command.1778520906743",
+            "kind": "macro_skill",
+            "appPackage": "com.tencent.mm",
+            "implements": "AiDirectInstructionSkill",
+            "intentId": "ai_direct_instruction",
+            "score": 40,
+            "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_candidates\/com.tencent.mm\/direct.command.1778520906743.json"
+          }
+        ],
+        "stepCount": 19,
+        "currentPackage": "com.tencent.mm",
+        "nodeCount": 2,
+        "notes": [
+          "App-side planner generated candidate JSON without ADB UI control.",
+          "Existing candidate\/approved skills are used as similarity evidence; generated steps are still dry-run checked before execution.",
+          "AI remains a fallback for empty or failed local planning."
+        ]
+      }
+    },
+    {
+      "title": "相似成功案例改写为 Skill JSON",
+      "status": "SUCCESS",
+      "message": "不靠 ADB 拼流程；App 底层把 intent=wechat_moment_private_post 拆成 20 个 candidate JSON，之后统一 dry-run、执行、失败再让 v4pro 二次判断。",
+      "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_candidates\/com.tencent.mm\/direct.command.1778524595779.json",
+      "timestamp": 1778524595784,
+      "extra": {
+        "planner": "PHONE_SIDE_SIMILAR_SKILL_ADAPTER_V1",
+        "intentId": "wechat_moment_private_post",
+        "appPackage": "com.tencent.mm",
+        "instruction": "微信发一条朋友圈，内容是我是AI，设置为仅自己可见，然后发表",
+        "source": "local_rules_plus_existing_skill_similarity",
+        "similarCases": [
+          {
+            "skillId": "direct.command.1778524394250",
+            "kind": "macro_skill",
+            "appPackage": "com.tencent.mm",
+            "implements": "AiDirectInstructionSkill",
+            "intentId": "ai_direct_instruction",
+            "score": 49,
+            "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_candidates\/com.tencent.mm\/direct.command.1778524394250.json"
+          },
+          {
+            "skillId": "direct.command.1778523372529",
+            "kind": "macro_skill",
+            "appPackage": "com.tencent.mm",
+            "implements": "AiDirectInstructionSkill",
+            "intentId": "ai_direct_instruction",
+            "score": 49,
+            "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_candidates\/com.tencent.mm\/direct.command.1778523372529.json"
+          },
+          {
+            "skillId": "direct.command.1778522888739",
+            "kind": "macro_skill",
+            "appPackage": "com.tencent.mm",
+            "implements": "AiDirectInstructionSkill",
+            "intentId": "ai_direct_instruction",
+            "score": 49,
+            "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_candidates\/com.tencent.mm\/direct.command.1778522888739.json"
+          },
+          {
+            "skillId": "direct.command.1778522175572",
+            "kind": "macro_skill",
+            "appPackage": "com.tencent.mm",
+            "implements": "AiDirectInstructionSkill",
+            "intentId": "ai_direct_instruction",
+            "score": 49,
+            "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_candidates\/com.tencent.mm\/direct.command.1778522175572.json"
+          },
+          {
+            "skillId": "direct.command.1778521377050",
+            "kind": "macro_skill",
+            "appPackage": "com.tencent.mm",
+            "implements": "AiDirectInstructionSkill",
+            "intentId": "ai_direct_instruction",
+            "score": 49,
+            "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_candidates\/com.tencent.mm\/direct.command.1778521377050.json"
+          },
+          {
+            "skillId": "direct.command.1778520428171",
+            "kind": "macro_skill",
+            "appPackage": "com.tencent.mm",
+            "implements": "AiDirectInstructionSkill",
+            "intentId": "ai_direct_instruction",
+            "score": 49,
+            "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_candidates\/com.tencent.mm\/direct.command.1778520428171.json"
+          },
+          {
+            "skillId": "direct.command.1778394435224",
+            "kind": "macro_skill",
+            "appPackage": "com.tencent.mm",
+            "implements": "AiDirectInstructionSkill",
+            "intentId": "ai_direct_instruction",
+            "score": 41,
+            "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_candidates\/com.tencent.mm\/direct.command.1778394435224.json"
+          },
+          {
+            "skillId": "direct.command.1778520906743",
+            "kind": "macro_skill",
+            "appPackage": "com.tencent.mm",
+            "implements": "AiDirectInstructionSkill",
+            "intentId": "ai_direct_instruction",
+            "score": 40,
+            "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_candidates\/com.tencent.mm\/direct.command.1778520906743.json"
+          }
+        ],
+        "stepCount": 19,
+        "currentPackage": "com.tencent.mm",
+        "nodeCount": 2,
+        "notes": [
+          "App-side planner generated candidate JSON without ADB UI control.",
+          "Existing candidate\/approved skills are used as similarity evidence; generated steps are still dry-run checked before execution.",
+          "AI remains a fallback for empty or failed local planning."
+        ]
+      }
+    },
+    {
+      "title": "dry-run 静态检查",
+      "status": "SUCCESS",
+      "message": "通过 20\/20。",
+      "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_dry_run_reports\/com.tencent.mm\/direct.command.1778524595779_1778524595825.json",
+      "timestamp": 1778524595825
+    },
+    {
+      "title": "拼装 app_config 预览",
+      "status": "SUCCESS",
+      "message": "候选\/测试产物已拼为单个 app_config 预览。",
+      "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/app_config_exports\/com.tencent.mm\/app_config_20260512_023635_897.json",
+      "timestamp": 1778524595951
+    },
+    {
+      "title": "执行候选 JSON",
+      "status": "RUNNING",
+      "message": "不等待 APPROVED：按用户要求，直接由 SkillJsonExecutor 执行候选 macro=direct.command.1778524595779。",
+      "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_candidates\/com.tencent.mm\/direct.command.1778524595779.json",
+      "timestamp": 1778524595951
+    },
+    {
+      "title": "候选 JSON 执行结果",
+      "status": "FAILED_WECHAT_TAB_SHELL_NOT_VISIBLE",
+      "message": "direct.command.1778524595779 -> FAILED_WECHAT_TAB_SHELL_NOT_VISIBLE；微信底栏不可见，已停止坐标点击，避免继续点到聊天内容；events=[{\"phase\":\"tab_shell_probe\",\"index\":0,\"visible\":false,\"snapshot\":\"\\\/data\\\/user\\\/0\\\/com.macropilot.app\\\/files\\\/macro_v2\\\/factory\\\/ui_snapshots\\\/com.tencent.mm\\\/20260512_023641_854_7aaab248.json\",\"screenshotPath\":\"\\\/data\\\/user\\\/0\\\/com.macropilot.app\\\/files\\\/macro_v2\\\/factory\\\/ui_screenshots\\\/com.tencent.mm\\\/20260512_023641_854_7aaab248.png\",\"selectedEvidence\":{\"selectedIndex\":-1,\"selectedScore\":0,\"scores\":[0,0,0,0],\"surfaceWarning\":null}},{\"phase\":\"tab_shell_back\",\"index\":0,\"success\":true,\"message\":\"GLOBAL_ACTION_BACK performed\",\"reason\":null},{\"phase\":\"tab_shell_probe\",\"index\":1,\"visible\":false,\"snapshot\":\"\\\/data\\\/user\\\/0\\\/com.macropilot.app\\\/files\\\/macro_v2\\\/factory\\\/ui_snapshots\\\/com.tencent.mm\\\/20260512_023643_043_7aaab248.json\",\"screenshotPath\":\"\\\/data\\\/user\\\/0\\\/com.macropilot.app\\\/files\\\/macro_v2\\\/factory\\\/ui_screenshots\\\/com.tencent.mm\\\/20260512_023643_043_7aaab248.png\",\"selectedEvidence\":{\"selectedIndex\":-1,\"selectedScore\":0,\"scores\":[0,0,0,0],\"surfaceWarning\":null}},{\"phase\":\"tab_shell_back\",\"index\":1,\"success\":true,\"message\":\"GLOBAL_ACTION_BACK performed\",\"reason\":null},{\"phase\":\"tab_shell_probe\",\"index\":2,\"visible\":false,\"snapshot\":\"\\\/data\\\/user\\\/0\\\/com.macropilot.app\\\/files\\\/macro_v2\\\/factory\\\/ui_snapshots\\\/com.tencent.mm\\\/20260512_023644_207_7aaab248.json\",\"screenshotPath\":\"\\\/data\\\/user\\\/0\\\/com.macropilot.app\\\/files\\\/macro_v2\\\/factory\\\/ui_screenshots\\\/com.tencent.mm\\\/20260512_023644_207_7aaab248.png\",\"selectedEvidence\":{\"selectedIndex\":-1,\"selectedScore\":0,\"scores\":[0,0,0,0],\"surfaceWarning\":null}},{\"phase\":\"tab_shell_back\",\"index\":2,\"success\":true,\"message\":\"GLOBAL_ACTION_BACK performed\",\"reason\":null},{\"phase\":\"tab_shell_probe\",\"index\":3,\"visible\":false,\"snapshot\":\"\\\/data\\\/user\\\/0\\\/com.macropilot.app\\\/files\\\/macro_v2\\\/factory\\\/ui_snapshots\\\/com.tencent.mm\\\/",
+      "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/runtime\/run_reports\/com.tencent.mm\/ai_direct_run_1778524609749.json",
+      "timestamp": 1778524609750
+    },
+    {
+      "title": "失败后 AI 判断",
+      "status": "RUNNING",
+      "message": "当前不是直接停下：App 把失败原因、当前屏幕节点和已跑步骤发给手机端 AI，让 AI 判断下一段补救 JSON。",
+      "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/runtime\/run_reports\/com.tencent.mm\/ai_direct_run_1778524609749.json",
+      "timestamp": 1778524610240,
+      "extra": {
+        "phase": "REPLAN",
+        "trigger": "EXECUTION_FAILED",
+        "previousStatus": "FAILED_WECHAT_TAB_SHELL_NOT_VISIBLE",
+        "previousMessage": "微信底栏不可见，已停止坐标点击，避免继续点到聊天内容；events=[{\"phase\":\"tab_shell_probe\",\"index\":0,\"visible\":false,\"snapshot\":\"\\\/data\\\/user\\\/0\\\/com.macropilot.app\\\/files\\\/macro_v2\\\/factory\\\/ui_snapshots\\\/com.tencent.mm\\\/20260512_023641_854_7aaab248.json\",\"screenshotPath\":\"\\\/data\\\/user\\\/0\\\/com.macropilot.app\\\/files\\\/macro_v2\\\/factory\\\/ui_screenshots\\\/com.tencent.mm\\\/20260512_023641_854_7aaab248.png\",\"selectedEvidence\":{\"selectedIndex\":-1,\"selectedScore\":0,\"scores\":[0,0,0,0],\"surfaceWarning\":null}},{\"phase\":\"tab_shell_back\",\"index\":0,\"success\":true,\"message\":\"GLOBAL_ACTION_BACK performed\",\"reason\":null},{\"phase\":\"tab_shell_probe\",\"index\":1,\"visible\":false,\"snapshot\":\"\\\/data\\\/user\\\/0\\\/com.macropilot.app\\\/files\\\/macro_v2\\\/factory\\\/ui_snapshots\\\/com.tencent.mm\\\/20260512_023643_043_7aaab248.json\",\"screenshotPath\":\"\\\/data\\\/user\\\/0\\\/com.macropilot.app\\\/files\\\/macro_v2\\\/factory\\\/ui_screenshots\\\/com.tencent.mm\\\/20260512_023643_043_7aaab248.png\",\"selectedEvidence\":{\"selectedIndex\":-1,\"selectedScore\":0,\"scores\":[0,0,0,0],\"surfaceWarning\":null}},{\"phase\":\"tab_shell_back\",\"index\":1,\"success\":true,\"message\":\"GLOBAL_ACTION_BACK performed\",\"reason\":null},{\"phase\":\"tab_shell_probe\",\"index\":2,\"visible\":false,\"snapshot\":\"\\\/data\\\/user\\\/0\\\/com.macropilot.app\\\/files\\\/macro_v2\\\/factory\\\/ui_snapshots\\\/com.tencent.mm\\\/20260512_023644_207_7aaab248.json\",\"screenshotPath\":\"\\\/data\\\/user\\\/0\\\/com.macropilot.app\\\/files\\\/macro_v2\\\/factory\\\/ui_screenshots\\\/com.tencent.mm\\\/20260512_023644_207_7aaab248.png\",\"selectedEvidence\":{\"selectedIndex\":-1,\"selectedScore\":0,\"scores\":[0,0,0,0],\"surfaceWarning\":null}},{\"phase\":\"tab_shell_back\",\"index\":2,\"success\":true,\"message\":\"GLOBAL_ACTION_BACK performed\",\"reason\":null},{\"phase\":\"tab_shell_probe\",\"index\":3,\"visible\":false,\"snapshot\":\"\\\/data\\\/user\\\/0\\\/com.macropilot.app\\\/files\\\/macro_v2\\\/factory\\\/ui_snapshots\\\/com.tencent.mm\\\/"
+      }
+    },
+    {
+      "title": "失败后 AI 判断 返回",
+      "status": "SUCCESS",
+      "message": "HTTP=200；模型=deepseek-v4-pro；goalCompleted=false；补救步骤=1；诊断=Previous execution failed because WeChat bottom tab shell was not visible, and r",
+      "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ai_jobs\/2026-05-12\/factory_ai_replan_1778524635659.json",
+      "timestamp": 1778524635661,
+      "extra": {
+        "decision": {
+          "goalCompleted": false,
+          "screenAssessment": "Current screen shows only 2 non-clickable nodes, likely an empty or transition page within WeChat, bottom tabs are not visible.",
+          "failureDiagnosis": "Previous execution failed because WeChat bottom tab shell was not visible, and repeated back actions did not restore it. The app may be stuck in a deep page or loading state.",
+          "confidence": "MEDIUM",
+          "nextActionReason": "To recover, use FindEntryByBottomTabSweep to locate the '发现' (Discover) tab, which will reset the app to a known state with visible bottom tabs and allow navigation to Moments."
+        }
+      }
+    },
+    {
+      "title": "AI 补救计划转 Skill JSON",
+      "status": "SUCCESS",
+      "message": "AI 返回 1 个下一步动作，已转换成 2 个候选 Skill JSON。",
+      "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_candidates\/com.tencent.mm\/direct.command.1778524635661.json",
+      "timestamp": 1778524635661,
+      "extra": {
+        "phase": "REPLAN",
+        "trigger": "EXECUTION_FAILED"
+      }
+    },
+    {
+      "title": "AI 补救 dry-run",
+      "status": "SUCCESS",
+      "message": "通过 2\/2。",
+      "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_dry_run_reports\/com.tencent.mm\/direct.command.1778524635661_1778524635690.json",
+      "timestamp": 1778524635690
+    },
+    {
+      "title": "AI 补救 JSON 执行结果",
+      "status": "FAILED_ELEMENT_NOT_FOUND",
+      "message": "direct.command.1778524635661 -> FAILED_ELEMENT_NOT_FOUND；Bottom-tab sweep did not find entry aliases=发现\/Discover; tabsVisited=5; events=[{\"phase\":\"open_before_recover\",\"packageName\":\"com.tencent.mm\",\"success\":true,\"message\":\"Launch intent sent for com.tencent.mm\"},{\"phase\":\"home_back\",\"index\":1,\"fromPackage\":\"com.tencent.mm\",\"window\":\"android.widget.FrameLayout\",\"success\":true,\"message\":\"GLOBAL_ACTION_BACK performed\"},{\"phase\":\"home_back\",\"index\":2,\"fromPackage\":\"com.tencent.mm\",\"window\":\"android.widget.FrameLayout\",\"success\":true,\"message\":\"GLOBAL_ACTION_BACK performed\"},{\"phase\":\"home_back\",\"index\":3,\"fromPackage\":\"com.tencent.mm\",\"window\":\"android.widget.FrameLayout\",\"success\":true,\"message\":\"GLOBAL_ACTION_BACK performed\"},{\"phase\":\"open_after_recover\",\"packageName\":\"com.tencent.mm\",\"success\":true,\"message\":\"Launch intent sent for com.tencent.mm\"},{\"phase\":\"recover_current_package\",\"packageName\":\"com.tencent.mm\"},{\"phase\":\"click_bottom_tab\",\"index\":0,\"label\":\"fallback_tab_1\",\"x\":0.16666667,\"y\":0.925,\"success\":true,\"message\":\"dispatchGesture tap sent (normalized=0.167,0.925 px=240,2930 screen=1440x3168)\"},{\"phase\":\"click_bottom_tab\",\"index\":1,\"label\":\"fallback_tab_2\",\"x\":0.33333334,\"y\":0.925,\"success\":true,\"message\":\"dispatchGesture tap sent (normalized=0.333,0.925 px=480,2930 screen=1440x3168)\"},{\"phase\":\"click_bottom_tab\",\"index\":2,\"label\":\"fallback_tab_3\",\"x\":0.5,\"y\":0.925,\"success\":true,\"message\":\"dispatchGesture tap sent (normalized=0.500,0.925 px=720,2930 screen=1440x3168)\"},{\"phase\":\"click_bottom_tab\",\"index\":3,\"label\":\"fallback_tab_4\",\"x\":0.6666667,\"y\":0.925,\"success\":true,\"message\":\"dispatchGesture tap sent (normalized=0.667,0.925 px=960,2930 screen=1440x3168)\"},{\"phase\":\"click_bottom_tab\",\"index\":4,\"label\":\"fallback_tab_5\",\"x\":0.8333333,\"y\":0.925,\"success\":true,\"message\":\"dispatchGesture tap sent (normalized=0.833,0.925 px=1200,2930 screen=1440x3168)\"}]",
+      "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/runtime\/run_reports\/com.tencent.mm\/ai_follow_up_run_1778524646634.json",
+      "timestamp": 1778524646634,
+      "extra": {
+        "phase": "REPLAN",
+        "trigger": "EXECUTION_FAILED"
+      }
+    },
+    {
+      "title": "目标未完成，继续 AI 判断",
+      "status": "RUNNING",
+      "message": "没有在微信当前页看到朋友圈内容，不能报告发布成功。；第 1\/4 次继续重判当前屏幕。",
+      "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/runtime\/run_reports\/com.tencent.mm\/ai_follow_up_run_1778524646634.json",
+      "timestamp": 1778524646636,
+      "extra": {
+        "serviceConnected": true,
+        "appPackage": "com.tencent.mm",
+        "nodeCount": 2,
+        "sampleTexts": [],
+        "expected": "wechat_moment_private_posted",
+        "contentNeedle": "我是AI",
+        "contentVisible": false,
+        "privateMarkerHits": [],
+        "editorMarkerHits": [],
+        "timelineMarkers": [],
+        "inWechat": true
+      }
+    },
+    {
+      "title": "失败后 AI 判断",
+      "status": "RUNNING",
+      "message": "当前不是直接停下：App 把失败原因、当前屏幕节点和已跑步骤发给手机端 AI，让 AI 判断下一段补救 JSON。",
+      "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/runtime\/run_reports\/com.tencent.mm\/ai_follow_up_run_1778524646634.json",
+      "timestamp": 1778524647065,
+      "extra": {
+        "phase": "REPLAN",
+        "trigger": "GOAL_UNVERIFIED_LOOP_1",
+        "previousStatus": "FAILED_GOAL_UNVERIFIED",
+        "previousMessage": "没有在微信当前页看到朋友圈内容，不能报告发布成功。"
+      }
+    },
+    {
+      "title": "失败后 AI 判断 返回",
+      "status": "SUCCESS",
+      "message": "HTTP=200；模型=deepseek-v4-pro；goalCompleted=false；补救步骤=5；诊断=FindEntryByBottomTabSweep未能找到发现标签，可能是无障碍节点缺失或微信版本差异。",
+      "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ai_jobs\/2026-05-12\/factory_ai_replan_1778524695238.json",
+      "timestamp": 1778524695240,
+      "extra": {
+        "decision": {
+          "goalCompleted": false,
+          "screenAssessment": "微信界面底栏不可见，当前页面仅有2个节点，疑似空白或加载中，无法识别具体内容。",
+          "failureDiagnosis": "FindEntryByBottomTabSweep未能找到发现标签，可能是无障碍节点缺失或微信版本差异。",
+          "confidence": "LOW",
+          "nextActionReason": "尝试使用坐标点击微信底部发现标签位置，以期进入发现页。"
+        }
+      }
+    },
+    {
+      "title": "AI 补救计划转 Skill JSON",
+      "status": "SUCCESS",
+      "message": "AI 返回 5 个下一步动作，已转换成 6 个候选 Skill JSON。",
+      "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_candidates\/com.tencent.mm\/direct.command.1778524695240.json",
+      "timestamp": 1778524695241,
+      "extra": {
+        "phase": "REPLAN",
+        "trigger": "GOAL_UNVERIFIED_LOOP_1"
+      }
+    },
+    {
+      "title": "AI 补救 dry-run",
+      "status": "SUCCESS",
+      "message": "通过 6\/6。",
+      "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_dry_run_reports\/com.tencent.mm\/direct.command.1778524695240_1778524695277.json",
+      "timestamp": 1778524695278
+    },
+    {
+      "title": "AI 补救 JSON 执行结果",
+      "status": "FAILED_ELEMENT_NOT_FOUND",
+      "message": "direct.command.1778524695240 -> FAILED_ELEMENT_NOT_FOUND；朋友圈=No matching node; No action coordinate fallback",
+      "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/runtime\/run_reports\/com.tencent.mm\/ai_follow_up_run_1778524705624.json",
+      "timestamp": 1778524705624,
+      "extra": {
+        "phase": "REPLAN",
+        "trigger": "GOAL_UNVERIFIED_LOOP_1"
+      }
+    },
+    {
+      "title": "目标未完成，继续 AI 判断",
+      "status": "RUNNING",
+      "message": "没有在微信当前页看到朋友圈内容，不能报告发布成功。；第 2\/4 次继续重判当前屏幕。",
+      "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/runtime\/run_reports\/com.tencent.mm\/ai_follow_up_run_1778524705624.json",
+      "timestamp": 1778524705625,
+      "extra": {
+        "serviceConnected": true,
+        "appPackage": "com.tencent.mm",
+        "nodeCount": 2,
+        "sampleTexts": [],
+        "expected": "wechat_moment_private_posted",
+        "contentNeedle": "我是AI",
+        "contentVisible": false,
+        "privateMarkerHits": [],
+        "editorMarkerHits": [],
+        "timelineMarkers": [],
+        "inWechat": true
+      }
+    },
+    {
+      "title": "失败后 AI 判断",
+      "status": "RUNNING",
+      "message": "当前不是直接停下：App 把失败原因、当前屏幕节点和已跑步骤发给手机端 AI，让 AI 判断下一段补救 JSON。",
+      "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/runtime\/run_reports\/com.tencent.mm\/ai_follow_up_run_1778524705624.json",
+      "timestamp": 1778524706083,
+      "extra": {
+        "phase": "REPLAN",
+        "trigger": "GOAL_UNVERIFIED_LOOP_2",
+        "previousStatus": "FAILED_GOAL_UNVERIFIED",
+        "previousMessage": "没有在微信当前页看到朋友圈内容，不能报告发布成功。"
+      }
+    },
+    {
+      "title": "失败后 AI 判断 返回",
+      "status": "SUCCESS",
+      "message": "HTTP=200；模型=deepseek-v4-pro；goalCompleted=false；补救步骤=3；诊断=上一次尝试点击朋友圈文本时发现节点缺失，FindEntryByBottomTabSweep也未能找到发现标签，可能是微信界面未正确加载或主界面未显示。需要重启微",
+      "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ai_jobs\/2026-05-12\/factory_ai_replan_1778524767124.json",
+      "timestamp": 1778524767125,
+      "extra": {
+        "decision": {
+          "goalCompleted": false,
+          "screenAssessment": "当前微信页面只有两个空FrameLayout，无任何可读写或可点击节点，疑似页面卡住或未加载。",
+          "failureDiagnosis": "上一次尝试点击朋友圈文本时发现节点缺失，FindEntryByBottomTabSweep也未能找到发现标签，可能是微信界面未正确加载或主界面未显示。需要重启微信。",
+          "confidence": "LOW",
+          "nextActionReason": "重新启动微信以确保进入主界面，然后通过底部标签进入发现页，再寻找朋友圈入口。"
+        }
+      }
+    },
+    {
+      "title": "AI 补救计划转 Skill JSON",
+      "status": "SUCCESS",
+      "message": "AI 返回 3 个下一步动作，已转换成 4 个候选 Skill JSON。",
+      "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_candidates\/com.tencent.mm\/direct.command.1778524767125.json",
+      "timestamp": 1778524767126,
+      "extra": {
+        "phase": "REPLAN",
+        "trigger": "GOAL_UNVERIFIED_LOOP_2"
+      }
+    },
+    {
+      "title": "AI 补救 dry-run",
+      "status": "SUCCESS",
+      "message": "通过 4\/4。",
+      "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_dry_run_reports\/com.tencent.mm\/direct.command.1778524767125_1778524767158.json",
+      "timestamp": 1778524767158
+    },
+    {
+      "title": "AI 补救 JSON 执行结果",
+      "status": "FAILED_ELEMENT_NOT_FOUND",
+      "message": "direct.command.1778524767125 -> FAILED_ELEMENT_NOT_FOUND；Bottom-tab sweep did not find entry aliases=发现\/Discover; tabsVisited=5; events=[{\"phase\":\"open_before_recover\",\"packageName\":\"com.tencent.mm\",\"success\":true,\"message\":\"Launch intent sent for com.tencent.mm\"},{\"phase\":\"home_back\",\"index\":1,\"fromPackage\":\"com.tencent.mm\",\"window\":\"android.widget.FrameLayout\",\"success\":true,\"message\":\"GLOBAL_ACTION_BACK performed\"},{\"phase\":\"home_back\",\"index\":2,\"fromPackage\":\"com.tencent.mm\",\"window\":\"android.widget.FrameLayout\",\"success\":true,\"message\":\"GLOBAL_ACTION_BACK performed\"},{\"phase\":\"home_back\",\"index\":3,\"fromPackage\":\"com.tencent.mm\",\"window\":\"android.widget.FrameLayout\",\"success\":true,\"message\":\"GLOBAL_ACTION_BACK performed\"},{\"phase\":\"open_after_recover\",\"packageName\":\"com.tencent.mm\",\"success\":true,\"message\":\"Launch intent sent for com.tencent.mm\"},{\"phase\":\"recover_current_package\",\"packageName\":\"com.tencent.mm\"},{\"phase\":\"click_bottom_tab\",\"index\":0,\"label\":\"fallback_tab_1\",\"x\":0.16666667,\"y\":0.925,\"success\":true,\"message\":\"dispatchGesture tap sent (normalized=0.167,0.925 px=240,2930 screen=1440x3168)\"},{\"phase\":\"click_bottom_tab\",\"index\":1,\"label\":\"fallback_tab_2\",\"x\":0.33333334,\"y\":0.925,\"success\":true,\"message\":\"dispatchGesture tap sent (normalized=0.333,0.925 px=480,2930 screen=1440x3168)\"},{\"phase\":\"click_bottom_tab\",\"index\":2,\"label\":\"fallback_tab_3\",\"x\":0.5,\"y\":0.925,\"success\":true,\"message\":\"dispatchGesture tap sent (normalized=0.500,0.925 px=720,2930 screen=1440x3168)\"},{\"phase\":\"click_bottom_tab\",\"index\":3,\"label\":\"fallback_tab_4\",\"x\":0.6666667,\"y\":0.925,\"success\":true,\"message\":\"dispatchGesture tap sent (normalized=0.667,0.925 px=960,2930 screen=1440x3168)\"},{\"phase\":\"click_bottom_tab\",\"index\":4,\"label\":\"fallback_tab_5\",\"x\":0.8333333,\"y\":0.925,\"success\":true,\"message\":\"dispatchGesture tap sent (normalized=0.833,0.925 px=1200,2930 screen=1440x3168)\"}]",
+      "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/runtime\/run_reports\/com.tencent.mm\/ai_follow_up_run_1778524783513.json",
+      "timestamp": 1778524783513,
+      "extra": {
+        "phase": "REPLAN",
+        "trigger": "GOAL_UNVERIFIED_LOOP_2"
+      }
+    },
+    {
+      "title": "目标未完成，继续 AI 判断",
+      "status": "RUNNING",
+      "message": "没有在微信当前页看到朋友圈内容，不能报告发布成功。；第 3\/4 次继续重判当前屏幕。",
+      "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/runtime\/run_reports\/com.tencent.mm\/ai_follow_up_run_1778524783513.json",
+      "timestamp": 1778524783514,
+      "extra": {
+        "serviceConnected": true,
+        "appPackage": "com.tencent.mm",
+        "nodeCount": 2,
+        "sampleTexts": [],
+        "expected": "wechat_moment_private_posted",
+        "contentNeedle": "我是AI",
+        "contentVisible": false,
+        "privateMarkerHits": [],
+        "editorMarkerHits": [],
+        "timelineMarkers": [],
+        "inWechat": true
+      }
+    },
+    {
+      "title": "失败后 AI 判断",
+      "status": "RUNNING",
+      "message": "当前不是直接停下：App 把失败原因、当前屏幕节点和已跑步骤发给手机端 AI，让 AI 判断下一段补救 JSON。",
+      "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/runtime\/run_reports\/com.tencent.mm\/ai_follow_up_run_1778524783513.json",
+      "timestamp": 1778524783948,
+      "extra": {
+        "phase": "REPLAN",
+        "trigger": "GOAL_UNVERIFIED_LOOP_3",
+        "previousStatus": "FAILED_GOAL_UNVERIFIED",
+        "previousMessage": "没有在微信当前页看到朋友圈内容，不能报告发布成功。"
+      }
+    },
+    {
+      "title": "失败后 AI 判断 返回",
+      "status": "SUCCESS",
+      "message": "HTTP=200；模型=deepseek-v4-pro；goalCompleted=false；补救步骤=5；诊断=多次尝试FindEntryByBottomTabSweep找不到“发现”标签，因为当前页面未显示底部tab栏，可能是处于非主界面或加载状态。",
+      "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ai_jobs\/2026-05-12\/factory_ai_replan_1778524894621.json",
+      "timestamp": 1778524894622,
+      "extra": {
+        "decision": {
+          "goalCompleted": false,
+          "screenAssessment": "当前微信页面只有2个节点，无任何可点击元素或标签，疑似空白\/加载界面或对话框覆盖，未显示底部导航栏，无法进行正常操作。",
+          "failureDiagnosis": "多次尝试FindEntryByBottomTabSweep找不到“发现”标签，因为当前页面未显示底部tab栏，可能是处于非主界面或加载状态。",
+          "confidence": "LOW",
+          "nextActionReason": "通过返回键退出可能的对话框或内页，若仍未出现tab栏则重新打开微信强制进入主界面，再通过坐标点击“发现”标签。"
+        }
+      }
+    },
+    {
+      "title": "AI 补救计划转 Skill JSON",
+      "status": "SUCCESS",
+      "message": "AI 返回 5 个下一步动作，已转换成 6 个候选 Skill JSON。",
+      "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_candidates\/com.tencent.mm\/direct.command.1778524894623.json",
+      "timestamp": 1778524894624,
+      "extra": {
+        "phase": "REPLAN",
+        "trigger": "GOAL_UNVERIFIED_LOOP_3"
+      }
+    },
+    {
+      "title": "AI 补救 dry-run",
+      "status": "SUCCESS",
+      "message": "通过 6\/6。",
+      "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_dry_run_reports\/com.tencent.mm\/direct.command.1778524894623_1778524894654.json",
+      "timestamp": 1778524894654
+    },
+    {
+      "title": "AI 补救 JSON 执行结果",
+      "status": "SUCCESS",
+      "message": "direct.command.1778524894623 -> SUCCESS_LOW_CONFIDENCE；Macro atoms completed; reactiveDismissed=0",
+      "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/runtime\/run_reports\/com.tencent.mm\/ai_follow_up_run_1778524909021.json",
+      "timestamp": 1778524909021,
+      "extra": {
+        "phase": "REPLAN",
+        "trigger": "GOAL_UNVERIFIED_LOOP_3"
+      }
+    },
+    {
+      "title": "目标未完成，继续 AI 判断",
+      "status": "RUNNING",
+      "message": "没有在微信当前页看到朋友圈内容，不能报告发布成功。；第 4\/4 次继续重判当前屏幕。",
+      "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/runtime\/run_reports\/com.tencent.mm\/ai_follow_up_run_1778524909021.json",
+      "timestamp": 1778524909022,
+      "extra": {
+        "serviceConnected": true,
+        "appPackage": "com.tencent.mm",
+        "nodeCount": 2,
+        "sampleTexts": [],
+        "expected": "wechat_moment_private_posted",
+        "contentNeedle": "我是AI",
+        "contentVisible": false,
+        "privateMarkerHits": [],
+        "editorMarkerHits": [],
+        "timelineMarkers": [],
+        "inWechat": true
+      }
+    },
+    {
+      "title": "失败后 AI 判断",
+      "status": "RUNNING",
+      "message": "当前不是直接停下：App 把失败原因、当前屏幕节点和已跑步骤发给手机端 AI，让 AI 判断下一段补救 JSON。",
+      "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/runtime\/run_reports\/com.tencent.mm\/ai_follow_up_run_1778524909021.json",
+      "timestamp": 1778524909466,
+      "extra": {
+        "phase": "REPLAN",
+        "trigger": "GOAL_UNVERIFIED_LOOP_4",
+        "previousStatus": "FAILED_GOAL_UNVERIFIED",
+        "previousMessage": "没有在微信当前页看到朋友圈内容，不能报告发布成功。"
+      }
+    },
+    {
+      "title": "失败后 AI 判断 返回",
+      "status": "SUCCESS",
+      "message": "HTTP=200；模型=deepseek-v4-pro；goalCompleted=false；补救步骤=5；诊断=多次尝试FindEntryByBottomTabSweep未找到“发现”标签，点击坐标也未改变页面。微信界面未正常加载或处于无法交互的状态。",
+      "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ai_jobs\/2026-05-12\/factory_ai_replan_1778524979712.json",
+      "timestamp": 1778524979713,
+      "extra": {
+        "decision": {
+          "goalCompleted": false,
+          "screenAssessment": "当前微信页面几乎空白，节点仅2个，无可交互元素，无导航栏。可能微信卡死或加载失败，无法判断是否处于朋友圈编辑界面。",
+          "failureDiagnosis": "多次尝试FindEntryByBottomTabSweep未找到“发现”标签，点击坐标也未改变页面。微信界面未正常加载或处于无法交互的状态。",
+          "confidence": "LOW",
+          "nextActionReason": "尝试通过返回键退出当前死锁页面，必要时重启微信，然后通过坐标点击底部“发现”标签进入朋友圈。"
+        }
+      }
+    },
+    {
+      "title": "AI 补救计划转 Skill JSON",
+      "status": "SUCCESS",
+      "message": "AI 返回 5 个下一步动作，已转换成 6 个候选 Skill JSON。",
+      "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_candidates\/com.tencent.mm\/direct.command.1778524979713.json",
+      "timestamp": 1778524979715,
+      "extra": {
+        "phase": "REPLAN",
+        "trigger": "GOAL_UNVERIFIED_LOOP_4"
+      }
+    },
+    {
+      "title": "AI 补救 dry-run",
+      "status": "SUCCESS",
+      "message": "通过 6\/6。",
+      "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_dry_run_reports\/com.tencent.mm\/direct.command.1778524979713_1778524979750.json",
+      "timestamp": 1778524979750
+    },
+    {
+      "title": "AI 补救 JSON 执行结果",
+      "status": "SUCCESS",
+      "message": "direct.command.1778524979713 -> SUCCESS_MEDIUM_CONFIDENCE；Macro atoms completed; reactiveDismissed=0",
+      "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/runtime\/run_reports\/com.tencent.mm\/ai_follow_up_run_1778524993164.json",
+      "timestamp": 1778524993164,
+      "extra": {
+        "phase": "REPLAN",
+        "trigger": "GOAL_UNVERIFIED_LOOP_4"
+      }
+    },
+    {
+      "title": "目标完成校验",
+      "status": "FAILED_GOAL_UNVERIFIED",
+      "message": "没有在微信当前页看到朋友圈内容，不能报告发布成功。",
+      "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/runtime\/run_reports\/com.tencent.mm\/ai_follow_up_run_1778524993164.json",
+      "timestamp": 1778524993166,
+      "extra": {
+        "serviceConnected": true,
+        "appPackage": "com.tencent.mm",
+        "nodeCount": 2,
+        "sampleTexts": [],
+        "expected": "wechat_moment_private_posted",
+        "contentNeedle": "我是AI",
+        "contentVisible": false,
+        "privateMarkerHits": [],
+        "editorMarkerHits": [],
+        "timelineMarkers": [],
+        "inWechat": true
+      }
+    },
+    {
+      "title": "保留目标应用前台用于证据",
+      "status": "INFO",
+      "message": "本次保留目标应用当前页面，不把 MacroPilot 拉回前台；报告里会记录当前 UI 快照和截图，方便继续让 AI 判断卡点。",
+      "path": null,
+      "timestamp": 1778524994602
+    }
+  ],
+  "outputs": {
+    "aiJobFile": null,
+    "aiJobFiles": [
+      "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ai_jobs\/2026-05-12\/factory_ai_replan_1778524635659.json",
+      "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ai_jobs\/2026-05-12\/factory_ai_replan_1778524695238.json",
+      "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ai_jobs\/2026-05-12\/factory_ai_replan_1778524767124.json",
+      "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ai_jobs\/2026-05-12\/factory_ai_replan_1778524894621.json",
+      "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ai_jobs\/2026-05-12\/factory_ai_replan_1778524979712.json"
+    ],
+    "previewConfigFile": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/app_config_exports\/com.tencent.mm\/app_config_20260512_023635_897.json",
+    "runtimeRunReportFile": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/runtime\/run_reports\/com.tencent.mm\/ai_follow_up_run_1778524993164.json",
+    "recentUiSnapshots": [
+      {
+        "id": "ui_snapshot_1778524994567",
+        "source": "current_ui_summary",
+        "note": "factory_ai_context",
+        "appPackage": "com.tencent.mm",
+        "windowClassName": "android.widget.TextView",
+        "screenKey": "83534165",
+        "screenshotPath": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_screenshots\/com.tencent.mm\/20260512_024314_373_83534165.png",
+        "visualHash": "41c362a8ba583d5e93e060828de1ab6e214a9fd9dc3ef22c8f73009f571791b1",
+        "summary": {
+          "nodeCount": 2,
+          "clickableCount": 0,
+          "editableCount": 0,
+          "scrollableCount": 0,
+          "labels": [],
+          "bottomCandidates": []
+        },
+        "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_snapshots\/com.tencent.mm\/20260512_024314_373_83534165.json"
+      },
+      {
+        "id": "ui_snapshot_1778524993163",
+        "source": "after_macro",
+        "note": "direct.command.1778524979713; confidence=SUCCESS_MEDIUM_CONFIDENCE; reactiveDismissed=0",
+        "appPackage": "com.tencent.mm",
+        "windowClassName": "android.widget.TextView",
+        "screenKey": "83534165",
+        "screenshotPath": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_screenshots\/com.tencent.mm\/20260512_024312_695_83534165.png",
+        "visualHash": "41c362a8ba583d5e93e060828de1ab6e214a9fd9dc3ef22c8f73009f571791b1",
+        "summary": {
+          "nodeCount": 2,
+          "clickableCount": 0,
+          "editableCount": 0,
+          "scrollableCount": 0,
+          "labels": [],
+          "bottomCandidates": []
+        },
+        "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_snapshots\/com.tencent.mm\/20260512_024312_695_83534165.json"
+      },
+      {
+        "id": "ui_snapshot_1778524992693",
+        "source": "after_macro_atom",
+        "note": "index=4; skillId=direct.1778524979713.5.openapp; status=SUCCESS_MEDIUM_CONFIDENCE",
+        "appPackage": "com.tencent.mm",
+        "windowClassName": "android.widget.TextView",
+        "screenKey": "83534165",
+        "screenshotPath": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_screenshots\/com.tencent.mm\/20260512_024312_244_83534165.png",
+        "visualHash": "41c362a8ba583d5e93e060828de1ab6e214a9fd9dc3ef22c8f73009f571791b1",
+        "summary": {
+          "nodeCount": 2,
+          "clickableCount": 0,
+          "editableCount": 0,
+          "scrollableCount": 0,
+          "labels": [],
+          "bottomCandidates": []
+        },
+        "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_snapshots\/com.tencent.mm\/20260512_024312_244_83534165.json"
+      },
+      {
+        "id": "ui_snapshot_1778524992241",
+        "source": "after_action",
+        "note": "direct.1778524979713.5.openapp:OpenApp:SUCCESS_MEDIUM_CONFIDENCE:Launch intent sent for com.tencent.mm",
+        "appPackage": "com.tencent.mm",
+        "windowClassName": "android.widget.TextView",
+        "screenKey": "83534165",
+        "screenshotPath": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_screenshots\/com.tencent.mm\/20260512_024311_790_83534165.png",
+        "visualHash": "41c362a8ba583d5e93e060828de1ab6e214a9fd9dc3ef22c8f73009f571791b1",
+        "summary": {
+          "nodeCount": 2,
+          "clickableCount": 0,
+          "editableCount": 0,
+          "scrollableCount": 0,
+          "labels": [],
+          "bottomCandidates": []
+        },
+        "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_snapshots\/com.tencent.mm\/20260512_024311_790_83534165.json"
+      },
+      {
+        "id": "ui_snapshot_1778524991783",
+        "source": "before_action",
+        "note": "direct.1778524979713.5.openapp:OpenApp",
+        "appPackage": "com.tencent.mm",
+        "windowClassName": "android.widget.TextView",
+        "screenKey": "83534165",
+        "screenshotPath": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_screenshots\/com.tencent.mm\/20260512_024311_351_83534165.png",
+        "visualHash": "41c362a8ba583d5e93e060828de1ab6e214a9fd9dc3ef22c8f73009f571791b1",
+        "summary": {
+          "nodeCount": 2,
+          "clickableCount": 0,
+          "editableCount": 0,
+          "scrollableCount": 0,
+          "labels": [],
+          "bottomCandidates": []
+        },
+        "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_snapshots\/com.tencent.mm\/20260512_024311_351_83534165.json"
+      },
+      {
+        "id": "ui_snapshot_1778524991347",
+        "source": "before_macro_atom",
+        "note": "index=4; skillId=direct.1778524979713.5.openapp",
+        "appPackage": "com.tencent.mm",
+        "windowClassName": "android.widget.TextView",
+        "screenKey": "83534165",
+        "screenshotPath": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_screenshots\/com.tencent.mm\/20260512_024310_884_83534165.png",
+        "visualHash": "41c362a8ba583d5e93e060828de1ab6e214a9fd9dc3ef22c8f73009f571791b1",
+        "summary": {
+          "nodeCount": 2,
+          "clickableCount": 0,
+          "editableCount": 0,
+          "scrollableCount": 0,
+          "labels": [],
+          "bottomCandidates": []
+        },
+        "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_snapshots\/com.tencent.mm\/20260512_024310_884_83534165.json"
+      },
+      {
+        "id": "ui_snapshot_1778524990856",
+        "source": "after_macro_atom",
+        "note": "index=3; skillId=direct.1778524979713.4.wait; status=SUCCESS_MEDIUM_CONFIDENCE",
+        "appPackage": "com.tencent.mm",
+        "windowClassName": "android.widget.TextView",
+        "screenKey": "83534165",
+        "screenshotPath": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_screenshots\/com.tencent.mm\/20260512_024310_391_83534165.png",
+        "visualHash": "41c362a8ba583d5e93e060828de1ab6e214a9fd9dc3ef22c8f73009f571791b1",
+        "summary": {
+          "nodeCount": 2,
+          "clickableCount": 0,
+          "editableCount": 0,
+          "scrollableCount": 0,
+          "labels": [],
+          "bottomCandidates": []
+        },
+        "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_snapshots\/com.tencent.mm\/20260512_024310_391_83534165.json"
+      },
+      {
+        "id": "ui_snapshot_1778524990388",
+        "source": "after_action",
+        "note": "direct.1778524979713.4.wait:Wait:SUCCESS_MEDIUM_CONFIDENCE:Waited 1000ms; reactiveDismissed=0",
+        "appPackage": "com.tencent.mm",
+        "windowClassName": "android.widget.TextView",
+        "screenKey": "83534165",
+        "screenshotPath": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_screenshots\/com.tencent.mm\/20260512_024310_183_83534165.png",
+        "visualHash": "41c362a8ba583d5e93e060828de1ab6e214a9fd9dc3ef22c8f73009f571791b1",
+        "summary": {
+          "nodeCount": 2,
+          "clickableCount": 0,
+          "editableCount": 0,
+          "scrollableCount": 0,
+          "labels": [],
+          "bottomCandidates": []
+        },
+        "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_snapshots\/com.tencent.mm\/20260512_024310_183_83534165.json"
+      },
+      {
+        "id": "ui_snapshot_1778524989174",
+        "source": "before_action",
+        "note": "direct.1778524979713.4.wait:Wait",
+        "appPackage": "com.tencent.mm",
+        "windowClassName": "android.widget.TextView",
+        "screenKey": "83534165",
+        "screenshotPath": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_screenshots\/com.tencent.mm\/20260512_024308_735_83534165.png",
+        "visualHash": "41c362a8ba583d5e93e060828de1ab6e214a9fd9dc3ef22c8f73009f571791b1",
+        "summary": {
+          "nodeCount": 2,
+          "clickableCount": 0,
+          "editableCount": 0,
+          "scrollableCount": 0,
+          "labels": [],
+          "bottomCandidates": []
+        },
+        "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_snapshots\/com.tencent.mm\/20260512_024308_735_83534165.json"
+      },
+      {
+        "id": "ui_snapshot_1778524988732",
+        "source": "before_macro_atom",
+        "note": "index=3; skillId=direct.1778524979713.4.wait",
+        "appPackage": "com.tencent.mm",
+        "windowClassName": "android.widget.TextView",
+        "screenKey": "83534165",
+        "screenshotPath": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_screenshots\/com.tencent.mm\/20260512_024308_261_83534165.png",
+        "visualHash": "41c362a8ba583d5e93e060828de1ab6e214a9fd9dc3ef22c8f73009f571791b1",
+        "summary": {
+          "nodeCount": 2,
+          "clickableCount": 0,
+          "editableCount": 0,
+          "scrollableCount": 0,
+          "labels": [],
+          "bottomCandidates": []
+        },
+        "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_snapshots\/com.tencent.mm\/20260512_024308_261_83534165.json"
+      },
+      {
+        "id": "ui_snapshot_1778524988233",
+        "source": "after_macro_atom",
+        "note": "index=2; skillId=direct.1778524979713.3.back; status=SUCCESS_MEDIUM_CONFIDENCE",
+        "appPackage": "com.tencent.mm",
+        "windowClassName": "android.widget.TextView",
+        "screenKey": "83534165",
+        "screenshotPath": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_screenshots\/com.tencent.mm\/20260512_024307_785_83534165.png",
+        "visualHash": "41c362a8ba583d5e93e060828de1ab6e214a9fd9dc3ef22c8f73009f571791b1",
+        "summary": {
+          "nodeCount": 2,
+          "clickableCount": 0,
+          "editableCount": 0,
+          "scrollableCount": 0,
+          "labels": [],
+          "bottomCandidates": []
+        },
+        "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_snapshots\/com.tencent.mm\/20260512_024307_785_83534165.json"
+      },
+      {
+        "id": "ui_snapshot_1778524987782",
+        "source": "after_action",
+        "note": "direct.1778524979713.3.back:Back:SUCCESS_MEDIUM_CONFIDENCE:GLOBAL_ACTION_BACK performed",
+        "appPackage": "com.tencent.mm",
+        "windowClassName": "android.widget.TextView",
+        "screenKey": "83534165",
+        "screenshotPath": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_screenshots\/com.tencent.mm\/20260512_024307_569_83534165.png",
+        "visualHash": "41c362a8ba583d5e93e060828de1ab6e214a9fd9dc3ef22c8f73009f571791b1",
+        "summary": {
+          "nodeCount": 2,
+          "clickableCount": 0,
+          "editableCount": 0,
+          "scrollableCount": 0,
+          "labels": [],
+          "bottomCandidates": []
+        },
+        "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_snapshots\/com.tencent.mm\/20260512_024307_569_83534165.json"
+      }
+    ]
+  },
+  "createdAt": 1778524994641
+}

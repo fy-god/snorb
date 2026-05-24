@@ -1,0 +1,88 @@
+{
+  "schemaVersion": 1,
+  "kind": "atomic_skill",
+  "id": "patched.1779204573693.5.findentrybybottomtabsweep",
+  "name": "改写步骤 5: FindEntryByBottomTabSweep",
+  "appPackage": "com.example.demo",
+  "status": "CANDIDATE",
+  "implements": "FindEntrySkill",
+  "params": [],
+  "preconditions": [],
+  "dependsOn": [],
+  "capabilityRequired": {
+    "minLevel": "C",
+    "inputRequired": false,
+    "nodeReadablePreferred": true,
+    "coordinateFallbackAllowed": true,
+    "allowedInputChannels": [],
+    "verificationRequired": "LOW"
+  },
+  "resolverPolicy": {
+    "order": [
+      "ACCESSIBILITY",
+      "APP_UI_GRAPH",
+      "COORDINATE_PACK",
+      "AI_PATCH"
+    ],
+    "allowAiSuggestionInFactory": true,
+    "allowAiInRuntime": true
+  },
+  "safety": {
+    "userConfirmedDangerousAction": true,
+    "allowedDangerousKeywords": [
+      "发布",
+      "发表",
+      "上传",
+      "授权",
+      "允许",
+      "同意",
+      "发帖",
+      "创作",
+      "publish",
+      "upload"
+    ],
+    "reason": "这是返回 App 首页后扫描发布\/发帖\/创作等入口，不是点击最终提交按钮"
+  },
+  "action": {
+    "type": "FindEntryByBottomTabSweep",
+    "entryAliases": [
+      "发布",
+      "发帖",
+      "创作",
+      "搜索"
+    ],
+    "maxTabs": 5,
+    "appPackage": "com.example.demo",
+    "allowDangerousAction": true,
+    "safetyReason": "这是返回 App 首页后扫描发布\/发帖\/创作等入口，不是点击最终提交按钮"
+  },
+  "verify": {
+    "type": "Always",
+    "timeoutMs": 1
+  },
+  "resultPolicy": {
+    "verified": "SUCCESS",
+    "partialVerified": "SUCCESS_MEDIUM_CONFIDENCE",
+    "coordinateOnly": "SUCCESS_LOW_CONFIDENCE",
+    "unverifiable": "FAILED_UNVERIFIABLE"
+  },
+  "factory": {
+    "source": "SELF_TEST_PLAN_PATCH",
+    "instruction": "搜索王老菊并打开第一个视频",
+    "aiJobPath": null,
+    "traceIds": [],
+    "sampleCount": 0,
+    "dryRunStatus": "PENDING",
+    "testRuns": 0,
+    "successRate": 0,
+    "promotionStatus": "NOT_PROMOTED",
+    "createdAt": 1779204576539,
+    "sourceSkillId": "patched.1779203518566.5.findentrybybottomtabsweep",
+    "sourceSkillPath": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_candidates\/com.example.demo\/patched.1779203518566.5.findentrybybottomtabsweep.json",
+    "sourceOrigin": "LOCAL_JSON",
+    "templateMatchScore": 70,
+    "templateMatchReason": "same_app,same_action_type,same_capability,search_intent",
+    "patchReason": "reuse_existing_skill_json_and_rewrite_key_slots"
+  },
+  "appVersion": "*"
+}

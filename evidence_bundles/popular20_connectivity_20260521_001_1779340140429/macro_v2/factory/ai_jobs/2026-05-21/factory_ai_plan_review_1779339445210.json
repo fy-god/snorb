@@ -1,0 +1,5257 @@
+{
+  "schemaVersion": 1,
+  "kind": "factory_ai_job",
+  "id": "factory_ai_plan_review_1779339445210",
+  "taskType": "RUNTIME_PLAN_REVIEW_BEFORE_EXECUTION",
+  "appPackage": "com.netease.cloudmusic",
+  "createdAt": 1779339445211,
+  "inputSummary": "在网易云音乐搜索周杰伦，停在歌曲结果页并记录单曲、歌单、用户分区。\n\n约束：目标 App=网易云音乐，包名=com.netease.cloudmusic。必须由 MacroPilot 手机端自己用无障碍、输入法、AI\/Skill JSON 执行，不允许依赖 ADB 手点目标 App。执行前先读取当前 UI；如果遇到广告、弹窗、小字提示，先记录文字并安全关闭。任务完成必须用当前 UI 证据验证，不能只因为步骤执行完就报成功。如果没有现成 skill，先复用已有相似 Skill JSON\/archetype，只改关键槽位如入口文字、坐标、目标文本、验证规则，再组装 atomic\/macro skill。需要探索入口时优先遍历底部标签、顶部小图标、图形化入口、侧边操作和子页面。本任务 stopBeforeSubmit=true：写草稿、评论、订单、支付类流程必须停在提交前，不点击最终发布、发送、提交订单、支付、确认授权。期望证据包括：周杰伦、搜索结果。",
+  "promptSnapshot": {
+    "taskType": "RUNTIME_PLAN_REVIEW_BEFORE_EXECUTION",
+    "instruction": "在网易云音乐搜索周杰伦，停在歌曲结果页并记录单曲、歌单、用户分区。\n\n约束：目标 App=网易云音乐，包名=com.netease.cloudmusic。必须由 MacroPilot 手机端自己用无障碍、输入法、AI\/Skill JSON 执行，不允许依赖 ADB 手点目标 App。执行前先读取当前 UI；如果遇到广告、弹窗、小字提示，先记录文字并安全关闭。任务完成必须用当前 UI 证据验证，不能只因为步骤执行完就报成功。如果没有现成 skill，先复用已有相似 Skill JSON\/archetype，只改关键槽位如入口文字、坐标、目标文本、验证规则，再组装 atomic\/macro skill。需要探索入口时优先遍历底部标签、顶部小图标、图形化入口、侧边操作和子页面。本任务 stopBeforeSubmit=true：写草稿、评论、订单、支付类流程必须停在提交前，不点击最终发布、发送、提交订单、支付、确认授权。期望证据包括：周杰伦、搜索结果。",
+    "appPackage": "com.netease.cloudmusic",
+    "intentId": "generic_search",
+    "currentUi": {
+      "serviceConnected": true,
+      "appPackage": "com.zhihu.android",
+      "windowClassName": "android.widget.FrameLayout",
+      "screenWidth": 1440,
+      "screenHeight": 3168,
+      "nodeCount": 40,
+      "snapshotPath": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_snapshots\/com.zhihu.android\/20260521_125624_080_24607b20.json",
+      "recentUiSnapshots": [
+        {
+          "id": "ui_snapshot_1779339384350",
+          "source": "current_ui_summary",
+          "note": "factory_ai_context",
+          "appPackage": "com.zhihu.android",
+          "windowClassName": "android.widget.FrameLayout",
+          "screenKey": "24607b20",
+          "screenshotPath": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_screenshots\/com.zhihu.android\/20260521_125624_080_24607b20.png",
+          "visualHash": "900c487dc58953d3a851493ae1e0213070e045005dc997c1ae4b996e02e56173",
+          "summary": {
+            "nodeCount": 40,
+            "clickableCount": 9,
+            "editableCount": 1,
+            "scrollableCount": 0,
+            "labels": [
+              "com.zhihu.android:id\/action_bar_root",
+              "android:id\/content",
+              "com.zhihu.android:id\/content_container",
+              "com.zhihu.android:id\/overlay_container",
+              "android:id\/content",
+              "com.zhihu.android:id\/fragment_container",
+              "com.zhihu.android:id\/parent_fragment_content_id",
+              "com.zhihu.android:id\/system_bar",
+              "com.zhihu.android:id\/container",
+              "com.zhihu.android:id\/up",
+              "com.zhihu.android:id\/card_root",
+              "com.zhihu.android:id\/search_start_icon",
+              "泰国取消90国公民60天免签 com.zhihu.android:id\/input",
+              "com.zhihu.android:id\/clear",
+              "搜索 com.zhihu.android:id\/cancel",
+              "com.zhihu.android:id\/paging",
+              "com.zhihu.android:id\/item_container",
+              "com.zhihu.android:id\/icon_left",
+              "泰国内阁决定取消60天免签政策 com.zhihu.android:id\/query",
+              "com.zhihu.android:id\/guideline3",
+              "com.zhihu.android:id\/guideline21",
+              "com.zhihu.android:id\/item_container",
+              "com.zhihu.android:id\/icon_left",
+              "泰国60天免签取消 com.zhihu.android:id\/query",
+              "com.zhihu.android:id\/guideline3",
+              "com.zhihu.android:id\/guideline21",
+              "com.zhihu.android:id\/item_container",
+              "查看「泰国取消90国公民60天免签」的搜索结果 com.zhihu.android:id\/query",
+              "com.zhihu.android:id\/to_report",
+              "com.zhihu.android:id\/report_icon",
+              "举报 com.zhihu.android:id\/report_text",
+              "android:id\/navigationBarBackground"
+            ],
+            "bottomCandidates": [
+              {
+                "label": "com.zhihu.android:id\/to_report",
+                "bounds": {
+                  "left": 592,
+                  "top": 2608,
+                  "right": 848,
+                  "bottom": 2704
+                },
+                "clickable": true
+              },
+              {
+                "label": "举报 com.zhihu.android:id\/report_text",
+                "bounds": {
+                  "left": 728,
+                  "top": 2615,
+                  "right": 848,
+                  "bottom": 2696
+                },
+                "clickable": false
+              }
+            ]
+          },
+          "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_snapshots\/com.zhihu.android\/20260521_125624_080_24607b20.json"
+        },
+        {
+          "id": "ui_snapshot_1779339360593",
+          "source": "accessibility_auto",
+          "note": "TYPE_WINDOW_CONTENT_CHANGED",
+          "appPackage": "com.zhihu.android",
+          "windowClassName": "android.widget.FrameLayout",
+          "screenKey": "24607b20",
+          "screenshotPath": "null",
+          "visualHash": "null",
+          "summary": {
+            "nodeCount": 40,
+            "clickableCount": 9,
+            "editableCount": 1,
+            "scrollableCount": 0,
+            "labels": [
+              "com.zhihu.android:id\/action_bar_root",
+              "android:id\/content",
+              "com.zhihu.android:id\/content_container",
+              "com.zhihu.android:id\/overlay_container",
+              "android:id\/content",
+              "com.zhihu.android:id\/fragment_container",
+              "com.zhihu.android:id\/parent_fragment_content_id",
+              "com.zhihu.android:id\/system_bar",
+              "com.zhihu.android:id\/container",
+              "com.zhihu.android:id\/up",
+              "com.zhihu.android:id\/card_root",
+              "com.zhihu.android:id\/search_start_icon",
+              "泰国取消90国公民60天免签 com.zhihu.android:id\/input",
+              "com.zhihu.android:id\/clear",
+              "搜索 com.zhihu.android:id\/cancel",
+              "com.zhihu.android:id\/paging",
+              "com.zhihu.android:id\/item_container",
+              "com.zhihu.android:id\/icon_left",
+              "泰国内阁决定取消60天免签政策 com.zhihu.android:id\/query",
+              "com.zhihu.android:id\/guideline3",
+              "com.zhihu.android:id\/guideline21",
+              "com.zhihu.android:id\/item_container",
+              "com.zhihu.android:id\/icon_left",
+              "泰国60天免签取消 com.zhihu.android:id\/query",
+              "com.zhihu.android:id\/guideline3",
+              "com.zhihu.android:id\/guideline21",
+              "com.zhihu.android:id\/item_container",
+              "查看「泰国取消90国公民60天免签」的搜索结果 com.zhihu.android:id\/query",
+              "com.zhihu.android:id\/to_report",
+              "com.zhihu.android:id\/report_icon",
+              "举报 com.zhihu.android:id\/report_text",
+              "android:id\/navigationBarBackground"
+            ],
+            "bottomCandidates": [
+              {
+                "label": "com.zhihu.android:id\/to_report",
+                "bounds": {
+                  "left": 592,
+                  "top": 2608,
+                  "right": 848,
+                  "bottom": 2704
+                },
+                "clickable": true
+              },
+              {
+                "label": "举报 com.zhihu.android:id\/report_text",
+                "bounds": {
+                  "left": 728,
+                  "top": 2615,
+                  "right": 848,
+                  "bottom": 2696
+                },
+                "clickable": false
+              }
+            ]
+          },
+          "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_snapshots\/com.zhihu.android\/20260521_125600_592_24607b20.json"
+        },
+        {
+          "id": "ui_snapshot_1779339352200",
+          "source": "accessibility_auto",
+          "note": "TYPE_WINDOW_STATE_CHANGED",
+          "appPackage": "com.zhihu.android",
+          "windowClassName": "com.zhihu.android.app.SearchActivity",
+          "screenKey": "7c87b0a",
+          "screenshotPath": "null",
+          "visualHash": "null",
+          "summary": {
+            "nodeCount": 40,
+            "clickableCount": 9,
+            "editableCount": 1,
+            "scrollableCount": 0,
+            "labels": [
+              "com.zhihu.android:id\/action_bar_root",
+              "android:id\/content",
+              "com.zhihu.android:id\/content_container",
+              "com.zhihu.android:id\/overlay_container",
+              "android:id\/content",
+              "com.zhihu.android:id\/fragment_container",
+              "com.zhihu.android:id\/parent_fragment_content_id",
+              "com.zhihu.android:id\/system_bar",
+              "com.zhihu.android:id\/container",
+              "com.zhihu.android:id\/up",
+              "com.zhihu.android:id\/card_root",
+              "com.zhihu.android:id\/search_start_icon",
+              "泰国取消90国公民60天免签 com.zhihu.android:id\/input",
+              "com.zhihu.android:id\/clear",
+              "搜索 com.zhihu.android:id\/cancel",
+              "com.zhihu.android:id\/paging",
+              "com.zhihu.android:id\/item_container",
+              "com.zhihu.android:id\/icon_left",
+              "泰国内阁决定取消60天免签政策 com.zhihu.android:id\/query",
+              "com.zhihu.android:id\/guideline3",
+              "com.zhihu.android:id\/guideline21",
+              "com.zhihu.android:id\/item_container",
+              "com.zhihu.android:id\/icon_left",
+              "泰国60天免签取消 com.zhihu.android:id\/query",
+              "com.zhihu.android:id\/guideline3",
+              "com.zhihu.android:id\/guideline21",
+              "com.zhihu.android:id\/item_container",
+              "查看「泰国取消90国公民60天免签」的搜索结果 com.zhihu.android:id\/query",
+              "com.zhihu.android:id\/to_report",
+              "com.zhihu.android:id\/report_icon",
+              "举报 com.zhihu.android:id\/report_text",
+              "android:id\/navigationBarBackground"
+            ],
+            "bottomCandidates": [
+              {
+                "label": "com.zhihu.android:id\/to_report",
+                "bounds": {
+                  "left": 592,
+                  "top": 2608,
+                  "right": 848,
+                  "bottom": 2704
+                },
+                "clickable": true
+              },
+              {
+                "label": "举报 com.zhihu.android:id\/report_text",
+                "bounds": {
+                  "left": 728,
+                  "top": 2615,
+                  "right": 848,
+                  "bottom": 2696
+                },
+                "clickable": false
+              }
+            ]
+          },
+          "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_snapshots\/com.zhihu.android\/20260521_125552_200_7c87b0a.json"
+        },
+        {
+          "id": "ui_snapshot_1779339340778",
+          "source": "after_action",
+          "note": "patched.1779339337328.2.wait:Wait:SUCCESS_MEDIUM_CONFIDENCE:Waited 1000ms; reactiveDismissed=0",
+          "appPackage": "com.zhihu.android",
+          "windowClassName": "androidx.recyclerview.widget.RecyclerView",
+          "screenKey": "ddcacb7d",
+          "screenshotPath": "null",
+          "visualHash": "null",
+          "summary": {
+            "nodeCount": 37,
+            "clickableCount": 8,
+            "editableCount": 1,
+            "scrollableCount": 0,
+            "labels": [
+              "com.zhihu.android:id\/action_bar_root",
+              "android:id\/content",
+              "com.zhihu.android:id\/content_container",
+              "com.zhihu.android:id\/overlay_container",
+              "android:id\/content",
+              "com.zhihu.android:id\/fragment_container",
+              "com.zhihu.android:id\/parent_fragment_content_id",
+              "com.zhihu.android:id\/system_bar",
+              "com.zhihu.android:id\/container",
+              "com.zhihu.android:id\/up",
+              "com.zhihu.android:id\/card_root",
+              "com.zhihu.android:id\/search_start_icon",
+              "泰国取消90国公民60天免签 com.zhihu.android:id\/input",
+              "com.zhihu.android:id\/clear",
+              "搜索 com.zhihu.android:id\/cancel",
+              "com.zhihu.android:id\/paging",
+              "com.zhihu.android:id\/item_container",
+              "com.zhihu.android:id\/icon_left",
+              "泰国内阁决定取消60天免签政策 com.zhihu.android:id\/query",
+              "com.zhihu.android:id\/guideline3",
+              "com.zhihu.android:id\/guideline21",
+              "com.zhihu.android:id\/item_container",
+              "com.zhihu.android:id\/icon_left",
+              "泰国60天免签取消 com.zhihu.android:id\/query",
+              "com.zhihu.android:id\/guideline3",
+              "com.zhihu.android:id\/guideline21",
+              "com.zhihu.android:id\/item_container",
+              "查看「泰国取消90国公民60天免签」的搜索结果 com.zhihu.android:id\/query",
+              "android:id\/navigationBarBackground"
+            ],
+            "bottomCandidates": []
+          },
+          "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_snapshots\/com.zhihu.android\/20260521_125540_778_ddcacb7d.json"
+        }
+      ],
+      "capability": {
+        "nodeReadability": "A",
+        "inputCapability": "SET_TEXT",
+        "verificationCapability": "HIGH"
+      },
+      "nodes": [
+        {
+          "class": "android.widget.FrameLayout",
+          "clickable": false,
+          "editable": false,
+          "scrollable": false,
+          "bounds": "0 0 1440 3168"
+        },
+        {
+          "class": "android.widget.LinearLayout",
+          "clickable": false,
+          "editable": false,
+          "scrollable": false,
+          "bounds": "0 0 1440 3104"
+        },
+        {
+          "class": "android.widget.FrameLayout",
+          "clickable": false,
+          "editable": false,
+          "scrollable": false,
+          "bounds": "0 0 1440 3104"
+        },
+        {
+          "resourceId": "com.zhihu.android:id\/action_bar_root",
+          "class": "android.widget.FrameLayout",
+          "clickable": false,
+          "editable": false,
+          "scrollable": false,
+          "bounds": "0 0 1440 3104"
+        },
+        {
+          "resourceId": "android:id\/content",
+          "class": "android.widget.FrameLayout",
+          "clickable": false,
+          "editable": false,
+          "scrollable": false,
+          "bounds": "0 0 1440 3104"
+        },
+        {
+          "resourceId": "com.zhihu.android:id\/content_container",
+          "class": "android.widget.FrameLayout",
+          "clickable": false,
+          "editable": false,
+          "scrollable": false,
+          "bounds": "0 0 1440 3104"
+        },
+        {
+          "resourceId": "com.zhihu.android:id\/overlay_container",
+          "class": "android.widget.FrameLayout",
+          "clickable": false,
+          "editable": false,
+          "scrollable": false,
+          "bounds": "0 0 1440 3104"
+        },
+        {
+          "resourceId": "android:id\/content",
+          "class": "android.widget.FrameLayout",
+          "clickable": false,
+          "editable": false,
+          "scrollable": false,
+          "bounds": "0 0 1440 3104"
+        },
+        {
+          "resourceId": "com.zhihu.android:id\/fragment_container",
+          "class": "android.widget.FrameLayout",
+          "clickable": false,
+          "editable": false,
+          "scrollable": false,
+          "bounds": "0 0 1440 3104"
+        },
+        {
+          "resourceId": "com.zhihu.android:id\/parent_fragment_content_id",
+          "class": "android.widget.FrameLayout",
+          "clickable": false,
+          "editable": false,
+          "scrollable": false,
+          "bounds": "0 0 1440 3104"
+        },
+        {
+          "class": "android.widget.RelativeLayout",
+          "clickable": false,
+          "editable": false,
+          "scrollable": false,
+          "bounds": "0 0 1440 3104"
+        },
+        {
+          "class": "android.widget.LinearLayout",
+          "clickable": false,
+          "editable": false,
+          "scrollable": false,
+          "bounds": "0 0 1440 3104"
+        },
+        {
+          "resourceId": "com.zhihu.android:id\/system_bar",
+          "class": "android.view.ViewGroup",
+          "clickable": false,
+          "editable": false,
+          "scrollable": false,
+          "bounds": "0 160 1440 364"
+        },
+        {
+          "resourceId": "com.zhihu.android:id\/container",
+          "class": "android.widget.LinearLayout",
+          "clickable": true,
+          "editable": false,
+          "scrollable": false,
+          "bounds": "0 160 1440 364"
+        },
+        {
+          "resourceId": "com.zhihu.android:id\/up",
+          "class": "android.widget.ImageView",
+          "clickable": true,
+          "editable": false,
+          "scrollable": false,
+          "bounds": "40 224 136 320"
+        },
+        {
+          "resourceId": "com.zhihu.android:id\/card_root",
+          "class": "android.widget.FrameLayout",
+          "clickable": false,
+          "editable": false,
+          "scrollable": false,
+          "bounds": "200 200 1192 344"
+        },
+        {
+          "class": "android.widget.LinearLayout",
+          "clickable": false,
+          "editable": false,
+          "scrollable": false,
+          "bounds": "200 200 1192 344"
+        },
+        {
+          "resourceId": "com.zhihu.android:id\/search_start_icon",
+          "class": "android.widget.ImageView",
+          "clickable": false,
+          "editable": false,
+          "scrollable": false,
+          "bounds": "272 236 344 308"
+        },
+        {
+          "text": "泰国取消90国公民60天免签",
+          "resourceId": "com.zhihu.android:id\/input",
+          "class": "android.widget.EditText",
+          "clickable": true,
+          "editable": true,
+          "scrollable": false,
+          "bounds": "376 229 1016 315"
+        },
+        {
+          "resourceId": "com.zhihu.android:id\/clear",
+          "class": "android.widget.ImageView",
+          "clickable": true,
+          "editable": false,
+          "scrollable": false,
+          "bounds": "1080 240 1144 304"
+        },
+        {
+          "text": "搜索",
+          "resourceId": "com.zhihu.android:id\/cancel",
+          "class": "android.widget.TextView",
+          "clickable": true,
+          "editable": false,
+          "scrollable": false,
+          "bounds": "1256 229 1384 315"
+        },
+        {
+          "resourceId": "com.zhihu.android:id\/paging",
+          "class": "android.widget.FrameLayout",
+          "clickable": false,
+          "editable": false,
+          "scrollable": false,
+          "bounds": "0 364 1440 3104"
+        },
+        {
+          "class": "android.view.ViewGroup",
+          "clickable": false,
+          "editable": false,
+          "scrollable": false,
+          "bounds": "0 364 1440 3104"
+        },
+        {
+          "class": "androidx.recyclerview.widget.RecyclerView",
+          "clickable": false,
+          "editable": false,
+          "scrollable": false,
+          "bounds": "0 364 1440 3104"
+        },
+        {
+          "resourceId": "com.zhihu.android:id\/item_container",
+          "class": "android.view.ViewGroup",
+          "clickable": true,
+          "editable": false,
+          "scrollable": false,
+          "bounds": "0 364 1440 540"
+        },
+        {
+          "resourceId": "com.zhihu.android:id\/icon_left",
+          "class": "android.widget.ImageView",
+          "clickable": false,
+          "editable": false,
+          "scrollable": false,
+          "bounds": "64 412 144 492"
+        },
+        {
+          "text": "泰国内阁决定取消60天免签政策",
+          "resourceId": "com.zhihu.android:id\/query",
+          "class": "android.widget.TextView",
+          "clickable": false,
+          "editable": false,
+          "scrollable": false,
+          "bounds": "208 417 1062 488"
+        },
+        {
+          "resourceId": "com.zhihu.android:id\/guideline3",
+          "class": "android.view.View",
+          "clickable": false,
+          "editable": false,
+          "scrollable": false,
+          "bounds": "1370 452 1372 452"
+        },
+        {
+          "resourceId": "com.zhihu.android:id\/guideline21",
+          "class": "android.view.View",
+          "clickable": false,
+          "editable": false,
+          "scrollable": false,
+          "bounds": "1370 452 1372 452"
+        },
+        {
+          "resourceId": "com.zhihu.android:id\/item_container",
+          "class": "android.view.ViewGroup",
+          "clickable": true,
+          "editable": false,
+          "scrollable": false,
+          "bounds": "0 540 1440 716"
+        },
+        {
+          "resourceId": "com.zhihu.android:id\/icon_left",
+          "class": "android.widget.ImageView",
+          "clickable": false,
+          "editable": false,
+          "scrollable": false,
+          "bounds": "64 588 144 668"
+        },
+        {
+          "text": "泰国60天免签取消",
+          "resourceId": "com.zhihu.android:id\/query",
+          "class": "android.widget.TextView",
+          "clickable": false,
+          "editable": false,
+          "scrollable": false,
+          "bounds": "208 593 702 664"
+        },
+        {
+          "resourceId": "com.zhihu.android:id\/guideline3",
+          "class": "android.view.View",
+          "clickable": false,
+          "editable": false,
+          "scrollable": false,
+          "bounds": "1370 628 1372 628"
+        },
+        {
+          "resourceId": "com.zhihu.android:id\/guideline21",
+          "class": "android.view.View",
+          "clickable": false,
+          "editable": false,
+          "scrollable": false,
+          "bounds": "1370 628 1372 628"
+        },
+        {
+          "resourceId": "com.zhihu.android:id\/item_container",
+          "class": "android.widget.RelativeLayout",
+          "clickable": true,
+          "editable": false,
+          "scrollable": false,
+          "bounds": "0 836 1440 1028"
+        },
+        {
+          "text": "查看「泰国取消90国公民60天免签」的搜索结果",
+          "resourceId": "com.zhihu.android:id\/query",
+          "class": "android.widget.TextView",
+          "clickable": false,
+          "editable": false,
+          "scrollable": false,
+          "bounds": "0 891 1440 972"
+        },
+        {
+          "resourceId": "com.zhihu.android:id\/to_report",
+          "class": "androidx.appcompat.widget.LinearLayoutCompat",
+          "clickable": true,
+          "editable": false,
+          "scrollable": false,
+          "bounds": "592 2608 848 2704"
+        },
+        {
+          "resourceId": "com.zhihu.android:id\/report_icon",
+          "class": "android.widget.ImageView",
+          "clickable": false,
+          "editable": false,
+          "scrollable": false,
+          "bounds": "592 2608 688 2704"
+        },
+        {
+          "text": "举报",
+          "resourceId": "com.zhihu.android:id\/report_text",
+          "class": "android.widget.TextView",
+          "clickable": false,
+          "editable": false,
+          "scrollable": false,
+          "bounds": "728 2615 848 2696"
+        },
+        {
+          "resourceId": "android:id\/navigationBarBackground",
+          "class": "android.view.View",
+          "clickable": false,
+          "editable": false,
+          "scrollable": false,
+          "bounds": "0 3104 1440 3168"
+        }
+      ],
+      "blockingDialogs": [
+        {
+          "type": "share_sheet",
+          "hits": [
+            "泰国取消90国公民60天免签 com.zhihu.android:id\/input",
+            "泰国内阁决定取消60天免签政策 com.zhihu.android:id\/query",
+            "泰国60天免签取消 com.zhihu.android:id\/query",
+            "查看「泰国取消90国公民60天免签」的搜索结果 com.zhihu.android:id\/query",
+            "举报 com.zhihu.android:id\/report_text",
+            "泰国内阁决定取消60天免签政策 com.zhihu.android:id\/query",
+            "泰国60天免签取消 com.zhihu.android:id\/query",
+            "举报 com.zhihu.android:id\/report_text"
+          ]
+        },
+        {
+          "type": "popup_observed",
+          "events": [],
+          "smallNodes": [
+            "泰国内阁决定取消60天免签政策 com.zhihu.android:id\/query",
+            "泰国60天免签取消 com.zhihu.android:id\/query",
+            "举报 com.zhihu.android:id\/report_text"
+          ]
+        }
+      ],
+      "clickTargets": [
+        {
+          "index": 0,
+          "text": null,
+          "desc": null,
+          "resourceId": "com.zhihu.android:id\/container",
+          "class": "android.widget.LinearLayout",
+          "clickable": true,
+          "selected": false,
+          "bounds": "0 160 1440 364",
+          "center": {
+            "x": 0.5,
+            "y": 0.08270202020202021
+          },
+          "tags": [
+            "clickable"
+          ]
+        },
+        {
+          "index": 1,
+          "text": null,
+          "desc": null,
+          "resourceId": "com.zhihu.android:id\/up",
+          "class": "android.widget.ImageView",
+          "clickable": true,
+          "selected": false,
+          "bounds": "40 224 136 320",
+          "center": {
+            "x": 0.06111111111111111,
+            "y": 0.08585858585858586
+          },
+          "tags": [
+            "clickable",
+            "video_like",
+            "author_or_query"
+          ]
+        },
+        {
+          "index": 2,
+          "text": "泰国取消90国公民60天免签",
+          "desc": null,
+          "resourceId": "com.zhihu.android:id\/input",
+          "class": "android.widget.EditText",
+          "clickable": true,
+          "selected": false,
+          "bounds": "376 229 1016 315",
+          "center": {
+            "x": 0.48333333333333334,
+            "y": 0.08585858585858586
+          },
+          "tags": [
+            "clickable"
+          ]
+        },
+        {
+          "index": 3,
+          "text": null,
+          "desc": null,
+          "resourceId": "com.zhihu.android:id\/clear",
+          "class": "android.widget.ImageView",
+          "clickable": true,
+          "selected": false,
+          "bounds": "1080 240 1144 304",
+          "center": {
+            "x": 0.7722222222222223,
+            "y": 0.08585858585858586
+          },
+          "tags": [
+            "clickable",
+            "video_like"
+          ]
+        },
+        {
+          "index": 4,
+          "text": "搜索",
+          "desc": null,
+          "resourceId": "com.zhihu.android:id\/cancel",
+          "class": "android.widget.TextView",
+          "clickable": true,
+          "selected": false,
+          "bounds": "1256 229 1384 315",
+          "center": {
+            "x": 0.9166666666666666,
+            "y": 0.08585858585858586
+          },
+          "tags": [
+            "clickable",
+            "video_like"
+          ]
+        },
+        {
+          "index": 5,
+          "text": null,
+          "desc": null,
+          "resourceId": "com.zhihu.android:id\/item_container",
+          "class": "android.view.ViewGroup",
+          "clickable": true,
+          "selected": false,
+          "bounds": "0 364 1440 540",
+          "center": {
+            "x": 0.5,
+            "y": 0.14267676767676768
+          },
+          "tags": [
+            "clickable",
+            "video_like",
+            "author_or_query"
+          ]
+        },
+        {
+          "index": 6,
+          "text": "泰国内阁决定取消60天免签政策",
+          "desc": null,
+          "resourceId": "com.zhihu.android:id\/query",
+          "class": "android.widget.TextView",
+          "clickable": false,
+          "selected": false,
+          "bounds": "208 417 1062 488",
+          "center": {
+            "x": 0.4409722222222222,
+            "y": 0.14267676767676768
+          },
+          "tags": [
+            "video_like"
+          ]
+        },
+        {
+          "index": 7,
+          "text": null,
+          "desc": null,
+          "resourceId": "com.zhihu.android:id\/item_container",
+          "class": "android.view.ViewGroup",
+          "clickable": true,
+          "selected": false,
+          "bounds": "0 540 1440 716",
+          "center": {
+            "x": 0.5,
+            "y": 0.19823232323232323
+          },
+          "tags": [
+            "clickable",
+            "content_area",
+            "video_like",
+            "author_or_query"
+          ]
+        },
+        {
+          "index": 8,
+          "text": "泰国60天免签取消",
+          "desc": null,
+          "resourceId": "com.zhihu.android:id\/query",
+          "class": "android.widget.TextView",
+          "clickable": false,
+          "selected": false,
+          "bounds": "208 593 702 664",
+          "center": {
+            "x": 0.3159722222222222,
+            "y": 0.19823232323232323
+          },
+          "tags": [
+            "content_area",
+            "video_like"
+          ]
+        },
+        {
+          "index": 9,
+          "text": null,
+          "desc": null,
+          "resourceId": "com.zhihu.android:id\/item_container",
+          "class": "android.widget.RelativeLayout",
+          "clickable": true,
+          "selected": false,
+          "bounds": "0 836 1440 1028",
+          "center": {
+            "x": 0.5,
+            "y": 0.29419191919191917
+          },
+          "tags": [
+            "clickable",
+            "content_area"
+          ]
+        },
+        {
+          "index": 10,
+          "text": "查看「泰国取消90国公民60天免签」的搜索结果",
+          "desc": null,
+          "resourceId": "com.zhihu.android:id\/query",
+          "class": "android.widget.TextView",
+          "clickable": false,
+          "selected": false,
+          "bounds": "0 891 1440 972",
+          "center": {
+            "x": 0.5,
+            "y": 0.29387626262626265
+          },
+          "tags": [
+            "content_area",
+            "video_like"
+          ]
+        },
+        {
+          "index": 11,
+          "text": null,
+          "desc": null,
+          "resourceId": "com.zhihu.android:id\/to_report",
+          "class": "androidx.appcompat.widget.LinearLayoutCompat",
+          "clickable": true,
+          "selected": false,
+          "bounds": "592 2608 848 2704",
+          "center": {
+            "x": 0.5,
+            "y": 0.8383838383838383
+          },
+          "tags": [
+            "clickable",
+            "content_area"
+          ]
+        },
+        {
+          "index": 12,
+          "text": "举报",
+          "desc": null,
+          "resourceId": "com.zhihu.android:id\/report_text",
+          "class": "android.widget.TextView",
+          "clickable": false,
+          "selected": false,
+          "bounds": "728 2615 848 2696",
+          "center": {
+            "x": 0.5472222222222223,
+            "y": 0.8380681818181818
+          },
+          "tags": [
+            "content_area",
+            "video_like"
+          ]
+        }
+      ],
+      "bottomTabs": [
+        {
+          "index": 0,
+          "text": null,
+          "desc": null,
+          "resourceId": "com.zhihu.android:id\/to_report",
+          "class": "androidx.appcompat.widget.LinearLayoutCompat",
+          "clickable": true,
+          "selected": false,
+          "bounds": "592 2608 848 2704",
+          "center": {
+            "x": 0.5,
+            "y": 0.8383838383838383
+          },
+          "tags": [
+            "clickable",
+            "content_area",
+            "bottom_tab_candidate"
+          ]
+        },
+        {
+          "index": 1,
+          "text": "举报",
+          "desc": null,
+          "resourceId": "com.zhihu.android:id\/report_text",
+          "class": "android.widget.TextView",
+          "clickable": false,
+          "selected": false,
+          "bounds": "728 2615 848 2696",
+          "center": {
+            "x": 0.5472222222222223,
+            "y": 0.8380681818181818
+          },
+          "tags": [
+            "content_area",
+            "video_like",
+            "bottom_tab_candidate"
+          ]
+        }
+      ],
+      "entryCandidates": [
+        {
+          "index": 0,
+          "text": "搜索",
+          "desc": null,
+          "resourceId": "com.zhihu.android:id\/cancel",
+          "class": "android.widget.TextView",
+          "clickable": true,
+          "selected": false,
+          "bounds": "1256 229 1384 315",
+          "center": {
+            "x": 0.9166666666666666,
+            "y": 0.08585858585858586
+          },
+          "tags": [
+            "clickable",
+            "video_like",
+            "entry_candidate"
+          ]
+        },
+        {
+          "index": 1,
+          "text": "查看「泰国取消90国公民60天免签」的搜索结果",
+          "desc": null,
+          "resourceId": "com.zhihu.android:id\/query",
+          "class": "android.widget.TextView",
+          "clickable": false,
+          "selected": false,
+          "bounds": "0 891 1440 972",
+          "center": {
+            "x": 0.5,
+            "y": 0.29387626262626265
+          },
+          "tags": [
+            "content_area",
+            "video_like",
+            "entry_candidate"
+          ]
+        }
+      ],
+      "videoCandidates": [
+        {
+          "index": 0,
+          "text": null,
+          "desc": null,
+          "resourceId": "com.zhihu.android:id\/item_container",
+          "class": "android.widget.RelativeLayout",
+          "clickable": true,
+          "selected": false,
+          "bounds": "0 836 1440 1028",
+          "center": {
+            "x": 0.5,
+            "y": 0.29419191919191917
+          },
+          "tags": [
+            "clickable",
+            "content_area"
+          ]
+        },
+        {
+          "index": 1,
+          "text": "查看「泰国取消90国公民60天免签」的搜索结果",
+          "desc": null,
+          "resourceId": "com.zhihu.android:id\/query",
+          "class": "android.widget.TextView",
+          "clickable": false,
+          "selected": false,
+          "bounds": "0 891 1440 972",
+          "center": {
+            "x": 0.5,
+            "y": 0.29387626262626265
+          },
+          "tags": [
+            "content_area",
+            "video_like"
+          ]
+        }
+      ]
+    },
+    "appUiGraph": {
+      "appPackage": "com.netease.cloudmusic",
+      "status": "CANDIDATE_EXPLORED",
+      "screenCount": 6,
+      "edgeCount": 7,
+      "quality": {
+        "usable": true,
+        "reason": "usable_app_ui_graph",
+        "screenCount": 6,
+        "edgeCount": 7,
+        "nodeCount": 466,
+        "clickableCount": 38,
+        "editableCount": 0,
+        "labelCount": 167,
+        "bottomTabCount": 54,
+        "topEntryCount": 21,
+        "sideEntryCount": 34,
+        "entryCandidateCount": 4,
+        "inputCandidateCount": 0,
+        "videoCandidateCount": 10,
+        "candidateCount": 123
+      },
+      "screens": [
+        {
+          "screenId": "screen_9a2628d3",
+          "title": "",
+          "screenKey": "9a2628d3",
+          "nodeCount": 18,
+          "clickableCount": 1,
+          "editableCount": 0,
+          "labels": [
+            "com.netease.cloudmusic:id\/action_bar_root",
+            "android:id\/content",
+            "com.netease.cloudmusic:id\/playerUIModeContainer",
+            "com.netease.cloudmusic:id\/mainlauncherContainer",
+            "com.netease.cloudmusic:id\/mainContainer",
+            "com.netease.cloudmusic:id\/loadingContainer",
+            "com.netease.cloudmusic:id\/rl_root",
+            "com.netease.cloudmusic:id\/launcherContainer",
+            "com.netease.cloudmusic:id\/adContainer",
+            "com.netease.cloudmusic:id\/logoContainer",
+            "com.netease.cloudmusic:id\/logo",
+            "com.netease.cloudmusic:id\/vipLogo"
+          ],
+          "bottomTabs": [
+            {
+              "index": 0,
+              "label": "com.netease.cloudmusic:id\/logoContainer",
+              "text": null,
+              "desc": null,
+              "resourceId": "com.netease.cloudmusic:id\/logoContainer",
+              "class": "android.widget.LinearLayout",
+              "clickable": false,
+              "editable": false,
+              "selected": false,
+              "bounds": "321 2858 1119 2930",
+              "x": 0.5,
+              "y": 0.913510101010101,
+              "center": {
+                "x": 0.5,
+                "y": 0.913510101010101
+              },
+              "tags": [
+                "bottom_tab",
+                "bottom_tab_candidate"
+              ]
+            },
+            {
+              "index": 1,
+              "label": "com.netease.cloudmusic:id\/logo",
+              "text": null,
+              "desc": null,
+              "resourceId": "com.netease.cloudmusic:id\/logo",
+              "class": "android.widget.ImageView",
+              "clickable": false,
+              "editable": false,
+              "selected": false,
+              "bounds": "321 2858 1119 2930",
+              "x": 0.5,
+              "y": 0.913510101010101,
+              "center": {
+                "x": 0.5,
+                "y": 0.913510101010101
+              },
+              "tags": [
+                "bottom_tab",
+                "bottom_tab_candidate"
+              ]
+            },
+            {
+              "index": 2,
+              "label": "com.netease.cloudmusic:id\/vipLogo",
+              "text": null,
+              "desc": null,
+              "resourceId": "com.netease.cloudmusic:id\/vipLogo",
+              "class": "android.widget.ImageView",
+              "clickable": false,
+              "editable": false,
+              "selected": false,
+              "bounds": "321 2976 1119 3012",
+              "x": 0.5,
+              "y": 0.9450757575757576,
+              "center": {
+                "x": 0.5,
+                "y": 0.9450757575757576
+              },
+              "tags": [
+                "bottom_tab",
+                "bottom_tab_candidate"
+              ]
+            }
+          ],
+          "topEntries": [],
+          "sideEntries": [],
+          "graphicalCandidates": [],
+          "checkableCandidates": [],
+          "entryCandidates": [],
+          "inputCandidates": [],
+          "videoCandidates": [],
+          "snapshotPath": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_snapshots\/com.netease.cloudmusic\/20260520_084250_277_9a2628d3.json"
+        },
+        {
+          "screenId": "screen_a43b310f",
+          "title": "左滑更多",
+          "screenKey": "a43b310f",
+          "nodeCount": 88,
+          "clickableCount": 12,
+          "editableCount": 0,
+          "labels": [
+            "com.netease.cloudmusic:id\/action_bar_root",
+            "android:id\/content",
+            "com.netease.cloudmusic:id\/musicContainer",
+            "com.netease.cloudmusic:id\/albumContainer",
+            "com.netease.cloudmusic:id\/albumFragment",
+            "com.netease.cloudmusic:id\/layoutAppbar",
+            "com.netease.cloudmusic:id\/toolbarLayout",
+            "com.netease.cloudmusic:id\/header_container",
+            "com.netease.cloudmusic:id\/headerContainer",
+            "com.netease.cloudmusic:id\/infoContainer",
+            "com.netease.cloudmusic:id\/musicCoverHeader",
+            "com.netease.cloudmusic:id\/musicCover",
+            "com.netease.cloudmusic:id\/musicTitleBlock",
+            "com.netease.cloudmusic:id\/musicTitle",
+            "com.netease.cloudmusic:id\/creatorInfoBlock",
+            "com.netease.cloudmusic:id\/musicCreatorName",
+            "com.netease.cloudmusic:id\/goFlag",
+            "com.netease.cloudmusic:id\/musicDescriptionContainer",
+            "com.netease.cloudmusic:id\/musicUpdateTime",
+            "com.netease.cloudmusic:id\/actionContainerParent",
+            "com.netease.cloudmusic:id\/actionContainer",
+            "com.netease.cloudmusic:id\/subscribeBlock",
+            "com.netease.cloudmusic:id\/subscribeBtn",
+            "收藏 com.netease.cloudmusic:id\/subscribeNum",
+            "com.netease.cloudmusic:id\/commentBlock",
+            "com.netease.cloudmusic:id\/commentBtn",
+            "评论 com.netease.cloudmusic:id\/commentNum",
+            "com.netease.cloudmusic:id\/shareBlock",
+            "com.netease.cloudmusic:id\/shareBtn",
+            "分享 com.netease.cloudmusic:id\/shareNum",
+            "com.netease.cloudmusic:id\/playCtrlAreaContainer",
+            "com.netease.cloudmusic:id\/playAllAreaContainer",
+            "com.netease.cloudmusic:id\/headerBgImageContainer",
+            "com.netease.cloudmusic:id\/videoBackground",
+            "com.netease.cloudmusic:id\/rcmdContainer",
+            "com.netease.cloudmusic:id\/rcmdPlTitle",
+            "com.netease.cloudmusic:id\/rcmdPlRecyclerView",
+            "com.netease.cloudmusic:id\/moreContainer",
+            "左滑更多",
+            "com.netease.cloudmusic:id\/scrollTip",
+            "com.netease.cloudmusic:id\/musicInfoList",
+            "com.netease.cloudmusic:id\/loading_view_pb",
+            "正在加载 com.netease.cloudmusic:id\/loading_view_text",
+            "com.netease.cloudmusic:id\/toolbar",
+            "转到上一层级",
+            "专辑",
+            "com.netease.cloudmusic:id\/minPlayerBarContainer",
+            "com.netease.cloudmusic:id\/minPlayerBar",
+            "com.netease.cloudmusic:id\/minibarContentContainerNew",
+            "com.netease.cloudmusic:id\/v4ShadowView",
+            "com.netease.cloudmusic:id\/v4ShadowViewMask",
+            "com.netease.cloudmusic:id\/shadowView",
+            "com.netease.cloudmusic:id\/miniPlayBarReallyRoot",
+            "com.netease.cloudmusic:id\/miniDiskContainer",
+            "com.netease.cloudmusic:id\/minibar_song_container",
+            "com.netease.cloudmusic:id\/view_albumCover_wrapper",
+            "com.netease.cloudmusic:id\/smallAlbumDisc0",
+            "com.netease.cloudmusic:id\/iv_smallAlbumCover",
+            "com.netease.cloudmusic:id\/miniPlayBarLayout",
+            "com.netease.cloudmusic:id\/miniItemDisc1",
+            "com.netease.cloudmusic:id\/fl_music",
+            "com.netease.cloudmusic:id\/tv_music",
+            "com.netease.cloudmusic:id\/miniItemDisc0",
+            "城府 - 许嵩 com.netease.cloudmusic:id\/tv_music",
+            "播放暂停 com.netease.cloudmusic:id\/minPlayBtn",
+            "com.netease.cloudmusic:id\/minPlayListBtnContainer",
+            "播放列表 com.netease.cloudmusic:id\/minPlaylistBtn",
+            "android:id\/navigationBarBackground"
+          ],
+          "bottomTabs": [
+            {
+              "index": 0,
+              "label": "com.netease.cloudmusic:id\/miniDiskContainer",
+              "text": null,
+              "desc": null,
+              "resourceId": "com.netease.cloudmusic:id\/miniDiskContainer",
+              "class": "android.widget.FrameLayout",
+              "clickable": false,
+              "editable": false,
+              "selected": false,
+              "bounds": "64 2960 240 3136",
+              "x": 0.10555555555555556,
+              "y": 0.9621212121212122,
+              "center": {
+                "x": 0.10555555555555556,
+                "y": 0.9621212121212122
+              },
+              "tags": [
+                "bottom_tab",
+                "bottom_tab_candidate"
+              ]
+            },
+            {
+              "index": 1,
+              "label": "com.netease.cloudmusic:id\/minibar_song_container",
+              "text": null,
+              "desc": null,
+              "resourceId": "com.netease.cloudmusic:id\/minibar_song_container",
+              "class": "android.widget.FrameLayout",
+              "clickable": false,
+              "editable": false,
+              "selected": false,
+              "bounds": "64 2960 240 3136",
+              "x": 0.10555555555555556,
+              "y": 0.9621212121212122,
+              "center": {
+                "x": 0.10555555555555556,
+                "y": 0.9621212121212122
+              },
+              "tags": [
+                "bottom_tab",
+                "bottom_tab_candidate"
+              ]
+            },
+            {
+              "index": 2,
+              "label": "com.netease.cloudmusic:id\/view_albumCover_wrapper",
+              "text": null,
+              "desc": null,
+              "resourceId": "com.netease.cloudmusic:id\/view_albumCover_wrapper",
+              "class": "android.widget.RelativeLayout",
+              "clickable": false,
+              "editable": false,
+              "selected": false,
+              "bounds": "64 2960 240 3136",
+              "x": 0.10555555555555556,
+              "y": 0.9621212121212122,
+              "center": {
+                "x": 0.10555555555555556,
+                "y": 0.9621212121212122
+              },
+              "tags": [
+                "bottom_tab",
+                "bottom_tab_candidate"
+              ]
+            },
+            {
+              "index": 3,
+              "label": "com.netease.cloudmusic:id\/smallAlbumDisc0",
+              "text": null,
+              "desc": null,
+              "resourceId": "com.netease.cloudmusic:id\/smallAlbumDisc0",
+              "class": "android.widget.ImageView",
+              "clickable": false,
+              "editable": false,
+              "selected": false,
+              "bounds": "64 2960 240 3136",
+              "x": 0.10555555555555556,
+              "y": 0.9621212121212122,
+              "center": {
+                "x": 0.10555555555555556,
+                "y": 0.9621212121212122
+              },
+              "tags": [
+                "bottom_tab",
+                "bottom_tab_candidate"
+              ]
+            },
+            {
+              "index": 4,
+              "label": "com.netease.cloudmusic:id\/iv_smallAlbumCover",
+              "text": null,
+              "desc": null,
+              "resourceId": "com.netease.cloudmusic:id\/iv_smallAlbumCover",
+              "class": "android.widget.ImageView",
+              "clickable": false,
+              "editable": false,
+              "selected": false,
+              "bounds": "93 2989 211 3107",
+              "x": 0.10555555555555556,
+              "y": 0.9621212121212122,
+              "center": {
+                "x": 0.10555555555555556,
+                "y": 0.9621212121212122
+              },
+              "tags": [
+                "bottom_tab",
+                "bottom_tab_candidate"
+              ]
+            },
+            {
+              "index": 5,
+              "label": "com.netease.cloudmusic:id\/miniPlayBarLayout",
+              "text": null,
+              "desc": null,
+              "resourceId": "com.netease.cloudmusic:id\/miniPlayBarLayout",
+              "class": "android.widget.ViewFlipper",
+              "clickable": false,
+              "editable": false,
+              "selected": false,
+              "bounds": "240 2960 992 3136",
+              "x": 0.42777777777777776,
+              "y": 0.9621212121212122,
+              "center": {
+                "x": 0.42777777777777776,
+                "y": 0.9621212121212122
+              },
+              "tags": [
+                "bottom_tab",
+                "bottom_tab_candidate"
+              ]
+            },
+            {
+              "index": 6,
+              "label": "com.netease.cloudmusic:id\/miniItemDisc0",
+              "text": null,
+              "desc": null,
+              "resourceId": "com.netease.cloudmusic:id\/miniItemDisc0",
+              "class": "android.widget.FrameLayout",
+              "clickable": false,
+              "editable": false,
+              "selected": false,
+              "bounds": "240 2960 992 3136",
+              "x": 0.42777777777777776,
+              "y": 0.9621212121212122,
+              "center": {
+                "x": 0.42777777777777776,
+                "y": 0.9621212121212122
+              },
+              "tags": [
+                "bottom_tab",
+                "bottom_tab_candidate"
+              ]
+            },
+            {
+              "index": 7,
+              "label": "com.netease.cloudmusic:id\/fl_music",
+              "text": null,
+              "desc": null,
+              "resourceId": "com.netease.cloudmusic:id\/fl_music",
+              "class": "android.widget.FrameLayout",
+              "clickable": false,
+              "editable": false,
+              "selected": false,
+              "bounds": "240 2960 992 3136",
+              "x": 0.42777777777777776,
+              "y": 0.9621212121212122,
+              "center": {
+                "x": 0.42777777777777776,
+                "y": 0.9621212121212122
+              },
+              "tags": [
+                "bottom_tab",
+                "bottom_tab_candidate"
+              ]
+            },
+            {
+              "index": 8,
+              "label": "城府 - 许嵩 com.netease.cloudmusic:id\/tv_music",
+              "text": "城府 - 许嵩",
+              "desc": null,
+              "resourceId": "com.netease.cloudmusic:id\/tv_music",
+              "class": "android.widget.TextView",
+              "clickable": false,
+              "editable": false,
+              "selected": false,
+              "bounds": "272 2960 992 3136",
+              "x": 0.4388888888888889,
+              "y": 0.9621212121212122,
+              "center": {
+                "x": 0.4388888888888889,
+                "y": 0.9621212121212122
+              },
+              "tags": [
+                "bottom_tab",
+                "bottom_tab_candidate"
+              ]
+            },
+            {
+              "index": 9,
+              "label": "com.netease.cloudmusic:id\/musicInfoList",
+              "text": null,
+              "desc": null,
+              "resourceId": "com.netease.cloudmusic:id\/musicInfoList",
+              "class": "androidx.recyclerview.widget.RecyclerView",
+              "clickable": false,
+              "editable": false,
+              "selected": false,
+              "bounds": "0 1388 1440 3240",
+              "x": 0.5,
+              "y": 0.7304292929292929,
+              "center": {
+                "x": 0.5,
+                "y": 0.7304292929292929
+              },
+              "tags": [
+                "bottom_tab",
+                "bottom_tab_candidate"
+              ]
+            },
+            {
+              "index": 10,
+              "label": "com.netease.cloudmusic:id\/minPlayerBarContainer",
+              "text": null,
+              "desc": null,
+              "resourceId": "com.netease.cloudmusic:id\/minPlayerBarContainer",
+              "class": "android.widget.LinearLayout",
+              "clickable": false,
+              "editable": false,
+              "selected": false,
+              "bounds": "0 2960 1440 3240",
+              "x": 0.5,
+              "y": 0.9785353535353535,
+              "center": {
+                "x": 0.5,
+                "y": 0.9785353535353535
+              },
+              "tags": [
+                "bottom_tab",
+                "bottom_tab_candidate"
+              ]
+            },
+            {
+              "index": 11,
+              "label": "com.netease.cloudmusic:id\/minPlayerBar",
+              "text": null,
+              "desc": null,
+              "resourceId": "com.netease.cloudmusic:id\/minPlayerBar",
+              "class": "android.widget.LinearLayout",
+              "clickable": false,
+              "editable": false,
+              "selected": false,
+              "bounds": "0 2960 1440 3240",
+              "x": 0.5,
+              "y": 0.9785353535353535,
+              "center": {
+                "x": 0.5,
+                "y": 0.9785353535353535
+              },
+              "tags": [
+                "bottom_tab",
+                "bottom_tab_candidate"
+              ]
+            }
+          ],
+          "topEntries": [
+            {
+              "index": 0,
+              "label": "转到上一层级",
+              "text": null,
+              "desc": "转到上一层级",
+              "resourceId": null,
+              "class": "android.widget.ImageButton",
+              "clickable": true,
+              "editable": false,
+              "selected": false,
+              "bounds": "0 296 224 504",
+              "x": 0.07777777777777778,
+              "y": 0.12626262626262627,
+              "center": {
+                "x": 0.07777777777777778,
+                "y": 0.12626262626262627
+              },
+              "tags": [
+                "top_entry",
+                "top_entry_candidate"
+              ]
+            },
+            {
+              "index": 1,
+              "label": "左滑更多",
+              "text": "左滑更多",
+              "desc": null,
+              "resourceId": null,
+              "class": "android.widget.TextView",
+              "clickable": false,
+              "editable": false,
+              "selected": false,
+              "bounds": "40 241 232 306",
+              "x": 0.09444444444444444,
+              "y": 0.08617424242424243,
+              "center": {
+                "x": 0.09444444444444444,
+                "y": 0.08617424242424243
+              },
+              "tags": [
+                "top_entry",
+                "top_entry_candidate"
+              ]
+            },
+            {
+              "index": 2,
+              "label": "专辑",
+              "text": "专辑",
+              "desc": null,
+              "resourceId": null,
+              "class": "android.widget.TextView",
+              "clickable": false,
+              "editable": false,
+              "selected": true,
+              "bounds": "224 351 368 448",
+              "x": 0.20555555555555555,
+              "y": 0.1259469696969697,
+              "center": {
+                "x": 0.20555555555555555,
+                "y": 0.1259469696969697
+              },
+              "tags": [
+                "top_entry",
+                "top_entry_candidate"
+              ]
+            },
+            {
+              "index": 3,
+              "label": "com.netease.cloudmusic:id\/musicCoverHeader",
+              "text": null,
+              "desc": null,
+              "resourceId": "com.netease.cloudmusic:id\/musicCoverHeader",
+              "class": "android.widget.ImageView",
+              "clickable": false,
+              "editable": false,
+              "selected": false,
+              "bounds": "65 505 567 585",
+              "x": 0.21944444444444444,
+              "y": 0.1720328282828283,
+              "center": {
+                "x": 0.21944444444444444,
+                "y": 0.1720328282828283
+              },
+              "tags": [
+                "top_entry",
+                "top_entry_candidate"
+              ]
+            },
+            {
+              "index": 4,
+              "label": "com.netease.cloudmusic:id\/musicCover",
+              "text": null,
+              "desc": null,
+              "resourceId": "com.netease.cloudmusic:id\/musicCover",
+              "class": "android.widget.ImageView",
+              "clickable": false,
+              "editable": false,
+              "selected": false,
+              "bounds": "65 585 567 1089",
+              "x": 0.21944444444444444,
+              "y": 0.26420454545454547,
+              "center": {
+                "x": 0.21944444444444444,
+                "y": 0.26420454545454547
+              },
+              "tags": [
+                "top_entry",
+                "top_entry_candidate"
+              ]
+            },
+            {
+              "index": 5,
+              "label": "com.netease.cloudmusic:id\/goFlag",
+              "text": null,
+              "desc": null,
+              "resourceId": "com.netease.cloudmusic:id\/goFlag",
+              "class": "android.widget.ImageView",
+              "clickable": false,
+              "editable": false,
+              "selected": false,
+              "bounds": "668 729 692 769",
+              "x": 0.4722222222222222,
+              "y": 0.23642676767676768,
+              "center": {
+                "x": 0.4722222222222222,
+                "y": 0.23642676767676768
+              },
+              "tags": [
+                "top_entry",
+                "top_entry_candidate"
+              ]
+            },
+            {
+              "index": 6,
+              "label": "com.netease.cloudmusic:id\/layoutAppbar",
+              "text": null,
+              "desc": null,
+              "resourceId": "com.netease.cloudmusic:id\/layoutAppbar",
+              "class": "android.widget.LinearLayout",
+              "clickable": false,
+              "editable": false,
+              "selected": false,
+              "bounds": "0 136 1440 1388",
+              "x": 0.5,
+              "y": 0.24053030303030304,
+              "center": {
+                "x": 0.5,
+                "y": 0.24053030303030304
+              },
+              "tags": [
+                "top_entry",
+                "top_entry_candidate"
+              ]
+            },
+            {
+              "index": 7,
+              "label": "com.netease.cloudmusic:id\/toolbarLayout",
+              "text": null,
+              "desc": null,
+              "resourceId": "com.netease.cloudmusic:id\/toolbarLayout",
+              "class": "android.widget.FrameLayout",
+              "clickable": false,
+              "editable": false,
+              "selected": false,
+              "bounds": "0 136 1440 1388",
+              "x": 0.5,
+              "y": 0.24053030303030304,
+              "center": {
+                "x": 0.5,
+                "y": 0.24053030303030304
+              },
+              "tags": [
+                "top_entry",
+                "top_entry_candidate"
+              ]
+            },
+            {
+              "index": 8,
+              "label": "com.netease.cloudmusic:id\/header_container",
+              "text": null,
+              "desc": null,
+              "resourceId": "com.netease.cloudmusic:id\/header_container",
+              "class": "android.widget.FrameLayout",
+              "clickable": false,
+              "editable": false,
+              "selected": false,
+              "bounds": "0 136 1440 1388",
+              "x": 0.5,
+              "y": 0.24053030303030304,
+              "center": {
+                "x": 0.5,
+                "y": 0.24053030303030304
+              },
+              "tags": [
+                "top_entry",
+                "top_entry_candidate"
+              ]
+            },
+            {
+              "index": 9,
+              "label": "com.netease.cloudmusic:id\/headerContainer",
+              "text": null,
+              "desc": null,
+              "resourceId": "com.netease.cloudmusic:id\/headerContainer",
+              "class": "android.widget.FrameLayout",
+              "clickable": false,
+              "editable": false,
+              "selected": false,
+              "bounds": "0 136 1440 1388",
+              "x": 0.5,
+              "y": 0.24053030303030304,
+              "center": {
+                "x": 0.5,
+                "y": 0.24053030303030304
+              },
+              "tags": [
+                "top_entry",
+                "top_entry_candidate"
+              ]
+            },
+            {
+              "index": 10,
+              "label": "com.netease.cloudmusic:id\/infoContainer",
+              "text": null,
+              "desc": null,
+              "resourceId": "com.netease.cloudmusic:id\/infoContainer",
+              "class": "android.widget.LinearLayout",
+              "clickable": false,
+              "editable": false,
+              "selected": false,
+              "bounds": "0 136 1440 1096",
+              "x": 0.5,
+              "y": 0.19444444444444445,
+              "center": {
+                "x": 0.5,
+                "y": 0.19444444444444445
+              },
+              "tags": [
+                "top_entry",
+                "top_entry_candidate"
+              ]
+            },
+            {
+              "index": 11,
+              "label": "com.netease.cloudmusic:id\/headerBgImageContainer",
+              "text": null,
+              "desc": null,
+              "resourceId": "com.netease.cloudmusic:id\/headerBgImageContainer",
+              "class": "android.widget.FrameLayout",
+              "clickable": false,
+              "editable": false,
+              "selected": false,
+              "bounds": "0 136 1440 418",
+              "x": 0.5,
+              "y": 0.08743686868686869,
+              "center": {
+                "x": 0.5,
+                "y": 0.08743686868686869
+              },
+              "tags": [
+                "top_entry",
+                "top_entry_candidate"
+              ]
+            },
+            {
+              "index": 12,
+              "label": "com.netease.cloudmusic:id\/rcmdContainer",
+              "text": null,
+              "desc": null,
+              "resourceId": "com.netease.cloudmusic:id\/rcmdContainer",
+              "class": "android.widget.LinearLayout",
+              "clickable": false,
+              "editable": false,
+              "selected": false,
+              "bounds": "0 136 1440 306",
+              "x": 0.5,
+              "y": 0.06976010101010101,
+              "center": {
+                "x": 0.5,
+                "y": 0.06976010101010101
+              },
+              "tags": [
+                "top_entry",
+                "top_entry_candidate"
+              ]
+            },
+            {
+              "index": 13,
+              "label": "com.netease.cloudmusic:id\/moreContainer",
+              "text": null,
+              "desc": null,
+              "resourceId": "com.netease.cloudmusic:id\/moreContainer",
+              "class": "android.widget.LinearLayout",
+              "clickable": false,
+              "editable": false,
+              "selected": false,
+              "bounds": "0 241 1440 306",
+              "x": 0.5,
+              "y": 0.08617424242424243,
+              "center": {
+                "x": 0.5,
+                "y": 0.08617424242424243
+              },
+              "tags": [
+                "top_entry",
+                "top_entry_candidate"
+              ]
+            },
+            {
+              "index": 14,
+              "label": "com.netease.cloudmusic:id\/toolbar",
+              "text": null,
+              "desc": null,
+              "resourceId": "com.netease.cloudmusic:id\/toolbar",
+              "class": "android.view.ViewGroup",
+              "clickable": true,
+              "editable": false,
+              "selected": false,
+              "bounds": "0 136 1440 504",
+              "x": 0.5,
+              "y": 0.10101010101010101,
+              "center": {
+                "x": 0.5,
+                "y": 0.10101010101010101
+              },
+              "tags": [
+                "top_entry",
+                "top_entry_candidate"
+              ]
+            },
+            {
+              "index": 15,
+              "label": "com.netease.cloudmusic:id\/rcmdPlTitle",
+              "text": null,
+              "desc": null,
+              "resourceId": "com.netease.cloudmusic:id\/rcmdPlTitle",
+              "class": "android.widget.TextView",
+              "clickable": false,
+              "editable": false,
+              "selected": false,
+              "bounds": "60 136 1440 193",
+              "x": 0.5208333333333334,
+              "y": 0.05176767676767677,
+              "center": {
+                "x": 0.5208333333333334,
+                "y": 0.05176767676767677
+              },
+              "tags": [
+                "top_entry",
+                "top_entry_candidate"
+              ]
+            }
+          ],
+          "sideEntries": [
+            {
+              "index": 0,
+              "label": "左滑更多",
+              "text": "左滑更多",
+              "desc": null,
+              "resourceId": null,
+              "class": "android.widget.TextView",
+              "clickable": false,
+              "editable": false,
+              "selected": false,
+              "bounds": "40 241 232 306",
+              "x": 0.09444444444444444,
+              "y": 0.08617424242424243,
+              "center": {
+                "x": 0.09444444444444444,
+                "y": 0.08617424242424243
+              },
+              "tags": [
+                "side_entry",
+                "side_entry_candidate"
+              ]
+            },
+            {
+              "index": 1,
+              "label": "转到上一层级",
+              "text": null,
+              "desc": "转到上一层级",
+              "resourceId": null,
+              "class": "android.widget.ImageButton",
+              "clickable": true,
+              "editable": false,
+              "selected": false,
+              "bounds": "0 296 224 504",
+              "x": 0.07777777777777778,
+              "y": 0.12626262626262627,
+              "center": {
+                "x": 0.07777777777777778,
+                "y": 0.12626262626262627
+              },
+              "tags": [
+                "side_entry",
+                "side_entry_candidate"
+              ]
+            },
+            {
+              "index": 2,
+              "label": "com.netease.cloudmusic:id\/miniDiskContainer",
+              "text": null,
+              "desc": null,
+              "resourceId": "com.netease.cloudmusic:id\/miniDiskContainer",
+              "class": "android.widget.FrameLayout",
+              "clickable": false,
+              "editable": false,
+              "selected": false,
+              "bounds": "64 2960 240 3136",
+              "x": 0.10555555555555556,
+              "y": 0.9621212121212122,
+              "center": {
+                "x": 0.10555555555555556,
+                "y": 0.9621212121212122
+              },
+              "tags": [
+                "side_entry",
+                "side_entry_candidate"
+              ]
+            },
+            {
+              "index": 3,
+              "label": "com.netease.cloudmusic:id\/minibar_song_container",
+              "text": null,
+              "desc": null,
+              "resourceId": "com.netease.cloudmusic:id\/minibar_song_container",
+              "class": "android.widget.FrameLayout",
+              "clickable": false,
+              "editable": false,
+              "selected": false,
+              "bounds": "64 2960 240 3136",
+              "x": 0.10555555555555556,
+              "y": 0.9621212121212122,
+              "center": {
+                "x": 0.10555555555555556,
+                "y": 0.9621212121212122
+              },
+              "tags": [
+                "side_entry",
+                "side_entry_candidate"
+              ]
+            },
+            {
+              "index": 4,
+              "label": "com.netease.cloudmusic:id\/view_albumCover_wrapper",
+              "text": null,
+              "desc": null,
+              "resourceId": "com.netease.cloudmusic:id\/view_albumCover_wrapper",
+              "class": "android.widget.RelativeLayout",
+              "clickable": false,
+              "editable": false,
+              "selected": false,
+              "bounds": "64 2960 240 3136",
+              "x": 0.10555555555555556,
+              "y": 0.9621212121212122,
+              "center": {
+                "x": 0.10555555555555556,
+                "y": 0.9621212121212122
+              },
+              "tags": [
+                "side_entry",
+                "side_entry_candidate"
+              ]
+            },
+            {
+              "index": 5,
+              "label": "com.netease.cloudmusic:id\/smallAlbumDisc0",
+              "text": null,
+              "desc": null,
+              "resourceId": "com.netease.cloudmusic:id\/smallAlbumDisc0",
+              "class": "android.widget.ImageView",
+              "clickable": false,
+              "editable": false,
+              "selected": false,
+              "bounds": "64 2960 240 3136",
+              "x": 0.10555555555555556,
+              "y": 0.9621212121212122,
+              "center": {
+                "x": 0.10555555555555556,
+                "y": 0.9621212121212122
+              },
+              "tags": [
+                "side_entry",
+                "side_entry_candidate"
+              ]
+            },
+            {
+              "index": 6,
+              "label": "com.netease.cloudmusic:id\/iv_smallAlbumCover",
+              "text": null,
+              "desc": null,
+              "resourceId": "com.netease.cloudmusic:id\/iv_smallAlbumCover",
+              "class": "android.widget.ImageView",
+              "clickable": false,
+              "editable": false,
+              "selected": false,
+              "bounds": "93 2989 211 3107",
+              "x": 0.10555555555555556,
+              "y": 0.9621212121212122,
+              "center": {
+                "x": 0.10555555555555556,
+                "y": 0.9621212121212122
+              },
+              "tags": [
+                "side_entry",
+                "side_entry_candidate"
+              ]
+            },
+            {
+              "index": 7,
+              "label": "com.netease.cloudmusic:id\/minPlayListBtnContainer",
+              "text": null,
+              "desc": null,
+              "resourceId": "com.netease.cloudmusic:id\/minPlayListBtnContainer",
+              "class": "android.widget.FrameLayout",
+              "clickable": false,
+              "editable": false,
+              "selected": false,
+              "bounds": "1152 2960 1376 3136",
+              "x": 0.8777777777777778,
+              "y": 0.9621212121212122,
+              "center": {
+                "x": 0.8777777777777778,
+                "y": 0.9621212121212122
+              },
+              "tags": [
+                "side_entry",
+                "side_entry_candidate"
+              ]
+            },
+            {
+              "index": 8,
+              "label": "播放列表 com.netease.cloudmusic:id\/minPlaylistBtn",
+              "text": null,
+              "desc": "播放列表",
+              "resourceId": "com.netease.cloudmusic:id\/minPlaylistBtn",
+              "class": "android.widget.ImageView",
+              "clickable": true,
+              "editable": false,
+              "selected": false,
+              "bounds": "1152 2960 1328 3136",
+              "x": 0.8611111111111112,
+              "y": 0.9621212121212122,
+              "center": {
+                "x": 0.8611111111111112,
+                "y": 0.9621212121212122
+              },
+              "tags": [
+                "side_entry",
+                "side_entry_candidate"
+              ]
+            }
+          ],
+          "graphicalCandidates": [],
+          "checkableCandidates": [],
+          "entryCandidates": [],
+          "inputCandidates": [],
+          "videoCandidates": [
+            {
+              "index": 0,
+              "label": "com.netease.cloudmusic:id\/musicCoverHeader",
+              "text": null,
+              "desc": null,
+              "resourceId": "com.netease.cloudmusic:id\/musicCoverHeader",
+              "class": "android.widget.ImageView",
+              "clickable": false,
+              "editable": false,
+              "selected": false,
+              "bounds": "65 505 567 585",
+              "x": 0.21944444444444444,
+              "y": 0.1720328282828283,
+              "center": {
+                "x": 0.21944444444444444,
+                "y": 0.1720328282828283
+              },
+              "tags": [
+                "video_candidate"
+              ]
+            },
+            {
+              "index": 1,
+              "label": "com.netease.cloudmusic:id\/musicCover",
+              "text": null,
+              "desc": null,
+              "resourceId": "com.netease.cloudmusic:id\/musicCover",
+              "class": "android.widget.ImageView",
+              "clickable": false,
+              "editable": false,
+              "selected": false,
+              "bounds": "65 585 567 1089",
+              "x": 0.21944444444444444,
+              "y": 0.26420454545454547,
+              "center": {
+                "x": 0.21944444444444444,
+                "y": 0.26420454545454547
+              },
+              "tags": [
+                "video_candidate"
+              ]
+            },
+            {
+              "index": 2,
+              "label": "com.netease.cloudmusic:id\/view_albumCover_wrapper",
+              "text": null,
+              "desc": null,
+              "resourceId": "com.netease.cloudmusic:id\/view_albumCover_wrapper",
+              "class": "android.widget.RelativeLayout",
+              "clickable": false,
+              "editable": false,
+              "selected": false,
+              "bounds": "64 2960 240 3136",
+              "x": 0.10555555555555556,
+              "y": 0.9621212121212122,
+              "center": {
+                "x": 0.10555555555555556,
+                "y": 0.9621212121212122
+              },
+              "tags": [
+                "video_candidate",
+                "bottom_area"
+              ]
+            },
+            {
+              "index": 3,
+              "label": "com.netease.cloudmusic:id\/iv_smallAlbumCover",
+              "text": null,
+              "desc": null,
+              "resourceId": "com.netease.cloudmusic:id\/iv_smallAlbumCover",
+              "class": "android.widget.ImageView",
+              "clickable": false,
+              "editable": false,
+              "selected": false,
+              "bounds": "93 2989 211 3107",
+              "x": 0.10555555555555556,
+              "y": 0.9621212121212122,
+              "center": {
+                "x": 0.10555555555555556,
+                "y": 0.9621212121212122
+              },
+              "tags": [
+                "video_candidate",
+                "bottom_area"
+              ]
+            },
+            {
+              "index": 4,
+              "label": "播放暂停 com.netease.cloudmusic:id\/minPlayBtn",
+              "text": null,
+              "desc": "播放暂停",
+              "resourceId": "com.netease.cloudmusic:id\/minPlayBtn",
+              "class": "android.widget.ImageView",
+              "clickable": true,
+              "editable": false,
+              "selected": false,
+              "bounds": "992 2960 1152 3136",
+              "x": 0.7444444444444445,
+              "y": 0.9621212121212122,
+              "center": {
+                "x": 0.7444444444444445,
+                "y": 0.9621212121212122
+              },
+              "tags": [
+                "video_candidate",
+                "clickable",
+                "bottom_area",
+                "small_icon"
+              ]
+            },
+            {
+              "index": 5,
+              "label": "播放列表 com.netease.cloudmusic:id\/minPlaylistBtn",
+              "text": null,
+              "desc": "播放列表",
+              "resourceId": "com.netease.cloudmusic:id\/minPlaylistBtn",
+              "class": "android.widget.ImageView",
+              "clickable": true,
+              "editable": false,
+              "selected": false,
+              "bounds": "1152 2960 1328 3136",
+              "x": 0.8611111111111112,
+              "y": 0.9621212121212122,
+              "center": {
+                "x": 0.8611111111111112,
+                "y": 0.9621212121212122
+              },
+              "tags": [
+                "video_candidate",
+                "clickable",
+                "bottom_area",
+                "small_icon"
+              ]
+            },
+            {
+              "index": 6,
+              "label": "com.netease.cloudmusic:id\/minPlayerBarContainer",
+              "text": null,
+              "desc": null,
+              "resourceId": "com.netease.cloudmusic:id\/minPlayerBarContainer",
+              "class": "android.widget.LinearLayout",
+              "clickable": false,
+              "editable": false,
+              "selected": false,
+              "bounds": "0 2960 1440 3240",
+              "x": 0.5,
+              "y": 0.9785353535353535,
+              "center": {
+                "x": 0.5,
+                "y": 0.9785353535353535
+              },
+              "tags": [
+                "video_candidate",
+                "bottom_area"
+              ]
+            },
+            {
+              "index": 7,
+              "label": "com.netease.cloudmusic:id\/minPlayerBar",
+              "text": null,
+              "desc": null,
+              "resourceId": "com.netease.cloudmusic:id\/minPlayerBar",
+              "class": "android.widget.LinearLayout",
+              "clickable": false,
+              "editable": false,
+              "selected": false,
+              "bounds": "0 2960 1440 3240",
+              "x": 0.5,
+              "y": 0.9785353535353535,
+              "center": {
+                "x": 0.5,
+                "y": 0.9785353535353535
+              },
+              "tags": [
+                "video_candidate",
+                "bottom_area"
+              ]
+            }
+          ],
+          "snapshotPath": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_snapshots\/com.netease.cloudmusic\/20260520_084251_705_a43b310f.json"
+        },
+        {
+          "screenId": "screen_292cd76e",
+          "title": "",
+          "screenKey": "292cd76e",
+          "nodeCount": 18,
+          "clickableCount": 1,
+          "editableCount": 0,
+          "labels": [
+            "com.netease.cloudmusic:id\/action_bar_root",
+            "android:id\/content",
+            "com.netease.cloudmusic:id\/playerUIModeContainer",
+            "com.netease.cloudmusic:id\/mainlauncherContainer",
+            "com.netease.cloudmusic:id\/mainContainer",
+            "com.netease.cloudmusic:id\/loadingContainer",
+            "com.netease.cloudmusic:id\/rl_root",
+            "com.netease.cloudmusic:id\/launcherContainer",
+            "com.netease.cloudmusic:id\/adContainer",
+            "com.netease.cloudmusic:id\/logoContainer",
+            "com.netease.cloudmusic:id\/logo",
+            "com.netease.cloudmusic:id\/vipLogo"
+          ],
+          "bottomTabs": [
+            {
+              "index": 0,
+              "label": "com.netease.cloudmusic:id\/logoContainer",
+              "text": null,
+              "desc": null,
+              "resourceId": "com.netease.cloudmusic:id\/logoContainer",
+              "class": "android.widget.LinearLayout",
+              "clickable": false,
+              "editable": false,
+              "selected": false,
+              "bounds": "320 2860 1120 2932",
+              "x": 0.5,
+              "y": 0.9141414141414141,
+              "center": {
+                "x": 0.5,
+                "y": 0.9141414141414141
+              },
+              "tags": [
+                "bottom_tab",
+                "bottom_tab_candidate"
+              ]
+            },
+            {
+              "index": 1,
+              "label": "com.netease.cloudmusic:id\/logo",
+              "text": null,
+              "desc": null,
+              "resourceId": "com.netease.cloudmusic:id\/logo",
+              "class": "android.widget.ImageView",
+              "clickable": false,
+              "editable": false,
+              "selected": false,
+              "bounds": "320 2860 1120 2932",
+              "x": 0.5,
+              "y": 0.9141414141414141,
+              "center": {
+                "x": 0.5,
+                "y": 0.9141414141414141
+              },
+              "tags": [
+                "bottom_tab",
+                "bottom_tab_candidate"
+              ]
+            },
+            {
+              "index": 2,
+              "label": "com.netease.cloudmusic:id\/vipLogo",
+              "text": null,
+              "desc": null,
+              "resourceId": "com.netease.cloudmusic:id\/vipLogo",
+              "class": "android.widget.ImageView",
+              "clickable": false,
+              "editable": false,
+              "selected": false,
+              "bounds": "320 2978 1120 3014",
+              "x": 0.5,
+              "y": 0.9457070707070707,
+              "center": {
+                "x": 0.5,
+                "y": 0.9457070707070707
+              },
+              "tags": [
+                "bottom_tab",
+                "bottom_tab_candidate"
+              ]
+            }
+          ],
+          "topEntries": [],
+          "sideEntries": [],
+          "graphicalCandidates": [],
+          "checkableCandidates": [],
+          "entryCandidates": [],
+          "inputCandidates": [],
+          "videoCandidates": [],
+          "snapshotPath": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_snapshots\/com.netease.cloudmusic\/20260520_084252_930_292cd76e.json"
+        },
+        {
+          "screenId": "screen_269767bc",
+          "title": "DC_PopupBase_Content",
+          "screenKey": "269767bc",
+          "nodeCount": 34,
+          "clickableCount": 6,
+          "editableCount": 0,
+          "labels": [
+            "android:id\/content",
+            "DC_PopupBase_Content",
+            "DC_Box",
+            "歌单：苦练伍佰的歌，争取早日成为包厢浪子",
+            "更改歌曲排序",
+            "清空下载文件",
+            "举报",
+            "展示专辑封面",
+            "开启 DC_Switch_NativeSwitch"
+          ],
+          "bottomTabs": [
+            {
+              "index": 0,
+              "label": "举报",
+              "text": "举报",
+              "desc": null,
+              "resourceId": null,
+              "class": "android.widget.TextView",
+              "clickable": false,
+              "editable": false,
+              "selected": false,
+              "bounds": "216 2709 344 2805",
+              "x": 0.19444444444444445,
+              "y": 0.8702651515151515,
+              "center": {
+                "x": 0.19444444444444445,
+                "y": 0.8702651515151515
+              },
+              "tags": [
+                "bottom_tab",
+                "bottom_tab_candidate"
+              ]
+            },
+            {
+              "index": 1,
+              "label": "更改歌曲排序",
+              "text": "更改歌曲排序",
+              "desc": null,
+              "resourceId": null,
+              "class": "android.widget.TextView",
+              "clickable": false,
+              "editable": false,
+              "selected": false,
+              "bounds": "216 2394 600 2490",
+              "x": 0.2833333333333333,
+              "y": 0.7708333333333334,
+              "center": {
+                "x": 0.2833333333333333,
+                "y": 0.7708333333333334
+              },
+              "tags": [
+                "bottom_tab",
+                "bottom_tab_candidate"
+              ]
+            },
+            {
+              "index": 2,
+              "label": "清空下载文件",
+              "text": "清空下载文件",
+              "desc": null,
+              "resourceId": null,
+              "class": "android.widget.TextView",
+              "clickable": false,
+              "editable": false,
+              "selected": false,
+              "bounds": "216 2545 600 2641",
+              "x": 0.2833333333333333,
+              "y": 0.8184974747474747,
+              "center": {
+                "x": 0.2833333333333333,
+                "y": 0.8184974747474747
+              },
+              "tags": [
+                "bottom_tab",
+                "bottom_tab_candidate"
+              ]
+            },
+            {
+              "index": 3,
+              "label": "展示专辑封面",
+              "text": "展示专辑封面",
+              "desc": null,
+              "resourceId": null,
+              "class": "android.widget.TextView",
+              "clickable": false,
+              "editable": false,
+              "selected": false,
+              "bounds": "216 2885 600 2981",
+              "x": 0.2833333333333333,
+              "y": 0.9258207070707071,
+              "center": {
+                "x": 0.2833333333333333,
+                "y": 0.9258207070707071
+              },
+              "tags": [
+                "bottom_tab",
+                "bottom_tab_candidate"
+              ]
+            },
+            {
+              "index": 4,
+              "label": "DC_PopupBase_Content",
+              "text": null,
+              "desc": null,
+              "resourceId": "DC_PopupBase_Content",
+              "class": "android.view.ViewGroup",
+              "clickable": false,
+              "editable": false,
+              "selected": false,
+              "bounds": "0 2170 1440 3104",
+              "x": 0.5,
+              "y": 0.8323863636363636,
+              "center": {
+                "x": 0.5,
+                "y": 0.8323863636363636
+              },
+              "tags": [
+                "bottom_tab",
+                "bottom_tab_candidate"
+              ]
+            },
+            {
+              "index": 5,
+              "label": "DC_Box",
+              "text": null,
+              "desc": null,
+              "resourceId": "DC_Box",
+              "class": "android.view.ViewGroup",
+              "clickable": false,
+              "editable": false,
+              "selected": false,
+              "bounds": "0 2170 1440 3104",
+              "x": 0.5,
+              "y": 0.8323863636363636,
+              "center": {
+                "x": 0.5,
+                "y": 0.8323863636363636
+              },
+              "tags": [
+                "bottom_tab",
+                "bottom_tab_candidate"
+              ]
+            },
+            {
+              "index": 6,
+              "label": "",
+              "text": null,
+              "desc": null,
+              "resourceId": null,
+              "class": "android.view.ViewGroup",
+              "clickable": true,
+              "editable": false,
+              "selected": false,
+              "bounds": "0 2346 1440 2538",
+              "x": 0.5,
+              "y": 0.7708333333333334,
+              "center": {
+                "x": 0.5,
+                "y": 0.7708333333333334
+              },
+              "tags": [
+                "bottom_tab",
+                "bottom_tab_candidate"
+              ]
+            },
+            {
+              "index": 7,
+              "label": "",
+              "text": null,
+              "desc": null,
+              "resourceId": null,
+              "class": "android.view.ViewGroup",
+              "clickable": true,
+              "editable": false,
+              "selected": false,
+              "bounds": "0 2538 1440 2730",
+              "x": 0.5,
+              "y": 0.8314393939393939,
+              "center": {
+                "x": 0.5,
+                "y": 0.8314393939393939
+              },
+              "tags": [
+                "bottom_tab",
+                "bottom_tab_candidate"
+              ]
+            },
+            {
+              "index": 8,
+              "label": "",
+              "text": null,
+              "desc": null,
+              "resourceId": null,
+              "class": "android.view.ViewGroup",
+              "clickable": true,
+              "editable": false,
+              "selected": false,
+              "bounds": "0 2730 1440 2922",
+              "x": 0.5,
+              "y": 0.8920454545454546,
+              "center": {
+                "x": 0.5,
+                "y": 0.8920454545454546
+              },
+              "tags": [
+                "bottom_tab",
+                "bottom_tab_candidate"
+              ]
+            },
+            {
+              "index": 9,
+              "label": "",
+              "text": null,
+              "desc": null,
+              "resourceId": null,
+              "class": "android.view.ViewGroup",
+              "clickable": true,
+              "editable": false,
+              "selected": false,
+              "bounds": "0 2922 1440 3104",
+              "x": 0.5,
+              "y": 0.9510732323232324,
+              "center": {
+                "x": 0.5,
+                "y": 0.9510732323232324
+              },
+              "tags": [
+                "bottom_tab",
+                "bottom_tab_candidate"
+              ]
+            },
+            {
+              "index": 10,
+              "label": "歌单：苦练伍佰的歌，争取早日成为包厢浪子",
+              "text": "歌单：苦练伍佰的歌，争取早日成为包厢浪子",
+              "desc": null,
+              "resourceId": null,
+              "class": "android.widget.TextView",
+              "clickable": false,
+              "editable": false,
+              "selected": false,
+              "bounds": "72 2175 1384 2251",
+              "x": 0.5055555555555555,
+              "y": 0.6985479797979798,
+              "center": {
+                "x": 0.5055555555555555,
+                "y": 0.6985479797979798
+              },
+              "tags": [
+                "bottom_tab",
+                "bottom_tab_candidate"
+              ]
+            },
+            {
+              "index": 11,
+              "label": "开启 DC_Switch_NativeSwitch",
+              "text": "开启",
+              "desc": null,
+              "resourceId": "DC_Switch_NativeSwitch",
+              "class": "android.widget.Switch",
+              "clickable": true,
+              "editable": false,
+              "selected": false,
+              "bounds": "1168 2869 1376 2997",
+              "x": 0.8833333333333333,
+              "y": 0.9258207070707071,
+              "center": {
+                "x": 0.8833333333333333,
+                "y": 0.9258207070707071
+              },
+              "tags": [
+                "bottom_tab",
+                "bottom_tab_candidate"
+              ]
+            }
+          ],
+          "topEntries": [],
+          "sideEntries": [
+            {
+              "index": 0,
+              "label": "开启 DC_Switch_NativeSwitch",
+              "text": "开启",
+              "desc": null,
+              "resourceId": "DC_Switch_NativeSwitch",
+              "class": "android.widget.Switch",
+              "clickable": true,
+              "editable": false,
+              "selected": false,
+              "bounds": "1168 2869 1376 2997",
+              "x": 0.8833333333333333,
+              "y": 0.9258207070707071,
+              "center": {
+                "x": 0.8833333333333333,
+                "y": 0.9258207070707071
+              },
+              "tags": [
+                "side_entry",
+                "side_entry_candidate"
+              ]
+            }
+          ],
+          "graphicalCandidates": [],
+          "checkableCandidates": [],
+          "entryCandidates": [],
+          "inputCandidates": [],
+          "videoCandidates": [],
+          "snapshotPath": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_snapshots\/com.netease.cloudmusic\/20260520_084300_170_269767bc.json"
+        },
+        {
+          "screenId": "screen_77d559d0",
+          "title": "分享至",
+          "screenKey": "77d559d0",
+          "nodeCount": 148,
+          "clickableCount": 8,
+          "editableCount": 0,
+          "labels": [
+            "com.netease.cloudmusic:id\/action_bar_root",
+            "android:id\/content",
+            "分享至",
+            "com.netease.cloudmusic:id\/adContainer",
+            "com.netease.cloudmusic:id\/adName",
+            "com.netease.cloudmusic:id\/adImage",
+            "DC_Image",
+            "网易云笔记",
+            "朋友圈",
+            "微信好友",
+            "QQ好友",
+            "QQ空间",
+            "你还可以分享",
+            "com.netease.cloudmusic:id\/ltCardRoot",
+            "com.netease.cloudmusic:id\/container",
+            "com.netease.cloudmusic:id\/bg",
+            "com.netease.cloudmusic:id\/avatarContainerParent",
+            "com.netease.cloudmusic:id\/avatarContainer",
+            "com.netease.cloudmusic:id\/me",
+            "com.netease.cloudmusic:id\/friend",
+            "com.netease.cloudmusic:id\/discContainer",
+            "com.netease.cloudmusic:id\/playDiscBg",
+            "com.netease.cloudmusic:id\/disc",
+            "com.netease.cloudmusic:id\/smallAlbumDisc0",
+            "com.netease.cloudmusic:id\/cover",
+            "com.netease.cloudmusic:id\/cardName",
+            "邀请好友一起听",
+            "世界第一等（Live）",
+            "伍佰",
+            "原唱 : 刘德华",
+            "在写了这么多歌给别人唱之后",
+            "高光歌词"
+          ],
+          "bottomTabs": [
+            {
+              "index": 0,
+              "label": "com.netease.cloudmusic:id\/me",
+              "text": null,
+              "desc": null,
+              "resourceId": "com.netease.cloudmusic:id\/me",
+              "class": "android.widget.ImageView",
+              "clickable": false,
+              "editable": false,
+              "selected": false,
+              "bounds": "169 2019 457 2307",
+              "x": 0.21736111111111112,
+              "y": 0.6827651515151515,
+              "center": {
+                "x": 0.21736111111111112,
+                "y": 0.6827651515151515
+              },
+              "tags": [
+                "bottom_tab",
+                "bottom_tab_candidate"
+              ]
+            },
+            {
+              "index": 1,
+              "label": "com.netease.cloudmusic:id\/discContainer",
+              "text": null,
+              "desc": null,
+              "resourceId": "com.netease.cloudmusic:id\/discContainer",
+              "class": "android.widget.FrameLayout",
+              "clickable": false,
+              "editable": false,
+              "selected": false,
+              "bounds": "112 2514 833 2875",
+              "x": 0.3277777777777778,
+              "y": 0.8503787878787878,
+              "center": {
+                "x": 0.3277777777777778,
+                "y": 0.8503787878787878
+              },
+              "tags": [
+                "bottom_tab",
+                "bottom_tab_candidate"
+              ]
+            },
+            {
+              "index": 2,
+              "label": "com.netease.cloudmusic:id\/playDiscBg",
+              "text": null,
+              "desc": null,
+              "resourceId": "com.netease.cloudmusic:id\/playDiscBg",
+              "class": "android.widget.ImageView",
+              "clickable": false,
+              "editable": false,
+              "selected": false,
+              "bounds": "112 2514 833 2875",
+              "x": 0.3277777777777778,
+              "y": 0.8503787878787878,
+              "center": {
+                "x": 0.3277777777777778,
+                "y": 0.8503787878787878
+              },
+              "tags": [
+                "bottom_tab",
+                "bottom_tab_candidate"
+              ]
+            },
+            {
+              "index": 3,
+              "label": "com.netease.cloudmusic:id\/disc",
+              "text": null,
+              "desc": null,
+              "resourceId": "com.netease.cloudmusic:id\/disc",
+              "class": "android.widget.RelativeLayout",
+              "clickable": false,
+              "editable": false,
+              "selected": false,
+              "bounds": "112 2514 833 2875",
+              "x": 0.3277777777777778,
+              "y": 0.8503787878787878,
+              "center": {
+                "x": 0.3277777777777778,
+                "y": 0.8503787878787878
+              },
+              "tags": [
+                "bottom_tab",
+                "bottom_tab_candidate"
+              ]
+            },
+            {
+              "index": 4,
+              "label": "com.netease.cloudmusic:id\/smallAlbumDisc0",
+              "text": null,
+              "desc": null,
+              "resourceId": "com.netease.cloudmusic:id\/smallAlbumDisc0",
+              "class": "android.widget.ImageView",
+              "clickable": false,
+              "editable": false,
+              "selected": false,
+              "bounds": "128 2530 817 2875",
+              "x": 0.3277777777777778,
+              "y": 0.8529040404040404,
+              "center": {
+                "x": 0.3277777777777778,
+                "y": 0.8529040404040404
+              },
+              "tags": [
+                "bottom_tab",
+                "bottom_tab_candidate"
+              ]
+            },
+            {
+              "index": 5,
+              "label": "com.netease.cloudmusic:id\/cover",
+              "text": null,
+              "desc": null,
+              "resourceId": "com.netease.cloudmusic:id\/cover",
+              "class": "android.widget.ImageView",
+              "clickable": false,
+              "editable": false,
+              "selected": false,
+              "bounds": "235 2637 710 2875",
+              "x": 0.3277777777777778,
+              "y": 0.8699494949494949,
+              "center": {
+                "x": 0.3277777777777778,
+                "y": 0.8699494949494949
+              },
+              "tags": [
+                "bottom_tab",
+                "bottom_tab_candidate"
+              ]
+            },
+            {
+              "index": 6,
+              "label": "",
+              "text": null,
+              "desc": null,
+              "resourceId": null,
+              "class": "android.view.ViewGroup",
+              "clickable": true,
+              "editable": false,
+              "selected": false,
+              "bounds": "72 1811 874 2976",
+              "x": 0.3284722222222222,
+              "y": 0.7553661616161617,
+              "center": {
+                "x": 0.3284722222222222,
+                "y": 0.7553661616161617
+              },
+              "tags": [
+                "bottom_tab",
+                "bottom_tab_candidate"
+              ]
+            },
+            {
+              "index": 7,
+              "label": "com.netease.cloudmusic:id\/ltCardRoot",
+              "text": null,
+              "desc": null,
+              "resourceId": "com.netease.cloudmusic:id\/ltCardRoot",
+              "class": "android.widget.LinearLayout",
+              "clickable": false,
+              "editable": false,
+              "selected": false,
+              "bounds": "72 1811 874 2875",
+              "x": 0.3284722222222222,
+              "y": 0.7395833333333334,
+              "center": {
+                "x": 0.3284722222222222,
+                "y": 0.7395833333333334
+              },
+              "tags": [
+                "bottom_tab",
+                "bottom_tab_candidate"
+              ]
+            },
+            {
+              "index": 8,
+              "label": "com.netease.cloudmusic:id\/container",
+              "text": null,
+              "desc": null,
+              "resourceId": "com.netease.cloudmusic:id\/container",
+              "class": "android.widget.RelativeLayout",
+              "clickable": false,
+              "editable": false,
+              "selected": false,
+              "bounds": "72 1811 874 2875",
+              "x": 0.3284722222222222,
+              "y": 0.7395833333333334,
+              "center": {
+                "x": 0.3284722222222222,
+                "y": 0.7395833333333334
+              },
+              "tags": [
+                "bottom_tab",
+                "bottom_tab_candidate"
+              ]
+            },
+            {
+              "index": 9,
+              "label": "com.netease.cloudmusic:id\/bg",
+              "text": null,
+              "desc": null,
+              "resourceId": "com.netease.cloudmusic:id\/bg",
+              "class": "android.widget.ImageView",
+              "clickable": false,
+              "editable": false,
+              "selected": false,
+              "bounds": "72 1811 874 2875",
+              "x": 0.3284722222222222,
+              "y": 0.7395833333333334,
+              "center": {
+                "x": 0.3284722222222222,
+                "y": 0.7395833333333334
+              },
+              "tags": [
+                "bottom_tab",
+                "bottom_tab_candidate"
+              ]
+            },
+            {
+              "index": 10,
+              "label": "com.netease.cloudmusic:id\/avatarContainerParent",
+              "text": null,
+              "desc": null,
+              "resourceId": "com.netease.cloudmusic:id\/avatarContainerParent",
+              "class": "android.widget.RelativeLayout",
+              "clickable": false,
+              "editable": false,
+              "selected": false,
+              "bounds": "72 1811 874 2515",
+              "x": 0.3284722222222222,
+              "y": 0.6827651515151515,
+              "center": {
+                "x": 0.3284722222222222,
+                "y": 0.6827651515151515
+              },
+              "tags": [
+                "bottom_tab",
+                "bottom_tab_candidate"
+              ]
+            },
+            {
+              "index": 11,
+              "label": "com.netease.cloudmusic:id\/avatarContainer",
+              "text": null,
+              "desc": null,
+              "resourceId": "com.netease.cloudmusic:id\/avatarContainer",
+              "class": "android.widget.LinearLayout",
+              "clickable": false,
+              "editable": false,
+              "selected": false,
+              "bounds": "157 2019 789 2307",
+              "x": 0.3284722222222222,
+              "y": 0.6827651515151515,
+              "center": {
+                "x": 0.3284722222222222,
+                "y": 0.6827651515151515
+              },
+              "tags": [
+                "bottom_tab",
+                "bottom_tab_candidate"
+              ]
+            }
+          ],
+          "topEntries": [
+            {
+              "index": 0,
+              "label": "",
+              "text": null,
+              "desc": null,
+              "resourceId": null,
+              "class": "android.view.ViewGroup",
+              "clickable": true,
+              "editable": false,
+              "selected": false,
+              "bounds": "0 160 1440 877",
+              "x": 0.5,
+              "y": 0.16351010101010102,
+              "center": {
+                "x": 0.5,
+                "y": 0.16351010101010102
+              },
+              "tags": [
+                "top_entry",
+                "top_entry_candidate"
+              ]
+            }
+          ],
+          "sideEntries": [
+            {
+              "index": 0,
+              "label": "com.netease.cloudmusic:id\/adContainer",
+              "text": null,
+              "desc": null,
+              "resourceId": "com.netease.cloudmusic:id\/adContainer",
+              "class": "android.widget.LinearLayout",
+              "clickable": false,
+              "editable": false,
+              "selected": false,
+              "bounds": "1168 933 1360 1127",
+              "x": 0.8777777777777778,
+              "y": 0.32512626262626265,
+              "center": {
+                "x": 0.8777777777777778,
+                "y": 0.32512626262626265
+              },
+              "tags": [
+                "side_entry",
+                "side_entry_candidate"
+              ]
+            },
+            {
+              "index": 1,
+              "label": "com.netease.cloudmusic:id\/adImage",
+              "text": null,
+              "desc": null,
+              "resourceId": "com.netease.cloudmusic:id\/adImage",
+              "class": "android.widget.ImageView",
+              "clickable": false,
+              "editable": false,
+              "selected": false,
+              "bounds": "1192 970 1312 1090",
+              "x": 0.8694444444444445,
+              "y": 0.32512626262626265,
+              "center": {
+                "x": 0.8694444444444445,
+                "y": 0.32512626262626265
+              },
+              "tags": [
+                "side_entry",
+                "side_entry_candidate"
+              ]
+            },
+            {
+              "index": 2,
+              "label": "分享至",
+              "text": "分享至",
+              "desc": null,
+              "resourceId": null,
+              "class": "android.widget.TextView",
+              "clickable": false,
+              "editable": false,
+              "selected": false,
+              "bounds": "0 1005 240 1065",
+              "x": 0.08333333333333333,
+              "y": 0.32670454545454547,
+              "center": {
+                "x": 0.08333333333333333,
+                "y": 0.32670454545454547
+              },
+              "tags": [
+                "side_entry",
+                "side_entry_candidate"
+              ]
+            },
+            {
+              "index": 3,
+              "label": "DC_Image",
+              "text": null,
+              "desc": null,
+              "resourceId": "DC_Image",
+              "class": "android.widget.ImageView",
+              "clickable": false,
+              "editable": false,
+              "selected": false,
+              "bounds": "72 1221 272 1421",
+              "x": 0.11944444444444445,
+              "y": 0.41698232323232326,
+              "center": {
+                "x": 0.11944444444444445,
+                "y": 0.41698232323232326
+              },
+              "tags": [
+                "side_entry",
+                "side_entry_candidate"
+              ]
+            },
+            {
+              "index": 4,
+              "label": "DC_Image",
+              "text": null,
+              "desc": null,
+              "resourceId": "DC_Image",
+              "class": "android.widget.ImageView",
+              "clickable": false,
+              "editable": false,
+              "selected": false,
+              "bounds": "1256 1221 1440 1421",
+              "x": 0.9361111111111111,
+              "y": 0.41698232323232326,
+              "center": {
+                "x": 0.9361111111111111,
+                "y": 0.41698232323232326
+              },
+              "tags": [
+                "side_entry",
+                "side_entry_candidate"
+              ]
+            },
+            {
+              "index": 5,
+              "label": "",
+              "text": null,
+              "desc": null,
+              "resourceId": null,
+              "class": "android.view.ViewGroup",
+              "clickable": true,
+              "editable": false,
+              "selected": false,
+              "bounds": "72 1221 272 1509",
+              "x": 0.11944444444444445,
+              "y": 0.4308712121212121,
+              "center": {
+                "x": 0.11944444444444445,
+                "y": 0.4308712121212121
+              },
+              "tags": [
+                "side_entry",
+                "side_entry_candidate"
+              ]
+            },
+            {
+              "index": 6,
+              "label": "",
+              "text": null,
+              "desc": null,
+              "resourceId": null,
+              "class": "android.view.ViewGroup",
+              "clickable": true,
+              "editable": false,
+              "selected": false,
+              "bounds": "1256 1221 1440 1509",
+              "x": 0.9361111111111111,
+              "y": 0.4308712121212121,
+              "center": {
+                "x": 0.9361111111111111,
+                "y": 0.4308712121212121
+              },
+              "tags": [
+                "side_entry",
+                "side_entry_candidate"
+              ]
+            },
+            {
+              "index": 7,
+              "label": "网易云笔记",
+              "text": "网易云笔记",
+              "desc": null,
+              "resourceId": null,
+              "class": "android.widget.TextView",
+              "clickable": false,
+              "editable": false,
+              "selected": false,
+              "bounds": "72 1453 272 1509",
+              "x": 0.11944444444444445,
+              "y": 0.46748737373737376,
+              "center": {
+                "x": 0.11944444444444445,
+                "y": 0.46748737373737376
+              },
+              "tags": [
+                "side_entry",
+                "side_entry_candidate"
+              ]
+            },
+            {
+              "index": 8,
+              "label": "QQ空间",
+              "text": "QQ空间",
+              "desc": null,
+              "resourceId": null,
+              "class": "android.widget.TextView",
+              "clickable": false,
+              "editable": false,
+              "selected": false,
+              "bounds": "1256 1453 1440 1509",
+              "x": 0.9361111111111111,
+              "y": 0.46748737373737376,
+              "center": {
+                "x": 0.9361111111111111,
+                "y": 0.46748737373737376
+              },
+              "tags": [
+                "side_entry",
+                "side_entry_candidate"
+              ]
+            },
+            {
+              "index": 9,
+              "label": "世界第一等（Live）",
+              "text": "世界第一等（Live）",
+              "desc": null,
+              "resourceId": null,
+              "class": "android.widget.TextView",
+              "clickable": false,
+              "editable": false,
+              "selected": false,
+              "bounds": "1107 1868 1440 1926",
+              "x": 0.8840277777777777,
+              "y": 0.5988005050505051,
+              "center": {
+                "x": 0.8840277777777777,
+                "y": 0.5988005050505051
+              },
+              "tags": [
+                "side_entry",
+                "side_entry_candidate"
+              ]
+            },
+            {
+              "index": 10,
+              "label": "伍佰",
+              "text": "伍佰",
+              "desc": null,
+              "resourceId": null,
+              "class": "android.widget.TextView",
+              "clickable": false,
+              "editable": false,
+              "selected": false,
+              "bounds": "1107 1926 1440 1975",
+              "x": 0.8840277777777777,
+              "y": 0.615530303030303,
+              "center": {
+                "x": 0.8840277777777777,
+                "y": 0.615530303030303
+              },
+              "tags": [
+                "side_entry",
+                "side_entry_candidate"
+              ]
+            }
+          ],
+          "graphicalCandidates": [],
+          "checkableCandidates": [],
+          "entryCandidates": [
+            {
+              "index": 0,
+              "label": "朋友圈",
+              "text": "朋友圈",
+              "desc": null,
+              "resourceId": null,
+              "class": "android.widget.TextView",
+              "clickable": false,
+              "editable": false,
+              "selected": false,
+              "bounds": "368 1453 568 1509",
+              "x": 0.325,
+              "y": 0.46748737373737376,
+              "center": {
+                "x": 0.325,
+                "y": 0.46748737373737376
+              },
+              "tags": [
+                "entry_candidate"
+              ]
+            },
+            {
+              "index": 1,
+              "label": "在写了这么多歌给别人唱之后",
+              "text": "在写了这么多歌给别人唱之后",
+              "desc": null,
+              "resourceId": null,
+              "class": "android.widget.TextView",
+              "clickable": false,
+              "editable": false,
+              "selected": false,
+              "bounds": "979 2397 1440 2626",
+              "x": 0.8395833333333333,
+              "y": 0.7926136363636364,
+              "center": {
+                "x": 0.8395833333333333,
+                "y": 0.7926136363636364
+              },
+              "tags": [
+                "entry_candidate",
+                "bottom_area"
+              ]
+            }
+          ],
+          "inputCandidates": [],
+          "videoCandidates": [
+            {
+              "index": 0,
+              "label": "com.netease.cloudmusic:id\/cover",
+              "text": null,
+              "desc": null,
+              "resourceId": "com.netease.cloudmusic:id\/cover",
+              "class": "android.widget.ImageView",
+              "clickable": false,
+              "editable": false,
+              "selected": false,
+              "bounds": "235 2637 710 2875",
+              "x": 0.3277777777777778,
+              "y": 0.8699494949494949,
+              "center": {
+                "x": 0.3277777777777778,
+                "y": 0.8699494949494949
+              },
+              "tags": [
+                "video_candidate",
+                "bottom_area"
+              ]
+            }
+          ],
+          "snapshotPath": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_snapshots\/com.netease.cloudmusic\/20260520_084303_516_77d559d0.json"
+        },
+        {
+          "screenId": "screen_3e299059",
+          "title": "分享至",
+          "screenKey": "3e299059",
+          "nodeCount": 160,
+          "clickableCount": 10,
+          "editableCount": 0,
+          "labels": [
+            "com.netease.cloudmusic:id\/action_bar_root",
+            "android:id\/content",
+            "分享至",
+            "com.netease.cloudmusic:id\/adContainer",
+            "com.netease.cloudmusic:id\/adName",
+            "com.netease.cloudmusic:id\/adImage",
+            "DC_Image",
+            "酒吧可爱风信子6",
+            "更多",
+            "网易云笔记",
+            "朋友圈",
+            "微信好友",
+            "QQ好友",
+            "QQ空间",
+            "你还可以分享",
+            "com.netease.cloudmusic:id\/ltCardRoot",
+            "com.netease.cloudmusic:id\/container",
+            "com.netease.cloudmusic:id\/bg",
+            "com.netease.cloudmusic:id\/avatarContainerParent",
+            "com.netease.cloudmusic:id\/avatarContainer",
+            "com.netease.cloudmusic:id\/me",
+            "com.netease.cloudmusic:id\/friend",
+            "com.netease.cloudmusic:id\/discContainer",
+            "com.netease.cloudmusic:id\/playDiscBg",
+            "com.netease.cloudmusic:id\/disc",
+            "com.netease.cloudmusic:id\/smallAlbumDisc0",
+            "com.netease.cloudmusic:id\/cover",
+            "com.netease.cloudmusic:id\/cardName",
+            "邀请好友一起听",
+            "世界第一等（Live）",
+            "伍佰",
+            "原唱 : 刘德华",
+            "在写了这么多歌给别人唱之后",
+            "高光歌词"
+          ],
+          "bottomTabs": [
+            {
+              "index": 0,
+              "label": "com.netease.cloudmusic:id\/me",
+              "text": null,
+              "desc": null,
+              "resourceId": "com.netease.cloudmusic:id\/me",
+              "class": "android.widget.ImageView",
+              "clickable": false,
+              "editable": false,
+              "selected": false,
+              "bounds": "169 2019 457 2307",
+              "x": 0.21736111111111112,
+              "y": 0.6827651515151515,
+              "center": {
+                "x": 0.21736111111111112,
+                "y": 0.6827651515151515
+              },
+              "tags": [
+                "bottom_tab",
+                "bottom_tab_candidate"
+              ]
+            },
+            {
+              "index": 1,
+              "label": "com.netease.cloudmusic:id\/discContainer",
+              "text": null,
+              "desc": null,
+              "resourceId": "com.netease.cloudmusic:id\/discContainer",
+              "class": "android.widget.FrameLayout",
+              "clickable": false,
+              "editable": false,
+              "selected": false,
+              "bounds": "112 2514 833 2875",
+              "x": 0.3277777777777778,
+              "y": 0.8503787878787878,
+              "center": {
+                "x": 0.3277777777777778,
+                "y": 0.8503787878787878
+              },
+              "tags": [
+                "bottom_tab",
+                "bottom_tab_candidate"
+              ]
+            },
+            {
+              "index": 2,
+              "label": "com.netease.cloudmusic:id\/playDiscBg",
+              "text": null,
+              "desc": null,
+              "resourceId": "com.netease.cloudmusic:id\/playDiscBg",
+              "class": "android.widget.ImageView",
+              "clickable": false,
+              "editable": false,
+              "selected": false,
+              "bounds": "112 2514 833 2875",
+              "x": 0.3277777777777778,
+              "y": 0.8503787878787878,
+              "center": {
+                "x": 0.3277777777777778,
+                "y": 0.8503787878787878
+              },
+              "tags": [
+                "bottom_tab",
+                "bottom_tab_candidate"
+              ]
+            },
+            {
+              "index": 3,
+              "label": "com.netease.cloudmusic:id\/disc",
+              "text": null,
+              "desc": null,
+              "resourceId": "com.netease.cloudmusic:id\/disc",
+              "class": "android.widget.RelativeLayout",
+              "clickable": false,
+              "editable": false,
+              "selected": false,
+              "bounds": "112 2514 833 2875",
+              "x": 0.3277777777777778,
+              "y": 0.8503787878787878,
+              "center": {
+                "x": 0.3277777777777778,
+                "y": 0.8503787878787878
+              },
+              "tags": [
+                "bottom_tab",
+                "bottom_tab_candidate"
+              ]
+            },
+            {
+              "index": 4,
+              "label": "com.netease.cloudmusic:id\/smallAlbumDisc0",
+              "text": null,
+              "desc": null,
+              "resourceId": "com.netease.cloudmusic:id\/smallAlbumDisc0",
+              "class": "android.widget.ImageView",
+              "clickable": false,
+              "editable": false,
+              "selected": false,
+              "bounds": "128 2530 817 2875",
+              "x": 0.3277777777777778,
+              "y": 0.8529040404040404,
+              "center": {
+                "x": 0.3277777777777778,
+                "y": 0.8529040404040404
+              },
+              "tags": [
+                "bottom_tab",
+                "bottom_tab_candidate"
+              ]
+            },
+            {
+              "index": 5,
+              "label": "com.netease.cloudmusic:id\/cover",
+              "text": null,
+              "desc": null,
+              "resourceId": "com.netease.cloudmusic:id\/cover",
+              "class": "android.widget.ImageView",
+              "clickable": false,
+              "editable": false,
+              "selected": false,
+              "bounds": "235 2637 710 2875",
+              "x": 0.3277777777777778,
+              "y": 0.8699494949494949,
+              "center": {
+                "x": 0.3277777777777778,
+                "y": 0.8699494949494949
+              },
+              "tags": [
+                "bottom_tab",
+                "bottom_tab_candidate"
+              ]
+            },
+            {
+              "index": 6,
+              "label": "",
+              "text": null,
+              "desc": null,
+              "resourceId": null,
+              "class": "android.view.ViewGroup",
+              "clickable": true,
+              "editable": false,
+              "selected": false,
+              "bounds": "72 1811 874 2976",
+              "x": 0.3284722222222222,
+              "y": 0.7553661616161617,
+              "center": {
+                "x": 0.3284722222222222,
+                "y": 0.7553661616161617
+              },
+              "tags": [
+                "bottom_tab",
+                "bottom_tab_candidate"
+              ]
+            },
+            {
+              "index": 7,
+              "label": "com.netease.cloudmusic:id\/ltCardRoot",
+              "text": null,
+              "desc": null,
+              "resourceId": "com.netease.cloudmusic:id\/ltCardRoot",
+              "class": "android.widget.LinearLayout",
+              "clickable": false,
+              "editable": false,
+              "selected": false,
+              "bounds": "72 1811 874 2875",
+              "x": 0.3284722222222222,
+              "y": 0.7395833333333334,
+              "center": {
+                "x": 0.3284722222222222,
+                "y": 0.7395833333333334
+              },
+              "tags": [
+                "bottom_tab",
+                "bottom_tab_candidate"
+              ]
+            },
+            {
+              "index": 8,
+              "label": "com.netease.cloudmusic:id\/container",
+              "text": null,
+              "desc": null,
+              "resourceId": "com.netease.cloudmusic:id\/container",
+              "class": "android.widget.RelativeLayout",
+              "clickable": false,
+              "editable": false,
+              "selected": false,
+              "bounds": "72 1811 874 2875",
+              "x": 0.3284722222222222,
+              "y": 0.7395833333333334,
+              "center": {
+                "x": 0.3284722222222222,
+                "y": 0.7395833333333334
+              },
+              "tags": [
+                "bottom_tab",
+                "bottom_tab_candidate"
+              ]
+            },
+            {
+              "index": 9,
+              "label": "com.netease.cloudmusic:id\/bg",
+              "text": null,
+              "desc": null,
+              "resourceId": "com.netease.cloudmusic:id\/bg",
+              "class": "android.widget.ImageView",
+              "clickable": false,
+              "editable": false,
+              "selected": false,
+              "bounds": "72 1811 874 2875",
+              "x": 0.3284722222222222,
+              "y": 0.7395833333333334,
+              "center": {
+                "x": 0.3284722222222222,
+                "y": 0.7395833333333334
+              },
+              "tags": [
+                "bottom_tab",
+                "bottom_tab_candidate"
+              ]
+            },
+            {
+              "index": 10,
+              "label": "com.netease.cloudmusic:id\/avatarContainerParent",
+              "text": null,
+              "desc": null,
+              "resourceId": "com.netease.cloudmusic:id\/avatarContainerParent",
+              "class": "android.widget.RelativeLayout",
+              "clickable": false,
+              "editable": false,
+              "selected": false,
+              "bounds": "72 1811 874 2515",
+              "x": 0.3284722222222222,
+              "y": 0.6827651515151515,
+              "center": {
+                "x": 0.3284722222222222,
+                "y": 0.6827651515151515
+              },
+              "tags": [
+                "bottom_tab",
+                "bottom_tab_candidate"
+              ]
+            },
+            {
+              "index": 11,
+              "label": "com.netease.cloudmusic:id\/avatarContainer",
+              "text": null,
+              "desc": null,
+              "resourceId": "com.netease.cloudmusic:id\/avatarContainer",
+              "class": "android.widget.LinearLayout",
+              "clickable": false,
+              "editable": false,
+              "selected": false,
+              "bounds": "157 2019 789 2307",
+              "x": 0.3284722222222222,
+              "y": 0.6827651515151515,
+              "center": {
+                "x": 0.3284722222222222,
+                "y": 0.6827651515151515
+              },
+              "tags": [
+                "bottom_tab",
+                "bottom_tab_candidate"
+              ]
+            }
+          ],
+          "topEntries": [
+            {
+              "index": 0,
+              "label": "分享至",
+              "text": "分享至",
+              "desc": null,
+              "resourceId": null,
+              "class": "android.widget.TextView",
+              "clickable": false,
+              "editable": false,
+              "selected": false,
+              "bounds": "0 716 240 776",
+              "x": 0.08333333333333333,
+              "y": 0.23547979797979798,
+              "center": {
+                "x": 0.08333333333333333,
+                "y": 0.23547979797979798
+              },
+              "tags": [
+                "top_entry",
+                "top_entry_candidate"
+              ]
+            },
+            {
+              "index": 1,
+              "label": "",
+              "text": null,
+              "desc": null,
+              "resourceId": null,
+              "class": "android.view.ViewGroup",
+              "clickable": true,
+              "editable": false,
+              "selected": false,
+              "bounds": "0 160 1440 588",
+              "x": 0.5,
+              "y": 0.11805555555555555,
+              "center": {
+                "x": 0.5,
+                "y": 0.11805555555555555
+              },
+              "tags": [
+                "top_entry",
+                "top_entry_candidate"
+              ]
+            },
+            {
+              "index": 2,
+              "label": "com.netease.cloudmusic:id\/adImage",
+              "text": null,
+              "desc": null,
+              "resourceId": "com.netease.cloudmusic:id\/adImage",
+              "class": "android.widget.ImageView",
+              "clickable": false,
+              "editable": false,
+              "selected": false,
+              "bounds": "1192 681 1312 801",
+              "x": 0.8694444444444445,
+              "y": 0.23390151515151514,
+              "center": {
+                "x": 0.8694444444444445,
+                "y": 0.23390151515151514
+              },
+              "tags": [
+                "top_entry",
+                "top_entry_candidate"
+              ]
+            },
+            {
+              "index": 3,
+              "label": "com.netease.cloudmusic:id\/adContainer",
+              "text": null,
+              "desc": null,
+              "resourceId": "com.netease.cloudmusic:id\/adContainer",
+              "class": "android.widget.LinearLayout",
+              "clickable": false,
+              "editable": false,
+              "selected": false,
+              "bounds": "1168 644 1360 838",
+              "x": 0.8777777777777778,
+              "y": 0.23390151515151514,
+              "center": {
+                "x": 0.8777777777777778,
+                "y": 0.23390151515151514
+              },
+              "tags": [
+                "top_entry",
+                "top_entry_candidate"
+              ]
+            }
+          ],
+          "sideEntries": [
+            {
+              "index": 0,
+              "label": "com.netease.cloudmusic:id\/adContainer",
+              "text": null,
+              "desc": null,
+              "resourceId": "com.netease.cloudmusic:id\/adContainer",
+              "class": "android.widget.LinearLayout",
+              "clickable": false,
+              "editable": false,
+              "selected": false,
+              "bounds": "1168 644 1360 838",
+              "x": 0.8777777777777778,
+              "y": 0.23390151515151514,
+              "center": {
+                "x": 0.8777777777777778,
+                "y": 0.23390151515151514
+              },
+              "tags": [
+                "side_entry",
+                "side_entry_candidate"
+              ]
+            },
+            {
+              "index": 1,
+              "label": "com.netease.cloudmusic:id\/adImage",
+              "text": null,
+              "desc": null,
+              "resourceId": "com.netease.cloudmusic:id\/adImage",
+              "class": "android.widget.ImageView",
+              "clickable": false,
+              "editable": false,
+              "selected": false,
+              "bounds": "1192 681 1312 801",
+              "x": 0.8694444444444445,
+              "y": 0.23390151515151514,
+              "center": {
+                "x": 0.8694444444444445,
+                "y": 0.23390151515151514
+              },
+              "tags": [
+                "side_entry",
+                "side_entry_candidate"
+              ]
+            },
+            {
+              "index": 2,
+              "label": "分享至",
+              "text": "分享至",
+              "desc": null,
+              "resourceId": null,
+              "class": "android.widget.TextView",
+              "clickable": false,
+              "editable": false,
+              "selected": false,
+              "bounds": "0 716 240 776",
+              "x": 0.08333333333333333,
+              "y": 0.23547979797979798,
+              "center": {
+                "x": 0.08333333333333333,
+                "y": 0.23547979797979798
+              },
+              "tags": [
+                "side_entry",
+                "side_entry_candidate"
+              ]
+            },
+            {
+              "index": 3,
+              "label": "",
+              "text": null,
+              "desc": null,
+              "resourceId": null,
+              "class": "android.view.ViewGroup",
+              "clickable": true,
+              "editable": false,
+              "selected": false,
+              "bounds": "72 844 272 1133",
+              "x": 0.11944444444444445,
+              "y": 0.31186868686868685,
+              "center": {
+                "x": 0.11944444444444445,
+                "y": 0.31186868686868685
+              },
+              "tags": [
+                "side_entry",
+                "side_entry_candidate"
+              ]
+            },
+            {
+              "index": 4,
+              "label": "酒吧可爱风信子6",
+              "text": "酒吧可爱风信子6",
+              "desc": null,
+              "resourceId": null,
+              "class": "android.widget.TextView",
+              "clickable": false,
+              "editable": false,
+              "selected": false,
+              "bounds": "72 1068 272 1124",
+              "x": 0.11944444444444445,
+              "y": 0.34595959595959597,
+              "center": {
+                "x": 0.11944444444444445,
+                "y": 0.34595959595959597
+              },
+              "tags": [
+                "side_entry",
+                "side_entry_candidate"
+              ]
+            },
+            {
+              "index": 5,
+              "label": "DC_Image",
+              "text": null,
+              "desc": null,
+              "resourceId": "DC_Image",
+              "class": "android.widget.ImageView",
+              "clickable": false,
+              "editable": false,
+              "selected": false,
+              "bounds": "72 1221 272 1421",
+              "x": 0.11944444444444445,
+              "y": 0.41698232323232326,
+              "center": {
+                "x": 0.11944444444444445,
+                "y": 0.41698232323232326
+              },
+              "tags": [
+                "side_entry",
+                "side_entry_candidate"
+              ]
+            },
+            {
+              "index": 6,
+              "label": "DC_Image",
+              "text": null,
+              "desc": null,
+              "resourceId": "DC_Image",
+              "class": "android.widget.ImageView",
+              "clickable": false,
+              "editable": false,
+              "selected": false,
+              "bounds": "1256 1221 1440 1421",
+              "x": 0.9361111111111111,
+              "y": 0.41698232323232326,
+              "center": {
+                "x": 0.9361111111111111,
+                "y": 0.41698232323232326
+              },
+              "tags": [
+                "side_entry",
+                "side_entry_candidate"
+              ]
+            },
+            {
+              "index": 7,
+              "label": "",
+              "text": null,
+              "desc": null,
+              "resourceId": null,
+              "class": "android.view.ViewGroup",
+              "clickable": true,
+              "editable": false,
+              "selected": false,
+              "bounds": "72 1221 272 1509",
+              "x": 0.11944444444444445,
+              "y": 0.4308712121212121,
+              "center": {
+                "x": 0.11944444444444445,
+                "y": 0.4308712121212121
+              },
+              "tags": [
+                "side_entry",
+                "side_entry_candidate"
+              ]
+            },
+            {
+              "index": 8,
+              "label": "",
+              "text": null,
+              "desc": null,
+              "resourceId": null,
+              "class": "android.view.ViewGroup",
+              "clickable": true,
+              "editable": false,
+              "selected": false,
+              "bounds": "1256 1221 1440 1509",
+              "x": 0.9361111111111111,
+              "y": 0.4308712121212121,
+              "center": {
+                "x": 0.9361111111111111,
+                "y": 0.4308712121212121
+              },
+              "tags": [
+                "side_entry",
+                "side_entry_candidate"
+              ]
+            },
+            {
+              "index": 9,
+              "label": "网易云笔记",
+              "text": "网易云笔记",
+              "desc": null,
+              "resourceId": null,
+              "class": "android.widget.TextView",
+              "clickable": false,
+              "editable": false,
+              "selected": false,
+              "bounds": "72 1453 272 1509",
+              "x": 0.11944444444444445,
+              "y": 0.46748737373737376,
+              "center": {
+                "x": 0.11944444444444445,
+                "y": 0.46748737373737376
+              },
+              "tags": [
+                "side_entry",
+                "side_entry_candidate"
+              ]
+            },
+            {
+              "index": 10,
+              "label": "QQ空间",
+              "text": "QQ空间",
+              "desc": null,
+              "resourceId": null,
+              "class": "android.widget.TextView",
+              "clickable": false,
+              "editable": false,
+              "selected": false,
+              "bounds": "1256 1453 1440 1509",
+              "x": 0.9361111111111111,
+              "y": 0.46748737373737376,
+              "center": {
+                "x": 0.9361111111111111,
+                "y": 0.46748737373737376
+              },
+              "tags": [
+                "side_entry",
+                "side_entry_candidate"
+              ]
+            },
+            {
+              "index": 11,
+              "label": "世界第一等（Live）",
+              "text": "世界第一等（Live）",
+              "desc": null,
+              "resourceId": null,
+              "class": "android.widget.TextView",
+              "clickable": false,
+              "editable": false,
+              "selected": false,
+              "bounds": "1107 1868 1440 1926",
+              "x": 0.8840277777777777,
+              "y": 0.5988005050505051,
+              "center": {
+                "x": 0.8840277777777777,
+                "y": 0.5988005050505051
+              },
+              "tags": [
+                "side_entry",
+                "side_entry_candidate"
+              ]
+            },
+            {
+              "index": 12,
+              "label": "伍佰",
+              "text": "伍佰",
+              "desc": null,
+              "resourceId": null,
+              "class": "android.widget.TextView",
+              "clickable": false,
+              "editable": false,
+              "selected": false,
+              "bounds": "1107 1926 1440 1975",
+              "x": 0.8840277777777777,
+              "y": 0.615530303030303,
+              "center": {
+                "x": 0.8840277777777777,
+                "y": 0.615530303030303
+              },
+              "tags": [
+                "side_entry",
+                "side_entry_candidate"
+              ]
+            }
+          ],
+          "graphicalCandidates": [],
+          "checkableCandidates": [],
+          "entryCandidates": [
+            {
+              "index": 0,
+              "label": "朋友圈",
+              "text": "朋友圈",
+              "desc": null,
+              "resourceId": null,
+              "class": "android.widget.TextView",
+              "clickable": false,
+              "editable": false,
+              "selected": false,
+              "bounds": "368 1453 568 1509",
+              "x": 0.325,
+              "y": 0.46748737373737376,
+              "center": {
+                "x": 0.325,
+                "y": 0.46748737373737376
+              },
+              "tags": [
+                "entry_candidate"
+              ]
+            },
+            {
+              "index": 1,
+              "label": "在写了这么多歌给别人唱之后",
+              "text": "在写了这么多歌给别人唱之后",
+              "desc": null,
+              "resourceId": null,
+              "class": "android.widget.TextView",
+              "clickable": false,
+              "editable": false,
+              "selected": false,
+              "bounds": "979 2346 1440 2575",
+              "x": 0.8395833333333333,
+              "y": 0.7765151515151515,
+              "center": {
+                "x": 0.8395833333333333,
+                "y": 0.7765151515151515
+              },
+              "tags": [
+                "entry_candidate",
+                "bottom_area"
+              ]
+            }
+          ],
+          "inputCandidates": [],
+          "videoCandidates": [
+            {
+              "index": 0,
+              "label": "com.netease.cloudmusic:id\/cover",
+              "text": null,
+              "desc": null,
+              "resourceId": "com.netease.cloudmusic:id\/cover",
+              "class": "android.widget.ImageView",
+              "clickable": false,
+              "editable": false,
+              "selected": false,
+              "bounds": "235 2637 710 2875",
+              "x": 0.3277777777777778,
+              "y": 0.8699494949494949,
+              "center": {
+                "x": 0.3277777777777778,
+                "y": 0.8699494949494949
+              },
+              "tags": [
+                "video_candidate",
+                "bottom_area"
+              ]
+            }
+          ],
+          "snapshotPath": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_snapshots\/com.netease.cloudmusic\/20260520_084306_359_3e299059.json"
+        }
+      ],
+      "updatedAt": 1779237791192
+    },
+    "availableSkillTemplates": [
+      {
+        "id": "com.netease.cloudmusic.search.click_submit",
+        "kind": "atomic_skill",
+        "implements": "ClickElementSkill",
+        "status": "DRY_RUN_PASSED",
+        "actionType": "ClickVisibleText",
+        "intentId": "",
+        "file": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_candidates\/com.netease.cloudmusic\/com.netease.cloudmusic.search.click_submit.json"
+      },
+      {
+        "id": "com.netease.cloudmusic.search.search_in_app",
+        "kind": "macro_skill",
+        "implements": "SearchInAppSkill",
+        "status": "DRY_RUN_PASSED",
+        "intentId": "search_in_app",
+        "file": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_candidates\/com.netease.cloudmusic\/com.netease.cloudmusic.search.search_in_app.json"
+      },
+      {
+        "id": "com.netease.cloudmusic.search.type_query",
+        "kind": "atomic_skill",
+        "implements": "TypeTextSkill",
+        "status": "DRY_RUN_PASSED",
+        "actionType": "TypeIntoFirstInput",
+        "intentId": "",
+        "file": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_candidates\/com.netease.cloudmusic\/com.netease.cloudmusic.search.type_query.json"
+      },
+      {
+        "id": "com.netease.cloudmusic.common.click_visible_text",
+        "kind": "atomic_skill",
+        "implements": "ClickElementSkill",
+        "status": "DRY_RUN_PASSED",
+        "actionType": "ClickVisibleText",
+        "intentId": "",
+        "file": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_candidates\/com.netease.cloudmusic\/com.netease.cloudmusic.common.click_visible_text.json"
+      },
+      {
+        "id": "com.netease.cloudmusic.common.type_first_input",
+        "kind": "atomic_skill",
+        "implements": "TypeTextSkill",
+        "status": "DRY_RUN_PASSED",
+        "actionType": "TypeIntoFirstInput",
+        "intentId": "",
+        "file": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_candidates\/com.netease.cloudmusic\/com.netease.cloudmusic.common.type_first_input.json"
+      },
+      {
+        "id": "com.netease.cloudmusic.prepare_app_session",
+        "kind": "macro_skill",
+        "implements": "PrepareAppSessionSkill",
+        "status": "DRY_RUN_PASSED",
+        "intentId": "prepare_app_session",
+        "file": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_candidates\/com.netease.cloudmusic\/com.netease.cloudmusic.prepare_app_session.json"
+      },
+      {
+        "id": "com.netease.cloudmusic.search.click_entry",
+        "kind": "atomic_skill",
+        "implements": "ClickElementSkill",
+        "status": "DRY_RUN_PASSED",
+        "actionType": "ClickVisibleText",
+        "intentId": "",
+        "file": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_candidates\/com.netease.cloudmusic\/com.netease.cloudmusic.search.click_entry.json"
+      },
+      {
+        "id": "com.netease.cloudmusic.back",
+        "kind": "atomic_skill",
+        "implements": "BackSkill",
+        "status": "DRY_RUN_PASSED",
+        "actionType": "Back",
+        "intentId": "",
+        "file": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_candidates\/com.netease.cloudmusic\/com.netease.cloudmusic.back.json"
+      },
+      {
+        "id": "com.netease.cloudmusic.recover_to_foreground",
+        "kind": "atomic_skill",
+        "implements": "RecoverToScreenSkill",
+        "status": "DRY_RUN_PASSED",
+        "actionType": "OpenApp",
+        "intentId": "",
+        "file": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_candidates\/com.netease.cloudmusic\/com.netease.cloudmusic.recover_to_foreground.json"
+      },
+      {
+        "id": "com.netease.cloudmusic.capability_check",
+        "kind": "atomic_skill",
+        "implements": "CapabilityCheckSkill",
+        "status": "DRY_RUN_PASSED",
+        "actionType": "CheckCapability",
+        "intentId": "",
+        "file": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_candidates\/com.netease.cloudmusic\/com.netease.cloudmusic.capability_check.json"
+      },
+      {
+        "id": "com.netease.cloudmusic.open_app",
+        "kind": "atomic_skill",
+        "implements": "OpenAppSkill",
+        "status": "DRY_RUN_PASSED",
+        "actionType": "OpenApp",
+        "intentId": "",
+        "file": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_candidates\/com.netease.cloudmusic\/com.netease.cloudmusic.open_app.json"
+      }
+    ],
+    "recentUiSnapshots": [
+      {
+        "id": "ui_snapshot_1779237790504",
+        "source": "app_ui_explorer_child_depth_1",
+        "note": "third_party_app_skill_subset_batch:网易云音乐:tap:com.netease.cloudmusic:id\/action_bar_root:depth=1",
+        "appPackage": "com.netease.cloudmusic",
+        "windowClassName": "android.widget.FrameLayout",
+        "screenKey": "292cd76e",
+        "screenshotPath": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_screenshots\/com.netease.cloudmusic\/20260520_084309_963_292cd76e.png",
+        "visualHash": "4aafa372d0fa9b9a3a7942c82e3234f07e41c8e93cded6173efef8bef7ab1a17",
+        "summary": {
+          "nodeCount": 18,
+          "clickableCount": 1,
+          "editableCount": 0,
+          "scrollableCount": 0,
+          "labels": [
+            "com.netease.cloudmusic:id\/action_bar_root",
+            "android:id\/content",
+            "com.netease.cloudmusic:id\/playerUIModeContainer",
+            "com.netease.cloudmusic:id\/mainlauncherContainer",
+            "com.netease.cloudmusic:id\/mainContainer",
+            "com.netease.cloudmusic:id\/loadingContainer",
+            "com.netease.cloudmusic:id\/rl_root",
+            "com.netease.cloudmusic:id\/launcherContainer",
+            "com.netease.cloudmusic:id\/adContainer",
+            "com.netease.cloudmusic:id\/logoContainer",
+            "com.netease.cloudmusic:id\/logo",
+            "com.netease.cloudmusic:id\/vipLogo"
+          ],
+          "bottomCandidates": []
+        },
+        "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_snapshots\/com.netease.cloudmusic\/20260520_084309_963_292cd76e.json"
+      },
+      {
+        "id": "ui_snapshot_1779237789074",
+        "source": "accessibility_auto",
+        "note": "TYPE_WINDOW_STATE_CHANGED",
+        "appPackage": "com.netease.cloudmusic",
+        "windowClassName": "android.widget.FrameLayout",
+        "screenKey": "292cd76e",
+        "screenshotPath": "null",
+        "visualHash": "null",
+        "summary": {
+          "nodeCount": 18,
+          "clickableCount": 1,
+          "editableCount": 0,
+          "scrollableCount": 0,
+          "labels": [
+            "com.netease.cloudmusic:id\/action_bar_root",
+            "android:id\/content",
+            "com.netease.cloudmusic:id\/playerUIModeContainer",
+            "com.netease.cloudmusic:id\/mainlauncherContainer",
+            "com.netease.cloudmusic:id\/mainContainer",
+            "com.netease.cloudmusic:id\/loadingContainer",
+            "com.netease.cloudmusic:id\/rl_root",
+            "com.netease.cloudmusic:id\/launcherContainer",
+            "com.netease.cloudmusic:id\/adContainer",
+            "com.netease.cloudmusic:id\/logoContainer",
+            "com.netease.cloudmusic:id\/logo",
+            "com.netease.cloudmusic:id\/vipLogo"
+          ],
+          "bottomCandidates": []
+        },
+        "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_snapshots\/com.netease.cloudmusic\/20260520_084309_073_292cd76e.json"
+      },
+      {
+        "id": "ui_snapshot_1779237788580",
+        "source": "accessibility_auto",
+        "note": "TYPE_WINDOW_STATE_CHANGED",
+        "appPackage": "com.netease.cloudmusic",
+        "windowClassName": "null",
+        "screenKey": "9a2628d3",
+        "screenshotPath": "null",
+        "visualHash": "null",
+        "summary": {
+          "nodeCount": 18,
+          "clickableCount": 1,
+          "editableCount": 0,
+          "scrollableCount": 0,
+          "labels": [
+            "com.netease.cloudmusic:id\/action_bar_root",
+            "android:id\/content",
+            "com.netease.cloudmusic:id\/playerUIModeContainer",
+            "com.netease.cloudmusic:id\/mainlauncherContainer",
+            "com.netease.cloudmusic:id\/mainContainer",
+            "com.netease.cloudmusic:id\/loadingContainer",
+            "com.netease.cloudmusic:id\/rl_root",
+            "com.netease.cloudmusic:id\/launcherContainer",
+            "com.netease.cloudmusic:id\/adContainer",
+            "com.netease.cloudmusic:id\/logoContainer",
+            "com.netease.cloudmusic:id\/logo",
+            "com.netease.cloudmusic:id\/vipLogo"
+          ],
+          "bottomCandidates": []
+        },
+        "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_snapshots\/com.netease.cloudmusic\/20260520_084308_579_9a2628d3.json"
+      },
+      {
+        "id": "ui_snapshot_1779237786672",
+        "source": "app_ui_explorer_child_depth_2",
+        "note": "third_party_app_skill_subset_batch:网易云音乐:tap:com.netease.cloudmusic:id\/vipLogo:depth=2",
+        "appPackage": "com.netease.cloudmusic",
+        "windowClassName": "android.view.ViewGroup",
+        "screenKey": "3e299059",
+        "screenshotPath": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_screenshots\/com.netease.cloudmusic\/20260520_084306_359_3e299059.png",
+        "visualHash": "c1ad2d155f40c40df385f27427a0dc1d6a5c23c36444f565e2067c1bff04e793",
+        "summary": {
+          "nodeCount": 160,
+          "clickableCount": 10,
+          "editableCount": 0,
+          "scrollableCount": 3,
+          "labels": [
+            "com.netease.cloudmusic:id\/action_bar_root",
+            "android:id\/content",
+            "分享至",
+            "com.netease.cloudmusic:id\/adContainer",
+            "com.netease.cloudmusic:id\/adName",
+            "com.netease.cloudmusic:id\/adImage",
+            "DC_Image",
+            "酒吧可爱风信子6",
+            "DC_Image",
+            "更多",
+            "DC_Image",
+            "网易云笔记",
+            "DC_Image",
+            "朋友圈",
+            "DC_Image",
+            "微信好友",
+            "DC_Image",
+            "QQ好友",
+            "DC_Image",
+            "QQ空间",
+            "你还可以分享",
+            "com.netease.cloudmusic:id\/ltCardRoot",
+            "com.netease.cloudmusic:id\/container",
+            "com.netease.cloudmusic:id\/bg",
+            "com.netease.cloudmusic:id\/avatarContainerParent",
+            "com.netease.cloudmusic:id\/avatarContainer",
+            "com.netease.cloudmusic:id\/me",
+            "com.netease.cloudmusic:id\/friend",
+            "com.netease.cloudmusic:id\/discContainer",
+            "com.netease.cloudmusic:id\/playDiscBg",
+            "com.netease.cloudmusic:id\/disc",
+            "com.netease.cloudmusic:id\/smallAlbumDisc0",
+            "com.netease.cloudmusic:id\/cover",
+            "com.netease.cloudmusic:id\/cardName",
+            "邀请好友一起听",
+            "DC_Image",
+            "世界第一等（Live）",
+            "DC_Image",
+            "伍佰",
+            "原唱 : 刘德华",
+            "在写了这么多歌给别人唱之后",
+            "高光歌词"
+          ],
+          "bottomCandidates": [
+            {
+              "label": "",
+              "bounds": {
+                "left": 72,
+                "top": 1811,
+                "right": 874,
+                "bottom": 2976
+              },
+              "clickable": true
+            },
+            {
+              "label": "邀请好友一起听",
+              "bounds": {
+                "left": 72,
+                "top": 2911,
+                "right": 874,
+                "bottom": 2976
+              },
+              "clickable": false
+            },
+            {
+              "label": "",
+              "bounds": {
+                "left": 922,
+                "top": 1811,
+                "right": 1440,
+                "bottom": 2976
+              },
+              "clickable": true
+            },
+            {
+              "label": "高光歌词",
+              "bounds": {
+                "left": 922,
+                "top": 2911,
+                "right": 1440,
+                "bottom": 2976
+              },
+              "clickable": false
+            },
+            {
+              "label": "原唱 : 刘德华",
+              "bounds": {
+                "left": 979,
+                "top": 2206,
+                "right": 1440,
+                "bottom": 2321
+              },
+              "clickable": false
+            },
+            {
+              "label": "在写了这么多歌给别人唱之后",
+              "bounds": {
+                "left": 979,
+                "top": 2346,
+                "right": 1440,
+                "bottom": 2575
+              },
+              "clickable": false
+            }
+          ]
+        },
+        "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_snapshots\/com.netease.cloudmusic\/20260520_084306_359_3e299059.json"
+      },
+      {
+        "id": "ui_snapshot_1779237784625",
+        "source": "accessibility_auto",
+        "note": "TYPE_WINDOW_CONTENT_CHANGED",
+        "appPackage": "com.netease.cloudmusic",
+        "windowClassName": "android.widget.FrameLayout",
+        "screenKey": "26dde03f",
+        "screenshotPath": "null",
+        "visualHash": "null",
+        "summary": {
+          "nodeCount": 143,
+          "clickableCount": 24,
+          "editableCount": 0,
+          "scrollableCount": 0,
+          "labels": [
+            "com.netease.cloudmusic:id\/action_bar_root",
+            "android:id\/content",
+            "com.netease.cloudmusic:id\/playerAlbumCover",
+            "com.netease.cloudmusic:id\/bigAlbumCover",
+            "com.netease.cloudmusic:id\/playerLowLayerContainer",
+            "com.netease.cloudmusic:id\/playerUIModeAnimView",
+            "com.netease.cloudmusic:id\/player_container",
+            "com.netease.cloudmusic:id\/ltPlayerUIModeContainer",
+            "com.netease.cloudmusic:id\/playerDSLWithDefaultBackgroundContainer",
+            "com.netease.cloudmusic:id\/playerDSLWithDefaultBackgroundContainer",
+            "com.netease.cloudmusic:id\/playerMotivateAdContainer",
+            "com.netease.cloudmusic:id\/playerMotivateAdContainer",
+            "com.netease.cloudmusic:id\/vsPlayerFakeLayer",
+            "com.netease.cloudmusic:id\/switch_icon",
+            "切换视频 com.netease.cloudmusic:id\/tint_text",
+            "com.netease.cloudmusic:id\/playerMiniLyricContainer",
+            "com.netease.cloudmusic:id\/playerControlContainer",
+            "com.netease.cloudmusic:id\/musicOpContainerStyle1",
+            "世界第一等（Live） com.netease.cloudmusic:id\/songName",
+            "com.netease.cloudmusic:id\/songNameTag",
+            "com.netease.cloudmusic:id\/collectorTagContainer",
+            "com.netease.cloudmusic:id\/collectorTagContainer",
+            "com.netease.cloudmusic:id\/divider",
+            "com.netease.cloudmusic:id\/authorsContainer",
+            "伍佰 com.netease.cloudmusic:id\/authorName",
+            "com.netease.cloudmusic:id\/artistFollowContainer",
+            "com.netease.cloudmusic:id\/authorNameTag",
+            "com.netease.cloudmusic:id\/artistFollowLinkSceneContainer",
+            "com.netease.cloudmusic:id\/artistFollowLinkSceneContainer",
+            "com.netease.cloudmusic:id\/rightOpContainer",
+            "com.netease.cloudmusic:id\/likeContainerStyle1",
+            "红心 com.netease.cloudmusic:id\/likeBtnStyle1",
+            "86w+ com.netease.cloudmusic:id\/likeCountStyle1",
+            "评论999+ com.netease.cloudmusic:id\/commentContainerStyle2",
+            "com.netease.cloudmusic:id\/commentBtnStyle2",
+            "999+ com.netease.cloudmusic:id\/commentCountStyle2",
+            "com.netease.cloudmusic:id\/playerCommentHint",
+            "com.netease.cloudmusic:id\/playSeekbarContainer",
+            "com.netease.cloudmusic:id\/jarAnimationViewContainer",
+            "com.netease.cloudmusic:id\/playSeekBar",
+            "00:02 com.netease.cloudmusic:id\/currentTime",
+            "04:08 com.netease.cloudmusic:id\/totalTime",
+            "com.netease.cloudmusic:id\/songPlayOpContainer",
+            "com.netease.cloudmusic:id\/player_control_slot_container",
+            "播放模式 com.netease.cloudmusic:id\/modeBtn_new",
+            "上一首 com.netease.cloudmusic:id\/preBtn",
+            "播放暂停 com.netease.cloudmusic:id\/playBtn",
+            "下一首 com.netease.cloudmusic:id\/nextBtn",
+            "com.netease.cloudmusic:id\/playerPlaylistSpot",
+            "播放列表 com.netease.cloudmusic:id\/sourceName",
+            "com.netease.cloudmusic:id\/playBottomContainer",
+            "com.netease.cloudmusic:id\/bottomFirstContainer",
+            "连接设备 com.netease.cloudmusic:id\/deviceBtnStyle1",
+            "com.netease.cloudmusic:id\/bottomSecondContainer",
+            "相似推荐 com.netease.cloudmusic:id\/similar_rcmd_button",
+            "com.netease.cloudmusic:id\/similar_rcmd_img",
+            "com.netease.cloudmusic:id\/similar_rcmd_lottery",
+            "com.netease.cloudmusic:id\/bottomThirdContainer",
+            "歌曲信息 com.netease.cloudmusic:id\/relatedBtn",
+            "com.netease.cloudmusic:id\/moreButtonContainer1",
+            "更多菜单 com.netease.cloudmusic:id\/moreBtnNew1",
+            "com.netease.cloudmusic:id\/player_bottom_bubble_container",
+            "com.netease.cloudmusic:id\/bubble",
+            "com.netease.cloudmusic:id\/bg_bubble",
+            "金曲讲解：伍佰刘德华的前尘往事？ com.netease.cloudmusic:id\/tv_msg",
+            "com.netease.cloudmusic:id\/qualityContainer",
+            "极高音质 音质 com.netease.cloudmusic:id\/qualityBtn",
+            "com.netease.cloudmusic:id\/playerPlaylistAIDJSwitchGuideHintContainer",
+            "com.netease.cloudmusic:id\/playerPlaylistAIDJSwitchGuideHintContainer",
+            "com.netease.cloudmusic:id\/lrc_container",
+            "com.netease.cloudmusic:id\/lyricAndBeatContainer",
+            "com.netease.cloudmusic:id\/player_container0",
+            "com.netease.cloudmusic:id\/commonCoverViewLyricContainer",
+            "com.netease.cloudmusic:id\/playerAIDJSwitchHintContainer",
+            "com.netease.cloudmusic:id\/playerAIDJSwitchHintContainer",
+            "com.netease.cloudmusic:id\/playerAIDJSwitchGuideHintContainer",
+            "com.netease.cloudmusic:id\/playerAIDJSwitchGuideHintContainer",
+            "com.netease.cloudmusic:id\/player_container_vinyl",
+            "com.netease.cloudmusic:id\/artistImageContainer",
+            "com.netease.cloudmusic:id\/aidjReopenContainer"
+          ],
+          "bottomCandidates": [
+            {
+              "label": "播放模式 com.netease.cloudmusic:id\/modeBtn_new",
+              "bounds": {
+                "left": 64,
+                "top": 2622,
+                "right": 224,
+                "bottom": 2782
+              },
+              "clickable": true
+            },
+            {
+              "label": "连接设备 com.netease.cloudmusic:id\/deviceBtnStyle1",
+              "bounds": {
+                "left": 76,
+                "top": 2895,
+                "right": 212,
+                "bottom": 3031
+              },
+              "clickable": true
+            },
+            {
+              "label": "伍佰 com.netease.cloudmusic:id\/authorName",
+              "bounds": {
+                "left": 92,
+                "top": 2203,
+                "right": 204,
+                "bottom": 2269
+              },
+              "clickable": true
+            },
+            {
+              "label": "00:02 com.netease.cloudmusic:id\/currentTime",
+              "bounds": {
+                "left": 100,
+                "top": 2437,
+                "right": 201,
+                "bottom": 2461
+              },
+              "clickable": false
+            },
+            {
+              "label": "上一首 com.netease.cloudmusic:id\/preBtn",
+              "bounds": {
+                "left": 324,
+                "top": 2614,
+                "right": 500,
+                "bottom": 2790
+              },
+              "clickable": true
+            },
+            {
+              "label": "相似推荐 com.netease.cloudmusic:id\/similar_rcmd_button",
+              "bounds": {
+                "left": 460,
+                "top": 2895,
+                "right": 596,
+                "bottom": 3031
+              },
+              "clickable": true
+            },
+            {
+              "label": "com.netease.cloudmusic:id\/bubble",
+              "bounds": {
+                "left": 164,
+                "top": 2751,
+                "right": 996,
+                "bottom": 2895
+              },
+              "clickable": true
+            },
+            {
+              "label": "金曲讲解：伍佰刘德华的前尘往事？ com.netease.cloudmusic:id\/tv_msg",
+              "bounds": {
+                "left": 196,
+                "top": 2771,
+                "right": 964,
+                "bottom": 2847
+              },
+              "clickable": false
+            },
+            {
+              "label": "com.netease.cloudmusic:id\/playerControlContainer",
+              "bounds": {
+                "left": 0,
+                "top": 2076,
+                "right": 1440,
+                "bottom": 3104
+              },
+              "clickable": true
+            },
+            {
+              "label": "播放暂停 com.netease.cloudmusic:id\/playBtn",
+              "bounds": {
+                "left": 600,
+                "top": 2582,
+                "right": 840,
+                "bottom": 2822
+              },
+              "clickable": true
+            },
+            {
+              "label": "极高音质 音质 com.netease.cloudmusic:id\/qualityBtn",
+              "bounds": {
+                "left": 560,
+                "top": 2434,
+                "right": 880,
+                "bottom": 2521
+              },
+              "clickable": true
+            },
+            {
+              "label": "歌曲信息 com.netease.cloudmusic:id\/relatedBtn",
+              "bounds": {
+                "left": 844,
+                "top": 2895,
+                "right": 980,
+                "bottom": 3031
+              },
+              "clickable": true
+            }
+          ]
+        },
+        "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_snapshots\/com.netease.cloudmusic\/20260520_084304_625_26dde03f.json"
+      },
+      {
+        "id": "ui_snapshot_1779237783816",
+        "source": "app_ui_explorer_child_depth_2",
+        "note": "third_party_app_skill_subset_batch:网易云音乐:tap:com.netease.cloudmusic:id\/adContainer:depth=2",
+        "appPackage": "com.netease.cloudmusic",
+        "windowClassName": "android.view.ViewGroup",
+        "screenKey": "77d559d0",
+        "screenshotPath": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_screenshots\/com.netease.cloudmusic\/20260520_084303_516_77d559d0.png",
+        "visualHash": "609425902f01473a89834cbda731e1f93a0287446f2d734364c52f350dad34a4",
+        "summary": {
+          "nodeCount": 148,
+          "clickableCount": 8,
+          "editableCount": 0,
+          "scrollableCount": 3,
+          "labels": [
+            "com.netease.cloudmusic:id\/action_bar_root",
+            "android:id\/content",
+            "分享至",
+            "com.netease.cloudmusic:id\/adContainer",
+            "com.netease.cloudmusic:id\/adName",
+            "com.netease.cloudmusic:id\/adImage",
+            "DC_Image",
+            "网易云笔记",
+            "DC_Image",
+            "朋友圈",
+            "DC_Image",
+            "微信好友",
+            "DC_Image",
+            "QQ好友",
+            "DC_Image",
+            "QQ空间",
+            "你还可以分享",
+            "com.netease.cloudmusic:id\/ltCardRoot",
+            "com.netease.cloudmusic:id\/container",
+            "com.netease.cloudmusic:id\/bg",
+            "com.netease.cloudmusic:id\/avatarContainerParent",
+            "com.netease.cloudmusic:id\/avatarContainer",
+            "com.netease.cloudmusic:id\/me",
+            "com.netease.cloudmusic:id\/friend",
+            "com.netease.cloudmusic:id\/discContainer",
+            "com.netease.cloudmusic:id\/playDiscBg",
+            "com.netease.cloudmusic:id\/disc",
+            "com.netease.cloudmusic:id\/smallAlbumDisc0",
+            "com.netease.cloudmusic:id\/cover",
+            "com.netease.cloudmusic:id\/cardName",
+            "邀请好友一起听",
+            "DC_Image",
+            "世界第一等（Live）",
+            "DC_Image",
+            "伍佰",
+            "原唱 : 刘德华",
+            "在写了这么多歌给别人唱之后",
+            "高光歌词"
+          ],
+          "bottomCandidates": [
+            {
+              "label": "",
+              "bounds": {
+                "left": 72,
+                "top": 1811,
+                "right": 874,
+                "bottom": 2976
+              },
+              "clickable": true
+            },
+            {
+              "label": "邀请好友一起听",
+              "bounds": {
+                "left": 72,
+                "top": 2911,
+                "right": 874,
+                "bottom": 2976
+              },
+              "clickable": false
+            },
+            {
+              "label": "",
+              "bounds": {
+                "left": 922,
+                "top": 1811,
+                "right": 1440,
+                "bottom": 2976
+              },
+              "clickable": true
+            },
+            {
+              "label": "高光歌词",
+              "bounds": {
+                "left": 922,
+                "top": 2911,
+                "right": 1440,
+                "bottom": 2976
+              },
+              "clickable": false
+            },
+            {
+              "label": "原唱 : 刘德华",
+              "bounds": {
+                "left": 979,
+                "top": 2302,
+                "right": 1440,
+                "bottom": 2417
+              },
+              "clickable": false
+            },
+            {
+              "label": "在写了这么多歌给别人唱之后",
+              "bounds": {
+                "left": 979,
+                "top": 2397,
+                "right": 1440,
+                "bottom": 2626
+              },
+              "clickable": false
+            }
+          ]
+        },
+        "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_snapshots\/com.netease.cloudmusic\/20260520_084303_516_77d559d0.json"
+      },
+      {
+        "id": "ui_snapshot_1779237780464",
+        "source": "app_ui_explorer_child_depth_2",
+        "note": "third_party_app_skill_subset_batch:网易云音乐:tap:com.netease.cloudmusic:id\/action_bar_root:depth=2",
+        "appPackage": "com.netease.cloudmusic",
+        "windowClassName": "android.widget.TextView",
+        "screenKey": "269767bc",
+        "screenshotPath": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_screenshots\/com.netease.cloudmusic\/20260520_084300_170_269767bc.png",
+        "visualHash": "c1fa989dd991de8878aaeb37bd9aa136bab5b879920f18771f027889fe4fd519",
+        "summary": {
+          "nodeCount": 34,
+          "clickableCount": 6,
+          "editableCount": 0,
+          "scrollableCount": 1,
+          "labels": [
+            "android:id\/content",
+            "DC_PopupBase_Content",
+            "DC_Box",
+            "歌单：苦练伍佰的歌，争取早日成为包厢浪子",
+            "更改歌曲排序",
+            "清空下载文件",
+            "举报",
+            "展示专辑封面",
+            "开启 DC_Switch_NativeSwitch"
+          ],
+          "bottomCandidates": [
+            {
+              "label": "举报",
+              "bounds": {
+                "left": 216,
+                "top": 2709,
+                "right": 344,
+                "bottom": 2805
+              },
+              "clickable": false
+            },
+            {
+              "label": "更改歌曲排序",
+              "bounds": {
+                "left": 216,
+                "top": 2394,
+                "right": 600,
+                "bottom": 2490
+              },
+              "clickable": false
+            },
+            {
+              "label": "清空下载文件",
+              "bounds": {
+                "left": 216,
+                "top": 2545,
+                "right": 600,
+                "bottom": 2641
+              },
+              "clickable": false
+            },
+            {
+              "label": "展示专辑封面",
+              "bounds": {
+                "left": 216,
+                "top": 2885,
+                "right": 600,
+                "bottom": 2981
+              },
+              "clickable": false
+            },
+            {
+              "label": "",
+              "bounds": {
+                "left": 0,
+                "top": 2346,
+                "right": 1440,
+                "bottom": 2538
+              },
+              "clickable": true
+            },
+            {
+              "label": "",
+              "bounds": {
+                "left": 0,
+                "top": 2538,
+                "right": 1440,
+                "bottom": 2730
+              },
+              "clickable": true
+            },
+            {
+              "label": "",
+              "bounds": {
+                "left": 0,
+                "top": 2730,
+                "right": 1440,
+                "bottom": 2922
+              },
+              "clickable": true
+            },
+            {
+              "label": "",
+              "bounds": {
+                "left": 0,
+                "top": 2922,
+                "right": 1440,
+                "bottom": 3104
+              },
+              "clickable": true
+            },
+            {
+              "label": "歌单：苦练伍佰的歌，争取早日成为包厢浪子",
+              "bounds": {
+                "left": 72,
+                "top": 2175,
+                "right": 1384,
+                "bottom": 2251
+              },
+              "clickable": false
+            },
+            {
+              "label": "开启 DC_Switch_NativeSwitch",
+              "bounds": {
+                "left": 1168,
+                "top": 2869,
+                "right": 1376,
+                "bottom": 2997
+              },
+              "clickable": true
+            }
+          ]
+        },
+        "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_snapshots\/com.netease.cloudmusic\/20260520_084300_170_269767bc.json"
+      },
+      {
+        "id": "ui_snapshot_1779237779877",
+        "source": "accessibility_auto",
+        "note": "TYPE_WINDOW_CONTENT_CHANGED",
+        "appPackage": "com.netease.cloudmusic",
+        "windowClassName": "android.widget.TextView",
+        "screenKey": "8d3a8585",
+        "screenshotPath": "null",
+        "visualHash": "null",
+        "summary": {
+          "nodeCount": 395,
+          "clickableCount": 58,
+          "editableCount": 0,
+          "scrollableCount": 2,
+          "labels": [
+            "com.netease.cloudmusic:id\/action_bar_root",
+            "android:id\/content",
+            "com.netease.cloudmusic:id\/contentContainer",
+            "com.netease.cloudmusic:id\/musicContainer",
+            "苦练伍佰的歌，争取早日成为包厢浪子",
+            "苦练伍佰的歌，争取早日成为包厢浪子",
+            "O-SquidwardTentacles-O",
+            "摇滚",
+            "流行",
+            "伍佰最帅！！！ 兄弟们，还有什么伍佰的经典歌没加进来，评论告诉我 伍佰最帅！！！",
+            "91",
+            "76",
+            "3334",
+            "播放全部",
+            "84首",
+            "· 大于5小时",
+            "DC_Popover_Container",
+            "突然的自我",
+            "VIP",
+            "伍佰 & China Blue - 忘情1015精选辑",
+            "DC_Popover_Container",
+            "再度重相逢",
+            "VIP",
+            "伍佰 & China Blue - 泪桥",
+            "DC_Popover_Container",
+            "挪威的森林 (Live)",
+            "VIP",
+            "伍佰 & China Blue - 光和热",
+            "DC_Popover_Container",
+            "白鸽",
+            "VIP",
+            "伍佰 & China Blue - 白鸽",
+            "DC_Popover_Container",
+            "Last Dance (电视剧《想见你》插曲)",
+            "VIP",
+            "伍佰 & China Blue - 爱情的尽头",
+            "DC_Popover_Container",
+            "世界第一等（Live）",
+            "VIP",
+            "伍佰 - 滚石香港黄金十年 伍佰精选",
+            "DC_Popover_Container",
+            "再度重相逢 (“双面对决” Live)",
+            "VIP",
+            "伍佰 & China Blue - 伍佰 & China Blue 双面对决演唱会全纪录 (“双面对决” Live)",
+            "DC_Popover_Container",
+            "树风 (Live)",
+            "VIP",
+            "伍佰 & China Blue - 光和热",
+            "DC_Popover_Container",
+            "心爱的再会啦",
+            "VIP",
+            "伍佰 - 滚石香港黄金十年 伍佰精选",
+            "DC_Popover_Container",
+            "美丽新世界",
+            "VIP",
+            "伍佰 - 滚石香港黄金十年 伍佰精选",
+            "DC_Popover_Container",
+            "深秋的祝福",
+            "VIP",
+            "伍佰 & China Blue - 让水倒流",
+            "DC_Popover_Container",
+            "抛弃",
+            "VIP",
+            "伍佰 & China Blue - 浪人情歌",
+            "3334人已收藏",
+            "你可能还会喜欢",
+            "3.4亿",
+            "经典老歌，久听不厌",
+            "4261万",
+            "emo天花板系列 失恋伤感大盘点",
+            "5333万",
+            "好听到可以单曲循环哦",
+            "3555万",
+            "励志歌单。去追梦，为自己，为梦想！",
+            "2亿",
+            "听说你也在找好听的华语歌",
+            "3013万",
+            "[RAP]中文励志说唱-为梦想努力奋斗",
+            "查看更多歌单",
+            "播放全部"
+          ],
+          "bottomCandidates": [
+            {
+              "label": "3.4亿",
+              "bounds": {
+                "left": 148,
+                "top": 22684,
+                "right": 263,
+                "bottom": 3104
+              },
+              "clickable": false
+            },
+            {
+              "label": "",
+              "bounds": {
+                "left": 64,
+                "top": 22656,
+                "right": 461,
+                "bottom": 3104
+              },
+              "clickable": true
+            },
+            {
+              "label": "经典老歌，久听不厌",
+              "bounds": {
+                "left": 64,
+                "top": 23077,
+                "right": 461,
+                "bottom": 3104
+              },
+              "clickable": false
+            },
+            {
+              "label": "VIP",
+              "bounds": {
+                "left": 291,
+                "top": 2331,
+                "right": 338,
+                "bottom": 2371
+              },
+              "clickable": false
+            },
+            {
+              "label": "VIP",
+              "bounds": {
+                "left": 291,
+                "top": 2827,
+                "right": 338,
+                "bottom": 2867
+              },
+              "clickable": false
+            },
+            {
+              "label": "VIP",
+              "bounds": {
+                "left": 291,
+                "top": 3075,
+                "right": 338,
+                "bottom": 3104
+              },
+              "clickable": false
+            },
+            {
+              "label": "VIP",
+              "bounds": {
+                "left": 291,
+                "top": 3323,
+                "right": 338,
+                "bottom": 3104
+              },
+              "clickable": false
+            },
+            {
+              "label": "VIP",
+              "bounds": {
+                "left": 291,
+                "top": 3571,
+                "right": 338,
+                "bottom": 3104
+              },
+              "clickable": false
+            },
+            {
+              "label": "VIP",
+              "bounds": {
+                "left": 291,
+                "top": 3819,
+                "right": 338,
+                "bottom": 3104
+              },
+              "clickable": false
+            },
+            {
+              "label": "VIP",
+              "bounds": {
+                "left": 291,
+                "top": 4067,
+                "right": 338,
+                "bottom": 3104
+              },
+              "clickable": false
+            },
+            {
+              "label": "VIP",
+              "bounds": {
+                "left": 291,
+                "top": 4315,
+                "right": 338,
+                "bottom": 3104
+              },
+              "clickable": false
+            },
+            {
+              "label": "白鸽",
+              "bounds": {
+                "left": 280,
+                "top": 2229,
+                "right": 400,
+                "bottom": 2310
+              },
+              "clickable": false
+            }
+          ]
+        },
+        "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_snapshots\/com.netease.cloudmusic\/20260520_084259_876_8d3a8585.json"
+      },
+      {
+        "id": "ui_snapshot_1779237778469",
+        "source": "app_ui_explorer_child_depth_1",
+        "note": "third_party_app_skill_subset_batch:网易云音乐:tap:com.netease.cloudmusic:id\/logoContainer:depth=1",
+        "appPackage": "com.netease.cloudmusic",
+        "windowClassName": "android.widget.FrameLayout",
+        "screenKey": "292cd76e",
+        "screenshotPath": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_screenshots\/com.netease.cloudmusic\/20260520_084258_028_292cd76e.png",
+        "visualHash": "632350c0960b516f9b1d221c307f12ce60fffcc43d5450c372b68b7914400866",
+        "summary": {
+          "nodeCount": 18,
+          "clickableCount": 1,
+          "editableCount": 0,
+          "scrollableCount": 0,
+          "labels": [
+            "com.netease.cloudmusic:id\/action_bar_root",
+            "android:id\/content",
+            "com.netease.cloudmusic:id\/playerUIModeContainer",
+            "com.netease.cloudmusic:id\/mainlauncherContainer",
+            "com.netease.cloudmusic:id\/mainContainer",
+            "com.netease.cloudmusic:id\/loadingContainer",
+            "com.netease.cloudmusic:id\/rl_root",
+            "com.netease.cloudmusic:id\/launcherContainer",
+            "com.netease.cloudmusic:id\/adContainer",
+            "com.netease.cloudmusic:id\/logoContainer",
+            "com.netease.cloudmusic:id\/logo",
+            "com.netease.cloudmusic:id\/vipLogo"
+          ],
+          "bottomCandidates": [
+            {
+              "label": "com.netease.cloudmusic:id\/rl_root",
+              "bounds": {
+                "left": 0,
+                "top": 1203,
+                "right": 1440,
+                "bottom": 3168
+              },
+              "clickable": true
+            }
+          ]
+        },
+        "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_snapshots\/com.netease.cloudmusic\/20260520_084258_028_292cd76e.json"
+      },
+      {
+        "id": "ui_snapshot_1779237775782",
+        "source": "app_ui_explorer_swipe_swipe_down",
+        "note": "third_party_app_skill_subset_batch:网易云音乐:swipe:swipe_down",
+        "appPackage": "com.netease.cloudmusic",
+        "windowClassName": "android.widget.FrameLayout",
+        "screenKey": "292cd76e",
+        "screenshotPath": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_screenshots\/com.netease.cloudmusic\/20260520_084255_395_292cd76e.png",
+        "visualHash": "c6abae60793fca6a3b13a44934bdf3dcf072dcc2b185276054891f69267d28a2",
+        "summary": {
+          "nodeCount": 18,
+          "clickableCount": 1,
+          "editableCount": 0,
+          "scrollableCount": 0,
+          "labels": [
+            "com.netease.cloudmusic:id\/action_bar_root",
+            "android:id\/content",
+            "com.netease.cloudmusic:id\/playerUIModeContainer",
+            "com.netease.cloudmusic:id\/mainlauncherContainer",
+            "com.netease.cloudmusic:id\/mainContainer",
+            "com.netease.cloudmusic:id\/loadingContainer",
+            "com.netease.cloudmusic:id\/rl_root",
+            "com.netease.cloudmusic:id\/launcherContainer",
+            "com.netease.cloudmusic:id\/adContainer",
+            "com.netease.cloudmusic:id\/logoContainer",
+            "com.netease.cloudmusic:id\/logo",
+            "com.netease.cloudmusic:id\/vipLogo"
+          ],
+          "bottomCandidates": [
+            {
+              "label": "com.netease.cloudmusic:id\/rl_root",
+              "bounds": {
+                "left": 0,
+                "top": 1203,
+                "right": 1440,
+                "bottom": 3168
+              },
+              "clickable": true
+            }
+          ]
+        },
+        "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_snapshots\/com.netease.cloudmusic\/20260520_084255_395_292cd76e.json"
+      }
+    ],
+    "proposedPlanSteps": [
+      {
+        "type": "OpenApp",
+        "packageName": "com.netease.cloudmusic",
+        "timeoutMs": 3000
+      },
+      {
+        "type": "HandleReactiveOverlays",
+        "appPackage": "com.netease.cloudmusic",
+        "maxPasses": 3
+      },
+      {
+        "type": "ClickVisibleText",
+        "text": "搜索",
+        "textAliases": [
+          "搜索",
+          "搜",
+          "查找"
+        ],
+        "x": 0.88,
+        "y": 0.08,
+        "requiresUiStateForCoordinate": false
+      },
+      {
+        "type": "Wait",
+        "timeoutMs": 600
+      },
+      {
+        "type": "TypeIntoFirstInput",
+        "text": "周杰伦，停在歌曲结果页并记录单曲、歌单、用户分区。\n\n约束：目标 App=网易云音乐，包名=com.netease.cloudmusic。必须由 MacroPilot 手机端自己用无障碍、输入法、AI\/Skill JSON 执行，不允许依赖 ADB 手点目标 App。执行前先读取当前 UI；如果遇到广告、弹窗、小字提示，先记录文字并安全关闭。任务完成必须用当前 UI 证据验证，不能只因为步骤执行完就报成功。如果没有现成 skill，先复用已有相似 Skill JSON\/archetype，只改关键槽位如入口文字、坐标、目标文本、验证规则，再组装 atomic\/macro skill。需要探索入口时优先遍历底部标签、顶部小图标、图形化入口、侧边操作和子页面。本任务 stopBeforeSubmit=true：写草稿、评论、订单、支付类流程必须停在提交前，不点击最终发布、发送、提交订单、支付、确认授权。期望证据包括：周杰伦、搜索结果。",
+        "timeoutMs": 2000
+      },
+      {
+        "type": "ClickVisibleText",
+        "text": "搜索",
+        "textAliases": [
+          "搜索",
+          "确定"
+        ],
+        "timeoutMs": 1500
+      },
+      {
+        "type": "Wait",
+        "timeoutMs": 1800
+      }
+    ],
+    "outputContract": {
+      "decision": {
+        "usePatchedSteps": false,
+        "screenAssessment": "当前页面是什么，哪些入口\/弹窗\/输入框可见",
+        "planRisk": "本地计划哪里可能点错、漏验证或误报成功",
+        "confidence": "HIGH | MEDIUM | LOW",
+        "nextActionReason": "为什么保留或改写计划"
+      },
+      "steps": [
+        {
+          "type": "OpenApp",
+          "packageName": "com.netease.cloudmusic"
+        },
+        {
+          "type": "HandleReactiveOverlays",
+          "maxPasses": 3
+        },
+        {
+          "type": "RecoverBilibiliHomeSurface",
+          "packageName": "tv.danmaku.bili"
+        },
+        {
+          "type": "FindEntryByBottomTabSweep",
+          "entryAliases": [
+            "发帖",
+            "发布",
+            "创作",
+            "搜索",
+            "消息",
+            "+"
+          ]
+        },
+        {
+          "type": "ClickVisibleText",
+          "text": "搜索"
+        },
+        {
+          "type": "ClickCoordinate",
+          "x": 0.5,
+          "y": 0.36
+        },
+        {
+          "type": "TypeIntoFirstInput",
+          "text": "输入内容"
+        },
+        {
+          "type": "Back"
+        },
+        {
+          "type": "Wait",
+          "timeoutMs": 800
+        }
+      ]
+    },
+    "rules": [
+      "你是在执行前复核手机端本地相似 Skill 计划。先判断当前 UI，再判断 proposedPlanSteps 是否够用。",
+      "如果本地计划已经安全、细粒度、可验证，decision.usePatchedSteps=false，steps=[]。",
+      "如果计划缺少关广告\/选专区\/打开入口\/二次验证，decision.usePatchedSteps=true，并只返回完整替换计划中必要的细粒度 steps。",
+      "优先使用 appUiGraph 里已经发现的入口、底部分屏、输入框、子页面证据；不要忽略已记录的 UI 图谱。",
+      "返回的 steps 会被手机端用已有 Skill JSON\/archetype 做关键字段补丁拼装，所以每一步要写清楚 text\/textAliases\/x\/y\/selector\/verifyType。",
+      "不要删除安全前置动作：OpenApp、HandleReactiveOverlays、CaptureWechatBottomTabs、FindEntryByBottomTabSweep 这类动作通常应该保留。",
+      "B 站如果卡在消息\/系统通知\/游戏通知\/分享面板，复核计划必须插入 RecoverBilibiliHomeSurface，然后再搜索\/选择视频。",
+      "用户明确要求发布\/发帖\/发表时才允许保留最终发布动作；否则只能写草稿。",
+      "不能把 OpenApp、Wait、进入搜索页当作复杂任务完成；需要后续 checkpoint 或 verify 证据。",
+      "坐标必须来自 currentUi.clickTargets\/currentUi.entryCandidates\/currentUi.videoCandidates 的 center，或者标明低置信兜底。"
+    ]
+  },
+  "aiStatus": "FAILED",
+  "aiMessage": "thread interrupted",
+  "provider": "OPENAI_COMPAT_CHAT",
+  "httpStatus": null,
+  "model": "deepseek-v4-pro",
+  "baseUrlHost": "api.deepseek.com",
+  "rawResponse": null,
+  "parsedJson": {
+    "decision": {},
+    "usePatchedSteps": false,
+    "patchedStepCount": 0
+  },
+  "parseSuccess": false,
+  "errors": [
+    "thread interrupted"
+  ],
+  "accepted": true,
+  "acceptedBy": "APP_SIDE_PRE_EXECUTION_REVIEW",
+  "acceptedAt": 1779339445211
+}

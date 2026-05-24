@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "kind": "skill_json_ai_follow_up_run_report",
+  "id": "ai_follow_up_run_1778526647965",
+  "skillId": "direct.command.1778526647768",
+  "failedSkillId": "bilibili.search.search_in_app",
+  "appPackage": "tv.danmaku.bili",
+  "instruction": "打开哔哩哔哩搜索王老菊打开第一个视频",
+  "engine": "ai_runtime_checkpoint",
+  "phase": "CHECKPOINT",
+  "trigger": "COMPLEX_TASK_CHECKPOINT",
+  "previousStatus": "SUCCESS_LOW_CONFIDENCE",
+  "previousMessage": "Window\/node state changed",
+  "previousRuntimeReportFile": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/runtime\/run_reports\/tv.danmaku.bili\/ai_direct_run_1778526622297.json",
+  "aiJobFile": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ai_jobs\/2026-05-12\/factory_ai_checkpoint_1778526647756.json",
+  "decision": {
+    "goalCompleted": false,
+    "screenAssessment": "当前页面是底部弹出窗口（关闭工作表），包含消息设置等选项，阻塞了后续操作。",
+    "failureDiagnosis": "搜索后可能触发了消息设置弹窗，需要先关闭弹窗才能继续。",
+    "confidence": "HIGH",
+    "nextActionReason": "点击'关闭工作表'按钮关闭弹窗，预期回到之前的页面（可能是搜索结果页或主页）。"
+  },
+  "approvedRequired": false,
+  "status": "SUCCESS_MEDIUM_CONFIDENCE",
+  "message": "Macro atoms completed; reactiveDismissed=0",
+  "durationMs": 153,
+  "usedCoordinate": false,
+  "details": {
+    "macroSkillId": "direct.command.1778526647768",
+    "atomTrace": [
+      {
+        "index": 0,
+        "skillId": "direct.1778526647768.1.clickselector",
+        "actionType": "ClickSelector",
+        "status": "SUCCESS_MEDIUM_CONFIDENCE",
+        "message": "Window\/node state changed",
+        "usedCoordinate": false,
+        "details": null
+      }
+    ],
+    "reactiveDismissed": 0
+  },
+  "allowSideEffect": true,
+  "skillFile": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_candidates\/tv.danmaku.bili\/direct.command.1778526647768.json",
+  "createdAt": 1778526647965
+}

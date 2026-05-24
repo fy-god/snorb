@@ -1,0 +1,1213 @@
+{
+  "schemaVersion": 1,
+  "kind": "ui_state_snapshot",
+  "id": "ui_snapshot_1779339080378",
+  "source": "current_ui_summary",
+  "note": "factory_ai_context",
+  "screenshotPath": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_screenshots\/com.tencent.mm\/20260521_125119_258_eceea7ba.png",
+  "screenshotSha256": "e03e69cd4930ed363b6ff0b656f161d552f94cc0f9ebf839f668c651d85976c4",
+  "visualHash": "5dbfc920a3ab9888c6c9d153e207e0ff5aaed6a1defa5c17361101860b430e98",
+  "screenshotSizeBytes": 2580824,
+  "appPackage": "com.tencent.mm",
+  "windowClassName": "android.widget.FrameLayout",
+  "screenKey": "eceea7ba",
+  "relatedSkillId": null,
+  "relatedActionType": null,
+  "capability": {
+    "nodeReadability": "A",
+    "inputCapability": "CUSTOM_IME",
+    "verificationCapability": "HIGH",
+    "coordinateFallback": "AVAILABLE",
+    "serviceState": "CONNECTED",
+    "reason": "nodes=44, textLike=30, clickable=8, editable=0, scrollable=0, customIme=true"
+  },
+  "state": {
+    "appPackage": "com.tencent.mm",
+    "windowClassName": "android.widget.FrameLayout",
+    "screenWidth": 1440,
+    "screenHeight": 3168,
+    "timestamp": 1779339079258,
+    "nodeCount": 44,
+    "nodesStored": 44,
+    "nodesStorage": "compact_important_nodes_only",
+    "nodes": [
+      {
+        "nodeId": "9_35_0_144_230_331",
+        "packageName": "com.tencent.mm",
+        "text": null,
+        "contentDesc": "关闭",
+        "resourceId": "com.tencent.mm:id\/bz6",
+        "className": "android.widget.ImageView",
+        "bounds": {
+          "left": 0,
+          "top": 144,
+          "right": 230,
+          "bottom": 331
+        },
+        "clickable": true,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 9,
+        "parentRoleHint": "android.widget.RelativeLayout"
+      },
+      {
+        "nodeId": "9_36_1210_144_1440_331",
+        "packageName": "com.tencent.mm",
+        "text": null,
+        "contentDesc": "更多",
+        "resourceId": "com.tencent.mm:id\/jqu",
+        "className": "android.widget.ImageView",
+        "bounds": {
+          "left": 1210,
+          "top": 144,
+          "right": 1440,
+          "bottom": 331
+        },
+        "clickable": true,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 9,
+        "parentRoleHint": "android.widget.RelativeLayout"
+      },
+      {
+        "nodeId": "10_25_612_1851_828_2183",
+        "packageName": "com.tencent.mm",
+        "text": null,
+        "contentDesc": null,
+        "resourceId": "com.tencent.mm:id\/mac",
+        "className": "android.widget.LinearLayout",
+        "bounds": {
+          "left": 612,
+          "top": 1851,
+          "right": 828,
+          "bottom": 2183
+        },
+        "clickable": true,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 10,
+        "parentRoleHint": "android.widget.RelativeLayout"
+      },
+      {
+        "nodeId": "9_15_72_2586_795_2773",
+        "packageName": "com.tencent.mm",
+        "text": null,
+        "contentDesc": "我的二维码名片，按钮",
+        "resourceId": "com.tencent.mm:id\/k3c",
+        "className": "android.widget.LinearLayout",
+        "bounds": {
+          "left": 72,
+          "top": 2586,
+          "right": 795,
+          "bottom": 2773
+        },
+        "clickable": true,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 9,
+        "parentRoleHint": "android.widget.RelativeLayout"
+      },
+      {
+        "nodeId": "10_31_1181_2586_1368_2773",
+        "packageName": "com.tencent.mm",
+        "text": null,
+        "contentDesc": "相册，按钮",
+        "resourceId": "com.tencent.mm:id\/mj5",
+        "className": "android.widget.LinearLayout",
+        "bounds": {
+          "left": 1181,
+          "top": 2586,
+          "right": 1368,
+          "bottom": 2773
+        },
+        "clickable": true,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 10,
+        "parentRoleHint": "android.widget.RelativeLayout"
+      },
+      {
+        "nodeId": "12_13_0_2514_1440_2514",
+        "packageName": "com.tencent.mm",
+        "text": null,
+        "contentDesc": null,
+        "resourceId": "com.tencent.mm:id\/m95",
+        "className": "androidx.recyclerview.widget.RecyclerView",
+        "bounds": {
+          "left": 0,
+          "top": 2514,
+          "right": 1440,
+          "bottom": 2514
+        },
+        "clickable": true,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 12,
+        "parentRoleHint": "android.widget.RelativeLayout"
+      },
+      {
+        "nodeId": "10_40_571_2841_870_3001",
+        "packageName": "com.tencent.mm",
+        "text": null,
+        "contentDesc": null,
+        "resourceId": null,
+        "className": "android.widget.LinearLayout",
+        "bounds": {
+          "left": 571,
+          "top": 2841,
+          "right": 870,
+          "bottom": 3001
+        },
+        "clickable": true,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 10,
+        "parentRoleHint": "android.widget.LinearLayout"
+      },
+      {
+        "nodeId": "10_41_870_2841_1108_3001",
+        "packageName": "com.tencent.mm",
+        "text": null,
+        "contentDesc": null,
+        "resourceId": null,
+        "className": "android.widget.LinearLayout",
+        "bounds": {
+          "left": 870,
+          "top": 2841,
+          "right": 1108,
+          "bottom": 3001
+        },
+        "clickable": true,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 10,
+        "parentRoleHint": "android.widget.LinearLayout"
+      },
+      {
+        "nodeId": "3_3_0_0_1440_3104",
+        "packageName": "com.tencent.mm",
+        "text": null,
+        "contentDesc": null,
+        "resourceId": "com.tencent.mm:id\/crd",
+        "className": "android.view.ViewGroup",
+        "bounds": {
+          "left": 0,
+          "top": 0,
+          "right": 1440,
+          "bottom": 3104
+        },
+        "clickable": false,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 3,
+        "parentRoleHint": "android.widget.FrameLayout"
+      },
+      {
+        "nodeId": "4_4_0_0_1440_3104",
+        "packageName": "com.tencent.mm",
+        "text": null,
+        "contentDesc": null,
+        "resourceId": "android:id\/content",
+        "className": "android.widget.FrameLayout",
+        "bounds": {
+          "left": 0,
+          "top": 0,
+          "right": 1440,
+          "bottom": 3104
+        },
+        "clickable": false,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 4,
+        "parentRoleHint": "android.view.ViewGroup"
+      },
+      {
+        "nodeId": "5_5_0_0_1440_3104",
+        "packageName": "com.tencent.mm",
+        "text": null,
+        "contentDesc": null,
+        "resourceId": "com.tencent.mm:id\/jlt",
+        "className": "android.widget.FrameLayout",
+        "bounds": {
+          "left": 0,
+          "top": 0,
+          "right": 1440,
+          "bottom": 3104
+        },
+        "clickable": false,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 5,
+        "parentRoleHint": "android.widget.FrameLayout"
+      },
+      {
+        "nodeId": "6_6_0_0_1440_3104",
+        "packageName": "com.tencent.mm",
+        "text": null,
+        "contentDesc": null,
+        "resourceId": "com.tencent.mm:id\/m_d",
+        "className": "android.widget.FrameLayout",
+        "bounds": {
+          "left": 0,
+          "top": 0,
+          "right": 1440,
+          "bottom": 3104
+        },
+        "clickable": false,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 6,
+        "parentRoleHint": "android.widget.FrameLayout"
+      },
+      {
+        "nodeId": "9_10_0_0_1440_3104",
+        "packageName": "com.tencent.mm",
+        "text": null,
+        "contentDesc": null,
+        "resourceId": "com.tencent.mm:id\/m_v",
+        "className": "android.widget.FrameLayout",
+        "bounds": {
+          "left": 0,
+          "top": 0,
+          "right": 1440,
+          "bottom": 3104
+        },
+        "clickable": false,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 9,
+        "parentRoleHint": "android.widget.RelativeLayout"
+      },
+      {
+        "nodeId": "9_23_0_0_1440_3104",
+        "packageName": "com.tencent.mm",
+        "text": null,
+        "contentDesc": null,
+        "resourceId": "com.tencent.mm:id\/che",
+        "className": "android.widget.RelativeLayout",
+        "bounds": {
+          "left": 0,
+          "top": 0,
+          "right": 1440,
+          "bottom": 3104
+        },
+        "clickable": false,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 9,
+        "parentRoleHint": "android.widget.RelativeLayout"
+      },
+      {
+        "nodeId": "10_24_0_0_1440_3104",
+        "packageName": "com.tencent.mm",
+        "text": null,
+        "contentDesc": null,
+        "resourceId": "com.tencent.mm:id\/cqc",
+        "className": "android.widget.ImageView",
+        "bounds": {
+          "left": 0,
+          "top": 0,
+          "right": 1440,
+          "bottom": 3104
+        },
+        "clickable": false,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 10,
+        "parentRoleHint": "android.widget.RelativeLayout"
+      },
+      {
+        "nodeId": "7_33_0_0_1440_331",
+        "packageName": "com.tencent.mm",
+        "text": null,
+        "contentDesc": null,
+        "resourceId": "com.tencent.mm:id\/ofe",
+        "className": "android.widget.RelativeLayout",
+        "bounds": {
+          "left": 0,
+          "top": 0,
+          "right": 1440,
+          "bottom": 331
+        },
+        "clickable": false,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 7,
+        "parentRoleHint": "android.widget.FrameLayout"
+      },
+      {
+        "nodeId": "8_34_0_0_1440_331",
+        "packageName": "com.tencent.mm",
+        "text": null,
+        "contentDesc": null,
+        "resourceId": "com.tencent.mm:id\/off",
+        "className": "android.widget.RelativeLayout",
+        "bounds": {
+          "left": 0,
+          "top": 0,
+          "right": 1440,
+          "bottom": 331
+        },
+        "clickable": false,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 8,
+        "parentRoleHint": "android.widget.RelativeLayout"
+      },
+      {
+        "nodeId": "9_14_0_1528_1440_1701",
+        "packageName": "com.tencent.mm",
+        "text": null,
+        "contentDesc": null,
+        "resourceId": "com.tencent.mm:id\/m_h",
+        "className": "android.widget.ImageView",
+        "bounds": {
+          "left": 0,
+          "top": 1528,
+          "right": 1440,
+          "bottom": 1701
+        },
+        "clickable": false,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 9,
+        "parentRoleHint": "android.widget.RelativeLayout"
+      },
+      {
+        "nodeId": "13_28_633_1851_806_2081",
+        "packageName": "com.tencent.mm",
+        "text": null,
+        "contentDesc": null,
+        "resourceId": "com.tencent.mm:id\/g87",
+        "className": "android.widget.ImageView",
+        "bounds": {
+          "left": 633,
+          "top": 1851,
+          "right": 806,
+          "bottom": 2081
+        },
+        "clickable": false,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 13,
+        "parentRoleHint": "android.widget.LinearLayout"
+      },
+      {
+        "nodeId": "12_29_612_2110_828_2183",
+        "packageName": "com.tencent.mm",
+        "text": "轻触照亮",
+        "contentDesc": null,
+        "resourceId": "com.tencent.mm:id\/g7y",
+        "className": "android.widget.TextView",
+        "bounds": {
+          "left": 612,
+          "top": 2110,
+          "right": 828,
+          "bottom": 2183
+        },
+        "clickable": false,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 12,
+        "parentRoleHint": "android.widget.LinearLayout"
+      },
+      {
+        "nodeId": "11_12_0_2197_1440_2514",
+        "packageName": "com.tencent.mm",
+        "text": null,
+        "contentDesc": null,
+        "resourceId": "com.tencent.mm:id\/m_u",
+        "className": "android.widget.RelativeLayout",
+        "bounds": {
+          "left": 0,
+          "top": 2197,
+          "right": 1440,
+          "bottom": 2514
+        },
+        "clickable": false,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 11,
+        "parentRoleHint": "android.widget.RelativeLayout"
+      },
+      {
+        "nodeId": "10_30_252_2347_1188_2442",
+        "packageName": "com.tencent.mm",
+        "text": "识别二维码 \/ 花草 \/ 动物 \/ 商品等",
+        "contentDesc": null,
+        "resourceId": "com.tencent.mm:id\/ma4",
+        "className": "android.widget.TextView",
+        "bounds": {
+          "left": 252,
+          "top": 2347,
+          "right": 1188,
+          "bottom": 2442
+        },
+        "clickable": false,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 10,
+        "parentRoleHint": "android.widget.RelativeLayout"
+      },
+      {
+        "nodeId": "11_32_1181_2586_1368_2773",
+        "packageName": "com.tencent.mm",
+        "text": null,
+        "contentDesc": null,
+        "resourceId": "com.tencent.mm:id\/hnn",
+        "className": "android.widget.ImageView",
+        "bounds": {
+          "left": 1181,
+          "top": 2586,
+          "right": 1368,
+          "bottom": 2773
+        },
+        "clickable": false,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 11,
+        "parentRoleHint": "android.widget.LinearLayout"
+      },
+      {
+        "nodeId": "10_17_237_2614_709_2745",
+        "packageName": "com.tencent.mm",
+        "text": null,
+        "contentDesc": null,
+        "resourceId": "com.tencent.mm:id\/uak",
+        "className": "android.widget.LinearLayout",
+        "bounds": {
+          "left": 237,
+          "top": 2614,
+          "right": 709,
+          "bottom": 2745
+        },
+        "clickable": false,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 10,
+        "parentRoleHint": "android.widget.LinearLayout"
+      },
+      {
+        "nodeId": "12_19_237_2614_507_2687",
+        "packageName": "com.tencent.mm",
+        "text": "我的二维码",
+        "contentDesc": null,
+        "resourceId": "com.tencent.mm:id\/uam",
+        "className": "android.widget.TextView",
+        "bounds": {
+          "left": 237,
+          "top": 2614,
+          "right": 507,
+          "bottom": 2687
+        },
+        "clickable": false,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 12,
+        "parentRoleHint": "android.widget.LinearLayout"
+      },
+      {
+        "nodeId": "12_20_529_2618_671_2683",
+        "packageName": "com.tencent.mm",
+        "text": "NEW",
+        "contentDesc": null,
+        "resourceId": "com.tencent.mm:id\/ual",
+        "className": "android.widget.TextView",
+        "bounds": {
+          "left": 529,
+          "top": 2618,
+          "right": 671,
+          "bottom": 2683
+        },
+        "clickable": false,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 12,
+        "parentRoleHint": "android.widget.LinearLayout"
+      },
+      {
+        "nodeId": "10_16_122_2636_208_2722",
+        "packageName": "com.tencent.mm",
+        "text": null,
+        "contentDesc": null,
+        "resourceId": "com.tencent.mm:id\/hmx",
+        "className": "android.widget.ImageView",
+        "bounds": {
+          "left": 122,
+          "top": 2636,
+          "right": 208,
+          "bottom": 2722
+        },
+        "clickable": false,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 10,
+        "parentRoleHint": "android.widget.LinearLayout"
+      },
+      {
+        "nodeId": "11_21_237_2687_709_2745",
+        "packageName": "com.tencent.mm",
+        "text": "添加朋友, 收照片, 收红包",
+        "contentDesc": null,
+        "resourceId": "com.tencent.mm:id\/uaj",
+        "className": "android.widget.TextView",
+        "bounds": {
+          "left": 237,
+          "top": 2687,
+          "right": 709,
+          "bottom": 2745
+        },
+        "clickable": false,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 11,
+        "parentRoleHint": "android.widget.LinearLayout"
+      },
+      {
+        "nodeId": "7_37_0_2845_1440_3104",
+        "packageName": "com.tencent.mm",
+        "text": null,
+        "contentDesc": null,
+        "resourceId": "com.tencent.mm:id\/ma1",
+        "className": "android.widget.LinearLayout",
+        "bounds": {
+          "left": 0,
+          "top": 2845,
+          "right": 1440,
+          "bottom": 3104
+        },
+        "clickable": false,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 7,
+        "parentRoleHint": "android.widget.FrameLayout"
+      },
+      {
+        "nodeId": "9_39_571_2845_1108_2997",
+        "packageName": "com.tencent.mm",
+        "text": null,
+        "contentDesc": null,
+        "resourceId": "com.tencent.mm:id\/mci",
+        "className": "android.widget.LinearLayout",
+        "bounds": {
+          "left": 571,
+          "top": 2845,
+          "right": 1108,
+          "bottom": 2997
+        },
+        "clickable": false,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 9,
+        "parentRoleHint": "android.widget.LinearLayout"
+      },
+      {
+        "nodeId": "9_42_706_2997_720_3011",
+        "packageName": "com.tencent.mm",
+        "text": null,
+        "contentDesc": null,
+        "resourceId": "com.tencent.mm:id\/mcj",
+        "className": "android.view.View",
+        "bounds": {
+          "left": 706,
+          "top": 2997,
+          "right": 720,
+          "bottom": 3011
+        },
+        "clickable": false,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 9,
+        "parentRoleHint": "android.widget.LinearLayout"
+      },
+      {
+        "nodeId": "1_43_0_3104_1440_3168",
+        "packageName": "com.tencent.mm",
+        "text": null,
+        "contentDesc": null,
+        "resourceId": "android:id\/navigationBarBackground",
+        "className": "android.view.View",
+        "bounds": {
+          "left": 0,
+          "top": 3104,
+          "right": 1440,
+          "bottom": 3168
+        },
+        "clickable": false,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 1,
+        "parentRoleHint": "android.widget.FrameLayout"
+      },
+      {
+        "nodeId": "0_0_0_0_1440_3168",
+        "packageName": "com.tencent.mm",
+        "text": null,
+        "contentDesc": null,
+        "resourceId": null,
+        "className": "android.widget.FrameLayout",
+        "bounds": {
+          "left": 0,
+          "top": 0,
+          "right": 1440,
+          "bottom": 3168
+        },
+        "clickable": false,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 0,
+        "parentRoleHint": null
+      },
+      {
+        "nodeId": "1_1_0_0_1440_3104",
+        "packageName": "com.tencent.mm",
+        "text": null,
+        "contentDesc": null,
+        "resourceId": null,
+        "className": "android.widget.LinearLayout",
+        "bounds": {
+          "left": 0,
+          "top": 0,
+          "right": 1440,
+          "bottom": 3104
+        },
+        "clickable": false,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 1,
+        "parentRoleHint": "android.widget.FrameLayout"
+      },
+      {
+        "nodeId": "2_2_0_0_1440_3104",
+        "packageName": "com.tencent.mm",
+        "text": null,
+        "contentDesc": null,
+        "resourceId": null,
+        "className": "android.widget.FrameLayout",
+        "bounds": {
+          "left": 0,
+          "top": 0,
+          "right": 1440,
+          "bottom": 3104
+        },
+        "clickable": false,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 2,
+        "parentRoleHint": "android.widget.LinearLayout"
+      },
+      {
+        "nodeId": "7_7_0_0_1440_3104",
+        "packageName": "com.tencent.mm",
+        "text": null,
+        "contentDesc": null,
+        "resourceId": null,
+        "className": "android.widget.FrameLayout",
+        "bounds": {
+          "left": 0,
+          "top": 0,
+          "right": 1440,
+          "bottom": 3104
+        },
+        "clickable": false,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 7,
+        "parentRoleHint": "android.widget.FrameLayout"
+      },
+      {
+        "nodeId": "8_8_0_0_1440_3104",
+        "packageName": "com.tencent.mm",
+        "text": null,
+        "contentDesc": null,
+        "resourceId": null,
+        "className": "android.view.TextureView",
+        "bounds": {
+          "left": 0,
+          "top": 0,
+          "right": 1440,
+          "bottom": 3104
+        },
+        "clickable": false,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 8,
+        "parentRoleHint": "android.widget.FrameLayout"
+      },
+      {
+        "nodeId": "8_9_0_0_1440_3104",
+        "packageName": "com.tencent.mm",
+        "text": null,
+        "contentDesc": null,
+        "resourceId": null,
+        "className": "android.widget.RelativeLayout",
+        "bounds": {
+          "left": 0,
+          "top": 0,
+          "right": 1440,
+          "bottom": 3104
+        },
+        "clickable": false,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 8,
+        "parentRoleHint": "android.widget.FrameLayout"
+      },
+      {
+        "nodeId": "10_11_0_0_1440_3104",
+        "packageName": "com.tencent.mm",
+        "text": null,
+        "contentDesc": null,
+        "resourceId": null,
+        "className": "android.widget.RelativeLayout",
+        "bounds": {
+          "left": 0,
+          "top": 0,
+          "right": 1440,
+          "bottom": 3104
+        },
+        "clickable": false,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 10,
+        "parentRoleHint": "android.widget.FrameLayout"
+      },
+      {
+        "nodeId": "8_22_0_0_1440_3104",
+        "packageName": "com.tencent.mm",
+        "text": null,
+        "contentDesc": null,
+        "resourceId": null,
+        "className": "android.widget.RelativeLayout",
+        "bounds": {
+          "left": 0,
+          "top": 0,
+          "right": 1440,
+          "bottom": 3104
+        },
+        "clickable": false,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 8,
+        "parentRoleHint": "android.widget.FrameLayout"
+      },
+      {
+        "nodeId": "11_26_612_1851_828_2183",
+        "packageName": "com.tencent.mm",
+        "text": null,
+        "contentDesc": null,
+        "resourceId": null,
+        "className": "android.widget.LinearLayout",
+        "bounds": {
+          "left": 612,
+          "top": 1851,
+          "right": 828,
+          "bottom": 2183
+        },
+        "clickable": false,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 11,
+        "parentRoleHint": "android.widget.LinearLayout"
+      },
+      {
+        "nodeId": "12_27_633_1851_806_2081",
+        "packageName": "com.tencent.mm",
+        "text": null,
+        "contentDesc": null,
+        "resourceId": null,
+        "className": "android.widget.LinearLayout",
+        "bounds": {
+          "left": 633,
+          "top": 1851,
+          "right": 806,
+          "bottom": 2081
+        },
+        "clickable": false,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 12,
+        "parentRoleHint": "android.widget.LinearLayout"
+      },
+      {
+        "nodeId": "11_18_237_2614_671_2687",
+        "packageName": "com.tencent.mm",
+        "text": null,
+        "contentDesc": null,
+        "resourceId": null,
+        "className": "android.widget.LinearLayout",
+        "bounds": {
+          "left": 237,
+          "top": 2614,
+          "right": 671,
+          "bottom": 2687
+        },
+        "clickable": false,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 11,
+        "parentRoleHint": "android.widget.LinearLayout"
+      },
+      {
+        "nodeId": "8_38_0_2845_1440_3104",
+        "packageName": "com.tencent.mm",
+        "text": null,
+        "contentDesc": null,
+        "resourceId": null,
+        "className": "android.widget.LinearLayout",
+        "bounds": {
+          "left": 0,
+          "top": 2845,
+          "right": 1440,
+          "bottom": 3104
+        },
+        "clickable": false,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 8,
+        "parentRoleHint": "android.widget.LinearLayout"
+      }
+    ],
+    "eventsSinceLastState": [
+      {
+        "eventType": "TYPE_WINDOW_CONTENT_CHANGED",
+        "packageName": "com.android.systemui",
+        "className": "android.widget.FrameLayout",
+        "text": null,
+        "timestamp": 1779339078438
+      },
+      {
+        "eventType": "TYPE_4194304",
+        "packageName": null,
+        "className": null,
+        "text": null,
+        "timestamp": 1779339078453
+      },
+      {
+        "eventType": "TYPE_WINDOW_CONTENT_CHANGED",
+        "packageName": "com.tencent.mm",
+        "className": "android.widget.ImageView",
+        "text": null,
+        "timestamp": 1779339078485
+      },
+      {
+        "eventType": "TYPE_WINDOW_CONTENT_CHANGED",
+        "packageName": "com.tencent.mm",
+        "className": "android.widget.ImageView",
+        "text": null,
+        "timestamp": 1779339078584
+      },
+      {
+        "eventType": "TYPE_WINDOW_CONTENT_CHANGED",
+        "packageName": "com.tencent.mm",
+        "className": "android.widget.ImageView",
+        "text": null,
+        "timestamp": 1779339078685
+      },
+      {
+        "eventType": "TYPE_WINDOW_CONTENT_CHANGED",
+        "packageName": "com.tencent.mm",
+        "className": "android.widget.ImageView",
+        "text": null,
+        "timestamp": 1779339078785
+      },
+      {
+        "eventType": "TYPE_WINDOW_CONTENT_CHANGED",
+        "packageName": "com.tencent.mm",
+        "className": "android.widget.ImageView",
+        "text": null,
+        "timestamp": 1779339078885
+      },
+      {
+        "eventType": "TYPE_WINDOW_CONTENT_CHANGED",
+        "packageName": "com.tencent.mm",
+        "className": "android.widget.ImageView",
+        "text": null,
+        "timestamp": 1779339078985
+      },
+      {
+        "eventType": "TYPE_WINDOW_CONTENT_CHANGED",
+        "packageName": "com.tencent.mm",
+        "className": "android.widget.FrameLayout",
+        "text": null,
+        "timestamp": 1779339079096
+      },
+      {
+        "eventType": "TYPE_WINDOW_CONTENT_CHANGED",
+        "packageName": "com.tencent.mm",
+        "className": "android.widget.FrameLayout",
+        "text": null,
+        "timestamp": 1779339079196
+      }
+    ]
+  },
+  "summary": {
+    "nodeCount": 44,
+    "clickableCount": 8,
+    "editableCount": 0,
+    "scrollableCount": 0,
+    "labels": [
+      "com.tencent.mm:id\/crd",
+      "android:id\/content",
+      "com.tencent.mm:id\/jlt",
+      "com.tencent.mm:id\/m_d",
+      "com.tencent.mm:id\/m_v",
+      "com.tencent.mm:id\/m_u",
+      "com.tencent.mm:id\/m95",
+      "com.tencent.mm:id\/m_h",
+      "我的二维码名片，按钮 com.tencent.mm:id\/k3c",
+      "com.tencent.mm:id\/hmx",
+      "com.tencent.mm:id\/uak",
+      "我的二维码 com.tencent.mm:id\/uam",
+      "NEW com.tencent.mm:id\/ual",
+      "添加朋友, 收照片, 收红包 com.tencent.mm:id\/uaj",
+      "com.tencent.mm:id\/che",
+      "com.tencent.mm:id\/cqc",
+      "com.tencent.mm:id\/mac",
+      "com.tencent.mm:id\/g87",
+      "轻触照亮 com.tencent.mm:id\/g7y",
+      "识别二维码 \/ 花草 \/ 动物 \/ 商品等 com.tencent.mm:id\/ma4",
+      "相册，按钮 com.tencent.mm:id\/mj5",
+      "com.tencent.mm:id\/hnn",
+      "com.tencent.mm:id\/ofe",
+      "com.tencent.mm:id\/off",
+      "关闭 com.tencent.mm:id\/bz6",
+      "更多 com.tencent.mm:id\/jqu",
+      "com.tencent.mm:id\/ma1",
+      "com.tencent.mm:id\/mci",
+      "com.tencent.mm:id\/mcj",
+      "android:id\/navigationBarBackground"
+    ],
+    "bottomCandidates": [
+      {
+        "label": "我的二维码 com.tencent.mm:id\/uam",
+        "bounds": {
+          "left": 237,
+          "top": 2614,
+          "right": 507,
+          "bottom": 2687
+        },
+        "clickable": false
+      },
+      {
+        "label": "我的二维码名片，按钮 com.tencent.mm:id\/k3c",
+        "bounds": {
+          "left": 72,
+          "top": 2586,
+          "right": 795,
+          "bottom": 2773
+        },
+        "clickable": true
+      },
+      {
+        "label": "添加朋友, 收照片, 收红包 com.tencent.mm:id\/uaj",
+        "bounds": {
+          "left": 237,
+          "top": 2687,
+          "right": 709,
+          "bottom": 2745
+        },
+        "clickable": false
+      },
+      {
+        "label": "NEW com.tencent.mm:id\/ual",
+        "bounds": {
+          "left": 529,
+          "top": 2618,
+          "right": 671,
+          "bottom": 2683
+        },
+        "clickable": false
+      },
+      {
+        "label": "com.tencent.mm:id\/m95",
+        "bounds": {
+          "left": 0,
+          "top": 2514,
+          "right": 1440,
+          "bottom": 2514
+        },
+        "clickable": true
+      },
+      {
+        "label": "识别二维码 \/ 花草 \/ 动物 \/ 商品等 com.tencent.mm:id\/ma4",
+        "bounds": {
+          "left": 252,
+          "top": 2347,
+          "right": 1188,
+          "bottom": 2442
+        },
+        "clickable": false
+      },
+      {
+        "label": "",
+        "bounds": {
+          "left": 571,
+          "top": 2841,
+          "right": 870,
+          "bottom": 3001
+        },
+        "clickable": true
+      },
+      {
+        "label": "",
+        "bounds": {
+          "left": 870,
+          "top": 2841,
+          "right": 1108,
+          "bottom": 3001
+        },
+        "clickable": true
+      },
+      {
+        "label": "相册，按钮 com.tencent.mm:id\/mj5",
+        "bounds": {
+          "left": 1181,
+          "top": 2586,
+          "right": 1368,
+          "bottom": 2773
+        },
+        "clickable": true
+      }
+    ]
+  },
+  "retentionPolicy": {
+    "fullNodeTreeStored": false,
+    "storedNodeLimit": 45,
+    "storedEventLimit": 20,
+    "longTermKnowledge": "summary + app_ui_graph + assembly\/runtime reports"
+  },
+  "createdAt": 1779339080379
+}

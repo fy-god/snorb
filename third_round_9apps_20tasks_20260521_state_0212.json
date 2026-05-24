@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "kind": "popular_app_task_batch_service_state",
+  "id": "third_round_9apps_20tasks_20260521",
+  "requestId": "third_round_9apps_20tasks_20260521",
+  "status": "RUNNING",
+  "message": "[1\/9] 小红书 4\/20: xhs_bottom_tabs",
+  "requestedPackages": [
+    "com.tencent.mm",
+    "com.sina.weibo",
+    "com.sankuai.meituan",
+    "com.xunmeng.pinduoduo",
+    "com.jingdong.app.mall",
+    "com.taobao.taobao",
+    "com.xingin.xhs",
+    "com.ss.android.ugc.aweme",
+    "com.hexin.plat.android"
+  ],
+  "progress": {
+    "phase": "TASK_RUNNING",
+    "appIndex": 1,
+    "appTotal": 9,
+    "taskIndex": 4,
+    "tasksPerApp": 20,
+    "packageName": "com.xingin.xhs",
+    "appName": "小红书",
+    "taskId": "xhs_bottom_tabs",
+    "instruction": "依次打开小红书底部首页、购物、消息、我等分屏，记录每个页面的主要可点击入口。",
+    "executed": 3,
+    "success": 0,
+    "failed": 3,
+    "blocked": 0
+  },
+  "payload": null,
+  "createdAt": 1779300706396
+}

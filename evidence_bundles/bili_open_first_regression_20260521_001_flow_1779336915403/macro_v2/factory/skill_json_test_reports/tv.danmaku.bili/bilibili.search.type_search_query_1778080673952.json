@@ -1,0 +1,94 @@
+{
+  "schemaVersion": 1,
+  "kind": "skill_json_test_report",
+  "skillId": "bilibili.search.type_search_query",
+  "appPackage": "tv.danmaku.bili",
+  "skillKind": "atomic_skill",
+  "testRuns": 10,
+  "success": 10,
+  "mediumConfidence": 0,
+  "lowConfidence": 0,
+  "failed": 0,
+  "timeout": 0,
+  "successRate": 1,
+  "highConfidenceRate": 1,
+  "mediumOrHighConfidenceRate": 1,
+  "avgDurationMs": 78,
+  "p95DurationMs": 114,
+  "failureClusters": [],
+  "runResults": [
+    {
+      "run": 1,
+      "status": "SUCCESS",
+      "message": "Input node contains text",
+      "durationMs": 281,
+      "usedCoordinate": false
+    },
+    {
+      "run": 2,
+      "status": "SUCCESS",
+      "message": "Input node contains text",
+      "durationMs": 80,
+      "usedCoordinate": false
+    },
+    {
+      "run": 3,
+      "status": "SUCCESS",
+      "message": "Input node contains text",
+      "durationMs": 44,
+      "usedCoordinate": false
+    },
+    {
+      "run": 4,
+      "status": "SUCCESS",
+      "message": "Input node contains text",
+      "durationMs": 39,
+      "usedCoordinate": false
+    },
+    {
+      "run": 5,
+      "status": "SUCCESS",
+      "message": "Input node contains text",
+      "durationMs": 43,
+      "usedCoordinate": false
+    },
+    {
+      "run": 6,
+      "status": "SUCCESS",
+      "message": "Input node contains text",
+      "durationMs": 114,
+      "usedCoordinate": false
+    },
+    {
+      "run": 7,
+      "status": "SUCCESS",
+      "message": "Input node contains text",
+      "durationMs": 58,
+      "usedCoordinate": false
+    },
+    {
+      "run": 8,
+      "status": "SUCCESS",
+      "message": "Input node contains text",
+      "durationMs": 43,
+      "usedCoordinate": false
+    },
+    {
+      "run": 9,
+      "status": "SUCCESS",
+      "message": "Input node contains text",
+      "durationMs": 40,
+      "usedCoordinate": false
+    },
+    {
+      "run": 10,
+      "status": "SUCCESS",
+      "message": "Input node contains text",
+      "durationMs": 41,
+      "usedCoordinate": false
+    }
+  ],
+  "allowSideEffect": false,
+  "promotionSuggestion": "APPROVE_AS_A_LEVEL",
+  "timestamp": 1778080673952
+}

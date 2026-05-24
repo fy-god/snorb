@@ -1,0 +1,4211 @@
+{
+  "schemaVersion": 1,
+  "kind": "app_ui_graph",
+  "status": "CANDIDATE_EXPLORED",
+  "appPackage": "com.baidu.BaiduMap",
+  "appName": "百度地图",
+  "reason": "third_party_app_skill_subset_batch",
+  "budgets": {
+    "maxScreens": 6,
+    "maxClicks": 4,
+    "maxDepth": 1
+  },
+  "screens": [
+    {
+      "screenId": "screen_480c76e4",
+      "screenKey": "480c76e4",
+      "title": "",
+      "appPackage": "com.baidu.BaiduMap",
+      "windowClassName": null,
+      "screenWidth": 1440,
+      "screenHeight": 3168,
+      "nodeCount": 11,
+      "clickableCount": 3,
+      "editableCount": 0,
+      "scrollableCount": 0,
+      "labels": [
+        "android:id\/content",
+        "com.baidu.BaiduMap:id\/round_layout",
+        "欢迎使用本功能服务 com.baidu.BaiduMap:id\/title_tv",
+        "com.baidu.BaiduMap:id\/voice_privacy_cancel_icon",
+        "在使用【地图AI助手】前，请您仔细阅读本扩展功能隐私政策。如您同意前述隐私政策，即代表您同意为了向您提供本扩展功能服务，我们处理所需的相关个人信息并在会话中应用。 com.baidu.BaiduMap:id\/voice_privacy_content_tv",
+        "同意 com.baidu.BaiduMap:id\/confirm_tv",
+        "拒绝 com.baidu.BaiduMap:id\/refuse_tv",
+        "android:id\/navigationBarBackground"
+      ],
+      "bottomTabs": [
+        {
+          "index": 0,
+          "label": "欢迎使用本功能服务 com.baidu.BaiduMap:id\/title_tv",
+          "text": "欢迎使用本功能服务",
+          "desc": null,
+          "resourceId": "com.baidu.BaiduMap:id\/title_tv",
+          "class": "android.widget.TextView",
+          "clickable": false,
+          "editable": false,
+          "selected": false,
+          "bounds": "80 2192 656 2278",
+          "x": 0.25555555555555554,
+          "y": 0.7054924242424242,
+          "center": {
+            "x": 0.25555555555555554,
+            "y": 0.7054924242424242
+          },
+          "tags": [
+            "bottom_tab_candidate"
+          ]
+        },
+        {
+          "index": 1,
+          "label": "com.baidu.BaiduMap:id\/round_layout",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.baidu.BaiduMap:id\/round_layout",
+          "class": "android.view.ViewGroup",
+          "clickable": false,
+          "editable": false,
+          "selected": false,
+          "bounds": "0 2124 1440 3104",
+          "x": 0.5,
+          "y": 0.8251262626262627,
+          "center": {
+            "x": 0.5,
+            "y": 0.8251262626262627
+          },
+          "tags": [
+            "bottom_tab_candidate"
+          ]
+        },
+        {
+          "index": 2,
+          "label": "在使用【地图AI助手】前，请您仔细阅读本扩展功能隐私政策。如您同意前述隐私政策，即代表您同意为了向您提供本扩展功能服务，我们处理所需的相关个人信息并在会话中应用。 com.baidu.BaiduMap:id\/voice_privacy_co",
+          "text": "在使用【地图AI助手】前，请您仔细阅读本扩展功能隐私政策。如您同意前述隐私政策，即代表您同意为了向您提供本扩展功能服务，我们处理所需的相关个人信息并在会话中应用。",
+          "desc": null,
+          "resourceId": "com.baidu.BaiduMap:id\/voice_privacy_content_tv",
+          "class": "android.widget.TextView",
+          "clickable": false,
+          "editable": false,
+          "selected": false,
+          "bounds": "80 2346 1360 2620",
+          "x": 0.5,
+          "y": 0.7837752525252525,
+          "center": {
+            "x": 0.5,
+            "y": 0.7837752525252525
+          },
+          "tags": [
+            "bottom_tab_candidate"
+          ]
+        },
+        {
+          "index": 3,
+          "label": "同意 com.baidu.BaiduMap:id\/confirm_tv",
+          "text": "同意",
+          "desc": null,
+          "resourceId": "com.baidu.BaiduMap:id\/confirm_tv",
+          "class": "android.widget.TextView",
+          "clickable": true,
+          "editable": false,
+          "selected": false,
+          "bounds": "80 2684 1360 2836",
+          "x": 0.5,
+          "y": 0.8712121212121212,
+          "center": {
+            "x": 0.5,
+            "y": 0.8712121212121212
+          },
+          "tags": [
+            "bottom_tab_candidate"
+          ]
+        },
+        {
+          "index": 4,
+          "label": "拒绝 com.baidu.BaiduMap:id\/refuse_tv",
+          "text": "拒绝",
+          "desc": null,
+          "resourceId": "com.baidu.BaiduMap:id\/refuse_tv",
+          "class": "android.widget.TextView",
+          "clickable": true,
+          "editable": false,
+          "selected": false,
+          "bounds": "664 2932 776 3008",
+          "x": 0.5,
+          "y": 0.9375,
+          "center": {
+            "x": 0.5,
+            "y": 0.9375
+          },
+          "tags": [
+            "bottom_tab_candidate"
+          ]
+        },
+        {
+          "index": 5,
+          "label": "android:id\/navigationBarBackground",
+          "text": null,
+          "desc": null,
+          "resourceId": "android:id\/navigationBarBackground",
+          "class": "android.view.View",
+          "clickable": false,
+          "editable": false,
+          "selected": false,
+          "bounds": "0 3104 1440 3168",
+          "x": 0.5,
+          "y": 0.98989898989899,
+          "center": {
+            "x": 0.5,
+            "y": 0.98989898989899
+          },
+          "tags": [
+            "bottom_tab_candidate"
+          ]
+        },
+        {
+          "index": 6,
+          "label": "com.baidu.BaiduMap:id\/voice_privacy_cancel_icon",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.baidu.BaiduMap:id\/voice_privacy_cancel_icon",
+          "class": "android.widget.ImageView",
+          "clickable": true,
+          "editable": false,
+          "selected": false,
+          "bounds": "1264 2160 1416 2312",
+          "x": 0.9305555555555556,
+          "y": 0.7058080808080808,
+          "center": {
+            "x": 0.9305555555555556,
+            "y": 0.7058080808080808
+          },
+          "tags": [
+            "bottom_tab_candidate"
+          ]
+        }
+      ],
+      "entryCandidates": [],
+      "inputCandidates": [],
+      "clickTargets": [
+        {
+          "index": 0,
+          "label": "android:id\/content",
+          "text": null,
+          "desc": null,
+          "resourceId": "android:id\/content",
+          "class": "android.widget.FrameLayout",
+          "clickable": false,
+          "editable": false,
+          "selected": false,
+          "bounds": "0 0 1440 3104",
+          "x": 0.5,
+          "y": 0.4898989898989899,
+          "center": {
+            "x": 0.5,
+            "y": 0.4898989898989899
+          },
+          "tags": []
+        },
+        {
+          "index": 1,
+          "label": "欢迎使用本功能服务 com.baidu.BaiduMap:id\/title_tv",
+          "text": "欢迎使用本功能服务",
+          "desc": null,
+          "resourceId": "com.baidu.BaiduMap:id\/title_tv",
+          "class": "android.widget.TextView",
+          "clickable": false,
+          "editable": false,
+          "selected": false,
+          "bounds": "80 2192 656 2278",
+          "x": 0.25555555555555554,
+          "y": 0.7054924242424242,
+          "center": {
+            "x": 0.25555555555555554,
+            "y": 0.7054924242424242
+          },
+          "tags": [
+            "bottom_area"
+          ]
+        },
+        {
+          "index": 2,
+          "label": "com.baidu.BaiduMap:id\/voice_privacy_cancel_icon",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.baidu.BaiduMap:id\/voice_privacy_cancel_icon",
+          "class": "android.widget.ImageView",
+          "clickable": true,
+          "editable": false,
+          "selected": false,
+          "bounds": "1264 2160 1416 2312",
+          "x": 0.9305555555555556,
+          "y": 0.7058080808080808,
+          "center": {
+            "x": 0.9305555555555556,
+            "y": 0.7058080808080808
+          },
+          "tags": [
+            "clickable",
+            "bottom_area"
+          ]
+        },
+        {
+          "index": 3,
+          "label": "在使用【地图AI助手】前，请您仔细阅读本扩展功能隐私政策。如您同意前述隐私政策，即代表您同意为了向您提供本扩展功能服务，我们处理所需的相关个人信息并在会话中应用。 com.baidu.BaiduMap:id\/voice_privacy_co",
+          "text": "在使用【地图AI助手】前，请您仔细阅读本扩展功能隐私政策。如您同意前述隐私政策，即代表您同意为了向您提供本扩展功能服务，我们处理所需的相关个人信息并在会话中应用。",
+          "desc": null,
+          "resourceId": "com.baidu.BaiduMap:id\/voice_privacy_content_tv",
+          "class": "android.widget.TextView",
+          "clickable": false,
+          "editable": false,
+          "selected": false,
+          "bounds": "80 2346 1360 2620",
+          "x": 0.5,
+          "y": 0.7837752525252525,
+          "center": {
+            "x": 0.5,
+            "y": 0.7837752525252525
+          },
+          "tags": [
+            "bottom_area",
+            "profile_entry"
+          ]
+        },
+        {
+          "index": 4,
+          "label": "com.baidu.BaiduMap:id\/round_layout",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.baidu.BaiduMap:id\/round_layout",
+          "class": "android.view.ViewGroup",
+          "clickable": false,
+          "editable": false,
+          "selected": false,
+          "bounds": "0 2124 1440 3104",
+          "x": 0.5,
+          "y": 0.8251262626262627,
+          "center": {
+            "x": 0.5,
+            "y": 0.8251262626262627
+          },
+          "tags": [
+            "bottom_area"
+          ]
+        },
+        {
+          "index": 5,
+          "label": "同意 com.baidu.BaiduMap:id\/confirm_tv",
+          "text": "同意",
+          "desc": null,
+          "resourceId": "com.baidu.BaiduMap:id\/confirm_tv",
+          "class": "android.widget.TextView",
+          "clickable": true,
+          "editable": false,
+          "selected": false,
+          "bounds": "80 2684 1360 2836",
+          "x": 0.5,
+          "y": 0.8712121212121212,
+          "center": {
+            "x": 0.5,
+            "y": 0.8712121212121212
+          },
+          "tags": [
+            "clickable",
+            "bottom_area"
+          ]
+        },
+        {
+          "index": 6,
+          "label": "拒绝 com.baidu.BaiduMap:id\/refuse_tv",
+          "text": "拒绝",
+          "desc": null,
+          "resourceId": "com.baidu.BaiduMap:id\/refuse_tv",
+          "class": "android.widget.TextView",
+          "clickable": true,
+          "editable": false,
+          "selected": false,
+          "bounds": "664 2932 776 3008",
+          "x": 0.5,
+          "y": 0.9375,
+          "center": {
+            "x": 0.5,
+            "y": 0.9375
+          },
+          "tags": [
+            "clickable",
+            "bottom_area"
+          ]
+        },
+        {
+          "index": 7,
+          "label": "android:id\/navigationBarBackground",
+          "text": null,
+          "desc": null,
+          "resourceId": "android:id\/navigationBarBackground",
+          "class": "android.view.View",
+          "clickable": false,
+          "editable": false,
+          "selected": false,
+          "bounds": "0 3104 1440 3168",
+          "x": 0.5,
+          "y": 0.98989898989899,
+          "center": {
+            "x": 0.5,
+            "y": 0.98989898989899
+          },
+          "tags": [
+            "bottom_area"
+          ]
+        }
+      ],
+      "capability": {
+        "nodeReadability": "B",
+        "inputCapability": "NONE",
+        "verificationCapability": "MEDIUM",
+        "coordinateFallback": "AVAILABLE",
+        "serviceState": "CONNECTED"
+      },
+      "snapshotPath": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_snapshots\/com.baidu.baidumap\/20260520_021023_022_480c76e4.json",
+      "capturedAt": 1779214223373
+    },
+    {
+      "screenId": "screen_32040f27",
+      "screenKey": "32040f27",
+      "title": "",
+      "appPackage": "com.baidu.BaiduMap",
+      "windowClassName": null,
+      "screenWidth": 1440,
+      "screenHeight": 3168,
+      "nodeCount": 22,
+      "clickableCount": 0,
+      "editableCount": 0,
+      "scrollableCount": 0,
+      "labels": [
+        "com.baidu.BaiduMap:id\/action_bar_root",
+        "android:id\/content",
+        "com.baidu.BaiduMap:id\/voice_view_ui",
+        "com.baidu.BaiduMap:id\/operation_behavior",
+        "com.baidu.BaiduMap:id\/stack_root",
+        "com.baidu.BaiduMap:id\/arnew_surfaceview",
+        "地图图区 com.baidu.BaiduMap:id\/map_container",
+        "com.baidu.BaiduMap:id\/commonPopupContainer",
+        "com.baidu.BaiduMap:id\/fragment_container",
+        "com.baidu.BaiduMap:id\/persist_container",
+        "com.baidu.BaiduMap:id\/replace_container",
+        "com.baidu.BaiduMap:id\/base_stack_lui",
+        "com.baidu.BaiduMap:id\/base_empty_view",
+        "android:id\/tabhost",
+        "android:id\/navigationBarBackground"
+      ],
+      "bottomTabs": [
+        {
+          "index": 0,
+          "label": "android:id\/navigationBarBackground",
+          "text": null,
+          "desc": null,
+          "resourceId": "android:id\/navigationBarBackground",
+          "class": "android.view.View",
+          "clickable": false,
+          "editable": false,
+          "selected": false,
+          "bounds": "0 3104 1440 3168",
+          "x": 0.5,
+          "y": 0.98989898989899,
+          "center": {
+            "x": 0.5,
+            "y": 0.98989898989899
+          },
+          "tags": [
+            "bottom_tab_candidate"
+          ]
+        }
+      ],
+      "entryCandidates": [],
+      "inputCandidates": [],
+      "clickTargets": [
+        {
+          "index": 0,
+          "label": "com.baidu.BaiduMap:id\/action_bar_root",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.baidu.BaiduMap:id\/action_bar_root",
+          "class": "android.widget.LinearLayout",
+          "clickable": false,
+          "editable": false,
+          "selected": false,
+          "bounds": "0 0 1440 3104",
+          "x": 0.5,
+          "y": 0.4898989898989899,
+          "center": {
+            "x": 0.5,
+            "y": 0.4898989898989899
+          },
+          "tags": []
+        },
+        {
+          "index": 1,
+          "label": "android:id\/content",
+          "text": null,
+          "desc": null,
+          "resourceId": "android:id\/content",
+          "class": "android.widget.FrameLayout",
+          "clickable": false,
+          "editable": false,
+          "selected": false,
+          "bounds": "0 0 1440 3104",
+          "x": 0.5,
+          "y": 0.4898989898989899,
+          "center": {
+            "x": 0.5,
+            "y": 0.4898989898989899
+          },
+          "tags": []
+        },
+        {
+          "index": 2,
+          "label": "com.baidu.BaiduMap:id\/voice_view_ui",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.baidu.BaiduMap:id\/voice_view_ui",
+          "class": "android.widget.FrameLayout",
+          "clickable": false,
+          "editable": false,
+          "selected": false,
+          "bounds": "0 0 1440 3104",
+          "x": 0.5,
+          "y": 0.4898989898989899,
+          "center": {
+            "x": 0.5,
+            "y": 0.4898989898989899
+          },
+          "tags": []
+        },
+        {
+          "index": 3,
+          "label": "com.baidu.BaiduMap:id\/operation_behavior",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.baidu.BaiduMap:id\/operation_behavior",
+          "class": "android.view.View",
+          "clickable": false,
+          "editable": false,
+          "selected": false,
+          "bounds": "0 0 1440 3104",
+          "x": 0.5,
+          "y": 0.4898989898989899,
+          "center": {
+            "x": 0.5,
+            "y": 0.4898989898989899
+          },
+          "tags": []
+        },
+        {
+          "index": 4,
+          "label": "com.baidu.BaiduMap:id\/stack_root",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.baidu.BaiduMap:id\/stack_root",
+          "class": "android.view.ViewGroup",
+          "clickable": false,
+          "editable": false,
+          "selected": false,
+          "bounds": "0 0 1440 3104",
+          "x": 0.5,
+          "y": 0.4898989898989899,
+          "center": {
+            "x": 0.5,
+            "y": 0.4898989898989899
+          },
+          "tags": []
+        },
+        {
+          "index": 5,
+          "label": "com.baidu.BaiduMap:id\/arnew_surfaceview",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.baidu.BaiduMap:id\/arnew_surfaceview",
+          "class": "android.widget.RelativeLayout",
+          "clickable": false,
+          "editable": false,
+          "selected": false,
+          "bounds": "0 0 1440 3104",
+          "x": 0.5,
+          "y": 0.4898989898989899,
+          "center": {
+            "x": 0.5,
+            "y": 0.4898989898989899
+          },
+          "tags": []
+        },
+        {
+          "index": 6,
+          "label": "地图图区 com.baidu.BaiduMap:id\/map_container",
+          "text": null,
+          "desc": "地图图区",
+          "resourceId": "com.baidu.BaiduMap:id\/map_container",
+          "class": "android.widget.FrameLayout",
+          "clickable": false,
+          "editable": false,
+          "selected": false,
+          "bounds": "0 0 1440 3104",
+          "x": 0.5,
+          "y": 0.4898989898989899,
+          "center": {
+            "x": 0.5,
+            "y": 0.4898989898989899
+          },
+          "tags": []
+        },
+        {
+          "index": 7,
+          "label": "com.baidu.BaiduMap:id\/commonPopupContainer",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.baidu.BaiduMap:id\/commonPopupContainer",
+          "class": "android.widget.FrameLayout",
+          "clickable": false,
+          "editable": false,
+          "selected": false,
+          "bounds": "0 0 1440 3104",
+          "x": 0.5,
+          "y": 0.4898989898989899,
+          "center": {
+            "x": 0.5,
+            "y": 0.4898989898989899
+          },
+          "tags": []
+        },
+        {
+          "index": 8,
+          "label": "com.baidu.BaiduMap:id\/fragment_container",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.baidu.BaiduMap:id\/fragment_container",
+          "class": "android.widget.FrameLayout",
+          "clickable": false,
+          "editable": false,
+          "selected": false,
+          "bounds": "0 0 1440 3104",
+          "x": 0.5,
+          "y": 0.4898989898989899,
+          "center": {
+            "x": 0.5,
+            "y": 0.4898989898989899
+          },
+          "tags": []
+        },
+        {
+          "index": 9,
+          "label": "com.baidu.BaiduMap:id\/persist_container",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.baidu.BaiduMap:id\/persist_container",
+          "class": "android.widget.FrameLayout",
+          "clickable": false,
+          "editable": false,
+          "selected": false,
+          "bounds": "0 0 1440 3104",
+          "x": 0.5,
+          "y": 0.4898989898989899,
+          "center": {
+            "x": 0.5,
+            "y": 0.4898989898989899
+          },
+          "tags": []
+        },
+        {
+          "index": 10,
+          "label": "com.baidu.BaiduMap:id\/replace_container",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.baidu.BaiduMap:id\/replace_container",
+          "class": "android.widget.FrameLayout",
+          "clickable": false,
+          "editable": false,
+          "selected": false,
+          "bounds": "0 0 1440 3104",
+          "x": 0.5,
+          "y": 0.4898989898989899,
+          "center": {
+            "x": 0.5,
+            "y": 0.4898989898989899
+          },
+          "tags": []
+        },
+        {
+          "index": 11,
+          "label": "com.baidu.BaiduMap:id\/base_stack_lui",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.baidu.BaiduMap:id\/base_stack_lui",
+          "class": "android.widget.FrameLayout",
+          "clickable": false,
+          "editable": false,
+          "selected": false,
+          "bounds": "0 0 1440 3104",
+          "x": 0.5,
+          "y": 0.4898989898989899,
+          "center": {
+            "x": 0.5,
+            "y": 0.4898989898989899
+          },
+          "tags": []
+        },
+        {
+          "index": 12,
+          "label": "android:id\/navigationBarBackground",
+          "text": null,
+          "desc": null,
+          "resourceId": "android:id\/navigationBarBackground",
+          "class": "android.view.View",
+          "clickable": false,
+          "editable": false,
+          "selected": false,
+          "bounds": "0 3104 1440 3168",
+          "x": 0.5,
+          "y": 0.98989898989899,
+          "center": {
+            "x": 0.5,
+            "y": 0.98989898989899
+          },
+          "tags": [
+            "bottom_area"
+          ]
+        }
+      ],
+      "capability": {
+        "nodeReadability": "C",
+        "inputCapability": "NONE",
+        "verificationCapability": "LOW",
+        "coordinateFallback": "AVAILABLE",
+        "serviceState": "CONNECTED"
+      },
+      "snapshotPath": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_snapshots\/com.baidu.baidumap\/20260520_021025_694_32040f27.json",
+      "capturedAt": 1779214226088
+    },
+    {
+      "screenId": "screen_7d8d6efa",
+      "screenKey": "7d8d6efa",
+      "title": "输入功能名称进行查找",
+      "appPackage": "com.baidu.BaiduMap",
+      "windowClassName": "android.view.ViewGroup",
+      "screenWidth": 1440,
+      "screenHeight": 3168,
+      "nodeCount": 591,
+      "clickableCount": 106,
+      "editableCount": 0,
+      "scrollableCount": 1,
+      "labels": [
+        "com.baidu.BaiduMap:id\/action_bar_root",
+        "android:id\/content",
+        "com.baidu.BaiduMap:id\/voice_view_ui",
+        "com.baidu.BaiduMap:id\/operation_behavior",
+        "com.baidu.BaiduMap:id\/stack_root",
+        "com.baidu.BaiduMap:id\/arnew_surfaceview",
+        "地图图区 com.baidu.BaiduMap:id\/map_container",
+        "com.baidu.BaiduMap:id\/commonPopupContainer",
+        "com.baidu.BaiduMap:id\/fragment_container",
+        "com.baidu.BaiduMap:id\/base_stack_lui",
+        "com.baidu.BaiduMap:id\/persist_container",
+        "com.baidu.BaiduMap:id\/replace_container",
+        "com.baidu.BaiduMap:id\/top_layout",
+        "com.baidu.BaiduMap:id\/title_grup",
+        "返回 com.baidu.BaiduMap:id\/title_btn_left",
+        "com.baidu.BaiduMap:id\/title_search",
+        "输入功能名称进行查找",
+        "编辑 com.baidu.BaiduMap:id\/title_text_right",
+        "com.baidu.BaiduMap:id\/more_func_sv",
+        "com.baidu.BaiduMap:id\/content_container",
+        "我的常用功能 com.baidu.BaiduMap:id\/more_func_title",
+        "编辑您的首页常用工具 com.baidu.BaiduMap:id\/more_func_title_tips",
+        "com.baidu.BaiduMap:id\/more_func_custom",
+        "com.baidu.BaiduMap:id\/diamond_icon_layout",
+        "com.baidu.BaiduMap:id\/icon_bg",
+        "com.baidu.BaiduMap:id\/diamond_icon_bigger",
+        "驾车 com.baidu.BaiduMap:id\/diamond_title",
+        "公共交通 com.baidu.BaiduMap:id\/diamond_title",
+        "打车 com.baidu.BaiduMap:id\/diamond_title",
+        "订酒店 com.baidu.BaiduMap:id\/diamond_title",
+        "优惠加油 com.baidu.BaiduMap:id\/diamond_title",
+        "顺风车 com.baidu.BaiduMap:id\/diamond_title",
+        "爱去榜 com.baidu.BaiduMap:id\/diamond_title",
+        "车主服务 com.baidu.BaiduMap:id\/diamond_title",
+        "叫代驾 com.baidu.BaiduMap:id\/diamond_title",
+        "步行 com.baidu.BaiduMap:id\/diamond_title",
+        "骑行 com.baidu.BaiduMap:id\/diamond_title",
+        "实时公交 com.baidu.BaiduMap:id\/diamond_title",
+        "录语音包 com.baidu.BaiduMap:id\/diamond_title",
+        "添加 com.baidu.BaiduMap:id\/diamond_title",
+        "com.baidu.BaiduMap:id\/func_row",
+        "com.baidu.BaiduMap:id\/line_shadow",
+        "常用出行 com.baidu.BaiduMap:id\/more_func_title",
+        "com.baidu.BaiduMap:id\/rows_container",
+        "com.baidu.BaiduMap:id\/more_func_diamond_1",
+        "com.baidu.BaiduMap:id\/diamond_icon_small",
+        "com.baidu.BaiduMap:id\/more_func_diamond_2",
+        "com.baidu.BaiduMap:id\/more_func_diamond_3",
+        "com.baidu.BaiduMap:id\/more_func_diamond_4",
+        "com.baidu.BaiduMap:id\/more_func_diamond_5",
+        "摩托车 com.baidu.BaiduMap:id\/diamond_title",
+        "新手导航 com.baidu.BaiduMap:id\/diamond_title",
+        "新能源 com.baidu.BaiduMap:id\/diamond_title",
+        "地铁图 com.baidu.BaiduMap:id\/diamond_title",
+        "组队出行 com.baidu.BaiduMap:id\/diamond_title",
+        "租车 com.baidu.BaiduMap:id\/diamond_title",
+        "骑手地图 com.baidu.BaiduMap:id\/diamond_title",
+        "常用地址 com.baidu.BaiduMap:id\/diamond_title",
+        "火车机票 com.baidu.BaiduMap:id\/diamond_title",
+        "开始跑步 com.baidu.BaiduMap:id\/diamond_title",
+        "跑步路线 com.baidu.BaiduMap:id\/diamond_title",
+        "智行 com.baidu.BaiduMap:id\/diamond_title",
+        "离线地图 com.baidu.BaiduMap:id\/diamond_title",
+        "搜索 com.baidu.BaiduMap:id\/diamond_title",
+        "货车 com.baidu.BaiduMap:id\/diamond_title",
+        "货车限行 com.baidu.BaiduMap:id\/diamond_title",
+        "货车行程 com.baidu.BaiduMap:id\/diamond_title",
+        "骑行路线 com.baidu.BaiduMap:id\/diamond_title",
+        "历史行程 com.baidu.BaiduMap:id\/diamond_title",
+        "车道巡航 com.baidu.BaiduMap:id\/diamond_title",
+        "特价拼车 com.baidu.BaiduMap:id\/diamond_title",
+        "乘车码 com.baidu.BaiduMap:id\/diamond_title",
+        "位置共享 com.baidu.BaiduMap:id\/diamond_title",
+        "车主功能 com.baidu.BaiduMap:id\/more_func_title",
+        "手车互联 com.baidu.BaiduMap:id\/diamond_title",
+        "加油站 com.baidu.BaiduMap:id\/diamond_title",
+        "找充电桩 com.baidu.BaiduMap:id\/diamond_title",
+        "停车助手 com.baidu.BaiduMap:id\/diamond_title",
+        "记录车位 com.baidu.BaiduMap:id\/diamond_title",
+        "车位预约 com.baidu.BaiduMap:id\/diamond_title"
+      ],
+      "bottomTabs": [
+        {
+          "index": 0,
+          "label": "com.baidu.BaiduMap:id\/more_func_diamond_1",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.baidu.BaiduMap:id\/more_func_diamond_1",
+          "class": "android.widget.RelativeLayout",
+          "clickable": true,
+          "editable": false,
+          "selected": false,
+          "bounds": "40 2071 312 2344",
+          "x": 0.12222222222222222,
+          "y": 0.6966540404040404,
+          "center": {
+            "x": 0.12222222222222222,
+            "y": 0.6966540404040404
+          },
+          "tags": [
+            "bottom_tab_candidate"
+          ]
+        },
+        {
+          "index": 1,
+          "label": "com.baidu.BaiduMap:id\/diamond_icon_layout",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.baidu.BaiduMap:id\/diamond_icon_layout",
+          "class": "android.widget.RelativeLayout",
+          "clickable": false,
+          "editable": false,
+          "selected": false,
+          "bounds": "48 2071 304 2327",
+          "x": 0.12222222222222222,
+          "y": 0.6941287878787878,
+          "center": {
+            "x": 0.12222222222222222,
+            "y": 0.6941287878787878
+          },
+          "tags": [
+            "bottom_tab_candidate"
+          ]
+        },
+        {
+          "index": 2,
+          "label": "com.baidu.BaiduMap:id\/icon_bg",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.baidu.BaiduMap:id\/icon_bg",
+          "class": "android.widget.ImageView",
+          "clickable": false,
+          "editable": false,
+          "selected": false,
+          "bounds": "48 2071 304 2327",
+          "x": 0.12222222222222222,
+          "y": 0.6941287878787878,
+          "center": {
+            "x": 0.12222222222222222,
+            "y": 0.6941287878787878
+          },
+          "tags": [
+            "bottom_tab_candidate"
+          ]
+        },
+        {
+          "index": 3,
+          "label": "com.baidu.BaiduMap:id\/diamond_icon_small",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.baidu.BaiduMap:id\/diamond_icon_small",
+          "class": "android.widget.ImageView",
+          "clickable": false,
+          "editable": false,
+          "selected": false,
+          "bounds": "76 2115 276 2283",
+          "x": 0.12222222222222222,
+          "y": 0.6941287878787878,
+          "center": {
+            "x": 0.12222222222222222,
+            "y": 0.6941287878787878
+          },
+          "tags": [
+            "bottom_tab_candidate"
+          ]
+        },
+        {
+          "index": 4,
+          "label": "摩托车 com.baidu.BaiduMap:id\/diamond_title",
+          "text": "摩托车",
+          "desc": null,
+          "resourceId": "com.baidu.BaiduMap:id\/diamond_title",
+          "class": "android.widget.TextView",
+          "clickable": false,
+          "editable": false,
+          "selected": false,
+          "bounds": "104 2287 248 2344",
+          "x": 0.12222222222222222,
+          "y": 0.7307449494949495,
+          "center": {
+            "x": 0.12222222222222222,
+            "y": 0.7307449494949495
+          },
+          "tags": [
+            "bottom_tab_candidate"
+          ]
+        },
+        {
+          "index": 5,
+          "label": "com.baidu.BaiduMap:id\/more_func_diamond_1",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.baidu.BaiduMap:id\/more_func_diamond_1",
+          "class": "android.widget.RelativeLayout",
+          "clickable": true,
+          "editable": false,
+          "selected": false,
+          "bounds": "40 2344 312 2617",
+          "x": 0.12222222222222222,
+          "y": 0.7828282828282829,
+          "center": {
+            "x": 0.12222222222222222,
+            "y": 0.7828282828282829
+          },
+          "tags": [
+            "bottom_tab_candidate"
+          ]
+        },
+        {
+          "index": 6,
+          "label": "com.baidu.BaiduMap:id\/diamond_icon_layout",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.baidu.BaiduMap:id\/diamond_icon_layout",
+          "class": "android.widget.RelativeLayout",
+          "clickable": false,
+          "editable": false,
+          "selected": false,
+          "bounds": "48 2344 304 2600",
+          "x": 0.12222222222222222,
+          "y": 0.7803030303030303,
+          "center": {
+            "x": 0.12222222222222222,
+            "y": 0.7803030303030303
+          },
+          "tags": [
+            "bottom_tab_candidate"
+          ]
+        },
+        {
+          "index": 7,
+          "label": "com.baidu.BaiduMap:id\/icon_bg",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.baidu.BaiduMap:id\/icon_bg",
+          "class": "android.widget.ImageView",
+          "clickable": false,
+          "editable": false,
+          "selected": false,
+          "bounds": "48 2344 304 2600",
+          "x": 0.12222222222222222,
+          "y": 0.7803030303030303,
+          "center": {
+            "x": 0.12222222222222222,
+            "y": 0.7803030303030303
+          },
+          "tags": [
+            "bottom_tab_candidate"
+          ]
+        },
+        {
+          "index": 8,
+          "label": "com.baidu.BaiduMap:id\/diamond_icon_small",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.baidu.BaiduMap:id\/diamond_icon_small",
+          "class": "android.widget.ImageView",
+          "clickable": false,
+          "editable": false,
+          "selected": false,
+          "bounds": "76 2388 276 2556",
+          "x": 0.12222222222222222,
+          "y": 0.7803030303030303,
+          "center": {
+            "x": 0.12222222222222222,
+            "y": 0.7803030303030303
+          },
+          "tags": [
+            "bottom_tab_candidate"
+          ]
+        },
+        {
+          "index": 9,
+          "label": "订酒店 com.baidu.BaiduMap:id\/diamond_title",
+          "text": "订酒店",
+          "desc": null,
+          "resourceId": "com.baidu.BaiduMap:id\/diamond_title",
+          "class": "android.widget.TextView",
+          "clickable": false,
+          "editable": false,
+          "selected": false,
+          "bounds": "104 2560 248 2617",
+          "x": 0.12222222222222222,
+          "y": 0.8169191919191919,
+          "center": {
+            "x": 0.12222222222222222,
+            "y": 0.8169191919191919
+          },
+          "tags": [
+            "bottom_tab_candidate"
+          ]
+        },
+        {
+          "index": 10,
+          "label": "com.baidu.BaiduMap:id\/more_func_diamond_1",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.baidu.BaiduMap:id\/more_func_diamond_1",
+          "class": "android.widget.RelativeLayout",
+          "clickable": true,
+          "editable": false,
+          "selected": false,
+          "bounds": "40 2617 312 2890",
+          "x": 0.12222222222222222,
+          "y": 0.8690025252525253,
+          "center": {
+            "x": 0.12222222222222222,
+            "y": 0.8690025252525253
+          },
+          "tags": [
+            "bottom_tab_candidate"
+          ]
+        },
+        {
+          "index": 11,
+          "label": "com.baidu.BaiduMap:id\/diamond_icon_layout",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.baidu.BaiduMap:id\/diamond_icon_layout",
+          "class": "android.widget.RelativeLayout",
+          "clickable": false,
+          "editable": false,
+          "selected": false,
+          "bounds": "48 2617 304 2873",
+          "x": 0.12222222222222222,
+          "y": 0.8664772727272727,
+          "center": {
+            "x": 0.12222222222222222,
+            "y": 0.8664772727272727
+          },
+          "tags": [
+            "bottom_tab_candidate"
+          ]
+        }
+      ],
+      "entryCandidates": [
+        {
+          "index": 0,
+          "label": "com.baidu.BaiduMap:id\/title_search",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.baidu.BaiduMap:id\/title_search",
+          "class": "android.widget.RelativeLayout",
+          "clickable": true,
+          "editable": false,
+          "selected": false,
+          "bounds": "192 184 1200 336",
+          "x": 0.48333333333333334,
+          "y": 0.08207070707070707,
+          "center": {
+            "x": 0.48333333333333334,
+            "y": 0.08207070707070707
+          },
+          "tags": [
+            "entry_candidate",
+            "clickable",
+            "search_entry"
+          ]
+        }
+      ],
+      "inputCandidates": [],
+      "clickTargets": [
+        {
+          "index": 0,
+          "label": "com.baidu.BaiduMap:id\/top_layout",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.baidu.BaiduMap:id\/top_layout",
+          "class": "android.widget.FrameLayout",
+          "clickable": false,
+          "editable": false,
+          "selected": false,
+          "bounds": "0 0 1440 160",
+          "x": 0.5,
+          "y": 0.025252525252525252,
+          "center": {
+            "x": 0.5,
+            "y": 0.025252525252525252
+          },
+          "tags": []
+        },
+        {
+          "index": 1,
+          "label": "返回 com.baidu.BaiduMap:id\/title_btn_left",
+          "text": null,
+          "desc": "返回",
+          "resourceId": "com.baidu.BaiduMap:id\/title_btn_left",
+          "class": "android.widget.ImageView",
+          "clickable": true,
+          "editable": false,
+          "selected": false,
+          "bounds": "0 164 192 356",
+          "x": 0.06666666666666667,
+          "y": 0.08207070707070707,
+          "center": {
+            "x": 0.06666666666666667,
+            "y": 0.08207070707070707
+          },
+          "tags": [
+            "clickable"
+          ]
+        },
+        {
+          "index": 2,
+          "label": "com.baidu.BaiduMap:id\/title_search",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.baidu.BaiduMap:id\/title_search",
+          "class": "android.widget.RelativeLayout",
+          "clickable": true,
+          "editable": false,
+          "selected": false,
+          "bounds": "192 184 1200 336",
+          "x": 0.48333333333333334,
+          "y": 0.08207070707070707,
+          "center": {
+            "x": 0.48333333333333334,
+            "y": 0.08207070707070707
+          },
+          "tags": [
+            "clickable",
+            "search_entry"
+          ]
+        },
+        {
+          "index": 3,
+          "label": "输入功能名称进行查找",
+          "text": "输入功能名称进行查找",
+          "desc": null,
+          "resourceId": null,
+          "class": "android.widget.TextView",
+          "clickable": false,
+          "editable": false,
+          "selected": false,
+          "bounds": "192 184 1200 336",
+          "x": 0.48333333333333334,
+          "y": 0.08207070707070707,
+          "center": {
+            "x": 0.48333333333333334,
+            "y": 0.08207070707070707
+          },
+          "tags": []
+        },
+        {
+          "index": 4,
+          "label": "com.baidu.BaiduMap:id\/title_grup",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.baidu.BaiduMap:id\/title_grup",
+          "class": "android.widget.RelativeLayout",
+          "clickable": true,
+          "editable": false,
+          "selected": false,
+          "bounds": "0 160 1440 360",
+          "x": 0.5,
+          "y": 0.08207070707070707,
+          "center": {
+            "x": 0.5,
+            "y": 0.08207070707070707
+          },
+          "tags": [
+            "clickable"
+          ]
+        },
+        {
+          "index": 5,
+          "label": "编辑 com.baidu.BaiduMap:id\/title_text_right",
+          "text": "编辑",
+          "desc": null,
+          "resourceId": "com.baidu.BaiduMap:id\/title_text_right",
+          "class": "android.widget.TextView",
+          "clickable": true,
+          "editable": false,
+          "selected": false,
+          "bounds": "1264 160 1440 360",
+          "x": 0.9388888888888889,
+          "y": 0.08207070707070707,
+          "center": {
+            "x": 0.9388888888888889,
+            "y": 0.08207070707070707
+          },
+          "tags": [
+            "clickable"
+          ]
+        },
+        {
+          "index": 6,
+          "label": "我的常用功能 com.baidu.BaiduMap:id\/more_func_title",
+          "text": "我的常用功能",
+          "desc": null,
+          "resourceId": "com.baidu.BaiduMap:id\/more_func_title",
+          "class": "android.widget.TextView",
+          "clickable": false,
+          "editable": false,
+          "selected": false,
+          "bounds": "80 360 840 617",
+          "x": 0.3194444444444444,
+          "y": 0.15404040404040403,
+          "center": {
+            "x": 0.3194444444444444,
+            "y": 0.15404040404040403
+          },
+          "tags": [
+            "profile_entry"
+          ]
+        },
+        {
+          "index": 7,
+          "label": "编辑您的首页常用工具 com.baidu.BaiduMap:id\/more_func_title_tips",
+          "text": "编辑您的首页常用工具",
+          "desc": null,
+          "resourceId": "com.baidu.BaiduMap:id\/more_func_title_tips",
+          "class": "android.widget.TextView",
+          "clickable": false,
+          "editable": false,
+          "selected": false,
+          "bounds": "840 482 1360 552",
+          "x": 0.7638888888888888,
+          "y": 0.16319444444444445,
+          "center": {
+            "x": 0.7638888888888888,
+            "y": 0.16319444444444445
+          },
+          "tags": []
+        },
+        {
+          "index": 8,
+          "label": "com.baidu.BaiduMap:id\/diamond_icon_layout",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.baidu.BaiduMap:id\/diamond_icon_layout",
+          "class": "android.widget.RelativeLayout",
+          "clickable": false,
+          "editable": false,
+          "selected": false,
+          "bounds": "97 617 257 821",
+          "x": 0.12291666666666666,
+          "y": 0.22695707070707072,
+          "center": {
+            "x": 0.12291666666666666,
+            "y": 0.22695707070707072
+          },
+          "tags": []
+        },
+        {
+          "index": 9,
+          "label": "com.baidu.BaiduMap:id\/diamond_icon_layout",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.baidu.BaiduMap:id\/diamond_icon_layout",
+          "class": "android.widget.RelativeLayout",
+          "clickable": false,
+          "editable": false,
+          "selected": false,
+          "bounds": "370 617 530 821",
+          "x": 0.3125,
+          "y": 0.22695707070707072,
+          "center": {
+            "x": 0.3125,
+            "y": 0.22695707070707072
+          },
+          "tags": []
+        },
+        {
+          "index": 10,
+          "label": "com.baidu.BaiduMap:id\/diamond_icon_layout",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.baidu.BaiduMap:id\/diamond_icon_layout",
+          "class": "android.widget.RelativeLayout",
+          "clickable": false,
+          "editable": false,
+          "selected": false,
+          "bounds": "644 617 804 821",
+          "x": 0.5027777777777778,
+          "y": 0.22695707070707072,
+          "center": {
+            "x": 0.5027777777777778,
+            "y": 0.22695707070707072
+          },
+          "tags": []
+        },
+        {
+          "index": 11,
+          "label": "com.baidu.BaiduMap:id\/diamond_icon_layout",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.baidu.BaiduMap:id\/diamond_icon_layout",
+          "class": "android.widget.RelativeLayout",
+          "clickable": false,
+          "editable": false,
+          "selected": false,
+          "bounds": "917 617 1077 821",
+          "x": 0.6923611111111111,
+          "y": 0.22695707070707072,
+          "center": {
+            "x": 0.6923611111111111,
+            "y": 0.22695707070707072
+          },
+          "tags": []
+        },
+        {
+          "index": 12,
+          "label": "com.baidu.BaiduMap:id\/diamond_icon_layout",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.baidu.BaiduMap:id\/diamond_icon_layout",
+          "class": "android.widget.RelativeLayout",
+          "clickable": false,
+          "editable": false,
+          "selected": false,
+          "bounds": "1191 617 1351 821",
+          "x": 0.8826388888888889,
+          "y": 0.22695707070707072,
+          "center": {
+            "x": 0.8826388888888889,
+            "y": 0.22695707070707072
+          },
+          "tags": []
+        },
+        {
+          "index": 13,
+          "label": "com.baidu.BaiduMap:id\/icon_bg",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.baidu.BaiduMap:id\/icon_bg",
+          "class": "android.widget.ImageView",
+          "clickable": false,
+          "editable": false,
+          "selected": false,
+          "bounds": "97 661 257 821",
+          "x": 0.12291666666666666,
+          "y": 0.23390151515151514,
+          "center": {
+            "x": 0.12291666666666666,
+            "y": 0.23390151515151514
+          },
+          "tags": []
+        },
+        {
+          "index": 14,
+          "label": "com.baidu.BaiduMap:id\/diamond_icon_bigger",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.baidu.BaiduMap:id\/diamond_icon_bigger",
+          "class": "android.widget.ImageView",
+          "clickable": false,
+          "editable": false,
+          "selected": false,
+          "bounds": "97 661 257 821",
+          "x": 0.12291666666666666,
+          "y": 0.23390151515151514,
+          "center": {
+            "x": 0.12291666666666666,
+            "y": 0.23390151515151514
+          },
+          "tags": []
+        },
+        {
+          "index": 15,
+          "label": "com.baidu.BaiduMap:id\/icon_bg",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.baidu.BaiduMap:id\/icon_bg",
+          "class": "android.widget.ImageView",
+          "clickable": false,
+          "editable": false,
+          "selected": false,
+          "bounds": "370 661 530 821",
+          "x": 0.3125,
+          "y": 0.23390151515151514,
+          "center": {
+            "x": 0.3125,
+            "y": 0.23390151515151514
+          },
+          "tags": []
+        },
+        {
+          "index": 16,
+          "label": "com.baidu.BaiduMap:id\/diamond_icon_bigger",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.baidu.BaiduMap:id\/diamond_icon_bigger",
+          "class": "android.widget.ImageView",
+          "clickable": false,
+          "editable": false,
+          "selected": false,
+          "bounds": "370 661 530 821",
+          "x": 0.3125,
+          "y": 0.23390151515151514,
+          "center": {
+            "x": 0.3125,
+            "y": 0.23390151515151514
+          },
+          "tags": []
+        },
+        {
+          "index": 17,
+          "label": "com.baidu.BaiduMap:id\/icon_bg",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.baidu.BaiduMap:id\/icon_bg",
+          "class": "android.widget.ImageView",
+          "clickable": false,
+          "editable": false,
+          "selected": false,
+          "bounds": "644 661 804 821",
+          "x": 0.5027777777777778,
+          "y": 0.23390151515151514,
+          "center": {
+            "x": 0.5027777777777778,
+            "y": 0.23390151515151514
+          },
+          "tags": []
+        },
+        {
+          "index": 18,
+          "label": "com.baidu.BaiduMap:id\/diamond_icon_bigger",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.baidu.BaiduMap:id\/diamond_icon_bigger",
+          "class": "android.widget.ImageView",
+          "clickable": false,
+          "editable": false,
+          "selected": false,
+          "bounds": "644 661 804 821",
+          "x": 0.5027777777777778,
+          "y": 0.23390151515151514,
+          "center": {
+            "x": 0.5027777777777778,
+            "y": 0.23390151515151514
+          },
+          "tags": []
+        },
+        {
+          "index": 19,
+          "label": "com.baidu.BaiduMap:id\/icon_bg",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.baidu.BaiduMap:id\/icon_bg",
+          "class": "android.widget.ImageView",
+          "clickable": false,
+          "editable": false,
+          "selected": false,
+          "bounds": "917 661 1077 821",
+          "x": 0.6923611111111111,
+          "y": 0.23390151515151514,
+          "center": {
+            "x": 0.6923611111111111,
+            "y": 0.23390151515151514
+          },
+          "tags": []
+        },
+        {
+          "index": 20,
+          "label": "com.baidu.BaiduMap:id\/diamond_icon_bigger",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.baidu.BaiduMap:id\/diamond_icon_bigger",
+          "class": "android.widget.ImageView",
+          "clickable": false,
+          "editable": false,
+          "selected": false,
+          "bounds": "917 661 1077 821",
+          "x": 0.6923611111111111,
+          "y": 0.23390151515151514,
+          "center": {
+            "x": 0.6923611111111111,
+            "y": 0.23390151515151514
+          },
+          "tags": []
+        },
+        {
+          "index": 21,
+          "label": "com.baidu.BaiduMap:id\/icon_bg",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.baidu.BaiduMap:id\/icon_bg",
+          "class": "android.widget.ImageView",
+          "clickable": false,
+          "editable": false,
+          "selected": false,
+          "bounds": "1191 661 1351 821",
+          "x": 0.8826388888888889,
+          "y": 0.23390151515151514,
+          "center": {
+            "x": 0.8826388888888889,
+            "y": 0.23390151515151514
+          },
+          "tags": []
+        },
+        {
+          "index": 22,
+          "label": "com.baidu.BaiduMap:id\/diamond_icon_bigger",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.baidu.BaiduMap:id\/diamond_icon_bigger",
+          "class": "android.widget.ImageView",
+          "clickable": false,
+          "editable": false,
+          "selected": false,
+          "bounds": "1191 661 1351 821",
+          "x": 0.8826388888888889,
+          "y": 0.23390151515151514,
+          "center": {
+            "x": 0.8826388888888889,
+            "y": 0.23390151515151514
+          },
+          "tags": []
+        },
+        {
+          "index": 23,
+          "label": "",
+          "text": null,
+          "desc": null,
+          "resourceId": null,
+          "class": "android.widget.RelativeLayout",
+          "clickable": true,
+          "editable": false,
+          "selected": false,
+          "bounds": "40 617 314 898",
+          "x": 0.12291666666666666,
+          "y": 0.2389520202020202,
+          "center": {
+            "x": 0.12291666666666666,
+            "y": 0.2389520202020202
+          },
+          "tags": [
+            "clickable"
+          ]
+        },
+        {
+          "index": 24,
+          "label": "",
+          "text": null,
+          "desc": null,
+          "resourceId": null,
+          "class": "android.widget.RelativeLayout",
+          "clickable": true,
+          "editable": false,
+          "selected": false,
+          "bounds": "314 617 587 898",
+          "x": 0.3125,
+          "y": 0.2389520202020202,
+          "center": {
+            "x": 0.3125,
+            "y": 0.2389520202020202
+          },
+          "tags": [
+            "clickable"
+          ]
+        },
+        {
+          "index": 25,
+          "label": "",
+          "text": null,
+          "desc": null,
+          "resourceId": null,
+          "class": "android.widget.RelativeLayout",
+          "clickable": true,
+          "editable": false,
+          "selected": false,
+          "bounds": "587 617 861 898",
+          "x": 0.5027777777777778,
+          "y": 0.2389520202020202,
+          "center": {
+            "x": 0.5027777777777778,
+            "y": 0.2389520202020202
+          },
+          "tags": [
+            "clickable"
+          ]
+        },
+        {
+          "index": 26,
+          "label": "",
+          "text": null,
+          "desc": null,
+          "resourceId": null,
+          "class": "android.widget.RelativeLayout",
+          "clickable": true,
+          "editable": false,
+          "selected": false,
+          "bounds": "861 617 1134 898",
+          "x": 0.6923611111111111,
+          "y": 0.2389520202020202,
+          "center": {
+            "x": 0.6923611111111111,
+            "y": 0.2389520202020202
+          },
+          "tags": [
+            "clickable"
+          ]
+        },
+        {
+          "index": 27,
+          "label": "",
+          "text": null,
+          "desc": null,
+          "resourceId": null,
+          "class": "android.widget.RelativeLayout",
+          "clickable": true,
+          "editable": false,
+          "selected": false,
+          "bounds": "1134 617 1408 898",
+          "x": 0.8826388888888889,
+          "y": 0.2389520202020202,
+          "center": {
+            "x": 0.8826388888888889,
+            "y": 0.2389520202020202
+          },
+          "tags": [
+            "clickable"
+          ]
+        },
+        {
+          "index": 28,
+          "label": "驾车 com.baidu.BaiduMap:id\/diamond_title",
+          "text": "驾车",
+          "desc": null,
+          "resourceId": "com.baidu.BaiduMap:id\/diamond_title",
+          "class": "android.widget.TextView",
+          "clickable": false,
+          "editable": false,
+          "selected": false,
+          "bounds": "129 841 225 898",
+          "x": 0.12291666666666666,
+          "y": 0.2743055555555556,
+          "center": {
+            "x": 0.12291666666666666,
+            "y": 0.2743055555555556
+          },
+          "tags": []
+        },
+        {
+          "index": 29,
+          "label": "公共交通 com.baidu.BaiduMap:id\/diamond_title",
+          "text": "公共交通",
+          "desc": null,
+          "resourceId": "com.baidu.BaiduMap:id\/diamond_title",
+          "class": "android.widget.TextView",
+          "clickable": false,
+          "editable": false,
+          "selected": false,
+          "bounds": "354 841 546 898",
+          "x": 0.3125,
+          "y": 0.2743055555555556,
+          "center": {
+            "x": 0.3125,
+            "y": 0.2743055555555556
+          },
+          "tags": []
+        },
+        {
+          "index": 30,
+          "label": "打车 com.baidu.BaiduMap:id\/diamond_title",
+          "text": "打车",
+          "desc": null,
+          "resourceId": "com.baidu.BaiduMap:id\/diamond_title",
+          "class": "android.widget.TextView",
+          "clickable": false,
+          "editable": false,
+          "selected": false,
+          "bounds": "676 841 772 898",
+          "x": 0.5027777777777778,
+          "y": 0.2743055555555556,
+          "center": {
+            "x": 0.5027777777777778,
+            "y": 0.2743055555555556
+          },
+          "tags": []
+        },
+        {
+          "index": 31,
+          "label": "订酒店 com.baidu.BaiduMap:id\/diamond_title",
+          "text": "订酒店",
+          "desc": null,
+          "resourceId": "com.baidu.BaiduMap:id\/diamond_title",
+          "class": "android.widget.TextView",
+          "clickable": false,
+          "editable": false,
+          "selected": false,
+          "bounds": "925 841 1069 898",
+          "x": 0.6923611111111111,
+          "y": 0.2743055555555556,
+          "center": {
+            "x": 0.6923611111111111,
+            "y": 0.2743055555555556
+          },
+          "tags": []
+        },
+        {
+          "index": 32,
+          "label": "优惠加油 com.baidu.BaiduMap:id\/diamond_title",
+          "text": "优惠加油",
+          "desc": null,
+          "resourceId": "com.baidu.BaiduMap:id\/diamond_title",
+          "class": "android.widget.TextView",
+          "clickable": false,
+          "editable": false,
+          "selected": false,
+          "bounds": "1175 841 1367 898",
+          "x": 0.8826388888888889,
+          "y": 0.2743055555555556,
+          "center": {
+            "x": 0.8826388888888889,
+            "y": 0.2743055555555556
+          },
+          "tags": []
+        },
+        {
+          "index": 33,
+          "label": "com.baidu.BaiduMap:id\/diamond_icon_layout",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.baidu.BaiduMap:id\/diamond_icon_layout",
+          "class": "android.widget.RelativeLayout",
+          "clickable": false,
+          "editable": false,
+          "selected": false,
+          "bounds": "97 898 257 1102",
+          "x": 0.12291666666666666,
+          "y": 0.31565656565656564,
+          "center": {
+            "x": 0.12291666666666666,
+            "y": 0.31565656565656564
+          },
+          "tags": []
+        },
+        {
+          "index": 34,
+          "label": "com.baidu.BaiduMap:id\/diamond_icon_layout",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.baidu.BaiduMap:id\/diamond_icon_layout",
+          "class": "android.widget.RelativeLayout",
+          "clickable": false,
+          "editable": false,
+          "selected": false,
+          "bounds": "370 898 530 1102",
+          "x": 0.3125,
+          "y": 0.31565656565656564,
+          "center": {
+            "x": 0.3125,
+            "y": 0.31565656565656564
+          },
+          "tags": []
+        },
+        {
+          "index": 35,
+          "label": "com.baidu.BaiduMap:id\/diamond_icon_layout",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.baidu.BaiduMap:id\/diamond_icon_layout",
+          "class": "android.widget.RelativeLayout",
+          "clickable": false,
+          "editable": false,
+          "selected": false,
+          "bounds": "644 898 804 1102",
+          "x": 0.5027777777777778,
+          "y": 0.31565656565656564,
+          "center": {
+            "x": 0.5027777777777778,
+            "y": 0.31565656565656564
+          },
+          "tags": []
+        },
+        {
+          "index": 36,
+          "label": "com.baidu.BaiduMap:id\/diamond_icon_layout",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.baidu.BaiduMap:id\/diamond_icon_layout",
+          "class": "android.widget.RelativeLayout",
+          "clickable": false,
+          "editable": false,
+          "selected": false,
+          "bounds": "917 898 1077 1102",
+          "x": 0.6923611111111111,
+          "y": 0.31565656565656564,
+          "center": {
+            "x": 0.6923611111111111,
+            "y": 0.31565656565656564
+          },
+          "tags": []
+        },
+        {
+          "index": 37,
+          "label": "com.baidu.BaiduMap:id\/diamond_icon_layout",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.baidu.BaiduMap:id\/diamond_icon_layout",
+          "class": "android.widget.RelativeLayout",
+          "clickable": false,
+          "editable": false,
+          "selected": false,
+          "bounds": "1191 898 1351 1102",
+          "x": 0.8826388888888889,
+          "y": 0.31565656565656564,
+          "center": {
+            "x": 0.8826388888888889,
+            "y": 0.31565656565656564
+          },
+          "tags": []
+        },
+        {
+          "index": 38,
+          "label": "com.baidu.BaiduMap:id\/icon_bg",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.baidu.BaiduMap:id\/icon_bg",
+          "class": "android.widget.ImageView",
+          "clickable": false,
+          "editable": false,
+          "selected": false,
+          "bounds": "97 942 257 1102",
+          "x": 0.12291666666666666,
+          "y": 0.3226010101010101,
+          "center": {
+            "x": 0.12291666666666666,
+            "y": 0.3226010101010101
+          },
+          "tags": []
+        },
+        {
+          "index": 39,
+          "label": "com.baidu.BaiduMap:id\/diamond_icon_bigger",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.baidu.BaiduMap:id\/diamond_icon_bigger",
+          "class": "android.widget.ImageView",
+          "clickable": false,
+          "editable": false,
+          "selected": false,
+          "bounds": "97 942 257 1102",
+          "x": 0.12291666666666666,
+          "y": 0.3226010101010101,
+          "center": {
+            "x": 0.12291666666666666,
+            "y": 0.3226010101010101
+          },
+          "tags": []
+        },
+        {
+          "index": 40,
+          "label": "com.baidu.BaiduMap:id\/icon_bg",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.baidu.BaiduMap:id\/icon_bg",
+          "class": "android.widget.ImageView",
+          "clickable": false,
+          "editable": false,
+          "selected": false,
+          "bounds": "370 942 530 1102",
+          "x": 0.3125,
+          "y": 0.3226010101010101,
+          "center": {
+            "x": 0.3125,
+            "y": 0.3226010101010101
+          },
+          "tags": []
+        },
+        {
+          "index": 41,
+          "label": "com.baidu.BaiduMap:id\/diamond_icon_bigger",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.baidu.BaiduMap:id\/diamond_icon_bigger",
+          "class": "android.widget.ImageView",
+          "clickable": false,
+          "editable": false,
+          "selected": false,
+          "bounds": "370 942 530 1102",
+          "x": 0.3125,
+          "y": 0.3226010101010101,
+          "center": {
+            "x": 0.3125,
+            "y": 0.3226010101010101
+          },
+          "tags": []
+        },
+        {
+          "index": 42,
+          "label": "com.baidu.BaiduMap:id\/icon_bg",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.baidu.BaiduMap:id\/icon_bg",
+          "class": "android.widget.ImageView",
+          "clickable": false,
+          "editable": false,
+          "selected": false,
+          "bounds": "644 942 804 1102",
+          "x": 0.5027777777777778,
+          "y": 0.3226010101010101,
+          "center": {
+            "x": 0.5027777777777778,
+            "y": 0.3226010101010101
+          },
+          "tags": []
+        },
+        {
+          "index": 43,
+          "label": "com.baidu.BaiduMap:id\/diamond_icon_bigger",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.baidu.BaiduMap:id\/diamond_icon_bigger",
+          "class": "android.widget.ImageView",
+          "clickable": false,
+          "editable": false,
+          "selected": false,
+          "bounds": "644 942 804 1102",
+          "x": 0.5027777777777778,
+          "y": 0.3226010101010101,
+          "center": {
+            "x": 0.5027777777777778,
+            "y": 0.3226010101010101
+          },
+          "tags": []
+        },
+        {
+          "index": 44,
+          "label": "com.baidu.BaiduMap:id\/icon_bg",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.baidu.BaiduMap:id\/icon_bg",
+          "class": "android.widget.ImageView",
+          "clickable": false,
+          "editable": false,
+          "selected": false,
+          "bounds": "917 942 1077 1102",
+          "x": 0.6923611111111111,
+          "y": 0.3226010101010101,
+          "center": {
+            "x": 0.6923611111111111,
+            "y": 0.3226010101010101
+          },
+          "tags": []
+        },
+        {
+          "index": 45,
+          "label": "com.baidu.BaiduMap:id\/diamond_icon_bigger",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.baidu.BaiduMap:id\/diamond_icon_bigger",
+          "class": "android.widget.ImageView",
+          "clickable": false,
+          "editable": false,
+          "selected": false,
+          "bounds": "917 942 1077 1102",
+          "x": 0.6923611111111111,
+          "y": 0.3226010101010101,
+          "center": {
+            "x": 0.6923611111111111,
+            "y": 0.3226010101010101
+          },
+          "tags": []
+        },
+        {
+          "index": 46,
+          "label": "com.baidu.BaiduMap:id\/icon_bg",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.baidu.BaiduMap:id\/icon_bg",
+          "class": "android.widget.ImageView",
+          "clickable": false,
+          "editable": false,
+          "selected": false,
+          "bounds": "1191 942 1351 1102",
+          "x": 0.8826388888888889,
+          "y": 0.3226010101010101,
+          "center": {
+            "x": 0.8826388888888889,
+            "y": 0.3226010101010101
+          },
+          "tags": []
+        },
+        {
+          "index": 47,
+          "label": "com.baidu.BaiduMap:id\/diamond_icon_bigger",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.baidu.BaiduMap:id\/diamond_icon_bigger",
+          "class": "android.widget.ImageView",
+          "clickable": false,
+          "editable": false,
+          "selected": false,
+          "bounds": "1191 942 1351 1102",
+          "x": 0.8826388888888889,
+          "y": 0.3226010101010101,
+          "center": {
+            "x": 0.8826388888888889,
+            "y": 0.3226010101010101
+          },
+          "tags": []
+        },
+        {
+          "index": 48,
+          "label": "",
+          "text": null,
+          "desc": null,
+          "resourceId": null,
+          "class": "android.widget.RelativeLayout",
+          "clickable": true,
+          "editable": false,
+          "selected": false,
+          "bounds": "40 898 314 1179",
+          "x": 0.12291666666666666,
+          "y": 0.32765151515151514,
+          "center": {
+            "x": 0.12291666666666666,
+            "y": 0.32765151515151514
+          },
+          "tags": [
+            "clickable"
+          ]
+        },
+        {
+          "index": 49,
+          "label": "",
+          "text": null,
+          "desc": null,
+          "resourceId": null,
+          "class": "android.widget.RelativeLayout",
+          "clickable": true,
+          "editable": false,
+          "selected": false,
+          "bounds": "314 898 587 1179",
+          "x": 0.3125,
+          "y": 0.32765151515151514,
+          "center": {
+            "x": 0.3125,
+            "y": 0.32765151515151514
+          },
+          "tags": [
+            "clickable"
+          ]
+        }
+      ],
+      "capability": {
+        "nodeReadability": "A",
+        "inputCapability": "NONE",
+        "verificationCapability": "HIGH",
+        "coordinateFallback": "AVAILABLE",
+        "serviceState": "CONNECTED"
+      },
+      "snapshotPath": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_snapshots\/com.baidu.baidumap\/20260520_021040_329_7d8d6efa.json",
+      "capturedAt": 1779214240706
+    },
+    {
+      "screenId": "screen_3d8d5782",
+      "screenKey": "3d8d5782",
+      "title": "",
+      "appPackage": "com.baidu.BaiduMap",
+      "windowClassName": "android.widget.FrameLayout",
+      "screenWidth": 1440,
+      "screenHeight": 3168,
+      "nodeCount": 22,
+      "clickableCount": 0,
+      "editableCount": 0,
+      "scrollableCount": 0,
+      "labels": [
+        "com.baidu.BaiduMap:id\/action_bar_root",
+        "android:id\/content",
+        "com.baidu.BaiduMap:id\/voice_view_ui",
+        "com.baidu.BaiduMap:id\/operation_behavior",
+        "com.baidu.BaiduMap:id\/stack_root",
+        "com.baidu.BaiduMap:id\/arnew_surfaceview",
+        "地图图区 com.baidu.BaiduMap:id\/map_container",
+        "com.baidu.BaiduMap:id\/commonPopupContainer",
+        "com.baidu.BaiduMap:id\/fragment_container",
+        "com.baidu.BaiduMap:id\/persist_container",
+        "com.baidu.BaiduMap:id\/replace_container",
+        "com.baidu.BaiduMap:id\/base_stack_lui",
+        "com.baidu.BaiduMap:id\/base_empty_view",
+        "android:id\/tabhost",
+        "android:id\/navigationBarBackground"
+      ],
+      "bottomTabs": [
+        {
+          "index": 0,
+          "label": "android:id\/navigationBarBackground",
+          "text": null,
+          "desc": null,
+          "resourceId": "android:id\/navigationBarBackground",
+          "class": "android.view.View",
+          "clickable": false,
+          "editable": false,
+          "selected": false,
+          "bounds": "0 3104 1440 3168",
+          "x": 0.5,
+          "y": 0.98989898989899,
+          "center": {
+            "x": 0.5,
+            "y": 0.98989898989899
+          },
+          "tags": [
+            "bottom_tab_candidate"
+          ]
+        }
+      ],
+      "entryCandidates": [],
+      "inputCandidates": [],
+      "clickTargets": [
+        {
+          "index": 0,
+          "label": "com.baidu.BaiduMap:id\/action_bar_root",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.baidu.BaiduMap:id\/action_bar_root",
+          "class": "android.widget.LinearLayout",
+          "clickable": false,
+          "editable": false,
+          "selected": false,
+          "bounds": "0 0 1440 3104",
+          "x": 0.5,
+          "y": 0.4898989898989899,
+          "center": {
+            "x": 0.5,
+            "y": 0.4898989898989899
+          },
+          "tags": []
+        },
+        {
+          "index": 1,
+          "label": "android:id\/content",
+          "text": null,
+          "desc": null,
+          "resourceId": "android:id\/content",
+          "class": "android.widget.FrameLayout",
+          "clickable": false,
+          "editable": false,
+          "selected": false,
+          "bounds": "0 0 1440 3104",
+          "x": 0.5,
+          "y": 0.4898989898989899,
+          "center": {
+            "x": 0.5,
+            "y": 0.4898989898989899
+          },
+          "tags": []
+        },
+        {
+          "index": 2,
+          "label": "com.baidu.BaiduMap:id\/voice_view_ui",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.baidu.BaiduMap:id\/voice_view_ui",
+          "class": "android.widget.FrameLayout",
+          "clickable": false,
+          "editable": false,
+          "selected": false,
+          "bounds": "0 0 1440 3104",
+          "x": 0.5,
+          "y": 0.4898989898989899,
+          "center": {
+            "x": 0.5,
+            "y": 0.4898989898989899
+          },
+          "tags": []
+        },
+        {
+          "index": 3,
+          "label": "com.baidu.BaiduMap:id\/operation_behavior",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.baidu.BaiduMap:id\/operation_behavior",
+          "class": "android.view.View",
+          "clickable": false,
+          "editable": false,
+          "selected": false,
+          "bounds": "0 0 1440 3104",
+          "x": 0.5,
+          "y": 0.4898989898989899,
+          "center": {
+            "x": 0.5,
+            "y": 0.4898989898989899
+          },
+          "tags": []
+        },
+        {
+          "index": 4,
+          "label": "com.baidu.BaiduMap:id\/stack_root",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.baidu.BaiduMap:id\/stack_root",
+          "class": "android.view.ViewGroup",
+          "clickable": false,
+          "editable": false,
+          "selected": false,
+          "bounds": "0 0 1440 3104",
+          "x": 0.5,
+          "y": 0.4898989898989899,
+          "center": {
+            "x": 0.5,
+            "y": 0.4898989898989899
+          },
+          "tags": []
+        },
+        {
+          "index": 5,
+          "label": "com.baidu.BaiduMap:id\/arnew_surfaceview",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.baidu.BaiduMap:id\/arnew_surfaceview",
+          "class": "android.widget.RelativeLayout",
+          "clickable": false,
+          "editable": false,
+          "selected": false,
+          "bounds": "0 0 1440 3104",
+          "x": 0.5,
+          "y": 0.4898989898989899,
+          "center": {
+            "x": 0.5,
+            "y": 0.4898989898989899
+          },
+          "tags": []
+        },
+        {
+          "index": 6,
+          "label": "地图图区 com.baidu.BaiduMap:id\/map_container",
+          "text": null,
+          "desc": "地图图区",
+          "resourceId": "com.baidu.BaiduMap:id\/map_container",
+          "class": "android.widget.FrameLayout",
+          "clickable": false,
+          "editable": false,
+          "selected": false,
+          "bounds": "0 0 1440 3104",
+          "x": 0.5,
+          "y": 0.4898989898989899,
+          "center": {
+            "x": 0.5,
+            "y": 0.4898989898989899
+          },
+          "tags": []
+        },
+        {
+          "index": 7,
+          "label": "com.baidu.BaiduMap:id\/commonPopupContainer",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.baidu.BaiduMap:id\/commonPopupContainer",
+          "class": "android.widget.FrameLayout",
+          "clickable": false,
+          "editable": false,
+          "selected": false,
+          "bounds": "0 0 1440 3104",
+          "x": 0.5,
+          "y": 0.4898989898989899,
+          "center": {
+            "x": 0.5,
+            "y": 0.4898989898989899
+          },
+          "tags": []
+        },
+        {
+          "index": 8,
+          "label": "com.baidu.BaiduMap:id\/fragment_container",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.baidu.BaiduMap:id\/fragment_container",
+          "class": "android.widget.FrameLayout",
+          "clickable": false,
+          "editable": false,
+          "selected": false,
+          "bounds": "0 0 1440 3104",
+          "x": 0.5,
+          "y": 0.4898989898989899,
+          "center": {
+            "x": 0.5,
+            "y": 0.4898989898989899
+          },
+          "tags": []
+        },
+        {
+          "index": 9,
+          "label": "com.baidu.BaiduMap:id\/persist_container",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.baidu.BaiduMap:id\/persist_container",
+          "class": "android.widget.FrameLayout",
+          "clickable": false,
+          "editable": false,
+          "selected": false,
+          "bounds": "0 0 1440 3104",
+          "x": 0.5,
+          "y": 0.4898989898989899,
+          "center": {
+            "x": 0.5,
+            "y": 0.4898989898989899
+          },
+          "tags": []
+        },
+        {
+          "index": 10,
+          "label": "com.baidu.BaiduMap:id\/replace_container",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.baidu.BaiduMap:id\/replace_container",
+          "class": "android.widget.FrameLayout",
+          "clickable": false,
+          "editable": false,
+          "selected": false,
+          "bounds": "0 0 1440 3104",
+          "x": 0.5,
+          "y": 0.4898989898989899,
+          "center": {
+            "x": 0.5,
+            "y": 0.4898989898989899
+          },
+          "tags": []
+        },
+        {
+          "index": 11,
+          "label": "com.baidu.BaiduMap:id\/base_stack_lui",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.baidu.BaiduMap:id\/base_stack_lui",
+          "class": "android.widget.FrameLayout",
+          "clickable": false,
+          "editable": false,
+          "selected": false,
+          "bounds": "0 0 1440 3104",
+          "x": 0.5,
+          "y": 0.4898989898989899,
+          "center": {
+            "x": 0.5,
+            "y": 0.4898989898989899
+          },
+          "tags": []
+        },
+        {
+          "index": 12,
+          "label": "android:id\/navigationBarBackground",
+          "text": null,
+          "desc": null,
+          "resourceId": "android:id\/navigationBarBackground",
+          "class": "android.view.View",
+          "clickable": false,
+          "editable": false,
+          "selected": false,
+          "bounds": "0 3104 1440 3168",
+          "x": 0.5,
+          "y": 0.98989898989899,
+          "center": {
+            "x": 0.5,
+            "y": 0.98989898989899
+          },
+          "tags": [
+            "bottom_area"
+          ]
+        }
+      ],
+      "capability": {
+        "nodeReadability": "C",
+        "inputCapability": "NONE",
+        "verificationCapability": "LOW",
+        "coordinateFallback": "AVAILABLE",
+        "serviceState": "CONNECTED"
+      },
+      "snapshotPath": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_snapshots\/com.baidu.baidumap\/20260520_021043_361_3d8d5782.json",
+      "capturedAt": 1779214243762
+    },
+    {
+      "screenId": "screen_1f9a44dc",
+      "screenKey": "1f9a44dc",
+      "title": "早八省",
+      "appPackage": "com.baidu.BaiduMap",
+      "windowClassName": "android.view.ViewGroup",
+      "screenWidth": 1440,
+      "screenHeight": 3168,
+      "nodeCount": 378,
+      "clickableCount": 55,
+      "editableCount": 0,
+      "scrollableCount": 6,
+      "labels": [
+        "com.baidu.BaiduMap:id\/action_bar_root",
+        "android:id\/content",
+        "com.baidu.BaiduMap:id\/voice_view_ui",
+        "com.baidu.BaiduMap:id\/operation_behavior",
+        "com.baidu.BaiduMap:id\/stack_root",
+        "com.baidu.BaiduMap:id\/arnew_surfaceview",
+        "地图图区 com.baidu.BaiduMap:id\/map_container",
+        "com.baidu.BaiduMap:id\/commonPopupContainer",
+        "com.baidu.BaiduMap:id\/fragment_container",
+        "com.baidu.BaiduMap:id\/replace_container",
+        "com.baidu.BaiduMap:id\/base_stack_lui",
+        "com.baidu.BaiduMap:id\/persist_container",
+        "com.baidu.BaiduMap:id\/ufo_container",
+        "com.baidu.BaiduMap:id\/ufo_root",
+        "com.baidu.BaiduMap:id\/mid",
+        "com.baidu.BaiduMap:id\/new_btns",
+        "com.baidu.BaiduMap:id\/new_route",
+        "com.baidu.BaiduMap:id\/new_route_icon",
+        "com.baidu.BaiduMap:id\/route_tab_anim",
+        "首页 com.baidu.BaiduMap:id\/new_route_text",
+        "com.baidu.BaiduMap:id\/new_nearby",
+        "com.baidu.BaiduMap:id\/tag_nearby_container",
+        "com.baidu.BaiduMap:id\/new_nearby_icon",
+        "周边 com.baidu.BaiduMap:id\/new_nearby_text",
+        "com.baidu.BaiduMap:id\/new_third",
+        "com.baidu.BaiduMap:id\/new_third_ai_home_container",
+        "com.baidu.BaiduMap:id\/new_third_ai_home2",
+        "com.baidu.BaiduMap:id\/new_third_ai_home1",
+        "com.baidu.BaiduMap:id\/new_fourth",
+        "com.baidu.BaiduMap:id\/tag_fourth_container",
+        "com.baidu.BaiduMap:id\/tag_fourth",
+        "com.baidu.BaiduMap:id\/tag_switcher",
+        "早八省",
+        "com.baidu.BaiduMap:id\/new_fourth_icon",
+        "打车 com.baidu.BaiduMap:id\/new_fourth_text",
+        "com.baidu.BaiduMap:id\/new_user",
+        "com.baidu.BaiduMap:id\/tag_user_container",
+        "com.baidu.BaiduMap:id\/new_user_icon",
+        "我的 com.baidu.BaiduMap:id\/new_user_text",
+        "com.baidu.BaiduMap:id\/preventTouchEventUfo",
+        "com.baidu.BaiduMap:id\/top_empty",
+        "com.baidu.BaiduMap:id\/top_line",
+        "com.baidu.BaiduMap:id\/front_location_container",
+        "com.baidu.BaiduMap:id\/back_container",
+        "com.baidu.BaiduMap:id\/aihome_maplayout_root",
+        "com.baidu.BaiduMap:id\/leftTopContainer",
+        "com.baidu.BaiduMap:id\/event_entry_container",
+        "活动",
+        "com.baidu.BaiduMap:id\/reference_line",
+        "com.baidu.BaiduMap:id\/leftBarContainer",
+        "com.baidu.BaiduMap:id\/barContainer",
+        "com.baidu.BaiduMap:id\/scale_and_logo",
+        "com.baidu.BaiduMap:id\/layout_logo",
+        "com.baidu.BaiduMap:id\/map_iv_logo",
+        "com.baidu.BaiduMap:id\/right_bottom_button",
+        "com.baidu.BaiduMap:id\/location",
+        "com.baidu.BaiduMap:id\/vs_location",
+        "我的位置 com.baidu.BaiduMap:id\/location_icon",
+        "com.baidu.BaiduMap:id\/weather_limited",
+        "com.baidu.BaiduMap:id\/weather_icon",
+        "24℃ com.baidu.BaiduMap:id\/weather_txt",
+        "路线搜索 com.baidu.BaiduMap:id\/frame_btn_route",
+        "com.baidu.BaiduMap:id\/right_container",
+        "com.baidu.BaiduMap:id\/ll_map_buttons",
+        "com.baidu.BaiduMap:id\/right_bar",
+        "com.baidu.BaiduMap:id\/recycleview",
+        "com.baidu.BaiduMap:id\/image",
+        "图层 com.baidu.BaiduMap:id\/text",
+        "反馈 com.baidu.BaiduMap:id\/text",
+        "爱去榜 com.baidu.BaiduMap:id\/text",
+        "消息 com.baidu.BaiduMap:id\/text",
+        "com.baidu.BaiduMap:id\/down_arrow_image",
+        "com.baidu.BaiduMap:id\/top_container",
+        "com.baidu.BaiduMap:id\/common_search_box_home",
+        "com.baidu.BaiduMap:id\/left_container",
+        "com.baidu.BaiduMap:id\/left_dynamic_icon",
+        "com.baidu.BaiduMap:id\/middle_container",
+        "地点搜索 com.baidu.BaiduMap:id\/tv_searchbox_home_text_switcher",
+        "福建附属第一医院医保报销 com.baidu.BaiduMap:id\/tv_searchbar_title",
+        "打开摄像头 com.baidu.BaiduMap:id\/scanCode"
+      ],
+      "bottomTabs": [
+        {
+          "index": 0,
+          "label": "com.baidu.BaiduMap:id\/icon_home",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.baidu.BaiduMap:id\/icon_home",
+          "class": "android.widget.ImageView",
+          "clickable": false,
+          "editable": false,
+          "selected": false,
+          "bounds": "80 2406 160 2486",
+          "x": 0.08333333333333333,
+          "y": 0.7720959595959596,
+          "center": {
+            "x": 0.08333333333333333,
+            "y": 0.7720959595959596
+          },
+          "tags": [
+            "bottom_tab_candidate"
+          ]
+        },
+        {
+          "index": 1,
+          "label": "com.baidu.BaiduMap:id\/new_route",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.baidu.BaiduMap:id\/new_route",
+          "class": "android.widget.FrameLayout",
+          "clickable": true,
+          "editable": false,
+          "selected": false,
+          "bounds": "0 2876 288 3104",
+          "x": 0.1,
+          "y": 0.9438131313131313,
+          "center": {
+            "x": 0.1,
+            "y": 0.9438131313131313
+          },
+          "tags": [
+            "bottom_tab_candidate"
+          ]
+        },
+        {
+          "index": 2,
+          "label": "com.baidu.BaiduMap:id\/new_route_icon",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.baidu.BaiduMap:id\/new_route_icon",
+          "class": "android.widget.ImageView",
+          "clickable": false,
+          "editable": false,
+          "selected": false,
+          "bounds": "64 2876 224 3036",
+          "x": 0.1,
+          "y": 0.9330808080808081,
+          "center": {
+            "x": 0.1,
+            "y": 0.9330808080808081
+          },
+          "tags": [
+            "bottom_tab_candidate"
+          ]
+        },
+        {
+          "index": 3,
+          "label": "com.baidu.BaiduMap:id\/route_tab_anim",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.baidu.BaiduMap:id\/route_tab_anim",
+          "class": "android.widget.ImageView",
+          "clickable": false,
+          "editable": false,
+          "selected": false,
+          "bounds": "64 2876 224 3036",
+          "x": 0.1,
+          "y": 0.9330808080808081,
+          "center": {
+            "x": 0.1,
+            "y": 0.9330808080808081
+          },
+          "tags": [
+            "bottom_tab_candidate"
+          ]
+        },
+        {
+          "index": 4,
+          "label": "首页 com.baidu.BaiduMap:id\/new_route_text",
+          "text": "首页",
+          "desc": null,
+          "resourceId": "com.baidu.BaiduMap:id\/new_route_text",
+          "class": "android.widget.TextView",
+          "clickable": false,
+          "editable": false,
+          "selected": false,
+          "bounds": "96 3003 192 3060",
+          "x": 0.1,
+          "y": 0.9567550505050505,
+          "center": {
+            "x": 0.1,
+            "y": 0.9567550505050505
+          },
+          "tags": [
+            "bottom_tab_candidate"
+          ]
+        },
+        {
+          "index": 5,
+          "label": "",
+          "text": null,
+          "desc": null,
+          "resourceId": null,
+          "class": "android.widget.FrameLayout",
+          "clickable": true,
+          "editable": false,
+          "selected": false,
+          "bounds": "40 2106 312 2322",
+          "x": 0.12222222222222222,
+          "y": 0.6988636363636364,
+          "center": {
+            "x": 0.12222222222222222,
+            "y": 0.6988636363636364
+          },
+          "tags": [
+            "bottom_tab_candidate"
+          ]
+        },
+        {
+          "index": 6,
+          "label": "com.baidu.BaiduMap:id\/image",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.baidu.BaiduMap:id\/image",
+          "class": "android.widget.ImageView",
+          "clickable": false,
+          "editable": false,
+          "selected": false,
+          "bounds": "76 2118 276 2286",
+          "x": 0.12222222222222222,
+          "y": 0.6950757575757576,
+          "center": {
+            "x": 0.12222222222222222,
+            "y": 0.6950757575757576
+          },
+          "tags": [
+            "bottom_tab_candidate"
+          ]
+        },
+        {
+          "index": 7,
+          "label": "顺风车 com.baidu.BaiduMap:id\/text",
+          "text": "顺风车",
+          "desc": null,
+          "resourceId": "com.baidu.BaiduMap:id\/text",
+          "class": "android.widget.TextView",
+          "clickable": false,
+          "editable": false,
+          "selected": false,
+          "bounds": "98 2213 254 2322",
+          "x": 0.12222222222222222,
+          "y": 0.7155934343434344,
+          "center": {
+            "x": 0.12222222222222222,
+            "y": 0.7155934343434344
+          },
+          "tags": [
+            "bottom_tab_candidate"
+          ]
+        },
+        {
+          "index": 8,
+          "label": "com.baidu.BaiduMap:id\/image",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.baidu.BaiduMap:id\/image",
+          "class": "android.widget.ImageView",
+          "clickable": false,
+          "editable": false,
+          "selected": false,
+          "bounds": "76 2346 276 2514",
+          "x": 0.12222222222222222,
+          "y": 0.7670454545454546,
+          "center": {
+            "x": 0.12222222222222222,
+            "y": 0.7670454545454546
+          },
+          "tags": [
+            "bottom_tab_candidate"
+          ]
+        },
+        {
+          "index": 9,
+          "label": "骑行 com.baidu.BaiduMap:id\/text",
+          "text": "骑行",
+          "desc": null,
+          "resourceId": "com.baidu.BaiduMap:id\/text",
+          "class": "android.widget.TextView",
+          "clickable": false,
+          "editable": false,
+          "selected": false,
+          "bounds": "124 2441 228 2550",
+          "x": 0.12222222222222222,
+          "y": 0.7875631313131313,
+          "center": {
+            "x": 0.12222222222222222,
+            "y": 0.7875631313131313
+          },
+          "tags": [
+            "bottom_tab_candidate"
+          ]
+        },
+        {
+          "index": 10,
+          "label": "com.baidu.BaiduMap:id\/title_layout",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.baidu.BaiduMap:id\/title_layout",
+          "class": "android.widget.LinearLayout",
+          "clickable": false,
+          "editable": false,
+          "selected": false,
+          "bounds": "168 2411 272 2481",
+          "x": 0.1527777777777778,
+          "y": 0.7720959595959596,
+          "center": {
+            "x": 0.1527777777777778,
+            "y": 0.7720959595959596
+          },
+          "tags": [
+            "bottom_tab_candidate"
+          ]
+        },
+        {
+          "index": 11,
+          "label": "回家 com.baidu.BaiduMap:id\/home_text",
+          "text": "回家",
+          "desc": null,
+          "resourceId": "com.baidu.BaiduMap:id\/home_text",
+          "class": "android.widget.TextView",
+          "clickable": false,
+          "editable": false,
+          "selected": false,
+          "bounds": "168 2411 272 2481",
+          "x": 0.1527777777777778,
+          "y": 0.7720959595959596,
+          "center": {
+            "x": 0.1527777777777778,
+            "y": 0.7720959595959596
+          },
+          "tags": [
+            "bottom_tab_candidate"
+          ]
+        }
+      ],
+      "entryCandidates": [
+        {
+          "index": 0,
+          "label": "地点搜索 com.baidu.BaiduMap:id\/tv_searchbox_home_text_switcher",
+          "text": null,
+          "desc": "地点搜索",
+          "resourceId": "com.baidu.BaiduMap:id\/tv_searchbox_home_text_switcher",
+          "class": "android.widget.ViewSwitcher",
+          "clickable": true,
+          "editable": false,
+          "selected": false,
+          "bounds": "212 208 1082 392",
+          "x": 0.44930555555555557,
+          "y": 0.0946969696969697,
+          "center": {
+            "x": 0.44930555555555557,
+            "y": 0.0946969696969697
+          },
+          "tags": [
+            "entry_candidate",
+            "clickable",
+            "search_entry"
+          ]
+        },
+        {
+          "index": 1,
+          "label": "福建附属第一医院医保报销 com.baidu.BaiduMap:id\/tv_searchbar_title",
+          "text": "福建附属第一医院医保报销",
+          "desc": null,
+          "resourceId": "com.baidu.BaiduMap:id\/tv_searchbar_title",
+          "class": "android.widget.TextView",
+          "clickable": false,
+          "editable": false,
+          "selected": false,
+          "bounds": "212 257 1082 343",
+          "x": 0.44930555555555557,
+          "y": 0.0946969696969697,
+          "center": {
+            "x": 0.44930555555555557,
+            "y": 0.0946969696969697
+          },
+          "tags": [
+            "entry_candidate",
+            "search_entry"
+          ]
+        },
+        {
+          "index": 2,
+          "label": "com.baidu.BaiduMap:id\/common_search_box_home",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.baidu.BaiduMap:id\/common_search_box_home",
+          "class": "android.view.View",
+          "clickable": true,
+          "editable": false,
+          "selected": false,
+          "bounds": "0 160 1440 440",
+          "x": 0.5,
+          "y": 0.0946969696969697,
+          "center": {
+            "x": 0.5,
+            "y": 0.0946969696969697
+          },
+          "tags": [
+            "entry_candidate",
+            "clickable",
+            "search_entry"
+          ]
+        },
+        {
+          "index": 3,
+          "label": "语音搜索 com.baidu.BaiduMap:id\/iv_searchbox_home_voice",
+          "text": null,
+          "desc": "语音搜索",
+          "resourceId": "com.baidu.BaiduMap:id\/iv_searchbox_home_voice",
+          "class": "android.widget.ImageView",
+          "clickable": true,
+          "editable": false,
+          "selected": false,
+          "bounds": "1264 252 1360 348",
+          "x": 0.9111111111111111,
+          "y": 0.0946969696969697,
+          "center": {
+            "x": 0.9111111111111111,
+            "y": 0.0946969696969697
+          },
+          "tags": [
+            "entry_candidate",
+            "clickable",
+            "search_entry"
+          ]
+        },
+        {
+          "index": 4,
+          "label": "路线搜索 com.baidu.BaiduMap:id\/frame_btn_route",
+          "text": null,
+          "desc": "路线搜索",
+          "resourceId": "com.baidu.BaiduMap:id\/frame_btn_route",
+          "class": "android.widget.ImageView",
+          "clickable": true,
+          "editable": false,
+          "selected": false,
+          "bounds": "1208 1426 1432 1650",
+          "x": 0.9166666666666666,
+          "y": 0.48547979797979796,
+          "center": {
+            "x": 0.9166666666666666,
+            "y": 0.48547979797979796
+          },
+          "tags": [
+            "entry_candidate",
+            "clickable",
+            "search_entry"
+          ]
+        }
+      ],
+      "inputCandidates": [],
+      "clickTargets": [
+        {
+          "index": 0,
+          "label": "com.baidu.BaiduMap:id\/top_empty",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.baidu.BaiduMap:id\/top_empty",
+          "class": "android.widget.FrameLayout",
+          "clickable": false,
+          "editable": false,
+          "selected": false,
+          "bounds": "0 0 1440 160",
+          "x": 0.5,
+          "y": 0.025252525252525252,
+          "center": {
+            "x": 0.5,
+            "y": 0.025252525252525252
+          },
+          "tags": []
+        },
+        {
+          "index": 1,
+          "label": "com.baidu.BaiduMap:id\/left_dynamic_icon",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.baidu.BaiduMap:id\/left_dynamic_icon",
+          "class": "android.widget.FrameLayout",
+          "clickable": false,
+          "editable": false,
+          "selected": false,
+          "bounds": "60 200 212 400",
+          "x": 0.09444444444444444,
+          "y": 0.0946969696969697,
+          "center": {
+            "x": 0.09444444444444444,
+            "y": 0.0946969696969697
+          },
+          "tags": []
+        },
+        {
+          "index": 2,
+          "label": "com.baidu.BaiduMap:id\/left_container",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.baidu.BaiduMap:id\/left_container",
+          "class": "android.widget.FrameLayout",
+          "clickable": true,
+          "editable": false,
+          "selected": false,
+          "bounds": "40 200 240 400",
+          "x": 0.09722222222222222,
+          "y": 0.0946969696969697,
+          "center": {
+            "x": 0.09722222222222222,
+            "y": 0.0946969696969697
+          },
+          "tags": [
+            "clickable"
+          ]
+        },
+        {
+          "index": 3,
+          "label": "com.baidu.BaiduMap:id\/middle_container",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.baidu.BaiduMap:id\/middle_container",
+          "class": "android.widget.FrameLayout",
+          "clickable": false,
+          "editable": false,
+          "selected": false,
+          "bounds": "212 208 1082 392",
+          "x": 0.44930555555555557,
+          "y": 0.0946969696969697,
+          "center": {
+            "x": 0.44930555555555557,
+            "y": 0.0946969696969697
+          },
+          "tags": []
+        },
+        {
+          "index": 4,
+          "label": "地点搜索 com.baidu.BaiduMap:id\/tv_searchbox_home_text_switcher",
+          "text": null,
+          "desc": "地点搜索",
+          "resourceId": "com.baidu.BaiduMap:id\/tv_searchbox_home_text_switcher",
+          "class": "android.widget.ViewSwitcher",
+          "clickable": true,
+          "editable": false,
+          "selected": false,
+          "bounds": "212 208 1082 392",
+          "x": 0.44930555555555557,
+          "y": 0.0946969696969697,
+          "center": {
+            "x": 0.44930555555555557,
+            "y": 0.0946969696969697
+          },
+          "tags": [
+            "clickable",
+            "search_entry"
+          ]
+        },
+        {
+          "index": 5,
+          "label": "",
+          "text": null,
+          "desc": null,
+          "resourceId": null,
+          "class": "android.widget.LinearLayout",
+          "clickable": true,
+          "editable": false,
+          "selected": false,
+          "bounds": "212 208 1082 392",
+          "x": 0.44930555555555557,
+          "y": 0.0946969696969697,
+          "center": {
+            "x": 0.44930555555555557,
+            "y": 0.0946969696969697
+          },
+          "tags": [
+            "clickable"
+          ]
+        },
+        {
+          "index": 6,
+          "label": "福建附属第一医院医保报销 com.baidu.BaiduMap:id\/tv_searchbar_title",
+          "text": "福建附属第一医院医保报销",
+          "desc": null,
+          "resourceId": "com.baidu.BaiduMap:id\/tv_searchbar_title",
+          "class": "android.widget.TextView",
+          "clickable": false,
+          "editable": false,
+          "selected": false,
+          "bounds": "212 257 1082 343",
+          "x": 0.44930555555555557,
+          "y": 0.0946969696969697,
+          "center": {
+            "x": 0.44930555555555557,
+            "y": 0.0946969696969697
+          },
+          "tags": [
+            "search_entry"
+          ]
+        },
+        {
+          "index": 7,
+          "label": "com.baidu.BaiduMap:id\/top_container",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.baidu.BaiduMap:id\/top_container",
+          "class": "android.widget.FrameLayout",
+          "clickable": false,
+          "editable": false,
+          "selected": false,
+          "bounds": "0 160 1440 440",
+          "x": 0.5,
+          "y": 0.0946969696969697,
+          "center": {
+            "x": 0.5,
+            "y": 0.0946969696969697
+          },
+          "tags": []
+        },
+        {
+          "index": 8,
+          "label": "com.baidu.BaiduMap:id\/common_search_box_home",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.baidu.BaiduMap:id\/common_search_box_home",
+          "class": "android.view.View",
+          "clickable": true,
+          "editable": false,
+          "selected": false,
+          "bounds": "0 160 1440 440",
+          "x": 0.5,
+          "y": 0.0946969696969697,
+          "center": {
+            "x": 0.5,
+            "y": 0.0946969696969697
+          },
+          "tags": [
+            "clickable",
+            "search_entry"
+          ]
+        },
+        {
+          "index": 9,
+          "label": "打开摄像头 com.baidu.BaiduMap:id\/scanCode",
+          "text": null,
+          "desc": "打开摄像头",
+          "resourceId": "com.baidu.BaiduMap:id\/scanCode",
+          "class": "android.widget.ImageView",
+          "clickable": true,
+          "editable": false,
+          "selected": false,
+          "bounds": "1082 224 1234 376",
+          "x": 0.8041666666666667,
+          "y": 0.0946969696969697,
+          "center": {
+            "x": 0.8041666666666667,
+            "y": 0.0946969696969697
+          },
+          "tags": [
+            "clickable"
+          ]
+        },
+        {
+          "index": 10,
+          "label": "com.baidu.BaiduMap:id\/right_container",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.baidu.BaiduMap:id\/right_container",
+          "class": "android.widget.LinearLayout",
+          "clickable": false,
+          "editable": false,
+          "selected": false,
+          "bounds": "1082 200 1400 400",
+          "x": 0.8618055555555556,
+          "y": 0.0946969696969697,
+          "center": {
+            "x": 0.8618055555555556,
+            "y": 0.0946969696969697
+          },
+          "tags": []
+        },
+        {
+          "index": 11,
+          "label": "com.baidu.BaiduMap:id\/fl_voice",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.baidu.BaiduMap:id\/fl_voice",
+          "class": "android.widget.FrameLayout",
+          "clickable": false,
+          "editable": false,
+          "selected": false,
+          "bounds": "1264 252 1360 348",
+          "x": 0.9111111111111111,
+          "y": 0.0946969696969697,
+          "center": {
+            "x": 0.9111111111111111,
+            "y": 0.0946969696969697
+          },
+          "tags": []
+        },
+        {
+          "index": 12,
+          "label": "语音搜索 com.baidu.BaiduMap:id\/iv_searchbox_home_voice",
+          "text": null,
+          "desc": "语音搜索",
+          "resourceId": "com.baidu.BaiduMap:id\/iv_searchbox_home_voice",
+          "class": "android.widget.ImageView",
+          "clickable": true,
+          "editable": false,
+          "selected": false,
+          "bounds": "1264 252 1360 348",
+          "x": 0.9111111111111111,
+          "y": 0.0946969696969697,
+          "center": {
+            "x": 0.9111111111111111,
+            "y": 0.0946969696969697
+          },
+          "tags": [
+            "clickable",
+            "search_entry"
+          ]
+        },
+        {
+          "index": 13,
+          "label": "com.baidu.BaiduMap:id\/image",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.baidu.BaiduMap:id\/image",
+          "class": "android.widget.RelativeLayout",
+          "clickable": false,
+          "editable": false,
+          "selected": false,
+          "bounds": "1268 472 1372 564",
+          "x": 0.9166666666666666,
+          "y": 0.16351010101010102,
+          "center": {
+            "x": 0.9166666666666666,
+            "y": 0.16351010101010102
+          },
+          "tags": []
+        },
+        {
+          "index": 14,
+          "label": "",
+          "text": null,
+          "desc": null,
+          "resourceId": null,
+          "class": "android.widget.FrameLayout",
+          "clickable": true,
+          "editable": false,
+          "selected": false,
+          "bounds": "1208 448 1432 640",
+          "x": 0.9166666666666666,
+          "y": 0.1717171717171717,
+          "center": {
+            "x": 0.9166666666666666,
+            "y": 0.1717171717171717
+          },
+          "tags": [
+            "clickable"
+          ]
+        },
+        {
+          "index": 15,
+          "label": "com.baidu.BaiduMap:id\/event_entry_container",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.baidu.BaiduMap:id\/event_entry_container",
+          "class": "android.widget.RelativeLayout",
+          "clickable": false,
+          "editable": false,
+          "selected": false,
+          "bounds": "28 448 236 656",
+          "x": 0.09166666666666666,
+          "y": 0.17424242424242425,
+          "center": {
+            "x": 0.09166666666666666,
+            "y": 0.17424242424242425
+          },
+          "tags": []
+        },
+        {
+          "index": 16,
+          "label": "活动",
+          "text": null,
+          "desc": "活动",
+          "resourceId": null,
+          "class": "android.widget.RelativeLayout",
+          "clickable": true,
+          "editable": false,
+          "selected": false,
+          "bounds": "28 448 236 656",
+          "x": 0.09166666666666666,
+          "y": 0.17424242424242425,
+          "center": {
+            "x": 0.09166666666666666,
+            "y": 0.17424242424242425
+          },
+          "tags": [
+            "clickable"
+          ]
+        },
+        {
+          "index": 17,
+          "label": "图层 com.baidu.BaiduMap:id\/text",
+          "text": "图层",
+          "desc": null,
+          "resourceId": "com.baidu.BaiduMap:id\/text",
+          "class": "android.widget.TextView",
+          "clickable": false,
+          "editable": false,
+          "selected": false,
+          "bounds": "1280 569 1360 616",
+          "x": 0.9166666666666666,
+          "y": 0.18686868686868688,
+          "center": {
+            "x": 0.9166666666666666,
+            "y": 0.18686868686868688
+          },
+          "tags": []
+        },
+        {
+          "index": 18,
+          "label": "com.baidu.BaiduMap:id\/leftTopContainer",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.baidu.BaiduMap:id\/leftTopContainer",
+          "class": "android.widget.FrameLayout",
+          "clickable": false,
+          "editable": false,
+          "selected": false,
+          "bounds": "0 416 1440 856",
+          "x": 0.5,
+          "y": 0.20075757575757575,
+          "center": {
+            "x": 0.5,
+            "y": 0.20075757575757575
+          },
+          "tags": []
+        },
+        {
+          "index": 19,
+          "label": "com.baidu.BaiduMap:id\/image",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.baidu.BaiduMap:id\/image",
+          "class": "android.widget.RelativeLayout",
+          "clickable": false,
+          "editable": false,
+          "selected": false,
+          "bounds": "1268 666 1372 758",
+          "x": 0.9166666666666666,
+          "y": 0.22474747474747475,
+          "center": {
+            "x": 0.9166666666666666,
+            "y": 0.22474747474747475
+          },
+          "tags": []
+        },
+        {
+          "index": 20,
+          "label": "",
+          "text": null,
+          "desc": null,
+          "resourceId": null,
+          "class": "android.widget.FrameLayout",
+          "clickable": true,
+          "editable": false,
+          "selected": false,
+          "bounds": "1208 642 1432 834",
+          "x": 0.9166666666666666,
+          "y": 0.23295454545454544,
+          "center": {
+            "x": 0.9166666666666666,
+            "y": 0.23295454545454544
+          },
+          "tags": [
+            "clickable"
+          ]
+        },
+        {
+          "index": 21,
+          "label": "com.baidu.BaiduMap:id\/ll_map_buttons",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.baidu.BaiduMap:id\/ll_map_buttons",
+          "class": "android.widget.FrameLayout",
+          "clickable": false,
+          "editable": false,
+          "selected": false,
+          "bounds": "1208 416 1432 1084",
+          "x": 0.9166666666666666,
+          "y": 0.23674242424242425,
+          "center": {
+            "x": 0.9166666666666666,
+            "y": 0.23674242424242425
+          },
+          "tags": []
+        },
+        {
+          "index": 22,
+          "label": "com.baidu.BaiduMap:id\/right_bar",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.baidu.BaiduMap:id\/right_bar",
+          "class": "android.widget.FrameLayout",
+          "clickable": false,
+          "editable": false,
+          "selected": false,
+          "bounds": "1208 416 1432 1084",
+          "x": 0.9166666666666666,
+          "y": 0.23674242424242425,
+          "center": {
+            "x": 0.9166666666666666,
+            "y": 0.23674242424242425
+          },
+          "tags": []
+        },
+        {
+          "index": 23,
+          "label": "com.baidu.BaiduMap:id\/recycleview",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.baidu.BaiduMap:id\/recycleview",
+          "class": "androidx.recyclerview.widget.RecyclerView",
+          "clickable": false,
+          "editable": false,
+          "selected": false,
+          "bounds": "1208 448 1432 1052",
+          "x": 0.9166666666666666,
+          "y": 0.23674242424242425,
+          "center": {
+            "x": 0.9166666666666666,
+            "y": 0.23674242424242425
+          },
+          "tags": []
+        },
+        {
+          "index": 24,
+          "label": "反馈 com.baidu.BaiduMap:id\/text",
+          "text": "反馈",
+          "desc": null,
+          "resourceId": "com.baidu.BaiduMap:id\/text",
+          "class": "android.widget.TextView",
+          "clickable": false,
+          "editable": false,
+          "selected": false,
+          "bounds": "1280 763 1360 810",
+          "x": 0.9166666666666666,
+          "y": 0.2481060606060606,
+          "center": {
+            "x": 0.9166666666666666,
+            "y": 0.2481060606060606
+          },
+          "tags": []
+        },
+        {
+          "index": 25,
+          "label": "com.baidu.BaiduMap:id\/image",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.baidu.BaiduMap:id\/image",
+          "class": "android.widget.RelativeLayout",
+          "clickable": false,
+          "editable": false,
+          "selected": false,
+          "bounds": "1268 860 1372 952",
+          "x": 0.9166666666666666,
+          "y": 0.2859848484848485,
+          "center": {
+            "x": 0.9166666666666666,
+            "y": 0.2859848484848485
+          },
+          "tags": []
+        },
+        {
+          "index": 26,
+          "label": "",
+          "text": null,
+          "desc": null,
+          "resourceId": null,
+          "class": "android.widget.FrameLayout",
+          "clickable": true,
+          "editable": false,
+          "selected": false,
+          "bounds": "1208 836 1432 1028",
+          "x": 0.9166666666666666,
+          "y": 0.29419191919191917,
+          "center": {
+            "x": 0.9166666666666666,
+            "y": 0.29419191919191917
+          },
+          "tags": [
+            "clickable"
+          ]
+        },
+        {
+          "index": 27,
+          "label": "爱去榜 com.baidu.BaiduMap:id\/text",
+          "text": "爱去榜",
+          "desc": null,
+          "resourceId": "com.baidu.BaiduMap:id\/text",
+          "class": "android.widget.TextView",
+          "clickable": false,
+          "editable": false,
+          "selected": false,
+          "bounds": "1260 957 1380 1004",
+          "x": 0.9166666666666666,
+          "y": 0.30934343434343436,
+          "center": {
+            "x": 0.9166666666666666,
+            "y": 0.30934343434343436
+          },
+          "tags": []
+        },
+        {
+          "index": 28,
+          "label": "com.baidu.BaiduMap:id\/down_arrow_image",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.baidu.BaiduMap:id\/down_arrow_image",
+          "class": "android.widget.ImageView",
+          "clickable": true,
+          "editable": false,
+          "selected": false,
+          "bounds": "1208 932 1432 1052",
+          "x": 0.9166666666666666,
+          "y": 0.31313131313131315,
+          "center": {
+            "x": 0.9166666666666666,
+            "y": 0.31313131313131315
+          },
+          "tags": [
+            "clickable"
+          ]
+        },
+        {
+          "index": 29,
+          "label": "",
+          "text": null,
+          "desc": null,
+          "resourceId": null,
+          "class": "android.widget.FrameLayout",
+          "clickable": true,
+          "editable": false,
+          "selected": false,
+          "bounds": "1208 1030 1432 1052",
+          "x": 0.9166666666666666,
+          "y": 0.32859848484848486,
+          "center": {
+            "x": 0.9166666666666666,
+            "y": 0.32859848484848486
+          },
+          "tags": [
+            "clickable"
+          ]
+        },
+        {
+          "index": 30,
+          "label": "com.baidu.BaiduMap:id\/barContainer",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.baidu.BaiduMap:id\/barContainer",
+          "class": "android.widget.RelativeLayout",
+          "clickable": false,
+          "editable": false,
+          "selected": false,
+          "bounds": "0 816 1440 1666",
+          "x": 0.5,
+          "y": 0.39172979797979796,
+          "center": {
+            "x": 0.5,
+            "y": 0.39172979797979796
+          },
+          "tags": []
+        },
+        {
+          "index": 31,
+          "label": "com.baidu.BaiduMap:id\/reference_line",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.baidu.BaiduMap:id\/reference_line",
+          "class": "android.widget.FrameLayout",
+          "clickable": false,
+          "editable": false,
+          "selected": false,
+          "bounds": "0 776 1440 1782",
+          "x": 0.5,
+          "y": 0.40372474747474746,
+          "center": {
+            "x": 0.5,
+            "y": 0.40372474747474746
+          },
+          "tags": []
+        },
+        {
+          "index": 32,
+          "label": "com.baidu.BaiduMap:id\/leftBarContainer",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.baidu.BaiduMap:id\/leftBarContainer",
+          "class": "android.widget.LinearLayout",
+          "clickable": false,
+          "editable": false,
+          "selected": false,
+          "bounds": "0 776 1440 1782",
+          "x": 0.5,
+          "y": 0.40372474747474746,
+          "center": {
+            "x": 0.5,
+            "y": 0.40372474747474746
+          },
+          "tags": []
+        },
+        {
+          "index": 33,
+          "label": "com.baidu.BaiduMap:id\/location",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.baidu.BaiduMap:id\/location",
+          "class": "android.widget.LinearLayout",
+          "clickable": true,
+          "editable": false,
+          "selected": false,
+          "bounds": "1208 1226 1432 1450",
+          "x": 0.9166666666666666,
+          "y": 0.42234848484848486,
+          "center": {
+            "x": 0.9166666666666666,
+            "y": 0.42234848484848486
+          },
+          "tags": [
+            "clickable"
+          ]
+        },
+        {
+          "index": 34,
+          "label": "com.baidu.BaiduMap:id\/vs_location",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.baidu.BaiduMap:id\/vs_location",
+          "class": "android.widget.ViewSwitcher",
+          "clickable": true,
+          "editable": false,
+          "selected": false,
+          "bounds": "1208 1226 1432 1450",
+          "x": 0.9166666666666666,
+          "y": 0.42234848484848486,
+          "center": {
+            "x": 0.9166666666666666,
+            "y": 0.42234848484848486
+          },
+          "tags": [
+            "clickable"
+          ]
+        },
+        {
+          "index": 35,
+          "label": "我的位置 com.baidu.BaiduMap:id\/location_icon",
+          "text": null,
+          "desc": "我的位置",
+          "resourceId": "com.baidu.BaiduMap:id\/location_icon",
+          "class": "android.widget.ImageView",
+          "clickable": false,
+          "editable": false,
+          "selected": false,
+          "bounds": "1208 1226 1432 1450",
+          "x": 0.9166666666666666,
+          "y": 0.42234848484848486,
+          "center": {
+            "x": 0.9166666666666666,
+            "y": 0.42234848484848486
+          },
+          "tags": [
+            "profile_entry"
+          ]
+        },
+        {
+          "index": 36,
+          "label": "com.baidu.BaiduMap:id\/right_bottom_button",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.baidu.BaiduMap:id\/right_bottom_button",
+          "class": "android.widget.LinearLayout",
+          "clickable": false,
+          "editable": false,
+          "selected": false,
+          "bounds": "0 1226 1432 1782",
+          "x": 0.49722222222222223,
+          "y": 0.47474747474747475,
+          "center": {
+            "x": 0.49722222222222223,
+            "y": 0.47474747474747475
+          },
+          "tags": []
+        },
+        {
+          "index": 37,
+          "label": "路线搜索 com.baidu.BaiduMap:id\/frame_btn_route",
+          "text": null,
+          "desc": "路线搜索",
+          "resourceId": "com.baidu.BaiduMap:id\/frame_btn_route",
+          "class": "android.widget.ImageView",
+          "clickable": true,
+          "editable": false,
+          "selected": false,
+          "bounds": "1208 1426 1432 1650",
+          "x": 0.9166666666666666,
+          "y": 0.48547979797979796,
+          "center": {
+            "x": 0.9166666666666666,
+            "y": 0.48547979797979796
+          },
+          "tags": [
+            "clickable",
+            "search_entry"
+          ]
+        },
+        {
+          "index": 38,
+          "label": "com.baidu.BaiduMap:id\/action_bar_root",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.baidu.BaiduMap:id\/action_bar_root",
+          "class": "android.widget.LinearLayout",
+          "clickable": false,
+          "editable": false,
+          "selected": false,
+          "bounds": "0 0 1440 3104",
+          "x": 0.5,
+          "y": 0.4898989898989899,
+          "center": {
+            "x": 0.5,
+            "y": 0.4898989898989899
+          },
+          "tags": []
+        },
+        {
+          "index": 39,
+          "label": "android:id\/content",
+          "text": null,
+          "desc": null,
+          "resourceId": "android:id\/content",
+          "class": "android.widget.FrameLayout",
+          "clickable": false,
+          "editable": false,
+          "selected": false,
+          "bounds": "0 0 1440 3104",
+          "x": 0.5,
+          "y": 0.4898989898989899,
+          "center": {
+            "x": 0.5,
+            "y": 0.4898989898989899
+          },
+          "tags": []
+        },
+        {
+          "index": 40,
+          "label": "com.baidu.BaiduMap:id\/voice_view_ui",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.baidu.BaiduMap:id\/voice_view_ui",
+          "class": "android.widget.FrameLayout",
+          "clickable": false,
+          "editable": false,
+          "selected": false,
+          "bounds": "0 0 1440 3104",
+          "x": 0.5,
+          "y": 0.4898989898989899,
+          "center": {
+            "x": 0.5,
+            "y": 0.4898989898989899
+          },
+          "tags": []
+        },
+        {
+          "index": 41,
+          "label": "com.baidu.BaiduMap:id\/operation_behavior",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.baidu.BaiduMap:id\/operation_behavior",
+          "class": "android.view.View",
+          "clickable": false,
+          "editable": false,
+          "selected": false,
+          "bounds": "0 0 1440 3104",
+          "x": 0.5,
+          "y": 0.4898989898989899,
+          "center": {
+            "x": 0.5,
+            "y": 0.4898989898989899
+          },
+          "tags": []
+        },
+        {
+          "index": 42,
+          "label": "com.baidu.BaiduMap:id\/stack_root",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.baidu.BaiduMap:id\/stack_root",
+          "class": "android.view.ViewGroup",
+          "clickable": false,
+          "editable": false,
+          "selected": false,
+          "bounds": "0 0 1440 3104",
+          "x": 0.5,
+          "y": 0.4898989898989899,
+          "center": {
+            "x": 0.5,
+            "y": 0.4898989898989899
+          },
+          "tags": []
+        },
+        {
+          "index": 43,
+          "label": "com.baidu.BaiduMap:id\/arnew_surfaceview",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.baidu.BaiduMap:id\/arnew_surfaceview",
+          "class": "android.widget.RelativeLayout",
+          "clickable": false,
+          "editable": false,
+          "selected": false,
+          "bounds": "0 0 1440 3104",
+          "x": 0.5,
+          "y": 0.4898989898989899,
+          "center": {
+            "x": 0.5,
+            "y": 0.4898989898989899
+          },
+          "tags": []
+        },
+        {
+          "index": 44,
+          "label": "地图图区 com.baidu.BaiduMap:id\/map_container",
+          "text": null,
+          "desc": "地图图区",
+          "resourceId": "com.baidu.BaiduMap:id\/map_container",
+          "class": "android.widget.FrameLayout",
+          "clickable": false,
+          "editable": false,
+          "selected": false,
+          "bounds": "0 0 1440 3104",
+          "x": 0.5,
+          "y": 0.4898989898989899,
+          "center": {
+            "x": 0.5,
+            "y": 0.4898989898989899
+          },
+          "tags": []
+        },
+        {
+          "index": 45,
+          "label": "com.baidu.BaiduMap:id\/commonPopupContainer",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.baidu.BaiduMap:id\/commonPopupContainer",
+          "class": "android.widget.FrameLayout",
+          "clickable": false,
+          "editable": false,
+          "selected": false,
+          "bounds": "0 0 1440 3104",
+          "x": 0.5,
+          "y": 0.4898989898989899,
+          "center": {
+            "x": 0.5,
+            "y": 0.4898989898989899
+          },
+          "tags": []
+        },
+        {
+          "index": 46,
+          "label": "com.baidu.BaiduMap:id\/fragment_container",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.baidu.BaiduMap:id\/fragment_container",
+          "class": "android.widget.FrameLayout",
+          "clickable": false,
+          "editable": false,
+          "selected": false,
+          "bounds": "0 0 1440 3104",
+          "x": 0.5,
+          "y": 0.4898989898989899,
+          "center": {
+            "x": 0.5,
+            "y": 0.4898989898989899
+          },
+          "tags": []
+        },
+        {
+          "index": 47,
+          "label": "com.baidu.BaiduMap:id\/replace_container",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.baidu.BaiduMap:id\/replace_container",
+          "class": "android.widget.FrameLayout",
+          "clickable": false,
+          "editable": false,
+          "selected": false,
+          "bounds": "0 0 1440 3104",
+          "x": 0.5,
+          "y": 0.4898989898989899,
+          "center": {
+            "x": 0.5,
+            "y": 0.4898989898989899
+          },
+          "tags": []
+        },
+        {
+          "index": 48,
+          "label": "com.baidu.BaiduMap:id\/base_stack_lui",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.baidu.BaiduMap:id\/base_stack_lui",
+          "class": "android.widget.FrameLayout",
+          "clickable": false,
+          "editable": false,
+          "selected": false,
+          "bounds": "0 0 1440 3104",
+          "x": 0.5,
+          "y": 0.4898989898989899,
+          "center": {
+            "x": 0.5,
+            "y": 0.4898989898989899
+          },
+          "tags": []
+        },
+        {
+          "index": 49,
+          "label": "com.baidu.BaiduMap:id\/persist_container",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.baidu.BaiduMap:id\/persist_container",
+          "class": "android.widget.FrameLayout",
+          "clickable": false,
+          "editable": false,
+          "selected": false,
+          "bounds": "0 0 1440 3104",
+          "x": 0.5,
+          "y": 0.4898989898989899,
+          "center": {
+            "x": 0.5,
+            "y": 0.4898989898989899
+          },
+          "tags": []
+        }
+      ],
+      "capability": {
+        "nodeReadability": "A",
+        "inputCapability": "NONE",
+        "verificationCapability": "HIGH",
+        "coordinateFallback": "AVAILABLE",
+        "serviceState": "CONNECTED"
+      },
+      "snapshotPath": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_snapshots\/com.baidu.baidumap\/20260520_021104_531_1f9a44dc.json",
+      "capturedAt": 1779214264939
+    }
+  ],
+  "edges": [
+    {
+      "fromScreenKey": "480c76e4",
+      "toScreenKey": "32040f27",
+      "action": {
+        "type": "TapCandidate",
+        "label": "欢迎使用本功能服务 com.baidu.BaiduMap:id\/title_tv",
+        "x": 0.25555555555555554,
+        "y": 0.7054924242424242
+      },
+      "changed": false,
+      "depth": 1
+    },
+    {
+      "fromScreenKey": "480c76e4",
+      "toScreenKey": "7d8d6efa",
+      "action": {
+        "type": "TapCandidate",
+        "label": "com.baidu.BaiduMap:id\/voice_privacy_cancel_icon",
+        "x": 0.9305555555555556,
+        "y": 0.7058080808080808
+      },
+      "changed": true,
+      "depth": 1
+    },
+    {
+      "fromScreenKey": "480c76e4",
+      "toScreenKey": "3d8d5782",
+      "action": {
+        "type": "TapCandidate",
+        "label": "在使用【地图AI助手】前，请您仔细阅读本扩展功能隐私政策。如您同意前述隐私政策，即代表您同意为了向您提供本扩展功能服务，我们处理所需的相关个人信息并在会话中应用。 com.baidu.BaiduMap:id\/voice_privacy_co",
+        "x": 0.5,
+        "y": 0.7837752525252525
+      },
+      "changed": false,
+      "depth": 1
+    },
+    {
+      "fromScreenKey": "480c76e4",
+      "toScreenKey": "1f9a44dc",
+      "action": {
+        "type": "TapCandidate",
+        "label": "com.baidu.BaiduMap:id\/round_layout",
+        "x": 0.5,
+        "y": 0.8251262626262627
+      },
+      "changed": false,
+      "depth": 1
+    }
+  ],
+  "events": [
+    {
+      "phase": "open_app",
+      "status": "RUNNING",
+      "message": "打开 百度地图，开始读取首页、底部分屏、入口和输入框",
+      "path": null,
+      "timestamp": 1779214210863
+    },
+    {
+      "phase": "open_app_attempt",
+      "attempt": 1,
+      "strategy": "launcher_root",
+      "success": true,
+      "message": "Launcher root intent sent for com.baidu.BaiduMap"
+    },
+    {
+      "phase": "open_app_attempt_wait",
+      "attempt": 1,
+      "strategy": "launcher_root",
+      "success": true,
+      "currentPackage": "com.baidu.BaiduMap",
+      "windowClassName": "android.view.ViewGroup",
+      "overlayDismissed": 0,
+      "overlayEvents": []
+    },
+    {
+      "phase": "wait_foreground",
+      "success": true,
+      "currentPackage": "com.baidu.BaiduMap",
+      "windowClassName": "android.view.ViewGroup",
+      "overlayDismissed": 0,
+      "overlayEvents": []
+    },
+    {
+      "phase": "reactive_overlays",
+      "dismissed": 3,
+      "events": [
+        {
+          "pass": 1,
+          "kind": "ad_or_splash",
+          "label": "跳过 01",
+          "score": 120,
+          "reason": "app_ui_explorer",
+          "success": true,
+          "message": "dispatchGesture tap sent (normalized=0.858,0.044 px=1236,140 screen=1440x3168)",
+          "bounds": "1092 80 1380 200"
+        },
+        {
+          "pass": 2,
+          "kind": "dialog",
+          "label": "关闭 com.baidu.BaiduMap:id\/yellow_banner_close",
+          "score": 104,
+          "reason": "app_ui_explorer",
+          "success": true,
+          "message": "dispatchGesture tap sent (normalized=0.792,0.162 px=1140,512 screen=1440x3168)",
+          "bounds": "1040 416 1240 608"
+        },
+        {
+          "pass": 3,
+          "kind": "dialog",
+          "label": "语音搜索 com.baidu.BaiduMap:id\/iv_searchbox_home_voice",
+          "score": 66,
+          "reason": "app_ui_explorer",
+          "success": true,
+          "message": "dispatchGesture tap sent (normalized=0.911,0.095 px=1312,300 screen=1440x3168)",
+          "bounds": "1264 252 1360 348"
+        }
+      ]
+    },
+    {
+      "phase": "capture_home",
+      "status": "SUCCESS",
+      "message": "已记录首页：11 个节点、3 个可点击项",
+      "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_snapshots\/com.baidu.baidumap\/20260520_021023_022_480c76e4.json",
+      "timestamp": 1779214223373
+    },
+    {
+      "phase": "open_app_attempt",
+      "attempt": 1,
+      "strategy": "launcher_root",
+      "success": true,
+      "message": "Launcher root intent sent for com.baidu.BaiduMap"
+    },
+    {
+      "phase": "open_app_attempt_wait",
+      "attempt": 1,
+      "strategy": "launcher_root",
+      "success": true,
+      "currentPackage": "com.baidu.BaiduMap",
+      "windowClassName": null,
+      "overlayDismissed": 0,
+      "overlayEvents": []
+    },
+    {
+      "phase": "restore_home_before_entry",
+      "label": "欢迎使用本功能服务 com.baidu.BaiduMap:id\/title_tv",
+      "success": true,
+      "message": "target foreground"
+    },
+    {
+      "phase": "explore_entry",
+      "status": "RUNNING",
+      "message": "尝试安全入口：欢迎使用本功能服务 com.baidu.BaiduMap:id\/title_tv",
+      "path": null,
+      "timestamp": 1779214224680
+    },
+    {
+      "phase": "tap_entry",
+      "label": "欢迎使用本功能服务 com.baidu.BaiduMap:id\/title_tv",
+      "success": true,
+      "message": "dispatchGesture tap sent (normalized=0.256,0.705 px=368,2235 screen=1440x3168)",
+      "candidate": {
+        "index": 0,
+        "label": "欢迎使用本功能服务 com.baidu.BaiduMap:id\/title_tv",
+        "text": "欢迎使用本功能服务",
+        "desc": null,
+        "resourceId": "com.baidu.BaiduMap:id\/title_tv",
+        "class": "android.widget.TextView",
+        "clickable": false,
+        "editable": false,
+        "selected": false,
+        "bounds": "80 2192 656 2278",
+        "x": 0.25555555555555554,
+        "y": 0.7054924242424242,
+        "center": {
+          "x": 0.25555555555555554,
+          "y": 0.7054924242424242
+        },
+        "tags": [
+          "bottom_tab_candidate"
+        ]
+      }
+    },
+    {
+      "phase": "capture_child",
+      "status": "LOW_CONFIDENCE",
+      "message": "入口 欢迎使用本功能服务 com.baidu.BaiduMap:id\/title_tv 后记录页面：22 个节点，screenKey=32040f27",
+      "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_snapshots\/com.baidu.baidumap\/20260520_021025_694_32040f27.json",
+      "timestamp": 1779214226088
+    },
+    {
+      "phase": "open_app_attempt",
+      "attempt": 1,
+      "strategy": "launcher_root",
+      "success": true,
+      "message": "Launcher root intent sent for com.baidu.BaiduMap"
+    },
+    {
+      "phase": "open_app_attempt_wait",
+      "attempt": 1,
+      "strategy": "launcher_root",
+      "success": true,
+      "currentPackage": "com.baidu.BaiduMap",
+      "windowClassName": "android.view.ViewGroup",
+      "overlayDismissed": 0,
+      "overlayEvents": []
+    },
+    {
+      "phase": "restore_home_before_entry",
+      "label": "com.baidu.BaiduMap:id\/voice_privacy_cancel_icon",
+      "success": true,
+      "message": "target foreground"
+    },
+    {
+      "phase": "explore_entry",
+      "status": "RUNNING",
+      "message": "尝试安全入口：com.baidu.BaiduMap:id\/voice_privacy_cancel_icon",
+      "path": null,
+      "timestamp": 1779214235718
+    },
+    {
+      "phase": "tap_entry",
+      "label": "com.baidu.BaiduMap:id\/voice_privacy_cancel_icon",
+      "success": true,
+      "message": "dispatchGesture tap sent (normalized=0.931,0.706 px=1340,2236 screen=1440x3168)",
+      "candidate": {
+        "index": 6,
+        "label": "com.baidu.BaiduMap:id\/voice_privacy_cancel_icon",
+        "text": null,
+        "desc": null,
+        "resourceId": "com.baidu.BaiduMap:id\/voice_privacy_cancel_icon",
+        "class": "android.widget.ImageView",
+        "clickable": true,
+        "editable": false,
+        "selected": false,
+        "bounds": "1264 2160 1416 2312",
+        "x": 0.9305555555555556,
+        "y": 0.7058080808080808,
+        "center": {
+          "x": 0.9305555555555556,
+          "y": 0.7058080808080808
+        },
+        "tags": [
+          "bottom_tab_candidate"
+        ]
+      }
+    },
+    {
+      "phase": "capture_child",
+      "status": "SUCCESS",
+      "message": "入口 com.baidu.BaiduMap:id\/voice_privacy_cancel_icon 后记录页面：591 个节点，screenKey=7d8d6efa",
+      "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_snapshots\/com.baidu.baidumap\/20260520_021040_329_7d8d6efa.json",
+      "timestamp": 1779214240706
+    },
+    {
+      "phase": "open_app_attempt",
+      "attempt": 1,
+      "strategy": "launcher_root",
+      "success": true,
+      "message": "Launcher root intent sent for com.baidu.BaiduMap"
+    },
+    {
+      "phase": "open_app_attempt_wait",
+      "attempt": 1,
+      "strategy": "launcher_root",
+      "success": true,
+      "currentPackage": "com.baidu.BaiduMap",
+      "windowClassName": "android.view.ViewGroup",
+      "overlayDismissed": 0,
+      "overlayEvents": []
+    },
+    {
+      "phase": "restore_home_before_entry",
+      "label": "在使用【地图AI助手】前，请您仔细阅读本扩展功能隐私政策。如您同意前述隐私政策，即代表您同意为了向您提供本扩展功能服务，我们处理所需的相关个人信息并在会话中应用。 com.baidu.BaiduMap:id\/voice_privacy_co",
+      "success": true,
+      "message": "target foreground"
+    },
+    {
+      "phase": "explore_entry",
+      "status": "RUNNING",
+      "message": "尝试安全入口：在使用【地图AI助手】前，请您仔细阅读本扩展功能隐私政策。如您同意前述隐私政策，即代表您同意为了向您提供本扩展功能服务，我们处理所需的相关个人信息并在会话中应用。 com.baidu.BaiduMap:id\/voice_privacy_co",
+      "path": null,
+      "timestamp": 1779214242342
+    },
+    {
+      "phase": "tap_entry",
+      "label": "在使用【地图AI助手】前，请您仔细阅读本扩展功能隐私政策。如您同意前述隐私政策，即代表您同意为了向您提供本扩展功能服务，我们处理所需的相关个人信息并在会话中应用。 com.baidu.BaiduMap:id\/voice_privacy_co",
+      "success": true,
+      "message": "dispatchGesture tap sent (normalized=0.500,0.784 px=720,2483 screen=1440x3168)",
+      "candidate": {
+        "index": 2,
+        "label": "在使用【地图AI助手】前，请您仔细阅读本扩展功能隐私政策。如您同意前述隐私政策，即代表您同意为了向您提供本扩展功能服务，我们处理所需的相关个人信息并在会话中应用。 com.baidu.BaiduMap:id\/voice_privacy_co",
+        "text": "在使用【地图AI助手】前，请您仔细阅读本扩展功能隐私政策。如您同意前述隐私政策，即代表您同意为了向您提供本扩展功能服务，我们处理所需的相关个人信息并在会话中应用。",
+        "desc": null,
+        "resourceId": "com.baidu.BaiduMap:id\/voice_privacy_content_tv",
+        "class": "android.widget.TextView",
+        "clickable": false,
+        "editable": false,
+        "selected": false,
+        "bounds": "80 2346 1360 2620",
+        "x": 0.5,
+        "y": 0.7837752525252525,
+        "center": {
+          "x": 0.5,
+          "y": 0.7837752525252525
+        },
+        "tags": [
+          "bottom_tab_candidate"
+        ]
+      }
+    },
+    {
+      "phase": "capture_child",
+      "status": "LOW_CONFIDENCE",
+      "message": "入口 在使用【地图AI助手】前，请您仔细阅读本扩展功能隐私政策。如您同意前述隐私政策，即代表您同意为了向您提供本扩展功能服务，我们处理所需的相关个人信息并在会话中应用。 com.baidu.BaiduMap:id\/voice_privacy_co 后记录页面：22 个节点，screenKey=3d8d5782",
+      "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_snapshots\/com.baidu.baidumap\/20260520_021043_361_3d8d5782.json",
+      "timestamp": 1779214243762
+    },
+    {
+      "phase": "open_app_attempt",
+      "attempt": 1,
+      "strategy": "launcher_root",
+      "success": true,
+      "message": "Launcher root intent sent for com.baidu.BaiduMap"
+    },
+    {
+      "phase": "open_app_attempt_wait",
+      "attempt": 1,
+      "strategy": "launcher_root",
+      "success": true,
+      "currentPackage": "com.baidu.BaiduMap",
+      "windowClassName": "android.view.ViewGroup",
+      "overlayDismissed": 0,
+      "overlayEvents": []
+    },
+    {
+      "phase": "restore_home_before_entry",
+      "label": "com.baidu.BaiduMap:id\/round_layout",
+      "success": true,
+      "message": "target foreground"
+    },
+    {
+      "phase": "explore_entry",
+      "status": "RUNNING",
+      "message": "尝试安全入口：com.baidu.BaiduMap:id\/round_layout",
+      "path": null,
+      "timestamp": 1779214253273
+    },
+    {
+      "phase": "tap_entry",
+      "label": "com.baidu.BaiduMap:id\/round_layout",
+      "success": true,
+      "message": "dispatchGesture tap sent (normalized=0.500,0.825 px=720,2614 screen=1440x3168)",
+      "candidate": {
+        "index": 1,
+        "label": "com.baidu.BaiduMap:id\/round_layout",
+        "text": null,
+        "desc": null,
+        "resourceId": "com.baidu.BaiduMap:id\/round_layout",
+        "class": "android.view.ViewGroup",
+        "clickable": false,
+        "editable": false,
+        "selected": false,
+        "bounds": "0 2124 1440 3104",
+        "x": 0.5,
+        "y": 0.8251262626262627,
+        "center": {
+          "x": 0.5,
+          "y": 0.8251262626262627
+        },
+        "tags": [
+          "bottom_tab_candidate"
+        ]
+      }
+    },
+    {
+      "phase": "capture_child",
+      "status": "LOW_CONFIDENCE",
+      "message": "入口 com.baidu.BaiduMap:id\/round_layout 后记录页面：378 个节点，screenKey=1f9a44dc",
+      "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_snapshots\/com.baidu.baidumap\/20260520_021104_531_1f9a44dc.json",
+      "timestamp": 1779214264939
+    }
+  ],
+  "createdAt": 1779214265590,
+  "updatedAt": 1779214265598
+}

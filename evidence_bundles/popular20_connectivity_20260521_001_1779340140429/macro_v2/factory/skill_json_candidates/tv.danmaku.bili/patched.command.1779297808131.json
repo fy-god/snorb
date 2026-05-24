@@ -1,0 +1,55 @@
+{
+  "schemaVersion": 1,
+  "kind": "macro_skill",
+  "id": "patched.command.1779297808131",
+  "name": "手机端任务拼装 Skill",
+  "appPackage": "tv.danmaku.bili",
+  "appVersion": "*",
+  "status": "DRY_RUN_PASSED",
+  "implements": "AiPlannedMacroSkill",
+  "intentId": "search_in_app",
+  "params": [],
+  "preconditions": [],
+  "atoms": [
+    {
+      "type": "UseSkill",
+      "skillId": "patched.1779297808131.1.clickcoordinate"
+    },
+    {
+      "type": "UseSkill",
+      "skillId": "patched.1779297808131.2.wait"
+    }
+  ],
+  "verify": {
+    "type": "GoalEvidenceOrNoFailedAtom",
+    "instruction": "在哔哩哔哩搜索王老菊并打开第一个视频，必须验证已经进入视频播放页，不能只停在搜索结果页。。这是失败后的第二次自调试重试：先读取当前 UI 和已有 AppUI 图谱，判断卡住位置；如果目标入口不在当前页，回到该 App 主页面，按底部导航、顶部小图标、图形化入口、子页面入口的顺序查找；不要重复同一个错误点击。上次失败状态=FAILED_GOAL_UNVERIFIED；失败信息=报告已写入 \/ INFO: \/data\/user\/0\/com.macropilot.app\/files",
+    "timeoutMs": 2000,
+    "allowLowConfidenceWhenNodeUnreadable": true
+  },
+  "resultPolicy": {
+    "allAtomicSuccess": "SUCCESS",
+    "partialAtomicSuccess": "SUCCESS_MEDIUM_CONFIDENCE",
+    "coordinateOnly": "SUCCESS_LOW_CONFIDENCE",
+    "unverifiable": "FAILED_UNVERIFIABLE"
+  },
+  "timeoutMs": 30000,
+  "factory": {
+    "source": "APP_SIDE_PLAN_PATCH_ASSEMBLER",
+    "instruction": "在哔哩哔哩搜索王老菊并打开第一个视频，必须验证已经进入视频播放页，不能只停在搜索结果页。。这是失败后的第二次自调试重试：先读取当前 UI 和已有 AppUI 图谱，判断卡住位置；如果目标入口不在当前页，回到该 App 主页面，按底部导航、顶部小图标、图形化入口、子页面入口的顺序查找；不要重复同一个错误点击。上次失败状态=FAILED_GOAL_UNVERIFIED；失败信息=报告已写入 \/ INFO: \/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/flow_reports\/tv.danmaku.bili\/ai_direct_flow_1779297780576.json；上次报告=\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/flow_reports\/tv.danmaku.bili\/ai_direct_flow_1779297780576.json；请参考上次最后一步=报告已写入 \/ INFO: \/data\/user\/0\/com.macropilot.app\/",
+    "aiJobPath": null,
+    "traceIds": [],
+    "sampleCount": 0,
+    "dryRunStatus": "PASSED",
+    "testRuns": 0,
+    "successRate": 0,
+    "promotionStatus": "NOT_PROMOTED",
+    "createdAt": 1779297808822,
+    "assemblyStrategy": "rewrite_allowed_slots_from_existing_skill_json",
+    "requiredAtomicSkills": [
+      "patched.1779297808131.1.clickcoordinate",
+      "patched.1779297808131.2.wait"
+    ],
+    "lastDryRunReport": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_dry_run_reports\/tv.danmaku.bili\/patched.command.1779297808131_1779338058582.json",
+    "lastDryRunAt": 1779338058583
+  }
+}

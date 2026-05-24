@@ -1,0 +1,4649 @@
+{
+  "schemaVersion": 1,
+  "kind": "app_ui_graph",
+  "id": "app_ui_graph_com.tencent.mm_1779338730274",
+  "status": "CANDIDATE_EXPLORED",
+  "appPackage": "com.tencent.mm",
+  "appName": "微信",
+  "reason": "popular_app_task_batch:wechat_bottom_tabs_snapshot",
+  "quality": {
+    "usable": true,
+    "reason": "usable_app_ui_graph",
+    "qualityGate": {
+      "bottomPrimaryTabsRequired": false,
+      "bottomPrimaryTabsAttempted": 0,
+      "bottomPrimaryTabsOpened": 0,
+      "topIconsAreNotEnough": true,
+      "repeatedMessagePageIsNotProgress": true
+    },
+    "screenCount": 1,
+    "edgeCount": 0,
+    "nodeCount": 328,
+    "clickableCount": 36,
+    "editableCount": 0,
+    "labelCount": 80,
+    "bottomTabCount": 1,
+    "topEntryCount": 24,
+    "sideEntryCount": 24,
+    "entryCandidateCount": 3,
+    "inputCandidateCount": 0,
+    "videoCandidateCount": 0,
+    "clickTargetCount": 120,
+    "graphicalCandidateCount": 9,
+    "checkableCandidateCount": 0,
+    "candidateCount": 181,
+    "changedEdgeCount": 0,
+    "edgeCategoryCounts": {},
+    "primaryBottomTabAttemptedCount": 0,
+    "primaryBottomTabAttemptedLabels": [],
+    "primaryBottomTabOpenedCount": 0,
+    "primaryBottomTabOpenedLabels": [],
+    "primaryTabSurfaceEntryChangedCount": 0,
+    "primaryTabSurfaceEntriesByTab": {}
+  },
+  "budgets": {
+    "maxScreens": 80,
+    "maxClicks": 70,
+    "maxDepth": 4,
+    "maxSwipeActions": 40,
+    "maxDurationMs": 180000
+  },
+  "screens": [
+    {
+      "screenId": "screen_c5b476c0",
+      "screenKey": "c5b476c0",
+      "title": "",
+      "appPackage": "com.tencent.mm",
+      "windowClassName": "android.widget.ImageView",
+      "screenWidth": 1440,
+      "screenHeight": 3168,
+      "nodeCount": 328,
+      "clickableCount": 36,
+      "editableCount": 0,
+      "checkableCount": 0,
+      "scrollableCount": 1,
+      "labels": [
+        "com.tencent.mm:id\/jxo",
+        "com.tencent.mm:id\/jv6",
+        "com.tencent.mm:id\/jxt",
+        "浮窗 com.tencent.mm:id\/jxu",
+        "退出浮窗 com.tencent.mm:id\/jxs",
+        "com.tencent.mm:id\/jxq",
+        "com.tencent.mm:id\/jxp",
+        "com.tencent.mm:id\/jv9",
+        "com.tencent.mm:id\/u1n",
+        "com.tencent.mm:id\/huh",
+        "com.tencent.mm:id\/crd",
+        "android:id\/content",
+        "com.tencent.mm:id\/g6w",
+        "com.tencent.mm:id\/kod",
+        "com.tencent.mm:id\/jlt",
+        "com.tencent.mm:id\/j99",
+        "com.tencent.mm:id\/j8g",
+        "com.tencent.mm:id\/cvn",
+        "com.tencent.mm:id\/a0i",
+        "com.tencent.mm:id\/wn",
+        "最近 com.tencent.mm:id\/wp",
+        "com.tencent.mm:id\/wq",
+        "com.tencent.mm:id\/wk",
+        "com.tencent.mm:id\/wi",
+        "com.tencent.mm:id\/cg7",
+        "com.tencent.mm:id\/actionbar_up_indicator",
+        "返回 com.tencent.mm:id\/actionbar_up_indicator_btn",
+        "com.tencent.mm:id\/gp",
+        "微信(46) android:id\/text1",
+        "com.tencent.mm:id\/meb",
+        "com.tencent.mm:id\/plus_icon",
+        "com.tencent.mm:id\/gw5",
+        "com.tencent.mm:id\/af3",
+        "com.tencent.mm:id\/aey",
+        "com.tencent.mm:id\/af0",
+        "已登录2台其他设备 com.tencent.mm:id\/af5",
+        "com.tencent.mm:id\/cj1",
+        "com.tencent.mm:id\/cj0",
+        "com.tencent.mm:id\/a_4",
+        "com.tencent.mm:id\/o4k",
+        "com.tencent.mm:id\/v2r",
+        "文件传输助手 com.tencent.mm:id\/kbq",
+        "11:29 com.tencent.mm:id\/otg",
+        "[图片] com.tencent.mm:id\/ht5",
+        "com.tencent.mm:id\/d0v",
+        "2026信号与系统实验 com.tencent.mm:id\/kbq",
+        "11:19 com.tencent.mm:id\/otg",
+        "刘慧: 这个k2要改成k2(1) com.tencent.mm:id\/ht5",
+        "com.tencent.mm:id\/a_h",
+        "腾讯新闻 com.tencent.mm:id\/kbq",
+        "12:45 com.tencent.mm:id\/otg",
+        "[3条] 时政微观察丨从四个“更高质量”看世界百… com.tencent.mm:id\/ht5",
+        "com.tencent.mm:id\/h_5",
+        "xmuer集市96 com.tencent.mm:id\/kbq",
+        "12:41 com.tencent.mm:id\/otg",
+        "[31条] Sara: 🚀在翔安一期食堂吃出蜘蛛了 mp:\/… com.tencent.mm:id\/ht5",
+        "永泰老乡半场开香槟🍾 com.tencent.mm:id\/kbq",
+        "12:38 com.tencent.mm:id\/otg",
+        "[55条] 傩.: [动画表情] com.tencent.mm:id\/ht5",
+        "厦门会展二喜兄天虹店福利群 com.tencent.mm:id\/kbq",
+        "11:51 com.tencent.mm:id\/otg",
+        "[2条] 说猫🐯就是虎🐈: [小程序] 欢迎来到海底世… com.tencent.mm:id\/ht5",
+        "公众号 com.tencent.mm:id\/kbq",
+        "11:16 com.tencent.mm:id\/otg",
+        "[3条] 厦门大学海洋与地球学院: 招贤纳士 | 厦门大… com.tencent.mm:id\/ht5",
+        "服务号 com.tencent.mm:id\/kbq",
+        "11:09 com.tencent.mm:id\/otg",
+        "SPSSPRO: 结构方程模型太复杂？SPSSPRO帮你… com.tencent.mm:id\/ht5",
+        "26 com.tencent.mm:id\/o_u",
+        "闪购外卖助手 @小光饭粒 com.tencent.mm:id\/kbq",
+        "10:42 com.tencent.mm:id\/otg",
+        "宝，最新外卖红包来啦~🧧 【点蓝色链接领取】  -… com.tencent.mm:id\/ht5",
+        "16 com.tencent.mm:id\/o_u",
+        "外卖红包助手🧧2 @泰和永信科技 com.tencent.mm:id\/kbq",
+        "10:25 com.tencent.mm:id\/otg",
+        "[链接] 🔥𝟔𝟏𝟖淘宝京东发红包啦❗ com.tencent.mm:id\/ht5",
+        "1 com.tencent.mm:id\/o_u",
+        "厦门大学 com.tencent.mm:id\/kbq",
+        "08:27 com.tencent.mm:id\/otg",
+        "D.学生公寓用电查询: 余额6.47元，记得缴费哦… com.tencent.mm:id\/ht5"
+      ],
+      "primaryBottomTabs": [
+        {
+          "index": 0,
+          "label": "bottom_tab_1",
+          "text": null,
+          "desc": null,
+          "resourceId": null,
+          "class": "android.widget.RelativeLayout",
+          "clickable": false,
+          "editable": false,
+          "checkable": false,
+          "selected": true,
+          "bounds": "0 2923 360 3024",
+          "x": 0.125,
+          "y": 0.9384469696969697,
+          "center": {
+            "x": 0.125,
+            "y": 0.9384469696969697
+          },
+          "tags": [
+            "primary_bottom_tab",
+            "bottom_tab",
+            "selected",
+            "bottom_area"
+          ]
+        }
+      ],
+      "bottomTabs": [
+        {
+          "index": 0,
+          "label": "bottom_tab_1",
+          "text": null,
+          "desc": null,
+          "resourceId": null,
+          "class": "android.widget.RelativeLayout",
+          "clickable": false,
+          "editable": false,
+          "checkable": false,
+          "selected": true,
+          "bounds": "0 2923 360 3024",
+          "x": 0.125,
+          "y": 0.9384469696969697,
+          "center": {
+            "x": 0.125,
+            "y": 0.9384469696969697
+          },
+          "tags": [
+            "primary_bottom_tab",
+            "bottom_tab",
+            "selected",
+            "bottom_area"
+          ],
+          "candidateCategory": "bottom_tab"
+        }
+      ],
+      "topEntries": [
+        {
+          "index": 0,
+          "label": "actionbar up indicator",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.tencent.mm:id\/actionbar_up_indicator",
+          "class": "android.widget.LinearLayout",
+          "clickable": false,
+          "editable": false,
+          "checkable": false,
+          "selected": false,
+          "bounds": "0 160 150 333",
+          "x": 0.052083333333333336,
+          "y": 0.07765151515151515,
+          "center": {
+            "x": 0.052083333333333336,
+            "y": 0.07765151515151515
+          },
+          "tags": [
+            "top_entry",
+            "top_entry_candidate"
+          ]
+        },
+        {
+          "index": 1,
+          "label": "actionbar up indicator",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.tencent.mm:id\/actionbar_up_indicator",
+          "class": "android.widget.LinearLayout",
+          "clickable": true,
+          "editable": false,
+          "checkable": false,
+          "selected": false,
+          "bounds": "0 160 165 333",
+          "x": 0.05694444444444444,
+          "y": 0.07765151515151515,
+          "center": {
+            "x": 0.05694444444444444,
+            "y": 0.07765151515151515
+          },
+          "tags": [
+            "top_entry",
+            "top_entry_candidate"
+          ]
+        },
+        {
+          "index": 2,
+          "label": "返回",
+          "text": null,
+          "desc": "返回",
+          "resourceId": "com.tencent.mm:id\/actionbar_up_indicator_btn",
+          "class": "android.widget.ImageView",
+          "clickable": false,
+          "editable": false,
+          "checkable": false,
+          "selected": false,
+          "bounds": "0 160 165 333",
+          "x": 0.05694444444444444,
+          "y": 0.07765151515151515,
+          "center": {
+            "x": 0.05694444444444444,
+            "y": 0.07765151515151515
+          },
+          "tags": [
+            "top_entry",
+            "top_entry_candidate"
+          ]
+        },
+        {
+          "index": 3,
+          "label": "af0",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.tencent.mm:id\/af0",
+          "class": "android.widget.ImageView",
+          "clickable": false,
+          "editable": false,
+          "checkable": false,
+          "selected": false,
+          "bounds": "101 376 187 462",
+          "x": 0.1,
+          "y": 0.13226010101010102,
+          "center": {
+            "x": 0.1,
+            "y": 0.13226010101010102
+          },
+          "tags": [
+            "top_entry",
+            "top_entry_candidate"
+          ]
+        },
+        {
+          "index": 4,
+          "label": "a 4",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.tencent.mm:id\/a_4",
+          "class": "android.widget.ImageView",
+          "clickable": false,
+          "editable": false,
+          "checkable": false,
+          "selected": false,
+          "bounds": "58 548 231 721",
+          "x": 0.1,
+          "y": 0.20012626262626262,
+          "center": {
+            "x": 0.1,
+            "y": 0.20012626262626262
+          },
+          "tags": [
+            "top_entry",
+            "top_entry_candidate"
+          ]
+        },
+        {
+          "index": 5,
+          "label": "gp",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.tencent.mm:id\/gp",
+          "class": "android.widget.RelativeLayout",
+          "clickable": false,
+          "editable": false,
+          "checkable": false,
+          "selected": false,
+          "bounds": "251 160 1188 333",
+          "x": 0.49930555555555556,
+          "y": 0.07765151515151515,
+          "center": {
+            "x": 0.49930555555555556,
+            "y": 0.07765151515151515
+          },
+          "tags": [
+            "top_entry",
+            "top_entry_candidate"
+          ]
+        },
+        {
+          "index": 6,
+          "label": "微信(46)",
+          "text": "微信(46)",
+          "desc": null,
+          "resourceId": "android:id\/text1",
+          "class": "android.widget.TextView",
+          "clickable": false,
+          "editable": false,
+          "checkable": false,
+          "selected": false,
+          "bounds": "597 205 842 287",
+          "x": 0.49930555555555556,
+          "y": 0.07765151515151515,
+          "center": {
+            "x": 0.49930555555555556,
+            "y": 0.07765151515151515
+          },
+          "tags": [
+            "top_entry",
+            "top_entry_candidate"
+          ]
+        },
+        {
+          "index": 7,
+          "label": "cvn",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.tencent.mm:id\/cvn",
+          "class": "android.widget.FrameLayout",
+          "clickable": false,
+          "editable": false,
+          "checkable": false,
+          "selected": false,
+          "bounds": "0 0 1440 333",
+          "x": 0.5,
+          "y": 0.052398989898989896,
+          "center": {
+            "x": 0.5,
+            "y": 0.052398989898989896
+          },
+          "tags": [
+            "top_entry",
+            "top_entry_candidate"
+          ]
+        },
+        {
+          "index": 8,
+          "label": "a0i",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.tencent.mm:id\/a0i",
+          "class": "android.widget.FrameLayout",
+          "clickable": false,
+          "editable": false,
+          "checkable": false,
+          "selected": false,
+          "bounds": "0 0 1440 131",
+          "x": 0.5,
+          "y": 0.020517676767676768,
+          "center": {
+            "x": 0.5,
+            "y": 0.020517676767676768
+          },
+          "tags": [
+            "top_entry",
+            "top_entry_candidate"
+          ]
+        },
+        {
+          "index": 9,
+          "label": "wk",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.tencent.mm:id\/wk",
+          "class": "android.widget.FrameLayout",
+          "clickable": false,
+          "editable": false,
+          "checkable": false,
+          "selected": false,
+          "bounds": "0 131 1440 333",
+          "x": 0.5,
+          "y": 0.07323232323232323,
+          "center": {
+            "x": 0.5,
+            "y": 0.07323232323232323
+          },
+          "tags": [
+            "top_entry",
+            "top_entry_candidate"
+          ]
+        },
+        {
+          "index": 10,
+          "label": "wi",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.tencent.mm:id\/wi",
+          "class": "android.view.View",
+          "clickable": false,
+          "editable": false,
+          "checkable": false,
+          "selected": false,
+          "bounds": "0 131 1440 333",
+          "x": 0.5,
+          "y": 0.07323232323232323,
+          "center": {
+            "x": 0.5,
+            "y": 0.07323232323232323
+          },
+          "tags": [
+            "top_entry",
+            "top_entry_candidate"
+          ]
+        },
+        {
+          "index": 11,
+          "label": "cg7",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.tencent.mm:id\/cg7",
+          "class": "android.widget.RelativeLayout",
+          "clickable": false,
+          "editable": false,
+          "checkable": false,
+          "selected": false,
+          "bounds": "0 131 1440 333",
+          "x": 0.5,
+          "y": 0.07323232323232323,
+          "center": {
+            "x": 0.5,
+            "y": 0.07323232323232323
+          },
+          "tags": [
+            "top_entry",
+            "top_entry_candidate"
+          ]
+        },
+        {
+          "index": 12,
+          "label": "gp",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.tencent.mm:id\/gp",
+          "class": "android.widget.RelativeLayout",
+          "clickable": false,
+          "editable": false,
+          "checkable": false,
+          "selected": false,
+          "bounds": "432 160 1008 333",
+          "x": 0.5,
+          "y": 0.07765151515151515,
+          "center": {
+            "x": 0.5,
+            "y": 0.07765151515151515
+          },
+          "tags": [
+            "top_entry",
+            "top_entry_candidate"
+          ]
+        },
+        {
+          "index": 13,
+          "label": "微信(46)",
+          "text": "微信(46)",
+          "desc": null,
+          "resourceId": "android:id\/text1",
+          "class": "android.widget.TextView",
+          "clickable": false,
+          "editable": false,
+          "checkable": false,
+          "selected": false,
+          "bounds": "432 205 1008 287",
+          "x": 0.5,
+          "y": 0.07765151515151515,
+          "center": {
+            "x": 0.5,
+            "y": 0.07765151515151515
+          },
+          "tags": [
+            "top_entry",
+            "top_entry_candidate"
+          ]
+        },
+        {
+          "index": 14,
+          "label": "gw5",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.tencent.mm:id\/gw5",
+          "class": "android.view.View",
+          "clickable": false,
+          "editable": false,
+          "checkable": false,
+          "selected": false,
+          "bounds": "630 142 810 178",
+          "x": 0.5,
+          "y": 0.050505050505050504,
+          "center": {
+            "x": 0.5,
+            "y": 0.050505050505050504
+          },
+          "tags": [
+            "top_entry",
+            "top_entry_candidate"
+          ]
+        },
+        {
+          "index": 15,
+          "label": "top_entry_16",
+          "text": null,
+          "desc": null,
+          "resourceId": null,
+          "class": "android.widget.LinearLayout",
+          "clickable": true,
+          "editable": false,
+          "checkable": false,
+          "selected": false,
+          "bounds": "0 333 1440 506",
+          "x": 0.5,
+          "y": 0.13226010101010102,
+          "center": {
+            "x": 0.5,
+            "y": 0.13226010101010102
+          },
+          "tags": [
+            "top_entry",
+            "top_entry_candidate"
+          ]
+        },
+        {
+          "index": 16,
+          "label": "af3",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.tencent.mm:id\/af3",
+          "class": "android.widget.LinearLayout",
+          "clickable": false,
+          "editable": false,
+          "checkable": false,
+          "selected": false,
+          "bounds": "0 333 1440 506",
+          "x": 0.5,
+          "y": 0.13226010101010102,
+          "center": {
+            "x": 0.5,
+            "y": 0.13226010101010102
+          },
+          "tags": [
+            "top_entry",
+            "top_entry_candidate"
+          ]
+        },
+        {
+          "index": 17,
+          "label": "aey",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.tencent.mm:id\/aey",
+          "class": "android.widget.LinearLayout",
+          "clickable": false,
+          "editable": false,
+          "checkable": false,
+          "selected": false,
+          "bounds": "0 333 1440 506",
+          "x": 0.5,
+          "y": 0.13226010101010102,
+          "center": {
+            "x": 0.5,
+            "y": 0.13226010101010102
+          },
+          "tags": [
+            "top_entry",
+            "top_entry_candidate"
+          ]
+        },
+        {
+          "index": 18,
+          "label": "cj1",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.tencent.mm:id\/cj1",
+          "class": "android.widget.LinearLayout",
+          "clickable": true,
+          "editable": false,
+          "checkable": false,
+          "selected": false,
+          "bounds": "0 506 1440 765",
+          "x": 0.5,
+          "y": 0.2004419191919192,
+          "center": {
+            "x": 0.5,
+            "y": 0.2004419191919192
+          },
+          "tags": [
+            "top_entry",
+            "top_entry_candidate"
+          ]
+        },
+        {
+          "index": 19,
+          "label": "cj0",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.tencent.mm:id\/cj0",
+          "class": "android.widget.LinearLayout",
+          "clickable": false,
+          "editable": false,
+          "checkable": false,
+          "selected": false,
+          "bounds": "0 506 1440 765",
+          "x": 0.5,
+          "y": 0.2004419191919192,
+          "center": {
+            "x": 0.5,
+            "y": 0.2004419191919192
+          },
+          "tags": [
+            "top_entry",
+            "top_entry_candidate"
+          ]
+        },
+        {
+          "index": 20,
+          "label": "nhm",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.tencent.mm:id\/nhm",
+          "class": "android.view.View",
+          "clickable": false,
+          "editable": false,
+          "checkable": false,
+          "selected": false,
+          "bounds": "0 0 1440 160",
+          "x": 0.5,
+          "y": 0.025252525252525252,
+          "center": {
+            "x": 0.5,
+            "y": 0.025252525252525252
+          },
+          "tags": [
+            "top_entry",
+            "top_entry_candidate"
+          ]
+        },
+        {
+          "index": 21,
+          "label": "og9",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.tencent.mm:id\/og9",
+          "class": "android.view.View",
+          "clickable": false,
+          "editable": false,
+          "checkable": false,
+          "selected": false,
+          "bounds": "0 0 1440 160",
+          "x": 0.5,
+          "y": 0.025252525252525252,
+          "center": {
+            "x": 0.5,
+            "y": 0.025252525252525252
+          },
+          "tags": [
+            "top_entry",
+            "top_entry_candidate"
+          ]
+        },
+        {
+          "index": 22,
+          "label": "ei",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.tencent.mm:id\/ei",
+          "class": "android.widget.FrameLayout",
+          "clickable": false,
+          "editable": false,
+          "checkable": false,
+          "selected": false,
+          "bounds": "0 160 1440 333",
+          "x": 0.5,
+          "y": 0.07765151515151515,
+          "center": {
+            "x": 0.5,
+            "y": 0.07765151515151515
+          },
+          "tags": [
+            "top_entry",
+            "top_entry_candidate"
+          ]
+        },
+        {
+          "index": 23,
+          "label": "ef",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.tencent.mm:id\/ef",
+          "class": "android.view.ViewGroup",
+          "clickable": true,
+          "editable": false,
+          "checkable": false,
+          "selected": false,
+          "bounds": "0 160 1440 333",
+          "x": 0.5,
+          "y": 0.07765151515151515,
+          "center": {
+            "x": 0.5,
+            "y": 0.07765151515151515
+          },
+          "tags": [
+            "top_entry",
+            "top_entry_candidate"
+          ]
+        }
+      ],
+      "sideEntries": [
+        {
+          "index": 0,
+          "label": "actionbar up indicator",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.tencent.mm:id\/actionbar_up_indicator",
+          "class": "android.widget.LinearLayout",
+          "clickable": true,
+          "editable": false,
+          "checkable": false,
+          "selected": false,
+          "bounds": "0 160 165 333",
+          "x": 0.05694444444444444,
+          "y": 0.07765151515151515,
+          "center": {
+            "x": 0.05694444444444444,
+            "y": 0.07765151515151515
+          },
+          "tags": [
+            "side_entry",
+            "side_entry_candidate"
+          ]
+        },
+        {
+          "index": 1,
+          "label": "返回",
+          "text": null,
+          "desc": "返回",
+          "resourceId": "com.tencent.mm:id\/actionbar_up_indicator_btn",
+          "class": "android.widget.ImageView",
+          "clickable": false,
+          "editable": false,
+          "checkable": false,
+          "selected": false,
+          "bounds": "0 160 165 333",
+          "x": 0.05694444444444444,
+          "y": 0.07765151515151515,
+          "center": {
+            "x": 0.05694444444444444,
+            "y": 0.07765151515151515
+          },
+          "tags": [
+            "side_entry",
+            "side_entry_candidate"
+          ]
+        },
+        {
+          "index": 2,
+          "label": "actionbar up indicator",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.tencent.mm:id\/actionbar_up_indicator",
+          "class": "android.widget.LinearLayout",
+          "clickable": false,
+          "editable": false,
+          "checkable": false,
+          "selected": false,
+          "bounds": "0 160 150 333",
+          "x": 0.052083333333333336,
+          "y": 0.07765151515151515,
+          "center": {
+            "x": 0.052083333333333336,
+            "y": 0.07765151515151515
+          },
+          "tags": [
+            "side_entry",
+            "side_entry_candidate"
+          ]
+        },
+        {
+          "index": 3,
+          "label": "coz",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.tencent.mm:id\/coz",
+          "class": "android.widget.LinearLayout",
+          "clickable": false,
+          "editable": false,
+          "checkable": false,
+          "selected": false,
+          "bounds": "1094 160 1440 333",
+          "x": 0.8798611111111111,
+          "y": 0.07765151515151515,
+          "center": {
+            "x": 0.8798611111111111,
+            "y": 0.07765151515151515
+          },
+          "tags": [
+            "side_entry",
+            "side_entry_candidate"
+          ]
+        },
+        {
+          "index": 4,
+          "label": "coy",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.tencent.mm:id\/coy",
+          "class": "android.widget.LinearLayout",
+          "clickable": false,
+          "editable": false,
+          "checkable": false,
+          "selected": false,
+          "bounds": "1094 160 1440 333",
+          "x": 0.8798611111111111,
+          "y": 0.07765151515151515,
+          "center": {
+            "x": 0.8798611111111111,
+            "y": 0.07765151515151515
+          },
+          "tags": [
+            "side_entry",
+            "side_entry_candidate"
+          ]
+        },
+        {
+          "index": 5,
+          "label": "更多功能",
+          "text": null,
+          "desc": "更多功能",
+          "resourceId": "com.tencent.mm:id\/jga",
+          "class": "android.widget.Button",
+          "clickable": true,
+          "editable": false,
+          "checkable": false,
+          "selected": false,
+          "bounds": "1267 160 1440 333",
+          "x": 0.9395833333333333,
+          "y": 0.07765151515151515,
+          "center": {
+            "x": 0.9395833333333333,
+            "y": 0.07765151515151515
+          },
+          "tags": [
+            "side_entry",
+            "side_entry_candidate"
+          ]
+        },
+        {
+          "index": 6,
+          "label": "h5n",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.tencent.mm:id\/h5n",
+          "class": "android.widget.ImageView",
+          "clickable": false,
+          "editable": false,
+          "checkable": false,
+          "selected": false,
+          "bounds": "1296 203 1382 289",
+          "x": 0.9298611111111111,
+          "y": 0.07765151515151515,
+          "center": {
+            "x": 0.9298611111111111,
+            "y": 0.07765151515151515
+          },
+          "tags": [
+            "side_entry",
+            "side_entry_candidate"
+          ]
+        },
+        {
+          "index": 7,
+          "label": "plus icon",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.tencent.mm:id\/plus_icon",
+          "class": "android.widget.ImageView",
+          "clickable": true,
+          "editable": false,
+          "checkable": false,
+          "selected": false,
+          "bounds": "1260 168 1418 326",
+          "x": 0.9298611111111111,
+          "y": 0.07796717171717171,
+          "center": {
+            "x": 0.9298611111111111,
+            "y": 0.07796717171717171
+          },
+          "tags": [
+            "side_entry",
+            "side_entry_candidate"
+          ]
+        },
+        {
+          "index": 8,
+          "label": "af0",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.tencent.mm:id\/af0",
+          "class": "android.widget.ImageView",
+          "clickable": false,
+          "editable": false,
+          "checkable": false,
+          "selected": false,
+          "bounds": "101 376 187 462",
+          "x": 0.1,
+          "y": 0.13226010101010102,
+          "center": {
+            "x": 0.1,
+            "y": 0.13226010101010102
+          },
+          "tags": [
+            "side_entry",
+            "side_entry_candidate"
+          ]
+        },
+        {
+          "index": 9,
+          "label": "11:29",
+          "text": "11:29",
+          "desc": null,
+          "resourceId": "com.tencent.mm:id\/otg",
+          "class": "android.widget.TextView",
+          "clickable": false,
+          "editable": false,
+          "checkable": false,
+          "selected": false,
+          "bounds": "1287 557 1382 615",
+          "x": 0.9263888888888889,
+          "y": 0.1849747474747475,
+          "center": {
+            "x": 0.9263888888888889,
+            "y": 0.1849747474747475
+          },
+          "tags": [
+            "side_entry",
+            "side_entry_candidate"
+          ]
+        },
+        {
+          "index": 10,
+          "label": "a 4",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.tencent.mm:id\/a_4",
+          "class": "android.widget.ImageView",
+          "clickable": false,
+          "editable": false,
+          "checkable": false,
+          "selected": false,
+          "bounds": "58 548 231 721",
+          "x": 0.1,
+          "y": 0.20012626262626262,
+          "center": {
+            "x": 0.1,
+            "y": 0.20012626262626262
+          },
+          "tags": [
+            "side_entry",
+            "side_entry_candidate"
+          ]
+        },
+        {
+          "index": 11,
+          "label": "11:19",
+          "text": "11:19",
+          "desc": null,
+          "resourceId": "com.tencent.mm:id\/otg",
+          "class": "android.widget.TextView",
+          "clickable": false,
+          "editable": false,
+          "checkable": false,
+          "selected": false,
+          "bounds": "1294 816 1382 874",
+          "x": 0.9291666666666667,
+          "y": 0.26672979797979796,
+          "center": {
+            "x": 0.9291666666666667,
+            "y": 0.26672979797979796
+          },
+          "tags": [
+            "side_entry",
+            "side_entry_candidate"
+          ]
+        },
+        {
+          "index": 12,
+          "label": "a 4",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.tencent.mm:id\/a_4",
+          "class": "android.widget.ImageView",
+          "clickable": false,
+          "editable": false,
+          "checkable": false,
+          "selected": false,
+          "bounds": "58 807 231 980",
+          "x": 0.1,
+          "y": 0.28188131313131315,
+          "center": {
+            "x": 0.1,
+            "y": 0.28188131313131315
+          },
+          "tags": [
+            "side_entry",
+            "side_entry_candidate"
+          ]
+        },
+        {
+          "index": 13,
+          "label": "12:45",
+          "text": "12:45",
+          "desc": null,
+          "resourceId": "com.tencent.mm:id\/otg",
+          "class": "android.widget.TextView",
+          "clickable": false,
+          "editable": false,
+          "checkable": false,
+          "selected": false,
+          "bounds": "1278 1075 1382 1133",
+          "x": 0.9236111111111112,
+          "y": 0.3484848484848485,
+          "center": {
+            "x": 0.9236111111111112,
+            "y": 0.3484848484848485
+          },
+          "tags": [
+            "side_entry",
+            "side_entry_candidate"
+          ]
+        },
+        {
+          "index": 14,
+          "label": "a 4",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.tencent.mm:id\/a_4",
+          "class": "android.widget.ImageView",
+          "clickable": false,
+          "editable": false,
+          "checkable": false,
+          "selected": false,
+          "bounds": "58 1066 231 1239",
+          "x": 0.1,
+          "y": 0.36363636363636365,
+          "center": {
+            "x": 0.1,
+            "y": 0.36363636363636365
+          },
+          "tags": [
+            "side_entry",
+            "side_entry_candidate"
+          ]
+        },
+        {
+          "index": 15,
+          "label": "h 5",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.tencent.mm:id\/h_5",
+          "class": "android.widget.ImageView",
+          "clickable": false,
+          "editable": false,
+          "checkable": false,
+          "selected": false,
+          "bounds": "1324 1167 1382 1225",
+          "x": 0.9395833333333333,
+          "y": 0.37752525252525254,
+          "center": {
+            "x": 0.9395833333333333,
+            "y": 0.37752525252525254
+          },
+          "tags": [
+            "side_entry",
+            "side_entry_candidate"
+          ]
+        },
+        {
+          "index": 16,
+          "label": "12:41",
+          "text": "12:41",
+          "desc": null,
+          "resourceId": "com.tencent.mm:id\/otg",
+          "class": "android.widget.TextView",
+          "clickable": false,
+          "editable": false,
+          "checkable": false,
+          "selected": false,
+          "bounds": "1287 1334 1382 1392",
+          "x": 0.9263888888888889,
+          "y": 0.430239898989899,
+          "center": {
+            "x": 0.9263888888888889,
+            "y": 0.430239898989899
+          },
+          "tags": [
+            "side_entry",
+            "side_entry_candidate"
+          ]
+        },
+        {
+          "index": 17,
+          "label": "a 4",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.tencent.mm:id\/a_4",
+          "class": "android.widget.ImageView",
+          "clickable": false,
+          "editable": false,
+          "checkable": false,
+          "selected": false,
+          "bounds": "58 1325 231 1498",
+          "x": 0.1,
+          "y": 0.44539141414141414,
+          "center": {
+            "x": 0.1,
+            "y": 0.44539141414141414
+          },
+          "tags": [
+            "side_entry",
+            "side_entry_candidate"
+          ]
+        },
+        {
+          "index": 18,
+          "label": "h 5",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.tencent.mm:id\/h_5",
+          "class": "android.widget.ImageView",
+          "clickable": false,
+          "editable": false,
+          "checkable": false,
+          "selected": false,
+          "bounds": "1324 1426 1382 1484",
+          "x": 0.9395833333333333,
+          "y": 0.45928030303030304,
+          "center": {
+            "x": 0.9395833333333333,
+            "y": 0.45928030303030304
+          },
+          "tags": [
+            "side_entry",
+            "side_entry_candidate"
+          ]
+        },
+        {
+          "index": 19,
+          "label": "jxo",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.tencent.mm:id\/jxo",
+          "class": "android.widget.FrameLayout",
+          "clickable": false,
+          "editable": false,
+          "checkable": false,
+          "selected": false,
+          "bounds": "0 0 130 3104",
+          "x": 0.04513888888888889,
+          "y": 0.4898989898989899,
+          "center": {
+            "x": 0.04513888888888889,
+            "y": 0.4898989898989899
+          },
+          "tags": [
+            "side_entry",
+            "side_entry_candidate"
+          ]
+        },
+        {
+          "index": 20,
+          "label": "jv6",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.tencent.mm:id\/jv6",
+          "class": "android.widget.FrameLayout",
+          "clickable": false,
+          "editable": false,
+          "checkable": false,
+          "selected": false,
+          "bounds": "0 0 130 3104",
+          "x": 0.04513888888888889,
+          "y": 0.4898989898989899,
+          "center": {
+            "x": 0.04513888888888889,
+            "y": 0.4898989898989899
+          },
+          "tags": [
+            "side_entry",
+            "side_entry_candidate"
+          ]
+        },
+        {
+          "index": 21,
+          "label": "12:38",
+          "text": "12:38",
+          "desc": null,
+          "resourceId": "com.tencent.mm:id\/otg",
+          "class": "android.widget.TextView",
+          "clickable": false,
+          "editable": false,
+          "checkable": false,
+          "selected": false,
+          "bounds": "1279 1593 1382 1651",
+          "x": 0.9236111111111112,
+          "y": 0.5119949494949495,
+          "center": {
+            "x": 0.9236111111111112,
+            "y": 0.5119949494949495
+          },
+          "tags": [
+            "side_entry",
+            "side_entry_candidate"
+          ]
+        },
+        {
+          "index": 22,
+          "label": "a 4",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.tencent.mm:id\/a_4",
+          "class": "android.widget.ImageView",
+          "clickable": false,
+          "editable": false,
+          "checkable": false,
+          "selected": false,
+          "bounds": "58 1584 231 1757",
+          "x": 0.1,
+          "y": 0.5271464646464646,
+          "center": {
+            "x": 0.1,
+            "y": 0.5271464646464646
+          },
+          "tags": [
+            "side_entry",
+            "side_entry_candidate"
+          ]
+        },
+        {
+          "index": 23,
+          "label": "h 5",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.tencent.mm:id\/h_5",
+          "class": "android.widget.ImageView",
+          "clickable": false,
+          "editable": false,
+          "checkable": false,
+          "selected": false,
+          "bounds": "1324 1685 1382 1743",
+          "x": 0.9395833333333333,
+          "y": 0.5410353535353535,
+          "center": {
+            "x": 0.9395833333333333,
+            "y": 0.5410353535353535
+          },
+          "tags": [
+            "side_entry",
+            "side_entry_candidate"
+          ]
+        }
+      ],
+      "graphicalCandidates": [
+        {
+          "index": 0,
+          "label": "actionbar up indicator",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.tencent.mm:id\/actionbar_up_indicator",
+          "class": "android.widget.LinearLayout",
+          "clickable": true,
+          "editable": false,
+          "checkable": false,
+          "selected": false,
+          "bounds": "0 160 165 333",
+          "x": 0.05694444444444444,
+          "y": 0.07765151515151515,
+          "center": {
+            "x": 0.05694444444444444,
+            "y": 0.07765151515151515
+          },
+          "tags": [
+            "graphical_ui",
+            "small_icon",
+            "clickable"
+          ]
+        },
+        {
+          "index": 1,
+          "label": "搜索",
+          "text": null,
+          "desc": "搜索",
+          "resourceId": "com.tencent.mm:id\/jha",
+          "class": "android.widget.RelativeLayout",
+          "clickable": true,
+          "editable": false,
+          "checkable": false,
+          "selected": false,
+          "bounds": "1094 160 1267 333",
+          "x": 0.8194444444444444,
+          "y": 0.07765151515151515,
+          "center": {
+            "x": 0.8194444444444444,
+            "y": 0.07765151515151515
+          },
+          "tags": [
+            "graphical_ui",
+            "small_icon",
+            "clickable",
+            "search_entry"
+          ]
+        },
+        {
+          "index": 2,
+          "label": "更多功能",
+          "text": null,
+          "desc": "更多功能",
+          "resourceId": "com.tencent.mm:id\/jga",
+          "class": "android.widget.Button",
+          "clickable": true,
+          "editable": false,
+          "checkable": false,
+          "selected": false,
+          "bounds": "1267 160 1440 333",
+          "x": 0.9395833333333333,
+          "y": 0.07765151515151515,
+          "center": {
+            "x": 0.9395833333333333,
+            "y": 0.07765151515151515
+          },
+          "tags": [
+            "graphical_ui",
+            "small_icon",
+            "clickable"
+          ]
+        },
+        {
+          "index": 3,
+          "label": "meb",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.tencent.mm:id\/meb",
+          "class": "android.widget.ImageView",
+          "clickable": true,
+          "editable": false,
+          "checkable": false,
+          "selected": false,
+          "bounds": "1116 168 1274 326",
+          "x": 0.8298611111111112,
+          "y": 0.07796717171717171,
+          "center": {
+            "x": 0.8298611111111112,
+            "y": 0.07796717171717171
+          },
+          "tags": [
+            "graphical_ui",
+            "small_icon",
+            "clickable"
+          ]
+        },
+        {
+          "index": 4,
+          "label": "plus icon",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.tencent.mm:id\/plus_icon",
+          "class": "android.widget.ImageView",
+          "clickable": true,
+          "editable": false,
+          "checkable": false,
+          "selected": false,
+          "bounds": "1260 168 1418 326",
+          "x": 0.9298611111111111,
+          "y": 0.07796717171717171,
+          "center": {
+            "x": 0.9298611111111111,
+            "y": 0.07796717171717171
+          },
+          "tags": [
+            "graphical_ui",
+            "small_icon",
+            "clickable"
+          ]
+        },
+        {
+          "index": 5,
+          "label": "nvt",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.tencent.mm:id\/nvt",
+          "class": "android.widget.RelativeLayout",
+          "clickable": true,
+          "editable": false,
+          "checkable": false,
+          "selected": true,
+          "bounds": "0 2902 360 3104",
+          "x": 0.125,
+          "y": 0.9479166666666666,
+          "center": {
+            "x": 0.125,
+            "y": 0.9479166666666666
+          },
+          "tags": [
+            "graphical_ui",
+            "small_icon",
+            "clickable",
+            "selected",
+            "bottom_area"
+          ]
+        },
+        {
+          "index": 6,
+          "label": "nvt",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.tencent.mm:id\/nvt",
+          "class": "android.widget.RelativeLayout",
+          "clickable": true,
+          "editable": false,
+          "checkable": false,
+          "selected": false,
+          "bounds": "360 2902 720 3104",
+          "x": 0.375,
+          "y": 0.9479166666666666,
+          "center": {
+            "x": 0.375,
+            "y": 0.9479166666666666
+          },
+          "tags": [
+            "graphical_ui",
+            "small_icon",
+            "clickable",
+            "bottom_area"
+          ]
+        },
+        {
+          "index": 7,
+          "label": "nvt",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.tencent.mm:id\/nvt",
+          "class": "android.widget.RelativeLayout",
+          "clickable": true,
+          "editable": false,
+          "checkable": false,
+          "selected": false,
+          "bounds": "720 2902 1080 3104",
+          "x": 0.625,
+          "y": 0.9479166666666666,
+          "center": {
+            "x": 0.625,
+            "y": 0.9479166666666666
+          },
+          "tags": [
+            "graphical_ui",
+            "small_icon",
+            "clickable",
+            "bottom_area"
+          ]
+        },
+        {
+          "index": 8,
+          "label": "nvt",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.tencent.mm:id\/nvt",
+          "class": "android.widget.RelativeLayout",
+          "clickable": true,
+          "editable": false,
+          "checkable": false,
+          "selected": false,
+          "bounds": "1080 2902 1440 3104",
+          "x": 0.875,
+          "y": 0.9479166666666666,
+          "center": {
+            "x": 0.875,
+            "y": 0.9479166666666666
+          },
+          "tags": [
+            "graphical_ui",
+            "small_icon",
+            "clickable",
+            "bottom_area"
+          ]
+        }
+      ],
+      "entryCandidates": [
+        {
+          "index": 0,
+          "label": "搜索",
+          "text": null,
+          "desc": "搜索",
+          "resourceId": "com.tencent.mm:id\/jha",
+          "class": "android.widget.RelativeLayout",
+          "clickable": true,
+          "editable": false,
+          "checkable": false,
+          "selected": false,
+          "bounds": "1094 160 1267 333",
+          "x": 0.8194444444444444,
+          "y": 0.07765151515151515,
+          "center": {
+            "x": 0.8194444444444444,
+            "y": 0.07765151515151515
+          },
+          "tags": [
+            "entry_candidate",
+            "clickable",
+            "search_entry",
+            "small_icon"
+          ]
+        },
+        {
+          "index": 1,
+          "label": "已登录2台其他设备",
+          "text": "已登录2台其他设备",
+          "desc": null,
+          "resourceId": "com.tencent.mm:id\/af5",
+          "class": "android.widget.TextView",
+          "clickable": false,
+          "editable": false,
+          "checkable": false,
+          "selected": false,
+          "bounds": "273 333 1382 505",
+          "x": 0.5743055555555555,
+          "y": 0.13226010101010102,
+          "center": {
+            "x": 0.5743055555555555,
+            "y": 0.13226010101010102
+          },
+          "tags": [
+            "entry_candidate",
+            "login_entry"
+          ]
+        },
+        {
+          "index": 2,
+          "label": "发现",
+          "text": "发现",
+          "desc": null,
+          "resourceId": "com.tencent.mm:id\/icon_tv",
+          "class": "android.widget.TextView",
+          "clickable": false,
+          "editable": false,
+          "checkable": false,
+          "selected": false,
+          "bounds": "857 3024 943 3082",
+          "x": 0.625,
+          "y": 0.9636994949494949,
+          "center": {
+            "x": 0.625,
+            "y": 0.9636994949494949
+          },
+          "tags": [
+            "entry_candidate",
+            "bottom_area"
+          ]
+        }
+      ],
+      "checkableCandidates": [],
+      "inputCandidates": [],
+      "clickTargets": [
+        {
+          "index": 0,
+          "label": "a0i",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.tencent.mm:id\/a0i",
+          "class": "android.widget.FrameLayout",
+          "clickable": false,
+          "editable": false,
+          "checkable": false,
+          "selected": false,
+          "bounds": "0 0 1440 131",
+          "x": 0.5,
+          "y": 0.020517676767676768,
+          "center": {
+            "x": 0.5,
+            "y": 0.020517676767676768
+          },
+          "tags": []
+        },
+        {
+          "index": 1,
+          "label": "nhm",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.tencent.mm:id\/nhm",
+          "class": "android.view.View",
+          "clickable": false,
+          "editable": false,
+          "checkable": false,
+          "selected": false,
+          "bounds": "0 0 1440 160",
+          "x": 0.5,
+          "y": 0.025252525252525252,
+          "center": {
+            "x": 0.5,
+            "y": 0.025252525252525252
+          },
+          "tags": []
+        },
+        {
+          "index": 2,
+          "label": "og9",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.tencent.mm:id\/og9",
+          "class": "android.view.View",
+          "clickable": false,
+          "editable": false,
+          "checkable": false,
+          "selected": false,
+          "bounds": "0 0 1440 160",
+          "x": 0.5,
+          "y": 0.025252525252525252,
+          "center": {
+            "x": 0.5,
+            "y": 0.025252525252525252
+          },
+          "tags": []
+        },
+        {
+          "index": 3,
+          "label": "gw5",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.tencent.mm:id\/gw5",
+          "class": "android.view.View",
+          "clickable": false,
+          "editable": false,
+          "checkable": false,
+          "selected": false,
+          "bounds": "630 142 810 178",
+          "x": 0.5,
+          "y": 0.050505050505050504,
+          "center": {
+            "x": 0.5,
+            "y": 0.050505050505050504
+          },
+          "tags": []
+        },
+        {
+          "index": 4,
+          "label": "cvn",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.tencent.mm:id\/cvn",
+          "class": "android.widget.FrameLayout",
+          "clickable": false,
+          "editable": false,
+          "checkable": false,
+          "selected": false,
+          "bounds": "0 0 1440 333",
+          "x": 0.5,
+          "y": 0.052398989898989896,
+          "center": {
+            "x": 0.5,
+            "y": 0.052398989898989896
+          },
+          "tags": []
+        },
+        {
+          "index": 5,
+          "label": "wk",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.tencent.mm:id\/wk",
+          "class": "android.widget.FrameLayout",
+          "clickable": false,
+          "editable": false,
+          "checkable": false,
+          "selected": false,
+          "bounds": "0 131 1440 333",
+          "x": 0.5,
+          "y": 0.07323232323232323,
+          "center": {
+            "x": 0.5,
+            "y": 0.07323232323232323
+          },
+          "tags": []
+        },
+        {
+          "index": 6,
+          "label": "wi",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.tencent.mm:id\/wi",
+          "class": "android.view.View",
+          "clickable": false,
+          "editable": false,
+          "checkable": false,
+          "selected": false,
+          "bounds": "0 131 1440 333",
+          "x": 0.5,
+          "y": 0.07323232323232323,
+          "center": {
+            "x": 0.5,
+            "y": 0.07323232323232323
+          },
+          "tags": []
+        },
+        {
+          "index": 7,
+          "label": "cg7",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.tencent.mm:id\/cg7",
+          "class": "android.widget.RelativeLayout",
+          "clickable": false,
+          "editable": false,
+          "checkable": false,
+          "selected": false,
+          "bounds": "0 131 1440 333",
+          "x": 0.5,
+          "y": 0.07323232323232323,
+          "center": {
+            "x": 0.5,
+            "y": 0.07323232323232323
+          },
+          "tags": []
+        },
+        {
+          "index": 8,
+          "label": "actionbar up indicator",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.tencent.mm:id\/actionbar_up_indicator",
+          "class": "android.widget.LinearLayout",
+          "clickable": false,
+          "editable": false,
+          "checkable": false,
+          "selected": false,
+          "bounds": "0 160 150 333",
+          "x": 0.052083333333333336,
+          "y": 0.07765151515151515,
+          "center": {
+            "x": 0.052083333333333336,
+            "y": 0.07765151515151515
+          },
+          "tags": []
+        },
+        {
+          "index": 9,
+          "label": "actionbar up indicator",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.tencent.mm:id\/actionbar_up_indicator",
+          "class": "android.widget.LinearLayout",
+          "clickable": true,
+          "editable": false,
+          "checkable": false,
+          "selected": false,
+          "bounds": "0 160 165 333",
+          "x": 0.05694444444444444,
+          "y": 0.07765151515151515,
+          "center": {
+            "x": 0.05694444444444444,
+            "y": 0.07765151515151515
+          },
+          "tags": [
+            "clickable",
+            "small_icon"
+          ]
+        },
+        {
+          "index": 10,
+          "label": "返回",
+          "text": null,
+          "desc": "返回",
+          "resourceId": "com.tencent.mm:id\/actionbar_up_indicator_btn",
+          "class": "android.widget.ImageView",
+          "clickable": false,
+          "editable": false,
+          "checkable": false,
+          "selected": false,
+          "bounds": "0 160 165 333",
+          "x": 0.05694444444444444,
+          "y": 0.07765151515151515,
+          "center": {
+            "x": 0.05694444444444444,
+            "y": 0.07765151515151515
+          },
+          "tags": []
+        },
+        {
+          "index": 11,
+          "label": "gp",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.tencent.mm:id\/gp",
+          "class": "android.widget.RelativeLayout",
+          "clickable": false,
+          "editable": false,
+          "checkable": false,
+          "selected": false,
+          "bounds": "251 160 1188 333",
+          "x": 0.49930555555555556,
+          "y": 0.07765151515151515,
+          "center": {
+            "x": 0.49930555555555556,
+            "y": 0.07765151515151515
+          },
+          "tags": []
+        },
+        {
+          "index": 12,
+          "label": "微信(46)",
+          "text": "微信(46)",
+          "desc": null,
+          "resourceId": "android:id\/text1",
+          "class": "android.widget.TextView",
+          "clickable": false,
+          "editable": false,
+          "checkable": false,
+          "selected": false,
+          "bounds": "597 205 842 287",
+          "x": 0.49930555555555556,
+          "y": 0.07765151515151515,
+          "center": {
+            "x": 0.49930555555555556,
+            "y": 0.07765151515151515
+          },
+          "tags": []
+        },
+        {
+          "index": 13,
+          "label": "gp",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.tencent.mm:id\/gp",
+          "class": "android.widget.RelativeLayout",
+          "clickable": false,
+          "editable": false,
+          "checkable": false,
+          "selected": false,
+          "bounds": "432 160 1008 333",
+          "x": 0.5,
+          "y": 0.07765151515151515,
+          "center": {
+            "x": 0.5,
+            "y": 0.07765151515151515
+          },
+          "tags": []
+        },
+        {
+          "index": 14,
+          "label": "微信(46)",
+          "text": "微信(46)",
+          "desc": null,
+          "resourceId": "android:id\/text1",
+          "class": "android.widget.TextView",
+          "clickable": false,
+          "editable": false,
+          "checkable": false,
+          "selected": false,
+          "bounds": "432 205 1008 287",
+          "x": 0.5,
+          "y": 0.07765151515151515,
+          "center": {
+            "x": 0.5,
+            "y": 0.07765151515151515
+          },
+          "tags": []
+        },
+        {
+          "index": 15,
+          "label": "ei",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.tencent.mm:id\/ei",
+          "class": "android.widget.FrameLayout",
+          "clickable": false,
+          "editable": false,
+          "checkable": false,
+          "selected": false,
+          "bounds": "0 160 1440 333",
+          "x": 0.5,
+          "y": 0.07765151515151515,
+          "center": {
+            "x": 0.5,
+            "y": 0.07765151515151515
+          },
+          "tags": []
+        },
+        {
+          "index": 16,
+          "label": "ef",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.tencent.mm:id\/ef",
+          "class": "android.view.ViewGroup",
+          "clickable": true,
+          "editable": false,
+          "checkable": false,
+          "selected": false,
+          "bounds": "0 160 1440 333",
+          "x": 0.5,
+          "y": 0.07765151515151515,
+          "center": {
+            "x": 0.5,
+            "y": 0.07765151515151515
+          },
+          "tags": [
+            "clickable"
+          ]
+        },
+        {
+          "index": 17,
+          "label": "hb",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.tencent.mm:id\/hb",
+          "class": "android.widget.RelativeLayout",
+          "clickable": true,
+          "editable": false,
+          "checkable": false,
+          "selected": false,
+          "bounds": "0 160 1440 333",
+          "x": 0.5,
+          "y": 0.07765151515151515,
+          "center": {
+            "x": 0.5,
+            "y": 0.07765151515151515
+          },
+          "tags": [
+            "clickable"
+          ]
+        },
+        {
+          "index": 18,
+          "label": "搜索",
+          "text": null,
+          "desc": "搜索",
+          "resourceId": "com.tencent.mm:id\/jha",
+          "class": "android.widget.RelativeLayout",
+          "clickable": true,
+          "editable": false,
+          "checkable": false,
+          "selected": false,
+          "bounds": "1094 160 1267 333",
+          "x": 0.8194444444444444,
+          "y": 0.07765151515151515,
+          "center": {
+            "x": 0.8194444444444444,
+            "y": 0.07765151515151515
+          },
+          "tags": [
+            "clickable",
+            "search_entry",
+            "small_icon"
+          ]
+        },
+        {
+          "index": 19,
+          "label": "h5n",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.tencent.mm:id\/h5n",
+          "class": "android.widget.ImageView",
+          "clickable": false,
+          "editable": false,
+          "checkable": false,
+          "selected": false,
+          "bounds": "1152 203 1238 289",
+          "x": 0.8298611111111112,
+          "y": 0.07765151515151515,
+          "center": {
+            "x": 0.8298611111111112,
+            "y": 0.07765151515151515
+          },
+          "tags": []
+        },
+        {
+          "index": 20,
+          "label": "coz",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.tencent.mm:id\/coz",
+          "class": "android.widget.LinearLayout",
+          "clickable": false,
+          "editable": false,
+          "checkable": false,
+          "selected": false,
+          "bounds": "1094 160 1440 333",
+          "x": 0.8798611111111111,
+          "y": 0.07765151515151515,
+          "center": {
+            "x": 0.8798611111111111,
+            "y": 0.07765151515151515
+          },
+          "tags": []
+        },
+        {
+          "index": 21,
+          "label": "coy",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.tencent.mm:id\/coy",
+          "class": "android.widget.LinearLayout",
+          "clickable": false,
+          "editable": false,
+          "checkable": false,
+          "selected": false,
+          "bounds": "1094 160 1440 333",
+          "x": 0.8798611111111111,
+          "y": 0.07765151515151515,
+          "center": {
+            "x": 0.8798611111111111,
+            "y": 0.07765151515151515
+          },
+          "tags": []
+        },
+        {
+          "index": 22,
+          "label": "h5n",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.tencent.mm:id\/h5n",
+          "class": "android.widget.ImageView",
+          "clickable": false,
+          "editable": false,
+          "checkable": false,
+          "selected": false,
+          "bounds": "1296 203 1382 289",
+          "x": 0.9298611111111111,
+          "y": 0.07765151515151515,
+          "center": {
+            "x": 0.9298611111111111,
+            "y": 0.07765151515151515
+          },
+          "tags": []
+        },
+        {
+          "index": 23,
+          "label": "更多功能",
+          "text": null,
+          "desc": "更多功能",
+          "resourceId": "com.tencent.mm:id\/jga",
+          "class": "android.widget.Button",
+          "clickable": true,
+          "editable": false,
+          "checkable": false,
+          "selected": false,
+          "bounds": "1267 160 1440 333",
+          "x": 0.9395833333333333,
+          "y": 0.07765151515151515,
+          "center": {
+            "x": 0.9395833333333333,
+            "y": 0.07765151515151515
+          },
+          "tags": [
+            "clickable",
+            "small_icon"
+          ]
+        },
+        {
+          "index": 24,
+          "label": "meb",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.tencent.mm:id\/meb",
+          "class": "android.widget.ImageView",
+          "clickable": true,
+          "editable": false,
+          "checkable": false,
+          "selected": false,
+          "bounds": "1116 168 1274 326",
+          "x": 0.8298611111111112,
+          "y": 0.07796717171717171,
+          "center": {
+            "x": 0.8298611111111112,
+            "y": 0.07796717171717171
+          },
+          "tags": [
+            "clickable",
+            "small_icon"
+          ]
+        },
+        {
+          "index": 25,
+          "label": "plus icon",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.tencent.mm:id\/plus_icon",
+          "class": "android.widget.ImageView",
+          "clickable": true,
+          "editable": false,
+          "checkable": false,
+          "selected": false,
+          "bounds": "1260 168 1418 326",
+          "x": 0.9298611111111111,
+          "y": 0.07796717171717171,
+          "center": {
+            "x": 0.9298611111111111,
+            "y": 0.07796717171717171
+          },
+          "tags": [
+            "clickable",
+            "small_icon"
+          ]
+        },
+        {
+          "index": 26,
+          "label": "af0",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.tencent.mm:id\/af0",
+          "class": "android.widget.ImageView",
+          "clickable": false,
+          "editable": false,
+          "checkable": false,
+          "selected": false,
+          "bounds": "101 376 187 462",
+          "x": 0.1,
+          "y": 0.13226010101010102,
+          "center": {
+            "x": 0.1,
+            "y": 0.13226010101010102
+          },
+          "tags": []
+        },
+        {
+          "index": 27,
+          "label": "node_28",
+          "text": null,
+          "desc": null,
+          "resourceId": null,
+          "class": "android.widget.LinearLayout",
+          "clickable": true,
+          "editable": false,
+          "checkable": false,
+          "selected": false,
+          "bounds": "0 333 1440 506",
+          "x": 0.5,
+          "y": 0.13226010101010102,
+          "center": {
+            "x": 0.5,
+            "y": 0.13226010101010102
+          },
+          "tags": [
+            "clickable"
+          ]
+        },
+        {
+          "index": 28,
+          "label": "af3",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.tencent.mm:id\/af3",
+          "class": "android.widget.LinearLayout",
+          "clickable": false,
+          "editable": false,
+          "checkable": false,
+          "selected": false,
+          "bounds": "0 333 1440 506",
+          "x": 0.5,
+          "y": 0.13226010101010102,
+          "center": {
+            "x": 0.5,
+            "y": 0.13226010101010102
+          },
+          "tags": []
+        },
+        {
+          "index": 29,
+          "label": "aey",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.tencent.mm:id\/aey",
+          "class": "android.widget.LinearLayout",
+          "clickable": false,
+          "editable": false,
+          "checkable": false,
+          "selected": false,
+          "bounds": "0 333 1440 506",
+          "x": 0.5,
+          "y": 0.13226010101010102,
+          "center": {
+            "x": 0.5,
+            "y": 0.13226010101010102
+          },
+          "tags": []
+        },
+        {
+          "index": 30,
+          "label": "已登录2台其他设备",
+          "text": "已登录2台其他设备",
+          "desc": null,
+          "resourceId": "com.tencent.mm:id\/af5",
+          "class": "android.widget.TextView",
+          "clickable": false,
+          "editable": false,
+          "checkable": false,
+          "selected": false,
+          "bounds": "273 333 1382 505",
+          "x": 0.5743055555555555,
+          "y": 0.13226010101010102,
+          "center": {
+            "x": 0.5743055555555555,
+            "y": 0.13226010101010102
+          },
+          "tags": [
+            "login_entry"
+          ]
+        },
+        {
+          "index": 31,
+          "label": "11:29",
+          "text": "11:29",
+          "desc": null,
+          "resourceId": "com.tencent.mm:id\/otg",
+          "class": "android.widget.TextView",
+          "clickable": false,
+          "editable": false,
+          "checkable": false,
+          "selected": false,
+          "bounds": "1287 557 1382 615",
+          "x": 0.9263888888888889,
+          "y": 0.1849747474747475,
+          "center": {
+            "x": 0.9263888888888889,
+            "y": 0.1849747474747475
+          },
+          "tags": []
+        },
+        {
+          "index": 32,
+          "label": "v2r",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.tencent.mm:id\/v2r",
+          "class": "android.widget.LinearLayout",
+          "clickable": false,
+          "editable": false,
+          "checkable": false,
+          "selected": false,
+          "bounds": "274 557 1229 639",
+          "x": 0.5215277777777778,
+          "y": 0.18876262626262627,
+          "center": {
+            "x": 0.5215277777777778,
+            "y": 0.18876262626262627
+          },
+          "tags": []
+        },
+        {
+          "index": 33,
+          "label": "文件传输助手",
+          "text": "文件传输助手",
+          "desc": null,
+          "resourceId": "com.tencent.mm:id\/kbq",
+          "class": "android.view.View",
+          "clickable": false,
+          "editable": false,
+          "checkable": false,
+          "selected": false,
+          "bounds": "274 557 1229 639",
+          "x": 0.5215277777777778,
+          "y": 0.18876262626262627,
+          "center": {
+            "x": 0.5215277777777778,
+            "y": 0.18876262626262627
+          },
+          "tags": []
+        },
+        {
+          "index": 34,
+          "label": "o4k",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.tencent.mm:id\/o4k",
+          "class": "android.widget.LinearLayout",
+          "clickable": false,
+          "editable": false,
+          "checkable": false,
+          "selected": false,
+          "bounds": "274 557 1382 639",
+          "x": 0.575,
+          "y": 0.18876262626262627,
+          "center": {
+            "x": 0.575,
+            "y": 0.18876262626262627
+          },
+          "tags": []
+        },
+        {
+          "index": 35,
+          "label": "a 4",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.tencent.mm:id\/a_4",
+          "class": "android.widget.ImageView",
+          "clickable": false,
+          "editable": false,
+          "checkable": false,
+          "selected": false,
+          "bounds": "58 548 231 721",
+          "x": 0.1,
+          "y": 0.20012626262626262,
+          "center": {
+            "x": 0.1,
+            "y": 0.20012626262626262
+          },
+          "tags": []
+        },
+        {
+          "index": 36,
+          "label": "cj1",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.tencent.mm:id\/cj1",
+          "class": "android.widget.LinearLayout",
+          "clickable": true,
+          "editable": false,
+          "checkable": false,
+          "selected": false,
+          "bounds": "0 506 1440 765",
+          "x": 0.5,
+          "y": 0.2004419191919192,
+          "center": {
+            "x": 0.5,
+            "y": 0.2004419191919192
+          },
+          "tags": [
+            "clickable"
+          ]
+        },
+        {
+          "index": 37,
+          "label": "cj0",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.tencent.mm:id\/cj0",
+          "class": "android.widget.LinearLayout",
+          "clickable": false,
+          "editable": false,
+          "checkable": false,
+          "selected": false,
+          "bounds": "0 506 1440 765",
+          "x": 0.5,
+          "y": 0.2004419191919192,
+          "center": {
+            "x": 0.5,
+            "y": 0.2004419191919192
+          },
+          "tags": []
+        },
+        {
+          "index": 38,
+          "label": "[图片]",
+          "text": "[图片]",
+          "desc": null,
+          "resourceId": "com.tencent.mm:id\/ht5",
+          "class": "android.view.View",
+          "clickable": false,
+          "editable": false,
+          "checkable": false,
+          "selected": false,
+          "bounds": "274 647 1353 710",
+          "x": 0.5645833333333333,
+          "y": 0.21401515151515152,
+          "center": {
+            "x": 0.5645833333333333,
+            "y": 0.21401515151515152
+          },
+          "tags": []
+        },
+        {
+          "index": 39,
+          "label": "11:19",
+          "text": "11:19",
+          "desc": null,
+          "resourceId": "com.tencent.mm:id\/otg",
+          "class": "android.widget.TextView",
+          "clickable": false,
+          "editable": false,
+          "checkable": false,
+          "selected": false,
+          "bounds": "1294 816 1382 874",
+          "x": 0.9291666666666667,
+          "y": 0.26672979797979796,
+          "center": {
+            "x": 0.9291666666666667,
+            "y": 0.26672979797979796
+          },
+          "tags": []
+        },
+        {
+          "index": 40,
+          "label": "v2r",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.tencent.mm:id\/v2r",
+          "class": "android.widget.LinearLayout",
+          "clickable": false,
+          "editable": false,
+          "checkable": false,
+          "selected": false,
+          "bounds": "274 816 1236 898",
+          "x": 0.5243055555555556,
+          "y": 0.27051767676767674,
+          "center": {
+            "x": 0.5243055555555556,
+            "y": 0.27051767676767674
+          },
+          "tags": []
+        },
+        {
+          "index": 41,
+          "label": "2026信号与系统实验",
+          "text": "2026信号与系统实验",
+          "desc": null,
+          "resourceId": "com.tencent.mm:id\/kbq",
+          "class": "android.view.View",
+          "clickable": false,
+          "editable": false,
+          "checkable": false,
+          "selected": false,
+          "bounds": "274 816 1236 898",
+          "x": 0.5243055555555556,
+          "y": 0.27051767676767674,
+          "center": {
+            "x": 0.5243055555555556,
+            "y": 0.27051767676767674
+          },
+          "tags": []
+        },
+        {
+          "index": 42,
+          "label": "o4k",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.tencent.mm:id\/o4k",
+          "class": "android.widget.LinearLayout",
+          "clickable": false,
+          "editable": false,
+          "checkable": false,
+          "selected": false,
+          "bounds": "274 816 1382 898",
+          "x": 0.575,
+          "y": 0.27051767676767674,
+          "center": {
+            "x": 0.575,
+            "y": 0.27051767676767674
+          },
+          "tags": []
+        },
+        {
+          "index": 43,
+          "label": "a 4",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.tencent.mm:id\/a_4",
+          "class": "android.widget.ImageView",
+          "clickable": false,
+          "editable": false,
+          "checkable": false,
+          "selected": false,
+          "bounds": "58 807 231 980",
+          "x": 0.1,
+          "y": 0.28188131313131315,
+          "center": {
+            "x": 0.1,
+            "y": 0.28188131313131315
+          },
+          "tags": []
+        },
+        {
+          "index": 44,
+          "label": "cj1",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.tencent.mm:id\/cj1",
+          "class": "android.widget.LinearLayout",
+          "clickable": true,
+          "editable": false,
+          "checkable": false,
+          "selected": false,
+          "bounds": "0 765 1440 1024",
+          "x": 0.5,
+          "y": 0.2821969696969697,
+          "center": {
+            "x": 0.5,
+            "y": 0.2821969696969697
+          },
+          "tags": [
+            "clickable"
+          ]
+        },
+        {
+          "index": 45,
+          "label": "cj0",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.tencent.mm:id\/cj0",
+          "class": "android.widget.LinearLayout",
+          "clickable": false,
+          "editable": false,
+          "checkable": false,
+          "selected": false,
+          "bounds": "0 765 1440 1024",
+          "x": 0.5,
+          "y": 0.2821969696969697,
+          "center": {
+            "x": 0.5,
+            "y": 0.2821969696969697
+          },
+          "tags": []
+        },
+        {
+          "index": 46,
+          "label": "刘慧: 这个k2要改成k2(1)",
+          "text": "刘慧: 这个k2要改成k2(1)",
+          "desc": null,
+          "resourceId": "com.tencent.mm:id\/ht5",
+          "class": "android.view.View",
+          "clickable": false,
+          "editable": false,
+          "checkable": false,
+          "selected": false,
+          "bounds": "274 906 1353 969",
+          "x": 0.5645833333333333,
+          "y": 0.29577020202020204,
+          "center": {
+            "x": 0.5645833333333333,
+            "y": 0.29577020202020204
+          },
+          "tags": []
+        },
+        {
+          "index": 47,
+          "label": "a h",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.tencent.mm:id\/a_h",
+          "class": "android.widget.ImageView",
+          "clickable": false,
+          "editable": false,
+          "checkable": false,
+          "selected": false,
+          "bounds": "210 1056 246 1092",
+          "x": 0.15833333333333333,
+          "y": 0.3390151515151515,
+          "center": {
+            "x": 0.15833333333333333,
+            "y": 0.3390151515151515
+          },
+          "tags": []
+        },
+        {
+          "index": 48,
+          "label": "12:45",
+          "text": "12:45",
+          "desc": null,
+          "resourceId": "com.tencent.mm:id\/otg",
+          "class": "android.widget.TextView",
+          "clickable": false,
+          "editable": false,
+          "checkable": false,
+          "selected": false,
+          "bounds": "1278 1075 1382 1133",
+          "x": 0.9236111111111112,
+          "y": 0.3484848484848485,
+          "center": {
+            "x": 0.9236111111111112,
+            "y": 0.3484848484848485
+          },
+          "tags": []
+        },
+        {
+          "index": 49,
+          "label": "v2r",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.tencent.mm:id\/v2r",
+          "class": "android.widget.LinearLayout",
+          "clickable": false,
+          "editable": false,
+          "checkable": false,
+          "selected": false,
+          "bounds": "274 1075 1220 1157",
+          "x": 0.51875,
+          "y": 0.3522727272727273,
+          "center": {
+            "x": 0.51875,
+            "y": 0.3522727272727273
+          },
+          "tags": []
+        },
+        {
+          "index": 50,
+          "label": "腾讯新闻",
+          "text": "腾讯新闻",
+          "desc": null,
+          "resourceId": "com.tencent.mm:id\/kbq",
+          "class": "android.view.View",
+          "clickable": false,
+          "editable": false,
+          "checkable": false,
+          "selected": false,
+          "bounds": "274 1075 1220 1157",
+          "x": 0.51875,
+          "y": 0.3522727272727273,
+          "center": {
+            "x": 0.51875,
+            "y": 0.3522727272727273
+          },
+          "tags": []
+        },
+        {
+          "index": 51,
+          "label": "o4k",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.tencent.mm:id\/o4k",
+          "class": "android.widget.LinearLayout",
+          "clickable": false,
+          "editable": false,
+          "checkable": false,
+          "selected": false,
+          "bounds": "274 1075 1382 1157",
+          "x": 0.575,
+          "y": 0.3522727272727273,
+          "center": {
+            "x": 0.575,
+            "y": 0.3522727272727273
+          },
+          "tags": []
+        },
+        {
+          "index": 52,
+          "label": "a 4",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.tencent.mm:id\/a_4",
+          "class": "android.widget.ImageView",
+          "clickable": false,
+          "editable": false,
+          "checkable": false,
+          "selected": false,
+          "bounds": "58 1066 231 1239",
+          "x": 0.1,
+          "y": 0.36363636363636365,
+          "center": {
+            "x": 0.1,
+            "y": 0.36363636363636365
+          },
+          "tags": []
+        },
+        {
+          "index": 53,
+          "label": "cj1",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.tencent.mm:id\/cj1",
+          "class": "android.widget.LinearLayout",
+          "clickable": true,
+          "editable": false,
+          "checkable": false,
+          "selected": false,
+          "bounds": "0 1024 1440 1283",
+          "x": 0.5,
+          "y": 0.3639520202020202,
+          "center": {
+            "x": 0.5,
+            "y": 0.3639520202020202
+          },
+          "tags": [
+            "clickable"
+          ]
+        },
+        {
+          "index": 54,
+          "label": "cj0",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.tencent.mm:id\/cj0",
+          "class": "android.widget.LinearLayout",
+          "clickable": false,
+          "editable": false,
+          "checkable": false,
+          "selected": false,
+          "bounds": "0 1024 1440 1283",
+          "x": 0.5,
+          "y": 0.3639520202020202,
+          "center": {
+            "x": 0.5,
+            "y": 0.3639520202020202
+          },
+          "tags": []
+        },
+        {
+          "index": 55,
+          "label": "[3条] 时政微观察丨从四个“更高质量”看世界百…",
+          "text": "[3条] 时政微观察丨从四个“更高质量”看世界百…",
+          "desc": null,
+          "resourceId": "com.tencent.mm:id\/ht5",
+          "class": "android.view.View",
+          "clickable": false,
+          "editable": false,
+          "checkable": false,
+          "selected": false,
+          "bounds": "274 1165 1295 1228",
+          "x": 0.5444444444444444,
+          "y": 0.37752525252525254,
+          "center": {
+            "x": 0.5444444444444444,
+            "y": 0.37752525252525254
+          },
+          "tags": []
+        },
+        {
+          "index": 56,
+          "label": "h 5",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.tencent.mm:id\/h_5",
+          "class": "android.widget.ImageView",
+          "clickable": false,
+          "editable": false,
+          "checkable": false,
+          "selected": false,
+          "bounds": "1324 1167 1382 1225",
+          "x": 0.9395833333333333,
+          "y": 0.37752525252525254,
+          "center": {
+            "x": 0.9395833333333333,
+            "y": 0.37752525252525254
+          },
+          "tags": []
+        },
+        {
+          "index": 57,
+          "label": "a h",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.tencent.mm:id\/a_h",
+          "class": "android.widget.ImageView",
+          "clickable": false,
+          "editable": false,
+          "checkable": false,
+          "selected": false,
+          "bounds": "210 1315 246 1351",
+          "x": 0.15833333333333333,
+          "y": 0.42077020202020204,
+          "center": {
+            "x": 0.15833333333333333,
+            "y": 0.42077020202020204
+          },
+          "tags": []
+        },
+        {
+          "index": 58,
+          "label": "12:41",
+          "text": "12:41",
+          "desc": null,
+          "resourceId": "com.tencent.mm:id\/otg",
+          "class": "android.widget.TextView",
+          "clickable": false,
+          "editable": false,
+          "checkable": false,
+          "selected": false,
+          "bounds": "1287 1334 1382 1392",
+          "x": 0.9263888888888889,
+          "y": 0.430239898989899,
+          "center": {
+            "x": 0.9263888888888889,
+            "y": 0.430239898989899
+          },
+          "tags": []
+        },
+        {
+          "index": 59,
+          "label": "v2r",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.tencent.mm:id\/v2r",
+          "class": "android.widget.LinearLayout",
+          "clickable": false,
+          "editable": false,
+          "checkable": false,
+          "selected": false,
+          "bounds": "274 1334 1229 1416",
+          "x": 0.5215277777777778,
+          "y": 0.4340277777777778,
+          "center": {
+            "x": 0.5215277777777778,
+            "y": 0.4340277777777778
+          },
+          "tags": []
+        },
+        {
+          "index": 60,
+          "label": "xmuer集市96",
+          "text": "xmuer集市96",
+          "desc": null,
+          "resourceId": "com.tencent.mm:id\/kbq",
+          "class": "android.view.View",
+          "clickable": false,
+          "editable": false,
+          "checkable": false,
+          "selected": false,
+          "bounds": "274 1334 1229 1416",
+          "x": 0.5215277777777778,
+          "y": 0.4340277777777778,
+          "center": {
+            "x": 0.5215277777777778,
+            "y": 0.4340277777777778
+          },
+          "tags": []
+        },
+        {
+          "index": 61,
+          "label": "o4k",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.tencent.mm:id\/o4k",
+          "class": "android.widget.LinearLayout",
+          "clickable": false,
+          "editable": false,
+          "checkable": false,
+          "selected": false,
+          "bounds": "274 1334 1382 1416",
+          "x": 0.575,
+          "y": 0.4340277777777778,
+          "center": {
+            "x": 0.575,
+            "y": 0.4340277777777778
+          },
+          "tags": []
+        },
+        {
+          "index": 62,
+          "label": "a 4",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.tencent.mm:id\/a_4",
+          "class": "android.widget.ImageView",
+          "clickable": false,
+          "editable": false,
+          "checkable": false,
+          "selected": false,
+          "bounds": "58 1325 231 1498",
+          "x": 0.1,
+          "y": 0.44539141414141414,
+          "center": {
+            "x": 0.1,
+            "y": 0.44539141414141414
+          },
+          "tags": []
+        },
+        {
+          "index": 63,
+          "label": "cj1",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.tencent.mm:id\/cj1",
+          "class": "android.widget.LinearLayout",
+          "clickable": true,
+          "editable": false,
+          "checkable": false,
+          "selected": false,
+          "bounds": "0 1283 1440 1542",
+          "x": 0.5,
+          "y": 0.4457070707070707,
+          "center": {
+            "x": 0.5,
+            "y": 0.4457070707070707
+          },
+          "tags": [
+            "clickable"
+          ]
+        },
+        {
+          "index": 64,
+          "label": "cj0",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.tencent.mm:id\/cj0",
+          "class": "android.widget.LinearLayout",
+          "clickable": false,
+          "editable": false,
+          "checkable": false,
+          "selected": false,
+          "bounds": "0 1283 1440 1542",
+          "x": 0.5,
+          "y": 0.4457070707070707,
+          "center": {
+            "x": 0.5,
+            "y": 0.4457070707070707
+          },
+          "tags": []
+        },
+        {
+          "index": 65,
+          "label": "[31条] Sara: 🚀在翔安一期食堂吃出蜘蛛了 mp:\/…",
+          "text": "[31条] Sara: 🚀在翔安一期食堂吃出蜘蛛了 mp:\/…",
+          "desc": null,
+          "resourceId": "com.tencent.mm:id\/ht5",
+          "class": "android.view.View",
+          "clickable": false,
+          "editable": false,
+          "checkable": false,
+          "selected": false,
+          "bounds": "274 1424 1295 1487",
+          "x": 0.5444444444444444,
+          "y": 0.45928030303030304,
+          "center": {
+            "x": 0.5444444444444444,
+            "y": 0.45928030303030304
+          },
+          "tags": []
+        },
+        {
+          "index": 66,
+          "label": "h 5",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.tencent.mm:id\/h_5",
+          "class": "android.widget.ImageView",
+          "clickable": false,
+          "editable": false,
+          "checkable": false,
+          "selected": false,
+          "bounds": "1324 1426 1382 1484",
+          "x": 0.9395833333333333,
+          "y": 0.45928030303030304,
+          "center": {
+            "x": 0.9395833333333333,
+            "y": 0.45928030303030304
+          },
+          "tags": []
+        },
+        {
+          "index": 67,
+          "label": "jxo",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.tencent.mm:id\/jxo",
+          "class": "android.widget.FrameLayout",
+          "clickable": false,
+          "editable": false,
+          "checkable": false,
+          "selected": false,
+          "bounds": "0 0 130 3104",
+          "x": 0.04513888888888889,
+          "y": 0.4898989898989899,
+          "center": {
+            "x": 0.04513888888888889,
+            "y": 0.4898989898989899
+          },
+          "tags": []
+        },
+        {
+          "index": 68,
+          "label": "jv6",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.tencent.mm:id\/jv6",
+          "class": "android.widget.FrameLayout",
+          "clickable": false,
+          "editable": false,
+          "checkable": false,
+          "selected": false,
+          "bounds": "0 0 130 3104",
+          "x": 0.04513888888888889,
+          "y": 0.4898989898989899,
+          "center": {
+            "x": 0.04513888888888889,
+            "y": 0.4898989898989899
+          },
+          "tags": []
+        },
+        {
+          "index": 69,
+          "label": "u1n",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.tencent.mm:id\/u1n",
+          "class": "android.widget.FrameLayout",
+          "clickable": false,
+          "editable": false,
+          "checkable": false,
+          "selected": false,
+          "bounds": "0 0 1440 3104",
+          "x": 0.5,
+          "y": 0.4898989898989899,
+          "center": {
+            "x": 0.5,
+            "y": 0.4898989898989899
+          },
+          "tags": []
+        },
+        {
+          "index": 70,
+          "label": "huh",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.tencent.mm:id\/huh",
+          "class": "android.widget.FrameLayout",
+          "clickable": false,
+          "editable": false,
+          "checkable": false,
+          "selected": false,
+          "bounds": "0 0 1440 3104",
+          "x": 0.5,
+          "y": 0.4898989898989899,
+          "center": {
+            "x": 0.5,
+            "y": 0.4898989898989899
+          },
+          "tags": []
+        },
+        {
+          "index": 71,
+          "label": "crd",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.tencent.mm:id\/crd",
+          "class": "android.view.ViewGroup",
+          "clickable": false,
+          "editable": false,
+          "checkable": false,
+          "selected": false,
+          "bounds": "0 0 1440 3104",
+          "x": 0.5,
+          "y": 0.4898989898989899,
+          "center": {
+            "x": 0.5,
+            "y": 0.4898989898989899
+          },
+          "tags": []
+        },
+        {
+          "index": 72,
+          "label": "node_73",
+          "text": null,
+          "desc": null,
+          "resourceId": "android:id\/content",
+          "class": "android.widget.FrameLayout",
+          "clickable": false,
+          "editable": false,
+          "checkable": false,
+          "selected": false,
+          "bounds": "0 0 1440 3104",
+          "x": 0.5,
+          "y": 0.4898989898989899,
+          "center": {
+            "x": 0.5,
+            "y": 0.4898989898989899
+          },
+          "tags": []
+        },
+        {
+          "index": 73,
+          "label": "g6w",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.tencent.mm:id\/g6w",
+          "class": "android.widget.FrameLayout",
+          "clickable": false,
+          "editable": false,
+          "checkable": false,
+          "selected": false,
+          "bounds": "0 0 1440 3104",
+          "x": 0.5,
+          "y": 0.4898989898989899,
+          "center": {
+            "x": 0.5,
+            "y": 0.4898989898989899
+          },
+          "tags": []
+        },
+        {
+          "index": 74,
+          "label": "kod",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.tencent.mm:id\/kod",
+          "class": "android.view.ViewGroup",
+          "clickable": false,
+          "editable": false,
+          "checkable": false,
+          "selected": false,
+          "bounds": "0 0 1440 3104",
+          "x": 0.5,
+          "y": 0.4898989898989899,
+          "center": {
+            "x": 0.5,
+            "y": 0.4898989898989899
+          },
+          "tags": []
+        },
+        {
+          "index": 75,
+          "label": "jlt",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.tencent.mm:id\/jlt",
+          "class": "android.widget.FrameLayout",
+          "clickable": false,
+          "editable": false,
+          "checkable": false,
+          "selected": false,
+          "bounds": "0 0 1440 3104",
+          "x": 0.5,
+          "y": 0.4898989898989899,
+          "center": {
+            "x": 0.5,
+            "y": 0.4898989898989899
+          },
+          "tags": []
+        },
+        {
+          "index": 76,
+          "label": "j99",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.tencent.mm:id\/j99",
+          "class": "android.widget.RelativeLayout",
+          "clickable": false,
+          "editable": false,
+          "checkable": false,
+          "selected": false,
+          "bounds": "0 0 1440 3104",
+          "x": 0.5,
+          "y": 0.4898989898989899,
+          "center": {
+            "x": 0.5,
+            "y": 0.4898989898989899
+          },
+          "tags": []
+        },
+        {
+          "index": 77,
+          "label": "j8g",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.tencent.mm:id\/j8g",
+          "class": "android.widget.ListView",
+          "clickable": false,
+          "editable": false,
+          "checkable": false,
+          "selected": false,
+          "bounds": "0 0 1440 3104",
+          "x": 0.5,
+          "y": 0.4898989898989899,
+          "center": {
+            "x": 0.5,
+            "y": 0.4898989898989899
+          },
+          "tags": []
+        },
+        {
+          "index": 78,
+          "label": "a h",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.tencent.mm:id\/a_h",
+          "class": "android.widget.ImageView",
+          "clickable": false,
+          "editable": false,
+          "checkable": false,
+          "selected": false,
+          "bounds": "210 1574 246 1610",
+          "x": 0.15833333333333333,
+          "y": 0.5025252525252525,
+          "center": {
+            "x": 0.15833333333333333,
+            "y": 0.5025252525252525
+          },
+          "tags": []
+        },
+        {
+          "index": 79,
+          "label": "12:38",
+          "text": "12:38",
+          "desc": null,
+          "resourceId": "com.tencent.mm:id\/otg",
+          "class": "android.widget.TextView",
+          "clickable": false,
+          "editable": false,
+          "checkable": false,
+          "selected": false,
+          "bounds": "1279 1593 1382 1651",
+          "x": 0.9236111111111112,
+          "y": 0.5119949494949495,
+          "center": {
+            "x": 0.9236111111111112,
+            "y": 0.5119949494949495
+          },
+          "tags": []
+        },
+        {
+          "index": 80,
+          "label": "v2r",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.tencent.mm:id\/v2r",
+          "class": "android.widget.LinearLayout",
+          "clickable": false,
+          "editable": false,
+          "checkable": false,
+          "selected": false,
+          "bounds": "274 1593 1221 1675",
+          "x": 0.51875,
+          "y": 0.5157828282828283,
+          "center": {
+            "x": 0.51875,
+            "y": 0.5157828282828283
+          },
+          "tags": []
+        },
+        {
+          "index": 81,
+          "label": "永泰老乡半场开香槟🍾",
+          "text": "永泰老乡半场开香槟🍾",
+          "desc": null,
+          "resourceId": "com.tencent.mm:id\/kbq",
+          "class": "android.view.View",
+          "clickable": false,
+          "editable": false,
+          "checkable": false,
+          "selected": false,
+          "bounds": "274 1593 1221 1675",
+          "x": 0.51875,
+          "y": 0.5157828282828283,
+          "center": {
+            "x": 0.51875,
+            "y": 0.5157828282828283
+          },
+          "tags": []
+        },
+        {
+          "index": 82,
+          "label": "o4k",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.tencent.mm:id\/o4k",
+          "class": "android.widget.LinearLayout",
+          "clickable": false,
+          "editable": false,
+          "checkable": false,
+          "selected": false,
+          "bounds": "274 1593 1382 1675",
+          "x": 0.575,
+          "y": 0.5157828282828283,
+          "center": {
+            "x": 0.575,
+            "y": 0.5157828282828283
+          },
+          "tags": []
+        },
+        {
+          "index": 83,
+          "label": "a 4",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.tencent.mm:id\/a_4",
+          "class": "android.widget.ImageView",
+          "clickable": false,
+          "editable": false,
+          "checkable": false,
+          "selected": false,
+          "bounds": "58 1584 231 1757",
+          "x": 0.1,
+          "y": 0.5271464646464646,
+          "center": {
+            "x": 0.1,
+            "y": 0.5271464646464646
+          },
+          "tags": []
+        },
+        {
+          "index": 84,
+          "label": "cj1",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.tencent.mm:id\/cj1",
+          "class": "android.widget.LinearLayout",
+          "clickable": true,
+          "editable": false,
+          "checkable": false,
+          "selected": false,
+          "bounds": "0 1542 1440 1801",
+          "x": 0.5,
+          "y": 0.5274621212121212,
+          "center": {
+            "x": 0.5,
+            "y": 0.5274621212121212
+          },
+          "tags": [
+            "clickable"
+          ]
+        },
+        {
+          "index": 85,
+          "label": "cj0",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.tencent.mm:id\/cj0",
+          "class": "android.widget.LinearLayout",
+          "clickable": false,
+          "editable": false,
+          "checkable": false,
+          "selected": false,
+          "bounds": "0 1542 1440 1801",
+          "x": 0.5,
+          "y": 0.5274621212121212,
+          "center": {
+            "x": 0.5,
+            "y": 0.5274621212121212
+          },
+          "tags": []
+        },
+        {
+          "index": 86,
+          "label": "[55条] 傩.: [动画表情]",
+          "text": "[55条] 傩.: [动画表情]",
+          "desc": null,
+          "resourceId": "com.tencent.mm:id\/ht5",
+          "class": "android.view.View",
+          "clickable": false,
+          "editable": false,
+          "checkable": false,
+          "selected": false,
+          "bounds": "274 1683 1295 1746",
+          "x": 0.5444444444444444,
+          "y": 0.5410353535353535,
+          "center": {
+            "x": 0.5444444444444444,
+            "y": 0.5410353535353535
+          },
+          "tags": []
+        },
+        {
+          "index": 87,
+          "label": "h 5",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.tencent.mm:id\/h_5",
+          "class": "android.widget.ImageView",
+          "clickable": false,
+          "editable": false,
+          "checkable": false,
+          "selected": false,
+          "bounds": "1324 1685 1382 1743",
+          "x": 0.9395833333333333,
+          "y": 0.5410353535353535,
+          "center": {
+            "x": 0.9395833333333333,
+            "y": 0.5410353535353535
+          },
+          "tags": []
+        },
+        {
+          "index": 88,
+          "label": "a h",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.tencent.mm:id\/a_h",
+          "class": "android.widget.ImageView",
+          "clickable": false,
+          "editable": false,
+          "checkable": false,
+          "selected": false,
+          "bounds": "210 1833 246 1869",
+          "x": 0.15833333333333333,
+          "y": 0.584280303030303,
+          "center": {
+            "x": 0.15833333333333333,
+            "y": 0.584280303030303
+          },
+          "tags": []
+        },
+        {
+          "index": 89,
+          "label": "11:51",
+          "text": "11:51",
+          "desc": null,
+          "resourceId": "com.tencent.mm:id\/otg",
+          "class": "android.widget.TextView",
+          "clickable": false,
+          "editable": false,
+          "checkable": false,
+          "selected": false,
+          "bounds": "1295 1852 1382 1910",
+          "x": 0.9291666666666667,
+          "y": 0.59375,
+          "center": {
+            "x": 0.9291666666666667,
+            "y": 0.59375
+          },
+          "tags": []
+        },
+        {
+          "index": 90,
+          "label": "v2r",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.tencent.mm:id\/v2r",
+          "class": "android.widget.LinearLayout",
+          "clickable": false,
+          "editable": false,
+          "checkable": false,
+          "selected": false,
+          "bounds": "274 1852 1237 1934",
+          "x": 0.5243055555555556,
+          "y": 0.5975378787878788,
+          "center": {
+            "x": 0.5243055555555556,
+            "y": 0.5975378787878788
+          },
+          "tags": []
+        },
+        {
+          "index": 91,
+          "label": "厦门会展二喜兄天虹店福利群",
+          "text": "厦门会展二喜兄天虹店福利群",
+          "desc": null,
+          "resourceId": "com.tencent.mm:id\/kbq",
+          "class": "android.view.View",
+          "clickable": false,
+          "editable": false,
+          "checkable": false,
+          "selected": false,
+          "bounds": "274 1852 1237 1934",
+          "x": 0.5243055555555556,
+          "y": 0.5975378787878788,
+          "center": {
+            "x": 0.5243055555555556,
+            "y": 0.5975378787878788
+          },
+          "tags": []
+        },
+        {
+          "index": 92,
+          "label": "o4k",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.tencent.mm:id\/o4k",
+          "class": "android.widget.LinearLayout",
+          "clickable": false,
+          "editable": false,
+          "checkable": false,
+          "selected": false,
+          "bounds": "274 1852 1382 1934",
+          "x": 0.575,
+          "y": 0.5975378787878788,
+          "center": {
+            "x": 0.575,
+            "y": 0.5975378787878788
+          },
+          "tags": []
+        },
+        {
+          "index": 93,
+          "label": "a 4",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.tencent.mm:id\/a_4",
+          "class": "android.widget.ImageView",
+          "clickable": false,
+          "editable": false,
+          "checkable": false,
+          "selected": false,
+          "bounds": "58 1843 231 2016",
+          "x": 0.1,
+          "y": 0.6089015151515151,
+          "center": {
+            "x": 0.1,
+            "y": 0.6089015151515151
+          },
+          "tags": []
+        },
+        {
+          "index": 94,
+          "label": "cj1",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.tencent.mm:id\/cj1",
+          "class": "android.widget.LinearLayout",
+          "clickable": true,
+          "editable": false,
+          "checkable": false,
+          "selected": false,
+          "bounds": "0 1801 1440 2060",
+          "x": 0.5,
+          "y": 0.6092171717171717,
+          "center": {
+            "x": 0.5,
+            "y": 0.6092171717171717
+          },
+          "tags": [
+            "clickable"
+          ]
+        },
+        {
+          "index": 95,
+          "label": "cj0",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.tencent.mm:id\/cj0",
+          "class": "android.widget.LinearLayout",
+          "clickable": false,
+          "editable": false,
+          "checkable": false,
+          "selected": false,
+          "bounds": "0 1801 1440 2060",
+          "x": 0.5,
+          "y": 0.6092171717171717,
+          "center": {
+            "x": 0.5,
+            "y": 0.6092171717171717
+          },
+          "tags": []
+        },
+        {
+          "index": 96,
+          "label": "[2条] 说猫🐯就是虎🐈: [小程序] 欢迎来到海底世…",
+          "text": "[2条] 说猫🐯就是虎🐈: [小程序] 欢迎来到海底世…",
+          "desc": null,
+          "resourceId": "com.tencent.mm:id\/ht5",
+          "class": "android.view.View",
+          "clickable": false,
+          "editable": false,
+          "checkable": false,
+          "selected": false,
+          "bounds": "274 1942 1295 2005",
+          "x": 0.5444444444444444,
+          "y": 0.6227904040404041,
+          "center": {
+            "x": 0.5444444444444444,
+            "y": 0.6227904040404041
+          },
+          "tags": []
+        },
+        {
+          "index": 97,
+          "label": "h 5",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.tencent.mm:id\/h_5",
+          "class": "android.widget.ImageView",
+          "clickable": false,
+          "editable": false,
+          "checkable": false,
+          "selected": false,
+          "bounds": "1324 1944 1382 2002",
+          "x": 0.9395833333333333,
+          "y": 0.6227904040404041,
+          "center": {
+            "x": 0.9395833333333333,
+            "y": 0.6227904040404041
+          },
+          "tags": []
+        },
+        {
+          "index": 98,
+          "label": "a h",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.tencent.mm:id\/a_h",
+          "class": "android.widget.ImageView",
+          "clickable": false,
+          "editable": false,
+          "checkable": false,
+          "selected": false,
+          "bounds": "210 2092 246 2128",
+          "x": 0.15833333333333333,
+          "y": 0.6660353535353535,
+          "center": {
+            "x": 0.15833333333333333,
+            "y": 0.6660353535353535
+          },
+          "tags": []
+        },
+        {
+          "index": 99,
+          "label": "11:16",
+          "text": "11:16",
+          "desc": null,
+          "resourceId": "com.tencent.mm:id\/otg",
+          "class": "android.widget.TextView",
+          "clickable": false,
+          "editable": false,
+          "checkable": false,
+          "selected": false,
+          "bounds": "1294 2111 1382 2169",
+          "x": 0.9291666666666667,
+          "y": 0.6755050505050505,
+          "center": {
+            "x": 0.9291666666666667,
+            "y": 0.6755050505050505
+          },
+          "tags": []
+        },
+        {
+          "index": 100,
+          "label": "v2r",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.tencent.mm:id\/v2r",
+          "class": "android.widget.LinearLayout",
+          "clickable": false,
+          "editable": false,
+          "checkable": false,
+          "selected": false,
+          "bounds": "274 2111 1236 2193",
+          "x": 0.5243055555555556,
+          "y": 0.6792929292929293,
+          "center": {
+            "x": 0.5243055555555556,
+            "y": 0.6792929292929293
+          },
+          "tags": []
+        },
+        {
+          "index": 101,
+          "label": "公众号",
+          "text": "公众号",
+          "desc": null,
+          "resourceId": "com.tencent.mm:id\/kbq",
+          "class": "android.view.View",
+          "clickable": false,
+          "editable": false,
+          "checkable": false,
+          "selected": false,
+          "bounds": "274 2111 1236 2193",
+          "x": 0.5243055555555556,
+          "y": 0.6792929292929293,
+          "center": {
+            "x": 0.5243055555555556,
+            "y": 0.6792929292929293
+          },
+          "tags": []
+        },
+        {
+          "index": 102,
+          "label": "o4k",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.tencent.mm:id\/o4k",
+          "class": "android.widget.LinearLayout",
+          "clickable": false,
+          "editable": false,
+          "checkable": false,
+          "selected": false,
+          "bounds": "274 2111 1382 2193",
+          "x": 0.575,
+          "y": 0.6792929292929293,
+          "center": {
+            "x": 0.575,
+            "y": 0.6792929292929293
+          },
+          "tags": []
+        },
+        {
+          "index": 103,
+          "label": "a 4",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.tencent.mm:id\/a_4",
+          "class": "android.widget.ImageView",
+          "clickable": false,
+          "editable": false,
+          "checkable": false,
+          "selected": false,
+          "bounds": "58 2102 231 2275",
+          "x": 0.1,
+          "y": 0.6906565656565656,
+          "center": {
+            "x": 0.1,
+            "y": 0.6906565656565656
+          },
+          "tags": [
+            "bottom_area"
+          ]
+        },
+        {
+          "index": 104,
+          "label": "cj1",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.tencent.mm:id\/cj1",
+          "class": "android.widget.LinearLayout",
+          "clickable": true,
+          "editable": false,
+          "checkable": false,
+          "selected": false,
+          "bounds": "0 2060 1440 2319",
+          "x": 0.5,
+          "y": 0.6909722222222222,
+          "center": {
+            "x": 0.5,
+            "y": 0.6909722222222222
+          },
+          "tags": [
+            "clickable",
+            "bottom_area"
+          ]
+        },
+        {
+          "index": 105,
+          "label": "cj0",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.tencent.mm:id\/cj0",
+          "class": "android.widget.LinearLayout",
+          "clickable": false,
+          "editable": false,
+          "checkable": false,
+          "selected": false,
+          "bounds": "0 2060 1440 2319",
+          "x": 0.5,
+          "y": 0.6909722222222222,
+          "center": {
+            "x": 0.5,
+            "y": 0.6909722222222222
+          },
+          "tags": [
+            "bottom_area"
+          ]
+        },
+        {
+          "index": 106,
+          "label": "[3条] 厦门大学海洋与地球学院: 招贤纳士 | 厦门大…",
+          "text": "[3条] 厦门大学海洋与地球学院: 招贤纳士 | 厦门大…",
+          "desc": null,
+          "resourceId": "com.tencent.mm:id\/ht5",
+          "class": "android.view.View",
+          "clickable": false,
+          "editable": false,
+          "checkable": false,
+          "selected": false,
+          "bounds": "274 2201 1353 2264",
+          "x": 0.5645833333333333,
+          "y": 0.7045454545454546,
+          "center": {
+            "x": 0.5645833333333333,
+            "y": 0.7045454545454546
+          },
+          "tags": [
+            "bottom_area"
+          ]
+        },
+        {
+          "index": 107,
+          "label": "a h",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.tencent.mm:id\/a_h",
+          "class": "android.widget.ImageView",
+          "clickable": false,
+          "editable": false,
+          "checkable": false,
+          "selected": false,
+          "bounds": "210 2351 246 2387",
+          "x": 0.15833333333333333,
+          "y": 0.7477904040404041,
+          "center": {
+            "x": 0.15833333333333333,
+            "y": 0.7477904040404041
+          },
+          "tags": [
+            "bottom_area"
+          ]
+        },
+        {
+          "index": 108,
+          "label": "11:09",
+          "text": "11:09",
+          "desc": null,
+          "resourceId": "com.tencent.mm:id\/otg",
+          "class": "android.widget.TextView",
+          "clickable": false,
+          "editable": false,
+          "checkable": false,
+          "selected": false,
+          "bounds": "1284 2370 1382 2428",
+          "x": 0.9256944444444445,
+          "y": 0.757260101010101,
+          "center": {
+            "x": 0.9256944444444445,
+            "y": 0.757260101010101
+          },
+          "tags": [
+            "bottom_area"
+          ]
+        },
+        {
+          "index": 109,
+          "label": "v2r",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.tencent.mm:id\/v2r",
+          "class": "android.widget.LinearLayout",
+          "clickable": false,
+          "editable": false,
+          "checkable": false,
+          "selected": false,
+          "bounds": "274 2370 1226 2452",
+          "x": 0.5208333333333334,
+          "y": 0.7610479797979798,
+          "center": {
+            "x": 0.5208333333333334,
+            "y": 0.7610479797979798
+          },
+          "tags": [
+            "bottom_area"
+          ]
+        },
+        {
+          "index": 110,
+          "label": "服务号",
+          "text": "服务号",
+          "desc": null,
+          "resourceId": "com.tencent.mm:id\/kbq",
+          "class": "android.view.View",
+          "clickable": false,
+          "editable": false,
+          "checkable": false,
+          "selected": false,
+          "bounds": "274 2370 1226 2452",
+          "x": 0.5208333333333334,
+          "y": 0.7610479797979798,
+          "center": {
+            "x": 0.5208333333333334,
+            "y": 0.7610479797979798
+          },
+          "tags": [
+            "bottom_area"
+          ]
+        },
+        {
+          "index": 111,
+          "label": "o4k",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.tencent.mm:id\/o4k",
+          "class": "android.widget.LinearLayout",
+          "clickable": false,
+          "editable": false,
+          "checkable": false,
+          "selected": false,
+          "bounds": "274 2370 1382 2452",
+          "x": 0.575,
+          "y": 0.7610479797979798,
+          "center": {
+            "x": 0.575,
+            "y": 0.7610479797979798
+          },
+          "tags": [
+            "bottom_area"
+          ]
+        },
+        {
+          "index": 112,
+          "label": "a 4",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.tencent.mm:id\/a_4",
+          "class": "android.widget.ImageView",
+          "clickable": false,
+          "editable": false,
+          "checkable": false,
+          "selected": false,
+          "bounds": "58 2361 231 2534",
+          "x": 0.1,
+          "y": 0.7724116161616161,
+          "center": {
+            "x": 0.1,
+            "y": 0.7724116161616161
+          },
+          "tags": [
+            "bottom_area"
+          ]
+        },
+        {
+          "index": 113,
+          "label": "cj1",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.tencent.mm:id\/cj1",
+          "class": "android.widget.LinearLayout",
+          "clickable": true,
+          "editable": false,
+          "checkable": false,
+          "selected": false,
+          "bounds": "0 2319 1440 2578",
+          "x": 0.5,
+          "y": 0.7727272727272727,
+          "center": {
+            "x": 0.5,
+            "y": 0.7727272727272727
+          },
+          "tags": [
+            "clickable",
+            "bottom_area"
+          ]
+        },
+        {
+          "index": 114,
+          "label": "cj0",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.tencent.mm:id\/cj0",
+          "class": "android.widget.LinearLayout",
+          "clickable": false,
+          "editable": false,
+          "checkable": false,
+          "selected": false,
+          "bounds": "0 2319 1440 2578",
+          "x": 0.5,
+          "y": 0.7727272727272727,
+          "center": {
+            "x": 0.5,
+            "y": 0.7727272727272727
+          },
+          "tags": [
+            "bottom_area"
+          ]
+        },
+        {
+          "index": 115,
+          "label": "SPSSPRO: 结构方程模型太复杂？SPSSPRO帮你…",
+          "text": "SPSSPRO: 结构方程模型太复杂？SPSSPRO帮你…",
+          "desc": null,
+          "resourceId": "com.tencent.mm:id\/ht5",
+          "class": "android.view.View",
+          "clickable": false,
+          "editable": false,
+          "checkable": false,
+          "selected": false,
+          "bounds": "274 2460 1353 2523",
+          "x": 0.5645833333333333,
+          "y": 0.7863005050505051,
+          "center": {
+            "x": 0.5645833333333333,
+            "y": 0.7863005050505051
+          },
+          "tags": [
+            "bottom_area"
+          ]
+        },
+        {
+          "index": 116,
+          "label": "26",
+          "text": "26",
+          "desc": null,
+          "resourceId": "com.tencent.mm:id\/o_u",
+          "class": "android.widget.TextView",
+          "clickable": false,
+          "editable": false,
+          "checkable": false,
+          "selected": false,
+          "bounds": "157 2606 249 2671",
+          "x": 0.14097222222222222,
+          "y": 0.8327020202020202,
+          "center": {
+            "x": 0.14097222222222222,
+            "y": 0.8327020202020202
+          },
+          "tags": [
+            "bottom_area"
+          ]
+        },
+        {
+          "index": 117,
+          "label": "10:42",
+          "text": "10:42",
+          "desc": null,
+          "resourceId": "com.tencent.mm:id\/otg",
+          "class": "android.widget.TextView",
+          "clickable": false,
+          "editable": false,
+          "checkable": false,
+          "selected": false,
+          "bounds": "1276 2629 1382 2687",
+          "x": 0.9229166666666667,
+          "y": 0.8390151515151515,
+          "center": {
+            "x": 0.9229166666666667,
+            "y": 0.8390151515151515
+          },
+          "tags": [
+            "bottom_area"
+          ]
+        },
+        {
+          "index": 118,
+          "label": "v2r",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.tencent.mm:id\/v2r",
+          "class": "android.widget.LinearLayout",
+          "clickable": false,
+          "editable": false,
+          "checkable": false,
+          "selected": false,
+          "bounds": "274 2629 1218 2711",
+          "x": 0.5180555555555556,
+          "y": 0.8428030303030303,
+          "center": {
+            "x": 0.5180555555555556,
+            "y": 0.8428030303030303
+          },
+          "tags": [
+            "bottom_area"
+          ]
+        },
+        {
+          "index": 119,
+          "label": "闪购外卖助手 @小光饭粒",
+          "text": "闪购外卖助手 @小光饭粒",
+          "desc": null,
+          "resourceId": "com.tencent.mm:id\/kbq",
+          "class": "android.view.View",
+          "clickable": false,
+          "editable": false,
+          "checkable": false,
+          "selected": false,
+          "bounds": "274 2629 1218 2711",
+          "x": 0.5180555555555556,
+          "y": 0.8428030303030303,
+          "center": {
+            "x": 0.5180555555555556,
+            "y": 0.8428030303030303
+          },
+          "tags": [
+            "bottom_area"
+          ]
+        }
+      ],
+      "videoCandidates": [],
+      "capability": {
+        "nodeReadability": "A",
+        "inputCapability": "CUSTOM_IME",
+        "verificationCapability": "HIGH",
+        "coordinateFallback": "AVAILABLE",
+        "serviceState": "CONNECTED"
+      },
+      "snapshotPath": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_snapshots\/com.tencent.mm\/20260521_124531_892_c5b476c0.json",
+      "capturedAt": 1779338732271
+    }
+  ],
+  "edges": [],
+  "events": [
+    {
+      "phase": "wait_accessibility",
+      "status": "SUCCESS",
+      "attempt": 1,
+      "message": "accessibility service is connected"
+    },
+    {
+      "phase": "open_app",
+      "status": "RUNNING",
+      "message": "打开 微信，开始读取首页、底部分屏、入口和输入框",
+      "path": null,
+      "timestamp": 1779338730274
+    },
+    {
+      "phase": "open_app_attempt",
+      "attempt": 1,
+      "strategy": "launcher_root",
+      "success": true,
+      "message": "Launcher root intent sent for com.tencent.mm"
+    },
+    {
+      "phase": "open_app_attempt_wait",
+      "attempt": 1,
+      "strategy": "launcher_root",
+      "success": true,
+      "currentPackage": "com.tencent.mm",
+      "windowClassName": "android.widget.ImageView",
+      "overlayDismissed": 0,
+      "overlayEvents": []
+    },
+    {
+      "phase": "wait_foreground",
+      "success": true,
+      "currentPackage": "com.tencent.mm",
+      "windowClassName": "android.widget.ImageView",
+      "overlayDismissed": 0,
+      "overlayEvents": []
+    },
+    {
+      "phase": "reactive_overlays",
+      "dismissed": 0,
+      "events": []
+    },
+    {
+      "phase": "recover_primary_tab_surface_start",
+      "status": "RUNNING",
+      "message": "Need bottom primary tabs before opening top\/icon entries.",
+      "screenKey": "c5b476c0",
+      "primaryBottomTabCount": 1,
+      "snapshotPath": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_snapshots\/com.tencent.mm\/20260521_124531_892_c5b476c0.json"
+    },
+    {
+      "phase": "recover_primary_tab_back",
+      "attempt": 1,
+      "success": true,
+      "message": "GLOBAL_ACTION_BACK performed"
+    },
+    {
+      "phase": "capture_recover_primary_tab_1",
+      "status": "FAILED",
+      "attempts": 9,
+      "currentPackage": "com.tencent.mobileqq",
+      "windowClassName": null,
+      "nodeCount": 26
+    },
+    {
+      "phase": "recover_primary_tab_check",
+      "attempt": 1,
+      "status": "LOW_CONFIDENCE",
+      "nodeCount": 0,
+      "primaryBottomTabCount": 0,
+      "screenKey": null,
+      "snapshotPath": null
+    },
+    {
+      "phase": "recover_primary_tab_back",
+      "attempt": 2,
+      "success": true,
+      "message": "GLOBAL_ACTION_BACK performed"
+    },
+    {
+      "phase": "capture_recover_primary_tab_2",
+      "status": "FAILED",
+      "attempts": 9,
+      "currentPackage": "com.tencent.mobileqq",
+      "windowClassName": "android.widget.FrameLayout",
+      "nodeCount": 26
+    },
+    {
+      "phase": "recover_primary_tab_check",
+      "attempt": 2,
+      "status": "LOW_CONFIDENCE",
+      "nodeCount": 0,
+      "primaryBottomTabCount": 0,
+      "screenKey": null,
+      "snapshotPath": null
+    },
+    {
+      "phase": "recover_primary_tab_back",
+      "attempt": 3,
+      "success": true,
+      "message": "GLOBAL_ACTION_BACK performed"
+    },
+    {
+      "phase": "capture_recover_primary_tab_3",
+      "status": "FAILED",
+      "attempts": 9,
+      "currentPackage": "com.tencent.mobileqq",
+      "windowClassName": "android.widget.FrameLayout",
+      "nodeCount": 26
+    },
+    {
+      "phase": "recover_primary_tab_check",
+      "attempt": 3,
+      "status": "LOW_CONFIDENCE",
+      "nodeCount": 0,
+      "primaryBottomTabCount": 0,
+      "screenKey": null,
+      "snapshotPath": null
+    },
+    {
+      "phase": "recover_primary_tab_surface",
+      "status": "LOW_CONFIDENCE",
+      "message": "Primary-tab surface was not found before probing.",
+      "primaryBottomTabCount": 1
+    },
+    {
+      "phase": "capture_home",
+      "status": "SUCCESS",
+      "message": "已记录首页：328 个节点、36 个可点击项",
+      "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_snapshots\/com.tencent.mm\/20260521_124531_892_c5b476c0.json",
+      "timestamp": 1779338743760
+    },
+    {
+      "phase": "primary_bottom_tab_candidates",
+      "count": 6,
+      "labels": [
+        "bottom_tab_1",
+        "tab_1",
+        "tab_2",
+        "tab_3",
+        "tab_4",
+        "tab_5"
+      ],
+      "detectedCount": 1,
+      "fallbackCount": 5,
+      "message": "primary bottom tabs are explored before top icons"
+    },
+    {
+      "phase": "primary_bottom_tab_sweep",
+      "status": "RUNNING",
+      "message": "open bottom tab first: bottom_tab_1",
+      "path": null,
+      "timestamp": 1779338743762
+    },
+    {
+      "phase": "capture_before_primary_bottom_tab",
+      "status": "FAILED",
+      "attempts": 12,
+      "currentPackage": "com.tencent.mobileqq",
+      "windowClassName": "android.widget.FrameLayout",
+      "nodeCount": 26
+    },
+    {
+      "phase": "tap_primary_bottom_tab",
+      "index": 1,
+      "label": "bottom_tab_1",
+      "success": true,
+      "message": "dispatchGesture tap sent (normalized=0.125,0.938 px=180,2973 screen=1440x3168)",
+      "candidate": {
+        "index": 0,
+        "label": "bottom_tab_1",
+        "text": null,
+        "desc": null,
+        "resourceId": null,
+        "class": "android.widget.RelativeLayout",
+        "clickable": false,
+        "editable": false,
+        "checkable": false,
+        "selected": true,
+        "bounds": "0 2923 360 3024",
+        "x": 0.125,
+        "y": 0.9384469696969697,
+        "center": {
+          "x": 0.125,
+          "y": 0.9384469696969697
+        },
+        "tags": [
+          "primary_bottom_tab",
+          "bottom_tab",
+          "selected",
+          "bottom_area"
+        ],
+        "candidateCategory": "primary_bottom_tab"
+      },
+      "beforeScreenKey": "c5b476c0",
+      "beforeSnapshotPath": null
+    },
+    {
+      "phase": "capture_after_primary_bottom_tab",
+      "status": "FAILED",
+      "attempts": 12,
+      "currentPackage": "com.tencent.mobileqq",
+      "windowClassName": "android.view.View",
+      "nodeCount": 33
+    },
+    {
+      "phase": "primary_bottom_tab_sweep",
+      "status": "FAILED_NO_AFTER_SCREEN",
+      "message": "bottom tab bottom_tab_1 did not produce a readable page",
+      "path": null,
+      "timestamp": 1779338752858
+    },
+    {
+      "phase": "primary_bottom_tab_sweep",
+      "status": "RUNNING",
+      "message": "open bottom tab first: tab_1",
+      "path": null,
+      "timestamp": 1779338752858
+    },
+    {
+      "phase": "capture_before_primary_bottom_tab",
+      "status": "FAILED",
+      "attempts": 12,
+      "currentPackage": "com.tencent.mobileqq",
+      "windowClassName": "android.view.View",
+      "nodeCount": 33
+    },
+    {
+      "phase": "tap_primary_bottom_tab",
+      "index": 2,
+      "label": "tab_1",
+      "success": true,
+      "message": "dispatchGesture tap sent (normalized=0.100,0.940 px=144,2977 screen=1440x3168)",
+      "candidate": {
+        "index": 0,
+        "label": "tab_1",
+        "text": null,
+        "desc": null,
+        "resourceId": null,
+        "class": "coordinate_fallback_primary_bottom_tab",
+        "clickable": false,
+        "editable": false,
+        "checkable": false,
+        "selected": false,
+        "bounds": "coordinate_fallback",
+        "x": 0.1,
+        "y": 0.94,
+        "center": {
+          "x": 0.1,
+          "y": 0.94
+        },
+        "candidateCategory": "primary_bottom_tab",
+        "coordinateFallback": true,
+        "tags": [
+          "primary_bottom_tab",
+          "bottom_tab",
+          "coordinate_fallback"
+        ]
+      },
+      "beforeScreenKey": "c5b476c0",
+      "beforeSnapshotPath": null
+    },
+    {
+      "phase": "capture_after_primary_bottom_tab",
+      "status": "FAILED",
+      "attempts": 12,
+      "currentPackage": "com.tencent.mobileqq",
+      "windowClassName": "android.widget.FrameLayout",
+      "nodeCount": 31
+    },
+    {
+      "phase": "primary_bottom_tab_sweep",
+      "status": "FAILED_NO_AFTER_SCREEN",
+      "message": "bottom tab tab_1 did not produce a readable page",
+      "path": null,
+      "timestamp": 1779338761883
+    },
+    {
+      "phase": "primary_bottom_tab_sweep",
+      "status": "RUNNING",
+      "message": "open bottom tab first: tab_2",
+      "path": null,
+      "timestamp": 1779338761883
+    },
+    {
+      "phase": "capture_before_primary_bottom_tab",
+      "status": "FAILED",
+      "attempts": 12,
+      "currentPackage": "com.tencent.mobileqq",
+      "windowClassName": "android.widget.FrameLayout",
+      "nodeCount": 31
+    },
+    {
+      "phase": "tap_primary_bottom_tab",
+      "index": 3,
+      "label": "tab_2",
+      "success": true,
+      "message": "dispatchGesture tap sent (normalized=0.300,0.940 px=432,2977 screen=1440x3168)",
+      "candidate": {
+        "index": 1,
+        "label": "tab_2",
+        "text": null,
+        "desc": null,
+        "resourceId": null,
+        "class": "coordinate_fallback_primary_bottom_tab",
+        "clickable": false,
+        "editable": false,
+        "checkable": false,
+        "selected": false,
+        "bounds": "coordinate_fallback",
+        "x": 0.3,
+        "y": 0.94,
+        "center": {
+          "x": 0.3,
+          "y": 0.94
+        },
+        "candidateCategory": "primary_bottom_tab",
+        "coordinateFallback": true,
+        "tags": [
+          "primary_bottom_tab",
+          "bottom_tab",
+          "coordinate_fallback"
+        ]
+      },
+      "beforeScreenKey": "c5b476c0",
+      "beforeSnapshotPath": null
+    },
+    {
+      "phase": "capture_after_primary_bottom_tab",
+      "status": "FAILED",
+      "attempts": 12,
+      "currentPackage": "com.tencent.mobileqq",
+      "windowClassName": "android.widget.TextView",
+      "nodeCount": 31
+    },
+    {
+      "phase": "primary_bottom_tab_sweep",
+      "status": "FAILED_NO_AFTER_SCREEN",
+      "message": "bottom tab tab_2 did not produce a readable page",
+      "path": null,
+      "timestamp": 1779338770957
+    },
+    {
+      "phase": "primary_bottom_tab_sweep",
+      "status": "RUNNING",
+      "message": "open bottom tab first: tab_3",
+      "path": null,
+      "timestamp": 1779338770957
+    },
+    {
+      "phase": "capture_before_primary_bottom_tab",
+      "status": "FAILED",
+      "attempts": 12,
+      "currentPackage": "com.tencent.mobileqq",
+      "windowClassName": "android.widget.TextView",
+      "nodeCount": 31
+    },
+    {
+      "phase": "tap_primary_bottom_tab",
+      "index": 4,
+      "label": "tab_3",
+      "success": true,
+      "message": "dispatchGesture tap sent (normalized=0.500,0.940 px=720,2977 screen=1440x3168)",
+      "candidate": {
+        "index": 2,
+        "label": "tab_3",
+        "text": null,
+        "desc": null,
+        "resourceId": null,
+        "class": "coordinate_fallback_primary_bottom_tab",
+        "clickable": false,
+        "editable": false,
+        "checkable": false,
+        "selected": false,
+        "bounds": "coordinate_fallback",
+        "x": 0.5,
+        "y": 0.94,
+        "center": {
+          "x": 0.5,
+          "y": 0.94
+        },
+        "candidateCategory": "primary_bottom_tab",
+        "coordinateFallback": true,
+        "tags": [
+          "primary_bottom_tab",
+          "bottom_tab",
+          "coordinate_fallback"
+        ]
+      },
+      "beforeScreenKey": "c5b476c0",
+      "beforeSnapshotPath": null
+    },
+    {
+      "phase": "capture_after_primary_bottom_tab",
+      "status": "FAILED",
+      "attempts": 12,
+      "currentPackage": "com.tencent.mobileqq",
+      "windowClassName": "android.widget.TextView",
+      "nodeCount": 31
+    },
+    {
+      "phase": "primary_bottom_tab_sweep",
+      "status": "FAILED_NO_AFTER_SCREEN",
+      "message": "bottom tab tab_3 did not produce a readable page",
+      "path": null,
+      "timestamp": 1779338780025
+    },
+    {
+      "phase": "primary_bottom_tab_sweep",
+      "status": "RUNNING",
+      "message": "open bottom tab first: tab_4",
+      "path": null,
+      "timestamp": 1779338780025
+    },
+    {
+      "phase": "capture_before_primary_bottom_tab",
+      "status": "FAILED",
+      "attempts": 12,
+      "currentPackage": "com.tencent.mobileqq",
+      "windowClassName": "android.widget.TextView",
+      "nodeCount": 31
+    },
+    {
+      "phase": "tap_primary_bottom_tab",
+      "index": 5,
+      "label": "tab_4",
+      "success": true,
+      "message": "dispatchGesture tap sent (normalized=0.700,0.940 px=1008,2977 screen=1440x3168)",
+      "candidate": {
+        "index": 3,
+        "label": "tab_4",
+        "text": null,
+        "desc": null,
+        "resourceId": null,
+        "class": "coordinate_fallback_primary_bottom_tab",
+        "clickable": false,
+        "editable": false,
+        "checkable": false,
+        "selected": false,
+        "bounds": "coordinate_fallback",
+        "x": 0.7,
+        "y": 0.94,
+        "center": {
+          "x": 0.7,
+          "y": 0.94
+        },
+        "candidateCategory": "primary_bottom_tab",
+        "coordinateFallback": true,
+        "tags": [
+          "primary_bottom_tab",
+          "bottom_tab",
+          "coordinate_fallback"
+        ]
+      },
+      "beforeScreenKey": "c5b476c0",
+      "beforeSnapshotPath": null
+    },
+    {
+      "phase": "capture_after_primary_bottom_tab",
+      "status": "FAILED",
+      "attempts": 12,
+      "currentPackage": "com.tencent.mobileqq",
+      "windowClassName": "android.widget.FrameLayout",
+      "nodeCount": 31
+    },
+    {
+      "phase": "primary_bottom_tab_sweep",
+      "status": "FAILED_NO_AFTER_SCREEN",
+      "message": "bottom tab tab_4 did not produce a readable page",
+      "path": null,
+      "timestamp": 1779338789111
+    },
+    {
+      "phase": "primary_bottom_tab_sweep",
+      "status": "RUNNING",
+      "message": "open bottom tab first: tab_5",
+      "path": null,
+      "timestamp": 1779338789111
+    },
+    {
+      "phase": "capture_before_primary_bottom_tab",
+      "status": "FAILED",
+      "attempts": 12,
+      "currentPackage": "com.tencent.mobileqq",
+      "windowClassName": "android.widget.FrameLayout",
+      "nodeCount": 31
+    },
+    {
+      "phase": "tap_primary_bottom_tab",
+      "index": 6,
+      "label": "tab_5",
+      "success": true,
+      "message": "dispatchGesture tap sent (normalized=0.900,0.940 px=1296,2977 screen=1440x3168)",
+      "candidate": {
+        "index": 4,
+        "label": "tab_5",
+        "text": null,
+        "desc": null,
+        "resourceId": null,
+        "class": "coordinate_fallback_primary_bottom_tab",
+        "clickable": false,
+        "editable": false,
+        "checkable": false,
+        "selected": false,
+        "bounds": "coordinate_fallback",
+        "x": 0.9,
+        "y": 0.94,
+        "center": {
+          "x": 0.9,
+          "y": 0.94
+        },
+        "candidateCategory": "primary_bottom_tab",
+        "coordinateFallback": true,
+        "tags": [
+          "primary_bottom_tab",
+          "bottom_tab",
+          "coordinate_fallback"
+        ]
+      },
+      "beforeScreenKey": "c5b476c0",
+      "beforeSnapshotPath": null
+    },
+    {
+      "phase": "capture_after_primary_bottom_tab",
+      "status": "FAILED",
+      "attempts": 12,
+      "currentPackage": "com.tencent.mobileqq",
+      "windowClassName": "android.widget.TextView",
+      "nodeCount": 31
+    },
+    {
+      "phase": "primary_bottom_tab_sweep",
+      "status": "FAILED_NO_AFTER_SCREEN",
+      "message": "bottom tab tab_5 did not produce a readable page",
+      "path": null,
+      "timestamp": 1779338798191
+    },
+    {
+      "phase": "primary_center_action_candidates",
+      "count": 0,
+      "labels": [],
+      "message": "center +\/publish action is explored separately from bottom tabs"
+    },
+    {
+      "phase": "skip_deep_bfs",
+      "status": "SUCCESS",
+      "message": "primaryNavigationOnly=true; stopped after bottom tabs and first-level tab surfaces"
+    }
+  ],
+  "createdAt": 1779338730274,
+  "updatedAt": 1779338798233
+}

@@ -1,0 +1,525 @@
+{
+  "schemaVersion": 1,
+  "kind": "factory_ai_job",
+  "id": "factory_ai_replan_1778521509103",
+  "taskType": "RUNTIME_REPLAN_AFTER_FAILURE",
+  "phase": "REPLAN",
+  "trigger": "EXECUTION_FAILED",
+  "appPackage": "com.tencent.mm",
+  "relatedCandidateIds": [
+    "direct.command.1778521377050"
+  ],
+  "createdAt": 1778521509103,
+  "inputSummary": "EXECUTION_FAILED: FAILED_UI_SNAPSHOT_CAPTURE Captured only 1\/4 verified WeChat bottom tab snapshots. Tap dispatch alone is not success; events=[{\"phase\":\"tab_shell_probe\",\"index\":0,\"visible\":true,\"snapshot\":\"\\\/data\\\/user\\\/0\\\/com.macropilot.app\\\/files\\\/macro_v2\\\/factory\\\/ui_snapshots\\\/com.tencent.mm\\\/20260512_014302_709_83534165.json\",\"screenshotPath\":\"\\\/data\\\/user\\\/0\\\/com.macropilot.app\\\/files\\\/macro_v2\\\/factory\\\/ui_screenshots\\\/com.tencent.mm\\\/20260512_014302_709_83534165.png\",\"selectedEvidence",
+  "promptSnapshot": {
+    "taskType": "RUNTIME_REPLAN_AFTER_FAILURE",
+    "phase": "REPLAN",
+    "trigger": "EXECUTION_FAILED",
+    "instruction": "微信发一条朋友圈，内容是我是AI，设置为仅自己可见，然后发表",
+    "appPackage": "com.tencent.mm",
+    "failedSkillId": "direct.command.1778521377050",
+    "previousResult": {
+      "status": "FAILED_UI_SNAPSHOT_CAPTURE",
+      "message": "Captured only 1\/4 verified WeChat bottom tab snapshots. Tap dispatch alone is not success; events=[{\"phase\":\"tab_shell_probe\",\"index\":0,\"visible\":true,\"snapshot\":\"\\\/data\\\/user\\\/0\\\/com.macropilot.app\\\/files\\\/macro_v2\\\/factory\\\/ui_snapshots\\\/com.tencent.mm\\\/20260512_014302_709_83534165.json\",\"screenshotPath\":\"\\\/data\\\/user\\\/0\\\/com.macropilot.app\\\/files\\\/macro_v2\\\/factory\\\/ui_screenshots\\\/com.tencent.mm\\\/20260512_014302_709_83534165.png\",\"selectedEvidence\":{\"selectedIndex\":2,\"selectedScore\":19,\"scores\":[0,0,19,2],\"surfaceWarning\":null}},{\"phase\":\"capture_tab\",\"index\":0,\"tabKey\":\"wechat\",\"tabLabel\":\"微信\",\"accepted\":false,\"snapshot\":null,\"screenshotPath\":null,\"attempts\":[{\"attempt\":0,\"tapY\":0.965,\"usedCoordinate\":true,\"tapSuccess\":true,\"tapMessage\":\"dispatchGesture tap sent (normalized=0.125,0.965 px=180,3057 screen=1440x3168)\",\"snapshot\":\"\\\/data\\\/user\\\/0\\\/com.macropilot.app\\\/files\\\/macro_v2\\\/factory\\\/ui_snapshots\\\/com.tencent.mm\\\/20260512_014305_013_aa56726a.json\",\"screenshotPath\":\"\\\/data\\\/user\\\/0\\\/com.macropilot.app\\\/files\\\/macro_v2\\\/factory\\\/ui_screenshots\\\/com.tencent.mm\\\/20260512_014305_013_aa56726a.png\",\"visualHash\":\"076e147ba8fc0b993cc77c979a8ce5b35642fc3980385efef2d579c733c747bb\",\"duplicateVisualHash\":false,\"selectedEvidence\":{\"selectedIndex\":2,\"selectedScore\":19,\"scores\":[0,0,19,2],\"surfaceWarning\":null},\"accepted\":false},{\"attempt\":1,\"tapY\":0.985,\"usedCoordinate\":true,\"tapSuccess\":true,\"tapMessage\":\"dispatchGesture tap sent (normalized=0.125,0.985 px=180,3120 screen=1440x3168)\",\"snapshot\":\"\\\/data\\\/user\\\/0\\\/com.macropilot.app\\\/files\\\/macro_v2\\\/factory\\\/ui_snapshots\\\/com.tencent.mm\\\/20260512_014306_836_aa56726a.json\",\"screenshotPath\":\"\\\/data\\\/user\\\/0\\\/com.macropilot.app\\\/files\\\/macro_v2\\\/factory\\\/ui_screenshots\\\/com.tencent.mm\\\/20260512_014306_836_aa56726a.png\",\"visualHash\":\"1bed53303f9e92fad3bfa839bce2f79de764a48a78fd021c763e5f5ff65c6ddc\",\"duplicateVisualHash\":false,\"selectedEvidence\":{\"selectedIndex\":2,\"selectedScore\":19,\"scores\":[0,0,19,2],\"surfaceWarning\":null},\"accepted\":false},{\"attempt\":2,\"tapY\":0.945,\"usedCoordinate\":true,\"tapSuccess\":true,\"tapMessage\":\"dispatchGesture tap sent (normalized=0.125,0.945 px=180,2993 screen=1440x3168)\",\"snapshot\":\"\\\/data\\\/user\\\/0\\\/com.macropilot.app\\\/files\\\/macro_v2\\\/factory\\\/ui_snapshots\\\/com.tencent.mm\\\/20260512_014308_823_aa56726a.json\",\"screenshotPath\":\"\\\/data\\\/user\\\/0\\\/com.macropilot.app\\\/files\\\/macro_v2\\\/factory\\\/ui_screenshots\\\/com.tencent.mm\\\/20260512_014308_823_aa56726a.png\",\"visualHash\":\"fe836584fd2477d094",
+      "durationMs": 39916,
+      "usedCoordinate": true
+    },
+    "previousRuntimeReportFile": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/runtime\/run_reports\/com.tencent.mm\/ai_direct_run_1778521417180.json",
+    "currentUi": {
+      "serviceConnected": true,
+      "appPackage": "com.tencent.mm",
+      "windowClassName": "android.widget.LinearLayout",
+      "screenWidth": 1440,
+      "screenHeight": 3168,
+      "nodeCount": 2,
+      "snapshotPath": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_snapshots\/com.tencent.mm\/20260512_014337_270_7aaab248.json",
+      "recentUiSnapshots": [
+        {
+          "id": "ui_snapshot_1778521417561",
+          "source": "current_ui_summary",
+          "note": "factory_ai_context",
+          "appPackage": "com.tencent.mm",
+          "windowClassName": "android.widget.LinearLayout",
+          "screenKey": "7aaab248",
+          "screenshotPath": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_screenshots\/com.tencent.mm\/20260512_014337_270_7aaab248.png",
+          "visualHash": "e09908b648c03d5fb6d2032f2ebbcad2866add62effd5e1c5a2375fbcca48693",
+          "summary": {
+            "nodeCount": 2,
+            "clickableCount": 0,
+            "editableCount": 0,
+            "scrollableCount": 0,
+            "labels": [],
+            "bottomCandidates": []
+          },
+          "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_snapshots\/com.tencent.mm\/20260512_014337_270_7aaab248.json"
+        },
+        {
+          "id": "ui_snapshot_1778521417179",
+          "source": "macro_atom_failed",
+          "note": "index=2; skillId=direct.1778521377050.3.capturewechatbottomtabs; status=FAILED_UI_SNAPSHOT_CAPTURE; Captured only 1\/4 verified WeChat bottom tab snapshots. Tap dispatch alone is not success; events=[{\"phase\":\"tab_shell_probe\",\"index\":0,\"visible\":true,\"snapshot\":\"\\\/data\\\/user\\\/0\\\/",
+          "appPackage": "com.tencent.mm",
+          "windowClassName": "android.widget.FrameLayout",
+          "screenKey": "aa56726a",
+          "screenshotPath": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_screenshots\/com.tencent.mm\/20260512_014336_639_aa56726a.png",
+          "visualHash": "933354497aa57fffcfca89c55702188da0973999ba03be72e8e021b93178e8ff",
+          "summary": {
+            "nodeCount": 2,
+            "clickableCount": 0,
+            "editableCount": 0,
+            "scrollableCount": 0,
+            "labels": [],
+            "bottomCandidates": []
+          },
+          "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_snapshots\/com.tencent.mm\/20260512_014336_639_aa56726a.json"
+        },
+        {
+          "id": "ui_snapshot_1778521416630",
+          "source": "action_failed",
+          "note": "direct.1778521377050.3.capturewechatbottomtabs:CaptureWechatBottomTabs:FAILED_UI_SNAPSHOT_CAPTURE:Captured only 1\/4 verified WeChat bottom tab snapshots. Tap dispatch alone is not success; events=[{\"phase\":\"tab_shell_probe\",\"index\":0,\"visible\":true,\"snapshot\":\"\\\/data\\\/user\\\/0\\\/",
+          "appPackage": "com.tencent.mm",
+          "windowClassName": "android.widget.FrameLayout",
+          "screenKey": "aa56726a",
+          "screenshotPath": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_screenshots\/com.tencent.mm\/20260512_014336_324_aa56726a.png",
+          "visualHash": "1bed53303f9e92fad3bfa839bce2f79de764a48a78fd021c763e5f5ff65c6ddc",
+          "summary": {
+            "nodeCount": 2,
+            "clickableCount": 0,
+            "editableCount": 0,
+            "scrollableCount": 0,
+            "labels": [],
+            "bottomCandidates": []
+          },
+          "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_snapshots\/com.tencent.mm\/20260512_014336_324_aa56726a.json"
+        },
+        {
+          "id": "ui_snapshot_1778521416281",
+          "source": "wechat_bottom_tab_capture",
+          "note": "me:我; attempt=4; click=true; reactive=0",
+          "appPackage": "com.tencent.mm",
+          "windowClassName": "android.widget.FrameLayout",
+          "screenKey": "aa56726a",
+          "screenshotPath": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_screenshots\/com.tencent.mm\/20260512_014335_982_aa56726a.png",
+          "visualHash": "1bed53303f9e92fad3bfa839bce2f79de764a48a78fd021c763e5f5ff65c6ddc",
+          "summary": {
+            "nodeCount": 2,
+            "clickableCount": 0,
+            "editableCount": 0,
+            "scrollableCount": 0,
+            "labels": [],
+            "bottomCandidates": []
+          },
+          "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_snapshots\/com.tencent.mm\/20260512_014335_982_aa56726a.json"
+        }
+      ],
+      "capability": {
+        "nodeReadability": "C",
+        "inputCapability": "NONE",
+        "verificationCapability": "LOW"
+      },
+      "nodes": [
+        {
+          "class": "android.widget.FrameLayout",
+          "clickable": false,
+          "editable": false,
+          "scrollable": false,
+          "bounds": "0 160 1440 3104"
+        },
+        {
+          "clickable": false,
+          "editable": false,
+          "scrollable": false,
+          "bounds": "0 0 0 0"
+        }
+      ],
+      "blockingDialogs": [],
+      "clickTargets": [],
+      "bottomTabs": [],
+      "videoCandidates": []
+    },
+    "recentUiSnapshots": [
+      {
+        "id": "ui_snapshot_1778521417561",
+        "source": "current_ui_summary",
+        "note": "factory_ai_context",
+        "appPackage": "com.tencent.mm",
+        "windowClassName": "android.widget.LinearLayout",
+        "screenKey": "7aaab248",
+        "screenshotPath": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_screenshots\/com.tencent.mm\/20260512_014337_270_7aaab248.png",
+        "visualHash": "e09908b648c03d5fb6d2032f2ebbcad2866add62effd5e1c5a2375fbcca48693",
+        "summary": {
+          "nodeCount": 2,
+          "clickableCount": 0,
+          "editableCount": 0,
+          "scrollableCount": 0,
+          "labels": [],
+          "bottomCandidates": []
+        },
+        "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_snapshots\/com.tencent.mm\/20260512_014337_270_7aaab248.json"
+      },
+      {
+        "id": "ui_snapshot_1778521417179",
+        "source": "macro_atom_failed",
+        "note": "index=2; skillId=direct.1778521377050.3.capturewechatbottomtabs; status=FAILED_UI_SNAPSHOT_CAPTURE; Captured only 1\/4 verified WeChat bottom tab snapshots. Tap dispatch alone is not success; events=[{\"phase\":\"tab_shell_probe\",\"index\":0,\"visible\":true,\"snapshot\":\"\\\/data\\\/user\\\/0\\\/",
+        "appPackage": "com.tencent.mm",
+        "windowClassName": "android.widget.FrameLayout",
+        "screenKey": "aa56726a",
+        "screenshotPath": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_screenshots\/com.tencent.mm\/20260512_014336_639_aa56726a.png",
+        "visualHash": "933354497aa57fffcfca89c55702188da0973999ba03be72e8e021b93178e8ff",
+        "summary": {
+          "nodeCount": 2,
+          "clickableCount": 0,
+          "editableCount": 0,
+          "scrollableCount": 0,
+          "labels": [],
+          "bottomCandidates": []
+        },
+        "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_snapshots\/com.tencent.mm\/20260512_014336_639_aa56726a.json"
+      },
+      {
+        "id": "ui_snapshot_1778521416630",
+        "source": "action_failed",
+        "note": "direct.1778521377050.3.capturewechatbottomtabs:CaptureWechatBottomTabs:FAILED_UI_SNAPSHOT_CAPTURE:Captured only 1\/4 verified WeChat bottom tab snapshots. Tap dispatch alone is not success; events=[{\"phase\":\"tab_shell_probe\",\"index\":0,\"visible\":true,\"snapshot\":\"\\\/data\\\/user\\\/0\\\/",
+        "appPackage": "com.tencent.mm",
+        "windowClassName": "android.widget.FrameLayout",
+        "screenKey": "aa56726a",
+        "screenshotPath": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_screenshots\/com.tencent.mm\/20260512_014336_324_aa56726a.png",
+        "visualHash": "1bed53303f9e92fad3bfa839bce2f79de764a48a78fd021c763e5f5ff65c6ddc",
+        "summary": {
+          "nodeCount": 2,
+          "clickableCount": 0,
+          "editableCount": 0,
+          "scrollableCount": 0,
+          "labels": [],
+          "bottomCandidates": []
+        },
+        "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_snapshots\/com.tencent.mm\/20260512_014336_324_aa56726a.json"
+      },
+      {
+        "id": "ui_snapshot_1778521416281",
+        "source": "wechat_bottom_tab_capture",
+        "note": "me:我; attempt=4; click=true; reactive=0",
+        "appPackage": "com.tencent.mm",
+        "windowClassName": "android.widget.FrameLayout",
+        "screenKey": "aa56726a",
+        "screenshotPath": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_screenshots\/com.tencent.mm\/20260512_014335_982_aa56726a.png",
+        "visualHash": "1bed53303f9e92fad3bfa839bce2f79de764a48a78fd021c763e5f5ff65c6ddc",
+        "summary": {
+          "nodeCount": 2,
+          "clickableCount": 0,
+          "editableCount": 0,
+          "scrollableCount": 0,
+          "labels": [],
+          "bottomCandidates": []
+        },
+        "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_snapshots\/com.tencent.mm\/20260512_014335_982_aa56726a.json"
+      },
+      {
+        "id": "ui_snapshot_1778521414151",
+        "source": "wechat_bottom_tab_capture",
+        "note": "me:我; attempt=3; click=true; reactive=0",
+        "appPackage": "com.tencent.mm",
+        "windowClassName": "android.widget.FrameLayout",
+        "screenKey": "aa56726a",
+        "screenshotPath": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_screenshots\/com.tencent.mm\/20260512_014333_843_aa56726a.png",
+        "visualHash": "4e875c47d6029ff837964b97750ded2477d091a437f86f10d288eaf5e1a95004",
+        "summary": {
+          "nodeCount": 2,
+          "clickableCount": 0,
+          "editableCount": 0,
+          "scrollableCount": 0,
+          "labels": [],
+          "bottomCandidates": []
+        },
+        "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_snapshots\/com.tencent.mm\/20260512_014333_843_aa56726a.json"
+      },
+      {
+        "id": "ui_snapshot_1778521412011",
+        "source": "wechat_bottom_tab_capture",
+        "note": "me:我; attempt=2; click=true; reactive=0",
+        "appPackage": "com.tencent.mm",
+        "windowClassName": "android.widget.FrameLayout",
+        "screenKey": "aa56726a",
+        "screenshotPath": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_screenshots\/com.tencent.mm\/20260512_014331_721_aa56726a.png",
+        "visualHash": "370ba94cb07cce93c55a8cee1439721d84baf9b6ca4199b1bb9dc6e2a1e47fd7",
+        "summary": {
+          "nodeCount": 2,
+          "clickableCount": 0,
+          "editableCount": 0,
+          "scrollableCount": 0,
+          "labels": [],
+          "bottomCandidates": []
+        },
+        "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_snapshots\/com.tencent.mm\/20260512_014331_721_aa56726a.json"
+      },
+      {
+        "id": "ui_snapshot_1778521410070",
+        "source": "wechat_bottom_tab_capture",
+        "note": "me:我; attempt=1; click=true; reactive=0",
+        "appPackage": "com.tencent.mm",
+        "windowClassName": "android.widget.FrameLayout",
+        "screenKey": "aa56726a",
+        "screenshotPath": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_screenshots\/com.tencent.mm\/20260512_014329_717_aa56726a.png",
+        "visualHash": "9b995fc5755a763c7ed54431726ce90be0ca8f08f520fa72287e4a3cf834eb5d",
+        "summary": {
+          "nodeCount": 2,
+          "clickableCount": 0,
+          "editableCount": 0,
+          "scrollableCount": 0,
+          "labels": [],
+          "bottomCandidates": []
+        },
+        "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_snapshots\/com.tencent.mm\/20260512_014329_717_aa56726a.json"
+      },
+      {
+        "id": "ui_snapshot_1778521408236",
+        "source": "wechat_bottom_tab_capture",
+        "note": "me:我; attempt=0; click=true; reactive=0",
+        "appPackage": "com.tencent.mm",
+        "windowClassName": "android.widget.FrameLayout",
+        "screenKey": "aa56726a",
+        "screenshotPath": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_screenshots\/com.tencent.mm\/20260512_014327_877_aa56726a.png",
+        "visualHash": "9b995fc5755a763c7ed54431726ce90be0ca8f08f520fa72287e4a3cf834eb5d",
+        "summary": {
+          "nodeCount": 2,
+          "clickableCount": 0,
+          "editableCount": 0,
+          "scrollableCount": 0,
+          "labels": [],
+          "bottomCandidates": []
+        },
+        "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_snapshots\/com.tencent.mm\/20260512_014327_877_aa56726a.json"
+      },
+      {
+        "id": "ui_snapshot_1778521407570",
+        "source": "accessibility_auto",
+        "note": "TYPE_WINDOW_CONTENT_CHANGED",
+        "appPackage": "com.tencent.mm",
+        "windowClassName": "android.widget.FrameLayout",
+        "screenKey": "aa56726a",
+        "screenshotPath": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_screenshots\/com.tencent.mm\/20260512_014327_177_aa56726a.png",
+        "visualHash": "9b995fc5755a763c7ed54431726ce90be0ca8f08f520fa72287e4a3cf834eb5d",
+        "summary": {
+          "nodeCount": 2,
+          "clickableCount": 0,
+          "editableCount": 0,
+          "scrollableCount": 0,
+          "labels": [],
+          "bottomCandidates": []
+        },
+        "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_snapshots\/com.tencent.mm\/20260512_014327_177_aa56726a.json"
+      },
+      {
+        "id": "ui_snapshot_1778521406574",
+        "source": "wechat_tab_shell_guard",
+        "note": "before_tab_tap",
+        "appPackage": "com.tencent.mm",
+        "windowClassName": "android.widget.FrameLayout",
+        "screenKey": "aa56726a",
+        "screenshotPath": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_screenshots\/com.tencent.mm\/20260512_014326_303_aa56726a.png",
+        "visualHash": "9b995fc5755a763c7ed54431726ce90be0ca8f08f520fa72287e4a3cf834eb5d",
+        "summary": {
+          "nodeCount": 2,
+          "clickableCount": 0,
+          "editableCount": 0,
+          "scrollableCount": 0,
+          "labels": [],
+          "bottomCandidates": []
+        },
+        "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_snapshots\/com.tencent.mm\/20260512_014326_303_aa56726a.json"
+      }
+    ],
+    "recentFlowSteps": [
+      {
+        "title": "用户指令进入手机端执行器",
+        "status": "RUNNING",
+        "message": "主输入不再只生成文件：App 将调用 AI，生成可审计 JSON，再由 SkillJsonExecutor 直接执行候选能力。",
+        "path": "null"
+      },
+      {
+        "title": "手机端相似 Skill 自适应规划",
+        "status": "SUCCESS",
+        "message": "本机先复用抖音\/小红书成功模式：识别 intent=wechat_moment_private_post，改写出 19 个细粒度步骤；AI v4pro 只在失败或二次判断时接管。",
+        "path": "null"
+      },
+      {
+        "title": "相似成功案例改写为 Skill JSON",
+        "status": "SUCCESS",
+        "message": "不靠 ADB 拼流程；App 底层把 intent=wechat_moment_private_post 拆成 20 个 candidate JSON，之后统一 dry-run、执行、失败再让 v4pro 二次判断。",
+        "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_candidates\/com.tencent.mm\/direct.command.1778521377050.json"
+      },
+      {
+        "title": "dry-run 静态检查",
+        "status": "SUCCESS",
+        "message": "通过 20\/20。",
+        "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_dry_run_reports\/com.tencent.mm\/direct.command.1778521377050_1778521377086.json"
+      },
+      {
+        "title": "拼装 app_config 预览",
+        "status": "SUCCESS",
+        "message": "候选\/测试产物已拼为单个 app_config 预览。",
+        "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/app_config_exports\/com.tencent.mm\/app_config_20260512_014257_179.json"
+      },
+      {
+        "title": "执行候选 JSON",
+        "status": "RUNNING",
+        "message": "不等待 APPROVED：按用户要求，直接由 SkillJsonExecutor 执行候选 macro=direct.command.1778521377050。",
+        "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_candidates\/com.tencent.mm\/direct.command.1778521377050.json"
+      },
+      {
+        "title": "候选 JSON 执行结果",
+        "status": "FAILED_UI_SNAPSHOT_CAPTURE",
+        "message": "direct.command.1778521377050 -> FAILED_UI_SNAPSHOT_CAPTURE；Captured only 1\/4 verified WeChat bottom tab snapshots. Tap dispatch alone is not success; events=[{\"phase\":\"tab_shell_probe\",\"index\":0,\"visible\":true,\"snapshot\":\"\\\/data\\\/user\\\/0\\\/com.macropilot.app\\\/f",
+        "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/runtime\/run_reports\/com.tencent.mm\/ai_direct_run_1778521417180.json"
+      },
+      {
+        "title": "失败后 AI 判断",
+        "status": "RUNNING",
+        "message": "当前不是直接停下：App 把失败原因、当前屏幕节点和已跑步骤发给手机端 AI，让 AI 判断下一段补救 JSON。",
+        "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/runtime\/run_reports\/com.tencent.mm\/ai_direct_run_1778521417180.json"
+      }
+    ],
+    "outputContract": {
+      "decision": {
+        "goalCompleted": false,
+        "screenAssessment": "当前页面是什么，看到哪些关键节点",
+        "failureDiagnosis": "失败\/歧义原因，例如搜索结果页、详情页、节点缺失、输入失败、需要返回",
+        "confidence": "HIGH | MEDIUM | LOW",
+        "nextActionReason": "为什么选择下一步动作"
+      },
+      "steps": [
+        {
+          "type": "ClickVisibleText",
+          "text": "可见文字"
+        },
+        {
+          "type": "ClickSelector",
+          "selector": "[text='搜索'][clickable=true]"
+        },
+        {
+          "type": "ClickCoordinate",
+          "x": 0.5,
+          "y": 0.3
+        },
+        {
+          "type": "TypeIntoFirstInput",
+          "text": "输入内容"
+        },
+        {
+          "type": "TypeIntoFocusedInput",
+          "text": "输入到当前聚焦框"
+        },
+        {
+          "type": "ScrollForward"
+        },
+        {
+          "type": "Back"
+        },
+        {
+          "type": "HandleReactiveOverlays",
+          "maxPasses": 3
+        },
+        {
+          "type": "FindEntryByBottomTabSweep",
+          "entryAliases": [
+            "发帖",
+            "发布",
+            "创作",
+            "搜索",
+            "消息",
+            "+"
+          ],
+          "maxTabs": 5
+        },
+        {
+          "type": "EnsureHupuSectionSelected"
+        },
+        {
+          "type": "Wait",
+          "timeoutMs": 800
+        }
+      ],
+      "candidates": "optional fine-grained SkillCandidate JSON array"
+    },
+    "rules": [
+      "先判断当前屏幕，再给下一小段动作。",
+      "失败后不要重复整条旧计划，只输出能够把当前页面推进一步的 1-5 个 steps。",
+      "如果当前在搜索结果页并且用户要第一个视频，就优先打开第一个视频结果。",
+      "如果当前在视频详情页并且用户要点赞，就优先找“点赞\/赞\/like”节点；节点不可读时才用低置信坐标。",
+      "你会收到 currentUi.clickTargets 和 currentUi.videoCandidates。点击哪个视频必须基于这些候选：在 decision.nextActionReason 写 targetCandidateIndex、候选文本\/描述\/bounds 和选择理由。",
+      "如果用户说“第一个视频”，选择 videoCandidates 中第一个位于内容区且不是搜索栏\/返回\/清除按钮的候选；如果没有候选或还在 loading，只能 Wait 或 ScrollForward，不能乱点。",
+      "如果目标是打开第一个视频，不能只因为搜索结果页出现“视频\/播放\/王老菊”就说 goalCompleted=true；必须看到视频详情页\/播放页证据，并且搜索输入框和结果页 tabs 已经不在当前页面。",
+      "如果目标是发小红书\/写小红书草稿，不能只因为打开了小红书或点过底部加号就说 goalCompleted=true；必须看到草稿编辑页证据，并且看到标题或正文文本已经写入。",
+      "小红书草稿任务优先找 currentUi.clickTargets 中 tags 包含 create_control、draft_editor、title_input、body_input、next_step 的节点；没有可靠节点时才使用低置信坐标：底部创作入口一般 x=0.50 y=0.935，标题区域 x=0.50 y=0.34，正文区域 x=0.50 y=0.49。",
+      "小红书任务默认只写草稿，除非用户明确说“现在发布\/确认发布”，否则不要点击最终发布按钮。",
+      "currentUi.blockingDialogs 是硬证据：如果包含 ad_or_splash，先关闭\/跳过广告；如果包含 hupu_section_required，说明虎扑发帖被专区选择拦住，下一步必须选择专区\/板块，不能继续 Wait 或重复原计划。",
+      "如果你选择候选，steps 应使用 ClickCoordinate，并使用该候选 center.x\/center.y；不要自己编造 selector。",
+      "ClickSelector 只能使用简单选择器：[text='文字']、[text*='文字']、[desc='描述']、[desc*='描述']、[resourceId='完整id']、[class='完整类名'][clickable=true]。不要输出 >、:first-child、空格层级选择器或 CSS\/XPath。",
+      "如果只能判断大概位置，直接输出 ClickCoordinate，搜索结果第一个视频一般可先尝试 x=0.50 y=0.36；视频详情点赞区域一般可先尝试 x=0.26 y=0.86，但必须低置信并等待验证。",
+      "如果目标已经完成，decision.goalCompleted=true 且 steps=[]。",
+      "所有坐标必须是 0..1 归一化坐标。"
+    ]
+  },
+  "aiStatus": "SUCCESS",
+  "aiMessage": "AI Assist request completed",
+  "provider": "OPENAI_COMPAT_CHAT",
+  "httpStatus": 200,
+  "model": "deepseek-v4-pro",
+  "baseUrlHost": "api.deepseek.com",
+  "rawResponse": {
+    "provider": "OPENAI_COMPAT_CHAT",
+    "responseId": "5fe7f656-e58f-44c1-b062-8d104a85eb32",
+    "model": "deepseek-v4-pro",
+    "output": {
+      "decision": {
+        "goalCompleted": false,
+        "screenAssessment": "当前屏幕节点极少（仅2个），窗口为LinearLayout，无任何可点击或可编辑元素。根据日志，之前多次tap发送至x=0.125（‘微信’聊天tab），而非‘发现’或‘我’tab，导致未切换成功。当前页面可能仍停留在微信会话列表或因节点缺失无法确认，但无广告或异常弹窗。",
+        "failureDiagnosis": "上次失败原因为错误地将‘我’tab的点击坐标分配到了x=0.125，实际上‘发现’tab位于x=0.625，‘我’tab位于x=0.875。所有tap均点击了聊天tab，故切换失败。",
+        "confidence": "MEDIUM",
+        "nextActionReason": "修正坐标，直接点击底部第三tab‘发现’(x=0.625, y=0.97)，以进入发现页面，然后点击‘朋友圈’入口坐标，再点击右上角拍照图标进入编辑页。由于UI树缺失，所有步骤均使用归一化坐标点击。"
+      },
+      "steps": [
+        {
+          "type": "ClickCoordinate",
+          "x": 0.625,
+          "y": 0.97
+        },
+        {
+          "type": "Wait",
+          "timeoutMs": 1500
+        },
+        {
+          "type": "ClickCoordinate",
+          "x": 0.5,
+          "y": 0.18
+        },
+        {
+          "type": "Wait",
+          "timeoutMs": 1000
+        },
+        {
+          "type": "ClickCoordinate",
+          "x": 0.93,
+          "y": 0.08
+        }
+      ]
+    },
+    "rawOutputText": "{\n  \"decision\": {\n    \"goalCompleted\": false,\n    \"screenAssessment\": \"当前屏幕节点极少（仅2个），窗口为LinearLayout，无任何可点击或可编辑元素。根据日志，之前多次tap发送至x=0.125（‘微信’聊天tab），而非‘发现’或‘我’tab，导致未切换成功。当前页面可能仍停留在微信会话列表或因节点缺失无法确认，但无广告或异常弹窗。\",\n    \"failureDiagnosis\": \"上次失败原因为错误地将‘我’tab的点击坐标分配到了x=0.125，实际上‘发现’tab位于x=0.625，‘我’tab位于x=0.875。所有tap均点击了聊天tab，故切换失败。\",\n    \"confidence\": \"MEDIUM\",\n    \"nextActionReason\": \"修正坐标，直接点击底部第三tab‘发现’(x=0.625, y=0.97)，以进入发现页面，然后点击‘朋友圈’入口坐标，再点击右上角拍照图标进入编辑页。由于UI树缺失，所有步骤均使用归一化坐标点击。\"\n  },\n  \"steps\": [\n    {\n      \"type\": \"ClickCoordinate\",\n      \"x\": 0.625,\n      \"y\": 0.97\n    },\n    {\n      \"type\": \"Wait\",\n      \"timeoutMs\": 1500\n    },\n    {\n      \"type\": \"ClickCoordinate\",\n      \"x\": 0.5,\n      \"y\": 0.18\n    },\n    {\n      \"type\": \"Wait\",\n      \"timeoutMs\": 1000\n    },\n    {\n      \"type\": \"ClickCoordinate\",\n      \"x\": 0.93,\n      \"y\": 0.08\n    }\n  ]\n}"
+  },
+  "parsedJson": {
+    "decision": {
+      "goalCompleted": false,
+      "screenAssessment": "当前屏幕节点极少（仅2个），窗口为LinearLayout，无任何可点击或可编辑元素。根据日志，之前多次tap发送至x=0.125（‘微信’聊天tab），而非‘发现’或‘我’tab，导致未切换成功。当前页面可能仍停留在微信会话列表或因节点缺失无法确认，但无广告或异常弹窗。",
+      "failureDiagnosis": "上次失败原因为错误地将‘我’tab的点击坐标分配到了x=0.125，实际上‘发现’tab位于x=0.625，‘我’tab位于x=0.875。所有tap均点击了聊天tab，故切换失败。",
+      "confidence": "MEDIUM",
+      "nextActionReason": "修正坐标，直接点击底部第三tab‘发现’(x=0.625, y=0.97)，以进入发现页面，然后点击‘朋友圈’入口坐标，再点击右上角拍照图标进入编辑页。由于UI树缺失，所有步骤均使用归一化坐标点击。"
+    },
+    "planStepCount": 5,
+    "aiCandidateCount": 0,
+    "goalCompleted": false
+  },
+  "parseSuccess": true,
+  "errors": [],
+  "accepted": true,
+  "acceptedBy": "APP_SIDE_RUNTIME_REPLAN",
+  "acceptedAt": 1778521509104
+}

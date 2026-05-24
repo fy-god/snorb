@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "kind": "skill_json_bilibili_open_first_video_fallback_report",
+  "id": "bilibili_open_first_video_1778526830598",
+  "skillId": "direct.command.1778526825829",
+  "appPackage": "tv.danmaku.bili",
+  "instruction": "打开哔哩哔哩搜索王老菊打开第一个视频",
+  "engine": "local_video_candidate_resolver",
+  "status": "SUCCESS_LOW_CONFIDENCE",
+  "message": "Macro atoms completed; reactiveDismissed=0",
+  "durationMs": 4507,
+  "usedCoordinate": true,
+  "allowSideEffect": true,
+  "selectedCandidate": {
+    "text": "进来来和UP唠会嗑呗",
+    "desc": null,
+    "resourceId": "tv.danmaku.bili:id\/edit",
+    "class": "android.widget.EditText",
+    "clickable": true,
+    "bounds": "48 2470 1328 2671",
+    "center": {
+      "x": 0.4777777777777778,
+      "y": 0.8112373737373737
+    },
+    "score": 23,
+    "hasVideoEvidence": false,
+    "hasQueryEvidence": false
+  },
+  "skillFile": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_candidates\/tv.danmaku.bili\/direct.command.1778526825829.json",
+  "createdAt": 1778526830598
+}

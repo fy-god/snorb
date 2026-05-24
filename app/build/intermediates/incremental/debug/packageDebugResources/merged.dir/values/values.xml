@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="accessibility_service_description">Reads UI nodes locally for MacroPilot node inspection and capability profiling.</string>
+    <string name="accessibility_service_label">MacroPilot Runtime</string>
+    <string name="app_name">MacroPilot</string>
+    <string name="ime_service_label">MacroPilot IME</string>
+    <style name="AppTheme" parent="@android:style/Theme.Material.NoActionBar">
+        <item name="android:fontFamily">sans</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:statusBarColor">#080D18</item>
+        <item name="android:navigationBarColor">#181C2B</item>
+        <item name="android:windowLightNavigationBar">false</item>
+        <item name="android:colorAccent">#B4C5FF</item>
+    </style>
+</resources>

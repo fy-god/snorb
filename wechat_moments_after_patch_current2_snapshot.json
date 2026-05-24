@@ -1,0 +1,95 @@
+{
+  "schemaVersion": 1,
+  "kind": "ui_state_snapshot",
+  "id": "ui_snapshot_1778524648637",
+  "source": "accessibility_auto",
+  "note": "TYPE_WINDOW_STATE_CHANGED",
+  "screenshotPath": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_screenshots\/com.tencent.mm\/20260512_023728_390_7aaab248.png",
+  "screenshotSha256": "101bb08192afacaf8d909a771211acad7ba2b9a51f8bdf434255bcc96310e708",
+  "visualHash": "e2a5ec2b20215c0016a30d7d167c8fd55470e579a4e858ec4427f80bacd4059c",
+  "screenshotSizeBytes": 174991,
+  "appPackage": "com.tencent.mm",
+  "windowClassName": "android.widget.LinearLayout",
+  "screenKey": "7aaab248",
+  "relatedSkillId": null,
+  "relatedActionType": null,
+  "capability": {
+    "nodeReadability": "C",
+    "inputCapability": "NONE",
+    "verificationCapability": "LOW",
+    "coordinateFallback": "AVAILABLE",
+    "serviceState": "CONNECTED",
+    "reason": "nodes=2, textLike=0, clickable=0, editable=0, scrollable=0"
+  },
+  "state": {
+    "appPackage": "com.tencent.mm",
+    "windowClassName": "android.widget.LinearLayout",
+    "screenWidth": 1440,
+    "screenHeight": 3168,
+    "timestamp": 1778524648389,
+    "nodes": [
+      {
+        "nodeId": "0_0_144_1375_1296_1889",
+        "packageName": "com.tencent.mm",
+        "text": null,
+        "contentDesc": null,
+        "resourceId": null,
+        "className": "android.widget.FrameLayout",
+        "bounds": {
+          "left": 144,
+          "top": 1375,
+          "right": 1296,
+          "bottom": 1889
+        },
+        "clickable": false,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 0,
+        "parentRoleHint": null
+      },
+      {
+        "nodeId": "1_1_0_0_0_0",
+        "packageName": "com.tencent.mm",
+        "text": null,
+        "contentDesc": null,
+        "resourceId": null,
+        "className": null,
+        "bounds": {
+          "left": 0,
+          "top": 0,
+          "right": 0,
+          "bottom": 0
+        },
+        "clickable": false,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": false,
+        "selected": false,
+        "depth": 1,
+        "parentRoleHint": "android.widget.FrameLayout"
+      }
+    ],
+    "eventsSinceLastState": [
+      {
+        "eventType": "TYPE_WINDOW_STATE_CHANGED",
+        "packageName": "com.macropilot.app",
+        "className": "android.widget.LinearLayout",
+        "text": "进行中 · 失败后 AI 判断 当前不是直接停下：App 把失败原因、当前屏幕节点和已跑步骤发给手机端 AI，让 AI 判断下一段补救 JSON。",
+        "timestamp": 1778524647961
+      }
+    ]
+  },
+  "summary": {
+    "nodeCount": 2,
+    "clickableCount": 0,
+    "editableCount": 0,
+    "scrollableCount": 0,
+    "labels": [],
+    "bottomCandidates": []
+  },
+  "createdAt": 1778524648637
+}

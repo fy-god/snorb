@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "kind": "third_party_app_batch_service_state",
+  "id": "third_party_batch_1779377921012",
+  "requestId": "third_party_batch_1779377921012",
+  "status": "RUNNING",
+  "message": "正在深探 虎扑(com.hupu.games)：primary_tab_surface_entry\/SUCCESS，tab=bottom_tab_2 graphical_ui 参与讨论 changed=true nodes=128，elapsed=140551ms",
+  "requestedPackages": [
+    "tv.danmaku.bili",
+    "com.xunmeng.pinduoduo",
+    "com.hupu.games"
+  ],
+  "progress": {
+    "phase": "UI_PROBE_EVENT",
+    "packageName": "com.hupu.games",
+    "label": "虎扑",
+    "uiPhase": "primary_tab_surface_entry",
+    "uiStatus": "SUCCESS",
+    "uiMessage": "tab=bottom_tab_2 graphical_ui 参与讨论 changed=true nodes=128",
+    "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_snapshots\/com.hupu.games\/20260521_234706_364_65e6c23d.json",
+    "elapsedMs": 140551
+  },
+  "payload": null,
+  "createdAt": 1779378426688
+}

@@ -1,0 +1,55 @@
+{
+  "schemaVersion": 1,
+  "kind": "skill_json_ai_follow_up_run_report",
+  "id": "ai_follow_up_run_1778526825822",
+  "skillId": "direct.command.1778526795856",
+  "failedSkillId": "bilibili.search.search_in_app",
+  "appPackage": "tv.danmaku.bili",
+  "instruction": "打开哔哩哔哩搜索王老菊打开第一个视频",
+  "engine": "ai_runtime_replan",
+  "phase": "REPLAN",
+  "trigger": "GOAL_UNVERIFIED_LOOP_1",
+  "previousStatus": "FAILED_GOAL_UNVERIFIED",
+  "previousMessage": "当前仍像搜索结果页：搜索输入框或“综合\/视频\/用户”等结果页 tabs 还在，不能报告第一个视频已打开。",
+  "previousRuntimeReportFile": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/runtime\/run_reports\/tv.danmaku.bili\/bottom_tab_entry_sweep_1778526656405.json",
+  "aiJobFile": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ai_jobs\/2026-05-12\/factory_ai_replan_1778526795842.json",
+  "decision": {
+    "goalCompleted": false,
+    "screenAssessment": "当前页面显示聊天\/消息页面，顶部有“郑郑得证”标题，底部有消息输入框和“发个消息聊聊呗”提示，不是搜索结果页或视频播放页。",
+    "failureDiagnosis": "之前的操作可能误入了消息页面，未到达搜索功能，需要返回首页重新搜索。",
+    "confidence": "MEDIUM",
+    "nextActionReason": "先通过底部分页扫描确保回到首页，然后点击顶部搜索按钮进入搜索页面。"
+  },
+  "approvedRequired": false,
+  "status": "FAILED_ELEMENT_NOT_FOUND",
+  "message": "Bottom-tab sweep did not find entry aliases=首页\/home; tabsVisited=5; events=[{\"phase\":\"open_before_recover\",\"packageName\":\"tv.danmaku.bili\",\"success\":true,\"message\":\"Launch intent sent for tv.danmaku.bili\"},{\"phase\":\"home_back\",\"index\":1,\"fromPackage\":\"tv.danmaku.bili\",\"window\":null,\"success\":true,\"message\":\"GLOBAL_ACTION_BACK performed\"},{\"phase\":\"home_back\",\"index\":2,\"fromPackage\":\"tv.danmaku.bili\",\"window\":\"android.view.View\",\"success\":true,\"message\":\"GLOBAL_ACTION_BACK performed\"},{\"phase\":\"home_back\",\"index\":3,\"fromPackage\":\"tv.danmaku.bili\",\"window\":\"android.widget.FrameLayout\",\"success\":true,\"message\":\"GLOBAL_ACTION_BACK performed\"},{\"phase\":\"open_after_recover\",\"packageName\":\"tv.danmaku.bili\",\"success\":true,\"message\":\"Launch intent sent for tv.danmaku.bili\"},{\"phase\":\"close_transient_sheet\",\"index\":1,\"window\":null,\"method\":\"cancel_button_or_text\",\"success\":true,\"message\":\"ACTION_CLICK performed\",\"labels\":[\"tv.danmaku.bili:id\\\/action_bar_root\",\"android:id\\\/content\",\"tv.danmaku.bili:id\\\/rl_top_content\",\"tv.danmaku.bili:id\\\/blank_layout\",\"tv.danmaku.bili:id\\\/content_layout\",\"tv.danmaku.bili:id\\\/recycler\",\"分享 tv.danmaku.bili:id\\\/title\",\"tv.danmaku.bili:id\\\/recycler\",\"QQ tv.danmaku.bili:id\\\/item\",\"QQ空间 tv.danmaku.bili:id\\\/item\",\"微信 tv.danmaku.bili:id\\\/item\",\"朋友圈 tv.danmaku.bili:id\\\/item\"]},{\"phase\":\"recover_current_package\",\"packageName\":\"tv.danmaku.bili\"},{\"phase\":\"reactive_after_recover\",\"dismissed\":2},{\"phase\":\"close_transient_sheet\",\"index\":1,\"window\":\"androidx.recyclerview.widget.RecyclerView\",\"method\":\"cancel_button_or_text\",\"success\":true,\"message\":\"ACTION_CLICK performed\",\"labels\":[\"tv.danmaku.bili:id\\\/action_bar_root\",\"android:id\\\/content\",\"tv.danmaku.bili:id\\\/rl_top_content\",\"tv.danmaku.bili:id\\\/blank_layout\",\"tv.danmaku.bili:id\\\/content_layout\",\"tv.danmaku.bili:id\\\/recycler\",\"分享 tv.danmaku.bili:id\\\/title\",\"tv.danmaku.bili:id\\\/recy",
+  "durationMs": 29889,
+  "usedCoordinate": true,
+  "details": {
+    "macroSkillId": "direct.command.1778526795856",
+    "failedAtom": {
+      "index": 0,
+      "skillId": "direct.1778526795856.1.findentrybybottomtabsweep",
+      "actionType": "FindEntryByBottomTabSweep",
+      "status": "FAILED_ELEMENT_NOT_FOUND",
+      "message": "Bottom-tab sweep did not find entry aliases=首页\/home; tabsVisited=5; events=[{\"phase\":\"open_before_recover\",\"packageName\":\"tv.danmaku.bili\",\"success\":true,\"message\":\"Launch intent sent for tv.danmaku.bili\"},{\"phase\":\"home_back\",\"index\":1,\"fromPackage\":\"tv.danmaku.bili\",\"window\":null,\"success\":true,\"message\":\"GLOBAL_ACTION_BACK performed\"},{\"phase\":\"home_back\",\"index\":2,\"fromPackage\":\"tv.danmaku.bili\",\"window\":\"android.view.View\",\"success\":true,\"message\":\"GLOBAL_ACTION_BACK performed\"},{\"phase\":\"home_back\",\"index\":3,\"fromPackage\":\"tv.danmaku.bili\",\"window\":\"android.widget.FrameLayout\",\"success\":true,\"message\":\"GLOBAL_ACTION_BACK performed\"},{\"phase\":\"open_after_recover\",\"packageName\":\"tv.danmaku.bili\",\"success\":true,\"message\":\"Launch intent sent for tv.danmaku.bili\"},{\"phase\":\"close_transient_sheet\",\"index\":1,\"window\":null,\"method\":\"cancel_button_or_text\",\"success\":true,\"message\":\"ACTION_CLICK performed\",\"labels\":[\"tv.danmaku.bili:id\\\/action_bar_root\",\"android:id\\\/content\",\"tv.danmaku.bili:id\\\/rl_top_content\",\"tv.danmaku.bili:id\\\/blank_layout\",\"tv.danmaku.bili:id\\\/content_layout\",\"tv.danmaku.bili:id\\\/recycler\",\"分享 tv.danmaku.bili:id\\\/title\",\"tv.danmaku.bili:id\\\/recycler\",\"QQ tv.danmaku.bili:id\\\/item\",\"QQ空间 tv.danmaku.bili:id\\\/item\",\"微信 tv.danmaku.bili:id\\\/item\",\"朋友圈 tv.danmaku.bili:id\\\/item\"]},{\"phase\":\"recover_current_package\",\"packageName\":\"tv.danmaku.bili\"},{\"phase\":\"reactive_after_recover\",\"dismissed\":2},{\"phase\":\"close_transient_sheet\",\"index\":1,\"window\":\"androidx.recyclerview.widget.RecyclerView\",\"method\":\"cancel_button_or_text\",\"success\":true,\"message\":\"ACTION_CLICK performed\",\"labels\":[\"tv.danmaku.bili:id\\\/action_bar_root\",\"android:id\\\/content\",\"tv.danmaku.bili:id\\\/rl_top_content\",\"tv.danmaku.bili:id\\\/blank_layout\",\"tv.danmaku.bili:id\\\/content_layout\",\"tv.danmaku.bili:id\\\/recycler\",\"分享 tv.danmaku.bili:id\\\/title\",\"tv.danmaku.bili:id\\\/recy",
+      "usedCoordinate": true,
+      "details": null
+    },
+    "atomTrace": [
+      {
+        "index": 0,
+        "skillId": "direct.1778526795856.1.findentrybybottomtabsweep",
+        "actionType": "FindEntryByBottomTabSweep",
+        "status": "FAILED_ELEMENT_NOT_FOUND",
+        "message": "Bottom-tab sweep did not find entry aliases=首页\/home; tabsVisited=5; events=[{\"phase\":\"open_before_recover\",\"packageName\":\"tv.danmaku.bili\",\"success\":true,\"message\":\"Launch intent sent for tv.danmaku.bili\"},{\"phase\":\"home_back\",\"index\":1,\"fromPackage\":\"tv.danmaku.bili\",\"window\":null,\"success\":true,\"message\":\"GLOBAL_ACTION_BACK performed\"},{\"phase\":\"home_back\",\"index\":2,\"fromPackage\":\"tv.danmaku.bili\",\"window\":\"android.view.View\",\"success\":true,\"message\":\"GLOBAL_ACTION_BACK performed\"},{\"phase\":\"home_back\",\"index\":3,\"fromPackage\":\"tv.danmaku.bili\",\"window\":\"android.widget.FrameLayout\",\"success\":true,\"message\":\"GLOBAL_ACTION_BACK performed\"},{\"phase\":\"open_after_recover\",\"packageName\":\"tv.danmaku.bili\",\"success\":true,\"message\":\"Launch intent sent for tv.danmaku.bili\"},{\"phase\":\"close_transient_sheet\",\"index\":1,\"window\":null,\"method\":\"cancel_button_or_text\",\"success\":true,\"message\":\"ACTION_CLICK performed\",\"labels\":[\"tv.danmaku.bili:id\\\/action_bar_root\",\"android:id\\\/content\",\"tv.danmaku.bili:id\\\/rl_top_content\",\"tv.danmaku.bili:id\\\/blank_layout\",\"tv.danmaku.bili:id\\\/content_layout\",\"tv.danmaku.bili:id\\\/recycler\",\"分享 tv.danmaku.bili:id\\\/title\",\"tv.danmaku.bili:id\\\/recycler\",\"QQ tv.danmaku.bili:id\\\/item\",\"QQ空间 tv.danmaku.bili:id\\\/item\",\"微信 tv.danmaku.bili:id\\\/item\",\"朋友圈 tv.danmaku.bili:id\\\/item\"]},{\"phase\":\"recover_current_package\",\"packageName\":\"tv.danmaku.bili\"},{\"phase\":\"reactive_after_recover\",\"dismissed\":2},{\"phase\":\"close_transient_sheet\",\"index\":1,\"window\":\"androidx.recyclerview.widget.RecyclerView\",\"method\":\"cancel_button_or_text\",\"success\":true,\"message\":\"ACTION_CLICK performed\",\"labels\":[\"tv.danmaku.bili:id\\\/action_bar_root\",\"android:id\\\/content\",\"tv.danmaku.bili:id\\\/rl_top_content\",\"tv.danmaku.bili:id\\\/blank_layout\",\"tv.danmaku.bili:id\\\/content_layout\",\"tv.danmaku.bili:id\\\/recycler\",\"分享 tv.danmaku.bili:id\\\/title\",\"tv.danmaku.bili:id\\\/recy",
+        "usedCoordinate": true,
+        "details": null
+      }
+    ],
+    "reactiveDismissed": 2
+  },
+  "allowSideEffect": true,
+  "skillFile": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_candidates\/tv.danmaku.bili\/direct.command.1778526795856.json",
+  "createdAt": 1778526825822
+}

@@ -1,0 +1,14 @@
+{
+  "schemaVersion": 1,
+  "kind": "skill_json_dry_run_report",
+  "skillId": "patched.1779339085824.5.typeintofirstinput",
+  "appPackage": "com.zhihu.android",
+  "passed": false,
+  "status": "REJECTED",
+  "errors": [
+    "dangerous_action:支付"
+  ],
+  "warnings": [],
+  "summary": "dangerous_action:支付",
+  "timestamp": 1779339090521
+}

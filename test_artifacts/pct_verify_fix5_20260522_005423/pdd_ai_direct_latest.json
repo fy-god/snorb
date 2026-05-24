@@ -1,0 +1,88 @@
+{
+  "schemaVersion": 1,
+  "kind": "skill_json_ai_direct_run_report",
+  "id": "ai_direct_run_1779382555489",
+  "skillId": "patched.command.1779382547024",
+  "appPackage": "com.xunmeng.pinduoduo",
+  "instruction": "在拼多多搜索纸巾，停在结果页并记录筛选、店铺、价格入口。\n\n约束：目标 App=拼多多，包名=com.xunmeng.pinduoduo。必须由 MacroPilot 手机端自己用无障碍、输入法、AI\/Skill JSON 执行，不允许依赖 ADB 手点目标 App。执行前先读取当前 UI；如果遇到广告、弹窗、小字提示，先记录文字并安全关闭。任务完成必须用当前 UI 证据验证，不能只因为步骤执行完就报成功。如果没有现成 skill，先复用已有相似 Skill JSON\/archetype，只改关键槽位如入口文字、坐标、目标文本、验证规则，再组装 atomic\/macro skill。需要探索入口时优先遍历底部标签、顶部小图标、图形化入口、侧边操作和子页面。本任务 stopBeforeSubmit=true：写草稿、评论、订单、支付类流程必须停在提交前，不点击最终发布、发送、提交订单、支付、确认授权。期望证据包括：纸巾、结果。",
+  "engine": "ai_direct_skill_json",
+  "approvedRequired": false,
+  "status": "FAILED_ELEMENT_NOT_FOUND",
+  "message": "搜索=No matching node; 确定=No matching node; No action coordinate fallback",
+  "durationMs": 4017,
+  "usedCoordinate": false,
+  "details": {
+    "macroSkillId": "patched.command.1779382547024",
+    "failedAtom": {
+      "index": 5,
+      "skillId": "patched.1779382547024.6.clickvisibletext",
+      "actionType": "ClickVisibleText",
+      "status": "FAILED_ELEMENT_NOT_FOUND",
+      "message": "搜索=No matching node; 确定=No matching node; No action coordinate fallback",
+      "usedCoordinate": false,
+      "details": null
+    },
+    "atomTrace": [
+      {
+        "index": 0,
+        "skillId": "patched.1779382547024.1.openapp",
+        "actionType": "OpenApp",
+        "status": "SUCCESS_MEDIUM_CONFIDENCE",
+        "message": "Launch intent sent for com.xunmeng.pinduoduo",
+        "usedCoordinate": false,
+        "details": null
+      },
+      {
+        "index": 1,
+        "skillId": "patched.1779382547024.2.handlereactiveoverlays",
+        "actionType": "HandleReactiveOverlays",
+        "status": "SUCCESS_MEDIUM_CONFIDENCE",
+        "message": "Reactive overlay pass completed; dismissed=0",
+        "usedCoordinate": false,
+        "details": null
+      },
+      {
+        "index": 2,
+        "skillId": "patched.1779382547024.3.clickvisibletext",
+        "actionType": "ClickVisibleText",
+        "status": "SUCCESS_LOW_CONFIDENCE",
+        "message": "Window\/node state changed; 搜索=No matching node; 搜=No matching node; 查找=No matching node; coordinate fallback used",
+        "usedCoordinate": true,
+        "details": null
+      },
+      {
+        "index": 3,
+        "skillId": "patched.1779382547024.4.wait",
+        "actionType": "Wait",
+        "status": "SUCCESS_MEDIUM_CONFIDENCE",
+        "message": "Waited 600ms; reactiveDismissed=0",
+        "usedCoordinate": false,
+        "details": null
+      },
+      {
+        "index": 4,
+        "skillId": "patched.1779382547024.5.typeintofirstinput",
+        "actionType": "TypeIntoFirstInput",
+        "status": "SUCCESS_LOW_CONFIDENCE",
+        "message": "MacroPilot IME committed text; input not readable after action",
+        "usedCoordinate": false,
+        "details": null
+      },
+      {
+        "index": 5,
+        "skillId": "patched.1779382547024.6.clickvisibletext",
+        "actionType": "ClickVisibleText",
+        "status": "FAILED_ELEMENT_NOT_FOUND",
+        "message": "搜索=No matching node; 确定=No matching node; No action coordinate fallback",
+        "usedCoordinate": false,
+        "details": null
+      }
+    ],
+    "reactiveDismissed": 0
+  },
+  "allowSideEffect": true,
+  "params": {},
+  "skillFile": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_candidates\/com.xunmeng.pinduoduo\/patched.command.1779382547024.json",
+  "previewConfigFile": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/app_config_exports\/com.xunmeng.pinduoduo\/app_config_20260522_005551_447.json",
+  "createdAt": 1779382555489
+}

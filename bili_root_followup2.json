@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 1,
+  "kind": "skill_json_ai_follow_up_run_report",
+  "id": "ai_follow_up_run_1778530181656",
+  "skillId": "direct.command.1778530180193",
+  "failedSkillId": "bilibili.search.search_in_app",
+  "appPackage": "tv.danmaku.bili",
+  "instruction": "打开哔哩哔哩搜索王老菊打开第一个视频",
+  "engine": "ai_runtime_replan",
+  "phase": "REPLAN",
+  "trigger": "GOAL_UNVERIFIED_LOOP_1",
+  "previousStatus": "FAILED_GOAL_UNVERIFIED",
+  "previousMessage": "当前像 B 站消息\/动态发布相关页面，不是视频详情页，不能报告第一个视频已打开。",
+  "previousRuntimeReportFile": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/runtime\/run_reports\/tv.danmaku.bili\/ai_follow_up_run_1778530068425.json",
+  "aiJobFile": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ai_jobs\/2026-05-12\/factory_ai_replan_1778530180174.json",
+  "decision": {
+    "goalCompleted": false,
+    "screenAssessment": "当前在B站私信界面，对方昵称’郑郑得证’，底部是消息输入区，顶部有返回按钮。不是视频详情页。",
+    "failureDiagnosis": "之前的搜索动作可能误触发了消息通知，进入了私信页面，未能进入搜索结果页。",
+    "confidence": "MEDIUM",
+    "nextActionReason": "需要先退出私信界面，回到能够执行搜索的页面，然后点击搜索框准备输入搜索词。"
+  },
+  "approvedRequired": false,
+  "status": "FAILED_ELEMENT_NOT_FOUND",
+  "message": "No matching node",
+  "durationMs": 1387,
+  "usedCoordinate": false,
+  "details": {
+    "macroSkillId": "direct.command.1778530180193",
+    "failedAtom": {
+      "index": 2,
+      "skillId": "direct.1778530180193.3.clickselector",
+      "actionType": "ClickSelector",
+      "status": "FAILED_ELEMENT_NOT_FOUND",
+      "message": "No matching node",
+      "usedCoordinate": false,
+      "details": null
+    },
+    "atomTrace": [
+      {
+        "index": 0,
+        "skillId": "direct.1778530180193.1.clickcoordinate",
+        "actionType": "ClickCoordinate",
+        "status": "SUCCESS_LOW_CONFIDENCE",
+        "message": "Window\/node state changed",
+        "usedCoordinate": false,
+        "details": null
+      },
+      {
+        "index": 1,
+        "skillId": "direct.1778530180193.2.wait",
+        "actionType": "Wait",
+        "status": "SUCCESS_MEDIUM_CONFIDENCE",
+        "message": "Waited 800ms; reactiveDismissed=0",
+        "usedCoordinate": false,
+        "details": null
+      },
+      {
+        "index": 2,
+        "skillId": "direct.1778530180193.3.clickselector",
+        "actionType": "ClickSelector",
+        "status": "FAILED_ELEMENT_NOT_FOUND",
+        "message": "No matching node",
+        "usedCoordinate": false,
+        "details": null
+      }
+    ],
+    "reactiveDismissed": 0
+  },
+  "allowSideEffect": true,
+  "skillFile": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_candidates\/tv.danmaku.bili\/direct.command.1778530180193.json",
+  "createdAt": 1778530181656
+}

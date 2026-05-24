@@ -1,0 +1,282 @@
+{
+  "schemaVersion": 1,
+  "kind": "app_side_ai_direct_instruction_service_completion",
+  "operation": "API_RUN_APP_SIDE_INSTRUCTION",
+  "id": "app_side_instruction_1778529131169_completion",
+  "requestId": "app_side_instruction_1778529131169",
+  "instruction": "打开哔哩哔哩搜索王老菊打开第一个视频",
+  "appPackage": "tv.danmaku.bili",
+  "status": "FAILED_GOAL_UNVERIFIED",
+  "flowReportFile": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/flow_reports\/tv.danmaku.bili\/ai_direct_flow_1778529614571.json",
+  "stepCount": 44,
+  "events": [
+    {
+      "title": "用户指令进入手机端执行器",
+      "status": "RUNNING",
+      "message": "主输入不再只生成文件：App 将调用 AI，生成可审计 JSON，再由 SkillJsonExecutor 直接执行候选能力。"
+    },
+    {
+      "title": "AI 决策返回",
+      "status": "SUCCESS",
+      "message": "HTTP=200；模型=deepseek-v4-pro；计划步骤=5；AI候选=0",
+      "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ai_jobs\/2026-05-12\/factory_ai_direct_1778529188848.json"
+    },
+    {
+      "title": "规则泛化 B 站搜索 Skill",
+      "status": "SUCCESS",
+      "message": "补齐 7 个细粒度 Skill JSON，搜索词=王老菊；复杂任务会在搜索结果页再让 AI 判断下一步。",
+      "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_candidates\/tv.danmaku.bili\/bilibili.open_app.json"
+    },
+    {
+      "title": "dry-run 静态检查",
+      "status": "SUCCESS",
+      "message": "通过 7\/7。",
+      "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_dry_run_reports\/tv.danmaku.bili\/bilibili.search.search_in_app_1778529188985.json"
+    },
+    {
+      "title": "拼装 app_config 预览",
+      "status": "SUCCESS",
+      "message": "候选\/测试产物已拼为单个 app_config 预览。",
+      "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/app_config_exports\/tv.danmaku.bili\/app_config_20260512_035309_215.json"
+    },
+    {
+      "title": "执行候选 JSON",
+      "status": "RUNNING",
+      "message": "不等待 APPROVED：按用户要求，直接由 SkillJsonExecutor 执行候选 macro=bilibili.search.search_in_app。",
+      "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_candidates\/tv.danmaku.bili\/bilibili.search.search_in_app.json"
+    },
+    {
+      "title": "候选 JSON 执行结果",
+      "status": "SUCCESS",
+      "message": "bilibili.search.search_in_app -> SUCCESS_LOW_CONFIDENCE；Macro atoms completed; reactiveDismissed=12",
+      "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/runtime\/run_reports\/tv.danmaku.bili\/ai_direct_run_1778529203852.json"
+    },
+    {
+      "title": "本地弹窗规则处理",
+      "status": "SUCCESS",
+      "message": "AI 重判前先由手机端 GKD-like 规则处理阻断弹窗\/广告：节点规则处理 3 个，视觉兜底=false。",
+      "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/runtime\/run_reports\/tv.danmaku.bili\/ai_direct_run_1778529203852.json"
+    },
+    {
+      "title": "中途 AI 检查点",
+      "status": "RUNNING",
+      "message": "当前不是直接停下：App 把失败原因、当前屏幕节点和已跑步骤发给手机端 AI，让 AI 判断下一段补救 JSON。",
+      "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/runtime\/run_reports\/tv.danmaku.bili\/ai_direct_run_1778529203852.json"
+    },
+    {
+      "title": "中途 AI 检查点 返回",
+      "status": "SUCCESS",
+      "message": "HTTP=200；模型=deepseek-v4-pro；goalCompleted=false；补救步骤=2；诊断=搜索宏 bilibili.search.search_in_app 执行后可能触发了分享弹窗或误触其他入口，未正确进入搜索结果页，导致停留在作者空间页，未完成打",
+      "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ai_jobs\/2026-05-12\/factory_ai_checkpoint_1778529297601.json"
+    },
+    {
+      "title": "AI 补救计划转 Skill JSON",
+      "status": "SUCCESS",
+      "message": "AI 返回 2 个下一步动作，已转换成 3 个候选 Skill JSON。",
+      "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_candidates\/tv.danmaku.bili\/direct.command.1778529297627.json"
+    },
+    {
+      "title": "AI 补救 dry-run",
+      "status": "SUCCESS",
+      "message": "通过 3\/3。",
+      "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_dry_run_reports\/tv.danmaku.bili\/direct.command.1778529297627_1778529297670.json"
+    },
+    {
+      "title": "AI 补救 JSON 执行结果",
+      "status": "SUCCESS",
+      "message": "direct.command.1778529297627 -> SUCCESS_MEDIUM_CONFIDENCE；Macro atoms completed; reactiveDismissed=8",
+      "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/runtime\/run_reports\/tv.danmaku.bili\/ai_follow_up_run_1778529304361.json"
+    },
+    {
+      "title": "目标未完成，继续 AI 判断",
+      "status": "RUNNING",
+      "message": "当前是 B 站分享面板\/弹出菜单，不是视频详情页，不能报告第一个视频已打开。；第 1\/4 次继续重判当前屏幕。",
+      "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/runtime\/run_reports\/tv.danmaku.bili\/ai_follow_up_run_1778529304361.json"
+    },
+    {
+      "title": "本地弹窗规则处理",
+      "status": "SUCCESS",
+      "message": "AI 重判前先由手机端 GKD-like 规则处理阻断弹窗\/广告：节点规则处理 3 个，视觉兜底=false。",
+      "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/runtime\/run_reports\/tv.danmaku.bili\/ai_follow_up_run_1778529304361.json"
+    },
+    {
+      "title": "本地候选补救停止",
+      "status": "FAILED_ELEMENT_NOT_FOUND",
+      "message": "当前屏幕没有找到可信的第一个视频候选。不会乱点，也不会把搜索页误报为成功。"
+    },
+    {
+      "title": "失败后 AI 判断",
+      "status": "RUNNING",
+      "message": "当前不是直接停下：App 把失败原因、当前屏幕节点和已跑步骤发给手机端 AI，让 AI 判断下一段补救 JSON。",
+      "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/runtime\/run_reports\/tv.danmaku.bili\/ai_follow_up_run_1778529304361.json"
+    },
+    {
+      "title": "失败后 AI 判断 返回",
+      "status": "SUCCESS",
+      "message": "HTTP=200；模型=deepseek-v4-pro；goalCompleted=false；补救步骤=5；诊断=分享面板遮挡了原本的视频搜索或详情页面，导致无法继续打开第一个视频。",
+      "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ai_jobs\/2026-05-12\/factory_ai_replan_1778529440146.json"
+    },
+    {
+      "title": "AI 补救计划转 Skill JSON",
+      "status": "SUCCESS",
+      "message": "AI 返回 5 个下一步动作，已转换成 6 个候选 Skill JSON。",
+      "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_candidates\/tv.danmaku.bili\/direct.command.1778529440165.json"
+    },
+    {
+      "title": "AI 补救 dry-run",
+      "status": "SUCCESS",
+      "message": "通过 6\/6。",
+      "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_dry_run_reports\/tv.danmaku.bili\/direct.command.1778529440165_1778529440228.json"
+    },
+    {
+      "title": "AI 补救 JSON 执行结果",
+      "status": "FAILED_ELEMENT_NOT_FOUND",
+      "message": "direct.command.1778529440165 -> FAILED_ELEMENT_NOT_FOUND；No matching node; reactiveDismissedBeforeAction=1",
+      "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/runtime\/run_reports\/tv.danmaku.bili\/ai_follow_up_run_1778529441582.json"
+    },
+    {
+      "title": "目标未完成，继续 AI 判断",
+      "status": "RUNNING",
+      "message": "没有看到播放器\/视频详情资源或播放控件证据，不能把普通内容详情页当成第一个视频。；第 2\/4 次继续重判当前屏幕。",
+      "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/runtime\/run_reports\/tv.danmaku.bili\/ai_follow_up_run_1778529441582.json"
+    },
+    {
+      "title": "失败后 AI 判断",
+      "status": "RUNNING",
+      "message": "当前不是直接停下：App 把失败原因、当前屏幕节点和已跑步骤发给手机端 AI，让 AI 判断下一段补救 JSON。",
+      "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/runtime\/run_reports\/tv.danmaku.bili\/ai_follow_up_run_1778529441582.json"
+    },
+    {
+      "title": "失败后 AI 判断 返回",
+      "status": "SUCCESS",
+      "message": "HTTP=200；模型=deepseek-v4-pro；goalCompleted=false；补救步骤=1；诊断=上一次 ClickSelector 操作未能找到目标元素，且之后页面进入加载状态，尚未呈现搜索结果或视频播放页。",
+      "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ai_jobs\/2026-05-12\/factory_ai_replan_1778529471309.json"
+    },
+    {
+      "title": "AI 补救计划转 Skill JSON",
+      "status": "SUCCESS",
+      "message": "AI 返回 1 个下一步动作，已转换成 2 个候选 Skill JSON。",
+      "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_candidates\/tv.danmaku.bili\/direct.command.1778529471324.json"
+    },
+    {
+      "title": "AI 补救 dry-run",
+      "status": "SUCCESS",
+      "message": "通过 2\/2。",
+      "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_dry_run_reports\/tv.danmaku.bili\/direct.command.1778529471324_1778529471419.json"
+    },
+    {
+      "title": "AI 补救 JSON 执行结果",
+      "status": "SUCCESS",
+      "message": "direct.command.1778529471324 -> SUCCESS_MEDIUM_CONFIDENCE；Macro atoms completed; reactiveDismissed=4",
+      "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/runtime\/run_reports\/tv.danmaku.bili\/ai_follow_up_run_1778529476124.json"
+    },
+    {
+      "title": "目标未完成，继续 AI 判断",
+      "status": "RUNNING",
+      "message": "当前是 B 站分享面板\/弹出菜单，不是视频详情页，不能报告第一个视频已打开。；第 3\/4 次继续重判当前屏幕。",
+      "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/runtime\/run_reports\/tv.danmaku.bili\/ai_follow_up_run_1778529476124.json"
+    },
+    {
+      "title": "本地弹窗规则处理",
+      "status": "SUCCESS",
+      "message": "AI 重判前先由手机端 GKD-like 规则处理阻断弹窗\/广告：节点规则处理 3 个，视觉兜底=false。",
+      "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/runtime\/run_reports\/tv.danmaku.bili\/ai_follow_up_run_1778529476124.json"
+    },
+    {
+      "title": "失败后 AI 判断",
+      "status": "RUNNING",
+      "message": "当前不是直接停下：App 把失败原因、当前屏幕节点和已跑步骤发给手机端 AI，让 AI 判断下一段补救 JSON。",
+      "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/runtime\/run_reports\/tv.danmaku.bili\/ai_follow_up_run_1778529476124.json"
+    },
+    {
+      "title": "失败后 AI 判断 返回",
+      "status": "SUCCESS",
+      "message": "HTTP=200；模型=deepseek-v4-pro；goalCompleted=false；补救步骤=3；诊断=意外进入分享面板，可能是从视频详情页误触发或系统弹窗，导致无法进一步操作或验证视频内容。",
+      "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ai_jobs\/2026-05-12\/factory_ai_replan_1778529529791.json"
+    },
+    {
+      "title": "AI 补救计划转 Skill JSON",
+      "status": "SUCCESS",
+      "message": "AI 返回 3 个下一步动作，已转换成 4 个候选 Skill JSON。",
+      "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_candidates\/tv.danmaku.bili\/direct.command.1778529529817.json"
+    },
+    {
+      "title": "AI 补救 dry-run",
+      "status": "SUCCESS",
+      "message": "通过 4\/4。",
+      "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_dry_run_reports\/tv.danmaku.bili\/direct.command.1778529529817_1778529529875.json"
+    },
+    {
+      "title": "AI 补救 JSON 执行结果",
+      "status": "SUCCESS",
+      "message": "direct.command.1778529529817 -> SUCCESS_MEDIUM_CONFIDENCE；Macro atoms completed; reactiveDismissed=12",
+      "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/runtime\/run_reports\/tv.danmaku.bili\/ai_follow_up_run_1778529538956.json"
+    },
+    {
+      "title": "目标未完成，继续 AI 判断",
+      "status": "RUNNING",
+      "message": "当前是 B 站分享面板\/弹出菜单，不是视频详情页，不能报告第一个视频已打开。；第 4\/4 次继续重判当前屏幕。",
+      "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/runtime\/run_reports\/tv.danmaku.bili\/ai_follow_up_run_1778529538956.json"
+    },
+    {
+      "title": "本地弹窗规则处理",
+      "status": "SUCCESS",
+      "message": "AI 重判前先由手机端 GKD-like 规则处理阻断弹窗\/广告：节点规则处理 3 个，视觉兜底=false。",
+      "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/runtime\/run_reports\/tv.danmaku.bili\/ai_follow_up_run_1778529538956.json"
+    },
+    {
+      "title": "失败后 AI 判断",
+      "status": "RUNNING",
+      "message": "当前不是直接停下：App 把失败原因、当前屏幕节点和已跑步骤发给手机端 AI，让 AI 判断下一段补救 JSON。",
+      "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/runtime\/run_reports\/tv.danmaku.bili\/ai_follow_up_run_1778529538956.json"
+    },
+    {
+      "title": "失败后 AI 判断 返回",
+      "status": "SUCCESS",
+      "message": "HTTP=200；模型=deepseek-v4-pro；goalCompleted=false；补救步骤=3；诊断=上一次操作意外打开了动态详情页（非视频）或触发了分享面板，导致无法进入第一个视频播放页。分享面板阻挡了进一步操作。",
+      "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ai_jobs\/2026-05-12\/factory_ai_replan_1778529603629.json"
+    },
+    {
+      "title": "AI 补救计划转 Skill JSON",
+      "status": "SUCCESS",
+      "message": "AI 返回 3 个下一步动作，已转换成 4 个候选 Skill JSON。",
+      "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_candidates\/tv.danmaku.bili\/direct.command.1778529603650.json"
+    },
+    {
+      "title": "AI 补救 dry-run",
+      "status": "SUCCESS",
+      "message": "通过 4\/4。",
+      "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_dry_run_reports\/tv.danmaku.bili\/direct.command.1778529603650_1778529603711.json"
+    },
+    {
+      "title": "AI 补救 JSON 执行结果",
+      "status": "SUCCESS",
+      "message": "direct.command.1778529603650 -> SUCCESS_MEDIUM_CONFIDENCE；Macro atoms completed; reactiveDismissed=10",
+      "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/runtime\/run_reports\/tv.danmaku.bili\/ai_follow_up_run_1778529612299.json"
+    },
+    {
+      "title": "目标完成校验",
+      "status": "FAILED_GOAL_UNVERIFIED",
+      "message": "没有看到播放器\/视频详情资源或播放控件证据，不能把普通内容详情页当成第一个视频。",
+      "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/runtime\/run_reports\/tv.danmaku.bili\/ai_follow_up_run_1778529612299.json"
+    },
+    {
+      "title": "保留目标应用前台用于证据",
+      "status": "INFO",
+      "message": "本次保留目标应用当前页面，不把 MacroPilot 拉回前台；报告里会记录当前 UI 快照和截图，方便继续让 AI 判断卡点。"
+    },
+    {
+      "title": "用户指令流水线完成",
+      "status": "FAILED_GOAL_UNVERIFIED",
+      "message": "报告=ai_direct_flow_1778529614571.json；步骤=43。",
+      "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/flow_reports\/tv.danmaku.bili\/ai_direct_flow_1778529614571.json"
+    },
+    {
+      "title": "报告已写入",
+      "status": "INFO",
+      "message": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/flow_reports\/tv.danmaku.bili\/ai_direct_flow_1778529614571.json",
+      "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/flow_reports\/tv.danmaku.bili\/ai_direct_flow_1778529614571.json"
+    }
+  ],
+  "createdAt": 1778529614621
+}

@@ -1,0 +1,941 @@
+{
+  "status": "PARTIAL",
+  "summary": {
+    "appCount": 20,
+    "taskCount": 200,
+    "executedAttempts": 190,
+    "success": 122,
+    "failed": 1,
+    "blocked": 37,
+    "deferred": 40,
+    "skipped": 0,
+    "retried": 0,
+    "catalogFile": "/data/user/0/com.macropilot.app/files/macro_v2/factory/flow_reports/popular_app_tasks/popular_app_task_batch_1779271838092_catalog.json"
+  },
+  "apps": [
+    {
+      "appName": "哔哩哔哩",
+      "pkg": "tv.danmaku.bili",
+      "counts": {
+        "success": 8,
+        "deferred": 2,
+        "blocked": 0,
+        "failed": 0,
+        "other": 0
+      },
+      "bestGraph": {
+        "screenCount": 25,
+        "edgeCount": 45,
+        "quality": {
+          "usable": true,
+          "reason": "usable_app_ui_graph",
+          "bottomTabsOpened": 5,
+          "bottomTabLabels": [
+            "首页",
+            "动态/关注",
+            "发布",
+            "会员购",
+            "我的"
+          ],
+          "graphicalCandidateCount": 121,
+          "topEntryCount": 155,
+          "sideEntryCount": 185,
+          "inputCandidateCount": 13
+        }
+      },
+      "examples": {
+        "success": [
+          "bili_following_tab",
+          "bili_mall_categories",
+          "bili_mine_game_center"
+        ],
+        "deferred": [
+          "bili_search_open_first_video",
+          "bili_search_stop_result"
+        ],
+        "blocked": [],
+        "failed": []
+      }
+    },
+    {
+      "appName": "小红书",
+      "pkg": "com.xingin.xhs",
+      "counts": {
+        "success": 7,
+        "deferred": 3,
+        "blocked": 0,
+        "failed": 0,
+        "other": 0
+      },
+      "bestGraph": {
+        "screenCount": 11,
+        "edgeCount": 10,
+        "quality": {
+          "usable": true,
+          "reason": "usable_app_ui_graph",
+          "bottomTabsOpened": 0,
+          "bottomTabLabels": [],
+          "graphicalCandidateCount": 0,
+          "topEntryCount": 212,
+          "sideEntryCount": 196,
+          "inputCandidateCount": 3
+        }
+      },
+      "examples": {
+        "success": [
+          "xhs_bottom_tabs",
+          "xhs_mine_page_probe",
+          "xhs_top_search_camera"
+        ],
+        "deferred": [
+          "xhs_search_keyword",
+          "xhs_open_first_note",
+          "xhs_publish_text_draft"
+        ],
+        "blocked": [],
+        "failed": []
+      }
+    },
+    {
+      "appName": "抖音",
+      "pkg": "com.ss.android.ugc.aweme",
+      "counts": {
+        "success": 6,
+        "deferred": 4,
+        "blocked": 0,
+        "failed": 0,
+        "other": 0
+      },
+      "bestGraph": {
+        "screenCount": 21,
+        "edgeCount": 20,
+        "quality": {
+          "usable": true,
+          "reason": "usable_app_ui_graph",
+          "bottomTabsOpened": 0,
+          "bottomTabLabels": [],
+          "graphicalCandidateCount": 0,
+          "topEntryCount": 331,
+          "sideEntryCount": 257,
+          "inputCandidateCount": 7
+        }
+      },
+      "examples": {
+        "success": [
+          "douyin_bottom_tabs",
+          "douyin_side_actions",
+          "douyin_live_entry_probe"
+        ],
+        "deferred": [
+          "douyin_search_keyword",
+          "douyin_open_first_video",
+          "douyin_publish_video_draft"
+        ],
+        "blocked": [],
+        "failed": []
+      }
+    },
+    {
+      "appName": "虎扑",
+      "pkg": "com.hupu.games",
+      "counts": {
+        "success": 6,
+        "deferred": 3,
+        "blocked": 0,
+        "failed": 1,
+        "other": 0
+      },
+      "bestGraph": {
+        "screenCount": 12,
+        "edgeCount": 11,
+        "quality": {
+          "usable": true,
+          "reason": "usable_app_ui_graph",
+          "bottomTabsOpened": 0,
+          "bottomTabLabels": [],
+          "graphicalCandidateCount": 0,
+          "topEntryCount": 264,
+          "sideEntryCount": 232,
+          "inputCandidateCount": 0
+        }
+      },
+      "examples": {
+        "success": [
+          "hupu_close_ads_home",
+          "hupu_bottom_tabs",
+          "hupu_news_detail"
+        ],
+        "deferred": [
+          "hupu_search_team",
+          "hupu_enter_forum",
+          "hupu_post_draft"
+        ],
+        "blocked": [],
+        "failed": [
+          "hupu_dialog_small_text:单任务超过 90s 未完成，已记录超时；下一轮应缩短计划或先补 UI 图谱。"
+        ]
+      }
+    },
+    {
+      "appName": "微博",
+      "pkg": "com.sina.weibo",
+      "counts": {
+        "success": 7,
+        "deferred": 3,
+        "blocked": 0,
+        "failed": 0,
+        "other": 0
+      },
+      "bestGraph": {
+        "screenCount": 14,
+        "edgeCount": 13,
+        "quality": {
+          "usable": true,
+          "reason": "usable_app_ui_graph",
+          "bottomTabsOpened": 0,
+          "bottomTabLabels": [],
+          "graphicalCandidateCount": 0,
+          "topEntryCount": 171,
+          "sideEntryCount": 216,
+          "inputCandidateCount": 0
+        }
+      },
+      "examples": {
+        "success": [
+          "weibo_hot_search",
+          "weibo_bottom_tabs",
+          "weibo_open_first_post"
+        ],
+        "deferred": [
+          "weibo_search_hot",
+          "weibo_post_draft",
+          "weibo_comment_draft"
+        ],
+        "blocked": [],
+        "failed": []
+      }
+    },
+    {
+      "appName": "QQ",
+      "pkg": "com.tencent.mobileqq",
+      "counts": {
+        "success": 8,
+        "deferred": 2,
+        "blocked": 0,
+        "failed": 0,
+        "other": 0
+      },
+      "bestGraph": {
+        "screenCount": 11,
+        "edgeCount": 57,
+        "quality": {
+          "usable": true,
+          "reason": "usable_app_ui_graph",
+          "bottomTabsOpened": 0,
+          "bottomTabLabels": [],
+          "graphicalCandidateCount": 12,
+          "topEntryCount": 51,
+          "sideEntryCount": 45,
+          "inputCandidateCount": 3
+        }
+      },
+      "examples": {
+        "success": [
+          "qq_login_state",
+          "qq_bottom_tabs",
+          "qq_plus_menu"
+        ],
+        "deferred": [
+          "qq_search_contact",
+          "qq_message_search"
+        ],
+        "blocked": [],
+        "failed": []
+      }
+    },
+    {
+      "appName": "微信",
+      "pkg": "com.tencent.mm",
+      "counts": {
+        "success": 6,
+        "deferred": 3,
+        "blocked": 1,
+        "failed": 0,
+        "other": 0
+      },
+      "bestGraph": {
+        "screenCount": 3,
+        "edgeCount": 2,
+        "quality": {
+          "usable": false,
+          "reason": "too_few_nodes,too_few_visible_labels,too_few_actionable_candidates",
+          "bottomTabsOpened": 0,
+          "bottomTabLabels": [],
+          "graphicalCandidateCount": 0,
+          "topEntryCount": 0,
+          "sideEntryCount": 0,
+          "inputCandidateCount": 0
+        }
+      },
+      "examples": {
+        "success": [
+          "wechat_bottom_tabs_snapshot",
+          "wechat_chat_input_probe",
+          "wechat_discover_entries"
+        ],
+        "deferred": [
+          "wechat_search_filehelper",
+          "wechat_moments_private_draft",
+          "wechat_miniprogram_search"
+        ],
+        "blocked": [
+          "wechat_pay_probe"
+        ],
+        "failed": []
+      }
+    },
+    {
+      "appName": "美团",
+      "pkg": "com.sankuai.meituan",
+      "counts": {
+        "success": 9,
+        "deferred": 1,
+        "blocked": 0,
+        "failed": 0,
+        "other": 0
+      },
+      "bestGraph": {
+        "screenCount": 28,
+        "edgeCount": 51,
+        "quality": {
+          "usable": true,
+          "reason": "usable_app_ui_graph",
+          "bottomTabsOpened": 0,
+          "bottomTabLabels": [],
+          "graphicalCandidateCount": 103,
+          "topEntryCount": 122,
+          "sideEntryCount": 133,
+          "inputCandidateCount": 0
+        }
+      },
+      "examples": {
+        "success": [
+          "meituan_home_icons",
+          "meituan_takeout_category",
+          "meituan_bottom_tabs"
+        ],
+        "deferred": [
+          "meituan_search_food"
+        ],
+        "blocked": [],
+        "failed": []
+      }
+    },
+    {
+      "appName": "大众点评",
+      "pkg": "com.dianping.v1",
+      "counts": {
+        "success": 8,
+        "deferred": 2,
+        "blocked": 0,
+        "failed": 0,
+        "other": 0
+      },
+      "bestGraph": {
+        "screenCount": 12,
+        "edgeCount": 15,
+        "quality": {
+          "usable": true,
+          "reason": "usable_app_ui_graph",
+          "bottomTabsOpened": 0,
+          "bottomTabLabels": [],
+          "graphicalCandidateCount": 0,
+          "topEntryCount": 132,
+          "sideEntryCount": 96,
+          "inputCandidateCount": 3
+        }
+      },
+      "examples": {
+        "success": [
+          "dianping_home_icons",
+          "dianping_open_first_shop",
+          "dianping_bottom_tabs"
+        ],
+        "deferred": [
+          "dianping_search_restaurant",
+          "dianping_review_draft"
+        ],
+        "blocked": [],
+        "failed": []
+      }
+    },
+    {
+      "appName": "淘宝",
+      "pkg": "com.taobao.taobao",
+      "counts": {
+        "success": 8,
+        "deferred": 1,
+        "blocked": 1,
+        "failed": 0,
+        "other": 0
+      },
+      "bestGraph": {
+        "screenCount": 13,
+        "edgeCount": 48,
+        "quality": {
+          "usable": true,
+          "reason": "usable_app_ui_graph",
+          "bottomTabsOpened": 0,
+          "bottomTabLabels": [],
+          "graphicalCandidateCount": 60,
+          "topEntryCount": 76,
+          "sideEntryCount": 83,
+          "inputCandidateCount": 0
+        }
+      },
+      "examples": {
+        "success": [
+          "taobao_home_icons",
+          "taobao_open_item_detail",
+          "taobao_bottom_tabs"
+        ],
+        "deferred": [
+          "taobao_search_item"
+        ],
+        "blocked": [
+          "taobao_payment_guard"
+        ],
+        "failed": []
+      }
+    },
+    {
+      "appName": "京东",
+      "pkg": "com.jingdong.app.mall",
+      "counts": {
+        "success": 8,
+        "deferred": 1,
+        "blocked": 1,
+        "failed": 0,
+        "other": 0
+      },
+      "bestGraph": {
+        "screenCount": 9,
+        "edgeCount": 14,
+        "quality": {
+          "usable": true,
+          "reason": "usable_app_ui_graph",
+          "bottomTabsOpened": 0,
+          "bottomTabLabels": [],
+          "graphicalCandidateCount": 0,
+          "topEntryCount": 117,
+          "sideEntryCount": 102,
+          "inputCandidateCount": 0
+        }
+      },
+      "examples": {
+        "success": [
+          "jd_home_icons",
+          "jd_open_item_detail",
+          "jd_bottom_tabs"
+        ],
+        "deferred": [
+          "jd_search_item"
+        ],
+        "blocked": [
+          "jd_payment_guard"
+        ],
+        "failed": []
+      }
+    },
+    {
+      "appName": "拼多多",
+      "pkg": "com.xunmeng.pinduoduo",
+      "counts": {
+        "success": 8,
+        "deferred": 1,
+        "blocked": 1,
+        "failed": 0,
+        "other": 0
+      },
+      "bestGraph": {
+        "screenCount": 12,
+        "edgeCount": 21,
+        "quality": {
+          "usable": true,
+          "reason": "usable_app_ui_graph",
+          "bottomTabsOpened": 0,
+          "bottomTabLabels": [],
+          "graphicalCandidateCount": 0,
+          "topEntryCount": 138,
+          "sideEntryCount": 140,
+          "inputCandidateCount": 2
+        }
+      },
+      "examples": {
+        "success": [
+          "pdd_home_icons",
+          "pdd_open_item_detail",
+          "pdd_bottom_tabs"
+        ],
+        "deferred": [
+          "pdd_search_item"
+        ],
+        "blocked": [
+          "pdd_payment_guard"
+        ],
+        "failed": []
+      }
+    },
+    {
+      "appName": "知乎",
+      "pkg": "com.zhihu.android",
+      "counts": {
+        "success": 6,
+        "deferred": 4,
+        "blocked": 0,
+        "failed": 0,
+        "other": 0
+      },
+      "bestGraph": {
+        "screenCount": 42,
+        "edgeCount": 41,
+        "quality": {
+          "usable": true,
+          "reason": "usable_app_ui_graph",
+          "bottomTabsOpened": 0,
+          "bottomTabLabels": [],
+          "graphicalCandidateCount": 0,
+          "topEntryCount": 731,
+          "sideEntryCount": 381,
+          "inputCandidateCount": 6
+        }
+      },
+      "examples": {
+        "success": [
+          "zhihu_bottom_tabs",
+          "zhihu_hot_list",
+          "zhihu_mine_settings"
+        ],
+        "deferred": [
+          "zhihu_search_question",
+          "zhihu_open_first_answer",
+          "zhihu_write_draft"
+        ],
+        "blocked": [],
+        "failed": []
+      }
+    },
+    {
+      "appName": "网易云音乐",
+      "pkg": "com.netease.cloudmusic",
+      "counts": {
+        "success": 6,
+        "deferred": 3,
+        "blocked": 1,
+        "failed": 0,
+        "other": 0
+      },
+      "bestGraph": {
+        "screenCount": 6,
+        "edgeCount": 7,
+        "quality": {
+          "usable": true,
+          "reason": "usable_app_ui_graph",
+          "bottomTabsOpened": 0,
+          "bottomTabLabels": [],
+          "graphicalCandidateCount": 0,
+          "topEntryCount": 21,
+          "sideEntryCount": 34,
+          "inputCandidateCount": 0
+        }
+      },
+      "examples": {
+        "success": [
+          "music_bottom_tabs",
+          "music_playlist_probe",
+          "music_mine_downloads"
+        ],
+        "deferred": [
+          "music_search_song",
+          "music_open_first_song",
+          "music_comment_draft"
+        ],
+        "blocked": [
+          "music_vip_guard"
+        ],
+        "failed": []
+      }
+    },
+    {
+      "appName": "百度地图",
+      "pkg": "com.baidu.BaiduMap",
+      "counts": {
+        "success": 6,
+        "deferred": 3,
+        "blocked": 1,
+        "failed": 0,
+        "other": 0
+      },
+      "bestGraph": {
+        "screenCount": 5,
+        "edgeCount": 4,
+        "quality": {
+          "usable": true,
+          "reason": "",
+          "bottomTabsOpened": 0,
+          "bottomTabLabels": [],
+          "graphicalCandidateCount": 0,
+          "topEntryCount": 0,
+          "sideEntryCount": 0,
+          "inputCandidateCount": 0
+        }
+      },
+      "examples": {
+        "success": [
+          "baidumap_home_icons",
+          "baidumap_bottom_or_layer",
+          "baidumap_place_detail"
+        ],
+        "deferred": [
+          "baidumap_search_place",
+          "baidumap_route_probe",
+          "baidumap_nearby_food"
+        ],
+        "blocked": [
+          "baidumap_taxi_guard"
+        ],
+        "failed": []
+      }
+    },
+    {
+      "appName": "高德地图",
+      "pkg": "com.autonavi.minimap",
+      "counts": {
+        "success": 0,
+        "deferred": 0,
+        "blocked": 10,
+        "failed": 0,
+        "other": 0
+      },
+      "bestGraph": null,
+      "examples": {
+        "success": [],
+        "deferred": [],
+        "blocked": [
+          "amap_search_place",
+          "amap_route_probe",
+          "amap_home_icons"
+        ],
+        "failed": []
+      }
+    },
+    {
+      "appName": "支付宝",
+      "pkg": "com.eg.android.AlipayGphone",
+      "counts": {
+        "success": 3,
+        "deferred": 1,
+        "blocked": 6,
+        "failed": 0,
+        "other": 0
+      },
+      "bestGraph": {
+        "screenCount": 12,
+        "edgeCount": 20,
+        "quality": {
+          "usable": true,
+          "reason": "usable_app_ui_graph",
+          "qualityGate": {
+            "bottomPrimaryTabsRequired": true,
+            "bottomPrimaryTabsAttempted": 5,
+            "bottomPrimaryTabsOpened": 4,
+            "topIconsAreNotEnough": true,
+            "repeatedMessagePageIsNotProgress": true
+          },
+          "screenCount": 12,
+          "edgeCount": 20,
+          "nodeCount": 1633,
+          "clickableCount": 210,
+          "editableCount": 4,
+          "labelCount": 539,
+          "bottomTabCount": 107,
+          "topEntryCount": 186,
+          "sideEntryCount": 135,
+          "entryCandidateCount": 146,
+          "inputCandidateCount": 4,
+          "videoCandidateCount": 37,
+          "clickTargetCount": 686,
+          "graphicalCandidateCount": 120,
+          "checkableCandidateCount": 10,
+          "candidateCount": 1431,
+          "changedEdgeCount": 12,
+          "edgeCategoryCounts": {
+            "primary_bottom_tab": 5,
+            "primary_center_action": 1,
+            "primary_tab_surface_entry": 14
+          },
+          "primaryBottomTabAttemptedCount": 5,
+          "primaryBottomTabAttemptedLabels": [
+            "首页 com.alipay.android.tablauncher:id/selected_fl",
+            "com.alipay.mobile.homefeeds:id/feedback_icon",
+            "消息 com.alipay.android.tablauncher:id/tab_description",
+            "我的 com.alipay.android.tablauncher:id/tab_description"
+          ],
+          "primaryBottomTabOpenedCount": 4,
+          "primaryBottomTabOpenedLabels": [
+            "com.alipay.mobile.homefeeds:id/feedback_icon",
+            "消息 com.alipay.android.tablauncher:id/tab_description",
+            "我的 com.alipay.android.tablauncher:id/tab_description"
+          ],
+          "primaryTabSurfaceEntryChangedCount": 7,
+          "primaryTabSurfaceEntriesByTab": {
+            "首页 com.alipay.android.tablauncher:id/selected_fl": [
+              "搜索 com.alipay.android.phone.openplatform:id/searchButton",
+              "电子医保卡 com.alipay.android.phone.openplatform:id/home_title_search_hint",
+              "com.alipay.android.phone.openplatform:id/home_title_search_background",
+              "搜索框",
+              "com.alipay.mobile.antui:id/searchInputBoxContainer",
+              "为你推荐 com.alipay.mobile.homefeeds:id/multi_tab_item_text",
+              "com.alipay.mobile.homefeeds:id/feedback_icon",
+              "com.alipay.mobile.homefeeds:id/like_container"
+            ],
+            "com.alipay.mobile.homefeeds:id/feedback_icon": [
+              "关注 com.alipay.android.living.dynamic:id/left_author_follow_btn",
+              "关注加号",
+              "com.alipay.android.living.dynamic:id/left_author_name_and_tag_container",
+              "动态",
+              "展开 com.alipay.android.living.dynamic:id/expand_view",
+              "com.alipay.android.living.dynamic:id/share_container"
+            ]
+          }
+        }
+      },
+      "examples": {
+        "success": [
+          "alipay_bottom_tabs",
+          "alipay_card_coupon",
+          "alipay_city_service"
+        ],
+        "deferred": [
+          "alipay_search_service"
+        ],
+        "blocked": [
+          "alipay_home_icons",
+          "alipay_scan_probe",
+          "alipay_pay_guard"
+        ],
+        "failed": []
+      }
+    },
+    {
+      "appName": "云闪付",
+      "pkg": "com.unionpay",
+      "counts": {
+        "success": 2,
+        "deferred": 1,
+        "blocked": 7,
+        "failed": 0,
+        "other": 0
+      },
+      "bestGraph": {
+        "screenCount": 8,
+        "edgeCount": 20,
+        "quality": {
+          "usable": true,
+          "reason": "usable_app_ui_graph",
+          "qualityGate": {
+            "bottomPrimaryTabsRequired": true,
+            "bottomPrimaryTabsAttempted": 5,
+            "bottomPrimaryTabsOpened": 2,
+            "topIconsAreNotEnough": true,
+            "repeatedMessagePageIsNotProgress": true
+          },
+          "screenCount": 8,
+          "edgeCount": 20,
+          "nodeCount": 456,
+          "clickableCount": 27,
+          "editableCount": 1,
+          "labelCount": 171,
+          "bottomTabCount": 35,
+          "topEntryCount": 58,
+          "sideEntryCount": 25,
+          "entryCandidateCount": 1,
+          "inputCandidateCount": 1,
+          "videoCandidateCount": 0,
+          "clickTargetCount": 191,
+          "graphicalCandidateCount": 9,
+          "checkableCandidateCount": 0,
+          "candidateCount": 320,
+          "changedEdgeCount": 11,
+          "edgeCategoryCounts": {
+            "primary_bottom_tab": 5,
+            "primary_tab_surface_entry": 15
+          },
+          "primaryBottomTabAttemptedCount": 5,
+          "primaryBottomTabAttemptedLabels": [
+            "tab_1",
+            "tab_2",
+            "tab_3",
+            "tab_4",
+            "tab_5"
+          ],
+          "primaryBottomTabOpenedCount": 2,
+          "primaryBottomTabOpenedLabels": [
+            "tab_3",
+            "tab_4"
+          ],
+          "primaryTabSurfaceEntryChangedCount": 9,
+          "primaryTabSurfaceEntriesByTab": {
+            "tab_1": [
+              "全部",
+              "分类",
+              "已领优惠券",
+              "可享卡权益",
+              "0",
+              "优惠券",
+              "权益"
+            ],
+            "tab_2": [
+              "全部",
+              "分类",
+              "已领优惠券",
+              "可享卡权益",
+              "0",
+              "优惠券"
+            ]
+          }
+        }
+      },
+      "examples": {
+        "success": [
+          "unionpay_bottom_tabs",
+          "unionpay_coupon_probe"
+        ],
+        "deferred": [
+          "unionpay_search_service"
+        ],
+        "blocked": [
+          "unionpay_home_icons",
+          "unionpay_pay_guard",
+          "unionpay_scan_probe"
+        ],
+        "failed": []
+      }
+    },
+    {
+      "appName": "同花顺",
+      "pkg": "com.hexin.plat.android",
+      "counts": {
+        "success": 2,
+        "deferred": 0,
+        "blocked": 8,
+        "failed": 0,
+        "other": 0
+      },
+      "bestGraph": {
+        "screenCount": 3,
+        "edgeCount": 7,
+        "quality": {
+          "usable": false,
+          "reason": "primary_bottom_tabs_not_opened",
+          "qualityGate": {
+            "bottomPrimaryTabsRequired": true,
+            "bottomPrimaryTabsAttempted": 5,
+            "bottomPrimaryTabsOpened": 0,
+            "topIconsAreNotEnough": true,
+            "repeatedMessagePageIsNotProgress": true
+          },
+          "screenCount": 3,
+          "edgeCount": 7,
+          "nodeCount": 369,
+          "clickableCount": 91,
+          "editableCount": 0,
+          "labelCount": 128,
+          "bottomTabCount": 18,
+          "topEntryCount": 44,
+          "sideEntryCount": 22,
+          "entryCandidateCount": 5,
+          "inputCandidateCount": 0,
+          "videoCandidateCount": 0,
+          "clickTargetCount": 98,
+          "graphicalCandidateCount": 21,
+          "checkableCandidateCount": 0,
+          "candidateCount": 208,
+          "changedEdgeCount": 2,
+          "edgeCategoryCounts": {
+            "primary_bottom_tab": 5,
+            "primary_tab_surface_entry": 2
+          },
+          "primaryBottomTabAttemptedCount": 5,
+          "primaryBottomTabAttemptedLabels": [
+            "tab_1",
+            "tab_2",
+            "tab_3",
+            "tab_4",
+            "tab_5"
+          ],
+          "primaryBottomTabOpenedCount": 0,
+          "primaryBottomTabOpenedLabels": [],
+          "primaryTabSurfaceEntryChangedCount": 2,
+          "primaryTabSurfaceEntriesByTab": {
+            "tab_1": [
+              "com.hexin.plat.android:id/ll_container_menu",
+              "com.hexin.plat.android:id/img_found_group"
+            ]
+          }
+        }
+      },
+      "examples": {
+        "success": [
+          "hexin_news_probe",
+          "hexin_top_search"
+        ],
+        "deferred": [],
+        "blocked": [
+          "hexin_search_stock",
+          "hexin_market_tabs",
+          "hexin_optional_stock"
+        ],
+        "failed": []
+      }
+    },
+    {
+      "appName": "钉钉",
+      "pkg": "com.alibaba.android.rimet",
+      "counts": {
+        "success": 8,
+        "deferred": 2,
+        "blocked": 0,
+        "failed": 0,
+        "other": 0
+      },
+      "bestGraph": {
+        "screenCount": 12,
+        "edgeCount": 18,
+        "quality": {
+          "usable": true,
+          "reason": "usable_app_ui_graph",
+          "bottomTabsOpened": 0,
+          "bottomTabLabels": [],
+          "graphicalCandidateCount": 0,
+          "topEntryCount": 121,
+          "sideEntryCount": 63,
+          "inputCandidateCount": 1
+        }
+      },
+      "examples": {
+        "success": [
+          "dingtalk_login_state",
+          "dingtalk_bottom_tabs",
+          "dingtalk_workbench_probe"
+        ],
+        "deferred": [
+          "dingtalk_search_contact",
+          "dingtalk_approval_draft"
+        ],
+        "blocked": [],
+        "failed": []
+      }
+    }
+  ]
+}

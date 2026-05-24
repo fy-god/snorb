@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "kind": "skill_json_dry_run_report",
+  "skillId": "patched.1779297752298.4.clickselector",
+  "appPackage": "tv.danmaku.bili",
+  "passed": true,
+  "status": "DRY_RUN_PASSED",
+  "errors": [],
+  "warnings": [],
+  "summary": "Skill JSON dry-run passed",
+  "timestamp": 1779338058628
+}

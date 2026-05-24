@@ -1,0 +1,55 @@
+{
+  "schemaVersion": 1,
+  "kind": "skill_json_ai_follow_up_run_report",
+  "id": "ai_follow_up_run_1778526873882",
+  "skillId": "direct.command.1778526871844",
+  "failedSkillId": "bilibili.search.search_in_app",
+  "appPackage": "tv.danmaku.bili",
+  "instruction": "打开哔哩哔哩搜索王老菊打开第一个视频",
+  "engine": "ai_runtime_replan",
+  "phase": "REPLAN",
+  "trigger": "GOAL_UNVERIFIED_LOOP_2",
+  "previousStatus": "FAILED_GOAL_UNVERIFIED",
+  "previousMessage": "当前仍像搜索结果页：搜索输入框或“综合\/视频\/用户”等结果页 tabs 还在，不能报告第一个视频已打开。",
+  "previousRuntimeReportFile": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/runtime\/run_reports\/tv.danmaku.bili\/bilibili_open_first_video_1778526830598.json",
+  "aiJobFile": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ai_jobs\/2026-05-12\/factory_ai_replan_1778526871830.json",
+  "decision": {
+    "goalCompleted": false,
+    "screenAssessment": "当前页面显示为发布动态界面，控件包括'进来来和UP唠会嗑呗'输入框、'转到动态'文字和'发布'按钮，底部有多个导航按钮。",
+    "failureDiagnosis": "之前点击了视频候选区域可能误触了输入框，进入了发布动态页面，偏离了打开第一个视频的目标。",
+    "confidence": "HIGH",
+    "nextActionReason": "需要按返回键离开当前发布动态页面，期望回到哔哩哔哩搜索结果页。"
+  },
+  "approvedRequired": false,
+  "status": "SUCCESS_MEDIUM_CONFIDENCE",
+  "message": "Macro atoms completed; reactiveDismissed=0",
+  "durationMs": 1981,
+  "usedCoordinate": false,
+  "details": {
+    "macroSkillId": "direct.command.1778526871844",
+    "atomTrace": [
+      {
+        "index": 0,
+        "skillId": "direct.1778526871844.1.back",
+        "actionType": "Back",
+        "status": "SUCCESS_MEDIUM_CONFIDENCE",
+        "message": "Window\/node state changed",
+        "usedCoordinate": false,
+        "details": null
+      },
+      {
+        "index": 1,
+        "skillId": "direct.1778526871844.2.wait",
+        "actionType": "Wait",
+        "status": "SUCCESS_MEDIUM_CONFIDENCE",
+        "message": "Waited 1500ms; reactiveDismissed=0",
+        "usedCoordinate": false,
+        "details": null
+      }
+    ],
+    "reactiveDismissed": 0
+  },
+  "allowSideEffect": true,
+  "skillFile": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_candidates\/tv.danmaku.bili\/direct.command.1778526871844.json",
+  "createdAt": 1778526873882
+}

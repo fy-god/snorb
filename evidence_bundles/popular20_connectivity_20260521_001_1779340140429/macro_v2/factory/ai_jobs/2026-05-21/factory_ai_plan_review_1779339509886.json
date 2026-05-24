@@ -1,0 +1,3654 @@
+{
+  "schemaVersion": 1,
+  "kind": "factory_ai_job",
+  "id": "factory_ai_plan_review_1779339509886",
+  "taskType": "RUNTIME_PLAN_REVIEW_BEFORE_EXECUTION",
+  "appPackage": "com.baidu.BaiduMap",
+  "createdAt": 1779339509886,
+  "inputSummary": "在百度地图搜索上海站，停在地点结果页并记录路线、收藏、电话入口。\n\n约束：目标 App=百度地图，包名=com.baidu.BaiduMap。必须由 MacroPilot 手机端自己用无障碍、输入法、AI\/Skill JSON 执行，不允许依赖 ADB 手点目标 App。执行前先读取当前 UI；如果遇到广告、弹窗、小字提示，先记录文字并安全关闭。任务完成必须用当前 UI 证据验证，不能只因为步骤执行完就报成功。如果没有现成 skill，先复用已有相似 Skill JSON\/archetype，只改关键槽位如入口文字、坐标、目标文本、验证规则，再组装 atomic\/macro skill。需要探索入口时优先遍历底部标签、顶部小图标、图形化入口、侧边操作和子页面。本任务 stopBeforeSubmit=true：写草稿、评论、订单、支付类流程必须停在提交前，不点击最终发布、发送、提交订单、支付、确认授权。期望证据包括：上海站、地点。",
+  "promptSnapshot": {
+    "taskType": "RUNTIME_PLAN_REVIEW_BEFORE_EXECUTION",
+    "instruction": "在百度地图搜索上海站，停在地点结果页并记录路线、收藏、电话入口。\n\n约束：目标 App=百度地图，包名=com.baidu.BaiduMap。必须由 MacroPilot 手机端自己用无障碍、输入法、AI\/Skill JSON 执行，不允许依赖 ADB 手点目标 App。执行前先读取当前 UI；如果遇到广告、弹窗、小字提示，先记录文字并安全关闭。任务完成必须用当前 UI 证据验证，不能只因为步骤执行完就报成功。如果没有现成 skill，先复用已有相似 Skill JSON\/archetype，只改关键槽位如入口文字、坐标、目标文本、验证规则，再组装 atomic\/macro skill。需要探索入口时优先遍历底部标签、顶部小图标、图形化入口、侧边操作和子页面。本任务 stopBeforeSubmit=true：写草稿、评论、订单、支付类流程必须停在提交前，不点击最终发布、发送、提交订单、支付、确认授权。期望证据包括：上海站、地点。",
+    "appPackage": "com.baidu.BaiduMap",
+    "intentId": "generic_search",
+    "currentUi": {
+      "serviceConnected": true,
+      "appPackage": "com.zhihu.android",
+      "windowClassName": "android.widget.FrameLayout",
+      "screenWidth": 1440,
+      "screenHeight": 3168,
+      "nodeCount": 40,
+      "snapshotPath": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_snapshots\/com.zhihu.android\/20260521_125628_706_24607b20.json",
+      "recentUiSnapshots": [
+        {
+          "id": "ui_snapshot_1779339388944",
+          "source": "current_ui_summary",
+          "note": "factory_ai_context",
+          "appPackage": "com.zhihu.android",
+          "windowClassName": "android.widget.FrameLayout",
+          "screenKey": "24607b20",
+          "screenshotPath": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_screenshots\/com.zhihu.android\/20260521_125628_706_24607b20.png",
+          "visualHash": "900c487dc58953d3a851493ae1e0213070e045005dc997c1ae4b996e02e56173",
+          "summary": {
+            "nodeCount": 40,
+            "clickableCount": 9,
+            "editableCount": 1,
+            "scrollableCount": 0,
+            "labels": [
+              "com.zhihu.android:id\/action_bar_root",
+              "android:id\/content",
+              "com.zhihu.android:id\/content_container",
+              "com.zhihu.android:id\/overlay_container",
+              "android:id\/content",
+              "com.zhihu.android:id\/fragment_container",
+              "com.zhihu.android:id\/parent_fragment_content_id",
+              "com.zhihu.android:id\/system_bar",
+              "com.zhihu.android:id\/container",
+              "com.zhihu.android:id\/up",
+              "com.zhihu.android:id\/card_root",
+              "com.zhihu.android:id\/search_start_icon",
+              "泰国取消90国公民60天免签 com.zhihu.android:id\/input",
+              "com.zhihu.android:id\/clear",
+              "搜索 com.zhihu.android:id\/cancel",
+              "com.zhihu.android:id\/paging",
+              "com.zhihu.android:id\/item_container",
+              "com.zhihu.android:id\/icon_left",
+              "泰国内阁决定取消60天免签政策 com.zhihu.android:id\/query",
+              "com.zhihu.android:id\/guideline3",
+              "com.zhihu.android:id\/guideline21",
+              "com.zhihu.android:id\/item_container",
+              "com.zhihu.android:id\/icon_left",
+              "泰国60天免签取消 com.zhihu.android:id\/query",
+              "com.zhihu.android:id\/guideline3",
+              "com.zhihu.android:id\/guideline21",
+              "com.zhihu.android:id\/item_container",
+              "查看「泰国取消90国公民60天免签」的搜索结果 com.zhihu.android:id\/query",
+              "com.zhihu.android:id\/to_report",
+              "com.zhihu.android:id\/report_icon",
+              "举报 com.zhihu.android:id\/report_text",
+              "android:id\/navigationBarBackground"
+            ],
+            "bottomCandidates": [
+              {
+                "label": "com.zhihu.android:id\/to_report",
+                "bounds": {
+                  "left": 592,
+                  "top": 2608,
+                  "right": 848,
+                  "bottom": 2704
+                },
+                "clickable": true
+              },
+              {
+                "label": "举报 com.zhihu.android:id\/report_text",
+                "bounds": {
+                  "left": 728,
+                  "top": 2615,
+                  "right": 848,
+                  "bottom": 2696
+                },
+                "clickable": false
+              }
+            ]
+          },
+          "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_snapshots\/com.zhihu.android\/20260521_125628_706_24607b20.json"
+        },
+        {
+          "id": "ui_snapshot_1779339388537",
+          "source": "accessibility_auto",
+          "note": "TYPE_WINDOW_CONTENT_CHANGED",
+          "appPackage": "com.zhihu.android",
+          "windowClassName": "android.widget.FrameLayout",
+          "screenKey": "24607b20",
+          "screenshotPath": "null",
+          "visualHash": "null",
+          "summary": {
+            "nodeCount": 40,
+            "clickableCount": 9,
+            "editableCount": 1,
+            "scrollableCount": 0,
+            "labels": [
+              "com.zhihu.android:id\/action_bar_root",
+              "android:id\/content",
+              "com.zhihu.android:id\/content_container",
+              "com.zhihu.android:id\/overlay_container",
+              "android:id\/content",
+              "com.zhihu.android:id\/fragment_container",
+              "com.zhihu.android:id\/parent_fragment_content_id",
+              "com.zhihu.android:id\/system_bar",
+              "com.zhihu.android:id\/container",
+              "com.zhihu.android:id\/up",
+              "com.zhihu.android:id\/card_root",
+              "com.zhihu.android:id\/search_start_icon",
+              "泰国取消90国公民60天免签 com.zhihu.android:id\/input",
+              "com.zhihu.android:id\/clear",
+              "搜索 com.zhihu.android:id\/cancel",
+              "com.zhihu.android:id\/paging",
+              "com.zhihu.android:id\/item_container",
+              "com.zhihu.android:id\/icon_left",
+              "泰国内阁决定取消60天免签政策 com.zhihu.android:id\/query",
+              "com.zhihu.android:id\/guideline3",
+              "com.zhihu.android:id\/guideline21",
+              "com.zhihu.android:id\/item_container",
+              "com.zhihu.android:id\/icon_left",
+              "泰国60天免签取消 com.zhihu.android:id\/query",
+              "com.zhihu.android:id\/guideline3",
+              "com.zhihu.android:id\/guideline21",
+              "com.zhihu.android:id\/item_container",
+              "查看「泰国取消90国公民60天免签」的搜索结果 com.zhihu.android:id\/query",
+              "com.zhihu.android:id\/to_report",
+              "com.zhihu.android:id\/report_icon",
+              "举报 com.zhihu.android:id\/report_text",
+              "android:id\/navigationBarBackground"
+            ],
+            "bottomCandidates": [
+              {
+                "label": "com.zhihu.android:id\/to_report",
+                "bounds": {
+                  "left": 592,
+                  "top": 2608,
+                  "right": 848,
+                  "bottom": 2704
+                },
+                "clickable": true
+              },
+              {
+                "label": "举报 com.zhihu.android:id\/report_text",
+                "bounds": {
+                  "left": 728,
+                  "top": 2615,
+                  "right": 848,
+                  "bottom": 2696
+                },
+                "clickable": false
+              }
+            ]
+          },
+          "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_snapshots\/com.zhihu.android\/20260521_125628_536_24607b20.json"
+        },
+        {
+          "id": "ui_snapshot_1779339388264",
+          "source": "current_ui_summary",
+          "note": "factory_ai_context",
+          "appPackage": "com.zhihu.android",
+          "windowClassName": "android.widget.FrameLayout",
+          "screenKey": "24607b20",
+          "screenshotPath": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_screenshots\/com.zhihu.android\/20260521_125628_002_24607b20.png",
+          "visualHash": "bdd7984d3bfd6f976b9131f45fcf3b676cda1269a70101ca6fee11757ce573da",
+          "summary": {
+            "nodeCount": 40,
+            "clickableCount": 9,
+            "editableCount": 1,
+            "scrollableCount": 0,
+            "labels": [
+              "com.zhihu.android:id\/action_bar_root",
+              "android:id\/content",
+              "com.zhihu.android:id\/content_container",
+              "com.zhihu.android:id\/overlay_container",
+              "android:id\/content",
+              "com.zhihu.android:id\/fragment_container",
+              "com.zhihu.android:id\/parent_fragment_content_id",
+              "com.zhihu.android:id\/system_bar",
+              "com.zhihu.android:id\/container",
+              "com.zhihu.android:id\/up",
+              "com.zhihu.android:id\/card_root",
+              "com.zhihu.android:id\/search_start_icon",
+              "泰国取消90国公民60天免签 com.zhihu.android:id\/input",
+              "com.zhihu.android:id\/clear",
+              "搜索 com.zhihu.android:id\/cancel",
+              "com.zhihu.android:id\/paging",
+              "com.zhihu.android:id\/item_container",
+              "com.zhihu.android:id\/icon_left",
+              "泰国内阁决定取消60天免签政策 com.zhihu.android:id\/query",
+              "com.zhihu.android:id\/guideline3",
+              "com.zhihu.android:id\/guideline21",
+              "com.zhihu.android:id\/item_container",
+              "com.zhihu.android:id\/icon_left",
+              "泰国60天免签取消 com.zhihu.android:id\/query",
+              "com.zhihu.android:id\/guideline3",
+              "com.zhihu.android:id\/guideline21",
+              "com.zhihu.android:id\/item_container",
+              "查看「泰国取消90国公民60天免签」的搜索结果 com.zhihu.android:id\/query",
+              "com.zhihu.android:id\/to_report",
+              "com.zhihu.android:id\/report_icon",
+              "举报 com.zhihu.android:id\/report_text",
+              "android:id\/navigationBarBackground"
+            ],
+            "bottomCandidates": [
+              {
+                "label": "com.zhihu.android:id\/to_report",
+                "bounds": {
+                  "left": 592,
+                  "top": 2608,
+                  "right": 848,
+                  "bottom": 2704
+                },
+                "clickable": true
+              },
+              {
+                "label": "举报 com.zhihu.android:id\/report_text",
+                "bounds": {
+                  "left": 728,
+                  "top": 2615,
+                  "right": 848,
+                  "bottom": 2696
+                },
+                "clickable": false
+              }
+            ]
+          },
+          "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_snapshots\/com.zhihu.android\/20260521_125628_002_24607b20.json"
+        },
+        {
+          "id": "ui_snapshot_1779339384350",
+          "source": "current_ui_summary",
+          "note": "factory_ai_context",
+          "appPackage": "com.zhihu.android",
+          "windowClassName": "android.widget.FrameLayout",
+          "screenKey": "24607b20",
+          "screenshotPath": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_screenshots\/com.zhihu.android\/20260521_125624_080_24607b20.png",
+          "visualHash": "900c487dc58953d3a851493ae1e0213070e045005dc997c1ae4b996e02e56173",
+          "summary": {
+            "nodeCount": 40,
+            "clickableCount": 9,
+            "editableCount": 1,
+            "scrollableCount": 0,
+            "labels": [
+              "com.zhihu.android:id\/action_bar_root",
+              "android:id\/content",
+              "com.zhihu.android:id\/content_container",
+              "com.zhihu.android:id\/overlay_container",
+              "android:id\/content",
+              "com.zhihu.android:id\/fragment_container",
+              "com.zhihu.android:id\/parent_fragment_content_id",
+              "com.zhihu.android:id\/system_bar",
+              "com.zhihu.android:id\/container",
+              "com.zhihu.android:id\/up",
+              "com.zhihu.android:id\/card_root",
+              "com.zhihu.android:id\/search_start_icon",
+              "泰国取消90国公民60天免签 com.zhihu.android:id\/input",
+              "com.zhihu.android:id\/clear",
+              "搜索 com.zhihu.android:id\/cancel",
+              "com.zhihu.android:id\/paging",
+              "com.zhihu.android:id\/item_container",
+              "com.zhihu.android:id\/icon_left",
+              "泰国内阁决定取消60天免签政策 com.zhihu.android:id\/query",
+              "com.zhihu.android:id\/guideline3",
+              "com.zhihu.android:id\/guideline21",
+              "com.zhihu.android:id\/item_container",
+              "com.zhihu.android:id\/icon_left",
+              "泰国60天免签取消 com.zhihu.android:id\/query",
+              "com.zhihu.android:id\/guideline3",
+              "com.zhihu.android:id\/guideline21",
+              "com.zhihu.android:id\/item_container",
+              "查看「泰国取消90国公民60天免签」的搜索结果 com.zhihu.android:id\/query",
+              "com.zhihu.android:id\/to_report",
+              "com.zhihu.android:id\/report_icon",
+              "举报 com.zhihu.android:id\/report_text",
+              "android:id\/navigationBarBackground"
+            ],
+            "bottomCandidates": [
+              {
+                "label": "com.zhihu.android:id\/to_report",
+                "bounds": {
+                  "left": 592,
+                  "top": 2608,
+                  "right": 848,
+                  "bottom": 2704
+                },
+                "clickable": true
+              },
+              {
+                "label": "举报 com.zhihu.android:id\/report_text",
+                "bounds": {
+                  "left": 728,
+                  "top": 2615,
+                  "right": 848,
+                  "bottom": 2696
+                },
+                "clickable": false
+              }
+            ]
+          },
+          "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_snapshots\/com.zhihu.android\/20260521_125624_080_24607b20.json"
+        }
+      ],
+      "capability": {
+        "nodeReadability": "A",
+        "inputCapability": "SET_TEXT",
+        "verificationCapability": "HIGH"
+      },
+      "nodes": [
+        {
+          "class": "android.widget.FrameLayout",
+          "clickable": false,
+          "editable": false,
+          "scrollable": false,
+          "bounds": "0 0 1440 3168"
+        },
+        {
+          "class": "android.widget.LinearLayout",
+          "clickable": false,
+          "editable": false,
+          "scrollable": false,
+          "bounds": "0 0 1440 3104"
+        },
+        {
+          "class": "android.widget.FrameLayout",
+          "clickable": false,
+          "editable": false,
+          "scrollable": false,
+          "bounds": "0 0 1440 3104"
+        },
+        {
+          "resourceId": "com.zhihu.android:id\/action_bar_root",
+          "class": "android.widget.FrameLayout",
+          "clickable": false,
+          "editable": false,
+          "scrollable": false,
+          "bounds": "0 0 1440 3104"
+        },
+        {
+          "resourceId": "android:id\/content",
+          "class": "android.widget.FrameLayout",
+          "clickable": false,
+          "editable": false,
+          "scrollable": false,
+          "bounds": "0 0 1440 3104"
+        },
+        {
+          "resourceId": "com.zhihu.android:id\/content_container",
+          "class": "android.widget.FrameLayout",
+          "clickable": false,
+          "editable": false,
+          "scrollable": false,
+          "bounds": "0 0 1440 3104"
+        },
+        {
+          "resourceId": "com.zhihu.android:id\/overlay_container",
+          "class": "android.widget.FrameLayout",
+          "clickable": false,
+          "editable": false,
+          "scrollable": false,
+          "bounds": "0 0 1440 3104"
+        },
+        {
+          "resourceId": "android:id\/content",
+          "class": "android.widget.FrameLayout",
+          "clickable": false,
+          "editable": false,
+          "scrollable": false,
+          "bounds": "0 0 1440 3104"
+        },
+        {
+          "resourceId": "com.zhihu.android:id\/fragment_container",
+          "class": "android.widget.FrameLayout",
+          "clickable": false,
+          "editable": false,
+          "scrollable": false,
+          "bounds": "0 0 1440 3104"
+        },
+        {
+          "resourceId": "com.zhihu.android:id\/parent_fragment_content_id",
+          "class": "android.widget.FrameLayout",
+          "clickable": false,
+          "editable": false,
+          "scrollable": false,
+          "bounds": "0 0 1440 3104"
+        },
+        {
+          "class": "android.widget.RelativeLayout",
+          "clickable": false,
+          "editable": false,
+          "scrollable": false,
+          "bounds": "0 0 1440 3104"
+        },
+        {
+          "class": "android.widget.LinearLayout",
+          "clickable": false,
+          "editable": false,
+          "scrollable": false,
+          "bounds": "0 0 1440 3104"
+        },
+        {
+          "resourceId": "com.zhihu.android:id\/system_bar",
+          "class": "android.view.ViewGroup",
+          "clickable": false,
+          "editable": false,
+          "scrollable": false,
+          "bounds": "0 160 1440 364"
+        },
+        {
+          "resourceId": "com.zhihu.android:id\/container",
+          "class": "android.widget.LinearLayout",
+          "clickable": true,
+          "editable": false,
+          "scrollable": false,
+          "bounds": "0 160 1440 364"
+        },
+        {
+          "resourceId": "com.zhihu.android:id\/up",
+          "class": "android.widget.ImageView",
+          "clickable": true,
+          "editable": false,
+          "scrollable": false,
+          "bounds": "40 224 136 320"
+        },
+        {
+          "resourceId": "com.zhihu.android:id\/card_root",
+          "class": "android.widget.FrameLayout",
+          "clickable": false,
+          "editable": false,
+          "scrollable": false,
+          "bounds": "200 200 1192 344"
+        },
+        {
+          "class": "android.widget.LinearLayout",
+          "clickable": false,
+          "editable": false,
+          "scrollable": false,
+          "bounds": "200 200 1192 344"
+        },
+        {
+          "resourceId": "com.zhihu.android:id\/search_start_icon",
+          "class": "android.widget.ImageView",
+          "clickable": false,
+          "editable": false,
+          "scrollable": false,
+          "bounds": "272 236 344 308"
+        },
+        {
+          "text": "泰国取消90国公民60天免签",
+          "resourceId": "com.zhihu.android:id\/input",
+          "class": "android.widget.EditText",
+          "clickable": true,
+          "editable": true,
+          "scrollable": false,
+          "bounds": "376 229 1016 315"
+        },
+        {
+          "resourceId": "com.zhihu.android:id\/clear",
+          "class": "android.widget.ImageView",
+          "clickable": true,
+          "editable": false,
+          "scrollable": false,
+          "bounds": "1080 240 1144 304"
+        },
+        {
+          "text": "搜索",
+          "resourceId": "com.zhihu.android:id\/cancel",
+          "class": "android.widget.TextView",
+          "clickable": true,
+          "editable": false,
+          "scrollable": false,
+          "bounds": "1256 229 1384 315"
+        },
+        {
+          "resourceId": "com.zhihu.android:id\/paging",
+          "class": "android.widget.FrameLayout",
+          "clickable": false,
+          "editable": false,
+          "scrollable": false,
+          "bounds": "0 364 1440 3104"
+        },
+        {
+          "class": "android.view.ViewGroup",
+          "clickable": false,
+          "editable": false,
+          "scrollable": false,
+          "bounds": "0 364 1440 3104"
+        },
+        {
+          "class": "androidx.recyclerview.widget.RecyclerView",
+          "clickable": false,
+          "editable": false,
+          "scrollable": false,
+          "bounds": "0 364 1440 3104"
+        },
+        {
+          "resourceId": "com.zhihu.android:id\/item_container",
+          "class": "android.view.ViewGroup",
+          "clickable": true,
+          "editable": false,
+          "scrollable": false,
+          "bounds": "0 364 1440 540"
+        },
+        {
+          "resourceId": "com.zhihu.android:id\/icon_left",
+          "class": "android.widget.ImageView",
+          "clickable": false,
+          "editable": false,
+          "scrollable": false,
+          "bounds": "64 412 144 492"
+        },
+        {
+          "text": "泰国内阁决定取消60天免签政策",
+          "resourceId": "com.zhihu.android:id\/query",
+          "class": "android.widget.TextView",
+          "clickable": false,
+          "editable": false,
+          "scrollable": false,
+          "bounds": "208 417 1062 488"
+        },
+        {
+          "resourceId": "com.zhihu.android:id\/guideline3",
+          "class": "android.view.View",
+          "clickable": false,
+          "editable": false,
+          "scrollable": false,
+          "bounds": "1370 452 1372 452"
+        },
+        {
+          "resourceId": "com.zhihu.android:id\/guideline21",
+          "class": "android.view.View",
+          "clickable": false,
+          "editable": false,
+          "scrollable": false,
+          "bounds": "1370 452 1372 452"
+        },
+        {
+          "resourceId": "com.zhihu.android:id\/item_container",
+          "class": "android.view.ViewGroup",
+          "clickable": true,
+          "editable": false,
+          "scrollable": false,
+          "bounds": "0 540 1440 716"
+        },
+        {
+          "resourceId": "com.zhihu.android:id\/icon_left",
+          "class": "android.widget.ImageView",
+          "clickable": false,
+          "editable": false,
+          "scrollable": false,
+          "bounds": "64 588 144 668"
+        },
+        {
+          "text": "泰国60天免签取消",
+          "resourceId": "com.zhihu.android:id\/query",
+          "class": "android.widget.TextView",
+          "clickable": false,
+          "editable": false,
+          "scrollable": false,
+          "bounds": "208 593 702 664"
+        },
+        {
+          "resourceId": "com.zhihu.android:id\/guideline3",
+          "class": "android.view.View",
+          "clickable": false,
+          "editable": false,
+          "scrollable": false,
+          "bounds": "1370 628 1372 628"
+        },
+        {
+          "resourceId": "com.zhihu.android:id\/guideline21",
+          "class": "android.view.View",
+          "clickable": false,
+          "editable": false,
+          "scrollable": false,
+          "bounds": "1370 628 1372 628"
+        },
+        {
+          "resourceId": "com.zhihu.android:id\/item_container",
+          "class": "android.widget.RelativeLayout",
+          "clickable": true,
+          "editable": false,
+          "scrollable": false,
+          "bounds": "0 836 1440 1028"
+        },
+        {
+          "text": "查看「泰国取消90国公民60天免签」的搜索结果",
+          "resourceId": "com.zhihu.android:id\/query",
+          "class": "android.widget.TextView",
+          "clickable": false,
+          "editable": false,
+          "scrollable": false,
+          "bounds": "0 891 1440 972"
+        },
+        {
+          "resourceId": "com.zhihu.android:id\/to_report",
+          "class": "androidx.appcompat.widget.LinearLayoutCompat",
+          "clickable": true,
+          "editable": false,
+          "scrollable": false,
+          "bounds": "592 2608 848 2704"
+        },
+        {
+          "resourceId": "com.zhihu.android:id\/report_icon",
+          "class": "android.widget.ImageView",
+          "clickable": false,
+          "editable": false,
+          "scrollable": false,
+          "bounds": "592 2608 688 2704"
+        },
+        {
+          "text": "举报",
+          "resourceId": "com.zhihu.android:id\/report_text",
+          "class": "android.widget.TextView",
+          "clickable": false,
+          "editable": false,
+          "scrollable": false,
+          "bounds": "728 2615 848 2696"
+        },
+        {
+          "resourceId": "android:id\/navigationBarBackground",
+          "class": "android.view.View",
+          "clickable": false,
+          "editable": false,
+          "scrollable": false,
+          "bounds": "0 3104 1440 3168"
+        }
+      ],
+      "blockingDialogs": [
+        {
+          "type": "share_sheet",
+          "hits": [
+            "泰国取消90国公民60天免签 com.zhihu.android:id\/input",
+            "泰国内阁决定取消60天免签政策 com.zhihu.android:id\/query",
+            "泰国60天免签取消 com.zhihu.android:id\/query",
+            "查看「泰国取消90国公民60天免签」的搜索结果 com.zhihu.android:id\/query",
+            "举报 com.zhihu.android:id\/report_text",
+            "泰国内阁决定取消60天免签政策 com.zhihu.android:id\/query",
+            "泰国60天免签取消 com.zhihu.android:id\/query",
+            "举报 com.zhihu.android:id\/report_text"
+          ]
+        },
+        {
+          "type": "popup_observed",
+          "events": [],
+          "smallNodes": [
+            "泰国内阁决定取消60天免签政策 com.zhihu.android:id\/query",
+            "泰国60天免签取消 com.zhihu.android:id\/query",
+            "举报 com.zhihu.android:id\/report_text"
+          ]
+        }
+      ],
+      "clickTargets": [
+        {
+          "index": 0,
+          "text": null,
+          "desc": null,
+          "resourceId": "com.zhihu.android:id\/container",
+          "class": "android.widget.LinearLayout",
+          "clickable": true,
+          "selected": false,
+          "bounds": "0 160 1440 364",
+          "center": {
+            "x": 0.5,
+            "y": 0.08270202020202021
+          },
+          "tags": [
+            "clickable"
+          ]
+        },
+        {
+          "index": 1,
+          "text": null,
+          "desc": null,
+          "resourceId": "com.zhihu.android:id\/up",
+          "class": "android.widget.ImageView",
+          "clickable": true,
+          "selected": false,
+          "bounds": "40 224 136 320",
+          "center": {
+            "x": 0.06111111111111111,
+            "y": 0.08585858585858586
+          },
+          "tags": [
+            "clickable",
+            "video_like",
+            "author_or_query"
+          ]
+        },
+        {
+          "index": 2,
+          "text": "泰国取消90国公民60天免签",
+          "desc": null,
+          "resourceId": "com.zhihu.android:id\/input",
+          "class": "android.widget.EditText",
+          "clickable": true,
+          "selected": false,
+          "bounds": "376 229 1016 315",
+          "center": {
+            "x": 0.48333333333333334,
+            "y": 0.08585858585858586
+          },
+          "tags": [
+            "clickable"
+          ]
+        },
+        {
+          "index": 3,
+          "text": null,
+          "desc": null,
+          "resourceId": "com.zhihu.android:id\/clear",
+          "class": "android.widget.ImageView",
+          "clickable": true,
+          "selected": false,
+          "bounds": "1080 240 1144 304",
+          "center": {
+            "x": 0.7722222222222223,
+            "y": 0.08585858585858586
+          },
+          "tags": [
+            "clickable",
+            "video_like"
+          ]
+        },
+        {
+          "index": 4,
+          "text": "搜索",
+          "desc": null,
+          "resourceId": "com.zhihu.android:id\/cancel",
+          "class": "android.widget.TextView",
+          "clickable": true,
+          "selected": false,
+          "bounds": "1256 229 1384 315",
+          "center": {
+            "x": 0.9166666666666666,
+            "y": 0.08585858585858586
+          },
+          "tags": [
+            "clickable",
+            "video_like"
+          ]
+        },
+        {
+          "index": 5,
+          "text": null,
+          "desc": null,
+          "resourceId": "com.zhihu.android:id\/item_container",
+          "class": "android.view.ViewGroup",
+          "clickable": true,
+          "selected": false,
+          "bounds": "0 364 1440 540",
+          "center": {
+            "x": 0.5,
+            "y": 0.14267676767676768
+          },
+          "tags": [
+            "clickable",
+            "video_like",
+            "author_or_query"
+          ]
+        },
+        {
+          "index": 6,
+          "text": "泰国内阁决定取消60天免签政策",
+          "desc": null,
+          "resourceId": "com.zhihu.android:id\/query",
+          "class": "android.widget.TextView",
+          "clickable": false,
+          "selected": false,
+          "bounds": "208 417 1062 488",
+          "center": {
+            "x": 0.4409722222222222,
+            "y": 0.14267676767676768
+          },
+          "tags": [
+            "video_like"
+          ]
+        },
+        {
+          "index": 7,
+          "text": null,
+          "desc": null,
+          "resourceId": "com.zhihu.android:id\/item_container",
+          "class": "android.view.ViewGroup",
+          "clickable": true,
+          "selected": false,
+          "bounds": "0 540 1440 716",
+          "center": {
+            "x": 0.5,
+            "y": 0.19823232323232323
+          },
+          "tags": [
+            "clickable",
+            "content_area",
+            "video_like",
+            "author_or_query"
+          ]
+        },
+        {
+          "index": 8,
+          "text": "泰国60天免签取消",
+          "desc": null,
+          "resourceId": "com.zhihu.android:id\/query",
+          "class": "android.widget.TextView",
+          "clickable": false,
+          "selected": false,
+          "bounds": "208 593 702 664",
+          "center": {
+            "x": 0.3159722222222222,
+            "y": 0.19823232323232323
+          },
+          "tags": [
+            "content_area",
+            "video_like"
+          ]
+        },
+        {
+          "index": 9,
+          "text": null,
+          "desc": null,
+          "resourceId": "com.zhihu.android:id\/item_container",
+          "class": "android.widget.RelativeLayout",
+          "clickable": true,
+          "selected": false,
+          "bounds": "0 836 1440 1028",
+          "center": {
+            "x": 0.5,
+            "y": 0.29419191919191917
+          },
+          "tags": [
+            "clickable",
+            "content_area"
+          ]
+        },
+        {
+          "index": 10,
+          "text": "查看「泰国取消90国公民60天免签」的搜索结果",
+          "desc": null,
+          "resourceId": "com.zhihu.android:id\/query",
+          "class": "android.widget.TextView",
+          "clickable": false,
+          "selected": false,
+          "bounds": "0 891 1440 972",
+          "center": {
+            "x": 0.5,
+            "y": 0.29387626262626265
+          },
+          "tags": [
+            "content_area",
+            "video_like"
+          ]
+        },
+        {
+          "index": 11,
+          "text": null,
+          "desc": null,
+          "resourceId": "com.zhihu.android:id\/to_report",
+          "class": "androidx.appcompat.widget.LinearLayoutCompat",
+          "clickable": true,
+          "selected": false,
+          "bounds": "592 2608 848 2704",
+          "center": {
+            "x": 0.5,
+            "y": 0.8383838383838383
+          },
+          "tags": [
+            "clickable",
+            "content_area"
+          ]
+        },
+        {
+          "index": 12,
+          "text": "举报",
+          "desc": null,
+          "resourceId": "com.zhihu.android:id\/report_text",
+          "class": "android.widget.TextView",
+          "clickable": false,
+          "selected": false,
+          "bounds": "728 2615 848 2696",
+          "center": {
+            "x": 0.5472222222222223,
+            "y": 0.8380681818181818
+          },
+          "tags": [
+            "content_area",
+            "video_like"
+          ]
+        }
+      ],
+      "bottomTabs": [
+        {
+          "index": 0,
+          "text": null,
+          "desc": null,
+          "resourceId": "com.zhihu.android:id\/to_report",
+          "class": "androidx.appcompat.widget.LinearLayoutCompat",
+          "clickable": true,
+          "selected": false,
+          "bounds": "592 2608 848 2704",
+          "center": {
+            "x": 0.5,
+            "y": 0.8383838383838383
+          },
+          "tags": [
+            "clickable",
+            "content_area",
+            "bottom_tab_candidate"
+          ]
+        },
+        {
+          "index": 1,
+          "text": "举报",
+          "desc": null,
+          "resourceId": "com.zhihu.android:id\/report_text",
+          "class": "android.widget.TextView",
+          "clickable": false,
+          "selected": false,
+          "bounds": "728 2615 848 2696",
+          "center": {
+            "x": 0.5472222222222223,
+            "y": 0.8380681818181818
+          },
+          "tags": [
+            "content_area",
+            "video_like",
+            "bottom_tab_candidate"
+          ]
+        }
+      ],
+      "entryCandidates": [
+        {
+          "index": 0,
+          "text": "搜索",
+          "desc": null,
+          "resourceId": "com.zhihu.android:id\/cancel",
+          "class": "android.widget.TextView",
+          "clickable": true,
+          "selected": false,
+          "bounds": "1256 229 1384 315",
+          "center": {
+            "x": 0.9166666666666666,
+            "y": 0.08585858585858586
+          },
+          "tags": [
+            "clickable",
+            "video_like",
+            "entry_candidate"
+          ]
+        },
+        {
+          "index": 1,
+          "text": "查看「泰国取消90国公民60天免签」的搜索结果",
+          "desc": null,
+          "resourceId": "com.zhihu.android:id\/query",
+          "class": "android.widget.TextView",
+          "clickable": false,
+          "selected": false,
+          "bounds": "0 891 1440 972",
+          "center": {
+            "x": 0.5,
+            "y": 0.29387626262626265
+          },
+          "tags": [
+            "content_area",
+            "video_like",
+            "entry_candidate"
+          ]
+        }
+      ],
+      "videoCandidates": [
+        {
+          "index": 0,
+          "text": null,
+          "desc": null,
+          "resourceId": "com.zhihu.android:id\/item_container",
+          "class": "android.widget.RelativeLayout",
+          "clickable": true,
+          "selected": false,
+          "bounds": "0 836 1440 1028",
+          "center": {
+            "x": 0.5,
+            "y": 0.29419191919191917
+          },
+          "tags": [
+            "clickable",
+            "content_area"
+          ]
+        },
+        {
+          "index": 1,
+          "text": "查看「泰国取消90国公民60天免签」的搜索结果",
+          "desc": null,
+          "resourceId": "com.zhihu.android:id\/query",
+          "class": "android.widget.TextView",
+          "clickable": false,
+          "selected": false,
+          "bounds": "0 891 1440 972",
+          "center": {
+            "x": 0.5,
+            "y": 0.29387626262626265
+          },
+          "tags": [
+            "content_area",
+            "video_like"
+          ]
+        }
+      ]
+    },
+    "appUiGraph": {
+      "appPackage": "com.baidu.BaiduMap",
+      "status": "CANDIDATE_EXPLORED",
+      "screenCount": 5,
+      "edgeCount": 4,
+      "quality": {
+        "usable": true,
+        "screenCount": 5,
+        "edgeCount": 4,
+        "nodeCount": 1024,
+        "clickableCount": 164,
+        "editableCount": 0,
+        "labelCount": 198,
+        "bottomTabCount": 33,
+        "topEntryCount": 0,
+        "sideEntryCount": 0,
+        "graphicalCandidateCount": 0,
+        "checkableCandidateCount": 0,
+        "entryCandidateCount": 6,
+        "inputCandidateCount": 0,
+        "videoCandidateCount": 0,
+        "candidateCount": 39
+      },
+      "screens": [
+        {
+          "screenId": "screen_480c76e4",
+          "title": "",
+          "screenKey": "480c76e4",
+          "nodeCount": 11,
+          "clickableCount": 3,
+          "editableCount": 0,
+          "labels": [
+            "android:id\/content",
+            "com.baidu.BaiduMap:id\/round_layout",
+            "欢迎使用本功能服务 com.baidu.BaiduMap:id\/title_tv",
+            "com.baidu.BaiduMap:id\/voice_privacy_cancel_icon",
+            "在使用【地图AI助手】前，请您仔细阅读本扩展功能隐私政策。如您同意前述隐私政策，即代表您同意为了向您提供本扩展功能服务，我们处理所需的相关个人信息并在会话中应用。 com.baidu.BaiduMap:id\/voice_privacy_content_tv",
+            "同意 com.baidu.BaiduMap:id\/confirm_tv",
+            "拒绝 com.baidu.BaiduMap:id\/refuse_tv",
+            "android:id\/navigationBarBackground"
+          ],
+          "bottomTabs": [
+            {
+              "index": 0,
+              "label": "欢迎使用本功能服务 com.baidu.BaiduMap:id\/title_tv",
+              "text": "欢迎使用本功能服务",
+              "desc": null,
+              "resourceId": "com.baidu.BaiduMap:id\/title_tv",
+              "class": "android.widget.TextView",
+              "clickable": false,
+              "editable": false,
+              "selected": false,
+              "bounds": "80 2192 656 2278",
+              "x": 0.25555555555555554,
+              "y": 0.7054924242424242,
+              "center": {
+                "x": 0.25555555555555554,
+                "y": 0.7054924242424242
+              },
+              "tags": [
+                "bottom_tab_candidate"
+              ]
+            },
+            {
+              "index": 1,
+              "label": "com.baidu.BaiduMap:id\/round_layout",
+              "text": null,
+              "desc": null,
+              "resourceId": "com.baidu.BaiduMap:id\/round_layout",
+              "class": "android.view.ViewGroup",
+              "clickable": false,
+              "editable": false,
+              "selected": false,
+              "bounds": "0 2124 1440 3104",
+              "x": 0.5,
+              "y": 0.8251262626262627,
+              "center": {
+                "x": 0.5,
+                "y": 0.8251262626262627
+              },
+              "tags": [
+                "bottom_tab_candidate"
+              ]
+            },
+            {
+              "index": 2,
+              "label": "在使用【地图AI助手】前，请您仔细阅读本扩展功能隐私政策。如您同意前述隐私政策，即代表您同意为了向您提供本扩展功能服务，我们处理所需的相关个人信息并在会话中应用。 com.baidu.BaiduMap:id\/voice_privacy_co",
+              "text": "在使用【地图AI助手】前，请您仔细阅读本扩展功能隐私政策。如您同意前述隐私政策，即代表您同意为了向您提供本扩展功能服务，我们处理所需的相关个人信息并在会话中应用。",
+              "desc": null,
+              "resourceId": "com.baidu.BaiduMap:id\/voice_privacy_content_tv",
+              "class": "android.widget.TextView",
+              "clickable": false,
+              "editable": false,
+              "selected": false,
+              "bounds": "80 2346 1360 2620",
+              "x": 0.5,
+              "y": 0.7837752525252525,
+              "center": {
+                "x": 0.5,
+                "y": 0.7837752525252525
+              },
+              "tags": [
+                "bottom_tab_candidate"
+              ]
+            },
+            {
+              "index": 3,
+              "label": "同意 com.baidu.BaiduMap:id\/confirm_tv",
+              "text": "同意",
+              "desc": null,
+              "resourceId": "com.baidu.BaiduMap:id\/confirm_tv",
+              "class": "android.widget.TextView",
+              "clickable": true,
+              "editable": false,
+              "selected": false,
+              "bounds": "80 2684 1360 2836",
+              "x": 0.5,
+              "y": 0.8712121212121212,
+              "center": {
+                "x": 0.5,
+                "y": 0.8712121212121212
+              },
+              "tags": [
+                "bottom_tab_candidate"
+              ]
+            },
+            {
+              "index": 4,
+              "label": "拒绝 com.baidu.BaiduMap:id\/refuse_tv",
+              "text": "拒绝",
+              "desc": null,
+              "resourceId": "com.baidu.BaiduMap:id\/refuse_tv",
+              "class": "android.widget.TextView",
+              "clickable": true,
+              "editable": false,
+              "selected": false,
+              "bounds": "664 2932 776 3008",
+              "x": 0.5,
+              "y": 0.9375,
+              "center": {
+                "x": 0.5,
+                "y": 0.9375
+              },
+              "tags": [
+                "bottom_tab_candidate"
+              ]
+            },
+            {
+              "index": 5,
+              "label": "android:id\/navigationBarBackground",
+              "text": null,
+              "desc": null,
+              "resourceId": "android:id\/navigationBarBackground",
+              "class": "android.view.View",
+              "clickable": false,
+              "editable": false,
+              "selected": false,
+              "bounds": "0 3104 1440 3168",
+              "x": 0.5,
+              "y": 0.98989898989899,
+              "center": {
+                "x": 0.5,
+                "y": 0.98989898989899
+              },
+              "tags": [
+                "bottom_tab_candidate"
+              ]
+            },
+            {
+              "index": 6,
+              "label": "com.baidu.BaiduMap:id\/voice_privacy_cancel_icon",
+              "text": null,
+              "desc": null,
+              "resourceId": "com.baidu.BaiduMap:id\/voice_privacy_cancel_icon",
+              "class": "android.widget.ImageView",
+              "clickable": true,
+              "editable": false,
+              "selected": false,
+              "bounds": "1264 2160 1416 2312",
+              "x": 0.9305555555555556,
+              "y": 0.7058080808080808,
+              "center": {
+                "x": 0.9305555555555556,
+                "y": 0.7058080808080808
+              },
+              "tags": [
+                "bottom_tab_candidate"
+              ]
+            }
+          ],
+          "topEntries": [],
+          "sideEntries": [],
+          "graphicalCandidates": [],
+          "checkableCandidates": [],
+          "entryCandidates": [],
+          "inputCandidates": [],
+          "videoCandidates": [],
+          "snapshotPath": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_snapshots\/com.baidu.baidumap\/20260520_021023_022_480c76e4.json"
+        },
+        {
+          "screenId": "screen_32040f27",
+          "title": "",
+          "screenKey": "32040f27",
+          "nodeCount": 22,
+          "clickableCount": 0,
+          "editableCount": 0,
+          "labels": [
+            "com.baidu.BaiduMap:id\/action_bar_root",
+            "android:id\/content",
+            "com.baidu.BaiduMap:id\/voice_view_ui",
+            "com.baidu.BaiduMap:id\/operation_behavior",
+            "com.baidu.BaiduMap:id\/stack_root",
+            "com.baidu.BaiduMap:id\/arnew_surfaceview",
+            "地图图区 com.baidu.BaiduMap:id\/map_container",
+            "com.baidu.BaiduMap:id\/commonPopupContainer",
+            "com.baidu.BaiduMap:id\/fragment_container",
+            "com.baidu.BaiduMap:id\/persist_container",
+            "com.baidu.BaiduMap:id\/replace_container",
+            "com.baidu.BaiduMap:id\/base_stack_lui",
+            "com.baidu.BaiduMap:id\/base_empty_view",
+            "android:id\/tabhost",
+            "android:id\/navigationBarBackground"
+          ],
+          "bottomTabs": [
+            {
+              "index": 0,
+              "label": "android:id\/navigationBarBackground",
+              "text": null,
+              "desc": null,
+              "resourceId": "android:id\/navigationBarBackground",
+              "class": "android.view.View",
+              "clickable": false,
+              "editable": false,
+              "selected": false,
+              "bounds": "0 3104 1440 3168",
+              "x": 0.5,
+              "y": 0.98989898989899,
+              "center": {
+                "x": 0.5,
+                "y": 0.98989898989899
+              },
+              "tags": [
+                "bottom_tab_candidate"
+              ]
+            }
+          ],
+          "topEntries": [],
+          "sideEntries": [],
+          "graphicalCandidates": [],
+          "checkableCandidates": [],
+          "entryCandidates": [],
+          "inputCandidates": [],
+          "videoCandidates": [],
+          "snapshotPath": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_snapshots\/com.baidu.baidumap\/20260520_021025_694_32040f27.json"
+        },
+        {
+          "screenId": "screen_7d8d6efa",
+          "title": "输入功能名称进行查找",
+          "screenKey": "7d8d6efa",
+          "nodeCount": 591,
+          "clickableCount": 106,
+          "editableCount": 0,
+          "labels": [
+            "com.baidu.BaiduMap:id\/action_bar_root",
+            "android:id\/content",
+            "com.baidu.BaiduMap:id\/voice_view_ui",
+            "com.baidu.BaiduMap:id\/operation_behavior",
+            "com.baidu.BaiduMap:id\/stack_root",
+            "com.baidu.BaiduMap:id\/arnew_surfaceview",
+            "地图图区 com.baidu.BaiduMap:id\/map_container",
+            "com.baidu.BaiduMap:id\/commonPopupContainer",
+            "com.baidu.BaiduMap:id\/fragment_container",
+            "com.baidu.BaiduMap:id\/base_stack_lui",
+            "com.baidu.BaiduMap:id\/persist_container",
+            "com.baidu.BaiduMap:id\/replace_container",
+            "com.baidu.BaiduMap:id\/top_layout",
+            "com.baidu.BaiduMap:id\/title_grup",
+            "返回 com.baidu.BaiduMap:id\/title_btn_left",
+            "com.baidu.BaiduMap:id\/title_search",
+            "输入功能名称进行查找",
+            "编辑 com.baidu.BaiduMap:id\/title_text_right",
+            "com.baidu.BaiduMap:id\/more_func_sv",
+            "com.baidu.BaiduMap:id\/content_container",
+            "我的常用功能 com.baidu.BaiduMap:id\/more_func_title",
+            "编辑您的首页常用工具 com.baidu.BaiduMap:id\/more_func_title_tips",
+            "com.baidu.BaiduMap:id\/more_func_custom",
+            "com.baidu.BaiduMap:id\/diamond_icon_layout",
+            "com.baidu.BaiduMap:id\/icon_bg",
+            "com.baidu.BaiduMap:id\/diamond_icon_bigger",
+            "驾车 com.baidu.BaiduMap:id\/diamond_title",
+            "公共交通 com.baidu.BaiduMap:id\/diamond_title",
+            "打车 com.baidu.BaiduMap:id\/diamond_title",
+            "订酒店 com.baidu.BaiduMap:id\/diamond_title",
+            "优惠加油 com.baidu.BaiduMap:id\/diamond_title",
+            "顺风车 com.baidu.BaiduMap:id\/diamond_title",
+            "爱去榜 com.baidu.BaiduMap:id\/diamond_title",
+            "车主服务 com.baidu.BaiduMap:id\/diamond_title",
+            "叫代驾 com.baidu.BaiduMap:id\/diamond_title",
+            "步行 com.baidu.BaiduMap:id\/diamond_title",
+            "骑行 com.baidu.BaiduMap:id\/diamond_title",
+            "实时公交 com.baidu.BaiduMap:id\/diamond_title",
+            "录语音包 com.baidu.BaiduMap:id\/diamond_title",
+            "添加 com.baidu.BaiduMap:id\/diamond_title",
+            "com.baidu.BaiduMap:id\/func_row",
+            "com.baidu.BaiduMap:id\/line_shadow",
+            "常用出行 com.baidu.BaiduMap:id\/more_func_title",
+            "com.baidu.BaiduMap:id\/rows_container",
+            "com.baidu.BaiduMap:id\/more_func_diamond_1",
+            "com.baidu.BaiduMap:id\/diamond_icon_small",
+            "com.baidu.BaiduMap:id\/more_func_diamond_2",
+            "com.baidu.BaiduMap:id\/more_func_diamond_3",
+            "com.baidu.BaiduMap:id\/more_func_diamond_4",
+            "com.baidu.BaiduMap:id\/more_func_diamond_5",
+            "摩托车 com.baidu.BaiduMap:id\/diamond_title",
+            "新手导航 com.baidu.BaiduMap:id\/diamond_title",
+            "新能源 com.baidu.BaiduMap:id\/diamond_title",
+            "地铁图 com.baidu.BaiduMap:id\/diamond_title",
+            "组队出行 com.baidu.BaiduMap:id\/diamond_title",
+            "租车 com.baidu.BaiduMap:id\/diamond_title",
+            "骑手地图 com.baidu.BaiduMap:id\/diamond_title",
+            "常用地址 com.baidu.BaiduMap:id\/diamond_title",
+            "火车机票 com.baidu.BaiduMap:id\/diamond_title",
+            "开始跑步 com.baidu.BaiduMap:id\/diamond_title",
+            "跑步路线 com.baidu.BaiduMap:id\/diamond_title",
+            "智行 com.baidu.BaiduMap:id\/diamond_title",
+            "离线地图 com.baidu.BaiduMap:id\/diamond_title",
+            "搜索 com.baidu.BaiduMap:id\/diamond_title",
+            "货车 com.baidu.BaiduMap:id\/diamond_title",
+            "货车限行 com.baidu.BaiduMap:id\/diamond_title",
+            "货车行程 com.baidu.BaiduMap:id\/diamond_title",
+            "骑行路线 com.baidu.BaiduMap:id\/diamond_title",
+            "历史行程 com.baidu.BaiduMap:id\/diamond_title",
+            "车道巡航 com.baidu.BaiduMap:id\/diamond_title",
+            "特价拼车 com.baidu.BaiduMap:id\/diamond_title",
+            "乘车码 com.baidu.BaiduMap:id\/diamond_title",
+            "位置共享 com.baidu.BaiduMap:id\/diamond_title",
+            "车主功能 com.baidu.BaiduMap:id\/more_func_title",
+            "手车互联 com.baidu.BaiduMap:id\/diamond_title",
+            "加油站 com.baidu.BaiduMap:id\/diamond_title",
+            "找充电桩 com.baidu.BaiduMap:id\/diamond_title",
+            "停车助手 com.baidu.BaiduMap:id\/diamond_title",
+            "记录车位 com.baidu.BaiduMap:id\/diamond_title",
+            "车位预约 com.baidu.BaiduMap:id\/diamond_title"
+          ],
+          "bottomTabs": [
+            {
+              "index": 0,
+              "label": "com.baidu.BaiduMap:id\/more_func_diamond_1",
+              "text": null,
+              "desc": null,
+              "resourceId": "com.baidu.BaiduMap:id\/more_func_diamond_1",
+              "class": "android.widget.RelativeLayout",
+              "clickable": true,
+              "editable": false,
+              "selected": false,
+              "bounds": "40 2071 312 2344",
+              "x": 0.12222222222222222,
+              "y": 0.6966540404040404,
+              "center": {
+                "x": 0.12222222222222222,
+                "y": 0.6966540404040404
+              },
+              "tags": [
+                "bottom_tab_candidate"
+              ]
+            },
+            {
+              "index": 1,
+              "label": "com.baidu.BaiduMap:id\/diamond_icon_layout",
+              "text": null,
+              "desc": null,
+              "resourceId": "com.baidu.BaiduMap:id\/diamond_icon_layout",
+              "class": "android.widget.RelativeLayout",
+              "clickable": false,
+              "editable": false,
+              "selected": false,
+              "bounds": "48 2071 304 2327",
+              "x": 0.12222222222222222,
+              "y": 0.6941287878787878,
+              "center": {
+                "x": 0.12222222222222222,
+                "y": 0.6941287878787878
+              },
+              "tags": [
+                "bottom_tab_candidate"
+              ]
+            },
+            {
+              "index": 2,
+              "label": "com.baidu.BaiduMap:id\/icon_bg",
+              "text": null,
+              "desc": null,
+              "resourceId": "com.baidu.BaiduMap:id\/icon_bg",
+              "class": "android.widget.ImageView",
+              "clickable": false,
+              "editable": false,
+              "selected": false,
+              "bounds": "48 2071 304 2327",
+              "x": 0.12222222222222222,
+              "y": 0.6941287878787878,
+              "center": {
+                "x": 0.12222222222222222,
+                "y": 0.6941287878787878
+              },
+              "tags": [
+                "bottom_tab_candidate"
+              ]
+            },
+            {
+              "index": 3,
+              "label": "com.baidu.BaiduMap:id\/diamond_icon_small",
+              "text": null,
+              "desc": null,
+              "resourceId": "com.baidu.BaiduMap:id\/diamond_icon_small",
+              "class": "android.widget.ImageView",
+              "clickable": false,
+              "editable": false,
+              "selected": false,
+              "bounds": "76 2115 276 2283",
+              "x": 0.12222222222222222,
+              "y": 0.6941287878787878,
+              "center": {
+                "x": 0.12222222222222222,
+                "y": 0.6941287878787878
+              },
+              "tags": [
+                "bottom_tab_candidate"
+              ]
+            },
+            {
+              "index": 4,
+              "label": "摩托车 com.baidu.BaiduMap:id\/diamond_title",
+              "text": "摩托车",
+              "desc": null,
+              "resourceId": "com.baidu.BaiduMap:id\/diamond_title",
+              "class": "android.widget.TextView",
+              "clickable": false,
+              "editable": false,
+              "selected": false,
+              "bounds": "104 2287 248 2344",
+              "x": 0.12222222222222222,
+              "y": 0.7307449494949495,
+              "center": {
+                "x": 0.12222222222222222,
+                "y": 0.7307449494949495
+              },
+              "tags": [
+                "bottom_tab_candidate"
+              ]
+            },
+            {
+              "index": 5,
+              "label": "com.baidu.BaiduMap:id\/more_func_diamond_1",
+              "text": null,
+              "desc": null,
+              "resourceId": "com.baidu.BaiduMap:id\/more_func_diamond_1",
+              "class": "android.widget.RelativeLayout",
+              "clickable": true,
+              "editable": false,
+              "selected": false,
+              "bounds": "40 2344 312 2617",
+              "x": 0.12222222222222222,
+              "y": 0.7828282828282829,
+              "center": {
+                "x": 0.12222222222222222,
+                "y": 0.7828282828282829
+              },
+              "tags": [
+                "bottom_tab_candidate"
+              ]
+            },
+            {
+              "index": 6,
+              "label": "com.baidu.BaiduMap:id\/diamond_icon_layout",
+              "text": null,
+              "desc": null,
+              "resourceId": "com.baidu.BaiduMap:id\/diamond_icon_layout",
+              "class": "android.widget.RelativeLayout",
+              "clickable": false,
+              "editable": false,
+              "selected": false,
+              "bounds": "48 2344 304 2600",
+              "x": 0.12222222222222222,
+              "y": 0.7803030303030303,
+              "center": {
+                "x": 0.12222222222222222,
+                "y": 0.7803030303030303
+              },
+              "tags": [
+                "bottom_tab_candidate"
+              ]
+            },
+            {
+              "index": 7,
+              "label": "com.baidu.BaiduMap:id\/icon_bg",
+              "text": null,
+              "desc": null,
+              "resourceId": "com.baidu.BaiduMap:id\/icon_bg",
+              "class": "android.widget.ImageView",
+              "clickable": false,
+              "editable": false,
+              "selected": false,
+              "bounds": "48 2344 304 2600",
+              "x": 0.12222222222222222,
+              "y": 0.7803030303030303,
+              "center": {
+                "x": 0.12222222222222222,
+                "y": 0.7803030303030303
+              },
+              "tags": [
+                "bottom_tab_candidate"
+              ]
+            },
+            {
+              "index": 8,
+              "label": "com.baidu.BaiduMap:id\/diamond_icon_small",
+              "text": null,
+              "desc": null,
+              "resourceId": "com.baidu.BaiduMap:id\/diamond_icon_small",
+              "class": "android.widget.ImageView",
+              "clickable": false,
+              "editable": false,
+              "selected": false,
+              "bounds": "76 2388 276 2556",
+              "x": 0.12222222222222222,
+              "y": 0.7803030303030303,
+              "center": {
+                "x": 0.12222222222222222,
+                "y": 0.7803030303030303
+              },
+              "tags": [
+                "bottom_tab_candidate"
+              ]
+            },
+            {
+              "index": 9,
+              "label": "订酒店 com.baidu.BaiduMap:id\/diamond_title",
+              "text": "订酒店",
+              "desc": null,
+              "resourceId": "com.baidu.BaiduMap:id\/diamond_title",
+              "class": "android.widget.TextView",
+              "clickable": false,
+              "editable": false,
+              "selected": false,
+              "bounds": "104 2560 248 2617",
+              "x": 0.12222222222222222,
+              "y": 0.8169191919191919,
+              "center": {
+                "x": 0.12222222222222222,
+                "y": 0.8169191919191919
+              },
+              "tags": [
+                "bottom_tab_candidate"
+              ]
+            },
+            {
+              "index": 10,
+              "label": "com.baidu.BaiduMap:id\/more_func_diamond_1",
+              "text": null,
+              "desc": null,
+              "resourceId": "com.baidu.BaiduMap:id\/more_func_diamond_1",
+              "class": "android.widget.RelativeLayout",
+              "clickable": true,
+              "editable": false,
+              "selected": false,
+              "bounds": "40 2617 312 2890",
+              "x": 0.12222222222222222,
+              "y": 0.8690025252525253,
+              "center": {
+                "x": 0.12222222222222222,
+                "y": 0.8690025252525253
+              },
+              "tags": [
+                "bottom_tab_candidate"
+              ]
+            },
+            {
+              "index": 11,
+              "label": "com.baidu.BaiduMap:id\/diamond_icon_layout",
+              "text": null,
+              "desc": null,
+              "resourceId": "com.baidu.BaiduMap:id\/diamond_icon_layout",
+              "class": "android.widget.RelativeLayout",
+              "clickable": false,
+              "editable": false,
+              "selected": false,
+              "bounds": "48 2617 304 2873",
+              "x": 0.12222222222222222,
+              "y": 0.8664772727272727,
+              "center": {
+                "x": 0.12222222222222222,
+                "y": 0.8664772727272727
+              },
+              "tags": [
+                "bottom_tab_candidate"
+              ]
+            }
+          ],
+          "topEntries": [],
+          "sideEntries": [],
+          "graphicalCandidates": [],
+          "checkableCandidates": [],
+          "entryCandidates": [
+            {
+              "index": 0,
+              "label": "com.baidu.BaiduMap:id\/title_search",
+              "text": null,
+              "desc": null,
+              "resourceId": "com.baidu.BaiduMap:id\/title_search",
+              "class": "android.widget.RelativeLayout",
+              "clickable": true,
+              "editable": false,
+              "selected": false,
+              "bounds": "192 184 1200 336",
+              "x": 0.48333333333333334,
+              "y": 0.08207070707070707,
+              "center": {
+                "x": 0.48333333333333334,
+                "y": 0.08207070707070707
+              },
+              "tags": [
+                "entry_candidate",
+                "clickable",
+                "search_entry"
+              ]
+            }
+          ],
+          "inputCandidates": [],
+          "videoCandidates": [],
+          "snapshotPath": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_snapshots\/com.baidu.baidumap\/20260520_021040_329_7d8d6efa.json"
+        },
+        {
+          "screenId": "screen_3d8d5782",
+          "title": "",
+          "screenKey": "3d8d5782",
+          "nodeCount": 22,
+          "clickableCount": 0,
+          "editableCount": 0,
+          "labels": [
+            "com.baidu.BaiduMap:id\/action_bar_root",
+            "android:id\/content",
+            "com.baidu.BaiduMap:id\/voice_view_ui",
+            "com.baidu.BaiduMap:id\/operation_behavior",
+            "com.baidu.BaiduMap:id\/stack_root",
+            "com.baidu.BaiduMap:id\/arnew_surfaceview",
+            "地图图区 com.baidu.BaiduMap:id\/map_container",
+            "com.baidu.BaiduMap:id\/commonPopupContainer",
+            "com.baidu.BaiduMap:id\/fragment_container",
+            "com.baidu.BaiduMap:id\/persist_container",
+            "com.baidu.BaiduMap:id\/replace_container",
+            "com.baidu.BaiduMap:id\/base_stack_lui",
+            "com.baidu.BaiduMap:id\/base_empty_view",
+            "android:id\/tabhost",
+            "android:id\/navigationBarBackground"
+          ],
+          "bottomTabs": [
+            {
+              "index": 0,
+              "label": "android:id\/navigationBarBackground",
+              "text": null,
+              "desc": null,
+              "resourceId": "android:id\/navigationBarBackground",
+              "class": "android.view.View",
+              "clickable": false,
+              "editable": false,
+              "selected": false,
+              "bounds": "0 3104 1440 3168",
+              "x": 0.5,
+              "y": 0.98989898989899,
+              "center": {
+                "x": 0.5,
+                "y": 0.98989898989899
+              },
+              "tags": [
+                "bottom_tab_candidate"
+              ]
+            }
+          ],
+          "topEntries": [],
+          "sideEntries": [],
+          "graphicalCandidates": [],
+          "checkableCandidates": [],
+          "entryCandidates": [],
+          "inputCandidates": [],
+          "videoCandidates": [],
+          "snapshotPath": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_snapshots\/com.baidu.baidumap\/20260520_021043_361_3d8d5782.json"
+        },
+        {
+          "screenId": "screen_1f9a44dc",
+          "title": "早八省",
+          "screenKey": "1f9a44dc",
+          "nodeCount": 378,
+          "clickableCount": 55,
+          "editableCount": 0,
+          "labels": [
+            "com.baidu.BaiduMap:id\/action_bar_root",
+            "android:id\/content",
+            "com.baidu.BaiduMap:id\/voice_view_ui",
+            "com.baidu.BaiduMap:id\/operation_behavior",
+            "com.baidu.BaiduMap:id\/stack_root",
+            "com.baidu.BaiduMap:id\/arnew_surfaceview",
+            "地图图区 com.baidu.BaiduMap:id\/map_container",
+            "com.baidu.BaiduMap:id\/commonPopupContainer",
+            "com.baidu.BaiduMap:id\/fragment_container",
+            "com.baidu.BaiduMap:id\/replace_container",
+            "com.baidu.BaiduMap:id\/base_stack_lui",
+            "com.baidu.BaiduMap:id\/persist_container",
+            "com.baidu.BaiduMap:id\/ufo_container",
+            "com.baidu.BaiduMap:id\/ufo_root",
+            "com.baidu.BaiduMap:id\/mid",
+            "com.baidu.BaiduMap:id\/new_btns",
+            "com.baidu.BaiduMap:id\/new_route",
+            "com.baidu.BaiduMap:id\/new_route_icon",
+            "com.baidu.BaiduMap:id\/route_tab_anim",
+            "首页 com.baidu.BaiduMap:id\/new_route_text",
+            "com.baidu.BaiduMap:id\/new_nearby",
+            "com.baidu.BaiduMap:id\/tag_nearby_container",
+            "com.baidu.BaiduMap:id\/new_nearby_icon",
+            "周边 com.baidu.BaiduMap:id\/new_nearby_text",
+            "com.baidu.BaiduMap:id\/new_third",
+            "com.baidu.BaiduMap:id\/new_third_ai_home_container",
+            "com.baidu.BaiduMap:id\/new_third_ai_home2",
+            "com.baidu.BaiduMap:id\/new_third_ai_home1",
+            "com.baidu.BaiduMap:id\/new_fourth",
+            "com.baidu.BaiduMap:id\/tag_fourth_container",
+            "com.baidu.BaiduMap:id\/tag_fourth",
+            "com.baidu.BaiduMap:id\/tag_switcher",
+            "早八省",
+            "com.baidu.BaiduMap:id\/new_fourth_icon",
+            "打车 com.baidu.BaiduMap:id\/new_fourth_text",
+            "com.baidu.BaiduMap:id\/new_user",
+            "com.baidu.BaiduMap:id\/tag_user_container",
+            "com.baidu.BaiduMap:id\/new_user_icon",
+            "我的 com.baidu.BaiduMap:id\/new_user_text",
+            "com.baidu.BaiduMap:id\/preventTouchEventUfo",
+            "com.baidu.BaiduMap:id\/top_empty",
+            "com.baidu.BaiduMap:id\/top_line",
+            "com.baidu.BaiduMap:id\/front_location_container",
+            "com.baidu.BaiduMap:id\/back_container",
+            "com.baidu.BaiduMap:id\/aihome_maplayout_root",
+            "com.baidu.BaiduMap:id\/leftTopContainer",
+            "com.baidu.BaiduMap:id\/event_entry_container",
+            "活动",
+            "com.baidu.BaiduMap:id\/reference_line",
+            "com.baidu.BaiduMap:id\/leftBarContainer",
+            "com.baidu.BaiduMap:id\/barContainer",
+            "com.baidu.BaiduMap:id\/scale_and_logo",
+            "com.baidu.BaiduMap:id\/layout_logo",
+            "com.baidu.BaiduMap:id\/map_iv_logo",
+            "com.baidu.BaiduMap:id\/right_bottom_button",
+            "com.baidu.BaiduMap:id\/location",
+            "com.baidu.BaiduMap:id\/vs_location",
+            "我的位置 com.baidu.BaiduMap:id\/location_icon",
+            "com.baidu.BaiduMap:id\/weather_limited",
+            "com.baidu.BaiduMap:id\/weather_icon",
+            "24℃ com.baidu.BaiduMap:id\/weather_txt",
+            "路线搜索 com.baidu.BaiduMap:id\/frame_btn_route",
+            "com.baidu.BaiduMap:id\/right_container",
+            "com.baidu.BaiduMap:id\/ll_map_buttons",
+            "com.baidu.BaiduMap:id\/right_bar",
+            "com.baidu.BaiduMap:id\/recycleview",
+            "com.baidu.BaiduMap:id\/image",
+            "图层 com.baidu.BaiduMap:id\/text",
+            "反馈 com.baidu.BaiduMap:id\/text",
+            "爱去榜 com.baidu.BaiduMap:id\/text",
+            "消息 com.baidu.BaiduMap:id\/text",
+            "com.baidu.BaiduMap:id\/down_arrow_image",
+            "com.baidu.BaiduMap:id\/top_container",
+            "com.baidu.BaiduMap:id\/common_search_box_home",
+            "com.baidu.BaiduMap:id\/left_container",
+            "com.baidu.BaiduMap:id\/left_dynamic_icon",
+            "com.baidu.BaiduMap:id\/middle_container",
+            "地点搜索 com.baidu.BaiduMap:id\/tv_searchbox_home_text_switcher",
+            "福建附属第一医院医保报销 com.baidu.BaiduMap:id\/tv_searchbar_title",
+            "打开摄像头 com.baidu.BaiduMap:id\/scanCode"
+          ],
+          "bottomTabs": [
+            {
+              "index": 0,
+              "label": "com.baidu.BaiduMap:id\/icon_home",
+              "text": null,
+              "desc": null,
+              "resourceId": "com.baidu.BaiduMap:id\/icon_home",
+              "class": "android.widget.ImageView",
+              "clickable": false,
+              "editable": false,
+              "selected": false,
+              "bounds": "80 2406 160 2486",
+              "x": 0.08333333333333333,
+              "y": 0.7720959595959596,
+              "center": {
+                "x": 0.08333333333333333,
+                "y": 0.7720959595959596
+              },
+              "tags": [
+                "bottom_tab_candidate"
+              ]
+            },
+            {
+              "index": 1,
+              "label": "com.baidu.BaiduMap:id\/new_route",
+              "text": null,
+              "desc": null,
+              "resourceId": "com.baidu.BaiduMap:id\/new_route",
+              "class": "android.widget.FrameLayout",
+              "clickable": true,
+              "editable": false,
+              "selected": false,
+              "bounds": "0 2876 288 3104",
+              "x": 0.1,
+              "y": 0.9438131313131313,
+              "center": {
+                "x": 0.1,
+                "y": 0.9438131313131313
+              },
+              "tags": [
+                "bottom_tab_candidate"
+              ]
+            },
+            {
+              "index": 2,
+              "label": "com.baidu.BaiduMap:id\/new_route_icon",
+              "text": null,
+              "desc": null,
+              "resourceId": "com.baidu.BaiduMap:id\/new_route_icon",
+              "class": "android.widget.ImageView",
+              "clickable": false,
+              "editable": false,
+              "selected": false,
+              "bounds": "64 2876 224 3036",
+              "x": 0.1,
+              "y": 0.9330808080808081,
+              "center": {
+                "x": 0.1,
+                "y": 0.9330808080808081
+              },
+              "tags": [
+                "bottom_tab_candidate"
+              ]
+            },
+            {
+              "index": 3,
+              "label": "com.baidu.BaiduMap:id\/route_tab_anim",
+              "text": null,
+              "desc": null,
+              "resourceId": "com.baidu.BaiduMap:id\/route_tab_anim",
+              "class": "android.widget.ImageView",
+              "clickable": false,
+              "editable": false,
+              "selected": false,
+              "bounds": "64 2876 224 3036",
+              "x": 0.1,
+              "y": 0.9330808080808081,
+              "center": {
+                "x": 0.1,
+                "y": 0.9330808080808081
+              },
+              "tags": [
+                "bottom_tab_candidate"
+              ]
+            },
+            {
+              "index": 4,
+              "label": "首页 com.baidu.BaiduMap:id\/new_route_text",
+              "text": "首页",
+              "desc": null,
+              "resourceId": "com.baidu.BaiduMap:id\/new_route_text",
+              "class": "android.widget.TextView",
+              "clickable": false,
+              "editable": false,
+              "selected": false,
+              "bounds": "96 3003 192 3060",
+              "x": 0.1,
+              "y": 0.9567550505050505,
+              "center": {
+                "x": 0.1,
+                "y": 0.9567550505050505
+              },
+              "tags": [
+                "bottom_tab_candidate"
+              ]
+            },
+            {
+              "index": 5,
+              "label": "",
+              "text": null,
+              "desc": null,
+              "resourceId": null,
+              "class": "android.widget.FrameLayout",
+              "clickable": true,
+              "editable": false,
+              "selected": false,
+              "bounds": "40 2106 312 2322",
+              "x": 0.12222222222222222,
+              "y": 0.6988636363636364,
+              "center": {
+                "x": 0.12222222222222222,
+                "y": 0.6988636363636364
+              },
+              "tags": [
+                "bottom_tab_candidate"
+              ]
+            },
+            {
+              "index": 6,
+              "label": "com.baidu.BaiduMap:id\/image",
+              "text": null,
+              "desc": null,
+              "resourceId": "com.baidu.BaiduMap:id\/image",
+              "class": "android.widget.ImageView",
+              "clickable": false,
+              "editable": false,
+              "selected": false,
+              "bounds": "76 2118 276 2286",
+              "x": 0.12222222222222222,
+              "y": 0.6950757575757576,
+              "center": {
+                "x": 0.12222222222222222,
+                "y": 0.6950757575757576
+              },
+              "tags": [
+                "bottom_tab_candidate"
+              ]
+            },
+            {
+              "index": 7,
+              "label": "顺风车 com.baidu.BaiduMap:id\/text",
+              "text": "顺风车",
+              "desc": null,
+              "resourceId": "com.baidu.BaiduMap:id\/text",
+              "class": "android.widget.TextView",
+              "clickable": false,
+              "editable": false,
+              "selected": false,
+              "bounds": "98 2213 254 2322",
+              "x": 0.12222222222222222,
+              "y": 0.7155934343434344,
+              "center": {
+                "x": 0.12222222222222222,
+                "y": 0.7155934343434344
+              },
+              "tags": [
+                "bottom_tab_candidate"
+              ]
+            },
+            {
+              "index": 8,
+              "label": "com.baidu.BaiduMap:id\/image",
+              "text": null,
+              "desc": null,
+              "resourceId": "com.baidu.BaiduMap:id\/image",
+              "class": "android.widget.ImageView",
+              "clickable": false,
+              "editable": false,
+              "selected": false,
+              "bounds": "76 2346 276 2514",
+              "x": 0.12222222222222222,
+              "y": 0.7670454545454546,
+              "center": {
+                "x": 0.12222222222222222,
+                "y": 0.7670454545454546
+              },
+              "tags": [
+                "bottom_tab_candidate"
+              ]
+            },
+            {
+              "index": 9,
+              "label": "骑行 com.baidu.BaiduMap:id\/text",
+              "text": "骑行",
+              "desc": null,
+              "resourceId": "com.baidu.BaiduMap:id\/text",
+              "class": "android.widget.TextView",
+              "clickable": false,
+              "editable": false,
+              "selected": false,
+              "bounds": "124 2441 228 2550",
+              "x": 0.12222222222222222,
+              "y": 0.7875631313131313,
+              "center": {
+                "x": 0.12222222222222222,
+                "y": 0.7875631313131313
+              },
+              "tags": [
+                "bottom_tab_candidate"
+              ]
+            },
+            {
+              "index": 10,
+              "label": "com.baidu.BaiduMap:id\/title_layout",
+              "text": null,
+              "desc": null,
+              "resourceId": "com.baidu.BaiduMap:id\/title_layout",
+              "class": "android.widget.LinearLayout",
+              "clickable": false,
+              "editable": false,
+              "selected": false,
+              "bounds": "168 2411 272 2481",
+              "x": 0.1527777777777778,
+              "y": 0.7720959595959596,
+              "center": {
+                "x": 0.1527777777777778,
+                "y": 0.7720959595959596
+              },
+              "tags": [
+                "bottom_tab_candidate"
+              ]
+            },
+            {
+              "index": 11,
+              "label": "回家 com.baidu.BaiduMap:id\/home_text",
+              "text": "回家",
+              "desc": null,
+              "resourceId": "com.baidu.BaiduMap:id\/home_text",
+              "class": "android.widget.TextView",
+              "clickable": false,
+              "editable": false,
+              "selected": false,
+              "bounds": "168 2411 272 2481",
+              "x": 0.1527777777777778,
+              "y": 0.7720959595959596,
+              "center": {
+                "x": 0.1527777777777778,
+                "y": 0.7720959595959596
+              },
+              "tags": [
+                "bottom_tab_candidate"
+              ]
+            }
+          ],
+          "topEntries": [],
+          "sideEntries": [],
+          "graphicalCandidates": [],
+          "checkableCandidates": [],
+          "entryCandidates": [
+            {
+              "index": 0,
+              "label": "地点搜索 com.baidu.BaiduMap:id\/tv_searchbox_home_text_switcher",
+              "text": null,
+              "desc": "地点搜索",
+              "resourceId": "com.baidu.BaiduMap:id\/tv_searchbox_home_text_switcher",
+              "class": "android.widget.ViewSwitcher",
+              "clickable": true,
+              "editable": false,
+              "selected": false,
+              "bounds": "212 208 1082 392",
+              "x": 0.44930555555555557,
+              "y": 0.0946969696969697,
+              "center": {
+                "x": 0.44930555555555557,
+                "y": 0.0946969696969697
+              },
+              "tags": [
+                "entry_candidate",
+                "clickable",
+                "search_entry"
+              ]
+            },
+            {
+              "index": 1,
+              "label": "福建附属第一医院医保报销 com.baidu.BaiduMap:id\/tv_searchbar_title",
+              "text": "福建附属第一医院医保报销",
+              "desc": null,
+              "resourceId": "com.baidu.BaiduMap:id\/tv_searchbar_title",
+              "class": "android.widget.TextView",
+              "clickable": false,
+              "editable": false,
+              "selected": false,
+              "bounds": "212 257 1082 343",
+              "x": 0.44930555555555557,
+              "y": 0.0946969696969697,
+              "center": {
+                "x": 0.44930555555555557,
+                "y": 0.0946969696969697
+              },
+              "tags": [
+                "entry_candidate",
+                "search_entry"
+              ]
+            },
+            {
+              "index": 2,
+              "label": "com.baidu.BaiduMap:id\/common_search_box_home",
+              "text": null,
+              "desc": null,
+              "resourceId": "com.baidu.BaiduMap:id\/common_search_box_home",
+              "class": "android.view.View",
+              "clickable": true,
+              "editable": false,
+              "selected": false,
+              "bounds": "0 160 1440 440",
+              "x": 0.5,
+              "y": 0.0946969696969697,
+              "center": {
+                "x": 0.5,
+                "y": 0.0946969696969697
+              },
+              "tags": [
+                "entry_candidate",
+                "clickable",
+                "search_entry"
+              ]
+            },
+            {
+              "index": 3,
+              "label": "语音搜索 com.baidu.BaiduMap:id\/iv_searchbox_home_voice",
+              "text": null,
+              "desc": "语音搜索",
+              "resourceId": "com.baidu.BaiduMap:id\/iv_searchbox_home_voice",
+              "class": "android.widget.ImageView",
+              "clickable": true,
+              "editable": false,
+              "selected": false,
+              "bounds": "1264 252 1360 348",
+              "x": 0.9111111111111111,
+              "y": 0.0946969696969697,
+              "center": {
+                "x": 0.9111111111111111,
+                "y": 0.0946969696969697
+              },
+              "tags": [
+                "entry_candidate",
+                "clickable",
+                "search_entry"
+              ]
+            },
+            {
+              "index": 4,
+              "label": "路线搜索 com.baidu.BaiduMap:id\/frame_btn_route",
+              "text": null,
+              "desc": "路线搜索",
+              "resourceId": "com.baidu.BaiduMap:id\/frame_btn_route",
+              "class": "android.widget.ImageView",
+              "clickable": true,
+              "editable": false,
+              "selected": false,
+              "bounds": "1208 1426 1432 1650",
+              "x": 0.9166666666666666,
+              "y": 0.48547979797979796,
+              "center": {
+                "x": 0.9166666666666666,
+                "y": 0.48547979797979796
+              },
+              "tags": [
+                "entry_candidate",
+                "clickable",
+                "search_entry"
+              ]
+            }
+          ],
+          "inputCandidates": [],
+          "videoCandidates": [],
+          "snapshotPath": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_snapshots\/com.baidu.baidumap\/20260520_021104_531_1f9a44dc.json"
+        }
+      ],
+      "updatedAt": 1779214265598
+    },
+    "availableSkillTemplates": [
+      {
+        "id": "com.baidu.baidumap.search.click_entry",
+        "kind": "atomic_skill",
+        "implements": "ClickElementSkill",
+        "status": "DRY_RUN_PASSED",
+        "actionType": "ClickVisibleText",
+        "intentId": "",
+        "file": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_candidates\/com.baidu.baidumap\/com.baidu.baidumap.search.click_entry.json"
+      },
+      {
+        "id": "com.baidu.baidumap.search.click_submit",
+        "kind": "atomic_skill",
+        "implements": "ClickElementSkill",
+        "status": "DRY_RUN_PASSED",
+        "actionType": "ClickVisibleText",
+        "intentId": "",
+        "file": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_candidates\/com.baidu.baidumap\/com.baidu.baidumap.search.click_submit.json"
+      },
+      {
+        "id": "com.baidu.baidumap.search.search_in_app",
+        "kind": "macro_skill",
+        "implements": "SearchInAppSkill",
+        "status": "DRY_RUN_PASSED",
+        "intentId": "search_in_app",
+        "file": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_candidates\/com.baidu.baidumap\/com.baidu.baidumap.search.search_in_app.json"
+      },
+      {
+        "id": "com.baidu.baidumap.search.type_query",
+        "kind": "atomic_skill",
+        "implements": "TypeTextSkill",
+        "status": "DRY_RUN_PASSED",
+        "actionType": "TypeIntoFirstInput",
+        "intentId": "",
+        "file": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_candidates\/com.baidu.baidumap\/com.baidu.baidumap.search.type_query.json"
+      },
+      {
+        "id": "com.baidu.baidumap.common.click_visible_text",
+        "kind": "atomic_skill",
+        "implements": "ClickElementSkill",
+        "status": "DRY_RUN_PASSED",
+        "actionType": "ClickVisibleText",
+        "intentId": "",
+        "file": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_candidates\/com.baidu.baidumap\/com.baidu.baidumap.common.click_visible_text.json"
+      },
+      {
+        "id": "com.baidu.baidumap.common.type_first_input",
+        "kind": "atomic_skill",
+        "implements": "TypeTextSkill",
+        "status": "DRY_RUN_PASSED",
+        "actionType": "TypeIntoFirstInput",
+        "intentId": "",
+        "file": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_candidates\/com.baidu.baidumap\/com.baidu.baidumap.common.type_first_input.json"
+      },
+      {
+        "id": "com.baidu.baidumap.prepare_app_session",
+        "kind": "macro_skill",
+        "implements": "PrepareAppSessionSkill",
+        "status": "DRY_RUN_PASSED",
+        "intentId": "prepare_app_session",
+        "file": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_candidates\/com.baidu.baidumap\/com.baidu.baidumap.prepare_app_session.json"
+      },
+      {
+        "id": "com.baidu.baidumap.recover_to_foreground",
+        "kind": "atomic_skill",
+        "implements": "RecoverToScreenSkill",
+        "status": "DRY_RUN_PASSED",
+        "actionType": "OpenApp",
+        "intentId": "",
+        "file": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_candidates\/com.baidu.baidumap\/com.baidu.baidumap.recover_to_foreground.json"
+      },
+      {
+        "id": "com.baidu.baidumap.back",
+        "kind": "atomic_skill",
+        "implements": "BackSkill",
+        "status": "DRY_RUN_PASSED",
+        "actionType": "Back",
+        "intentId": "",
+        "file": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_candidates\/com.baidu.baidumap\/com.baidu.baidumap.back.json"
+      },
+      {
+        "id": "com.baidu.baidumap.capability_check",
+        "kind": "atomic_skill",
+        "implements": "CapabilityCheckSkill",
+        "status": "DRY_RUN_PASSED",
+        "actionType": "CheckCapability",
+        "intentId": "",
+        "file": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_candidates\/com.baidu.baidumap\/com.baidu.baidumap.capability_check.json"
+      },
+      {
+        "id": "com.baidu.baidumap.open_app",
+        "kind": "atomic_skill",
+        "implements": "OpenAppSkill",
+        "status": "DRY_RUN_PASSED",
+        "actionType": "OpenApp",
+        "intentId": "",
+        "file": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_candidates\/com.baidu.baidumap\/com.baidu.baidumap.open_app.json"
+      }
+    ],
+    "recentUiSnapshots": [
+      {
+        "id": "ui_snapshot_1779214264899",
+        "source": "app_ui_explorer_child",
+        "note": "third_party_app_skill_subset_batch:百度地图:tap:com.baidu.BaiduMap:id\/round_layout",
+        "appPackage": "com.baidu.BaiduMap",
+        "windowClassName": "android.view.ViewGroup",
+        "screenKey": "1f9a44dc",
+        "screenshotPath": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_screenshots\/com.baidu.baidumap\/20260520_021104_531_1f9a44dc.png",
+        "visualHash": "3e7ab187aa3752babbde41b4ac2196c3be3fad2f3132f2a01f3f478dd6d83db5",
+        "summary": {
+          "nodeCount": 378,
+          "clickableCount": 55,
+          "editableCount": 0,
+          "scrollableCount": 6,
+          "labels": [
+            "com.baidu.BaiduMap:id\/action_bar_root",
+            "android:id\/content",
+            "com.baidu.BaiduMap:id\/voice_view_ui",
+            "com.baidu.BaiduMap:id\/operation_behavior",
+            "com.baidu.BaiduMap:id\/stack_root",
+            "com.baidu.BaiduMap:id\/arnew_surfaceview",
+            "地图图区 com.baidu.BaiduMap:id\/map_container",
+            "com.baidu.BaiduMap:id\/commonPopupContainer",
+            "com.baidu.BaiduMap:id\/fragment_container",
+            "com.baidu.BaiduMap:id\/replace_container",
+            "com.baidu.BaiduMap:id\/base_stack_lui",
+            "com.baidu.BaiduMap:id\/persist_container",
+            "com.baidu.BaiduMap:id\/ufo_container",
+            "com.baidu.BaiduMap:id\/ufo_root",
+            "com.baidu.BaiduMap:id\/mid",
+            "com.baidu.BaiduMap:id\/new_btns",
+            "com.baidu.BaiduMap:id\/new_route",
+            "com.baidu.BaiduMap:id\/new_route_icon",
+            "com.baidu.BaiduMap:id\/route_tab_anim",
+            "首页 com.baidu.BaiduMap:id\/new_route_text",
+            "com.baidu.BaiduMap:id\/new_nearby",
+            "com.baidu.BaiduMap:id\/tag_nearby_container",
+            "com.baidu.BaiduMap:id\/new_nearby_icon",
+            "周边 com.baidu.BaiduMap:id\/new_nearby_text",
+            "com.baidu.BaiduMap:id\/new_third",
+            "com.baidu.BaiduMap:id\/new_third_ai_home_container",
+            "com.baidu.BaiduMap:id\/new_third_ai_home2",
+            "com.baidu.BaiduMap:id\/new_third_ai_home1",
+            "com.baidu.BaiduMap:id\/new_fourth",
+            "com.baidu.BaiduMap:id\/tag_fourth_container",
+            "com.baidu.BaiduMap:id\/tag_fourth",
+            "com.baidu.BaiduMap:id\/tag_switcher",
+            "早八省",
+            "com.baidu.BaiduMap:id\/new_fourth_icon",
+            "打车 com.baidu.BaiduMap:id\/new_fourth_text",
+            "com.baidu.BaiduMap:id\/new_user",
+            "com.baidu.BaiduMap:id\/tag_user_container",
+            "com.baidu.BaiduMap:id\/new_user_icon",
+            "我的 com.baidu.BaiduMap:id\/new_user_text",
+            "com.baidu.BaiduMap:id\/preventTouchEventUfo",
+            "com.baidu.BaiduMap:id\/top_empty",
+            "com.baidu.BaiduMap:id\/top_line",
+            "com.baidu.BaiduMap:id\/front_location_container",
+            "com.baidu.BaiduMap:id\/back_container",
+            "com.baidu.BaiduMap:id\/aihome_maplayout_root",
+            "com.baidu.BaiduMap:id\/leftTopContainer",
+            "com.baidu.BaiduMap:id\/event_entry_container",
+            "活动",
+            "com.baidu.BaiduMap:id\/reference_line",
+            "com.baidu.BaiduMap:id\/leftBarContainer",
+            "com.baidu.BaiduMap:id\/barContainer",
+            "com.baidu.BaiduMap:id\/scale_and_logo",
+            "com.baidu.BaiduMap:id\/layout_logo",
+            "com.baidu.BaiduMap:id\/map_iv_logo",
+            "com.baidu.BaiduMap:id\/right_bottom_button",
+            "com.baidu.BaiduMap:id\/location",
+            "com.baidu.BaiduMap:id\/vs_location",
+            "我的位置 com.baidu.BaiduMap:id\/location_icon",
+            "com.baidu.BaiduMap:id\/weather_limited",
+            "com.baidu.BaiduMap:id\/weather_icon",
+            "24℃ com.baidu.BaiduMap:id\/weather_txt",
+            "路线搜索 com.baidu.BaiduMap:id\/frame_btn_route",
+            "com.baidu.BaiduMap:id\/right_container",
+            "com.baidu.BaiduMap:id\/ll_map_buttons",
+            "com.baidu.BaiduMap:id\/right_bar",
+            "com.baidu.BaiduMap:id\/recycleview",
+            "com.baidu.BaiduMap:id\/image",
+            "图层 com.baidu.BaiduMap:id\/text",
+            "com.baidu.BaiduMap:id\/image",
+            "反馈 com.baidu.BaiduMap:id\/text",
+            "com.baidu.BaiduMap:id\/image",
+            "爱去榜 com.baidu.BaiduMap:id\/text",
+            "com.baidu.BaiduMap:id\/image",
+            "消息 com.baidu.BaiduMap:id\/text",
+            "com.baidu.BaiduMap:id\/down_arrow_image",
+            "com.baidu.BaiduMap:id\/top_container",
+            "com.baidu.BaiduMap:id\/common_search_box_home",
+            "com.baidu.BaiduMap:id\/left_container",
+            "com.baidu.BaiduMap:id\/left_dynamic_icon",
+            "com.baidu.BaiduMap:id\/middle_container"
+          ],
+          "bottomCandidates": [
+            {
+              "label": "",
+              "bounds": {
+                "left": 0,
+                "top": 4303,
+                "right": 0,
+                "bottom": 3104
+              },
+              "clickable": true
+            },
+            {
+              "label": "下滑领奖",
+              "bounds": {
+                "left": 0,
+                "top": 4444,
+                "right": 0,
+                "bottom": 3104
+              },
+              "clickable": false
+            },
+            {
+              "label": "AI订酒店",
+              "bounds": {
+                "left": 0,
+                "top": 4322,
+                "right": 40,
+                "bottom": 3104
+              },
+              "clickable": false
+            },
+            {
+              "label": "com.baidu.BaiduMap:id\/new_route",
+              "bounds": {
+                "left": 0,
+                "top": 2876,
+                "right": 288,
+                "bottom": 3104
+              },
+              "clickable": true
+            },
+            {
+              "label": "首页 com.baidu.BaiduMap:id\/new_route_text",
+              "bounds": {
+                "left": 96,
+                "top": 3003,
+                "right": 192,
+                "bottom": 3060
+              },
+              "clickable": false
+            },
+            {
+              "label": "AI选酒店，3秒生成住宿方案，省钱又省心~",
+              "bounds": {
+                "left": 40,
+                "top": 4649,
+                "right": 277,
+                "bottom": 3104
+              },
+              "clickable": false
+            },
+            {
+              "label": "",
+              "bounds": {
+                "left": 40,
+                "top": 2106,
+                "right": 312,
+                "bottom": 2322
+              },
+              "clickable": true
+            },
+            {
+              "label": "顺风车 com.baidu.BaiduMap:id\/text",
+              "bounds": {
+                "left": 98,
+                "top": 2213,
+                "right": 254,
+                "bottom": 2322
+              },
+              "clickable": false
+            },
+            {
+              "label": "骑行 com.baidu.BaiduMap:id\/text",
+              "bounds": {
+                "left": 124,
+                "top": 2441,
+                "right": 228,
+                "bottom": 2550
+              },
+              "clickable": false
+            },
+            {
+              "label": "",
+              "bounds": {
+                "left": 40,
+                "top": 4282,
+                "right": 317,
+                "bottom": 3104
+              },
+              "clickable": true
+            },
+            {
+              "label": "回家 com.baidu.BaiduMap:id\/home_text",
+              "bounds": {
+                "left": 168,
+                "top": 2411,
+                "right": 272,
+                "bottom": 2481
+              },
+              "clickable": false
+            },
+            {
+              "label": "com.baidu.BaiduMap:id\/home_info",
+              "bounds": {
+                "left": 40,
+                "top": 2378,
+                "right": 719,
+                "bottom": 2514
+              },
+              "clickable": true
+            }
+          ]
+        },
+        "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_snapshots\/com.baidu.baidumap\/20260520_021104_531_1f9a44dc.json"
+      },
+      {
+        "id": "ui_snapshot_1779214243741",
+        "source": "app_ui_explorer_child",
+        "note": "third_party_app_skill_subset_batch:百度地图:tap:在使用【地图AI助手】前，请您仔细阅读本扩展功能隐私政策。如您同意前述隐私政策，即代表您同意为了向您提供本扩展功能服务，我们处理所需的相关个人信息并在会话中应用。 com.baidu.BaiduMap:id\/voice_privacy_co",
+        "appPackage": "com.baidu.BaiduMap",
+        "windowClassName": "android.widget.FrameLayout",
+        "screenKey": "3d8d5782",
+        "screenshotPath": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_screenshots\/com.baidu.baidumap\/20260520_021043_361_3d8d5782.png",
+        "visualHash": "253b237abadddc0d5916590948ca3bc6b9d689b38476e9c6f2c06684f2b69649",
+        "summary": {
+          "nodeCount": 22,
+          "clickableCount": 0,
+          "editableCount": 0,
+          "scrollableCount": 0,
+          "labels": [
+            "com.baidu.BaiduMap:id\/action_bar_root",
+            "android:id\/content",
+            "com.baidu.BaiduMap:id\/voice_view_ui",
+            "com.baidu.BaiduMap:id\/operation_behavior",
+            "com.baidu.BaiduMap:id\/stack_root",
+            "com.baidu.BaiduMap:id\/arnew_surfaceview",
+            "地图图区 com.baidu.BaiduMap:id\/map_container",
+            "com.baidu.BaiduMap:id\/commonPopupContainer",
+            "com.baidu.BaiduMap:id\/fragment_container",
+            "com.baidu.BaiduMap:id\/persist_container",
+            "com.baidu.BaiduMap:id\/replace_container",
+            "com.baidu.BaiduMap:id\/base_stack_lui",
+            "com.baidu.BaiduMap:id\/base_empty_view",
+            "android:id\/tabhost",
+            "android:id\/navigationBarBackground"
+          ],
+          "bottomCandidates": []
+        },
+        "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_snapshots\/com.baidu.baidumap\/20260520_021043_361_3d8d5782.json"
+      },
+      {
+        "id": "ui_snapshot_1779214242466",
+        "source": "accessibility_auto",
+        "note": "TYPE_WINDOW_CONTENT_CHANGED",
+        "appPackage": "com.baidu.BaiduMap",
+        "windowClassName": "android.widget.FrameLayout",
+        "screenKey": "3d8d5782",
+        "screenshotPath": "null",
+        "visualHash": "null",
+        "summary": {
+          "nodeCount": 23,
+          "clickableCount": 0,
+          "editableCount": 0,
+          "scrollableCount": 0,
+          "labels": [
+            "com.baidu.BaiduMap:id\/action_bar_root",
+            "android:id\/content",
+            "com.baidu.BaiduMap:id\/voice_view_ui",
+            "com.baidu.BaiduMap:id\/operation_behavior",
+            "com.baidu.BaiduMap:id\/stack_root",
+            "com.baidu.BaiduMap:id\/arnew_surfaceview",
+            "地图图区 com.baidu.BaiduMap:id\/map_container",
+            "com.baidu.BaiduMap:id\/commonPopupContainer",
+            "com.baidu.BaiduMap:id\/fragment_container",
+            "com.baidu.BaiduMap:id\/persist_container",
+            "com.baidu.BaiduMap:id\/replace_container",
+            "com.baidu.BaiduMap:id\/base_stack_lui",
+            "com.baidu.BaiduMap:id\/base_empty_view",
+            "android:id\/tabhost",
+            "android:id\/navigationBarBackground"
+          ],
+          "bottomCandidates": []
+        },
+        "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_snapshots\/com.baidu.baidumap\/20260520_021042_466_3d8d5782.json"
+      },
+      {
+        "id": "ui_snapshot_1779214240644",
+        "source": "app_ui_explorer_child",
+        "note": "third_party_app_skill_subset_batch:百度地图:tap:com.baidu.BaiduMap:id\/voice_privacy_cancel_icon",
+        "appPackage": "com.baidu.BaiduMap",
+        "windowClassName": "android.view.ViewGroup",
+        "screenKey": "7d8d6efa",
+        "screenshotPath": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_screenshots\/com.baidu.baidumap\/20260520_021040_329_7d8d6efa.png",
+        "visualHash": "42db03d6c0fb2ead695b938c58f6cfa4ecce69c3052f4a99526d0222f4dbed36",
+        "summary": {
+          "nodeCount": 591,
+          "clickableCount": 106,
+          "editableCount": 0,
+          "scrollableCount": 1,
+          "labels": [
+            "com.baidu.BaiduMap:id\/action_bar_root",
+            "android:id\/content",
+            "com.baidu.BaiduMap:id\/voice_view_ui",
+            "com.baidu.BaiduMap:id\/operation_behavior",
+            "com.baidu.BaiduMap:id\/stack_root",
+            "com.baidu.BaiduMap:id\/arnew_surfaceview",
+            "地图图区 com.baidu.BaiduMap:id\/map_container",
+            "com.baidu.BaiduMap:id\/commonPopupContainer",
+            "com.baidu.BaiduMap:id\/fragment_container",
+            "com.baidu.BaiduMap:id\/base_stack_lui",
+            "com.baidu.BaiduMap:id\/persist_container",
+            "com.baidu.BaiduMap:id\/replace_container",
+            "com.baidu.BaiduMap:id\/top_layout",
+            "com.baidu.BaiduMap:id\/title_grup",
+            "返回 com.baidu.BaiduMap:id\/title_btn_left",
+            "com.baidu.BaiduMap:id\/title_search",
+            "输入功能名称进行查找",
+            "编辑 com.baidu.BaiduMap:id\/title_text_right",
+            "com.baidu.BaiduMap:id\/more_func_sv",
+            "com.baidu.BaiduMap:id\/content_container",
+            "我的常用功能 com.baidu.BaiduMap:id\/more_func_title",
+            "编辑您的首页常用工具 com.baidu.BaiduMap:id\/more_func_title_tips",
+            "com.baidu.BaiduMap:id\/more_func_custom",
+            "com.baidu.BaiduMap:id\/diamond_icon_layout",
+            "com.baidu.BaiduMap:id\/icon_bg",
+            "com.baidu.BaiduMap:id\/diamond_icon_bigger",
+            "驾车 com.baidu.BaiduMap:id\/diamond_title",
+            "com.baidu.BaiduMap:id\/diamond_icon_layout",
+            "com.baidu.BaiduMap:id\/icon_bg",
+            "com.baidu.BaiduMap:id\/diamond_icon_bigger",
+            "公共交通 com.baidu.BaiduMap:id\/diamond_title",
+            "com.baidu.BaiduMap:id\/diamond_icon_layout",
+            "com.baidu.BaiduMap:id\/icon_bg",
+            "com.baidu.BaiduMap:id\/diamond_icon_bigger",
+            "打车 com.baidu.BaiduMap:id\/diamond_title",
+            "com.baidu.BaiduMap:id\/diamond_icon_layout",
+            "com.baidu.BaiduMap:id\/icon_bg",
+            "com.baidu.BaiduMap:id\/diamond_icon_bigger",
+            "订酒店 com.baidu.BaiduMap:id\/diamond_title",
+            "com.baidu.BaiduMap:id\/diamond_icon_layout",
+            "com.baidu.BaiduMap:id\/icon_bg",
+            "com.baidu.BaiduMap:id\/diamond_icon_bigger",
+            "优惠加油 com.baidu.BaiduMap:id\/diamond_title",
+            "com.baidu.BaiduMap:id\/diamond_icon_layout",
+            "com.baidu.BaiduMap:id\/icon_bg",
+            "com.baidu.BaiduMap:id\/diamond_icon_bigger",
+            "顺风车 com.baidu.BaiduMap:id\/diamond_title",
+            "com.baidu.BaiduMap:id\/diamond_icon_layout",
+            "com.baidu.BaiduMap:id\/icon_bg",
+            "com.baidu.BaiduMap:id\/diamond_icon_bigger",
+            "爱去榜 com.baidu.BaiduMap:id\/diamond_title",
+            "com.baidu.BaiduMap:id\/diamond_icon_layout",
+            "com.baidu.BaiduMap:id\/icon_bg",
+            "com.baidu.BaiduMap:id\/diamond_icon_bigger",
+            "车主服务 com.baidu.BaiduMap:id\/diamond_title",
+            "com.baidu.BaiduMap:id\/diamond_icon_layout",
+            "com.baidu.BaiduMap:id\/icon_bg",
+            "com.baidu.BaiduMap:id\/diamond_icon_bigger",
+            "叫代驾 com.baidu.BaiduMap:id\/diamond_title",
+            "com.baidu.BaiduMap:id\/diamond_icon_layout",
+            "com.baidu.BaiduMap:id\/icon_bg",
+            "com.baidu.BaiduMap:id\/diamond_icon_bigger",
+            "步行 com.baidu.BaiduMap:id\/diamond_title",
+            "com.baidu.BaiduMap:id\/diamond_icon_layout",
+            "com.baidu.BaiduMap:id\/icon_bg",
+            "com.baidu.BaiduMap:id\/diamond_icon_bigger",
+            "骑行 com.baidu.BaiduMap:id\/diamond_title",
+            "com.baidu.BaiduMap:id\/diamond_icon_layout",
+            "com.baidu.BaiduMap:id\/icon_bg",
+            "com.baidu.BaiduMap:id\/diamond_icon_bigger",
+            "实时公交 com.baidu.BaiduMap:id\/diamond_title",
+            "com.baidu.BaiduMap:id\/diamond_icon_layout",
+            "com.baidu.BaiduMap:id\/icon_bg",
+            "com.baidu.BaiduMap:id\/diamond_icon_bigger",
+            "录语音包 com.baidu.BaiduMap:id\/diamond_title",
+            "com.baidu.BaiduMap:id\/diamond_icon_layout",
+            "com.baidu.BaiduMap:id\/icon_bg",
+            "com.baidu.BaiduMap:id\/diamond_icon_bigger",
+            "添加 com.baidu.BaiduMap:id\/diamond_title",
+            "com.baidu.BaiduMap:id\/func_row"
+          ],
+          "bottomCandidates": [
+            {
+              "label": "服务 com.baidu.BaiduMap:id\/more_func_title",
+              "bounds": {
+                "left": 80,
+                "top": 5577,
+                "right": 232,
+                "bottom": 3104
+              },
+              "clickable": false
+            },
+            {
+              "label": "交易 com.baidu.BaiduMap:id\/more_func_title",
+              "bounds": {
+                "left": 80,
+                "top": 6449,
+                "right": 232,
+                "bottom": 3104
+              },
+              "clickable": false
+            },
+            {
+              "label": "其他 com.baidu.BaiduMap:id\/more_func_title",
+              "bounds": {
+                "left": 80,
+                "top": 7321,
+                "right": 232,
+                "bottom": 3104
+              },
+              "clickable": false
+            },
+            {
+              "label": "com.baidu.BaiduMap:id\/more_func_diamond_1",
+              "bounds": {
+                "left": 40,
+                "top": 2071,
+                "right": 312,
+                "bottom": 2344
+              },
+              "clickable": true
+            },
+            {
+              "label": "摩托车 com.baidu.BaiduMap:id\/diamond_title",
+              "bounds": {
+                "left": 104,
+                "top": 2287,
+                "right": 248,
+                "bottom": 2344
+              },
+              "clickable": false
+            },
+            {
+              "label": "com.baidu.BaiduMap:id\/more_func_diamond_1",
+              "bounds": {
+                "left": 40,
+                "top": 2344,
+                "right": 312,
+                "bottom": 2617
+              },
+              "clickable": true
+            },
+            {
+              "label": "订酒店 com.baidu.BaiduMap:id\/diamond_title",
+              "bounds": {
+                "left": 104,
+                "top": 2560,
+                "right": 248,
+                "bottom": 2617
+              },
+              "clickable": false
+            },
+            {
+              "label": "com.baidu.BaiduMap:id\/more_func_diamond_1",
+              "bounds": {
+                "left": 40,
+                "top": 2617,
+                "right": 312,
+                "bottom": 2890
+              },
+              "clickable": true
+            },
+            {
+              "label": "常用地址 com.baidu.BaiduMap:id\/diamond_title",
+              "bounds": {
+                "left": 80,
+                "top": 2833,
+                "right": 272,
+                "bottom": 2890
+              },
+              "clickable": false
+            },
+            {
+              "label": "com.baidu.BaiduMap:id\/more_func_diamond_1",
+              "bounds": {
+                "left": 40,
+                "top": 2890,
+                "right": 312,
+                "bottom": 3104
+              },
+              "clickable": true
+            },
+            {
+              "label": "离线地图 com.baidu.BaiduMap:id\/diamond_title",
+              "bounds": {
+                "left": 80,
+                "top": 3106,
+                "right": 272,
+                "bottom": 3104
+              },
+              "clickable": false
+            },
+            {
+              "label": "com.baidu.BaiduMap:id\/more_func_diamond_1",
+              "bounds": {
+                "left": 40,
+                "top": 3163,
+                "right": 312,
+                "bottom": 3104
+              },
+              "clickable": true
+            }
+          ]
+        },
+        "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_snapshots\/com.baidu.baidumap\/20260520_021040_329_7d8d6efa.json"
+      },
+      {
+        "id": "ui_snapshot_1779214240566",
+        "source": "accessibility_auto",
+        "note": "TYPE_WINDOW_CONTENT_CHANGED",
+        "appPackage": "com.baidu.BaiduMap",
+        "windowClassName": "android.view.ViewGroup",
+        "screenKey": "7d8d6efa",
+        "screenshotPath": "null",
+        "visualHash": "null",
+        "summary": {
+          "nodeCount": 591,
+          "clickableCount": 106,
+          "editableCount": 0,
+          "scrollableCount": 1,
+          "labels": [
+            "com.baidu.BaiduMap:id\/action_bar_root",
+            "android:id\/content",
+            "com.baidu.BaiduMap:id\/voice_view_ui",
+            "com.baidu.BaiduMap:id\/operation_behavior",
+            "com.baidu.BaiduMap:id\/stack_root",
+            "com.baidu.BaiduMap:id\/arnew_surfaceview",
+            "地图图区 com.baidu.BaiduMap:id\/map_container",
+            "com.baidu.BaiduMap:id\/commonPopupContainer",
+            "com.baidu.BaiduMap:id\/fragment_container",
+            "com.baidu.BaiduMap:id\/base_stack_lui",
+            "com.baidu.BaiduMap:id\/persist_container",
+            "com.baidu.BaiduMap:id\/replace_container",
+            "com.baidu.BaiduMap:id\/top_layout",
+            "com.baidu.BaiduMap:id\/title_grup",
+            "返回 com.baidu.BaiduMap:id\/title_btn_left",
+            "com.baidu.BaiduMap:id\/title_search",
+            "输入功能名称进行查找",
+            "编辑 com.baidu.BaiduMap:id\/title_text_right",
+            "com.baidu.BaiduMap:id\/more_func_sv",
+            "com.baidu.BaiduMap:id\/content_container",
+            "我的常用功能 com.baidu.BaiduMap:id\/more_func_title",
+            "编辑您的首页常用工具 com.baidu.BaiduMap:id\/more_func_title_tips",
+            "com.baidu.BaiduMap:id\/more_func_custom",
+            "com.baidu.BaiduMap:id\/diamond_icon_layout",
+            "com.baidu.BaiduMap:id\/icon_bg",
+            "com.baidu.BaiduMap:id\/diamond_icon_bigger",
+            "驾车 com.baidu.BaiduMap:id\/diamond_title",
+            "com.baidu.BaiduMap:id\/diamond_icon_layout",
+            "com.baidu.BaiduMap:id\/icon_bg",
+            "com.baidu.BaiduMap:id\/diamond_icon_bigger",
+            "公共交通 com.baidu.BaiduMap:id\/diamond_title",
+            "com.baidu.BaiduMap:id\/diamond_icon_layout",
+            "com.baidu.BaiduMap:id\/icon_bg",
+            "com.baidu.BaiduMap:id\/diamond_icon_bigger",
+            "打车 com.baidu.BaiduMap:id\/diamond_title",
+            "com.baidu.BaiduMap:id\/diamond_icon_layout",
+            "com.baidu.BaiduMap:id\/icon_bg",
+            "com.baidu.BaiduMap:id\/diamond_icon_bigger",
+            "订酒店 com.baidu.BaiduMap:id\/diamond_title",
+            "com.baidu.BaiduMap:id\/diamond_icon_layout",
+            "com.baidu.BaiduMap:id\/icon_bg",
+            "com.baidu.BaiduMap:id\/diamond_icon_bigger",
+            "优惠加油 com.baidu.BaiduMap:id\/diamond_title",
+            "com.baidu.BaiduMap:id\/diamond_icon_layout",
+            "com.baidu.BaiduMap:id\/icon_bg",
+            "com.baidu.BaiduMap:id\/diamond_icon_bigger",
+            "顺风车 com.baidu.BaiduMap:id\/diamond_title",
+            "com.baidu.BaiduMap:id\/diamond_icon_layout",
+            "com.baidu.BaiduMap:id\/icon_bg",
+            "com.baidu.BaiduMap:id\/diamond_icon_bigger",
+            "爱去榜 com.baidu.BaiduMap:id\/diamond_title",
+            "com.baidu.BaiduMap:id\/diamond_icon_layout",
+            "com.baidu.BaiduMap:id\/icon_bg",
+            "com.baidu.BaiduMap:id\/diamond_icon_bigger",
+            "车主服务 com.baidu.BaiduMap:id\/diamond_title",
+            "com.baidu.BaiduMap:id\/diamond_icon_layout",
+            "com.baidu.BaiduMap:id\/icon_bg",
+            "com.baidu.BaiduMap:id\/diamond_icon_bigger",
+            "叫代驾 com.baidu.BaiduMap:id\/diamond_title",
+            "com.baidu.BaiduMap:id\/diamond_icon_layout",
+            "com.baidu.BaiduMap:id\/icon_bg",
+            "com.baidu.BaiduMap:id\/diamond_icon_bigger",
+            "步行 com.baidu.BaiduMap:id\/diamond_title",
+            "com.baidu.BaiduMap:id\/diamond_icon_layout",
+            "com.baidu.BaiduMap:id\/icon_bg",
+            "com.baidu.BaiduMap:id\/diamond_icon_bigger",
+            "骑行 com.baidu.BaiduMap:id\/diamond_title",
+            "com.baidu.BaiduMap:id\/diamond_icon_layout",
+            "com.baidu.BaiduMap:id\/icon_bg",
+            "com.baidu.BaiduMap:id\/diamond_icon_bigger",
+            "实时公交 com.baidu.BaiduMap:id\/diamond_title",
+            "com.baidu.BaiduMap:id\/diamond_icon_layout",
+            "com.baidu.BaiduMap:id\/icon_bg",
+            "com.baidu.BaiduMap:id\/diamond_icon_bigger",
+            "录语音包 com.baidu.BaiduMap:id\/diamond_title",
+            "com.baidu.BaiduMap:id\/diamond_icon_layout",
+            "com.baidu.BaiduMap:id\/icon_bg",
+            "com.baidu.BaiduMap:id\/diamond_icon_bigger",
+            "添加 com.baidu.BaiduMap:id\/diamond_title",
+            "com.baidu.BaiduMap:id\/func_row"
+          ],
+          "bottomCandidates": [
+            {
+              "label": "服务 com.baidu.BaiduMap:id\/more_func_title",
+              "bounds": {
+                "left": 80,
+                "top": 5577,
+                "right": 232,
+                "bottom": 3104
+              },
+              "clickable": false
+            },
+            {
+              "label": "交易 com.baidu.BaiduMap:id\/more_func_title",
+              "bounds": {
+                "left": 80,
+                "top": 6449,
+                "right": 232,
+                "bottom": 3104
+              },
+              "clickable": false
+            },
+            {
+              "label": "其他 com.baidu.BaiduMap:id\/more_func_title",
+              "bounds": {
+                "left": 80,
+                "top": 7321,
+                "right": 232,
+                "bottom": 3104
+              },
+              "clickable": false
+            },
+            {
+              "label": "com.baidu.BaiduMap:id\/more_func_diamond_1",
+              "bounds": {
+                "left": 40,
+                "top": 2071,
+                "right": 312,
+                "bottom": 2344
+              },
+              "clickable": true
+            },
+            {
+              "label": "摩托车 com.baidu.BaiduMap:id\/diamond_title",
+              "bounds": {
+                "left": 104,
+                "top": 2287,
+                "right": 248,
+                "bottom": 2344
+              },
+              "clickable": false
+            },
+            {
+              "label": "com.baidu.BaiduMap:id\/more_func_diamond_1",
+              "bounds": {
+                "left": 40,
+                "top": 2344,
+                "right": 312,
+                "bottom": 2617
+              },
+              "clickable": true
+            },
+            {
+              "label": "订酒店 com.baidu.BaiduMap:id\/diamond_title",
+              "bounds": {
+                "left": 104,
+                "top": 2560,
+                "right": 248,
+                "bottom": 2617
+              },
+              "clickable": false
+            },
+            {
+              "label": "com.baidu.BaiduMap:id\/more_func_diamond_1",
+              "bounds": {
+                "left": 40,
+                "top": 2617,
+                "right": 312,
+                "bottom": 2890
+              },
+              "clickable": true
+            },
+            {
+              "label": "常用地址 com.baidu.BaiduMap:id\/diamond_title",
+              "bounds": {
+                "left": 80,
+                "top": 2833,
+                "right": 272,
+                "bottom": 2890
+              },
+              "clickable": false
+            },
+            {
+              "label": "com.baidu.BaiduMap:id\/more_func_diamond_1",
+              "bounds": {
+                "left": 40,
+                "top": 2890,
+                "right": 312,
+                "bottom": 3104
+              },
+              "clickable": true
+            },
+            {
+              "label": "离线地图 com.baidu.BaiduMap:id\/diamond_title",
+              "bounds": {
+                "left": 80,
+                "top": 3106,
+                "right": 272,
+                "bottom": 3104
+              },
+              "clickable": false
+            },
+            {
+              "label": "com.baidu.BaiduMap:id\/more_func_diamond_1",
+              "bounds": {
+                "left": 40,
+                "top": 3163,
+                "right": 312,
+                "bottom": 3104
+              },
+              "clickable": true
+            }
+          ]
+        },
+        "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_snapshots\/com.baidu.baidumap\/20260520_021040_563_7d8d6efa.json"
+      },
+      {
+        "id": "ui_snapshot_1779214239293",
+        "source": "accessibility_auto",
+        "note": "TYPE_WINDOW_CONTENT_CHANGED",
+        "appPackage": "com.baidu.BaiduMap",
+        "windowClassName": "android.widget.FrameLayout",
+        "screenKey": "c570ebfe",
+        "screenshotPath": "null",
+        "visualHash": "null",
+        "summary": {
+          "nodeCount": 591,
+          "clickableCount": 106,
+          "editableCount": 0,
+          "scrollableCount": 1,
+          "labels": [
+            "com.baidu.BaiduMap:id\/action_bar_root",
+            "android:id\/content",
+            "com.baidu.BaiduMap:id\/voice_view_ui",
+            "com.baidu.BaiduMap:id\/operation_behavior",
+            "com.baidu.BaiduMap:id\/stack_root",
+            "com.baidu.BaiduMap:id\/arnew_surfaceview",
+            "地图图区 com.baidu.BaiduMap:id\/map_container",
+            "com.baidu.BaiduMap:id\/commonPopupContainer",
+            "com.baidu.BaiduMap:id\/fragment_container",
+            "com.baidu.BaiduMap:id\/base_stack_lui",
+            "com.baidu.BaiduMap:id\/persist_container",
+            "com.baidu.BaiduMap:id\/replace_container",
+            "com.baidu.BaiduMap:id\/top_layout",
+            "com.baidu.BaiduMap:id\/title_grup",
+            "返回 com.baidu.BaiduMap:id\/title_btn_left",
+            "com.baidu.BaiduMap:id\/title_search",
+            "输入功能名称进行查找",
+            "编辑 com.baidu.BaiduMap:id\/title_text_right",
+            "com.baidu.BaiduMap:id\/more_func_sv",
+            "com.baidu.BaiduMap:id\/content_container",
+            "我的常用功能 com.baidu.BaiduMap:id\/more_func_title",
+            "编辑您的首页常用工具 com.baidu.BaiduMap:id\/more_func_title_tips",
+            "com.baidu.BaiduMap:id\/more_func_custom",
+            "com.baidu.BaiduMap:id\/diamond_icon_layout",
+            "com.baidu.BaiduMap:id\/icon_bg",
+            "com.baidu.BaiduMap:id\/diamond_icon_bigger",
+            "驾车 com.baidu.BaiduMap:id\/diamond_title",
+            "com.baidu.BaiduMap:id\/diamond_icon_layout",
+            "com.baidu.BaiduMap:id\/icon_bg",
+            "com.baidu.BaiduMap:id\/diamond_icon_bigger",
+            "公共交通 com.baidu.BaiduMap:id\/diamond_title",
+            "com.baidu.BaiduMap:id\/diamond_icon_layout",
+            "com.baidu.BaiduMap:id\/icon_bg",
+            "com.baidu.BaiduMap:id\/diamond_icon_bigger",
+            "打车 com.baidu.BaiduMap:id\/diamond_title",
+            "com.baidu.BaiduMap:id\/diamond_icon_layout",
+            "com.baidu.BaiduMap:id\/icon_bg",
+            "com.baidu.BaiduMap:id\/diamond_icon_bigger",
+            "订酒店 com.baidu.BaiduMap:id\/diamond_title",
+            "com.baidu.BaiduMap:id\/diamond_icon_layout",
+            "com.baidu.BaiduMap:id\/icon_bg",
+            "com.baidu.BaiduMap:id\/diamond_icon_bigger",
+            "优惠加油 com.baidu.BaiduMap:id\/diamond_title",
+            "com.baidu.BaiduMap:id\/diamond_icon_layout",
+            "com.baidu.BaiduMap:id\/icon_bg",
+            "com.baidu.BaiduMap:id\/diamond_icon_bigger",
+            "顺风车 com.baidu.BaiduMap:id\/diamond_title",
+            "com.baidu.BaiduMap:id\/diamond_icon_layout",
+            "com.baidu.BaiduMap:id\/icon_bg",
+            "com.baidu.BaiduMap:id\/diamond_icon_bigger",
+            "爱去榜 com.baidu.BaiduMap:id\/diamond_title",
+            "com.baidu.BaiduMap:id\/diamond_icon_layout",
+            "com.baidu.BaiduMap:id\/icon_bg",
+            "com.baidu.BaiduMap:id\/diamond_icon_bigger",
+            "车主服务 com.baidu.BaiduMap:id\/diamond_title",
+            "com.baidu.BaiduMap:id\/diamond_icon_layout",
+            "com.baidu.BaiduMap:id\/icon_bg",
+            "com.baidu.BaiduMap:id\/diamond_icon_bigger",
+            "叫代驾 com.baidu.BaiduMap:id\/diamond_title",
+            "com.baidu.BaiduMap:id\/diamond_icon_layout",
+            "com.baidu.BaiduMap:id\/icon_bg",
+            "com.baidu.BaiduMap:id\/diamond_icon_bigger",
+            "步行 com.baidu.BaiduMap:id\/diamond_title",
+            "com.baidu.BaiduMap:id\/diamond_icon_layout",
+            "com.baidu.BaiduMap:id\/icon_bg",
+            "com.baidu.BaiduMap:id\/diamond_icon_bigger",
+            "骑行 com.baidu.BaiduMap:id\/diamond_title",
+            "com.baidu.BaiduMap:id\/diamond_icon_layout",
+            "com.baidu.BaiduMap:id\/icon_bg",
+            "com.baidu.BaiduMap:id\/diamond_icon_bigger",
+            "实时公交 com.baidu.BaiduMap:id\/diamond_title",
+            "com.baidu.BaiduMap:id\/diamond_icon_layout",
+            "com.baidu.BaiduMap:id\/icon_bg",
+            "com.baidu.BaiduMap:id\/diamond_icon_bigger",
+            "录语音包 com.baidu.BaiduMap:id\/diamond_title",
+            "com.baidu.BaiduMap:id\/diamond_icon_layout",
+            "com.baidu.BaiduMap:id\/icon_bg",
+            "com.baidu.BaiduMap:id\/diamond_icon_bigger",
+            "添加 com.baidu.BaiduMap:id\/diamond_title",
+            "com.baidu.BaiduMap:id\/func_row"
+          ],
+          "bottomCandidates": [
+            {
+              "label": "服务 com.baidu.BaiduMap:id\/more_func_title",
+              "bounds": {
+                "left": 80,
+                "top": 5577,
+                "right": 232,
+                "bottom": 3104
+              },
+              "clickable": false
+            },
+            {
+              "label": "交易 com.baidu.BaiduMap:id\/more_func_title",
+              "bounds": {
+                "left": 80,
+                "top": 6449,
+                "right": 232,
+                "bottom": 3104
+              },
+              "clickable": false
+            },
+            {
+              "label": "其他 com.baidu.BaiduMap:id\/more_func_title",
+              "bounds": {
+                "left": 80,
+                "top": 7321,
+                "right": 232,
+                "bottom": 3104
+              },
+              "clickable": false
+            },
+            {
+              "label": "com.baidu.BaiduMap:id\/more_func_diamond_1",
+              "bounds": {
+                "left": 40,
+                "top": 2071,
+                "right": 312,
+                "bottom": 2344
+              },
+              "clickable": true
+            },
+            {
+              "label": "摩托车 com.baidu.BaiduMap:id\/diamond_title",
+              "bounds": {
+                "left": 104,
+                "top": 2287,
+                "right": 248,
+                "bottom": 2344
+              },
+              "clickable": false
+            },
+            {
+              "label": "com.baidu.BaiduMap:id\/more_func_diamond_1",
+              "bounds": {
+                "left": 40,
+                "top": 2344,
+                "right": 312,
+                "bottom": 2617
+              },
+              "clickable": true
+            },
+            {
+              "label": "订酒店 com.baidu.BaiduMap:id\/diamond_title",
+              "bounds": {
+                "left": 104,
+                "top": 2560,
+                "right": 248,
+                "bottom": 2617
+              },
+              "clickable": false
+            },
+            {
+              "label": "com.baidu.BaiduMap:id\/more_func_diamond_1",
+              "bounds": {
+                "left": 40,
+                "top": 2617,
+                "right": 312,
+                "bottom": 2890
+              },
+              "clickable": true
+            },
+            {
+              "label": "常用地址 com.baidu.BaiduMap:id\/diamond_title",
+              "bounds": {
+                "left": 80,
+                "top": 2833,
+                "right": 272,
+                "bottom": 2890
+              },
+              "clickable": false
+            },
+            {
+              "label": "com.baidu.BaiduMap:id\/more_func_diamond_1",
+              "bounds": {
+                "left": 40,
+                "top": 2890,
+                "right": 312,
+                "bottom": 3104
+              },
+              "clickable": true
+            },
+            {
+              "label": "离线地图 com.baidu.BaiduMap:id\/diamond_title",
+              "bounds": {
+                "left": 80,
+                "top": 3106,
+                "right": 272,
+                "bottom": 3104
+              },
+              "clickable": false
+            },
+            {
+              "label": "com.baidu.BaiduMap:id\/more_func_diamond_1",
+              "bounds": {
+                "left": 40,
+                "top": 3163,
+                "right": 312,
+                "bottom": 3104
+              },
+              "clickable": true
+            }
+          ]
+        },
+        "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_snapshots\/com.baidu.baidumap\/20260520_021039_291_c570ebfe.json"
+      },
+      {
+        "id": "ui_snapshot_1779214226072",
+        "source": "app_ui_explorer_child",
+        "note": "third_party_app_skill_subset_batch:百度地图:tap:欢迎使用本功能服务 com.baidu.BaiduMap:id\/title_tv",
+        "appPackage": "com.baidu.BaiduMap",
+        "windowClassName": "null",
+        "screenKey": "32040f27",
+        "screenshotPath": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_screenshots\/com.baidu.baidumap\/20260520_021025_694_32040f27.png",
+        "visualHash": "8aeaddbd6eaec42b7d4df6d52ae030e0dbfb89eb44a586de42c448ae206682a9",
+        "summary": {
+          "nodeCount": 22,
+          "clickableCount": 0,
+          "editableCount": 0,
+          "scrollableCount": 0,
+          "labels": [
+            "com.baidu.BaiduMap:id\/action_bar_root",
+            "android:id\/content",
+            "com.baidu.BaiduMap:id\/voice_view_ui",
+            "com.baidu.BaiduMap:id\/operation_behavior",
+            "com.baidu.BaiduMap:id\/stack_root",
+            "com.baidu.BaiduMap:id\/arnew_surfaceview",
+            "地图图区 com.baidu.BaiduMap:id\/map_container",
+            "com.baidu.BaiduMap:id\/commonPopupContainer",
+            "com.baidu.BaiduMap:id\/fragment_container",
+            "com.baidu.BaiduMap:id\/persist_container",
+            "com.baidu.BaiduMap:id\/replace_container",
+            "com.baidu.BaiduMap:id\/base_stack_lui",
+            "com.baidu.BaiduMap:id\/base_empty_view",
+            "android:id\/tabhost",
+            "android:id\/navigationBarBackground"
+          ],
+          "bottomCandidates": []
+        },
+        "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_snapshots\/com.baidu.baidumap\/20260520_021025_694_32040f27.json"
+      },
+      {
+        "id": "ui_snapshot_1779214224941",
+        "source": "accessibility_auto",
+        "note": "TYPE_WINDOW_CONTENT_CHANGED",
+        "appPackage": "com.baidu.BaiduMap",
+        "windowClassName": "null",
+        "screenKey": "32040f27",
+        "screenshotPath": "null",
+        "visualHash": "null",
+        "summary": {
+          "nodeCount": 22,
+          "clickableCount": 0,
+          "editableCount": 0,
+          "scrollableCount": 0,
+          "labels": [
+            "com.baidu.BaiduMap:id\/action_bar_root",
+            "android:id\/content",
+            "com.baidu.BaiduMap:id\/voice_view_ui",
+            "com.baidu.BaiduMap:id\/operation_behavior",
+            "com.baidu.BaiduMap:id\/stack_root",
+            "com.baidu.BaiduMap:id\/arnew_surfaceview",
+            "地图图区 com.baidu.BaiduMap:id\/map_container",
+            "com.baidu.BaiduMap:id\/commonPopupContainer",
+            "com.baidu.BaiduMap:id\/fragment_container",
+            "com.baidu.BaiduMap:id\/persist_container",
+            "com.baidu.BaiduMap:id\/replace_container",
+            "com.baidu.BaiduMap:id\/base_stack_lui",
+            "com.baidu.BaiduMap:id\/base_empty_view",
+            "android:id\/tabhost",
+            "android:id\/navigationBarBackground"
+          ],
+          "bottomCandidates": []
+        },
+        "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_snapshots\/com.baidu.baidumap\/20260520_021024_940_32040f27.json"
+      },
+      {
+        "id": "ui_snapshot_1779214223357",
+        "source": "app_ui_explorer_home",
+        "note": "third_party_app_skill_subset_batch:百度地图:home",
+        "appPackage": "com.baidu.BaiduMap",
+        "windowClassName": "null",
+        "screenKey": "480c76e4",
+        "screenshotPath": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_screenshots\/com.baidu.baidumap\/20260520_021023_022_480c76e4.png",
+        "visualHash": "3e7d04a587712f458f8d14eb552068964c11cbb07e959b214c4bd921c91726a0",
+        "summary": {
+          "nodeCount": 11,
+          "clickableCount": 3,
+          "editableCount": 0,
+          "scrollableCount": 0,
+          "labels": [
+            "android:id\/content",
+            "com.baidu.BaiduMap:id\/round_layout",
+            "欢迎使用本功能服务 com.baidu.BaiduMap:id\/title_tv",
+            "com.baidu.BaiduMap:id\/voice_privacy_cancel_icon",
+            "在使用【地图AI助手】前，请您仔细阅读本扩展功能隐私政策。如您同意前述隐私政策，即代表您同意为了向您提供本扩展功能服务，我们处理所需的相关个人信息并在会话中应用。 com.baidu.BaiduMap:id\/voice_privacy_content_tv",
+            "同意 com.baidu.BaiduMap:id\/confirm_tv",
+            "拒绝 com.baidu.BaiduMap:id\/refuse_tv",
+            "android:id\/navigationBarBackground"
+          ],
+          "bottomCandidates": [
+            {
+              "label": "欢迎使用本功能服务 com.baidu.BaiduMap:id\/title_tv",
+              "bounds": {
+                "left": 80,
+                "top": 2192,
+                "right": 656,
+                "bottom": 2278
+              },
+              "clickable": false
+            },
+            {
+              "label": "在使用【地图AI助手】前，请您仔细阅读本扩展功能隐私政策。如您同意前述隐私政策，即代表您同意为了向您提供本扩展功能服务，我们处理所需的相关个人信息并在会话中应用。 com.baidu.BaiduMap:id\/voice_privacy_content_tv",
+              "bounds": {
+                "left": 80,
+                "top": 2346,
+                "right": 1360,
+                "bottom": 2620
+              },
+              "clickable": false
+            },
+            {
+              "label": "同意 com.baidu.BaiduMap:id\/confirm_tv",
+              "bounds": {
+                "left": 80,
+                "top": 2684,
+                "right": 1360,
+                "bottom": 2836
+              },
+              "clickable": true
+            },
+            {
+              "label": "拒绝 com.baidu.BaiduMap:id\/refuse_tv",
+              "bounds": {
+                "left": 664,
+                "top": 2932,
+                "right": 776,
+                "bottom": 3008
+              },
+              "clickable": true
+            },
+            {
+              "label": "com.baidu.BaiduMap:id\/voice_privacy_cancel_icon",
+              "bounds": {
+                "left": 1264,
+                "top": 2160,
+                "right": 1416,
+                "bottom": 2312
+              },
+              "clickable": true
+            }
+          ]
+        },
+        "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_snapshots\/com.baidu.baidumap\/20260520_021023_022_480c76e4.json"
+      },
+      {
+        "id": "ui_snapshot_1779214222840",
+        "source": "accessibility_auto",
+        "note": "TYPE_WINDOW_CONTENT_CHANGED",
+        "appPackage": "com.baidu.BaiduMap",
+        "windowClassName": "null",
+        "screenKey": "480c76e4",
+        "screenshotPath": "null",
+        "visualHash": "null",
+        "summary": {
+          "nodeCount": 11,
+          "clickableCount": 3,
+          "editableCount": 0,
+          "scrollableCount": 0,
+          "labels": [
+            "android:id\/content",
+            "com.baidu.BaiduMap:id\/round_layout",
+            "欢迎使用本功能服务 com.baidu.BaiduMap:id\/title_tv",
+            "com.baidu.BaiduMap:id\/voice_privacy_cancel_icon",
+            "在使用【地图AI助手】前，请您仔细阅读本扩展功能隐私政策。如您同意前述隐私政策，即代表您同意为了向您提供本扩展功能服务，我们处理所需的相关个人信息并在会话中应用。 com.baidu.BaiduMap:id\/voice_privacy_content_tv",
+            "同意 com.baidu.BaiduMap:id\/confirm_tv",
+            "拒绝 com.baidu.BaiduMap:id\/refuse_tv",
+            "android:id\/navigationBarBackground"
+          ],
+          "bottomCandidates": [
+            {
+              "label": "欢迎使用本功能服务 com.baidu.BaiduMap:id\/title_tv",
+              "bounds": {
+                "left": 80,
+                "top": 2192,
+                "right": 656,
+                "bottom": 2278
+              },
+              "clickable": false
+            },
+            {
+              "label": "在使用【地图AI助手】前，请您仔细阅读本扩展功能隐私政策。如您同意前述隐私政策，即代表您同意为了向您提供本扩展功能服务，我们处理所需的相关个人信息并在会话中应用。 com.baidu.BaiduMap:id\/voice_privacy_content_tv",
+              "bounds": {
+                "left": 80,
+                "top": 2346,
+                "right": 1360,
+                "bottom": 2620
+              },
+              "clickable": false
+            },
+            {
+              "label": "同意 com.baidu.BaiduMap:id\/confirm_tv",
+              "bounds": {
+                "left": 80,
+                "top": 2684,
+                "right": 1360,
+                "bottom": 2836
+              },
+              "clickable": true
+            },
+            {
+              "label": "拒绝 com.baidu.BaiduMap:id\/refuse_tv",
+              "bounds": {
+                "left": 664,
+                "top": 2932,
+                "right": 776,
+                "bottom": 3008
+              },
+              "clickable": true
+            },
+            {
+              "label": "com.baidu.BaiduMap:id\/voice_privacy_cancel_icon",
+              "bounds": {
+                "left": 1264,
+                "top": 2160,
+                "right": 1416,
+                "bottom": 2312
+              },
+              "clickable": true
+            }
+          ]
+        },
+        "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_snapshots\/com.baidu.baidumap\/20260520_021022_839_480c76e4.json"
+      }
+    ],
+    "proposedPlanSteps": [
+      {
+        "type": "OpenApp",
+        "packageName": "com.baidu.BaiduMap",
+        "timeoutMs": 3000
+      },
+      {
+        "type": "HandleReactiveOverlays",
+        "appPackage": "com.baidu.BaiduMap",
+        "maxPasses": 3
+      },
+      {
+        "type": "ClickVisibleText",
+        "text": "搜索",
+        "textAliases": [
+          "搜索",
+          "搜",
+          "查找"
+        ],
+        "x": 0.88,
+        "y": 0.08,
+        "requiresUiStateForCoordinate": false
+      },
+      {
+        "type": "Wait",
+        "timeoutMs": 600
+      },
+      {
+        "type": "TypeIntoFirstInput",
+        "text": "上海站，停在地点结果页并记录路线、收藏、电话入口。\n\n约束：目标 App=百度地图，包名=com.baidu.BaiduMap。必须由 MacroPilot 手机端自己用无障碍、输入法、AI\/Skill JSON 执行，不允许依赖 ADB 手点目标 App。执行前先读取当前 UI；如果遇到广告、弹窗、小字提示，先记录文字并安全关闭。任务完成必须用当前 UI 证据验证，不能只因为步骤执行完就报成功。如果没有现成 skill，先复用已有相似 Skill JSON\/archetype，只改关键槽位如入口文字、坐标、目标文本、验证规则，再组装 atomic\/macro skill。需要探索入口时优先遍历底部标签、顶部小图标、图形化入口、侧边操作和子页面。本任务 stopBeforeSubmit=true：写草稿、评论、订单、支付类流程必须停在提交前，不点击最终发布、发送、提交订单、支付、确认授权。期望证据包括：上海站、地点。",
+        "timeoutMs": 2000
+      },
+      {
+        "type": "ClickVisibleText",
+        "text": "搜索",
+        "textAliases": [
+          "搜索",
+          "确定"
+        ],
+        "timeoutMs": 1500
+      },
+      {
+        "type": "Wait",
+        "timeoutMs": 1800
+      }
+    ],
+    "outputContract": {
+      "decision": {
+        "usePatchedSteps": false,
+        "screenAssessment": "当前页面是什么，哪些入口\/弹窗\/输入框可见",
+        "planRisk": "本地计划哪里可能点错、漏验证或误报成功",
+        "confidence": "HIGH | MEDIUM | LOW",
+        "nextActionReason": "为什么保留或改写计划"
+      },
+      "steps": [
+        {
+          "type": "OpenApp",
+          "packageName": "com.baidu.BaiduMap"
+        },
+        {
+          "type": "HandleReactiveOverlays",
+          "maxPasses": 3
+        },
+        {
+          "type": "RecoverBilibiliHomeSurface",
+          "packageName": "tv.danmaku.bili"
+        },
+        {
+          "type": "FindEntryByBottomTabSweep",
+          "entryAliases": [
+            "发帖",
+            "发布",
+            "创作",
+            "搜索",
+            "消息",
+            "+"
+          ]
+        },
+        {
+          "type": "ClickVisibleText",
+          "text": "搜索"
+        },
+        {
+          "type": "ClickCoordinate",
+          "x": 0.5,
+          "y": 0.36
+        },
+        {
+          "type": "TypeIntoFirstInput",
+          "text": "输入内容"
+        },
+        {
+          "type": "Back"
+        },
+        {
+          "type": "Wait",
+          "timeoutMs": 800
+        }
+      ]
+    },
+    "rules": [
+      "你是在执行前复核手机端本地相似 Skill 计划。先判断当前 UI，再判断 proposedPlanSteps 是否够用。",
+      "如果本地计划已经安全、细粒度、可验证，decision.usePatchedSteps=false，steps=[]。",
+      "如果计划缺少关广告\/选专区\/打开入口\/二次验证，decision.usePatchedSteps=true，并只返回完整替换计划中必要的细粒度 steps。",
+      "优先使用 appUiGraph 里已经发现的入口、底部分屏、输入框、子页面证据；不要忽略已记录的 UI 图谱。",
+      "返回的 steps 会被手机端用已有 Skill JSON\/archetype 做关键字段补丁拼装，所以每一步要写清楚 text\/textAliases\/x\/y\/selector\/verifyType。",
+      "不要删除安全前置动作：OpenApp、HandleReactiveOverlays、CaptureWechatBottomTabs、FindEntryByBottomTabSweep 这类动作通常应该保留。",
+      "B 站如果卡在消息\/系统通知\/游戏通知\/分享面板，复核计划必须插入 RecoverBilibiliHomeSurface，然后再搜索\/选择视频。",
+      "用户明确要求发布\/发帖\/发表时才允许保留最终发布动作；否则只能写草稿。",
+      "不能把 OpenApp、Wait、进入搜索页当作复杂任务完成；需要后续 checkpoint 或 verify 证据。",
+      "坐标必须来自 currentUi.clickTargets\/currentUi.entryCandidates\/currentUi.videoCandidates 的 center，或者标明低置信兜底。"
+    ]
+  },
+  "aiStatus": "SUCCESS",
+  "aiMessage": "AI Assist request completed",
+  "provider": "OPENAI_COMPAT_CHAT",
+  "httpStatus": 200,
+  "model": "deepseek-v4-pro",
+  "baseUrlHost": "api.deepseek.com",
+  "rawResponse": {
+    "provider": "OPENAI_COMPAT_CHAT",
+    "responseId": "7541f061-7e93-4f75-b614-296d3524c7db",
+    "model": "deepseek-v4-pro",
+    "output": {
+      "decision": {
+        "usePatchedSteps": true,
+        "screenAssessment": "当前UI在知乎APP，与目标任务无关。需切换到百度地图。",
+        "planRisk": "原计划输入框填入完整指令而非搜索词，且点击'搜索'文本可能不匹配百度地图的搜索入口（实际为'地点搜索'），可能导致搜索失败。",
+        "confidence": "MEDIUM",
+        "nextActionReason": "修正搜索入口和搜索词，增加搜索结果验证前的等待和关键词检查。"
+      },
+      "steps": [
+        {
+          "type": "OpenApp",
+          "packageName": "com.baidu.BaiduMap"
+        },
+        {
+          "type": "HandleReactiveOverlays",
+          "appPackage": "com.baidu.BaiduMap",
+          "maxPasses": 3
+        },
+        {
+          "type": "ClickVisibleText",
+          "text": "地点搜索",
+          "textAliases": [
+            "地点搜索",
+            "搜索"
+          ],
+          "x": 0.449,
+          "y": 0.0946,
+          "requiresUiStateForCoordinate": false
+        },
+        {
+          "type": "Wait",
+          "timeoutMs": 1000
+        },
+        {
+          "type": "TypeIntoFirstInput",
+          "text": "上海站",
+          "timeoutMs": 2000
+        },
+        {
+          "type": "Wait",
+          "timeoutMs": 500
+        },
+        {
+          "type": "ClickSelector",
+          "selector": "[text='搜索']"
+        },
+        {
+          "type": "Wait",
+          "timeoutMs": 2000
+        }
+      ]
+    },
+    "rawOutputText": "{\n  \"decision\": {\n    \"usePatchedSteps\": true,\n    \"screenAssessment\": \"当前UI在知乎APP，与目标任务无关。需切换到百度地图。\",\n    \"planRisk\": \"原计划输入框填入完整指令而非搜索词，且点击'搜索'文本可能不匹配百度地图的搜索入口（实际为'地点搜索'），可能导致搜索失败。\",\n    \"confidence\": \"MEDIUM\",\n    \"nextActionReason\": \"修正搜索入口和搜索词，增加搜索结果验证前的等待和关键词检查。\"\n  },\n  \"steps\": [\n    {\n      \"type\": \"OpenApp\",\n      \"packageName\": \"com.baidu.BaiduMap\"\n    },\n    {\n      \"type\": \"HandleReactiveOverlays\",\n      \"appPackage\": \"com.baidu.BaiduMap\",\n      \"maxPasses\": 3\n    },\n    {\n      \"type\": \"ClickVisibleText\",\n      \"text\": \"地点搜索\",\n      \"textAliases\": [\"地点搜索\", \"搜索\"],\n      \"x\": 0.449,\n      \"y\": 0.0946,\n      \"requiresUiStateForCoordinate\": false\n    },\n    {\n      \"type\": \"Wait\",\n      \"timeoutMs\": 1000\n    },\n    {\n      \"type\": \"TypeIntoFirstInput\",\n      \"text\": \"上海站\",\n      \"timeoutMs\": 2000\n    },\n    {\n      \"type\": \"Wait\",\n      \"timeoutMs\": 500\n    },\n    {\n      \"type\": \"ClickSelector\",\n      \"selector\": \"[text='搜索']\"\n    },\n    {\n      \"type\": \"Wait\",\n      \"timeoutMs\": 2000\n    }\n  ]\n}"
+  },
+  "parsedJson": {
+    "decision": {
+      "usePatchedSteps": true,
+      "screenAssessment": "当前UI在知乎APP，与目标任务无关。需切换到百度地图。",
+      "planRisk": "原计划输入框填入完整指令而非搜索词，且点击'搜索'文本可能不匹配百度地图的搜索入口（实际为'地点搜索'），可能导致搜索失败。",
+      "confidence": "MEDIUM",
+      "nextActionReason": "修正搜索入口和搜索词，增加搜索结果验证前的等待和关键词检查。"
+    },
+    "usePatchedSteps": true,
+    "patchedStepCount": 8
+  },
+  "parseSuccess": true,
+  "errors": [],
+  "accepted": true,
+  "acceptedBy": "APP_SIDE_PRE_EXECUTION_REVIEW",
+  "acceptedAt": 1779339509886
+}

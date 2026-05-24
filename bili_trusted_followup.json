@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "kind": "skill_json_ai_follow_up_run_report",
+  "id": "ai_follow_up_run_1778533029811",
+  "skillId": "direct.command.1778533022444",
+  "failedSkillId": "bilibili.search.search_in_app",
+  "appPackage": "tv.danmaku.bili",
+  "instruction": "打开哔哩哔哩搜索王老菊打开第一个视频",
+  "engine": "ai_runtime_replan",
+  "phase": "REPLAN",
+  "trigger": "EXECUTION_FAILED",
+  "previousStatus": "FAILED_RECOVER_SCREEN",
+  "previousMessage": "Bilibili recovery exhausted; still not on a trusted home\/search\/results surface. events=[{\"pass\":1,\"surface\":\"message_or_drawer_surface\",\"action\":\"message_surface_global_back\",\"success\":true,\"message\":\"GLOBAL_ACTION_BACK performed\"},{\"pass\":2,\"action\":\"reactive_overlays\",\"dismissed\":1},{\"pass\":2,\"surface\":\"message_or_drawer_surface\",\"action\":\"message_surface_global_back\",\"success\":true,\"message\":\"GLOBAL_ACTION_BACK performed\"},{\"pass\":3,\"action\":\"reactive_overlays\",\"dismissed\":1},{\"pass\":3,\"surface\":\"message_or_drawer_surface\",\"action\":\"message_surface_global_back\",\"success\":true,\"message\":\"GLOBAL_ACTION_BACK performed\"}]",
+  "previousRuntimeReportFile": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/runtime\/run_reports\/tv.danmaku.bili\/ai_direct_run_1778532976356.json",
+  "aiJobFile": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ai_jobs\/2026-05-12\/factory_ai_replan_1778533022427.json",
+  "decision": {
+    "goalCompleted": false,
+    "screenAssessment": "当前停留在B站消息页面，顶部有“消息”标题和“一键已读”、“菜单”按钮，下方为消息列表，无法直接搜索或进入主页。",
+    "failureDiagnosis": "之前的恢复步骤未能离开消息页面，需要更鲁棒的方式返回主页面。",
+    "confidence": "MEDIUM",
+    "nextActionReason": "使用 FindEntryByBottomTabSweep 寻找底部 tab“首页”或“推荐”，以确保回到主界面，从而可以进行后续搜索。"
+  },
+  "approvedRequired": false,
+  "status": "SUCCESS_MEDIUM_CONFIDENCE",
+  "message": "Macro atoms completed; reactiveDismissed=0",
+  "durationMs": 7308,
+  "usedCoordinate": true,
+  "details": {
+    "macroSkillId": "direct.command.1778533022444",
+    "atomTrace": [
+      {
+        "index": 0,
+        "skillId": "direct.1778533022444.1.findentrybybottomtabsweep",
+        "actionType": "FindEntryByBottomTabSweep",
+        "status": "SUCCESS_MEDIUM_CONFIDENCE",
+        "message": "Bottom tab 'fallback_tab_1' opened the requested entry surface; aliases=首页\/推荐\/搜索; events=[{\"phase\":\"open_before_recover\",\"packageName\":\"tv.danmaku.bili\",\"success\":true,\"message\":\"Launch intent sent for tv.danmaku.bili\"},{\"phase\":\"home_back\",\"index\":1,\"fromPackage\":\"tv.danmaku.bili\",\"window\":\"android.widget.FrameLayout\",\"success\":true,\"message\":\"GLOBAL_ACTION_BACK performed\"},{\"phase\":\"home_back\",\"index\":2,\"fromPackage\":\"tv.danmaku.bili\",\"window\":\"android.widget.ProgressBar\",\"success\":true,\"message\":\"GLOBAL_ACTION_BACK performed\"},{\"phase\":\"home_back\",\"index\":3,\"fromPackage\":\"tv.danmaku.bili\",\"window\":\"android.view.View\",\"success\":true,\"message\":\"GLOBAL_ACTION_BACK performed\"},{\"phase\":\"open_after_recover\",\"packageName\":\"tv.danmaku.bili\",\"success\":true,\"message\":\"Launch intent sent for tv.danmaku.bili\"},{\"phase\":\"recover_current_package\",\"packageName\":\"tv.danmaku.bili\"},{\"phase\":\"click_bottom_tab\",\"index\":0,\"label\":\"fallback_tab_1\",\"x\":0.16666667,\"y\":0.925,\"success\":true,\"message\":\"dispatchGesture tap sent (normalized=0.167,0.925 px=240,2930 screen=1440x3168)\"},{\"phase\":\"entry_destination_reached\",\"tabIndex\":0,\"tabLabel\":\"fallback_tab_1\",\"aliases\":[\"首页\",\"推荐\",\"搜索\"]}]",
+        "usedCoordinate": true,
+        "details": null
+      }
+    ],
+    "reactiveDismissed": 0
+  },
+  "allowSideEffect": true,
+  "skillFile": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_candidates\/tv.danmaku.bili\/direct.command.1778533022444.json",
+  "createdAt": 1778533029811
+}

@@ -1,0 +1,2611 @@
+{
+  "schemaVersion": 1,
+  "kind": "app_config",
+  "appPackage": "com.taobao.taobao",
+  "appName": "淘宝",
+  "screens": [],
+  "elements": [],
+  "atomicSkills": [
+    {
+      "schemaVersion": 1,
+      "kind": "atomic_skill",
+      "id": "patched.1779338878450.6.clickvisibletext",
+      "name": "改写步骤 6: ClickVisibleText",
+      "appPackage": "com.taobao.taobao",
+      "appVersion": "*",
+      "status": "DRY_RUN_PASSED",
+      "domain": "app_session",
+      "implements": "ClickElementSkill",
+      "params": [
+        {
+          "name": "text",
+          "type": "TEXT",
+          "required": true
+        }
+      ],
+      "preconditions": [],
+      "dependsOn": [],
+      "resolverPolicy": {
+        "order": [
+          "ACCESSIBILITY",
+          "APP_UI_GRAPH",
+          "COORDINATE_PACK",
+          "AI_PATCH"
+        ],
+        "allowAiSuggestionInFactory": true,
+        "allowAiInRuntime": true
+      },
+      "safety": {
+        "forbiddenTexts": [
+          "支付",
+          "付款",
+          "转账",
+          "删除",
+          "发布",
+          "授权"
+        ]
+      },
+      "factory": {
+        "source": "APP_SIDE_PLAN_PATCH_ASSEMBLER",
+        "instruction": "在淘宝搜索机械键盘，停在商品结果页并记录筛选、店铺、价格入口。\n\n约束：目标 App=淘宝，包名=com.taobao.taobao。必须由 MacroPilot 手机端自己用无障碍、输入法、AI\/Skill JSON 执行，不允许依赖 ADB 手点目标 App。执行前先读取当前 UI；如果遇到广告、弹窗、小字提示，先记录文字并安全关闭。任务完成必须用当前 UI 证据验证，不能只因为步骤执行完就报成功。如果没有现成 skill，先复用已有相似 Skill JSON\/archetype，只改关键槽位如入口文字、坐标、目标文本、验证规则，再组装 atomic\/macro skill。需要探索入口时优先遍历底部标签、顶部小图标、图形化入口、侧边操作和子页面。本任务 stopBeforeSubmit=true：写草稿、评论、订单、支付类流程必须停在提交前，不点击最终发布、发送、提交订单、支付、确认授权。期望证据包括：机械键盘、商品。",
+        "aiJobPath": null,
+        "traceIds": [],
+        "sampleCount": 0,
+        "dryRunStatus": "PASSED",
+        "testRuns": 0,
+        "successRate": 0,
+        "promotionStatus": "NOT_PROMOTED",
+        "createdAt": 1779338880972,
+        "sourceSkillId": "com.taobao.taobao.common.click_visible_text",
+        "sourceSkillPath": "builtin:\/\/archetype\/com.taobao.taobao.common.click_visible_text",
+        "sourceOrigin": "BUILTIN_ARCHETYPE",
+        "templateMatchScore": 90,
+        "templateMatchReason": "same_app,same_action_type,same_capability,archetype_available,same_label,search_intent,publish_intent",
+        "patchReason": "reuse_existing_skill_json_and_rewrite_key_slots",
+        "lastDryRunReport": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_dry_run_reports\/com.taobao.taobao\/patched.1779338878450.6.clickvisibletext_1779338881401.json",
+        "lastDryRunAt": 1779338881402
+      },
+      "capabilityRequired": {
+        "minLevel": "D",
+        "inputRequired": false,
+        "nodeReadablePreferred": true,
+        "coordinateFallbackAllowed": false,
+        "allowedInputChannels": [],
+        "verificationRequired": "MEDIUM"
+      },
+      "action": {
+        "type": "ClickVisibleText",
+        "text": "搜索",
+        "textAliases": [
+          "搜索",
+          "确定"
+        ],
+        "timeoutMs": 1500
+      },
+      "verify": {
+        "type": "WindowChangedOrNodeStateChanged",
+        "timeoutMs": 1500,
+        "allowLowConfidenceWhenCoordinateOnly": true
+      },
+      "resultPolicy": {
+        "verified": "SUCCESS",
+        "partialVerified": "SUCCESS_MEDIUM_CONFIDENCE",
+        "coordinateOnly": "SUCCESS_LOW_CONFIDENCE",
+        "unverifiable": "FAILED_UNVERIFIABLE"
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "kind": "atomic_skill",
+      "id": "patched.1779338878450.7.wait",
+      "name": "改写步骤 7: Wait",
+      "appPackage": "com.taobao.taobao",
+      "appVersion": "*",
+      "status": "DRY_RUN_PASSED",
+      "domain": "app_session",
+      "implements": "WaitUntilSkill",
+      "params": [],
+      "preconditions": [],
+      "dependsOn": [],
+      "resolverPolicy": {
+        "order": [
+          "ACCESSIBILITY",
+          "APP_UI_GRAPH",
+          "COORDINATE_PACK",
+          "AI_PATCH"
+        ],
+        "allowAiSuggestionInFactory": true,
+        "allowAiInRuntime": true
+      },
+      "safety": {
+        "forbiddenTexts": [
+          "支付",
+          "付款",
+          "转账",
+          "删除",
+          "发布",
+          "授权"
+        ]
+      },
+      "factory": {
+        "source": "APP_SIDE_PLAN_PATCH_ASSEMBLER",
+        "instruction": "在淘宝搜索机械键盘，停在商品结果页并记录筛选、店铺、价格入口。\n\n约束：目标 App=淘宝，包名=com.taobao.taobao。必须由 MacroPilot 手机端自己用无障碍、输入法、AI\/Skill JSON 执行，不允许依赖 ADB 手点目标 App。执行前先读取当前 UI；如果遇到广告、弹窗、小字提示，先记录文字并安全关闭。任务完成必须用当前 UI 证据验证，不能只因为步骤执行完就报成功。如果没有现成 skill，先复用已有相似 Skill JSON\/archetype，只改关键槽位如入口文字、坐标、目标文本、验证规则，再组装 atomic\/macro skill。需要探索入口时优先遍历底部标签、顶部小图标、图形化入口、侧边操作和子页面。本任务 stopBeforeSubmit=true：写草稿、评论、订单、支付类流程必须停在提交前，不点击最终发布、发送、提交订单、支付、确认授权。期望证据包括：机械键盘、商品。",
+        "aiJobPath": null,
+        "traceIds": [],
+        "sampleCount": 0,
+        "dryRunStatus": "PASSED",
+        "testRuns": 0,
+        "successRate": 0,
+        "promotionStatus": "NOT_PROMOTED",
+        "createdAt": 1779338881388,
+        "sourceSkillId": "patched.1779338878450.4.wait",
+        "sourceSkillPath": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_candidates\/com.taobao.taobao\/patched.1779338878450.4.wait.json",
+        "sourceOrigin": "LOCAL_JSON",
+        "templateMatchScore": 70,
+        "templateMatchReason": "same_app,same_action_type,same_capability,search_intent",
+        "patchReason": "reuse_existing_skill_json_and_rewrite_key_slots",
+        "lastDryRunReport": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_dry_run_reports\/com.taobao.taobao\/patched.1779338878450.7.wait_1779338881402.json",
+        "lastDryRunAt": 1779338881403
+      },
+      "capabilityRequired": {
+        "minLevel": "D",
+        "inputRequired": false,
+        "nodeReadablePreferred": true,
+        "coordinateFallbackAllowed": false,
+        "allowedInputChannels": [],
+        "verificationRequired": "MEDIUM"
+      },
+      "action": {
+        "type": "Wait",
+        "timeoutMs": 1800
+      },
+      "verify": {
+        "type": "Always",
+        "timeoutMs": 1
+      },
+      "resultPolicy": {
+        "verified": "SUCCESS",
+        "partialVerified": "SUCCESS_MEDIUM_CONFIDENCE",
+        "coordinateOnly": "SUCCESS_LOW_CONFIDENCE",
+        "unverifiable": "FAILED_UNVERIFIABLE"
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "kind": "atomic_skill",
+      "id": "patched.1779338878450.3.clickvisibletext",
+      "name": "改写步骤 3: ClickVisibleText",
+      "appPackage": "com.taobao.taobao",
+      "appVersion": "*",
+      "status": "DRY_RUN_PASSED",
+      "domain": "app_session",
+      "implements": "ClickElementSkill",
+      "params": [
+        {
+          "name": "text",
+          "type": "TEXT",
+          "required": true
+        }
+      ],
+      "preconditions": [],
+      "dependsOn": [],
+      "resolverPolicy": {
+        "order": [
+          "ACCESSIBILITY",
+          "APP_UI_GRAPH",
+          "COORDINATE_PACK",
+          "AI_PATCH"
+        ],
+        "allowAiSuggestionInFactory": true,
+        "allowAiInRuntime": true
+      },
+      "safety": {
+        "forbiddenTexts": [
+          "支付",
+          "付款",
+          "转账",
+          "删除",
+          "发布",
+          "授权"
+        ]
+      },
+      "factory": {
+        "source": "APP_SIDE_PLAN_PATCH_ASSEMBLER",
+        "instruction": "在淘宝搜索机械键盘，停在商品结果页并记录筛选、店铺、价格入口。\n\n约束：目标 App=淘宝，包名=com.taobao.taobao。必须由 MacroPilot 手机端自己用无障碍、输入法、AI\/Skill JSON 执行，不允许依赖 ADB 手点目标 App。执行前先读取当前 UI；如果遇到广告、弹窗、小字提示，先记录文字并安全关闭。任务完成必须用当前 UI 证据验证，不能只因为步骤执行完就报成功。如果没有现成 skill，先复用已有相似 Skill JSON\/archetype，只改关键槽位如入口文字、坐标、目标文本、验证规则，再组装 atomic\/macro skill。需要探索入口时优先遍历底部标签、顶部小图标、图形化入口、侧边操作和子页面。本任务 stopBeforeSubmit=true：写草稿、评论、订单、支付类流程必须停在提交前，不点击最终发布、发送、提交订单、支付、确认授权。期望证据包括：机械键盘、商品。",
+        "aiJobPath": null,
+        "traceIds": [],
+        "sampleCount": 0,
+        "dryRunStatus": "PASSED",
+        "testRuns": 0,
+        "successRate": 0,
+        "promotionStatus": "NOT_PROMOTED",
+        "createdAt": 1779338879688,
+        "sourceSkillId": "com.taobao.taobao.common.click_visible_text",
+        "sourceSkillPath": "builtin:\/\/archetype\/com.taobao.taobao.common.click_visible_text",
+        "sourceOrigin": "BUILTIN_ARCHETYPE",
+        "templateMatchScore": 90,
+        "templateMatchReason": "same_app,same_action_type,same_capability,archetype_available,same_label,search_intent,publish_intent",
+        "patchReason": "reuse_existing_skill_json_and_rewrite_key_slots",
+        "lastDryRunReport": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_dry_run_reports\/com.taobao.taobao\/patched.1779338878450.3.clickvisibletext_1779338881397.json",
+        "lastDryRunAt": 1779338881398
+      },
+      "capabilityRequired": {
+        "minLevel": "C",
+        "inputRequired": false,
+        "nodeReadablePreferred": true,
+        "coordinateFallbackAllowed": true,
+        "allowedInputChannels": [],
+        "verificationRequired": "LOW"
+      },
+      "action": {
+        "type": "ClickVisibleText",
+        "text": "搜索",
+        "textAliases": [
+          "搜索",
+          "搜",
+          "查找"
+        ],
+        "x": 0.88,
+        "y": 0.08,
+        "requiresUiStateForCoordinate": false
+      },
+      "verify": {
+        "type": "WindowChangedOrNodeStateChanged",
+        "timeoutMs": 1500,
+        "allowLowConfidenceWhenCoordinateOnly": true
+      },
+      "resultPolicy": {
+        "verified": "SUCCESS",
+        "partialVerified": "SUCCESS_MEDIUM_CONFIDENCE",
+        "coordinateOnly": "SUCCESS_LOW_CONFIDENCE",
+        "unverifiable": "FAILED_UNVERIFIABLE"
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "kind": "atomic_skill",
+      "id": "patched.1779338878450.4.wait",
+      "name": "改写步骤 4: Wait",
+      "appPackage": "com.taobao.taobao",
+      "appVersion": "*",
+      "status": "DRY_RUN_PASSED",
+      "domain": "app_session",
+      "implements": "WaitUntilSkill",
+      "params": [],
+      "preconditions": [],
+      "dependsOn": [],
+      "resolverPolicy": {
+        "order": [
+          "ACCESSIBILITY",
+          "APP_UI_GRAPH",
+          "COORDINATE_PACK",
+          "AI_PATCH"
+        ],
+        "allowAiSuggestionInFactory": true,
+        "allowAiInRuntime": true
+      },
+      "safety": {
+        "forbiddenTexts": [
+          "支付",
+          "付款",
+          "转账",
+          "删除",
+          "发布",
+          "授权"
+        ]
+      },
+      "factory": {
+        "source": "APP_SIDE_PLAN_PATCH_ASSEMBLER",
+        "instruction": "在淘宝搜索机械键盘，停在商品结果页并记录筛选、店铺、价格入口。\n\n约束：目标 App=淘宝，包名=com.taobao.taobao。必须由 MacroPilot 手机端自己用无障碍、输入法、AI\/Skill JSON 执行，不允许依赖 ADB 手点目标 App。执行前先读取当前 UI；如果遇到广告、弹窗、小字提示，先记录文字并安全关闭。任务完成必须用当前 UI 证据验证，不能只因为步骤执行完就报成功。如果没有现成 skill，先复用已有相似 Skill JSON\/archetype，只改关键槽位如入口文字、坐标、目标文本、验证规则，再组装 atomic\/macro skill。需要探索入口时优先遍历底部标签、顶部小图标、图形化入口、侧边操作和子页面。本任务 stopBeforeSubmit=true：写草稿、评论、订单、支付类流程必须停在提交前，不点击最终发布、发送、提交订单、支付、确认授权。期望证据包括：机械键盘、商品。",
+        "aiJobPath": null,
+        "traceIds": [],
+        "sampleCount": 0,
+        "dryRunStatus": "PASSED",
+        "testRuns": 0,
+        "successRate": 0,
+        "promotionStatus": "NOT_PROMOTED",
+        "createdAt": 1779338880103,
+        "sourceSkillId": "patched.1779338861752.4.wait",
+        "sourceSkillPath": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_candidates\/com.dianping.v1\/patched.1779338861752.4.wait.json",
+        "sourceOrigin": "LOCAL_JSON",
+        "templateMatchScore": 58,
+        "templateMatchReason": "same_action_type,same_capability,search_intent",
+        "patchReason": "reuse_existing_skill_json_and_rewrite_key_slots",
+        "lastDryRunReport": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_dry_run_reports\/com.taobao.taobao\/patched.1779338878450.4.wait_1779338881398.json",
+        "lastDryRunAt": 1779338881399
+      },
+      "capabilityRequired": {
+        "minLevel": "D",
+        "inputRequired": false,
+        "nodeReadablePreferred": true,
+        "coordinateFallbackAllowed": false,
+        "allowedInputChannels": [],
+        "verificationRequired": "MEDIUM"
+      },
+      "action": {
+        "type": "Wait",
+        "timeoutMs": 600
+      },
+      "verify": {
+        "type": "Always",
+        "timeoutMs": 1
+      },
+      "resultPolicy": {
+        "verified": "SUCCESS",
+        "partialVerified": "SUCCESS_MEDIUM_CONFIDENCE",
+        "coordinateOnly": "SUCCESS_LOW_CONFIDENCE",
+        "unverifiable": "FAILED_UNVERIFIABLE"
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "kind": "atomic_skill",
+      "id": "patched.1779338878450.1.openapp",
+      "name": "改写步骤 1: OpenApp",
+      "appPackage": "com.taobao.taobao",
+      "appVersion": "*",
+      "status": "DRY_RUN_PASSED",
+      "domain": "app_session",
+      "implements": "OpenAppSkill",
+      "params": [],
+      "preconditions": [],
+      "dependsOn": [],
+      "resolverPolicy": {
+        "order": [
+          "ACCESSIBILITY",
+          "APP_UI_GRAPH",
+          "COORDINATE_PACK",
+          "AI_PATCH"
+        ],
+        "allowAiSuggestionInFactory": true,
+        "allowAiInRuntime": true
+      },
+      "safety": {
+        "forbiddenTexts": [
+          "支付",
+          "付款",
+          "转账",
+          "删除",
+          "发布",
+          "授权"
+        ]
+      },
+      "factory": {
+        "source": "APP_SIDE_PLAN_PATCH_ASSEMBLER",
+        "instruction": "在淘宝搜索机械键盘，停在商品结果页并记录筛选、店铺、价格入口。\n\n约束：目标 App=淘宝，包名=com.taobao.taobao。必须由 MacroPilot 手机端自己用无障碍、输入法、AI\/Skill JSON 执行，不允许依赖 ADB 手点目标 App。执行前先读取当前 UI；如果遇到广告、弹窗、小字提示，先记录文字并安全关闭。任务完成必须用当前 UI 证据验证，不能只因为步骤执行完就报成功。如果没有现成 skill，先复用已有相似 Skill JSON\/archetype，只改关键槽位如入口文字、坐标、目标文本、验证规则，再组装 atomic\/macro skill。需要探索入口时优先遍历底部标签、顶部小图标、图形化入口、侧边操作和子页面。本任务 stopBeforeSubmit=true：写草稿、评论、订单、支付类流程必须停在提交前，不点击最终发布、发送、提交订单、支付、确认授权。期望证据包括：机械键盘、商品。",
+        "aiJobPath": null,
+        "traceIds": [],
+        "sampleCount": 0,
+        "dryRunStatus": "PASSED",
+        "testRuns": 0,
+        "successRate": 0,
+        "promotionStatus": "NOT_PROMOTED",
+        "createdAt": 1779338878871,
+        "sourceSkillId": "com.taobao.taobao.open_app",
+        "sourceSkillPath": "builtin:\/\/archetype\/com.taobao.taobao.open_app",
+        "sourceOrigin": "BUILTIN_ARCHETYPE",
+        "templateMatchScore": 90,
+        "templateMatchReason": "same_app,same_action_type,same_capability,archetype_available,same_label,search_intent,publish_intent",
+        "patchReason": "reuse_existing_skill_json_and_rewrite_key_slots",
+        "lastDryRunReport": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_dry_run_reports\/com.taobao.taobao\/patched.1779338878450.1.openapp_1779338881394.json",
+        "lastDryRunAt": 1779338881395
+      },
+      "capabilityRequired": {
+        "minLevel": "D",
+        "inputRequired": false,
+        "nodeReadablePreferred": true,
+        "coordinateFallbackAllowed": false,
+        "allowedInputChannels": [],
+        "verificationRequired": "MEDIUM"
+      },
+      "action": {
+        "type": "OpenApp",
+        "packageName": "com.taobao.taobao",
+        "timeoutMs": 3000
+      },
+      "verify": {
+        "type": "ForegroundPackage",
+        "packageName": "com.taobao.taobao",
+        "timeoutMs": 3000,
+        "allowUnverifiedWhenAccessibilityDisconnected": true
+      },
+      "resultPolicy": {
+        "verified": "SUCCESS",
+        "partialVerified": "SUCCESS_MEDIUM_CONFIDENCE",
+        "coordinateOnly": "SUCCESS_LOW_CONFIDENCE",
+        "unverifiable": "FAILED_UNVERIFIABLE"
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "kind": "atomic_skill",
+      "id": "patched.1779338878450.2.handlereactiveoverlays",
+      "name": "改写步骤 2: HandleReactiveOverlays",
+      "appPackage": "com.taobao.taobao",
+      "status": "DRY_RUN_PASSED",
+      "implements": "DismissDialogSkill",
+      "params": [],
+      "preconditions": [],
+      "dependsOn": [],
+      "capabilityRequired": {
+        "minLevel": "D",
+        "inputRequired": false,
+        "nodeReadablePreferred": true,
+        "coordinateFallbackAllowed": false,
+        "allowedInputChannels": [],
+        "verificationRequired": "MEDIUM"
+      },
+      "resolverPolicy": {
+        "order": [
+          "ACCESSIBILITY",
+          "APP_UI_GRAPH",
+          "COORDINATE_PACK",
+          "AI_PATCH"
+        ],
+        "allowAiSuggestionInFactory": true,
+        "allowAiInRuntime": true
+      },
+      "safety": {},
+      "action": {
+        "type": "HandleReactiveOverlays",
+        "appPackage": "com.taobao.taobao",
+        "maxPasses": 3
+      },
+      "verify": {
+        "type": "Always",
+        "timeoutMs": 1
+      },
+      "resultPolicy": {
+        "verified": "SUCCESS",
+        "partialVerified": "SUCCESS_MEDIUM_CONFIDENCE",
+        "coordinateOnly": "SUCCESS_LOW_CONFIDENCE",
+        "unverifiable": "FAILED_UNVERIFIABLE"
+      },
+      "factory": {
+        "source": "APP_SIDE_PLAN_PATCH_ASSEMBLER",
+        "instruction": "在淘宝搜索机械键盘，停在商品结果页并记录筛选、店铺、价格入口。\n\n约束：目标 App=淘宝，包名=com.taobao.taobao。必须由 MacroPilot 手机端自己用无障碍、输入法、AI\/Skill JSON 执行，不允许依赖 ADB 手点目标 App。执行前先读取当前 UI；如果遇到广告、弹窗、小字提示，先记录文字并安全关闭。任务完成必须用当前 UI 证据验证，不能只因为步骤执行完就报成功。如果没有现成 skill，先复用已有相似 Skill JSON\/archetype，只改关键槽位如入口文字、坐标、目标文本、验证规则，再组装 atomic\/macro skill。需要探索入口时优先遍历底部标签、顶部小图标、图形化入口、侧边操作和子页面。本任务 stopBeforeSubmit=true：写草稿、评论、订单、支付类流程必须停在提交前，不点击最终发布、发送、提交订单、支付、确认授权。期望证据包括：机械键盘、商品。",
+        "aiJobPath": null,
+        "traceIds": [],
+        "sampleCount": 0,
+        "dryRunStatus": "PASSED",
+        "testRuns": 0,
+        "successRate": 0,
+        "promotionStatus": "NOT_PROMOTED",
+        "createdAt": 1779338879279,
+        "sourceSkillId": "patched.1779338861752.2.handlereactiveoverlays",
+        "sourceSkillPath": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_candidates\/com.dianping.v1\/patched.1779338861752.2.handlereactiveoverlays.json",
+        "sourceOrigin": "LOCAL_JSON",
+        "templateMatchScore": 52,
+        "templateMatchReason": "same_action_type,same_capability",
+        "patchReason": "reuse_existing_skill_json_and_rewrite_key_slots",
+        "lastDryRunReport": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_dry_run_reports\/com.taobao.taobao\/patched.1779338878450.2.handlereactiveoverlays_1779338881396.json",
+        "lastDryRunAt": 1779338881397
+      },
+      "appVersion": "*"
+    },
+    {
+      "schemaVersion": 1,
+      "kind": "atomic_skill",
+      "id": "com.taobao.taobao.search.click_entry",
+      "name": "点击搜索入口",
+      "appPackage": "com.taobao.taobao",
+      "appVersion": "*",
+      "status": "DRY_RUN_PASSED",
+      "domain": "app_session",
+      "implements": "ClickElementSkill",
+      "params": [],
+      "preconditions": [],
+      "dependsOn": [],
+      "resolverPolicy": {
+        "order": [
+          "ACCESSIBILITY",
+          "COORDINATE_PACK",
+          "PACKAGE_MANAGER"
+        ],
+        "allowAiSuggestionInFactory": true,
+        "allowAiInRuntime": false
+      },
+      "safety": {
+        "forbiddenTexts": [
+          "支付",
+          "付款",
+          "转账",
+          "删除",
+          "发布",
+          "授权"
+        ]
+      },
+      "factory": {
+        "source": "SKILL_ARCHETYPE_TEMPLATE_V0",
+        "archetypeId": "common.search_in_app.v1",
+        "traceIds": [],
+        "sampleCount": 0,
+        "dryRunStatus": "PASSED",
+        "testRuns": 0,
+        "successRate": 0,
+        "promotionStatus": "NOT_PROMOTED",
+        "createdAt": 1779263717474,
+        "appPatch": {
+          "packageName": "com.taobao.taobao",
+          "label": "淘宝",
+          "launchable": true,
+          "launchActivity": "com.taobao.tao.welcome.Welcome",
+          "searchEntryTexts": [
+            "搜索",
+            "搜一搜",
+            "Search"
+          ],
+          "searchSubmitTexts": [
+            "搜索",
+            "确定",
+            "Search"
+          ],
+          "searchEntryCoordinate": {
+            "x": 0.5,
+            "y": 0.08
+          },
+          "searchSubmitCoordinate": {
+            "x": 0.9,
+            "y": 0.08
+          },
+          "postDraftEntryTexts": [
+            "+",
+            "写微博",
+            "发微博",
+            "发帖",
+            "创作",
+            "写帖子",
+            "发动态",
+            "说点什么"
+          ],
+          "postDraftEntryCoordinate": {
+            "x": 0.9,
+            "y": 0.9
+          }
+        },
+        "lastDryRunReport": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_dry_run_reports\/com.taobao.taobao\/com.taobao.taobao.search.click_entry_1779263717490.json",
+        "lastDryRunAt": 1779263717490
+      },
+      "capabilityRequired": {
+        "minLevel": "C",
+        "inputRequired": false,
+        "nodeReadablePreferred": true,
+        "coordinateFallbackAllowed": true,
+        "allowedInputChannels": [],
+        "verificationRequired": "MEDIUM"
+      },
+      "action": {
+        "type": "ClickVisibleText",
+        "text": "搜索",
+        "textAliases": [
+          "搜索",
+          "搜一搜",
+          "Search"
+        ],
+        "x": 0.5,
+        "y": 0.08,
+        "timeoutMs": 1200
+      },
+      "verify": {
+        "type": "WindowChangedOrNodeStateChanged",
+        "timeoutMs": 1500
+      },
+      "resultPolicy": {
+        "nodeClickedAndVerified": "SUCCESS",
+        "coordinateClicked": "SUCCESS_LOW_CONFIDENCE",
+        "notFound": "FAILED_ELEMENT_NOT_FOUND"
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "kind": "atomic_skill",
+      "id": "com.taobao.taobao.search.click_submit",
+      "name": "点击搜索确认",
+      "appPackage": "com.taobao.taobao",
+      "appVersion": "*",
+      "status": "DRY_RUN_PASSED",
+      "domain": "app_session",
+      "implements": "ClickElementSkill",
+      "params": [],
+      "preconditions": [],
+      "dependsOn": [],
+      "resolverPolicy": {
+        "order": [
+          "ACCESSIBILITY",
+          "COORDINATE_PACK",
+          "PACKAGE_MANAGER"
+        ],
+        "allowAiSuggestionInFactory": true,
+        "allowAiInRuntime": false
+      },
+      "safety": {
+        "forbiddenTexts": [
+          "支付",
+          "付款",
+          "转账",
+          "删除",
+          "发布",
+          "授权"
+        ]
+      },
+      "factory": {
+        "source": "SKILL_ARCHETYPE_TEMPLATE_V0",
+        "archetypeId": "common.search_in_app.v1",
+        "traceIds": [],
+        "sampleCount": 0,
+        "dryRunStatus": "PASSED",
+        "testRuns": 0,
+        "successRate": 0,
+        "promotionStatus": "NOT_PROMOTED",
+        "createdAt": 1779263717474,
+        "appPatch": {
+          "packageName": "com.taobao.taobao",
+          "label": "淘宝",
+          "launchable": true,
+          "launchActivity": "com.taobao.tao.welcome.Welcome",
+          "searchEntryTexts": [
+            "搜索",
+            "搜一搜",
+            "Search"
+          ],
+          "searchSubmitTexts": [
+            "搜索",
+            "确定",
+            "Search"
+          ],
+          "searchEntryCoordinate": {
+            "x": 0.5,
+            "y": 0.08
+          },
+          "searchSubmitCoordinate": {
+            "x": 0.9,
+            "y": 0.08
+          },
+          "postDraftEntryTexts": [
+            "+",
+            "写微博",
+            "发微博",
+            "发帖",
+            "创作",
+            "写帖子",
+            "发动态",
+            "说点什么"
+          ],
+          "postDraftEntryCoordinate": {
+            "x": 0.9,
+            "y": 0.9
+          }
+        },
+        "lastDryRunReport": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_dry_run_reports\/com.taobao.taobao\/com.taobao.taobao.search.click_submit_1779263717492.json",
+        "lastDryRunAt": 1779263717493
+      },
+      "capabilityRequired": {
+        "minLevel": "C",
+        "inputRequired": false,
+        "nodeReadablePreferred": true,
+        "coordinateFallbackAllowed": true,
+        "allowedInputChannels": [],
+        "verificationRequired": "MEDIUM"
+      },
+      "action": {
+        "type": "ClickVisibleText",
+        "text": "搜索",
+        "textAliases": [
+          "搜索",
+          "确定",
+          "Search"
+        ],
+        "x": 0.9,
+        "y": 0.08,
+        "timeoutMs": 1200
+      },
+      "verify": {
+        "type": "WindowChangedOrNodeStateChanged",
+        "timeoutMs": 1800,
+        "allowLowConfidenceWhenUnchanged": true
+      },
+      "resultPolicy": {
+        "nodeClickedAndVerified": "SUCCESS",
+        "coordinateClicked": "SUCCESS_LOW_CONFIDENCE",
+        "notFound": "FAILED_ELEMENT_NOT_FOUND"
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "kind": "atomic_skill",
+      "id": "com.taobao.taobao.search.type_query",
+      "name": "输入搜索词",
+      "appPackage": "com.taobao.taobao",
+      "appVersion": "*",
+      "status": "DRY_RUN_PASSED",
+      "domain": "app_session",
+      "implements": "TypeTextSkill",
+      "params": [
+        {
+          "name": "query",
+          "type": "TEXT",
+          "required": true,
+          "example": ""
+        }
+      ],
+      "preconditions": [],
+      "dependsOn": [],
+      "resolverPolicy": {
+        "order": [
+          "ACCESSIBILITY",
+          "COORDINATE_PACK",
+          "PACKAGE_MANAGER"
+        ],
+        "allowAiSuggestionInFactory": true,
+        "allowAiInRuntime": false
+      },
+      "safety": {
+        "forbiddenTexts": [
+          "支付",
+          "付款",
+          "转账",
+          "删除",
+          "发布",
+          "授权"
+        ]
+      },
+      "factory": {
+        "source": "SKILL_ARCHETYPE_TEMPLATE_V0",
+        "archetypeId": "common.search_in_app.v1",
+        "traceIds": [],
+        "sampleCount": 0,
+        "dryRunStatus": "PASSED",
+        "testRuns": 0,
+        "successRate": 0,
+        "promotionStatus": "NOT_PROMOTED",
+        "createdAt": 1779263717474,
+        "appPatch": {
+          "packageName": "com.taobao.taobao",
+          "label": "淘宝",
+          "launchable": true,
+          "launchActivity": "com.taobao.tao.welcome.Welcome",
+          "searchEntryTexts": [
+            "搜索",
+            "搜一搜",
+            "Search"
+          ],
+          "searchSubmitTexts": [
+            "搜索",
+            "确定",
+            "Search"
+          ],
+          "searchEntryCoordinate": {
+            "x": 0.5,
+            "y": 0.08
+          },
+          "searchSubmitCoordinate": {
+            "x": 0.9,
+            "y": 0.08
+          },
+          "postDraftEntryTexts": [
+            "+",
+            "写微博",
+            "发微博",
+            "发帖",
+            "创作",
+            "写帖子",
+            "发动态",
+            "说点什么"
+          ],
+          "postDraftEntryCoordinate": {
+            "x": 0.9,
+            "y": 0.9
+          }
+        },
+        "lastDryRunReport": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_dry_run_reports\/com.taobao.taobao\/com.taobao.taobao.search.type_query_1779263717491.json",
+        "lastDryRunAt": 1779263717491
+      },
+      "capabilityRequired": {
+        "minLevel": "C",
+        "inputRequired": true,
+        "nodeReadablePreferred": true,
+        "coordinateFallbackAllowed": true,
+        "allowedInputChannels": [
+          "ACTION_SET_TEXT",
+          "PASTE",
+          "CUSTOM_IME",
+          "SHIZUKU_ADB"
+        ],
+        "verificationRequired": "MEDIUM"
+      },
+      "action": {
+        "type": "TypeIntoFirstInput",
+        "textParam": "query",
+        "timeoutMs": 2200
+      },
+      "verify": {
+        "type": "InputContainsOrTextChangedEvent",
+        "textParam": "query",
+        "timeoutMs": 1800,
+        "allowMediumConfidenceWhenEventOnly": true
+      },
+      "resultPolicy": {
+        "inputNodeContainsText": "SUCCESS",
+        "textChangedEventOnly": "SUCCESS_MEDIUM_CONFIDENCE",
+        "coordinateOnlyNoInputNode": "SUCCESS_LOW_CONFIDENCE",
+        "noInputChannel": "FAILED_INPUT_CHANNEL_MISSING"
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "kind": "atomic_skill",
+      "id": "com.taobao.taobao.common.click_visible_text",
+      "name": "点击可见文字",
+      "appPackage": "com.taobao.taobao",
+      "appVersion": "*",
+      "status": "DRY_RUN_PASSED",
+      "domain": "app_session",
+      "implements": "ClickElementSkill",
+      "params": [
+        {
+          "name": "text",
+          "type": "TEXT",
+          "required": true
+        }
+      ],
+      "preconditions": [],
+      "dependsOn": [],
+      "resolverPolicy": {
+        "order": [
+          "ACCESSIBILITY",
+          "COORDINATE_PACK",
+          "PACKAGE_MANAGER"
+        ],
+        "allowAiSuggestionInFactory": true,
+        "allowAiInRuntime": false
+      },
+      "safety": {
+        "forbiddenTexts": [
+          "支付",
+          "付款",
+          "转账",
+          "删除",
+          "发布",
+          "授权"
+        ]
+      },
+      "factory": {
+        "source": "SKILL_ARCHETYPE_TEMPLATE_V0",
+        "archetypeId": "common.app_session.v1",
+        "traceIds": [],
+        "sampleCount": 0,
+        "dryRunStatus": "PASSED",
+        "testRuns": 0,
+        "successRate": 0,
+        "promotionStatus": "NOT_PROMOTED",
+        "createdAt": 1779263717474,
+        "appPatch": {
+          "packageName": "com.taobao.taobao",
+          "label": "淘宝",
+          "launchable": true,
+          "launchActivity": "com.taobao.tao.welcome.Welcome",
+          "searchEntryTexts": [
+            "搜索",
+            "搜一搜",
+            "Search"
+          ],
+          "searchSubmitTexts": [
+            "搜索",
+            "确定",
+            "Search"
+          ],
+          "searchEntryCoordinate": {
+            "x": 0.5,
+            "y": 0.08
+          },
+          "searchSubmitCoordinate": {
+            "x": 0.9,
+            "y": 0.08
+          },
+          "postDraftEntryTexts": [
+            "+",
+            "写微博",
+            "发微博",
+            "发帖",
+            "创作",
+            "写帖子",
+            "发动态",
+            "说点什么"
+          ],
+          "postDraftEntryCoordinate": {
+            "x": 0.9,
+            "y": 0.9
+          }
+        },
+        "lastDryRunReport": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_dry_run_reports\/com.taobao.taobao\/com.taobao.taobao.common.click_visible_text_1779263717486.json",
+        "lastDryRunAt": 1779263717487
+      },
+      "capabilityRequired": {
+        "minLevel": "C",
+        "inputRequired": false,
+        "nodeReadablePreferred": true,
+        "coordinateFallbackAllowed": false,
+        "allowedInputChannels": [],
+        "verificationRequired": "MEDIUM"
+      },
+      "action": {
+        "type": "ClickVisibleText",
+        "textParam": "text",
+        "timeoutMs": 1500
+      },
+      "verify": {
+        "type": "WindowChangedOrNodeStateChanged",
+        "timeoutMs": 1500,
+        "allowLowConfidenceWhenUnchanged": true
+      },
+      "resultPolicy": {
+        "nodeClickedAndVerified": "SUCCESS",
+        "clickedButWeakVerify": "SUCCESS_MEDIUM_CONFIDENCE",
+        "notFound": "FAILED_ELEMENT_NOT_FOUND"
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "kind": "atomic_skill",
+      "id": "com.taobao.taobao.common.type_first_input",
+      "name": "向第一个输入框输入",
+      "appPackage": "com.taobao.taobao",
+      "appVersion": "*",
+      "status": "DRY_RUN_PASSED",
+      "domain": "app_session",
+      "implements": "TypeTextSkill",
+      "params": [
+        {
+          "name": "text",
+          "type": "TEXT",
+          "required": true
+        }
+      ],
+      "preconditions": [],
+      "dependsOn": [],
+      "resolverPolicy": {
+        "order": [
+          "ACCESSIBILITY",
+          "COORDINATE_PACK",
+          "PACKAGE_MANAGER"
+        ],
+        "allowAiSuggestionInFactory": true,
+        "allowAiInRuntime": false
+      },
+      "safety": {
+        "forbiddenTexts": [
+          "支付",
+          "付款",
+          "转账",
+          "删除",
+          "发布",
+          "授权"
+        ]
+      },
+      "factory": {
+        "source": "SKILL_ARCHETYPE_TEMPLATE_V0",
+        "archetypeId": "common.app_session.v1",
+        "traceIds": [],
+        "sampleCount": 0,
+        "dryRunStatus": "PASSED",
+        "testRuns": 0,
+        "successRate": 0,
+        "promotionStatus": "NOT_PROMOTED",
+        "createdAt": 1779263717474,
+        "appPatch": {
+          "packageName": "com.taobao.taobao",
+          "label": "淘宝",
+          "launchable": true,
+          "launchActivity": "com.taobao.tao.welcome.Welcome",
+          "searchEntryTexts": [
+            "搜索",
+            "搜一搜",
+            "Search"
+          ],
+          "searchSubmitTexts": [
+            "搜索",
+            "确定",
+            "Search"
+          ],
+          "searchEntryCoordinate": {
+            "x": 0.5,
+            "y": 0.08
+          },
+          "searchSubmitCoordinate": {
+            "x": 0.9,
+            "y": 0.08
+          },
+          "postDraftEntryTexts": [
+            "+",
+            "写微博",
+            "发微博",
+            "发帖",
+            "创作",
+            "写帖子",
+            "发动态",
+            "说点什么"
+          ],
+          "postDraftEntryCoordinate": {
+            "x": 0.9,
+            "y": 0.9
+          }
+        },
+        "lastDryRunReport": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_dry_run_reports\/com.taobao.taobao\/com.taobao.taobao.common.type_first_input_1779263717487.json",
+        "lastDryRunAt": 1779263717488
+      },
+      "capabilityRequired": {
+        "minLevel": "C",
+        "inputRequired": true,
+        "nodeReadablePreferred": true,
+        "coordinateFallbackAllowed": false,
+        "allowedInputChannels": [
+          "ACTION_SET_TEXT",
+          "PASTE",
+          "CUSTOM_IME",
+          "SHIZUKU_ADB"
+        ],
+        "verificationRequired": "MEDIUM"
+      },
+      "action": {
+        "type": "TypeIntoFirstInput",
+        "textParam": "text",
+        "timeoutMs": 2200
+      },
+      "verify": {
+        "type": "InputContainsOrTextChangedEvent",
+        "textParam": "text",
+        "timeoutMs": 1800,
+        "allowMediumConfidenceWhenEventOnly": true
+      },
+      "resultPolicy": {
+        "inputNodeContainsText": "SUCCESS",
+        "textChangedEventOnly": "SUCCESS_MEDIUM_CONFIDENCE",
+        "noInputChannel": "FAILED_INPUT_CHANNEL_MISSING",
+        "unverifiable": "FAILED_UNVERIFIABLE"
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "kind": "atomic_skill",
+      "id": "com.taobao.taobao.back",
+      "name": "返回",
+      "appPackage": "com.taobao.taobao",
+      "appVersion": "*",
+      "status": "DRY_RUN_PASSED",
+      "domain": "app_session",
+      "implements": "BackSkill",
+      "params": [],
+      "preconditions": [],
+      "dependsOn": [],
+      "resolverPolicy": {
+        "order": [
+          "ACCESSIBILITY",
+          "COORDINATE_PACK",
+          "PACKAGE_MANAGER"
+        ],
+        "allowAiSuggestionInFactory": true,
+        "allowAiInRuntime": false
+      },
+      "safety": {
+        "forbiddenTexts": [
+          "支付",
+          "付款",
+          "转账",
+          "删除",
+          "发布",
+          "授权"
+        ]
+      },
+      "factory": {
+        "source": "SKILL_ARCHETYPE_TEMPLATE_V0",
+        "archetypeId": "common.app_session.v1",
+        "traceIds": [],
+        "sampleCount": 0,
+        "dryRunStatus": "PASSED",
+        "testRuns": 0,
+        "successRate": 0,
+        "promotionStatus": "NOT_PROMOTED",
+        "createdAt": 1779263717474,
+        "appPatch": {
+          "packageName": "com.taobao.taobao",
+          "label": "淘宝",
+          "launchable": true,
+          "launchActivity": "com.taobao.tao.welcome.Welcome",
+          "searchEntryTexts": [
+            "搜索",
+            "搜一搜",
+            "Search"
+          ],
+          "searchSubmitTexts": [
+            "搜索",
+            "确定",
+            "Search"
+          ],
+          "searchEntryCoordinate": {
+            "x": 0.5,
+            "y": 0.08
+          },
+          "searchSubmitCoordinate": {
+            "x": 0.9,
+            "y": 0.08
+          },
+          "postDraftEntryTexts": [
+            "+",
+            "写微博",
+            "发微博",
+            "发帖",
+            "创作",
+            "写帖子",
+            "发动态",
+            "说点什么"
+          ],
+          "postDraftEntryCoordinate": {
+            "x": 0.9,
+            "y": 0.9
+          }
+        },
+        "lastDryRunReport": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_dry_run_reports\/com.taobao.taobao\/com.taobao.taobao.back_1779263717484.json",
+        "lastDryRunAt": 1779263717485
+      },
+      "capabilityRequired": {
+        "minLevel": "D",
+        "inputRequired": false,
+        "nodeReadablePreferred": false,
+        "coordinateFallbackAllowed": false,
+        "allowedInputChannels": [],
+        "verificationRequired": "LOW"
+      },
+      "action": {
+        "type": "Back",
+        "timeoutMs": 1000
+      },
+      "verify": {
+        "type": "WindowChanged",
+        "timeoutMs": 1000,
+        "allowLowConfidenceWhenUnchanged": true
+      },
+      "resultPolicy": {
+        "changed": "SUCCESS",
+        "unchanged": "SUCCESS_LOW_CONFIDENCE"
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "kind": "atomic_skill",
+      "id": "com.taobao.taobao.capability_check",
+      "name": "检查应用能力",
+      "appPackage": "com.taobao.taobao",
+      "appVersion": "*",
+      "status": "DRY_RUN_PASSED",
+      "domain": "app_session",
+      "implements": "CapabilityCheckSkill",
+      "params": [],
+      "preconditions": [],
+      "dependsOn": [],
+      "resolverPolicy": {
+        "order": [
+          "ACCESSIBILITY",
+          "COORDINATE_PACK",
+          "PACKAGE_MANAGER"
+        ],
+        "allowAiSuggestionInFactory": true,
+        "allowAiInRuntime": false
+      },
+      "safety": {
+        "forbiddenTexts": [
+          "支付",
+          "付款",
+          "转账",
+          "删除",
+          "发布",
+          "授权"
+        ]
+      },
+      "factory": {
+        "source": "SKILL_ARCHETYPE_TEMPLATE_V0",
+        "archetypeId": "common.app_session.v1",
+        "traceIds": [],
+        "sampleCount": 0,
+        "dryRunStatus": "PASSED",
+        "testRuns": 0,
+        "successRate": 0,
+        "promotionStatus": "NOT_PROMOTED",
+        "createdAt": 1779263717474,
+        "appPatch": {
+          "packageName": "com.taobao.taobao",
+          "label": "淘宝",
+          "launchable": true,
+          "launchActivity": "com.taobao.tao.welcome.Welcome",
+          "searchEntryTexts": [
+            "搜索",
+            "搜一搜",
+            "Search"
+          ],
+          "searchSubmitTexts": [
+            "搜索",
+            "确定",
+            "Search"
+          ],
+          "searchEntryCoordinate": {
+            "x": 0.5,
+            "y": 0.08
+          },
+          "searchSubmitCoordinate": {
+            "x": 0.9,
+            "y": 0.08
+          },
+          "postDraftEntryTexts": [
+            "+",
+            "写微博",
+            "发微博",
+            "发帖",
+            "创作",
+            "写帖子",
+            "发动态",
+            "说点什么"
+          ],
+          "postDraftEntryCoordinate": {
+            "x": 0.9,
+            "y": 0.9
+          }
+        },
+        "lastDryRunReport": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_dry_run_reports\/com.taobao.taobao\/com.taobao.taobao.capability_check_1779263717483.json",
+        "lastDryRunAt": 1779263717483
+      },
+      "capabilityRequired": {
+        "minLevel": "D",
+        "inputRequired": false,
+        "nodeReadablePreferred": false,
+        "coordinateFallbackAllowed": false,
+        "allowedInputChannels": [],
+        "verificationRequired": "LOW"
+      },
+      "action": {
+        "type": "CheckCapability",
+        "packageName": "com.taobao.taobao"
+      },
+      "verify": {
+        "type": "CapabilityObserved",
+        "packageName": "com.taobao.taobao",
+        "timeoutMs": 500
+      },
+      "resultPolicy": {
+        "levelA": "SUCCESS",
+        "levelB": "SUCCESS_MEDIUM_CONFIDENCE",
+        "levelC": "SUCCESS_LOW_CONFIDENCE",
+        "levelD": "FAILED_CAPABILITY_D"
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "kind": "atomic_skill",
+      "id": "com.taobao.taobao.open_app",
+      "name": "打开应用",
+      "appPackage": "com.taobao.taobao",
+      "appVersion": "*",
+      "status": "DRY_RUN_PASSED",
+      "domain": "app_session",
+      "implements": "OpenAppSkill",
+      "params": [],
+      "preconditions": [],
+      "dependsOn": [],
+      "resolverPolicy": {
+        "order": [
+          "ACCESSIBILITY",
+          "COORDINATE_PACK",
+          "PACKAGE_MANAGER"
+        ],
+        "allowAiSuggestionInFactory": true,
+        "allowAiInRuntime": false
+      },
+      "safety": {
+        "forbiddenTexts": [
+          "支付",
+          "付款",
+          "转账",
+          "删除",
+          "发布",
+          "授权"
+        ]
+      },
+      "factory": {
+        "source": "SKILL_ARCHETYPE_TEMPLATE_V0",
+        "archetypeId": "common.app_session.v1",
+        "traceIds": [],
+        "sampleCount": 0,
+        "dryRunStatus": "PASSED",
+        "testRuns": 0,
+        "successRate": 0,
+        "promotionStatus": "NOT_PROMOTED",
+        "createdAt": 1779263717474,
+        "appPatch": {
+          "packageName": "com.taobao.taobao",
+          "label": "淘宝",
+          "launchable": true,
+          "launchActivity": "com.taobao.tao.welcome.Welcome",
+          "searchEntryTexts": [
+            "搜索",
+            "搜一搜",
+            "Search"
+          ],
+          "searchSubmitTexts": [
+            "搜索",
+            "确定",
+            "Search"
+          ],
+          "searchEntryCoordinate": {
+            "x": 0.5,
+            "y": 0.08
+          },
+          "searchSubmitCoordinate": {
+            "x": 0.9,
+            "y": 0.08
+          },
+          "postDraftEntryTexts": [
+            "+",
+            "写微博",
+            "发微博",
+            "发帖",
+            "创作",
+            "写帖子",
+            "发动态",
+            "说点什么"
+          ],
+          "postDraftEntryCoordinate": {
+            "x": 0.9,
+            "y": 0.9
+          }
+        },
+        "lastDryRunReport": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_dry_run_reports\/com.taobao.taobao\/com.taobao.taobao.open_app_1779263717481.json",
+        "lastDryRunAt": 1779263717482
+      },
+      "capabilityRequired": {
+        "minLevel": "D",
+        "inputRequired": false,
+        "nodeReadablePreferred": false,
+        "coordinateFallbackAllowed": false,
+        "allowedInputChannels": [],
+        "verificationRequired": "LOW"
+      },
+      "action": {
+        "type": "OpenApp",
+        "packageName": "com.taobao.taobao",
+        "timeoutMs": 3000
+      },
+      "verify": {
+        "type": "ForegroundPackage",
+        "packageName": "com.taobao.taobao",
+        "timeoutMs": 3000,
+        "allowUnverifiedWhenAccessibilityDisconnected": true
+      },
+      "resultPolicy": {
+        "foregroundVerified": "SUCCESS",
+        "launchIntentSentOnly": "SUCCESS_LOW_CONFIDENCE",
+        "noLaunchIntent": "FAILED_NO_LAUNCH_INTENT",
+        "unverifiable": "FAILED_UNVERIFIABLE"
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "kind": "atomic_skill",
+      "id": "com.taobao.taobao.recover_to_foreground",
+      "name": "恢复到应用前台",
+      "appPackage": "com.taobao.taobao",
+      "appVersion": "*",
+      "status": "DRY_RUN_PASSED",
+      "domain": "app_session",
+      "implements": "RecoverToScreenSkill",
+      "params": [],
+      "preconditions": [],
+      "dependsOn": [
+        "com.taobao.taobao.open_app"
+      ],
+      "resolverPolicy": {
+        "order": [
+          "ACCESSIBILITY",
+          "COORDINATE_PACK",
+          "PACKAGE_MANAGER"
+        ],
+        "allowAiSuggestionInFactory": true,
+        "allowAiInRuntime": false
+      },
+      "safety": {
+        "forbiddenTexts": [
+          "支付",
+          "付款",
+          "转账",
+          "删除",
+          "发布",
+          "授权"
+        ]
+      },
+      "factory": {
+        "source": "SKILL_ARCHETYPE_TEMPLATE_V0",
+        "archetypeId": "common.app_session.v1",
+        "traceIds": [],
+        "sampleCount": 0,
+        "dryRunStatus": "PASSED",
+        "testRuns": 0,
+        "successRate": 0,
+        "promotionStatus": "NOT_PROMOTED",
+        "createdAt": 1779263717474,
+        "appPatch": {
+          "packageName": "com.taobao.taobao",
+          "label": "淘宝",
+          "launchable": true,
+          "launchActivity": "com.taobao.tao.welcome.Welcome",
+          "searchEntryTexts": [
+            "搜索",
+            "搜一搜",
+            "Search"
+          ],
+          "searchSubmitTexts": [
+            "搜索",
+            "确定",
+            "Search"
+          ],
+          "searchEntryCoordinate": {
+            "x": 0.5,
+            "y": 0.08
+          },
+          "searchSubmitCoordinate": {
+            "x": 0.9,
+            "y": 0.08
+          },
+          "postDraftEntryTexts": [
+            "+",
+            "写微博",
+            "发微博",
+            "发帖",
+            "创作",
+            "写帖子",
+            "发动态",
+            "说点什么"
+          ],
+          "postDraftEntryCoordinate": {
+            "x": 0.9,
+            "y": 0.9
+          }
+        },
+        "lastDryRunReport": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_dry_run_reports\/com.taobao.taobao\/com.taobao.taobao.recover_to_foreground_1779263717485.json",
+        "lastDryRunAt": 1779263717486
+      },
+      "capabilityRequired": {
+        "minLevel": "D",
+        "inputRequired": false,
+        "nodeReadablePreferred": false,
+        "coordinateFallbackAllowed": false,
+        "allowedInputChannels": [],
+        "verificationRequired": "LOW"
+      },
+      "action": {
+        "type": "OpenApp",
+        "packageName": "com.taobao.taobao",
+        "timeoutMs": 3000
+      },
+      "verify": {
+        "type": "ForegroundPackage",
+        "packageName": "com.taobao.taobao",
+        "timeoutMs": 3000,
+        "allowUnverifiedWhenAccessibilityDisconnected": true
+      },
+      "resultPolicy": {
+        "recovered": "SUCCESS",
+        "launchIntentSentOnly": "SUCCESS_LOW_CONFIDENCE",
+        "failed": "FAILED_RECOVER_SCREEN"
+      }
+    }
+  ],
+  "macroSkills": [
+    {
+      "schemaVersion": 1,
+      "kind": "macro_skill",
+      "id": "patched.command.1779338878450",
+      "name": "手机端任务拼装 Skill",
+      "appPackage": "com.taobao.taobao",
+      "appVersion": "*",
+      "status": "DRY_RUN_PASSED",
+      "implements": "AiPlannedMacroSkill",
+      "intentId": "search_in_app",
+      "params": [],
+      "preconditions": [],
+      "atoms": [
+        {
+          "type": "UseSkill",
+          "skillId": "patched.1779338878450.1.openapp"
+        },
+        {
+          "type": "UseSkill",
+          "skillId": "patched.1779338878450.2.handlereactiveoverlays"
+        },
+        {
+          "type": "UseSkill",
+          "skillId": "patched.1779338878450.3.clickvisibletext"
+        },
+        {
+          "type": "UseSkill",
+          "skillId": "patched.1779338878450.4.wait"
+        },
+        {
+          "type": "UseSkill",
+          "skillId": "patched.1779338878450.5.typeintofirstinput"
+        },
+        {
+          "type": "UseSkill",
+          "skillId": "patched.1779338878450.6.clickvisibletext"
+        },
+        {
+          "type": "UseSkill",
+          "skillId": "patched.1779338878450.7.wait"
+        }
+      ],
+      "verify": {
+        "type": "GoalEvidenceOrNoFailedAtom",
+        "instruction": "在淘宝搜索机械键盘，停在商品结果页并记录筛选、店铺、价格入口。\n\n约束：目标 App=淘宝，包名=com.taobao.taobao。必须由 MacroPilot 手机端自己用无障碍、输入法、AI\/Skill JSON 执行，不允许依赖 ADB 手点目标 App。执行前先读取当前 UI；如果遇到广告、弹窗、小字提示，先记录文字并安全关闭。任务完成必须用当前 UI 证据验证，不能只因为步骤执行完就报成功。如果没有现成 skill，先复用已有相似 Skill JSON\/arche",
+        "timeoutMs": 2000,
+        "allowLowConfidenceWhenNodeUnreadable": true
+      },
+      "resultPolicy": {
+        "allAtomicSuccess": "SUCCESS",
+        "partialAtomicSuccess": "SUCCESS_MEDIUM_CONFIDENCE",
+        "coordinateOnly": "SUCCESS_LOW_CONFIDENCE",
+        "unverifiable": "FAILED_UNVERIFIABLE"
+      },
+      "timeoutMs": 30000,
+      "factory": {
+        "source": "APP_SIDE_PLAN_PATCH_ASSEMBLER",
+        "instruction": "在淘宝搜索机械键盘，停在商品结果页并记录筛选、店铺、价格入口。\n\n约束：目标 App=淘宝，包名=com.taobao.taobao。必须由 MacroPilot 手机端自己用无障碍、输入法、AI\/Skill JSON 执行，不允许依赖 ADB 手点目标 App。执行前先读取当前 UI；如果遇到广告、弹窗、小字提示，先记录文字并安全关闭。任务完成必须用当前 UI 证据验证，不能只因为步骤执行完就报成功。如果没有现成 skill，先复用已有相似 Skill JSON\/archetype，只改关键槽位如入口文字、坐标、目标文本、验证规则，再组装 atomic\/macro skill。需要探索入口时优先遍历底部标签、顶部小图标、图形化入口、侧边操作和子页面。本任务 stopBeforeSubmit=true：写草稿、评论、订单、支付类流程必须停在提交前，不点击最终发布、发送、提交订单、支付、确认授权。期望证据包括：机械键盘、商品。",
+        "aiJobPath": null,
+        "traceIds": [],
+        "sampleCount": 0,
+        "dryRunStatus": "PASSED",
+        "testRuns": 0,
+        "successRate": 0,
+        "promotionStatus": "NOT_PROMOTED",
+        "createdAt": 1779338881388,
+        "assemblyStrategy": "rewrite_allowed_slots_from_existing_skill_json",
+        "requiredAtomicSkills": [
+          "patched.1779338878450.1.openapp",
+          "patched.1779338878450.2.handlereactiveoverlays",
+          "patched.1779338878450.3.clickvisibletext",
+          "patched.1779338878450.4.wait",
+          "patched.1779338878450.5.typeintofirstinput",
+          "patched.1779338878450.6.clickvisibletext",
+          "patched.1779338878450.7.wait"
+        ],
+        "lastDryRunReport": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_dry_run_reports\/com.taobao.taobao\/patched.command.1779338878450_1779338881404.json",
+        "lastDryRunAt": 1779338881404
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "kind": "macro_skill",
+      "id": "com.taobao.taobao.search.search_in_app",
+      "name": "通用站内搜索",
+      "appPackage": "com.taobao.taobao",
+      "appVersion": "*",
+      "status": "DRY_RUN_PASSED",
+      "implements": "SearchInAppSkill",
+      "intentId": "search_in_app",
+      "params": [
+        {
+          "name": "query",
+          "type": "TEXT",
+          "required": true,
+          "example": ""
+        }
+      ],
+      "preconditions": [
+        {
+          "type": "CapabilityAtLeast",
+          "level": "C"
+        },
+        {
+          "type": "InputChannelAvailable",
+          "channels": [
+            "ACTION_SET_TEXT",
+            "PASTE",
+            "CUSTOM_IME",
+            "SHIZUKU_ADB"
+          ]
+        }
+      ],
+      "atoms": [
+        {
+          "type": "UseSkill",
+          "skillId": "com.taobao.taobao.open_app"
+        },
+        {
+          "type": "UseSkill",
+          "skillId": "com.taobao.taobao.search.click_entry"
+        },
+        {
+          "type": "UseSkill",
+          "skillId": "com.taobao.taobao.search.type_query",
+          "params": {
+            "query": "$query"
+          }
+        },
+        {
+          "type": "UseSkill",
+          "skillId": "com.taobao.taobao.search.click_submit"
+        }
+      ],
+      "verify": {
+        "type": "WindowChangedOrNodeStateChanged",
+        "timeoutMs": 2500,
+        "allowLowConfidenceWhenNodeUnreadable": true
+      },
+      "resultPolicy": {
+        "allAtomicSuccess": "SUCCESS",
+        "partialAtomicSuccess": "SUCCESS_MEDIUM_CONFIDENCE",
+        "coordinateOnly": "SUCCESS_LOW_CONFIDENCE",
+        "unverifiable": "FAILED_UNVERIFIABLE"
+      },
+      "timeoutMs": 10000,
+      "factory": {
+        "source": "COMPOSED_FROM_SKILL_ARCHETYPE",
+        "archetypeId": "common.search_in_app.v1",
+        "traceIds": [],
+        "sampleCount": 0,
+        "dryRunStatus": "PASSED",
+        "testRuns": 0,
+        "successRate": 0,
+        "promotionStatus": "NOT_PROMOTED",
+        "createdAt": 1779263717474,
+        "appPatch": {
+          "packageName": "com.taobao.taobao",
+          "label": "淘宝",
+          "launchable": true,
+          "launchActivity": "com.taobao.tao.welcome.Welcome",
+          "searchEntryTexts": [
+            "搜索",
+            "搜一搜",
+            "Search"
+          ],
+          "searchSubmitTexts": [
+            "搜索",
+            "确定",
+            "Search"
+          ],
+          "searchEntryCoordinate": {
+            "x": 0.5,
+            "y": 0.08
+          },
+          "searchSubmitCoordinate": {
+            "x": 0.9,
+            "y": 0.08
+          },
+          "postDraftEntryTexts": [
+            "+",
+            "写微博",
+            "发微博",
+            "发帖",
+            "创作",
+            "写帖子",
+            "发动态",
+            "说点什么"
+          ],
+          "postDraftEntryCoordinate": {
+            "x": 0.9,
+            "y": 0.9
+          }
+        },
+        "requiredAtomicSkills": [
+          "com.taobao.taobao.open_app",
+          "com.taobao.taobao.search.click_entry",
+          "com.taobao.taobao.search.type_query",
+          "com.taobao.taobao.search.click_submit"
+        ],
+        "promotionRule": "requires_dry_run_real_test_and_promotion_gate",
+        "lastDryRunReport": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_dry_run_reports\/com.taobao.taobao\/com.taobao.taobao.search.search_in_app_1779263717493.json",
+        "lastDryRunAt": 1779263717494
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "kind": "macro_skill",
+      "id": "com.taobao.taobao.prepare_app_session",
+      "name": "准备应用会话",
+      "appPackage": "com.taobao.taobao",
+      "appVersion": "*",
+      "status": "DRY_RUN_PASSED",
+      "implements": "PrepareAppSessionSkill",
+      "intentId": "prepare_app_session",
+      "params": [],
+      "preconditions": [],
+      "atoms": [
+        {
+          "type": "UseSkill",
+          "skillId": "com.taobao.taobao.open_app"
+        },
+        {
+          "type": "UseSkill",
+          "skillId": "com.taobao.taobao.capability_check"
+        }
+      ],
+      "verify": {
+        "type": "CapabilityObserved",
+        "packageName": "com.taobao.taobao",
+        "timeoutMs": 1000
+      },
+      "resultPolicy": {
+        "allAtomicSuccess": "SUCCESS",
+        "partialAtomicSuccess": "SUCCESS_MEDIUM_CONFIDENCE",
+        "unverifiable": "FAILED_UNVERIFIABLE"
+      },
+      "timeoutMs": 6000,
+      "factory": {
+        "source": "COMPOSED_FROM_SKILL_ARCHETYPE",
+        "archetypeId": "common.app_session.v1",
+        "traceIds": [],
+        "sampleCount": 0,
+        "dryRunStatus": "PASSED",
+        "testRuns": 0,
+        "successRate": 0,
+        "promotionStatus": "NOT_PROMOTED",
+        "createdAt": 1779263717474,
+        "appPatch": {
+          "packageName": "com.taobao.taobao",
+          "label": "淘宝",
+          "launchable": true,
+          "launchActivity": "com.taobao.tao.welcome.Welcome",
+          "searchEntryTexts": [
+            "搜索",
+            "搜一搜",
+            "Search"
+          ],
+          "searchSubmitTexts": [
+            "搜索",
+            "确定",
+            "Search"
+          ],
+          "searchEntryCoordinate": {
+            "x": 0.5,
+            "y": 0.08
+          },
+          "searchSubmitCoordinate": {
+            "x": 0.9,
+            "y": 0.08
+          },
+          "postDraftEntryTexts": [
+            "+",
+            "写微博",
+            "发微博",
+            "发帖",
+            "创作",
+            "写帖子",
+            "发动态",
+            "说点什么"
+          ],
+          "postDraftEntryCoordinate": {
+            "x": 0.9,
+            "y": 0.9
+          }
+        },
+        "requiredAtomicSkills": [
+          "com.taobao.taobao.open_app",
+          "com.taobao.taobao.capability_check"
+        ],
+        "promotionRule": "requires_real_probe_and_promotion_gate",
+        "lastDryRunReport": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_dry_run_reports\/com.taobao.taobao\/com.taobao.taobao.prepare_app_session_1779263717488.json",
+        "lastDryRunAt": 1779263717489
+      }
+    }
+  ],
+  "reactiveRules": [],
+  "runtimePolicy": {
+    "allowCandidateSkill": false,
+    "allowTrial": false,
+    "aiCallsDefault": 0,
+    "screenshotDefault": 0,
+    "maxTaskDurationMs": 30000
+  },
+  "factoryReports": {
+    "dryRunReports": [
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "patched.1779338878450.7.wait",
+        "appPackage": "com.taobao.taobao",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779338881402
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "patched.command.1779338878450",
+        "appPackage": "com.taobao.taobao",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779338881403
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "patched.1779338878450.4.wait",
+        "appPackage": "com.taobao.taobao",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779338881398
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "patched.1779338878450.5.typeintofirstinput",
+        "appPackage": "com.taobao.taobao",
+        "passed": false,
+        "status": "REJECTED",
+        "errors": [
+          "dangerous_action:支付"
+        ],
+        "warnings": [],
+        "timestamp": 1779338881400
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "patched.1779338878450.6.clickvisibletext",
+        "appPackage": "com.taobao.taobao",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779338881401
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "patched.1779338878450.1.openapp",
+        "appPackage": "com.taobao.taobao",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779338881394
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "patched.1779338878450.2.handlereactiveoverlays",
+        "appPackage": "com.taobao.taobao",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779338881396
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "patched.1779338878450.3.clickvisibletext",
+        "appPackage": "com.taobao.taobao",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779338881397
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.taobao.taobao.search.click_submit",
+        "appPackage": "com.taobao.taobao",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779263717492
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.taobao.taobao.search.search_in_app",
+        "appPackage": "com.taobao.taobao",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779263717493
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.taobao.taobao.search.type_query",
+        "appPackage": "com.taobao.taobao",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779263717491
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.taobao.taobao.common.click_visible_text",
+        "appPackage": "com.taobao.taobao",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779263717486
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.taobao.taobao.common.type_first_input",
+        "appPackage": "com.taobao.taobao",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779263717487
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.taobao.taobao.prepare_app_session",
+        "appPackage": "com.taobao.taobao",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779263717488
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.taobao.taobao.search.click_entry",
+        "appPackage": "com.taobao.taobao",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779263717490
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.taobao.taobao.back",
+        "appPackage": "com.taobao.taobao",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779263717484
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.taobao.taobao.capability_check",
+        "appPackage": "com.taobao.taobao",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779263717483
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.taobao.taobao.recover_to_foreground",
+        "appPackage": "com.taobao.taobao",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779263717485
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.taobao.taobao.open_app",
+        "appPackage": "com.taobao.taobao",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779263717481
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.taobao.taobao.search.click_submit",
+        "appPackage": "com.taobao.taobao",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779263264930
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.taobao.taobao.search.search_in_app",
+        "appPackage": "com.taobao.taobao",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779263264931
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.taobao.taobao.search.click_entry",
+        "appPackage": "com.taobao.taobao",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779263264926
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.taobao.taobao.search.type_query",
+        "appPackage": "com.taobao.taobao",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779263264929
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.taobao.taobao.prepare_app_session",
+        "appPackage": "com.taobao.taobao",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779263264923
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.taobao.taobao.common.type_first_input",
+        "appPackage": "com.taobao.taobao",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779263264919
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.taobao.taobao.back",
+        "appPackage": "com.taobao.taobao",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779263264910
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.taobao.taobao.common.click_visible_text",
+        "appPackage": "com.taobao.taobao",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779263264913
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.taobao.taobao.recover_to_foreground",
+        "appPackage": "com.taobao.taobao",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779263264911
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.taobao.taobao.capability_check",
+        "appPackage": "com.taobao.taobao",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779263264909
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.taobao.taobao.open_app",
+        "appPackage": "com.taobao.taobao",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779263264903
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.taobao.taobao.search.click_submit",
+        "appPackage": "com.taobao.taobao",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779261979067
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.taobao.taobao.search.search_in_app",
+        "appPackage": "com.taobao.taobao",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779261979068
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.taobao.taobao.search.type_query",
+        "appPackage": "com.taobao.taobao",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779261979066
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.taobao.taobao.common.type_first_input",
+        "appPackage": "com.taobao.taobao",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779261979062
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.taobao.taobao.prepare_app_session",
+        "appPackage": "com.taobao.taobao",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779261979064
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.taobao.taobao.search.click_entry",
+        "appPackage": "com.taobao.taobao",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779261979065
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.taobao.taobao.back",
+        "appPackage": "com.taobao.taobao",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779261979059
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.taobao.taobao.common.click_visible_text",
+        "appPackage": "com.taobao.taobao",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779261979061
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.taobao.taobao.recover_to_foreground",
+        "appPackage": "com.taobao.taobao",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779261979060
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.taobao.taobao.capability_check",
+        "appPackage": "com.taobao.taobao",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779261979058
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.taobao.taobao.open_app",
+        "appPackage": "com.taobao.taobao",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779261979054
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.taobao.taobao.search.click_submit",
+        "appPackage": "com.taobao.taobao",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779237173214
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.taobao.taobao.search.search_in_app",
+        "appPackage": "com.taobao.taobao",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779237173215
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.taobao.taobao.common.type_first_input",
+        "appPackage": "com.taobao.taobao",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779237173209
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.taobao.taobao.prepare_app_session",
+        "appPackage": "com.taobao.taobao",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779237173210
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.taobao.taobao.search.click_entry",
+        "appPackage": "com.taobao.taobao",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779237173211
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.taobao.taobao.search.type_query",
+        "appPackage": "com.taobao.taobao",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779237173212
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.taobao.taobao.back",
+        "appPackage": "com.taobao.taobao",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779237173206
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.taobao.taobao.capability_check",
+        "appPackage": "com.taobao.taobao",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779237173205
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.taobao.taobao.common.click_visible_text",
+        "appPackage": "com.taobao.taobao",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779237173208
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.taobao.taobao.recover_to_foreground",
+        "appPackage": "com.taobao.taobao",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779237173207
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.taobao.taobao.open_app",
+        "appPackage": "com.taobao.taobao",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779237173200
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.taobao.taobao.search.click_submit",
+        "appPackage": "com.taobao.taobao",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779221443082
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.taobao.taobao.search.search_in_app",
+        "appPackage": "com.taobao.taobao",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779221443083
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.taobao.taobao.search.type_query",
+        "appPackage": "com.taobao.taobao",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779221443080
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.taobao.taobao.common.click_visible_text",
+        "appPackage": "com.taobao.taobao",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779221443076
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.taobao.taobao.common.type_first_input",
+        "appPackage": "com.taobao.taobao",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779221443077
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.taobao.taobao.prepare_app_session",
+        "appPackage": "com.taobao.taobao",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779221443078
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.taobao.taobao.search.click_entry",
+        "appPackage": "com.taobao.taobao",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779221443079
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.taobao.taobao.back",
+        "appPackage": "com.taobao.taobao",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779221443073
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.taobao.taobao.capability_check",
+        "appPackage": "com.taobao.taobao",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779221443072
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.taobao.taobao.recover_to_foreground",
+        "appPackage": "com.taobao.taobao",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779221443075
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.taobao.taobao.open_app",
+        "appPackage": "com.taobao.taobao",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779221443071
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.taobao.taobao.search.click_submit",
+        "appPackage": "com.taobao.taobao",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779220605729
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.taobao.taobao.search.search_in_app",
+        "appPackage": "com.taobao.taobao",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779220605731
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.taobao.taobao.search.click_entry",
+        "appPackage": "com.taobao.taobao",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779220605725
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.taobao.taobao.search.type_query",
+        "appPackage": "com.taobao.taobao",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779220605727
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.taobao.taobao.common.type_first_input",
+        "appPackage": "com.taobao.taobao",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779220605721
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.taobao.taobao.prepare_app_session",
+        "appPackage": "com.taobao.taobao",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779220605723
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.taobao.taobao.back",
+        "appPackage": "com.taobao.taobao",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779220605715
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.taobao.taobao.common.click_visible_text",
+        "appPackage": "com.taobao.taobao",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779220605719
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.taobao.taobao.recover_to_foreground",
+        "appPackage": "com.taobao.taobao",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779220605717
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.taobao.taobao.capability_check",
+        "appPackage": "com.taobao.taobao",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779220605713
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.taobao.taobao.open_app",
+        "appPackage": "com.taobao.taobao",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779220605711
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.taobao.taobao.search.click_entry",
+        "appPackage": "com.taobao.taobao",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779214079292
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.taobao.taobao.search.click_submit",
+        "appPackage": "com.taobao.taobao",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779214079294
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.taobao.taobao.search.search_in_app",
+        "appPackage": "com.taobao.taobao",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779214079295
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.taobao.taobao.search.type_query",
+        "appPackage": "com.taobao.taobao",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779214079293
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.taobao.taobao.common.click_visible_text",
+        "appPackage": "com.taobao.taobao",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779214079289
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.taobao.taobao.common.type_first_input",
+        "appPackage": "com.taobao.taobao",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779214079290
+      }
+    ],
+    "exportedAt": 1779338881425
+  }
+}

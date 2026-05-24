@@ -1,0 +1,90 @@
+{
+  "schemaVersion": 1,
+  "kind": "macro_skill",
+  "id": "com.zhihu.android.prepare_app_session",
+  "name": "准备应用会话",
+  "appPackage": "com.zhihu.android",
+  "appVersion": "*",
+  "status": "DRY_RUN_PASSED",
+  "implements": "PrepareAppSessionSkill",
+  "intentId": "prepare_app_session",
+  "params": [],
+  "preconditions": [],
+  "atoms": [
+    {
+      "type": "UseSkill",
+      "skillId": "com.zhihu.android.open_app"
+    },
+    {
+      "type": "UseSkill",
+      "skillId": "com.zhihu.android.capability_check"
+    }
+  ],
+  "verify": {
+    "type": "CapabilityObserved",
+    "packageName": "com.zhihu.android",
+    "timeoutMs": 1000
+  },
+  "resultPolicy": {
+    "allAtomicSuccess": "SUCCESS",
+    "partialAtomicSuccess": "SUCCESS_MEDIUM_CONFIDENCE",
+    "unverifiable": "FAILED_UNVERIFIABLE"
+  },
+  "timeoutMs": 6000,
+  "factory": {
+    "source": "COMPOSED_FROM_SKILL_ARCHETYPE",
+    "archetypeId": "common.app_session.v1",
+    "traceIds": [],
+    "sampleCount": 0,
+    "dryRunStatus": "PASSED",
+    "testRuns": 0,
+    "successRate": 0,
+    "promotionStatus": "NOT_PROMOTED",
+    "createdAt": 1779261613440,
+    "appPatch": {
+      "packageName": "com.zhihu.android",
+      "label": "知乎",
+      "launchable": true,
+      "launchActivity": "com.zhihu.android.app.ui.activity.LauncherActivity",
+      "searchEntryTexts": [
+        "搜索",
+        "搜一搜",
+        "Search"
+      ],
+      "searchSubmitTexts": [
+        "搜索",
+        "确定",
+        "Search"
+      ],
+      "searchEntryCoordinate": {
+        "x": 0.5,
+        "y": 0.08
+      },
+      "searchSubmitCoordinate": {
+        "x": 0.9,
+        "y": 0.08
+      },
+      "postDraftEntryTexts": [
+        "+",
+        "写微博",
+        "发微博",
+        "发帖",
+        "创作",
+        "写帖子",
+        "发动态",
+        "说点什么"
+      ],
+      "postDraftEntryCoordinate": {
+        "x": 0.9,
+        "y": 0.9
+      }
+    },
+    "requiredAtomicSkills": [
+      "com.zhihu.android.open_app",
+      "com.zhihu.android.capability_check"
+    ],
+    "promotionRule": "requires_real_probe_and_promotion_gate",
+    "lastDryRunReport": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_dry_run_reports\/com.zhihu.android\/com.zhihu.android.prepare_app_session_1779261613458.json",
+    "lastDryRunAt": 1779261613459
+  }
+}

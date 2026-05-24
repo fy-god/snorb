@@ -1,0 +1,5127 @@
+{
+  "schemaVersion": 1,
+  "kind": "app_config",
+  "appPackage": "com.zhihu.android",
+  "appName": "知乎",
+  "screens": [],
+  "elements": [],
+  "atomicSkills": [
+    {
+      "schemaVersion": 1,
+      "kind": "atomic_skill",
+      "id": "direct.1778175089500.4.wait",
+      "name": "直接执行步骤 4",
+      "appPackage": "com.zhihu.android",
+      "status": "DRY_RUN_PASSED",
+      "implements": "WaitUntilSkill",
+      "params": [],
+      "preconditions": [],
+      "dependsOn": [],
+      "capabilityRequired": {
+        "minLevel": "D",
+        "inputRequired": false,
+        "coordinateFallbackAllowed": false,
+        "allowedInputChannels": [],
+        "verificationRequired": "LOW"
+      },
+      "resolverPolicy": {
+        "order": [
+          "ACCESSIBILITY",
+          "COORDINATE_PACK",
+          "AI_DIRECT_PLAN"
+        ],
+        "allowAiSuggestionInFactory": true,
+        "allowAiInRuntime": true
+      },
+      "action": {
+        "type": "Wait",
+        "timeoutMs": 2000
+      },
+      "verify": {
+        "type": "Always",
+        "timeoutMs": 1
+      },
+      "resultPolicy": {
+        "verified": "SUCCESS",
+        "partialVerified": "SUCCESS_MEDIUM_CONFIDENCE",
+        "coordinateOnly": "SUCCESS_LOW_CONFIDENCE",
+        "unverifiable": "FAILED_UNVERIFIABLE"
+      },
+      "factory": {
+        "source": "AI_DIRECT_PLAN",
+        "instruction": "直接执行步骤 4",
+        "traceIds": [],
+        "sampleCount": 0,
+        "dryRunStatus": "PASSED",
+        "testRuns": 0,
+        "successRate": 0,
+        "promotionStatus": "NOT_PROMOTED",
+        "createdAt": 1778175089501,
+        "lastDryRunReport": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_dry_run_reports\/com.zhihu.android\/direct.1778175089500.4.wait_1778175098397.json",
+        "lastDryRunAt": 1778175098397
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "kind": "atomic_skill",
+      "id": "direct.1778175046804.3.clickvisibletext",
+      "name": "直接执行步骤 3",
+      "appPackage": "com.zhihu.android",
+      "status": "DRY_RUN_PASSED",
+      "implements": "ClickElementSkill",
+      "params": [],
+      "preconditions": [],
+      "dependsOn": [],
+      "capabilityRequired": {
+        "minLevel": "D",
+        "inputRequired": false,
+        "coordinateFallbackAllowed": true,
+        "allowedInputChannels": [],
+        "verificationRequired": "LOW"
+      },
+      "resolverPolicy": {
+        "order": [
+          "ACCESSIBILITY",
+          "COORDINATE_PACK",
+          "AI_DIRECT_PLAN"
+        ],
+        "allowAiSuggestionInFactory": true,
+        "allowAiInRuntime": true
+      },
+      "action": {
+        "type": "ClickVisibleText",
+        "text": "搜索",
+        "timeoutMs": 1200,
+        "x": 0.5,
+        "y": 0.08
+      },
+      "verify": {
+        "type": "WindowChangedOrNodeStateChanged",
+        "timeoutMs": 1000,
+        "allowLowConfidenceWhenCoordinateOnly": true
+      },
+      "resultPolicy": {
+        "verified": "SUCCESS",
+        "partialVerified": "SUCCESS_MEDIUM_CONFIDENCE",
+        "coordinateOnly": "SUCCESS_LOW_CONFIDENCE",
+        "unverifiable": "FAILED_UNVERIFIABLE"
+      },
+      "factory": {
+        "source": "AI_DIRECT_PLAN",
+        "instruction": "直接执行步骤 3",
+        "traceIds": [],
+        "sampleCount": 0,
+        "dryRunStatus": "PASSED",
+        "testRuns": 0,
+        "successRate": 0,
+        "promotionStatus": "NOT_PROMOTED",
+        "createdAt": 1778175046806,
+        "lastDryRunReport": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_dry_run_reports\/com.zhihu.android\/direct.1778175046804.3.clickvisibletext_1778175098393.json",
+        "lastDryRunAt": 1778175098393
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "kind": "atomic_skill",
+      "id": "direct.1778175059714.2.wait",
+      "name": "直接执行步骤 2",
+      "appPackage": "com.zhihu.android",
+      "status": "DRY_RUN_PASSED",
+      "implements": "WaitUntilSkill",
+      "params": [],
+      "preconditions": [],
+      "dependsOn": [],
+      "capabilityRequired": {
+        "minLevel": "D",
+        "inputRequired": false,
+        "coordinateFallbackAllowed": false,
+        "allowedInputChannels": [],
+        "verificationRequired": "LOW"
+      },
+      "resolverPolicy": {
+        "order": [
+          "ACCESSIBILITY",
+          "COORDINATE_PACK",
+          "AI_DIRECT_PLAN"
+        ],
+        "allowAiSuggestionInFactory": true,
+        "allowAiInRuntime": true
+      },
+      "action": {
+        "type": "Wait",
+        "timeoutMs": 1500
+      },
+      "verify": {
+        "type": "Always",
+        "timeoutMs": 1
+      },
+      "resultPolicy": {
+        "verified": "SUCCESS",
+        "partialVerified": "SUCCESS_MEDIUM_CONFIDENCE",
+        "coordinateOnly": "SUCCESS_LOW_CONFIDENCE",
+        "unverifiable": "FAILED_UNVERIFIABLE"
+      },
+      "factory": {
+        "source": "AI_DIRECT_PLAN",
+        "instruction": "直接执行步骤 2",
+        "traceIds": [],
+        "sampleCount": 0,
+        "dryRunStatus": "PASSED",
+        "testRuns": 0,
+        "successRate": 0,
+        "promotionStatus": "NOT_PROMOTED",
+        "createdAt": 1778175059714,
+        "lastDryRunReport": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_dry_run_reports\/com.zhihu.android\/direct.1778175059714.2.wait_1778175098395.json",
+        "lastDryRunAt": 1778175098395
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "kind": "atomic_skill",
+      "id": "direct.1778175059714.3.typeintofirstinput",
+      "name": "直接执行步骤 3",
+      "appPackage": "com.zhihu.android",
+      "status": "DRY_RUN_PASSED",
+      "implements": "TypeTextSkill",
+      "params": [],
+      "preconditions": [],
+      "dependsOn": [],
+      "capabilityRequired": {
+        "minLevel": "D",
+        "inputRequired": true,
+        "coordinateFallbackAllowed": false,
+        "allowedInputChannels": [
+          "ACTION_SET_TEXT",
+          "PASTE",
+          "CUSTOM_IME",
+          "SHIZUKU_ADB"
+        ],
+        "verificationRequired": "LOW"
+      },
+      "resolverPolicy": {
+        "order": [
+          "ACCESSIBILITY",
+          "COORDINATE_PACK",
+          "AI_DIRECT_PLAN"
+        ],
+        "allowAiSuggestionInFactory": true,
+        "allowAiInRuntime": true
+      },
+      "action": {
+        "type": "TypeIntoFirstInput",
+        "text": "安卓无障碍",
+        "timeoutMs": 2000
+      },
+      "verify": {
+        "type": "InputContainsOrTextChangedEvent",
+        "text": "安卓无障碍",
+        "timeoutMs": 1500,
+        "allowMediumConfidenceWhenEventOnly": true,
+        "allowLowConfidenceWhenUnverified": true
+      },
+      "resultPolicy": {
+        "verified": "SUCCESS",
+        "partialVerified": "SUCCESS_MEDIUM_CONFIDENCE",
+        "coordinateOnly": "SUCCESS_LOW_CONFIDENCE",
+        "unverifiable": "FAILED_UNVERIFIABLE"
+      },
+      "factory": {
+        "source": "AI_DIRECT_PLAN",
+        "instruction": "直接执行步骤 3",
+        "traceIds": [],
+        "sampleCount": 0,
+        "dryRunStatus": "PASSED",
+        "testRuns": 0,
+        "successRate": 0,
+        "promotionStatus": "NOT_PROMOTED",
+        "createdAt": 1778175059715,
+        "lastDryRunReport": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_dry_run_reports\/com.zhihu.android\/direct.1778175059714.3.typeintofirstinput_1778175098393.json",
+        "lastDryRunAt": 1778175098393
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "kind": "atomic_skill",
+      "id": "direct.1778175059714.4.wait",
+      "name": "直接执行步骤 4",
+      "appPackage": "com.zhihu.android",
+      "status": "DRY_RUN_PASSED",
+      "implements": "WaitUntilSkill",
+      "params": [],
+      "preconditions": [],
+      "dependsOn": [],
+      "capabilityRequired": {
+        "minLevel": "D",
+        "inputRequired": false,
+        "coordinateFallbackAllowed": false,
+        "allowedInputChannels": [],
+        "verificationRequired": "LOW"
+      },
+      "resolverPolicy": {
+        "order": [
+          "ACCESSIBILITY",
+          "COORDINATE_PACK",
+          "AI_DIRECT_PLAN"
+        ],
+        "allowAiSuggestionInFactory": true,
+        "allowAiInRuntime": true
+      },
+      "action": {
+        "type": "Wait",
+        "timeoutMs": 1500
+      },
+      "verify": {
+        "type": "Always",
+        "timeoutMs": 1
+      },
+      "resultPolicy": {
+        "verified": "SUCCESS",
+        "partialVerified": "SUCCESS_MEDIUM_CONFIDENCE",
+        "coordinateOnly": "SUCCESS_LOW_CONFIDENCE",
+        "unverifiable": "FAILED_UNVERIFIABLE"
+      },
+      "factory": {
+        "source": "AI_DIRECT_PLAN",
+        "instruction": "直接执行步骤 4",
+        "traceIds": [],
+        "sampleCount": 0,
+        "dryRunStatus": "PASSED",
+        "testRuns": 0,
+        "successRate": 0,
+        "promotionStatus": "NOT_PROMOTED",
+        "createdAt": 1778175059715,
+        "lastDryRunReport": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_dry_run_reports\/com.zhihu.android\/direct.1778175059714.4.wait_1778175098394.json",
+        "lastDryRunAt": 1778175098394
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "kind": "atomic_skill",
+      "id": "direct.1778175059714.5.clickselector",
+      "name": "直接执行步骤 5",
+      "appPackage": "com.zhihu.android",
+      "status": "DRY_RUN_PASSED",
+      "implements": "ClickElementSkill",
+      "params": [],
+      "preconditions": [],
+      "dependsOn": [],
+      "capabilityRequired": {
+        "minLevel": "D",
+        "inputRequired": false,
+        "coordinateFallbackAllowed": false,
+        "allowedInputChannels": [],
+        "verificationRequired": "LOW"
+      },
+      "resolverPolicy": {
+        "order": [
+          "ACCESSIBILITY",
+          "COORDINATE_PACK",
+          "AI_DIRECT_PLAN"
+        ],
+        "allowAiSuggestionInFactory": true,
+        "allowAiInRuntime": true
+      },
+      "action": {
+        "type": "ClickSelector",
+        "selector": "[text='搜索'][clickable=true]",
+        "timeoutMs": 1500
+      },
+      "verify": {
+        "type": "WindowChangedOrNodeStateChanged",
+        "timeoutMs": 1000,
+        "allowLowConfidenceWhenCoordinateOnly": true
+      },
+      "resultPolicy": {
+        "verified": "SUCCESS",
+        "partialVerified": "SUCCESS_MEDIUM_CONFIDENCE",
+        "coordinateOnly": "SUCCESS_LOW_CONFIDENCE",
+        "unverifiable": "FAILED_UNVERIFIABLE"
+      },
+      "factory": {
+        "source": "AI_DIRECT_PLAN",
+        "instruction": "直接执行步骤 5",
+        "traceIds": [],
+        "sampleCount": 0,
+        "dryRunStatus": "PASSED",
+        "testRuns": 0,
+        "successRate": 0,
+        "promotionStatus": "NOT_PROMOTED",
+        "createdAt": 1778175059715,
+        "lastDryRunReport": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_dry_run_reports\/com.zhihu.android\/direct.1778175059714.5.clickselector_1778175098394.json",
+        "lastDryRunAt": 1778175098394
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "kind": "atomic_skill",
+      "id": "direct.1778175075851.1.clickcoordinate",
+      "name": "直接执行步骤 1",
+      "appPackage": "com.zhihu.android",
+      "status": "DRY_RUN_PASSED",
+      "implements": "ClickElementSkill",
+      "params": [],
+      "preconditions": [],
+      "dependsOn": [],
+      "capabilityRequired": {
+        "minLevel": "D",
+        "inputRequired": false,
+        "coordinateFallbackAllowed": true,
+        "allowedInputChannels": [],
+        "verificationRequired": "LOW"
+      },
+      "resolverPolicy": {
+        "order": [
+          "ACCESSIBILITY",
+          "COORDINATE_PACK",
+          "AI_DIRECT_PLAN"
+        ],
+        "allowAiSuggestionInFactory": true,
+        "allowAiInRuntime": true
+      },
+      "action": {
+        "type": "ClickCoordinate",
+        "x": 0.18194444444444444,
+        "y": 0.17391304347826086,
+        "timeoutMs": 1000
+      },
+      "verify": {
+        "type": "WindowChangedOrNodeStateChanged",
+        "timeoutMs": 1000,
+        "allowLowConfidenceWhenCoordinateOnly": true
+      },
+      "resultPolicy": {
+        "verified": "SUCCESS",
+        "partialVerified": "SUCCESS_MEDIUM_CONFIDENCE",
+        "coordinateOnly": "SUCCESS_LOW_CONFIDENCE",
+        "unverifiable": "FAILED_UNVERIFIABLE"
+      },
+      "factory": {
+        "source": "AI_DIRECT_PLAN",
+        "instruction": "直接执行步骤 1",
+        "traceIds": [],
+        "sampleCount": 0,
+        "dryRunStatus": "PASSED",
+        "testRuns": 0,
+        "successRate": 0,
+        "promotionStatus": "NOT_PROMOTED",
+        "createdAt": 1778175075851,
+        "lastDryRunReport": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_dry_run_reports\/com.zhihu.android\/direct.1778175075851.1.clickcoordinate_1778175098394.json",
+        "lastDryRunAt": 1778175098394
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "kind": "atomic_skill",
+      "id": "direct.1778175089500.1.back",
+      "name": "直接执行步骤 1",
+      "appPackage": "com.zhihu.android",
+      "status": "DRY_RUN_PASSED",
+      "implements": "BackSkill",
+      "params": [],
+      "preconditions": [],
+      "dependsOn": [],
+      "capabilityRequired": {
+        "minLevel": "D",
+        "inputRequired": false,
+        "coordinateFallbackAllowed": false,
+        "allowedInputChannels": [],
+        "verificationRequired": "LOW"
+      },
+      "resolverPolicy": {
+        "order": [
+          "ACCESSIBILITY",
+          "COORDINATE_PACK",
+          "AI_DIRECT_PLAN"
+        ],
+        "allowAiSuggestionInFactory": true,
+        "allowAiInRuntime": true
+      },
+      "action": {
+        "type": "Back",
+        "timeoutMs": 1000
+      },
+      "verify": {
+        "type": "WindowChangedOrNodeStateChanged",
+        "timeoutMs": 1000,
+        "allowLowConfidenceWhenCoordinateOnly": true
+      },
+      "resultPolicy": {
+        "verified": "SUCCESS",
+        "partialVerified": "SUCCESS_MEDIUM_CONFIDENCE",
+        "coordinateOnly": "SUCCESS_LOW_CONFIDENCE",
+        "unverifiable": "FAILED_UNVERIFIABLE"
+      },
+      "factory": {
+        "source": "AI_DIRECT_PLAN",
+        "instruction": "直接执行步骤 1",
+        "traceIds": [],
+        "sampleCount": 0,
+        "dryRunStatus": "PASSED",
+        "testRuns": 0,
+        "successRate": 0,
+        "promotionStatus": "NOT_PROMOTED",
+        "createdAt": 1778175089500,
+        "lastDryRunReport": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_dry_run_reports\/com.zhihu.android\/direct.1778175089500.1.back_1778175098396.json",
+        "lastDryRunAt": 1778175098396
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "kind": "atomic_skill",
+      "id": "direct.1778175089500.2.wait",
+      "name": "直接执行步骤 2",
+      "appPackage": "com.zhihu.android",
+      "status": "DRY_RUN_PASSED",
+      "implements": "WaitUntilSkill",
+      "params": [],
+      "preconditions": [],
+      "dependsOn": [],
+      "capabilityRequired": {
+        "minLevel": "D",
+        "inputRequired": false,
+        "coordinateFallbackAllowed": false,
+        "allowedInputChannels": [],
+        "verificationRequired": "LOW"
+      },
+      "resolverPolicy": {
+        "order": [
+          "ACCESSIBILITY",
+          "COORDINATE_PACK",
+          "AI_DIRECT_PLAN"
+        ],
+        "allowAiSuggestionInFactory": true,
+        "allowAiInRuntime": true
+      },
+      "action": {
+        "type": "Wait",
+        "timeoutMs": 1500
+      },
+      "verify": {
+        "type": "Always",
+        "timeoutMs": 1
+      },
+      "resultPolicy": {
+        "verified": "SUCCESS",
+        "partialVerified": "SUCCESS_MEDIUM_CONFIDENCE",
+        "coordinateOnly": "SUCCESS_LOW_CONFIDENCE",
+        "unverifiable": "FAILED_UNVERIFIABLE"
+      },
+      "factory": {
+        "source": "AI_DIRECT_PLAN",
+        "instruction": "直接执行步骤 2",
+        "traceIds": [],
+        "sampleCount": 0,
+        "dryRunStatus": "PASSED",
+        "testRuns": 0,
+        "successRate": 0,
+        "promotionStatus": "NOT_PROMOTED",
+        "createdAt": 1778175089500,
+        "lastDryRunReport": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_dry_run_reports\/com.zhihu.android\/direct.1778175089500.2.wait_1778175098396.json",
+        "lastDryRunAt": 1778175098396
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "kind": "atomic_skill",
+      "id": "direct.1778175089500.3.clickselector",
+      "name": "直接执行步骤 3",
+      "appPackage": "com.zhihu.android",
+      "status": "DRY_RUN_PASSED",
+      "implements": "ClickElementSkill",
+      "params": [],
+      "preconditions": [],
+      "dependsOn": [],
+      "capabilityRequired": {
+        "minLevel": "D",
+        "inputRequired": false,
+        "coordinateFallbackAllowed": false,
+        "allowedInputChannels": [],
+        "verificationRequired": "LOW"
+      },
+      "resolverPolicy": {
+        "order": [
+          "ACCESSIBILITY",
+          "COORDINATE_PACK",
+          "AI_DIRECT_PLAN"
+        ],
+        "allowAiSuggestionInFactory": true,
+        "allowAiInRuntime": true
+      },
+      "action": {
+        "type": "ClickSelector",
+        "selector": "[desc='安卓无障碍'][clickable=true]",
+        "timeoutMs": 1500
+      },
+      "verify": {
+        "type": "WindowChangedOrNodeStateChanged",
+        "timeoutMs": 1000,
+        "allowLowConfidenceWhenCoordinateOnly": true
+      },
+      "resultPolicy": {
+        "verified": "SUCCESS",
+        "partialVerified": "SUCCESS_MEDIUM_CONFIDENCE",
+        "coordinateOnly": "SUCCESS_LOW_CONFIDENCE",
+        "unverifiable": "FAILED_UNVERIFIABLE"
+      },
+      "factory": {
+        "source": "AI_DIRECT_PLAN",
+        "instruction": "直接执行步骤 3",
+        "traceIds": [],
+        "sampleCount": 0,
+        "dryRunStatus": "PASSED",
+        "testRuns": 0,
+        "successRate": 0,
+        "promotionStatus": "NOT_PROMOTED",
+        "createdAt": 1778175089501,
+        "lastDryRunReport": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_dry_run_reports\/com.zhihu.android\/direct.1778175089500.3.clickselector_1778175098397.json",
+        "lastDryRunAt": 1778175098397
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "kind": "atomic_skill",
+      "id": "direct.1778175089500.5.clickcoordinate",
+      "name": "直接执行步骤 5",
+      "appPackage": "com.zhihu.android",
+      "status": "DRY_RUN_PASSED",
+      "implements": "ClickElementSkill",
+      "params": [],
+      "preconditions": [],
+      "dependsOn": [],
+      "capabilityRequired": {
+        "minLevel": "D",
+        "inputRequired": false,
+        "coordinateFallbackAllowed": true,
+        "allowedInputChannels": [],
+        "verificationRequired": "LOW"
+      },
+      "resolverPolicy": {
+        "order": [
+          "ACCESSIBILITY",
+          "COORDINATE_PACK",
+          "AI_DIRECT_PLAN"
+        ],
+        "allowAiSuggestionInFactory": true,
+        "allowAiInRuntime": true
+      },
+      "action": {
+        "type": "ClickCoordinate",
+        "x": 0.5,
+        "y": 0.36,
+        "timeoutMs": 1000
+      },
+      "verify": {
+        "type": "WindowChangedOrNodeStateChanged",
+        "timeoutMs": 1000,
+        "allowLowConfidenceWhenCoordinateOnly": true
+      },
+      "resultPolicy": {
+        "verified": "SUCCESS",
+        "partialVerified": "SUCCESS_MEDIUM_CONFIDENCE",
+        "coordinateOnly": "SUCCESS_LOW_CONFIDENCE",
+        "unverifiable": "FAILED_UNVERIFIABLE"
+      },
+      "factory": {
+        "source": "AI_DIRECT_PLAN",
+        "instruction": "直接执行步骤 5",
+        "traceIds": [],
+        "sampleCount": 0,
+        "dryRunStatus": "PASSED",
+        "testRuns": 0,
+        "successRate": 0,
+        "promotionStatus": "NOT_PROMOTED",
+        "createdAt": 1778175089502,
+        "lastDryRunReport": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_dry_run_reports\/com.zhihu.android\/direct.1778175089500.5.clickcoordinate_1778175098396.json",
+        "lastDryRunAt": 1778175098396
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "kind": "atomic_skill",
+      "id": "com.zhihu.android.open_app",
+      "name": "打开应用",
+      "appPackage": "com.zhihu.android",
+      "appVersion": "*",
+      "status": "DRY_RUN_PASSED",
+      "domain": "app_session",
+      "implements": "OpenAppSkill",
+      "params": [],
+      "preconditions": [],
+      "dependsOn": [],
+      "resolverPolicy": {
+        "order": [
+          "ACCESSIBILITY",
+          "PACKAGE_MANAGER"
+        ],
+        "allowAiSuggestionInFactory": true,
+        "allowAiInRuntime": false
+      },
+      "safety": {
+        "forbiddenTexts": [
+          "支付",
+          "付款",
+          "转账",
+          "删除",
+          "发布",
+          "授权"
+        ]
+      },
+      "factory": {
+        "source": "THIRD_PARTY_APP_BASELINE_V0",
+        "traceIds": [],
+        "sampleCount": 0,
+        "dryRunStatus": "PASSED",
+        "testRuns": 0,
+        "successRate": 0,
+        "promotionStatus": "NOT_PROMOTED",
+        "launchable": true,
+        "launchActivity": "com.zhihu.android.app.ui.activity.LauncherActivity",
+        "createdAt": 1778090646234,
+        "lastDryRunReport": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_dry_run_reports\/com.zhihu.android\/com.zhihu.android.open_app_1778175098389.json",
+        "lastDryRunAt": 1778175098389
+      },
+      "capabilityRequired": {
+        "minLevel": "D",
+        "inputRequired": false,
+        "nodeReadablePreferred": false,
+        "coordinateFallbackAllowed": false,
+        "allowedInputChannels": [],
+        "verificationRequired": "LOW"
+      },
+      "action": {
+        "type": "OpenApp",
+        "packageName": "com.zhihu.android",
+        "timeoutMs": 3000
+      },
+      "verify": {
+        "type": "ForegroundPackage",
+        "packageName": "com.zhihu.android",
+        "timeoutMs": 3000,
+        "allowUnverifiedWhenAccessibilityDisconnected": true
+      },
+      "resultPolicy": {
+        "foregroundVerified": "SUCCESS",
+        "launchIntentSentOnly": "SUCCESS_LOW_CONFIDENCE",
+        "noLaunchIntent": "FAILED_NO_LAUNCH_INTENT",
+        "unverifiable": "FAILED_UNVERIFIABLE"
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "kind": "atomic_skill",
+      "id": "com.zhihu.android.capability_check",
+      "name": "检查应用能力",
+      "appPackage": "com.zhihu.android",
+      "appVersion": "*",
+      "status": "DRY_RUN_PASSED",
+      "domain": "app_session",
+      "implements": "CapabilityCheckSkill",
+      "params": [],
+      "preconditions": [],
+      "dependsOn": [],
+      "resolverPolicy": {
+        "order": [
+          "ACCESSIBILITY",
+          "PACKAGE_MANAGER"
+        ],
+        "allowAiSuggestionInFactory": true,
+        "allowAiInRuntime": false
+      },
+      "safety": {
+        "forbiddenTexts": [
+          "支付",
+          "付款",
+          "转账",
+          "删除",
+          "发布",
+          "授权"
+        ]
+      },
+      "factory": {
+        "source": "THIRD_PARTY_APP_BASELINE_V0",
+        "traceIds": [],
+        "sampleCount": 0,
+        "dryRunStatus": "PASSED",
+        "testRuns": 0,
+        "successRate": 0,
+        "promotionStatus": "NOT_PROMOTED",
+        "launchable": true,
+        "launchActivity": "com.zhihu.android.app.ui.activity.LauncherActivity",
+        "createdAt": 1778090646234,
+        "lastDryRunReport": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_dry_run_reports\/com.zhihu.android\/com.zhihu.android.capability_check_1778175098392.json",
+        "lastDryRunAt": 1778175098392
+      },
+      "capabilityRequired": {
+        "minLevel": "D",
+        "inputRequired": false,
+        "nodeReadablePreferred": false,
+        "coordinateFallbackAllowed": false,
+        "allowedInputChannels": [],
+        "verificationRequired": "LOW"
+      },
+      "action": {
+        "type": "CheckCapability",
+        "packageName": "com.zhihu.android"
+      },
+      "verify": {
+        "type": "CapabilityObserved",
+        "packageName": "com.zhihu.android",
+        "timeoutMs": 500
+      },
+      "resultPolicy": {
+        "levelA": "SUCCESS",
+        "levelB": "SUCCESS_MEDIUM_CONFIDENCE",
+        "levelC": "SUCCESS_LOW_CONFIDENCE",
+        "levelD": "FAILED_CAPABILITY_D"
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "kind": "atomic_skill",
+      "id": "com.zhihu.android.recover_to_foreground",
+      "name": "恢复到应用前台",
+      "appPackage": "com.zhihu.android",
+      "appVersion": "*",
+      "status": "DRY_RUN_PASSED",
+      "domain": "app_session",
+      "implements": "RecoverToScreenSkill",
+      "params": [],
+      "preconditions": [],
+      "dependsOn": [
+        "com.zhihu.android.open_app"
+      ],
+      "resolverPolicy": {
+        "order": [
+          "ACCESSIBILITY",
+          "PACKAGE_MANAGER"
+        ],
+        "allowAiSuggestionInFactory": true,
+        "allowAiInRuntime": false
+      },
+      "safety": {
+        "forbiddenTexts": [
+          "支付",
+          "付款",
+          "转账",
+          "删除",
+          "发布",
+          "授权"
+        ]
+      },
+      "factory": {
+        "source": "THIRD_PARTY_APP_BASELINE_V0",
+        "traceIds": [],
+        "sampleCount": 0,
+        "dryRunStatus": "PASSED",
+        "testRuns": 0,
+        "successRate": 0,
+        "promotionStatus": "NOT_PROMOTED",
+        "launchable": true,
+        "launchActivity": "com.zhihu.android.app.ui.activity.LauncherActivity",
+        "createdAt": 1778090646234,
+        "lastDryRunReport": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_dry_run_reports\/com.zhihu.android\/com.zhihu.android.recover_to_foreground_1778175098392.json",
+        "lastDryRunAt": 1778175098392
+      },
+      "capabilityRequired": {
+        "minLevel": "D",
+        "inputRequired": false,
+        "nodeReadablePreferred": false,
+        "coordinateFallbackAllowed": false,
+        "allowedInputChannels": [],
+        "verificationRequired": "LOW"
+      },
+      "action": {
+        "type": "OpenApp",
+        "packageName": "com.zhihu.android",
+        "timeoutMs": 3000
+      },
+      "verify": {
+        "type": "ForegroundPackage",
+        "packageName": "com.zhihu.android",
+        "timeoutMs": 3000,
+        "allowUnverifiedWhenAccessibilityDisconnected": true
+      },
+      "resultPolicy": {
+        "recovered": "SUCCESS",
+        "launchIntentSentOnly": "SUCCESS_LOW_CONFIDENCE",
+        "failed": "FAILED_RECOVER_SCREEN"
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "kind": "atomic_skill",
+      "id": "direct.1778175046804.1.openapp",
+      "name": "直接执行步骤 1",
+      "appPackage": "com.zhihu.android",
+      "status": "DRY_RUN_PASSED",
+      "implements": "OpenAppSkill",
+      "params": [],
+      "preconditions": [],
+      "dependsOn": [],
+      "capabilityRequired": {
+        "minLevel": "D",
+        "inputRequired": false,
+        "coordinateFallbackAllowed": false,
+        "allowedInputChannels": [],
+        "verificationRequired": "LOW"
+      },
+      "resolverPolicy": {
+        "order": [
+          "ACCESSIBILITY",
+          "COORDINATE_PACK",
+          "AI_DIRECT_PLAN"
+        ],
+        "allowAiSuggestionInFactory": true,
+        "allowAiInRuntime": true
+      },
+      "action": {
+        "type": "OpenApp",
+        "packageName": "com.zhihu.android",
+        "timeoutMs": 3000
+      },
+      "verify": {
+        "type": "ForegroundPackage",
+        "packageName": "com.zhihu.android",
+        "timeoutMs": 2500,
+        "allowUnverifiedWhenAccessibilityDisconnected": true
+      },
+      "resultPolicy": {
+        "verified": "SUCCESS",
+        "partialVerified": "SUCCESS_MEDIUM_CONFIDENCE",
+        "coordinateOnly": "SUCCESS_LOW_CONFIDENCE",
+        "unverifiable": "FAILED_UNVERIFIABLE"
+      },
+      "factory": {
+        "source": "AI_DIRECT_PLAN",
+        "instruction": "直接执行步骤 1",
+        "traceIds": [],
+        "sampleCount": 0,
+        "dryRunStatus": "PASSED",
+        "testRuns": 0,
+        "successRate": 0,
+        "promotionStatus": "NOT_PROMOTED",
+        "createdAt": 1778175046804,
+        "lastDryRunReport": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_dry_run_reports\/com.zhihu.android\/direct.1778175046804.1.openapp_1778175098389.json",
+        "lastDryRunAt": 1778175098389
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "kind": "atomic_skill",
+      "id": "direct.1778175046804.2.wait",
+      "name": "直接执行步骤 2",
+      "appPackage": "com.zhihu.android",
+      "status": "DRY_RUN_PASSED",
+      "implements": "WaitUntilSkill",
+      "params": [],
+      "preconditions": [],
+      "dependsOn": [],
+      "capabilityRequired": {
+        "minLevel": "D",
+        "inputRequired": false,
+        "coordinateFallbackAllowed": false,
+        "allowedInputChannels": [],
+        "verificationRequired": "LOW"
+      },
+      "resolverPolicy": {
+        "order": [
+          "ACCESSIBILITY",
+          "COORDINATE_PACK",
+          "AI_DIRECT_PLAN"
+        ],
+        "allowAiSuggestionInFactory": true,
+        "allowAiInRuntime": true
+      },
+      "action": {
+        "type": "Wait",
+        "timeoutMs": 2000
+      },
+      "verify": {
+        "type": "Always",
+        "timeoutMs": 1
+      },
+      "resultPolicy": {
+        "verified": "SUCCESS",
+        "partialVerified": "SUCCESS_MEDIUM_CONFIDENCE",
+        "coordinateOnly": "SUCCESS_LOW_CONFIDENCE",
+        "unverifiable": "FAILED_UNVERIFIABLE"
+      },
+      "factory": {
+        "source": "AI_DIRECT_PLAN",
+        "instruction": "直接执行步骤 2",
+        "traceIds": [],
+        "sampleCount": 0,
+        "dryRunStatus": "PASSED",
+        "testRuns": 0,
+        "successRate": 0,
+        "promotionStatus": "NOT_PROMOTED",
+        "createdAt": 1778175046805,
+        "lastDryRunReport": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_dry_run_reports\/com.zhihu.android\/direct.1778175046804.2.wait_1778175098390.json",
+        "lastDryRunAt": 1778175098390
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "kind": "atomic_skill",
+      "id": "direct.1778175046804.4.wait",
+      "name": "直接执行步骤 4",
+      "appPackage": "com.zhihu.android",
+      "status": "DRY_RUN_PASSED",
+      "implements": "WaitUntilSkill",
+      "params": [],
+      "preconditions": [],
+      "dependsOn": [],
+      "capabilityRequired": {
+        "minLevel": "D",
+        "inputRequired": false,
+        "coordinateFallbackAllowed": false,
+        "allowedInputChannels": [],
+        "verificationRequired": "LOW"
+      },
+      "resolverPolicy": {
+        "order": [
+          "ACCESSIBILITY",
+          "COORDINATE_PACK",
+          "AI_DIRECT_PLAN"
+        ],
+        "allowAiSuggestionInFactory": true,
+        "allowAiInRuntime": true
+      },
+      "action": {
+        "type": "Wait",
+        "timeoutMs": 700
+      },
+      "verify": {
+        "type": "Always",
+        "timeoutMs": 1
+      },
+      "resultPolicy": {
+        "verified": "SUCCESS",
+        "partialVerified": "SUCCESS_MEDIUM_CONFIDENCE",
+        "coordinateOnly": "SUCCESS_LOW_CONFIDENCE",
+        "unverifiable": "FAILED_UNVERIFIABLE"
+      },
+      "factory": {
+        "source": "AI_DIRECT_PLAN",
+        "instruction": "直接执行步骤 4",
+        "traceIds": [],
+        "sampleCount": 0,
+        "dryRunStatus": "PASSED",
+        "testRuns": 0,
+        "successRate": 0,
+        "promotionStatus": "NOT_PROMOTED",
+        "createdAt": 1778175046807,
+        "lastDryRunReport": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_dry_run_reports\/com.zhihu.android\/direct.1778175046804.4.wait_1778175098390.json",
+        "lastDryRunAt": 1778175098390
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "kind": "atomic_skill",
+      "id": "direct.1778175046804.5.typeintofirstinput",
+      "name": "直接执行步骤 5",
+      "appPackage": "com.zhihu.android",
+      "status": "DRY_RUN_PASSED",
+      "implements": "TypeTextSkill",
+      "params": [],
+      "preconditions": [],
+      "dependsOn": [],
+      "capabilityRequired": {
+        "minLevel": "D",
+        "inputRequired": true,
+        "coordinateFallbackAllowed": false,
+        "allowedInputChannels": [
+          "ACTION_SET_TEXT",
+          "PASTE",
+          "CUSTOM_IME",
+          "SHIZUKU_ADB"
+        ],
+        "verificationRequired": "LOW"
+      },
+      "resolverPolicy": {
+        "order": [
+          "ACCESSIBILITY",
+          "COORDINATE_PACK",
+          "AI_DIRECT_PLAN"
+        ],
+        "allowAiSuggestionInFactory": true,
+        "allowAiInRuntime": true
+      },
+      "action": {
+        "type": "TypeIntoFirstInput",
+        "text": "安卓无障碍并打开",
+        "timeoutMs": 2200
+      },
+      "verify": {
+        "type": "InputContainsOrTextChangedEvent",
+        "text": "安卓无障碍并打开",
+        "timeoutMs": 1500,
+        "allowMediumConfidenceWhenEventOnly": true,
+        "allowLowConfidenceWhenUnverified": true
+      },
+      "resultPolicy": {
+        "verified": "SUCCESS",
+        "partialVerified": "SUCCESS_MEDIUM_CONFIDENCE",
+        "coordinateOnly": "SUCCESS_LOW_CONFIDENCE",
+        "unverifiable": "FAILED_UNVERIFIABLE"
+      },
+      "factory": {
+        "source": "AI_DIRECT_PLAN",
+        "instruction": "直接执行步骤 5",
+        "traceIds": [],
+        "sampleCount": 0,
+        "dryRunStatus": "PASSED",
+        "testRuns": 0,
+        "successRate": 0,
+        "promotionStatus": "NOT_PROMOTED",
+        "createdAt": 1778175046808,
+        "lastDryRunReport": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_dry_run_reports\/com.zhihu.android\/direct.1778175046804.5.typeintofirstinput_1778175098390.json",
+        "lastDryRunAt": 1778175098390
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "kind": "atomic_skill",
+      "id": "direct.1778175046804.6.wait",
+      "name": "直接执行步骤 6",
+      "appPackage": "com.zhihu.android",
+      "status": "DRY_RUN_PASSED",
+      "implements": "WaitUntilSkill",
+      "params": [],
+      "preconditions": [],
+      "dependsOn": [],
+      "capabilityRequired": {
+        "minLevel": "D",
+        "inputRequired": false,
+        "coordinateFallbackAllowed": false,
+        "allowedInputChannels": [],
+        "verificationRequired": "LOW"
+      },
+      "resolverPolicy": {
+        "order": [
+          "ACCESSIBILITY",
+          "COORDINATE_PACK",
+          "AI_DIRECT_PLAN"
+        ],
+        "allowAiSuggestionInFactory": true,
+        "allowAiInRuntime": true
+      },
+      "action": {
+        "type": "Wait",
+        "timeoutMs": 500
+      },
+      "verify": {
+        "type": "Always",
+        "timeoutMs": 1
+      },
+      "resultPolicy": {
+        "verified": "SUCCESS",
+        "partialVerified": "SUCCESS_MEDIUM_CONFIDENCE",
+        "coordinateOnly": "SUCCESS_LOW_CONFIDENCE",
+        "unverifiable": "FAILED_UNVERIFIABLE"
+      },
+      "factory": {
+        "source": "AI_DIRECT_PLAN",
+        "instruction": "直接执行步骤 6",
+        "traceIds": [],
+        "sampleCount": 0,
+        "dryRunStatus": "PASSED",
+        "testRuns": 0,
+        "successRate": 0,
+        "promotionStatus": "NOT_PROMOTED",
+        "createdAt": 1778175046810,
+        "lastDryRunReport": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_dry_run_reports\/com.zhihu.android\/direct.1778175046804.6.wait_1778175098391.json",
+        "lastDryRunAt": 1778175098391
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "kind": "atomic_skill",
+      "id": "direct.1778175046804.8.wait",
+      "name": "直接执行步骤 8",
+      "appPackage": "com.zhihu.android",
+      "status": "DRY_RUN_PASSED",
+      "implements": "WaitUntilSkill",
+      "params": [],
+      "preconditions": [],
+      "dependsOn": [],
+      "capabilityRequired": {
+        "minLevel": "D",
+        "inputRequired": false,
+        "coordinateFallbackAllowed": false,
+        "allowedInputChannels": [],
+        "verificationRequired": "LOW"
+      },
+      "resolverPolicy": {
+        "order": [
+          "ACCESSIBILITY",
+          "COORDINATE_PACK",
+          "AI_DIRECT_PLAN"
+        ],
+        "allowAiSuggestionInFactory": true,
+        "allowAiInRuntime": true
+      },
+      "action": {
+        "type": "Wait",
+        "timeoutMs": 1600
+      },
+      "verify": {
+        "type": "Always",
+        "timeoutMs": 1
+      },
+      "resultPolicy": {
+        "verified": "SUCCESS",
+        "partialVerified": "SUCCESS_MEDIUM_CONFIDENCE",
+        "coordinateOnly": "SUCCESS_LOW_CONFIDENCE",
+        "unverifiable": "FAILED_UNVERIFIABLE"
+      },
+      "factory": {
+        "source": "AI_DIRECT_PLAN",
+        "instruction": "直接执行步骤 8",
+        "traceIds": [],
+        "sampleCount": 0,
+        "dryRunStatus": "PASSED",
+        "testRuns": 0,
+        "successRate": 0,
+        "promotionStatus": "NOT_PROMOTED",
+        "createdAt": 1778175046812,
+        "lastDryRunReport": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_dry_run_reports\/com.zhihu.android\/direct.1778175046804.8.wait_1778175098391.json",
+        "lastDryRunAt": 1778175098391
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "kind": "atomic_skill",
+      "id": "direct.1778175067647.1.clickvisibletext",
+      "name": "直接执行步骤 1",
+      "appPackage": "com.zhihu.android",
+      "status": "DRY_RUN_PASSED",
+      "implements": "ClickElementSkill",
+      "params": [],
+      "preconditions": [],
+      "dependsOn": [],
+      "capabilityRequired": {
+        "minLevel": "D",
+        "inputRequired": false,
+        "coordinateFallbackAllowed": false,
+        "allowedInputChannels": [],
+        "verificationRequired": "LOW"
+      },
+      "resolverPolicy": {
+        "order": [
+          "ACCESSIBILITY",
+          "COORDINATE_PACK",
+          "AI_DIRECT_PLAN"
+        ],
+        "allowAiSuggestionInFactory": true,
+        "allowAiInRuntime": true
+      },
+      "action": {
+        "type": "ClickVisibleText",
+        "text": "搜索",
+        "timeoutMs": 1500
+      },
+      "verify": {
+        "type": "WindowChangedOrNodeStateChanged",
+        "timeoutMs": 1000,
+        "allowLowConfidenceWhenCoordinateOnly": true
+      },
+      "resultPolicy": {
+        "verified": "SUCCESS",
+        "partialVerified": "SUCCESS_MEDIUM_CONFIDENCE",
+        "coordinateOnly": "SUCCESS_LOW_CONFIDENCE",
+        "unverifiable": "FAILED_UNVERIFIABLE"
+      },
+      "factory": {
+        "source": "AI_DIRECT_PLAN",
+        "instruction": "直接执行步骤 1",
+        "traceIds": [],
+        "sampleCount": 0,
+        "dryRunStatus": "PASSED",
+        "testRuns": 0,
+        "successRate": 0,
+        "promotionStatus": "NOT_PROMOTED",
+        "createdAt": 1778175067648,
+        "lastDryRunReport": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_dry_run_reports\/com.zhihu.android\/direct.1778175067647.1.clickvisibletext_1778175098391.json",
+        "lastDryRunAt": 1778175098391
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "kind": "atomic_skill",
+      "id": "direct.1778175046804.7.clickvisibletext",
+      "name": "直接执行步骤 7",
+      "appPackage": "com.zhihu.android",
+      "status": "DRY_RUN_PASSED",
+      "implements": "ClickElementSkill",
+      "params": [],
+      "preconditions": [],
+      "dependsOn": [],
+      "capabilityRequired": {
+        "minLevel": "D",
+        "inputRequired": false,
+        "coordinateFallbackAllowed": true,
+        "allowedInputChannels": [],
+        "verificationRequired": "LOW"
+      },
+      "resolverPolicy": {
+        "order": [
+          "ACCESSIBILITY",
+          "COORDINATE_PACK",
+          "AI_DIRECT_PLAN"
+        ],
+        "allowAiSuggestionInFactory": true,
+        "allowAiInRuntime": true
+      },
+      "action": {
+        "type": "ClickVisibleText",
+        "text": "搜索",
+        "timeoutMs": 1200,
+        "x": 0.9,
+        "y": 0.08
+      },
+      "verify": {
+        "type": "WindowChangedOrNodeStateChanged",
+        "timeoutMs": 1000,
+        "allowLowConfidenceWhenCoordinateOnly": true
+      },
+      "resultPolicy": {
+        "verified": "SUCCESS",
+        "partialVerified": "SUCCESS_MEDIUM_CONFIDENCE",
+        "coordinateOnly": "SUCCESS_LOW_CONFIDENCE",
+        "unverifiable": "FAILED_UNVERIFIABLE"
+      },
+      "factory": {
+        "source": "AI_DIRECT_PLAN",
+        "instruction": "直接执行步骤 7",
+        "traceIds": [],
+        "sampleCount": 0,
+        "dryRunStatus": "PASSED",
+        "testRuns": 0,
+        "successRate": 0,
+        "promotionStatus": "NOT_PROMOTED",
+        "createdAt": 1778175046811,
+        "lastDryRunReport": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_dry_run_reports\/com.zhihu.android\/direct.1778175046804.7.clickvisibletext_1778175098387.json",
+        "lastDryRunAt": 1778175098387
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "kind": "atomic_skill",
+      "id": "direct.1778175067647.2.wait",
+      "name": "直接执行步骤 2",
+      "appPackage": "com.zhihu.android",
+      "status": "DRY_RUN_PASSED",
+      "implements": "WaitUntilSkill",
+      "params": [],
+      "preconditions": [],
+      "dependsOn": [],
+      "capabilityRequired": {
+        "minLevel": "D",
+        "inputRequired": false,
+        "coordinateFallbackAllowed": false,
+        "allowedInputChannels": [],
+        "verificationRequired": "LOW"
+      },
+      "resolverPolicy": {
+        "order": [
+          "ACCESSIBILITY",
+          "COORDINATE_PACK",
+          "AI_DIRECT_PLAN"
+        ],
+        "allowAiSuggestionInFactory": true,
+        "allowAiInRuntime": true
+      },
+      "action": {
+        "type": "Wait",
+        "timeoutMs": 1500
+      },
+      "verify": {
+        "type": "Always",
+        "timeoutMs": 1
+      },
+      "resultPolicy": {
+        "verified": "SUCCESS",
+        "partialVerified": "SUCCESS_MEDIUM_CONFIDENCE",
+        "coordinateOnly": "SUCCESS_LOW_CONFIDENCE",
+        "unverifiable": "FAILED_UNVERIFIABLE"
+      },
+      "factory": {
+        "source": "AI_DIRECT_PLAN",
+        "instruction": "直接执行步骤 2",
+        "traceIds": [],
+        "sampleCount": 0,
+        "dryRunStatus": "PASSED",
+        "testRuns": 0,
+        "successRate": 0,
+        "promotionStatus": "NOT_PROMOTED",
+        "createdAt": 1778175067648,
+        "lastDryRunReport": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_dry_run_reports\/com.zhihu.android\/direct.1778175067647.2.wait_1778175098387.json",
+        "lastDryRunAt": 1778175098387
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "kind": "atomic_skill",
+      "id": "direct.1778175067647.3.typeintofirstinput",
+      "name": "直接执行步骤 3",
+      "appPackage": "com.zhihu.android",
+      "status": "DRY_RUN_PASSED",
+      "implements": "TypeTextSkill",
+      "params": [],
+      "preconditions": [],
+      "dependsOn": [],
+      "capabilityRequired": {
+        "minLevel": "D",
+        "inputRequired": true,
+        "coordinateFallbackAllowed": false,
+        "allowedInputChannels": [
+          "ACTION_SET_TEXT",
+          "PASTE",
+          "CUSTOM_IME",
+          "SHIZUKU_ADB"
+        ],
+        "verificationRequired": "LOW"
+      },
+      "resolverPolicy": {
+        "order": [
+          "ACCESSIBILITY",
+          "COORDINATE_PACK",
+          "AI_DIRECT_PLAN"
+        ],
+        "allowAiSuggestionInFactory": true,
+        "allowAiInRuntime": true
+      },
+      "action": {
+        "type": "TypeIntoFirstInput",
+        "text": "安卓无障碍",
+        "timeoutMs": 2000
+      },
+      "verify": {
+        "type": "InputContainsOrTextChangedEvent",
+        "text": "安卓无障碍",
+        "timeoutMs": 1500,
+        "allowMediumConfidenceWhenEventOnly": true,
+        "allowLowConfidenceWhenUnverified": true
+      },
+      "resultPolicy": {
+        "verified": "SUCCESS",
+        "partialVerified": "SUCCESS_MEDIUM_CONFIDENCE",
+        "coordinateOnly": "SUCCESS_LOW_CONFIDENCE",
+        "unverifiable": "FAILED_UNVERIFIABLE"
+      },
+      "factory": {
+        "source": "AI_DIRECT_PLAN",
+        "instruction": "直接执行步骤 3",
+        "traceIds": [],
+        "sampleCount": 0,
+        "dryRunStatus": "PASSED",
+        "testRuns": 0,
+        "successRate": 0,
+        "promotionStatus": "NOT_PROMOTED",
+        "createdAt": 1778175067649,
+        "lastDryRunReport": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_dry_run_reports\/com.zhihu.android\/direct.1778175067647.3.typeintofirstinput_1778175098387.json",
+        "lastDryRunAt": 1778175098387
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "kind": "atomic_skill",
+      "id": "direct.1778175067647.4.wait",
+      "name": "直接执行步骤 4",
+      "appPackage": "com.zhihu.android",
+      "status": "DRY_RUN_PASSED",
+      "implements": "WaitUntilSkill",
+      "params": [],
+      "preconditions": [],
+      "dependsOn": [],
+      "capabilityRequired": {
+        "minLevel": "D",
+        "inputRequired": false,
+        "coordinateFallbackAllowed": false,
+        "allowedInputChannels": [],
+        "verificationRequired": "LOW"
+      },
+      "resolverPolicy": {
+        "order": [
+          "ACCESSIBILITY",
+          "COORDINATE_PACK",
+          "AI_DIRECT_PLAN"
+        ],
+        "allowAiSuggestionInFactory": true,
+        "allowAiInRuntime": true
+      },
+      "action": {
+        "type": "Wait",
+        "timeoutMs": 2000
+      },
+      "verify": {
+        "type": "Always",
+        "timeoutMs": 1
+      },
+      "resultPolicy": {
+        "verified": "SUCCESS",
+        "partialVerified": "SUCCESS_MEDIUM_CONFIDENCE",
+        "coordinateOnly": "SUCCESS_LOW_CONFIDENCE",
+        "unverifiable": "FAILED_UNVERIFIABLE"
+      },
+      "factory": {
+        "source": "AI_DIRECT_PLAN",
+        "instruction": "直接执行步骤 4",
+        "traceIds": [],
+        "sampleCount": 0,
+        "dryRunStatus": "PASSED",
+        "testRuns": 0,
+        "successRate": 0,
+        "promotionStatus": "NOT_PROMOTED",
+        "createdAt": 1778175067650,
+        "lastDryRunReport": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_dry_run_reports\/com.zhihu.android\/direct.1778175067647.4.wait_1778175098388.json",
+        "lastDryRunAt": 1778175098388
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "kind": "atomic_skill",
+      "id": "direct.1778175067647.5.clickvisibletext",
+      "name": "直接执行步骤 5",
+      "appPackage": "com.zhihu.android",
+      "status": "DRY_RUN_PASSED",
+      "implements": "ClickElementSkill",
+      "params": [],
+      "preconditions": [],
+      "dependsOn": [],
+      "capabilityRequired": {
+        "minLevel": "D",
+        "inputRequired": false,
+        "coordinateFallbackAllowed": false,
+        "allowedInputChannels": [],
+        "verificationRequired": "LOW"
+      },
+      "resolverPolicy": {
+        "order": [
+          "ACCESSIBILITY",
+          "COORDINATE_PACK",
+          "AI_DIRECT_PLAN"
+        ],
+        "allowAiSuggestionInFactory": true,
+        "allowAiInRuntime": true
+      },
+      "action": {
+        "type": "ClickVisibleText",
+        "text": "搜索",
+        "timeoutMs": 1500
+      },
+      "verify": {
+        "type": "WindowChangedOrNodeStateChanged",
+        "timeoutMs": 1000,
+        "allowLowConfidenceWhenCoordinateOnly": true
+      },
+      "resultPolicy": {
+        "verified": "SUCCESS",
+        "partialVerified": "SUCCESS_MEDIUM_CONFIDENCE",
+        "coordinateOnly": "SUCCESS_LOW_CONFIDENCE",
+        "unverifiable": "FAILED_UNVERIFIABLE"
+      },
+      "factory": {
+        "source": "AI_DIRECT_PLAN",
+        "instruction": "直接执行步骤 5",
+        "traceIds": [],
+        "sampleCount": 0,
+        "dryRunStatus": "PASSED",
+        "testRuns": 0,
+        "successRate": 0,
+        "promotionStatus": "NOT_PROMOTED",
+        "createdAt": 1778175067651,
+        "lastDryRunReport": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_dry_run_reports\/com.zhihu.android\/direct.1778175067647.5.clickvisibletext_1778175098388.json",
+        "lastDryRunAt": 1778175098388
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "kind": "atomic_skill",
+      "id": "direct.1778175081806.1.clickcoordinate",
+      "name": "直接执行步骤 1",
+      "appPackage": "com.zhihu.android",
+      "status": "DRY_RUN_PASSED",
+      "implements": "ClickElementSkill",
+      "params": [],
+      "preconditions": [],
+      "dependsOn": [],
+      "capabilityRequired": {
+        "minLevel": "D",
+        "inputRequired": false,
+        "coordinateFallbackAllowed": true,
+        "allowedInputChannels": [],
+        "verificationRequired": "LOW"
+      },
+      "resolverPolicy": {
+        "order": [
+          "ACCESSIBILITY",
+          "COORDINATE_PACK",
+          "AI_DIRECT_PLAN"
+        ],
+        "allowAiSuggestionInFactory": true,
+        "allowAiInRuntime": true
+      },
+      "action": {
+        "type": "ClickCoordinate",
+        "x": 0.1819,
+        "y": 0.1739,
+        "timeoutMs": 1000
+      },
+      "verify": {
+        "type": "WindowChangedOrNodeStateChanged",
+        "timeoutMs": 1000,
+        "allowLowConfidenceWhenCoordinateOnly": true
+      },
+      "resultPolicy": {
+        "verified": "SUCCESS",
+        "partialVerified": "SUCCESS_MEDIUM_CONFIDENCE",
+        "coordinateOnly": "SUCCESS_LOW_CONFIDENCE",
+        "unverifiable": "FAILED_UNVERIFIABLE"
+      },
+      "factory": {
+        "source": "AI_DIRECT_PLAN",
+        "instruction": "直接执行步骤 1",
+        "traceIds": [],
+        "sampleCount": 0,
+        "dryRunStatus": "PASSED",
+        "testRuns": 0,
+        "successRate": 0,
+        "promotionStatus": "NOT_PROMOTED",
+        "createdAt": 1778175081806,
+        "lastDryRunReport": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_dry_run_reports\/com.zhihu.android\/direct.1778175081806.1.clickcoordinate_1778175098388.json",
+        "lastDryRunAt": 1778175098388
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "kind": "atomic_skill",
+      "id": "direct.1778175081806.2.wait",
+      "name": "直接执行步骤 2",
+      "appPackage": "com.zhihu.android",
+      "status": "DRY_RUN_PASSED",
+      "implements": "WaitUntilSkill",
+      "params": [],
+      "preconditions": [],
+      "dependsOn": [],
+      "capabilityRequired": {
+        "minLevel": "D",
+        "inputRequired": false,
+        "coordinateFallbackAllowed": false,
+        "allowedInputChannels": [],
+        "verificationRequired": "LOW"
+      },
+      "resolverPolicy": {
+        "order": [
+          "ACCESSIBILITY",
+          "COORDINATE_PACK",
+          "AI_DIRECT_PLAN"
+        ],
+        "allowAiSuggestionInFactory": true,
+        "allowAiInRuntime": true
+      },
+      "action": {
+        "type": "Wait",
+        "timeoutMs": 2000
+      },
+      "verify": {
+        "type": "Always",
+        "timeoutMs": 1
+      },
+      "resultPolicy": {
+        "verified": "SUCCESS",
+        "partialVerified": "SUCCESS_MEDIUM_CONFIDENCE",
+        "coordinateOnly": "SUCCESS_LOW_CONFIDENCE",
+        "unverifiable": "FAILED_UNVERIFIABLE"
+      },
+      "factory": {
+        "source": "AI_DIRECT_PLAN",
+        "instruction": "直接执行步骤 2",
+        "traceIds": [],
+        "sampleCount": 0,
+        "dryRunStatus": "PASSED",
+        "testRuns": 0,
+        "successRate": 0,
+        "promotionStatus": "NOT_PROMOTED",
+        "createdAt": 1778175081807,
+        "lastDryRunReport": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_dry_run_reports\/com.zhihu.android\/direct.1778175081806.2.wait_1778175098388.json",
+        "lastDryRunAt": 1778175098389
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "kind": "atomic_skill",
+      "id": "direct.1778175098366.7.clickvisibletext",
+      "name": "直接执行步骤 7",
+      "appPackage": "com.zhihu.android",
+      "status": "DRY_RUN_PASSED",
+      "implements": "ClickElementSkill",
+      "params": [],
+      "preconditions": [],
+      "dependsOn": [],
+      "capabilityRequired": {
+        "minLevel": "D",
+        "inputRequired": false,
+        "coordinateFallbackAllowed": true,
+        "allowedInputChannels": [],
+        "verificationRequired": "LOW"
+      },
+      "resolverPolicy": {
+        "order": [
+          "ACCESSIBILITY",
+          "COORDINATE_PACK",
+          "AI_DIRECT_PLAN"
+        ],
+        "allowAiSuggestionInFactory": true,
+        "allowAiInRuntime": true
+      },
+      "action": {
+        "type": "ClickVisibleText",
+        "text": "搜索",
+        "timeoutMs": 1200,
+        "x": 0.9,
+        "y": 0.08
+      },
+      "verify": {
+        "type": "WindowChangedOrNodeStateChanged",
+        "timeoutMs": 1000,
+        "allowLowConfidenceWhenCoordinateOnly": true
+      },
+      "resultPolicy": {
+        "verified": "SUCCESS",
+        "partialVerified": "SUCCESS_MEDIUM_CONFIDENCE",
+        "coordinateOnly": "SUCCESS_LOW_CONFIDENCE",
+        "unverifiable": "FAILED_UNVERIFIABLE"
+      },
+      "factory": {
+        "source": "AI_DIRECT_PLAN",
+        "instruction": "直接执行步骤 7",
+        "traceIds": [],
+        "sampleCount": 0,
+        "dryRunStatus": "PASSED",
+        "testRuns": 0,
+        "successRate": 0,
+        "promotionStatus": "NOT_PROMOTED",
+        "createdAt": 1778175098368,
+        "lastDryRunReport": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_dry_run_reports\/com.zhihu.android\/direct.1778175098366.7.clickvisibletext_1778175098385.json",
+        "lastDryRunAt": 1778175098386
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "kind": "atomic_skill",
+      "id": "direct.1778175098366.8.wait",
+      "name": "直接执行步骤 8",
+      "appPackage": "com.zhihu.android",
+      "status": "DRY_RUN_PASSED",
+      "implements": "WaitUntilSkill",
+      "params": [],
+      "preconditions": [],
+      "dependsOn": [],
+      "capabilityRequired": {
+        "minLevel": "D",
+        "inputRequired": false,
+        "coordinateFallbackAllowed": false,
+        "allowedInputChannels": [],
+        "verificationRequired": "LOW"
+      },
+      "resolverPolicy": {
+        "order": [
+          "ACCESSIBILITY",
+          "COORDINATE_PACK",
+          "AI_DIRECT_PLAN"
+        ],
+        "allowAiSuggestionInFactory": true,
+        "allowAiInRuntime": true
+      },
+      "action": {
+        "type": "Wait",
+        "timeoutMs": 1600
+      },
+      "verify": {
+        "type": "Always",
+        "timeoutMs": 1
+      },
+      "resultPolicy": {
+        "verified": "SUCCESS",
+        "partialVerified": "SUCCESS_MEDIUM_CONFIDENCE",
+        "coordinateOnly": "SUCCESS_LOW_CONFIDENCE",
+        "unverifiable": "FAILED_UNVERIFIABLE"
+      },
+      "factory": {
+        "source": "AI_DIRECT_PLAN",
+        "instruction": "直接执行步骤 8",
+        "traceIds": [],
+        "sampleCount": 0,
+        "dryRunStatus": "PASSED",
+        "testRuns": 0,
+        "successRate": 0,
+        "promotionStatus": "NOT_PROMOTED",
+        "createdAt": 1778175098368,
+        "lastDryRunReport": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_dry_run_reports\/com.zhihu.android\/direct.1778175098366.8.wait_1778175098386.json",
+        "lastDryRunAt": 1778175098386
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "kind": "atomic_skill",
+      "id": "direct.1778175098366.1.openapp",
+      "name": "直接执行步骤 1",
+      "appPackage": "com.zhihu.android",
+      "status": "DRY_RUN_PASSED",
+      "implements": "OpenAppSkill",
+      "params": [],
+      "preconditions": [],
+      "dependsOn": [],
+      "capabilityRequired": {
+        "minLevel": "D",
+        "inputRequired": false,
+        "coordinateFallbackAllowed": false,
+        "allowedInputChannels": [],
+        "verificationRequired": "LOW"
+      },
+      "resolverPolicy": {
+        "order": [
+          "ACCESSIBILITY",
+          "COORDINATE_PACK",
+          "AI_DIRECT_PLAN"
+        ],
+        "allowAiSuggestionInFactory": true,
+        "allowAiInRuntime": true
+      },
+      "action": {
+        "type": "OpenApp",
+        "packageName": "com.zhihu.android",
+        "timeoutMs": 3000
+      },
+      "verify": {
+        "type": "ForegroundPackage",
+        "packageName": "com.zhihu.android",
+        "timeoutMs": 2500,
+        "allowUnverifiedWhenAccessibilityDisconnected": true
+      },
+      "resultPolicy": {
+        "verified": "SUCCESS",
+        "partialVerified": "SUCCESS_MEDIUM_CONFIDENCE",
+        "coordinateOnly": "SUCCESS_LOW_CONFIDENCE",
+        "unverifiable": "FAILED_UNVERIFIABLE"
+      },
+      "factory": {
+        "source": "AI_DIRECT_PLAN",
+        "instruction": "直接执行步骤 1",
+        "traceIds": [],
+        "sampleCount": 0,
+        "dryRunStatus": "PASSED",
+        "testRuns": 0,
+        "successRate": 0,
+        "promotionStatus": "NOT_PROMOTED",
+        "createdAt": 1778175098366,
+        "lastDryRunReport": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_dry_run_reports\/com.zhihu.android\/direct.1778175098366.1.openapp_1778175098382.json",
+        "lastDryRunAt": 1778175098382
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "kind": "atomic_skill",
+      "id": "direct.1778175098366.2.wait",
+      "name": "直接执行步骤 2",
+      "appPackage": "com.zhihu.android",
+      "status": "DRY_RUN_PASSED",
+      "implements": "WaitUntilSkill",
+      "params": [],
+      "preconditions": [],
+      "dependsOn": [],
+      "capabilityRequired": {
+        "minLevel": "D",
+        "inputRequired": false,
+        "coordinateFallbackAllowed": false,
+        "allowedInputChannels": [],
+        "verificationRequired": "LOW"
+      },
+      "resolverPolicy": {
+        "order": [
+          "ACCESSIBILITY",
+          "COORDINATE_PACK",
+          "AI_DIRECT_PLAN"
+        ],
+        "allowAiSuggestionInFactory": true,
+        "allowAiInRuntime": true
+      },
+      "action": {
+        "type": "Wait",
+        "timeoutMs": 2000
+      },
+      "verify": {
+        "type": "Always",
+        "timeoutMs": 1
+      },
+      "resultPolicy": {
+        "verified": "SUCCESS",
+        "partialVerified": "SUCCESS_MEDIUM_CONFIDENCE",
+        "coordinateOnly": "SUCCESS_LOW_CONFIDENCE",
+        "unverifiable": "FAILED_UNVERIFIABLE"
+      },
+      "factory": {
+        "source": "AI_DIRECT_PLAN",
+        "instruction": "直接执行步骤 2",
+        "traceIds": [],
+        "sampleCount": 0,
+        "dryRunStatus": "PASSED",
+        "testRuns": 0,
+        "successRate": 0,
+        "promotionStatus": "NOT_PROMOTED",
+        "createdAt": 1778175098367,
+        "lastDryRunReport": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_dry_run_reports\/com.zhihu.android\/direct.1778175098366.2.wait_1778175098382.json",
+        "lastDryRunAt": 1778175098382
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "kind": "atomic_skill",
+      "id": "direct.1778175098366.3.clickvisibletext",
+      "name": "直接执行步骤 3",
+      "appPackage": "com.zhihu.android",
+      "status": "DRY_RUN_PASSED",
+      "implements": "ClickElementSkill",
+      "params": [],
+      "preconditions": [],
+      "dependsOn": [],
+      "capabilityRequired": {
+        "minLevel": "D",
+        "inputRequired": false,
+        "coordinateFallbackAllowed": true,
+        "allowedInputChannels": [],
+        "verificationRequired": "LOW"
+      },
+      "resolverPolicy": {
+        "order": [
+          "ACCESSIBILITY",
+          "COORDINATE_PACK",
+          "AI_DIRECT_PLAN"
+        ],
+        "allowAiSuggestionInFactory": true,
+        "allowAiInRuntime": true
+      },
+      "action": {
+        "type": "ClickVisibleText",
+        "text": "搜索",
+        "timeoutMs": 1200,
+        "x": 0.5,
+        "y": 0.08
+      },
+      "verify": {
+        "type": "WindowChangedOrNodeStateChanged",
+        "timeoutMs": 1000,
+        "allowLowConfidenceWhenCoordinateOnly": true
+      },
+      "resultPolicy": {
+        "verified": "SUCCESS",
+        "partialVerified": "SUCCESS_MEDIUM_CONFIDENCE",
+        "coordinateOnly": "SUCCESS_LOW_CONFIDENCE",
+        "unverifiable": "FAILED_UNVERIFIABLE"
+      },
+      "factory": {
+        "source": "AI_DIRECT_PLAN",
+        "instruction": "直接执行步骤 3",
+        "traceIds": [],
+        "sampleCount": 0,
+        "dryRunStatus": "PASSED",
+        "testRuns": 0,
+        "successRate": 0,
+        "promotionStatus": "NOT_PROMOTED",
+        "createdAt": 1778175098367,
+        "lastDryRunReport": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_dry_run_reports\/com.zhihu.android\/direct.1778175098366.3.clickvisibletext_1778175098383.json",
+        "lastDryRunAt": 1778175098383
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "kind": "atomic_skill",
+      "id": "direct.1778175098366.4.wait",
+      "name": "直接执行步骤 4",
+      "appPackage": "com.zhihu.android",
+      "status": "DRY_RUN_PASSED",
+      "implements": "WaitUntilSkill",
+      "params": [],
+      "preconditions": [],
+      "dependsOn": [],
+      "capabilityRequired": {
+        "minLevel": "D",
+        "inputRequired": false,
+        "coordinateFallbackAllowed": false,
+        "allowedInputChannels": [],
+        "verificationRequired": "LOW"
+      },
+      "resolverPolicy": {
+        "order": [
+          "ACCESSIBILITY",
+          "COORDINATE_PACK",
+          "AI_DIRECT_PLAN"
+        ],
+        "allowAiSuggestionInFactory": true,
+        "allowAiInRuntime": true
+      },
+      "action": {
+        "type": "Wait",
+        "timeoutMs": 700
+      },
+      "verify": {
+        "type": "Always",
+        "timeoutMs": 1
+      },
+      "resultPolicy": {
+        "verified": "SUCCESS",
+        "partialVerified": "SUCCESS_MEDIUM_CONFIDENCE",
+        "coordinateOnly": "SUCCESS_LOW_CONFIDENCE",
+        "unverifiable": "FAILED_UNVERIFIABLE"
+      },
+      "factory": {
+        "source": "AI_DIRECT_PLAN",
+        "instruction": "直接执行步骤 4",
+        "traceIds": [],
+        "sampleCount": 0,
+        "dryRunStatus": "PASSED",
+        "testRuns": 0,
+        "successRate": 0,
+        "promotionStatus": "NOT_PROMOTED",
+        "createdAt": 1778175098367,
+        "lastDryRunReport": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_dry_run_reports\/com.zhihu.android\/direct.1778175098366.4.wait_1778175098383.json",
+        "lastDryRunAt": 1778175098383
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "kind": "atomic_skill",
+      "id": "direct.1778175098366.5.typeintofirstinput",
+      "name": "直接执行步骤 5",
+      "appPackage": "com.zhihu.android",
+      "status": "DRY_RUN_PASSED",
+      "implements": "TypeTextSkill",
+      "params": [],
+      "preconditions": [],
+      "dependsOn": [],
+      "capabilityRequired": {
+        "minLevel": "D",
+        "inputRequired": true,
+        "coordinateFallbackAllowed": false,
+        "allowedInputChannels": [
+          "ACTION_SET_TEXT",
+          "PASTE",
+          "CUSTOM_IME",
+          "SHIZUKU_ADB"
+        ],
+        "verificationRequired": "LOW"
+      },
+      "resolverPolicy": {
+        "order": [
+          "ACCESSIBILITY",
+          "COORDINATE_PACK",
+          "AI_DIRECT_PLAN"
+        ],
+        "allowAiSuggestionInFactory": true,
+        "allowAiInRuntime": true
+      },
+      "action": {
+        "type": "TypeIntoFirstInput",
+        "text": "安卓无障碍并打开",
+        "timeoutMs": 2200
+      },
+      "verify": {
+        "type": "InputContainsOrTextChangedEvent",
+        "text": "安卓无障碍并打开",
+        "timeoutMs": 1500,
+        "allowMediumConfidenceWhenEventOnly": true,
+        "allowLowConfidenceWhenUnverified": true
+      },
+      "resultPolicy": {
+        "verified": "SUCCESS",
+        "partialVerified": "SUCCESS_MEDIUM_CONFIDENCE",
+        "coordinateOnly": "SUCCESS_LOW_CONFIDENCE",
+        "unverifiable": "FAILED_UNVERIFIABLE"
+      },
+      "factory": {
+        "source": "AI_DIRECT_PLAN",
+        "instruction": "直接执行步骤 5",
+        "traceIds": [],
+        "sampleCount": 0,
+        "dryRunStatus": "PASSED",
+        "testRuns": 0,
+        "successRate": 0,
+        "promotionStatus": "NOT_PROMOTED",
+        "createdAt": 1778175098367,
+        "lastDryRunReport": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_dry_run_reports\/com.zhihu.android\/direct.1778175098366.5.typeintofirstinput_1778175098384.json",
+        "lastDryRunAt": 1778175098384
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "kind": "atomic_skill",
+      "id": "direct.1778175098366.6.wait",
+      "name": "直接执行步骤 6",
+      "appPackage": "com.zhihu.android",
+      "status": "DRY_RUN_PASSED",
+      "implements": "WaitUntilSkill",
+      "params": [],
+      "preconditions": [],
+      "dependsOn": [],
+      "capabilityRequired": {
+        "minLevel": "D",
+        "inputRequired": false,
+        "coordinateFallbackAllowed": false,
+        "allowedInputChannels": [],
+        "verificationRequired": "LOW"
+      },
+      "resolverPolicy": {
+        "order": [
+          "ACCESSIBILITY",
+          "COORDINATE_PACK",
+          "AI_DIRECT_PLAN"
+        ],
+        "allowAiSuggestionInFactory": true,
+        "allowAiInRuntime": true
+      },
+      "action": {
+        "type": "Wait",
+        "timeoutMs": 500
+      },
+      "verify": {
+        "type": "Always",
+        "timeoutMs": 1
+      },
+      "resultPolicy": {
+        "verified": "SUCCESS",
+        "partialVerified": "SUCCESS_MEDIUM_CONFIDENCE",
+        "coordinateOnly": "SUCCESS_LOW_CONFIDENCE",
+        "unverifiable": "FAILED_UNVERIFIABLE"
+      },
+      "factory": {
+        "source": "AI_DIRECT_PLAN",
+        "instruction": "直接执行步骤 6",
+        "traceIds": [],
+        "sampleCount": 0,
+        "dryRunStatus": "PASSED",
+        "testRuns": 0,
+        "successRate": 0,
+        "promotionStatus": "NOT_PROMOTED",
+        "createdAt": 1778175098368,
+        "lastDryRunReport": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_dry_run_reports\/com.zhihu.android\/direct.1778175098366.6.wait_1778175098384.json",
+        "lastDryRunAt": 1778175098384
+      }
+    }
+  ],
+  "macroSkills": [
+    {
+      "schemaVersion": 1,
+      "kind": "macro_skill",
+      "id": "direct.command.1778175059714",
+      "name": "用户指令直接执行",
+      "appPackage": "com.zhihu.android",
+      "status": "DRY_RUN_PASSED",
+      "implements": "AiDirectInstructionSkill",
+      "intentId": "ai_direct_instruction",
+      "params": [],
+      "preconditions": [],
+      "atoms": [
+        {
+          "type": "UseSkill",
+          "skillId": "direct.1778175059714.1.clickselector"
+        },
+        {
+          "type": "UseSkill",
+          "skillId": "direct.1778175059714.2.wait"
+        },
+        {
+          "type": "UseSkill",
+          "skillId": "direct.1778175059714.3.typeintofirstinput"
+        },
+        {
+          "type": "UseSkill",
+          "skillId": "direct.1778175059714.4.wait"
+        },
+        {
+          "type": "UseSkill",
+          "skillId": "direct.1778175059714.5.clickselector"
+        }
+      ],
+      "verify": {
+        "type": "Always",
+        "timeoutMs": 1
+      },
+      "resultPolicy": {
+        "allAtomicSuccess": "SUCCESS",
+        "partialAtomicSuccess": "SUCCESS_MEDIUM_CONFIDENCE",
+        "lowConfidence": "SUCCESS_LOW_CONFIDENCE",
+        "failed": "FAILED"
+      },
+      "timeoutMs": 30000,
+      "factory": {
+        "source": "AI_DIRECT_PLAN",
+        "instruction": "打开知乎搜索安卓无障碍并打开第一个结果",
+        "traceIds": [],
+        "sampleCount": 0,
+        "dryRunStatus": "PASSED",
+        "testRuns": 0,
+        "successRate": 0,
+        "promotionStatus": "NOT_PROMOTED",
+        "createdAt": 1778175059715,
+        "lastDryRunReport": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_dry_run_reports\/com.zhihu.android\/direct.command.1778175059714_1778175098394.json",
+        "lastDryRunAt": 1778175098394
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "kind": "macro_skill",
+      "id": "direct.command.1778175075851",
+      "name": "用户指令直接执行",
+      "appPackage": "com.zhihu.android",
+      "status": "DRY_RUN_PASSED",
+      "implements": "AiDirectInstructionSkill",
+      "intentId": "ai_direct_instruction",
+      "params": [],
+      "preconditions": [],
+      "atoms": [
+        {
+          "type": "UseSkill",
+          "skillId": "direct.1778175075851.1.clickcoordinate"
+        }
+      ],
+      "verify": {
+        "type": "Always",
+        "timeoutMs": 1
+      },
+      "resultPolicy": {
+        "allAtomicSuccess": "SUCCESS",
+        "partialAtomicSuccess": "SUCCESS_MEDIUM_CONFIDENCE",
+        "lowConfidence": "SUCCESS_LOW_CONFIDENCE",
+        "failed": "FAILED"
+      },
+      "timeoutMs": 30000,
+      "factory": {
+        "source": "AI_DIRECT_PLAN",
+        "instruction": "打开知乎搜索安卓无障碍并打开第一个结果",
+        "traceIds": [],
+        "sampleCount": 0,
+        "dryRunStatus": "PASSED",
+        "testRuns": 0,
+        "successRate": 0,
+        "promotionStatus": "NOT_PROMOTED",
+        "createdAt": 1778175075852,
+        "lastDryRunReport": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_dry_run_reports\/com.zhihu.android\/direct.command.1778175075851_1778175098395.json",
+        "lastDryRunAt": 1778175098395
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "kind": "macro_skill",
+      "id": "direct.command.1778175089500",
+      "name": "用户指令直接执行",
+      "appPackage": "com.zhihu.android",
+      "status": "DRY_RUN_PASSED",
+      "implements": "AiDirectInstructionSkill",
+      "intentId": "ai_direct_instruction",
+      "params": [],
+      "preconditions": [],
+      "atoms": [
+        {
+          "type": "UseSkill",
+          "skillId": "direct.1778175089500.1.back"
+        },
+        {
+          "type": "UseSkill",
+          "skillId": "direct.1778175089500.2.wait"
+        },
+        {
+          "type": "UseSkill",
+          "skillId": "direct.1778175089500.3.clickselector"
+        },
+        {
+          "type": "UseSkill",
+          "skillId": "direct.1778175089500.4.wait"
+        },
+        {
+          "type": "UseSkill",
+          "skillId": "direct.1778175089500.5.clickcoordinate"
+        }
+      ],
+      "verify": {
+        "type": "Always",
+        "timeoutMs": 1
+      },
+      "resultPolicy": {
+        "allAtomicSuccess": "SUCCESS",
+        "partialAtomicSuccess": "SUCCESS_MEDIUM_CONFIDENCE",
+        "lowConfidence": "SUCCESS_LOW_CONFIDENCE",
+        "failed": "FAILED"
+      },
+      "timeoutMs": 30000,
+      "factory": {
+        "source": "AI_DIRECT_PLAN",
+        "instruction": "打开知乎搜索安卓无障碍并打开第一个结果",
+        "traceIds": [],
+        "sampleCount": 0,
+        "dryRunStatus": "PASSED",
+        "testRuns": 0,
+        "successRate": 0,
+        "promotionStatus": "NOT_PROMOTED",
+        "createdAt": 1778175089502,
+        "lastDryRunReport": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_dry_run_reports\/com.zhihu.android\/direct.command.1778175089500_1778175098396.json",
+        "lastDryRunAt": 1778175098396
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "kind": "macro_skill",
+      "id": "com.zhihu.android.prepare_app_session",
+      "name": "准备应用会话",
+      "appPackage": "com.zhihu.android",
+      "appVersion": "*",
+      "status": "DRY_RUN_PASSED",
+      "implements": "PrepareAppSessionSkill",
+      "intentId": "prepare_app_session",
+      "params": [],
+      "preconditions": [],
+      "atoms": [
+        {
+          "type": "UseSkill",
+          "skillId": "com.zhihu.android.open_app"
+        },
+        {
+          "type": "UseSkill",
+          "skillId": "com.zhihu.android.capability_check"
+        }
+      ],
+      "verify": {
+        "type": "CapabilityObserved",
+        "packageName": "com.zhihu.android",
+        "timeoutMs": 1000
+      },
+      "resultPolicy": {
+        "allAtomicSuccess": "SUCCESS",
+        "partialAtomicSuccess": "SUCCESS_MEDIUM_CONFIDENCE",
+        "unverifiable": "FAILED_UNVERIFIABLE"
+      },
+      "timeoutMs": 6000,
+      "factory": {
+        "source": "COMPOSED_FROM_APP_BASELINE_SKILLS",
+        "traceIds": [],
+        "sampleCount": 0,
+        "dryRunStatus": "PASSED",
+        "testRuns": 0,
+        "successRate": 0,
+        "promotionStatus": "NOT_PROMOTED",
+        "launchable": true,
+        "launchActivity": "com.zhihu.android.app.ui.activity.LauncherActivity",
+        "createdAt": 1778090646234,
+        "requiredAtomicSkills": [
+          "com.zhihu.android.open_app",
+          "com.zhihu.android.capability_check"
+        ],
+        "promotionRule": "requires_real_probe_and_promotion_gate",
+        "lastDryRunReport": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_dry_run_reports\/com.zhihu.android\/com.zhihu.android.prepare_app_session_1778175098393.json",
+        "lastDryRunAt": 1778175098393
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "kind": "macro_skill",
+      "id": "direct.command.1778175046804",
+      "name": "用户指令直接执行",
+      "appPackage": "com.zhihu.android",
+      "status": "DRY_RUN_PASSED",
+      "implements": "AiDirectInstructionSkill",
+      "intentId": "ai_direct_instruction",
+      "params": [],
+      "preconditions": [],
+      "atoms": [
+        {
+          "type": "UseSkill",
+          "skillId": "direct.1778175046804.1.openapp"
+        },
+        {
+          "type": "UseSkill",
+          "skillId": "direct.1778175046804.2.wait"
+        },
+        {
+          "type": "UseSkill",
+          "skillId": "direct.1778175046804.3.clickvisibletext"
+        },
+        {
+          "type": "UseSkill",
+          "skillId": "direct.1778175046804.4.wait"
+        },
+        {
+          "type": "UseSkill",
+          "skillId": "direct.1778175046804.5.typeintofirstinput"
+        },
+        {
+          "type": "UseSkill",
+          "skillId": "direct.1778175046804.6.wait"
+        },
+        {
+          "type": "UseSkill",
+          "skillId": "direct.1778175046804.7.clickvisibletext"
+        },
+        {
+          "type": "UseSkill",
+          "skillId": "direct.1778175046804.8.wait"
+        }
+      ],
+      "verify": {
+        "type": "Always",
+        "timeoutMs": 1
+      },
+      "resultPolicy": {
+        "allAtomicSuccess": "SUCCESS",
+        "partialAtomicSuccess": "SUCCESS_MEDIUM_CONFIDENCE",
+        "lowConfidence": "SUCCESS_LOW_CONFIDENCE",
+        "failed": "FAILED"
+      },
+      "timeoutMs": 30000,
+      "factory": {
+        "source": "AI_DIRECT_PLAN",
+        "instruction": "打开知乎搜索安卓无障碍并打开第一个结果",
+        "traceIds": [],
+        "sampleCount": 0,
+        "dryRunStatus": "PASSED",
+        "testRuns": 0,
+        "successRate": 0,
+        "promotionStatus": "NOT_PROMOTED",
+        "createdAt": 1778175046813,
+        "lastDryRunReport": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_dry_run_reports\/com.zhihu.android\/direct.command.1778175046804_1778175098391.json",
+        "lastDryRunAt": 1778175098391
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "kind": "macro_skill",
+      "id": "direct.command.1778175067647",
+      "name": "用户指令直接执行",
+      "appPackage": "com.zhihu.android",
+      "status": "DRY_RUN_PASSED",
+      "implements": "AiDirectInstructionSkill",
+      "intentId": "ai_direct_instruction",
+      "params": [],
+      "preconditions": [],
+      "atoms": [
+        {
+          "type": "UseSkill",
+          "skillId": "direct.1778175067647.1.clickvisibletext"
+        },
+        {
+          "type": "UseSkill",
+          "skillId": "direct.1778175067647.2.wait"
+        },
+        {
+          "type": "UseSkill",
+          "skillId": "direct.1778175067647.3.typeintofirstinput"
+        },
+        {
+          "type": "UseSkill",
+          "skillId": "direct.1778175067647.4.wait"
+        },
+        {
+          "type": "UseSkill",
+          "skillId": "direct.1778175067647.5.clickvisibletext"
+        }
+      ],
+      "verify": {
+        "type": "Always",
+        "timeoutMs": 1
+      },
+      "resultPolicy": {
+        "allAtomicSuccess": "SUCCESS",
+        "partialAtomicSuccess": "SUCCESS_MEDIUM_CONFIDENCE",
+        "lowConfidence": "SUCCESS_LOW_CONFIDENCE",
+        "failed": "FAILED"
+      },
+      "timeoutMs": 30000,
+      "factory": {
+        "source": "AI_DIRECT_PLAN",
+        "instruction": "打开知乎搜索安卓无障碍并打开第一个结果",
+        "traceIds": [],
+        "sampleCount": 0,
+        "dryRunStatus": "PASSED",
+        "testRuns": 0,
+        "successRate": 0,
+        "promotionStatus": "NOT_PROMOTED",
+        "createdAt": 1778175067652,
+        "lastDryRunReport": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_dry_run_reports\/com.zhihu.android\/direct.command.1778175067647_1778175098392.json",
+        "lastDryRunAt": 1778175098392
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "kind": "macro_skill",
+      "id": "direct.command.1778175081806",
+      "name": "用户指令直接执行",
+      "appPackage": "com.zhihu.android",
+      "status": "DRY_RUN_PASSED",
+      "implements": "AiDirectInstructionSkill",
+      "intentId": "ai_direct_instruction",
+      "params": [],
+      "preconditions": [],
+      "atoms": [
+        {
+          "type": "UseSkill",
+          "skillId": "direct.1778175081806.1.clickcoordinate"
+        },
+        {
+          "type": "UseSkill",
+          "skillId": "direct.1778175081806.2.wait"
+        }
+      ],
+      "verify": {
+        "type": "Always",
+        "timeoutMs": 1
+      },
+      "resultPolicy": {
+        "allAtomicSuccess": "SUCCESS",
+        "partialAtomicSuccess": "SUCCESS_MEDIUM_CONFIDENCE",
+        "lowConfidence": "SUCCESS_LOW_CONFIDENCE",
+        "failed": "FAILED"
+      },
+      "timeoutMs": 30000,
+      "factory": {
+        "source": "AI_DIRECT_PLAN",
+        "instruction": "打开知乎搜索安卓无障碍并打开第一个结果",
+        "traceIds": [],
+        "sampleCount": 0,
+        "dryRunStatus": "PASSED",
+        "testRuns": 0,
+        "successRate": 0,
+        "promotionStatus": "NOT_PROMOTED",
+        "createdAt": 1778175081807,
+        "lastDryRunReport": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_dry_run_reports\/com.zhihu.android\/direct.command.1778175081806_1778175098389.json",
+        "lastDryRunAt": 1778175098389
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "kind": "macro_skill",
+      "id": "direct.command.1778175098366",
+      "name": "用户指令直接执行",
+      "appPackage": "com.zhihu.android",
+      "status": "DRY_RUN_PASSED",
+      "implements": "AiDirectInstructionSkill",
+      "intentId": "ai_direct_instruction",
+      "params": [],
+      "preconditions": [],
+      "atoms": [
+        {
+          "type": "UseSkill",
+          "skillId": "direct.1778175098366.1.openapp"
+        },
+        {
+          "type": "UseSkill",
+          "skillId": "direct.1778175098366.2.wait"
+        },
+        {
+          "type": "UseSkill",
+          "skillId": "direct.1778175098366.3.clickvisibletext"
+        },
+        {
+          "type": "UseSkill",
+          "skillId": "direct.1778175098366.4.wait"
+        },
+        {
+          "type": "UseSkill",
+          "skillId": "direct.1778175098366.5.typeintofirstinput"
+        },
+        {
+          "type": "UseSkill",
+          "skillId": "direct.1778175098366.6.wait"
+        },
+        {
+          "type": "UseSkill",
+          "skillId": "direct.1778175098366.7.clickvisibletext"
+        },
+        {
+          "type": "UseSkill",
+          "skillId": "direct.1778175098366.8.wait"
+        }
+      ],
+      "verify": {
+        "type": "Always",
+        "timeoutMs": 1
+      },
+      "resultPolicy": {
+        "allAtomicSuccess": "SUCCESS",
+        "partialAtomicSuccess": "SUCCESS_MEDIUM_CONFIDENCE",
+        "lowConfidence": "SUCCESS_LOW_CONFIDENCE",
+        "failed": "FAILED"
+      },
+      "timeoutMs": 30000,
+      "factory": {
+        "source": "AI_DIRECT_PLAN",
+        "instruction": "打开知乎搜索安卓无障碍并打开第一个结果",
+        "traceIds": [],
+        "sampleCount": 0,
+        "dryRunStatus": "PASSED",
+        "testRuns": 0,
+        "successRate": 0,
+        "promotionStatus": "NOT_PROMOTED",
+        "createdAt": 1778175098368,
+        "lastDryRunReport": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_dry_run_reports\/com.zhihu.android\/direct.command.1778175098366_1778175098386.json",
+        "lastDryRunAt": 1778175098386
+      }
+    }
+  ],
+  "reactiveRules": [],
+  "runtimePolicy": {
+    "allowCandidateSkill": false,
+    "allowTrial": false,
+    "aiCallsDefault": 0,
+    "screenshotDefault": 0,
+    "maxTaskDurationMs": 30000
+  },
+  "factoryReports": {
+    "dryRunReports": [
+      {
+        "schemaVersion": 1,
+        "kind": "skill_json_dry_run_report",
+        "skillId": "direct.1778175059714.3.typeintofirstinput",
+        "appPackage": "com.zhihu.android",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "summary": "Skill JSON dry-run passed",
+        "timestamp": 1778175098393
+      },
+      {
+        "schemaVersion": 1,
+        "kind": "skill_json_dry_run_report",
+        "skillId": "direct.1778175089500.1.back",
+        "appPackage": "com.zhihu.android",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "summary": "Skill JSON dry-run passed",
+        "timestamp": 1778175098395
+      },
+      {
+        "schemaVersion": 1,
+        "kind": "skill_json_dry_run_report",
+        "skillId": "direct.1778175089500.5.clickcoordinate",
+        "appPackage": "com.zhihu.android",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "summary": "Skill JSON dry-run passed",
+        "timestamp": 1778175098396
+      },
+      {
+        "schemaVersion": 1,
+        "kind": "skill_json_dry_run_report",
+        "skillId": "direct.command.1778175089500",
+        "appPackage": "com.zhihu.android",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "summary": "Skill JSON dry-run passed",
+        "timestamp": 1778175098396
+      },
+      {
+        "schemaVersion": 1,
+        "kind": "skill_json_dry_run_report",
+        "skillId": "direct.command.1778175059714",
+        "appPackage": "com.zhihu.android",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "summary": "Skill JSON dry-run passed",
+        "timestamp": 1778175098394
+      },
+      {
+        "schemaVersion": 1,
+        "kind": "skill_json_dry_run_report",
+        "skillId": "direct.1778175075851.1.clickcoordinate",
+        "appPackage": "com.zhihu.android",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "summary": "Skill JSON dry-run passed",
+        "timestamp": 1778175098394
+      },
+      {
+        "schemaVersion": 1,
+        "kind": "skill_json_dry_run_report",
+        "skillId": "direct.1778175059714.1.clickselector",
+        "appPackage": "com.zhihu.android",
+        "passed": false,
+        "status": "REJECTED",
+        "errors": [
+          "click_selector_unsupported_hierarchy_or_css:[resourceId='com.zhihu.android:id\/query_container']"
+        ],
+        "warnings": [],
+        "summary": "click_selector_unsupported_hierarchy_or_css:[resourceId='com.zhihu.android:id\/query_container']",
+        "timestamp": 1778175098395
+      },
+      {
+        "schemaVersion": 1,
+        "kind": "skill_json_dry_run_report",
+        "skillId": "direct.1778175059714.2.wait",
+        "appPackage": "com.zhihu.android",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "summary": "Skill JSON dry-run passed",
+        "timestamp": 1778175098395
+      },
+      {
+        "schemaVersion": 1,
+        "kind": "skill_json_dry_run_report",
+        "skillId": "direct.1778175089500.2.wait",
+        "appPackage": "com.zhihu.android",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "summary": "Skill JSON dry-run passed",
+        "timestamp": 1778175098396
+      },
+      {
+        "schemaVersion": 1,
+        "kind": "skill_json_dry_run_report",
+        "skillId": "direct.1778175089500.4.wait",
+        "appPackage": "com.zhihu.android",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "summary": "Skill JSON dry-run passed",
+        "timestamp": 1778175098397
+      },
+      {
+        "schemaVersion": 1,
+        "kind": "skill_json_dry_run_report",
+        "skillId": "direct.1778175059714.4.wait",
+        "appPackage": "com.zhihu.android",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "summary": "Skill JSON dry-run passed",
+        "timestamp": 1778175098393
+      },
+      {
+        "schemaVersion": 1,
+        "kind": "skill_json_dry_run_report",
+        "skillId": "direct.1778175059714.5.clickselector",
+        "appPackage": "com.zhihu.android",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "summary": "Skill JSON dry-run passed",
+        "timestamp": 1778175098394
+      },
+      {
+        "schemaVersion": 1,
+        "kind": "skill_json_dry_run_report",
+        "skillId": "direct.command.1778175075851",
+        "appPackage": "com.zhihu.android",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "summary": "Skill JSON dry-run passed",
+        "timestamp": 1778175098395
+      },
+      {
+        "schemaVersion": 1,
+        "kind": "skill_json_dry_run_report",
+        "skillId": "direct.1778175089500.3.clickselector",
+        "appPackage": "com.zhihu.android",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "summary": "Skill JSON dry-run passed",
+        "timestamp": 1778175098397
+      },
+      {
+        "schemaVersion": 1,
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.zhihu.android.open_app",
+        "appPackage": "com.zhihu.android",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "summary": "Skill JSON dry-run passed",
+        "timestamp": 1778175098389
+      },
+      {
+        "schemaVersion": 1,
+        "kind": "skill_json_dry_run_report",
+        "skillId": "direct.1778175046804.1.openapp",
+        "appPackage": "com.zhihu.android",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "summary": "Skill JSON dry-run passed",
+        "timestamp": 1778175098389
+      },
+      {
+        "schemaVersion": 1,
+        "kind": "skill_json_dry_run_report",
+        "skillId": "direct.1778175046804.2.wait",
+        "appPackage": "com.zhihu.android",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "summary": "Skill JSON dry-run passed",
+        "timestamp": 1778175098390
+      },
+      {
+        "schemaVersion": 1,
+        "kind": "skill_json_dry_run_report",
+        "skillId": "direct.1778175046804.6.wait",
+        "appPackage": "com.zhihu.android",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "summary": "Skill JSON dry-run passed",
+        "timestamp": 1778175098391
+      },
+      {
+        "schemaVersion": 1,
+        "kind": "skill_json_dry_run_report",
+        "skillId": "direct.1778175046804.8.wait",
+        "appPackage": "com.zhihu.android",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "summary": "Skill JSON dry-run passed",
+        "timestamp": 1778175098391
+      },
+      {
+        "schemaVersion": 1,
+        "kind": "skill_json_dry_run_report",
+        "skillId": "direct.command.1778175046804",
+        "appPackage": "com.zhihu.android",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "summary": "Skill JSON dry-run passed",
+        "timestamp": 1778175098391
+      },
+      {
+        "schemaVersion": 1,
+        "kind": "skill_json_dry_run_report",
+        "skillId": "direct.1778175067647.1.clickvisibletext",
+        "appPackage": "com.zhihu.android",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "summary": "Skill JSON dry-run passed",
+        "timestamp": 1778175098391
+      },
+      {
+        "schemaVersion": 1,
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.zhihu.android.recover_to_foreground",
+        "appPackage": "com.zhihu.android",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "summary": "Skill JSON dry-run passed",
+        "timestamp": 1778175098392
+      },
+      {
+        "schemaVersion": 1,
+        "kind": "skill_json_dry_run_report",
+        "skillId": "direct.command.1778175067647",
+        "appPackage": "com.zhihu.android",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "summary": "Skill JSON dry-run passed",
+        "timestamp": 1778175098392
+      },
+      {
+        "schemaVersion": 1,
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.zhihu.android.capability_check",
+        "appPackage": "com.zhihu.android",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "summary": "Skill JSON dry-run passed",
+        "timestamp": 1778175098392
+      },
+      {
+        "schemaVersion": 1,
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.zhihu.android.prepare_app_session",
+        "appPackage": "com.zhihu.android",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "summary": "Skill JSON dry-run passed",
+        "timestamp": 1778175098393
+      },
+      {
+        "schemaVersion": 1,
+        "kind": "skill_json_dry_run_report",
+        "skillId": "direct.1778175046804.3.clickvisibletext",
+        "appPackage": "com.zhihu.android",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "summary": "Skill JSON dry-run passed",
+        "timestamp": 1778175098393
+      },
+      {
+        "schemaVersion": 1,
+        "kind": "skill_json_dry_run_report",
+        "skillId": "direct.1778175046804.4.wait",
+        "appPackage": "com.zhihu.android",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "summary": "Skill JSON dry-run passed",
+        "timestamp": 1778175098390
+      },
+      {
+        "schemaVersion": 1,
+        "kind": "skill_json_dry_run_report",
+        "skillId": "direct.1778175046804.5.typeintofirstinput",
+        "appPackage": "com.zhihu.android",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "summary": "Skill JSON dry-run passed",
+        "timestamp": 1778175098390
+      },
+      {
+        "schemaVersion": 1,
+        "kind": "skill_json_dry_run_report",
+        "skillId": "direct.command.1778175098366",
+        "appPackage": "com.zhihu.android",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "summary": "Skill JSON dry-run passed",
+        "timestamp": 1778175098386
+      },
+      {
+        "schemaVersion": 1,
+        "kind": "skill_json_dry_run_report",
+        "skillId": "direct.1778175046804.7.clickvisibletext",
+        "appPackage": "com.zhihu.android",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "summary": "Skill JSON dry-run passed",
+        "timestamp": 1778175098387
+      },
+      {
+        "schemaVersion": 1,
+        "kind": "skill_json_dry_run_report",
+        "skillId": "direct.1778175067647.3.typeintofirstinput",
+        "appPackage": "com.zhihu.android",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "summary": "Skill JSON dry-run passed",
+        "timestamp": 1778175098387
+      },
+      {
+        "schemaVersion": 1,
+        "kind": "skill_json_dry_run_report",
+        "skillId": "direct.1778175067647.5.clickvisibletext",
+        "appPackage": "com.zhihu.android",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "summary": "Skill JSON dry-run passed",
+        "timestamp": 1778175098388
+      },
+      {
+        "schemaVersion": 1,
+        "kind": "skill_json_dry_run_report",
+        "skillId": "direct.command.1778175081806",
+        "appPackage": "com.zhihu.android",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "summary": "Skill JSON dry-run passed",
+        "timestamp": 1778175098389
+      },
+      {
+        "schemaVersion": 1,
+        "kind": "skill_json_dry_run_report",
+        "skillId": "direct.1778175098366.7.clickvisibletext",
+        "appPackage": "com.zhihu.android",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "summary": "Skill JSON dry-run passed",
+        "timestamp": 1778175098385
+      },
+      {
+        "schemaVersion": 1,
+        "kind": "skill_json_dry_run_report",
+        "skillId": "direct.1778175098366.8.wait",
+        "appPackage": "com.zhihu.android",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "summary": "Skill JSON dry-run passed",
+        "timestamp": 1778175098386
+      },
+      {
+        "schemaVersion": 1,
+        "kind": "skill_json_dry_run_report",
+        "skillId": "direct.1778175067647.2.wait",
+        "appPackage": "com.zhihu.android",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "summary": "Skill JSON dry-run passed",
+        "timestamp": 1778175098387
+      },
+      {
+        "schemaVersion": 1,
+        "kind": "skill_json_dry_run_report",
+        "skillId": "direct.1778175067647.4.wait",
+        "appPackage": "com.zhihu.android",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "summary": "Skill JSON dry-run passed",
+        "timestamp": 1778175098388
+      },
+      {
+        "schemaVersion": 1,
+        "kind": "skill_json_dry_run_report",
+        "skillId": "direct.1778175081806.1.clickcoordinate",
+        "appPackage": "com.zhihu.android",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "summary": "Skill JSON dry-run passed",
+        "timestamp": 1778175098388
+      },
+      {
+        "schemaVersion": 1,
+        "kind": "skill_json_dry_run_report",
+        "skillId": "direct.1778175081806.2.wait",
+        "appPackage": "com.zhihu.android",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "summary": "Skill JSON dry-run passed",
+        "timestamp": 1778175098388
+      },
+      {
+        "schemaVersion": 1,
+        "kind": "skill_json_dry_run_report",
+        "skillId": "direct.1778175098366.1.openapp",
+        "appPackage": "com.zhihu.android",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "summary": "Skill JSON dry-run passed",
+        "timestamp": 1778175098381
+      },
+      {
+        "schemaVersion": 1,
+        "kind": "skill_json_dry_run_report",
+        "skillId": "direct.1778175098366.2.wait",
+        "appPackage": "com.zhihu.android",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "summary": "Skill JSON dry-run passed",
+        "timestamp": 1778175098382
+      },
+      {
+        "schemaVersion": 1,
+        "kind": "skill_json_dry_run_report",
+        "skillId": "direct.1778175098366.3.clickvisibletext",
+        "appPackage": "com.zhihu.android",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "summary": "Skill JSON dry-run passed",
+        "timestamp": 1778175098383
+      },
+      {
+        "schemaVersion": 1,
+        "kind": "skill_json_dry_run_report",
+        "skillId": "direct.1778175098366.6.wait",
+        "appPackage": "com.zhihu.android",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "summary": "Skill JSON dry-run passed",
+        "timestamp": 1778175098384
+      },
+      {
+        "schemaVersion": 1,
+        "kind": "skill_json_dry_run_report",
+        "skillId": "direct.1778175098366.4.wait",
+        "appPackage": "com.zhihu.android",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "summary": "Skill JSON dry-run passed",
+        "timestamp": 1778175098383
+      },
+      {
+        "schemaVersion": 1,
+        "kind": "skill_json_dry_run_report",
+        "skillId": "direct.1778175098366.5.typeintofirstinput",
+        "appPackage": "com.zhihu.android",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "summary": "Skill JSON dry-run passed",
+        "timestamp": 1778175098384
+      },
+      {
+        "schemaVersion": 1,
+        "kind": "skill_json_dry_run_report",
+        "skillId": "direct.1778175067647.5.clickvisibletext",
+        "appPackage": "com.zhihu.android",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "summary": "Skill JSON dry-run passed",
+        "timestamp": 1778175089530
+      },
+      {
+        "schemaVersion": 1,
+        "kind": "skill_json_dry_run_report",
+        "skillId": "direct.1778175046804.7.clickvisibletext",
+        "appPackage": "com.zhihu.android",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "summary": "Skill JSON dry-run passed",
+        "timestamp": 1778175089530
+      },
+      {
+        "schemaVersion": 1,
+        "kind": "skill_json_dry_run_report",
+        "skillId": "direct.command.1778175081806",
+        "appPackage": "com.zhihu.android",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "summary": "Skill JSON dry-run passed",
+        "timestamp": 1778175089531
+      },
+      {
+        "schemaVersion": 1,
+        "kind": "skill_json_dry_run_report",
+        "skillId": "direct.1778175067647.3.typeintofirstinput",
+        "appPackage": "com.zhihu.android",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "summary": "Skill JSON dry-run passed",
+        "timestamp": 1778175089529
+      },
+      {
+        "schemaVersion": 1,
+        "kind": "skill_json_dry_run_report",
+        "skillId": "direct.1778175067647.4.wait",
+        "appPackage": "com.zhihu.android",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "summary": "Skill JSON dry-run passed",
+        "timestamp": 1778175089530
+      },
+      {
+        "schemaVersion": 1,
+        "kind": "skill_json_dry_run_report",
+        "skillId": "direct.1778175081806.2.wait",
+        "appPackage": "com.zhihu.android",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "summary": "Skill JSON dry-run passed",
+        "timestamp": 1778175089531
+      },
+      {
+        "schemaVersion": 1,
+        "kind": "skill_json_dry_run_report",
+        "skillId": "direct.1778175081806.1.clickcoordinate",
+        "appPackage": "com.zhihu.android",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "summary": "Skill JSON dry-run passed",
+        "timestamp": 1778175089531
+      },
+      {
+        "schemaVersion": 1,
+        "kind": "skill_json_dry_run_report",
+        "skillId": "direct.1778175046804.8.wait",
+        "appPackage": "com.zhihu.android",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "summary": "Skill JSON dry-run passed",
+        "timestamp": 1778175089526
+      },
+      {
+        "schemaVersion": 1,
+        "kind": "skill_json_dry_run_report",
+        "skillId": "direct.1778175046804.2.wait",
+        "appPackage": "com.zhihu.android",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "summary": "Skill JSON dry-run passed",
+        "timestamp": 1778175089527
+      },
+      {
+        "schemaVersion": 1,
+        "kind": "skill_json_dry_run_report",
+        "skillId": "direct.1778175067647.2.wait",
+        "appPackage": "com.zhihu.android",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "summary": "Skill JSON dry-run passed",
+        "timestamp": 1778175089529
+      },
+      {
+        "schemaVersion": 1,
+        "kind": "skill_json_dry_run_report",
+        "skillId": "direct.1778175046804.5.typeintofirstinput",
+        "appPackage": "com.zhihu.android",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "summary": "Skill JSON dry-run passed",
+        "timestamp": 1778175089525
+      },
+      {
+        "schemaVersion": 1,
+        "kind": "skill_json_dry_run_report",
+        "skillId": "direct.1778175046804.6.wait",
+        "appPackage": "com.zhihu.android",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "summary": "Skill JSON dry-run passed",
+        "timestamp": 1778175089526
+      },
+      {
+        "schemaVersion": 1,
+        "kind": "skill_json_dry_run_report",
+        "skillId": "direct.command.1778175046804",
+        "appPackage": "com.zhihu.android",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "summary": "Skill JSON dry-run passed",
+        "timestamp": 1778175089527
+      },
+      {
+        "schemaVersion": 1,
+        "kind": "skill_json_dry_run_report",
+        "skillId": "direct.1778175046804.1.openapp",
+        "appPackage": "com.zhihu.android",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "summary": "Skill JSON dry-run passed",
+        "timestamp": 1778175089527
+      },
+      {
+        "schemaVersion": 1,
+        "kind": "skill_json_dry_run_report",
+        "skillId": "direct.1778175046804.4.wait",
+        "appPackage": "com.zhihu.android",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "summary": "Skill JSON dry-run passed",
+        "timestamp": 1778175089528
+      },
+      {
+        "schemaVersion": 1,
+        "kind": "skill_json_dry_run_report",
+        "skillId": "direct.command.1778175067647",
+        "appPackage": "com.zhihu.android",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "summary": "Skill JSON dry-run passed",
+        "timestamp": 1778175089528
+      },
+      {
+        "schemaVersion": 1,
+        "kind": "skill_json_dry_run_report",
+        "skillId": "direct.1778175067647.1.clickvisibletext",
+        "appPackage": "com.zhihu.android",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "summary": "Skill JSON dry-run passed",
+        "timestamp": 1778175089528
+      },
+      {
+        "schemaVersion": 1,
+        "kind": "skill_json_dry_run_report",
+        "skillId": "direct.command.1778175075851",
+        "appPackage": "com.zhihu.android",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "summary": "Skill JSON dry-run passed",
+        "timestamp": 1778175089522
+      },
+      {
+        "schemaVersion": 1,
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.zhihu.android.capability_check",
+        "appPackage": "com.zhihu.android",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "summary": "Skill JSON dry-run passed",
+        "timestamp": 1778175089522
+      },
+      {
+        "schemaVersion": 1,
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.zhihu.android.recover_to_foreground",
+        "appPackage": "com.zhihu.android",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "summary": "Skill JSON dry-run passed",
+        "timestamp": 1778175089522
+      },
+      {
+        "schemaVersion": 1,
+        "kind": "skill_json_dry_run_report",
+        "skillId": "direct.1778175075851.1.clickcoordinate",
+        "appPackage": "com.zhihu.android",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "summary": "Skill JSON dry-run passed",
+        "timestamp": 1778175089521
+      },
+      {
+        "schemaVersion": 1,
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.zhihu.android.prepare_app_session",
+        "appPackage": "com.zhihu.android",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "summary": "Skill JSON dry-run passed",
+        "timestamp": 1778175089523
+      },
+      {
+        "schemaVersion": 1,
+        "kind": "skill_json_dry_run_report",
+        "skillId": "direct.1778175046804.3.clickvisibletext",
+        "appPackage": "com.zhihu.android",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "summary": "Skill JSON dry-run passed",
+        "timestamp": 1778175089523
+      },
+      {
+        "schemaVersion": 1,
+        "kind": "skill_json_dry_run_report",
+        "skillId": "direct.1778175059714.4.wait",
+        "appPackage": "com.zhihu.android",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "summary": "Skill JSON dry-run passed",
+        "timestamp": 1778175089524
+      },
+      {
+        "schemaVersion": 1,
+        "kind": "skill_json_dry_run_report",
+        "skillId": "direct.1778175059714.5.clickselector",
+        "appPackage": "com.zhihu.android",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "summary": "Skill JSON dry-run passed",
+        "timestamp": 1778175089524
+      },
+      {
+        "schemaVersion": 1,
+        "kind": "skill_json_dry_run_report",
+        "skillId": "direct.command.1778175059714",
+        "appPackage": "com.zhihu.android",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "summary": "Skill JSON dry-run passed",
+        "timestamp": 1778175089524
+      },
+      {
+        "schemaVersion": 1,
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.zhihu.android.open_app",
+        "appPackage": "com.zhihu.android",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "summary": "Skill JSON dry-run passed",
+        "timestamp": 1778175089525
+      },
+      {
+        "schemaVersion": 1,
+        "kind": "skill_json_dry_run_report",
+        "skillId": "direct.1778175089500.2.wait",
+        "appPackage": "com.zhihu.android",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "summary": "Skill JSON dry-run passed",
+        "timestamp": 1778175089520
+      },
+      {
+        "schemaVersion": 1,
+        "kind": "skill_json_dry_run_report",
+        "skillId": "direct.1778175089500.5.clickcoordinate",
+        "appPackage": "com.zhihu.android",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "summary": "Skill JSON dry-run passed",
+        "timestamp": 1778175089517
+      },
+      {
+        "schemaVersion": 1,
+        "kind": "skill_json_dry_run_report",
+        "skillId": "direct.command.1778175089500",
+        "appPackage": "com.zhihu.android",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "summary": "Skill JSON dry-run passed",
+        "timestamp": 1778175089518
+      },
+      {
+        "schemaVersion": 1,
+        "kind": "skill_json_dry_run_report",
+        "skillId": "direct.1778175089500.1.back",
+        "appPackage": "com.zhihu.android",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "summary": "Skill JSON dry-run passed",
+        "timestamp": 1778175089519
+      },
+      {
+        "schemaVersion": 1,
+        "kind": "skill_json_dry_run_report",
+        "skillId": "direct.1778175059714.1.clickselector",
+        "appPackage": "com.zhihu.android",
+        "passed": false,
+        "status": "REJECTED",
+        "errors": [
+          "click_selector_unsupported_hierarchy_or_css:[resourceId='com.zhihu.android:id\/query_container']"
+        ],
+        "warnings": [],
+        "summary": "click_selector_unsupported_hierarchy_or_css:[resourceId='com.zhihu.android:id\/query_container']",
+        "timestamp": 1778175089520
+      },
+      {
+        "schemaVersion": 1,
+        "kind": "skill_json_dry_run_report",
+        "skillId": "direct.1778175059714.2.wait",
+        "appPackage": "com.zhihu.android",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "summary": "Skill JSON dry-run passed",
+        "timestamp": 1778175089520
+      },
+      {
+        "schemaVersion": 1,
+        "kind": "skill_json_dry_run_report",
+        "skillId": "direct.1778175059714.3.typeintofirstinput",
+        "appPackage": "com.zhihu.android",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "summary": "Skill JSON dry-run passed",
+        "timestamp": 1778175089521
+      },
+      {
+        "schemaVersion": 1,
+        "kind": "skill_json_dry_run_report",
+        "skillId": "direct.1778175089500.4.wait",
+        "appPackage": "com.zhihu.android",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "summary": "Skill JSON dry-run passed",
+        "timestamp": 1778175089516
+      },
+      {
+        "schemaVersion": 1,
+        "kind": "skill_json_dry_run_report",
+        "skillId": "direct.1778175089500.3.clickselector",
+        "appPackage": "com.zhihu.android",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "summary": "Skill JSON dry-run passed",
+        "timestamp": 1778175089515
+      },
+      {
+        "schemaVersion": 1,
+        "kind": "skill_json_dry_run_report",
+        "skillId": "direct.1778175059714.1.clickselector",
+        "appPackage": "com.zhihu.android",
+        "passed": false,
+        "status": "REJECTED",
+        "errors": [
+          "click_selector_unsupported_hierarchy_or_css:[resourceId='com.zhihu.android:id\/query_container']"
+        ],
+        "warnings": [],
+        "summary": "click_selector_unsupported_hierarchy_or_css:[resourceId='com.zhihu.android:id\/query_container']",
+        "timestamp": 1778175081845
+      },
+      {
+        "schemaVersion": 1,
+        "kind": "skill_json_dry_run_report",
+        "skillId": "direct.1778175059714.3.typeintofirstinput",
+        "appPackage": "com.zhihu.android",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "summary": "Skill JSON dry-run passed",
+        "timestamp": 1778175081847
+      },
+      {
+        "schemaVersion": 1,
+        "kind": "skill_json_dry_run_report",
+        "skillId": "direct.1778175059714.2.wait",
+        "appPackage": "com.zhihu.android",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "summary": "Skill JSON dry-run passed",
+        "timestamp": 1778175081846
+      },
+      {
+        "schemaVersion": 1,
+        "kind": "skill_json_dry_run_report",
+        "skillId": "direct.command.1778175075851",
+        "appPackage": "com.zhihu.android",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "summary": "Skill JSON dry-run passed",
+        "timestamp": 1778175081847
+      },
+      {
+        "schemaVersion": 1,
+        "kind": "skill_json_dry_run_report",
+        "skillId": "direct.1778175075851.1.clickcoordinate",
+        "appPackage": "com.zhihu.android",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "summary": "Skill JSON dry-run passed",
+        "timestamp": 1778175081848
+      },
+      {
+        "schemaVersion": 1,
+        "kind": "skill_json_dry_run_report",
+        "skillId": "direct.1778175046804.3.clickvisibletext",
+        "appPackage": "com.zhihu.android",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "summary": "Skill JSON dry-run passed",
+        "timestamp": 1778175081841
+      },
+      {
+        "schemaVersion": 1,
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.zhihu.android.capability_check",
+        "appPackage": "com.zhihu.android",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "summary": "Skill JSON dry-run passed",
+        "timestamp": 1778175081842
+      },
+      {
+        "schemaVersion": 1,
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.zhihu.android.prepare_app_session",
+        "appPackage": "com.zhihu.android",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "summary": "Skill JSON dry-run passed",
+        "timestamp": 1778175081845
+      },
+      {
+        "schemaVersion": 1,
+        "kind": "skill_json_dry_run_report",
+        "skillId": "direct.1778175059714.4.wait",
+        "appPackage": "com.zhihu.android",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "summary": "Skill JSON dry-run passed",
+        "timestamp": 1778175081843
+      },
+      {
+        "schemaVersion": 1,
+        "kind": "skill_json_dry_run_report",
+        "skillId": "direct.1778175059714.5.clickselector",
+        "appPackage": "com.zhihu.android",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "summary": "Skill JSON dry-run passed",
+        "timestamp": 1778175081843
+      },
+      {
+        "schemaVersion": 1,
+        "kind": "skill_json_dry_run_report",
+        "skillId": "direct.command.1778175059714",
+        "appPackage": "com.zhihu.android",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "summary": "Skill JSON dry-run passed",
+        "timestamp": 1778175081844
+      },
+      {
+        "schemaVersion": 1,
+        "kind": "skill_json_dry_run_report",
+        "skillId": "direct.1778175046804.5.typeintofirstinput",
+        "appPackage": "com.zhihu.android",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "summary": "Skill JSON dry-run passed",
+        "timestamp": 1778175081837
+      },
+      {
+        "schemaVersion": 1,
+        "kind": "skill_json_dry_run_report",
+        "skillId": "direct.1778175046804.8.wait",
+        "appPackage": "com.zhihu.android",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "summary": "Skill JSON dry-run passed",
+        "timestamp": 1778175081839
+      },
+      {
+        "schemaVersion": 1,
+        "kind": "skill_json_dry_run_report",
+        "skillId": "direct.command.1778175046804",
+        "appPackage": "com.zhihu.android",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "summary": "Skill JSON dry-run passed",
+        "timestamp": 1778175081839
+      },
+      {
+        "schemaVersion": 1,
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.zhihu.android.recover_to_foreground",
+        "appPackage": "com.zhihu.android",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "summary": "Skill JSON dry-run passed",
+        "timestamp": 1778175081841
+      },
+      {
+        "schemaVersion": 1,
+        "kind": "skill_json_dry_run_report",
+        "skillId": "direct.1778175046804.6.wait",
+        "appPackage": "com.zhihu.android",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "summary": "Skill JSON dry-run passed",
+        "timestamp": 1778175081838
+      },
+      {
+        "schemaVersion": 1,
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.zhihu.android.open_app",
+        "appPackage": "com.zhihu.android",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "summary": "Skill JSON dry-run passed",
+        "timestamp": 1778175081840
+      },
+      {
+        "schemaVersion": 1,
+        "kind": "skill_json_dry_run_report",
+        "skillId": "direct.command.1778175067647",
+        "appPackage": "com.zhihu.android",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "summary": "Skill JSON dry-run passed",
+        "timestamp": 1778175081833
+      },
+      {
+        "schemaVersion": 1,
+        "kind": "skill_json_dry_run_report",
+        "skillId": "direct.1778175046804.1.openapp",
+        "appPackage": "com.zhihu.android",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "summary": "Skill JSON dry-run passed",
+        "timestamp": 1778175081834
+      },
+      {
+        "schemaVersion": 1,
+        "kind": "skill_json_dry_run_report",
+        "skillId": "direct.1778175046804.4.wait",
+        "appPackage": "com.zhihu.android",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "summary": "Skill JSON dry-run passed",
+        "timestamp": 1778175081836
+      },
+      {
+        "schemaVersion": 1,
+        "kind": "skill_json_dry_run_report",
+        "skillId": "direct.1778175046804.2.wait",
+        "appPackage": "com.zhihu.android",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "summary": "Skill JSON dry-run passed",
+        "timestamp": 1778175081835
+      },
+      {
+        "schemaVersion": 1,
+        "kind": "skill_json_dry_run_report",
+        "skillId": "direct.1778175067647.3.typeintofirstinput",
+        "appPackage": "com.zhihu.android",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "summary": "Skill JSON dry-run passed",
+        "timestamp": 1778175081830
+      },
+      {
+        "schemaVersion": 1,
+        "kind": "skill_json_dry_run_report",
+        "skillId": "direct.1778175067647.4.wait",
+        "appPackage": "com.zhihu.android",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "summary": "Skill JSON dry-run passed",
+        "timestamp": 1778175081831
+      },
+      {
+        "schemaVersion": 1,
+        "kind": "skill_json_dry_run_report",
+        "skillId": "direct.1778175067647.2.wait",
+        "appPackage": "com.zhihu.android",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "summary": "Skill JSON dry-run passed",
+        "timestamp": 1778175081829
+      },
+      {
+        "schemaVersion": 1,
+        "kind": "skill_json_dry_run_report",
+        "skillId": "direct.1778175067647.5.clickvisibletext",
+        "appPackage": "com.zhihu.android",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "summary": "Skill JSON dry-run passed",
+        "timestamp": 1778175081832
+      },
+      {
+        "schemaVersion": 1,
+        "kind": "skill_json_dry_run_report",
+        "skillId": "direct.1778175081806.2.wait",
+        "appPackage": "com.zhihu.android",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "summary": "Skill JSON dry-run passed",
+        "timestamp": 1778175081827
+      },
+      {
+        "schemaVersion": 1,
+        "kind": "skill_json_dry_run_report",
+        "skillId": "direct.1778175081806.1.clickcoordinate",
+        "appPackage": "com.zhihu.android",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "summary": "Skill JSON dry-run passed",
+        "timestamp": 1778175081826
+      },
+      {
+        "schemaVersion": 1,
+        "kind": "skill_json_dry_run_report",
+        "skillId": "direct.command.1778175081806",
+        "appPackage": "com.zhihu.android",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "summary": "Skill JSON dry-run passed",
+        "timestamp": 1778175081827
+      },
+      {
+        "schemaVersion": 1,
+        "kind": "skill_json_dry_run_report",
+        "skillId": "direct.1778175046804.7.clickvisibletext",
+        "appPackage": "com.zhihu.android",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "summary": "Skill JSON dry-run passed",
+        "timestamp": 1778175081828
+      },
+      {
+        "schemaVersion": 1,
+        "kind": "skill_json_dry_run_report",
+        "skillId": "direct.1778175067647.1.clickvisibletext",
+        "appPackage": "com.zhihu.android",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "summary": "Skill JSON dry-run passed",
+        "timestamp": 1778175081829
+      },
+      {
+        "schemaVersion": 1,
+        "kind": "skill_json_dry_run_report",
+        "skillId": "direct.1778175067647.1.clickvisibletext",
+        "appPackage": "com.zhihu.android",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "summary": "Skill JSON dry-run passed",
+        "timestamp": 1778175075881
+      },
+      {
+        "schemaVersion": 1,
+        "kind": "skill_json_dry_run_report",
+        "skillId": "direct.command.1778175067647",
+        "appPackage": "com.zhihu.android",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "summary": "Skill JSON dry-run passed",
+        "timestamp": 1778175075882
+      },
+      {
+        "schemaVersion": 1,
+        "kind": "skill_json_dry_run_report",
+        "skillId": "direct.1778175067647.2.wait",
+        "appPackage": "com.zhihu.android",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "summary": "Skill JSON dry-run passed",
+        "timestamp": 1778175075882
+      },
+      {
+        "schemaVersion": 1,
+        "kind": "skill_json_dry_run_report",
+        "skillId": "direct.1778175067647.5.clickvisibletext",
+        "appPackage": "com.zhihu.android",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "summary": "Skill JSON dry-run passed",
+        "timestamp": 1778175075882
+      },
+      {
+        "schemaVersion": 1,
+        "kind": "skill_json_dry_run_report",
+        "skillId": "direct.1778175067647.3.typeintofirstinput",
+        "appPackage": "com.zhihu.android",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "summary": "Skill JSON dry-run passed",
+        "timestamp": 1778175075883
+      },
+      {
+        "schemaVersion": 1,
+        "kind": "skill_json_dry_run_report",
+        "skillId": "direct.1778175067647.4.wait",
+        "appPackage": "com.zhihu.android",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "summary": "Skill JSON dry-run passed",
+        "timestamp": 1778175075883
+      },
+      {
+        "schemaVersion": 1,
+        "kind": "skill_json_dry_run_report",
+        "skillId": "direct.1778175046804.4.wait",
+        "appPackage": "com.zhihu.android",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "summary": "Skill JSON dry-run passed",
+        "timestamp": 1778175075877
+      },
+      {
+        "schemaVersion": 1,
+        "kind": "skill_json_dry_run_report",
+        "skillId": "direct.command.1778175046804",
+        "appPackage": "com.zhihu.android",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "summary": "Skill JSON dry-run passed",
+        "timestamp": 1778175075879
+      },
+      {
+        "schemaVersion": 1,
+        "kind": "skill_json_dry_run_report",
+        "skillId": "direct.1778175046804.2.wait",
+        "appPackage": "com.zhihu.android",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "summary": "Skill JSON dry-run passed",
+        "timestamp": 1778175075880
+      },
+      {
+        "schemaVersion": 1,
+        "kind": "skill_json_dry_run_report",
+        "skillId": "direct.1778175046804.6.wait",
+        "appPackage": "com.zhihu.android",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "summary": "Skill JSON dry-run passed",
+        "timestamp": 1778175075880
+      },
+      {
+        "schemaVersion": 1,
+        "kind": "skill_json_dry_run_report",
+        "skillId": "direct.1778175046804.1.openapp",
+        "appPackage": "com.zhihu.android",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "summary": "Skill JSON dry-run passed",
+        "timestamp": 1778175075877
+      },
+      {
+        "schemaVersion": 1,
+        "kind": "skill_json_dry_run_report",
+        "skillId": "direct.1778175046804.8.wait",
+        "appPackage": "com.zhihu.android",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "summary": "Skill JSON dry-run passed",
+        "timestamp": 1778175075879
+      },
+      {
+        "schemaVersion": 1,
+        "kind": "skill_json_dry_run_report",
+        "skillId": "direct.1778175046804.5.typeintofirstinput",
+        "appPackage": "com.zhihu.android",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "summary": "Skill JSON dry-run passed",
+        "timestamp": 1778175075880
+      },
+      {
+        "schemaVersion": 1,
+        "kind": "skill_json_dry_run_report",
+        "skillId": "direct.1778175046804.7.clickvisibletext",
+        "appPackage": "com.zhihu.android",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "summary": "Skill JSON dry-run passed",
+        "timestamp": 1778175075881
+      },
+      {
+        "schemaVersion": 1,
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.zhihu.android.open_app",
+        "appPackage": "com.zhihu.android",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "summary": "Skill JSON dry-run passed",
+        "timestamp": 1778175075876
+      },
+      {
+        "schemaVersion": 1,
+        "kind": "skill_json_dry_run_report",
+        "skillId": "direct.1778175046804.3.clickvisibletext",
+        "appPackage": "com.zhihu.android",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "summary": "Skill JSON dry-run passed",
+        "timestamp": 1778175075877
+      },
+      {
+        "schemaVersion": 1,
+        "kind": "skill_json_dry_run_report",
+        "skillId": "direct.1778175059714.5.clickselector",
+        "appPackage": "com.zhihu.android",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "summary": "Skill JSON dry-run passed",
+        "timestamp": 1778175075870
+      },
+      {
+        "schemaVersion": 1,
+        "kind": "skill_json_dry_run_report",
+        "skillId": "direct.1778175059714.4.wait",
+        "appPackage": "com.zhihu.android",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "summary": "Skill JSON dry-run passed",
+        "timestamp": 1778175075869
+      },
+      {
+        "schemaVersion": 1,
+        "kind": "skill_json_dry_run_report",
+        "skillId": "direct.command.1778175059714",
+        "appPackage": "com.zhihu.android",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "summary": "Skill JSON dry-run passed",
+        "timestamp": 1778175075871
+      },
+      {
+        "schemaVersion": 1,
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.zhihu.android.capability_check",
+        "appPackage": "com.zhihu.android",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "summary": "Skill JSON dry-run passed",
+        "timestamp": 1778175075872
+      },
+      {
+        "schemaVersion": 1,
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.zhihu.android.recover_to_foreground",
+        "appPackage": "com.zhihu.android",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "summary": "Skill JSON dry-run passed",
+        "timestamp": 1778175075873
+      },
+      {
+        "schemaVersion": 1,
+        "kind": "skill_json_dry_run_report",
+        "skillId": "direct.1778175059714.2.wait",
+        "appPackage": "com.zhihu.android",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "summary": "Skill JSON dry-run passed",
+        "timestamp": 1778175075866
+      },
+      {
+        "schemaVersion": 1,
+        "kind": "skill_json_dry_run_report",
+        "skillId": "direct.1778175059714.3.typeintofirstinput",
+        "appPackage": "com.zhihu.android",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "summary": "Skill JSON dry-run passed",
+        "timestamp": 1778175075866
+      },
+      {
+        "schemaVersion": 1,
+        "kind": "skill_json_dry_run_report",
+        "skillId": "direct.1778175059714.1.clickselector",
+        "appPackage": "com.zhihu.android",
+        "passed": false,
+        "status": "REJECTED",
+        "errors": [
+          "click_selector_unsupported_hierarchy_or_css:[resourceId='com.zhihu.android:id\/query_container']"
+        ],
+        "warnings": [],
+        "summary": "click_selector_unsupported_hierarchy_or_css:[resourceId='com.zhihu.android:id\/query_container']",
+        "timestamp": 1778175075868
+      },
+      {
+        "schemaVersion": 1,
+        "kind": "skill_json_dry_run_report",
+        "skillId": "direct.command.1778175075851",
+        "appPackage": "com.zhihu.android",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "summary": "Skill JSON dry-run passed",
+        "timestamp": 1778175075865
+      },
+      {
+        "schemaVersion": 1,
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.zhihu.android.prepare_app_session",
+        "appPackage": "com.zhihu.android",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "summary": "Skill JSON dry-run passed",
+        "timestamp": 1778175075867
+      },
+      {
+        "schemaVersion": 1,
+        "kind": "skill_json_dry_run_report",
+        "skillId": "direct.1778175075851.1.clickcoordinate",
+        "appPackage": "com.zhihu.android",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "summary": "Skill JSON dry-run passed",
+        "timestamp": 1778175075864
+      },
+      {
+        "schemaVersion": 1,
+        "kind": "skill_json_dry_run_report",
+        "skillId": "direct.1778175059714.3.typeintofirstinput",
+        "appPackage": "com.zhihu.android",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "summary": "Skill JSON dry-run passed",
+        "timestamp": 1778175067702
+      },
+      {
+        "schemaVersion": 1,
+        "kind": "skill_json_dry_run_report",
+        "skillId": "direct.1778175059714.5.clickselector",
+        "appPackage": "com.zhihu.android",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "summary": "Skill JSON dry-run passed",
+        "timestamp": 1778175067699
+      },
+      {
+        "schemaVersion": 1,
+        "kind": "skill_json_dry_run_report",
+        "skillId": "direct.command.1778175059714",
+        "appPackage": "com.zhihu.android",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "summary": "Skill JSON dry-run passed",
+        "timestamp": 1778175067699
+      },
+      {
+        "schemaVersion": 1,
+        "kind": "skill_json_dry_run_report",
+        "skillId": "direct.1778175059714.2.wait",
+        "appPackage": "com.zhihu.android",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "summary": "Skill JSON dry-run passed",
+        "timestamp": 1778175067701
+      },
+      {
+        "schemaVersion": 1,
+        "kind": "skill_json_dry_run_report",
+        "skillId": "direct.1778175059714.4.wait",
+        "appPackage": "com.zhihu.android",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "summary": "Skill JSON dry-run passed",
+        "timestamp": 1778175067698
+      },
+      {
+        "schemaVersion": 1,
+        "kind": "skill_json_dry_run_report",
+        "skillId": "direct.1778175059714.1.clickselector",
+        "appPackage": "com.zhihu.android",
+        "passed": false,
+        "status": "REJECTED",
+        "errors": [
+          "click_selector_unsupported_hierarchy_or_css:[resourceId='com.zhihu.android:id\/query_container']"
+        ],
+        "warnings": [],
+        "summary": "click_selector_unsupported_hierarchy_or_css:[resourceId='com.zhihu.android:id\/query_container']",
+        "timestamp": 1778175067700
+      },
+      {
+        "schemaVersion": 1,
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.zhihu.android.prepare_app_session",
+        "appPackage": "com.zhihu.android",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "summary": "Skill JSON dry-run passed",
+        "timestamp": 1778175067695
+      },
+      {
+        "schemaVersion": 1,
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.zhihu.android.recover_to_foreground",
+        "appPackage": "com.zhihu.android",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "summary": "Skill JSON dry-run passed",
+        "timestamp": 1778175067694
+      },
+      {
+        "schemaVersion": 1,
+        "kind": "skill_json_dry_run_report",
+        "skillId": "direct.1778175046804.4.wait",
+        "appPackage": "com.zhihu.android",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "summary": "Skill JSON dry-run passed",
+        "timestamp": 1778175067689
+      },
+      {
+        "schemaVersion": 1,
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.zhihu.android.open_app",
+        "appPackage": "com.zhihu.android",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "summary": "Skill JSON dry-run passed",
+        "timestamp": 1778175067691
+      },
+      {
+        "schemaVersion": 1,
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.zhihu.android.capability_check",
+        "appPackage": "com.zhihu.android",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "summary": "Skill JSON dry-run passed",
+        "timestamp": 1778175067692
+      },
+      {
+        "schemaVersion": 1,
+        "kind": "skill_json_dry_run_report",
+        "skillId": "direct.1778175046804.8.wait",
+        "appPackage": "com.zhihu.android",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "summary": "Skill JSON dry-run passed",
+        "timestamp": 1778175067685
+      },
+      {
+        "schemaVersion": 1,
+        "kind": "skill_json_dry_run_report",
+        "skillId": "direct.1778175046804.3.clickvisibletext",
+        "appPackage": "com.zhihu.android",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "summary": "Skill JSON dry-run passed",
+        "timestamp": 1778175067688
+      },
+      {
+        "schemaVersion": 1,
+        "kind": "skill_json_dry_run_report",
+        "skillId": "direct.command.1778175046804",
+        "appPackage": "com.zhihu.android",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "summary": "Skill JSON dry-run passed",
+        "timestamp": 1778175067686
+      },
+      {
+        "schemaVersion": 1,
+        "kind": "skill_json_dry_run_report",
+        "skillId": "direct.1778175046804.1.openapp",
+        "appPackage": "com.zhihu.android",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "summary": "Skill JSON dry-run passed",
+        "timestamp": 1778175067687
+      },
+      {
+        "schemaVersion": 1,
+        "kind": "skill_json_dry_run_report",
+        "skillId": "direct.1778175046804.5.typeintofirstinput",
+        "appPackage": "com.zhihu.android",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "summary": "Skill JSON dry-run passed",
+        "timestamp": 1778175067682
+      },
+      {
+        "schemaVersion": 1,
+        "kind": "skill_json_dry_run_report",
+        "skillId": "direct.1778175046804.6.wait",
+        "appPackage": "com.zhihu.android",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "summary": "Skill JSON dry-run passed",
+        "timestamp": 1778175067683
+      },
+      {
+        "schemaVersion": 1,
+        "kind": "skill_json_dry_run_report",
+        "skillId": "direct.1778175046804.7.clickvisibletext",
+        "appPackage": "com.zhihu.android",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "summary": "Skill JSON dry-run passed",
+        "timestamp": 1778175067684
+      },
+      {
+        "schemaVersion": 1,
+        "kind": "skill_json_dry_run_report",
+        "skillId": "direct.1778175067647.5.clickvisibletext",
+        "appPackage": "com.zhihu.android",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "summary": "Skill JSON dry-run passed",
+        "timestamp": 1778175067677
+      },
+      {
+        "schemaVersion": 1,
+        "kind": "skill_json_dry_run_report",
+        "skillId": "direct.command.1778175067647",
+        "appPackage": "com.zhihu.android",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "summary": "Skill JSON dry-run passed",
+        "timestamp": 1778175067678
+      },
+      {
+        "schemaVersion": 1,
+        "kind": "skill_json_dry_run_report",
+        "skillId": "direct.1778175067647.1.clickvisibletext",
+        "appPackage": "com.zhihu.android",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "summary": "Skill JSON dry-run passed",
+        "timestamp": 1778175067679
+      },
+      {
+        "schemaVersion": 1,
+        "kind": "skill_json_dry_run_report",
+        "skillId": "direct.1778175046804.2.wait",
+        "appPackage": "com.zhihu.android",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "summary": "Skill JSON dry-run passed",
+        "timestamp": 1778175067680
+      },
+      {
+        "schemaVersion": 1,
+        "kind": "skill_json_dry_run_report",
+        "skillId": "direct.1778175067647.3.typeintofirstinput",
+        "appPackage": "com.zhihu.android",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "summary": "Skill JSON dry-run passed",
+        "timestamp": 1778175067674
+      },
+      {
+        "schemaVersion": 1,
+        "kind": "skill_json_dry_run_report",
+        "skillId": "direct.1778175067647.4.wait",
+        "appPackage": "com.zhihu.android",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "summary": "Skill JSON dry-run passed",
+        "timestamp": 1778175067675
+      },
+      {
+        "schemaVersion": 1,
+        "kind": "skill_json_dry_run_report",
+        "skillId": "direct.1778175067647.2.wait",
+        "appPackage": "com.zhihu.android",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "summary": "Skill JSON dry-run passed",
+        "timestamp": 1778175067672
+      },
+      {
+        "schemaVersion": 1,
+        "kind": "skill_json_dry_run_report",
+        "skillId": "direct.1778175046804.7.clickvisibletext",
+        "appPackage": "com.zhihu.android",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "summary": "Skill JSON dry-run passed",
+        "timestamp": 1778175059733
+      },
+      {
+        "schemaVersion": 1,
+        "kind": "skill_json_dry_run_report",
+        "skillId": "direct.1778175046804.8.wait",
+        "appPackage": "com.zhihu.android",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "summary": "Skill JSON dry-run passed",
+        "timestamp": 1778175059734
+      },
+      {
+        "schemaVersion": 1,
+        "kind": "skill_json_dry_run_report",
+        "skillId": "direct.1778175046804.5.typeintofirstinput",
+        "appPackage": "com.zhihu.android",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "summary": "Skill JSON dry-run passed",
+        "timestamp": 1778175059734
+      },
+      {
+        "schemaVersion": 1,
+        "kind": "skill_json_dry_run_report",
+        "skillId": "direct.1778175046804.6.wait",
+        "appPackage": "com.zhihu.android",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "summary": "Skill JSON dry-run passed",
+        "timestamp": 1778175059734
+      },
+      {
+        "schemaVersion": 1,
+        "kind": "skill_json_dry_run_report",
+        "skillId": "direct.command.1778175046804",
+        "appPackage": "com.zhihu.android",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "summary": "Skill JSON dry-run passed",
+        "timestamp": 1778175059735
+      },
+      {
+        "schemaVersion": 1,
+        "kind": "skill_json_dry_run_report",
+        "skillId": "direct.1778175046804.3.clickvisibletext",
+        "appPackage": "com.zhihu.android",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "summary": "Skill JSON dry-run passed",
+        "timestamp": 1778175059731
+      },
+      {
+        "schemaVersion": 1,
+        "kind": "skill_json_dry_run_report",
+        "skillId": "direct.1778175046804.4.wait",
+        "appPackage": "com.zhihu.android",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "summary": "Skill JSON dry-run passed",
+        "timestamp": 1778175059732
+      },
+      {
+        "schemaVersion": 1,
+        "kind": "skill_json_dry_run_report",
+        "skillId": "direct.1778175046804.1.openapp",
+        "appPackage": "com.zhihu.android",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "summary": "Skill JSON dry-run passed",
+        "timestamp": 1778175059732
+      },
+      {
+        "schemaVersion": 1,
+        "kind": "skill_json_dry_run_report",
+        "skillId": "direct.1778175046804.2.wait",
+        "appPackage": "com.zhihu.android",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "summary": "Skill JSON dry-run passed",
+        "timestamp": 1778175059733
+      },
+      {
+        "schemaVersion": 1,
+        "kind": "skill_json_dry_run_report",
+        "skillId": "direct.1778175059714.5.clickselector",
+        "appPackage": "com.zhihu.android",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "summary": "Skill JSON dry-run passed",
+        "timestamp": 1778175059725
+      },
+      {
+        "schemaVersion": 1,
+        "kind": "skill_json_dry_run_report",
+        "skillId": "direct.command.1778175059714",
+        "appPackage": "com.zhihu.android",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "summary": "Skill JSON dry-run passed",
+        "timestamp": 1778175059726
+      },
+      {
+        "schemaVersion": 1,
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.zhihu.android.open_app",
+        "appPackage": "com.zhihu.android",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "summary": "Skill JSON dry-run passed",
+        "timestamp": 1778175059727
+      },
+      {
+        "schemaVersion": 1,
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.zhihu.android.recover_to_foreground",
+        "appPackage": "com.zhihu.android",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "summary": "Skill JSON dry-run passed",
+        "timestamp": 1778175059727
+      },
+      {
+        "schemaVersion": 1,
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.zhihu.android.prepare_app_session",
+        "appPackage": "com.zhihu.android",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "summary": "Skill JSON dry-run passed",
+        "timestamp": 1778175059728
+      },
+      {
+        "schemaVersion": 1,
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.zhihu.android.capability_check",
+        "appPackage": "com.zhihu.android",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "summary": "Skill JSON dry-run passed",
+        "timestamp": 1778175059729
+      },
+      {
+        "schemaVersion": 1,
+        "kind": "skill_json_dry_run_report",
+        "skillId": "direct.1778175059714.1.clickselector",
+        "appPackage": "com.zhihu.android",
+        "passed": false,
+        "status": "REJECTED",
+        "errors": [
+          "click_selector_unsupported_hierarchy_or_css:[resourceId='com.zhihu.android:id\/query_container']"
+        ],
+        "warnings": [],
+        "summary": "click_selector_unsupported_hierarchy_or_css:[resourceId='com.zhihu.android:id\/query_container']",
+        "timestamp": 1778175059722
+      },
+      {
+        "schemaVersion": 1,
+        "kind": "skill_json_dry_run_report",
+        "skillId": "direct.1778175059714.2.wait",
+        "appPackage": "com.zhihu.android",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "summary": "Skill JSON dry-run passed",
+        "timestamp": 1778175059723
+      },
+      {
+        "schemaVersion": 1,
+        "kind": "skill_json_dry_run_report",
+        "skillId": "direct.1778175059714.3.typeintofirstinput",
+        "appPackage": "com.zhihu.android",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "summary": "Skill JSON dry-run passed",
+        "timestamp": 1778175059724
+      },
+      {
+        "schemaVersion": 1,
+        "kind": "skill_json_dry_run_report",
+        "skillId": "direct.1778175059714.4.wait",
+        "appPackage": "com.zhihu.android",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "summary": "Skill JSON dry-run passed",
+        "timestamp": 1778175059725
+      },
+      {
+        "schemaVersion": 1,
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.zhihu.android.prepare_app_session",
+        "appPackage": "com.zhihu.android",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "summary": "Skill JSON dry-run passed",
+        "timestamp": 1778175046833
+      },
+      {
+        "schemaVersion": 1,
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.zhihu.android.open_app",
+        "appPackage": "com.zhihu.android",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "summary": "Skill JSON dry-run passed",
+        "timestamp": 1778175046834
+      },
+      {
+        "schemaVersion": 1,
+        "kind": "skill_json_dry_run_report",
+        "skillId": "direct.1778175046804.3.clickvisibletext",
+        "appPackage": "com.zhihu.android",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "summary": "Skill JSON dry-run passed",
+        "timestamp": 1778175046829
+      },
+      {
+        "schemaVersion": 1,
+        "kind": "skill_json_dry_run_report",
+        "skillId": "direct.1778175046804.4.wait",
+        "appPackage": "com.zhihu.android",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "summary": "Skill JSON dry-run passed",
+        "timestamp": 1778175046830
+      },
+      {
+        "schemaVersion": 1,
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.zhihu.android.capability_check",
+        "appPackage": "com.zhihu.android",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "summary": "Skill JSON dry-run passed",
+        "timestamp": 1778175046831
+      },
+      {
+        "schemaVersion": 1,
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.zhihu.android.recover_to_foreground",
+        "appPackage": "com.zhihu.android",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "summary": "Skill JSON dry-run passed",
+        "timestamp": 1778175046832
+      },
+      {
+        "schemaVersion": 1,
+        "kind": "skill_json_dry_run_report",
+        "skillId": "direct.1778175046804.7.clickvisibletext",
+        "appPackage": "com.zhihu.android",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "summary": "Skill JSON dry-run passed",
+        "timestamp": 1778175046825
+      },
+      {
+        "schemaVersion": 1,
+        "kind": "skill_json_dry_run_report",
+        "skillId": "direct.1778175046804.8.wait",
+        "appPackage": "com.zhihu.android",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "summary": "Skill JSON dry-run passed",
+        "timestamp": 1778175046826
+      },
+      {
+        "schemaVersion": 1,
+        "kind": "skill_json_dry_run_report",
+        "skillId": "direct.1778175046804.1.openapp",
+        "appPackage": "com.zhihu.android",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "summary": "Skill JSON dry-run passed",
+        "timestamp": 1778175046827
+      },
+      {
+        "schemaVersion": 1,
+        "kind": "skill_json_dry_run_report",
+        "skillId": "direct.1778175046804.2.wait",
+        "appPackage": "com.zhihu.android",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "summary": "Skill JSON dry-run passed",
+        "timestamp": 1778175046828
+      },
+      {
+        "schemaVersion": 1,
+        "kind": "skill_json_dry_run_report",
+        "skillId": "direct.command.1778175046804",
+        "appPackage": "com.zhihu.android",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "summary": "Skill JSON dry-run passed",
+        "timestamp": 1778175046822
+      },
+      {
+        "schemaVersion": 1,
+        "kind": "skill_json_dry_run_report",
+        "skillId": "direct.1778175046804.5.typeintofirstinput",
+        "appPackage": "com.zhihu.android",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "summary": "Skill JSON dry-run passed",
+        "timestamp": 1778175046823
+      },
+      {
+        "schemaVersion": 1,
+        "kind": "skill_json_dry_run_report",
+        "skillId": "direct.1778175046804.6.wait",
+        "appPackage": "com.zhihu.android",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "summary": "Skill JSON dry-run passed",
+        "timestamp": 1778175046824
+      },
+      {
+        "schemaVersion": 1,
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.zhihu.android.recover_to_foreground",
+        "appPackage": "com.zhihu.android",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "summary": "Skill JSON dry-run passed",
+        "timestamp": 1778090646237
+      },
+      {
+        "schemaVersion": 1,
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.zhihu.android.prepare_app_session",
+        "appPackage": "com.zhihu.android",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "summary": "Skill JSON dry-run passed",
+        "timestamp": 1778090646237
+      },
+      {
+        "schemaVersion": 1,
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.zhihu.android.open_app",
+        "appPackage": "com.zhihu.android",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "summary": "Skill JSON dry-run passed",
+        "timestamp": 1778090646235
+      },
+      {
+        "schemaVersion": 1,
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.zhihu.android.capability_check",
+        "appPackage": "com.zhihu.android",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "summary": "Skill JSON dry-run passed",
+        "timestamp": 1778090646236
+      },
+      {
+        "schemaVersion": 1,
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.zhihu.android.open_app",
+        "appPackage": "com.zhihu.android",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "summary": "Skill JSON dry-run passed",
+        "timestamp": 1778090526030
+      },
+      {
+        "schemaVersion": 1,
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.zhihu.android.capability_check",
+        "appPackage": "com.zhihu.android",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "summary": "Skill JSON dry-run passed",
+        "timestamp": 1778090526030
+      },
+      {
+        "schemaVersion": 1,
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.zhihu.android.recover_to_foreground",
+        "appPackage": "com.zhihu.android",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "summary": "Skill JSON dry-run passed",
+        "timestamp": 1778090526031
+      },
+      {
+        "schemaVersion": 1,
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.zhihu.android.prepare_app_session",
+        "appPackage": "com.zhihu.android",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "summary": "Skill JSON dry-run passed",
+        "timestamp": 1778090526032
+      },
+      {
+        "schemaVersion": 1,
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.zhihu.android.capability_check",
+        "appPackage": "com.zhihu.android",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "summary": "Skill JSON dry-run passed",
+        "timestamp": 1778090392001
+      },
+      {
+        "schemaVersion": 1,
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.zhihu.android.recover_to_foreground",
+        "appPackage": "com.zhihu.android",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "summary": "Skill JSON dry-run passed",
+        "timestamp": 1778090392002
+      },
+      {
+        "schemaVersion": 1,
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.zhihu.android.prepare_app_session",
+        "appPackage": "com.zhihu.android",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "summary": "Skill JSON dry-run passed",
+        "timestamp": 1778090392003
+      },
+      {
+        "schemaVersion": 1,
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.zhihu.android.open_app",
+        "appPackage": "com.zhihu.android",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "summary": "Skill JSON dry-run passed",
+        "timestamp": 1778090391999
+      },
+      {
+        "schemaVersion": 1,
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.zhihu.android.prepare_app_session",
+        "appPackage": "com.zhihu.android",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "summary": "Skill JSON dry-run passed",
+        "timestamp": 1778078620972
+      },
+      {
+        "schemaVersion": 1,
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.zhihu.android.capability_check",
+        "appPackage": "com.zhihu.android",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "summary": "Skill JSON dry-run passed",
+        "timestamp": 1778078620969
+      },
+      {
+        "schemaVersion": 1,
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.zhihu.android.recover_to_foreground",
+        "appPackage": "com.zhihu.android",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "summary": "Skill JSON dry-run passed",
+        "timestamp": 1778078620970
+      },
+      {
+        "schemaVersion": 1,
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.zhihu.android.open_app",
+        "appPackage": "com.zhihu.android",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "summary": "Skill JSON dry-run passed",
+        "timestamp": 1778078620967
+      }
+    ],
+    "exportedAt": 1778175098416
+  }
+}

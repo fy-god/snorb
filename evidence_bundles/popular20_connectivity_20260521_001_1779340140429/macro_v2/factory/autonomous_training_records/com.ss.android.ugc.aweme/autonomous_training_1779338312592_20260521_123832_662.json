@@ -1,0 +1,3653 @@
+{
+  "schemaVersion": 1,
+  "kind": "autonomous_training_record",
+  "id": "autonomous_training_1779338312592",
+  "appPackage": "com.ss.android.ugc.aweme",
+  "flowReportFile": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/flow_reports\/com.ss.android.ugc.aweme\/ai_direct_flow_1779338312524.json",
+  "input": {
+    "instruction": "在抖音搜索王老菊，停在搜索结果页并记录用户、视频、综合分区。\n\n约束：目标 App=抖音，包名=com.ss.android.ugc.aweme。必须由 MacroPilot 手机端自己用无障碍、输入法、AI\/Skill JSON 执行，不允许依赖 ADB 手点目标 App。执行前先读取当前 UI；如果遇到广告、弹窗、小字提示，先记录文字并安全关闭。任务完成必须用当前 UI 证据验证，不能只因为步骤执行完就报成功。如果没有现成 skill，先复用已有相似 Skill JSON\/archetype，只改关键槽位如入口文字、坐标、目标文本、验证规则，再组装 atomic\/macro skill。需要探索入口时优先遍历底部标签、顶部小图标、图形化入口、侧边操作和子页面。本任务 stopBeforeSubmit=true：写草稿、评论、订单、支付类流程必须停在提交前，不点击最终发布、发送、提交订单、支付、确认授权。期望证据包括：王老菊、搜索结果。",
+    "appPackage": "com.ss.android.ugc.aweme",
+    "query": "王老菊，停在结果页并记录用户、视频、综合分区。\n\n约束：目标 App=抖音，包名=com.ss.android.ugc.aweme。必须由 MacroPilot 手机端自己用无障碍、输入法、AI\/Skill JSON 执行，不允许依赖 ADB 手点目标 App。执行前先读取当前 UI；如果遇到广告、弹窗、小字提示，先记录文字并安全关闭。任务完成必须用当前 UI 证据验证，不能只因为步骤执行完就报成功。如果没有现成 skill，先复用已有相似 Skill JSON\/archetype，只改关键槽位如入口文字、坐标、目标文本、验证规则，再组装 atomic\/macro skill。需要探索入口时优先遍历底部标签、顶部小图标、图形化入口、侧边操作和子页面。本任务 stopBeforeSubmit=true：写草稿、评论、订单、支付类流程必须停在提交前，不点击最终发布、发送、提交订单、支付、确认授权。期望证据包括：王老菊、结果。",
+    "appUiGraphFile": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/app_ui_graphs\/com.ss.android.ugc.aweme\/graph_candidate.json",
+    "recentUiSnapshots": [
+      {
+        "id": "ui_snapshot_1779338312483",
+        "source": "current_ui_summary",
+        "note": "factory_ai_context",
+        "appPackage": "com.ss.android.ugc.aweme",
+        "windowClassName": "android.widget.FrameLayout",
+        "screenKey": "8a6b89c4",
+        "screenshotPath": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_screenshots\/com.ss.android.ugc.aweme\/20260521_123831_865_8a6b89c4.png",
+        "visualHash": "caf8635e361b197ab89395fc1b6a51d816084ab97c8764222561305d5abfa65a",
+        "summary": {
+          "nodeCount": 114,
+          "clickableCount": 24,
+          "editableCount": 0,
+          "scrollableCount": 1,
+          "labels": [
+            "android:id\/content",
+            "com.ss.android.ugc.aweme:id\/status_bar",
+            "com.ss.android.ugc.aweme:id\/koj",
+            "com.ss.android.ugc.aweme:id\/container",
+            "com.ss.android.ugc.aweme:id\/sv1",
+            "com.ss.android.ugc.aweme:id\/swc",
+            "com.ss.android.ugc.aweme:id\/k=7",
+            "com.ss.android.ugc.aweme:id\/svq",
+            "com.ss.android.ugc.aweme:id\/svt",
+            "com.ss.android.ugc.aweme:id\/su=",
+            "com.ss.android.ugc.aweme:id\/su9",
+            "暂停 com.ss.android.ugc.aweme:id\/sv7",
+            "com.ss.android.ugc.aweme:id\/su-",
+            "com.ss.android.ugc.aweme:id\/sva",
+            "com.ss.android.ugc.aweme:id\/sv6",
+            "com.ss.android.ugc.aweme:id\/sv=",
+            "暂停 com.ss.android.ugc.aweme:id\/sv_",
+            "com.ss.android.ugc.aweme:id\/su+",
+            "com.ss.android.ugc.aweme:id\/sw_",
+            "com.ss.android.ugc.aweme:id\/sws",
+            "当bro以为自己很有影响力时 (硬... 当bro以为自己很有影响力时 (硬曲是我主人) com.ss.android.ugc.aweme:id\/swp",
+            "com.ss.android.ugc.aweme:id\/swq",
+            "com.ss.android.ugc.aweme:id\/su1",
+            "DHC77 com.ss.android.ugc.aweme:id\/su2",
+            "com.ss.android.ugc.aweme:id\/swa",
+            "com.ss.android.ugc.aweme:id\/svm",
+            "com.ss.android.ugc.aweme:id\/swl",
+            "com.ss.android.ugc.aweme:id\/swm",
+            "音乐分享 com.ss.android.ugc.aweme:id\/swn",
+            "com.ss.android.ugc.aweme:id\/sv2",
+            "com.ss.android.ugc.aweme:id\/svh",
+            "com.ss.android.ugc.aweme:id\/sve",
+            "去听完整版 com.ss.android.ugc.aweme:id\/svj",
+            "收藏 com.ss.android.ugc.aweme:id\/su5",
+            "com.ss.android.ugc.aweme:id\/su6",
+            "收藏 com.ss.android.ugc.aweme:id\/su7",
+            "com.ss.android.ugc.aweme:id\/e42",
+            "com.ss.android.ugc.aweme:id\/cover",
+            "漂亮的妞 com.ss.android.ugc.aweme:id\/title",
+            "com.ss.android.ugc.aweme:id\/0zh",
+            "相关特效 com.ss.android.ugc.aweme:id\/sv4",
+            "com.ss.android.ugc.aweme:id\/5lt",
+            "7162.0 万人使用 com.ss.android.ugc.aweme:id\/usw",
+            "试用特效 com.ss.android.ugc.aweme:id\/5ln",
+            "视频1 com.ss.android.ugc.aweme:id\/cover",
+            "com.ss.android.ugc.aweme:id\/chc",
+            "2.9 万 com.ss.android.ugc.aweme:id\/pjl",
+            "视频2 com.ss.android.ugc.aweme:id\/cover",
+            "com.ss.android.ugc.aweme:id\/chc",
+            "103.7 万 com.ss.android.ugc.aweme:id\/pjl",
+            "视频3 com.ss.android.ugc.aweme:id\/cover",
+            "com.ss.android.ugc.aweme:id\/chc",
+            "93.2 万 com.ss.android.ugc.aweme:id\/pjl",
+            "视频4 com.ss.android.ugc.aweme:id\/cover",
+            "com.ss.android.ugc.aweme:id\/chc",
+            "76.2 万 com.ss.android.ugc.aweme:id\/pjl",
+            "视频5 com.ss.android.ugc.aweme:id\/cover",
+            "com.ss.android.ugc.aweme:id\/chc",
+            "18.6 万 com.ss.android.ugc.aweme:id\/pjl",
+            "视频6 com.ss.android.ugc.aweme:id\/cover",
+            "com.ss.android.ugc.aweme:id\/chc",
+            "3.1 万 com.ss.android.ugc.aweme:id\/pjl",
+            "视频7 com.ss.android.ugc.aweme:id\/cover",
+            "com.ss.android.ugc.aweme:id\/chc",
+            "72.3 万 com.ss.android.ugc.aweme:id\/pjl",
+            "视频8 com.ss.android.ugc.aweme:id\/cover",
+            "com.ss.android.ugc.aweme:id\/chc",
+            "16.9 万 com.ss.android.ugc.aweme:id\/pjl",
+            "视频9 com.ss.android.ugc.aweme:id\/cover",
+            "com.ss.android.ugc.aweme:id\/chc",
+            "56.6 万 com.ss.android.ugc.aweme:id\/pjl",
+            "com.ss.android.ugc.aweme:id\/zp1",
+            "com.ss.android.ugc.aweme:id\/18=",
+            "返回 com.ss.android.ugc.aweme:id\/back_btn",
+            "当bro以为自己很有影响力时 (硬曲是我主人) com.ss.android.ugc.aweme:id\/title",
+            "抖音音乐榜 com.ss.android.ugc.aweme:id\/n=n",
+            "分享 com.ss.android.ugc.aweme:id\/ze8",
+            "com.ss.android.ugc.aweme:id\/bottom_layout",
+            "com.ss.android.ugc.aweme:id\/0d9",
+            "com.ss.android.ugc.aweme:id\/gc8"
+          ],
+          "bottomCandidates": [
+            {
+              "label": "76.2 万 com.ss.android.ugc.aweme:id\/pjl",
+              "bounds": {
+                "left": 20,
+                "top": 2751,
+                "right": 240,
+                "bottom": 2816
+              },
+              "clickable": false
+            },
+            {
+              "label": "72.3 万 com.ss.android.ugc.aweme:id\/pjl",
+              "bounds": {
+                "left": 20,
+                "top": 3393,
+                "right": 240,
+                "bottom": 3104
+              },
+              "clickable": false
+            },
+            {
+              "label": "视频4 com.ss.android.ugc.aweme:id\/cover",
+              "bounds": {
+                "left": 0,
+                "top": 2200,
+                "right": 477,
+                "bottom": 2836
+              },
+              "clickable": true
+            },
+            {
+              "label": "视频7 com.ss.android.ugc.aweme:id\/cover",
+              "bounds": {
+                "left": 0,
+                "top": 2842,
+                "right": 477,
+                "bottom": 3104
+              },
+              "clickable": true
+            },
+            {
+              "label": "com.ss.android.ugc.aweme:id\/qdo",
+              "bounds": {
+                "left": 72,
+                "top": 2824,
+                "right": 684,
+                "bottom": 3024
+              },
+              "clickable": true
+            },
+            {
+              "label": "一键成片 com.ss.android.ugc.aweme:id\/3h9",
+              "bounds": {
+                "left": 302,
+                "top": 2881,
+                "right": 558,
+                "bottom": 2967
+              },
+              "clickable": false
+            },
+            {
+              "label": "18.6 万 com.ss.android.ugc.aweme:id\/pjl",
+              "bounds": {
+                "left": 503,
+                "top": 2751,
+                "right": 718,
+                "bottom": 2816
+              },
+              "clickable": false
+            },
+            {
+              "label": "16.9 万 com.ss.android.ugc.aweme:id\/pjl",
+              "bounds": {
+                "left": 503,
+                "top": 3393,
+                "right": 718,
+                "bottom": 3104
+              },
+              "clickable": false
+            },
+            {
+              "label": "视频5 com.ss.android.ugc.aweme:id\/cover",
+              "bounds": {
+                "left": 483,
+                "top": 2200,
+                "right": 957,
+                "bottom": 2832
+              },
+              "clickable": true
+            },
+            {
+              "label": "视频8 com.ss.android.ugc.aweme:id\/cover",
+              "bounds": {
+                "left": 483,
+                "top": 2842,
+                "right": 957,
+                "bottom": 3104
+              },
+              "clickable": true
+            },
+            {
+              "label": "拍同款 com.ss.android.ugc.aweme:id\/zen",
+              "bounds": {
+                "left": 756,
+                "top": 2824,
+                "right": 1368,
+                "bottom": 3024
+              },
+              "clickable": true
+            },
+            {
+              "label": "3.1 万 com.ss.android.ugc.aweme:id\/pjl",
+              "bounds": {
+                "left": 983,
+                "top": 2751,
+                "right": 1166,
+                "bottom": 2816
+              },
+              "clickable": false
+            }
+          ]
+        },
+        "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_snapshots\/com.ss.android.ugc.aweme\/20260521_123831_865_8a6b89c4.json"
+      },
+      {
+        "id": "ui_snapshot_1779338309778",
+        "source": "current_ui_summary",
+        "note": "factory_ai_context",
+        "appPackage": "com.ss.android.ugc.aweme",
+        "windowClassName": "android.widget.FrameLayout",
+        "screenKey": "8a6b89c4",
+        "screenshotPath": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_screenshots\/com.ss.android.ugc.aweme\/20260521_123829_154_8a6b89c4.png",
+        "visualHash": "e09446b983292e8daae984dc48ce6129a18f631c480987ff536a48abb66e384c",
+        "summary": {
+          "nodeCount": 114,
+          "clickableCount": 24,
+          "editableCount": 0,
+          "scrollableCount": 1,
+          "labels": [
+            "android:id\/content",
+            "com.ss.android.ugc.aweme:id\/status_bar",
+            "com.ss.android.ugc.aweme:id\/koj",
+            "com.ss.android.ugc.aweme:id\/container",
+            "com.ss.android.ugc.aweme:id\/sv1",
+            "com.ss.android.ugc.aweme:id\/swc",
+            "com.ss.android.ugc.aweme:id\/k=7",
+            "com.ss.android.ugc.aweme:id\/svq",
+            "com.ss.android.ugc.aweme:id\/svt",
+            "com.ss.android.ugc.aweme:id\/su=",
+            "com.ss.android.ugc.aweme:id\/su9",
+            "暂停 com.ss.android.ugc.aweme:id\/sv7",
+            "com.ss.android.ugc.aweme:id\/su-",
+            "com.ss.android.ugc.aweme:id\/sva",
+            "com.ss.android.ugc.aweme:id\/sv6",
+            "com.ss.android.ugc.aweme:id\/sv=",
+            "暂停 com.ss.android.ugc.aweme:id\/sv_",
+            "com.ss.android.ugc.aweme:id\/su+",
+            "com.ss.android.ugc.aweme:id\/sw_",
+            "com.ss.android.ugc.aweme:id\/sws",
+            "当bro以为自己很有影响力时 (硬... 当bro以为自己很有影响力时 (硬曲是我主人) com.ss.android.ugc.aweme:id\/swp",
+            "com.ss.android.ugc.aweme:id\/swq",
+            "com.ss.android.ugc.aweme:id\/su1",
+            "DHC77 com.ss.android.ugc.aweme:id\/su2",
+            "com.ss.android.ugc.aweme:id\/swa",
+            "com.ss.android.ugc.aweme:id\/svm",
+            "com.ss.android.ugc.aweme:id\/swl",
+            "com.ss.android.ugc.aweme:id\/swm",
+            "音乐分享 com.ss.android.ugc.aweme:id\/swn",
+            "com.ss.android.ugc.aweme:id\/sv2",
+            "com.ss.android.ugc.aweme:id\/svh",
+            "com.ss.android.ugc.aweme:id\/sve",
+            "去听完整版 com.ss.android.ugc.aweme:id\/svj",
+            "收藏 com.ss.android.ugc.aweme:id\/su5",
+            "com.ss.android.ugc.aweme:id\/su6",
+            "收藏 com.ss.android.ugc.aweme:id\/su7",
+            "com.ss.android.ugc.aweme:id\/e42",
+            "com.ss.android.ugc.aweme:id\/cover",
+            "漂亮的妞 com.ss.android.ugc.aweme:id\/title",
+            "com.ss.android.ugc.aweme:id\/0zh",
+            "相关特效 com.ss.android.ugc.aweme:id\/sv4",
+            "com.ss.android.ugc.aweme:id\/5lt",
+            "7162.0 万人使用 com.ss.android.ugc.aweme:id\/usw",
+            "试用特效 com.ss.android.ugc.aweme:id\/5ln",
+            "视频1 com.ss.android.ugc.aweme:id\/cover",
+            "com.ss.android.ugc.aweme:id\/chc",
+            "2.9 万 com.ss.android.ugc.aweme:id\/pjl",
+            "视频2 com.ss.android.ugc.aweme:id\/cover",
+            "com.ss.android.ugc.aweme:id\/chc",
+            "103.7 万 com.ss.android.ugc.aweme:id\/pjl",
+            "视频3 com.ss.android.ugc.aweme:id\/cover",
+            "com.ss.android.ugc.aweme:id\/chc",
+            "93.2 万 com.ss.android.ugc.aweme:id\/pjl",
+            "视频4 com.ss.android.ugc.aweme:id\/cover",
+            "com.ss.android.ugc.aweme:id\/chc",
+            "76.2 万 com.ss.android.ugc.aweme:id\/pjl",
+            "视频5 com.ss.android.ugc.aweme:id\/cover",
+            "com.ss.android.ugc.aweme:id\/chc",
+            "18.6 万 com.ss.android.ugc.aweme:id\/pjl",
+            "视频6 com.ss.android.ugc.aweme:id\/cover",
+            "com.ss.android.ugc.aweme:id\/chc",
+            "3.1 万 com.ss.android.ugc.aweme:id\/pjl",
+            "视频7 com.ss.android.ugc.aweme:id\/cover",
+            "com.ss.android.ugc.aweme:id\/chc",
+            "72.3 万 com.ss.android.ugc.aweme:id\/pjl",
+            "视频8 com.ss.android.ugc.aweme:id\/cover",
+            "com.ss.android.ugc.aweme:id\/chc",
+            "16.9 万 com.ss.android.ugc.aweme:id\/pjl",
+            "视频9 com.ss.android.ugc.aweme:id\/cover",
+            "com.ss.android.ugc.aweme:id\/chc",
+            "56.6 万 com.ss.android.ugc.aweme:id\/pjl",
+            "com.ss.android.ugc.aweme:id\/zp1",
+            "com.ss.android.ugc.aweme:id\/18=",
+            "返回 com.ss.android.ugc.aweme:id\/back_btn",
+            "当bro以为自己很有影响力时 (硬曲是我主人) com.ss.android.ugc.aweme:id\/title",
+            "抖音音乐榜 com.ss.android.ugc.aweme:id\/n=n",
+            "分享 com.ss.android.ugc.aweme:id\/ze8",
+            "com.ss.android.ugc.aweme:id\/bottom_layout",
+            "com.ss.android.ugc.aweme:id\/0d9",
+            "com.ss.android.ugc.aweme:id\/gc8"
+          ],
+          "bottomCandidates": [
+            {
+              "label": "76.2 万 com.ss.android.ugc.aweme:id\/pjl",
+              "bounds": {
+                "left": 20,
+                "top": 2751,
+                "right": 240,
+                "bottom": 2816
+              },
+              "clickable": false
+            },
+            {
+              "label": "72.3 万 com.ss.android.ugc.aweme:id\/pjl",
+              "bounds": {
+                "left": 20,
+                "top": 3393,
+                "right": 240,
+                "bottom": 3104
+              },
+              "clickable": false
+            },
+            {
+              "label": "视频4 com.ss.android.ugc.aweme:id\/cover",
+              "bounds": {
+                "left": 0,
+                "top": 2200,
+                "right": 477,
+                "bottom": 2836
+              },
+              "clickable": true
+            },
+            {
+              "label": "视频7 com.ss.android.ugc.aweme:id\/cover",
+              "bounds": {
+                "left": 0,
+                "top": 2842,
+                "right": 477,
+                "bottom": 3104
+              },
+              "clickable": true
+            },
+            {
+              "label": "com.ss.android.ugc.aweme:id\/qdo",
+              "bounds": {
+                "left": 72,
+                "top": 2824,
+                "right": 684,
+                "bottom": 3024
+              },
+              "clickable": true
+            },
+            {
+              "label": "一键成片 com.ss.android.ugc.aweme:id\/3h9",
+              "bounds": {
+                "left": 302,
+                "top": 2881,
+                "right": 558,
+                "bottom": 2967
+              },
+              "clickable": false
+            },
+            {
+              "label": "18.6 万 com.ss.android.ugc.aweme:id\/pjl",
+              "bounds": {
+                "left": 503,
+                "top": 2751,
+                "right": 718,
+                "bottom": 2816
+              },
+              "clickable": false
+            },
+            {
+              "label": "16.9 万 com.ss.android.ugc.aweme:id\/pjl",
+              "bounds": {
+                "left": 503,
+                "top": 3393,
+                "right": 718,
+                "bottom": 3104
+              },
+              "clickable": false
+            },
+            {
+              "label": "视频5 com.ss.android.ugc.aweme:id\/cover",
+              "bounds": {
+                "left": 483,
+                "top": 2200,
+                "right": 957,
+                "bottom": 2832
+              },
+              "clickable": true
+            },
+            {
+              "label": "视频8 com.ss.android.ugc.aweme:id\/cover",
+              "bounds": {
+                "left": 483,
+                "top": 2842,
+                "right": 957,
+                "bottom": 3104
+              },
+              "clickable": true
+            },
+            {
+              "label": "拍同款 com.ss.android.ugc.aweme:id\/zen",
+              "bounds": {
+                "left": 756,
+                "top": 2824,
+                "right": 1368,
+                "bottom": 3024
+              },
+              "clickable": true
+            },
+            {
+              "label": "3.1 万 com.ss.android.ugc.aweme:id\/pjl",
+              "bounds": {
+                "left": 983,
+                "top": 2751,
+                "right": 1166,
+                "bottom": 2816
+              },
+              "clickable": false
+            }
+          ]
+        },
+        "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_snapshots\/com.ss.android.ugc.aweme\/20260521_123829_154_8a6b89c4.json"
+      },
+      {
+        "id": "ui_snapshot_1779338309073",
+        "source": "goal_verification",
+        "note": "在抖音搜索王老菊，停在搜索结果页并记录用户、视频、综合分区。",
+        "appPackage": "com.ss.android.ugc.aweme",
+        "windowClassName": "android.widget.FrameLayout",
+        "screenKey": "8a6b89c4",
+        "screenshotPath": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_screenshots\/com.ss.android.ugc.aweme\/20260521_123828_429_8a6b89c4.png",
+        "visualHash": "ae14e31bd5783cb0480df5716e9ccfe0e16f1dff77b3a54904abadc02a020d0c",
+        "summary": {
+          "nodeCount": 114,
+          "clickableCount": 24,
+          "editableCount": 0,
+          "scrollableCount": 1,
+          "labels": [
+            "android:id\/content",
+            "com.ss.android.ugc.aweme:id\/status_bar",
+            "com.ss.android.ugc.aweme:id\/koj",
+            "com.ss.android.ugc.aweme:id\/container",
+            "com.ss.android.ugc.aweme:id\/sv1",
+            "com.ss.android.ugc.aweme:id\/swc",
+            "com.ss.android.ugc.aweme:id\/k=7",
+            "com.ss.android.ugc.aweme:id\/svq",
+            "com.ss.android.ugc.aweme:id\/svt",
+            "com.ss.android.ugc.aweme:id\/su=",
+            "com.ss.android.ugc.aweme:id\/su9",
+            "暂停 com.ss.android.ugc.aweme:id\/sv7",
+            "com.ss.android.ugc.aweme:id\/su-",
+            "com.ss.android.ugc.aweme:id\/sva",
+            "com.ss.android.ugc.aweme:id\/sv6",
+            "com.ss.android.ugc.aweme:id\/sv=",
+            "暂停 com.ss.android.ugc.aweme:id\/sv_",
+            "com.ss.android.ugc.aweme:id\/su+",
+            "com.ss.android.ugc.aweme:id\/sw_",
+            "com.ss.android.ugc.aweme:id\/sws",
+            "当bro以为自己很有影响力时 (硬... 当bro以为自己很有影响力时 (硬曲是我主人) com.ss.android.ugc.aweme:id\/swp",
+            "com.ss.android.ugc.aweme:id\/swq",
+            "com.ss.android.ugc.aweme:id\/su1",
+            "DHC77 com.ss.android.ugc.aweme:id\/su2",
+            "com.ss.android.ugc.aweme:id\/swa",
+            "com.ss.android.ugc.aweme:id\/svm",
+            "com.ss.android.ugc.aweme:id\/swl",
+            "com.ss.android.ugc.aweme:id\/swm",
+            "音乐分享 com.ss.android.ugc.aweme:id\/swn",
+            "com.ss.android.ugc.aweme:id\/sv2",
+            "com.ss.android.ugc.aweme:id\/svh",
+            "com.ss.android.ugc.aweme:id\/sve",
+            "去听完整版 com.ss.android.ugc.aweme:id\/svj",
+            "收藏 com.ss.android.ugc.aweme:id\/su5",
+            "com.ss.android.ugc.aweme:id\/su6",
+            "收藏 com.ss.android.ugc.aweme:id\/su7",
+            "com.ss.android.ugc.aweme:id\/e42",
+            "com.ss.android.ugc.aweme:id\/cover",
+            "漂亮的妞 com.ss.android.ugc.aweme:id\/title",
+            "com.ss.android.ugc.aweme:id\/0zh",
+            "相关特效 com.ss.android.ugc.aweme:id\/sv4",
+            "com.ss.android.ugc.aweme:id\/5lt",
+            "7162.0 万人使用 com.ss.android.ugc.aweme:id\/usw",
+            "试用特效 com.ss.android.ugc.aweme:id\/5ln",
+            "视频1 com.ss.android.ugc.aweme:id\/cover",
+            "com.ss.android.ugc.aweme:id\/chc",
+            "2.9 万 com.ss.android.ugc.aweme:id\/pjl",
+            "视频2 com.ss.android.ugc.aweme:id\/cover",
+            "com.ss.android.ugc.aweme:id\/chc",
+            "103.7 万 com.ss.android.ugc.aweme:id\/pjl",
+            "视频3 com.ss.android.ugc.aweme:id\/cover",
+            "com.ss.android.ugc.aweme:id\/chc",
+            "93.2 万 com.ss.android.ugc.aweme:id\/pjl",
+            "视频4 com.ss.android.ugc.aweme:id\/cover",
+            "com.ss.android.ugc.aweme:id\/chc",
+            "76.2 万 com.ss.android.ugc.aweme:id\/pjl",
+            "视频5 com.ss.android.ugc.aweme:id\/cover",
+            "com.ss.android.ugc.aweme:id\/chc",
+            "18.6 万 com.ss.android.ugc.aweme:id\/pjl",
+            "视频6 com.ss.android.ugc.aweme:id\/cover",
+            "com.ss.android.ugc.aweme:id\/chc",
+            "3.1 万 com.ss.android.ugc.aweme:id\/pjl",
+            "视频7 com.ss.android.ugc.aweme:id\/cover",
+            "com.ss.android.ugc.aweme:id\/chc",
+            "72.3 万 com.ss.android.ugc.aweme:id\/pjl",
+            "视频8 com.ss.android.ugc.aweme:id\/cover",
+            "com.ss.android.ugc.aweme:id\/chc",
+            "16.9 万 com.ss.android.ugc.aweme:id\/pjl",
+            "视频9 com.ss.android.ugc.aweme:id\/cover",
+            "com.ss.android.ugc.aweme:id\/chc",
+            "56.6 万 com.ss.android.ugc.aweme:id\/pjl",
+            "com.ss.android.ugc.aweme:id\/zp1",
+            "com.ss.android.ugc.aweme:id\/18=",
+            "返回 com.ss.android.ugc.aweme:id\/back_btn",
+            "当bro以为自己很有影响力时 (硬曲是我主人) com.ss.android.ugc.aweme:id\/title",
+            "抖音音乐榜 com.ss.android.ugc.aweme:id\/n=n",
+            "分享 com.ss.android.ugc.aweme:id\/ze8",
+            "com.ss.android.ugc.aweme:id\/bottom_layout",
+            "com.ss.android.ugc.aweme:id\/0d9",
+            "com.ss.android.ugc.aweme:id\/gc8"
+          ],
+          "bottomCandidates": [
+            {
+              "label": "76.2 万 com.ss.android.ugc.aweme:id\/pjl",
+              "bounds": {
+                "left": 20,
+                "top": 2751,
+                "right": 240,
+                "bottom": 2816
+              },
+              "clickable": false
+            },
+            {
+              "label": "72.3 万 com.ss.android.ugc.aweme:id\/pjl",
+              "bounds": {
+                "left": 20,
+                "top": 3393,
+                "right": 240,
+                "bottom": 3104
+              },
+              "clickable": false
+            },
+            {
+              "label": "视频4 com.ss.android.ugc.aweme:id\/cover",
+              "bounds": {
+                "left": 0,
+                "top": 2200,
+                "right": 477,
+                "bottom": 2836
+              },
+              "clickable": true
+            },
+            {
+              "label": "视频7 com.ss.android.ugc.aweme:id\/cover",
+              "bounds": {
+                "left": 0,
+                "top": 2842,
+                "right": 477,
+                "bottom": 3104
+              },
+              "clickable": true
+            },
+            {
+              "label": "com.ss.android.ugc.aweme:id\/qdo",
+              "bounds": {
+                "left": 72,
+                "top": 2824,
+                "right": 684,
+                "bottom": 3024
+              },
+              "clickable": true
+            },
+            {
+              "label": "一键成片 com.ss.android.ugc.aweme:id\/3h9",
+              "bounds": {
+                "left": 302,
+                "top": 2881,
+                "right": 558,
+                "bottom": 2967
+              },
+              "clickable": false
+            },
+            {
+              "label": "18.6 万 com.ss.android.ugc.aweme:id\/pjl",
+              "bounds": {
+                "left": 503,
+                "top": 2751,
+                "right": 718,
+                "bottom": 2816
+              },
+              "clickable": false
+            },
+            {
+              "label": "16.9 万 com.ss.android.ugc.aweme:id\/pjl",
+              "bounds": {
+                "left": 503,
+                "top": 3393,
+                "right": 718,
+                "bottom": 3104
+              },
+              "clickable": false
+            },
+            {
+              "label": "视频5 com.ss.android.ugc.aweme:id\/cover",
+              "bounds": {
+                "left": 483,
+                "top": 2200,
+                "right": 957,
+                "bottom": 2832
+              },
+              "clickable": true
+            },
+            {
+              "label": "视频8 com.ss.android.ugc.aweme:id\/cover",
+              "bounds": {
+                "left": 483,
+                "top": 2842,
+                "right": 957,
+                "bottom": 3104
+              },
+              "clickable": true
+            },
+            {
+              "label": "拍同款 com.ss.android.ugc.aweme:id\/zen",
+              "bounds": {
+                "left": 756,
+                "top": 2824,
+                "right": 1368,
+                "bottom": 3024
+              },
+              "clickable": true
+            },
+            {
+              "label": "3.1 万 com.ss.android.ugc.aweme:id\/pjl",
+              "bounds": {
+                "left": 983,
+                "top": 2751,
+                "right": 1166,
+                "bottom": 2816
+              },
+              "clickable": false
+            }
+          ]
+        },
+        "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_snapshots\/com.ss.android.ugc.aweme\/20260521_123828_429_8a6b89c4.json"
+      },
+      {
+        "id": "ui_snapshot_1779338308403",
+        "source": "after_macro",
+        "note": "patched.command.1779338294410; confidence=SUCCESS_MEDIUM_CONFIDENCE; reactiveDismissed=0",
+        "appPackage": "com.ss.android.ugc.aweme",
+        "windowClassName": "android.widget.FrameLayout",
+        "screenKey": "8a6b89c4",
+        "screenshotPath": "null",
+        "visualHash": "null",
+        "summary": {
+          "nodeCount": 114,
+          "clickableCount": 24,
+          "editableCount": 0,
+          "scrollableCount": 1,
+          "labels": [
+            "android:id\/content",
+            "com.ss.android.ugc.aweme:id\/status_bar",
+            "com.ss.android.ugc.aweme:id\/koj",
+            "com.ss.android.ugc.aweme:id\/container",
+            "com.ss.android.ugc.aweme:id\/sv1",
+            "com.ss.android.ugc.aweme:id\/swc",
+            "com.ss.android.ugc.aweme:id\/k=7",
+            "com.ss.android.ugc.aweme:id\/svq",
+            "com.ss.android.ugc.aweme:id\/svt",
+            "com.ss.android.ugc.aweme:id\/su=",
+            "com.ss.android.ugc.aweme:id\/su9",
+            "暂停 com.ss.android.ugc.aweme:id\/sv7",
+            "com.ss.android.ugc.aweme:id\/su-",
+            "com.ss.android.ugc.aweme:id\/sva",
+            "com.ss.android.ugc.aweme:id\/sv6",
+            "com.ss.android.ugc.aweme:id\/sv=",
+            "暂停 com.ss.android.ugc.aweme:id\/sv_",
+            "com.ss.android.ugc.aweme:id\/su+",
+            "com.ss.android.ugc.aweme:id\/sw_",
+            "com.ss.android.ugc.aweme:id\/sws",
+            "当bro以为自己很有影响力时 (硬... 当bro以为自己很有影响力时 (硬曲是我主人) com.ss.android.ugc.aweme:id\/swp",
+            "com.ss.android.ugc.aweme:id\/swq",
+            "com.ss.android.ugc.aweme:id\/su1",
+            "DHC77 com.ss.android.ugc.aweme:id\/su2",
+            "com.ss.android.ugc.aweme:id\/swa",
+            "com.ss.android.ugc.aweme:id\/svm",
+            "com.ss.android.ugc.aweme:id\/swl",
+            "com.ss.android.ugc.aweme:id\/swm",
+            "音乐分享 com.ss.android.ugc.aweme:id\/swn",
+            "com.ss.android.ugc.aweme:id\/sv2",
+            "com.ss.android.ugc.aweme:id\/svh",
+            "com.ss.android.ugc.aweme:id\/sve",
+            "去听完整版 com.ss.android.ugc.aweme:id\/svj",
+            "收藏 com.ss.android.ugc.aweme:id\/su5",
+            "com.ss.android.ugc.aweme:id\/su6",
+            "收藏 com.ss.android.ugc.aweme:id\/su7",
+            "com.ss.android.ugc.aweme:id\/e42",
+            "com.ss.android.ugc.aweme:id\/cover",
+            "漂亮的妞 com.ss.android.ugc.aweme:id\/title",
+            "com.ss.android.ugc.aweme:id\/0zh",
+            "相关特效 com.ss.android.ugc.aweme:id\/sv4",
+            "com.ss.android.ugc.aweme:id\/5lt",
+            "7162.0 万人使用 com.ss.android.ugc.aweme:id\/usw",
+            "试用特效 com.ss.android.ugc.aweme:id\/5ln",
+            "视频1 com.ss.android.ugc.aweme:id\/cover",
+            "com.ss.android.ugc.aweme:id\/chc",
+            "2.9 万 com.ss.android.ugc.aweme:id\/pjl",
+            "视频2 com.ss.android.ugc.aweme:id\/cover",
+            "com.ss.android.ugc.aweme:id\/chc",
+            "103.7 万 com.ss.android.ugc.aweme:id\/pjl",
+            "视频3 com.ss.android.ugc.aweme:id\/cover",
+            "com.ss.android.ugc.aweme:id\/chc",
+            "93.2 万 com.ss.android.ugc.aweme:id\/pjl",
+            "视频4 com.ss.android.ugc.aweme:id\/cover",
+            "com.ss.android.ugc.aweme:id\/chc",
+            "76.2 万 com.ss.android.ugc.aweme:id\/pjl",
+            "视频5 com.ss.android.ugc.aweme:id\/cover",
+            "com.ss.android.ugc.aweme:id\/chc",
+            "18.6 万 com.ss.android.ugc.aweme:id\/pjl",
+            "视频6 com.ss.android.ugc.aweme:id\/cover",
+            "com.ss.android.ugc.aweme:id\/chc",
+            "3.1 万 com.ss.android.ugc.aweme:id\/pjl",
+            "视频7 com.ss.android.ugc.aweme:id\/cover",
+            "com.ss.android.ugc.aweme:id\/chc",
+            "72.3 万 com.ss.android.ugc.aweme:id\/pjl",
+            "视频8 com.ss.android.ugc.aweme:id\/cover",
+            "com.ss.android.ugc.aweme:id\/chc",
+            "16.9 万 com.ss.android.ugc.aweme:id\/pjl",
+            "视频9 com.ss.android.ugc.aweme:id\/cover",
+            "com.ss.android.ugc.aweme:id\/chc",
+            "56.6 万 com.ss.android.ugc.aweme:id\/pjl",
+            "com.ss.android.ugc.aweme:id\/zp1",
+            "com.ss.android.ugc.aweme:id\/18=",
+            "返回 com.ss.android.ugc.aweme:id\/back_btn",
+            "当bro以为自己很有影响力时 (硬曲是我主人) com.ss.android.ugc.aweme:id\/title",
+            "抖音音乐榜 com.ss.android.ugc.aweme:id\/n=n",
+            "分享 com.ss.android.ugc.aweme:id\/ze8",
+            "com.ss.android.ugc.aweme:id\/bottom_layout",
+            "com.ss.android.ugc.aweme:id\/0d9",
+            "com.ss.android.ugc.aweme:id\/gc8"
+          ],
+          "bottomCandidates": [
+            {
+              "label": "76.2 万 com.ss.android.ugc.aweme:id\/pjl",
+              "bounds": {
+                "left": 20,
+                "top": 2751,
+                "right": 240,
+                "bottom": 2816
+              },
+              "clickable": false
+            },
+            {
+              "label": "72.3 万 com.ss.android.ugc.aweme:id\/pjl",
+              "bounds": {
+                "left": 20,
+                "top": 3393,
+                "right": 240,
+                "bottom": 3104
+              },
+              "clickable": false
+            },
+            {
+              "label": "视频4 com.ss.android.ugc.aweme:id\/cover",
+              "bounds": {
+                "left": 0,
+                "top": 2200,
+                "right": 477,
+                "bottom": 2836
+              },
+              "clickable": true
+            },
+            {
+              "label": "视频7 com.ss.android.ugc.aweme:id\/cover",
+              "bounds": {
+                "left": 0,
+                "top": 2842,
+                "right": 477,
+                "bottom": 3104
+              },
+              "clickable": true
+            },
+            {
+              "label": "com.ss.android.ugc.aweme:id\/qdo",
+              "bounds": {
+                "left": 72,
+                "top": 2824,
+                "right": 684,
+                "bottom": 3024
+              },
+              "clickable": true
+            },
+            {
+              "label": "一键成片 com.ss.android.ugc.aweme:id\/3h9",
+              "bounds": {
+                "left": 302,
+                "top": 2881,
+                "right": 558,
+                "bottom": 2967
+              },
+              "clickable": false
+            },
+            {
+              "label": "18.6 万 com.ss.android.ugc.aweme:id\/pjl",
+              "bounds": {
+                "left": 503,
+                "top": 2751,
+                "right": 718,
+                "bottom": 2816
+              },
+              "clickable": false
+            },
+            {
+              "label": "16.9 万 com.ss.android.ugc.aweme:id\/pjl",
+              "bounds": {
+                "left": 503,
+                "top": 3393,
+                "right": 718,
+                "bottom": 3104
+              },
+              "clickable": false
+            },
+            {
+              "label": "视频5 com.ss.android.ugc.aweme:id\/cover",
+              "bounds": {
+                "left": 483,
+                "top": 2200,
+                "right": 957,
+                "bottom": 2832
+              },
+              "clickable": true
+            },
+            {
+              "label": "视频8 com.ss.android.ugc.aweme:id\/cover",
+              "bounds": {
+                "left": 483,
+                "top": 2842,
+                "right": 957,
+                "bottom": 3104
+              },
+              "clickable": true
+            },
+            {
+              "label": "拍同款 com.ss.android.ugc.aweme:id\/zen",
+              "bounds": {
+                "left": 756,
+                "top": 2824,
+                "right": 1368,
+                "bottom": 3024
+              },
+              "clickable": true
+            },
+            {
+              "label": "3.1 万 com.ss.android.ugc.aweme:id\/pjl",
+              "bounds": {
+                "left": 983,
+                "top": 2751,
+                "right": 1166,
+                "bottom": 2816
+              },
+              "clickable": false
+            }
+          ]
+        },
+        "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_snapshots\/com.ss.android.ugc.aweme\/20260521_123828_403_8a6b89c4.json"
+      },
+      {
+        "id": "ui_snapshot_1779338308367",
+        "source": "after_macro_atom",
+        "note": "index=3; skillId=patched.1779338294410.4.wait; status=SUCCESS_MEDIUM_CONFIDENCE",
+        "appPackage": "com.ss.android.ugc.aweme",
+        "windowClassName": "android.widget.FrameLayout",
+        "screenKey": "8a6b89c4",
+        "screenshotPath": "null",
+        "visualHash": "null",
+        "summary": {
+          "nodeCount": 114,
+          "clickableCount": 24,
+          "editableCount": 0,
+          "scrollableCount": 1,
+          "labels": [
+            "android:id\/content",
+            "com.ss.android.ugc.aweme:id\/status_bar",
+            "com.ss.android.ugc.aweme:id\/koj",
+            "com.ss.android.ugc.aweme:id\/container",
+            "com.ss.android.ugc.aweme:id\/sv1",
+            "com.ss.android.ugc.aweme:id\/swc",
+            "com.ss.android.ugc.aweme:id\/k=7",
+            "com.ss.android.ugc.aweme:id\/svq",
+            "com.ss.android.ugc.aweme:id\/svt",
+            "com.ss.android.ugc.aweme:id\/su=",
+            "com.ss.android.ugc.aweme:id\/su9",
+            "暂停 com.ss.android.ugc.aweme:id\/sv7",
+            "com.ss.android.ugc.aweme:id\/su-",
+            "com.ss.android.ugc.aweme:id\/sva",
+            "com.ss.android.ugc.aweme:id\/sv6",
+            "com.ss.android.ugc.aweme:id\/sv=",
+            "暂停 com.ss.android.ugc.aweme:id\/sv_",
+            "com.ss.android.ugc.aweme:id\/su+",
+            "com.ss.android.ugc.aweme:id\/sw_",
+            "com.ss.android.ugc.aweme:id\/sws",
+            "当bro以为自己很有影响力时 (硬... 当bro以为自己很有影响力时 (硬曲是我主人) com.ss.android.ugc.aweme:id\/swp",
+            "com.ss.android.ugc.aweme:id\/swq",
+            "com.ss.android.ugc.aweme:id\/su1",
+            "DHC77 com.ss.android.ugc.aweme:id\/su2",
+            "com.ss.android.ugc.aweme:id\/swa",
+            "com.ss.android.ugc.aweme:id\/svm",
+            "com.ss.android.ugc.aweme:id\/swl",
+            "com.ss.android.ugc.aweme:id\/swm",
+            "音乐分享 com.ss.android.ugc.aweme:id\/swn",
+            "com.ss.android.ugc.aweme:id\/sv2",
+            "com.ss.android.ugc.aweme:id\/svh",
+            "com.ss.android.ugc.aweme:id\/sve",
+            "去听完整版 com.ss.android.ugc.aweme:id\/svj",
+            "收藏 com.ss.android.ugc.aweme:id\/su5",
+            "com.ss.android.ugc.aweme:id\/su6",
+            "收藏 com.ss.android.ugc.aweme:id\/su7",
+            "com.ss.android.ugc.aweme:id\/e42",
+            "com.ss.android.ugc.aweme:id\/cover",
+            "漂亮的妞 com.ss.android.ugc.aweme:id\/title",
+            "com.ss.android.ugc.aweme:id\/0zh",
+            "相关特效 com.ss.android.ugc.aweme:id\/sv4",
+            "com.ss.android.ugc.aweme:id\/5lt",
+            "7162.0 万人使用 com.ss.android.ugc.aweme:id\/usw",
+            "试用特效 com.ss.android.ugc.aweme:id\/5ln",
+            "视频1 com.ss.android.ugc.aweme:id\/cover",
+            "com.ss.android.ugc.aweme:id\/chc",
+            "2.9 万 com.ss.android.ugc.aweme:id\/pjl",
+            "视频2 com.ss.android.ugc.aweme:id\/cover",
+            "com.ss.android.ugc.aweme:id\/chc",
+            "103.7 万 com.ss.android.ugc.aweme:id\/pjl",
+            "视频3 com.ss.android.ugc.aweme:id\/cover",
+            "com.ss.android.ugc.aweme:id\/chc",
+            "93.2 万 com.ss.android.ugc.aweme:id\/pjl",
+            "视频4 com.ss.android.ugc.aweme:id\/cover",
+            "com.ss.android.ugc.aweme:id\/chc",
+            "76.2 万 com.ss.android.ugc.aweme:id\/pjl",
+            "视频5 com.ss.android.ugc.aweme:id\/cover",
+            "com.ss.android.ugc.aweme:id\/chc",
+            "18.6 万 com.ss.android.ugc.aweme:id\/pjl",
+            "视频6 com.ss.android.ugc.aweme:id\/cover",
+            "com.ss.android.ugc.aweme:id\/chc",
+            "3.1 万 com.ss.android.ugc.aweme:id\/pjl",
+            "视频7 com.ss.android.ugc.aweme:id\/cover",
+            "com.ss.android.ugc.aweme:id\/chc",
+            "72.3 万 com.ss.android.ugc.aweme:id\/pjl",
+            "视频8 com.ss.android.ugc.aweme:id\/cover",
+            "com.ss.android.ugc.aweme:id\/chc",
+            "16.9 万 com.ss.android.ugc.aweme:id\/pjl",
+            "视频9 com.ss.android.ugc.aweme:id\/cover",
+            "com.ss.android.ugc.aweme:id\/chc",
+            "56.6 万 com.ss.android.ugc.aweme:id\/pjl",
+            "com.ss.android.ugc.aweme:id\/zp1",
+            "com.ss.android.ugc.aweme:id\/18=",
+            "返回 com.ss.android.ugc.aweme:id\/back_btn",
+            "当bro以为自己很有影响力时 (硬曲是我主人) com.ss.android.ugc.aweme:id\/title",
+            "抖音音乐榜 com.ss.android.ugc.aweme:id\/n=n",
+            "分享 com.ss.android.ugc.aweme:id\/ze8",
+            "com.ss.android.ugc.aweme:id\/bottom_layout",
+            "com.ss.android.ugc.aweme:id\/0d9",
+            "com.ss.android.ugc.aweme:id\/gc8"
+          ],
+          "bottomCandidates": [
+            {
+              "label": "76.2 万 com.ss.android.ugc.aweme:id\/pjl",
+              "bounds": {
+                "left": 20,
+                "top": 2751,
+                "right": 240,
+                "bottom": 2816
+              },
+              "clickable": false
+            },
+            {
+              "label": "72.3 万 com.ss.android.ugc.aweme:id\/pjl",
+              "bounds": {
+                "left": 20,
+                "top": 3393,
+                "right": 240,
+                "bottom": 3104
+              },
+              "clickable": false
+            },
+            {
+              "label": "视频4 com.ss.android.ugc.aweme:id\/cover",
+              "bounds": {
+                "left": 0,
+                "top": 2200,
+                "right": 477,
+                "bottom": 2836
+              },
+              "clickable": true
+            },
+            {
+              "label": "视频7 com.ss.android.ugc.aweme:id\/cover",
+              "bounds": {
+                "left": 0,
+                "top": 2842,
+                "right": 477,
+                "bottom": 3104
+              },
+              "clickable": true
+            },
+            {
+              "label": "com.ss.android.ugc.aweme:id\/qdo",
+              "bounds": {
+                "left": 72,
+                "top": 2824,
+                "right": 684,
+                "bottom": 3024
+              },
+              "clickable": true
+            },
+            {
+              "label": "一键成片 com.ss.android.ugc.aweme:id\/3h9",
+              "bounds": {
+                "left": 302,
+                "top": 2881,
+                "right": 558,
+                "bottom": 2967
+              },
+              "clickable": false
+            },
+            {
+              "label": "18.6 万 com.ss.android.ugc.aweme:id\/pjl",
+              "bounds": {
+                "left": 503,
+                "top": 2751,
+                "right": 718,
+                "bottom": 2816
+              },
+              "clickable": false
+            },
+            {
+              "label": "16.9 万 com.ss.android.ugc.aweme:id\/pjl",
+              "bounds": {
+                "left": 503,
+                "top": 3393,
+                "right": 718,
+                "bottom": 3104
+              },
+              "clickable": false
+            },
+            {
+              "label": "视频5 com.ss.android.ugc.aweme:id\/cover",
+              "bounds": {
+                "left": 483,
+                "top": 2200,
+                "right": 957,
+                "bottom": 2832
+              },
+              "clickable": true
+            },
+            {
+              "label": "视频8 com.ss.android.ugc.aweme:id\/cover",
+              "bounds": {
+                "left": 483,
+                "top": 2842,
+                "right": 957,
+                "bottom": 3104
+              },
+              "clickable": true
+            },
+            {
+              "label": "拍同款 com.ss.android.ugc.aweme:id\/zen",
+              "bounds": {
+                "left": 756,
+                "top": 2824,
+                "right": 1368,
+                "bottom": 3024
+              },
+              "clickable": true
+            },
+            {
+              "label": "3.1 万 com.ss.android.ugc.aweme:id\/pjl",
+              "bounds": {
+                "left": 983,
+                "top": 2751,
+                "right": 1166,
+                "bottom": 2816
+              },
+              "clickable": false
+            }
+          ]
+        },
+        "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_snapshots\/com.ss.android.ugc.aweme\/20260521_123828_366_8a6b89c4.json"
+      },
+      {
+        "id": "ui_snapshot_1779338308276",
+        "source": "after_action",
+        "note": "patched.1779338294410.4.wait:Wait:SUCCESS_MEDIUM_CONFIDENCE:Waited 900ms; reactiveDismissed=0",
+        "appPackage": "com.ss.android.ugc.aweme",
+        "windowClassName": "android.widget.FrameLayout",
+        "screenKey": "8a6b89c4",
+        "screenshotPath": "null",
+        "visualHash": "null",
+        "summary": {
+          "nodeCount": 114,
+          "clickableCount": 24,
+          "editableCount": 0,
+          "scrollableCount": 1,
+          "labels": [
+            "android:id\/content",
+            "com.ss.android.ugc.aweme:id\/status_bar",
+            "com.ss.android.ugc.aweme:id\/koj",
+            "com.ss.android.ugc.aweme:id\/container",
+            "com.ss.android.ugc.aweme:id\/sv1",
+            "com.ss.android.ugc.aweme:id\/swc",
+            "com.ss.android.ugc.aweme:id\/k=7",
+            "com.ss.android.ugc.aweme:id\/svq",
+            "com.ss.android.ugc.aweme:id\/svt",
+            "com.ss.android.ugc.aweme:id\/su=",
+            "com.ss.android.ugc.aweme:id\/su9",
+            "暂停 com.ss.android.ugc.aweme:id\/sv7",
+            "com.ss.android.ugc.aweme:id\/su-",
+            "com.ss.android.ugc.aweme:id\/sva",
+            "com.ss.android.ugc.aweme:id\/sv6",
+            "com.ss.android.ugc.aweme:id\/sv=",
+            "暂停 com.ss.android.ugc.aweme:id\/sv_",
+            "com.ss.android.ugc.aweme:id\/su+",
+            "com.ss.android.ugc.aweme:id\/sw_",
+            "com.ss.android.ugc.aweme:id\/sws",
+            "当bro以为自己很有影响力时 (硬... 当bro以为自己很有影响力时 (硬曲是我主人) com.ss.android.ugc.aweme:id\/swp",
+            "com.ss.android.ugc.aweme:id\/swq",
+            "com.ss.android.ugc.aweme:id\/su1",
+            "DHC77 com.ss.android.ugc.aweme:id\/su2",
+            "com.ss.android.ugc.aweme:id\/swa",
+            "com.ss.android.ugc.aweme:id\/svm",
+            "com.ss.android.ugc.aweme:id\/swl",
+            "com.ss.android.ugc.aweme:id\/swm",
+            "音乐分享 com.ss.android.ugc.aweme:id\/swn",
+            "com.ss.android.ugc.aweme:id\/sv2",
+            "com.ss.android.ugc.aweme:id\/svh",
+            "com.ss.android.ugc.aweme:id\/sve",
+            "去听完整版 com.ss.android.ugc.aweme:id\/svj",
+            "收藏 com.ss.android.ugc.aweme:id\/su5",
+            "com.ss.android.ugc.aweme:id\/su6",
+            "收藏 com.ss.android.ugc.aweme:id\/su7",
+            "com.ss.android.ugc.aweme:id\/e42",
+            "com.ss.android.ugc.aweme:id\/cover",
+            "漂亮的妞 com.ss.android.ugc.aweme:id\/title",
+            "com.ss.android.ugc.aweme:id\/0zh",
+            "相关特效 com.ss.android.ugc.aweme:id\/sv4",
+            "com.ss.android.ugc.aweme:id\/5lt",
+            "7162.0 万人使用 com.ss.android.ugc.aweme:id\/usw",
+            "试用特效 com.ss.android.ugc.aweme:id\/5ln",
+            "视频1 com.ss.android.ugc.aweme:id\/cover",
+            "com.ss.android.ugc.aweme:id\/chc",
+            "2.9 万 com.ss.android.ugc.aweme:id\/pjl",
+            "视频2 com.ss.android.ugc.aweme:id\/cover",
+            "com.ss.android.ugc.aweme:id\/chc",
+            "103.7 万 com.ss.android.ugc.aweme:id\/pjl",
+            "视频3 com.ss.android.ugc.aweme:id\/cover",
+            "com.ss.android.ugc.aweme:id\/chc",
+            "93.2 万 com.ss.android.ugc.aweme:id\/pjl",
+            "视频4 com.ss.android.ugc.aweme:id\/cover",
+            "com.ss.android.ugc.aweme:id\/chc",
+            "76.2 万 com.ss.android.ugc.aweme:id\/pjl",
+            "视频5 com.ss.android.ugc.aweme:id\/cover",
+            "com.ss.android.ugc.aweme:id\/chc",
+            "18.6 万 com.ss.android.ugc.aweme:id\/pjl",
+            "视频6 com.ss.android.ugc.aweme:id\/cover",
+            "com.ss.android.ugc.aweme:id\/chc",
+            "3.1 万 com.ss.android.ugc.aweme:id\/pjl",
+            "视频7 com.ss.android.ugc.aweme:id\/cover",
+            "com.ss.android.ugc.aweme:id\/chc",
+            "72.3 万 com.ss.android.ugc.aweme:id\/pjl",
+            "视频8 com.ss.android.ugc.aweme:id\/cover",
+            "com.ss.android.ugc.aweme:id\/chc",
+            "16.9 万 com.ss.android.ugc.aweme:id\/pjl",
+            "视频9 com.ss.android.ugc.aweme:id\/cover",
+            "com.ss.android.ugc.aweme:id\/chc",
+            "56.6 万 com.ss.android.ugc.aweme:id\/pjl",
+            "com.ss.android.ugc.aweme:id\/zp1",
+            "com.ss.android.ugc.aweme:id\/18=",
+            "返回 com.ss.android.ugc.aweme:id\/back_btn",
+            "当bro以为自己很有影响力时 (硬曲是我主人) com.ss.android.ugc.aweme:id\/title",
+            "抖音音乐榜 com.ss.android.ugc.aweme:id\/n=n",
+            "分享 com.ss.android.ugc.aweme:id\/ze8",
+            "com.ss.android.ugc.aweme:id\/bottom_layout",
+            "com.ss.android.ugc.aweme:id\/0d9",
+            "com.ss.android.ugc.aweme:id\/gc8"
+          ],
+          "bottomCandidates": [
+            {
+              "label": "76.2 万 com.ss.android.ugc.aweme:id\/pjl",
+              "bounds": {
+                "left": 20,
+                "top": 2751,
+                "right": 240,
+                "bottom": 2816
+              },
+              "clickable": false
+            },
+            {
+              "label": "72.3 万 com.ss.android.ugc.aweme:id\/pjl",
+              "bounds": {
+                "left": 20,
+                "top": 3393,
+                "right": 240,
+                "bottom": 3104
+              },
+              "clickable": false
+            },
+            {
+              "label": "视频4 com.ss.android.ugc.aweme:id\/cover",
+              "bounds": {
+                "left": 0,
+                "top": 2200,
+                "right": 477,
+                "bottom": 2836
+              },
+              "clickable": true
+            },
+            {
+              "label": "视频7 com.ss.android.ugc.aweme:id\/cover",
+              "bounds": {
+                "left": 0,
+                "top": 2842,
+                "right": 477,
+                "bottom": 3104
+              },
+              "clickable": true
+            },
+            {
+              "label": "com.ss.android.ugc.aweme:id\/qdo",
+              "bounds": {
+                "left": 72,
+                "top": 2824,
+                "right": 684,
+                "bottom": 3024
+              },
+              "clickable": true
+            },
+            {
+              "label": "一键成片 com.ss.android.ugc.aweme:id\/3h9",
+              "bounds": {
+                "left": 302,
+                "top": 2881,
+                "right": 558,
+                "bottom": 2967
+              },
+              "clickable": false
+            },
+            {
+              "label": "18.6 万 com.ss.android.ugc.aweme:id\/pjl",
+              "bounds": {
+                "left": 503,
+                "top": 2751,
+                "right": 718,
+                "bottom": 2816
+              },
+              "clickable": false
+            },
+            {
+              "label": "16.9 万 com.ss.android.ugc.aweme:id\/pjl",
+              "bounds": {
+                "left": 503,
+                "top": 3393,
+                "right": 718,
+                "bottom": 3104
+              },
+              "clickable": false
+            },
+            {
+              "label": "视频5 com.ss.android.ugc.aweme:id\/cover",
+              "bounds": {
+                "left": 483,
+                "top": 2200,
+                "right": 957,
+                "bottom": 2832
+              },
+              "clickable": true
+            },
+            {
+              "label": "视频8 com.ss.android.ugc.aweme:id\/cover",
+              "bounds": {
+                "left": 483,
+                "top": 2842,
+                "right": 957,
+                "bottom": 3104
+              },
+              "clickable": true
+            },
+            {
+              "label": "拍同款 com.ss.android.ugc.aweme:id\/zen",
+              "bounds": {
+                "left": 756,
+                "top": 2824,
+                "right": 1368,
+                "bottom": 3024
+              },
+              "clickable": true
+            },
+            {
+              "label": "3.1 万 com.ss.android.ugc.aweme:id\/pjl",
+              "bounds": {
+                "left": 983,
+                "top": 2751,
+                "right": 1166,
+                "bottom": 2816
+              },
+              "clickable": false
+            }
+          ]
+        },
+        "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_snapshots\/com.ss.android.ugc.aweme\/20260521_123828_275_8a6b89c4.json"
+      },
+      {
+        "id": "ui_snapshot_1779338307321",
+        "source": "before_action",
+        "note": "patched.1779338294410.4.wait:Wait",
+        "appPackage": "com.ss.android.ugc.aweme",
+        "windowClassName": "androidx.recyclerview.widget.RecyclerView",
+        "screenKey": "356ee4ab",
+        "screenshotPath": "null",
+        "visualHash": "null",
+        "summary": {
+          "nodeCount": 114,
+          "clickableCount": 24,
+          "editableCount": 0,
+          "scrollableCount": 1,
+          "labels": [
+            "android:id\/content",
+            "com.ss.android.ugc.aweme:id\/status_bar",
+            "com.ss.android.ugc.aweme:id\/koj",
+            "com.ss.android.ugc.aweme:id\/container",
+            "com.ss.android.ugc.aweme:id\/sv1",
+            "com.ss.android.ugc.aweme:id\/swc",
+            "com.ss.android.ugc.aweme:id\/k=7",
+            "com.ss.android.ugc.aweme:id\/svq",
+            "com.ss.android.ugc.aweme:id\/svt",
+            "com.ss.android.ugc.aweme:id\/su=",
+            "com.ss.android.ugc.aweme:id\/su9",
+            "暂停 com.ss.android.ugc.aweme:id\/sv7",
+            "com.ss.android.ugc.aweme:id\/su-",
+            "com.ss.android.ugc.aweme:id\/sva",
+            "com.ss.android.ugc.aweme:id\/sv6",
+            "com.ss.android.ugc.aweme:id\/sv=",
+            "暂停 com.ss.android.ugc.aweme:id\/sv_",
+            "com.ss.android.ugc.aweme:id\/su+",
+            "com.ss.android.ugc.aweme:id\/sw_",
+            "com.ss.android.ugc.aweme:id\/sws",
+            "当bro以为自己很有影响力时 (硬... 当bro以为自己很有影响力时 (硬曲是我主人) com.ss.android.ugc.aweme:id\/swp",
+            "com.ss.android.ugc.aweme:id\/swq",
+            "com.ss.android.ugc.aweme:id\/su1",
+            "DHC77 com.ss.android.ugc.aweme:id\/su2",
+            "com.ss.android.ugc.aweme:id\/swa",
+            "com.ss.android.ugc.aweme:id\/svm",
+            "com.ss.android.ugc.aweme:id\/swl",
+            "com.ss.android.ugc.aweme:id\/swm",
+            "音乐分享 com.ss.android.ugc.aweme:id\/swn",
+            "com.ss.android.ugc.aweme:id\/sv2",
+            "com.ss.android.ugc.aweme:id\/svh",
+            "com.ss.android.ugc.aweme:id\/sve",
+            "去听完整版 com.ss.android.ugc.aweme:id\/svj",
+            "收藏 com.ss.android.ugc.aweme:id\/su5",
+            "com.ss.android.ugc.aweme:id\/su6",
+            "收藏 com.ss.android.ugc.aweme:id\/su7",
+            "com.ss.android.ugc.aweme:id\/e42",
+            "com.ss.android.ugc.aweme:id\/cover",
+            "漂亮的妞 com.ss.android.ugc.aweme:id\/title",
+            "com.ss.android.ugc.aweme:id\/0zh",
+            "相关特效 com.ss.android.ugc.aweme:id\/sv4",
+            "com.ss.android.ugc.aweme:id\/5lt",
+            "7162.0 万人使用 com.ss.android.ugc.aweme:id\/usw",
+            "试用特效 com.ss.android.ugc.aweme:id\/5ln",
+            "视频1 com.ss.android.ugc.aweme:id\/cover",
+            "com.ss.android.ugc.aweme:id\/chc",
+            "2.9 万 com.ss.android.ugc.aweme:id\/pjl",
+            "视频2 com.ss.android.ugc.aweme:id\/cover",
+            "com.ss.android.ugc.aweme:id\/chc",
+            "103.7 万 com.ss.android.ugc.aweme:id\/pjl",
+            "视频3 com.ss.android.ugc.aweme:id\/cover",
+            "com.ss.android.ugc.aweme:id\/chc",
+            "93.2 万 com.ss.android.ugc.aweme:id\/pjl",
+            "视频4 com.ss.android.ugc.aweme:id\/cover",
+            "com.ss.android.ugc.aweme:id\/chc",
+            "76.2 万 com.ss.android.ugc.aweme:id\/pjl",
+            "视频5 com.ss.android.ugc.aweme:id\/cover",
+            "com.ss.android.ugc.aweme:id\/chc",
+            "18.6 万 com.ss.android.ugc.aweme:id\/pjl",
+            "视频6 com.ss.android.ugc.aweme:id\/cover",
+            "com.ss.android.ugc.aweme:id\/chc",
+            "3.1 万 com.ss.android.ugc.aweme:id\/pjl",
+            "视频7 com.ss.android.ugc.aweme:id\/cover",
+            "com.ss.android.ugc.aweme:id\/chc",
+            "72.3 万 com.ss.android.ugc.aweme:id\/pjl",
+            "视频8 com.ss.android.ugc.aweme:id\/cover",
+            "com.ss.android.ugc.aweme:id\/chc",
+            "16.9 万 com.ss.android.ugc.aweme:id\/pjl",
+            "视频9 com.ss.android.ugc.aweme:id\/cover",
+            "com.ss.android.ugc.aweme:id\/chc",
+            "56.6 万 com.ss.android.ugc.aweme:id\/pjl",
+            "com.ss.android.ugc.aweme:id\/zp1",
+            "com.ss.android.ugc.aweme:id\/18=",
+            "返回 com.ss.android.ugc.aweme:id\/back_btn",
+            "当bro以为自己很有影响力时 (硬曲是我主人) com.ss.android.ugc.aweme:id\/title",
+            "抖音音乐榜 com.ss.android.ugc.aweme:id\/n=n",
+            "分享 com.ss.android.ugc.aweme:id\/ze8",
+            "com.ss.android.ugc.aweme:id\/bottom_layout",
+            "com.ss.android.ugc.aweme:id\/0d9",
+            "com.ss.android.ugc.aweme:id\/gc8"
+          ],
+          "bottomCandidates": [
+            {
+              "label": "76.2 万 com.ss.android.ugc.aweme:id\/pjl",
+              "bounds": {
+                "left": 20,
+                "top": 2751,
+                "right": 240,
+                "bottom": 2816
+              },
+              "clickable": false
+            },
+            {
+              "label": "72.3 万 com.ss.android.ugc.aweme:id\/pjl",
+              "bounds": {
+                "left": 20,
+                "top": 3393,
+                "right": 240,
+                "bottom": 3104
+              },
+              "clickable": false
+            },
+            {
+              "label": "视频4 com.ss.android.ugc.aweme:id\/cover",
+              "bounds": {
+                "left": 0,
+                "top": 2200,
+                "right": 477,
+                "bottom": 2836
+              },
+              "clickable": true
+            },
+            {
+              "label": "视频7 com.ss.android.ugc.aweme:id\/cover",
+              "bounds": {
+                "left": 0,
+                "top": 2842,
+                "right": 477,
+                "bottom": 3104
+              },
+              "clickable": true
+            },
+            {
+              "label": "com.ss.android.ugc.aweme:id\/qdo",
+              "bounds": {
+                "left": 72,
+                "top": 2824,
+                "right": 684,
+                "bottom": 3024
+              },
+              "clickable": true
+            },
+            {
+              "label": "一键成片 com.ss.android.ugc.aweme:id\/3h9",
+              "bounds": {
+                "left": 302,
+                "top": 2881,
+                "right": 558,
+                "bottom": 2967
+              },
+              "clickable": false
+            },
+            {
+              "label": "18.6 万 com.ss.android.ugc.aweme:id\/pjl",
+              "bounds": {
+                "left": 503,
+                "top": 2751,
+                "right": 718,
+                "bottom": 2816
+              },
+              "clickable": false
+            },
+            {
+              "label": "16.9 万 com.ss.android.ugc.aweme:id\/pjl",
+              "bounds": {
+                "left": 503,
+                "top": 3393,
+                "right": 718,
+                "bottom": 3104
+              },
+              "clickable": false
+            },
+            {
+              "label": "视频5 com.ss.android.ugc.aweme:id\/cover",
+              "bounds": {
+                "left": 483,
+                "top": 2200,
+                "right": 957,
+                "bottom": 2832
+              },
+              "clickable": true
+            },
+            {
+              "label": "视频8 com.ss.android.ugc.aweme:id\/cover",
+              "bounds": {
+                "left": 483,
+                "top": 2842,
+                "right": 957,
+                "bottom": 3104
+              },
+              "clickable": true
+            },
+            {
+              "label": "拍同款 com.ss.android.ugc.aweme:id\/zen",
+              "bounds": {
+                "left": 756,
+                "top": 2824,
+                "right": 1368,
+                "bottom": 3024
+              },
+              "clickable": true
+            },
+            {
+              "label": "3.1 万 com.ss.android.ugc.aweme:id\/pjl",
+              "bounds": {
+                "left": 983,
+                "top": 2751,
+                "right": 1166,
+                "bottom": 2816
+              },
+              "clickable": false
+            }
+          ]
+        },
+        "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_snapshots\/com.ss.android.ugc.aweme\/20260521_123827_321_356ee4ab.json"
+      },
+      {
+        "id": "ui_snapshot_1779338307283",
+        "source": "before_macro_atom",
+        "note": "index=3; skillId=patched.1779338294410.4.wait",
+        "appPackage": "com.ss.android.ugc.aweme",
+        "windowClassName": "androidx.recyclerview.widget.RecyclerView",
+        "screenKey": "356ee4ab",
+        "screenshotPath": "null",
+        "visualHash": "null",
+        "summary": {
+          "nodeCount": 114,
+          "clickableCount": 24,
+          "editableCount": 0,
+          "scrollableCount": 1,
+          "labels": [
+            "android:id\/content",
+            "com.ss.android.ugc.aweme:id\/status_bar",
+            "com.ss.android.ugc.aweme:id\/koj",
+            "com.ss.android.ugc.aweme:id\/container",
+            "com.ss.android.ugc.aweme:id\/sv1",
+            "com.ss.android.ugc.aweme:id\/swc",
+            "com.ss.android.ugc.aweme:id\/k=7",
+            "com.ss.android.ugc.aweme:id\/svq",
+            "com.ss.android.ugc.aweme:id\/svt",
+            "com.ss.android.ugc.aweme:id\/su=",
+            "com.ss.android.ugc.aweme:id\/su9",
+            "暂停 com.ss.android.ugc.aweme:id\/sv7",
+            "com.ss.android.ugc.aweme:id\/su-",
+            "com.ss.android.ugc.aweme:id\/sva",
+            "com.ss.android.ugc.aweme:id\/sv6",
+            "com.ss.android.ugc.aweme:id\/sv=",
+            "暂停 com.ss.android.ugc.aweme:id\/sv_",
+            "com.ss.android.ugc.aweme:id\/su+",
+            "com.ss.android.ugc.aweme:id\/sw_",
+            "com.ss.android.ugc.aweme:id\/sws",
+            "当bro以为自己很有影响力时 (硬... 当bro以为自己很有影响力时 (硬曲是我主人) com.ss.android.ugc.aweme:id\/swp",
+            "com.ss.android.ugc.aweme:id\/swq",
+            "com.ss.android.ugc.aweme:id\/su1",
+            "DHC77 com.ss.android.ugc.aweme:id\/su2",
+            "com.ss.android.ugc.aweme:id\/swa",
+            "com.ss.android.ugc.aweme:id\/svm",
+            "com.ss.android.ugc.aweme:id\/swl",
+            "com.ss.android.ugc.aweme:id\/swm",
+            "音乐分享 com.ss.android.ugc.aweme:id\/swn",
+            "com.ss.android.ugc.aweme:id\/sv2",
+            "com.ss.android.ugc.aweme:id\/svh",
+            "com.ss.android.ugc.aweme:id\/sve",
+            "去听完整版 com.ss.android.ugc.aweme:id\/svj",
+            "收藏 com.ss.android.ugc.aweme:id\/su5",
+            "com.ss.android.ugc.aweme:id\/su6",
+            "收藏 com.ss.android.ugc.aweme:id\/su7",
+            "com.ss.android.ugc.aweme:id\/e42",
+            "com.ss.android.ugc.aweme:id\/cover",
+            "漂亮的妞 com.ss.android.ugc.aweme:id\/title",
+            "com.ss.android.ugc.aweme:id\/0zh",
+            "相关特效 com.ss.android.ugc.aweme:id\/sv4",
+            "com.ss.android.ugc.aweme:id\/5lt",
+            "7162.0 万人使用 com.ss.android.ugc.aweme:id\/usw",
+            "试用特效 com.ss.android.ugc.aweme:id\/5ln",
+            "视频1 com.ss.android.ugc.aweme:id\/cover",
+            "com.ss.android.ugc.aweme:id\/chc",
+            "2.9 万 com.ss.android.ugc.aweme:id\/pjl",
+            "视频2 com.ss.android.ugc.aweme:id\/cover",
+            "com.ss.android.ugc.aweme:id\/chc",
+            "103.7 万 com.ss.android.ugc.aweme:id\/pjl",
+            "视频3 com.ss.android.ugc.aweme:id\/cover",
+            "com.ss.android.ugc.aweme:id\/chc",
+            "93.2 万 com.ss.android.ugc.aweme:id\/pjl",
+            "视频4 com.ss.android.ugc.aweme:id\/cover",
+            "com.ss.android.ugc.aweme:id\/chc",
+            "76.2 万 com.ss.android.ugc.aweme:id\/pjl",
+            "视频5 com.ss.android.ugc.aweme:id\/cover",
+            "com.ss.android.ugc.aweme:id\/chc",
+            "18.6 万 com.ss.android.ugc.aweme:id\/pjl",
+            "视频6 com.ss.android.ugc.aweme:id\/cover",
+            "com.ss.android.ugc.aweme:id\/chc",
+            "3.1 万 com.ss.android.ugc.aweme:id\/pjl",
+            "视频7 com.ss.android.ugc.aweme:id\/cover",
+            "com.ss.android.ugc.aweme:id\/chc",
+            "72.3 万 com.ss.android.ugc.aweme:id\/pjl",
+            "视频8 com.ss.android.ugc.aweme:id\/cover",
+            "com.ss.android.ugc.aweme:id\/chc",
+            "16.9 万 com.ss.android.ugc.aweme:id\/pjl",
+            "视频9 com.ss.android.ugc.aweme:id\/cover",
+            "com.ss.android.ugc.aweme:id\/chc",
+            "56.6 万 com.ss.android.ugc.aweme:id\/pjl",
+            "com.ss.android.ugc.aweme:id\/zp1",
+            "com.ss.android.ugc.aweme:id\/18=",
+            "返回 com.ss.android.ugc.aweme:id\/back_btn",
+            "当bro以为自己很有影响力时 (硬曲是我主人) com.ss.android.ugc.aweme:id\/title",
+            "抖音音乐榜 com.ss.android.ugc.aweme:id\/n=n",
+            "分享 com.ss.android.ugc.aweme:id\/ze8",
+            "com.ss.android.ugc.aweme:id\/bottom_layout",
+            "com.ss.android.ugc.aweme:id\/0d9",
+            "com.ss.android.ugc.aweme:id\/gc8"
+          ],
+          "bottomCandidates": [
+            {
+              "label": "76.2 万 com.ss.android.ugc.aweme:id\/pjl",
+              "bounds": {
+                "left": 20,
+                "top": 2751,
+                "right": 240,
+                "bottom": 2816
+              },
+              "clickable": false
+            },
+            {
+              "label": "72.3 万 com.ss.android.ugc.aweme:id\/pjl",
+              "bounds": {
+                "left": 20,
+                "top": 3393,
+                "right": 240,
+                "bottom": 3104
+              },
+              "clickable": false
+            },
+            {
+              "label": "视频4 com.ss.android.ugc.aweme:id\/cover",
+              "bounds": {
+                "left": 0,
+                "top": 2200,
+                "right": 477,
+                "bottom": 2836
+              },
+              "clickable": true
+            },
+            {
+              "label": "视频7 com.ss.android.ugc.aweme:id\/cover",
+              "bounds": {
+                "left": 0,
+                "top": 2842,
+                "right": 477,
+                "bottom": 3104
+              },
+              "clickable": true
+            },
+            {
+              "label": "com.ss.android.ugc.aweme:id\/qdo",
+              "bounds": {
+                "left": 72,
+                "top": 2824,
+                "right": 684,
+                "bottom": 3024
+              },
+              "clickable": true
+            },
+            {
+              "label": "一键成片 com.ss.android.ugc.aweme:id\/3h9",
+              "bounds": {
+                "left": 302,
+                "top": 2881,
+                "right": 558,
+                "bottom": 2967
+              },
+              "clickable": false
+            },
+            {
+              "label": "18.6 万 com.ss.android.ugc.aweme:id\/pjl",
+              "bounds": {
+                "left": 503,
+                "top": 2751,
+                "right": 718,
+                "bottom": 2816
+              },
+              "clickable": false
+            },
+            {
+              "label": "16.9 万 com.ss.android.ugc.aweme:id\/pjl",
+              "bounds": {
+                "left": 503,
+                "top": 3393,
+                "right": 718,
+                "bottom": 3104
+              },
+              "clickable": false
+            },
+            {
+              "label": "视频5 com.ss.android.ugc.aweme:id\/cover",
+              "bounds": {
+                "left": 483,
+                "top": 2200,
+                "right": 957,
+                "bottom": 2832
+              },
+              "clickable": true
+            },
+            {
+              "label": "视频8 com.ss.android.ugc.aweme:id\/cover",
+              "bounds": {
+                "left": 483,
+                "top": 2842,
+                "right": 957,
+                "bottom": 3104
+              },
+              "clickable": true
+            },
+            {
+              "label": "拍同款 com.ss.android.ugc.aweme:id\/zen",
+              "bounds": {
+                "left": 756,
+                "top": 2824,
+                "right": 1368,
+                "bottom": 3024
+              },
+              "clickable": true
+            },
+            {
+              "label": "3.1 万 com.ss.android.ugc.aweme:id\/pjl",
+              "bounds": {
+                "left": 983,
+                "top": 2751,
+                "right": 1166,
+                "bottom": 2816
+              },
+              "clickable": false
+            }
+          ]
+        },
+        "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_snapshots\/com.ss.android.ugc.aweme\/20260521_123827_283_356ee4ab.json"
+      },
+      {
+        "id": "ui_snapshot_1779338307126",
+        "source": "after_macro_atom",
+        "note": "index=2; skillId=patched.1779338294410.3.findentrybybottomtabsweep; status=SUCCESS_MEDIUM_CONFIDENCE",
+        "appPackage": "com.ss.android.ugc.aweme",
+        "windowClassName": "android.widget.ImageView",
+        "screenKey": "f2734fbb",
+        "screenshotPath": "null",
+        "visualHash": "null",
+        "summary": {
+          "nodeCount": 114,
+          "clickableCount": 24,
+          "editableCount": 0,
+          "scrollableCount": 1,
+          "labels": [
+            "android:id\/content",
+            "com.ss.android.ugc.aweme:id\/status_bar",
+            "com.ss.android.ugc.aweme:id\/koj",
+            "com.ss.android.ugc.aweme:id\/container",
+            "com.ss.android.ugc.aweme:id\/sv1",
+            "com.ss.android.ugc.aweme:id\/swc",
+            "com.ss.android.ugc.aweme:id\/k=7",
+            "com.ss.android.ugc.aweme:id\/svq",
+            "com.ss.android.ugc.aweme:id\/svt",
+            "com.ss.android.ugc.aweme:id\/su=",
+            "com.ss.android.ugc.aweme:id\/su9",
+            "暂停 com.ss.android.ugc.aweme:id\/sv7",
+            "com.ss.android.ugc.aweme:id\/su-",
+            "com.ss.android.ugc.aweme:id\/sva",
+            "com.ss.android.ugc.aweme:id\/sv6",
+            "com.ss.android.ugc.aweme:id\/sv=",
+            "暂停 com.ss.android.ugc.aweme:id\/sv_",
+            "com.ss.android.ugc.aweme:id\/su+",
+            "com.ss.android.ugc.aweme:id\/sw_",
+            "com.ss.android.ugc.aweme:id\/sws",
+            "当bro以为自己很有影响力时 (硬... 当bro以为自己很有影响力时 (硬曲是我主人) com.ss.android.ugc.aweme:id\/swp",
+            "com.ss.android.ugc.aweme:id\/swq",
+            "com.ss.android.ugc.aweme:id\/su1",
+            "DHC77 com.ss.android.ugc.aweme:id\/su2",
+            "com.ss.android.ugc.aweme:id\/swa",
+            "com.ss.android.ugc.aweme:id\/svm",
+            "com.ss.android.ugc.aweme:id\/swl",
+            "com.ss.android.ugc.aweme:id\/swm",
+            "音乐分享 com.ss.android.ugc.aweme:id\/swn",
+            "com.ss.android.ugc.aweme:id\/sv2",
+            "com.ss.android.ugc.aweme:id\/svh",
+            "com.ss.android.ugc.aweme:id\/sve",
+            "去听完整版 com.ss.android.ugc.aweme:id\/svj",
+            "收藏 com.ss.android.ugc.aweme:id\/su5",
+            "com.ss.android.ugc.aweme:id\/su6",
+            "收藏 com.ss.android.ugc.aweme:id\/su7",
+            "com.ss.android.ugc.aweme:id\/e42",
+            "com.ss.android.ugc.aweme:id\/cover",
+            "漂亮的妞 com.ss.android.ugc.aweme:id\/title",
+            "com.ss.android.ugc.aweme:id\/0zh",
+            "相关特效 com.ss.android.ugc.aweme:id\/sv4",
+            "com.ss.android.ugc.aweme:id\/5lt",
+            "7162.0 万人使用 com.ss.android.ugc.aweme:id\/usw",
+            "试用特效 com.ss.android.ugc.aweme:id\/5ln",
+            "视频1 com.ss.android.ugc.aweme:id\/cover",
+            "com.ss.android.ugc.aweme:id\/chc",
+            "2.9 万 com.ss.android.ugc.aweme:id\/pjl",
+            "视频2 com.ss.android.ugc.aweme:id\/cover",
+            "com.ss.android.ugc.aweme:id\/chc",
+            "103.7 万 com.ss.android.ugc.aweme:id\/pjl",
+            "视频3 com.ss.android.ugc.aweme:id\/cover",
+            "com.ss.android.ugc.aweme:id\/chc",
+            "93.2 万 com.ss.android.ugc.aweme:id\/pjl",
+            "视频4 com.ss.android.ugc.aweme:id\/cover",
+            "com.ss.android.ugc.aweme:id\/chc",
+            "76.2 万 com.ss.android.ugc.aweme:id\/pjl",
+            "视频5 com.ss.android.ugc.aweme:id\/cover",
+            "com.ss.android.ugc.aweme:id\/chc",
+            "18.6 万 com.ss.android.ugc.aweme:id\/pjl",
+            "视频6 com.ss.android.ugc.aweme:id\/cover",
+            "com.ss.android.ugc.aweme:id\/chc",
+            "3.1 万 com.ss.android.ugc.aweme:id\/pjl",
+            "视频7 com.ss.android.ugc.aweme:id\/cover",
+            "com.ss.android.ugc.aweme:id\/chc",
+            "72.3 万 com.ss.android.ugc.aweme:id\/pjl",
+            "视频8 com.ss.android.ugc.aweme:id\/cover",
+            "com.ss.android.ugc.aweme:id\/chc",
+            "16.9 万 com.ss.android.ugc.aweme:id\/pjl",
+            "视频9 com.ss.android.ugc.aweme:id\/cover",
+            "com.ss.android.ugc.aweme:id\/chc",
+            "56.6 万 com.ss.android.ugc.aweme:id\/pjl",
+            "com.ss.android.ugc.aweme:id\/zp1",
+            "com.ss.android.ugc.aweme:id\/18=",
+            "返回 com.ss.android.ugc.aweme:id\/back_btn",
+            "当bro以为自己很有影响力时 (硬曲是我主人) com.ss.android.ugc.aweme:id\/title",
+            "抖音音乐榜 com.ss.android.ugc.aweme:id\/n=n",
+            "分享 com.ss.android.ugc.aweme:id\/ze8",
+            "com.ss.android.ugc.aweme:id\/bottom_layout",
+            "com.ss.android.ugc.aweme:id\/0d9",
+            "com.ss.android.ugc.aweme:id\/gc8"
+          ],
+          "bottomCandidates": [
+            {
+              "label": "76.2 万 com.ss.android.ugc.aweme:id\/pjl",
+              "bounds": {
+                "left": 20,
+                "top": 2751,
+                "right": 240,
+                "bottom": 2816
+              },
+              "clickable": false
+            },
+            {
+              "label": "72.3 万 com.ss.android.ugc.aweme:id\/pjl",
+              "bounds": {
+                "left": 20,
+                "top": 3393,
+                "right": 240,
+                "bottom": 3104
+              },
+              "clickable": false
+            },
+            {
+              "label": "视频4 com.ss.android.ugc.aweme:id\/cover",
+              "bounds": {
+                "left": 0,
+                "top": 2200,
+                "right": 477,
+                "bottom": 2836
+              },
+              "clickable": true
+            },
+            {
+              "label": "视频7 com.ss.android.ugc.aweme:id\/cover",
+              "bounds": {
+                "left": 0,
+                "top": 2842,
+                "right": 477,
+                "bottom": 3104
+              },
+              "clickable": true
+            },
+            {
+              "label": "com.ss.android.ugc.aweme:id\/qdo",
+              "bounds": {
+                "left": 72,
+                "top": 2824,
+                "right": 684,
+                "bottom": 3024
+              },
+              "clickable": true
+            },
+            {
+              "label": "一键成片 com.ss.android.ugc.aweme:id\/3h9",
+              "bounds": {
+                "left": 302,
+                "top": 2881,
+                "right": 558,
+                "bottom": 2967
+              },
+              "clickable": false
+            },
+            {
+              "label": "18.6 万 com.ss.android.ugc.aweme:id\/pjl",
+              "bounds": {
+                "left": 503,
+                "top": 2751,
+                "right": 718,
+                "bottom": 2816
+              },
+              "clickable": false
+            },
+            {
+              "label": "16.9 万 com.ss.android.ugc.aweme:id\/pjl",
+              "bounds": {
+                "left": 503,
+                "top": 3393,
+                "right": 718,
+                "bottom": 3104
+              },
+              "clickable": false
+            },
+            {
+              "label": "视频5 com.ss.android.ugc.aweme:id\/cover",
+              "bounds": {
+                "left": 483,
+                "top": 2200,
+                "right": 957,
+                "bottom": 2832
+              },
+              "clickable": true
+            },
+            {
+              "label": "视频8 com.ss.android.ugc.aweme:id\/cover",
+              "bounds": {
+                "left": 483,
+                "top": 2842,
+                "right": 957,
+                "bottom": 3104
+              },
+              "clickable": true
+            },
+            {
+              "label": "拍同款 com.ss.android.ugc.aweme:id\/zen",
+              "bounds": {
+                "left": 756,
+                "top": 2824,
+                "right": 1368,
+                "bottom": 3024
+              },
+              "clickable": true
+            },
+            {
+              "label": "3.1 万 com.ss.android.ugc.aweme:id\/pjl",
+              "bounds": {
+                "left": 983,
+                "top": 2751,
+                "right": 1166,
+                "bottom": 2816
+              },
+              "clickable": false
+            }
+          ]
+        },
+        "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_snapshots\/com.ss.android.ugc.aweme\/20260521_123827_125_f2734fbb.json"
+      },
+      {
+        "id": "ui_snapshot_1779338306854",
+        "source": "after_action",
+        "note": "patched.1779338294410.3.findentrybybottomtabsweep:FindEntryByBottomTabSweep:SUCCESS_MEDIUM_CONFIDENCE:Found and clicked entry '音乐，@油炸鸽子蛋创作的原声，按钮 com.ss.android.ugc.aweme:id\/sun' by alias '创作' during initial_page; aliases=发帖\/发布\/创作\/写\/加号\/+; events=[{\"phase\":\"open_before_recover\",\"pack",
+        "appPackage": "com.ss.android.ugc.aweme",
+        "windowClassName": "android.view.View",
+        "screenKey": "2b90f03c",
+        "screenshotPath": "null",
+        "visualHash": "null",
+        "summary": {
+          "nodeCount": 82,
+          "clickableCount": 15,
+          "editableCount": 0,
+          "scrollableCount": 1,
+          "labels": [
+            "android:id\/content",
+            "com.ss.android.ugc.aweme:id\/status_bar",
+            "com.ss.android.ugc.aweme:id\/koj",
+            "com.ss.android.ugc.aweme:id\/container",
+            "com.ss.android.ugc.aweme:id\/sv1",
+            "com.ss.android.ugc.aweme:id\/swc",
+            "com.ss.android.ugc.aweme:id\/k=7",
+            "com.ss.android.ugc.aweme:id\/svq",
+            "com.ss.android.ugc.aweme:id\/svt",
+            "com.ss.android.ugc.aweme:id\/su=",
+            "com.ss.android.ugc.aweme:id\/su9",
+            "播放 com.ss.android.ugc.aweme:id\/sv7",
+            "com.ss.android.ugc.aweme:id\/su-",
+            "com.ss.android.ugc.aweme:id\/sva",
+            "com.ss.android.ugc.aweme:id\/sv6",
+            "com.ss.android.ugc.aweme:id\/sv=",
+            "加载中 com.ss.android.ugc.aweme:id\/sv_",
+            "com.ss.android.ugc.aweme:id\/su+",
+            "com.ss.android.ugc.aweme:id\/sw_",
+            "com.ss.android.ugc.aweme:id\/sws",
+            "当bro以为自己很有影响力时 (硬... 当bro以为自己很有影响力时 (硬曲是我主人) com.ss.android.ugc.aweme:id\/swp",
+            "com.ss.android.ugc.aweme:id\/swq",
+            "com.ss.android.ugc.aweme:id\/su1",
+            "DHC77 com.ss.android.ugc.aweme:id\/su2",
+            "com.ss.android.ugc.aweme:id\/swa",
+            "com.ss.android.ugc.aweme:id\/svm",
+            "com.ss.android.ugc.aweme:id\/swl",
+            "com.ss.android.ugc.aweme:id\/swm",
+            "音乐分享 com.ss.android.ugc.aweme:id\/swn",
+            "com.ss.android.ugc.aweme:id\/sv2",
+            "com.ss.android.ugc.aweme:id\/svh",
+            "com.ss.android.ugc.aweme:id\/sve",
+            "去听完整版 com.ss.android.ugc.aweme:id\/svj",
+            "收藏 com.ss.android.ugc.aweme:id\/su5",
+            "com.ss.android.ugc.aweme:id\/su6",
+            "收藏 com.ss.android.ugc.aweme:id\/su7",
+            "com.ss.android.ugc.aweme:id\/e42",
+            "com.ss.android.ugc.aweme:id\/cover",
+            "漂亮的妞 com.ss.android.ugc.aweme:id\/title",
+            "com.ss.android.ugc.aweme:id\/0zh",
+            "相关特效 com.ss.android.ugc.aweme:id\/sv4",
+            "com.ss.android.ugc.aweme:id\/5lt",
+            "7162.0 万人使用 com.ss.android.ugc.aweme:id\/usw",
+            "试用特效 com.ss.android.ugc.aweme:id\/5ln",
+            "com.ss.android.ugc.aweme:id\/zp1",
+            "com.ss.android.ugc.aweme:id\/18=",
+            "返回 com.ss.android.ugc.aweme:id\/back_btn",
+            "当bro以为自己很有影响力时 (硬曲是我主人) com.ss.android.ugc.aweme:id\/title",
+            "抖音音乐榜 com.ss.android.ugc.aweme:id\/n=n",
+            "分享 com.ss.android.ugc.aweme:id\/ze8",
+            "com.ss.android.ugc.aweme:id\/bottom_layout",
+            "com.ss.android.ugc.aweme:id\/0d9",
+            "com.ss.android.ugc.aweme:id\/gc8",
+            "com.ss.android.ugc.aweme:id\/jis",
+            "com.ss.android.ugc.aweme:id\/qdo",
+            "com.ss.android.ugc.aweme:id\/qdl",
+            "com.ss.android.ugc.aweme:id\/18e",
+            "一键成片 com.ss.android.ugc.aweme:id\/3h9",
+            "拍同款 com.ss.android.ugc.aweme:id\/zen",
+            "com.ss.android.ugc.aweme:id\/oel",
+            "拍同款 com.ss.android.ugc.aweme:id\/w4c",
+            "com.ss.android.ugc.aweme:id\/action_bar_root",
+            "android:id\/statusBarBackground",
+            "android:id\/navigationBarBackground"
+          ],
+          "bottomCandidates": [
+            {
+              "label": "com.ss.android.ugc.aweme:id\/qdo",
+              "bounds": {
+                "left": 72,
+                "top": 2824,
+                "right": 684,
+                "bottom": 3024
+              },
+              "clickable": true
+            },
+            {
+              "label": "一键成片 com.ss.android.ugc.aweme:id\/3h9",
+              "bounds": {
+                "left": 302,
+                "top": 2881,
+                "right": 558,
+                "bottom": 2967
+              },
+              "clickable": false
+            },
+            {
+              "label": "拍同款 com.ss.android.ugc.aweme:id\/zen",
+              "bounds": {
+                "left": 756,
+                "top": 2824,
+                "right": 1368,
+                "bottom": 3024
+              },
+              "clickable": true
+            },
+            {
+              "label": "拍同款 com.ss.android.ugc.aweme:id\/w4c",
+              "bounds": {
+                "left": 1018,
+                "top": 2881,
+                "right": 1210,
+                "bottom": 2967
+              },
+              "clickable": false
+            }
+          ]
+        },
+        "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_snapshots\/com.ss.android.ugc.aweme\/20260521_123826_853_2b90f03c.json"
+      },
+      {
+        "id": "ui_snapshot_1779338296931",
+        "source": "before_action",
+        "note": "patched.1779338294410.3.findentrybybottomtabsweep:FindEntryByBottomTabSweep",
+        "appPackage": "com.ss.android.ugc.aweme",
+        "windowClassName": "android.widget.ImageView",
+        "screenKey": "27e54e4f",
+        "screenshotPath": "null",
+        "visualHash": "null",
+        "summary": {
+          "nodeCount": 188,
+          "clickableCount": 13,
+          "editableCount": 0,
+          "scrollableCount": 1,
+          "labels": [
+            "com.ss.android.ugc.aweme:id\/action_bar_root",
+            "android:id\/content",
+            "com.ss.android.ugc.aweme:id\/w4",
+            "com.ss.android.ugc.aweme:id\/s5g",
+            "com.ss.android.ugc.aweme:id\/root",
+            "com.ss.android.ugc.aweme:id\/w3m",
+            "com.ss.android.ugc.aweme:id\/s5g",
+            "com.ss.android.ugc.aweme:id\/w3l",
+            "com.ss.android.ugc.aweme:id\/w20",
+            "com.ss.android.ugc.aweme:id\/w3m",
+            "com.ss.android.ugc.aweme:id\/kjo",
+            "com.ss.android.ugc.aweme:id\/w4b",
+            "com.ss.android.ugc.aweme:id\/root_view",
+            "com.ss.android.ugc.aweme:id\/pbl",
+            "com.ss.android.ugc.aweme:id\/pbj",
+            "com.ss.android.ugc.aweme:id\/pbk",
+            "com.ss.android.ugc.aweme:id\/w3m",
+            "com.ss.android.ugc.aweme:id\/w26",
+            "com.ss.android.ugc.aweme:id\/w3m",
+            "com.ss.android.ugc.aweme:id\/sx6",
+            "com.ss.android.ugc.aweme:id\/w27",
+            "com.ss.android.ugc.aweme:id\/fd6",
+            "com.ss.android.ugc.aweme:id\/fff",
+            "com.ss.android.ugc.aweme:id\/fm6",
+            "com.ss.android.ugc.aweme:id\/fm0",
+            "com.ss.android.ugc.aweme:id\/fm3",
+            "com.ss.android.ugc.aweme:id\/fm7",
+            "com.ss.android.ugc.aweme:id\/w25",
+            "com.ss.android.ugc.aweme:id\/pd2",
+            "com.ss.android.ugc.aweme:id\/pd0",
+            "com.ss.android.ugc.aweme:id\/pd1",
+            "关闭 com.ss.android.ugc.aweme:id\/l-y",
+            "com.ss.android.ugc.aweme:id\/xrw",
+            "com.ss.android.ugc.aweme:id\/5vw",
+            "com.ss.android.ugc.aweme:id\/xp=",
+            "com.ss.android.ugc.aweme:id\/nkr",
+            "选择音乐 选择音乐 com.ss.android.ugc.aweme:id\/3g4",
+            "com.ss.android.ugc.aweme:id\/2b0",
+            "com.ss.android.ugc.aweme:id\/2by",
+            "com.ss.android.ugc.aweme:id\/2bo",
+            "com.ss.android.ugc.aweme:id\/2a6",
+            "com.ss.android.ugc.aweme:id\/c3h",
+            "切换到前置摄像头 com.ss.android.ugc.aweme:id\/iv_icon",
+            "翻转 com.ss.android.ugc.aweme:id\/34g",
+            "com.ss.android.ugc.aweme:id\/2a6",
+            "com.ss.android.ugc.aweme:id\/c3h",
+            "闪光灯 开启 com.ss.android.ugc.aweme:id\/iv_icon",
+            "闪光灯 com.ss.android.ugc.aweme:id\/34g",
+            "com.ss.android.ugc.aweme:id\/2a6",
+            "com.ss.android.ugc.aweme:id\/c3h",
+            "设置 com.ss.android.ugc.aweme:id\/iv_icon",
+            "设置 com.ss.android.ugc.aweme:id\/34g",
+            "com.ss.android.ugc.aweme:id\/2a6",
+            "com.ss.android.ugc.aweme:id\/c3h",
+            "com.ss.android.ugc.aweme:id\/iv_icon",
+            "com.ss.android.ugc.aweme:id\/2b2",
+            "com.ss.android.ugc.aweme:id\/2b1",
+            "com.ss.android.ugc.aweme:id\/2a6",
+            "com.ss.android.ugc.aweme:id\/c3h",
+            "动图关闭状态 com.ss.android.ugc.aweme:id\/iv_icon",
+            "动图 com.ss.android.ugc.aweme:id\/34g",
+            "com.ss.android.ugc.aweme:id\/2a6",
+            "com.ss.android.ugc.aweme:id\/c3h",
+            "灵感跟拍 com.ss.android.ugc.aweme:id\/iv_icon",
+            "灵感跟拍 com.ss.android.ugc.aweme:id\/34g",
+            "com.ss.android.ugc.aweme:id\/2a6",
+            "com.ss.android.ugc.aweme:id\/c3h",
+            "倒计时 com.ss.android.ugc.aweme:id\/iv_icon",
+            "倒计时 com.ss.android.ugc.aweme:id\/34g",
+            "com.ss.android.ugc.aweme:id\/2a6",
+            "com.ss.android.ugc.aweme:id\/c3h",
+            "美颜 com.ss.android.ugc.aweme:id\/iv_icon",
+            "美颜 com.ss.android.ugc.aweme:id\/34g",
+            "com.ss.android.ugc.aweme:id\/2bm",
+            "com.ss.android.ugc.aweme:id\/2a6",
+            "com.ss.android.ugc.aweme:id\/c3h",
+            "更多 com.ss.android.ugc.aweme:id\/iv_icon",
+            "更多 com.ss.android.ugc.aweme:id\/34g",
+            "com.ss.android.ugc.aweme:id\/w28",
+            "com.ss.android.ugc.aweme:id\/e-x"
+          ],
+          "bottomCandidates": [
+            {
+              "label": "选择特效，晚抑小猪 com.ss.android.ugc.aweme:id\/h2=",
+              "bounds": {
+                "left": 56,
+                "top": 2356,
+                "right": 520,
+                "bottom": 2756
+              },
+              "clickable": true
+            },
+            {
+              "label": "特效 com.ss.android.ugc.aweme:id\/46e",
+              "bounds": {
+                "left": 236,
+                "top": 2664,
+                "right": 340,
+                "bottom": 2756
+              },
+              "clickable": false
+            },
+            {
+              "label": "分段拍 com.ss.android.ugc.aweme:id\/1=j",
+              "bounds": {
+                "left": 324,
+                "top": 2206,
+                "right": 608,
+                "bottom": 2387
+              },
+              "clickable": false
+            },
+            {
+              "label": "文字 com.ss.android.ugc.aweme:id\/1=j",
+              "bounds": {
+                "left": 384,
+                "top": 2869,
+                "right": 608,
+                "bottom": 3054
+              },
+              "clickable": false
+            },
+            {
+              "label": "照片 com.ss.android.ugc.aweme:id\/1=j",
+              "bounds": {
+                "left": 608,
+                "top": 2206,
+                "right": 832,
+                "bottom": 2387
+              },
+              "clickable": false
+            },
+            {
+              "label": "相机 com.ss.android.ugc.aweme:id\/1=j",
+              "bounds": {
+                "left": 608,
+                "top": 2869,
+                "right": 832,
+                "bottom": 3054
+              },
+              "clickable": false
+            },
+            {
+              "label": "拍摄，按钮 com.ss.android.ugc.aweme:id\/aup",
+              "bounds": {
+                "left": 520,
+                "top": 2356,
+                "right": 920,
+                "bottom": 2756
+              },
+              "clickable": true
+            },
+            {
+              "label": "视频 com.ss.android.ugc.aweme:id\/1=j",
+              "bounds": {
+                "left": 832,
+                "top": 2206,
+                "right": 1056,
+                "bottom": 2387
+              },
+              "clickable": false
+            },
+            {
+              "label": "创作灵感 com.ss.android.ugc.aweme:id\/1=j",
+              "bounds": {
+                "left": 848,
+                "top": 2869,
+                "right": 1192,
+                "bottom": 3054
+              },
+              "clickable": false
+            },
+            {
+              "label": "相册 com.ss.android.ugc.aweme:id\/cob",
+              "bounds": {
+                "left": 920,
+                "top": 2356,
+                "right": 1384,
+                "bottom": 2756
+              },
+              "clickable": true
+            },
+            {
+              "label": "相册 com.ss.android.ugc.aweme:id\/48i",
+              "bounds": {
+                "left": 1012,
+                "top": 2664,
+                "right": 1292,
+                "bottom": 2734
+              },
+              "clickable": false
+            },
+            {
+              "label": "开直播 com.ss.android.ugc.aweme:id\/1=j",
+              "bounds": {
+                "left": 1208,
+                "top": 2869,
+                "right": 1440,
+                "bottom": 3054
+              },
+              "clickable": false
+            }
+          ]
+        },
+        "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_snapshots\/com.ss.android.ugc.aweme\/20260521_123816_930_27e54e4f.json"
+      },
+      {
+        "id": "ui_snapshot_1779338296892",
+        "source": "before_macro_atom",
+        "note": "index=2; skillId=patched.1779338294410.3.findentrybybottomtabsweep",
+        "appPackage": "com.ss.android.ugc.aweme",
+        "windowClassName": "android.widget.ImageView",
+        "screenKey": "27e54e4f",
+        "screenshotPath": "null",
+        "visualHash": "null",
+        "summary": {
+          "nodeCount": 188,
+          "clickableCount": 13,
+          "editableCount": 0,
+          "scrollableCount": 1,
+          "labels": [
+            "com.ss.android.ugc.aweme:id\/action_bar_root",
+            "android:id\/content",
+            "com.ss.android.ugc.aweme:id\/w4",
+            "com.ss.android.ugc.aweme:id\/s5g",
+            "com.ss.android.ugc.aweme:id\/root",
+            "com.ss.android.ugc.aweme:id\/w3m",
+            "com.ss.android.ugc.aweme:id\/s5g",
+            "com.ss.android.ugc.aweme:id\/w3l",
+            "com.ss.android.ugc.aweme:id\/w20",
+            "com.ss.android.ugc.aweme:id\/w3m",
+            "com.ss.android.ugc.aweme:id\/kjo",
+            "com.ss.android.ugc.aweme:id\/w4b",
+            "com.ss.android.ugc.aweme:id\/root_view",
+            "com.ss.android.ugc.aweme:id\/pbl",
+            "com.ss.android.ugc.aweme:id\/pbj",
+            "com.ss.android.ugc.aweme:id\/pbk",
+            "com.ss.android.ugc.aweme:id\/w3m",
+            "com.ss.android.ugc.aweme:id\/w26",
+            "com.ss.android.ugc.aweme:id\/w3m",
+            "com.ss.android.ugc.aweme:id\/sx6",
+            "com.ss.android.ugc.aweme:id\/w27",
+            "com.ss.android.ugc.aweme:id\/fd6",
+            "com.ss.android.ugc.aweme:id\/fff",
+            "com.ss.android.ugc.aweme:id\/fm6",
+            "com.ss.android.ugc.aweme:id\/fm0",
+            "com.ss.android.ugc.aweme:id\/fm3",
+            "com.ss.android.ugc.aweme:id\/fm7",
+            "com.ss.android.ugc.aweme:id\/w25",
+            "com.ss.android.ugc.aweme:id\/pd2",
+            "com.ss.android.ugc.aweme:id\/pd0",
+            "com.ss.android.ugc.aweme:id\/pd1",
+            "关闭 com.ss.android.ugc.aweme:id\/l-y",
+            "com.ss.android.ugc.aweme:id\/xrw",
+            "com.ss.android.ugc.aweme:id\/5vw",
+            "com.ss.android.ugc.aweme:id\/xp=",
+            "com.ss.android.ugc.aweme:id\/nkr",
+            "选择音乐 选择音乐 com.ss.android.ugc.aweme:id\/3g4",
+            "com.ss.android.ugc.aweme:id\/2b0",
+            "com.ss.android.ugc.aweme:id\/2by",
+            "com.ss.android.ugc.aweme:id\/2bo",
+            "com.ss.android.ugc.aweme:id\/2a6",
+            "com.ss.android.ugc.aweme:id\/c3h",
+            "切换到前置摄像头 com.ss.android.ugc.aweme:id\/iv_icon",
+            "翻转 com.ss.android.ugc.aweme:id\/34g",
+            "com.ss.android.ugc.aweme:id\/2a6",
+            "com.ss.android.ugc.aweme:id\/c3h",
+            "闪光灯 开启 com.ss.android.ugc.aweme:id\/iv_icon",
+            "闪光灯 com.ss.android.ugc.aweme:id\/34g",
+            "com.ss.android.ugc.aweme:id\/2a6",
+            "com.ss.android.ugc.aweme:id\/c3h",
+            "设置 com.ss.android.ugc.aweme:id\/iv_icon",
+            "设置 com.ss.android.ugc.aweme:id\/34g",
+            "com.ss.android.ugc.aweme:id\/2a6",
+            "com.ss.android.ugc.aweme:id\/c3h",
+            "com.ss.android.ugc.aweme:id\/iv_icon",
+            "com.ss.android.ugc.aweme:id\/2b2",
+            "com.ss.android.ugc.aweme:id\/2b1",
+            "com.ss.android.ugc.aweme:id\/2a6",
+            "com.ss.android.ugc.aweme:id\/c3h",
+            "动图关闭状态 com.ss.android.ugc.aweme:id\/iv_icon",
+            "动图 com.ss.android.ugc.aweme:id\/34g",
+            "com.ss.android.ugc.aweme:id\/2a6",
+            "com.ss.android.ugc.aweme:id\/c3h",
+            "灵感跟拍 com.ss.android.ugc.aweme:id\/iv_icon",
+            "灵感跟拍 com.ss.android.ugc.aweme:id\/34g",
+            "com.ss.android.ugc.aweme:id\/2a6",
+            "com.ss.android.ugc.aweme:id\/c3h",
+            "倒计时 com.ss.android.ugc.aweme:id\/iv_icon",
+            "倒计时 com.ss.android.ugc.aweme:id\/34g",
+            "com.ss.android.ugc.aweme:id\/2a6",
+            "com.ss.android.ugc.aweme:id\/c3h",
+            "美颜 com.ss.android.ugc.aweme:id\/iv_icon",
+            "美颜 com.ss.android.ugc.aweme:id\/34g",
+            "com.ss.android.ugc.aweme:id\/2bm",
+            "com.ss.android.ugc.aweme:id\/2a6",
+            "com.ss.android.ugc.aweme:id\/c3h",
+            "更多 com.ss.android.ugc.aweme:id\/iv_icon",
+            "更多 com.ss.android.ugc.aweme:id\/34g",
+            "com.ss.android.ugc.aweme:id\/w28",
+            "com.ss.android.ugc.aweme:id\/e-x"
+          ],
+          "bottomCandidates": [
+            {
+              "label": "选择特效，晚抑小猪 com.ss.android.ugc.aweme:id\/h2=",
+              "bounds": {
+                "left": 56,
+                "top": 2356,
+                "right": 520,
+                "bottom": 2756
+              },
+              "clickable": true
+            },
+            {
+              "label": "特效 com.ss.android.ugc.aweme:id\/46e",
+              "bounds": {
+                "left": 236,
+                "top": 2664,
+                "right": 340,
+                "bottom": 2756
+              },
+              "clickable": false
+            },
+            {
+              "label": "分段拍 com.ss.android.ugc.aweme:id\/1=j",
+              "bounds": {
+                "left": 324,
+                "top": 2206,
+                "right": 608,
+                "bottom": 2387
+              },
+              "clickable": false
+            },
+            {
+              "label": "文字 com.ss.android.ugc.aweme:id\/1=j",
+              "bounds": {
+                "left": 384,
+                "top": 2869,
+                "right": 608,
+                "bottom": 3054
+              },
+              "clickable": false
+            },
+            {
+              "label": "照片 com.ss.android.ugc.aweme:id\/1=j",
+              "bounds": {
+                "left": 608,
+                "top": 2206,
+                "right": 832,
+                "bottom": 2387
+              },
+              "clickable": false
+            },
+            {
+              "label": "相机 com.ss.android.ugc.aweme:id\/1=j",
+              "bounds": {
+                "left": 608,
+                "top": 2869,
+                "right": 832,
+                "bottom": 3054
+              },
+              "clickable": false
+            },
+            {
+              "label": "拍摄，按钮 com.ss.android.ugc.aweme:id\/aup",
+              "bounds": {
+                "left": 520,
+                "top": 2356,
+                "right": 920,
+                "bottom": 2756
+              },
+              "clickable": true
+            },
+            {
+              "label": "视频 com.ss.android.ugc.aweme:id\/1=j",
+              "bounds": {
+                "left": 832,
+                "top": 2206,
+                "right": 1056,
+                "bottom": 2387
+              },
+              "clickable": false
+            },
+            {
+              "label": "创作灵感 com.ss.android.ugc.aweme:id\/1=j",
+              "bounds": {
+                "left": 848,
+                "top": 2869,
+                "right": 1192,
+                "bottom": 3054
+              },
+              "clickable": false
+            },
+            {
+              "label": "相册 com.ss.android.ugc.aweme:id\/cob",
+              "bounds": {
+                "left": 920,
+                "top": 2356,
+                "right": 1384,
+                "bottom": 2756
+              },
+              "clickable": true
+            },
+            {
+              "label": "相册 com.ss.android.ugc.aweme:id\/48i",
+              "bounds": {
+                "left": 1012,
+                "top": 2664,
+                "right": 1292,
+                "bottom": 2734
+              },
+              "clickable": false
+            },
+            {
+              "label": "开直播 com.ss.android.ugc.aweme:id\/1=j",
+              "bounds": {
+                "left": 1208,
+                "top": 2869,
+                "right": 1440,
+                "bottom": 3054
+              },
+              "clickable": false
+            }
+          ]
+        },
+        "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_snapshots\/com.ss.android.ugc.aweme\/20260521_123816_892_27e54e4f.json"
+      }
+    ]
+  },
+  "teacherOutput": {
+    "aiJobs": [
+      {
+        "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ai_jobs\/2026-05-21\/factory_ai_replan_1779338282955.json",
+        "taskType": "RUNTIME_REPLAN_AFTER_FAILURE",
+        "aiStatus": "FAILED",
+        "httpStatus": 402,
+        "model": "deepseek-v4-pro",
+        "baseUrlHost": "api.deepseek.com",
+        "parseSuccess": false,
+        "parsedJson": {
+          "decision": {},
+          "planStepCount": 0,
+          "aiCandidateCount": 0,
+          "goalCompleted": false
+        }
+      },
+      {
+        "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ai_jobs\/2026-05-21\/factory_ai_replan_1779338310606.json",
+        "taskType": "RUNTIME_REPLAN_AFTER_FAILURE",
+        "aiStatus": "FAILED",
+        "httpStatus": 402,
+        "model": "deepseek-v4-pro",
+        "baseUrlHost": "api.deepseek.com",
+        "parseSuccess": false,
+        "parsedJson": {
+          "decision": {},
+          "planStepCount": 0,
+          "aiCandidateCount": 0,
+          "goalCompleted": false
+        }
+      }
+    ],
+    "planReviewOrReplanCount": 2,
+    "source": "deepseek_v4pro_or_phone_side_adapter"
+  },
+  "programOutput": {
+    "status": "FAILED_GOAL_UNVERIFIED",
+    "durationMs": 197706,
+    "steps": [
+      {
+        "title": "AppUI 探索：primary_tab_surface_entry",
+        "status": "SUCCESS",
+        "message": "tab=tab_2 graphical_ui eoy changed=true nodes=468",
+        "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_snapshots\/com.ss.android.ugc.aweme\/20260521_123640_967_60f57971.json",
+        "extra": {}
+      },
+      {
+        "title": "AppUI 探索：primary_tab_surface_entry",
+        "status": "RUNNING",
+        "message": "tab=tab_2 click graphical_ui: 未选中，收藏2，按钮",
+        "path": null,
+        "extra": {}
+      },
+      {
+        "title": "AppUI 探索：primary_tab_surface_entry",
+        "status": "LOW_CONFIDENCE",
+        "message": "tab=tab_2 graphical_ui 未选中，收藏2，按钮 changed=false nodes=776",
+        "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_snapshots\/com.ss.android.ugc.aweme\/20260521_123700_233_60f57971.json",
+        "extra": {}
+      },
+      {
+        "title": "AppUI 探索：primary_tab_surface_entry",
+        "status": "RUNNING",
+        "message": "tab=tab_2 click graphical_ui: share container",
+        "path": null,
+        "extra": {}
+      },
+      {
+        "title": "AppUI 探索：primary_tab_surface_entry",
+        "status": "SUCCESS",
+        "message": "tab=tab_2 graphical_ui share container changed=true nodes=468",
+        "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_snapshots\/com.ss.android.ugc.aweme\/20260521_123704_360_60f57971.json",
+        "extra": {}
+      },
+      {
+        "title": "AppUI 探索：primary_tab_surface_entry",
+        "status": "RUNNING",
+        "message": "tab=tab_2 click graphical_ui: no5",
+        "path": null,
+        "extra": {}
+      },
+      {
+        "title": "AppUI 探索：primary_tab_surface_entry",
+        "status": "SUCCESS",
+        "message": "tab=tab_2 graphical_ui no5 changed=true nodes=168",
+        "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_snapshots\/com.ss.android.ugc.aweme\/20260521_123709_913_b7e66ac3.json",
+        "extra": {}
+      },
+      {
+        "title": "AppUI 探索：primary_tab_surface_entry",
+        "status": "RUNNING",
+        "message": "tab=tab_2 click graphical_ui: 北京市",
+        "path": null,
+        "extra": {}
+      },
+      {
+        "title": "AppUI 探索：primary_tab_surface_entry",
+        "status": "SUCCESS",
+        "message": "tab=tab_2 graphical_ui 北京市 changed=true nodes=468",
+        "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_snapshots\/com.ss.android.ugc.aweme\/20260521_123713_763_60f57971.json",
+        "extra": {}
+      },
+      {
+        "title": "AppUI 探索：primary_tab_surface_entry",
+        "status": "RUNNING",
+        "message": "tab=tab_2 click graphical_ui: qdz",
+        "path": null,
+        "extra": {}
+      },
+      {
+        "title": "AppUI 探索：primary_tab_surface_entry",
+        "status": "SUCCESS",
+        "message": "tab=tab_2 graphical_ui qdz changed=true nodes=166",
+        "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_snapshots\/com.ss.android.ugc.aweme\/20260521_123718_414_2faa39c.json",
+        "extra": {}
+      },
+      {
+        "title": "AppUI 探索：primary_tab_surface_entry",
+        "status": "RUNNING",
+        "message": "tab=tab_3 click center_action: 0+u",
+        "path": null,
+        "extra": {}
+      },
+      {
+        "title": "AppUI 探索：primary_tab_surface_entry",
+        "status": "SUCCESS",
+        "message": "tab=tab_3 center_action 0+u changed=true nodes=192",
+        "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_snapshots\/com.ss.android.ugc.aweme\/20260521_123722_690_233da74e.json",
+        "extra": {}
+      },
+      {
+        "title": "AppUI 探索：primary_tab_surface_entry",
+        "status": "RUNNING",
+        "message": "tab=tab_3 click text_entry: 创作灵感",
+        "path": null,
+        "extra": {}
+      },
+      {
+        "title": "AppUI 探索：primary_tab_surface_entry",
+        "status": "SUCCESS",
+        "message": "tab=tab_3 text_entry 创作灵感 changed=true nodes=375",
+        "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_snapshots\/com.ss.android.ugc.aweme\/20260521_123735_069_d650db3f.json",
+        "extra": {}
+      },
+      {
+        "title": "AppUI 探索：primary_tab_surface_entry",
+        "status": "RUNNING",
+        "message": "tab=tab_3 click graphical_ui: 2a6",
+        "path": null,
+        "extra": {}
+      },
+      {
+        "title": "AppUI 探索：primary_tab_surface_entry",
+        "status": "SUCCESS",
+        "message": "tab=tab_3 graphical_ui 2a6 changed=true nodes=104",
+        "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_snapshots\/com.ss.android.ugc.aweme\/20260521_123739_817_233da74e.json",
+        "extra": {}
+      },
+      {
+        "title": "AppUI 自训练完成",
+        "status": "SUCCESS",
+        "message": "页面=12，边=24；图谱会参与本次 AI\/Skill 改写。",
+        "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/app_ui_graphs\/com.ss.android.ugc.aweme\/graph_candidate.json",
+        "extra": {
+          "appPackage": "com.ss.android.ugc.aweme",
+          "status": "CANDIDATE_EXPLORED",
+          "screenCount": 12,
+          "edgeCount": 24,
+          "quality": {
+            "usable": true,
+            "reason": "usable_app_ui_graph",
+            "qualityGate": {
+              "bottomPrimaryTabsRequired": true,
+              "bottomPrimaryTabsAttempted": 5,
+              "bottomPrimaryTabsOpened": 4,
+              "topIconsAreNotEnough": true,
+              "repeatedMessagePageIsNotProgress": true
+            },
+            "screenCount": 12,
+            "edgeCount": 24,
+            "nodeCount": 5459,
+            "clickableCount": 456,
+            "editableCount": 0
+          },
+          "screens": [
+            {
+              "screenId": "screen_6cd1c5f8",
+              "title": "侧边栏",
+              "screenKey": "6cd1c5f8",
+              "nodeCount": 75,
+              "clickableCount": 3,
+              "editableCount": 0,
+              "labels": [
+                "android:id\/content",
+                "com.ss.android.ugc.aweme:id\/koj",
+                "com.ss.android.ugc.aweme:id\/rjn",
+                "com.ss.android.ugc.aweme:id\/viewpager",
+                "com.ss.android.ugc.aweme:id\/rgm",
+                "com.ss.android.ugc.aweme:id\/rfb",
+                "com.ss.android.ugc.aweme:id\/0+b",
+                "com.ss.android.ugc.aweme:id\/jn7"
+              ],
+              "bottomTabs": []
+            },
+            {
+              "screenId": "screen_904f82f6",
+              "title": "",
+              "screenKey": "904f82f6",
+              "nodeCount": 1200,
+              "clickableCount": 85,
+              "editableCount": 0,
+              "labels": [
+                "android:id\/content",
+                "com.ss.android.ugc.aweme:id\/ert",
+                "com.ss.android.ugc.aweme:id\/container",
+                "com.ss.android.ugc.aweme:id\/mask_view",
+                "com.ss.android.ugc.aweme:id\/action_bar_root",
+                "com.ss.android.ugc.aweme:id\/koj",
+                "com.ss.android.ugc.aweme:id\/rjn",
+                "com.ss.android.ugc.aweme:id\/viewpager"
+              ],
+              "bottomTabs": [
+                {
+                  "index": 0,
+                  "label": "bottom_tab_1",
+                  "text": null,
+                  "desc": null,
+                  "resourceId": null,
+                  "class": "android.widget.FrameLayout",
+                  "clickable": true,
+                  "editable": false
+                }
+              ]
+            },
+            {
+              "screenId": "screen_60f57971",
+              "title": "",
+              "screenKey": "60f57971",
+              "nodeCount": 469,
+              "clickableCount": 39,
+              "editableCount": 0,
+              "labels": [
+                "android:id\/content",
+                "com.ss.android.ugc.aweme:id\/koj",
+                "com.ss.android.ugc.aweme:id\/rjn",
+                "com.ss.android.ugc.aweme:id\/viewpager",
+                "com.ss.android.ugc.aweme:id\/rgm",
+                "com.ss.android.ugc.aweme:id\/rfb",
+                "com.ss.android.ugc.aweme:id\/0+b",
+                "com.ss.android.ugc.aweme:id\/ipb"
+              ],
+              "bottomTabs": [
+                {
+                  "index": 0,
+                  "label": "bottom_tab_1",
+                  "text": null,
+                  "desc": null,
+                  "resourceId": null,
+                  "class": "android.widget.FrameLayout",
+                  "clickable": true,
+                  "editable": false
+                }
+              ]
+            },
+            {
+              "screenId": "screen_27e54e4f",
+              "title": "",
+              "screenKey": "27e54e4f",
+              "nodeCount": 188,
+              "clickableCount": 13,
+              "editableCount": 0,
+              "labels": [
+                "com.ss.android.ugc.aweme:id\/action_bar_root",
+                "android:id\/content",
+                "com.ss.android.ugc.aweme:id\/w4",
+                "com.ss.android.ugc.aweme:id\/s5g",
+                "com.ss.android.ugc.aweme:id\/root",
+                "com.ss.android.ugc.aweme:id\/w3m",
+                "com.ss.android.ugc.aweme:id\/w3l",
+                "com.ss.android.ugc.aweme:id\/w20"
+              ],
+              "bottomTabs": []
+            },
+            {
+              "screenId": "screen_d650db3f",
+              "title": "",
+              "screenKey": "d650db3f",
+              "nodeCount": 375,
+              "clickableCount": 75,
+              "editableCount": 0,
+              "labels": [
+                "com.ss.android.ugc.aweme:id\/action_bar_root",
+                "android:id\/content",
+                "com.ss.android.ugc.aweme:id\/w4",
+                "com.ss.android.ugc.aweme:id\/s5g",
+                "com.ss.android.ugc.aweme:id\/root",
+                "com.ss.android.ugc.aweme:id\/w3m",
+                "com.ss.android.ugc.aweme:id\/w3l",
+                "com.ss.android.ugc.aweme:id\/w20"
+              ],
+              "bottomTabs": []
+            },
+            {
+              "screenId": "screen_be8bf49e",
+              "title": "",
+              "screenKey": "be8bf49e",
+              "nodeCount": 959,
+              "clickableCount": 83,
+              "editableCount": 0,
+              "labels": [
+                "android:id\/content",
+                "com.ss.android.ugc.aweme:id\/action_bar_root",
+                "com.ss.android.ugc.aweme:id\/koj",
+                "com.ss.android.ugc.aweme:id\/rjn",
+                "com.ss.android.ugc.aweme:id\/viewpager",
+                "com.ss.android.ugc.aweme:id\/rgm",
+                "android:id\/tabcontent",
+                "com.ss.android.ugc.aweme:id\/0+b"
+              ],
+              "bottomTabs": [
+                {
+                  "index": 0,
+                  "label": "bottom_tab_1",
+                  "text": null,
+                  "desc": null,
+                  "resourceId": null,
+                  "class": "android.widget.FrameLayout",
+                  "clickable": true,
+                  "editable": false
+                }
+              ]
+            },
+            {
+              "screenId": "screen_26a344af",
+              "title": "精选，按钮",
+              "screenKey": "26a344af",
+              "nodeCount": 144,
+              "clickableCount": 17,
+              "editableCount": 0,
+              "labels": [
+                "android:id\/content",
+                "com.ss.android.ugc.aweme:id\/koj",
+                "com.ss.android.ugc.aweme:id\/rjn",
+                "com.ss.android.ugc.aweme:id\/viewpager",
+                "com.ss.android.ugc.aweme:id\/rgm",
+                "com.ss.android.ugc.aweme:id\/rfb",
+                "com.ss.android.ugc.aweme:id\/0+b",
+                "com.ss.android.ugc.aweme:id\/jn7"
+              ],
+              "bottomTabs": [
+                {
+                  "index": 0,
+                  "label": "bottom_tab_1",
+                  "text": null,
+                  "desc": null,
+                  "resourceId": null,
+                  "class": "android.widget.FrameLayout",
+                  "clickable": true,
+                  "editable": false
+                }
+              ]
+            },
+            {
+              "screenId": "screen_5580ff74",
+              "title": "",
+              "screenKey": "5580ff74",
+              "nodeCount": 744,
+              "clickableCount": 63,
+              "editableCount": 0,
+              "labels": [
+                "android:id\/content",
+                "com.ss.android.ugc.aweme:id\/koj",
+                "com.ss.android.ugc.aweme:id\/rjn",
+                "com.ss.android.ugc.aweme:id\/viewpager",
+                "com.ss.android.ugc.aweme:id\/rgm",
+                "com.ss.android.ugc.aweme:id\/rfb",
+                "com.ss.android.ugc.aweme:id\/0+b",
+                "com.ss.android.ugc.aweme:id\/jn7"
+              ],
+              "bottomTabs": [
+                {
+                  "index": 0,
+                  "label": "bottom_tab_1",
+                  "text": null,
+                  "desc": null,
+                  "resourceId": null,
+                  "class": "android.widget.FrameLayout",
+                  "clickable": true,
+                  "editable": false
+                }
+              ]
+            }
+          ],
+          "updatedAt": 1779338261494,
+          "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/app_ui_graphs\/com.ss.android.ugc.aweme\/graph_candidate.json",
+          "exploreStatus": "SUCCESS",
+          "exploreReport": {
+            "schemaVersion": 1,
+            "kind": "app_ui_explore_report",
+            "id": "app_ui_explore_report_app_ui_graph_com.ss.android.ugc.aweme_1779338114835",
+            "graphId": "app_ui_graph_com.ss.android.ugc.aweme_1779338114835",
+            "status": "SUCCESS",
+            "appPackage": "com.ss.android.ugc.aweme",
+            "appName": "抖音",
+            "screenCount": 12
+          }
+        }
+      },
+      {
+        "title": "AppUI 图谱已进入决策上下文",
+        "status": "INFO",
+        "message": "已知页面=12，边=24；AI\/模板改写会优先参考入口、底部分屏、输入框和可点击候选。",
+        "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/app_ui_graphs\/com.ss.android.ugc.aweme\/graph_candidate.json",
+        "extra": {
+          "appPackage": "com.ss.android.ugc.aweme",
+          "status": "CANDIDATE_EXPLORED",
+          "screenCount": 12,
+          "edgeCount": 24,
+          "quality": {
+            "usable": true,
+            "reason": "usable_app_ui_graph",
+            "qualityGate": {
+              "bottomPrimaryTabsRequired": true,
+              "bottomPrimaryTabsAttempted": 5,
+              "bottomPrimaryTabsOpened": 4,
+              "topIconsAreNotEnough": true,
+              "repeatedMessagePageIsNotProgress": true
+            },
+            "screenCount": 12,
+            "edgeCount": 24,
+            "nodeCount": 5459,
+            "clickableCount": 456,
+            "editableCount": 0
+          },
+          "screens": [
+            {
+              "screenId": "screen_6cd1c5f8",
+              "title": "侧边栏",
+              "screenKey": "6cd1c5f8",
+              "nodeCount": 75,
+              "clickableCount": 3,
+              "editableCount": 0,
+              "labels": [
+                "android:id\/content",
+                "com.ss.android.ugc.aweme:id\/koj",
+                "com.ss.android.ugc.aweme:id\/rjn",
+                "com.ss.android.ugc.aweme:id\/viewpager",
+                "com.ss.android.ugc.aweme:id\/rgm",
+                "com.ss.android.ugc.aweme:id\/rfb",
+                "com.ss.android.ugc.aweme:id\/0+b",
+                "com.ss.android.ugc.aweme:id\/jn7"
+              ],
+              "bottomTabs": []
+            },
+            {
+              "screenId": "screen_904f82f6",
+              "title": "",
+              "screenKey": "904f82f6",
+              "nodeCount": 1200,
+              "clickableCount": 85,
+              "editableCount": 0,
+              "labels": [
+                "android:id\/content",
+                "com.ss.android.ugc.aweme:id\/ert",
+                "com.ss.android.ugc.aweme:id\/container",
+                "com.ss.android.ugc.aweme:id\/mask_view",
+                "com.ss.android.ugc.aweme:id\/action_bar_root",
+                "com.ss.android.ugc.aweme:id\/koj",
+                "com.ss.android.ugc.aweme:id\/rjn",
+                "com.ss.android.ugc.aweme:id\/viewpager"
+              ],
+              "bottomTabs": [
+                {
+                  "index": 0,
+                  "label": "bottom_tab_1",
+                  "text": null,
+                  "desc": null,
+                  "resourceId": null,
+                  "class": "android.widget.FrameLayout",
+                  "clickable": true,
+                  "editable": false
+                }
+              ]
+            },
+            {
+              "screenId": "screen_60f57971",
+              "title": "",
+              "screenKey": "60f57971",
+              "nodeCount": 469,
+              "clickableCount": 39,
+              "editableCount": 0,
+              "labels": [
+                "android:id\/content",
+                "com.ss.android.ugc.aweme:id\/koj",
+                "com.ss.android.ugc.aweme:id\/rjn",
+                "com.ss.android.ugc.aweme:id\/viewpager",
+                "com.ss.android.ugc.aweme:id\/rgm",
+                "com.ss.android.ugc.aweme:id\/rfb",
+                "com.ss.android.ugc.aweme:id\/0+b",
+                "com.ss.android.ugc.aweme:id\/ipb"
+              ],
+              "bottomTabs": [
+                {
+                  "index": 0,
+                  "label": "bottom_tab_1",
+                  "text": null,
+                  "desc": null,
+                  "resourceId": null,
+                  "class": "android.widget.FrameLayout",
+                  "clickable": true,
+                  "editable": false
+                }
+              ]
+            },
+            {
+              "screenId": "screen_27e54e4f",
+              "title": "",
+              "screenKey": "27e54e4f",
+              "nodeCount": 188,
+              "clickableCount": 13,
+              "editableCount": 0,
+              "labels": [
+                "com.ss.android.ugc.aweme:id\/action_bar_root",
+                "android:id\/content",
+                "com.ss.android.ugc.aweme:id\/w4",
+                "com.ss.android.ugc.aweme:id\/s5g",
+                "com.ss.android.ugc.aweme:id\/root",
+                "com.ss.android.ugc.aweme:id\/w3m",
+                "com.ss.android.ugc.aweme:id\/w3l",
+                "com.ss.android.ugc.aweme:id\/w20"
+              ],
+              "bottomTabs": []
+            },
+            {
+              "screenId": "screen_d650db3f",
+              "title": "",
+              "screenKey": "d650db3f",
+              "nodeCount": 375,
+              "clickableCount": 75,
+              "editableCount": 0,
+              "labels": [
+                "com.ss.android.ugc.aweme:id\/action_bar_root",
+                "android:id\/content",
+                "com.ss.android.ugc.aweme:id\/w4",
+                "com.ss.android.ugc.aweme:id\/s5g",
+                "com.ss.android.ugc.aweme:id\/root",
+                "com.ss.android.ugc.aweme:id\/w3m",
+                "com.ss.android.ugc.aweme:id\/w3l",
+                "com.ss.android.ugc.aweme:id\/w20"
+              ],
+              "bottomTabs": []
+            },
+            {
+              "screenId": "screen_be8bf49e",
+              "title": "",
+              "screenKey": "be8bf49e",
+              "nodeCount": 959,
+              "clickableCount": 83,
+              "editableCount": 0,
+              "labels": [
+                "android:id\/content",
+                "com.ss.android.ugc.aweme:id\/action_bar_root",
+                "com.ss.android.ugc.aweme:id\/koj",
+                "com.ss.android.ugc.aweme:id\/rjn",
+                "com.ss.android.ugc.aweme:id\/viewpager",
+                "com.ss.android.ugc.aweme:id\/rgm",
+                "android:id\/tabcontent",
+                "com.ss.android.ugc.aweme:id\/0+b"
+              ],
+              "bottomTabs": [
+                {
+                  "index": 0,
+                  "label": "bottom_tab_1",
+                  "text": null,
+                  "desc": null,
+                  "resourceId": null,
+                  "class": "android.widget.FrameLayout",
+                  "clickable": true,
+                  "editable": false
+                }
+              ]
+            },
+            {
+              "screenId": "screen_26a344af",
+              "title": "精选，按钮",
+              "screenKey": "26a344af",
+              "nodeCount": 144,
+              "clickableCount": 17,
+              "editableCount": 0,
+              "labels": [
+                "android:id\/content",
+                "com.ss.android.ugc.aweme:id\/koj",
+                "com.ss.android.ugc.aweme:id\/rjn",
+                "com.ss.android.ugc.aweme:id\/viewpager",
+                "com.ss.android.ugc.aweme:id\/rgm",
+                "com.ss.android.ugc.aweme:id\/rfb",
+                "com.ss.android.ugc.aweme:id\/0+b",
+                "com.ss.android.ugc.aweme:id\/jn7"
+              ],
+              "bottomTabs": [
+                {
+                  "index": 0,
+                  "label": "bottom_tab_1",
+                  "text": null,
+                  "desc": null,
+                  "resourceId": null,
+                  "class": "android.widget.FrameLayout",
+                  "clickable": true,
+                  "editable": false
+                }
+              ]
+            },
+            {
+              "screenId": "screen_5580ff74",
+              "title": "",
+              "screenKey": "5580ff74",
+              "nodeCount": 744,
+              "clickableCount": 63,
+              "editableCount": 0,
+              "labels": [
+                "android:id\/content",
+                "com.ss.android.ugc.aweme:id\/koj",
+                "com.ss.android.ugc.aweme:id\/rjn",
+                "com.ss.android.ugc.aweme:id\/viewpager",
+                "com.ss.android.ugc.aweme:id\/rgm",
+                "com.ss.android.ugc.aweme:id\/rfb",
+                "com.ss.android.ugc.aweme:id\/0+b",
+                "com.ss.android.ugc.aweme:id\/jn7"
+              ],
+              "bottomTabs": [
+                {
+                  "index": 0,
+                  "label": "bottom_tab_1",
+                  "text": null,
+                  "desc": null,
+                  "resourceId": null,
+                  "class": "android.widget.FrameLayout",
+                  "clickable": true,
+                  "editable": false
+                }
+              ]
+            }
+          ],
+          "updatedAt": 1779338261494,
+          "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/app_ui_graphs\/com.ss.android.ugc.aweme\/graph_candidate.json",
+          "exploreStatus": "SUCCESS",
+          "exploreReport": {
+            "schemaVersion": 1,
+            "kind": "app_ui_explore_report",
+            "id": "app_ui_explore_report_app_ui_graph_com.ss.android.ugc.aweme_1779338114835",
+            "graphId": "app_ui_graph_com.ss.android.ugc.aweme_1779338114835",
+            "status": "SUCCESS",
+            "appPackage": "com.ss.android.ugc.aweme",
+            "appName": "抖音",
+            "screenCount": 12
+          }
+        }
+      },
+      {
+        "title": "规则优先执行",
+        "status": "INFO",
+        "message": "已识别为本地有 Skill 子集\/成功案例的任务：先直接生成候选 JSON 并执行；失败或目标校验不过再调用 v4pro 二次判断，避免一上来卡在 AI plan。",
+        "path": null,
+        "extra": {
+          "appPackage": "com.ss.android.ugc.aweme",
+          "instruction": "在抖音搜索王老菊，停在搜索结果页并记录用户、视频、综合分区。\n\n约束：目标 App=抖音，包名=com.ss.android.ugc.aweme。必须由 MacroPilot 手机端自己用无障碍、输入法、AI\/Skill JSON 执行，不允许依赖 ADB 手点目标 App。执行前先读取当前 UI；如果遇到广告、弹窗、小字提示，先记录文字并安全关闭。任务完成必须用当前 UI 证据验证，不能只因为步骤执行完就报成功。如果没有现成 skill，先复用已有相似 Skill JSON\/archetype，只改关键槽位如入口文字、坐标、目标文本、验证规则，再组装 atomic\/macro skill。需要探索入口时优先遍历底部标签、顶部小图标、图形化入口、侧边操作和子页面。本任务 stopBeforeSubmit=true：写草稿、评论、订单、支付类流程必须停在提交前，不点击最终发布、发送、提交订单、支付、确认授权。期望证据包括：王老菊、搜索结果。"
+        }
+      },
+      {
+        "title": "规则泛化抖音发视频任务",
+        "status": "SUCCESS",
+        "message": "专用细粒度 JSON：生成“我是AI”短视频素材 -> 打开抖音 -> 进入发布 -> 选最新视频 -> 填写文案 -> 点击发布。",
+        "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_candidates\/com.ss.android.ugc.aweme\/patched.command.1779338261623.json",
+        "extra": {}
+      },
+      {
+        "title": "dry-run 静态检查",
+        "status": "FAILED_DRY_RUN",
+        "message": "通过 19\/23。",
+        "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_dry_run_reports\/com.ss.android.ugc.aweme\/patched.command.1779338261623_1779338271855.json",
+        "extra": {}
+      },
+      {
+        "title": "拼装 app_config 预览",
+        "status": "SUCCESS",
+        "message": "候选\/测试产物已拼为单个 app_config 预览。",
+        "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/app_config_exports\/com.ss.android.ugc.aweme\/app_config_20260521_123751_880.json",
+        "extra": {}
+      },
+      {
+        "title": "执行候选 JSON",
+        "status": "RUNNING",
+        "message": "不等待 APPROVED：按用户要求，直接由 SkillJsonExecutor 执行候选 macro=patched.command.1779338261623。",
+        "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_candidates\/com.ss.android.ugc.aweme\/patched.command.1779338261623.json",
+        "extra": {}
+      },
+      {
+        "title": "候选 JSON 执行结果",
+        "status": "FAILED_DEPENDENCY_MISSING",
+        "message": "patched.command.1779338261623 -> FAILED_DEPENDENCY_MISSING；Dependency skill not found: com.ss.android.ugc.aweme.open_app",
+        "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/runtime\/run_reports\/com.ss.android.ugc.aweme\/ai_direct_run_1779338280699.json",
+        "extra": {}
+      },
+      {
+        "title": "失败后 AI 判断",
+        "status": "RUNNING",
+        "message": "当前不是直接停下：App 把失败原因、当前屏幕节点和已跑步骤发给手机端 AI，让 AI 判断下一段补救 JSON。",
+        "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/runtime\/run_reports\/com.ss.android.ugc.aweme\/ai_direct_run_1779338280699.json",
+        "extra": {
+          "phase": "REPLAN",
+          "trigger": "EXECUTION_FAILED",
+          "previousStatus": "FAILED_DEPENDENCY_MISSING",
+          "previousMessage": "Dependency skill not found: com.ss.android.ugc.aweme.open_app"
+        }
+      },
+      {
+        "title": "失败后 AI 判断 返回",
+        "status": "FAILED",
+        "message": "HTTP=402；模型=deepseek-v4-pro；goalCompleted=false；补救步骤=0；诊断=",
+        "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ai_jobs\/2026-05-21\/factory_ai_replan_1779338282955.json",
+        "extra": {
+          "decision": {}
+        }
+      },
+      {
+        "title": "通用第三方搜索兜底启动",
+        "status": "RUNNING",
+        "message": "AI 计划没有命中可点击节点；现在生成通用搜索 Skill JSON：打开应用 -> 点搜索入口 -> 输入关键词 -> 点搜索。坐标只作为低置信兜底。",
+        "path": null,
+        "extra": {
+          "query": "王老菊，停在结果页并记录用户、视频、综合分区。\n\n约束：目标 App=抖音，包名=com.ss.android.ugc.aweme。必须由 MacroPilot 手机端自己用无障碍、输入法、AI\/Skill JSON 执行，不允许依赖 ADB 手点目标 App。执行前先读取当前 UI；如果遇到广告、弹窗、小字提示，先记录文字并安全关闭。任务完成必须用当前 UI 证据验证，不能只因为步骤执行完就报成功。如果没有现成 skill，先复用已有相似 Skill JSON\/archetype，只改关键槽位如入口文字、坐标、目标文本、验证规则，再组装 atomic\/macro skill。需要探索入口时优先遍历底部标签、顶部小图标、图形化入口、侧边操作和子页面。本任务 stopBeforeSubmit=true：写草稿、评论、订单、支付类流程必须停在提交前，不点击最终发布、发送、提交订单、支付、确认授权。期望证据包括：王老菊、结果。",
+          "appPackage": "com.ss.android.ugc.aweme"
+        }
+      },
+      {
+        "title": "通用搜索 Skill JSON 已写入",
+        "status": "SUCCESS",
+        "message": "已写入 9 个候选 JSON，包含文字优先和坐标兜底。",
+        "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_candidates\/com.ss.android.ugc.aweme\/patched.command.1779338282983.json",
+        "extra": {}
+      },
+      {
+        "title": "通用搜索 dry-run",
+        "status": "FAILED_DRY_RUN",
+        "message": "通过 66\/80。",
+        "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_dry_run_reports\/com.ss.android.ugc.aweme\/patched.1779302523718.22.wait_1779338286742.json",
+        "extra": {}
+      },
+      {
+        "title": "通用搜索兜底执行结果",
+        "status": "FAILED_UNVERIFIABLE",
+        "message": "patched.command.1779338282983 -> FAILED_UNVERIFIABLE；Input change could not be verified",
+        "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/runtime\/run_reports\/com.ss.android.ugc.aweme\/generic_search_fallback_1779338293397.json",
+        "extra": {}
+      },
+      {
+        "title": "目标未完成，继续 AI 判断",
+        "status": "RUNNING",
+        "message": "没有同时看到搜索词和结果页标记，不能把搜索任务报告为成功。；第 1\/4 次继续重判当前屏幕。",
+        "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/runtime\/run_reports\/com.ss.android.ugc.aweme\/ai_direct_run_1779338280699.json",
+        "extra": {
+          "serviceConnected": true,
+          "appPackage": "com.ss.android.ugc.aweme",
+          "nodeCount": 188,
+          "goalVerificationSnapshotPath": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_snapshots\/com.ss.android.ugc.aweme\/20260521_123813_403_27e54e4f.json",
+          "goalVerificationScreenshotPath": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_screenshots\/com.ss.android.ugc.aweme\/20260521_123813_403_27e54e4f.png",
+          "goalVerificationScreenshotSha256": "004049b44cba2fb6c1c8423d3a458f3d8276ad6c2f1373360cfb6e8f8b299645",
+          "goalVerificationVisualHash": "0839632b0e247d1e083b85d1de4bce7d7a65ddcc9ad8012a56ef46f5c605f0ff",
+          "sampleTexts": [
+            "关闭",
+            "选择音乐 选择音乐",
+            "切换到前置摄像头",
+            "翻转",
+            "闪光灯 开启",
+            "闪光灯",
+            "设置",
+            "设置"
+          ],
+          "query": "王老菊，停在结果页并记录用户、视频、综合分区。",
+          "queryVisible": false
+        }
+      },
+      {
+        "title": "入口未找到，启动底部分页扫描",
+        "status": "RUNNING",
+        "message": "回到目标 App 主页，逐个点底部 tab，查找入口：发帖\/发布\/创作\/写\/加号\/+。",
+        "path": null,
+        "extra": {
+          "entryAliases": [
+            "发帖",
+            "发布",
+            "创作",
+            "写",
+            "加号",
+            "+"
+          ],
+          "currentUi": {
+            "serviceConnected": true,
+            "appPackage": "com.ss.android.ugc.aweme",
+            "windowClassName": "android.widget.ImageView",
+            "screenWidth": 1440,
+            "screenHeight": 3168,
+            "nodeCount": 188,
+            "snapshotPath": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_snapshots\/com.ss.android.ugc.aweme\/20260521_123813_918_27e54e4f.json",
+            "recentUiSnapshots": [
+              {
+                "id": "ui_snapshot_1779338294348",
+                "source": "current_ui_summary",
+                "note": "factory_ai_context",
+                "appPackage": "com.ss.android.ugc.aweme",
+                "windowClassName": "android.widget.ImageView",
+                "screenKey": "27e54e4f",
+                "screenshotPath": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_screenshots\/com.ss.android.ugc.aweme\/20260521_123813_918_27e54e4f.png",
+                "visualHash": "b5ec4b74bc92d9c4d0a008b8485092f1211d740439277a3c979e2133be0ea158"
+              },
+              {
+                "id": "ui_snapshot_1779338293859",
+                "source": "goal_verification",
+                "note": "在抖音搜索王老菊，停在搜索结果页并记录用户、视频、综合分区。",
+                "appPackage": "com.ss.android.ugc.aweme",
+                "windowClassName": "android.widget.ImageView",
+                "screenKey": "27e54e4f",
+                "screenshotPath": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_screenshots\/com.ss.android.ugc.aweme\/20260521_123813_403_27e54e4f.png",
+                "visualHash": "0839632b0e247d1e083b85d1de4bce7d7a65ddcc9ad8012a56ef46f5c605f0ff"
+              },
+              {
+                "id": "ui_snapshot_1779338293374",
+                "source": "macro_atom_failed",
+                "note": "index=4; skillId=patched.1779338282983.5.typeintofirstinput; status=FAILED_UNVERIFIABLE; Input change could not be verified",
+                "appPackage": "com.ss.android.ugc.aweme",
+                "windowClassName": "android.widget.ImageView",
+                "screenKey": "27e54e4f",
+                "screenshotPath": "null",
+                "visualHash": "null"
+              },
+              {
+                "id": "ui_snapshot_1779338293315",
+                "source": "action_failed",
+                "note": "patched.1779338282983.5.typeintofirstinput:TypeIntoFirstInput:FAILED_UNVERIFIABLE:Input change could not be verified",
+                "appPackage": "com.ss.android.ugc.aweme",
+                "windowClassName": "android.widget.ImageView",
+                "screenKey": "27e54e4f",
+                "screenshotPath": "null",
+                "visualHash": "null"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "title": "底部分页扫描 dry-run",
+        "status": "SUCCESS",
+        "message": "通过 5\/5。",
+        "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_dry_run_reports\/com.ss.android.ugc.aweme\/patched.command.1779338294410_1779338296399.json",
+        "extra": {}
+      },
+      {
+        "title": "底部分页扫描结果",
+        "status": "SUCCESS",
+        "message": "patched.command.1779338294410 -> SUCCESS_MEDIUM_CONFIDENCE; Macro atoms completed; reactiveDismissed=0",
+        "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/runtime\/run_reports\/com.ss.android.ugc.aweme\/bottom_tab_entry_sweep_1779338308424.json",
+        "extra": {
+          "entryAliases": [
+            "发帖",
+            "发布",
+            "创作",
+            "写",
+            "加号",
+            "+"
+          ],
+          "executorStatus": "SUCCESS_MEDIUM_CONFIDENCE"
+        }
+      },
+      {
+        "title": "失败后 AI 判断",
+        "status": "RUNNING",
+        "message": "当前不是直接停下：App 把失败原因、当前屏幕节点和已跑步骤发给手机端 AI，让 AI 判断下一段补救 JSON。",
+        "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/runtime\/run_reports\/com.ss.android.ugc.aweme\/bottom_tab_entry_sweep_1779338308424.json",
+        "extra": {
+          "phase": "REPLAN",
+          "trigger": "GOAL_UNVERIFIED_LOOP_1",
+          "previousStatus": "FAILED_GOAL_UNVERIFIED",
+          "previousMessage": "没有同时看到搜索词和结果页标记，不能把搜索任务报告为成功。"
+        }
+      },
+      {
+        "title": "失败后 AI 判断 返回",
+        "status": "FAILED",
+        "message": "HTTP=402；模型=deepseek-v4-pro；goalCompleted=false；补救步骤=0；诊断=",
+        "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ai_jobs\/2026-05-21\/factory_ai_replan_1779338310606.json",
+        "extra": {
+          "decision": {}
+        }
+      },
+      {
+        "title": "AI 未返回补救动作，停止重复等待",
+        "status": "FAILED_NO_REPLAN",
+        "message": "失败后 AI 判断没有产出可执行 JSON，通常是 API 超时\/网络失败\/解析失败；本次停止循环，避免一直卡在 RUNNING。",
+        "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ai_jobs\/2026-05-21\/factory_ai_replan_1779338310606.json",
+        "extra": {
+          "goalCheck": {
+            "serviceConnected": true,
+            "appPackage": "com.ss.android.ugc.aweme",
+            "nodeCount": 114,
+            "goalVerificationSnapshotPath": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_snapshots\/com.ss.android.ugc.aweme\/20260521_123828_429_8a6b89c4.json",
+            "goalVerificationScreenshotPath": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_screenshots\/com.ss.android.ugc.aweme\/20260521_123828_429_8a6b89c4.png",
+            "goalVerificationScreenshotSha256": "d4de0c878d08ad33e204eb269e75a3f3c13c514cf2faa81ef4ebadc764304020",
+            "goalVerificationVisualHash": "ae14e31bd5783cb0480df5716e9ccfe0e16f1dff77b3a54904abadc02a020d0c",
+            "sampleTexts": [
+              "暂停",
+              "暂停",
+              "当bro以为自己很有影响力时 (硬... 当bro以为自己很有影响力时 (硬曲是我主人)",
+              "DHC77",
+              "音乐分享",
+              "去听完整版",
+              "收藏",
+              "收藏"
+            ]
+          }
+        }
+      },
+      {
+        "title": "目标完成校验",
+        "status": "FAILED_GOAL_UNVERIFIED",
+        "message": "没有同时看到搜索词和结果页标记，不能把搜索任务报告为成功。",
+        "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/runtime\/run_reports\/com.ss.android.ugc.aweme\/bottom_tab_entry_sweep_1779338308424.json",
+        "extra": {
+          "serviceConnected": true,
+          "appPackage": "com.ss.android.ugc.aweme",
+          "nodeCount": 114,
+          "goalVerificationSnapshotPath": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_snapshots\/com.ss.android.ugc.aweme\/20260521_123828_429_8a6b89c4.json",
+          "goalVerificationScreenshotPath": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_screenshots\/com.ss.android.ugc.aweme\/20260521_123828_429_8a6b89c4.png",
+          "goalVerificationScreenshotSha256": "d4de0c878d08ad33e204eb269e75a3f3c13c514cf2faa81ef4ebadc764304020",
+          "goalVerificationVisualHash": "ae14e31bd5783cb0480df5716e9ccfe0e16f1dff77b3a54904abadc02a020d0c",
+          "sampleTexts": [
+            "暂停",
+            "暂停",
+            "当bro以为自己很有影响力时 (硬... 当bro以为自己很有影响力时 (硬曲是我主人)",
+            "DHC77",
+            "音乐分享",
+            "去听完整版",
+            "收藏",
+            "收藏"
+          ],
+          "query": "王老菊，停在结果页并记录用户、视频、综合分区。",
+          "queryVisible": false
+        }
+      },
+      {
+        "title": "保留目标应用前台用于证据",
+        "status": "INFO",
+        "message": "本次保留目标应用当前页面，不把 MacroPilot 拉回前台；报告里会记录当前 UI 快照和截图，方便继续让 AI 判断卡点。",
+        "path": null,
+        "extra": {}
+      }
+    ],
+    "assemblyReports": [
+      {
+        "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/app_config_exports\/com.ss.android.ugc.aweme\/assembly_report_1779338271898.json",
+        "planStepCount": 0,
+        "generatedSkillCount": 0,
+        "macroSkillId": "",
+        "rule": "",
+        "patches": []
+      },
+      {
+        "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/app_config_exports\/com.ss.android.ugc.aweme\/assembly_report_1779303709091.json",
+        "planStepCount": 0,
+        "generatedSkillCount": 0,
+        "macroSkillId": "",
+        "rule": "",
+        "patches": []
+      },
+      {
+        "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/app_config_exports\/com.ss.android.ugc.aweme\/assembly_report_1779303383523.json",
+        "planStepCount": 0,
+        "generatedSkillCount": 0,
+        "macroSkillId": "",
+        "rule": "",
+        "patches": []
+      },
+      {
+        "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/app_config_exports\/com.ss.android.ugc.aweme\/assembly_report_1779303329638.json",
+        "planStepCount": 0,
+        "generatedSkillCount": 0,
+        "macroSkillId": "",
+        "rule": "",
+        "patches": []
+      },
+      {
+        "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/app_config_exports\/com.ss.android.ugc.aweme\/assembly_report_1779302533027.json",
+        "planStepCount": 0,
+        "generatedSkillCount": 0,
+        "macroSkillId": "",
+        "rule": "",
+        "patches": []
+      }
+    ],
+    "previewConfigFile": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/app_config_exports\/com.ss.android.ugc.aweme\/app_config_20260521_123751_880.json",
+    "runtimeRunReport": {
+      "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/runtime\/run_reports\/com.ss.android.ugc.aweme\/bottom_tab_entry_sweep_1779338308424.json",
+      "kind": "skill_json_bottom_tab_entry_sweep_report",
+      "skillId": "patched.command.1779338294410",
+      "status": "SUCCESS_MEDIUM_CONFIDENCE",
+      "message": "Macro atoms completed; reactiveDismissed=0",
+      "durationMs": 12023,
+      "usedCoordinate": true,
+      "goalCheck": {}
+    },
+    "goalTruth": {
+      "status": "FAILED_GOAL_UNVERIFIED",
+      "hasExplicitGoalCheck": true,
+      "goalStepStatus": "FAILED_GOAL_UNVERIFIED",
+      "goalStepMessage": "没有同时看到搜索词和结果页标记，不能把搜索任务报告为成功。",
+      "goalEvidence": {
+        "serviceConnected": true,
+        "appPackage": "com.ss.android.ugc.aweme",
+        "nodeCount": 114,
+        "goalVerificationSnapshotPath": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_snapshots\/com.ss.android.ugc.aweme\/20260521_123828_429_8a6b89c4.json",
+        "goalVerificationScreenshotPath": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_screenshots\/com.ss.android.ugc.aweme\/20260521_123828_429_8a6b89c4.png",
+        "goalVerificationScreenshotSha256": "d4de0c878d08ad33e204eb269e75a3f3c13c514cf2faa81ef4ebadc764304020",
+        "goalVerificationVisualHash": "ae14e31bd5783cb0480df5716e9ccfe0e16f1dff77b3a54904abadc02a020d0c",
+        "sampleTexts": [
+          "暂停",
+          "暂停",
+          "当bro以为自己很有影响力时 (硬... 当bro以为自己很有影响力时 (硬曲是我主人)",
+          "DHC77",
+          "音乐分享",
+          "去听完整版",
+          "收藏",
+          "收藏",
+          "漂亮的妞",
+          "相关特效",
+          "7162.0 万人使用",
+          "试用特效",
+          "视频1",
+          "2.9 万",
+          "视频2",
+          "103.7 万",
+          "视频3",
+          "93.2 万",
+          "视频4",
+          "76.2 万",
+          "视频5",
+          "18.6 万",
+          "视频6",
+          "3.1 万",
+          "视频7",
+          "72.3 万",
+          "视频8",
+          "16.9 万",
+          "视频9",
+          "56.6 万"
+        ],
+        "query": "王老菊，停在结果页并记录用户、视频、综合分区。",
+        "queryVisible": false,
+        "resultMarkerVisible": true
+      }
+    }
+  },
+  "datasetTargets": [
+    "screen_classifier_sft",
+    "element_role_labeler_sft",
+    "task_flow_planner_sft",
+    "skill_patch_generator_sft",
+    "verifier_recovery_sft"
+  ],
+  "qualityGates": {
+    "hasAppUiGraph": true,
+    "hasAssemblyReport": true,
+    "hasRuntimeTrace": true,
+    "hasGoalTruth": true,
+    "eligibleForCleanTraining": true
+  },
+  "storagePolicy": {
+    "rawScreenshotsLongTerm": false,
+    "fullNodeTreesLongTerm": false,
+    "keepsCompactUiGraph": true,
+    "keepsPatchReports": true
+  },
+  "createdAt": 1779338312661
+}

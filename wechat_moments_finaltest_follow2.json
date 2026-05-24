@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 1,
+  "kind": "skill_json_ai_follow_up_run_report",
+  "id": "ai_follow_up_run_1778523139193",
+  "skillId": "direct.command.1778523136062",
+  "failedSkillId": "direct.command.1778522888739",
+  "appPackage": "com.tencent.mm",
+  "instruction": "微信发一条朋友圈，内容是我是AI，设置为仅自己可见，然后发表",
+  "engine": "ai_runtime_replan",
+  "phase": "REPLAN",
+  "trigger": "GOAL_UNVERIFIED_LOOP_2",
+  "previousStatus": "FAILED_GOAL_UNVERIFIED",
+  "previousMessage": "没有在微信当前页看到朋友圈内容，不能报告发布成功。",
+  "previousRuntimeReportFile": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/runtime\/run_reports\/com.tencent.mm\/ai_follow_up_run_1778523099436.json",
+  "aiJobFile": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ai_jobs\/2026-05-12\/factory_ai_replan_1778523136061.json",
+  "decision": {
+    "goalCompleted": false,
+    "screenAssessment": "当前微信页面无任何可操作节点，仅一个不可见节点，疑似空白或加载异常。",
+    "failureDiagnosis": "之前的底部标签搜索未能找到“发现”入口，可能卡在无法交互的页面或列表视图无可用元素。",
+    "confidence": "LOW",
+    "nextActionReason": "需要先返回微信主界面，再尝试坐标点击“发现”选项卡以导航至朋友圈入口。"
+  },
+  "approvedRequired": false,
+  "status": "SUCCESS_LOW_CONFIDENCE",
+  "message": "Macro atoms completed; reactiveDismissed=1",
+  "durationMs": 3103,
+  "usedCoordinate": false,
+  "details": {
+    "macroSkillId": "direct.command.1778523136062",
+    "atomTrace": [
+      {
+        "index": 0,
+        "skillId": "direct.1778523136062.1.back",
+        "actionType": "Back",
+        "status": "SUCCESS_MEDIUM_CONFIDENCE",
+        "message": "Window\/node state changed",
+        "usedCoordinate": false,
+        "details": null
+      },
+      {
+        "index": 1,
+        "skillId": "direct.1778523136062.2.wait",
+        "actionType": "Wait",
+        "status": "SUCCESS_MEDIUM_CONFIDENCE",
+        "message": "Waited 800ms; reactiveDismissed=0",
+        "usedCoordinate": false,
+        "details": null
+      },
+      {
+        "index": 2,
+        "skillId": "direct.1778523136062.3.clickcoordinate",
+        "actionType": "ClickCoordinate",
+        "status": "SUCCESS_LOW_CONFIDENCE",
+        "message": "Window\/node state changed",
+        "usedCoordinate": false,
+        "details": null
+      }
+    ],
+    "reactiveDismissed": 1
+  },
+  "allowSideEffect": true,
+  "skillFile": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_candidates\/com.tencent.mm\/direct.command.1778523136062.json",
+  "createdAt": 1778523139193
+}

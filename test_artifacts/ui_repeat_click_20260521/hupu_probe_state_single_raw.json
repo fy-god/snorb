@@ -1,0 +1,72 @@
+{
+  "schemaVersion": 1,
+  "kind": "app_ui_probe_service_state",
+  "id": "app_ui_probe_com.hupu.games_1779374935108",
+  "requestId": "app_ui_probe_com.hupu.games_1779374935108",
+  "status": "PARTIAL_TIMEOUT",
+  "message": "App UI probe finished",
+  "appPackage": "com.hupu.games",
+  "appName": "虎扑",
+  "payload": {
+    "success": false,
+    "reportFile": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/flow_reports\/com.hupu.games\/app_ui_explore_report_app_ui_graph_com.hupu.games_1779374935113.json",
+    "graphFile": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/app_ui_graphs\/com.hupu.games\/graph_candidate.json",
+    "screenCount": 7,
+    "edgeCount": 7,
+    "quality": {
+      "usable": true,
+      "reason": "usable_app_ui_graph",
+      "qualityGate": {
+        "bottomPrimaryTabsRequired": true,
+        "bottomPrimaryTabsAttempted": 5,
+        "bottomPrimaryTabsOpened": 5,
+        "topIconsAreNotEnough": true,
+        "repeatedMessagePageIsNotProgress": true
+      },
+      "screenCount": 7,
+      "edgeCount": 7,
+      "nodeCount": 3759,
+      "clickableCount": 686,
+      "editableCount": 0,
+      "labelCount": 491,
+      "bottomTabCount": 33,
+      "topEntryCount": 144,
+      "sideEntryCount": 148,
+      "entryCandidateCount": 39,
+      "inputCandidateCount": 0,
+      "videoCandidateCount": 28,
+      "clickTargetCount": 735,
+      "graphicalCandidateCount": 487,
+      "checkableCandidateCount": 6,
+      "candidateCount": 1620,
+      "changedEdgeCount": 7,
+      "edgeCategoryCounts": {
+        "primary_bottom_tab": 5,
+        "primary_tab_surface_entry": 2
+      },
+      "primaryBottomTabAttemptedCount": 5,
+      "primaryBottomTabAttemptedLabels": [
+        "bottom_tab_1",
+        "bottom_tab_2",
+        "bottom_tab_3",
+        "bottom_tab_5",
+        "bottom_tab_6"
+      ],
+      "primaryBottomTabOpenedCount": 5,
+      "primaryBottomTabOpenedLabels": [
+        "bottom_tab_1",
+        "bottom_tab_2",
+        "bottom_tab_3",
+        "bottom_tab_5",
+        "bottom_tab_6"
+      ],
+      "primaryTabSurfaceEntryChangedCount": 2,
+      "primaryTabSurfaceEntriesByTab": {
+        "bottom_tab_1": [
+          "搜索"
+        ]
+      }
+    }
+  },
+  "updatedAt": 1779375016934
+}

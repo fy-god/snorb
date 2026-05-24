@@ -1,0 +1,355 @@
+{
+  "schemaVersion": 1,
+  "kind": "skill_json_ai_direct_run_report",
+  "id": "ai_direct_run_1778522960863",
+  "skillId": "direct.command.1778522888739",
+  "appPackage": "com.tencent.mm",
+  "instruction": "微信发一条朋友圈，内容是我是AI，设置为仅自己可见，然后发表",
+  "engine": "ai_direct_skill_json",
+  "approvedRequired": false,
+  "status": "SUCCESS_LOW_CONFIDENCE",
+  "message": "Macro atoms completed; reactiveDismissed=0",
+  "durationMs": 72009,
+  "usedCoordinate": true,
+  "details": {
+    "macroSkillId": "direct.command.1778522888739",
+    "atomTrace": [
+      {
+        "index": 0,
+        "skillId": "direct.1778522888739.1.openapp",
+        "actionType": "OpenApp",
+        "status": "SUCCESS_MEDIUM_CONFIDENCE",
+        "message": "Launch intent sent for com.tencent.mm",
+        "usedCoordinate": false,
+        "details": null
+      },
+      {
+        "index": 1,
+        "skillId": "direct.1778522888739.2.handlereactiveoverlays",
+        "actionType": "HandleReactiveOverlays",
+        "status": "SUCCESS_MEDIUM_CONFIDENCE",
+        "message": "Reactive overlay pass completed; dismissed=0",
+        "usedCoordinate": false,
+        "details": null
+      },
+      {
+        "index": 2,
+        "skillId": "direct.1778522888739.3.capturewechatbottomtabs",
+        "actionType": "CaptureWechatBottomTabs",
+        "status": "SUCCESS_MEDIUM_CONFIDENCE",
+        "message": "Captured verified WeChat bottom tab UI snapshots: 4\/4; events=[{\"phase\":\"tab_shell_probe\",\"index\":0,\"visible\":true,\"snapshot\":\"\\\/data\\\/user\\\/0\\\/com.macropilot.app\\\/files\\\/macro_v2\\\/factory\\\/ui_snapshots\\\/com.tencent.mm\\\/20260512_020814_664_78355494.json\",\"screenshotPath\":\"\\\/data\\\/user\\\/0\\\/com.macropilot.app\\\/files\\\/macro_v2\\\/factory\\\/ui_screenshots\\\/com.tencent.mm\\\/20260512_020814_664_78355494.png\",\"selectedEvidence\":{\"selectedIndex\":3,\"selectedScore\":29,\"scores\":[0,0,0,29],\"surfaceWarning\":null}},{\"phase\":\"capture_tab\",\"index\":0,\"tabKey\":\"wechat\",\"tabLabel\":\"微信\",\"accepted\":true,\"snapshot\":\"\\\/data\\\/user\\\/0\\\/com.macropilot.app\\\/files\\\/macro_v2\\\/factory\\\/ui_snapshots\\\/com.tencent.mm\\\/20260512_020816_678_78355494.json\",\"screenshotPath\":\"\\\/data\\\/user\\\/0\\\/com.macropilot.app\\\/files\\\/macro_v2\\\/factory\\\/ui_screenshots\\\/com.tencent.mm\\\/20260512_020816_678_78355494.png\",\"attempts\":[{\"attempt\":0,\"tapY\":0.965,\"usedCoordinate\":true,\"tapSuccess\":true,\"tapMessage\":\"dispatchGesture tap sent (normalized=0.125,0.965 px=180,3057 screen=1440x3168)\",\"snapshot\":\"\\\/data\\\/user\\\/0\\\/com.macropilot.app\\\/files\\\/macro_v2\\\/factory\\\/ui_snapshots\\\/com.tencent.mm\\\/20260512_020816_678_78355494.json\",\"screenshotPath\":\"\\\/data\\\/user\\\/0\\\/com.macropilot.app\\\/files\\\/macro_v2\\\/factory\\\/ui_screenshots\\\/com.tencent.mm\\\/20260512_020816_678_78355494.png\",\"visualHash\":\"3c758de3c62d02bab7c22555cdbef6eeae9a6c2ee80e8bf1fe27e6b92acc485c\",\"duplicateVisualHash\":false,\"selectedEvidence\":{\"selectedIndex\":0,\"selectedScore\":35,\"scores\":[35,0,0,0],\"surfaceWarning\":\"chat_composer_visible\"},\"accepted\":true}]},{\"phase\":\"capture_tab\",\"index\":1,\"tabKey\":\"contacts\",\"tabLabel\":\"通讯录\",\"accepted\":true,\"snapshot\":\"\\\/data\\\/user\\\/0\\\/com.macropilot.app\\\/files\\\/macro_v2\\\/factory\\\/ui_snapshots\\\/com.tencent.mm\\\/20260512_020818_804_ec7c67e6.json\",\"screenshotPath\":\"\\\/data\\\/user\\\/0\\\/com.macropilot.app\\\/files\\\/macro_v2\\\/factory\\\/ui_screenshots\\\/com.tencent.mm\\\/20260512_020818_804_ec7c67e6.png\",\"attempts\":[{\"attempt\":0,\"tapY\":0.965,\"usedCoordinate\":true,\"tapSuccess\":true,\"tapMessage\":\"dispatchGesture tap sent (normalized=0.375,0.965 px=540,3057 screen=1440x3168)\",\"snapshot\":\"\\\/data\\\/user\\\/0\\\/com.macropilot.app\\\/files\\\/macro_v2\\\/factory\\\/ui_snapshots\\\/com.tencent.mm\\\/20260512_020818_804_ec7c67e6.json\",\"screenshotPath\":\"\\\/data\\\/user\\\/0\\\/com.macropilot.app\\\/files\\\/macro_v2\\\/factory\\\/ui_screenshots\\\/com.tencent.mm\\\/20260512_020818_804_ec7c67e6.png\",\"visualHash\":\"7380ebb6fbcc8f66d1bd01b5f8387a6d419285",
+        "usedCoordinate": true,
+        "details": {
+          "captured": 4,
+          "expected": 4,
+          "events": [
+            {
+              "phase": "tab_shell_probe",
+              "index": 0,
+              "visible": true,
+              "snapshot": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_snapshots\/com.tencent.mm\/20260512_020814_664_78355494.json",
+              "screenshotPath": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_screenshots\/com.tencent.mm\/20260512_020814_664_78355494.png",
+              "selectedEvidence": {
+                "selectedIndex": 3,
+                "selectedScore": 29,
+                "scores": [
+                  0,
+                  0,
+                  0,
+                  29
+                ],
+                "surfaceWarning": null
+              }
+            },
+            {
+              "phase": "capture_tab",
+              "index": 0,
+              "tabKey": "wechat",
+              "tabLabel": "微信",
+              "accepted": true,
+              "snapshot": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_snapshots\/com.tencent.mm\/20260512_020816_678_78355494.json",
+              "screenshotPath": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_screenshots\/com.tencent.mm\/20260512_020816_678_78355494.png",
+              "attempts": [
+                {
+                  "attempt": 0,
+                  "tapY": 0.965,
+                  "usedCoordinate": true,
+                  "tapSuccess": true,
+                  "tapMessage": "dispatchGesture tap sent (normalized=0.125,0.965 px=180,3057 screen=1440x3168)",
+                  "snapshot": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_snapshots\/com.tencent.mm\/20260512_020816_678_78355494.json",
+                  "screenshotPath": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_screenshots\/com.tencent.mm\/20260512_020816_678_78355494.png",
+                  "visualHash": "3c758de3c62d02bab7c22555cdbef6eeae9a6c2ee80e8bf1fe27e6b92acc485c",
+                  "duplicateVisualHash": false,
+                  "selectedEvidence": {
+                    "selectedIndex": 0,
+                    "selectedScore": 35,
+                    "scores": [
+                      35,
+                      0,
+                      0,
+                      0
+                    ],
+                    "surfaceWarning": "chat_composer_visible"
+                  },
+                  "accepted": true
+                }
+              ]
+            },
+            {
+              "phase": "capture_tab",
+              "index": 1,
+              "tabKey": "contacts",
+              "tabLabel": "通讯录",
+              "accepted": true,
+              "snapshot": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_snapshots\/com.tencent.mm\/20260512_020818_804_ec7c67e6.json",
+              "screenshotPath": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_screenshots\/com.tencent.mm\/20260512_020818_804_ec7c67e6.png",
+              "attempts": [
+                {
+                  "attempt": 0,
+                  "tapY": 0.965,
+                  "usedCoordinate": true,
+                  "tapSuccess": true,
+                  "tapMessage": "dispatchGesture tap sent (normalized=0.375,0.965 px=540,3057 screen=1440x3168)",
+                  "snapshot": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_snapshots\/com.tencent.mm\/20260512_020818_804_ec7c67e6.json",
+                  "screenshotPath": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_screenshots\/com.tencent.mm\/20260512_020818_804_ec7c67e6.png",
+                  "visualHash": "7380ebb6fbcc8f66d1bd01b5f8387a6d4192854c8ab7caa2931ee8d954e7f47e",
+                  "duplicateVisualHash": false,
+                  "selectedEvidence": {
+                    "selectedIndex": 1,
+                    "selectedScore": 37,
+                    "scores": [
+                      0,
+                      37,
+                      0,
+                      0
+                    ],
+                    "surfaceWarning": "chat_composer_visible"
+                  },
+                  "accepted": true
+                }
+              ]
+            },
+            {
+              "phase": "capture_tab",
+              "index": 2,
+              "tabKey": "discover",
+              "tabLabel": "发现",
+              "accepted": true,
+              "snapshot": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_snapshots\/com.tencent.mm\/20260512_020820_799_78355494.json",
+              "screenshotPath": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_screenshots\/com.tencent.mm\/20260512_020820_799_78355494.png",
+              "attempts": [
+                {
+                  "attempt": 0,
+                  "tapY": 0.965,
+                  "usedCoordinate": true,
+                  "tapSuccess": true,
+                  "tapMessage": "dispatchGesture tap sent (normalized=0.625,0.965 px=900,3057 screen=1440x3168)",
+                  "snapshot": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_snapshots\/com.tencent.mm\/20260512_020820_799_78355494.json",
+                  "screenshotPath": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_screenshots\/com.tencent.mm\/20260512_020820_799_78355494.png",
+                  "visualHash": "f45217d91f159ec850050264c933ecec3d198f5a18fc74eb509d9a9aea7f7827",
+                  "duplicateVisualHash": false,
+                  "selectedEvidence": {
+                    "selectedIndex": 2,
+                    "selectedScore": 42,
+                    "scores": [
+                      0,
+                      0,
+                      42,
+                      0
+                    ],
+                    "surfaceWarning": null
+                  },
+                  "accepted": true
+                }
+              ]
+            },
+            {
+              "phase": "capture_tab",
+              "index": 3,
+              "tabKey": "me",
+              "tabLabel": "我",
+              "accepted": true,
+              "snapshot": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_snapshots\/com.tencent.mm\/20260512_020822_827_78355494.json",
+              "screenshotPath": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_screenshots\/com.tencent.mm\/20260512_020822_827_78355494.png",
+              "attempts": [
+                {
+                  "attempt": 0,
+                  "tapY": 0.965,
+                  "usedCoordinate": true,
+                  "tapSuccess": true,
+                  "tapMessage": "dispatchGesture tap sent (normalized=0.875,0.965 px=1260,3057 screen=1440x3168)",
+                  "snapshot": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_snapshots\/com.tencent.mm\/20260512_020822_827_78355494.json",
+                  "screenshotPath": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_screenshots\/com.tencent.mm\/20260512_020822_827_78355494.png",
+                  "visualHash": "ecf11e2a2a019ad76ee193f3b542863c637a50e22b9b61dc21299263a9918cec",
+                  "duplicateVisualHash": false,
+                  "selectedEvidence": {
+                    "selectedIndex": 3,
+                    "selectedScore": 29,
+                    "scores": [
+                      0,
+                      0,
+                      0,
+                      29
+                    ],
+                    "surfaceWarning": null
+                  },
+                  "accepted": true
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "index": 3,
+        "skillId": "direct.1778522888739.4.clickvisibletext",
+        "actionType": "ClickVisibleText",
+        "status": "SUCCESS_LOW_CONFIDENCE",
+        "message": "Window\/node state changed",
+        "usedCoordinate": false,
+        "details": null
+      },
+      {
+        "index": 4,
+        "skillId": "direct.1778522888739.5.wait",
+        "actionType": "Wait",
+        "status": "SUCCESS_MEDIUM_CONFIDENCE",
+        "message": "Waited 900ms; reactiveDismissed=0",
+        "usedCoordinate": false,
+        "details": null
+      },
+      {
+        "index": 5,
+        "skillId": "direct.1778522888739.6.clickvisibletext",
+        "actionType": "ClickVisibleText",
+        "status": "SUCCESS_LOW_CONFIDENCE",
+        "message": "Window\/node state changed",
+        "usedCoordinate": false,
+        "details": null
+      },
+      {
+        "index": 6,
+        "skillId": "direct.1778522888739.7.wait",
+        "actionType": "Wait",
+        "status": "SUCCESS_MEDIUM_CONFIDENCE",
+        "message": "Waited 1200ms; reactiveDismissed=0",
+        "usedCoordinate": false,
+        "details": null
+      },
+      {
+        "index": 7,
+        "skillId": "direct.1778522888739.8.longpresscoordinate",
+        "actionType": "LongPressCoordinate",
+        "status": "SUCCESS_LOW_CONFIDENCE",
+        "message": "Window\/node state changed",
+        "usedCoordinate": false,
+        "details": null
+      },
+      {
+        "index": 8,
+        "skillId": "direct.1778522888739.9.wait",
+        "actionType": "Wait",
+        "status": "SUCCESS_MEDIUM_CONFIDENCE",
+        "message": "Waited 1200ms; reactiveDismissed=0",
+        "usedCoordinate": false,
+        "details": null
+      },
+      {
+        "index": 9,
+        "skillId": "direct.1778522888739.10.typeintofirstinput",
+        "actionType": "TypeIntoFirstInput",
+        "status": "SUCCESS_LOW_CONFIDENCE",
+        "message": "MacroPilot IME committed text; input not readable after action",
+        "usedCoordinate": false,
+        "details": null
+      },
+      {
+        "index": 10,
+        "skillId": "direct.1778522888739.11.wait",
+        "actionType": "Wait",
+        "status": "SUCCESS_MEDIUM_CONFIDENCE",
+        "message": "Waited 600ms; reactiveDismissed=0",
+        "usedCoordinate": false,
+        "details": null
+      },
+      {
+        "index": 11,
+        "skillId": "direct.1778522888739.12.clickvisibletext",
+        "actionType": "ClickVisibleText",
+        "status": "SUCCESS_LOW_CONFIDENCE",
+        "message": "谁可以看=No matching node; 公开=No matching node; 部分可见=No matching node; 私密=No matching node; coordinate fallback used",
+        "usedCoordinate": true,
+        "details": null
+      },
+      {
+        "index": 12,
+        "skillId": "direct.1778522888739.13.wait",
+        "actionType": "Wait",
+        "status": "SUCCESS_MEDIUM_CONFIDENCE",
+        "message": "Waited 800ms; reactiveDismissed=0",
+        "usedCoordinate": false,
+        "details": null
+      },
+      {
+        "index": 13,
+        "skillId": "direct.1778522888739.14.clickvisibletext",
+        "actionType": "ClickVisibleText",
+        "status": "SUCCESS_LOW_CONFIDENCE",
+        "message": "Window\/node state changed",
+        "usedCoordinate": false,
+        "details": null
+      },
+      {
+        "index": 14,
+        "skillId": "direct.1778522888739.15.wait",
+        "actionType": "Wait",
+        "status": "SUCCESS_MEDIUM_CONFIDENCE",
+        "message": "Waited 500ms; reactiveDismissed=0",
+        "usedCoordinate": false,
+        "details": null
+      },
+      {
+        "index": 15,
+        "skillId": "direct.1778522888739.16.clickvisibletext",
+        "actionType": "ClickVisibleText",
+        "status": "SUCCESS_LOW_CONFIDENCE",
+        "message": "完成=No matching node; 确定=No matching node; coordinate fallback used",
+        "usedCoordinate": true,
+        "details": null
+      },
+      {
+        "index": 16,
+        "skillId": "direct.1778522888739.17.wait",
+        "actionType": "Wait",
+        "status": "SUCCESS_MEDIUM_CONFIDENCE",
+        "message": "Waited 700ms; reactiveDismissed=0",
+        "usedCoordinate": false,
+        "details": null
+      },
+      {
+        "index": 17,
+        "skillId": "direct.1778522888739.18.clickvisibletext",
+        "actionType": "ClickVisibleText",
+        "status": "SUCCESS_LOW_CONFIDENCE",
+        "message": "发表=No matching node; 发布=No matching node; coordinate fallback used",
+        "usedCoordinate": true,
+        "details": null
+      },
+      {
+        "index": 18,
+        "skillId": "direct.1778522888739.19.wait",
+        "actionType": "Wait",
+        "status": "SUCCESS_MEDIUM_CONFIDENCE",
+        "message": "Waited 2500ms; reactiveDismissed=0",
+        "usedCoordinate": false,
+        "details": null
+      }
+    ],
+    "reactiveDismissed": 0
+  },
+  "allowSideEffect": true,
+  "params": {},
+  "skillFile": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_candidates\/com.tencent.mm\/direct.command.1778522888739.json",
+  "previewConfigFile": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/app_config_exports\/com.tencent.mm\/app_config_20260512_020808_812.json",
+  "createdAt": 1778522960863
+}

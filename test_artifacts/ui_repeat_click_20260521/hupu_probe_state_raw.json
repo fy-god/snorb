@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "kind": "app_ui_probe_service_state",
+  "id": "app_ui_probe_com.hupu.games_1779374757251",
+  "requestId": "app_ui_probe_com.hupu.games_1779374757251",
+  "status": "FAILED_BUSY",
+  "message": "Another App UI probe is running",
+  "appPackage": "com.hupu.games",
+  "appName": "虎扑",
+  "payload": null,
+  "updatedAt": 1779374757257
+}

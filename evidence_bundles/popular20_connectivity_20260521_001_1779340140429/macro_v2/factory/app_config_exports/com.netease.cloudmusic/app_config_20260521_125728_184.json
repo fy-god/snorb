@@ -1,0 +1,2611 @@
+{
+  "schemaVersion": 1,
+  "kind": "app_config",
+  "appPackage": "com.netease.cloudmusic",
+  "appName": "网易云音乐",
+  "screens": [],
+  "elements": [],
+  "atomicSkills": [
+    {
+      "schemaVersion": 1,
+      "kind": "atomic_skill",
+      "id": "patched.1779339445226.6.clickvisibletext",
+      "name": "改写步骤 6: ClickVisibleText",
+      "appPackage": "com.netease.cloudmusic",
+      "appVersion": "*",
+      "status": "DRY_RUN_PASSED",
+      "domain": "app_session",
+      "implements": "ClickElementSkill",
+      "params": [
+        {
+          "name": "text",
+          "type": "TEXT",
+          "required": true
+        }
+      ],
+      "preconditions": [],
+      "dependsOn": [],
+      "resolverPolicy": {
+        "order": [
+          "ACCESSIBILITY",
+          "APP_UI_GRAPH",
+          "COORDINATE_PACK",
+          "AI_PATCH"
+        ],
+        "allowAiSuggestionInFactory": true,
+        "allowAiInRuntime": true
+      },
+      "safety": {
+        "forbiddenTexts": [
+          "支付",
+          "付款",
+          "转账",
+          "删除",
+          "发布",
+          "授权"
+        ]
+      },
+      "factory": {
+        "source": "APP_SIDE_PLAN_PATCH_ASSEMBLER",
+        "instruction": "在网易云音乐搜索周杰伦，停在歌曲结果页并记录单曲、歌单、用户分区。\n\n约束：目标 App=网易云音乐，包名=com.netease.cloudmusic。必须由 MacroPilot 手机端自己用无障碍、输入法、AI\/Skill JSON 执行，不允许依赖 ADB 手点目标 App。执行前先读取当前 UI；如果遇到广告、弹窗、小字提示，先记录文字并安全关闭。任务完成必须用当前 UI 证据验证，不能只因为步骤执行完就报成功。如果没有现成 skill，先复用已有相似 Skill JSON\/archetype，只改关键槽位如入口文字、坐标、目标文本、验证规则，再组装 atomic\/macro skill。需要探索入口时优先遍历底部标签、顶部小图标、图形化入口、侧边操作和子页面。本任务 stopBeforeSubmit=true：写草稿、评论、订单、支付类流程必须停在提交前，不点击最终发布、发送、提交订单、支付、确认授权。期望证据包括：周杰伦、搜索结果。",
+        "aiJobPath": null,
+        "traceIds": [],
+        "sampleCount": 0,
+        "dryRunStatus": "PASSED",
+        "testRuns": 0,
+        "successRate": 0,
+        "promotionStatus": "NOT_PROMOTED",
+        "createdAt": 1779339447733,
+        "sourceSkillId": "com.netease.cloudmusic.common.click_visible_text",
+        "sourceSkillPath": "builtin:\/\/archetype\/com.netease.cloudmusic.common.click_visible_text",
+        "sourceOrigin": "BUILTIN_ARCHETYPE",
+        "templateMatchScore": 90,
+        "templateMatchReason": "same_app,same_action_type,same_capability,archetype_available,same_label,search_intent,publish_intent",
+        "patchReason": "reuse_existing_skill_json_and_rewrite_key_slots",
+        "lastDryRunReport": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_dry_run_reports\/com.netease.cloudmusic\/patched.1779339445226.6.clickvisibletext_1779339448167.json",
+        "lastDryRunAt": 1779339448167
+      },
+      "capabilityRequired": {
+        "minLevel": "D",
+        "inputRequired": false,
+        "nodeReadablePreferred": true,
+        "coordinateFallbackAllowed": false,
+        "allowedInputChannels": [],
+        "verificationRequired": "MEDIUM"
+      },
+      "action": {
+        "type": "ClickVisibleText",
+        "text": "搜索",
+        "textAliases": [
+          "搜索",
+          "确定"
+        ],
+        "timeoutMs": 1500
+      },
+      "verify": {
+        "type": "WindowChangedOrNodeStateChanged",
+        "timeoutMs": 1500,
+        "allowLowConfidenceWhenCoordinateOnly": true
+      },
+      "resultPolicy": {
+        "verified": "SUCCESS",
+        "partialVerified": "SUCCESS_MEDIUM_CONFIDENCE",
+        "coordinateOnly": "SUCCESS_LOW_CONFIDENCE",
+        "unverifiable": "FAILED_UNVERIFIABLE"
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "kind": "atomic_skill",
+      "id": "patched.1779339445226.7.wait",
+      "name": "改写步骤 7: Wait",
+      "appPackage": "com.netease.cloudmusic",
+      "appVersion": "*",
+      "status": "DRY_RUN_PASSED",
+      "domain": "app_session",
+      "implements": "WaitUntilSkill",
+      "params": [],
+      "preconditions": [],
+      "dependsOn": [],
+      "resolverPolicy": {
+        "order": [
+          "ACCESSIBILITY",
+          "APP_UI_GRAPH",
+          "COORDINATE_PACK",
+          "AI_PATCH"
+        ],
+        "allowAiSuggestionInFactory": true,
+        "allowAiInRuntime": true
+      },
+      "safety": {
+        "forbiddenTexts": [
+          "支付",
+          "付款",
+          "转账",
+          "删除",
+          "发布",
+          "授权"
+        ]
+      },
+      "factory": {
+        "source": "APP_SIDE_PLAN_PATCH_ASSEMBLER",
+        "instruction": "在网易云音乐搜索周杰伦，停在歌曲结果页并记录单曲、歌单、用户分区。\n\n约束：目标 App=网易云音乐，包名=com.netease.cloudmusic。必须由 MacroPilot 手机端自己用无障碍、输入法、AI\/Skill JSON 执行，不允许依赖 ADB 手点目标 App。执行前先读取当前 UI；如果遇到广告、弹窗、小字提示，先记录文字并安全关闭。任务完成必须用当前 UI 证据验证，不能只因为步骤执行完就报成功。如果没有现成 skill，先复用已有相似 Skill JSON\/archetype，只改关键槽位如入口文字、坐标、目标文本、验证规则，再组装 atomic\/macro skill。需要探索入口时优先遍历底部标签、顶部小图标、图形化入口、侧边操作和子页面。本任务 stopBeforeSubmit=true：写草稿、评论、订单、支付类流程必须停在提交前，不点击最终发布、发送、提交订单、支付、确认授权。期望证据包括：周杰伦、搜索结果。",
+        "aiJobPath": null,
+        "traceIds": [],
+        "sampleCount": 0,
+        "dryRunStatus": "PASSED",
+        "testRuns": 0,
+        "successRate": 0,
+        "promotionStatus": "NOT_PROMOTED",
+        "createdAt": 1779339448152,
+        "sourceSkillId": "patched.1779339445226.4.wait",
+        "sourceSkillPath": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_candidates\/com.netease.cloudmusic\/patched.1779339445226.4.wait.json",
+        "sourceOrigin": "LOCAL_JSON",
+        "templateMatchScore": 70,
+        "templateMatchReason": "same_app,same_action_type,same_capability,search_intent",
+        "patchReason": "reuse_existing_skill_json_and_rewrite_key_slots",
+        "lastDryRunReport": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_dry_run_reports\/com.netease.cloudmusic\/patched.1779339445226.7.wait_1779339448168.json",
+        "lastDryRunAt": 1779339448168
+      },
+      "capabilityRequired": {
+        "minLevel": "D",
+        "inputRequired": false,
+        "nodeReadablePreferred": true,
+        "coordinateFallbackAllowed": false,
+        "allowedInputChannels": [],
+        "verificationRequired": "MEDIUM"
+      },
+      "action": {
+        "type": "Wait",
+        "timeoutMs": 1800
+      },
+      "verify": {
+        "type": "Always",
+        "timeoutMs": 1
+      },
+      "resultPolicy": {
+        "verified": "SUCCESS",
+        "partialVerified": "SUCCESS_MEDIUM_CONFIDENCE",
+        "coordinateOnly": "SUCCESS_LOW_CONFIDENCE",
+        "unverifiable": "FAILED_UNVERIFIABLE"
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "kind": "atomic_skill",
+      "id": "patched.1779339445226.2.handlereactiveoverlays",
+      "name": "改写步骤 2: HandleReactiveOverlays",
+      "appPackage": "com.netease.cloudmusic",
+      "status": "DRY_RUN_PASSED",
+      "implements": "DismissDialogSkill",
+      "params": [],
+      "preconditions": [],
+      "dependsOn": [],
+      "capabilityRequired": {
+        "minLevel": "D",
+        "inputRequired": false,
+        "nodeReadablePreferred": true,
+        "coordinateFallbackAllowed": false,
+        "allowedInputChannels": [],
+        "verificationRequired": "MEDIUM"
+      },
+      "resolverPolicy": {
+        "order": [
+          "ACCESSIBILITY",
+          "APP_UI_GRAPH",
+          "COORDINATE_PACK",
+          "AI_PATCH"
+        ],
+        "allowAiSuggestionInFactory": true,
+        "allowAiInRuntime": true
+      },
+      "safety": {},
+      "action": {
+        "type": "HandleReactiveOverlays",
+        "appPackage": "com.netease.cloudmusic",
+        "maxPasses": 3
+      },
+      "verify": {
+        "type": "Always",
+        "timeoutMs": 1
+      },
+      "resultPolicy": {
+        "verified": "SUCCESS",
+        "partialVerified": "SUCCESS_MEDIUM_CONFIDENCE",
+        "coordinateOnly": "SUCCESS_LOW_CONFIDENCE",
+        "unverifiable": "FAILED_UNVERIFIABLE"
+      },
+      "factory": {
+        "source": "APP_SIDE_PLAN_PATCH_ASSEMBLER",
+        "instruction": "在网易云音乐搜索周杰伦，停在歌曲结果页并记录单曲、歌单、用户分区。\n\n约束：目标 App=网易云音乐，包名=com.netease.cloudmusic。必须由 MacroPilot 手机端自己用无障碍、输入法、AI\/Skill JSON 执行，不允许依赖 ADB 手点目标 App。执行前先读取当前 UI；如果遇到广告、弹窗、小字提示，先记录文字并安全关闭。任务完成必须用当前 UI 证据验证，不能只因为步骤执行完就报成功。如果没有现成 skill，先复用已有相似 Skill JSON\/archetype，只改关键槽位如入口文字、坐标、目标文本、验证规则，再组装 atomic\/macro skill。需要探索入口时优先遍历底部标签、顶部小图标、图形化入口、侧边操作和子页面。本任务 stopBeforeSubmit=true：写草稿、评论、订单、支付类流程必须停在提交前，不点击最终发布、发送、提交订单、支付、确认授权。期望证据包括：周杰伦、搜索结果。",
+        "aiJobPath": null,
+        "traceIds": [],
+        "sampleCount": 0,
+        "dryRunStatus": "PASSED",
+        "testRuns": 0,
+        "successRate": 0,
+        "promotionStatus": "NOT_PROMOTED",
+        "createdAt": 1779339446042,
+        "sourceSkillId": "patched.1779339154666.2.handlereactiveoverlays",
+        "sourceSkillPath": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_candidates\/com.zhihu.android\/patched.1779339154666.2.handlereactiveoverlays.json",
+        "sourceOrigin": "LOCAL_JSON",
+        "templateMatchScore": 52,
+        "templateMatchReason": "same_action_type,same_capability",
+        "patchReason": "reuse_existing_skill_json_and_rewrite_key_slots",
+        "lastDryRunReport": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_dry_run_reports\/com.netease.cloudmusic\/patched.1779339445226.2.handlereactiveoverlays_1779339448162.json",
+        "lastDryRunAt": 1779339448163
+      },
+      "appVersion": "*"
+    },
+    {
+      "schemaVersion": 1,
+      "kind": "atomic_skill",
+      "id": "patched.1779339445226.3.clickvisibletext",
+      "name": "改写步骤 3: ClickVisibleText",
+      "appPackage": "com.netease.cloudmusic",
+      "appVersion": "*",
+      "status": "DRY_RUN_PASSED",
+      "domain": "app_session",
+      "implements": "ClickElementSkill",
+      "params": [
+        {
+          "name": "text",
+          "type": "TEXT",
+          "required": true
+        }
+      ],
+      "preconditions": [],
+      "dependsOn": [],
+      "resolverPolicy": {
+        "order": [
+          "ACCESSIBILITY",
+          "APP_UI_GRAPH",
+          "COORDINATE_PACK",
+          "AI_PATCH"
+        ],
+        "allowAiSuggestionInFactory": true,
+        "allowAiInRuntime": true
+      },
+      "safety": {
+        "forbiddenTexts": [
+          "支付",
+          "付款",
+          "转账",
+          "删除",
+          "发布",
+          "授权"
+        ]
+      },
+      "factory": {
+        "source": "APP_SIDE_PLAN_PATCH_ASSEMBLER",
+        "instruction": "在网易云音乐搜索周杰伦，停在歌曲结果页并记录单曲、歌单、用户分区。\n\n约束：目标 App=网易云音乐，包名=com.netease.cloudmusic。必须由 MacroPilot 手机端自己用无障碍、输入法、AI\/Skill JSON 执行，不允许依赖 ADB 手点目标 App。执行前先读取当前 UI；如果遇到广告、弹窗、小字提示，先记录文字并安全关闭。任务完成必须用当前 UI 证据验证，不能只因为步骤执行完就报成功。如果没有现成 skill，先复用已有相似 Skill JSON\/archetype，只改关键槽位如入口文字、坐标、目标文本、验证规则，再组装 atomic\/macro skill。需要探索入口时优先遍历底部标签、顶部小图标、图形化入口、侧边操作和子页面。本任务 stopBeforeSubmit=true：写草稿、评论、订单、支付类流程必须停在提交前，不点击最终发布、发送、提交订单、支付、确认授权。期望证据包括：周杰伦、搜索结果。",
+        "aiJobPath": null,
+        "traceIds": [],
+        "sampleCount": 0,
+        "dryRunStatus": "PASSED",
+        "testRuns": 0,
+        "successRate": 0,
+        "promotionStatus": "NOT_PROMOTED",
+        "createdAt": 1779339446459,
+        "sourceSkillId": "com.netease.cloudmusic.common.click_visible_text",
+        "sourceSkillPath": "builtin:\/\/archetype\/com.netease.cloudmusic.common.click_visible_text",
+        "sourceOrigin": "BUILTIN_ARCHETYPE",
+        "templateMatchScore": 90,
+        "templateMatchReason": "same_app,same_action_type,same_capability,archetype_available,same_label,search_intent,publish_intent",
+        "patchReason": "reuse_existing_skill_json_and_rewrite_key_slots",
+        "lastDryRunReport": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_dry_run_reports\/com.netease.cloudmusic\/patched.1779339445226.3.clickvisibletext_1779339448163.json",
+        "lastDryRunAt": 1779339448164
+      },
+      "capabilityRequired": {
+        "minLevel": "C",
+        "inputRequired": false,
+        "nodeReadablePreferred": true,
+        "coordinateFallbackAllowed": true,
+        "allowedInputChannels": [],
+        "verificationRequired": "LOW"
+      },
+      "action": {
+        "type": "ClickVisibleText",
+        "text": "搜索",
+        "textAliases": [
+          "搜索",
+          "搜",
+          "查找"
+        ],
+        "x": 0.88,
+        "y": 0.08,
+        "requiresUiStateForCoordinate": false
+      },
+      "verify": {
+        "type": "WindowChangedOrNodeStateChanged",
+        "timeoutMs": 1500,
+        "allowLowConfidenceWhenCoordinateOnly": true
+      },
+      "resultPolicy": {
+        "verified": "SUCCESS",
+        "partialVerified": "SUCCESS_MEDIUM_CONFIDENCE",
+        "coordinateOnly": "SUCCESS_LOW_CONFIDENCE",
+        "unverifiable": "FAILED_UNVERIFIABLE"
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "kind": "atomic_skill",
+      "id": "patched.1779339445226.4.wait",
+      "name": "改写步骤 4: Wait",
+      "appPackage": "com.netease.cloudmusic",
+      "appVersion": "*",
+      "status": "DRY_RUN_PASSED",
+      "domain": "app_session",
+      "implements": "WaitUntilSkill",
+      "params": [],
+      "preconditions": [],
+      "dependsOn": [],
+      "resolverPolicy": {
+        "order": [
+          "ACCESSIBILITY",
+          "APP_UI_GRAPH",
+          "COORDINATE_PACK",
+          "AI_PATCH"
+        ],
+        "allowAiSuggestionInFactory": true,
+        "allowAiInRuntime": true
+      },
+      "safety": {
+        "forbiddenTexts": [
+          "支付",
+          "付款",
+          "转账",
+          "删除",
+          "发布",
+          "授权"
+        ]
+      },
+      "factory": {
+        "source": "APP_SIDE_PLAN_PATCH_ASSEMBLER",
+        "instruction": "在网易云音乐搜索周杰伦，停在歌曲结果页并记录单曲、歌单、用户分区。\n\n约束：目标 App=网易云音乐，包名=com.netease.cloudmusic。必须由 MacroPilot 手机端自己用无障碍、输入法、AI\/Skill JSON 执行，不允许依赖 ADB 手点目标 App。执行前先读取当前 UI；如果遇到广告、弹窗、小字提示，先记录文字并安全关闭。任务完成必须用当前 UI 证据验证，不能只因为步骤执行完就报成功。如果没有现成 skill，先复用已有相似 Skill JSON\/archetype，只改关键槽位如入口文字、坐标、目标文本、验证规则，再组装 atomic\/macro skill。需要探索入口时优先遍历底部标签、顶部小图标、图形化入口、侧边操作和子页面。本任务 stopBeforeSubmit=true：写草稿、评论、订单、支付类流程必须停在提交前，不点击最终发布、发送、提交订单、支付、确认授权。期望证据包括：周杰伦、搜索结果。",
+        "aiJobPath": null,
+        "traceIds": [],
+        "sampleCount": 0,
+        "dryRunStatus": "PASSED",
+        "testRuns": 0,
+        "successRate": 0,
+        "promotionStatus": "NOT_PROMOTED",
+        "createdAt": 1779339446871,
+        "sourceSkillId": "patched.1779339337328.5.wait",
+        "sourceSkillPath": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_candidates\/com.zhihu.android\/patched.1779339337328.5.wait.json",
+        "sourceOrigin": "LOCAL_JSON",
+        "templateMatchScore": 58,
+        "templateMatchReason": "same_action_type,same_capability,search_intent",
+        "patchReason": "reuse_existing_skill_json_and_rewrite_key_slots",
+        "lastDryRunReport": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_dry_run_reports\/com.netease.cloudmusic\/patched.1779339445226.4.wait_1779339448164.json",
+        "lastDryRunAt": 1779339448165
+      },
+      "capabilityRequired": {
+        "minLevel": "D",
+        "inputRequired": false,
+        "nodeReadablePreferred": true,
+        "coordinateFallbackAllowed": false,
+        "allowedInputChannels": [],
+        "verificationRequired": "MEDIUM"
+      },
+      "action": {
+        "type": "Wait",
+        "timeoutMs": 600
+      },
+      "verify": {
+        "type": "Always",
+        "timeoutMs": 1
+      },
+      "resultPolicy": {
+        "verified": "SUCCESS",
+        "partialVerified": "SUCCESS_MEDIUM_CONFIDENCE",
+        "coordinateOnly": "SUCCESS_LOW_CONFIDENCE",
+        "unverifiable": "FAILED_UNVERIFIABLE"
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "kind": "atomic_skill",
+      "id": "patched.1779339445226.1.openapp",
+      "name": "改写步骤 1: OpenApp",
+      "appPackage": "com.netease.cloudmusic",
+      "appVersion": "*",
+      "status": "DRY_RUN_PASSED",
+      "domain": "app_session",
+      "implements": "OpenAppSkill",
+      "params": [],
+      "preconditions": [],
+      "dependsOn": [],
+      "resolverPolicy": {
+        "order": [
+          "ACCESSIBILITY",
+          "APP_UI_GRAPH",
+          "COORDINATE_PACK",
+          "AI_PATCH"
+        ],
+        "allowAiSuggestionInFactory": true,
+        "allowAiInRuntime": true
+      },
+      "safety": {
+        "forbiddenTexts": [
+          "支付",
+          "付款",
+          "转账",
+          "删除",
+          "发布",
+          "授权"
+        ]
+      },
+      "factory": {
+        "source": "APP_SIDE_PLAN_PATCH_ASSEMBLER",
+        "instruction": "在网易云音乐搜索周杰伦，停在歌曲结果页并记录单曲、歌单、用户分区。\n\n约束：目标 App=网易云音乐，包名=com.netease.cloudmusic。必须由 MacroPilot 手机端自己用无障碍、输入法、AI\/Skill JSON 执行，不允许依赖 ADB 手点目标 App。执行前先读取当前 UI；如果遇到广告、弹窗、小字提示，先记录文字并安全关闭。任务完成必须用当前 UI 证据验证，不能只因为步骤执行完就报成功。如果没有现成 skill，先复用已有相似 Skill JSON\/archetype，只改关键槽位如入口文字、坐标、目标文本、验证规则，再组装 atomic\/macro skill。需要探索入口时优先遍历底部标签、顶部小图标、图形化入口、侧边操作和子页面。本任务 stopBeforeSubmit=true：写草稿、评论、订单、支付类流程必须停在提交前，不点击最终发布、发送、提交订单、支付、确认授权。期望证据包括：周杰伦、搜索结果。",
+        "aiJobPath": null,
+        "traceIds": [],
+        "sampleCount": 0,
+        "dryRunStatus": "PASSED",
+        "testRuns": 0,
+        "successRate": 0,
+        "promotionStatus": "NOT_PROMOTED",
+        "createdAt": 1779339445641,
+        "sourceSkillId": "com.netease.cloudmusic.open_app",
+        "sourceSkillPath": "builtin:\/\/archetype\/com.netease.cloudmusic.open_app",
+        "sourceOrigin": "BUILTIN_ARCHETYPE",
+        "templateMatchScore": 90,
+        "templateMatchReason": "same_app,same_action_type,same_capability,archetype_available,same_label,search_intent,publish_intent",
+        "patchReason": "reuse_existing_skill_json_and_rewrite_key_slots",
+        "lastDryRunReport": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_dry_run_reports\/com.netease.cloudmusic\/patched.1779339445226.1.openapp_1779339448159.json",
+        "lastDryRunAt": 1779339448162
+      },
+      "capabilityRequired": {
+        "minLevel": "D",
+        "inputRequired": false,
+        "nodeReadablePreferred": true,
+        "coordinateFallbackAllowed": false,
+        "allowedInputChannels": [],
+        "verificationRequired": "MEDIUM"
+      },
+      "action": {
+        "type": "OpenApp",
+        "packageName": "com.netease.cloudmusic",
+        "timeoutMs": 3000
+      },
+      "verify": {
+        "type": "ForegroundPackage",
+        "packageName": "com.netease.cloudmusic",
+        "timeoutMs": 3000,
+        "allowUnverifiedWhenAccessibilityDisconnected": true
+      },
+      "resultPolicy": {
+        "verified": "SUCCESS",
+        "partialVerified": "SUCCESS_MEDIUM_CONFIDENCE",
+        "coordinateOnly": "SUCCESS_LOW_CONFIDENCE",
+        "unverifiable": "FAILED_UNVERIFIABLE"
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "kind": "atomic_skill",
+      "id": "com.netease.cloudmusic.search.click_submit",
+      "name": "点击搜索确认",
+      "appPackage": "com.netease.cloudmusic",
+      "appVersion": "*",
+      "status": "DRY_RUN_PASSED",
+      "domain": "app_session",
+      "implements": "ClickElementSkill",
+      "params": [],
+      "preconditions": [],
+      "dependsOn": [],
+      "resolverPolicy": {
+        "order": [
+          "ACCESSIBILITY",
+          "COORDINATE_PACK",
+          "PACKAGE_MANAGER"
+        ],
+        "allowAiSuggestionInFactory": true,
+        "allowAiInRuntime": false
+      },
+      "safety": {
+        "forbiddenTexts": [
+          "支付",
+          "付款",
+          "转账",
+          "删除",
+          "发布",
+          "授权"
+        ]
+      },
+      "factory": {
+        "source": "SKILL_ARCHETYPE_TEMPLATE_V0",
+        "archetypeId": "common.search_in_app.v1",
+        "traceIds": [],
+        "sampleCount": 0,
+        "dryRunStatus": "PASSED",
+        "testRuns": 0,
+        "successRate": 0,
+        "promotionStatus": "NOT_PROMOTED",
+        "createdAt": 1779237769496,
+        "appPatch": {
+          "packageName": "com.netease.cloudmusic",
+          "label": "网易云音乐",
+          "launchable": true,
+          "launchActivity": "com.netease.cloudmusic.activity.IconChangeDefaultAlias",
+          "searchEntryTexts": [
+            "搜索",
+            "搜一搜",
+            "Search"
+          ],
+          "searchSubmitTexts": [
+            "搜索",
+            "确定",
+            "Search"
+          ],
+          "searchEntryCoordinate": {
+            "x": 0.5,
+            "y": 0.08
+          },
+          "searchSubmitCoordinate": {
+            "x": 0.9,
+            "y": 0.08
+          },
+          "postDraftEntryTexts": [
+            "+",
+            "写微博",
+            "发微博",
+            "发帖",
+            "创作",
+            "写帖子",
+            "发动态",
+            "说点什么"
+          ],
+          "postDraftEntryCoordinate": {
+            "x": 0.9,
+            "y": 0.9
+          }
+        },
+        "lastDryRunReport": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_dry_run_reports\/com.netease.cloudmusic\/com.netease.cloudmusic.search.click_submit_1779237769513.json",
+        "lastDryRunAt": 1779237769514
+      },
+      "capabilityRequired": {
+        "minLevel": "C",
+        "inputRequired": false,
+        "nodeReadablePreferred": true,
+        "coordinateFallbackAllowed": true,
+        "allowedInputChannels": [],
+        "verificationRequired": "MEDIUM"
+      },
+      "action": {
+        "type": "ClickVisibleText",
+        "text": "搜索",
+        "textAliases": [
+          "搜索",
+          "确定",
+          "Search"
+        ],
+        "x": 0.9,
+        "y": 0.08,
+        "timeoutMs": 1200
+      },
+      "verify": {
+        "type": "WindowChangedOrNodeStateChanged",
+        "timeoutMs": 1800,
+        "allowLowConfidenceWhenUnchanged": true
+      },
+      "resultPolicy": {
+        "nodeClickedAndVerified": "SUCCESS",
+        "coordinateClicked": "SUCCESS_LOW_CONFIDENCE",
+        "notFound": "FAILED_ELEMENT_NOT_FOUND"
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "kind": "atomic_skill",
+      "id": "com.netease.cloudmusic.search.type_query",
+      "name": "输入搜索词",
+      "appPackage": "com.netease.cloudmusic",
+      "appVersion": "*",
+      "status": "DRY_RUN_PASSED",
+      "domain": "app_session",
+      "implements": "TypeTextSkill",
+      "params": [
+        {
+          "name": "query",
+          "type": "TEXT",
+          "required": true,
+          "example": ""
+        }
+      ],
+      "preconditions": [],
+      "dependsOn": [],
+      "resolverPolicy": {
+        "order": [
+          "ACCESSIBILITY",
+          "COORDINATE_PACK",
+          "PACKAGE_MANAGER"
+        ],
+        "allowAiSuggestionInFactory": true,
+        "allowAiInRuntime": false
+      },
+      "safety": {
+        "forbiddenTexts": [
+          "支付",
+          "付款",
+          "转账",
+          "删除",
+          "发布",
+          "授权"
+        ]
+      },
+      "factory": {
+        "source": "SKILL_ARCHETYPE_TEMPLATE_V0",
+        "archetypeId": "common.search_in_app.v1",
+        "traceIds": [],
+        "sampleCount": 0,
+        "dryRunStatus": "PASSED",
+        "testRuns": 0,
+        "successRate": 0,
+        "promotionStatus": "NOT_PROMOTED",
+        "createdAt": 1779237769496,
+        "appPatch": {
+          "packageName": "com.netease.cloudmusic",
+          "label": "网易云音乐",
+          "launchable": true,
+          "launchActivity": "com.netease.cloudmusic.activity.IconChangeDefaultAlias",
+          "searchEntryTexts": [
+            "搜索",
+            "搜一搜",
+            "Search"
+          ],
+          "searchSubmitTexts": [
+            "搜索",
+            "确定",
+            "Search"
+          ],
+          "searchEntryCoordinate": {
+            "x": 0.5,
+            "y": 0.08
+          },
+          "searchSubmitCoordinate": {
+            "x": 0.9,
+            "y": 0.08
+          },
+          "postDraftEntryTexts": [
+            "+",
+            "写微博",
+            "发微博",
+            "发帖",
+            "创作",
+            "写帖子",
+            "发动态",
+            "说点什么"
+          ],
+          "postDraftEntryCoordinate": {
+            "x": 0.9,
+            "y": 0.9
+          }
+        },
+        "lastDryRunReport": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_dry_run_reports\/com.netease.cloudmusic\/com.netease.cloudmusic.search.type_query_1779237769512.json",
+        "lastDryRunAt": 1779237769513
+      },
+      "capabilityRequired": {
+        "minLevel": "C",
+        "inputRequired": true,
+        "nodeReadablePreferred": true,
+        "coordinateFallbackAllowed": true,
+        "allowedInputChannels": [
+          "ACTION_SET_TEXT",
+          "PASTE",
+          "CUSTOM_IME",
+          "SHIZUKU_ADB"
+        ],
+        "verificationRequired": "MEDIUM"
+      },
+      "action": {
+        "type": "TypeIntoFirstInput",
+        "textParam": "query",
+        "timeoutMs": 2200
+      },
+      "verify": {
+        "type": "InputContainsOrTextChangedEvent",
+        "textParam": "query",
+        "timeoutMs": 1800,
+        "allowMediumConfidenceWhenEventOnly": true
+      },
+      "resultPolicy": {
+        "inputNodeContainsText": "SUCCESS",
+        "textChangedEventOnly": "SUCCESS_MEDIUM_CONFIDENCE",
+        "coordinateOnlyNoInputNode": "SUCCESS_LOW_CONFIDENCE",
+        "noInputChannel": "FAILED_INPUT_CHANNEL_MISSING"
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "kind": "atomic_skill",
+      "id": "com.netease.cloudmusic.common.click_visible_text",
+      "name": "点击可见文字",
+      "appPackage": "com.netease.cloudmusic",
+      "appVersion": "*",
+      "status": "DRY_RUN_PASSED",
+      "domain": "app_session",
+      "implements": "ClickElementSkill",
+      "params": [
+        {
+          "name": "text",
+          "type": "TEXT",
+          "required": true
+        }
+      ],
+      "preconditions": [],
+      "dependsOn": [],
+      "resolverPolicy": {
+        "order": [
+          "ACCESSIBILITY",
+          "COORDINATE_PACK",
+          "PACKAGE_MANAGER"
+        ],
+        "allowAiSuggestionInFactory": true,
+        "allowAiInRuntime": false
+      },
+      "safety": {
+        "forbiddenTexts": [
+          "支付",
+          "付款",
+          "转账",
+          "删除",
+          "发布",
+          "授权"
+        ]
+      },
+      "factory": {
+        "source": "SKILL_ARCHETYPE_TEMPLATE_V0",
+        "archetypeId": "common.app_session.v1",
+        "traceIds": [],
+        "sampleCount": 0,
+        "dryRunStatus": "PASSED",
+        "testRuns": 0,
+        "successRate": 0,
+        "promotionStatus": "NOT_PROMOTED",
+        "createdAt": 1779237769496,
+        "appPatch": {
+          "packageName": "com.netease.cloudmusic",
+          "label": "网易云音乐",
+          "launchable": true,
+          "launchActivity": "com.netease.cloudmusic.activity.IconChangeDefaultAlias",
+          "searchEntryTexts": [
+            "搜索",
+            "搜一搜",
+            "Search"
+          ],
+          "searchSubmitTexts": [
+            "搜索",
+            "确定",
+            "Search"
+          ],
+          "searchEntryCoordinate": {
+            "x": 0.5,
+            "y": 0.08
+          },
+          "searchSubmitCoordinate": {
+            "x": 0.9,
+            "y": 0.08
+          },
+          "postDraftEntryTexts": [
+            "+",
+            "写微博",
+            "发微博",
+            "发帖",
+            "创作",
+            "写帖子",
+            "发动态",
+            "说点什么"
+          ],
+          "postDraftEntryCoordinate": {
+            "x": 0.9,
+            "y": 0.9
+          }
+        },
+        "lastDryRunReport": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_dry_run_reports\/com.netease.cloudmusic\/com.netease.cloudmusic.common.click_visible_text_1779237769508.json",
+        "lastDryRunAt": 1779237769509
+      },
+      "capabilityRequired": {
+        "minLevel": "C",
+        "inputRequired": false,
+        "nodeReadablePreferred": true,
+        "coordinateFallbackAllowed": false,
+        "allowedInputChannels": [],
+        "verificationRequired": "MEDIUM"
+      },
+      "action": {
+        "type": "ClickVisibleText",
+        "textParam": "text",
+        "timeoutMs": 1500
+      },
+      "verify": {
+        "type": "WindowChangedOrNodeStateChanged",
+        "timeoutMs": 1500,
+        "allowLowConfidenceWhenUnchanged": true
+      },
+      "resultPolicy": {
+        "nodeClickedAndVerified": "SUCCESS",
+        "clickedButWeakVerify": "SUCCESS_MEDIUM_CONFIDENCE",
+        "notFound": "FAILED_ELEMENT_NOT_FOUND"
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "kind": "atomic_skill",
+      "id": "com.netease.cloudmusic.common.type_first_input",
+      "name": "向第一个输入框输入",
+      "appPackage": "com.netease.cloudmusic",
+      "appVersion": "*",
+      "status": "DRY_RUN_PASSED",
+      "domain": "app_session",
+      "implements": "TypeTextSkill",
+      "params": [
+        {
+          "name": "text",
+          "type": "TEXT",
+          "required": true
+        }
+      ],
+      "preconditions": [],
+      "dependsOn": [],
+      "resolverPolicy": {
+        "order": [
+          "ACCESSIBILITY",
+          "COORDINATE_PACK",
+          "PACKAGE_MANAGER"
+        ],
+        "allowAiSuggestionInFactory": true,
+        "allowAiInRuntime": false
+      },
+      "safety": {
+        "forbiddenTexts": [
+          "支付",
+          "付款",
+          "转账",
+          "删除",
+          "发布",
+          "授权"
+        ]
+      },
+      "factory": {
+        "source": "SKILL_ARCHETYPE_TEMPLATE_V0",
+        "archetypeId": "common.app_session.v1",
+        "traceIds": [],
+        "sampleCount": 0,
+        "dryRunStatus": "PASSED",
+        "testRuns": 0,
+        "successRate": 0,
+        "promotionStatus": "NOT_PROMOTED",
+        "createdAt": 1779237769496,
+        "appPatch": {
+          "packageName": "com.netease.cloudmusic",
+          "label": "网易云音乐",
+          "launchable": true,
+          "launchActivity": "com.netease.cloudmusic.activity.IconChangeDefaultAlias",
+          "searchEntryTexts": [
+            "搜索",
+            "搜一搜",
+            "Search"
+          ],
+          "searchSubmitTexts": [
+            "搜索",
+            "确定",
+            "Search"
+          ],
+          "searchEntryCoordinate": {
+            "x": 0.5,
+            "y": 0.08
+          },
+          "searchSubmitCoordinate": {
+            "x": 0.9,
+            "y": 0.08
+          },
+          "postDraftEntryTexts": [
+            "+",
+            "写微博",
+            "发微博",
+            "发帖",
+            "创作",
+            "写帖子",
+            "发动态",
+            "说点什么"
+          ],
+          "postDraftEntryCoordinate": {
+            "x": 0.9,
+            "y": 0.9
+          }
+        },
+        "lastDryRunReport": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_dry_run_reports\/com.netease.cloudmusic\/com.netease.cloudmusic.common.type_first_input_1779237769509.json",
+        "lastDryRunAt": 1779237769510
+      },
+      "capabilityRequired": {
+        "minLevel": "C",
+        "inputRequired": true,
+        "nodeReadablePreferred": true,
+        "coordinateFallbackAllowed": false,
+        "allowedInputChannels": [
+          "ACTION_SET_TEXT",
+          "PASTE",
+          "CUSTOM_IME",
+          "SHIZUKU_ADB"
+        ],
+        "verificationRequired": "MEDIUM"
+      },
+      "action": {
+        "type": "TypeIntoFirstInput",
+        "textParam": "text",
+        "timeoutMs": 2200
+      },
+      "verify": {
+        "type": "InputContainsOrTextChangedEvent",
+        "textParam": "text",
+        "timeoutMs": 1800,
+        "allowMediumConfidenceWhenEventOnly": true
+      },
+      "resultPolicy": {
+        "inputNodeContainsText": "SUCCESS",
+        "textChangedEventOnly": "SUCCESS_MEDIUM_CONFIDENCE",
+        "noInputChannel": "FAILED_INPUT_CHANNEL_MISSING",
+        "unverifiable": "FAILED_UNVERIFIABLE"
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "kind": "atomic_skill",
+      "id": "com.netease.cloudmusic.search.click_entry",
+      "name": "点击搜索入口",
+      "appPackage": "com.netease.cloudmusic",
+      "appVersion": "*",
+      "status": "DRY_RUN_PASSED",
+      "domain": "app_session",
+      "implements": "ClickElementSkill",
+      "params": [],
+      "preconditions": [],
+      "dependsOn": [],
+      "resolverPolicy": {
+        "order": [
+          "ACCESSIBILITY",
+          "COORDINATE_PACK",
+          "PACKAGE_MANAGER"
+        ],
+        "allowAiSuggestionInFactory": true,
+        "allowAiInRuntime": false
+      },
+      "safety": {
+        "forbiddenTexts": [
+          "支付",
+          "付款",
+          "转账",
+          "删除",
+          "发布",
+          "授权"
+        ]
+      },
+      "factory": {
+        "source": "SKILL_ARCHETYPE_TEMPLATE_V0",
+        "archetypeId": "common.search_in_app.v1",
+        "traceIds": [],
+        "sampleCount": 0,
+        "dryRunStatus": "PASSED",
+        "testRuns": 0,
+        "successRate": 0,
+        "promotionStatus": "NOT_PROMOTED",
+        "createdAt": 1779237769496,
+        "appPatch": {
+          "packageName": "com.netease.cloudmusic",
+          "label": "网易云音乐",
+          "launchable": true,
+          "launchActivity": "com.netease.cloudmusic.activity.IconChangeDefaultAlias",
+          "searchEntryTexts": [
+            "搜索",
+            "搜一搜",
+            "Search"
+          ],
+          "searchSubmitTexts": [
+            "搜索",
+            "确定",
+            "Search"
+          ],
+          "searchEntryCoordinate": {
+            "x": 0.5,
+            "y": 0.08
+          },
+          "searchSubmitCoordinate": {
+            "x": 0.9,
+            "y": 0.08
+          },
+          "postDraftEntryTexts": [
+            "+",
+            "写微博",
+            "发微博",
+            "发帖",
+            "创作",
+            "写帖子",
+            "发动态",
+            "说点什么"
+          ],
+          "postDraftEntryCoordinate": {
+            "x": 0.9,
+            "y": 0.9
+          }
+        },
+        "lastDryRunReport": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_dry_run_reports\/com.netease.cloudmusic\/com.netease.cloudmusic.search.click_entry_1779237769511.json",
+        "lastDryRunAt": 1779237769512
+      },
+      "capabilityRequired": {
+        "minLevel": "C",
+        "inputRequired": false,
+        "nodeReadablePreferred": true,
+        "coordinateFallbackAllowed": true,
+        "allowedInputChannels": [],
+        "verificationRequired": "MEDIUM"
+      },
+      "action": {
+        "type": "ClickVisibleText",
+        "text": "搜索",
+        "textAliases": [
+          "搜索",
+          "搜一搜",
+          "Search"
+        ],
+        "x": 0.5,
+        "y": 0.08,
+        "timeoutMs": 1200
+      },
+      "verify": {
+        "type": "WindowChangedOrNodeStateChanged",
+        "timeoutMs": 1500
+      },
+      "resultPolicy": {
+        "nodeClickedAndVerified": "SUCCESS",
+        "coordinateClicked": "SUCCESS_LOW_CONFIDENCE",
+        "notFound": "FAILED_ELEMENT_NOT_FOUND"
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "kind": "atomic_skill",
+      "id": "com.netease.cloudmusic.back",
+      "name": "返回",
+      "appPackage": "com.netease.cloudmusic",
+      "appVersion": "*",
+      "status": "DRY_RUN_PASSED",
+      "domain": "app_session",
+      "implements": "BackSkill",
+      "params": [],
+      "preconditions": [],
+      "dependsOn": [],
+      "resolverPolicy": {
+        "order": [
+          "ACCESSIBILITY",
+          "COORDINATE_PACK",
+          "PACKAGE_MANAGER"
+        ],
+        "allowAiSuggestionInFactory": true,
+        "allowAiInRuntime": false
+      },
+      "safety": {
+        "forbiddenTexts": [
+          "支付",
+          "付款",
+          "转账",
+          "删除",
+          "发布",
+          "授权"
+        ]
+      },
+      "factory": {
+        "source": "SKILL_ARCHETYPE_TEMPLATE_V0",
+        "archetypeId": "common.app_session.v1",
+        "traceIds": [],
+        "sampleCount": 0,
+        "dryRunStatus": "PASSED",
+        "testRuns": 0,
+        "successRate": 0,
+        "promotionStatus": "NOT_PROMOTED",
+        "createdAt": 1779237769496,
+        "appPatch": {
+          "packageName": "com.netease.cloudmusic",
+          "label": "网易云音乐",
+          "launchable": true,
+          "launchActivity": "com.netease.cloudmusic.activity.IconChangeDefaultAlias",
+          "searchEntryTexts": [
+            "搜索",
+            "搜一搜",
+            "Search"
+          ],
+          "searchSubmitTexts": [
+            "搜索",
+            "确定",
+            "Search"
+          ],
+          "searchEntryCoordinate": {
+            "x": 0.5,
+            "y": 0.08
+          },
+          "searchSubmitCoordinate": {
+            "x": 0.9,
+            "y": 0.08
+          },
+          "postDraftEntryTexts": [
+            "+",
+            "写微博",
+            "发微博",
+            "发帖",
+            "创作",
+            "写帖子",
+            "发动态",
+            "说点什么"
+          ],
+          "postDraftEntryCoordinate": {
+            "x": 0.9,
+            "y": 0.9
+          }
+        },
+        "lastDryRunReport": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_dry_run_reports\/com.netease.cloudmusic\/com.netease.cloudmusic.back_1779237769506.json",
+        "lastDryRunAt": 1779237769507
+      },
+      "capabilityRequired": {
+        "minLevel": "D",
+        "inputRequired": false,
+        "nodeReadablePreferred": false,
+        "coordinateFallbackAllowed": false,
+        "allowedInputChannels": [],
+        "verificationRequired": "LOW"
+      },
+      "action": {
+        "type": "Back",
+        "timeoutMs": 1000
+      },
+      "verify": {
+        "type": "WindowChanged",
+        "timeoutMs": 1000,
+        "allowLowConfidenceWhenUnchanged": true
+      },
+      "resultPolicy": {
+        "changed": "SUCCESS",
+        "unchanged": "SUCCESS_LOW_CONFIDENCE"
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "kind": "atomic_skill",
+      "id": "com.netease.cloudmusic.recover_to_foreground",
+      "name": "恢复到应用前台",
+      "appPackage": "com.netease.cloudmusic",
+      "appVersion": "*",
+      "status": "DRY_RUN_PASSED",
+      "domain": "app_session",
+      "implements": "RecoverToScreenSkill",
+      "params": [],
+      "preconditions": [],
+      "dependsOn": [
+        "com.netease.cloudmusic.open_app"
+      ],
+      "resolverPolicy": {
+        "order": [
+          "ACCESSIBILITY",
+          "COORDINATE_PACK",
+          "PACKAGE_MANAGER"
+        ],
+        "allowAiSuggestionInFactory": true,
+        "allowAiInRuntime": false
+      },
+      "safety": {
+        "forbiddenTexts": [
+          "支付",
+          "付款",
+          "转账",
+          "删除",
+          "发布",
+          "授权"
+        ]
+      },
+      "factory": {
+        "source": "SKILL_ARCHETYPE_TEMPLATE_V0",
+        "archetypeId": "common.app_session.v1",
+        "traceIds": [],
+        "sampleCount": 0,
+        "dryRunStatus": "PASSED",
+        "testRuns": 0,
+        "successRate": 0,
+        "promotionStatus": "NOT_PROMOTED",
+        "createdAt": 1779237769496,
+        "appPatch": {
+          "packageName": "com.netease.cloudmusic",
+          "label": "网易云音乐",
+          "launchable": true,
+          "launchActivity": "com.netease.cloudmusic.activity.IconChangeDefaultAlias",
+          "searchEntryTexts": [
+            "搜索",
+            "搜一搜",
+            "Search"
+          ],
+          "searchSubmitTexts": [
+            "搜索",
+            "确定",
+            "Search"
+          ],
+          "searchEntryCoordinate": {
+            "x": 0.5,
+            "y": 0.08
+          },
+          "searchSubmitCoordinate": {
+            "x": 0.9,
+            "y": 0.08
+          },
+          "postDraftEntryTexts": [
+            "+",
+            "写微博",
+            "发微博",
+            "发帖",
+            "创作",
+            "写帖子",
+            "发动态",
+            "说点什么"
+          ],
+          "postDraftEntryCoordinate": {
+            "x": 0.9,
+            "y": 0.9
+          }
+        },
+        "lastDryRunReport": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_dry_run_reports\/com.netease.cloudmusic\/com.netease.cloudmusic.recover_to_foreground_1779237769507.json",
+        "lastDryRunAt": 1779237769508
+      },
+      "capabilityRequired": {
+        "minLevel": "D",
+        "inputRequired": false,
+        "nodeReadablePreferred": false,
+        "coordinateFallbackAllowed": false,
+        "allowedInputChannels": [],
+        "verificationRequired": "LOW"
+      },
+      "action": {
+        "type": "OpenApp",
+        "packageName": "com.netease.cloudmusic",
+        "timeoutMs": 3000
+      },
+      "verify": {
+        "type": "ForegroundPackage",
+        "packageName": "com.netease.cloudmusic",
+        "timeoutMs": 3000,
+        "allowUnverifiedWhenAccessibilityDisconnected": true
+      },
+      "resultPolicy": {
+        "recovered": "SUCCESS",
+        "launchIntentSentOnly": "SUCCESS_LOW_CONFIDENCE",
+        "failed": "FAILED_RECOVER_SCREEN"
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "kind": "atomic_skill",
+      "id": "com.netease.cloudmusic.capability_check",
+      "name": "检查应用能力",
+      "appPackage": "com.netease.cloudmusic",
+      "appVersion": "*",
+      "status": "DRY_RUN_PASSED",
+      "domain": "app_session",
+      "implements": "CapabilityCheckSkill",
+      "params": [],
+      "preconditions": [],
+      "dependsOn": [],
+      "resolverPolicy": {
+        "order": [
+          "ACCESSIBILITY",
+          "COORDINATE_PACK",
+          "PACKAGE_MANAGER"
+        ],
+        "allowAiSuggestionInFactory": true,
+        "allowAiInRuntime": false
+      },
+      "safety": {
+        "forbiddenTexts": [
+          "支付",
+          "付款",
+          "转账",
+          "删除",
+          "发布",
+          "授权"
+        ]
+      },
+      "factory": {
+        "source": "SKILL_ARCHETYPE_TEMPLATE_V0",
+        "archetypeId": "common.app_session.v1",
+        "traceIds": [],
+        "sampleCount": 0,
+        "dryRunStatus": "PASSED",
+        "testRuns": 0,
+        "successRate": 0,
+        "promotionStatus": "NOT_PROMOTED",
+        "createdAt": 1779237769496,
+        "appPatch": {
+          "packageName": "com.netease.cloudmusic",
+          "label": "网易云音乐",
+          "launchable": true,
+          "launchActivity": "com.netease.cloudmusic.activity.IconChangeDefaultAlias",
+          "searchEntryTexts": [
+            "搜索",
+            "搜一搜",
+            "Search"
+          ],
+          "searchSubmitTexts": [
+            "搜索",
+            "确定",
+            "Search"
+          ],
+          "searchEntryCoordinate": {
+            "x": 0.5,
+            "y": 0.08
+          },
+          "searchSubmitCoordinate": {
+            "x": 0.9,
+            "y": 0.08
+          },
+          "postDraftEntryTexts": [
+            "+",
+            "写微博",
+            "发微博",
+            "发帖",
+            "创作",
+            "写帖子",
+            "发动态",
+            "说点什么"
+          ],
+          "postDraftEntryCoordinate": {
+            "x": 0.9,
+            "y": 0.9
+          }
+        },
+        "lastDryRunReport": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_dry_run_reports\/com.netease.cloudmusic\/com.netease.cloudmusic.capability_check_1779237769503.json",
+        "lastDryRunAt": 1779237769503
+      },
+      "capabilityRequired": {
+        "minLevel": "D",
+        "inputRequired": false,
+        "nodeReadablePreferred": false,
+        "coordinateFallbackAllowed": false,
+        "allowedInputChannels": [],
+        "verificationRequired": "LOW"
+      },
+      "action": {
+        "type": "CheckCapability",
+        "packageName": "com.netease.cloudmusic"
+      },
+      "verify": {
+        "type": "CapabilityObserved",
+        "packageName": "com.netease.cloudmusic",
+        "timeoutMs": 500
+      },
+      "resultPolicy": {
+        "levelA": "SUCCESS",
+        "levelB": "SUCCESS_MEDIUM_CONFIDENCE",
+        "levelC": "SUCCESS_LOW_CONFIDENCE",
+        "levelD": "FAILED_CAPABILITY_D"
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "kind": "atomic_skill",
+      "id": "com.netease.cloudmusic.open_app",
+      "name": "打开应用",
+      "appPackage": "com.netease.cloudmusic",
+      "appVersion": "*",
+      "status": "DRY_RUN_PASSED",
+      "domain": "app_session",
+      "implements": "OpenAppSkill",
+      "params": [],
+      "preconditions": [],
+      "dependsOn": [],
+      "resolverPolicy": {
+        "order": [
+          "ACCESSIBILITY",
+          "COORDINATE_PACK",
+          "PACKAGE_MANAGER"
+        ],
+        "allowAiSuggestionInFactory": true,
+        "allowAiInRuntime": false
+      },
+      "safety": {
+        "forbiddenTexts": [
+          "支付",
+          "付款",
+          "转账",
+          "删除",
+          "发布",
+          "授权"
+        ]
+      },
+      "factory": {
+        "source": "SKILL_ARCHETYPE_TEMPLATE_V0",
+        "archetypeId": "common.app_session.v1",
+        "traceIds": [],
+        "sampleCount": 0,
+        "dryRunStatus": "PASSED",
+        "testRuns": 0,
+        "successRate": 0,
+        "promotionStatus": "NOT_PROMOTED",
+        "createdAt": 1779237769496,
+        "appPatch": {
+          "packageName": "com.netease.cloudmusic",
+          "label": "网易云音乐",
+          "launchable": true,
+          "launchActivity": "com.netease.cloudmusic.activity.IconChangeDefaultAlias",
+          "searchEntryTexts": [
+            "搜索",
+            "搜一搜",
+            "Search"
+          ],
+          "searchSubmitTexts": [
+            "搜索",
+            "确定",
+            "Search"
+          ],
+          "searchEntryCoordinate": {
+            "x": 0.5,
+            "y": 0.08
+          },
+          "searchSubmitCoordinate": {
+            "x": 0.9,
+            "y": 0.08
+          },
+          "postDraftEntryTexts": [
+            "+",
+            "写微博",
+            "发微博",
+            "发帖",
+            "创作",
+            "写帖子",
+            "发动态",
+            "说点什么"
+          ],
+          "postDraftEntryCoordinate": {
+            "x": 0.9,
+            "y": 0.9
+          }
+        },
+        "lastDryRunReport": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_dry_run_reports\/com.netease.cloudmusic\/com.netease.cloudmusic.open_app_1779237769500.json",
+        "lastDryRunAt": 1779237769502
+      },
+      "capabilityRequired": {
+        "minLevel": "D",
+        "inputRequired": false,
+        "nodeReadablePreferred": false,
+        "coordinateFallbackAllowed": false,
+        "allowedInputChannels": [],
+        "verificationRequired": "LOW"
+      },
+      "action": {
+        "type": "OpenApp",
+        "packageName": "com.netease.cloudmusic",
+        "timeoutMs": 3000
+      },
+      "verify": {
+        "type": "ForegroundPackage",
+        "packageName": "com.netease.cloudmusic",
+        "timeoutMs": 3000,
+        "allowUnverifiedWhenAccessibilityDisconnected": true
+      },
+      "resultPolicy": {
+        "foregroundVerified": "SUCCESS",
+        "launchIntentSentOnly": "SUCCESS_LOW_CONFIDENCE",
+        "noLaunchIntent": "FAILED_NO_LAUNCH_INTENT",
+        "unverifiable": "FAILED_UNVERIFIABLE"
+      }
+    }
+  ],
+  "macroSkills": [
+    {
+      "schemaVersion": 1,
+      "kind": "macro_skill",
+      "id": "patched.command.1779339445226",
+      "name": "手机端任务拼装 Skill",
+      "appPackage": "com.netease.cloudmusic",
+      "appVersion": "*",
+      "status": "DRY_RUN_PASSED",
+      "implements": "AiPlannedMacroSkill",
+      "intentId": "search_in_app",
+      "params": [],
+      "preconditions": [],
+      "atoms": [
+        {
+          "type": "UseSkill",
+          "skillId": "patched.1779339445226.1.openapp"
+        },
+        {
+          "type": "UseSkill",
+          "skillId": "patched.1779339445226.2.handlereactiveoverlays"
+        },
+        {
+          "type": "UseSkill",
+          "skillId": "patched.1779339445226.3.clickvisibletext"
+        },
+        {
+          "type": "UseSkill",
+          "skillId": "patched.1779339445226.4.wait"
+        },
+        {
+          "type": "UseSkill",
+          "skillId": "patched.1779339445226.5.typeintofirstinput"
+        },
+        {
+          "type": "UseSkill",
+          "skillId": "patched.1779339445226.6.clickvisibletext"
+        },
+        {
+          "type": "UseSkill",
+          "skillId": "patched.1779339445226.7.wait"
+        }
+      ],
+      "verify": {
+        "type": "GoalEvidenceOrNoFailedAtom",
+        "instruction": "在网易云音乐搜索周杰伦，停在歌曲结果页并记录单曲、歌单、用户分区。\n\n约束：目标 App=网易云音乐，包名=com.netease.cloudmusic。必须由 MacroPilot 手机端自己用无障碍、输入法、AI\/Skill JSON 执行，不允许依赖 ADB 手点目标 App。执行前先读取当前 UI；如果遇到广告、弹窗、小字提示，先记录文字并安全关闭。任务完成必须用当前 UI 证据验证，不能只因为步骤执行完就报成功。如果没有现成 skill，先复用已有相似 Skill ",
+        "timeoutMs": 2000,
+        "allowLowConfidenceWhenNodeUnreadable": true
+      },
+      "resultPolicy": {
+        "allAtomicSuccess": "SUCCESS",
+        "partialAtomicSuccess": "SUCCESS_MEDIUM_CONFIDENCE",
+        "coordinateOnly": "SUCCESS_LOW_CONFIDENCE",
+        "unverifiable": "FAILED_UNVERIFIABLE"
+      },
+      "timeoutMs": 30000,
+      "factory": {
+        "source": "APP_SIDE_PLAN_PATCH_ASSEMBLER",
+        "instruction": "在网易云音乐搜索周杰伦，停在歌曲结果页并记录单曲、歌单、用户分区。\n\n约束：目标 App=网易云音乐，包名=com.netease.cloudmusic。必须由 MacroPilot 手机端自己用无障碍、输入法、AI\/Skill JSON 执行，不允许依赖 ADB 手点目标 App。执行前先读取当前 UI；如果遇到广告、弹窗、小字提示，先记录文字并安全关闭。任务完成必须用当前 UI 证据验证，不能只因为步骤执行完就报成功。如果没有现成 skill，先复用已有相似 Skill JSON\/archetype，只改关键槽位如入口文字、坐标、目标文本、验证规则，再组装 atomic\/macro skill。需要探索入口时优先遍历底部标签、顶部小图标、图形化入口、侧边操作和子页面。本任务 stopBeforeSubmit=true：写草稿、评论、订单、支付类流程必须停在提交前，不点击最终发布、发送、提交订单、支付、确认授权。期望证据包括：周杰伦、搜索结果。",
+        "aiJobPath": null,
+        "traceIds": [],
+        "sampleCount": 0,
+        "dryRunStatus": "PASSED",
+        "testRuns": 0,
+        "successRate": 0,
+        "promotionStatus": "NOT_PROMOTED",
+        "createdAt": 1779339448152,
+        "assemblyStrategy": "rewrite_allowed_slots_from_existing_skill_json",
+        "requiredAtomicSkills": [
+          "patched.1779339445226.1.openapp",
+          "patched.1779339445226.2.handlereactiveoverlays",
+          "patched.1779339445226.3.clickvisibletext",
+          "patched.1779339445226.4.wait",
+          "patched.1779339445226.5.typeintofirstinput",
+          "patched.1779339445226.6.clickvisibletext",
+          "patched.1779339445226.7.wait"
+        ],
+        "lastDryRunReport": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_dry_run_reports\/com.netease.cloudmusic\/patched.command.1779339445226_1779339448169.json",
+        "lastDryRunAt": 1779339448170
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "kind": "macro_skill",
+      "id": "com.netease.cloudmusic.search.search_in_app",
+      "name": "通用站内搜索",
+      "appPackage": "com.netease.cloudmusic",
+      "appVersion": "*",
+      "status": "DRY_RUN_PASSED",
+      "implements": "SearchInAppSkill",
+      "intentId": "search_in_app",
+      "params": [
+        {
+          "name": "query",
+          "type": "TEXT",
+          "required": true,
+          "example": ""
+        }
+      ],
+      "preconditions": [
+        {
+          "type": "CapabilityAtLeast",
+          "level": "C"
+        },
+        {
+          "type": "InputChannelAvailable",
+          "channels": [
+            "ACTION_SET_TEXT",
+            "PASTE",
+            "CUSTOM_IME",
+            "SHIZUKU_ADB"
+          ]
+        }
+      ],
+      "atoms": [
+        {
+          "type": "UseSkill",
+          "skillId": "com.netease.cloudmusic.open_app"
+        },
+        {
+          "type": "UseSkill",
+          "skillId": "com.netease.cloudmusic.search.click_entry"
+        },
+        {
+          "type": "UseSkill",
+          "skillId": "com.netease.cloudmusic.search.type_query",
+          "params": {
+            "query": "$query"
+          }
+        },
+        {
+          "type": "UseSkill",
+          "skillId": "com.netease.cloudmusic.search.click_submit"
+        }
+      ],
+      "verify": {
+        "type": "WindowChangedOrNodeStateChanged",
+        "timeoutMs": 2500,
+        "allowLowConfidenceWhenNodeUnreadable": true
+      },
+      "resultPolicy": {
+        "allAtomicSuccess": "SUCCESS",
+        "partialAtomicSuccess": "SUCCESS_MEDIUM_CONFIDENCE",
+        "coordinateOnly": "SUCCESS_LOW_CONFIDENCE",
+        "unverifiable": "FAILED_UNVERIFIABLE"
+      },
+      "timeoutMs": 10000,
+      "factory": {
+        "source": "COMPOSED_FROM_SKILL_ARCHETYPE",
+        "archetypeId": "common.search_in_app.v1",
+        "traceIds": [],
+        "sampleCount": 0,
+        "dryRunStatus": "PASSED",
+        "testRuns": 0,
+        "successRate": 0,
+        "promotionStatus": "NOT_PROMOTED",
+        "createdAt": 1779237769496,
+        "appPatch": {
+          "packageName": "com.netease.cloudmusic",
+          "label": "网易云音乐",
+          "launchable": true,
+          "launchActivity": "com.netease.cloudmusic.activity.IconChangeDefaultAlias",
+          "searchEntryTexts": [
+            "搜索",
+            "搜一搜",
+            "Search"
+          ],
+          "searchSubmitTexts": [
+            "搜索",
+            "确定",
+            "Search"
+          ],
+          "searchEntryCoordinate": {
+            "x": 0.5,
+            "y": 0.08
+          },
+          "searchSubmitCoordinate": {
+            "x": 0.9,
+            "y": 0.08
+          },
+          "postDraftEntryTexts": [
+            "+",
+            "写微博",
+            "发微博",
+            "发帖",
+            "创作",
+            "写帖子",
+            "发动态",
+            "说点什么"
+          ],
+          "postDraftEntryCoordinate": {
+            "x": 0.9,
+            "y": 0.9
+          }
+        },
+        "requiredAtomicSkills": [
+          "com.netease.cloudmusic.open_app",
+          "com.netease.cloudmusic.search.click_entry",
+          "com.netease.cloudmusic.search.type_query",
+          "com.netease.cloudmusic.search.click_submit"
+        ],
+        "promotionRule": "requires_dry_run_real_test_and_promotion_gate",
+        "lastDryRunReport": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_dry_run_reports\/com.netease.cloudmusic\/com.netease.cloudmusic.search.search_in_app_1779237769514.json",
+        "lastDryRunAt": 1779237769515
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "kind": "macro_skill",
+      "id": "com.netease.cloudmusic.prepare_app_session",
+      "name": "准备应用会话",
+      "appPackage": "com.netease.cloudmusic",
+      "appVersion": "*",
+      "status": "DRY_RUN_PASSED",
+      "implements": "PrepareAppSessionSkill",
+      "intentId": "prepare_app_session",
+      "params": [],
+      "preconditions": [],
+      "atoms": [
+        {
+          "type": "UseSkill",
+          "skillId": "com.netease.cloudmusic.open_app"
+        },
+        {
+          "type": "UseSkill",
+          "skillId": "com.netease.cloudmusic.capability_check"
+        }
+      ],
+      "verify": {
+        "type": "CapabilityObserved",
+        "packageName": "com.netease.cloudmusic",
+        "timeoutMs": 1000
+      },
+      "resultPolicy": {
+        "allAtomicSuccess": "SUCCESS",
+        "partialAtomicSuccess": "SUCCESS_MEDIUM_CONFIDENCE",
+        "unverifiable": "FAILED_UNVERIFIABLE"
+      },
+      "timeoutMs": 6000,
+      "factory": {
+        "source": "COMPOSED_FROM_SKILL_ARCHETYPE",
+        "archetypeId": "common.app_session.v1",
+        "traceIds": [],
+        "sampleCount": 0,
+        "dryRunStatus": "PASSED",
+        "testRuns": 0,
+        "successRate": 0,
+        "promotionStatus": "NOT_PROMOTED",
+        "createdAt": 1779237769496,
+        "appPatch": {
+          "packageName": "com.netease.cloudmusic",
+          "label": "网易云音乐",
+          "launchable": true,
+          "launchActivity": "com.netease.cloudmusic.activity.IconChangeDefaultAlias",
+          "searchEntryTexts": [
+            "搜索",
+            "搜一搜",
+            "Search"
+          ],
+          "searchSubmitTexts": [
+            "搜索",
+            "确定",
+            "Search"
+          ],
+          "searchEntryCoordinate": {
+            "x": 0.5,
+            "y": 0.08
+          },
+          "searchSubmitCoordinate": {
+            "x": 0.9,
+            "y": 0.08
+          },
+          "postDraftEntryTexts": [
+            "+",
+            "写微博",
+            "发微博",
+            "发帖",
+            "创作",
+            "写帖子",
+            "发动态",
+            "说点什么"
+          ],
+          "postDraftEntryCoordinate": {
+            "x": 0.9,
+            "y": 0.9
+          }
+        },
+        "requiredAtomicSkills": [
+          "com.netease.cloudmusic.open_app",
+          "com.netease.cloudmusic.capability_check"
+        ],
+        "promotionRule": "requires_real_probe_and_promotion_gate",
+        "lastDryRunReport": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_dry_run_reports\/com.netease.cloudmusic\/com.netease.cloudmusic.prepare_app_session_1779237769510.json",
+        "lastDryRunAt": 1779237769511
+      }
+    }
+  ],
+  "reactiveRules": [],
+  "runtimePolicy": {
+    "allowCandidateSkill": false,
+    "allowTrial": false,
+    "aiCallsDefault": 0,
+    "screenshotDefault": 0,
+    "maxTaskDurationMs": 30000
+  },
+  "factoryReports": {
+    "dryRunReports": [
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "patched.1779339445226.6.clickvisibletext",
+        "appPackage": "com.netease.cloudmusic",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779339448167
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "patched.1779339445226.7.wait",
+        "appPackage": "com.netease.cloudmusic",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779339448168
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "patched.command.1779339445226",
+        "appPackage": "com.netease.cloudmusic",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779339448169
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "patched.1779339445226.2.handlereactiveoverlays",
+        "appPackage": "com.netease.cloudmusic",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779339448162
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "patched.1779339445226.3.clickvisibletext",
+        "appPackage": "com.netease.cloudmusic",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779339448163
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "patched.1779339445226.4.wait",
+        "appPackage": "com.netease.cloudmusic",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779339448164
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "patched.1779339445226.5.typeintofirstinput",
+        "appPackage": "com.netease.cloudmusic",
+        "passed": false,
+        "status": "REJECTED",
+        "errors": [
+          "dangerous_action:支付"
+        ],
+        "warnings": [],
+        "timestamp": 1779339448165
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "patched.1779339445226.1.openapp",
+        "appPackage": "com.netease.cloudmusic",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779339448159
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.netease.cloudmusic.search.click_submit",
+        "appPackage": "com.netease.cloudmusic",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779237769513
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.netease.cloudmusic.search.search_in_app",
+        "appPackage": "com.netease.cloudmusic",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779237769514
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.netease.cloudmusic.common.type_first_input",
+        "appPackage": "com.netease.cloudmusic",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779237769509
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.netease.cloudmusic.prepare_app_session",
+        "appPackage": "com.netease.cloudmusic",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779237769510
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.netease.cloudmusic.search.click_entry",
+        "appPackage": "com.netease.cloudmusic",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779237769511
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.netease.cloudmusic.search.type_query",
+        "appPackage": "com.netease.cloudmusic",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779237769512
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.netease.cloudmusic.back",
+        "appPackage": "com.netease.cloudmusic",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779237769504
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.netease.cloudmusic.common.click_visible_text",
+        "appPackage": "com.netease.cloudmusic",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779237769508
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.netease.cloudmusic.recover_to_foreground",
+        "appPackage": "com.netease.cloudmusic",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779237769507
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.netease.cloudmusic.capability_check",
+        "appPackage": "com.netease.cloudmusic",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779237769503
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.netease.cloudmusic.open_app",
+        "appPackage": "com.netease.cloudmusic",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779237769499
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.netease.cloudmusic.search.search_in_app",
+        "appPackage": "com.netease.cloudmusic",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779221443296
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.netease.cloudmusic.prepare_app_session",
+        "appPackage": "com.netease.cloudmusic",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779221443292
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.netease.cloudmusic.search.click_entry",
+        "appPackage": "com.netease.cloudmusic",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779221443293
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.netease.cloudmusic.search.click_submit",
+        "appPackage": "com.netease.cloudmusic",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779221443295
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.netease.cloudmusic.search.type_query",
+        "appPackage": "com.netease.cloudmusic",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779221443294
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.netease.cloudmusic.back",
+        "appPackage": "com.netease.cloudmusic",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779221443288
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.netease.cloudmusic.common.click_visible_text",
+        "appPackage": "com.netease.cloudmusic",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779221443290
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.netease.cloudmusic.common.type_first_input",
+        "appPackage": "com.netease.cloudmusic",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779221443291
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.netease.cloudmusic.recover_to_foreground",
+        "appPackage": "com.netease.cloudmusic",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779221443289
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.netease.cloudmusic.capability_check",
+        "appPackage": "com.netease.cloudmusic",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779221443287
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.netease.cloudmusic.open_app",
+        "appPackage": "com.netease.cloudmusic",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779221443286
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.netease.cloudmusic.search.search_in_app",
+        "appPackage": "com.netease.cloudmusic",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779220606097
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.netease.cloudmusic.search.click_submit",
+        "appPackage": "com.netease.cloudmusic",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779220606094
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.netease.cloudmusic.search.type_query",
+        "appPackage": "com.netease.cloudmusic",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779220606092
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.netease.cloudmusic.prepare_app_session",
+        "appPackage": "com.netease.cloudmusic",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779220606088
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.netease.cloudmusic.search.click_entry",
+        "appPackage": "com.netease.cloudmusic",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779220606090
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.netease.cloudmusic.common.click_visible_text",
+        "appPackage": "com.netease.cloudmusic",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779220606084
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.netease.cloudmusic.common.type_first_input",
+        "appPackage": "com.netease.cloudmusic",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779220606086
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.netease.cloudmusic.back",
+        "appPackage": "com.netease.cloudmusic",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779220606080
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.netease.cloudmusic.recover_to_foreground",
+        "appPackage": "com.netease.cloudmusic",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779220606082
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.netease.cloudmusic.capability_check",
+        "appPackage": "com.netease.cloudmusic",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779220606078
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.netease.cloudmusic.open_app",
+        "appPackage": "com.netease.cloudmusic",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779220606076
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.netease.cloudmusic.search.search_in_app",
+        "appPackage": "com.netease.cloudmusic",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779214327649
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.netease.cloudmusic.search.click_submit",
+        "appPackage": "com.netease.cloudmusic",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779214327647
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.netease.cloudmusic.search.type_query",
+        "appPackage": "com.netease.cloudmusic",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779214327645
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.netease.cloudmusic.prepare_app_session",
+        "appPackage": "com.netease.cloudmusic",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779214327641
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.netease.cloudmusic.search.click_entry",
+        "appPackage": "com.netease.cloudmusic",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779214327643
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.netease.cloudmusic.common.click_visible_text",
+        "appPackage": "com.netease.cloudmusic",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779214327637
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.netease.cloudmusic.common.type_first_input",
+        "appPackage": "com.netease.cloudmusic",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779214327639
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.netease.cloudmusic.back",
+        "appPackage": "com.netease.cloudmusic",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779214327633
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.netease.cloudmusic.recover_to_foreground",
+        "appPackage": "com.netease.cloudmusic",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779214327635
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.netease.cloudmusic.capability_check",
+        "appPackage": "com.netease.cloudmusic",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779214327631
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.netease.cloudmusic.open_app",
+        "appPackage": "com.netease.cloudmusic",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779214327625
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.netease.cloudmusic.search.search_in_app",
+        "appPackage": "com.netease.cloudmusic",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779213826101
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.netease.cloudmusic.search.click_entry",
+        "appPackage": "com.netease.cloudmusic",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779213826096
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.netease.cloudmusic.search.click_submit",
+        "appPackage": "com.netease.cloudmusic",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779213826099
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.netease.cloudmusic.search.type_query",
+        "appPackage": "com.netease.cloudmusic",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779213826097
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.netease.cloudmusic.common.click_visible_text",
+        "appPackage": "com.netease.cloudmusic",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779213826093
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.netease.cloudmusic.common.type_first_input",
+        "appPackage": "com.netease.cloudmusic",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779213826094
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.netease.cloudmusic.prepare_app_session",
+        "appPackage": "com.netease.cloudmusic",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779213826095
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.netease.cloudmusic.recover_to_foreground",
+        "appPackage": "com.netease.cloudmusic",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779213826092
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.netease.cloudmusic.back",
+        "appPackage": "com.netease.cloudmusic",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779213826090
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.netease.cloudmusic.capability_check",
+        "appPackage": "com.netease.cloudmusic",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779213826085
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.netease.cloudmusic.open_app",
+        "appPackage": "com.netease.cloudmusic",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779213826081
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.netease.cloudmusic.search.click_submit",
+        "appPackage": "com.netease.cloudmusic",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779213162853
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.netease.cloudmusic.search.search_in_app",
+        "appPackage": "com.netease.cloudmusic",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779213162855
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.netease.cloudmusic.search.type_query",
+        "appPackage": "com.netease.cloudmusic",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779213162852
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.netease.cloudmusic.prepare_app_session",
+        "appPackage": "com.netease.cloudmusic",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779213162848
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.netease.cloudmusic.search.click_entry",
+        "appPackage": "com.netease.cloudmusic",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779213162850
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.netease.cloudmusic.common.click_visible_text",
+        "appPackage": "com.netease.cloudmusic",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779213162844
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.netease.cloudmusic.common.type_first_input",
+        "appPackage": "com.netease.cloudmusic",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779213162846
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.netease.cloudmusic.back",
+        "appPackage": "com.netease.cloudmusic",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779213162841
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.netease.cloudmusic.recover_to_foreground",
+        "appPackage": "com.netease.cloudmusic",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779213162843
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.netease.cloudmusic.capability_check",
+        "appPackage": "com.netease.cloudmusic",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779213162839
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.netease.cloudmusic.open_app",
+        "appPackage": "com.netease.cloudmusic",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779213162835
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.netease.cloudmusic.search.click_submit",
+        "appPackage": "com.netease.cloudmusic",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779212556880
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.netease.cloudmusic.search.search_in_app",
+        "appPackage": "com.netease.cloudmusic",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779212556882
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.netease.cloudmusic.prepare_app_session",
+        "appPackage": "com.netease.cloudmusic",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779212556876
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.netease.cloudmusic.search.click_entry",
+        "appPackage": "com.netease.cloudmusic",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779212556877
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.netease.cloudmusic.search.type_query",
+        "appPackage": "com.netease.cloudmusic",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779212556879
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.netease.cloudmusic.common.click_visible_text",
+        "appPackage": "com.netease.cloudmusic",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779212556873
+      }
+    ],
+    "exportedAt": 1779339448184
+  }
+}

@@ -1,0 +1,1252 @@
+{
+  "schemaVersion": 1,
+  "kind": "ui_state_snapshot",
+  "id": "ui_snapshot_1779338307126",
+  "source": "after_macro_atom",
+  "note": "index=2; skillId=patched.1779338294410.3.findentrybybottomtabsweep; status=SUCCESS_MEDIUM_CONFIDENCE",
+  "screenshotPath": null,
+  "screenshotSha256": null,
+  "visualHash": null,
+  "screenshotSizeBytes": null,
+  "appPackage": "com.ss.android.ugc.aweme",
+  "windowClassName": "android.widget.ImageView",
+  "screenKey": "f2734fbb",
+  "relatedSkillId": "patched.1779338294410.3.findentrybybottomtabsweep",
+  "relatedActionType": "FindEntryByBottomTabSweep",
+  "capability": {
+    "nodeReadability": "A",
+    "inputCapability": "CUSTOM_IME",
+    "verificationCapability": "HIGH",
+    "coordinateFallback": "AVAILABLE",
+    "serviceState": "CONNECTED",
+    "reason": "nodes=114, textLike=91, clickable=24, editable=0, scrollable=1, customIme=true"
+  },
+  "state": {
+    "appPackage": "com.ss.android.ugc.aweme",
+    "windowClassName": "android.widget.ImageView",
+    "screenWidth": 1440,
+    "screenHeight": 3168,
+    "timestamp": 1779338307125,
+    "nodeCount": 114,
+    "nodesStored": 45,
+    "nodesStorage": "compact_important_nodes_only",
+    "nodes": [
+      {
+        "nodeId": "7_93_24_160_200_336",
+        "packageName": "com.ss.android.ugc.aweme",
+        "text": null,
+        "contentDesc": "返回",
+        "resourceId": "com.ss.android.ugc.aweme:id\/back_btn",
+        "className": "android.widget.ImageView",
+        "bounds": {
+          "left": 24,
+          "top": 160,
+          "right": 200,
+          "bottom": 336
+        },
+        "clickable": true,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 7,
+        "parentRoleHint": "android.widget.RelativeLayout"
+      },
+      {
+        "nodeId": "7_95_784_160_1216_336",
+        "packageName": "com.ss.android.ugc.aweme",
+        "text": null,
+        "contentDesc": "抖音音乐榜",
+        "resourceId": "com.ss.android.ugc.aweme:id\/n=n",
+        "className": "android.widget.ImageView",
+        "bounds": {
+          "left": 784,
+          "top": 160,
+          "right": 1216,
+          "bottom": 336
+        },
+        "clickable": true,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 7,
+        "parentRoleHint": "android.widget.RelativeLayout"
+      },
+      {
+        "nodeId": "7_96_1240_160_1416_336",
+        "packageName": "com.ss.android.ugc.aweme",
+        "text": null,
+        "contentDesc": "分享",
+        "resourceId": "com.ss.android.ugc.aweme:id\/ze8",
+        "className": "android.widget.ImageView",
+        "bounds": {
+          "left": 1240,
+          "top": 160,
+          "right": 1416,
+          "bottom": 336
+        },
+        "clickable": true,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 7,
+        "parentRoleHint": "android.widget.RelativeLayout"
+      },
+      {
+        "nodeId": "11_14_331_367_1109_776",
+        "packageName": "com.ss.android.ugc.aweme",
+        "text": null,
+        "contentDesc": "暂停",
+        "resourceId": "com.ss.android.ugc.aweme:id\/sv7",
+        "className": "android.widget.FrameLayout",
+        "bounds": {
+          "left": 331,
+          "top": 367,
+          "right": 1109,
+          "bottom": 776
+        },
+        "clickable": true,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 11,
+        "parentRoleHint": "android.view.ViewGroup"
+      },
+      {
+        "nodeId": "11_20_672_664_768_760",
+        "packageName": "com.ss.android.ugc.aweme",
+        "text": null,
+        "contentDesc": null,
+        "resourceId": "com.ss.android.ugc.aweme:id\/sv=",
+        "className": "android.widget.LinearLayout",
+        "bounds": {
+          "left": 672,
+          "top": 664,
+          "right": 768,
+          "bottom": 760
+        },
+        "clickable": true,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 11,
+        "parentRoleHint": "android.view.ViewGroup"
+      },
+      {
+        "nodeId": "12_25_0_824_1380_941",
+        "packageName": "com.ss.android.ugc.aweme",
+        "text": "当bro以为自己很有影响力时 (硬...",
+        "contentDesc": "当bro以为自己很有影响力时 (硬曲是我主人)",
+        "resourceId": "com.ss.android.ugc.aweme:id\/swp",
+        "className": "android.widget.TextView",
+        "bounds": {
+          "left": 0,
+          "top": 824,
+          "right": 1380,
+          "bottom": 941
+        },
+        "clickable": true,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 12,
+        "parentRoleHint": "android.widget.LinearLayout"
+      },
+      {
+        "nodeId": "12_26_1384_850_1440_914",
+        "packageName": "com.ss.android.ugc.aweme",
+        "text": null,
+        "contentDesc": null,
+        "resourceId": "com.ss.android.ugc.aweme:id\/swq",
+        "className": "android.widget.FrameLayout",
+        "bounds": {
+          "left": 1384,
+          "top": 850,
+          "right": 1440,
+          "bottom": 914
+        },
+        "clickable": true,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 12,
+        "parentRoleHint": "android.widget.LinearLayout"
+      },
+      {
+        "nodeId": "12_29_636_957_805_1027",
+        "packageName": "com.ss.android.ugc.aweme",
+        "text": "DHC77",
+        "contentDesc": null,
+        "resourceId": "com.ss.android.ugc.aweme:id\/su2",
+        "className": "android.widget.TextView",
+        "bounds": {
+          "left": 636,
+          "top": 957,
+          "right": 805,
+          "bottom": 1027
+        },
+        "clickable": true,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 12,
+        "parentRoleHint": "android.widget.LinearLayout"
+      },
+      {
+        "nodeId": "11_32_43_1075_448_1211",
+        "packageName": "com.ss.android.ugc.aweme",
+        "text": null,
+        "contentDesc": null,
+        "resourceId": "com.ss.android.ugc.aweme:id\/swl",
+        "className": "android.widget.FrameLayout",
+        "bounds": {
+          "left": 43,
+          "top": 1075,
+          "right": 448,
+          "bottom": 1211
+        },
+        "clickable": true,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 11,
+        "parentRoleHint": "android.widget.LinearLayout"
+      },
+      {
+        "nodeId": "11_36_496_1075_944_1211",
+        "packageName": "com.ss.android.ugc.aweme",
+        "text": null,
+        "contentDesc": null,
+        "resourceId": "com.ss.android.ugc.aweme:id\/sv2",
+        "className": "android.widget.FrameLayout",
+        "bounds": {
+          "left": 496,
+          "top": 1075,
+          "right": 944,
+          "bottom": 1211
+        },
+        "clickable": true,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 11,
+        "parentRoleHint": "android.widget.LinearLayout"
+      },
+      {
+        "nodeId": "11_40_992_1075_1397_1211",
+        "packageName": "com.ss.android.ugc.aweme",
+        "text": null,
+        "contentDesc": "收藏",
+        "resourceId": "com.ss.android.ugc.aweme:id\/su5",
+        "className": "android.widget.FrameLayout",
+        "bounds": {
+          "left": 992,
+          "top": 1075,
+          "right": 1397,
+          "bottom": 1211
+        },
+        "clickable": true,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 11,
+        "parentRoleHint": "android.widget.LinearLayout"
+      },
+      {
+        "nodeId": "9_54_1024_1335_1376_1471",
+        "packageName": "com.ss.android.ugc.aweme",
+        "text": "试用特效",
+        "contentDesc": null,
+        "resourceId": "com.ss.android.ugc.aweme:id\/5ln",
+        "className": "android.widget.TextView",
+        "bounds": {
+          "left": 1024,
+          "top": 1335,
+          "right": 1376,
+          "bottom": 1471
+        },
+        "clickable": true,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 9,
+        "parentRoleHint": "android.view.ViewGroup"
+      },
+      {
+        "nodeId": "8_56_0_1558_477_2194",
+        "packageName": "com.ss.android.ugc.aweme",
+        "text": null,
+        "contentDesc": "视频1",
+        "resourceId": "com.ss.android.ugc.aweme:id\/cover",
+        "className": "android.widget.ImageView",
+        "bounds": {
+          "left": 0,
+          "top": 1558,
+          "right": 477,
+          "bottom": 2194
+        },
+        "clickable": true,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 8,
+        "parentRoleHint": "android.widget.FrameLayout"
+      },
+      {
+        "nodeId": "8_60_483_1558_957_2190",
+        "packageName": "com.ss.android.ugc.aweme",
+        "text": null,
+        "contentDesc": "视频2",
+        "resourceId": "com.ss.android.ugc.aweme:id\/cover",
+        "className": "android.widget.ImageView",
+        "bounds": {
+          "left": 483,
+          "top": 1558,
+          "right": 957,
+          "bottom": 2190
+        },
+        "clickable": true,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 8,
+        "parentRoleHint": "android.widget.FrameLayout"
+      },
+      {
+        "nodeId": "8_64_963_1558_1440_2194",
+        "packageName": "com.ss.android.ugc.aweme",
+        "text": null,
+        "contentDesc": "视频3",
+        "resourceId": "com.ss.android.ugc.aweme:id\/cover",
+        "className": "android.widget.ImageView",
+        "bounds": {
+          "left": 963,
+          "top": 1558,
+          "right": 1440,
+          "bottom": 2194
+        },
+        "clickable": true,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 8,
+        "parentRoleHint": "android.widget.FrameLayout"
+      },
+      {
+        "nodeId": "8_68_0_2200_477_2836",
+        "packageName": "com.ss.android.ugc.aweme",
+        "text": null,
+        "contentDesc": "视频4",
+        "resourceId": "com.ss.android.ugc.aweme:id\/cover",
+        "className": "android.widget.ImageView",
+        "bounds": {
+          "left": 0,
+          "top": 2200,
+          "right": 477,
+          "bottom": 2836
+        },
+        "clickable": true,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 8,
+        "parentRoleHint": "android.widget.FrameLayout"
+      },
+      {
+        "nodeId": "8_72_483_2200_957_2832",
+        "packageName": "com.ss.android.ugc.aweme",
+        "text": null,
+        "contentDesc": "视频5",
+        "resourceId": "com.ss.android.ugc.aweme:id\/cover",
+        "className": "android.widget.ImageView",
+        "bounds": {
+          "left": 483,
+          "top": 2200,
+          "right": 957,
+          "bottom": 2832
+        },
+        "clickable": true,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 8,
+        "parentRoleHint": "android.widget.FrameLayout"
+      },
+      {
+        "nodeId": "8_76_963_2200_1440_2836",
+        "packageName": "com.ss.android.ugc.aweme",
+        "text": null,
+        "contentDesc": "视频6",
+        "resourceId": "com.ss.android.ugc.aweme:id\/cover",
+        "className": "android.widget.ImageView",
+        "bounds": {
+          "left": 963,
+          "top": 2200,
+          "right": 1440,
+          "bottom": 2836
+        },
+        "clickable": true,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 8,
+        "parentRoleHint": "android.widget.FrameLayout"
+      },
+      {
+        "nodeId": "10_101_72_2824_684_3024",
+        "packageName": "com.ss.android.ugc.aweme",
+        "text": null,
+        "contentDesc": null,
+        "resourceId": "com.ss.android.ugc.aweme:id\/qdo",
+        "className": "android.widget.LinearLayout",
+        "bounds": {
+          "left": 72,
+          "top": 2824,
+          "right": 684,
+          "bottom": 3024
+        },
+        "clickable": true,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 10,
+        "parentRoleHint": "android.widget.FrameLayout"
+      },
+      {
+        "nodeId": "10_106_756_2824_1368_3024",
+        "packageName": "com.ss.android.ugc.aweme",
+        "text": null,
+        "contentDesc": "拍同款",
+        "resourceId": "com.ss.android.ugc.aweme:id\/zen",
+        "className": "android.widget.FrameLayout",
+        "bounds": {
+          "left": 756,
+          "top": 2824,
+          "right": 1368,
+          "bottom": 3024
+        },
+        "clickable": true,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 10,
+        "parentRoleHint": "android.widget.RelativeLayout"
+      },
+      {
+        "nodeId": "8_80_0_2842_477_3104",
+        "packageName": "com.ss.android.ugc.aweme",
+        "text": null,
+        "contentDesc": "视频7",
+        "resourceId": "com.ss.android.ugc.aweme:id\/cover",
+        "className": "android.widget.ImageView",
+        "bounds": {
+          "left": 0,
+          "top": 2842,
+          "right": 477,
+          "bottom": 3104
+        },
+        "clickable": true,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 8,
+        "parentRoleHint": "android.widget.FrameLayout"
+      },
+      {
+        "nodeId": "8_84_483_2842_957_3104",
+        "packageName": "com.ss.android.ugc.aweme",
+        "text": null,
+        "contentDesc": "视频8",
+        "resourceId": "com.ss.android.ugc.aweme:id\/cover",
+        "className": "android.widget.ImageView",
+        "bounds": {
+          "left": 483,
+          "top": 2842,
+          "right": 957,
+          "bottom": 3104
+        },
+        "clickable": true,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 8,
+        "parentRoleHint": "android.widget.FrameLayout"
+      },
+      {
+        "nodeId": "8_88_963_2842_1440_3104",
+        "packageName": "com.ss.android.ugc.aweme",
+        "text": null,
+        "contentDesc": "视频9",
+        "resourceId": "com.ss.android.ugc.aweme:id\/cover",
+        "className": "android.widget.ImageView",
+        "bounds": {
+          "left": 963,
+          "top": 2842,
+          "right": 1440,
+          "bottom": 3104
+        },
+        "clickable": true,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 8,
+        "parentRoleHint": "android.widget.FrameLayout"
+      },
+      {
+        "nodeId": "6_8_0_160_1440_3104",
+        "packageName": "com.ss.android.ugc.aweme",
+        "text": null,
+        "contentDesc": null,
+        "resourceId": "com.ss.android.ugc.aweme:id\/swc",
+        "className": "androidx.recyclerview.widget.RecyclerView",
+        "bounds": {
+          "left": 0,
+          "top": 160,
+          "right": 1440,
+          "bottom": 3104
+        },
+        "clickable": false,
+        "editable": false,
+        "scrollable": true,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 6,
+        "parentRoleHint": "android.view.ViewGroup"
+      },
+      {
+        "nodeId": "8_45_0_1251_1440_1555",
+        "packageName": "com.ss.android.ugc.aweme",
+        "text": null,
+        "contentDesc": null,
+        "resourceId": null,
+        "className": "android.view.ViewGroup",
+        "bounds": {
+          "left": 0,
+          "top": 1251,
+          "right": 1440,
+          "bottom": 1555
+        },
+        "clickable": true,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 8,
+        "parentRoleHint": "android.widget.LinearLayout"
+      },
+      {
+        "nodeId": "2_2_0_0_1440_3104",
+        "packageName": "com.ss.android.ugc.aweme",
+        "text": null,
+        "contentDesc": null,
+        "resourceId": "android:id\/content",
+        "className": "android.widget.FrameLayout",
+        "bounds": {
+          "left": 0,
+          "top": 0,
+          "right": 1440,
+          "bottom": 3104
+        },
+        "clickable": false,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 2,
+        "parentRoleHint": "android.widget.LinearLayout"
+      },
+      {
+        "nodeId": "4_5_0_0_1440_3104",
+        "packageName": "com.ss.android.ugc.aweme",
+        "text": null,
+        "contentDesc": null,
+        "resourceId": "com.ss.android.ugc.aweme:id\/koj",
+        "className": "android.widget.FrameLayout",
+        "bounds": {
+          "left": 0,
+          "top": 0,
+          "right": 1440,
+          "bottom": 3104
+        },
+        "clickable": false,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 4,
+        "parentRoleHint": "android.widget.RelativeLayout"
+      },
+      {
+        "nodeId": "4_6_0_0_1440_3104",
+        "packageName": "com.ss.android.ugc.aweme",
+        "text": null,
+        "contentDesc": null,
+        "resourceId": "com.ss.android.ugc.aweme:id\/container",
+        "className": "android.widget.FrameLayout",
+        "bounds": {
+          "left": 0,
+          "top": 0,
+          "right": 1440,
+          "bottom": 3104
+        },
+        "clickable": false,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 4,
+        "parentRoleHint": "android.widget.RelativeLayout"
+      },
+      {
+        "nodeId": "5_7_0_0_1440_3104",
+        "packageName": "com.ss.android.ugc.aweme",
+        "text": null,
+        "contentDesc": null,
+        "resourceId": "com.ss.android.ugc.aweme:id\/sv1",
+        "className": "android.view.ViewGroup",
+        "bounds": {
+          "left": 0,
+          "top": 0,
+          "right": 1440,
+          "bottom": 3104
+        },
+        "clickable": false,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 5,
+        "parentRoleHint": "android.widget.FrameLayout"
+      },
+      {
+        "nodeId": "3_110_0_0_1440_3104",
+        "packageName": "com.ss.android.ugc.aweme",
+        "text": null,
+        "contentDesc": null,
+        "resourceId": "com.ss.android.ugc.aweme:id\/action_bar_root",
+        "className": "android.widget.LinearLayout",
+        "bounds": {
+          "left": 0,
+          "top": 0,
+          "right": 1440,
+          "bottom": 3104
+        },
+        "clickable": false,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 3,
+        "parentRoleHint": "android.widget.FrameLayout"
+      },
+      {
+        "nodeId": "1_112_0_0_1440_160",
+        "packageName": "com.ss.android.ugc.aweme",
+        "text": null,
+        "contentDesc": null,
+        "resourceId": "android:id\/statusBarBackground",
+        "className": "android.view.View",
+        "bounds": {
+          "left": 0,
+          "top": 0,
+          "right": 1440,
+          "bottom": 160
+        },
+        "clickable": false,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 1,
+        "parentRoleHint": "android.widget.FrameLayout"
+      },
+      {
+        "nodeId": "7_9_0_160_1440_1251",
+        "packageName": "com.ss.android.ugc.aweme",
+        "text": null,
+        "contentDesc": null,
+        "resourceId": "com.ss.android.ugc.aweme:id\/k=7",
+        "className": "android.widget.LinearLayout",
+        "bounds": {
+          "left": 0,
+          "top": 160,
+          "right": 1440,
+          "bottom": 1251
+        },
+        "clickable": false,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 7,
+        "parentRoleHint": "androidx.recyclerview.widget.RecyclerView"
+      },
+      {
+        "nodeId": "6_91_0_160_1440_336",
+        "packageName": "com.ss.android.ugc.aweme",
+        "text": null,
+        "contentDesc": null,
+        "resourceId": "com.ss.android.ugc.aweme:id\/zp1",
+        "className": "android.widget.RelativeLayout",
+        "bounds": {
+          "left": 0,
+          "top": 160,
+          "right": 1440,
+          "bottom": 336
+        },
+        "clickable": false,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 6,
+        "parentRoleHint": "android.view.ViewGroup"
+      },
+      {
+        "nodeId": "7_92_0_160_1440_336",
+        "packageName": "com.ss.android.ugc.aweme",
+        "text": null,
+        "contentDesc": null,
+        "resourceId": "com.ss.android.ugc.aweme:id\/18=",
+        "className": "android.view.View",
+        "bounds": {
+          "left": 0,
+          "top": 160,
+          "right": 1440,
+          "bottom": 336
+        },
+        "clickable": false,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 7,
+        "parentRoleHint": "android.widget.RelativeLayout"
+      },
+      {
+        "nodeId": "7_94_354_160_1086_336",
+        "packageName": "com.ss.android.ugc.aweme",
+        "text": "当bro以为自己很有影响力时 (硬曲是我主人)",
+        "contentDesc": null,
+        "resourceId": "com.ss.android.ugc.aweme:id\/title",
+        "className": "android.widget.TextView",
+        "bounds": {
+          "left": 354,
+          "top": 160,
+          "right": 1086,
+          "bottom": 336
+        },
+        "clickable": false,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 7,
+        "parentRoleHint": "android.widget.RelativeLayout"
+      },
+      {
+        "nodeId": "8_10_0_192_1440_1251",
+        "packageName": "com.ss.android.ugc.aweme",
+        "text": null,
+        "contentDesc": null,
+        "resourceId": "com.ss.android.ugc.aweme:id\/svq",
+        "className": "android.widget.FrameLayout",
+        "bounds": {
+          "left": 0,
+          "top": 192,
+          "right": 1440,
+          "bottom": 1251
+        },
+        "clickable": false,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 8,
+        "parentRoleHint": "android.widget.LinearLayout"
+      },
+      {
+        "nodeId": "9_11_0_192_1440_1211",
+        "packageName": "com.ss.android.ugc.aweme",
+        "text": null,
+        "contentDesc": null,
+        "resourceId": "com.ss.android.ugc.aweme:id\/svt",
+        "className": "android.widget.LinearLayout",
+        "bounds": {
+          "left": 0,
+          "top": 192,
+          "right": 1440,
+          "bottom": 1211
+        },
+        "clickable": false,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 9,
+        "parentRoleHint": "android.widget.FrameLayout"
+      },
+      {
+        "nodeId": "10_12_0_192_1440_776",
+        "packageName": "com.ss.android.ugc.aweme",
+        "text": null,
+        "contentDesc": null,
+        "resourceId": "com.ss.android.ugc.aweme:id\/su=",
+        "className": "android.view.ViewGroup",
+        "bounds": {
+          "left": 0,
+          "top": 192,
+          "right": 1440,
+          "bottom": 776
+        },
+        "clickable": false,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 10,
+        "parentRoleHint": "android.widget.LinearLayout"
+      },
+      {
+        "nodeId": "11_22_800_346_1193_776",
+        "packageName": "com.ss.android.ugc.aweme",
+        "text": null,
+        "contentDesc": null,
+        "resourceId": "com.ss.android.ugc.aweme:id\/su+",
+        "className": "android.widget.ImageView",
+        "bounds": {
+          "left": 800,
+          "top": 346,
+          "right": 1193,
+          "bottom": 776
+        },
+        "clickable": false,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 11,
+        "parentRoleHint": "android.view.ViewGroup"
+      },
+      {
+        "nodeId": "12_16_331_367_1109_776",
+        "packageName": "com.ss.android.ugc.aweme",
+        "text": null,
+        "contentDesc": null,
+        "resourceId": "com.ss.android.ugc.aweme:id\/su-",
+        "className": "android.widget.ImageView",
+        "bounds": {
+          "left": 331,
+          "top": 367,
+          "right": 1109,
+          "bottom": 776
+        },
+        "clickable": false,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 12,
+        "parentRoleHint": "android.widget.FrameLayout"
+      },
+      {
+        "nodeId": "12_18_348_384_1092_776",
+        "packageName": "com.ss.android.ugc.aweme",
+        "text": null,
+        "contentDesc": null,
+        "resourceId": "com.ss.android.ugc.aweme:id\/sva",
+        "className": "android.widget.ImageView",
+        "bounds": {
+          "left": 348,
+          "top": 384,
+          "right": 1092,
+          "bottom": 776
+        },
+        "clickable": false,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 12,
+        "parentRoleHint": "android.widget.FrameLayout"
+      },
+      {
+        "nodeId": "12_19_440_468_1000_776",
+        "packageName": "com.ss.android.ugc.aweme",
+        "text": null,
+        "contentDesc": null,
+        "resourceId": "com.ss.android.ugc.aweme:id\/sv6",
+        "className": "android.widget.ImageView",
+        "bounds": {
+          "left": 440,
+          "top": 468,
+          "right": 1000,
+          "bottom": 776
+        },
+        "clickable": false,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 12,
+        "parentRoleHint": "android.widget.FrameLayout"
+      },
+      {
+        "nodeId": "12_21_672_664_768_760",
+        "packageName": "com.ss.android.ugc.aweme",
+        "text": null,
+        "contentDesc": "暂停",
+        "resourceId": "com.ss.android.ugc.aweme:id\/sv_",
+        "className": "android.widget.ImageView",
+        "bounds": {
+          "left": 672,
+          "top": 664,
+          "right": 768,
+          "bottom": 760
+        },
+        "clickable": false,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 12,
+        "parentRoleHint": "android.widget.LinearLayout"
+      },
+      {
+        "nodeId": "11_13_0_712_1440_776",
+        "packageName": "com.ss.android.ugc.aweme",
+        "text": null,
+        "contentDesc": null,
+        "resourceId": "com.ss.android.ugc.aweme:id\/su9",
+        "className": "android.widget.ImageView",
+        "bounds": {
+          "left": 0,
+          "top": 712,
+          "right": 1440,
+          "bottom": 776
+        },
+        "clickable": false,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 11,
+        "parentRoleHint": "android.view.ViewGroup"
+      },
+      {
+        "nodeId": "10_23_0_824_1440_1027",
+        "packageName": "com.ss.android.ugc.aweme",
+        "text": null,
+        "contentDesc": null,
+        "resourceId": "com.ss.android.ugc.aweme:id\/sw_",
+        "className": "android.view.ViewGroup",
+        "bounds": {
+          "left": 0,
+          "top": 824,
+          "right": 1440,
+          "bottom": 1027
+        },
+        "clickable": false,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 10,
+        "parentRoleHint": "android.widget.LinearLayout"
+      }
+    ],
+    "eventsSinceLastState": [
+      {
+        "eventType": "TYPE_WINDOW_CONTENT_CHANGED",
+        "packageName": "com.ss.android.ugc.aweme",
+        "className": "android.widget.ImageView",
+        "text": null,
+        "timestamp": 1779338307121
+      }
+    ]
+  },
+  "summary": {
+    "nodeCount": 114,
+    "clickableCount": 24,
+    "editableCount": 0,
+    "scrollableCount": 1,
+    "labels": [
+      "android:id\/content",
+      "com.ss.android.ugc.aweme:id\/status_bar",
+      "com.ss.android.ugc.aweme:id\/koj",
+      "com.ss.android.ugc.aweme:id\/container",
+      "com.ss.android.ugc.aweme:id\/sv1",
+      "com.ss.android.ugc.aweme:id\/swc",
+      "com.ss.android.ugc.aweme:id\/k=7",
+      "com.ss.android.ugc.aweme:id\/svq",
+      "com.ss.android.ugc.aweme:id\/svt",
+      "com.ss.android.ugc.aweme:id\/su=",
+      "com.ss.android.ugc.aweme:id\/su9",
+      "暂停 com.ss.android.ugc.aweme:id\/sv7",
+      "com.ss.android.ugc.aweme:id\/su-",
+      "com.ss.android.ugc.aweme:id\/sva",
+      "com.ss.android.ugc.aweme:id\/sv6",
+      "com.ss.android.ugc.aweme:id\/sv=",
+      "暂停 com.ss.android.ugc.aweme:id\/sv_",
+      "com.ss.android.ugc.aweme:id\/su+",
+      "com.ss.android.ugc.aweme:id\/sw_",
+      "com.ss.android.ugc.aweme:id\/sws",
+      "当bro以为自己很有影响力时 (硬... 当bro以为自己很有影响力时 (硬曲是我主人) com.ss.android.ugc.aweme:id\/swp",
+      "com.ss.android.ugc.aweme:id\/swq",
+      "com.ss.android.ugc.aweme:id\/su1",
+      "DHC77 com.ss.android.ugc.aweme:id\/su2",
+      "com.ss.android.ugc.aweme:id\/swa",
+      "com.ss.android.ugc.aweme:id\/svm",
+      "com.ss.android.ugc.aweme:id\/swl",
+      "com.ss.android.ugc.aweme:id\/swm",
+      "音乐分享 com.ss.android.ugc.aweme:id\/swn",
+      "com.ss.android.ugc.aweme:id\/sv2",
+      "com.ss.android.ugc.aweme:id\/svh",
+      "com.ss.android.ugc.aweme:id\/sve",
+      "去听完整版 com.ss.android.ugc.aweme:id\/svj",
+      "收藏 com.ss.android.ugc.aweme:id\/su5",
+      "com.ss.android.ugc.aweme:id\/su6",
+      "收藏 com.ss.android.ugc.aweme:id\/su7",
+      "com.ss.android.ugc.aweme:id\/e42",
+      "com.ss.android.ugc.aweme:id\/cover",
+      "漂亮的妞 com.ss.android.ugc.aweme:id\/title",
+      "com.ss.android.ugc.aweme:id\/0zh",
+      "相关特效 com.ss.android.ugc.aweme:id\/sv4",
+      "com.ss.android.ugc.aweme:id\/5lt",
+      "7162.0 万人使用 com.ss.android.ugc.aweme:id\/usw",
+      "试用特效 com.ss.android.ugc.aweme:id\/5ln",
+      "视频1 com.ss.android.ugc.aweme:id\/cover",
+      "com.ss.android.ugc.aweme:id\/chc",
+      "2.9 万 com.ss.android.ugc.aweme:id\/pjl",
+      "视频2 com.ss.android.ugc.aweme:id\/cover",
+      "com.ss.android.ugc.aweme:id\/chc",
+      "103.7 万 com.ss.android.ugc.aweme:id\/pjl",
+      "视频3 com.ss.android.ugc.aweme:id\/cover",
+      "com.ss.android.ugc.aweme:id\/chc",
+      "93.2 万 com.ss.android.ugc.aweme:id\/pjl",
+      "视频4 com.ss.android.ugc.aweme:id\/cover",
+      "com.ss.android.ugc.aweme:id\/chc",
+      "76.2 万 com.ss.android.ugc.aweme:id\/pjl",
+      "视频5 com.ss.android.ugc.aweme:id\/cover",
+      "com.ss.android.ugc.aweme:id\/chc",
+      "18.6 万 com.ss.android.ugc.aweme:id\/pjl",
+      "视频6 com.ss.android.ugc.aweme:id\/cover",
+      "com.ss.android.ugc.aweme:id\/chc",
+      "3.1 万 com.ss.android.ugc.aweme:id\/pjl",
+      "视频7 com.ss.android.ugc.aweme:id\/cover",
+      "com.ss.android.ugc.aweme:id\/chc",
+      "72.3 万 com.ss.android.ugc.aweme:id\/pjl",
+      "视频8 com.ss.android.ugc.aweme:id\/cover",
+      "com.ss.android.ugc.aweme:id\/chc",
+      "16.9 万 com.ss.android.ugc.aweme:id\/pjl",
+      "视频9 com.ss.android.ugc.aweme:id\/cover",
+      "com.ss.android.ugc.aweme:id\/chc",
+      "56.6 万 com.ss.android.ugc.aweme:id\/pjl",
+      "com.ss.android.ugc.aweme:id\/zp1",
+      "com.ss.android.ugc.aweme:id\/18=",
+      "返回 com.ss.android.ugc.aweme:id\/back_btn",
+      "当bro以为自己很有影响力时 (硬曲是我主人) com.ss.android.ugc.aweme:id\/title",
+      "抖音音乐榜 com.ss.android.ugc.aweme:id\/n=n",
+      "分享 com.ss.android.ugc.aweme:id\/ze8",
+      "com.ss.android.ugc.aweme:id\/bottom_layout",
+      "com.ss.android.ugc.aweme:id\/0d9",
+      "com.ss.android.ugc.aweme:id\/gc8"
+    ],
+    "bottomCandidates": [
+      {
+        "label": "76.2 万 com.ss.android.ugc.aweme:id\/pjl",
+        "bounds": {
+          "left": 20,
+          "top": 2751,
+          "right": 240,
+          "bottom": 2816
+        },
+        "clickable": false
+      },
+      {
+        "label": "72.3 万 com.ss.android.ugc.aweme:id\/pjl",
+        "bounds": {
+          "left": 20,
+          "top": 3393,
+          "right": 240,
+          "bottom": 3104
+        },
+        "clickable": false
+      },
+      {
+        "label": "视频4 com.ss.android.ugc.aweme:id\/cover",
+        "bounds": {
+          "left": 0,
+          "top": 2200,
+          "right": 477,
+          "bottom": 2836
+        },
+        "clickable": true
+      },
+      {
+        "label": "视频7 com.ss.android.ugc.aweme:id\/cover",
+        "bounds": {
+          "left": 0,
+          "top": 2842,
+          "right": 477,
+          "bottom": 3104
+        },
+        "clickable": true
+      },
+      {
+        "label": "com.ss.android.ugc.aweme:id\/qdo",
+        "bounds": {
+          "left": 72,
+          "top": 2824,
+          "right": 684,
+          "bottom": 3024
+        },
+        "clickable": true
+      },
+      {
+        "label": "一键成片 com.ss.android.ugc.aweme:id\/3h9",
+        "bounds": {
+          "left": 302,
+          "top": 2881,
+          "right": 558,
+          "bottom": 2967
+        },
+        "clickable": false
+      },
+      {
+        "label": "18.6 万 com.ss.android.ugc.aweme:id\/pjl",
+        "bounds": {
+          "left": 503,
+          "top": 2751,
+          "right": 718,
+          "bottom": 2816
+        },
+        "clickable": false
+      },
+      {
+        "label": "16.9 万 com.ss.android.ugc.aweme:id\/pjl",
+        "bounds": {
+          "left": 503,
+          "top": 3393,
+          "right": 718,
+          "bottom": 3104
+        },
+        "clickable": false
+      },
+      {
+        "label": "视频5 com.ss.android.ugc.aweme:id\/cover",
+        "bounds": {
+          "left": 483,
+          "top": 2200,
+          "right": 957,
+          "bottom": 2832
+        },
+        "clickable": true
+      },
+      {
+        "label": "视频8 com.ss.android.ugc.aweme:id\/cover",
+        "bounds": {
+          "left": 483,
+          "top": 2842,
+          "right": 957,
+          "bottom": 3104
+        },
+        "clickable": true
+      },
+      {
+        "label": "拍同款 com.ss.android.ugc.aweme:id\/zen",
+        "bounds": {
+          "left": 756,
+          "top": 2824,
+          "right": 1368,
+          "bottom": 3024
+        },
+        "clickable": true
+      },
+      {
+        "label": "3.1 万 com.ss.android.ugc.aweme:id\/pjl",
+        "bounds": {
+          "left": 983,
+          "top": 2751,
+          "right": 1166,
+          "bottom": 2816
+        },
+        "clickable": false
+      }
+    ]
+  },
+  "retentionPolicy": {
+    "fullNodeTreeStored": false,
+    "storedNodeLimit": 45,
+    "storedEventLimit": 20,
+    "longTermKnowledge": "summary + app_ui_graph + assembly\/runtime reports"
+  },
+  "createdAt": 1779338307140
+}

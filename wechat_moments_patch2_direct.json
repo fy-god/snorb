@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "kind": "skill_json_ai_direct_run_report",
+  "id": "ai_direct_run_1778522192115",
+  "skillId": "direct.command.1778522175572",
+  "appPackage": "com.tencent.mm",
+  "instruction": "微信发一条朋友圈，内容是我是AI，设置为仅自己可见，然后发表",
+  "engine": "ai_direct_skill_json",
+  "approvedRequired": false,
+  "status": "FAILED_WECHAT_TAB_SHELL_NOT_VISIBLE",
+  "message": "微信底栏不可见，已停止坐标点击，避免继续点到聊天内容；events=[{\"phase\":\"tab_shell_probe\",\"index\":0,\"visible\":false,\"snapshot\":\"\\\/data\\\/user\\\/0\\\/com.macropilot.app\\\/files\\\/macro_v2\\\/factory\\\/ui_snapshots\\\/com.tencent.mm\\\/20260512_015621_661_7aaab248.json\",\"screenshotPath\":\"\\\/data\\\/user\\\/0\\\/com.macropilot.app\\\/files\\\/macro_v2\\\/factory\\\/ui_screenshots\\\/com.tencent.mm\\\/20260512_015621_661_7aaab248.png\",\"selectedEvidence\":{\"selectedIndex\":-1,\"selectedScore\":0,\"scores\":[0,0,19,2],\"reason\":\"bottom_sheet_dialog_visible\"}},{\"phase\":\"tab_shell_dismiss_wechat_bottom_sheet\",\"index\":0,\"success\":true,\"message\":\"dispatchGesture tap sent (normalized=0.330,0.835 px=475,2645 screen=1440x3168)\",\"reason\":\"bottom_sheet_dialog_visible\"},{\"phase\":\"tab_shell_probe\",\"index\":1,\"visible\":false,\"snapshot\":\"\\\/data\\\/user\\\/0\\\/com.macropilot.app\\\/files\\\/macro_v2\\\/factory\\\/ui_snapshots\\\/com.tencent.mm\\\/20260512_015623_235_aa56726a.json\",\"screenshotPath\":\"\\\/data\\\/user\\\/0\\\/com.macropilot.app\\\/files\\\/macro_v2\\\/factory\\\/ui_screenshots\\\/com.tencent.mm\\\/20260512_015623_235_aa56726a.png\",\"selectedEvidence\":{\"selectedIndex\":-1,\"selectedScore\":0,\"scores\":[0,0,19,2],\"reason\":\"bottom_sheet_dialog_visible\"}},{\"phase\":\"tab_shell_dismiss_wechat_bottom_sheet\",\"index\":1,\"success\":true,\"message\":\"dispatchGesture tap sent (normalized=0.330,0.835 px=475,2645 screen=1440x3168)\",\"reason\":\"bottom_sheet_dialog_visible\"},{\"phase\":\"tab_shell_probe\",\"index\":2,\"visible\":false,\"snapshot\":\"\\\/data\\\/user\\\/0\\\/com.macropilot.app\\\/files\\\/macro_v2\\\/factory\\\/ui_snapshots\\\/com.tencent.mm\\\/20260512_015624_817_aa56726a.json\",\"screenshotPath\":\"\\\/data\\\/user\\\/0\\\/com.macropilot.app\\\/files\\\/macro_v2\\\/factory\\\/ui_screenshots\\\/com.tencent.mm\\\/20260512_015624_817_aa56726a.png\",\"selectedEvidence\":{\"selectedIndex\":-1,\"selectedScore\":0,\"scores\":[0,0,19,2],\"reason\":\"bottom_sheet_dialog_visible\"}},{\"phase\":\"tab_s",
+  "durationMs": 16313,
+  "usedCoordinate": false,
+  "details": {
+    "macroSkillId": "direct.command.1778522175572",
+    "failedAtom": {
+      "index": 2,
+      "skillId": "direct.1778522175572.3.capturewechatbottomtabs",
+      "actionType": "CaptureWechatBottomTabs",
+      "status": "FAILED_WECHAT_TAB_SHELL_NOT_VISIBLE",
+      "message": "微信底栏不可见，已停止坐标点击，避免继续点到聊天内容；events=[{\"phase\":\"tab_shell_probe\",\"index\":0,\"visible\":false,\"snapshot\":\"\\\/data\\\/user\\\/0\\\/com.macropilot.app\\\/files\\\/macro_v2\\\/factory\\\/ui_snapshots\\\/com.tencent.mm\\\/20260512_015621_661_7aaab248.json\",\"screenshotPath\":\"\\\/data\\\/user\\\/0\\\/com.macropilot.app\\\/files\\\/macro_v2\\\/factory\\\/ui_screenshots\\\/com.tencent.mm\\\/20260512_015621_661_7aaab248.png\",\"selectedEvidence\":{\"selectedIndex\":-1,\"selectedScore\":0,\"scores\":[0,0,19,2],\"reason\":\"bottom_sheet_dialog_visible\"}},{\"phase\":\"tab_shell_dismiss_wechat_bottom_sheet\",\"index\":0,\"success\":true,\"message\":\"dispatchGesture tap sent (normalized=0.330,0.835 px=475,2645 screen=1440x3168)\",\"reason\":\"bottom_sheet_dialog_visible\"},{\"phase\":\"tab_shell_probe\",\"index\":1,\"visible\":false,\"snapshot\":\"\\\/data\\\/user\\\/0\\\/com.macropilot.app\\\/files\\\/macro_v2\\\/factory\\\/ui_snapshots\\\/com.tencent.mm\\\/20260512_015623_235_aa56726a.json\",\"screenshotPath\":\"\\\/data\\\/user\\\/0\\\/com.macropilot.app\\\/files\\\/macro_v2\\\/factory\\\/ui_screenshots\\\/com.tencent.mm\\\/20260512_015623_235_aa56726a.png\",\"selectedEvidence\":{\"selectedIndex\":-1,\"selectedScore\":0,\"scores\":[0,0,19,2],\"reason\":\"bottom_sheet_dialog_visible\"}},{\"phase\":\"tab_shell_dismiss_wechat_bottom_sheet\",\"index\":1,\"success\":true,\"message\":\"dispatchGesture tap sent (normalized=0.330,0.835 px=475,2645 screen=1440x3168)\",\"reason\":\"bottom_sheet_dialog_visible\"},{\"phase\":\"tab_shell_probe\",\"index\":2,\"visible\":false,\"snapshot\":\"\\\/data\\\/user\\\/0\\\/com.macropilot.app\\\/files\\\/macro_v2\\\/factory\\\/ui_snapshots\\\/com.tencent.mm\\\/20260512_015624_817_aa56726a.json\",\"screenshotPath\":\"\\\/data\\\/user\\\/0\\\/com.macropilot.app\\\/files\\\/macro_v2\\\/factory\\\/ui_screenshots\\\/com.tencent.mm\\\/20260512_015624_817_aa56726a.png\",\"selectedEvidence\":{\"selectedIndex\":-1,\"selectedScore\":0,\"scores\":[0,0,19,2],\"reason\":\"bottom_sheet_dialog_visible\"}},{\"phase\":\"tab_s",
+      "usedCoordinate": false,
+      "details": null
+    },
+    "atomTrace": [
+      {
+        "index": 0,
+        "skillId": "direct.1778522175572.1.openapp",
+        "actionType": "OpenApp",
+        "status": "SUCCESS_MEDIUM_CONFIDENCE",
+        "message": "Launch intent sent for com.tencent.mm",
+        "usedCoordinate": false,
+        "details": null
+      },
+      {
+        "index": 1,
+        "skillId": "direct.1778522175572.2.handlereactiveoverlays",
+        "actionType": "HandleReactiveOverlays",
+        "status": "SUCCESS_MEDIUM_CONFIDENCE",
+        "message": "Reactive overlay pass completed; dismissed=0",
+        "usedCoordinate": false,
+        "details": null
+      },
+      {
+        "index": 2,
+        "skillId": "direct.1778522175572.3.capturewechatbottomtabs",
+        "actionType": "CaptureWechatBottomTabs",
+        "status": "FAILED_WECHAT_TAB_SHELL_NOT_VISIBLE",
+        "message": "微信底栏不可见，已停止坐标点击，避免继续点到聊天内容；events=[{\"phase\":\"tab_shell_probe\",\"index\":0,\"visible\":false,\"snapshot\":\"\\\/data\\\/user\\\/0\\\/com.macropilot.app\\\/files\\\/macro_v2\\\/factory\\\/ui_snapshots\\\/com.tencent.mm\\\/20260512_015621_661_7aaab248.json\",\"screenshotPath\":\"\\\/data\\\/user\\\/0\\\/com.macropilot.app\\\/files\\\/macro_v2\\\/factory\\\/ui_screenshots\\\/com.tencent.mm\\\/20260512_015621_661_7aaab248.png\",\"selectedEvidence\":{\"selectedIndex\":-1,\"selectedScore\":0,\"scores\":[0,0,19,2],\"reason\":\"bottom_sheet_dialog_visible\"}},{\"phase\":\"tab_shell_dismiss_wechat_bottom_sheet\",\"index\":0,\"success\":true,\"message\":\"dispatchGesture tap sent (normalized=0.330,0.835 px=475,2645 screen=1440x3168)\",\"reason\":\"bottom_sheet_dialog_visible\"},{\"phase\":\"tab_shell_probe\",\"index\":1,\"visible\":false,\"snapshot\":\"\\\/data\\\/user\\\/0\\\/com.macropilot.app\\\/files\\\/macro_v2\\\/factory\\\/ui_snapshots\\\/com.tencent.mm\\\/20260512_015623_235_aa56726a.json\",\"screenshotPath\":\"\\\/data\\\/user\\\/0\\\/com.macropilot.app\\\/files\\\/macro_v2\\\/factory\\\/ui_screenshots\\\/com.tencent.mm\\\/20260512_015623_235_aa56726a.png\",\"selectedEvidence\":{\"selectedIndex\":-1,\"selectedScore\":0,\"scores\":[0,0,19,2],\"reason\":\"bottom_sheet_dialog_visible\"}},{\"phase\":\"tab_shell_dismiss_wechat_bottom_sheet\",\"index\":1,\"success\":true,\"message\":\"dispatchGesture tap sent (normalized=0.330,0.835 px=475,2645 screen=1440x3168)\",\"reason\":\"bottom_sheet_dialog_visible\"},{\"phase\":\"tab_shell_probe\",\"index\":2,\"visible\":false,\"snapshot\":\"\\\/data\\\/user\\\/0\\\/com.macropilot.app\\\/files\\\/macro_v2\\\/factory\\\/ui_snapshots\\\/com.tencent.mm\\\/20260512_015624_817_aa56726a.json\",\"screenshotPath\":\"\\\/data\\\/user\\\/0\\\/com.macropilot.app\\\/files\\\/macro_v2\\\/factory\\\/ui_screenshots\\\/com.tencent.mm\\\/20260512_015624_817_aa56726a.png\",\"selectedEvidence\":{\"selectedIndex\":-1,\"selectedScore\":0,\"scores\":[0,0,19,2],\"reason\":\"bottom_sheet_dialog_visible\"}},{\"phase\":\"tab_s",
+        "usedCoordinate": false,
+        "details": null
+      }
+    ],
+    "reactiveDismissed": 0
+  },
+  "allowSideEffect": true,
+  "params": {},
+  "skillFile": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_candidates\/com.tencent.mm\/direct.command.1778522175572.json",
+  "previewConfigFile": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/app_config_exports\/com.tencent.mm\/app_config_20260512_015615_711.json",
+  "createdAt": 1778522192115
+}

@@ -1,0 +1,395 @@
+{
+  "schemaVersion": 1,
+  "kind": "ui_state_snapshot",
+  "id": "ui_snapshot_1779338908508",
+  "source": "accessibility_auto",
+  "note": "TYPE_WINDOW_CONTENT_CHANGED",
+  "screenshotPath": null,
+  "screenshotSha256": null,
+  "visualHash": null,
+  "screenshotSizeBytes": null,
+  "appPackage": "com.taobao.taobao",
+  "windowClassName": null,
+  "screenKey": "738b036d",
+  "relatedSkillId": null,
+  "relatedActionType": null,
+  "capability": {
+    "nodeReadability": "B",
+    "inputCapability": "CUSTOM_IME",
+    "verificationCapability": "MEDIUM",
+    "coordinateFallback": "AVAILABLE",
+    "serviceState": "CONNECTED",
+    "reason": "nodes=11, textLike=5, clickable=3, editable=0, scrollable=0, customIme=true"
+  },
+  "state": {
+    "appPackage": "com.taobao.taobao",
+    "windowClassName": null,
+    "screenWidth": 1440,
+    "screenHeight": 3168,
+    "timestamp": 1779338908507,
+    "nodeCount": 11,
+    "nodesStored": 11,
+    "nodesStorage": "compact_important_nodes_only",
+    "nodes": [
+      {
+        "nodeId": "5_10_0_2936_1440_3128",
+        "packageName": "com.taobao.taobao",
+        "text": "取消",
+        "contentDesc": null,
+        "resourceId": "com.taobao.taobao:id\/aliuser_cancel_tv",
+        "className": "android.widget.TextView",
+        "bounds": {
+          "left": 0,
+          "top": 2936,
+          "right": 1440,
+          "bottom": 3128
+        },
+        "clickable": true,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 5,
+        "parentRoleHint": "android.widget.LinearLayout"
+      },
+      {
+        "nodeId": "6_7_0_2503_1440_2695",
+        "packageName": "com.taobao.taobao",
+        "text": "注册",
+        "contentDesc": null,
+        "resourceId": "com.taobao.taobao:id\/aliuser_menu_item",
+        "className": "android.widget.TextView",
+        "bounds": {
+          "left": 0,
+          "top": 2503,
+          "right": 1440,
+          "bottom": 2695
+        },
+        "clickable": true,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 6,
+        "parentRoleHint": "android.widget.ListView"
+      },
+      {
+        "nodeId": "6_8_0_2696_1440_2888",
+        "packageName": "com.taobao.taobao",
+        "text": "遇到问题？",
+        "contentDesc": null,
+        "resourceId": "com.taobao.taobao:id\/aliuser_menu_item",
+        "className": "android.widget.TextView",
+        "bounds": {
+          "left": 0,
+          "top": 2696,
+          "right": 1440,
+          "bottom": 2888
+        },
+        "clickable": true,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 6,
+        "parentRoleHint": "android.widget.ListView"
+      },
+      {
+        "nodeId": "2_2_0_160_1440_3168",
+        "packageName": "com.taobao.taobao",
+        "text": null,
+        "contentDesc": null,
+        "resourceId": "android:id\/content",
+        "className": "android.widget.FrameLayout",
+        "bounds": {
+          "left": 0,
+          "top": 160,
+          "right": 1440,
+          "bottom": 3168
+        },
+        "clickable": false,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 2,
+        "parentRoleHint": "android.widget.FrameLayout"
+      },
+      {
+        "nodeId": "5_6_0_2503_1440_2888",
+        "packageName": "com.taobao.taobao",
+        "text": null,
+        "contentDesc": null,
+        "resourceId": "com.taobao.taobao:id\/aliuser_menu_lv",
+        "className": "android.widget.ListView",
+        "bounds": {
+          "left": 0,
+          "top": 2503,
+          "right": 1440,
+          "bottom": 2888
+        },
+        "clickable": false,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 5,
+        "parentRoleHint": "android.widget.LinearLayout"
+      },
+      {
+        "nodeId": "0_0_0_160_1440_3168",
+        "packageName": "com.taobao.taobao",
+        "text": null,
+        "contentDesc": null,
+        "resourceId": null,
+        "className": "android.widget.FrameLayout",
+        "bounds": {
+          "left": 0,
+          "top": 160,
+          "right": 1440,
+          "bottom": 3168
+        },
+        "clickable": false,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 0,
+        "parentRoleHint": null
+      },
+      {
+        "nodeId": "1_1_0_160_1440_3168",
+        "packageName": "com.taobao.taobao",
+        "text": null,
+        "contentDesc": null,
+        "resourceId": null,
+        "className": "android.widget.FrameLayout",
+        "bounds": {
+          "left": 0,
+          "top": 160,
+          "right": 1440,
+          "bottom": 3168
+        },
+        "clickable": false,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 1,
+        "parentRoleHint": "android.widget.FrameLayout"
+      },
+      {
+        "nodeId": "3_3_0_160_1440_3168",
+        "packageName": "com.taobao.taobao",
+        "text": null,
+        "contentDesc": null,
+        "resourceId": null,
+        "className": "android.widget.RelativeLayout",
+        "bounds": {
+          "left": 0,
+          "top": 160,
+          "right": 1440,
+          "bottom": 3168
+        },
+        "clickable": false,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 3,
+        "parentRoleHint": "android.widget.FrameLayout"
+      },
+      {
+        "nodeId": "4_4_0_2463_1440_3168",
+        "packageName": "com.taobao.taobao",
+        "text": null,
+        "contentDesc": null,
+        "resourceId": null,
+        "className": "android.widget.LinearLayout",
+        "bounds": {
+          "left": 0,
+          "top": 2463,
+          "right": 1440,
+          "bottom": 3168
+        },
+        "clickable": false,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 4,
+        "parentRoleHint": "android.widget.RelativeLayout"
+      },
+      {
+        "nodeId": "5_5_0_2463_1440_2503",
+        "packageName": "com.taobao.taobao",
+        "text": null,
+        "contentDesc": null,
+        "resourceId": null,
+        "className": "android.view.View",
+        "bounds": {
+          "left": 0,
+          "top": 2463,
+          "right": 1440,
+          "bottom": 2503
+        },
+        "clickable": false,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 5,
+        "parentRoleHint": "android.widget.LinearLayout"
+      },
+      {
+        "nodeId": "5_9_0_2888_1440_2936",
+        "packageName": "com.taobao.taobao",
+        "text": null,
+        "contentDesc": null,
+        "resourceId": null,
+        "className": "android.view.View",
+        "bounds": {
+          "left": 0,
+          "top": 2888,
+          "right": 1440,
+          "bottom": 2936
+        },
+        "clickable": false,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 5,
+        "parentRoleHint": "android.widget.LinearLayout"
+      }
+    ],
+    "eventsSinceLastState": [
+      {
+        "eventType": "TYPE_VIEW_CLICKED",
+        "packageName": "com.taobao.taobao",
+        "className": "android.widget.Button",
+        "text": "更多",
+        "timestamp": 1779338907669
+      },
+      {
+        "eventType": "TYPE_WINDOW_CONTENT_CHANGED",
+        "packageName": "com.taobao.taobao",
+        "className": "android.widget.ListView",
+        "text": null,
+        "timestamp": 1779338907677
+      },
+      {
+        "eventType": "TYPE_WINDOW_CONTENT_CHANGED",
+        "packageName": "com.taobao.taobao",
+        "className": "android.widget.FrameLayout",
+        "text": null,
+        "timestamp": 1779338907682
+      },
+      {
+        "eventType": "TYPE_4194304",
+        "packageName": null,
+        "className": null,
+        "text": null,
+        "timestamp": 1779338907706
+      },
+      {
+        "eventType": "TYPE_WINDOW_STATE_CHANGED",
+        "packageName": "com.taobao.taobao",
+        "className": "androidx.activity.ComponentDialog",
+        "text": "取消",
+        "timestamp": 1779338907708
+      },
+      {
+        "eventType": "TYPE_VIEW_SCROLLED",
+        "packageName": "com.taobao.taobao",
+        "className": "android.widget.ListView",
+        "text": null,
+        "timestamp": 1779338907784
+      },
+      {
+        "eventType": "TYPE_WINDOW_CONTENT_CHANGED",
+        "packageName": "com.android.systemui",
+        "className": "android.widget.FrameLayout",
+        "text": null,
+        "timestamp": 1779338907982
+      },
+      {
+        "eventType": "TYPE_WINDOW_CONTENT_CHANGED",
+        "packageName": "com.android.systemui",
+        "className": "android.widget.FrameLayout",
+        "text": null,
+        "timestamp": 1779338908082
+      },
+      {
+        "eventType": "TYPE_4194304",
+        "packageName": null,
+        "className": null,
+        "text": null,
+        "timestamp": 1779338908084
+      }
+    ]
+  },
+  "summary": {
+    "nodeCount": 11,
+    "clickableCount": 3,
+    "editableCount": 0,
+    "scrollableCount": 0,
+    "labels": [
+      "android:id\/content",
+      "com.taobao.taobao:id\/aliuser_menu_lv",
+      "注册 com.taobao.taobao:id\/aliuser_menu_item",
+      "遇到问题？ com.taobao.taobao:id\/aliuser_menu_item",
+      "取消 com.taobao.taobao:id\/aliuser_cancel_tv"
+    ],
+    "bottomCandidates": [
+      {
+        "label": "注册 com.taobao.taobao:id\/aliuser_menu_item",
+        "bounds": {
+          "left": 0,
+          "top": 2503,
+          "right": 1440,
+          "bottom": 2695
+        },
+        "clickable": true
+      },
+      {
+        "label": "遇到问题？ com.taobao.taobao:id\/aliuser_menu_item",
+        "bounds": {
+          "left": 0,
+          "top": 2696,
+          "right": 1440,
+          "bottom": 2888
+        },
+        "clickable": true
+      },
+      {
+        "label": "取消 com.taobao.taobao:id\/aliuser_cancel_tv",
+        "bounds": {
+          "left": 0,
+          "top": 2936,
+          "right": 1440,
+          "bottom": 3128
+        },
+        "clickable": true
+      }
+    ]
+  },
+  "retentionPolicy": {
+    "fullNodeTreeStored": false,
+    "storedNodeLimit": 45,
+    "storedEventLimit": 20,
+    "longTermKnowledge": "summary + app_ui_graph + assembly\/runtime reports"
+  },
+  "createdAt": 1779338908509
+}

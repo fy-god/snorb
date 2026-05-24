@@ -1,0 +1,86 @@
+{
+  "schemaVersion": 1,
+  "kind": "app_ui_probe_service_state",
+  "id": "app_ui_probe_tv.danmaku.bili_1779374344699",
+  "requestId": "app_ui_probe_tv.danmaku.bili_1779374344699",
+  "status": "PARTIAL_TIMEOUT",
+  "message": "App UI probe finished",
+  "appPackage": "tv.danmaku.bili",
+  "appName": "哔哩哔哩",
+  "payload": {
+    "success": false,
+    "reportFile": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/flow_reports\/tv.danmaku.bili\/app_ui_explore_report_app_ui_graph_tv.danmaku.bili_1779374344718.json",
+    "graphFile": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/app_ui_graphs\/tv.danmaku.bili\/graph_candidate.json",
+    "screenCount": 16,
+    "edgeCount": 18,
+    "quality": {
+      "usable": true,
+      "reason": "usable_app_ui_graph",
+      "qualityGate": {
+        "bottomPrimaryTabsRequired": true,
+        "bottomPrimaryTabsAttempted": 5,
+        "bottomPrimaryTabsOpened": 5,
+        "topIconsAreNotEnough": true,
+        "repeatedMessagePageIsNotProgress": true
+      },
+      "screenCount": 16,
+      "edgeCount": 18,
+      "nodeCount": 723,
+      "clickableCount": 185,
+      "editableCount": 9,
+      "labelCount": 218,
+      "bottomTabCount": 20,
+      "topEntryCount": 124,
+      "sideEntryCount": 151,
+      "entryCandidateCount": 10,
+      "inputCandidateCount": 9,
+      "videoCandidateCount": 33,
+      "clickTargetCount": 368,
+      "graphicalCandidateCount": 234,
+      "checkableCandidateCount": 0,
+      "candidateCount": 949,
+      "changedEdgeCount": 18,
+      "edgeCategoryCounts": {
+        "primary_bottom_tab": 5,
+        "primary_tab_surface_entry": 13
+      },
+      "primaryBottomTabAttemptedCount": 5,
+      "primaryBottomTabAttemptedLabels": [
+        "首页",
+        "动态\/关注",
+        "发布",
+        "会员购",
+        "我的"
+      ],
+      "primaryBottomTabOpenedCount": 5,
+      "primaryBottomTabOpenedLabels": [
+        "首页",
+        "动态\/关注",
+        "发布",
+        "会员购",
+        "我的"
+      ],
+      "primaryTabSurfaceEntryChangedCount": 13,
+      "primaryTabSurfaceEntriesByTab": {
+        "首页": [
+          "graphical_ui_5",
+          "2026年5月16日 08:00",
+          "31:08",
+          "40:09",
+          "top_entry_1",
+          "top_entry_4",
+          "摩的司机徐师傅",
+          "side_entry_6"
+        ],
+        "动态\/关注": [
+          "graphical_ui_5",
+          "关注+",
+          "动态",
+          "side_entry_5",
+          "side_entry_6"
+        ]
+      }
+    }
+  },
+  "updatedAt": 1779374435242
+}

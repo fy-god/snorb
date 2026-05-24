@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "kind": "skill_json_dry_run_report",
+  "skillId": "patched.1779306802719.1.openapp",
+  "appPackage": "com.sankuai.meituan",
+  "passed": true,
+  "status": "DRY_RUN_PASSED",
+  "errors": [],
+  "warnings": [],
+  "summary": "Skill JSON dry-run passed",
+  "timestamp": 1779338816231
+}

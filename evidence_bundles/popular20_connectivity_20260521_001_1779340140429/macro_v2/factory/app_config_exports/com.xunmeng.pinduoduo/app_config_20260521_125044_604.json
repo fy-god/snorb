@@ -1,0 +1,2611 @@
+{
+  "schemaVersion": 1,
+  "kind": "app_config",
+  "appPackage": "com.xunmeng.pinduoduo",
+  "appName": "拼多多",
+  "screens": [],
+  "elements": [],
+  "atomicSkills": [
+    {
+      "schemaVersion": 1,
+      "kind": "atomic_skill",
+      "id": "patched.1779339041582.6.clickvisibletext",
+      "name": "改写步骤 6: ClickVisibleText",
+      "appPackage": "com.xunmeng.pinduoduo",
+      "appVersion": "*",
+      "status": "DRY_RUN_PASSED",
+      "domain": "app_session",
+      "implements": "ClickElementSkill",
+      "params": [
+        {
+          "name": "text",
+          "type": "TEXT",
+          "required": true
+        }
+      ],
+      "preconditions": [],
+      "dependsOn": [],
+      "resolverPolicy": {
+        "order": [
+          "ACCESSIBILITY",
+          "APP_UI_GRAPH",
+          "COORDINATE_PACK",
+          "AI_PATCH"
+        ],
+        "allowAiSuggestionInFactory": true,
+        "allowAiInRuntime": true
+      },
+      "safety": {
+        "forbiddenTexts": [
+          "支付",
+          "付款",
+          "转账",
+          "删除",
+          "发布",
+          "授权"
+        ]
+      },
+      "factory": {
+        "source": "APP_SIDE_PLAN_PATCH_ASSEMBLER",
+        "instruction": "在拼多多搜索纸巾，停在结果页并记录筛选、店铺、价格入口。\n\n约束：目标 App=拼多多，包名=com.xunmeng.pinduoduo。必须由 MacroPilot 手机端自己用无障碍、输入法、AI\/Skill JSON 执行，不允许依赖 ADB 手点目标 App。执行前先读取当前 UI；如果遇到广告、弹窗、小字提示，先记录文字并安全关闭。任务完成必须用当前 UI 证据验证，不能只因为步骤执行完就报成功。如果没有现成 skill，先复用已有相似 Skill JSON\/archetype，只改关键槽位如入口文字、坐标、目标文本、验证规则，再组装 atomic\/macro skill。需要探索入口时优先遍历底部标签、顶部小图标、图形化入口、侧边操作和子页面。本任务 stopBeforeSubmit=true：写草稿、评论、订单、支付类流程必须停在提交前，不点击最终发布、发送、提交订单、支付、确认授权。期望证据包括：纸巾、结果。",
+        "aiJobPath": null,
+        "traceIds": [],
+        "sampleCount": 0,
+        "dryRunStatus": "PASSED",
+        "testRuns": 0,
+        "successRate": 0,
+        "promotionStatus": "NOT_PROMOTED",
+        "createdAt": 1779339044139,
+        "sourceSkillId": "com.xunmeng.pinduoduo.common.click_visible_text",
+        "sourceSkillPath": "builtin:\/\/archetype\/com.xunmeng.pinduoduo.common.click_visible_text",
+        "sourceOrigin": "BUILTIN_ARCHETYPE",
+        "templateMatchScore": 90,
+        "templateMatchReason": "same_app,same_action_type,same_capability,archetype_available,same_label,search_intent,publish_intent",
+        "patchReason": "reuse_existing_skill_json_and_rewrite_key_slots",
+        "lastDryRunReport": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_dry_run_reports\/com.xunmeng.pinduoduo\/patched.1779339041582.6.clickvisibletext_1779339044586.json",
+        "lastDryRunAt": 1779339044587
+      },
+      "capabilityRequired": {
+        "minLevel": "D",
+        "inputRequired": false,
+        "nodeReadablePreferred": true,
+        "coordinateFallbackAllowed": false,
+        "allowedInputChannels": [],
+        "verificationRequired": "MEDIUM"
+      },
+      "action": {
+        "type": "ClickVisibleText",
+        "text": "搜索",
+        "textAliases": [
+          "搜索",
+          "确定"
+        ],
+        "timeoutMs": 1500
+      },
+      "verify": {
+        "type": "WindowChangedOrNodeStateChanged",
+        "timeoutMs": 1500,
+        "allowLowConfidenceWhenCoordinateOnly": true
+      },
+      "resultPolicy": {
+        "verified": "SUCCESS",
+        "partialVerified": "SUCCESS_MEDIUM_CONFIDENCE",
+        "coordinateOnly": "SUCCESS_LOW_CONFIDENCE",
+        "unverifiable": "FAILED_UNVERIFIABLE"
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "kind": "atomic_skill",
+      "id": "patched.1779339041582.7.wait",
+      "name": "改写步骤 7: Wait",
+      "appPackage": "com.xunmeng.pinduoduo",
+      "appVersion": "*",
+      "status": "DRY_RUN_PASSED",
+      "domain": "app_session",
+      "implements": "WaitUntilSkill",
+      "params": [],
+      "preconditions": [],
+      "dependsOn": [],
+      "resolverPolicy": {
+        "order": [
+          "ACCESSIBILITY",
+          "APP_UI_GRAPH",
+          "COORDINATE_PACK",
+          "AI_PATCH"
+        ],
+        "allowAiSuggestionInFactory": true,
+        "allowAiInRuntime": true
+      },
+      "safety": {
+        "forbiddenTexts": [
+          "支付",
+          "付款",
+          "转账",
+          "删除",
+          "发布",
+          "授权"
+        ]
+      },
+      "factory": {
+        "source": "APP_SIDE_PLAN_PATCH_ASSEMBLER",
+        "instruction": "在拼多多搜索纸巾，停在结果页并记录筛选、店铺、价格入口。\n\n约束：目标 App=拼多多，包名=com.xunmeng.pinduoduo。必须由 MacroPilot 手机端自己用无障碍、输入法、AI\/Skill JSON 执行，不允许依赖 ADB 手点目标 App。执行前先读取当前 UI；如果遇到广告、弹窗、小字提示，先记录文字并安全关闭。任务完成必须用当前 UI 证据验证，不能只因为步骤执行完就报成功。如果没有现成 skill，先复用已有相似 Skill JSON\/archetype，只改关键槽位如入口文字、坐标、目标文本、验证规则，再组装 atomic\/macro skill。需要探索入口时优先遍历底部标签、顶部小图标、图形化入口、侧边操作和子页面。本任务 stopBeforeSubmit=true：写草稿、评论、订单、支付类流程必须停在提交前，不点击最终发布、发送、提交订单、支付、确认授权。期望证据包括：纸巾、结果。",
+        "aiJobPath": null,
+        "traceIds": [],
+        "sampleCount": 0,
+        "dryRunStatus": "PASSED",
+        "testRuns": 0,
+        "successRate": 0,
+        "promotionStatus": "NOT_PROMOTED",
+        "createdAt": 1779339044571,
+        "sourceSkillId": "patched.1779339041582.4.wait",
+        "sourceSkillPath": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_candidates\/com.xunmeng.pinduoduo\/patched.1779339041582.4.wait.json",
+        "sourceOrigin": "LOCAL_JSON",
+        "templateMatchScore": 70,
+        "templateMatchReason": "same_app,same_action_type,same_capability,search_intent",
+        "patchReason": "reuse_existing_skill_json_and_rewrite_key_slots",
+        "lastDryRunReport": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_dry_run_reports\/com.xunmeng.pinduoduo\/patched.1779339041582.7.wait_1779339044587.json",
+        "lastDryRunAt": 1779339044588
+      },
+      "capabilityRequired": {
+        "minLevel": "D",
+        "inputRequired": false,
+        "nodeReadablePreferred": true,
+        "coordinateFallbackAllowed": false,
+        "allowedInputChannels": [],
+        "verificationRequired": "MEDIUM"
+      },
+      "action": {
+        "type": "Wait",
+        "timeoutMs": 1800
+      },
+      "verify": {
+        "type": "Always",
+        "timeoutMs": 1
+      },
+      "resultPolicy": {
+        "verified": "SUCCESS",
+        "partialVerified": "SUCCESS_MEDIUM_CONFIDENCE",
+        "coordinateOnly": "SUCCESS_LOW_CONFIDENCE",
+        "unverifiable": "FAILED_UNVERIFIABLE"
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "kind": "atomic_skill",
+      "id": "patched.1779339041582.2.handlereactiveoverlays",
+      "name": "改写步骤 2: HandleReactiveOverlays",
+      "appPackage": "com.xunmeng.pinduoduo",
+      "status": "DRY_RUN_PASSED",
+      "implements": "DismissDialogSkill",
+      "params": [],
+      "preconditions": [],
+      "dependsOn": [],
+      "capabilityRequired": {
+        "minLevel": "D",
+        "inputRequired": false,
+        "nodeReadablePreferred": true,
+        "coordinateFallbackAllowed": false,
+        "allowedInputChannels": [],
+        "verificationRequired": "MEDIUM"
+      },
+      "resolverPolicy": {
+        "order": [
+          "ACCESSIBILITY",
+          "APP_UI_GRAPH",
+          "COORDINATE_PACK",
+          "AI_PATCH"
+        ],
+        "allowAiSuggestionInFactory": true,
+        "allowAiInRuntime": true
+      },
+      "safety": {},
+      "action": {
+        "type": "HandleReactiveOverlays",
+        "appPackage": "com.xunmeng.pinduoduo",
+        "maxPasses": 3
+      },
+      "verify": {
+        "type": "Always",
+        "timeoutMs": 1
+      },
+      "resultPolicy": {
+        "verified": "SUCCESS",
+        "partialVerified": "SUCCESS_MEDIUM_CONFIDENCE",
+        "coordinateOnly": "SUCCESS_LOW_CONFIDENCE",
+        "unverifiable": "FAILED_UNVERIFIABLE"
+      },
+      "factory": {
+        "source": "APP_SIDE_PLAN_PATCH_ASSEMBLER",
+        "instruction": "在拼多多搜索纸巾，停在结果页并记录筛选、店铺、价格入口。\n\n约束：目标 App=拼多多，包名=com.xunmeng.pinduoduo。必须由 MacroPilot 手机端自己用无障碍、输入法、AI\/Skill JSON 执行，不允许依赖 ADB 手点目标 App。执行前先读取当前 UI；如果遇到广告、弹窗、小字提示，先记录文字并安全关闭。任务完成必须用当前 UI 证据验证，不能只因为步骤执行完就报成功。如果没有现成 skill，先复用已有相似 Skill JSON\/archetype，只改关键槽位如入口文字、坐标、目标文本、验证规则，再组装 atomic\/macro skill。需要探索入口时优先遍历底部标签、顶部小图标、图形化入口、侧边操作和子页面。本任务 stopBeforeSubmit=true：写草稿、评论、订单、支付类流程必须停在提交前，不点击最终发布、发送、提交订单、支付、确认授权。期望证据包括：纸巾、结果。",
+        "aiJobPath": null,
+        "traceIds": [],
+        "sampleCount": 0,
+        "dryRunStatus": "PASSED",
+        "testRuns": 0,
+        "successRate": 0,
+        "promotionStatus": "NOT_PROMOTED",
+        "createdAt": 1779339042425,
+        "sourceSkillId": "patched.1779338980649.2.handlereactiveoverlays",
+        "sourceSkillPath": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_candidates\/com.jingdong.app.mall\/patched.1779338980649.2.handlereactiveoverlays.json",
+        "sourceOrigin": "LOCAL_JSON",
+        "templateMatchScore": 52,
+        "templateMatchReason": "same_action_type,same_capability",
+        "patchReason": "reuse_existing_skill_json_and_rewrite_key_slots",
+        "lastDryRunReport": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_dry_run_reports\/com.xunmeng.pinduoduo\/patched.1779339041582.2.handlereactiveoverlays_1779339044581.json",
+        "lastDryRunAt": 1779339044582
+      },
+      "appVersion": "*"
+    },
+    {
+      "schemaVersion": 1,
+      "kind": "atomic_skill",
+      "id": "patched.1779339041582.3.clickvisibletext",
+      "name": "改写步骤 3: ClickVisibleText",
+      "appPackage": "com.xunmeng.pinduoduo",
+      "appVersion": "*",
+      "status": "DRY_RUN_PASSED",
+      "domain": "app_session",
+      "implements": "ClickElementSkill",
+      "params": [
+        {
+          "name": "text",
+          "type": "TEXT",
+          "required": true
+        }
+      ],
+      "preconditions": [],
+      "dependsOn": [],
+      "resolverPolicy": {
+        "order": [
+          "ACCESSIBILITY",
+          "APP_UI_GRAPH",
+          "COORDINATE_PACK",
+          "AI_PATCH"
+        ],
+        "allowAiSuggestionInFactory": true,
+        "allowAiInRuntime": true
+      },
+      "safety": {
+        "forbiddenTexts": [
+          "支付",
+          "付款",
+          "转账",
+          "删除",
+          "发布",
+          "授权"
+        ]
+      },
+      "factory": {
+        "source": "APP_SIDE_PLAN_PATCH_ASSEMBLER",
+        "instruction": "在拼多多搜索纸巾，停在结果页并记录筛选、店铺、价格入口。\n\n约束：目标 App=拼多多，包名=com.xunmeng.pinduoduo。必须由 MacroPilot 手机端自己用无障碍、输入法、AI\/Skill JSON 执行，不允许依赖 ADB 手点目标 App。执行前先读取当前 UI；如果遇到广告、弹窗、小字提示，先记录文字并安全关闭。任务完成必须用当前 UI 证据验证，不能只因为步骤执行完就报成功。如果没有现成 skill，先复用已有相似 Skill JSON\/archetype，只改关键槽位如入口文字、坐标、目标文本、验证规则，再组装 atomic\/macro skill。需要探索入口时优先遍历底部标签、顶部小图标、图形化入口、侧边操作和子页面。本任务 stopBeforeSubmit=true：写草稿、评论、订单、支付类流程必须停在提交前，不点击最终发布、发送、提交订单、支付、确认授权。期望证据包括：纸巾、结果。",
+        "aiJobPath": null,
+        "traceIds": [],
+        "sampleCount": 0,
+        "dryRunStatus": "PASSED",
+        "testRuns": 0,
+        "successRate": 0,
+        "promotionStatus": "NOT_PROMOTED",
+        "createdAt": 1779339042850,
+        "sourceSkillId": "com.xunmeng.pinduoduo.common.click_visible_text",
+        "sourceSkillPath": "builtin:\/\/archetype\/com.xunmeng.pinduoduo.common.click_visible_text",
+        "sourceOrigin": "BUILTIN_ARCHETYPE",
+        "templateMatchScore": 90,
+        "templateMatchReason": "same_app,same_action_type,same_capability,archetype_available,same_label,search_intent,publish_intent",
+        "patchReason": "reuse_existing_skill_json_and_rewrite_key_slots",
+        "lastDryRunReport": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_dry_run_reports\/com.xunmeng.pinduoduo\/patched.1779339041582.3.clickvisibletext_1779339044582.json",
+        "lastDryRunAt": 1779339044583
+      },
+      "capabilityRequired": {
+        "minLevel": "C",
+        "inputRequired": false,
+        "nodeReadablePreferred": true,
+        "coordinateFallbackAllowed": true,
+        "allowedInputChannels": [],
+        "verificationRequired": "LOW"
+      },
+      "action": {
+        "type": "ClickVisibleText",
+        "text": "搜索",
+        "textAliases": [
+          "搜索",
+          "搜",
+          "查找"
+        ],
+        "x": 0.88,
+        "y": 0.08,
+        "requiresUiStateForCoordinate": false
+      },
+      "verify": {
+        "type": "WindowChangedOrNodeStateChanged",
+        "timeoutMs": 1500,
+        "allowLowConfidenceWhenCoordinateOnly": true
+      },
+      "resultPolicy": {
+        "verified": "SUCCESS",
+        "partialVerified": "SUCCESS_MEDIUM_CONFIDENCE",
+        "coordinateOnly": "SUCCESS_LOW_CONFIDENCE",
+        "unverifiable": "FAILED_UNVERIFIABLE"
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "kind": "atomic_skill",
+      "id": "patched.1779339041582.4.wait",
+      "name": "改写步骤 4: Wait",
+      "appPackage": "com.xunmeng.pinduoduo",
+      "appVersion": "*",
+      "status": "DRY_RUN_PASSED",
+      "domain": "app_session",
+      "implements": "WaitUntilSkill",
+      "params": [],
+      "preconditions": [],
+      "dependsOn": [],
+      "resolverPolicy": {
+        "order": [
+          "ACCESSIBILITY",
+          "APP_UI_GRAPH",
+          "COORDINATE_PACK",
+          "AI_PATCH"
+        ],
+        "allowAiSuggestionInFactory": true,
+        "allowAiInRuntime": true
+      },
+      "safety": {
+        "forbiddenTexts": [
+          "支付",
+          "付款",
+          "转账",
+          "删除",
+          "发布",
+          "授权"
+        ]
+      },
+      "factory": {
+        "source": "APP_SIDE_PLAN_PATCH_ASSEMBLER",
+        "instruction": "在拼多多搜索纸巾，停在结果页并记录筛选、店铺、价格入口。\n\n约束：目标 App=拼多多，包名=com.xunmeng.pinduoduo。必须由 MacroPilot 手机端自己用无障碍、输入法、AI\/Skill JSON 执行，不允许依赖 ADB 手点目标 App。执行前先读取当前 UI；如果遇到广告、弹窗、小字提示，先记录文字并安全关闭。任务完成必须用当前 UI 证据验证，不能只因为步骤执行完就报成功。如果没有现成 skill，先复用已有相似 Skill JSON\/archetype，只改关键槽位如入口文字、坐标、目标文本、验证规则，再组装 atomic\/macro skill。需要探索入口时优先遍历底部标签、顶部小图标、图形化入口、侧边操作和子页面。本任务 stopBeforeSubmit=true：写草稿、评论、订单、支付类流程必须停在提交前，不点击最终发布、发送、提交订单、支付、确认授权。期望证据包括：纸巾、结果。",
+        "aiJobPath": null,
+        "traceIds": [],
+        "sampleCount": 0,
+        "dryRunStatus": "PASSED",
+        "testRuns": 0,
+        "successRate": 0,
+        "promotionStatus": "NOT_PROMOTED",
+        "createdAt": 1779339043265,
+        "sourceSkillId": "patched.1779338980649.4.wait",
+        "sourceSkillPath": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_candidates\/com.jingdong.app.mall\/patched.1779338980649.4.wait.json",
+        "sourceOrigin": "LOCAL_JSON",
+        "templateMatchScore": 58,
+        "templateMatchReason": "same_action_type,same_capability,search_intent",
+        "patchReason": "reuse_existing_skill_json_and_rewrite_key_slots",
+        "lastDryRunReport": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_dry_run_reports\/com.xunmeng.pinduoduo\/patched.1779339041582.4.wait_1779339044583.json",
+        "lastDryRunAt": 1779339044584
+      },
+      "capabilityRequired": {
+        "minLevel": "D",
+        "inputRequired": false,
+        "nodeReadablePreferred": true,
+        "coordinateFallbackAllowed": false,
+        "allowedInputChannels": [],
+        "verificationRequired": "MEDIUM"
+      },
+      "action": {
+        "type": "Wait",
+        "timeoutMs": 600
+      },
+      "verify": {
+        "type": "Always",
+        "timeoutMs": 1
+      },
+      "resultPolicy": {
+        "verified": "SUCCESS",
+        "partialVerified": "SUCCESS_MEDIUM_CONFIDENCE",
+        "coordinateOnly": "SUCCESS_LOW_CONFIDENCE",
+        "unverifiable": "FAILED_UNVERIFIABLE"
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "kind": "atomic_skill",
+      "id": "patched.1779339041582.1.openapp",
+      "name": "改写步骤 1: OpenApp",
+      "appPackage": "com.xunmeng.pinduoduo",
+      "appVersion": "*",
+      "status": "DRY_RUN_PASSED",
+      "domain": "app_session",
+      "implements": "OpenAppSkill",
+      "params": [],
+      "preconditions": [],
+      "dependsOn": [],
+      "resolverPolicy": {
+        "order": [
+          "ACCESSIBILITY",
+          "APP_UI_GRAPH",
+          "COORDINATE_PACK",
+          "AI_PATCH"
+        ],
+        "allowAiSuggestionInFactory": true,
+        "allowAiInRuntime": true
+      },
+      "safety": {
+        "forbiddenTexts": [
+          "支付",
+          "付款",
+          "转账",
+          "删除",
+          "发布",
+          "授权"
+        ]
+      },
+      "factory": {
+        "source": "APP_SIDE_PLAN_PATCH_ASSEMBLER",
+        "instruction": "在拼多多搜索纸巾，停在结果页并记录筛选、店铺、价格入口。\n\n约束：目标 App=拼多多，包名=com.xunmeng.pinduoduo。必须由 MacroPilot 手机端自己用无障碍、输入法、AI\/Skill JSON 执行，不允许依赖 ADB 手点目标 App。执行前先读取当前 UI；如果遇到广告、弹窗、小字提示，先记录文字并安全关闭。任务完成必须用当前 UI 证据验证，不能只因为步骤执行完就报成功。如果没有现成 skill，先复用已有相似 Skill JSON\/archetype，只改关键槽位如入口文字、坐标、目标文本、验证规则，再组装 atomic\/macro skill。需要探索入口时优先遍历底部标签、顶部小图标、图形化入口、侧边操作和子页面。本任务 stopBeforeSubmit=true：写草稿、评论、订单、支付类流程必须停在提交前，不点击最终发布、发送、提交订单、支付、确认授权。期望证据包括：纸巾、结果。",
+        "aiJobPath": null,
+        "traceIds": [],
+        "sampleCount": 0,
+        "dryRunStatus": "PASSED",
+        "testRuns": 0,
+        "successRate": 0,
+        "promotionStatus": "NOT_PROMOTED",
+        "createdAt": 1779339042015,
+        "sourceSkillId": "com.xunmeng.pinduoduo.open_app",
+        "sourceSkillPath": "builtin:\/\/archetype\/com.xunmeng.pinduoduo.open_app",
+        "sourceOrigin": "BUILTIN_ARCHETYPE",
+        "templateMatchScore": 90,
+        "templateMatchReason": "same_app,same_action_type,same_capability,archetype_available,same_label,search_intent,publish_intent",
+        "patchReason": "reuse_existing_skill_json_and_rewrite_key_slots",
+        "lastDryRunReport": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_dry_run_reports\/com.xunmeng.pinduoduo\/patched.1779339041582.1.openapp_1779339044578.json",
+        "lastDryRunAt": 1779339044581
+      },
+      "capabilityRequired": {
+        "minLevel": "D",
+        "inputRequired": false,
+        "nodeReadablePreferred": true,
+        "coordinateFallbackAllowed": false,
+        "allowedInputChannels": [],
+        "verificationRequired": "MEDIUM"
+      },
+      "action": {
+        "type": "OpenApp",
+        "packageName": "com.xunmeng.pinduoduo",
+        "timeoutMs": 3000
+      },
+      "verify": {
+        "type": "ForegroundPackage",
+        "packageName": "com.xunmeng.pinduoduo",
+        "timeoutMs": 3000,
+        "allowUnverifiedWhenAccessibilityDisconnected": true
+      },
+      "resultPolicy": {
+        "verified": "SUCCESS",
+        "partialVerified": "SUCCESS_MEDIUM_CONFIDENCE",
+        "coordinateOnly": "SUCCESS_LOW_CONFIDENCE",
+        "unverifiable": "FAILED_UNVERIFIABLE"
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "kind": "atomic_skill",
+      "id": "com.xunmeng.pinduoduo.search.click_submit",
+      "name": "点击搜索确认",
+      "appPackage": "com.xunmeng.pinduoduo",
+      "appVersion": "*",
+      "status": "DRY_RUN_PASSED",
+      "domain": "app_session",
+      "implements": "ClickElementSkill",
+      "params": [],
+      "preconditions": [],
+      "dependsOn": [],
+      "resolverPolicy": {
+        "order": [
+          "ACCESSIBILITY",
+          "COORDINATE_PACK",
+          "PACKAGE_MANAGER"
+        ],
+        "allowAiSuggestionInFactory": true,
+        "allowAiInRuntime": false
+      },
+      "safety": {
+        "forbiddenTexts": [
+          "支付",
+          "付款",
+          "转账",
+          "删除",
+          "发布",
+          "授权"
+        ]
+      },
+      "factory": {
+        "source": "SKILL_ARCHETYPE_TEMPLATE_V0",
+        "archetypeId": "common.search_in_app.v1",
+        "traceIds": [],
+        "sampleCount": 0,
+        "dryRunStatus": "PASSED",
+        "testRuns": 0,
+        "successRate": 0,
+        "promotionStatus": "NOT_PROMOTED",
+        "createdAt": 1779237326827,
+        "appPatch": {
+          "packageName": "com.xunmeng.pinduoduo",
+          "label": "拼多多",
+          "launchable": true,
+          "launchActivity": "com.xunmeng.pinduoduo.ui.activity.MainFrameActivity",
+          "searchEntryTexts": [
+            "搜索",
+            "搜一搜",
+            "Search"
+          ],
+          "searchSubmitTexts": [
+            "搜索",
+            "确定",
+            "Search"
+          ],
+          "searchEntryCoordinate": {
+            "x": 0.5,
+            "y": 0.08
+          },
+          "searchSubmitCoordinate": {
+            "x": 0.9,
+            "y": 0.08
+          },
+          "postDraftEntryTexts": [
+            "+",
+            "写微博",
+            "发微博",
+            "发帖",
+            "创作",
+            "写帖子",
+            "发动态",
+            "说点什么"
+          ],
+          "postDraftEntryCoordinate": {
+            "x": 0.9,
+            "y": 0.9
+          }
+        },
+        "lastDryRunReport": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_dry_run_reports\/com.xunmeng.pinduoduo\/com.xunmeng.pinduoduo.search.click_submit_1779237326854.json",
+        "lastDryRunAt": 1779237326855
+      },
+      "capabilityRequired": {
+        "minLevel": "C",
+        "inputRequired": false,
+        "nodeReadablePreferred": true,
+        "coordinateFallbackAllowed": true,
+        "allowedInputChannels": [],
+        "verificationRequired": "MEDIUM"
+      },
+      "action": {
+        "type": "ClickVisibleText",
+        "text": "搜索",
+        "textAliases": [
+          "搜索",
+          "确定",
+          "Search"
+        ],
+        "x": 0.9,
+        "y": 0.08,
+        "timeoutMs": 1200
+      },
+      "verify": {
+        "type": "WindowChangedOrNodeStateChanged",
+        "timeoutMs": 1800,
+        "allowLowConfidenceWhenUnchanged": true
+      },
+      "resultPolicy": {
+        "nodeClickedAndVerified": "SUCCESS",
+        "coordinateClicked": "SUCCESS_LOW_CONFIDENCE",
+        "notFound": "FAILED_ELEMENT_NOT_FOUND"
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "kind": "atomic_skill",
+      "id": "com.xunmeng.pinduoduo.search.type_query",
+      "name": "输入搜索词",
+      "appPackage": "com.xunmeng.pinduoduo",
+      "appVersion": "*",
+      "status": "DRY_RUN_PASSED",
+      "domain": "app_session",
+      "implements": "TypeTextSkill",
+      "params": [
+        {
+          "name": "query",
+          "type": "TEXT",
+          "required": true,
+          "example": ""
+        }
+      ],
+      "preconditions": [],
+      "dependsOn": [],
+      "resolverPolicy": {
+        "order": [
+          "ACCESSIBILITY",
+          "COORDINATE_PACK",
+          "PACKAGE_MANAGER"
+        ],
+        "allowAiSuggestionInFactory": true,
+        "allowAiInRuntime": false
+      },
+      "safety": {
+        "forbiddenTexts": [
+          "支付",
+          "付款",
+          "转账",
+          "删除",
+          "发布",
+          "授权"
+        ]
+      },
+      "factory": {
+        "source": "SKILL_ARCHETYPE_TEMPLATE_V0",
+        "archetypeId": "common.search_in_app.v1",
+        "traceIds": [],
+        "sampleCount": 0,
+        "dryRunStatus": "PASSED",
+        "testRuns": 0,
+        "successRate": 0,
+        "promotionStatus": "NOT_PROMOTED",
+        "createdAt": 1779237326827,
+        "appPatch": {
+          "packageName": "com.xunmeng.pinduoduo",
+          "label": "拼多多",
+          "launchable": true,
+          "launchActivity": "com.xunmeng.pinduoduo.ui.activity.MainFrameActivity",
+          "searchEntryTexts": [
+            "搜索",
+            "搜一搜",
+            "Search"
+          ],
+          "searchSubmitTexts": [
+            "搜索",
+            "确定",
+            "Search"
+          ],
+          "searchEntryCoordinate": {
+            "x": 0.5,
+            "y": 0.08
+          },
+          "searchSubmitCoordinate": {
+            "x": 0.9,
+            "y": 0.08
+          },
+          "postDraftEntryTexts": [
+            "+",
+            "写微博",
+            "发微博",
+            "发帖",
+            "创作",
+            "写帖子",
+            "发动态",
+            "说点什么"
+          ],
+          "postDraftEntryCoordinate": {
+            "x": 0.9,
+            "y": 0.9
+          }
+        },
+        "lastDryRunReport": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_dry_run_reports\/com.xunmeng.pinduoduo\/com.xunmeng.pinduoduo.search.type_query_1779237326853.json",
+        "lastDryRunAt": 1779237326853
+      },
+      "capabilityRequired": {
+        "minLevel": "C",
+        "inputRequired": true,
+        "nodeReadablePreferred": true,
+        "coordinateFallbackAllowed": true,
+        "allowedInputChannels": [
+          "ACTION_SET_TEXT",
+          "PASTE",
+          "CUSTOM_IME",
+          "SHIZUKU_ADB"
+        ],
+        "verificationRequired": "MEDIUM"
+      },
+      "action": {
+        "type": "TypeIntoFirstInput",
+        "textParam": "query",
+        "timeoutMs": 2200
+      },
+      "verify": {
+        "type": "InputContainsOrTextChangedEvent",
+        "textParam": "query",
+        "timeoutMs": 1800,
+        "allowMediumConfidenceWhenEventOnly": true
+      },
+      "resultPolicy": {
+        "inputNodeContainsText": "SUCCESS",
+        "textChangedEventOnly": "SUCCESS_MEDIUM_CONFIDENCE",
+        "coordinateOnlyNoInputNode": "SUCCESS_LOW_CONFIDENCE",
+        "noInputChannel": "FAILED_INPUT_CHANNEL_MISSING"
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "kind": "atomic_skill",
+      "id": "com.xunmeng.pinduoduo.common.click_visible_text",
+      "name": "点击可见文字",
+      "appPackage": "com.xunmeng.pinduoduo",
+      "appVersion": "*",
+      "status": "DRY_RUN_PASSED",
+      "domain": "app_session",
+      "implements": "ClickElementSkill",
+      "params": [
+        {
+          "name": "text",
+          "type": "TEXT",
+          "required": true
+        }
+      ],
+      "preconditions": [],
+      "dependsOn": [],
+      "resolverPolicy": {
+        "order": [
+          "ACCESSIBILITY",
+          "COORDINATE_PACK",
+          "PACKAGE_MANAGER"
+        ],
+        "allowAiSuggestionInFactory": true,
+        "allowAiInRuntime": false
+      },
+      "safety": {
+        "forbiddenTexts": [
+          "支付",
+          "付款",
+          "转账",
+          "删除",
+          "发布",
+          "授权"
+        ]
+      },
+      "factory": {
+        "source": "SKILL_ARCHETYPE_TEMPLATE_V0",
+        "archetypeId": "common.app_session.v1",
+        "traceIds": [],
+        "sampleCount": 0,
+        "dryRunStatus": "PASSED",
+        "testRuns": 0,
+        "successRate": 0,
+        "promotionStatus": "NOT_PROMOTED",
+        "createdAt": 1779237326827,
+        "appPatch": {
+          "packageName": "com.xunmeng.pinduoduo",
+          "label": "拼多多",
+          "launchable": true,
+          "launchActivity": "com.xunmeng.pinduoduo.ui.activity.MainFrameActivity",
+          "searchEntryTexts": [
+            "搜索",
+            "搜一搜",
+            "Search"
+          ],
+          "searchSubmitTexts": [
+            "搜索",
+            "确定",
+            "Search"
+          ],
+          "searchEntryCoordinate": {
+            "x": 0.5,
+            "y": 0.08
+          },
+          "searchSubmitCoordinate": {
+            "x": 0.9,
+            "y": 0.08
+          },
+          "postDraftEntryTexts": [
+            "+",
+            "写微博",
+            "发微博",
+            "发帖",
+            "创作",
+            "写帖子",
+            "发动态",
+            "说点什么"
+          ],
+          "postDraftEntryCoordinate": {
+            "x": 0.9,
+            "y": 0.9
+          }
+        },
+        "lastDryRunReport": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_dry_run_reports\/com.xunmeng.pinduoduo\/com.xunmeng.pinduoduo.common.click_visible_text_1779237326848.json",
+        "lastDryRunAt": 1779237326849
+      },
+      "capabilityRequired": {
+        "minLevel": "C",
+        "inputRequired": false,
+        "nodeReadablePreferred": true,
+        "coordinateFallbackAllowed": false,
+        "allowedInputChannels": [],
+        "verificationRequired": "MEDIUM"
+      },
+      "action": {
+        "type": "ClickVisibleText",
+        "textParam": "text",
+        "timeoutMs": 1500
+      },
+      "verify": {
+        "type": "WindowChangedOrNodeStateChanged",
+        "timeoutMs": 1500,
+        "allowLowConfidenceWhenUnchanged": true
+      },
+      "resultPolicy": {
+        "nodeClickedAndVerified": "SUCCESS",
+        "clickedButWeakVerify": "SUCCESS_MEDIUM_CONFIDENCE",
+        "notFound": "FAILED_ELEMENT_NOT_FOUND"
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "kind": "atomic_skill",
+      "id": "com.xunmeng.pinduoduo.common.type_first_input",
+      "name": "向第一个输入框输入",
+      "appPackage": "com.xunmeng.pinduoduo",
+      "appVersion": "*",
+      "status": "DRY_RUN_PASSED",
+      "domain": "app_session",
+      "implements": "TypeTextSkill",
+      "params": [
+        {
+          "name": "text",
+          "type": "TEXT",
+          "required": true
+        }
+      ],
+      "preconditions": [],
+      "dependsOn": [],
+      "resolverPolicy": {
+        "order": [
+          "ACCESSIBILITY",
+          "COORDINATE_PACK",
+          "PACKAGE_MANAGER"
+        ],
+        "allowAiSuggestionInFactory": true,
+        "allowAiInRuntime": false
+      },
+      "safety": {
+        "forbiddenTexts": [
+          "支付",
+          "付款",
+          "转账",
+          "删除",
+          "发布",
+          "授权"
+        ]
+      },
+      "factory": {
+        "source": "SKILL_ARCHETYPE_TEMPLATE_V0",
+        "archetypeId": "common.app_session.v1",
+        "traceIds": [],
+        "sampleCount": 0,
+        "dryRunStatus": "PASSED",
+        "testRuns": 0,
+        "successRate": 0,
+        "promotionStatus": "NOT_PROMOTED",
+        "createdAt": 1779237326827,
+        "appPatch": {
+          "packageName": "com.xunmeng.pinduoduo",
+          "label": "拼多多",
+          "launchable": true,
+          "launchActivity": "com.xunmeng.pinduoduo.ui.activity.MainFrameActivity",
+          "searchEntryTexts": [
+            "搜索",
+            "搜一搜",
+            "Search"
+          ],
+          "searchSubmitTexts": [
+            "搜索",
+            "确定",
+            "Search"
+          ],
+          "searchEntryCoordinate": {
+            "x": 0.5,
+            "y": 0.08
+          },
+          "searchSubmitCoordinate": {
+            "x": 0.9,
+            "y": 0.08
+          },
+          "postDraftEntryTexts": [
+            "+",
+            "写微博",
+            "发微博",
+            "发帖",
+            "创作",
+            "写帖子",
+            "发动态",
+            "说点什么"
+          ],
+          "postDraftEntryCoordinate": {
+            "x": 0.9,
+            "y": 0.9
+          }
+        },
+        "lastDryRunReport": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_dry_run_reports\/com.xunmeng.pinduoduo\/com.xunmeng.pinduoduo.common.type_first_input_1779237326849.json",
+        "lastDryRunAt": 1779237326850
+      },
+      "capabilityRequired": {
+        "minLevel": "C",
+        "inputRequired": true,
+        "nodeReadablePreferred": true,
+        "coordinateFallbackAllowed": false,
+        "allowedInputChannels": [
+          "ACTION_SET_TEXT",
+          "PASTE",
+          "CUSTOM_IME",
+          "SHIZUKU_ADB"
+        ],
+        "verificationRequired": "MEDIUM"
+      },
+      "action": {
+        "type": "TypeIntoFirstInput",
+        "textParam": "text",
+        "timeoutMs": 2200
+      },
+      "verify": {
+        "type": "InputContainsOrTextChangedEvent",
+        "textParam": "text",
+        "timeoutMs": 1800,
+        "allowMediumConfidenceWhenEventOnly": true
+      },
+      "resultPolicy": {
+        "inputNodeContainsText": "SUCCESS",
+        "textChangedEventOnly": "SUCCESS_MEDIUM_CONFIDENCE",
+        "noInputChannel": "FAILED_INPUT_CHANNEL_MISSING",
+        "unverifiable": "FAILED_UNVERIFIABLE"
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "kind": "atomic_skill",
+      "id": "com.xunmeng.pinduoduo.search.click_entry",
+      "name": "点击搜索入口",
+      "appPackage": "com.xunmeng.pinduoduo",
+      "appVersion": "*",
+      "status": "DRY_RUN_PASSED",
+      "domain": "app_session",
+      "implements": "ClickElementSkill",
+      "params": [],
+      "preconditions": [],
+      "dependsOn": [],
+      "resolverPolicy": {
+        "order": [
+          "ACCESSIBILITY",
+          "COORDINATE_PACK",
+          "PACKAGE_MANAGER"
+        ],
+        "allowAiSuggestionInFactory": true,
+        "allowAiInRuntime": false
+      },
+      "safety": {
+        "forbiddenTexts": [
+          "支付",
+          "付款",
+          "转账",
+          "删除",
+          "发布",
+          "授权"
+        ]
+      },
+      "factory": {
+        "source": "SKILL_ARCHETYPE_TEMPLATE_V0",
+        "archetypeId": "common.search_in_app.v1",
+        "traceIds": [],
+        "sampleCount": 0,
+        "dryRunStatus": "PASSED",
+        "testRuns": 0,
+        "successRate": 0,
+        "promotionStatus": "NOT_PROMOTED",
+        "createdAt": 1779237326827,
+        "appPatch": {
+          "packageName": "com.xunmeng.pinduoduo",
+          "label": "拼多多",
+          "launchable": true,
+          "launchActivity": "com.xunmeng.pinduoduo.ui.activity.MainFrameActivity",
+          "searchEntryTexts": [
+            "搜索",
+            "搜一搜",
+            "Search"
+          ],
+          "searchSubmitTexts": [
+            "搜索",
+            "确定",
+            "Search"
+          ],
+          "searchEntryCoordinate": {
+            "x": 0.5,
+            "y": 0.08
+          },
+          "searchSubmitCoordinate": {
+            "x": 0.9,
+            "y": 0.08
+          },
+          "postDraftEntryTexts": [
+            "+",
+            "写微博",
+            "发微博",
+            "发帖",
+            "创作",
+            "写帖子",
+            "发动态",
+            "说点什么"
+          ],
+          "postDraftEntryCoordinate": {
+            "x": 0.9,
+            "y": 0.9
+          }
+        },
+        "lastDryRunReport": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_dry_run_reports\/com.xunmeng.pinduoduo\/com.xunmeng.pinduoduo.search.click_entry_1779237326851.json",
+        "lastDryRunAt": 1779237326852
+      },
+      "capabilityRequired": {
+        "minLevel": "C",
+        "inputRequired": false,
+        "nodeReadablePreferred": true,
+        "coordinateFallbackAllowed": true,
+        "allowedInputChannels": [],
+        "verificationRequired": "MEDIUM"
+      },
+      "action": {
+        "type": "ClickVisibleText",
+        "text": "搜索",
+        "textAliases": [
+          "搜索",
+          "搜一搜",
+          "Search"
+        ],
+        "x": 0.5,
+        "y": 0.08,
+        "timeoutMs": 1200
+      },
+      "verify": {
+        "type": "WindowChangedOrNodeStateChanged",
+        "timeoutMs": 1500
+      },
+      "resultPolicy": {
+        "nodeClickedAndVerified": "SUCCESS",
+        "coordinateClicked": "SUCCESS_LOW_CONFIDENCE",
+        "notFound": "FAILED_ELEMENT_NOT_FOUND"
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "kind": "atomic_skill",
+      "id": "com.xunmeng.pinduoduo.back",
+      "name": "返回",
+      "appPackage": "com.xunmeng.pinduoduo",
+      "appVersion": "*",
+      "status": "DRY_RUN_PASSED",
+      "domain": "app_session",
+      "implements": "BackSkill",
+      "params": [],
+      "preconditions": [],
+      "dependsOn": [],
+      "resolverPolicy": {
+        "order": [
+          "ACCESSIBILITY",
+          "COORDINATE_PACK",
+          "PACKAGE_MANAGER"
+        ],
+        "allowAiSuggestionInFactory": true,
+        "allowAiInRuntime": false
+      },
+      "safety": {
+        "forbiddenTexts": [
+          "支付",
+          "付款",
+          "转账",
+          "删除",
+          "发布",
+          "授权"
+        ]
+      },
+      "factory": {
+        "source": "SKILL_ARCHETYPE_TEMPLATE_V0",
+        "archetypeId": "common.app_session.v1",
+        "traceIds": [],
+        "sampleCount": 0,
+        "dryRunStatus": "PASSED",
+        "testRuns": 0,
+        "successRate": 0,
+        "promotionStatus": "NOT_PROMOTED",
+        "createdAt": 1779237326827,
+        "appPatch": {
+          "packageName": "com.xunmeng.pinduoduo",
+          "label": "拼多多",
+          "launchable": true,
+          "launchActivity": "com.xunmeng.pinduoduo.ui.activity.MainFrameActivity",
+          "searchEntryTexts": [
+            "搜索",
+            "搜一搜",
+            "Search"
+          ],
+          "searchSubmitTexts": [
+            "搜索",
+            "确定",
+            "Search"
+          ],
+          "searchEntryCoordinate": {
+            "x": 0.5,
+            "y": 0.08
+          },
+          "searchSubmitCoordinate": {
+            "x": 0.9,
+            "y": 0.08
+          },
+          "postDraftEntryTexts": [
+            "+",
+            "写微博",
+            "发微博",
+            "发帖",
+            "创作",
+            "写帖子",
+            "发动态",
+            "说点什么"
+          ],
+          "postDraftEntryCoordinate": {
+            "x": 0.9,
+            "y": 0.9
+          }
+        },
+        "lastDryRunReport": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_dry_run_reports\/com.xunmeng.pinduoduo\/com.xunmeng.pinduoduo.back_1779237326845.json",
+        "lastDryRunAt": 1779237326846
+      },
+      "capabilityRequired": {
+        "minLevel": "D",
+        "inputRequired": false,
+        "nodeReadablePreferred": false,
+        "coordinateFallbackAllowed": false,
+        "allowedInputChannels": [],
+        "verificationRequired": "LOW"
+      },
+      "action": {
+        "type": "Back",
+        "timeoutMs": 1000
+      },
+      "verify": {
+        "type": "WindowChanged",
+        "timeoutMs": 1000,
+        "allowLowConfidenceWhenUnchanged": true
+      },
+      "resultPolicy": {
+        "changed": "SUCCESS",
+        "unchanged": "SUCCESS_LOW_CONFIDENCE"
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "kind": "atomic_skill",
+      "id": "com.xunmeng.pinduoduo.capability_check",
+      "name": "检查应用能力",
+      "appPackage": "com.xunmeng.pinduoduo",
+      "appVersion": "*",
+      "status": "DRY_RUN_PASSED",
+      "domain": "app_session",
+      "implements": "CapabilityCheckSkill",
+      "params": [],
+      "preconditions": [],
+      "dependsOn": [],
+      "resolverPolicy": {
+        "order": [
+          "ACCESSIBILITY",
+          "COORDINATE_PACK",
+          "PACKAGE_MANAGER"
+        ],
+        "allowAiSuggestionInFactory": true,
+        "allowAiInRuntime": false
+      },
+      "safety": {
+        "forbiddenTexts": [
+          "支付",
+          "付款",
+          "转账",
+          "删除",
+          "发布",
+          "授权"
+        ]
+      },
+      "factory": {
+        "source": "SKILL_ARCHETYPE_TEMPLATE_V0",
+        "archetypeId": "common.app_session.v1",
+        "traceIds": [],
+        "sampleCount": 0,
+        "dryRunStatus": "PASSED",
+        "testRuns": 0,
+        "successRate": 0,
+        "promotionStatus": "NOT_PROMOTED",
+        "createdAt": 1779237326827,
+        "appPatch": {
+          "packageName": "com.xunmeng.pinduoduo",
+          "label": "拼多多",
+          "launchable": true,
+          "launchActivity": "com.xunmeng.pinduoduo.ui.activity.MainFrameActivity",
+          "searchEntryTexts": [
+            "搜索",
+            "搜一搜",
+            "Search"
+          ],
+          "searchSubmitTexts": [
+            "搜索",
+            "确定",
+            "Search"
+          ],
+          "searchEntryCoordinate": {
+            "x": 0.5,
+            "y": 0.08
+          },
+          "searchSubmitCoordinate": {
+            "x": 0.9,
+            "y": 0.08
+          },
+          "postDraftEntryTexts": [
+            "+",
+            "写微博",
+            "发微博",
+            "发帖",
+            "创作",
+            "写帖子",
+            "发动态",
+            "说点什么"
+          ],
+          "postDraftEntryCoordinate": {
+            "x": 0.9,
+            "y": 0.9
+          }
+        },
+        "lastDryRunReport": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_dry_run_reports\/com.xunmeng.pinduoduo\/com.xunmeng.pinduoduo.capability_check_1779237326844.json",
+        "lastDryRunAt": 1779237326845
+      },
+      "capabilityRequired": {
+        "minLevel": "D",
+        "inputRequired": false,
+        "nodeReadablePreferred": false,
+        "coordinateFallbackAllowed": false,
+        "allowedInputChannels": [],
+        "verificationRequired": "LOW"
+      },
+      "action": {
+        "type": "CheckCapability",
+        "packageName": "com.xunmeng.pinduoduo"
+      },
+      "verify": {
+        "type": "CapabilityObserved",
+        "packageName": "com.xunmeng.pinduoduo",
+        "timeoutMs": 500
+      },
+      "resultPolicy": {
+        "levelA": "SUCCESS",
+        "levelB": "SUCCESS_MEDIUM_CONFIDENCE",
+        "levelC": "SUCCESS_LOW_CONFIDENCE",
+        "levelD": "FAILED_CAPABILITY_D"
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "kind": "atomic_skill",
+      "id": "com.xunmeng.pinduoduo.recover_to_foreground",
+      "name": "恢复到应用前台",
+      "appPackage": "com.xunmeng.pinduoduo",
+      "appVersion": "*",
+      "status": "DRY_RUN_PASSED",
+      "domain": "app_session",
+      "implements": "RecoverToScreenSkill",
+      "params": [],
+      "preconditions": [],
+      "dependsOn": [
+        "com.xunmeng.pinduoduo.open_app"
+      ],
+      "resolverPolicy": {
+        "order": [
+          "ACCESSIBILITY",
+          "COORDINATE_PACK",
+          "PACKAGE_MANAGER"
+        ],
+        "allowAiSuggestionInFactory": true,
+        "allowAiInRuntime": false
+      },
+      "safety": {
+        "forbiddenTexts": [
+          "支付",
+          "付款",
+          "转账",
+          "删除",
+          "发布",
+          "授权"
+        ]
+      },
+      "factory": {
+        "source": "SKILL_ARCHETYPE_TEMPLATE_V0",
+        "archetypeId": "common.app_session.v1",
+        "traceIds": [],
+        "sampleCount": 0,
+        "dryRunStatus": "PASSED",
+        "testRuns": 0,
+        "successRate": 0,
+        "promotionStatus": "NOT_PROMOTED",
+        "createdAt": 1779237326827,
+        "appPatch": {
+          "packageName": "com.xunmeng.pinduoduo",
+          "label": "拼多多",
+          "launchable": true,
+          "launchActivity": "com.xunmeng.pinduoduo.ui.activity.MainFrameActivity",
+          "searchEntryTexts": [
+            "搜索",
+            "搜一搜",
+            "Search"
+          ],
+          "searchSubmitTexts": [
+            "搜索",
+            "确定",
+            "Search"
+          ],
+          "searchEntryCoordinate": {
+            "x": 0.5,
+            "y": 0.08
+          },
+          "searchSubmitCoordinate": {
+            "x": 0.9,
+            "y": 0.08
+          },
+          "postDraftEntryTexts": [
+            "+",
+            "写微博",
+            "发微博",
+            "发帖",
+            "创作",
+            "写帖子",
+            "发动态",
+            "说点什么"
+          ],
+          "postDraftEntryCoordinate": {
+            "x": 0.9,
+            "y": 0.9
+          }
+        },
+        "lastDryRunReport": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_dry_run_reports\/com.xunmeng.pinduoduo\/com.xunmeng.pinduoduo.recover_to_foreground_1779237326847.json",
+        "lastDryRunAt": 1779237326847
+      },
+      "capabilityRequired": {
+        "minLevel": "D",
+        "inputRequired": false,
+        "nodeReadablePreferred": false,
+        "coordinateFallbackAllowed": false,
+        "allowedInputChannels": [],
+        "verificationRequired": "LOW"
+      },
+      "action": {
+        "type": "OpenApp",
+        "packageName": "com.xunmeng.pinduoduo",
+        "timeoutMs": 3000
+      },
+      "verify": {
+        "type": "ForegroundPackage",
+        "packageName": "com.xunmeng.pinduoduo",
+        "timeoutMs": 3000,
+        "allowUnverifiedWhenAccessibilityDisconnected": true
+      },
+      "resultPolicy": {
+        "recovered": "SUCCESS",
+        "launchIntentSentOnly": "SUCCESS_LOW_CONFIDENCE",
+        "failed": "FAILED_RECOVER_SCREEN"
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "kind": "atomic_skill",
+      "id": "com.xunmeng.pinduoduo.open_app",
+      "name": "打开应用",
+      "appPackage": "com.xunmeng.pinduoduo",
+      "appVersion": "*",
+      "status": "DRY_RUN_PASSED",
+      "domain": "app_session",
+      "implements": "OpenAppSkill",
+      "params": [],
+      "preconditions": [],
+      "dependsOn": [],
+      "resolverPolicy": {
+        "order": [
+          "ACCESSIBILITY",
+          "COORDINATE_PACK",
+          "PACKAGE_MANAGER"
+        ],
+        "allowAiSuggestionInFactory": true,
+        "allowAiInRuntime": false
+      },
+      "safety": {
+        "forbiddenTexts": [
+          "支付",
+          "付款",
+          "转账",
+          "删除",
+          "发布",
+          "授权"
+        ]
+      },
+      "factory": {
+        "source": "SKILL_ARCHETYPE_TEMPLATE_V0",
+        "archetypeId": "common.app_session.v1",
+        "traceIds": [],
+        "sampleCount": 0,
+        "dryRunStatus": "PASSED",
+        "testRuns": 0,
+        "successRate": 0,
+        "promotionStatus": "NOT_PROMOTED",
+        "createdAt": 1779237326827,
+        "appPatch": {
+          "packageName": "com.xunmeng.pinduoduo",
+          "label": "拼多多",
+          "launchable": true,
+          "launchActivity": "com.xunmeng.pinduoduo.ui.activity.MainFrameActivity",
+          "searchEntryTexts": [
+            "搜索",
+            "搜一搜",
+            "Search"
+          ],
+          "searchSubmitTexts": [
+            "搜索",
+            "确定",
+            "Search"
+          ],
+          "searchEntryCoordinate": {
+            "x": 0.5,
+            "y": 0.08
+          },
+          "searchSubmitCoordinate": {
+            "x": 0.9,
+            "y": 0.08
+          },
+          "postDraftEntryTexts": [
+            "+",
+            "写微博",
+            "发微博",
+            "发帖",
+            "创作",
+            "写帖子",
+            "发动态",
+            "说点什么"
+          ],
+          "postDraftEntryCoordinate": {
+            "x": 0.9,
+            "y": 0.9
+          }
+        },
+        "lastDryRunReport": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_dry_run_reports\/com.xunmeng.pinduoduo\/com.xunmeng.pinduoduo.open_app_1779237326838.json",
+        "lastDryRunAt": 1779237326844
+      },
+      "capabilityRequired": {
+        "minLevel": "D",
+        "inputRequired": false,
+        "nodeReadablePreferred": false,
+        "coordinateFallbackAllowed": false,
+        "allowedInputChannels": [],
+        "verificationRequired": "LOW"
+      },
+      "action": {
+        "type": "OpenApp",
+        "packageName": "com.xunmeng.pinduoduo",
+        "timeoutMs": 3000
+      },
+      "verify": {
+        "type": "ForegroundPackage",
+        "packageName": "com.xunmeng.pinduoduo",
+        "timeoutMs": 3000,
+        "allowUnverifiedWhenAccessibilityDisconnected": true
+      },
+      "resultPolicy": {
+        "foregroundVerified": "SUCCESS",
+        "launchIntentSentOnly": "SUCCESS_LOW_CONFIDENCE",
+        "noLaunchIntent": "FAILED_NO_LAUNCH_INTENT",
+        "unverifiable": "FAILED_UNVERIFIABLE"
+      }
+    }
+  ],
+  "macroSkills": [
+    {
+      "schemaVersion": 1,
+      "kind": "macro_skill",
+      "id": "patched.command.1779339041582",
+      "name": "手机端任务拼装 Skill",
+      "appPackage": "com.xunmeng.pinduoduo",
+      "appVersion": "*",
+      "status": "DRY_RUN_PASSED",
+      "implements": "AiPlannedMacroSkill",
+      "intentId": "search_in_app",
+      "params": [],
+      "preconditions": [],
+      "atoms": [
+        {
+          "type": "UseSkill",
+          "skillId": "patched.1779339041582.1.openapp"
+        },
+        {
+          "type": "UseSkill",
+          "skillId": "patched.1779339041582.2.handlereactiveoverlays"
+        },
+        {
+          "type": "UseSkill",
+          "skillId": "patched.1779339041582.3.clickvisibletext"
+        },
+        {
+          "type": "UseSkill",
+          "skillId": "patched.1779339041582.4.wait"
+        },
+        {
+          "type": "UseSkill",
+          "skillId": "patched.1779339041582.5.typeintofirstinput"
+        },
+        {
+          "type": "UseSkill",
+          "skillId": "patched.1779339041582.6.clickvisibletext"
+        },
+        {
+          "type": "UseSkill",
+          "skillId": "patched.1779339041582.7.wait"
+        }
+      ],
+      "verify": {
+        "type": "GoalEvidenceOrNoFailedAtom",
+        "instruction": "在拼多多搜索纸巾，停在结果页并记录筛选、店铺、价格入口。\n\n约束：目标 App=拼多多，包名=com.xunmeng.pinduoduo。必须由 MacroPilot 手机端自己用无障碍、输入法、AI\/Skill JSON 执行，不允许依赖 ADB 手点目标 App。执行前先读取当前 UI；如果遇到广告、弹窗、小字提示，先记录文字并安全关闭。任务完成必须用当前 UI 证据验证，不能只因为步骤执行完就报成功。如果没有现成 skill，先复用已有相似 Skill JSON\/arc",
+        "timeoutMs": 2000,
+        "allowLowConfidenceWhenNodeUnreadable": true
+      },
+      "resultPolicy": {
+        "allAtomicSuccess": "SUCCESS",
+        "partialAtomicSuccess": "SUCCESS_MEDIUM_CONFIDENCE",
+        "coordinateOnly": "SUCCESS_LOW_CONFIDENCE",
+        "unverifiable": "FAILED_UNVERIFIABLE"
+      },
+      "timeoutMs": 30000,
+      "factory": {
+        "source": "APP_SIDE_PLAN_PATCH_ASSEMBLER",
+        "instruction": "在拼多多搜索纸巾，停在结果页并记录筛选、店铺、价格入口。\n\n约束：目标 App=拼多多，包名=com.xunmeng.pinduoduo。必须由 MacroPilot 手机端自己用无障碍、输入法、AI\/Skill JSON 执行，不允许依赖 ADB 手点目标 App。执行前先读取当前 UI；如果遇到广告、弹窗、小字提示，先记录文字并安全关闭。任务完成必须用当前 UI 证据验证，不能只因为步骤执行完就报成功。如果没有现成 skill，先复用已有相似 Skill JSON\/archetype，只改关键槽位如入口文字、坐标、目标文本、验证规则，再组装 atomic\/macro skill。需要探索入口时优先遍历底部标签、顶部小图标、图形化入口、侧边操作和子页面。本任务 stopBeforeSubmit=true：写草稿、评论、订单、支付类流程必须停在提交前，不点击最终发布、发送、提交订单、支付、确认授权。期望证据包括：纸巾、结果。",
+        "aiJobPath": null,
+        "traceIds": [],
+        "sampleCount": 0,
+        "dryRunStatus": "PASSED",
+        "testRuns": 0,
+        "successRate": 0,
+        "promotionStatus": "NOT_PROMOTED",
+        "createdAt": 1779339044572,
+        "assemblyStrategy": "rewrite_allowed_slots_from_existing_skill_json",
+        "requiredAtomicSkills": [
+          "patched.1779339041582.1.openapp",
+          "patched.1779339041582.2.handlereactiveoverlays",
+          "patched.1779339041582.3.clickvisibletext",
+          "patched.1779339041582.4.wait",
+          "patched.1779339041582.5.typeintofirstinput",
+          "patched.1779339041582.6.clickvisibletext",
+          "patched.1779339041582.7.wait"
+        ],
+        "lastDryRunReport": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_dry_run_reports\/com.xunmeng.pinduoduo\/patched.command.1779339041582_1779339044588.json",
+        "lastDryRunAt": 1779339044589
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "kind": "macro_skill",
+      "id": "com.xunmeng.pinduoduo.search.search_in_app",
+      "name": "通用站内搜索",
+      "appPackage": "com.xunmeng.pinduoduo",
+      "appVersion": "*",
+      "status": "DRY_RUN_PASSED",
+      "implements": "SearchInAppSkill",
+      "intentId": "search_in_app",
+      "params": [
+        {
+          "name": "query",
+          "type": "TEXT",
+          "required": true,
+          "example": ""
+        }
+      ],
+      "preconditions": [
+        {
+          "type": "CapabilityAtLeast",
+          "level": "C"
+        },
+        {
+          "type": "InputChannelAvailable",
+          "channels": [
+            "ACTION_SET_TEXT",
+            "PASTE",
+            "CUSTOM_IME",
+            "SHIZUKU_ADB"
+          ]
+        }
+      ],
+      "atoms": [
+        {
+          "type": "UseSkill",
+          "skillId": "com.xunmeng.pinduoduo.open_app"
+        },
+        {
+          "type": "UseSkill",
+          "skillId": "com.xunmeng.pinduoduo.search.click_entry"
+        },
+        {
+          "type": "UseSkill",
+          "skillId": "com.xunmeng.pinduoduo.search.type_query",
+          "params": {
+            "query": "$query"
+          }
+        },
+        {
+          "type": "UseSkill",
+          "skillId": "com.xunmeng.pinduoduo.search.click_submit"
+        }
+      ],
+      "verify": {
+        "type": "WindowChangedOrNodeStateChanged",
+        "timeoutMs": 2500,
+        "allowLowConfidenceWhenNodeUnreadable": true
+      },
+      "resultPolicy": {
+        "allAtomicSuccess": "SUCCESS",
+        "partialAtomicSuccess": "SUCCESS_MEDIUM_CONFIDENCE",
+        "coordinateOnly": "SUCCESS_LOW_CONFIDENCE",
+        "unverifiable": "FAILED_UNVERIFIABLE"
+      },
+      "timeoutMs": 10000,
+      "factory": {
+        "source": "COMPOSED_FROM_SKILL_ARCHETYPE",
+        "archetypeId": "common.search_in_app.v1",
+        "traceIds": [],
+        "sampleCount": 0,
+        "dryRunStatus": "PASSED",
+        "testRuns": 0,
+        "successRate": 0,
+        "promotionStatus": "NOT_PROMOTED",
+        "createdAt": 1779237326827,
+        "appPatch": {
+          "packageName": "com.xunmeng.pinduoduo",
+          "label": "拼多多",
+          "launchable": true,
+          "launchActivity": "com.xunmeng.pinduoduo.ui.activity.MainFrameActivity",
+          "searchEntryTexts": [
+            "搜索",
+            "搜一搜",
+            "Search"
+          ],
+          "searchSubmitTexts": [
+            "搜索",
+            "确定",
+            "Search"
+          ],
+          "searchEntryCoordinate": {
+            "x": 0.5,
+            "y": 0.08
+          },
+          "searchSubmitCoordinate": {
+            "x": 0.9,
+            "y": 0.08
+          },
+          "postDraftEntryTexts": [
+            "+",
+            "写微博",
+            "发微博",
+            "发帖",
+            "创作",
+            "写帖子",
+            "发动态",
+            "说点什么"
+          ],
+          "postDraftEntryCoordinate": {
+            "x": 0.9,
+            "y": 0.9
+          }
+        },
+        "requiredAtomicSkills": [
+          "com.xunmeng.pinduoduo.open_app",
+          "com.xunmeng.pinduoduo.search.click_entry",
+          "com.xunmeng.pinduoduo.search.type_query",
+          "com.xunmeng.pinduoduo.search.click_submit"
+        ],
+        "promotionRule": "requires_dry_run_real_test_and_promotion_gate",
+        "lastDryRunReport": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_dry_run_reports\/com.xunmeng.pinduoduo\/com.xunmeng.pinduoduo.search.search_in_app_1779237326855.json",
+        "lastDryRunAt": 1779237326856
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "kind": "macro_skill",
+      "id": "com.xunmeng.pinduoduo.prepare_app_session",
+      "name": "准备应用会话",
+      "appPackage": "com.xunmeng.pinduoduo",
+      "appVersion": "*",
+      "status": "DRY_RUN_PASSED",
+      "implements": "PrepareAppSessionSkill",
+      "intentId": "prepare_app_session",
+      "params": [],
+      "preconditions": [],
+      "atoms": [
+        {
+          "type": "UseSkill",
+          "skillId": "com.xunmeng.pinduoduo.open_app"
+        },
+        {
+          "type": "UseSkill",
+          "skillId": "com.xunmeng.pinduoduo.capability_check"
+        }
+      ],
+      "verify": {
+        "type": "CapabilityObserved",
+        "packageName": "com.xunmeng.pinduoduo",
+        "timeoutMs": 1000
+      },
+      "resultPolicy": {
+        "allAtomicSuccess": "SUCCESS",
+        "partialAtomicSuccess": "SUCCESS_MEDIUM_CONFIDENCE",
+        "unverifiable": "FAILED_UNVERIFIABLE"
+      },
+      "timeoutMs": 6000,
+      "factory": {
+        "source": "COMPOSED_FROM_SKILL_ARCHETYPE",
+        "archetypeId": "common.app_session.v1",
+        "traceIds": [],
+        "sampleCount": 0,
+        "dryRunStatus": "PASSED",
+        "testRuns": 0,
+        "successRate": 0,
+        "promotionStatus": "NOT_PROMOTED",
+        "createdAt": 1779237326827,
+        "appPatch": {
+          "packageName": "com.xunmeng.pinduoduo",
+          "label": "拼多多",
+          "launchable": true,
+          "launchActivity": "com.xunmeng.pinduoduo.ui.activity.MainFrameActivity",
+          "searchEntryTexts": [
+            "搜索",
+            "搜一搜",
+            "Search"
+          ],
+          "searchSubmitTexts": [
+            "搜索",
+            "确定",
+            "Search"
+          ],
+          "searchEntryCoordinate": {
+            "x": 0.5,
+            "y": 0.08
+          },
+          "searchSubmitCoordinate": {
+            "x": 0.9,
+            "y": 0.08
+          },
+          "postDraftEntryTexts": [
+            "+",
+            "写微博",
+            "发微博",
+            "发帖",
+            "创作",
+            "写帖子",
+            "发动态",
+            "说点什么"
+          ],
+          "postDraftEntryCoordinate": {
+            "x": 0.9,
+            "y": 0.9
+          }
+        },
+        "requiredAtomicSkills": [
+          "com.xunmeng.pinduoduo.open_app",
+          "com.xunmeng.pinduoduo.capability_check"
+        ],
+        "promotionRule": "requires_real_probe_and_promotion_gate",
+        "lastDryRunReport": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_dry_run_reports\/com.xunmeng.pinduoduo\/com.xunmeng.pinduoduo.prepare_app_session_1779237326850.json",
+        "lastDryRunAt": 1779237326851
+      }
+    }
+  ],
+  "reactiveRules": [],
+  "runtimePolicy": {
+    "allowCandidateSkill": false,
+    "allowTrial": false,
+    "aiCallsDefault": 0,
+    "screenshotDefault": 0,
+    "maxTaskDurationMs": 30000
+  },
+  "factoryReports": {
+    "dryRunReports": [
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "patched.1779339041582.6.clickvisibletext",
+        "appPackage": "com.xunmeng.pinduoduo",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779339044586
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "patched.1779339041582.7.wait",
+        "appPackage": "com.xunmeng.pinduoduo",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779339044587
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "patched.command.1779339041582",
+        "appPackage": "com.xunmeng.pinduoduo",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779339044588
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "patched.1779339041582.3.clickvisibletext",
+        "appPackage": "com.xunmeng.pinduoduo",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779339044582
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "patched.1779339041582.4.wait",
+        "appPackage": "com.xunmeng.pinduoduo",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779339044583
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "patched.1779339041582.5.typeintofirstinput",
+        "appPackage": "com.xunmeng.pinduoduo",
+        "passed": false,
+        "status": "REJECTED",
+        "errors": [
+          "dangerous_action:支付"
+        ],
+        "warnings": [],
+        "timestamp": 1779339044585
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "patched.1779339041582.1.openapp",
+        "appPackage": "com.xunmeng.pinduoduo",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779339044578
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "patched.1779339041582.2.handlereactiveoverlays",
+        "appPackage": "com.xunmeng.pinduoduo",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779339044581
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.xunmeng.pinduoduo.search.click_submit",
+        "appPackage": "com.xunmeng.pinduoduo",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779237326854
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.xunmeng.pinduoduo.search.search_in_app",
+        "appPackage": "com.xunmeng.pinduoduo",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779237326855
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.xunmeng.pinduoduo.search.type_query",
+        "appPackage": "com.xunmeng.pinduoduo",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779237326853
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.xunmeng.pinduoduo.common.type_first_input",
+        "appPackage": "com.xunmeng.pinduoduo",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779237326849
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.xunmeng.pinduoduo.prepare_app_session",
+        "appPackage": "com.xunmeng.pinduoduo",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779237326850
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.xunmeng.pinduoduo.search.click_entry",
+        "appPackage": "com.xunmeng.pinduoduo",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779237326851
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.xunmeng.pinduoduo.back",
+        "appPackage": "com.xunmeng.pinduoduo",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779237326845
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.xunmeng.pinduoduo.common.click_visible_text",
+        "appPackage": "com.xunmeng.pinduoduo",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779237326848
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.xunmeng.pinduoduo.recover_to_foreground",
+        "appPackage": "com.xunmeng.pinduoduo",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779237326847
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.xunmeng.pinduoduo.capability_check",
+        "appPackage": "com.xunmeng.pinduoduo",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779237326844
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.xunmeng.pinduoduo.open_app",
+        "appPackage": "com.xunmeng.pinduoduo",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779237326837
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.xunmeng.pinduoduo.search.search_in_app",
+        "appPackage": "com.xunmeng.pinduoduo",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779221443124
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.xunmeng.pinduoduo.search.click_entry",
+        "appPackage": "com.xunmeng.pinduoduo",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779221443120
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.xunmeng.pinduoduo.search.click_submit",
+        "appPackage": "com.xunmeng.pinduoduo",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779221443122
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.xunmeng.pinduoduo.search.type_query",
+        "appPackage": "com.xunmeng.pinduoduo",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779221443121
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.xunmeng.pinduoduo.common.click_visible_text",
+        "appPackage": "com.xunmeng.pinduoduo",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779221443117
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.xunmeng.pinduoduo.common.type_first_input",
+        "appPackage": "com.xunmeng.pinduoduo",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779221443118
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.xunmeng.pinduoduo.prepare_app_session",
+        "appPackage": "com.xunmeng.pinduoduo",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779221443119
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.xunmeng.pinduoduo.recover_to_foreground",
+        "appPackage": "com.xunmeng.pinduoduo",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779221443116
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.xunmeng.pinduoduo.back",
+        "appPackage": "com.xunmeng.pinduoduo",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779221443115
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.xunmeng.pinduoduo.capability_check",
+        "appPackage": "com.xunmeng.pinduoduo",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779221443114
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.xunmeng.pinduoduo.open_app",
+        "appPackage": "com.xunmeng.pinduoduo",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779221443113
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.xunmeng.pinduoduo.search.click_submit",
+        "appPackage": "com.xunmeng.pinduoduo",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779220605796
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.xunmeng.pinduoduo.search.search_in_app",
+        "appPackage": "com.xunmeng.pinduoduo",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779220605798
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.xunmeng.pinduoduo.search.click_entry",
+        "appPackage": "com.xunmeng.pinduoduo",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779220605792
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.xunmeng.pinduoduo.search.type_query",
+        "appPackage": "com.xunmeng.pinduoduo",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779220605794
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.xunmeng.pinduoduo.common.type_first_input",
+        "appPackage": "com.xunmeng.pinduoduo",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779220605789
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.xunmeng.pinduoduo.prepare_app_session",
+        "appPackage": "com.xunmeng.pinduoduo",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779220605790
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.xunmeng.pinduoduo.common.click_visible_text",
+        "appPackage": "com.xunmeng.pinduoduo",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779220605787
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.xunmeng.pinduoduo.recover_to_foreground",
+        "appPackage": "com.xunmeng.pinduoduo",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779220605785
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.xunmeng.pinduoduo.back",
+        "appPackage": "com.xunmeng.pinduoduo",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779220605783
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.xunmeng.pinduoduo.capability_check",
+        "appPackage": "com.xunmeng.pinduoduo",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779220605781
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.xunmeng.pinduoduo.open_app",
+        "appPackage": "com.xunmeng.pinduoduo",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779220605779
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.xunmeng.pinduoduo.search.search_in_app",
+        "appPackage": "com.xunmeng.pinduoduo",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779214135349
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.xunmeng.pinduoduo.prepare_app_session",
+        "appPackage": "com.xunmeng.pinduoduo",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779214135343
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.xunmeng.pinduoduo.search.click_entry",
+        "appPackage": "com.xunmeng.pinduoduo",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779214135345
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.xunmeng.pinduoduo.search.click_submit",
+        "appPackage": "com.xunmeng.pinduoduo",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779214135347
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.xunmeng.pinduoduo.search.type_query",
+        "appPackage": "com.xunmeng.pinduoduo",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779214135346
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.xunmeng.pinduoduo.common.click_visible_text",
+        "appPackage": "com.xunmeng.pinduoduo",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779214135341
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.xunmeng.pinduoduo.common.type_first_input",
+        "appPackage": "com.xunmeng.pinduoduo",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779214135342
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.xunmeng.pinduoduo.recover_to_foreground",
+        "appPackage": "com.xunmeng.pinduoduo",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779214135340
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.xunmeng.pinduoduo.back",
+        "appPackage": "com.xunmeng.pinduoduo",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779214135338
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.xunmeng.pinduoduo.capability_check",
+        "appPackage": "com.xunmeng.pinduoduo",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779214135337
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.xunmeng.pinduoduo.open_app",
+        "appPackage": "com.xunmeng.pinduoduo",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779214135329
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.xunmeng.pinduoduo.search.click_submit",
+        "appPackage": "com.xunmeng.pinduoduo",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779213650321
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.xunmeng.pinduoduo.search.search_in_app",
+        "appPackage": "com.xunmeng.pinduoduo",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779213650322
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.xunmeng.pinduoduo.search.type_query",
+        "appPackage": "com.xunmeng.pinduoduo",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779213650320
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.xunmeng.pinduoduo.common.type_first_input",
+        "appPackage": "com.xunmeng.pinduoduo",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779213650316
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.xunmeng.pinduoduo.prepare_app_session",
+        "appPackage": "com.xunmeng.pinduoduo",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779213650317
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.xunmeng.pinduoduo.search.click_entry",
+        "appPackage": "com.xunmeng.pinduoduo",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779213650319
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.xunmeng.pinduoduo.back",
+        "appPackage": "com.xunmeng.pinduoduo",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779213650313
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.xunmeng.pinduoduo.common.click_visible_text",
+        "appPackage": "com.xunmeng.pinduoduo",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779213650315
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.xunmeng.pinduoduo.recover_to_foreground",
+        "appPackage": "com.xunmeng.pinduoduo",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779213650314
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.xunmeng.pinduoduo.capability_check",
+        "appPackage": "com.xunmeng.pinduoduo",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779213650311
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.xunmeng.pinduoduo.open_app",
+        "appPackage": "com.xunmeng.pinduoduo",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779213650306
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.xunmeng.pinduoduo.search.search_in_app",
+        "appPackage": "com.xunmeng.pinduoduo",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779213053704
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.xunmeng.pinduoduo.search.click_submit",
+        "appPackage": "com.xunmeng.pinduoduo",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779213053702
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.xunmeng.pinduoduo.search.type_query",
+        "appPackage": "com.xunmeng.pinduoduo",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779213053700
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.xunmeng.pinduoduo.prepare_app_session",
+        "appPackage": "com.xunmeng.pinduoduo",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779213053696
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.xunmeng.pinduoduo.search.click_entry",
+        "appPackage": "com.xunmeng.pinduoduo",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779213053698
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.xunmeng.pinduoduo.common.click_visible_text",
+        "appPackage": "com.xunmeng.pinduoduo",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779213053692
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.xunmeng.pinduoduo.common.type_first_input",
+        "appPackage": "com.xunmeng.pinduoduo",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779213053694
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.xunmeng.pinduoduo.back",
+        "appPackage": "com.xunmeng.pinduoduo",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779213053688
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.xunmeng.pinduoduo.recover_to_foreground",
+        "appPackage": "com.xunmeng.pinduoduo",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779213053690
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.xunmeng.pinduoduo.capability_check",
+        "appPackage": "com.xunmeng.pinduoduo",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779213053686
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.xunmeng.pinduoduo.open_app",
+        "appPackage": "com.xunmeng.pinduoduo",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779213053682
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.xunmeng.pinduoduo.search.search_in_app",
+        "appPackage": "com.xunmeng.pinduoduo",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779212437780
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.xunmeng.pinduoduo.search.click_entry",
+        "appPackage": "com.xunmeng.pinduoduo",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779212437776
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.xunmeng.pinduoduo.search.click_submit",
+        "appPackage": "com.xunmeng.pinduoduo",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779212437778
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.xunmeng.pinduoduo.search.type_query",
+        "appPackage": "com.xunmeng.pinduoduo",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779212437777
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.xunmeng.pinduoduo.common.click_visible_text",
+        "appPackage": "com.xunmeng.pinduoduo",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779212437772
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.xunmeng.pinduoduo.common.type_first_input",
+        "appPackage": "com.xunmeng.pinduoduo",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779212437774
+      }
+    ],
+    "exportedAt": 1779339044604
+  }
+}

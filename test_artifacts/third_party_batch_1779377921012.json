@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "kind": "third_party_app_batch_service_state",
+  "id": "third_party_batch_1779377921012",
+  "requestId": "third_party_batch_1779377921012",
+  "status": "RUNNING",
+  "message": "正在深探 哔哩哔哩(tv.danmaku.bili)：primary_tab_surface_entry\/SUCCESS，tab=动态\/关注 side_icon 40:09 changed=true nodes=39，elapsed=70068ms",
+  "requestedPackages": [
+    "tv.danmaku.bili",
+    "com.xunmeng.pinduoduo",
+    "com.hupu.games"
+  ],
+  "progress": {
+    "phase": "UI_PROBE_EVENT",
+    "packageName": "tv.danmaku.bili",
+    "label": "哔哩哔哩",
+    "uiPhase": "primary_tab_surface_entry",
+    "uiStatus": "SUCCESS",
+    "uiMessage": "tab=动态\/关注 side_icon 40:09 changed=true nodes=39",
+    "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_snapshots\/tv.danmaku.bili\/20260521_233950_701_66d16953.json",
+    "elapsedMs": 70068
+  },
+  "payload": null,
+  "createdAt": 1779377991216
+}

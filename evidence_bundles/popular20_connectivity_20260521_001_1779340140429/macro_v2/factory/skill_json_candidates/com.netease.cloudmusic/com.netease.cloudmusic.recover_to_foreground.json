@@ -1,0 +1,110 @@
+{
+  "schemaVersion": 1,
+  "kind": "atomic_skill",
+  "id": "com.netease.cloudmusic.recover_to_foreground",
+  "name": "恢复到应用前台",
+  "appPackage": "com.netease.cloudmusic",
+  "appVersion": "*",
+  "status": "DRY_RUN_PASSED",
+  "domain": "app_session",
+  "implements": "RecoverToScreenSkill",
+  "params": [],
+  "preconditions": [],
+  "dependsOn": [
+    "com.netease.cloudmusic.open_app"
+  ],
+  "resolverPolicy": {
+    "order": [
+      "ACCESSIBILITY",
+      "COORDINATE_PACK",
+      "PACKAGE_MANAGER"
+    ],
+    "allowAiSuggestionInFactory": true,
+    "allowAiInRuntime": false
+  },
+  "safety": {
+    "forbiddenTexts": [
+      "支付",
+      "付款",
+      "转账",
+      "删除",
+      "发布",
+      "授权"
+    ]
+  },
+  "factory": {
+    "source": "SKILL_ARCHETYPE_TEMPLATE_V0",
+    "archetypeId": "common.app_session.v1",
+    "traceIds": [],
+    "sampleCount": 0,
+    "dryRunStatus": "PASSED",
+    "testRuns": 0,
+    "successRate": 0,
+    "promotionStatus": "NOT_PROMOTED",
+    "createdAt": 1779237769496,
+    "appPatch": {
+      "packageName": "com.netease.cloudmusic",
+      "label": "网易云音乐",
+      "launchable": true,
+      "launchActivity": "com.netease.cloudmusic.activity.IconChangeDefaultAlias",
+      "searchEntryTexts": [
+        "搜索",
+        "搜一搜",
+        "Search"
+      ],
+      "searchSubmitTexts": [
+        "搜索",
+        "确定",
+        "Search"
+      ],
+      "searchEntryCoordinate": {
+        "x": 0.5,
+        "y": 0.08
+      },
+      "searchSubmitCoordinate": {
+        "x": 0.9,
+        "y": 0.08
+      },
+      "postDraftEntryTexts": [
+        "+",
+        "写微博",
+        "发微博",
+        "发帖",
+        "创作",
+        "写帖子",
+        "发动态",
+        "说点什么"
+      ],
+      "postDraftEntryCoordinate": {
+        "x": 0.9,
+        "y": 0.9
+      }
+    },
+    "lastDryRunReport": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_dry_run_reports\/com.netease.cloudmusic\/com.netease.cloudmusic.recover_to_foreground_1779339592150.json",
+    "lastDryRunAt": 1779339592151
+  },
+  "capabilityRequired": {
+    "minLevel": "D",
+    "inputRequired": false,
+    "nodeReadablePreferred": false,
+    "coordinateFallbackAllowed": false,
+    "allowedInputChannels": [],
+    "verificationRequired": "LOW"
+  },
+  "action": {
+    "type": "OpenApp",
+    "packageName": "com.netease.cloudmusic",
+    "timeoutMs": 3000
+  },
+  "verify": {
+    "type": "ForegroundPackage",
+    "packageName": "com.netease.cloudmusic",
+    "timeoutMs": 3000,
+    "allowUnverifiedWhenAccessibilityDisconnected": true
+  },
+  "resultPolicy": {
+    "recovered": "SUCCESS",
+    "launchIntentSentOnly": "SUCCESS_LOW_CONFIDENCE",
+    "failed": "FAILED_RECOVER_SCREEN"
+  }
+}

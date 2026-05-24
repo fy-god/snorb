@@ -1,0 +1,55 @@
+{
+  "schemaVersion": 1,
+  "kind": "skill_json_ai_follow_up_run_report",
+  "id": "ai_follow_up_run_1778527465336",
+  "skillId": "direct.command.1778527460162",
+  "failedSkillId": "bilibili.search.search_in_app",
+  "appPackage": "tv.danmaku.bili",
+  "instruction": "打开哔哩哔哩搜索王老菊打开第一个视频",
+  "engine": "ai_runtime_checkpoint",
+  "phase": "CHECKPOINT",
+  "trigger": "COMPLEX_TASK_CHECKPOINT",
+  "previousStatus": "SUCCESS_LOW_CONFIDENCE",
+  "previousMessage": "Macro atoms completed; reactiveDismissed=12",
+  "previousRuntimeReportFile": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/runtime\/run_reports\/tv.danmaku.bili\/ai_direct_run_1778527429147.json",
+  "aiJobFile": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ai_jobs\/2026-05-12\/factory_ai_checkpoint_1778527460135.json",
+  "decision": {
+    "goalCompleted": false,
+    "screenAssessment": "当前页面是UP主「郑郑得证」的空间页，包含投稿、视频、图文等标签，无搜索框或搜索结果列表。",
+    "failureDiagnosis": "搜索操作后可能误点了搜索结果中的UP主头像，进入了空间页，未打开第一个视频。",
+    "confidence": "MEDIUM",
+    "nextActionReason": "尝试通过返回键回到之前的搜索结果页，然后才能点击第一个视频。"
+  },
+  "approvedRequired": false,
+  "status": "SUCCESS_MEDIUM_CONFIDENCE",
+  "message": "Macro atoms completed; reactiveDismissed=6",
+  "durationMs": 5118,
+  "usedCoordinate": true,
+  "details": {
+    "macroSkillId": "direct.command.1778527460162",
+    "atomTrace": [
+      {
+        "index": 0,
+        "skillId": "direct.1778527460162.1.back",
+        "actionType": "Back",
+        "status": "SUCCESS_MEDIUM_CONFIDENCE",
+        "message": "Window\/node state changed; reactiveDismissedBeforeAction=2",
+        "usedCoordinate": true,
+        "details": null
+      },
+      {
+        "index": 1,
+        "skillId": "direct.1778527460162.2.wait",
+        "actionType": "Wait",
+        "status": "SUCCESS_MEDIUM_CONFIDENCE",
+        "message": "Waited 800ms; reactiveDismissed=1",
+        "usedCoordinate": false,
+        "details": null
+      }
+    ],
+    "reactiveDismissed": 6
+  },
+  "allowSideEffect": true,
+  "skillFile": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_candidates\/tv.danmaku.bili\/direct.command.1778527460162.json",
+  "createdAt": 1778527465336
+}

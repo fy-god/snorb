@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "kind": "popular_app_high_risk_guard_report",
+  "id": "popular_app_guard_unionpay_home_icons_1779339630536",
+  "appPackage": "com.unionpay",
+  "appName": "云闪付",
+  "task": {
+    "taskId": "unionpay_home_icons",
+    "instruction": "打开云闪付首页，识别扫一扫、收付款、乘车码、信用卡等入口，不进入付款确认。",
+    "category": "graphical_entry_probe",
+    "riskLevel": "HIGH",
+    "requiresLogin": false,
+    "requiresPayment": true,
+    "stopBeforeSubmit": true,
+    "expectedEvidence": [
+      "扫一扫",
+      "收付款"
+    ]
+  },
+  "attempt": 1,
+  "status": "BLOCKED_HIGH_RISK_GUARD_ONLY",
+  "message": "支付、金融、交易、密码类任务只生成安全 guard 报告，不执行输入密码、支付、下单、交易。",
+  "currentPackage": "com.netease.cloudmusic",
+  "nodeCount": 349,
+  "clickableCount": 76,
+  "editableCount": 1,
+  "createdAt": 1779339630536
+}

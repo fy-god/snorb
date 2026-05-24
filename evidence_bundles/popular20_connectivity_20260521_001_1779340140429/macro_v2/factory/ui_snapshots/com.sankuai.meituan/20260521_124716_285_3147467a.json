@@ -1,0 +1,1200 @@
+{
+  "schemaVersion": 1,
+  "kind": "ui_state_snapshot",
+  "id": "ui_snapshot_1779338836865",
+  "source": "current_ui_summary",
+  "note": "factory_ai_context",
+  "screenshotPath": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_screenshots\/com.sankuai.meituan\/20260521_124716_285_3147467a.png",
+  "screenshotSha256": "dacc7dacf87519faa3a186a1de5b808db17298b89034384e2a45145da5b73bf0",
+  "visualHash": "f77436f8866502690f50f8fafa89bd12e1df2e16ac83b43cf50b72e01fbf228a",
+  "screenshotSizeBytes": 603728,
+  "appPackage": "com.sankuai.meituan",
+  "windowClassName": "android.view.View",
+  "screenKey": "3147467a",
+  "relatedSkillId": null,
+  "relatedActionType": null,
+  "capability": {
+    "nodeReadability": "A",
+    "inputCapability": "CUSTOM_IME",
+    "verificationCapability": "HIGH",
+    "coordinateFallback": "AVAILABLE",
+    "serviceState": "CONNECTED",
+    "reason": "nodes=58, textLike=36, clickable=2, editable=0, scrollable=1, customIme=true"
+  },
+  "state": {
+    "appPackage": "com.sankuai.meituan",
+    "windowClassName": "android.view.View",
+    "screenWidth": 1440,
+    "screenHeight": 3168,
+    "timestamp": 1779338836285,
+    "nodeCount": 58,
+    "nodesStored": 45,
+    "nodesStorage": "compact_important_nodes_only",
+    "nodes": [
+      {
+        "nodeId": "10_11_0_160_1440_3104",
+        "packageName": "com.sankuai.meituan",
+        "text": "美团付款码",
+        "contentDesc": null,
+        "resourceId": null,
+        "className": "android.webkit.WebView",
+        "bounds": {
+          "left": 0,
+          "top": 160,
+          "right": 1440,
+          "bottom": 3104
+        },
+        "clickable": false,
+        "editable": false,
+        "scrollable": true,
+        "focused": true,
+        "enabled": true,
+        "selected": false,
+        "depth": 10,
+        "parentRoleHint": "android.webkit.WebView"
+      },
+      {
+        "nodeId": "14_54_256_3104_792_3104",
+        "packageName": "com.sankuai.meituan",
+        "text": "《付款用户服务协议》",
+        "contentDesc": null,
+        "resourceId": null,
+        "className": "android.widget.TextView",
+        "bounds": {
+          "left": 256,
+          "top": 3104,
+          "right": 792,
+          "bottom": 3104
+        },
+        "clickable": true,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 14,
+        "parentRoleHint": "android.view.View"
+      },
+      {
+        "nodeId": "13_18_136_612_1304_872",
+        "packageName": "com.sankuai.meituan",
+        "text": "打开“付款码”后，用户向商家展示二维码\/一维码，商家使用扫描枪或摄像头，快速扫描用户的二维码\/一维码即可完成交易。",
+        "contentDesc": null,
+        "resourceId": null,
+        "className": "android.widget.TextView",
+        "bounds": {
+          "left": 136,
+          "top": 612,
+          "right": 1304,
+          "bottom": 872
+        },
+        "clickable": false,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 13,
+        "parentRoleHint": "android.view.View"
+      },
+      {
+        "nodeId": "13_21_136_1132_1304_2080",
+        "packageName": "com.sankuai.meituan",
+        "text": "1.限额管理：开通美团支付付款码服务后，单笔付款金额不足1000元（非大陆地区商户3000元）的交易，无需验证支付密码或其他交易指令验证要素，超额需要验证支付密码。 ​同时会结合支付业务场景、交易风险控制、所在地区等因素调整用户的免密交易额度。 具体支持本服务的商家以及额度请以用户实际消费所在商家所支持的为准。 已设置免密金额，将按照你设置的金额为准，当付款金额高于免密金额，需验证身份完成后付款。",
+        "contentDesc": null,
+        "resourceId": null,
+        "className": "android.widget.TextView",
+        "bounds": {
+          "left": 136,
+          "top": 1132,
+          "right": 1304,
+          "bottom": 2080
+        },
+        "clickable": false,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 13,
+        "parentRoleHint": "android.view.View"
+      },
+      {
+        "nodeId": "12_13_44_200_132_288",
+        "packageName": "com.sankuai.meituan",
+        "text": null,
+        "contentDesc": null,
+        "resourceId": null,
+        "className": "android.widget.Button",
+        "bounds": {
+          "left": 44,
+          "top": 200,
+          "right": 132,
+          "bottom": 288
+        },
+        "clickable": true,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 12,
+        "parentRoleHint": "android.view.View"
+      },
+      {
+        "nodeId": "15_49_220_3104_1292_3104",
+        "packageName": "com.sankuai.meituan",
+        "text": "用户在首次使用付款码服务时手机需要联网；此后使用付款码服务可以无需联网，用户通过展示二维码 \/ 一维码完成交易，用户在手机处于联网状态时可在客户端查询交易信息。",
+        "contentDesc": null,
+        "resourceId": null,
+        "className": "android.widget.TextView",
+        "bounds": {
+          "left": 220,
+          "top": 3104,
+          "right": 1292,
+          "bottom": 3104
+        },
+        "clickable": false,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 15,
+        "parentRoleHint": "android.view.View"
+      },
+      {
+        "nodeId": "1_56_0_0_1440_160",
+        "packageName": "com.sankuai.meituan",
+        "text": null,
+        "contentDesc": null,
+        "resourceId": "android:id\/statusBarBackground",
+        "className": "android.view.View",
+        "bounds": {
+          "left": 0,
+          "top": 0,
+          "right": 1440,
+          "bottom": 160
+        },
+        "clickable": false,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 1,
+        "parentRoleHint": "android.widget.FrameLayout"
+      },
+      {
+        "nodeId": "3_3_0_160_1440_3104",
+        "packageName": "com.sankuai.meituan",
+        "text": null,
+        "contentDesc": null,
+        "resourceId": "com.sankuai.meituan:id\/decor_content_parent",
+        "className": "android.view.ViewGroup",
+        "bounds": {
+          "left": 0,
+          "top": 160,
+          "right": 1440,
+          "bottom": 3104
+        },
+        "clickable": false,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 3,
+        "parentRoleHint": "android.widget.FrameLayout"
+      },
+      {
+        "nodeId": "4_5_0_160_1440_3104",
+        "packageName": "com.sankuai.meituan",
+        "text": null,
+        "contentDesc": null,
+        "resourceId": "android:id\/content",
+        "className": "android.widget.FrameLayout",
+        "bounds": {
+          "left": 0,
+          "top": 160,
+          "right": 1440,
+          "bottom": 3104
+        },
+        "clickable": false,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 4,
+        "parentRoleHint": "android.view.ViewGroup"
+      },
+      {
+        "nodeId": "5_6_0_160_1440_3104",
+        "packageName": "com.sankuai.meituan",
+        "text": null,
+        "contentDesc": null,
+        "resourceId": "com.sankuai.meituan:id\/content",
+        "className": "android.widget.FrameLayout",
+        "bounds": {
+          "left": 0,
+          "top": 160,
+          "right": 1440,
+          "bottom": 3104
+        },
+        "clickable": false,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 5,
+        "parentRoleHint": "android.widget.FrameLayout"
+      },
+      {
+        "nodeId": "7_8_0_160_1440_3104",
+        "packageName": "com.sankuai.meituan",
+        "text": null,
+        "contentDesc": null,
+        "resourceId": "com.sankuai.meituan:id\/lay_web_parent",
+        "className": "android.widget.LinearLayout",
+        "bounds": {
+          "left": 0,
+          "top": 160,
+          "right": 1440,
+          "bottom": 3104
+        },
+        "clickable": false,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 7,
+        "parentRoleHint": "android.widget.FrameLayout"
+      },
+      {
+        "nodeId": "8_9_0_160_1440_3104",
+        "packageName": "com.sankuai.meituan",
+        "text": null,
+        "contentDesc": null,
+        "resourceId": "com.sankuai.meituan:id\/mil_container",
+        "className": "android.view.ViewGroup",
+        "bounds": {
+          "left": 0,
+          "top": 160,
+          "right": 1440,
+          "bottom": 3104
+        },
+        "clickable": false,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 8,
+        "parentRoleHint": "android.widget.LinearLayout"
+      },
+      {
+        "nodeId": "9_55_0_160_1440_172",
+        "packageName": "com.sankuai.meituan",
+        "text": null,
+        "contentDesc": null,
+        "resourceId": "com.sankuai.meituan:id\/iv_titleshadow",
+        "className": "android.widget.ImageView",
+        "bounds": {
+          "left": 0,
+          "top": 160,
+          "right": 1440,
+          "bottom": 172
+        },
+        "clickable": false,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 9,
+        "parentRoleHint": "android.view.ViewGroup"
+      },
+      {
+        "nodeId": "12_14_588_196_852_292",
+        "packageName": "com.sankuai.meituan",
+        "text": "使用说明",
+        "contentDesc": null,
+        "resourceId": null,
+        "className": "android.widget.TextView",
+        "bounds": {
+          "left": 588,
+          "top": 196,
+          "right": 852,
+          "bottom": 292
+        },
+        "clickable": false,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 12,
+        "parentRoleHint": "android.view.View"
+      },
+      {
+        "nodeId": "11_15_44_380_1396_3104",
+        "packageName": "com.sankuai.meituan",
+        "text": "使用说明详情",
+        "contentDesc": null,
+        "resourceId": null,
+        "className": "android.view.View",
+        "bounds": {
+          "left": 44,
+          "top": 380,
+          "right": 1396,
+          "bottom": 3104
+        },
+        "clickable": false,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 11,
+        "parentRoleHint": "android.webkit.WebView"
+      },
+      {
+        "nodeId": "13_17_136_472_1304_576",
+        "packageName": "com.sankuai.meituan",
+        "text": "如何使用付款",
+        "contentDesc": null,
+        "resourceId": null,
+        "className": "android.widget.TextView",
+        "bounds": {
+          "left": 136,
+          "top": 472,
+          "right": 1304,
+          "bottom": 576
+        },
+        "clickable": false,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 13,
+        "parentRoleHint": "android.view.View"
+      },
+      {
+        "nodeId": "13_20_136_992_1304_1096",
+        "packageName": "com.sankuai.meituan",
+        "text": "功能说明",
+        "contentDesc": null,
+        "resourceId": null,
+        "className": "android.widget.TextView",
+        "bounds": {
+          "left": 136,
+          "top": 992,
+          "right": 1304,
+          "bottom": 1096
+        },
+        "clickable": false,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 13,
+        "parentRoleHint": "android.view.View"
+      },
+      {
+        "nodeId": "13_22_136_2124_1304_2644",
+        "packageName": "com.sankuai.meituan",
+        "text": "2. 营销活动说明：付款码下方将智能推荐可能适用的支付优惠券，页面展示的推荐信息为预估可用范围。 实际使用条件及抵扣金额受到订单生成时间、支付金额、商户限制及优惠券规则的影响，最终结果请以支付页面显示为准。",
+        "contentDesc": null,
+        "resourceId": null,
+        "className": "android.widget.TextView",
+        "bounds": {
+          "left": 136,
+          "top": 2124,
+          "right": 1304,
+          "bottom": 2644
+        },
+        "clickable": false,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 13,
+        "parentRoleHint": "android.view.View"
+      },
+      {
+        "nodeId": "13_24_136_2760_1304_2864",
+        "packageName": "com.sankuai.meituan",
+        "text": "付款安全",
+        "contentDesc": null,
+        "resourceId": null,
+        "className": "android.widget.TextView",
+        "bounds": {
+          "left": 136,
+          "top": 2760,
+          "right": 1304,
+          "bottom": 2864
+        },
+        "clickable": false,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 13,
+        "parentRoleHint": "android.view.View"
+      },
+      {
+        "nodeId": "15_27_140_2900_208_2988",
+        "packageName": "com.sankuai.meituan",
+        "text": "1.",
+        "contentDesc": null,
+        "resourceId": null,
+        "className": "android.view.View",
+        "bounds": {
+          "left": 140,
+          "top": 2900,
+          "right": 208,
+          "bottom": 2988
+        },
+        "clickable": false,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 15,
+        "parentRoleHint": "android.view.View"
+      },
+      {
+        "nodeId": "15_28_220_2912_1292_3064",
+        "packageName": "com.sankuai.meituan",
+        "text": "用户在使用付款码时请仔细与商家确认交易内容及金额后再进行支付；",
+        "contentDesc": null,
+        "resourceId": null,
+        "className": "android.widget.TextView",
+        "bounds": {
+          "left": 220,
+          "top": 2912,
+          "right": 1292,
+          "bottom": 3064
+        },
+        "clickable": false,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 15,
+        "parentRoleHint": "android.view.View"
+      },
+      {
+        "nodeId": "1_57_0_3104_1440_3168",
+        "packageName": "com.sankuai.meituan",
+        "text": null,
+        "contentDesc": null,
+        "resourceId": "android:id\/navigationBarBackground",
+        "className": "android.view.View",
+        "bounds": {
+          "left": 0,
+          "top": 3104,
+          "right": 1440,
+          "bottom": 3168
+        },
+        "clickable": false,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 1,
+        "parentRoleHint": "android.widget.FrameLayout"
+      },
+      {
+        "nodeId": "13_51_136_3104_1304_3104",
+        "packageName": "com.sankuai.meituan",
+        "text": "用户条款",
+        "contentDesc": null,
+        "resourceId": null,
+        "className": "android.widget.TextView",
+        "bounds": {
+          "left": 136,
+          "top": 3104,
+          "right": 1304,
+          "bottom": 3104
+        },
+        "clickable": false,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 13,
+        "parentRoleHint": "android.view.View"
+      },
+      {
+        "nodeId": "14_53_136_3104_260_3104",
+        "packageName": "com.sankuai.meituan",
+        "text": "查看",
+        "contentDesc": null,
+        "resourceId": null,
+        "className": "android.widget.TextView",
+        "bounds": {
+          "left": 136,
+          "top": 3104,
+          "right": 260,
+          "bottom": 3104
+        },
+        "clickable": false,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 14,
+        "parentRoleHint": "android.view.View"
+      },
+      {
+        "nodeId": "15_30_140_3104_208_3104",
+        "packageName": "com.sankuai.meituan",
+        "text": "2.",
+        "contentDesc": null,
+        "resourceId": null,
+        "className": "android.view.View",
+        "bounds": {
+          "left": 140,
+          "top": 3104,
+          "right": 208,
+          "bottom": 3104
+        },
+        "clickable": false,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 15,
+        "parentRoleHint": "android.view.View"
+      },
+      {
+        "nodeId": "15_33_140_3104_208_3104",
+        "packageName": "com.sankuai.meituan",
+        "text": "3.",
+        "contentDesc": null,
+        "resourceId": null,
+        "className": "android.view.View",
+        "bounds": {
+          "left": 140,
+          "top": 3104,
+          "right": 208,
+          "bottom": 3104
+        },
+        "clickable": false,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 15,
+        "parentRoleHint": "android.view.View"
+      },
+      {
+        "nodeId": "15_36_140_3104_208_3104",
+        "packageName": "com.sankuai.meituan",
+        "text": "4.",
+        "contentDesc": null,
+        "resourceId": null,
+        "className": "android.view.View",
+        "bounds": {
+          "left": 140,
+          "top": 3104,
+          "right": 208,
+          "bottom": 3104
+        },
+        "clickable": false,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 15,
+        "parentRoleHint": "android.view.View"
+      },
+      {
+        "nodeId": "15_39_140_3104_208_3104",
+        "packageName": "com.sankuai.meituan",
+        "text": "5.",
+        "contentDesc": null,
+        "resourceId": null,
+        "className": "android.view.View",
+        "bounds": {
+          "left": 140,
+          "top": 3104,
+          "right": 208,
+          "bottom": 3104
+        },
+        "clickable": false,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 15,
+        "parentRoleHint": "android.view.View"
+      },
+      {
+        "nodeId": "15_42_140_3104_208_3104",
+        "packageName": "com.sankuai.meituan",
+        "text": "6.",
+        "contentDesc": null,
+        "resourceId": null,
+        "className": "android.view.View",
+        "bounds": {
+          "left": 140,
+          "top": 3104,
+          "right": 208,
+          "bottom": 3104
+        },
+        "clickable": false,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 15,
+        "parentRoleHint": "android.view.View"
+      },
+      {
+        "nodeId": "15_45_140_3104_208_3104",
+        "packageName": "com.sankuai.meituan",
+        "text": "7.",
+        "contentDesc": null,
+        "resourceId": null,
+        "className": "android.view.View",
+        "bounds": {
+          "left": 140,
+          "top": 3104,
+          "right": 208,
+          "bottom": 3104
+        },
+        "clickable": false,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 15,
+        "parentRoleHint": "android.view.View"
+      },
+      {
+        "nodeId": "15_48_140_3104_208_3104",
+        "packageName": "com.sankuai.meituan",
+        "text": "8.",
+        "contentDesc": null,
+        "resourceId": null,
+        "className": "android.view.View",
+        "bounds": {
+          "left": 140,
+          "top": 3104,
+          "right": 208,
+          "bottom": 3104
+        },
+        "clickable": false,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 15,
+        "parentRoleHint": "android.view.View"
+      },
+      {
+        "nodeId": "15_31_220_3104_1284_3104",
+        "packageName": "com.sankuai.meituan",
+        "text": "为保证资金安全，二维码 \/ 一维码具有时效性且一次有效；",
+        "contentDesc": null,
+        "resourceId": null,
+        "className": "android.widget.TextView",
+        "bounds": {
+          "left": 220,
+          "top": 3104,
+          "right": 1284,
+          "bottom": 3104
+        },
+        "clickable": false,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 15,
+        "parentRoleHint": "android.view.View"
+      },
+      {
+        "nodeId": "15_34_220_3104_1292_3104",
+        "packageName": "com.sankuai.meituan",
+        "text": "请勿通过其他途径对外提供付款条码（二维码、一维码）信息（包括付款条码（二维码、一维码）的图像信息和数字信息）；",
+        "contentDesc": null,
+        "resourceId": null,
+        "className": "android.widget.TextView",
+        "bounds": {
+          "left": 220,
+          "top": 3104,
+          "right": 1292,
+          "bottom": 3104
+        },
+        "clickable": false,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 15,
+        "parentRoleHint": "android.view.View"
+      },
+      {
+        "nodeId": "15_37_220_3104_1280_3104",
+        "packageName": "com.sankuai.meituan",
+        "text": "每个用户只能对一台手机开通“付款码”功能；",
+        "contentDesc": null,
+        "resourceId": null,
+        "className": "android.widget.TextView",
+        "bounds": {
+          "left": 220,
+          "top": 3104,
+          "right": 1280,
+          "bottom": 3104
+        },
+        "clickable": false,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 15,
+        "parentRoleHint": "android.view.View"
+      },
+      {
+        "nodeId": "15_40_220_3104_1132_3104",
+        "packageName": "com.sankuai.meituan",
+        "text": "如更换设备登录，需要验证支付密码；",
+        "contentDesc": null,
+        "resourceId": null,
+        "className": "android.widget.TextView",
+        "bounds": {
+          "left": 220,
+          "top": 3104,
+          "right": 1132,
+          "bottom": 3104
+        },
+        "clickable": false,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 15,
+        "parentRoleHint": "android.view.View"
+      },
+      {
+        "nodeId": "15_43_220_3104_1024_3104",
+        "packageName": "com.sankuai.meituan",
+        "text": "安全系统会对可疑交易进行拦截；",
+        "contentDesc": null,
+        "resourceId": null,
+        "className": "android.widget.TextView",
+        "bounds": {
+          "left": 220,
+          "top": 3104,
+          "right": 1024,
+          "bottom": 3104
+        },
+        "clickable": false,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 15,
+        "parentRoleHint": "android.view.View"
+      },
+      {
+        "nodeId": "15_46_220_3104_1292_3104",
+        "packageName": "com.sankuai.meituan",
+        "text": "对于有异常行为的用户，付款时可能需要验证支付密码；",
+        "contentDesc": null,
+        "resourceId": null,
+        "className": "android.widget.TextView",
+        "bounds": {
+          "left": 220,
+          "top": 3104,
+          "right": 1292,
+          "bottom": 3104
+        },
+        "clickable": false,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 15,
+        "parentRoleHint": "android.view.View"
+      },
+      {
+        "nodeId": "0_0_0_0_1440_3168",
+        "packageName": "com.sankuai.meituan",
+        "text": null,
+        "contentDesc": null,
+        "resourceId": null,
+        "className": "android.widget.FrameLayout",
+        "bounds": {
+          "left": 0,
+          "top": 0,
+          "right": 1440,
+          "bottom": 3168
+        },
+        "clickable": false,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 0,
+        "parentRoleHint": null
+      },
+      {
+        "nodeId": "1_1_0_0_1440_3104",
+        "packageName": "com.sankuai.meituan",
+        "text": null,
+        "contentDesc": null,
+        "resourceId": null,
+        "className": "android.widget.LinearLayout",
+        "bounds": {
+          "left": 0,
+          "top": 0,
+          "right": 1440,
+          "bottom": 3104
+        },
+        "clickable": false,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 1,
+        "parentRoleHint": "android.widget.FrameLayout"
+      },
+      {
+        "nodeId": "2_2_0_160_1440_3104",
+        "packageName": "com.sankuai.meituan",
+        "text": null,
+        "contentDesc": null,
+        "resourceId": null,
+        "className": "android.widget.FrameLayout",
+        "bounds": {
+          "left": 0,
+          "top": 160,
+          "right": 1440,
+          "bottom": 3104
+        },
+        "clickable": false,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 2,
+        "parentRoleHint": "android.widget.LinearLayout"
+      },
+      {
+        "nodeId": "6_7_0_160_1440_3104",
+        "packageName": "com.sankuai.meituan",
+        "text": null,
+        "contentDesc": null,
+        "resourceId": null,
+        "className": "android.widget.FrameLayout",
+        "bounds": {
+          "left": 0,
+          "top": 160,
+          "right": 1440,
+          "bottom": 3104
+        },
+        "clickable": false,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 6,
+        "parentRoleHint": "android.widget.FrameLayout"
+      },
+      {
+        "nodeId": "9_10_0_160_1440_3104",
+        "packageName": "com.sankuai.meituan",
+        "text": null,
+        "contentDesc": null,
+        "resourceId": null,
+        "className": "android.webkit.WebView",
+        "bounds": {
+          "left": 0,
+          "top": 160,
+          "right": 1440,
+          "bottom": 3104
+        },
+        "clickable": false,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 9,
+        "parentRoleHint": "android.view.ViewGroup"
+      },
+      {
+        "nodeId": "11_12_0_160_1440_332",
+        "packageName": "com.sankuai.meituan",
+        "text": null,
+        "contentDesc": null,
+        "resourceId": null,
+        "className": "android.view.View",
+        "bounds": {
+          "left": 0,
+          "top": 160,
+          "right": 1440,
+          "bottom": 332
+        },
+        "clickable": false,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 11,
+        "parentRoleHint": "android.webkit.WebView"
+      },
+      {
+        "nodeId": "12_16_136_472_1304_872",
+        "packageName": "com.sankuai.meituan",
+        "text": null,
+        "contentDesc": null,
+        "resourceId": null,
+        "className": "android.view.View",
+        "bounds": {
+          "left": 136,
+          "top": 472,
+          "right": 1304,
+          "bottom": 872
+        },
+        "clickable": false,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 12,
+        "parentRoleHint": "android.view.View"
+      },
+      {
+        "nodeId": "12_19_136_992_1304_2644",
+        "packageName": "com.sankuai.meituan",
+        "text": null,
+        "contentDesc": null,
+        "resourceId": null,
+        "className": "android.view.View",
+        "bounds": {
+          "left": 136,
+          "top": 992,
+          "right": 1304,
+          "bottom": 2644
+        },
+        "clickable": false,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 12,
+        "parentRoleHint": "android.view.View"
+      }
+    ],
+    "eventsSinceLastState": []
+  },
+  "summary": {
+    "nodeCount": 58,
+    "clickableCount": 2,
+    "editableCount": 0,
+    "scrollableCount": 1,
+    "labels": [
+      "com.sankuai.meituan:id\/decor_content_parent",
+      "android:id\/content",
+      "com.sankuai.meituan:id\/content",
+      "com.sankuai.meituan:id\/lay_web_parent",
+      "com.sankuai.meituan:id\/mil_container",
+      "美团付款码",
+      "使用说明",
+      "使用说明详情",
+      "如何使用付款",
+      "打开“付款码”后，用户向商家展示二维码\/一维码，商家使用扫描枪或摄像头，快速扫描用户的二维码\/一维码即可完成交易。",
+      "功能说明",
+      "1.限额管理：开通美团支付付款码服务后，单笔付款金额不足1000元（非大陆地区商户3000元）的交易，无需验证支付密码或其他交易指令验证要素，超额需要验证支付密码。 ​同时会结合支付业务场景、交易风险控制、所在地区等因素调整用户的免密交易额度。 具体支持本服务的商家以及额度请以用户实际消费所在商家所支持的为准。 已设置免密金额，将按照你设置的金额为准，当付款金额高于免密金额，需验证身份完成后付款。",
+      "2. 营销活动说明：付款码下方将智能推荐可能适用的支付优惠券，页面展示的推荐信息为预估可用范围。 实际使用条件及抵扣金额受到订单生成时间、支付金额、商户限制及优惠券规则的影响，最终结果请以支付页面显示为准。",
+      "付款安全",
+      "1.",
+      "用户在使用付款码时请仔细与商家确认交易内容及金额后再进行支付；",
+      "2.",
+      "为保证资金安全，二维码 \/ 一维码具有时效性且一次有效；",
+      "3.",
+      "请勿通过其他途径对外提供付款条码（二维码、一维码）信息（包括付款条码（二维码、一维码）的图像信息和数字信息）；",
+      "4.",
+      "每个用户只能对一台手机开通“付款码”功能；",
+      "5.",
+      "如更换设备登录，需要验证支付密码；",
+      "6.",
+      "安全系统会对可疑交易进行拦截；",
+      "7.",
+      "对于有异常行为的用户，付款时可能需要验证支付密码；",
+      "8.",
+      "用户在首次使用付款码服务时手机需要联网；此后使用付款码服务可以无需联网，用户通过展示二维码 \/ 一维码完成交易，用户在手机处于联网状态时可在客户端查询交易信息。",
+      "用户条款",
+      "查看",
+      "《付款用户服务协议》",
+      "com.sankuai.meituan:id\/iv_titleshadow",
+      "android:id\/statusBarBackground",
+      "android:id\/navigationBarBackground"
+    ],
+    "bottomCandidates": [
+      {
+        "label": "1.",
+        "bounds": {
+          "left": 140,
+          "top": 2900,
+          "right": 208,
+          "bottom": 2988
+        },
+        "clickable": false
+      },
+      {
+        "label": "2.",
+        "bounds": {
+          "left": 140,
+          "top": 3104,
+          "right": 208,
+          "bottom": 3104
+        },
+        "clickable": false
+      },
+      {
+        "label": "3.",
+        "bounds": {
+          "left": 140,
+          "top": 3104,
+          "right": 208,
+          "bottom": 3104
+        },
+        "clickable": false
+      },
+      {
+        "label": "4.",
+        "bounds": {
+          "left": 140,
+          "top": 3104,
+          "right": 208,
+          "bottom": 3104
+        },
+        "clickable": false
+      },
+      {
+        "label": "5.",
+        "bounds": {
+          "left": 140,
+          "top": 3104,
+          "right": 208,
+          "bottom": 3104
+        },
+        "clickable": false
+      },
+      {
+        "label": "6.",
+        "bounds": {
+          "left": 140,
+          "top": 3104,
+          "right": 208,
+          "bottom": 3104
+        },
+        "clickable": false
+      },
+      {
+        "label": "7.",
+        "bounds": {
+          "left": 140,
+          "top": 3104,
+          "right": 208,
+          "bottom": 3104
+        },
+        "clickable": false
+      },
+      {
+        "label": "8.",
+        "bounds": {
+          "left": 140,
+          "top": 3104,
+          "right": 208,
+          "bottom": 3104
+        },
+        "clickable": false
+      },
+      {
+        "label": "查看",
+        "bounds": {
+          "left": 136,
+          "top": 3104,
+          "right": 260,
+          "bottom": 3104
+        },
+        "clickable": false
+      },
+      {
+        "label": "《付款用户服务协议》",
+        "bounds": {
+          "left": 256,
+          "top": 3104,
+          "right": 792,
+          "bottom": 3104
+        },
+        "clickable": true
+      },
+      {
+        "label": "安全系统会对可疑交易进行拦截；",
+        "bounds": {
+          "left": 220,
+          "top": 3104,
+          "right": 1024,
+          "bottom": 3104
+        },
+        "clickable": false
+      },
+      {
+        "label": "如更换设备登录，需要验证支付密码；",
+        "bounds": {
+          "left": 220,
+          "top": 3104,
+          "right": 1132,
+          "bottom": 3104
+        },
+        "clickable": false
+      }
+    ]
+  },
+  "retentionPolicy": {
+    "fullNodeTreeStored": false,
+    "storedNodeLimit": 45,
+    "storedEventLimit": 20,
+    "longTermKnowledge": "summary + app_ui_graph + assembly\/runtime reports"
+  },
+  "createdAt": 1779338836867
+}

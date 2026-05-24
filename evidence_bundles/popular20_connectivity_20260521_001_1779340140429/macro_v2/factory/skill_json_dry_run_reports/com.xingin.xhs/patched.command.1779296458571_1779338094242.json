@@ -1,0 +1,16 @@
+{
+  "schemaVersion": 1,
+  "kind": "skill_json_dry_run_report",
+  "skillId": "patched.command.1779296458571",
+  "appPackage": "com.xingin.xhs",
+  "passed": true,
+  "status": "DRY_RUN_PASSED",
+  "errors": [],
+  "warnings": [
+    "macro_atom_0_references_unknown_skill:patched.1779296458571.1.openapp",
+    "macro_atom_1_references_unknown_skill:patched.1779296458571.2.handlereactiveoverlays",
+    "macro_atom_2_references_unknown_skill:patched.1779296458571.3.clickvisibletext"
+  ],
+  "summary": "Skill JSON dry-run passed",
+  "timestamp": 1779338094242
+}

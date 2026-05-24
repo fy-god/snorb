@@ -1,0 +1,688 @@
+{
+  "schemaVersion": 1,
+  "kind": "popular_app_task_batch_service_state",
+  "id": "pdd_catalog_20260522_011551",
+  "requestId": "pdd_catalog_20260522_011551",
+  "status": "CATALOG_ONLY",
+  "message": "20 App 任务批次完成：{\"appCount\":1,\"taskCount\":20,\"executed\":0,\"message\":\"只生成任务目录，未执行手机端任务。\",\"executedAttempts\":0,\"success\":0,\"failed\":0,\"blocked\":0,\"deferred\":0,\"skipped\":20,\"retried\":0,\"decidedTasks\":20,\"attemptedLogicalTasks\":0,\"passRate\":0,\"passRatePct\":0,\"passRateText\":\"0.0%\",\"passRateNumerator\":0,\"passRateDenominator\":20,\"successRate\":0,\"successRatePct\":0,\"successRateText\":\"0.0%\",\"successRateNumerator\":0,\"successRateDenominator\":20,\"failureRate\":0,\"failureRatePct\":0,\"failureRateText\":\"0.0%\",\"failureRateNumerator\":0,\"failureRateDenominator\":20,\"blockedRate\":0,\"blockedRatePct\":0,\"blockedRateText\":\"0.0%\",\"blockedRateNumerator\":0,\"blockedRateDenominator\":20,\"deferredRate\":0,\"deferredRatePct\":0,\"deferredRateText\":\"0.0%\",\"deferredRateNumerator\":0,\"deferredRateDenominator\":20,\"skippedRate\":1,\"skippedRatePct\":100,\"skippedRateText\":\"100.0%\",\"skippedRateNumerator\":20,\"skippedRateDenominator\":20,\"completionRate\":1,\"completionRatePct\":100,\"completionRateText\":\"100.0%\",\"completionRateNumerator\":20,\"completionRateDenominator\":20,\"executablePassRate\":0,\"executablePassRatePct\":0,\"executablePassRateText\":\"0.0%\",\"executablePassRateNumerator\":0,\"executablePassRateDenominator\":0,\"executedAttemptPassRate\":0,\"executedAttemptPassRatePct\":0,\"executedAttemptPassRateText\":\"0.0%\",\"executedAttemptPassRateNumerator\":0,\"executedAttemptPassRateDenominator\":0,\"retryRate\":0,\"retryRatePct\":0,\"retryRateText\":\"0.0%\",\"retryRateNumerator\":0,\"retryRateDenominator\":0}",
+  "requestedPackages": [
+    "com.xunmeng.pinduoduo"
+  ],
+  "progress": {
+    "appCount": 1,
+    "taskCount": 20,
+    "executed": 0,
+    "message": "只生成任务目录，未执行手机端任务。",
+    "executedAttempts": 0,
+    "success": 0,
+    "failed": 0,
+    "blocked": 0,
+    "deferred": 0,
+    "skipped": 20,
+    "retried": 0,
+    "decidedTasks": 20,
+    "attemptedLogicalTasks": 0,
+    "passRate": 0,
+    "passRatePct": 0,
+    "passRateText": "0.0%",
+    "passRateNumerator": 0,
+    "passRateDenominator": 20,
+    "successRate": 0,
+    "successRatePct": 0,
+    "successRateText": "0.0%",
+    "successRateNumerator": 0,
+    "successRateDenominator": 20,
+    "failureRate": 0,
+    "failureRatePct": 0,
+    "failureRateText": "0.0%",
+    "failureRateNumerator": 0,
+    "failureRateDenominator": 20,
+    "blockedRate": 0,
+    "blockedRatePct": 0,
+    "blockedRateText": "0.0%",
+    "blockedRateNumerator": 0,
+    "blockedRateDenominator": 20,
+    "deferredRate": 0,
+    "deferredRatePct": 0,
+    "deferredRateText": "0.0%",
+    "deferredRateNumerator": 0,
+    "deferredRateDenominator": 20,
+    "skippedRate": 1,
+    "skippedRatePct": 100,
+    "skippedRateText": "100.0%",
+    "skippedRateNumerator": 20,
+    "skippedRateDenominator": 20,
+    "completionRate": 1,
+    "completionRatePct": 100,
+    "completionRateText": "100.0%",
+    "completionRateNumerator": 20,
+    "completionRateDenominator": 20,
+    "executablePassRate": 0,
+    "executablePassRatePct": 0,
+    "executablePassRateText": "0.0%",
+    "executablePassRateNumerator": 0,
+    "executablePassRateDenominator": 0,
+    "executedAttemptPassRate": 0,
+    "executedAttemptPassRatePct": 0,
+    "executedAttemptPassRateText": "0.0%",
+    "executedAttemptPassRateNumerator": 0,
+    "executedAttemptPassRateDenominator": 0,
+    "retryRate": 0,
+    "retryRatePct": 0,
+    "retryRateText": "0.0%",
+    "retryRateNumerator": 0,
+    "retryRateDenominator": 0
+  },
+  "payload": {
+    "schemaVersion": 1,
+    "kind": "popular_app_task_batch_report",
+    "id": "pdd_catalog_20260522_011551",
+    "requestId": "pdd_catalog_20260522_011551",
+    "status": "CATALOG_ONLY",
+    "catalogFile": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/flow_reports\/popular_app_tasks\/pdd_catalog_20260522_011551_catalog.json",
+    "summary": {
+      "appCount": 1,
+      "taskCount": 20,
+      "executed": 0,
+      "message": "只生成任务目录，未执行手机端任务。",
+      "executedAttempts": 0,
+      "success": 0,
+      "failed": 0,
+      "blocked": 0,
+      "deferred": 0,
+      "skipped": 20,
+      "retried": 0,
+      "decidedTasks": 20,
+      "attemptedLogicalTasks": 0,
+      "passRate": 0,
+      "passRatePct": 0,
+      "passRateText": "0.0%",
+      "passRateNumerator": 0,
+      "passRateDenominator": 20,
+      "successRate": 0,
+      "successRatePct": 0,
+      "successRateText": "0.0%",
+      "successRateNumerator": 0,
+      "successRateDenominator": 20,
+      "failureRate": 0,
+      "failureRatePct": 0,
+      "failureRateText": "0.0%",
+      "failureRateNumerator": 0,
+      "failureRateDenominator": 20,
+      "blockedRate": 0,
+      "blockedRatePct": 0,
+      "blockedRateText": "0.0%",
+      "blockedRateNumerator": 0,
+      "blockedRateDenominator": 20,
+      "deferredRate": 0,
+      "deferredRatePct": 0,
+      "deferredRateText": "0.0%",
+      "deferredRateNumerator": 0,
+      "deferredRateDenominator": 20,
+      "skippedRate": 1,
+      "skippedRatePct": 100,
+      "skippedRateText": "100.0%",
+      "skippedRateNumerator": 20,
+      "skippedRateDenominator": 20,
+      "completionRate": 1,
+      "completionRatePct": 100,
+      "completionRateText": "100.0%",
+      "completionRateNumerator": 20,
+      "completionRateDenominator": 20,
+      "executablePassRate": 0,
+      "executablePassRatePct": 0,
+      "executablePassRateText": "0.0%",
+      "executablePassRateNumerator": 0,
+      "executablePassRateDenominator": 0,
+      "executedAttemptPassRate": 0,
+      "executedAttemptPassRatePct": 0,
+      "executedAttemptPassRateText": "0.0%",
+      "executedAttemptPassRateNumerator": 0,
+      "executedAttemptPassRateDenominator": 0,
+      "retryRate": 0,
+      "retryRatePct": 0,
+      "retryRateText": "0.0%",
+      "retryRateNumerator": 0,
+      "retryRateDenominator": 0
+    },
+    "apps": [
+      {
+        "packageName": "com.xunmeng.pinduoduo",
+        "resolvedPackage": "com.xunmeng.pinduoduo",
+        "appName": "拼多多",
+        "aliases": [],
+        "installed": true,
+        "launchable": true,
+        "taskCount": 20,
+        "tasks": [
+          {
+            "taskId": "pdd_search_item",
+            "instruction": "在拼多多搜索纸巾，停在结果页并记录筛选、店铺、价格入口。",
+            "category": "search",
+            "riskLevel": "LOW",
+            "requiresLogin": false,
+            "requiresPayment": false,
+            "stopBeforeSubmit": true,
+            "expectedEvidence": [
+              "纸巾",
+              "结果"
+            ]
+          },
+          {
+            "taskId": "pdd_home_icons",
+            "instruction": "打开拼多多首页，识别限时秒杀、多多买菜、充值等图形化入口。",
+            "category": "graphical_entry_probe",
+            "riskLevel": "LOW",
+            "requiresLogin": false,
+            "requiresPayment": false,
+            "stopBeforeSubmit": true,
+            "expectedEvidence": [
+              "首页图标"
+            ]
+          },
+          {
+            "taskId": "pdd_open_item_detail",
+            "instruction": "搜索水杯并打开第一个商品详情，读取拼单、评价、店铺、客服入口，不下单。",
+            "category": "detail_probe",
+            "riskLevel": "LOW",
+            "requiresLogin": false,
+            "requiresPayment": false,
+            "stopBeforeSubmit": true,
+            "expectedEvidence": [
+              "商品详情"
+            ]
+          },
+          {
+            "taskId": "pdd_bottom_tabs",
+            "instruction": "依次打开拼多多底部首页、推荐、搜索、聊天、个人中心等分屏并记录 UI。",
+            "category": "bottom_tab_probe",
+            "riskLevel": "LOW",
+            "requiresLogin": false,
+            "requiresPayment": false,
+            "stopBeforeSubmit": true,
+            "expectedEvidence": [
+              "底部标签"
+            ]
+          },
+          {
+            "taskId": "pdd_category_probe",
+            "instruction": "打开拼多多分类或搜索推荐入口，进入一个分类并记录子页面 UI。",
+            "category": "child_page_probe",
+            "riskLevel": "LOW",
+            "requiresLogin": false,
+            "requiresPayment": false,
+            "stopBeforeSubmit": true,
+            "expectedEvidence": [
+              "分类"
+            ]
+          },
+          {
+            "taskId": "pdd_cart_order_probe",
+            "instruction": "打开拼多多购物车或订单入口，识别结算、待付款按钮，不点击提交或支付。",
+            "category": "cart_probe",
+            "riskLevel": "LOW",
+            "requiresLogin": true,
+            "requiresPayment": false,
+            "stopBeforeSubmit": true,
+            "expectedEvidence": [
+              "订单",
+              "结算"
+            ]
+          },
+          {
+            "taskId": "pdd_mine_probe",
+            "instruction": "打开拼多多个人中心，读取订单、优惠券、收藏、设置入口。",
+            "category": "profile_probe",
+            "riskLevel": "LOW",
+            "requiresLogin": true,
+            "requiresPayment": false,
+            "stopBeforeSubmit": true,
+            "expectedEvidence": [
+              "个人中心"
+            ]
+          },
+          {
+            "taskId": "pdd_top_scan_message",
+            "instruction": "识别拼多多顶部搜索、消息、扫一扫等小图标入口，安全打开后返回。",
+            "category": "top_icon_probe",
+            "riskLevel": "LOW",
+            "requiresLogin": false,
+            "requiresPayment": false,
+            "stopBeforeSubmit": true,
+            "expectedEvidence": [
+              "顶部入口"
+            ]
+          },
+          {
+            "taskId": "pdd_coupon_probe",
+            "instruction": "打开拼多多优惠券或红包入口，读取 UI，不领取需要支付的权益。",
+            "category": "promotion_probe",
+            "riskLevel": "LOW",
+            "requiresLogin": false,
+            "requiresPayment": false,
+            "stopBeforeSubmit": true,
+            "expectedEvidence": [
+              "红包"
+            ]
+          },
+          {
+            "taskId": "pdd_payment_guard",
+            "instruction": "打开拼多多购买流程只到规格选择或确认订单前，不能点击免拼、提交订单或支付。",
+            "category": "safe_payment_probe",
+            "riskLevel": "HIGH",
+            "requiresLogin": true,
+            "requiresPayment": true,
+            "stopBeforeSubmit": true,
+            "expectedEvidence": [
+              "确认订单"
+            ]
+          },
+          {
+            "taskId": "pdd_orchard_water_probe",
+            "instruction": "打开拼多多多多果园或浇水入口，读取水滴、浇水按钮和任务列表，不实际消耗水滴。",
+            "category": "child_page_probe",
+            "riskLevel": "MEDIUM",
+            "requiresLogin": true,
+            "requiresPayment": false,
+            "stopBeforeSubmit": true,
+            "expectedEvidence": [
+              "多多果园",
+              "浇水",
+              "水滴"
+            ]
+          },
+          {
+            "taskId": "pdd_duoduo_farm_probe",
+            "instruction": "打开拼多多多多农场或牧场入口，读取任务、领取奖励和按钮状态，不领取需要支付的权益。",
+            "category": "child_page_probe",
+            "riskLevel": "LOW",
+            "requiresLogin": true,
+            "requiresPayment": false,
+            "stopBeforeSubmit": true,
+            "expectedEvidence": [
+              "农场",
+              "任务"
+            ]
+          },
+          {
+            "taskId": "pdd_coupon_center_probe",
+            "instruction": "打开拼多多红包、优惠券或百亿补贴入口，读取券列表和使用条件，不下单。",
+            "category": "promotion_probe",
+            "riskLevel": "LOW",
+            "requiresLogin": false,
+            "requiresPayment": false,
+            "stopBeforeSubmit": true,
+            "expectedEvidence": [
+              "红包",
+              "优惠券",
+              "百亿补贴"
+            ]
+          },
+          {
+            "taskId": "pdd_group_buy_pre_submit",
+            "instruction": "搜索纸巾并打开商品详情，识别单独购买、拼单、规格选择和确认页入口，不提交订单。",
+            "category": "order_probe",
+            "riskLevel": "MEDIUM",
+            "requiresLogin": true,
+            "requiresPayment": false,
+            "stopBeforeSubmit": true,
+            "expectedEvidence": [
+              "拼单",
+              "规格",
+              "提交订单"
+            ]
+          },
+          {
+            "taskId": "pdd_order_status_probe",
+            "instruction": "打开拼多多个人中心的订单区域，读取待付款、待发货、待收货、售后入口，不查看敏感订单详情。",
+            "category": "order_probe",
+            "riskLevel": "LOW",
+            "requiresLogin": true,
+            "requiresPayment": false,
+            "stopBeforeSubmit": true,
+            "expectedEvidence": [
+              "待付款",
+              "待发货",
+              "售后"
+            ]
+          },
+          {
+            "taskId": "pdd_chat_customer_service",
+            "instruction": "打开拼多多客服或店铺客服入口，识别输入框和快捷问题，不发送消息。",
+            "category": "message_probe",
+            "riskLevel": "LOW",
+            "requiresLogin": true,
+            "requiresPayment": false,
+            "stopBeforeSubmit": true,
+            "expectedEvidence": [
+              "客服",
+              "输入框"
+            ]
+          },
+          {
+            "taskId": "pdd_bargain_activity_probe",
+            "instruction": "打开拼多多砍价、现金大转盘或活动入口，读取按钮和任务列表，不分享不邀请。",
+            "category": "promotion_probe",
+            "riskLevel": "MEDIUM",
+            "requiresLogin": true,
+            "requiresPayment": false,
+            "stopBeforeSubmit": true,
+            "expectedEvidence": [
+              "砍价",
+              "活动",
+              "邀请"
+            ]
+          },
+          {
+            "taskId": "pdd_buy_vegetables_probe",
+            "instruction": "打开多多买菜入口，进入一个分类并记录自提点、商品列表和购物车，不下单。",
+            "category": "shopping_probe",
+            "riskLevel": "LOW",
+            "requiresLogin": false,
+            "requiresPayment": false,
+            "stopBeforeSubmit": true,
+            "expectedEvidence": [
+              "多多买菜",
+              "自提点",
+              "购物车"
+            ]
+          },
+          {
+            "taskId": "pdd_favorite_store_probe",
+            "instruction": "打开商品详情或店铺页，识别收藏店铺、关注、客服入口，不点击关注收藏。",
+            "category": "detail_probe",
+            "riskLevel": "LOW",
+            "requiresLogin": false,
+            "requiresPayment": false,
+            "stopBeforeSubmit": true,
+            "expectedEvidence": [
+              "店铺",
+              "收藏",
+              "关注"
+            ]
+          },
+          {
+            "taskId": "pdd_settings_privacy_probe",
+            "instruction": "打开拼多多设置页，读取账号安全、隐私、免密支付等入口，不修改设置。",
+            "category": "settings_probe",
+            "riskLevel": "LOW",
+            "requiresLogin": true,
+            "requiresPayment": false,
+            "stopBeforeSubmit": true,
+            "expectedEvidence": [
+              "设置",
+              "隐私",
+              "免密支付"
+            ]
+          }
+        ],
+        "label": "拼多多",
+        "selectedTasks": [
+          {
+            "taskId": "pdd_search_item",
+            "instruction": "在拼多多搜索纸巾，停在结果页并记录筛选、店铺、价格入口。",
+            "category": "search",
+            "riskLevel": "LOW",
+            "requiresLogin": false,
+            "requiresPayment": false,
+            "stopBeforeSubmit": true,
+            "expectedEvidence": [
+              "纸巾",
+              "结果"
+            ]
+          },
+          {
+            "taskId": "pdd_home_icons",
+            "instruction": "打开拼多多首页，识别限时秒杀、多多买菜、充值等图形化入口。",
+            "category": "graphical_entry_probe",
+            "riskLevel": "LOW",
+            "requiresLogin": false,
+            "requiresPayment": false,
+            "stopBeforeSubmit": true,
+            "expectedEvidence": [
+              "首页图标"
+            ]
+          },
+          {
+            "taskId": "pdd_open_item_detail",
+            "instruction": "搜索水杯并打开第一个商品详情，读取拼单、评价、店铺、客服入口，不下单。",
+            "category": "detail_probe",
+            "riskLevel": "LOW",
+            "requiresLogin": false,
+            "requiresPayment": false,
+            "stopBeforeSubmit": true,
+            "expectedEvidence": [
+              "商品详情"
+            ]
+          },
+          {
+            "taskId": "pdd_bottom_tabs",
+            "instruction": "依次打开拼多多底部首页、推荐、搜索、聊天、个人中心等分屏并记录 UI。",
+            "category": "bottom_tab_probe",
+            "riskLevel": "LOW",
+            "requiresLogin": false,
+            "requiresPayment": false,
+            "stopBeforeSubmit": true,
+            "expectedEvidence": [
+              "底部标签"
+            ]
+          },
+          {
+            "taskId": "pdd_category_probe",
+            "instruction": "打开拼多多分类或搜索推荐入口，进入一个分类并记录子页面 UI。",
+            "category": "child_page_probe",
+            "riskLevel": "LOW",
+            "requiresLogin": false,
+            "requiresPayment": false,
+            "stopBeforeSubmit": true,
+            "expectedEvidence": [
+              "分类"
+            ]
+          },
+          {
+            "taskId": "pdd_cart_order_probe",
+            "instruction": "打开拼多多购物车或订单入口，识别结算、待付款按钮，不点击提交或支付。",
+            "category": "cart_probe",
+            "riskLevel": "LOW",
+            "requiresLogin": true,
+            "requiresPayment": false,
+            "stopBeforeSubmit": true,
+            "expectedEvidence": [
+              "订单",
+              "结算"
+            ]
+          },
+          {
+            "taskId": "pdd_mine_probe",
+            "instruction": "打开拼多多个人中心，读取订单、优惠券、收藏、设置入口。",
+            "category": "profile_probe",
+            "riskLevel": "LOW",
+            "requiresLogin": true,
+            "requiresPayment": false,
+            "stopBeforeSubmit": true,
+            "expectedEvidence": [
+              "个人中心"
+            ]
+          },
+          {
+            "taskId": "pdd_top_scan_message",
+            "instruction": "识别拼多多顶部搜索、消息、扫一扫等小图标入口，安全打开后返回。",
+            "category": "top_icon_probe",
+            "riskLevel": "LOW",
+            "requiresLogin": false,
+            "requiresPayment": false,
+            "stopBeforeSubmit": true,
+            "expectedEvidence": [
+              "顶部入口"
+            ]
+          },
+          {
+            "taskId": "pdd_coupon_probe",
+            "instruction": "打开拼多多优惠券或红包入口，读取 UI，不领取需要支付的权益。",
+            "category": "promotion_probe",
+            "riskLevel": "LOW",
+            "requiresLogin": false,
+            "requiresPayment": false,
+            "stopBeforeSubmit": true,
+            "expectedEvidence": [
+              "红包"
+            ]
+          },
+          {
+            "taskId": "pdd_payment_guard",
+            "instruction": "打开拼多多购买流程只到规格选择或确认订单前，不能点击免拼、提交订单或支付。",
+            "category": "safe_payment_probe",
+            "riskLevel": "HIGH",
+            "requiresLogin": true,
+            "requiresPayment": true,
+            "stopBeforeSubmit": true,
+            "expectedEvidence": [
+              "确认订单"
+            ]
+          },
+          {
+            "taskId": "pdd_orchard_water_probe",
+            "instruction": "打开拼多多多多果园或浇水入口，读取水滴、浇水按钮和任务列表，不实际消耗水滴。",
+            "category": "child_page_probe",
+            "riskLevel": "MEDIUM",
+            "requiresLogin": true,
+            "requiresPayment": false,
+            "stopBeforeSubmit": true,
+            "expectedEvidence": [
+              "多多果园",
+              "浇水",
+              "水滴"
+            ]
+          },
+          {
+            "taskId": "pdd_duoduo_farm_probe",
+            "instruction": "打开拼多多多多农场或牧场入口，读取任务、领取奖励和按钮状态，不领取需要支付的权益。",
+            "category": "child_page_probe",
+            "riskLevel": "LOW",
+            "requiresLogin": true,
+            "requiresPayment": false,
+            "stopBeforeSubmit": true,
+            "expectedEvidence": [
+              "农场",
+              "任务"
+            ]
+          },
+          {
+            "taskId": "pdd_coupon_center_probe",
+            "instruction": "打开拼多多红包、优惠券或百亿补贴入口，读取券列表和使用条件，不下单。",
+            "category": "promotion_probe",
+            "riskLevel": "LOW",
+            "requiresLogin": false,
+            "requiresPayment": false,
+            "stopBeforeSubmit": true,
+            "expectedEvidence": [
+              "红包",
+              "优惠券",
+              "百亿补贴"
+            ]
+          },
+          {
+            "taskId": "pdd_group_buy_pre_submit",
+            "instruction": "搜索纸巾并打开商品详情，识别单独购买、拼单、规格选择和确认页入口，不提交订单。",
+            "category": "order_probe",
+            "riskLevel": "MEDIUM",
+            "requiresLogin": true,
+            "requiresPayment": false,
+            "stopBeforeSubmit": true,
+            "expectedEvidence": [
+              "拼单",
+              "规格",
+              "提交订单"
+            ]
+          },
+          {
+            "taskId": "pdd_order_status_probe",
+            "instruction": "打开拼多多个人中心的订单区域，读取待付款、待发货、待收货、售后入口，不查看敏感订单详情。",
+            "category": "order_probe",
+            "riskLevel": "LOW",
+            "requiresLogin": true,
+            "requiresPayment": false,
+            "stopBeforeSubmit": true,
+            "expectedEvidence": [
+              "待付款",
+              "待发货",
+              "售后"
+            ]
+          },
+          {
+            "taskId": "pdd_chat_customer_service",
+            "instruction": "打开拼多多客服或店铺客服入口，识别输入框和快捷问题，不发送消息。",
+            "category": "message_probe",
+            "riskLevel": "LOW",
+            "requiresLogin": true,
+            "requiresPayment": false,
+            "stopBeforeSubmit": true,
+            "expectedEvidence": [
+              "客服",
+              "输入框"
+            ]
+          },
+          {
+            "taskId": "pdd_bargain_activity_probe",
+            "instruction": "打开拼多多砍价、现金大转盘或活动入口，读取按钮和任务列表，不分享不邀请。",
+            "category": "promotion_probe",
+            "riskLevel": "MEDIUM",
+            "requiresLogin": true,
+            "requiresPayment": false,
+            "stopBeforeSubmit": true,
+            "expectedEvidence": [
+              "砍价",
+              "活动",
+              "邀请"
+            ]
+          },
+          {
+            "taskId": "pdd_buy_vegetables_probe",
+            "instruction": "打开多多买菜入口，进入一个分类并记录自提点、商品列表和购物车，不下单。",
+            "category": "shopping_probe",
+            "riskLevel": "LOW",
+            "requiresLogin": false,
+            "requiresPayment": false,
+            "stopBeforeSubmit": true,
+            "expectedEvidence": [
+              "多多买菜",
+              "自提点",
+              "购物车"
+            ]
+          },
+          {
+            "taskId": "pdd_favorite_store_probe",
+            "instruction": "打开商品详情或店铺页，识别收藏店铺、关注、客服入口，不点击关注收藏。",
+            "category": "detail_probe",
+            "riskLevel": "LOW",
+            "requiresLogin": false,
+            "requiresPayment": false,
+            "stopBeforeSubmit": true,
+            "expectedEvidence": [
+              "店铺",
+              "收藏",
+              "关注"
+            ]
+          },
+          {
+            "taskId": "pdd_settings_privacy_probe",
+            "instruction": "打开拼多多设置页，读取账号安全、隐私、免密支付等入口，不修改设置。",
+            "category": "settings_probe",
+            "riskLevel": "LOW",
+            "requiresLogin": true,
+            "requiresPayment": false,
+            "stopBeforeSubmit": true,
+            "expectedEvidence": [
+              "设置",
+              "隐私",
+              "免密支付"
+            ]
+          }
+        ]
+      }
+    ],
+    "durationMs": 568,
+    "createdAt": 1779383746684
+  },
+  "createdAt": 1779383746685
+}

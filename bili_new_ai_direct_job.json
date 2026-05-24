@@ -1,0 +1,1379 @@
+{
+  "schemaVersion": 1,
+  "kind": "factory_ai_job",
+  "id": "factory_ai_direct_1778531410608",
+  "taskType": "RUN_USER_INSTRUCTION_DIRECT",
+  "appPackage": "tv.danmaku.bili",
+  "createdAt": 1778531410608,
+  "inputSummary": "打开哔哩哔哩搜索王老菊打开第一个视频",
+  "promptSnapshot": {
+    "taskType": "RUN_USER_INSTRUCTION_DIRECTLY_ON_PHONE",
+    "instruction": "打开哔哩哔哩搜索王老菊打开第一个视频",
+    "targetPackageHint": "tv.danmaku.bili",
+    "currentUi": {
+      "serviceConnected": true,
+      "appPackage": "tv.danmaku.bili",
+      "screenWidth": 1440,
+      "screenHeight": 3168,
+      "nodeCount": 54,
+      "snapshotPath": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_snapshots\/tv.danmaku.bili\/20260512_042821_303_2a21d1c7.json",
+      "recentUiSnapshots": [
+        {
+          "id": "ui_snapshot_1778531301642",
+          "source": "current_ui_summary",
+          "note": "factory_ai_context",
+          "appPackage": "tv.danmaku.bili",
+          "windowClassName": "null",
+          "screenKey": "2a21d1c7",
+          "screenshotPath": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_screenshots\/tv.danmaku.bili\/20260512_042821_303_2a21d1c7.png",
+          "visualHash": "d919b17728a0602584d07336f157c5369dbb73f52167475c4f3f218142f4610f",
+          "summary": {
+            "nodeCount": 54,
+            "clickableCount": 9,
+            "editableCount": 0,
+            "scrollableCount": 1,
+            "labels": [
+              "tv.danmaku.bili:id\/action_bar_root",
+              "android:id\/content",
+              "tv.danmaku.bili:id\/nav_top_bar",
+              "转到上一层级",
+              "我的消息 tv.danmaku.bili:id\/biligame_toolbar_title",
+              "tv.danmaku.bili:id\/tab_layout",
+              "我的游戏",
+              "回复",
+              "态度",
+              "系统通知",
+              "tv.danmaku.bili:id\/view_pager",
+              "tv.danmaku.bili:id\/iv_empty",
+              "游戏评价 tv.danmaku.bili:id\/tv_comment",
+              "WIKI tv.danmaku.bili:id\/tv_wiki",
+              "tv.danmaku.bili:id\/iv_notice_set",
+              "tv.danmaku.bili:id\/fl_content",
+              "tv.danmaku.bili:id\/layout_load_tips",
+              "tv.danmaku.bili:id\/layout_loading",
+              "tv.danmaku.bili:id\/iv_loading",
+              "正在努力加载… tv.danmaku.bili:id\/tv_loading",
+              "游戏评价 tv.danmaku.bili:id\/tv_comment",
+              "tv.danmaku.bili:id\/fl_content",
+              "tv.danmaku.bili:id\/layout_load_tips",
+              "tv.danmaku.bili:id\/layout_loading",
+              "tv.danmaku.bili:id\/iv_loading",
+              "正在努力加载… tv.danmaku.bili:id\/tv_loading",
+              "android:id\/navigationBarBackground"
+            ],
+            "bottomCandidates": []
+          },
+          "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_snapshots\/tv.danmaku.bili\/20260512_042821_303_2a21d1c7.json"
+        },
+        {
+          "id": "ui_snapshot_1778531280595",
+          "source": "accessibility_auto",
+          "note": "TYPE_WINDOW_CONTENT_CHANGED",
+          "appPackage": "tv.danmaku.bili",
+          "windowClassName": "android.widget.FrameLayout",
+          "screenKey": "f7bccee2",
+          "screenshotPath": "null",
+          "visualHash": "null",
+          "summary": {
+            "nodeCount": 54,
+            "clickableCount": 9,
+            "editableCount": 0,
+            "scrollableCount": 1,
+            "labels": [
+              "tv.danmaku.bili:id\/action_bar_root",
+              "android:id\/content",
+              "tv.danmaku.bili:id\/nav_top_bar",
+              "转到上一层级",
+              "我的消息 tv.danmaku.bili:id\/biligame_toolbar_title",
+              "tv.danmaku.bili:id\/tab_layout",
+              "我的游戏",
+              "回复",
+              "态度",
+              "系统通知",
+              "tv.danmaku.bili:id\/view_pager",
+              "tv.danmaku.bili:id\/iv_empty",
+              "游戏评价 tv.danmaku.bili:id\/tv_comment",
+              "WIKI tv.danmaku.bili:id\/tv_wiki",
+              "tv.danmaku.bili:id\/iv_notice_set",
+              "tv.danmaku.bili:id\/fl_content",
+              "tv.danmaku.bili:id\/layout_load_tips",
+              "tv.danmaku.bili:id\/layout_loading",
+              "tv.danmaku.bili:id\/iv_loading",
+              "正在努力加载… tv.danmaku.bili:id\/tv_loading",
+              "游戏评价 tv.danmaku.bili:id\/tv_comment",
+              "tv.danmaku.bili:id\/fl_content",
+              "tv.danmaku.bili:id\/layout_load_tips",
+              "tv.danmaku.bili:id\/layout_loading",
+              "tv.danmaku.bili:id\/iv_loading",
+              "正在努力加载… tv.danmaku.bili:id\/tv_loading",
+              "android:id\/navigationBarBackground"
+            ],
+            "bottomCandidates": []
+          },
+          "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_snapshots\/tv.danmaku.bili\/20260512_042800_594_f7bccee2.json"
+        },
+        {
+          "id": "ui_snapshot_1778531248157",
+          "source": "accessibility_auto",
+          "note": "TYPE_WINDOW_CONTENT_CHANGED",
+          "appPackage": "tv.danmaku.bili",
+          "windowClassName": "android.widget.FrameLayout",
+          "screenKey": "f7bccee2",
+          "screenshotPath": "null",
+          "visualHash": "null",
+          "summary": {
+            "nodeCount": 54,
+            "clickableCount": 9,
+            "editableCount": 0,
+            "scrollableCount": 1,
+            "labels": [
+              "tv.danmaku.bili:id\/action_bar_root",
+              "android:id\/content",
+              "tv.danmaku.bili:id\/nav_top_bar",
+              "转到上一层级",
+              "我的消息 tv.danmaku.bili:id\/biligame_toolbar_title",
+              "tv.danmaku.bili:id\/tab_layout",
+              "我的游戏",
+              "回复",
+              "态度",
+              "系统通知",
+              "tv.danmaku.bili:id\/view_pager",
+              "tv.danmaku.bili:id\/iv_empty",
+              "游戏评价 tv.danmaku.bili:id\/tv_comment",
+              "WIKI tv.danmaku.bili:id\/tv_wiki",
+              "tv.danmaku.bili:id\/iv_notice_set",
+              "tv.danmaku.bili:id\/fl_content",
+              "tv.danmaku.bili:id\/layout_load_tips",
+              "tv.danmaku.bili:id\/layout_loading",
+              "tv.danmaku.bili:id\/iv_loading",
+              "正在努力加载… tv.danmaku.bili:id\/tv_loading",
+              "游戏评价 tv.danmaku.bili:id\/tv_comment",
+              "tv.danmaku.bili:id\/fl_content",
+              "tv.danmaku.bili:id\/layout_load_tips",
+              "tv.danmaku.bili:id\/layout_loading",
+              "tv.danmaku.bili:id\/iv_loading",
+              "正在努力加载… tv.danmaku.bili:id\/tv_loading",
+              "android:id\/navigationBarBackground"
+            ],
+            "bottomCandidates": []
+          },
+          "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_snapshots\/tv.danmaku.bili\/20260512_042728_156_f7bccee2.json"
+        },
+        {
+          "id": "ui_snapshot_1778531220590",
+          "source": "accessibility_auto",
+          "note": "TYPE_WINDOW_CONTENT_CHANGED",
+          "appPackage": "tv.danmaku.bili",
+          "windowClassName": "android.widget.FrameLayout",
+          "screenKey": "f7bccee2",
+          "screenshotPath": "null",
+          "visualHash": "null",
+          "summary": {
+            "nodeCount": 54,
+            "clickableCount": 9,
+            "editableCount": 0,
+            "scrollableCount": 1,
+            "labels": [
+              "tv.danmaku.bili:id\/action_bar_root",
+              "android:id\/content",
+              "tv.danmaku.bili:id\/nav_top_bar",
+              "转到上一层级",
+              "我的消息 tv.danmaku.bili:id\/biligame_toolbar_title",
+              "tv.danmaku.bili:id\/tab_layout",
+              "我的游戏",
+              "回复",
+              "态度",
+              "系统通知",
+              "tv.danmaku.bili:id\/view_pager",
+              "tv.danmaku.bili:id\/iv_empty",
+              "游戏评价 tv.danmaku.bili:id\/tv_comment",
+              "WIKI tv.danmaku.bili:id\/tv_wiki",
+              "tv.danmaku.bili:id\/iv_notice_set",
+              "tv.danmaku.bili:id\/fl_content",
+              "tv.danmaku.bili:id\/layout_load_tips",
+              "tv.danmaku.bili:id\/layout_loading",
+              "tv.danmaku.bili:id\/iv_loading",
+              "正在努力加载… tv.danmaku.bili:id\/tv_loading",
+              "游戏评价 tv.danmaku.bili:id\/tv_comment",
+              "tv.danmaku.bili:id\/fl_content",
+              "tv.danmaku.bili:id\/layout_load_tips",
+              "tv.danmaku.bili:id\/layout_loading",
+              "tv.danmaku.bili:id\/iv_loading",
+              "正在努力加载… tv.danmaku.bili:id\/tv_loading",
+              "android:id\/navigationBarBackground"
+            ],
+            "bottomCandidates": []
+          },
+          "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_snapshots\/tv.danmaku.bili\/20260512_042700_589_f7bccee2.json"
+        }
+      ],
+      "capability": {
+        "nodeReadability": "A",
+        "inputCapability": "NONE",
+        "verificationCapability": "HIGH"
+      },
+      "nodes": [
+        {
+          "class": "android.widget.FrameLayout",
+          "clickable": false,
+          "editable": false,
+          "scrollable": false,
+          "bounds": "0 0 1440 3168"
+        },
+        {
+          "class": "android.widget.LinearLayout",
+          "clickable": false,
+          "editable": false,
+          "scrollable": false,
+          "bounds": "0 0 1440 3104"
+        },
+        {
+          "class": "android.widget.FrameLayout",
+          "clickable": false,
+          "editable": false,
+          "scrollable": false,
+          "bounds": "0 0 1440 3104"
+        },
+        {
+          "resourceId": "tv.danmaku.bili:id\/action_bar_root",
+          "class": "android.widget.FrameLayout",
+          "clickable": false,
+          "editable": false,
+          "scrollable": false,
+          "bounds": "0 0 1440 3104"
+        },
+        {
+          "resourceId": "android:id\/content",
+          "class": "android.widget.FrameLayout",
+          "clickable": false,
+          "editable": false,
+          "scrollable": false,
+          "bounds": "0 0 1440 3104"
+        },
+        {
+          "class": "android.widget.LinearLayout",
+          "clickable": false,
+          "editable": false,
+          "scrollable": false,
+          "bounds": "0 0 1440 3104"
+        },
+        {
+          "resourceId": "tv.danmaku.bili:id\/nav_top_bar",
+          "class": "android.view.ViewGroup",
+          "clickable": false,
+          "editable": false,
+          "scrollable": false,
+          "bounds": "0 0 1440 320"
+        },
+        {
+          "desc": "转到上一层级",
+          "class": "android.widget.ImageButton",
+          "clickable": true,
+          "editable": false,
+          "scrollable": false,
+          "bounds": "0 160 160 320"
+        },
+        {
+          "text": "我的消息",
+          "resourceId": "tv.danmaku.bili:id\/biligame_toolbar_title",
+          "class": "android.widget.TextView",
+          "clickable": false,
+          "editable": false,
+          "scrollable": false,
+          "bounds": "592 197 848 283"
+        },
+        {
+          "class": "androidx.appcompat.widget.LinearLayoutCompat",
+          "clickable": false,
+          "editable": false,
+          "scrollable": false,
+          "bounds": "1440 160 1440 320"
+        },
+        {
+          "class": "android.widget.LinearLayout",
+          "clickable": false,
+          "editable": false,
+          "scrollable": false,
+          "bounds": "0 320 1440 320"
+        },
+        {
+          "resourceId": "tv.danmaku.bili:id\/tab_layout",
+          "class": "android.widget.HorizontalScrollView",
+          "clickable": false,
+          "editable": false,
+          "scrollable": false,
+          "bounds": "0 320 1440 496"
+        },
+        {
+          "class": "android.widget.LinearLayout",
+          "clickable": false,
+          "editable": false,
+          "scrollable": false,
+          "bounds": "0 320 1440 496"
+        },
+        {
+          "class": "androidx.appcompat.app.ActionBar$d",
+          "clickable": true,
+          "editable": false,
+          "scrollable": false,
+          "bounds": "0 320 360 496"
+        },
+        {
+          "text": "我的游戏",
+          "class": "android.widget.TextView",
+          "clickable": false,
+          "editable": false,
+          "scrollable": false,
+          "bounds": "68 370 292 446"
+        },
+        {
+          "class": "androidx.appcompat.app.ActionBar$d",
+          "clickable": true,
+          "editable": false,
+          "scrollable": false,
+          "bounds": "360 320 720 496"
+        },
+        {
+          "text": "回复",
+          "class": "android.widget.TextView",
+          "clickable": false,
+          "editable": false,
+          "scrollable": false,
+          "bounds": "484 370 596 446"
+        },
+        {
+          "class": "androidx.appcompat.app.ActionBar$d",
+          "clickable": true,
+          "editable": false,
+          "scrollable": false,
+          "bounds": "720 320 1080 496"
+        },
+        {
+          "text": "态度",
+          "class": "android.widget.TextView",
+          "clickable": false,
+          "editable": false,
+          "scrollable": false,
+          "bounds": "844 370 956 446"
+        },
+        {
+          "class": "androidx.appcompat.app.ActionBar$d",
+          "clickable": true,
+          "editable": false,
+          "scrollable": false,
+          "bounds": "1080 320 1440 496"
+        },
+        {
+          "text": "系统通知",
+          "class": "android.widget.TextView",
+          "clickable": false,
+          "editable": false,
+          "scrollable": false,
+          "bounds": "1148 370 1372 446"
+        },
+        {
+          "class": "android.view.View",
+          "clickable": false,
+          "editable": false,
+          "scrollable": false,
+          "bounds": "0 496 1440 500"
+        },
+        {
+          "resourceId": "tv.danmaku.bili:id\/view_pager",
+          "class": "androidx.viewpager.widget.ViewPager",
+          "clickable": false,
+          "editable": false,
+          "scrollable": true,
+          "bounds": "0 500 1440 3104"
+        },
+        {
+          "class": "android.widget.FrameLayout",
+          "clickable": false,
+          "editable": false,
+          "scrollable": false,
+          "bounds": "0 500 1440 3104"
+        },
+        {
+          "class": "android.widget.FrameLayout",
+          "clickable": false,
+          "editable": false,
+          "scrollable": false,
+          "bounds": "0 500 1440 3104"
+        },
+        {
+          "class": "android.widget.FrameLayout",
+          "clickable": false,
+          "editable": false,
+          "scrollable": false,
+          "bounds": "0 500 1440 3104"
+        },
+        {
+          "class": "android.widget.LinearLayout",
+          "clickable": false,
+          "editable": false,
+          "scrollable": false,
+          "bounds": "0 500 1440 3104"
+        },
+        {
+          "resourceId": "tv.danmaku.bili:id\/iv_empty",
+          "class": "android.widget.ImageView",
+          "clickable": false,
+          "editable": false,
+          "scrollable": false,
+          "bounds": "533 1615 906 1988"
+        },
+        {
+          "class": "android.view.ViewGroup",
+          "clickable": false,
+          "editable": false,
+          "scrollable": false,
+          "bounds": "1440 500 1440 3104"
+        },
+        {
+          "text": "游戏评价",
+          "resourceId": "tv.danmaku.bili:id\/tv_comment",
+          "class": "android.widget.TextView",
+          "clickable": true,
+          "editable": false,
+          "scrollable": false,
+          "bounds": "1520 540 1440 664"
+        },
+        {
+          "text": "WIKI",
+          "resourceId": "tv.danmaku.bili:id\/tv_wiki",
+          "class": "android.widget.TextView",
+          "clickable": true,
+          "editable": false,
+          "scrollable": false,
+          "bounds": "1880 540 1440 664"
+        },
+        {
+          "resourceId": "tv.danmaku.bili:id\/iv_notice_set",
+          "class": "android.widget.ImageView",
+          "clickable": true,
+          "editable": false,
+          "scrollable": false,
+          "bounds": "2760 564 1440 640"
+        },
+        {
+          "resourceId": "tv.danmaku.bili:id\/fl_content",
+          "class": "android.widget.FrameLayout",
+          "clickable": false,
+          "editable": false,
+          "scrollable": false,
+          "bounds": "1440 704 1440 3104"
+        },
+        {
+          "class": "android.widget.FrameLayout",
+          "clickable": false,
+          "editable": false,
+          "scrollable": false,
+          "bounds": "1440 704 1440 3104"
+        },
+        {
+          "class": "android.view.ViewGroup",
+          "clickable": false,
+          "editable": false,
+          "scrollable": false,
+          "bounds": "1440 704 1440 3104"
+        },
+        {
+          "class": "androidx.recyclerview.widget.RecyclerView",
+          "clickable": false,
+          "editable": false,
+          "scrollable": false,
+          "bounds": "1440 704 1440 3104"
+        },
+        {
+          "resourceId": "tv.danmaku.bili:id\/layout_load_tips",
+          "class": "android.widget.LinearLayout",
+          "clickable": false,
+          "editable": false,
+          "scrollable": false,
+          "bounds": "1440 704 1440 3104"
+        },
+        {
+          "resourceId": "tv.danmaku.bili:id\/layout_loading",
+          "class": "android.widget.LinearLayout",
+          "clickable": false,
+          "editable": false,
+          "scrollable": false,
+          "bounds": "1440 704 1440 3104"
+        },
+        {
+          "resourceId": "tv.danmaku.bili:id\/iv_loading",
+          "class": "android.widget.ImageView",
+          "clickable": false,
+          "editable": false,
+          "scrollable": false,
+          "bounds": "2040 1738 1440 1978"
+        },
+        {
+          "text": "正在努力加载…",
+          "resourceId": "tv.danmaku.bili:id\/tv_loading",
+          "class": "android.widget.TextView",
+          "clickable": false,
+          "editable": false,
+          "scrollable": false,
+          "bounds": "1970 1994 1440 2070"
+        },
+        {
+          "class": "android.view.ViewGroup",
+          "clickable": false,
+          "editable": false,
+          "scrollable": false,
+          "bounds": "2880 500 1440 3104"
+        },
+        {
+          "text": "游戏评价",
+          "resourceId": "tv.danmaku.bili:id\/tv_comment",
+          "class": "android.widget.TextView",
+          "clickable": true,
+          "editable": false,
+          "scrollable": false,
+          "bounds": "2960 540 1440 664"
+        },
+        {
+          "resourceId": "tv.danmaku.bili:id\/fl_content",
+          "class": "android.widget.FrameLayout",
+          "clickable": false,
+          "editable": false,
+          "scrollable": false,
+          "bounds": "2880 704 1440 3104"
+        },
+        {
+          "class": "android.widget.FrameLayout",
+          "clickable": false,
+          "editable": false,
+          "scrollable": false,
+          "bounds": "2880 704 1440 3104"
+        },
+        {
+          "class": "android.view.ViewGroup",
+          "clickable": false,
+          "editable": false,
+          "scrollable": false,
+          "bounds": "2880 704 1440 3104"
+        },
+        {
+          "class": "androidx.recyclerview.widget.RecyclerView",
+          "clickable": false,
+          "editable": false,
+          "scrollable": false,
+          "bounds": "2880 704 1440 3104"
+        },
+        {
+          "resourceId": "tv.danmaku.bili:id\/layout_load_tips",
+          "class": "android.widget.LinearLayout",
+          "clickable": false,
+          "editable": false,
+          "scrollable": false,
+          "bounds": "2880 704 1440 3104"
+        },
+        {
+          "resourceId": "tv.danmaku.bili:id\/layout_loading",
+          "class": "android.widget.LinearLayout",
+          "clickable": false,
+          "editable": false,
+          "scrollable": false,
+          "bounds": "2880 704 1440 3104"
+        },
+        {
+          "resourceId": "tv.danmaku.bili:id\/iv_loading",
+          "class": "android.widget.ImageView",
+          "clickable": false,
+          "editable": false,
+          "scrollable": false,
+          "bounds": "3480 1738 1440 1978"
+        },
+        {
+          "text": "正在努力加载…",
+          "resourceId": "tv.danmaku.bili:id\/tv_loading",
+          "class": "android.widget.TextView",
+          "clickable": false,
+          "editable": false,
+          "scrollable": false,
+          "bounds": "3410 1994 1440 2070"
+        },
+        {
+          "class": "android.widget.FrameLayout",
+          "clickable": false,
+          "editable": false,
+          "scrollable": false,
+          "bounds": "4320 500 1440 3104"
+        },
+        {
+          "class": "android.widget.FrameLayout",
+          "clickable": false,
+          "editable": false,
+          "scrollable": false,
+          "bounds": "4320 500 1440 3104"
+        },
+        {
+          "class": "android.widget.FrameLayout",
+          "clickable": false,
+          "editable": false,
+          "scrollable": false,
+          "bounds": "4320 500 1440 3104"
+        },
+        {
+          "resourceId": "android:id\/navigationBarBackground",
+          "class": "android.view.View",
+          "clickable": false,
+          "editable": false,
+          "scrollable": false,
+          "bounds": "0 3104 1440 3168"
+        }
+      ],
+      "blockingDialogs": [
+        {
+          "type": "permission_or_notice",
+          "hits": [
+            "系统通知",
+            "系统通知"
+          ]
+        },
+        {
+          "type": "popup_observed",
+          "events": [],
+          "smallNodes": [
+            "我的游戏",
+            "系统通知",
+            "tv.danmaku.bili:id\/iv_empty"
+          ]
+        }
+      ],
+      "clickTargets": [
+        {
+          "index": 0,
+          "text": null,
+          "desc": "转到上一层级",
+          "resourceId": null,
+          "class": "android.widget.ImageButton",
+          "clickable": true,
+          "selected": false,
+          "bounds": "0 160 160 320",
+          "center": {
+            "x": 0.05555555555555555,
+            "y": 0.07575757575757576
+          },
+          "tags": [
+            "clickable"
+          ]
+        },
+        {
+          "index": 1,
+          "text": "我的消息",
+          "desc": null,
+          "resourceId": "tv.danmaku.bili:id\/biligame_toolbar_title",
+          "class": "android.widget.TextView",
+          "clickable": false,
+          "selected": false,
+          "bounds": "592 197 848 283",
+          "center": {
+            "x": 0.5,
+            "y": 0.07575757575757576
+          },
+          "tags": [
+            "video_like"
+          ]
+        },
+        {
+          "index": 2,
+          "text": null,
+          "desc": null,
+          "resourceId": null,
+          "class": "androidx.appcompat.app.ActionBar$d",
+          "clickable": true,
+          "selected": true,
+          "bounds": "0 320 360 496",
+          "center": {
+            "x": 0.125,
+            "y": 0.12878787878787878
+          },
+          "tags": [
+            "clickable",
+            "selected"
+          ]
+        },
+        {
+          "index": 3,
+          "text": "我的游戏",
+          "desc": null,
+          "resourceId": null,
+          "class": "android.widget.TextView",
+          "clickable": false,
+          "selected": true,
+          "bounds": "68 370 292 446",
+          "center": {
+            "x": 0.125,
+            "y": 0.12878787878787878
+          },
+          "tags": [
+            "selected",
+            "video_like"
+          ]
+        },
+        {
+          "index": 4,
+          "text": null,
+          "desc": null,
+          "resourceId": null,
+          "class": "androidx.appcompat.app.ActionBar$d",
+          "clickable": true,
+          "selected": false,
+          "bounds": "360 320 720 496",
+          "center": {
+            "x": 0.375,
+            "y": 0.12878787878787878
+          },
+          "tags": [
+            "clickable"
+          ]
+        },
+        {
+          "index": 5,
+          "text": "回复",
+          "desc": null,
+          "resourceId": null,
+          "class": "android.widget.TextView",
+          "clickable": false,
+          "selected": false,
+          "bounds": "484 370 596 446",
+          "center": {
+            "x": 0.375,
+            "y": 0.12878787878787878
+          },
+          "tags": [
+            "video_like"
+          ]
+        },
+        {
+          "index": 6,
+          "text": null,
+          "desc": null,
+          "resourceId": null,
+          "class": "androidx.appcompat.app.ActionBar$d",
+          "clickable": true,
+          "selected": false,
+          "bounds": "720 320 1080 496",
+          "center": {
+            "x": 0.625,
+            "y": 0.12878787878787878
+          },
+          "tags": [
+            "clickable"
+          ]
+        },
+        {
+          "index": 7,
+          "text": "态度",
+          "desc": null,
+          "resourceId": null,
+          "class": "android.widget.TextView",
+          "clickable": false,
+          "selected": false,
+          "bounds": "844 370 956 446",
+          "center": {
+            "x": 0.625,
+            "y": 0.12878787878787878
+          },
+          "tags": [
+            "video_like"
+          ]
+        },
+        {
+          "index": 8,
+          "text": null,
+          "desc": null,
+          "resourceId": null,
+          "class": "androidx.appcompat.app.ActionBar$d",
+          "clickable": true,
+          "selected": false,
+          "bounds": "1080 320 1440 496",
+          "center": {
+            "x": 0.875,
+            "y": 0.12878787878787878
+          },
+          "tags": [
+            "clickable"
+          ]
+        },
+        {
+          "index": 9,
+          "text": "系统通知",
+          "desc": null,
+          "resourceId": null,
+          "class": "android.widget.TextView",
+          "clickable": false,
+          "selected": false,
+          "bounds": "1148 370 1372 446",
+          "center": {
+            "x": 0.875,
+            "y": 0.12878787878787878
+          },
+          "tags": [
+            "video_like"
+          ]
+        }
+      ],
+      "bottomTabs": [],
+      "entryCandidates": [
+        {
+          "index": 0,
+          "text": "我的消息",
+          "desc": null,
+          "resourceId": "tv.danmaku.bili:id\/biligame_toolbar_title",
+          "class": "android.widget.TextView",
+          "clickable": false,
+          "selected": false,
+          "bounds": "592 197 848 283",
+          "center": {
+            "x": 0.5,
+            "y": 0.07575757575757576
+          },
+          "tags": [
+            "video_like",
+            "entry_candidate"
+          ]
+        }
+      ],
+      "videoCandidates": []
+    },
+    "recentUiSnapshots": [
+      {
+        "id": "ui_snapshot_1778531301642",
+        "source": "current_ui_summary",
+        "note": "factory_ai_context",
+        "appPackage": "tv.danmaku.bili",
+        "windowClassName": "null",
+        "screenKey": "2a21d1c7",
+        "screenshotPath": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_screenshots\/tv.danmaku.bili\/20260512_042821_303_2a21d1c7.png",
+        "visualHash": "d919b17728a0602584d07336f157c5369dbb73f52167475c4f3f218142f4610f",
+        "summary": {
+          "nodeCount": 54,
+          "clickableCount": 9,
+          "editableCount": 0,
+          "scrollableCount": 1,
+          "labels": [
+            "tv.danmaku.bili:id\/action_bar_root",
+            "android:id\/content",
+            "tv.danmaku.bili:id\/nav_top_bar",
+            "转到上一层级",
+            "我的消息 tv.danmaku.bili:id\/biligame_toolbar_title",
+            "tv.danmaku.bili:id\/tab_layout",
+            "我的游戏",
+            "回复",
+            "态度",
+            "系统通知",
+            "tv.danmaku.bili:id\/view_pager",
+            "tv.danmaku.bili:id\/iv_empty",
+            "游戏评价 tv.danmaku.bili:id\/tv_comment",
+            "WIKI tv.danmaku.bili:id\/tv_wiki",
+            "tv.danmaku.bili:id\/iv_notice_set",
+            "tv.danmaku.bili:id\/fl_content",
+            "tv.danmaku.bili:id\/layout_load_tips",
+            "tv.danmaku.bili:id\/layout_loading",
+            "tv.danmaku.bili:id\/iv_loading",
+            "正在努力加载… tv.danmaku.bili:id\/tv_loading",
+            "游戏评价 tv.danmaku.bili:id\/tv_comment",
+            "tv.danmaku.bili:id\/fl_content",
+            "tv.danmaku.bili:id\/layout_load_tips",
+            "tv.danmaku.bili:id\/layout_loading",
+            "tv.danmaku.bili:id\/iv_loading",
+            "正在努力加载… tv.danmaku.bili:id\/tv_loading",
+            "android:id\/navigationBarBackground"
+          ],
+          "bottomCandidates": []
+        },
+        "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_snapshots\/tv.danmaku.bili\/20260512_042821_303_2a21d1c7.json"
+      },
+      {
+        "id": "ui_snapshot_1778531280595",
+        "source": "accessibility_auto",
+        "note": "TYPE_WINDOW_CONTENT_CHANGED",
+        "appPackage": "tv.danmaku.bili",
+        "windowClassName": "android.widget.FrameLayout",
+        "screenKey": "f7bccee2",
+        "screenshotPath": "null",
+        "visualHash": "null",
+        "summary": {
+          "nodeCount": 54,
+          "clickableCount": 9,
+          "editableCount": 0,
+          "scrollableCount": 1,
+          "labels": [
+            "tv.danmaku.bili:id\/action_bar_root",
+            "android:id\/content",
+            "tv.danmaku.bili:id\/nav_top_bar",
+            "转到上一层级",
+            "我的消息 tv.danmaku.bili:id\/biligame_toolbar_title",
+            "tv.danmaku.bili:id\/tab_layout",
+            "我的游戏",
+            "回复",
+            "态度",
+            "系统通知",
+            "tv.danmaku.bili:id\/view_pager",
+            "tv.danmaku.bili:id\/iv_empty",
+            "游戏评价 tv.danmaku.bili:id\/tv_comment",
+            "WIKI tv.danmaku.bili:id\/tv_wiki",
+            "tv.danmaku.bili:id\/iv_notice_set",
+            "tv.danmaku.bili:id\/fl_content",
+            "tv.danmaku.bili:id\/layout_load_tips",
+            "tv.danmaku.bili:id\/layout_loading",
+            "tv.danmaku.bili:id\/iv_loading",
+            "正在努力加载… tv.danmaku.bili:id\/tv_loading",
+            "游戏评价 tv.danmaku.bili:id\/tv_comment",
+            "tv.danmaku.bili:id\/fl_content",
+            "tv.danmaku.bili:id\/layout_load_tips",
+            "tv.danmaku.bili:id\/layout_loading",
+            "tv.danmaku.bili:id\/iv_loading",
+            "正在努力加载… tv.danmaku.bili:id\/tv_loading",
+            "android:id\/navigationBarBackground"
+          ],
+          "bottomCandidates": []
+        },
+        "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_snapshots\/tv.danmaku.bili\/20260512_042800_594_f7bccee2.json"
+      },
+      {
+        "id": "ui_snapshot_1778531248157",
+        "source": "accessibility_auto",
+        "note": "TYPE_WINDOW_CONTENT_CHANGED",
+        "appPackage": "tv.danmaku.bili",
+        "windowClassName": "android.widget.FrameLayout",
+        "screenKey": "f7bccee2",
+        "screenshotPath": "null",
+        "visualHash": "null",
+        "summary": {
+          "nodeCount": 54,
+          "clickableCount": 9,
+          "editableCount": 0,
+          "scrollableCount": 1,
+          "labels": [
+            "tv.danmaku.bili:id\/action_bar_root",
+            "android:id\/content",
+            "tv.danmaku.bili:id\/nav_top_bar",
+            "转到上一层级",
+            "我的消息 tv.danmaku.bili:id\/biligame_toolbar_title",
+            "tv.danmaku.bili:id\/tab_layout",
+            "我的游戏",
+            "回复",
+            "态度",
+            "系统通知",
+            "tv.danmaku.bili:id\/view_pager",
+            "tv.danmaku.bili:id\/iv_empty",
+            "游戏评价 tv.danmaku.bili:id\/tv_comment",
+            "WIKI tv.danmaku.bili:id\/tv_wiki",
+            "tv.danmaku.bili:id\/iv_notice_set",
+            "tv.danmaku.bili:id\/fl_content",
+            "tv.danmaku.bili:id\/layout_load_tips",
+            "tv.danmaku.bili:id\/layout_loading",
+            "tv.danmaku.bili:id\/iv_loading",
+            "正在努力加载… tv.danmaku.bili:id\/tv_loading",
+            "游戏评价 tv.danmaku.bili:id\/tv_comment",
+            "tv.danmaku.bili:id\/fl_content",
+            "tv.danmaku.bili:id\/layout_load_tips",
+            "tv.danmaku.bili:id\/layout_loading",
+            "tv.danmaku.bili:id\/iv_loading",
+            "正在努力加载… tv.danmaku.bili:id\/tv_loading",
+            "android:id\/navigationBarBackground"
+          ],
+          "bottomCandidates": []
+        },
+        "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_snapshots\/tv.danmaku.bili\/20260512_042728_156_f7bccee2.json"
+      },
+      {
+        "id": "ui_snapshot_1778531220590",
+        "source": "accessibility_auto",
+        "note": "TYPE_WINDOW_CONTENT_CHANGED",
+        "appPackage": "tv.danmaku.bili",
+        "windowClassName": "android.widget.FrameLayout",
+        "screenKey": "f7bccee2",
+        "screenshotPath": "null",
+        "visualHash": "null",
+        "summary": {
+          "nodeCount": 54,
+          "clickableCount": 9,
+          "editableCount": 0,
+          "scrollableCount": 1,
+          "labels": [
+            "tv.danmaku.bili:id\/action_bar_root",
+            "android:id\/content",
+            "tv.danmaku.bili:id\/nav_top_bar",
+            "转到上一层级",
+            "我的消息 tv.danmaku.bili:id\/biligame_toolbar_title",
+            "tv.danmaku.bili:id\/tab_layout",
+            "我的游戏",
+            "回复",
+            "态度",
+            "系统通知",
+            "tv.danmaku.bili:id\/view_pager",
+            "tv.danmaku.bili:id\/iv_empty",
+            "游戏评价 tv.danmaku.bili:id\/tv_comment",
+            "WIKI tv.danmaku.bili:id\/tv_wiki",
+            "tv.danmaku.bili:id\/iv_notice_set",
+            "tv.danmaku.bili:id\/fl_content",
+            "tv.danmaku.bili:id\/layout_load_tips",
+            "tv.danmaku.bili:id\/layout_loading",
+            "tv.danmaku.bili:id\/iv_loading",
+            "正在努力加载… tv.danmaku.bili:id\/tv_loading",
+            "游戏评价 tv.danmaku.bili:id\/tv_comment",
+            "tv.danmaku.bili:id\/fl_content",
+            "tv.danmaku.bili:id\/layout_load_tips",
+            "tv.danmaku.bili:id\/layout_loading",
+            "tv.danmaku.bili:id\/iv_loading",
+            "正在努力加载… tv.danmaku.bili:id\/tv_loading",
+            "android:id\/navigationBarBackground"
+          ],
+          "bottomCandidates": []
+        },
+        "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_snapshots\/tv.danmaku.bili\/20260512_042700_589_f7bccee2.json"
+      },
+      {
+        "id": "ui_snapshot_1778531188151",
+        "source": "accessibility_auto",
+        "note": "TYPE_WINDOW_CONTENT_CHANGED",
+        "appPackage": "tv.danmaku.bili",
+        "windowClassName": "android.widget.FrameLayout",
+        "screenKey": "f7bccee2",
+        "screenshotPath": "null",
+        "visualHash": "null",
+        "summary": {
+          "nodeCount": 54,
+          "clickableCount": 9,
+          "editableCount": 0,
+          "scrollableCount": 1,
+          "labels": [
+            "tv.danmaku.bili:id\/action_bar_root",
+            "android:id\/content",
+            "tv.danmaku.bili:id\/nav_top_bar",
+            "转到上一层级",
+            "我的消息 tv.danmaku.bili:id\/biligame_toolbar_title",
+            "tv.danmaku.bili:id\/tab_layout",
+            "我的游戏",
+            "回复",
+            "态度",
+            "系统通知",
+            "tv.danmaku.bili:id\/view_pager",
+            "tv.danmaku.bili:id\/iv_empty",
+            "游戏评价 tv.danmaku.bili:id\/tv_comment",
+            "WIKI tv.danmaku.bili:id\/tv_wiki",
+            "tv.danmaku.bili:id\/iv_notice_set",
+            "tv.danmaku.bili:id\/fl_content",
+            "tv.danmaku.bili:id\/layout_load_tips",
+            "tv.danmaku.bili:id\/layout_loading",
+            "tv.danmaku.bili:id\/iv_loading",
+            "正在努力加载… tv.danmaku.bili:id\/tv_loading",
+            "游戏评价 tv.danmaku.bili:id\/tv_comment",
+            "tv.danmaku.bili:id\/fl_content",
+            "tv.danmaku.bili:id\/layout_load_tips",
+            "tv.danmaku.bili:id\/layout_loading",
+            "tv.danmaku.bili:id\/iv_loading",
+            "正在努力加载… tv.danmaku.bili:id\/tv_loading",
+            "android:id\/navigationBarBackground"
+          ],
+          "bottomCandidates": []
+        },
+        "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_snapshots\/tv.danmaku.bili\/20260512_042628_150_f7bccee2.json"
+      },
+      {
+        "id": "ui_snapshot_1778531160591",
+        "source": "accessibility_auto",
+        "note": "TYPE_WINDOW_CONTENT_CHANGED",
+        "appPackage": "tv.danmaku.bili",
+        "windowClassName": "android.widget.FrameLayout",
+        "screenKey": "f7bccee2",
+        "screenshotPath": "null",
+        "visualHash": "null",
+        "summary": {
+          "nodeCount": 54,
+          "clickableCount": 9,
+          "editableCount": 0,
+          "scrollableCount": 1,
+          "labels": [
+            "tv.danmaku.bili:id\/action_bar_root",
+            "android:id\/content",
+            "tv.danmaku.bili:id\/nav_top_bar",
+            "转到上一层级",
+            "我的消息 tv.danmaku.bili:id\/biligame_toolbar_title",
+            "tv.danmaku.bili:id\/tab_layout",
+            "我的游戏",
+            "回复",
+            "态度",
+            "系统通知",
+            "tv.danmaku.bili:id\/view_pager",
+            "tv.danmaku.bili:id\/iv_empty",
+            "游戏评价 tv.danmaku.bili:id\/tv_comment",
+            "WIKI tv.danmaku.bili:id\/tv_wiki",
+            "tv.danmaku.bili:id\/iv_notice_set",
+            "tv.danmaku.bili:id\/fl_content",
+            "tv.danmaku.bili:id\/layout_load_tips",
+            "tv.danmaku.bili:id\/layout_loading",
+            "tv.danmaku.bili:id\/iv_loading",
+            "正在努力加载… tv.danmaku.bili:id\/tv_loading",
+            "游戏评价 tv.danmaku.bili:id\/tv_comment",
+            "tv.danmaku.bili:id\/fl_content",
+            "tv.danmaku.bili:id\/layout_load_tips",
+            "tv.danmaku.bili:id\/layout_loading",
+            "tv.danmaku.bili:id\/iv_loading",
+            "正在努力加载… tv.danmaku.bili:id\/tv_loading",
+            "android:id\/navigationBarBackground"
+          ],
+          "bottomCandidates": []
+        },
+        "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_snapshots\/tv.danmaku.bili\/20260512_042600_590_f7bccee2.json"
+      },
+      {
+        "id": "ui_snapshot_1778531128147",
+        "source": "accessibility_auto",
+        "note": "TYPE_WINDOW_CONTENT_CHANGED",
+        "appPackage": "tv.danmaku.bili",
+        "windowClassName": "android.widget.FrameLayout",
+        "screenKey": "f7bccee2",
+        "screenshotPath": "null",
+        "visualHash": "null",
+        "summary": {
+          "nodeCount": 54,
+          "clickableCount": 9,
+          "editableCount": 0,
+          "scrollableCount": 1,
+          "labels": [
+            "tv.danmaku.bili:id\/action_bar_root",
+            "android:id\/content",
+            "tv.danmaku.bili:id\/nav_top_bar",
+            "转到上一层级",
+            "我的消息 tv.danmaku.bili:id\/biligame_toolbar_title",
+            "tv.danmaku.bili:id\/tab_layout",
+            "我的游戏",
+            "回复",
+            "态度",
+            "系统通知",
+            "tv.danmaku.bili:id\/view_pager",
+            "tv.danmaku.bili:id\/iv_empty",
+            "游戏评价 tv.danmaku.bili:id\/tv_comment",
+            "WIKI tv.danmaku.bili:id\/tv_wiki",
+            "tv.danmaku.bili:id\/iv_notice_set",
+            "tv.danmaku.bili:id\/fl_content",
+            "tv.danmaku.bili:id\/layout_load_tips",
+            "tv.danmaku.bili:id\/layout_loading",
+            "tv.danmaku.bili:id\/iv_loading",
+            "正在努力加载… tv.danmaku.bili:id\/tv_loading",
+            "游戏评价 tv.danmaku.bili:id\/tv_comment",
+            "tv.danmaku.bili:id\/fl_content",
+            "tv.danmaku.bili:id\/layout_load_tips",
+            "tv.danmaku.bili:id\/layout_loading",
+            "tv.danmaku.bili:id\/iv_loading",
+            "正在努力加载… tv.danmaku.bili:id\/tv_loading",
+            "android:id\/navigationBarBackground"
+          ],
+          "bottomCandidates": []
+        },
+        "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_snapshots\/tv.danmaku.bili\/20260512_042528_146_f7bccee2.json"
+      },
+      {
+        "id": "ui_snapshot_1778531100593",
+        "source": "accessibility_auto",
+        "note": "TYPE_WINDOW_CONTENT_CHANGED",
+        "appPackage": "tv.danmaku.bili",
+        "windowClassName": "android.widget.FrameLayout",
+        "screenKey": "f7bccee2",
+        "screenshotPath": "null",
+        "visualHash": "null",
+        "summary": {
+          "nodeCount": 54,
+          "clickableCount": 9,
+          "editableCount": 0,
+          "scrollableCount": 1,
+          "labels": [
+            "tv.danmaku.bili:id\/action_bar_root",
+            "android:id\/content",
+            "tv.danmaku.bili:id\/nav_top_bar",
+            "转到上一层级",
+            "我的消息 tv.danmaku.bili:id\/biligame_toolbar_title",
+            "tv.danmaku.bili:id\/tab_layout",
+            "我的游戏",
+            "回复",
+            "态度",
+            "系统通知",
+            "tv.danmaku.bili:id\/view_pager",
+            "tv.danmaku.bili:id\/iv_empty",
+            "游戏评价 tv.danmaku.bili:id\/tv_comment",
+            "WIKI tv.danmaku.bili:id\/tv_wiki",
+            "tv.danmaku.bili:id\/iv_notice_set",
+            "tv.danmaku.bili:id\/fl_content",
+            "tv.danmaku.bili:id\/layout_load_tips",
+            "tv.danmaku.bili:id\/layout_loading",
+            "tv.danmaku.bili:id\/iv_loading",
+            "正在努力加载… tv.danmaku.bili:id\/tv_loading",
+            "游戏评价 tv.danmaku.bili:id\/tv_comment",
+            "tv.danmaku.bili:id\/fl_content",
+            "tv.danmaku.bili:id\/layout_load_tips",
+            "tv.danmaku.bili:id\/layout_loading",
+            "tv.danmaku.bili:id\/iv_loading",
+            "正在努力加载… tv.danmaku.bili:id\/tv_loading",
+            "android:id\/navigationBarBackground"
+          ],
+          "bottomCandidates": []
+        },
+        "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_snapshots\/tv.danmaku.bili\/20260512_042500_592_f7bccee2.json"
+      }
+    ],
+    "installedAppHints": [],
+    "outputContract": {
+      "intentDraft": {
+        "appPackage": "target package",
+        "intentId": "open_app | search_in_app | click | type_text | back | custom",
+        "params": "object"
+      },
+      "steps": [
+        {
+          "type": "EnsureTextVideoAsset",
+          "text": "我是AI",
+          "displayName": "macropilot_douyin_ai.mp4"
+        },
+        {
+          "type": "OpenApp",
+          "packageName": "com.example"
+        },
+        {
+          "type": "HandleReactiveOverlays",
+          "maxPasses": 3
+        },
+        {
+          "type": "CaptureWechatBottomTabs",
+          "packageName": "com.tencent.mm"
+        },
+        {
+          "type": "RecoverBilibiliHomeSurface",
+          "packageName": "tv.danmaku.bili"
+        },
+        {
+          "type": "FindEntryByBottomTabSweep",
+          "entryAliases": [
+            "发帖",
+            "发布",
+            "创作",
+            "搜索",
+            "消息",
+            "+"
+          ],
+          "maxTabs": 5
+        },
+        {
+          "type": "ClickVisibleText",
+          "text": "搜索"
+        },
+        {
+          "type": "TypeIntoFirstInput",
+          "text": "keyword"
+        },
+        {
+          "type": "TypeIntoFocusedInput",
+          "text": "draft text"
+        },
+        {
+          "type": "OpenHupuPostEditor"
+        },
+        {
+          "type": "FillHupuPostEditor",
+          "title": "title",
+          "body": "body"
+        },
+        {
+          "type": "ClickSelector",
+          "selector": "[text='搜索'][clickable=true]"
+        },
+        {
+          "type": "Back"
+        },
+        {
+          "type": "Wait",
+          "timeoutMs": 800
+        }
+      ],
+      "candidates": "optional fine-grained SkillCandidate JSON array"
+    },
+    "rules": [
+      "You may return executable steps because the user explicitly requested direct phone-side control.",
+      "Prefer text\/selector actions. Coordinates must be normalized 0..1 and only when no node\/text is available.",
+      "For Douyin video publishing, first create a short local text video with EnsureTextVideoAsset, then open Douyin, enter the publish flow, choose the latest album video, type the caption, click publish only when the user explicitly asked to publish, and verify with platform feedback such as 发布成功\/发布中\/审核中.",
+      "Never report a Douyin publish task as completed just because the app opened, a draft page is visible, or a coordinate was tapped.",
+      "Use currentUi.blockingDialogs as hard evidence. If it contains ad_or_splash, first return HandleReactiveOverlays or a close\/skip action. If it contains hupu_section_required, do not keep waiting: choose\/select a forum\/section before retrying publish.",
+      "For WeChat Moments, first use CaptureWechatBottomTabs to record 微信\/通讯录\/发现\/我 pages, then use the discovered 朋友圈 evidence instead of guessing.",
+      "For Bilibili, if current UI is 我的消息\/系统通知\/游戏通知\/动态\/分享面板, use RecoverBilibiliHomeSurface before trying search or selecting the first video.",
+      "If the needed entry is not visible, use FindEntryByBottomTabSweep to return to app home, click bottom tabs one by one, and search for entries such as 发帖\/发布\/创作\/搜索\/消息 before replanning.",
+      "Every generated skill must be status=CANDIDATE, never APPROVED."
+    ]
+  },
+  "aiStatus": "SUCCESS",
+  "aiMessage": "AI Assist request completed",
+  "provider": "OPENAI_COMPAT_CHAT",
+  "httpStatus": 200,
+  "model": "deepseek-v4-pro",
+  "baseUrlHost": "api.deepseek.com",
+  "rawResponse": {
+    "provider": "OPENAI_COMPAT_CHAT",
+    "responseId": "6e965f47-3d94-4597-8133-c849038c2f47",
+    "model": "deepseek-v4-pro",
+    "output": {
+      "decision": {
+        "goalCompleted": false
+      },
+      "steps": [
+        {
+          "type": "RecoverBilibiliHomeSurface",
+          "packageName": "tv.danmaku.bili"
+        },
+        {
+          "type": "Wait",
+          "timeoutMs": 1000
+        },
+        {
+          "type": "ClickSelector",
+          "selector": "[desc='搜索']"
+        },
+        {
+          "type": "Wait",
+          "timeoutMs": 500
+        },
+        {
+          "type": "TypeIntoFirstInput",
+          "text": "王老菊"
+        },
+        {
+          "type": "Wait",
+          "timeoutMs": 300
+        },
+        {
+          "type": "ClickVisibleText",
+          "text": "搜索"
+        },
+        {
+          "type": "Wait",
+          "timeoutMs": 2000
+        }
+      ]
+    },
+    "rawOutputText": "{\n  \"decision\": {\n    \"goalCompleted\": false\n  },\n  \"steps\": [\n    {\n      \"type\": \"RecoverBilibiliHomeSurface\",\n      \"packageName\": \"tv.danmaku.bili\"\n    },\n    {\n      \"type\": \"Wait\",\n      \"timeoutMs\": 1000\n    },\n    {\n      \"type\": \"ClickSelector\",\n      \"selector\": \"[desc='搜索']\"\n    },\n    {\n      \"type\": \"Wait\",\n      \"timeoutMs\": 500\n    },\n    {\n      \"type\": \"TypeIntoFirstInput\",\n      \"text\": \"王老菊\"\n    },\n    {\n      \"type\": \"Wait\",\n      \"timeoutMs\": 300\n    },\n    {\n      \"type\": \"ClickVisibleText\",\n      \"text\": \"搜索\"\n    },\n    {\n      \"type\": \"Wait\",\n      \"timeoutMs\": 2000\n    }\n  ]\n}"
+  },
+  "parsedJson": {
+    "intentDraft": {
+      "appPackage": "tv.danmaku.bili",
+      "intentId": "search_in_app",
+      "params": {
+        "query": "王老菊",
+        "message": ""
+      },
+      "source": "EXPLICIT_TARGET_PACKAGE"
+    },
+    "planStepCount": 8,
+    "aiCandidateCount": 0,
+    "acceptedAiCandidateCount": 0,
+    "ruleCandidateCount": 0
+  },
+  "parseSuccess": true,
+  "errors": [],
+  "accepted": true,
+  "acceptedBy": "AI_DIRECT_OR_RULE_FALLBACK",
+  "acceptedAt": 1778531410609
+}

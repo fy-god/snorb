@@ -1,0 +1,118 @@
+{
+  "schemaVersion": 1,
+  "kind": "atomic_skill",
+  "id": "bilibili.search.click_search_submit",
+  "name": "点击哔哩哔哩搜索按钮",
+  "appPackage": "tv.danmaku.bili",
+  "appVersion": "*",
+  "status": "APPROVED",
+  "domain": "video_search",
+  "implements": "ClickElementSkill",
+  "params": [],
+  "preconditions": [],
+  "dependsOn": [],
+  "resolverPolicy": {
+    "order": [
+      "ACCESSIBILITY",
+      "COORDINATE_PACK"
+    ],
+    "allowAiSuggestionInFactory": true,
+    "allowAiInRuntime": false
+  },
+  "safety": {
+    "forbiddenTexts": [
+      "支付",
+      "付款",
+      "转账",
+      "删除",
+      "发布",
+      "授权"
+    ]
+  },
+  "factory": {
+    "source": "RULE_GENERALIZER_V0",
+    "traceIds": [],
+    "sampleCount": 0,
+    "dryRunStatus": "PASSED",
+    "testRuns": 10,
+    "successRate": 1,
+    "promotionStatus": "APPROVED_B",
+    "createdAt": 1778080198661,
+    "aiJobId": "factory_ai_1778080198658",
+    "aiStatus": "SUCCESS",
+    "lastDryRunReport": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_dry_run_reports\/tv.danmaku.bili\/bilibili.search.click_search_submit_1778080234348.json",
+    "lastDryRunAt": 1778080234348,
+    "lastTestReport": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_test_reports\/tv.danmaku.bili\/bilibili.search.click_search_submit_1778080679287.json",
+    "lastTestAt": 1778080679288,
+    "promotionDecision": {
+      "schemaVersion": 1,
+      "kind": "skill_json_promotion_decision",
+      "skillId": "bilibili.search.click_search_submit",
+      "appPackage": "tv.danmaku.bili",
+      "approved": true,
+      "status": "APPROVED_B",
+      "reason": "B-level promotion passed",
+      "metrics": {
+        "runs": 10,
+        "successRate": 1,
+        "highConfidenceRate": 0,
+        "mediumOrHighConfidenceRate": 1,
+        "p95DurationMs": 1542,
+        "minRuns": 10
+      },
+      "errors": [],
+      "warnings": [],
+      "timestamp": 1778080772912
+    },
+    "promotionEvaluatedAt": 1778080772912,
+    "promotedAt": 1778080772912
+  },
+  "capabilityRequired": {
+    "minLevel": "C",
+    "inputRequired": false,
+    "nodeReadablePreferred": true,
+    "coordinateFallbackAllowed": true,
+    "allowedInputChannels": [],
+    "verificationRequired": "LOW"
+  },
+  "target": {
+    "elementId": "bili_search_submit",
+    "role": "SEARCH_SUBMIT",
+    "matchers": [
+      {
+        "selector": "[resourceId='tv.danmaku.bili:id\/action_search'][clickable=true]"
+      },
+      {
+        "selector": "[text='搜索'][clickable=true]"
+      },
+      {
+        "selector": "[desc='搜索'][clickable=true]"
+      }
+    ],
+    "coordinatePack": {
+      "baseWidth": 1440,
+      "baseHeight": 3168,
+      "fallbackTap": {
+        "x": 0.91,
+        "y": 0.082
+      },
+      "source": "RULE_GENERALIZER_V0_MANUAL_PRIOR",
+      "confidence": 0.8
+    }
+  },
+  "action": {
+    "type": "ClickElement",
+    "targetElementId": "bili_search_submit",
+    "timeoutMs": 1500
+  },
+  "verify": {
+    "type": "WindowChangedOrNodeStateChanged",
+    "timeoutMs": 1500
+  },
+  "resultPolicy": {
+    "nodeClickedAndVerified": "SUCCESS",
+    "coordinateClicked": "SUCCESS_LOW_CONFIDENCE",
+    "unverifiable": "FAILED_UNVERIFIABLE"
+  },
+  "approvedLevel": "APPROVED_B"
+}

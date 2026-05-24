@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "kind": "skill_json_ai_direct_fallback_run_report",
+  "id": "ai_direct_fallback_run_1778533043108",
+  "skillId": "bilibili.search.search_in_app",
+  "appPackage": "tv.danmaku.bili",
+  "instruction": "打开哔哩哔哩搜索王老菊打开第一个视频",
+  "engine": "rule_fallback_skill_json",
+  "approvedRequired": false,
+  "status": "FAILED_RECOVER_SCREEN",
+  "message": "Bilibili recovery exhausted; still not on a trusted home\/search\/results surface. events=[{\"pass\":1,\"surface\":\"message_or_drawer_surface\",\"action\":\"message_surface_global_back\",\"success\":true,\"message\":\"GLOBAL_ACTION_BACK performed\"},{\"pass\":2,\"action\":\"reactive_overlays\",\"dismissed\":1},{\"pass\":2,\"surface\":\"message_or_drawer_surface\",\"action\":\"message_surface_global_back\",\"success\":true,\"message\":\"GLOBAL_ACTION_BACK performed\"},{\"pass\":3,\"action\":\"reactive_overlays\",\"dismissed\":1},{\"pass\":3,\"surface\":\"message_or_drawer_surface\",\"action\":\"message_surface_global_back\",\"success\":true,\"message\":\"GLOBAL_ACTION_BACK performed\"}]",
+  "durationMs": 12226,
+  "usedCoordinate": true,
+  "allowSideEffect": true,
+  "params": {
+    "query": "王老菊"
+  },
+  "skillFile": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_candidates\/tv.danmaku.bili\/bilibili.search.search_in_app.json",
+  "createdAt": 1778533043108
+}

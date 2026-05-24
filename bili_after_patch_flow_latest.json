@@ -1,0 +1,2794 @@
+{
+  "schemaVersion": 1,
+  "kind": "app_side_ai_direct_instruction_flow_report",
+  "operation": "APP_SIDE_AI_DIRECT_INSTRUCTION",
+  "id": "ai_direct_flow_1778526991702",
+  "instruction": "打开哔哩哔哩搜索王老菊打开第一个视频",
+  "appPackage": "tv.danmaku.bili",
+  "query": "王老菊",
+  "status": "SUCCESS",
+  "durationMs": 396503,
+  "steps": [
+    {
+      "title": "用户指令进入手机端执行器",
+      "status": "RUNNING",
+      "message": "主输入不再只生成文件：App 将调用 AI，生成可审计 JSON，再由 SkillJsonExecutor 直接执行候选能力。",
+      "path": null,
+      "timestamp": 1778526595199
+    },
+    {
+      "title": "AI 决策返回",
+      "status": "SUCCESS",
+      "message": "HTTP=200；模型=deepseek-v4-pro；计划步骤=0；AI候选=0",
+      "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ai_jobs\/2026-05-12\/factory_ai_direct_1778526611526.json",
+      "timestamp": 1778526611547,
+      "extra": {
+        "intentDraft": {
+          "appPackage": "tv.danmaku.bili",
+          "intentId": "search_in_app",
+          "params": {
+            "query": "王老菊",
+            "message": ""
+          },
+          "source": "EXPLICIT_TARGET_PACKAGE"
+        }
+      }
+    },
+    {
+      "title": "规则泛化 B 站搜索 Skill",
+      "status": "SUCCESS",
+      "message": "补齐 7 个细粒度 Skill JSON，搜索词=王老菊；复杂任务会在搜索结果页再让 AI 判断下一步。",
+      "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_candidates\/tv.danmaku.bili\/bilibili.open_app.json",
+      "timestamp": 1778526611562
+    },
+    {
+      "title": "dry-run 静态检查",
+      "status": "SUCCESS",
+      "message": "通过 7\/7。",
+      "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_dry_run_reports\/tv.danmaku.bili\/bilibili.search.search_in_app_1778526611745.json",
+      "timestamp": 1778526611746
+    },
+    {
+      "title": "拼装 app_config 预览",
+      "status": "SUCCESS",
+      "message": "候选\/测试产物已拼为单个 app_config 预览。",
+      "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/app_config_exports\/tv.danmaku.bili\/app_config_20260512_031012_098.json",
+      "timestamp": 1778526612262
+    },
+    {
+      "title": "执行候选 JSON",
+      "status": "RUNNING",
+      "message": "不等待 APPROVED：按用户要求，直接由 SkillJsonExecutor 执行候选 macro=bilibili.search.search_in_app。",
+      "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_candidates\/tv.danmaku.bili\/bilibili.search.search_in_app.json",
+      "timestamp": 1778526612262
+    },
+    {
+      "title": "候选 JSON 执行结果",
+      "status": "SUCCESS",
+      "message": "bilibili.search.search_in_app -> SUCCESS_LOW_CONFIDENCE；Window\/node state changed",
+      "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/runtime\/run_reports\/tv.danmaku.bili\/ai_direct_run_1778526622297.json",
+      "timestamp": 1778526622301
+    },
+    {
+      "title": "中途 AI 检查点",
+      "status": "RUNNING",
+      "message": "当前不是直接停下：App 把失败原因、当前屏幕节点和已跑步骤发给手机端 AI，让 AI 判断下一段补救 JSON。",
+      "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/runtime\/run_reports\/tv.danmaku.bili\/ai_direct_run_1778526622297.json",
+      "timestamp": 1778526622322,
+      "extra": {
+        "phase": "CHECKPOINT",
+        "trigger": "COMPLEX_TASK_CHECKPOINT",
+        "previousStatus": "SUCCESS_LOW_CONFIDENCE",
+        "previousMessage": "Window\/node state changed"
+      }
+    },
+    {
+      "title": "中途 AI 检查点 返回",
+      "status": "SUCCESS",
+      "message": "HTTP=200；模型=deepseek-v4-pro；goalCompleted=false；补救步骤=1；诊断=搜索后可能触发了消息设置弹窗，需要先关闭弹窗才能继续。",
+      "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ai_jobs\/2026-05-12\/factory_ai_checkpoint_1778526647756.json",
+      "timestamp": 1778526647768,
+      "extra": {
+        "decision": {
+          "goalCompleted": false,
+          "screenAssessment": "当前页面是底部弹出窗口（关闭工作表），包含消息设置等选项，阻塞了后续操作。",
+          "failureDiagnosis": "搜索后可能触发了消息设置弹窗，需要先关闭弹窗才能继续。",
+          "confidence": "HIGH",
+          "nextActionReason": "点击'关闭工作表'按钮关闭弹窗，预期回到之前的页面（可能是搜索结果页或主页）。"
+        }
+      }
+    },
+    {
+      "title": "AI 补救计划转 Skill JSON",
+      "status": "SUCCESS",
+      "message": "AI 返回 1 个下一步动作，已转换成 2 个候选 Skill JSON。",
+      "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_candidates\/tv.danmaku.bili\/direct.command.1778526647768.json",
+      "timestamp": 1778526647770,
+      "extra": {
+        "phase": "CHECKPOINT",
+        "trigger": "COMPLEX_TASK_CHECKPOINT"
+      }
+    },
+    {
+      "title": "AI 补救 dry-run",
+      "status": "SUCCESS",
+      "message": "通过 2\/2。",
+      "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_dry_run_reports\/tv.danmaku.bili\/direct.command.1778526647768_1778526647812.json",
+      "timestamp": 1778526647812
+    },
+    {
+      "title": "AI 补救 JSON 执行结果",
+      "status": "SUCCESS",
+      "message": "direct.command.1778526647768 -> SUCCESS_MEDIUM_CONFIDENCE；Macro atoms completed; reactiveDismissed=0",
+      "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/runtime\/run_reports\/tv.danmaku.bili\/ai_follow_up_run_1778526647965.json",
+      "timestamp": 1778526647966,
+      "extra": {
+        "phase": "CHECKPOINT",
+        "trigger": "COMPLEX_TASK_CHECKPOINT"
+      }
+    },
+    {
+      "title": "目标未完成，继续 AI 判断",
+      "status": "RUNNING",
+      "message": "没有看到 B 站视频详情页\/播放页的强证据，不能报告第一个视频已打开。；第 1\/4 次继续重判当前屏幕。",
+      "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/runtime\/run_reports\/tv.danmaku.bili\/ai_follow_up_run_1778526647965.json",
+      "timestamp": 1778526647968,
+      "extra": {
+        "serviceConnected": true,
+        "appPackage": "tv.danmaku.bili",
+        "nodeCount": 10,
+        "sampleTexts": [
+          "关闭工作表"
+        ],
+        "expected": "bilibili_first_video_detail_opened",
+        "searchInputPresent": false,
+        "resultTabsVisible": false,
+        "searchSurfaceVisible": false,
+        "detailMarkerHits": [],
+        "playerMarkerHits": [],
+        "detailEvidenceStrong": false
+      }
+    },
+    {
+      "title": "入口未找到，启动底部分页扫描",
+      "status": "RUNNING",
+      "message": "回到目标 App 主页，逐个点底部 tab，查找入口：搜索\/搜\/查找。",
+      "path": null,
+      "timestamp": 1778526648267,
+      "extra": {
+        "entryAliases": [
+          "搜索",
+          "搜",
+          "查找"
+        ],
+        "currentUi": {
+          "serviceConnected": true,
+          "appPackage": "tv.danmaku.bili",
+          "windowClassName": "android.view.View",
+          "screenWidth": 1440,
+          "screenHeight": 3168,
+          "nodeCount": 10,
+          "snapshotPath": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_snapshots\/tv.danmaku.bili\/20260512_031047_976_7faf16e5.json",
+          "recentUiSnapshots": [
+            {
+              "id": "ui_snapshot_1778526648259",
+              "source": "current_ui_summary",
+              "note": "factory_ai_context",
+              "appPackage": "tv.danmaku.bili",
+              "windowClassName": "android.view.View",
+              "screenKey": "7faf16e5",
+              "screenshotPath": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_screenshots\/tv.danmaku.bili\/20260512_031047_976_7faf16e5.png",
+              "visualHash": "d62d80a29b369ec29fc06dc7fbff850bae0b9cd1a5301f931a8a60606e38c30d",
+              "summary": {
+                "nodeCount": 10,
+                "clickableCount": 1,
+                "editableCount": 0,
+                "scrollableCount": 0,
+                "labels": [
+                  "android:id\/content",
+                  "关闭工作表"
+                ],
+                "bottomCandidates": []
+              },
+              "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_snapshots\/tv.danmaku.bili\/20260512_031047_976_7faf16e5.json"
+            },
+            {
+              "id": "ui_snapshot_1778526647963",
+              "source": "after_macro",
+              "note": "direct.command.1778526647768; confidence=SUCCESS_MEDIUM_CONFIDENCE; reactiveDismissed=0",
+              "appPackage": "tv.danmaku.bili",
+              "windowClassName": "android.view.View",
+              "screenKey": "7faf16e5",
+              "screenshotPath": "null",
+              "visualHash": "null",
+              "summary": {
+                "nodeCount": 10,
+                "clickableCount": 1,
+                "editableCount": 0,
+                "scrollableCount": 0,
+                "labels": [
+                  "android:id\/content",
+                  "关闭工作表"
+                ],
+                "bottomCandidates": []
+              },
+              "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_snapshots\/tv.danmaku.bili\/20260512_031047_963_7faf16e5.json"
+            },
+            {
+              "id": "ui_snapshot_1778526647958",
+              "source": "after_macro_atom",
+              "note": "index=0; skillId=direct.1778526647768.1.clickselector; status=SUCCESS_MEDIUM_CONFIDENCE",
+              "appPackage": "tv.danmaku.bili",
+              "windowClassName": "android.view.View",
+              "screenKey": "7faf16e5",
+              "screenshotPath": "null",
+              "visualHash": "null",
+              "summary": {
+                "nodeCount": 10,
+                "clickableCount": 1,
+                "editableCount": 0,
+                "scrollableCount": 0,
+                "labels": [
+                  "android:id\/content",
+                  "关闭工作表"
+                ],
+                "bottomCandidates": []
+              },
+              "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_snapshots\/tv.danmaku.bili\/20260512_031047_958_7faf16e5.json"
+            },
+            {
+              "id": "ui_snapshot_1778526647950",
+              "source": "after_action",
+              "note": "direct.1778526647768.1.clickselector:ClickSelector:SUCCESS_MEDIUM_CONFIDENCE:Window\/node state changed",
+              "appPackage": "tv.danmaku.bili",
+              "windowClassName": "android.view.View",
+              "screenKey": "7faf16e5",
+              "screenshotPath": "null",
+              "visualHash": "null",
+              "summary": {
+                "nodeCount": 10,
+                "clickableCount": 1,
+                "editableCount": 0,
+                "scrollableCount": 0,
+                "labels": [
+                  "android:id\/content",
+                  "关闭工作表"
+                ],
+                "bottomCandidates": []
+              },
+              "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_snapshots\/tv.danmaku.bili\/20260512_031047_949_7faf16e5.json"
+            }
+          ],
+          "capability": {
+            "nodeReadability": "B",
+            "inputCapability": "NONE",
+            "verificationCapability": "MEDIUM"
+          },
+          "nodes": [
+            {
+              "class": "android.widget.FrameLayout",
+              "clickable": false,
+              "editable": false,
+              "scrollable": false,
+              "bounds": "0 0 1440 3168"
+            },
+            {
+              "class": "android.widget.FrameLayout",
+              "clickable": false,
+              "editable": false,
+              "scrollable": false,
+              "bounds": "0 0 1440 3168"
+            },
+            {
+              "resourceId": "android:id\/content",
+              "class": "android.widget.FrameLayout",
+              "clickable": false,
+              "editable": false,
+              "scrollable": false,
+              "bounds": "0 0 1440 3168"
+            },
+            {
+              "class": "android.view.ViewGroup",
+              "clickable": false,
+              "editable": false,
+              "scrollable": false,
+              "bounds": "0 0 1440 3168"
+            },
+            {
+              "class": "android.view.View",
+              "clickable": false,
+              "editable": false,
+              "scrollable": false,
+              "bounds": "0 0 1440 3168"
+            },
+            {
+              "class": "android.view.View",
+              "clickable": false,
+              "editable": false,
+              "scrollable": false,
+              "bounds": "0 0 1440 3168"
+            },
+            {
+              "class": "android.view.View",
+              "clickable": false,
+              "editable": false,
+              "scrollable": false,
+              "bounds": "0 0 1440 3168"
+            },
+            {
+              "desc": "关闭工作表",
+              "class": "android.view.View",
+              "clickable": true,
+              "editable": false,
+              "scrollable": false,
+              "bounds": "0 0 1440 3147"
+            },
+            {
+              "class": "android.view.View",
+              "clickable": false,
+              "editable": false,
+              "scrollable": false,
+              "bounds": "0 3147 1440 3168"
+            },
+            {
+              "class": "android.view.View",
+              "clickable": false,
+              "editable": false,
+              "scrollable": false,
+              "bounds": "0 3147 1440 3168"
+            }
+          ],
+          "blockingDialogs": [],
+          "clickTargets": [
+            {
+              "index": 0,
+              "text": null,
+              "desc": "关闭工作表",
+              "resourceId": null,
+              "class": "android.view.View",
+              "clickable": true,
+              "selected": false,
+              "bounds": "0 0 1440 3147",
+              "center": {
+                "x": 0.5,
+                "y": 0.4965277777777778
+              },
+              "tags": [
+                "clickable",
+                "content_area",
+                "video_like"
+              ]
+            }
+          ],
+          "bottomTabs": [],
+          "entryCandidates": [],
+          "videoCandidates": [
+            {
+              "index": 0,
+              "text": null,
+              "desc": "关闭工作表",
+              "resourceId": null,
+              "class": "android.view.View",
+              "clickable": true,
+              "selected": false,
+              "bounds": "0 0 1440 3147",
+              "center": {
+                "x": 0.5,
+                "y": 0.4965277777777778
+              },
+              "tags": [
+                "clickable",
+                "content_area",
+                "video_like"
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "title": "底部分页扫描 dry-run",
+      "status": "SUCCESS",
+      "message": "通过 5\/5。",
+      "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_dry_run_reports\/tv.danmaku.bili\/direct.command.1778526648267_1778526648286.json",
+      "timestamp": 1778526648286
+    },
+    {
+      "title": "底部分页扫描结果",
+      "status": "SUCCESS",
+      "message": "direct.command.1778526648267 -> SUCCESS_MEDIUM_CONFIDENCE; Macro atoms completed; reactiveDismissed=0",
+      "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/runtime\/run_reports\/tv.danmaku.bili\/bottom_tab_entry_sweep_1778526656405.json",
+      "timestamp": 1778526656406,
+      "extra": {
+        "entryAliases": [
+          "搜索",
+          "搜",
+          "查找"
+        ],
+        "executorStatus": "SUCCESS_MEDIUM_CONFIDENCE"
+      }
+    },
+    {
+      "title": "失败后 AI 判断",
+      "status": "RUNNING",
+      "message": "当前不是直接停下：App 把失败原因、当前屏幕节点和已跑步骤发给手机端 AI，让 AI 判断下一段补救 JSON。",
+      "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/runtime\/run_reports\/tv.danmaku.bili\/bottom_tab_entry_sweep_1778526656405.json",
+      "timestamp": 1778526656410,
+      "extra": {
+        "phase": "REPLAN",
+        "trigger": "GOAL_UNVERIFIED_LOOP_1",
+        "previousStatus": "FAILED_GOAL_UNVERIFIED",
+        "previousMessage": "当前仍像搜索结果页：搜索输入框或“综合\/视频\/用户”等结果页 tabs 还在，不能报告第一个视频已打开。"
+      }
+    },
+    {
+      "title": "失败后 AI 判断 返回",
+      "status": "SUCCESS",
+      "message": "HTTP=200；模型=deepseek-v4-pro；goalCompleted=false；补救步骤=3；诊断=之前的操作可能误入了消息页面，未到达搜索功能，需要返回首页重新搜索。",
+      "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ai_jobs\/2026-05-12\/factory_ai_replan_1778526795842.json",
+      "timestamp": 1778526795855,
+      "extra": {
+        "decision": {
+          "goalCompleted": false,
+          "screenAssessment": "当前页面显示聊天\/消息页面，顶部有“郑郑得证”标题，底部有消息输入框和“发个消息聊聊呗”提示，不是搜索结果页或视频播放页。",
+          "failureDiagnosis": "之前的操作可能误入了消息页面，未到达搜索功能，需要返回首页重新搜索。",
+          "confidence": "MEDIUM",
+          "nextActionReason": "先通过底部分页扫描确保回到首页，然后点击顶部搜索按钮进入搜索页面。"
+        }
+      }
+    },
+    {
+      "title": "AI 补救计划转 Skill JSON",
+      "status": "SUCCESS",
+      "message": "AI 返回 3 个下一步动作，已转换成 4 个候选 Skill JSON。",
+      "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_candidates\/tv.danmaku.bili\/direct.command.1778526795856.json",
+      "timestamp": 1778526795859,
+      "extra": {
+        "phase": "REPLAN",
+        "trigger": "GOAL_UNVERIFIED_LOOP_1"
+      }
+    },
+    {
+      "title": "AI 补救 dry-run",
+      "status": "SUCCESS",
+      "message": "通过 4\/4。",
+      "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_dry_run_reports\/tv.danmaku.bili\/direct.command.1778526795856_1778526795933.json",
+      "timestamp": 1778526795933
+    },
+    {
+      "title": "AI 补救 JSON 执行结果",
+      "status": "FAILED_ELEMENT_NOT_FOUND",
+      "message": "direct.command.1778526795856 -> FAILED_ELEMENT_NOT_FOUND；Bottom-tab sweep did not find entry aliases=首页\/home; tabsVisited=5; events=[{\"phase\":\"open_before_recover\",\"packageName\":\"tv.danmaku.bili\",\"success\":true,\"message\":\"Launch intent sent for tv.danmaku.bili\"},{\"phase\":\"home_back\",\"index\":1,\"fromPackage\":\"tv.danmaku.bili\",\"window\":null,\"success\":true,\"message\":\"GLOBAL_ACTION_BACK performed\"},{\"phase\":\"home_back\",\"index\":2,\"fromPackage\":\"tv.danmaku.bili\",\"window\":\"android.view.View\",\"success\":true,\"message\":\"GLOBAL_ACTION_BACK performed\"},{\"phase\":\"home_back\",\"index\":3,\"fromPackage\":\"tv.danmaku.bili\",\"window\":\"android.widget.FrameLayout\",\"success\":true,\"message\":\"GLOBAL_ACTION_BACK performed\"},{\"phase\":\"open_after_recover\",\"packageName\":\"tv.danmaku.bili\",\"success\":true,\"message\":\"Launch intent sent for tv.danmaku.bili\"},{\"phase\":\"close_transient_sheet\",\"index\":1,\"window\":null,\"method\":\"cancel_button_or_text\",\"success\":true,\"message\":\"ACTION_CLICK performed\",\"labels\":[\"tv.danmaku.bili:id\\\/action_bar_root\",\"android:id\\\/content\",\"tv.danmaku.bili:id\\\/rl_top_content\",\"tv.danmaku.bili:id\\\/blank_layout\",\"tv.danmaku.bili:id\\\/content_layout\",\"tv.danmaku.bili:id\\\/recycler\",\"分享 tv.danmaku.bili:id\\\/title\",\"tv.danmaku.bili:id\\\/recycler\",\"QQ tv.danmaku.bili:id\\\/item\",\"QQ空间 tv.danmaku.bili:id\\\/item\",\"微信 tv.danmaku.bili:id\\\/item\",\"朋友圈 tv.danmaku.bili:id\\\/item\"]},{\"phase\":\"recover_current_package\",\"packageName\":\"tv.danmaku.bili\"},{\"phase\":\"reactive_after_recover\",\"dismissed\":2},{\"phase\":\"close_transient_sheet\",\"index\":1,\"window\":\"androidx.recyclerview.widget.RecyclerView\",\"method\":\"cancel_button_or_text\",\"success\":true,\"message\":\"ACTION_CLICK performed\",\"labels\":[\"tv.danmaku.bili:id\\\/action_bar_root\",\"android:id\\\/content\",\"tv.danmaku.bili:id\\\/rl_top_content\",\"tv.danmaku.bili:id\\\/blank_layout\",\"tv.danmaku.bili:id\\\/content_layout\",\"tv.danmaku.bili:id\\\/recycler\",\"分享 tv.danmaku.bili:id\\\/title\",\"tv.danmaku.bili:id\\\/recy",
+      "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/runtime\/run_reports\/tv.danmaku.bili\/ai_follow_up_run_1778526825822.json",
+      "timestamp": 1778526825823,
+      "extra": {
+        "phase": "REPLAN",
+        "trigger": "GOAL_UNVERIFIED_LOOP_1"
+      }
+    },
+    {
+      "title": "本地候选补救转 Skill JSON",
+      "status": "SUCCESS",
+      "message": "选择第 1 个视频候选并写成 ClickCoordinate 原子 Skill；坐标=(0.478, 0.811)。",
+      "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_candidates\/tv.danmaku.bili\/direct.command.1778526825829.json",
+      "timestamp": 1778526825833,
+      "extra": {
+        "text": "进来来和UP唠会嗑呗",
+        "desc": null,
+        "resourceId": "tv.danmaku.bili:id\/edit",
+        "class": "android.widget.EditText",
+        "clickable": true,
+        "bounds": "48 2470 1328 2671",
+        "center": {
+          "x": 0.4777777777777778,
+          "y": 0.8112373737373737
+        },
+        "score": 23,
+        "hasVideoEvidence": false,
+        "hasQueryEvidence": false
+      }
+    },
+    {
+      "title": "本地候选补救 dry-run",
+      "status": "FAILED_DRY_RUN",
+      "message": "通过 253\/260。",
+      "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_dry_run_reports\/tv.danmaku.bili\/direct.1778252274123.2.clickvisibletext_1778526826091.json",
+      "timestamp": 1778526826091
+    },
+    {
+      "title": "本地打开第一个视频结果",
+      "status": "SUCCESS",
+      "message": "direct.command.1778526825829 -> SUCCESS_LOW_CONFIDENCE；Macro atoms completed; reactiveDismissed=0；随后仍会用详情页证据重新校验，校验不过就失败。",
+      "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/runtime\/run_reports\/tv.danmaku.bili\/bilibili_open_first_video_1778526830598.json",
+      "timestamp": 1778526830599,
+      "extra": {
+        "text": "进来来和UP唠会嗑呗",
+        "desc": null,
+        "resourceId": "tv.danmaku.bili:id\/edit",
+        "class": "android.widget.EditText",
+        "clickable": true,
+        "bounds": "48 2470 1328 2671",
+        "center": {
+          "x": 0.4777777777777778,
+          "y": 0.8112373737373737
+        },
+        "score": 23,
+        "hasVideoEvidence": false,
+        "hasQueryEvidence": false
+      }
+    },
+    {
+      "title": "目标未完成，继续 AI 判断",
+      "status": "RUNNING",
+      "message": "当前仍像搜索结果页：搜索输入框或“综合\/视频\/用户”等结果页 tabs 还在，不能报告第一个视频已打开。；第 2\/4 次继续重判当前屏幕。",
+      "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/runtime\/run_reports\/tv.danmaku.bili\/bilibili_open_first_video_1778526830598.json",
+      "timestamp": 1778526830601,
+      "extra": {
+        "serviceConnected": true,
+        "appPackage": "tv.danmaku.bili",
+        "nodeCount": 26,
+        "sampleTexts": [
+          "进来来和UP唠会嗑呗",
+          "转到动态",
+          "发布"
+        ],
+        "expected": "bilibili_first_video_detail_opened",
+        "searchInputPresent": true,
+        "resultTabsVisible": false,
+        "searchSurfaceVisible": true,
+        "detailMarkerHits": [],
+        "playerMarkerHits": [],
+        "detailEvidenceStrong": false
+      }
+    },
+    {
+      "title": "失败后 AI 判断",
+      "status": "RUNNING",
+      "message": "当前不是直接停下：App 把失败原因、当前屏幕节点和已跑步骤发给手机端 AI，让 AI 判断下一段补救 JSON。",
+      "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/runtime\/run_reports\/tv.danmaku.bili\/bilibili_open_first_video_1778526830598.json",
+      "timestamp": 1778526830610,
+      "extra": {
+        "phase": "REPLAN",
+        "trigger": "GOAL_UNVERIFIED_LOOP_2",
+        "previousStatus": "FAILED_GOAL_UNVERIFIED",
+        "previousMessage": "当前仍像搜索结果页：搜索输入框或“综合\/视频\/用户”等结果页 tabs 还在，不能报告第一个视频已打开。"
+      }
+    },
+    {
+      "title": "失败后 AI 判断 返回",
+      "status": "SUCCESS",
+      "message": "HTTP=200；模型=deepseek-v4-pro；goalCompleted=false；补救步骤=2；诊断=之前点击了视频候选区域可能误触了输入框，进入了发布动态页面，偏离了打开第一个视频的目标。",
+      "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ai_jobs\/2026-05-12\/factory_ai_replan_1778526871830.json",
+      "timestamp": 1778526871843,
+      "extra": {
+        "decision": {
+          "goalCompleted": false,
+          "screenAssessment": "当前页面显示为发布动态界面，控件包括'进来来和UP唠会嗑呗'输入框、'转到动态'文字和'发布'按钮，底部有多个导航按钮。",
+          "failureDiagnosis": "之前点击了视频候选区域可能误触了输入框，进入了发布动态页面，偏离了打开第一个视频的目标。",
+          "confidence": "HIGH",
+          "nextActionReason": "需要按返回键离开当前发布动态页面，期望回到哔哩哔哩搜索结果页。"
+        }
+      }
+    },
+    {
+      "title": "AI 补救计划转 Skill JSON",
+      "status": "SUCCESS",
+      "message": "AI 返回 2 个下一步动作，已转换成 3 个候选 Skill JSON。",
+      "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_candidates\/tv.danmaku.bili\/direct.command.1778526871844.json",
+      "timestamp": 1778526871846,
+      "extra": {
+        "phase": "REPLAN",
+        "trigger": "GOAL_UNVERIFIED_LOOP_2"
+      }
+    },
+    {
+      "title": "AI 补救 dry-run",
+      "status": "SUCCESS",
+      "message": "通过 3\/3。",
+      "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_dry_run_reports\/tv.danmaku.bili\/direct.command.1778526871844_1778526871901.json",
+      "timestamp": 1778526871901
+    },
+    {
+      "title": "AI 补救 JSON 执行结果",
+      "status": "SUCCESS",
+      "message": "direct.command.1778526871844 -> SUCCESS_MEDIUM_CONFIDENCE；Macro atoms completed; reactiveDismissed=0",
+      "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/runtime\/run_reports\/tv.danmaku.bili\/ai_follow_up_run_1778526873882.json",
+      "timestamp": 1778526873883,
+      "extra": {
+        "phase": "REPLAN",
+        "trigger": "GOAL_UNVERIFIED_LOOP_2"
+      }
+    },
+    {
+      "title": "目标未完成，继续 AI 判断",
+      "status": "RUNNING",
+      "message": "当前仍像搜索结果页：搜索输入框或“综合\/视频\/用户”等结果页 tabs 还在，不能报告第一个视频已打开。；第 3\/4 次继续重判当前屏幕。",
+      "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/runtime\/run_reports\/tv.danmaku.bili\/ai_follow_up_run_1778526873882.json",
+      "timestamp": 1778526873888,
+      "extra": {
+        "serviceConnected": true,
+        "appPackage": "tv.danmaku.bili",
+        "nodeCount": 26,
+        "sampleTexts": [
+          "进来来和UP唠会嗑呗",
+          "转到动态",
+          "发布"
+        ],
+        "expected": "bilibili_first_video_detail_opened",
+        "searchInputPresent": true,
+        "resultTabsVisible": false,
+        "searchSurfaceVisible": true,
+        "detailMarkerHits": [],
+        "playerMarkerHits": [],
+        "detailEvidenceStrong": false
+      }
+    },
+    {
+      "title": "失败后 AI 判断",
+      "status": "RUNNING",
+      "message": "当前不是直接停下：App 把失败原因、当前屏幕节点和已跑步骤发给手机端 AI，让 AI 判断下一段补救 JSON。",
+      "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/runtime\/run_reports\/tv.danmaku.bili\/ai_follow_up_run_1778526873882.json",
+      "timestamp": 1778526873900,
+      "extra": {
+        "phase": "REPLAN",
+        "trigger": "GOAL_UNVERIFIED_LOOP_3",
+        "previousStatus": "FAILED_GOAL_UNVERIFIED",
+        "previousMessage": "当前仍像搜索结果页：搜索输入框或“综合\/视频\/用户”等结果页 tabs 还在，不能报告第一个视频已打开。"
+      }
+    },
+    {
+      "title": "失败后 AI 判断 返回",
+      "status": "SUCCESS",
+      "message": "HTTP=200；模型=deepseek-v4-pro；goalCompleted=false；补救步骤=9；诊断=之前点击搜索或视频候选时可能误触了输入框或动态入口，进入了动态发布页面，导致后续操作偏离目标。",
+      "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ai_jobs\/2026-05-12\/factory_ai_replan_1778526980351.json",
+      "timestamp": 1778526980370,
+      "extra": {
+        "decision": {
+          "goalCompleted": false,
+          "screenAssessment": "当前页面是哔哩哔哩动态发布\/回复页，可见“进来来和UP唠会嗑呗”编辑框、“发布”按钮及底部多个无文字tab，没有搜索输入框或视频结果。",
+          "failureDiagnosis": "之前点击搜索或视频候选时可能误触了输入框或动态入口，进入了动态发布页面，导致后续操作偏离目标。",
+          "confidence": "LOW",
+          "nextActionReason": "重置应用回到主界面，通过坐标点击搜索框并输入关键词，点击键盘搜索键触发搜索，等待结果后点击第一个视频候选区域。"
+        }
+      }
+    },
+    {
+      "title": "AI 补救计划转 Skill JSON",
+      "status": "SUCCESS",
+      "message": "AI 返回 9 个下一步动作，已转换成 10 个候选 Skill JSON。",
+      "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_candidates\/tv.danmaku.bili\/direct.command.1778526980370.json",
+      "timestamp": 1778526980379,
+      "extra": {
+        "phase": "REPLAN",
+        "trigger": "GOAL_UNVERIFIED_LOOP_3"
+      }
+    },
+    {
+      "title": "AI 补救 dry-run",
+      "status": "SUCCESS",
+      "message": "通过 10\/10。",
+      "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_dry_run_reports\/tv.danmaku.bili\/direct.command.1778526980370_1778526980469.json",
+      "timestamp": 1778526980470
+    },
+    {
+      "title": "AI 补救 JSON 执行结果",
+      "status": "SUCCESS",
+      "message": "direct.command.1778526980370 -> SUCCESS_LOW_CONFIDENCE；Macro atoms completed; reactiveDismissed=3",
+      "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/runtime\/run_reports\/tv.danmaku.bili\/ai_follow_up_run_1778526990473.json",
+      "timestamp": 1778526990474,
+      "extra": {
+        "phase": "REPLAN",
+        "trigger": "GOAL_UNVERIFIED_LOOP_3"
+      }
+    },
+    {
+      "title": "目标完成校验",
+      "status": "SUCCESS",
+      "message": "已看到 B 站视频详情页\/播放页证据，且搜索输入框和结果页 tabs 已消失。",
+      "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/runtime\/run_reports\/tv.danmaku.bili\/ai_follow_up_run_1778526990473.json",
+      "timestamp": 1778526990477,
+      "extra": {
+        "serviceConnected": true,
+        "appPackage": "tv.danmaku.bili",
+        "nodeCount": 36,
+        "sampleTexts": [
+          "分享",
+          "QQ",
+          "QQ空间",
+          "微信",
+          "朋友圈",
+          "微博",
+          "动态",
+          "投币",
+          "生成长图",
+          "举报",
+          "取消"
+        ],
+        "expected": "bilibili_first_video_detail_opened",
+        "searchInputPresent": false,
+        "resultTabsVisible": false,
+        "searchSurfaceVisible": false,
+        "detailMarkerHits": [
+          "投币",
+          "分享"
+        ],
+        "playerMarkerHits": [],
+        "detailEvidenceStrong": true
+      }
+    },
+    {
+      "title": "返回 MacroPilot 显示报告",
+      "status": "INFO",
+      "message": "已把 MacroPilot 拉回前台，用户可以直接看 AI、JSON、dry-run、app_config 和执行报告。",
+      "path": null,
+      "timestamp": 1778526991702
+    }
+  ],
+  "outputs": {
+    "aiJobFile": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ai_jobs\/2026-05-12\/factory_ai_direct_1778526611526.json",
+    "aiJobFiles": [
+      "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ai_jobs\/2026-05-12\/factory_ai_direct_1778526611526.json",
+      "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ai_jobs\/2026-05-12\/factory_ai_checkpoint_1778526647756.json",
+      "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ai_jobs\/2026-05-12\/factory_ai_replan_1778526795842.json",
+      "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ai_jobs\/2026-05-12\/factory_ai_replan_1778526871830.json",
+      "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ai_jobs\/2026-05-12\/factory_ai_replan_1778526980351.json"
+    ],
+    "previewConfigFile": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/app_config_exports\/tv.danmaku.bili\/app_config_20260512_031012_098.json",
+    "runtimeRunReportFile": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/runtime\/run_reports\/tv.danmaku.bili\/ai_follow_up_run_1778526990473.json",
+    "recentUiSnapshots": [
+      {
+        "id": "ui_snapshot_1778526990967",
+        "source": "accessibility_auto",
+        "note": "TYPE_VIEW_SCROLLED",
+        "appPackage": "tv.danmaku.bili",
+        "windowClassName": "null",
+        "screenKey": "37025b27",
+        "screenshotPath": "null",
+        "visualHash": "null",
+        "summary": {
+          "nodeCount": 36,
+          "clickableCount": 11,
+          "editableCount": 0,
+          "scrollableCount": 1,
+          "labels": [
+            "tv.danmaku.bili:id\/action_bar_root",
+            "android:id\/content",
+            "tv.danmaku.bili:id\/rl_top_content",
+            "tv.danmaku.bili:id\/blank_layout",
+            "tv.danmaku.bili:id\/content_layout",
+            "tv.danmaku.bili:id\/recycler",
+            "分享 tv.danmaku.bili:id\/title",
+            "tv.danmaku.bili:id\/recycler",
+            "QQ tv.danmaku.bili:id\/item",
+            "QQ空间 tv.danmaku.bili:id\/item",
+            "微信 tv.danmaku.bili:id\/item",
+            "朋友圈 tv.danmaku.bili:id\/item",
+            "微博 tv.danmaku.bili:id\/item",
+            "动态 tv.danmaku.bili:id\/item",
+            "tv.danmaku.bili:id\/recycler",
+            "投币 tv.danmaku.bili:id\/item",
+            "生成长图 tv.danmaku.bili:id\/item",
+            "举报 tv.danmaku.bili:id\/item",
+            "tv.danmaku.bili:id\/space",
+            "取消 tv.danmaku.bili:id\/cancel"
+          ],
+          "bottomCandidates": [
+            {
+              "label": "",
+              "bounds": {
+                "left": 44,
+                "top": 2140,
+                "right": 308,
+                "bottom": 2405
+              },
+              "clickable": true
+            },
+            {
+              "label": "QQ tv.danmaku.bili:id\/item",
+              "bounds": {
+                "left": 44,
+                "top": 2140,
+                "right": 308,
+                "bottom": 2405
+              },
+              "clickable": false
+            },
+            {
+              "label": "",
+              "bounds": {
+                "left": 44,
+                "top": 2535,
+                "right": 308,
+                "bottom": 2800
+              },
+              "clickable": true
+            },
+            {
+              "label": "投币 tv.danmaku.bili:id\/item",
+              "bounds": {
+                "left": 44,
+                "top": 2535,
+                "right": 308,
+                "bottom": 2800
+              },
+              "clickable": false
+            },
+            {
+              "label": "",
+              "bounds": {
+                "left": 308,
+                "top": 2140,
+                "right": 572,
+                "bottom": 2405
+              },
+              "clickable": true
+            },
+            {
+              "label": "QQ空间 tv.danmaku.bili:id\/item",
+              "bounds": {
+                "left": 308,
+                "top": 2140,
+                "right": 572,
+                "bottom": 2405
+              },
+              "clickable": false
+            },
+            {
+              "label": "",
+              "bounds": {
+                "left": 308,
+                "top": 2535,
+                "right": 572,
+                "bottom": 2800
+              },
+              "clickable": true
+            },
+            {
+              "label": "生成长图 tv.danmaku.bili:id\/item",
+              "bounds": {
+                "left": 308,
+                "top": 2535,
+                "right": 572,
+                "bottom": 2800
+              },
+              "clickable": false
+            },
+            {
+              "label": "",
+              "bounds": {
+                "left": 572,
+                "top": 2140,
+                "right": 836,
+                "bottom": 2405
+              },
+              "clickable": true
+            },
+            {
+              "label": "微信 tv.danmaku.bili:id\/item",
+              "bounds": {
+                "left": 572,
+                "top": 2140,
+                "right": 836,
+                "bottom": 2405
+              },
+              "clickable": false
+            },
+            {
+              "label": "",
+              "bounds": {
+                "left": 572,
+                "top": 2535,
+                "right": 836,
+                "bottom": 2800
+              },
+              "clickable": true
+            },
+            {
+              "label": "举报 tv.danmaku.bili:id\/item",
+              "bounds": {
+                "left": 572,
+                "top": 2535,
+                "right": 836,
+                "bottom": 2800
+              },
+              "clickable": false
+            }
+          ]
+        },
+        "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_snapshots\/tv.danmaku.bili\/20260512_031630_967_37025b27.json"
+      },
+      {
+        "id": "ui_snapshot_1778526990466",
+        "source": "after_macro",
+        "note": "direct.command.1778526980370; confidence=SUCCESS_LOW_CONFIDENCE; reactiveDismissed=3",
+        "appPackage": "tv.danmaku.bili",
+        "windowClassName": "com.bilibili.app.comm.supermenu.core.a",
+        "screenKey": "f14f152c",
+        "screenshotPath": "null",
+        "visualHash": "null",
+        "summary": {
+          "nodeCount": 36,
+          "clickableCount": 11,
+          "editableCount": 0,
+          "scrollableCount": 1,
+          "labels": [
+            "tv.danmaku.bili:id\/action_bar_root",
+            "android:id\/content",
+            "tv.danmaku.bili:id\/rl_top_content",
+            "tv.danmaku.bili:id\/blank_layout",
+            "tv.danmaku.bili:id\/content_layout",
+            "tv.danmaku.bili:id\/recycler",
+            "分享 tv.danmaku.bili:id\/title",
+            "tv.danmaku.bili:id\/recycler",
+            "QQ tv.danmaku.bili:id\/item",
+            "QQ空间 tv.danmaku.bili:id\/item",
+            "微信 tv.danmaku.bili:id\/item",
+            "朋友圈 tv.danmaku.bili:id\/item",
+            "微博 tv.danmaku.bili:id\/item",
+            "动态 tv.danmaku.bili:id\/item",
+            "tv.danmaku.bili:id\/recycler",
+            "投币 tv.danmaku.bili:id\/item",
+            "生成长图 tv.danmaku.bili:id\/item",
+            "举报 tv.danmaku.bili:id\/item",
+            "tv.danmaku.bili:id\/space",
+            "取消 tv.danmaku.bili:id\/cancel"
+          ],
+          "bottomCandidates": [
+            {
+              "label": "",
+              "bounds": {
+                "left": 44,
+                "top": 5084,
+                "right": 308,
+                "bottom": 5349
+              },
+              "clickable": true
+            },
+            {
+              "label": "QQ tv.danmaku.bili:id\/item",
+              "bounds": {
+                "left": 44,
+                "top": 5084,
+                "right": 308,
+                "bottom": 5349
+              },
+              "clickable": false
+            },
+            {
+              "label": "",
+              "bounds": {
+                "left": 44,
+                "top": 5479,
+                "right": 308,
+                "bottom": 5744
+              },
+              "clickable": true
+            },
+            {
+              "label": "投币 tv.danmaku.bili:id\/item",
+              "bounds": {
+                "left": 44,
+                "top": 5479,
+                "right": 308,
+                "bottom": 5744
+              },
+              "clickable": false
+            },
+            {
+              "label": "",
+              "bounds": {
+                "left": 308,
+                "top": 5084,
+                "right": 572,
+                "bottom": 5349
+              },
+              "clickable": true
+            },
+            {
+              "label": "QQ空间 tv.danmaku.bili:id\/item",
+              "bounds": {
+                "left": 308,
+                "top": 5084,
+                "right": 572,
+                "bottom": 5349
+              },
+              "clickable": false
+            },
+            {
+              "label": "",
+              "bounds": {
+                "left": 308,
+                "top": 5479,
+                "right": 572,
+                "bottom": 5744
+              },
+              "clickable": true
+            },
+            {
+              "label": "生成长图 tv.danmaku.bili:id\/item",
+              "bounds": {
+                "left": 308,
+                "top": 5479,
+                "right": 572,
+                "bottom": 5744
+              },
+              "clickable": false
+            },
+            {
+              "label": "",
+              "bounds": {
+                "left": 572,
+                "top": 5084,
+                "right": 836,
+                "bottom": 5349
+              },
+              "clickable": true
+            },
+            {
+              "label": "微信 tv.danmaku.bili:id\/item",
+              "bounds": {
+                "left": 572,
+                "top": 5084,
+                "right": 836,
+                "bottom": 5349
+              },
+              "clickable": false
+            },
+            {
+              "label": "",
+              "bounds": {
+                "left": 572,
+                "top": 5479,
+                "right": 836,
+                "bottom": 5744
+              },
+              "clickable": true
+            },
+            {
+              "label": "举报 tv.danmaku.bili:id\/item",
+              "bounds": {
+                "left": 572,
+                "top": 5479,
+                "right": 836,
+                "bottom": 5744
+              },
+              "clickable": false
+            }
+          ]
+        },
+        "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_snapshots\/tv.danmaku.bili\/20260512_031630_465_f14f152c.json"
+      },
+      {
+        "id": "ui_snapshot_1778526990439",
+        "source": "after_macro_atom",
+        "note": "index=8; skillId=direct.1778526980370.9.clickcoordinate; status=SUCCESS_LOW_CONFIDENCE",
+        "appPackage": "tv.danmaku.bili",
+        "windowClassName": "null",
+        "screenKey": "37025b27",
+        "screenshotPath": "null",
+        "visualHash": "null",
+        "summary": {
+          "nodeCount": 36,
+          "clickableCount": 11,
+          "editableCount": 0,
+          "scrollableCount": 1,
+          "labels": [
+            "tv.danmaku.bili:id\/action_bar_root",
+            "android:id\/content",
+            "tv.danmaku.bili:id\/rl_top_content",
+            "tv.danmaku.bili:id\/blank_layout",
+            "tv.danmaku.bili:id\/content_layout",
+            "tv.danmaku.bili:id\/recycler",
+            "分享 tv.danmaku.bili:id\/title",
+            "tv.danmaku.bili:id\/recycler",
+            "QQ tv.danmaku.bili:id\/item",
+            "QQ空间 tv.danmaku.bili:id\/item",
+            "微信 tv.danmaku.bili:id\/item",
+            "朋友圈 tv.danmaku.bili:id\/item",
+            "微博 tv.danmaku.bili:id\/item",
+            "动态 tv.danmaku.bili:id\/item",
+            "tv.danmaku.bili:id\/recycler",
+            "投币 tv.danmaku.bili:id\/item",
+            "生成长图 tv.danmaku.bili:id\/item",
+            "举报 tv.danmaku.bili:id\/item",
+            "tv.danmaku.bili:id\/space",
+            "取消 tv.danmaku.bili:id\/cancel"
+          ],
+          "bottomCandidates": [
+            {
+              "label": "",
+              "bounds": {
+                "left": 44,
+                "top": 5084,
+                "right": 308,
+                "bottom": 5349
+              },
+              "clickable": true
+            },
+            {
+              "label": "QQ tv.danmaku.bili:id\/item",
+              "bounds": {
+                "left": 44,
+                "top": 5084,
+                "right": 308,
+                "bottom": 5349
+              },
+              "clickable": false
+            },
+            {
+              "label": "",
+              "bounds": {
+                "left": 44,
+                "top": 5479,
+                "right": 308,
+                "bottom": 5744
+              },
+              "clickable": true
+            },
+            {
+              "label": "投币 tv.danmaku.bili:id\/item",
+              "bounds": {
+                "left": 44,
+                "top": 5479,
+                "right": 308,
+                "bottom": 5744
+              },
+              "clickable": false
+            },
+            {
+              "label": "",
+              "bounds": {
+                "left": 308,
+                "top": 5084,
+                "right": 572,
+                "bottom": 5349
+              },
+              "clickable": true
+            },
+            {
+              "label": "QQ空间 tv.danmaku.bili:id\/item",
+              "bounds": {
+                "left": 308,
+                "top": 5084,
+                "right": 572,
+                "bottom": 5349
+              },
+              "clickable": false
+            },
+            {
+              "label": "",
+              "bounds": {
+                "left": 308,
+                "top": 5479,
+                "right": 572,
+                "bottom": 5744
+              },
+              "clickable": true
+            },
+            {
+              "label": "生成长图 tv.danmaku.bili:id\/item",
+              "bounds": {
+                "left": 308,
+                "top": 5479,
+                "right": 572,
+                "bottom": 5744
+              },
+              "clickable": false
+            },
+            {
+              "label": "",
+              "bounds": {
+                "left": 572,
+                "top": 5084,
+                "right": 836,
+                "bottom": 5349
+              },
+              "clickable": true
+            },
+            {
+              "label": "微信 tv.danmaku.bili:id\/item",
+              "bounds": {
+                "left": 572,
+                "top": 5084,
+                "right": 836,
+                "bottom": 5349
+              },
+              "clickable": false
+            },
+            {
+              "label": "",
+              "bounds": {
+                "left": 572,
+                "top": 5479,
+                "right": 836,
+                "bottom": 5744
+              },
+              "clickable": true
+            },
+            {
+              "label": "举报 tv.danmaku.bili:id\/item",
+              "bounds": {
+                "left": 572,
+                "top": 5479,
+                "right": 836,
+                "bottom": 5744
+              },
+              "clickable": false
+            }
+          ]
+        },
+        "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_snapshots\/tv.danmaku.bili\/20260512_031630_438_37025b27.json"
+      },
+      {
+        "id": "ui_snapshot_1778526990288",
+        "source": "accessibility_auto",
+        "note": "TYPE_WINDOW_STATE_CHANGED",
+        "appPackage": "tv.danmaku.bili",
+        "windowClassName": "android.view.View",
+        "screenKey": "5dfcc77b",
+        "screenshotPath": "null",
+        "visualHash": "null",
+        "summary": {
+          "nodeCount": 232,
+          "clickableCount": 61,
+          "editableCount": 0,
+          "scrollableCount": 3,
+          "labels": [
+            "tv.danmaku.bili:id\/action_bar_root",
+            "android:id\/content",
+            "tv.danmaku.bili:id\/opus_detail_head",
+            "tv.danmaku.bili:id\/opus_nested_scroll",
+            "tv.danmaku.bili:id\/opus_dy_list",
+            "tv.danmaku.bili:id\/dy_following_detail_draw_banner",
+            "tv.danmaku.bili:id\/image_blur",
+            "tv.danmaku.bili:id\/live_photo",
+            "tv.danmaku.bili:id\/image",
+            "tv.danmaku.bili:id\/dy_opus_paragraph_text_layout",
+            "直接加码！！嗖“233233”很多25-25，1分钱吃外卖 tv.danmaku.bili:id\/dy_opus_paragraph_text",
+            "tv.danmaku.bili:id\/dy_following_card_header",
+            "tv.danmaku.bili:id\/dy_fl_recommend2decorate",
+            "tv.danmaku.bili:id\/dy_avatar",
+            "tv.danmaku.bili:id\/dy_card_user",
+            "郑郑得证 tv.danmaku.bili:id\/card_user_name",
+            "2026年5月10日 10:00 tv.danmaku.bili:id\/dy_text_time",
+            "tv.danmaku.bili:id\/dy_opus_paragraph_text_layout",
+            "美团\/淘宝闪购搜→233233直接开大的！ tv.danmaku.bili:id\/dy_opus_paragraph_text",
+            "tv.danmaku.bili:id\/dy_opus_paragraph_text_layout",
+            "B站这个密令靠谱，我自己用好久了 tv.danmaku.bili:id\/dy_opus_paragraph_text",
+            "tv.danmaku.bili:id\/dy_opus_paragraph_text_layout",
+            "现在还时不时发个大红包 tv.danmaku.bili:id\/dy_opus_paragraph_text",
+            "tv.danmaku.bili:id\/dy_opus_paragraph_text_layout",
+            "经常点外卖的，用这个密令越用越大 tv.danmaku.bili:id\/dy_opus_paragraph_text",
+            "IP属地：江苏  cv48651887 tv.danmaku.bili:id\/dy_opus_copy_right_text",
+            "tv.danmaku.bili:id\/opus_three_tabs",
+            "tv.danmaku.bili:id\/mytabs",
+            "tv.danmaku.bili:id\/content",
+            "评论 2 tv.danmaku.bili:id\/comment",
+            "tv.danmaku.bili:id\/favor_repost",
+            "赞和转发 298 tv.danmaku.bili:id\/interaction_title",
+            "tv.danmaku.bili:id\/opus_pager",
+            "tv.danmaku.bili:id\/content_view",
+            "tv.danmaku.bili:id\/layer_container",
+            "tv.danmaku.bili:id\/comment_main",
+            "tv.danmaku.bili:id\/cmt3_swipe_refresh",
+            "tv.danmaku.bili:id\/cmt3_recycler",
+            "热门评论 tv.danmaku.bili:id\/title",
+            "按热度 tv.danmaku.bili:id\/sort_button",
+            "tv.danmaku.bili:id\/long_click_hotspot",
+            "tv.danmaku.bili:id\/item_include_avatar",
+            "tv.danmaku.bili:id\/avatar_layer",
+            "tv.danmaku.bili:id\/item_include_header",
+            "tv.danmaku.bili:id\/place_holder_view",
+            "tv.danmaku.bili:id\/decorative_view",
+            "蒙住眼享受专家 tv.danmaku.bili:id\/user_name",
+            "tv.danmaku.bili:id\/user_handle",
+            "tv.danmaku.bili:id\/identity_view",
+            "tv.danmaku.bili:id\/item_include_rich_text",
+            "哄蒙红包​​ tv.danmaku.bili:id\/primary_message",
+            "tv.danmaku.bili:id\/item_include_garb",
+            "tv.danmaku.bili:id\/item_include_actions",
+            "2天前 湖北 tv.danmaku.bili:id\/description",
+            "回复 tv.danmaku.bili:id\/reply_button",
+            "tv.danmaku.bili:id\/like_container",
+            "tv.danmaku.bili:id\/like_button",
+            "tv.danmaku.bili:id\/dislike_button",
+            "tv.danmaku.bili:id\/more_button",
+            "tv.danmaku.bili:id\/long_click_hotspot",
+            "tv.danmaku.bili:id\/item_include_avatar",
+            "tv.danmaku.bili:id\/avatar_layer",
+            "tv.danmaku.bili:id\/item_include_header",
+            "tv.danmaku.bili:id\/place_holder_view",
+            "tv.danmaku.bili:id\/decorative_view",
+            "玖玥贰拾肆 tv.danmaku.bili:id\/user_name",
+            "tv.danmaku.bili:id\/user_handle",
+            "tv.danmaku.bili:id\/identity_view",
+            "tv.danmaku.bili:id\/item_include_rich_text",
+            "？？？​ tv.danmaku.bili:id\/primary_message",
+            "tv.danmaku.bili:id\/item_include_garb",
+            "tv.danmaku.bili:id\/item_include_actions",
+            "2天前 河南 tv.danmaku.bili:id\/description",
+            "回复 tv.danmaku.bili:id\/reply_button",
+            "tv.danmaku.bili:id\/like_container",
+            "tv.danmaku.bili:id\/like_button",
+            "tv.danmaku.bili:id\/dislike_button",
+            "tv.danmaku.bili:id\/more_button",
+            "╮(╯3╰)╭再怎么找也没有啦 tv.danmaku.bili:id\/footer_end_text",
+            "tv.danmaku.bili:id\/cmt3_fake_input_bar_container"
+          ],
+          "bottomCandidates": [
+            {
+              "label": "点我发评论",
+              "bounds": {
+                "left": 94,
+                "top": 2962,
+                "right": 354,
+                "bottom": 3023
+              },
+              "clickable": false
+            },
+            {
+              "label": "",
+              "bounds": {
+                "left": 48,
+                "top": 2896,
+                "right": 496,
+                "bottom": 3088
+              },
+              "clickable": true
+            },
+            {
+              "label": "",
+              "bounds": {
+                "left": 536,
+                "top": 2900,
+                "right": 752,
+                "bottom": 3092
+              },
+              "clickable": true
+            },
+            {
+              "label": "转发",
+              "bounds": {
+                "left": 544,
+                "top": 3020,
+                "right": 744,
+                "bottom": 3072
+              },
+              "clickable": false
+            },
+            {
+              "label": "",
+              "bounds": {
+                "left": 752,
+                "top": 2900,
+                "right": 968,
+                "bottom": 3092
+              },
+              "clickable": true
+            },
+            {
+              "label": "2",
+              "bounds": {
+                "left": 760,
+                "top": 3020,
+                "right": 960,
+                "bottom": 3072
+              },
+              "clickable": false
+            },
+            {
+              "label": "",
+              "bounds": {
+                "left": 968,
+                "top": 2900,
+                "right": 1184,
+                "bottom": 3092
+              },
+              "clickable": true
+            },
+            {
+              "label": "1",
+              "bounds": {
+                "left": 976,
+                "top": 3020,
+                "right": 1176,
+                "bottom": 3072
+              },
+              "clickable": false
+            },
+            {
+              "label": "298",
+              "bounds": {
+                "left": 1192,
+                "top": 3020,
+                "right": 1392,
+                "bottom": 3072
+              },
+              "clickable": false
+            },
+            {
+              "label": "",
+              "bounds": {
+                "left": 1440,
+                "top": 2208,
+                "right": 1440,
+                "bottom": 2448
+              },
+              "clickable": true
+            },
+            {
+              "label": "",
+              "bounds": {
+                "left": 1440,
+                "top": 2448,
+                "right": 1440,
+                "bottom": 2688
+              },
+              "clickable": true
+            },
+            {
+              "label": "",
+              "bounds": {
+                "left": 1440,
+                "top": 2688,
+                "right": 1440,
+                "bottom": 2894
+              },
+              "clickable": true
+            }
+          ]
+        },
+        "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_snapshots\/tv.danmaku.bili\/20260512_031630_286_5dfcc77b.json"
+      },
+      {
+        "id": "ui_snapshot_1778526989966",
+        "source": "after_action",
+        "note": "direct.1778526980370.9.clickcoordinate:ClickCoordinate:SUCCESS_LOW_CONFIDENCE:Window\/node state changed",
+        "appPackage": "tv.danmaku.bili",
+        "windowClassName": "com.bilibili.lib.ui.ComposeActivity",
+        "screenKey": "593ddca1",
+        "screenshotPath": "null",
+        "visualHash": "null",
+        "summary": {
+          "nodeCount": 232,
+          "clickableCount": 61,
+          "editableCount": 0,
+          "scrollableCount": 3,
+          "labels": [
+            "tv.danmaku.bili:id\/action_bar_root",
+            "android:id\/content",
+            "tv.danmaku.bili:id\/opus_detail_head",
+            "tv.danmaku.bili:id\/opus_nested_scroll",
+            "tv.danmaku.bili:id\/opus_dy_list",
+            "tv.danmaku.bili:id\/dy_following_detail_draw_banner",
+            "tv.danmaku.bili:id\/image_blur",
+            "tv.danmaku.bili:id\/live_photo",
+            "tv.danmaku.bili:id\/image",
+            "tv.danmaku.bili:id\/dy_opus_paragraph_text_layout",
+            "直接加码！！嗖“233233”很多25-25，1分钱吃外卖 tv.danmaku.bili:id\/dy_opus_paragraph_text",
+            "tv.danmaku.bili:id\/dy_following_card_header",
+            "tv.danmaku.bili:id\/dy_fl_recommend2decorate",
+            "tv.danmaku.bili:id\/dy_avatar",
+            "tv.danmaku.bili:id\/dy_card_user",
+            "郑郑得证 tv.danmaku.bili:id\/card_user_name",
+            "2026年5月10日 10:00 tv.danmaku.bili:id\/dy_text_time",
+            "tv.danmaku.bili:id\/dy_opus_paragraph_text_layout",
+            "美团\/淘宝闪购搜→233233直接开大的！ tv.danmaku.bili:id\/dy_opus_paragraph_text",
+            "tv.danmaku.bili:id\/dy_opus_paragraph_text_layout",
+            "B站这个密令靠谱，我自己用好久了 tv.danmaku.bili:id\/dy_opus_paragraph_text",
+            "tv.danmaku.bili:id\/dy_opus_paragraph_text_layout",
+            "现在还时不时发个大红包 tv.danmaku.bili:id\/dy_opus_paragraph_text",
+            "tv.danmaku.bili:id\/dy_opus_paragraph_text_layout",
+            "经常点外卖的，用这个密令越用越大 tv.danmaku.bili:id\/dy_opus_paragraph_text",
+            "IP属地：江苏  cv48651887 tv.danmaku.bili:id\/dy_opus_copy_right_text",
+            "tv.danmaku.bili:id\/opus_three_tabs",
+            "tv.danmaku.bili:id\/mytabs",
+            "tv.danmaku.bili:id\/content",
+            "评论 2 tv.danmaku.bili:id\/comment",
+            "tv.danmaku.bili:id\/favor_repost",
+            "赞和转发 298 tv.danmaku.bili:id\/interaction_title",
+            "tv.danmaku.bili:id\/opus_pager",
+            "tv.danmaku.bili:id\/content_view",
+            "tv.danmaku.bili:id\/layer_container",
+            "tv.danmaku.bili:id\/comment_main",
+            "tv.danmaku.bili:id\/cmt3_swipe_refresh",
+            "tv.danmaku.bili:id\/cmt3_recycler",
+            "热门评论 tv.danmaku.bili:id\/title",
+            "按热度 tv.danmaku.bili:id\/sort_button",
+            "tv.danmaku.bili:id\/long_click_hotspot",
+            "tv.danmaku.bili:id\/item_include_avatar",
+            "tv.danmaku.bili:id\/avatar_layer",
+            "tv.danmaku.bili:id\/item_include_header",
+            "tv.danmaku.bili:id\/place_holder_view",
+            "tv.danmaku.bili:id\/decorative_view",
+            "蒙住眼享受专家 tv.danmaku.bili:id\/user_name",
+            "tv.danmaku.bili:id\/user_handle",
+            "tv.danmaku.bili:id\/identity_view",
+            "tv.danmaku.bili:id\/item_include_rich_text",
+            "哄蒙红包​​ tv.danmaku.bili:id\/primary_message",
+            "tv.danmaku.bili:id\/item_include_garb",
+            "tv.danmaku.bili:id\/item_include_actions",
+            "2天前 湖北 tv.danmaku.bili:id\/description",
+            "回复 tv.danmaku.bili:id\/reply_button",
+            "tv.danmaku.bili:id\/like_container",
+            "tv.danmaku.bili:id\/like_button",
+            "tv.danmaku.bili:id\/dislike_button",
+            "tv.danmaku.bili:id\/more_button",
+            "tv.danmaku.bili:id\/long_click_hotspot",
+            "tv.danmaku.bili:id\/item_include_avatar",
+            "tv.danmaku.bili:id\/avatar_layer",
+            "tv.danmaku.bili:id\/item_include_header",
+            "tv.danmaku.bili:id\/place_holder_view",
+            "tv.danmaku.bili:id\/decorative_view",
+            "玖玥贰拾肆 tv.danmaku.bili:id\/user_name",
+            "tv.danmaku.bili:id\/user_handle",
+            "tv.danmaku.bili:id\/identity_view",
+            "tv.danmaku.bili:id\/item_include_rich_text",
+            "？？？​ tv.danmaku.bili:id\/primary_message",
+            "tv.danmaku.bili:id\/item_include_garb",
+            "tv.danmaku.bili:id\/item_include_actions",
+            "2天前 河南 tv.danmaku.bili:id\/description",
+            "回复 tv.danmaku.bili:id\/reply_button",
+            "tv.danmaku.bili:id\/like_container",
+            "tv.danmaku.bili:id\/like_button",
+            "tv.danmaku.bili:id\/dislike_button",
+            "tv.danmaku.bili:id\/more_button",
+            "╮(╯3╰)╭再怎么找也没有啦 tv.danmaku.bili:id\/footer_end_text",
+            "tv.danmaku.bili:id\/cmt3_fake_input_bar_container"
+          ],
+          "bottomCandidates": [
+            {
+              "label": "点我发评论",
+              "bounds": {
+                "left": 94,
+                "top": 2962,
+                "right": 354,
+                "bottom": 3023
+              },
+              "clickable": false
+            },
+            {
+              "label": "",
+              "bounds": {
+                "left": 48,
+                "top": 2896,
+                "right": 496,
+                "bottom": 3088
+              },
+              "clickable": true
+            },
+            {
+              "label": "",
+              "bounds": {
+                "left": 536,
+                "top": 2900,
+                "right": 752,
+                "bottom": 3092
+              },
+              "clickable": true
+            },
+            {
+              "label": "转发",
+              "bounds": {
+                "left": 544,
+                "top": 3020,
+                "right": 744,
+                "bottom": 3072
+              },
+              "clickable": false
+            },
+            {
+              "label": "",
+              "bounds": {
+                "left": 752,
+                "top": 2900,
+                "right": 968,
+                "bottom": 3092
+              },
+              "clickable": true
+            },
+            {
+              "label": "2",
+              "bounds": {
+                "left": 760,
+                "top": 3020,
+                "right": 960,
+                "bottom": 3072
+              },
+              "clickable": false
+            },
+            {
+              "label": "",
+              "bounds": {
+                "left": 968,
+                "top": 2900,
+                "right": 1184,
+                "bottom": 3092
+              },
+              "clickable": true
+            },
+            {
+              "label": "1",
+              "bounds": {
+                "left": 976,
+                "top": 3020,
+                "right": 1176,
+                "bottom": 3072
+              },
+              "clickable": false
+            },
+            {
+              "label": "298",
+              "bounds": {
+                "left": 1192,
+                "top": 3020,
+                "right": 1392,
+                "bottom": 3072
+              },
+              "clickable": false
+            },
+            {
+              "label": "",
+              "bounds": {
+                "left": 1440,
+                "top": 2208,
+                "right": 1440,
+                "bottom": 2448
+              },
+              "clickable": true
+            },
+            {
+              "label": "",
+              "bounds": {
+                "left": 1440,
+                "top": 2448,
+                "right": 1440,
+                "bottom": 2688
+              },
+              "clickable": true
+            },
+            {
+              "label": "",
+              "bounds": {
+                "left": 1440,
+                "top": 2688,
+                "right": 1440,
+                "bottom": 2894
+              },
+              "clickable": true
+            }
+          ]
+        },
+        "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_snapshots\/tv.danmaku.bili\/20260512_031629_965_593ddca1.json"
+      },
+      {
+        "id": "ui_snapshot_1778526989658",
+        "source": "before_action",
+        "note": "direct.1778526980370.9.clickcoordinate:ClickCoordinate",
+        "appPackage": "tv.danmaku.bili",
+        "windowClassName": "android.widget.FrameLayout",
+        "screenKey": "beaf6e82",
+        "screenshotPath": "null",
+        "visualHash": "null",
+        "summary": {
+          "nodeCount": 36,
+          "clickableCount": 11,
+          "editableCount": 0,
+          "scrollableCount": 1,
+          "labels": [
+            "tv.danmaku.bili:id\/action_bar_root",
+            "android:id\/content",
+            "tv.danmaku.bili:id\/rl_top_content",
+            "tv.danmaku.bili:id\/blank_layout",
+            "tv.danmaku.bili:id\/content_layout",
+            "tv.danmaku.bili:id\/recycler",
+            "分享 tv.danmaku.bili:id\/title",
+            "tv.danmaku.bili:id\/recycler",
+            "QQ tv.danmaku.bili:id\/item",
+            "QQ空间 tv.danmaku.bili:id\/item",
+            "微信 tv.danmaku.bili:id\/item",
+            "朋友圈 tv.danmaku.bili:id\/item",
+            "微博 tv.danmaku.bili:id\/item",
+            "动态 tv.danmaku.bili:id\/item",
+            "tv.danmaku.bili:id\/recycler",
+            "投币 tv.danmaku.bili:id\/item",
+            "生成长图 tv.danmaku.bili:id\/item",
+            "举报 tv.danmaku.bili:id\/item",
+            "tv.danmaku.bili:id\/space",
+            "取消 tv.danmaku.bili:id\/cancel"
+          ],
+          "bottomCandidates": [
+            {
+              "label": "",
+              "bounds": {
+                "left": 44,
+                "top": 2140,
+                "right": 308,
+                "bottom": 2405
+              },
+              "clickable": true
+            },
+            {
+              "label": "QQ tv.danmaku.bili:id\/item",
+              "bounds": {
+                "left": 44,
+                "top": 2140,
+                "right": 308,
+                "bottom": 2405
+              },
+              "clickable": false
+            },
+            {
+              "label": "",
+              "bounds": {
+                "left": 44,
+                "top": 2535,
+                "right": 308,
+                "bottom": 2800
+              },
+              "clickable": true
+            },
+            {
+              "label": "投币 tv.danmaku.bili:id\/item",
+              "bounds": {
+                "left": 44,
+                "top": 2535,
+                "right": 308,
+                "bottom": 2800
+              },
+              "clickable": false
+            },
+            {
+              "label": "",
+              "bounds": {
+                "left": 308,
+                "top": 2140,
+                "right": 572,
+                "bottom": 2405
+              },
+              "clickable": true
+            },
+            {
+              "label": "QQ空间 tv.danmaku.bili:id\/item",
+              "bounds": {
+                "left": 308,
+                "top": 2140,
+                "right": 572,
+                "bottom": 2405
+              },
+              "clickable": false
+            },
+            {
+              "label": "",
+              "bounds": {
+                "left": 308,
+                "top": 2535,
+                "right": 572,
+                "bottom": 2800
+              },
+              "clickable": true
+            },
+            {
+              "label": "生成长图 tv.danmaku.bili:id\/item",
+              "bounds": {
+                "left": 308,
+                "top": 2535,
+                "right": 572,
+                "bottom": 2800
+              },
+              "clickable": false
+            },
+            {
+              "label": "",
+              "bounds": {
+                "left": 572,
+                "top": 2140,
+                "right": 836,
+                "bottom": 2405
+              },
+              "clickable": true
+            },
+            {
+              "label": "微信 tv.danmaku.bili:id\/item",
+              "bounds": {
+                "left": 572,
+                "top": 2140,
+                "right": 836,
+                "bottom": 2405
+              },
+              "clickable": false
+            },
+            {
+              "label": "",
+              "bounds": {
+                "left": 572,
+                "top": 2535,
+                "right": 836,
+                "bottom": 2800
+              },
+              "clickable": true
+            },
+            {
+              "label": "举报 tv.danmaku.bili:id\/item",
+              "bounds": {
+                "left": 572,
+                "top": 2535,
+                "right": 836,
+                "bottom": 2800
+              },
+              "clickable": false
+            }
+          ]
+        },
+        "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_snapshots\/tv.danmaku.bili\/20260512_031629_658_beaf6e82.json"
+      },
+      {
+        "id": "ui_snapshot_1778526989632",
+        "source": "before_macro_atom",
+        "note": "index=8; skillId=direct.1778526980370.9.clickcoordinate",
+        "appPackage": "tv.danmaku.bili",
+        "windowClassName": "android.widget.FrameLayout",
+        "screenKey": "beaf6e82",
+        "screenshotPath": "null",
+        "visualHash": "null",
+        "summary": {
+          "nodeCount": 36,
+          "clickableCount": 11,
+          "editableCount": 0,
+          "scrollableCount": 1,
+          "labels": [
+            "tv.danmaku.bili:id\/action_bar_root",
+            "android:id\/content",
+            "tv.danmaku.bili:id\/rl_top_content",
+            "tv.danmaku.bili:id\/blank_layout",
+            "tv.danmaku.bili:id\/content_layout",
+            "tv.danmaku.bili:id\/recycler",
+            "分享 tv.danmaku.bili:id\/title",
+            "tv.danmaku.bili:id\/recycler",
+            "QQ tv.danmaku.bili:id\/item",
+            "QQ空间 tv.danmaku.bili:id\/item",
+            "微信 tv.danmaku.bili:id\/item",
+            "朋友圈 tv.danmaku.bili:id\/item",
+            "微博 tv.danmaku.bili:id\/item",
+            "动态 tv.danmaku.bili:id\/item",
+            "tv.danmaku.bili:id\/recycler",
+            "投币 tv.danmaku.bili:id\/item",
+            "生成长图 tv.danmaku.bili:id\/item",
+            "举报 tv.danmaku.bili:id\/item",
+            "tv.danmaku.bili:id\/space",
+            "取消 tv.danmaku.bili:id\/cancel"
+          ],
+          "bottomCandidates": [
+            {
+              "label": "",
+              "bounds": {
+                "left": 44,
+                "top": 2140,
+                "right": 308,
+                "bottom": 2405
+              },
+              "clickable": true
+            },
+            {
+              "label": "QQ tv.danmaku.bili:id\/item",
+              "bounds": {
+                "left": 44,
+                "top": 2140,
+                "right": 308,
+                "bottom": 2405
+              },
+              "clickable": false
+            },
+            {
+              "label": "",
+              "bounds": {
+                "left": 44,
+                "top": 2535,
+                "right": 308,
+                "bottom": 2800
+              },
+              "clickable": true
+            },
+            {
+              "label": "投币 tv.danmaku.bili:id\/item",
+              "bounds": {
+                "left": 44,
+                "top": 2535,
+                "right": 308,
+                "bottom": 2800
+              },
+              "clickable": false
+            },
+            {
+              "label": "",
+              "bounds": {
+                "left": 308,
+                "top": 2140,
+                "right": 572,
+                "bottom": 2405
+              },
+              "clickable": true
+            },
+            {
+              "label": "QQ空间 tv.danmaku.bili:id\/item",
+              "bounds": {
+                "left": 308,
+                "top": 2140,
+                "right": 572,
+                "bottom": 2405
+              },
+              "clickable": false
+            },
+            {
+              "label": "",
+              "bounds": {
+                "left": 308,
+                "top": 2535,
+                "right": 572,
+                "bottom": 2800
+              },
+              "clickable": true
+            },
+            {
+              "label": "生成长图 tv.danmaku.bili:id\/item",
+              "bounds": {
+                "left": 308,
+                "top": 2535,
+                "right": 572,
+                "bottom": 2800
+              },
+              "clickable": false
+            },
+            {
+              "label": "",
+              "bounds": {
+                "left": 572,
+                "top": 2140,
+                "right": 836,
+                "bottom": 2405
+              },
+              "clickable": true
+            },
+            {
+              "label": "微信 tv.danmaku.bili:id\/item",
+              "bounds": {
+                "left": 572,
+                "top": 2140,
+                "right": 836,
+                "bottom": 2405
+              },
+              "clickable": false
+            },
+            {
+              "label": "",
+              "bounds": {
+                "left": 572,
+                "top": 2535,
+                "right": 836,
+                "bottom": 2800
+              },
+              "clickable": true
+            },
+            {
+              "label": "举报 tv.danmaku.bili:id\/item",
+              "bounds": {
+                "left": 572,
+                "top": 2535,
+                "right": 836,
+                "bottom": 2800
+              },
+              "clickable": false
+            }
+          ]
+        },
+        "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_snapshots\/tv.danmaku.bili\/20260512_031629_632_beaf6e82.json"
+      },
+      {
+        "id": "ui_snapshot_1778526989540",
+        "source": "after_macro_atom",
+        "note": "index=7; skillId=direct.1778526980370.8.wait; status=SUCCESS_MEDIUM_CONFIDENCE",
+        "appPackage": "tv.danmaku.bili",
+        "windowClassName": "android.widget.FrameLayout",
+        "screenKey": "beaf6e82",
+        "screenshotPath": "null",
+        "visualHash": "null",
+        "summary": {
+          "nodeCount": 36,
+          "clickableCount": 11,
+          "editableCount": 0,
+          "scrollableCount": 1,
+          "labels": [
+            "tv.danmaku.bili:id\/action_bar_root",
+            "android:id\/content",
+            "tv.danmaku.bili:id\/rl_top_content",
+            "tv.danmaku.bili:id\/blank_layout",
+            "tv.danmaku.bili:id\/content_layout",
+            "tv.danmaku.bili:id\/recycler",
+            "分享 tv.danmaku.bili:id\/title",
+            "tv.danmaku.bili:id\/recycler",
+            "QQ tv.danmaku.bili:id\/item",
+            "QQ空间 tv.danmaku.bili:id\/item",
+            "微信 tv.danmaku.bili:id\/item",
+            "朋友圈 tv.danmaku.bili:id\/item",
+            "微博 tv.danmaku.bili:id\/item",
+            "动态 tv.danmaku.bili:id\/item",
+            "tv.danmaku.bili:id\/recycler",
+            "投币 tv.danmaku.bili:id\/item",
+            "生成长图 tv.danmaku.bili:id\/item",
+            "举报 tv.danmaku.bili:id\/item",
+            "tv.danmaku.bili:id\/space",
+            "取消 tv.danmaku.bili:id\/cancel"
+          ],
+          "bottomCandidates": [
+            {
+              "label": "",
+              "bounds": {
+                "left": 44,
+                "top": 2140,
+                "right": 308,
+                "bottom": 2405
+              },
+              "clickable": true
+            },
+            {
+              "label": "QQ tv.danmaku.bili:id\/item",
+              "bounds": {
+                "left": 44,
+                "top": 2140,
+                "right": 308,
+                "bottom": 2405
+              },
+              "clickable": false
+            },
+            {
+              "label": "",
+              "bounds": {
+                "left": 44,
+                "top": 2535,
+                "right": 308,
+                "bottom": 2800
+              },
+              "clickable": true
+            },
+            {
+              "label": "投币 tv.danmaku.bili:id\/item",
+              "bounds": {
+                "left": 44,
+                "top": 2535,
+                "right": 308,
+                "bottom": 2800
+              },
+              "clickable": false
+            },
+            {
+              "label": "",
+              "bounds": {
+                "left": 308,
+                "top": 2140,
+                "right": 572,
+                "bottom": 2405
+              },
+              "clickable": true
+            },
+            {
+              "label": "QQ空间 tv.danmaku.bili:id\/item",
+              "bounds": {
+                "left": 308,
+                "top": 2140,
+                "right": 572,
+                "bottom": 2405
+              },
+              "clickable": false
+            },
+            {
+              "label": "",
+              "bounds": {
+                "left": 308,
+                "top": 2535,
+                "right": 572,
+                "bottom": 2800
+              },
+              "clickable": true
+            },
+            {
+              "label": "生成长图 tv.danmaku.bili:id\/item",
+              "bounds": {
+                "left": 308,
+                "top": 2535,
+                "right": 572,
+                "bottom": 2800
+              },
+              "clickable": false
+            },
+            {
+              "label": "",
+              "bounds": {
+                "left": 572,
+                "top": 2140,
+                "right": 836,
+                "bottom": 2405
+              },
+              "clickable": true
+            },
+            {
+              "label": "微信 tv.danmaku.bili:id\/item",
+              "bounds": {
+                "left": 572,
+                "top": 2140,
+                "right": 836,
+                "bottom": 2405
+              },
+              "clickable": false
+            },
+            {
+              "label": "",
+              "bounds": {
+                "left": 572,
+                "top": 2535,
+                "right": 836,
+                "bottom": 2800
+              },
+              "clickable": true
+            },
+            {
+              "label": "举报 tv.danmaku.bili:id\/item",
+              "bounds": {
+                "left": 572,
+                "top": 2535,
+                "right": 836,
+                "bottom": 2800
+              },
+              "clickable": false
+            }
+          ]
+        },
+        "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_snapshots\/tv.danmaku.bili\/20260512_031629_540_beaf6e82.json"
+      },
+      {
+        "id": "ui_snapshot_1778526989511",
+        "source": "after_action",
+        "note": "direct.1778526980370.8.wait:Wait:SUCCESS_MEDIUM_CONFIDENCE:Waited 2000ms; reactiveDismissed=0",
+        "appPackage": "tv.danmaku.bili",
+        "windowClassName": "android.widget.FrameLayout",
+        "screenKey": "beaf6e82",
+        "screenshotPath": "null",
+        "visualHash": "null",
+        "summary": {
+          "nodeCount": 36,
+          "clickableCount": 11,
+          "editableCount": 0,
+          "scrollableCount": 1,
+          "labels": [
+            "tv.danmaku.bili:id\/action_bar_root",
+            "android:id\/content",
+            "tv.danmaku.bili:id\/rl_top_content",
+            "tv.danmaku.bili:id\/blank_layout",
+            "tv.danmaku.bili:id\/content_layout",
+            "tv.danmaku.bili:id\/recycler",
+            "分享 tv.danmaku.bili:id\/title",
+            "tv.danmaku.bili:id\/recycler",
+            "QQ tv.danmaku.bili:id\/item",
+            "QQ空间 tv.danmaku.bili:id\/item",
+            "微信 tv.danmaku.bili:id\/item",
+            "朋友圈 tv.danmaku.bili:id\/item",
+            "微博 tv.danmaku.bili:id\/item",
+            "动态 tv.danmaku.bili:id\/item",
+            "tv.danmaku.bili:id\/recycler",
+            "投币 tv.danmaku.bili:id\/item",
+            "生成长图 tv.danmaku.bili:id\/item",
+            "举报 tv.danmaku.bili:id\/item",
+            "tv.danmaku.bili:id\/space",
+            "取消 tv.danmaku.bili:id\/cancel"
+          ],
+          "bottomCandidates": [
+            {
+              "label": "",
+              "bounds": {
+                "left": 44,
+                "top": 2140,
+                "right": 308,
+                "bottom": 2405
+              },
+              "clickable": true
+            },
+            {
+              "label": "QQ tv.danmaku.bili:id\/item",
+              "bounds": {
+                "left": 44,
+                "top": 2140,
+                "right": 308,
+                "bottom": 2405
+              },
+              "clickable": false
+            },
+            {
+              "label": "",
+              "bounds": {
+                "left": 44,
+                "top": 2535,
+                "right": 308,
+                "bottom": 2800
+              },
+              "clickable": true
+            },
+            {
+              "label": "投币 tv.danmaku.bili:id\/item",
+              "bounds": {
+                "left": 44,
+                "top": 2535,
+                "right": 308,
+                "bottom": 2800
+              },
+              "clickable": false
+            },
+            {
+              "label": "",
+              "bounds": {
+                "left": 308,
+                "top": 2140,
+                "right": 572,
+                "bottom": 2405
+              },
+              "clickable": true
+            },
+            {
+              "label": "QQ空间 tv.danmaku.bili:id\/item",
+              "bounds": {
+                "left": 308,
+                "top": 2140,
+                "right": 572,
+                "bottom": 2405
+              },
+              "clickable": false
+            },
+            {
+              "label": "",
+              "bounds": {
+                "left": 308,
+                "top": 2535,
+                "right": 572,
+                "bottom": 2800
+              },
+              "clickable": true
+            },
+            {
+              "label": "生成长图 tv.danmaku.bili:id\/item",
+              "bounds": {
+                "left": 308,
+                "top": 2535,
+                "right": 572,
+                "bottom": 2800
+              },
+              "clickable": false
+            },
+            {
+              "label": "",
+              "bounds": {
+                "left": 572,
+                "top": 2140,
+                "right": 836,
+                "bottom": 2405
+              },
+              "clickable": true
+            },
+            {
+              "label": "微信 tv.danmaku.bili:id\/item",
+              "bounds": {
+                "left": 572,
+                "top": 2140,
+                "right": 836,
+                "bottom": 2405
+              },
+              "clickable": false
+            },
+            {
+              "label": "",
+              "bounds": {
+                "left": 572,
+                "top": 2535,
+                "right": 836,
+                "bottom": 2800
+              },
+              "clickable": true
+            },
+            {
+              "label": "举报 tv.danmaku.bili:id\/item",
+              "bounds": {
+                "left": 572,
+                "top": 2535,
+                "right": 836,
+                "bottom": 2800
+              },
+              "clickable": false
+            }
+          ]
+        },
+        "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_snapshots\/tv.danmaku.bili\/20260512_031629_510_beaf6e82.json"
+      },
+      {
+        "id": "ui_snapshot_1778526987769",
+        "source": "accessibility_auto",
+        "note": "TYPE_WINDOW_CONTENT_CHANGED",
+        "appPackage": "tv.danmaku.bili",
+        "windowClassName": "android.widget.FrameLayout",
+        "screenKey": "beaf6e82",
+        "screenshotPath": "null",
+        "visualHash": "null",
+        "summary": {
+          "nodeCount": 36,
+          "clickableCount": 11,
+          "editableCount": 0,
+          "scrollableCount": 1,
+          "labels": [
+            "tv.danmaku.bili:id\/action_bar_root",
+            "android:id\/content",
+            "tv.danmaku.bili:id\/rl_top_content",
+            "tv.danmaku.bili:id\/blank_layout",
+            "tv.danmaku.bili:id\/content_layout",
+            "tv.danmaku.bili:id\/recycler",
+            "分享 tv.danmaku.bili:id\/title",
+            "tv.danmaku.bili:id\/recycler",
+            "QQ tv.danmaku.bili:id\/item",
+            "QQ空间 tv.danmaku.bili:id\/item",
+            "微信 tv.danmaku.bili:id\/item",
+            "朋友圈 tv.danmaku.bili:id\/item",
+            "微博 tv.danmaku.bili:id\/item",
+            "动态 tv.danmaku.bili:id\/item",
+            "tv.danmaku.bili:id\/recycler",
+            "投币 tv.danmaku.bili:id\/item",
+            "生成长图 tv.danmaku.bili:id\/item",
+            "举报 tv.danmaku.bili:id\/item",
+            "tv.danmaku.bili:id\/space",
+            "取消 tv.danmaku.bili:id\/cancel"
+          ],
+          "bottomCandidates": [
+            {
+              "label": "",
+              "bounds": {
+                "left": 44,
+                "top": 2140,
+                "right": 308,
+                "bottom": 2405
+              },
+              "clickable": true
+            },
+            {
+              "label": "QQ tv.danmaku.bili:id\/item",
+              "bounds": {
+                "left": 44,
+                "top": 2140,
+                "right": 308,
+                "bottom": 2405
+              },
+              "clickable": false
+            },
+            {
+              "label": "",
+              "bounds": {
+                "left": 44,
+                "top": 2535,
+                "right": 308,
+                "bottom": 2800
+              },
+              "clickable": true
+            },
+            {
+              "label": "投币 tv.danmaku.bili:id\/item",
+              "bounds": {
+                "left": 44,
+                "top": 2535,
+                "right": 308,
+                "bottom": 2800
+              },
+              "clickable": false
+            },
+            {
+              "label": "",
+              "bounds": {
+                "left": 308,
+                "top": 2140,
+                "right": 572,
+                "bottom": 2405
+              },
+              "clickable": true
+            },
+            {
+              "label": "QQ空间 tv.danmaku.bili:id\/item",
+              "bounds": {
+                "left": 308,
+                "top": 2140,
+                "right": 572,
+                "bottom": 2405
+              },
+              "clickable": false
+            },
+            {
+              "label": "",
+              "bounds": {
+                "left": 308,
+                "top": 2535,
+                "right": 572,
+                "bottom": 2800
+              },
+              "clickable": true
+            },
+            {
+              "label": "生成长图 tv.danmaku.bili:id\/item",
+              "bounds": {
+                "left": 308,
+                "top": 2535,
+                "right": 572,
+                "bottom": 2800
+              },
+              "clickable": false
+            },
+            {
+              "label": "",
+              "bounds": {
+                "left": 572,
+                "top": 2140,
+                "right": 836,
+                "bottom": 2405
+              },
+              "clickable": true
+            },
+            {
+              "label": "微信 tv.danmaku.bili:id\/item",
+              "bounds": {
+                "left": 572,
+                "top": 2140,
+                "right": 836,
+                "bottom": 2405
+              },
+              "clickable": false
+            },
+            {
+              "label": "",
+              "bounds": {
+                "left": 572,
+                "top": 2535,
+                "right": 836,
+                "bottom": 2800
+              },
+              "clickable": true
+            },
+            {
+              "label": "举报 tv.danmaku.bili:id\/item",
+              "bounds": {
+                "left": 572,
+                "top": 2535,
+                "right": 836,
+                "bottom": 2800
+              },
+              "clickable": false
+            }
+          ]
+        },
+        "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_snapshots\/tv.danmaku.bili\/20260512_031627_768_beaf6e82.json"
+      },
+      {
+        "id": "ui_snapshot_1778526987480",
+        "source": "before_action",
+        "note": "direct.1778526980370.8.wait:Wait",
+        "appPackage": "tv.danmaku.bili",
+        "windowClassName": "android.widget.FrameLayout",
+        "screenKey": "beaf6e82",
+        "screenshotPath": "null",
+        "visualHash": "null",
+        "summary": {
+          "nodeCount": 36,
+          "clickableCount": 11,
+          "editableCount": 0,
+          "scrollableCount": 1,
+          "labels": [
+            "tv.danmaku.bili:id\/action_bar_root",
+            "android:id\/content",
+            "tv.danmaku.bili:id\/rl_top_content",
+            "tv.danmaku.bili:id\/blank_layout",
+            "tv.danmaku.bili:id\/content_layout",
+            "tv.danmaku.bili:id\/recycler",
+            "分享 tv.danmaku.bili:id\/title",
+            "tv.danmaku.bili:id\/recycler",
+            "QQ tv.danmaku.bili:id\/item",
+            "QQ空间 tv.danmaku.bili:id\/item",
+            "微信 tv.danmaku.bili:id\/item",
+            "朋友圈 tv.danmaku.bili:id\/item",
+            "微博 tv.danmaku.bili:id\/item",
+            "动态 tv.danmaku.bili:id\/item",
+            "tv.danmaku.bili:id\/recycler",
+            "投币 tv.danmaku.bili:id\/item",
+            "生成长图 tv.danmaku.bili:id\/item",
+            "举报 tv.danmaku.bili:id\/item",
+            "tv.danmaku.bili:id\/space",
+            "取消 tv.danmaku.bili:id\/cancel"
+          ],
+          "bottomCandidates": [
+            {
+              "label": "",
+              "bounds": {
+                "left": 44,
+                "top": 2140,
+                "right": 308,
+                "bottom": 2405
+              },
+              "clickable": true
+            },
+            {
+              "label": "QQ tv.danmaku.bili:id\/item",
+              "bounds": {
+                "left": 44,
+                "top": 2140,
+                "right": 308,
+                "bottom": 2405
+              },
+              "clickable": false
+            },
+            {
+              "label": "",
+              "bounds": {
+                "left": 44,
+                "top": 2535,
+                "right": 308,
+                "bottom": 2800
+              },
+              "clickable": true
+            },
+            {
+              "label": "投币 tv.danmaku.bili:id\/item",
+              "bounds": {
+                "left": 44,
+                "top": 2535,
+                "right": 308,
+                "bottom": 2800
+              },
+              "clickable": false
+            },
+            {
+              "label": "",
+              "bounds": {
+                "left": 308,
+                "top": 2140,
+                "right": 572,
+                "bottom": 2405
+              },
+              "clickable": true
+            },
+            {
+              "label": "QQ空间 tv.danmaku.bili:id\/item",
+              "bounds": {
+                "left": 308,
+                "top": 2140,
+                "right": 572,
+                "bottom": 2405
+              },
+              "clickable": false
+            },
+            {
+              "label": "",
+              "bounds": {
+                "left": 308,
+                "top": 2535,
+                "right": 572,
+                "bottom": 2800
+              },
+              "clickable": true
+            },
+            {
+              "label": "生成长图 tv.danmaku.bili:id\/item",
+              "bounds": {
+                "left": 308,
+                "top": 2535,
+                "right": 572,
+                "bottom": 2800
+              },
+              "clickable": false
+            },
+            {
+              "label": "",
+              "bounds": {
+                "left": 572,
+                "top": 2140,
+                "right": 836,
+                "bottom": 2405
+              },
+              "clickable": true
+            },
+            {
+              "label": "微信 tv.danmaku.bili:id\/item",
+              "bounds": {
+                "left": 572,
+                "top": 2140,
+                "right": 836,
+                "bottom": 2405
+              },
+              "clickable": false
+            },
+            {
+              "label": "",
+              "bounds": {
+                "left": 572,
+                "top": 2535,
+                "right": 836,
+                "bottom": 2800
+              },
+              "clickable": true
+            },
+            {
+              "label": "举报 tv.danmaku.bili:id\/item",
+              "bounds": {
+                "left": 572,
+                "top": 2535,
+                "right": 836,
+                "bottom": 2800
+              },
+              "clickable": false
+            }
+          ]
+        },
+        "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_snapshots\/tv.danmaku.bili\/20260512_031627_479_beaf6e82.json"
+      },
+      {
+        "id": "ui_snapshot_1778526987460",
+        "source": "before_macro_atom",
+        "note": "index=7; skillId=direct.1778526980370.8.wait",
+        "appPackage": "tv.danmaku.bili",
+        "windowClassName": "android.widget.FrameLayout",
+        "screenKey": "beaf6e82",
+        "screenshotPath": "null",
+        "visualHash": "null",
+        "summary": {
+          "nodeCount": 36,
+          "clickableCount": 11,
+          "editableCount": 0,
+          "scrollableCount": 1,
+          "labels": [
+            "tv.danmaku.bili:id\/action_bar_root",
+            "android:id\/content",
+            "tv.danmaku.bili:id\/rl_top_content",
+            "tv.danmaku.bili:id\/blank_layout",
+            "tv.danmaku.bili:id\/content_layout",
+            "tv.danmaku.bili:id\/recycler",
+            "分享 tv.danmaku.bili:id\/title",
+            "tv.danmaku.bili:id\/recycler",
+            "QQ tv.danmaku.bili:id\/item",
+            "QQ空间 tv.danmaku.bili:id\/item",
+            "微信 tv.danmaku.bili:id\/item",
+            "朋友圈 tv.danmaku.bili:id\/item",
+            "微博 tv.danmaku.bili:id\/item",
+            "动态 tv.danmaku.bili:id\/item",
+            "tv.danmaku.bili:id\/recycler",
+            "投币 tv.danmaku.bili:id\/item",
+            "生成长图 tv.danmaku.bili:id\/item",
+            "举报 tv.danmaku.bili:id\/item",
+            "tv.danmaku.bili:id\/space",
+            "取消 tv.danmaku.bili:id\/cancel"
+          ],
+          "bottomCandidates": [
+            {
+              "label": "",
+              "bounds": {
+                "left": 44,
+                "top": 2140,
+                "right": 308,
+                "bottom": 2405
+              },
+              "clickable": true
+            },
+            {
+              "label": "QQ tv.danmaku.bili:id\/item",
+              "bounds": {
+                "left": 44,
+                "top": 2140,
+                "right": 308,
+                "bottom": 2405
+              },
+              "clickable": false
+            },
+            {
+              "label": "",
+              "bounds": {
+                "left": 44,
+                "top": 2535,
+                "right": 308,
+                "bottom": 2800
+              },
+              "clickable": true
+            },
+            {
+              "label": "投币 tv.danmaku.bili:id\/item",
+              "bounds": {
+                "left": 44,
+                "top": 2535,
+                "right": 308,
+                "bottom": 2800
+              },
+              "clickable": false
+            },
+            {
+              "label": "",
+              "bounds": {
+                "left": 308,
+                "top": 2140,
+                "right": 572,
+                "bottom": 2405
+              },
+              "clickable": true
+            },
+            {
+              "label": "QQ空间 tv.danmaku.bili:id\/item",
+              "bounds": {
+                "left": 308,
+                "top": 2140,
+                "right": 572,
+                "bottom": 2405
+              },
+              "clickable": false
+            },
+            {
+              "label": "",
+              "bounds": {
+                "left": 308,
+                "top": 2535,
+                "right": 572,
+                "bottom": 2800
+              },
+              "clickable": true
+            },
+            {
+              "label": "生成长图 tv.danmaku.bili:id\/item",
+              "bounds": {
+                "left": 308,
+                "top": 2535,
+                "right": 572,
+                "bottom": 2800
+              },
+              "clickable": false
+            },
+            {
+              "label": "",
+              "bounds": {
+                "left": 572,
+                "top": 2140,
+                "right": 836,
+                "bottom": 2405
+              },
+              "clickable": true
+            },
+            {
+              "label": "微信 tv.danmaku.bili:id\/item",
+              "bounds": {
+                "left": 572,
+                "top": 2140,
+                "right": 836,
+                "bottom": 2405
+              },
+              "clickable": false
+            },
+            {
+              "label": "",
+              "bounds": {
+                "left": 572,
+                "top": 2535,
+                "right": 836,
+                "bottom": 2800
+              },
+              "clickable": true
+            },
+            {
+              "label": "举报 tv.danmaku.bili:id\/item",
+              "bounds": {
+                "left": 572,
+                "top": 2535,
+                "right": 836,
+                "bottom": 2800
+              },
+              "clickable": false
+            }
+          ]
+        },
+        "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_snapshots\/tv.danmaku.bili\/20260512_031627_459_beaf6e82.json"
+      }
+    ]
+  },
+  "createdAt": 1778526991757
+}

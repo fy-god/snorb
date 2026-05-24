@@ -1,0 +1,107 @@
+{
+  "schemaVersion": 1,
+  "kind": "atomic_skill",
+  "id": "com.xunmeng.pinduoduo.capability_check",
+  "name": "检查应用能力",
+  "appPackage": "com.xunmeng.pinduoduo",
+  "appVersion": "*",
+  "status": "DRY_RUN_PASSED",
+  "domain": "app_session",
+  "implements": "CapabilityCheckSkill",
+  "params": [],
+  "preconditions": [],
+  "dependsOn": [],
+  "resolverPolicy": {
+    "order": [
+      "ACCESSIBILITY",
+      "COORDINATE_PACK",
+      "PACKAGE_MANAGER"
+    ],
+    "allowAiSuggestionInFactory": true,
+    "allowAiInRuntime": false
+  },
+  "safety": {
+    "forbiddenTexts": [
+      "支付",
+      "付款",
+      "转账",
+      "删除",
+      "发布",
+      "授权"
+    ]
+  },
+  "factory": {
+    "source": "SKILL_ARCHETYPE_TEMPLATE_V0",
+    "archetypeId": "common.app_session.v1",
+    "traceIds": [],
+    "sampleCount": 0,
+    "dryRunStatus": "PASSED",
+    "testRuns": 0,
+    "successRate": 0,
+    "promotionStatus": "NOT_PROMOTED",
+    "createdAt": 1779237326827,
+    "appPatch": {
+      "packageName": "com.xunmeng.pinduoduo",
+      "label": "拼多多",
+      "launchable": true,
+      "launchActivity": "com.xunmeng.pinduoduo.ui.activity.MainFrameActivity",
+      "searchEntryTexts": [
+        "搜索",
+        "搜一搜",
+        "Search"
+      ],
+      "searchSubmitTexts": [
+        "搜索",
+        "确定",
+        "Search"
+      ],
+      "searchEntryCoordinate": {
+        "x": 0.5,
+        "y": 0.08
+      },
+      "searchSubmitCoordinate": {
+        "x": 0.9,
+        "y": 0.08
+      },
+      "postDraftEntryTexts": [
+        "+",
+        "写微博",
+        "发微博",
+        "发帖",
+        "创作",
+        "写帖子",
+        "发动态",
+        "说点什么"
+      ],
+      "postDraftEntryCoordinate": {
+        "x": 0.9,
+        "y": 0.9
+      }
+    },
+    "lastDryRunReport": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_dry_run_reports\/com.xunmeng.pinduoduo\/com.xunmeng.pinduoduo.capability_check_1779339058068.json",
+    "lastDryRunAt": 1779339058069
+  },
+  "capabilityRequired": {
+    "minLevel": "D",
+    "inputRequired": false,
+    "nodeReadablePreferred": false,
+    "coordinateFallbackAllowed": false,
+    "allowedInputChannels": [],
+    "verificationRequired": "LOW"
+  },
+  "action": {
+    "type": "CheckCapability",
+    "packageName": "com.xunmeng.pinduoduo"
+  },
+  "verify": {
+    "type": "CapabilityObserved",
+    "packageName": "com.xunmeng.pinduoduo",
+    "timeoutMs": 500
+  },
+  "resultPolicy": {
+    "levelA": "SUCCESS",
+    "levelB": "SUCCESS_MEDIUM_CONFIDENCE",
+    "levelC": "SUCCESS_LOW_CONFIDENCE",
+    "levelD": "FAILED_CAPABILITY_D"
+  }
+}

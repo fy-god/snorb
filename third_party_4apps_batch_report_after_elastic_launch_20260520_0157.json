@@ -1,0 +1,1222 @@
+﻿{
+  "schemaVersion": 1,
+  "kind": "third_party_app_skill_subset_batch_report",
+  "id": "third_party_app_skill_subset_1779213412429",
+  "status": "PARTIAL",
+  "mode": "PHONE_SIDE_UI_PROBE_AND_DRY_RUN",
+  "summary": {
+    "totalApps": 4,
+    "launchableApps": 4,
+    "nonLaunchableApps": 0,
+    "generatedSkillCount": 47,
+    "dryRunPassed": 47,
+    "dryRunFailed": 0,
+    "exportedConfigCount": 4,
+    "uiProbeEnabled": true,
+    "uiProbeAllowed": true,
+    "uiProbeAttempted": 4,
+    "uiProbeSucceeded": 3,
+    "uiProbeBlocked": 1,
+    "uiProbeSkipped": 0
+  },
+  "requestedPackages": [
+    "com.hupu.games",
+    "com.baidu.BaiduMap",
+    "com.google.android.apps.maps",
+    "com.tencent.wework"
+  ],
+  "capabilityBaseline": {
+    "nodeReadability": "D",
+    "inputCapability": "NONE",
+    "verificationCapability": "NONE",
+    "coordinateFallback": "MISSING",
+    "serviceState": "DISCONNECTED",
+    "reason": "Baseline only; real per-app node probe requires accessibility service"
+  },
+  "apps": [
+    {
+      "packageName": "com.hupu.games",
+      "label": "虎扑",
+      "versionName": "8.2.42.04261",
+      "versionCode": 12238,
+      "launchable": true,
+      "launchActivity": "com.hupu.games.main.MainActivity",
+      "generatedSkillCount": 14,
+      "dryRunPassed": 14,
+      "dryRunFailed": 0,
+      "candidateDir": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_candidates\/com.hupu.games",
+      "previewConfigFile": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/app_config_exports\/com.hupu.games\/app_config_20260520_015616_912.json",
+      "uiProbe": {
+        "status": "SUCCESS_EXPLORED",
+        "appPackage": "com.hupu.games",
+        "label": "虎扑",
+        "graphFile": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/app_ui_graphs\/com.hupu.games\/graph_candidate.json",
+        "screenCount": 1,
+        "edgeCount": 0,
+        "nodeCount": 7,
+        "clickableCount": 0,
+        "editableCount": 0,
+        "visibleLabels": [
+          "com.hupu.games:id\/action_bar_root",
+          "android:id\/content",
+          "com.hupu.games:id\/fl_content",
+          "com.hupu.games:id\/fl_splash_root"
+        ],
+        "bottomTabs": [],
+        "entryCandidates": [],
+        "inputCandidates": [],
+        "exploreReport": {
+          "schemaVersion": 1,
+          "kind": "app_ui_explore_report",
+          "status": "SUCCESS",
+          "appPackage": "com.hupu.games",
+          "appName": "虎扑",
+          "screenCount": 1,
+          "edgeCount": 0,
+          "graphFile": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/app_ui_graphs\/com.hupu.games\/graph_candidate.json",
+          "events": [
+            {
+              "phase": "open_app",
+              "status": "RUNNING",
+              "message": "打开 虎扑，开始读取首页、底部分屏、入口和输入框",
+              "path": null,
+              "timestamp": 1779213376919
+            },
+            {
+              "phase": "open_app_attempt",
+              "attempt": 1,
+              "strategy": "launcher_root",
+              "success": true,
+              "message": "Launcher root intent sent for com.hupu.games"
+            },
+            {
+              "phase": "open_app_attempt_wait",
+              "attempt": 1,
+              "strategy": "launcher_root",
+              "success": true,
+              "currentPackage": "com.hupu.games",
+              "windowClassName": null,
+              "overlayDismissed": 0,
+              "overlayEvents": []
+            },
+            {
+              "phase": "wait_foreground",
+              "success": true,
+              "currentPackage": "com.hupu.games",
+              "windowClassName": null,
+              "overlayDismissed": 0,
+              "overlayEvents": []
+            },
+            {
+              "phase": "reactive_overlays",
+              "dismissed": 0,
+              "events": []
+            },
+            {
+              "phase": "capture_home",
+              "status": "SUCCESS",
+              "message": "已记录首页：7 个节点、0 个可点击项",
+              "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_snapshots\/com.hupu.games\/20260520_015617_289_9ce6f80d.json",
+              "timestamp": 1779213377594
+            }
+          ],
+          "durationMs": 684
+        },
+        "durationMs": 685
+      }
+    },
+    {
+      "packageName": "com.baidu.BaiduMap",
+      "label": "百度地图",
+      "versionName": "21.15.0",
+      "versionCode": 1605,
+      "launchable": true,
+      "launchActivity": "com.baidu.baidumaps.WelcomeScreen.Alias0",
+      "generatedSkillCount": 11,
+      "dryRunPassed": 11,
+      "dryRunFailed": 0,
+      "candidateDir": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_candidates\/com.baidu.baidumap",
+      "previewConfigFile": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/app_config_exports\/com.baidu.baidumap\/app_config_20260520_015617_636.json",
+      "uiProbe": {
+        "status": "SUCCESS_EXPLORED",
+        "appPackage": "com.baidu.BaiduMap",
+        "label": "百度地图",
+        "graphFile": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/app_ui_graphs\/com.baidu.baidumap\/graph_candidate.json",
+        "screenCount": 2,
+        "edgeCount": 2,
+        "nodeCount": 23,
+        "clickableCount": 0,
+        "editableCount": 0,
+        "visibleLabels": [
+          "com.baidu.BaiduMap:id\/action_bar_root",
+          "android:id\/content",
+          "com.baidu.BaiduMap:id\/voice_view_ui",
+          "com.baidu.BaiduMap:id\/operation_behavior",
+          "com.baidu.BaiduMap:id\/stack_root",
+          "com.baidu.BaiduMap:id\/arnew_surfaceview",
+          "地图图区 com.baidu.BaiduMap:id\/map_container",
+          "com.baidu.BaiduMap:id\/commonPopupContainer",
+          "com.baidu.BaiduMap:id\/fragment_container",
+          "com.baidu.BaiduMap:id\/persist_container",
+          "com.baidu.BaiduMap:id\/replace_container",
+          "com.baidu.BaiduMap:id\/base_stack_lui",
+          "com.baidu.BaiduMap:id\/base_empty_view",
+          "android:id\/tabhost",
+          "android:id\/navigationBarBackground"
+        ],
+        "bottomTabs": [
+          {
+            "index": 0,
+            "label": "android:id\/tabhost",
+            "text": null,
+            "desc": null,
+            "resourceId": "android:id\/tabhost",
+            "class": "android.widget.FrameLayout",
+            "clickable": false,
+            "editable": false,
+            "selected": false,
+            "bounds": "0 2848 1440 3104",
+            "x": 0.5,
+            "y": 0.9393939393939394,
+            "center": {
+              "x": 0.5,
+              "y": 0.9393939393939394
+            },
+            "tags": [
+              "bottom_tab_candidate"
+            ]
+          },
+          {
+            "index": 1,
+            "label": "android:id\/navigationBarBackground",
+            "text": null,
+            "desc": null,
+            "resourceId": "android:id\/navigationBarBackground",
+            "class": "android.view.View",
+            "clickable": false,
+            "editable": false,
+            "selected": false,
+            "bounds": "0 3104 1440 3168",
+            "x": 0.5,
+            "y": 0.98989898989899,
+            "center": {
+              "x": 0.5,
+              "y": 0.98989898989899
+            },
+            "tags": [
+              "bottom_tab_candidate"
+            ]
+          }
+        ],
+        "entryCandidates": [],
+        "inputCandidates": [],
+        "exploreReport": {
+          "schemaVersion": 1,
+          "kind": "app_ui_explore_report",
+          "status": "SUCCESS",
+          "appPackage": "com.baidu.BaiduMap",
+          "appName": "百度地图",
+          "screenCount": 2,
+          "edgeCount": 2,
+          "graphFile": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/app_ui_graphs\/com.baidu.baidumap\/graph_candidate.json",
+          "events": [
+            {
+              "phase": "open_app",
+              "status": "RUNNING",
+              "message": "打开 百度地图，开始读取首页、底部分屏、入口和输入框",
+              "path": null,
+              "timestamp": 1779213377638
+            },
+            {
+              "phase": "open_app_attempt",
+              "attempt": 1,
+              "strategy": "launcher_root",
+              "success": true,
+              "message": "Launcher root intent sent for com.baidu.BaiduMap"
+            },
+            {
+              "phase": "open_app_attempt_wait",
+              "attempt": 1,
+              "strategy": "launcher_root",
+              "success": true,
+              "currentPackage": "com.baidu.BaiduMap",
+              "windowClassName": "android.widget.FrameLayout",
+              "overlayDismissed": 0,
+              "overlayEvents": []
+            },
+            {
+              "phase": "wait_foreground",
+              "success": true,
+              "currentPackage": "com.baidu.BaiduMap",
+              "windowClassName": "android.widget.FrameLayout",
+              "overlayDismissed": 0,
+              "overlayEvents": []
+            },
+            {
+              "phase": "reactive_overlays",
+              "dismissed": 0,
+              "events": []
+            },
+            {
+              "phase": "capture_home",
+              "status": "SUCCESS",
+              "message": "已记录首页：23 个节点、0 个可点击项",
+              "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_snapshots\/com.baidu.baidumap\/20260520_015618_111_3d8d5782.json",
+              "timestamp": 1779213379117
+            },
+            {
+              "phase": "open_app_attempt",
+              "attempt": 1,
+              "strategy": "launcher_root",
+              "success": true,
+              "message": "Launcher root intent sent for com.baidu.BaiduMap"
+            },
+            {
+              "phase": "open_app_attempt_wait",
+              "attempt": 1,
+              "strategy": "launcher_root",
+              "success": true,
+              "currentPackage": "com.baidu.BaiduMap",
+              "windowClassName": "android.view.ViewGroup",
+              "overlayDismissed": 0,
+              "overlayEvents": []
+            },
+            {
+              "phase": "restore_home_before_entry",
+              "label": "android:id\/tabhost",
+              "success": true,
+              "message": "target foreground"
+            },
+            {
+              "phase": "explore_entry",
+              "status": "RUNNING",
+              "message": "尝试安全入口：android:id\/tabhost",
+              "path": null,
+              "timestamp": 1779213380174
+            },
+            {
+              "phase": "tap_entry",
+              "label": "android:id\/tabhost",
+              "success": true,
+              "message": "dispatchGesture tap sent (normalized=0.500,0.939 px=720,2976 screen=1440x3168)",
+              "candidate": {
+                "index": 0,
+                "label": "android:id\/tabhost",
+                "text": null,
+                "desc": null,
+                "resourceId": "android:id\/tabhost",
+                "class": "android.widget.FrameLayout",
+                "clickable": false,
+                "editable": false,
+                "selected": false,
+                "bounds": "0 2848 1440 3104",
+                "x": 0.5,
+                "y": 0.9393939393939394,
+                "center": {
+                  "x": 0.5,
+                  "y": 0.9393939393939394
+                },
+                "tags": [
+                  "bottom_tab_candidate"
+                ]
+              }
+            },
+            {
+              "phase": "capture_child",
+              "status": "LOW_CONFIDENCE",
+              "message": "入口 android:id\/tabhost 后记录页面：22 个节点，screenKey=3d8d5782",
+              "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_snapshots\/com.baidu.baidumap\/20260520_015621_204_3d8d5782.json",
+              "timestamp": 1779213381523
+            },
+            {
+              "phase": "open_app_attempt",
+              "attempt": 1,
+              "strategy": "launcher_root",
+              "success": true,
+              "message": "Launcher root intent sent for com.baidu.BaiduMap"
+            },
+            {
+              "phase": "open_app_attempt_wait",
+              "attempt": 1,
+              "strategy": "launcher_root",
+              "success": true,
+              "currentPackage": "com.baidu.BaiduMap",
+              "windowClassName": "android.view.ViewGroup",
+              "overlayDismissed": 0,
+              "overlayEvents": []
+            },
+            {
+              "phase": "restore_home_before_entry",
+              "label": "android:id\/navigationBarBackground",
+              "success": true,
+              "message": "target foreground"
+            },
+            {
+              "phase": "explore_entry",
+              "status": "RUNNING",
+              "message": "尝试安全入口：android:id\/navigationBarBackground",
+              "path": null,
+              "timestamp": 1779213391928
+            },
+            {
+              "phase": "tap_entry",
+              "label": "android:id\/navigationBarBackground",
+              "success": true,
+              "message": "dispatchGesture tap sent (normalized=0.500,0.990 px=720,3136 screen=1440x3168)",
+              "candidate": {
+                "index": 1,
+                "label": "android:id\/navigationBarBackground",
+                "text": null,
+                "desc": null,
+                "resourceId": "android:id\/navigationBarBackground",
+                "class": "android.view.View",
+                "clickable": false,
+                "editable": false,
+                "selected": false,
+                "bounds": "0 3104 1440 3168",
+                "x": 0.5,
+                "y": 0.98989898989899,
+                "center": {
+                  "x": 0.5,
+                  "y": 0.98989898989899
+                },
+                "tags": [
+                  "bottom_tab_candidate"
+                ]
+              }
+            },
+            {
+              "phase": "capture_child",
+              "status": "SUCCESS",
+              "message": "入口 android:id\/navigationBarBackground 后记录页面：11 个节点，screenKey=20c1776d",
+              "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_snapshots\/com.baidu.baidumap\/20260520_015637_981_20c1776d.json",
+              "timestamp": 1779213398356
+            }
+          ],
+          "durationMs": 21381
+        },
+        "durationMs": 21385
+      }
+    },
+    {
+      "packageName": "com.google.android.apps.maps",
+      "label": "地图",
+      "versionName": "26.18.01.905972481",
+      "versionCode": 1068560288,
+      "launchable": true,
+      "launchActivity": "com.google.android.maps.MapsActivity",
+      "generatedSkillCount": 11,
+      "dryRunPassed": 11,
+      "dryRunFailed": 0,
+      "candidateDir": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_candidates\/com.google.android.apps.maps",
+      "previewConfigFile": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/app_config_exports\/com.google.android.apps.maps\/app_config_20260520_015639_081.json",
+      "uiProbe": {
+        "status": "FAILED_NO_UI_STATE",
+        "appPackage": "com.google.android.apps.maps",
+        "label": "地图",
+        "graphFile": null,
+        "screenCount": 3,
+        "edgeCount": 4,
+        "nodeCount": 272,
+        "clickableCount": 137,
+        "editableCount": 0,
+        "visibleLabels": [
+          "android:id\/content",
+          "com.android.launcher:id\/launcher",
+          "com.android.launcher:id\/drag_layer",
+          "com.android.launcher:id\/workspace",
+          "时钟",
+          "com.coloros.alarmclock:id\/date_weather_container",
+          "com.coloros.alarmclock:id\/layout_time",
+          "00 00 com.coloros.alarmclock:id\/local_hour_txt",
+          ": com.coloros.alarmclock:id\/local_colon_txt",
+          "55 55 com.coloros.alarmclock:id\/local_minutes_txt",
+          "com.coloros.alarmclock:id\/layout_weather",
+          "com.coloros.alarmclock:id\/local_weather_description",
+          "晴 com.coloros.alarmclock:id\/iv_weather_type",
+          "24‎°‎ com.coloros.alarmclock:id\/local_weather_info_txt",
+          "5月20日  周三 5月20日  周三 com.coloros.alarmclock:id\/local_date_info_txt",
+          "com.oplus.seedling.cardgroup.pluginapp:id\/group_layout_root",
+          "com.oplus.seedling.cardgroup.pluginapp:id\/container_background",
+          "com.oplus.seedling.cardgroup.pluginapp:id\/carousel_view",
+          "com.nearme.instant.card:id\/ref_65534",
+          "com.nearme.instant.card:id\/ref_3",
+          "com.nearme.instant.card:id\/ref_4",
+          "com.nearme.instant.card:id\/ref_5",
+          "com.nearme.instant.card:id\/ref_9",
+          "com.nearme.instant.card:id\/ref_11",
+          "com.nearme.instant.card:id\/ref_32",
+          "QQ com.nearme.instant.card:id\/ref_33",
+          "com.nearme.instant.card:id\/ref_34",
+          "com.nearme.instant.card:id\/ref_35",
+          "com.nearme.instant.card:id\/ref_36",
+          "com.nearme.instant.card:id\/ref_37",
+          "com.nearme.instant.card:id\/ref_38",
+          "999 999 com.nearme.instant.card:id\/ref_39",
+          "com.nearme.instant.card:id\/ref_43",
+          "com.nearme.instant.card:id\/ref_44",
+          "小红书 com.nearme.instant.card:id\/ref_45",
+          "com.nearme.instant.card:id\/ref_46",
+          "com.nearme.instant.card:id\/ref_47",
+          "com.nearme.instant.card:id\/ref_48",
+          "com.nearme.instant.card:id\/ref_49",
+          "com.nearme.instant.card:id\/ref_50",
+          "1 1 com.nearme.instant.card:id\/ref_51",
+          "com.nearme.instant.card:id\/ref_13",
+          "com.nearme.instant.card:id\/ref_16",
+          "com.nearme.instant.card:id\/ref_17",
+          "com.nearme.instant.card:id\/ref_19",
+          "com.nearme.instant.card:id\/ref_20",
+          "com.nearme.instant.card:id\/ref_21",
+          "com.nearme.instant.card:id\/ref_22",
+          "com.nearme.instant.card:id\/ref_24",
+          "com.nearme.instant.card:id\/ref_25",
+          "com.nearme.instant.card:id\/ref_55",
+          "QQ邮箱 com.nearme.instant.card:id\/ref_56",
+          "com.nearme.instant.card:id\/ref_57",
+          "com.nearme.instant.card:id\/ref_58",
+          "com.nearme.instant.card:id\/ref_59",
+          "com.nearme.instant.card:id\/ref_60",
+          "com.nearme.instant.card:id\/ref_61",
+          "38 38 com.nearme.instant.card:id\/ref_62",
+          "com.nearme.instant.card:id\/ref_66",
+          "com.nearme.instant.card:id\/ref_67",
+          "淘宝 com.nearme.instant.card:id\/ref_68",
+          "com.nearme.instant.card:id\/ref_69",
+          "com.nearme.instant.card:id\/ref_70",
+          "com.nearme.instant.card:id\/ref_71",
+          "com.nearme.instant.card:id\/ref_72",
+          "com.nearme.instant.card:id\/ref_73",
+          "com.nearme.instant.card:id\/ref_74",
+          "com.nearme.instant.card:id\/ref_27",
+          "com.nearme.instant.card:id\/ref_28",
+          "com.nearme.instant.card:id\/ref_12",
+          "com.nearme.instant.card:id\/ref_14",
+          "com.nearme.instant.card:id\/ref_15",
+          "今日周二，还有 今日周二，还有 com.nearme.instant.card:id\/ref_16",
+          "2 2 com.nearme.instant.card:id\/ref_17",
+          "门课要上 门课要上 com.nearme.instant.card:id\/ref_18",
+          "5.19 \/ 第12周 5.19 \/ 第12周 com.nearme.instant.card:id\/ref_19",
+          "com.nearme.instant.card:id\/ref_29",
+          "微机原理与应用 微机原理与应用 com.nearme.instant.card:id\/ref_30",
+          "15:40 - 17:30  学武楼（1号楼）B407 15:40 - 17:30  学武楼（1号楼）B407 com.nearme.instant.card:id\/ref_31",
+          "com.nearme.instant.card:id\/ref_33"
+        ],
+        "bottomTabs": [
+          {
+            "index": 0,
+            "label": "“拨号”有 1 条通知",
+            "text": null,
+            "desc": "“拨号”有 1 条通知",
+            "resourceId": null,
+            "class": "android.widget.TextView",
+            "clickable": true,
+            "editable": false,
+            "selected": false,
+            "bounds": "32 2752 307 3064",
+            "x": 0.11736111111111111,
+            "y": 0.9179292929292929,
+            "center": {
+              "x": 0.11736111111111111,
+              "y": 0.9179292929292929
+            },
+            "tags": [
+              "bottom_tab_candidate"
+            ]
+          },
+          {
+            "index": 1,
+            "label": "同花顺 同花顺",
+            "text": "同花顺",
+            "desc": "同花顺",
+            "resourceId": null,
+            "class": "android.widget.TextView",
+            "clickable": true,
+            "editable": false,
+            "selected": false,
+            "bounds": "64 2061 392 2421",
+            "x": 0.15833333333333333,
+            "y": 0.7073863636363636,
+            "center": {
+              "x": 0.15833333333333333,
+              "y": 0.7073863636363636
+            },
+            "tags": [
+              "bottom_tab_candidate"
+            ]
+          },
+          {
+            "index": 2,
+            "label": "“信息”有 544 条通知",
+            "text": null,
+            "desc": "“信息”有 544 条通知",
+            "resourceId": null,
+            "class": "android.widget.TextView",
+            "clickable": true,
+            "editable": false,
+            "selected": false,
+            "bounds": "307 2752 582 3064",
+            "x": 0.30833333333333335,
+            "y": 0.9179292929292929,
+            "center": {
+              "x": 0.30833333333333335,
+              "y": 0.9179292929292929
+            },
+            "tags": [
+              "bottom_tab_candidate"
+            ]
+          },
+          {
+            "index": 3,
+            "label": "美团 美团",
+            "text": "美团",
+            "desc": "美团",
+            "resourceId": null,
+            "class": "android.widget.TextView",
+            "clickable": true,
+            "editable": false,
+            "selected": false,
+            "bounds": "392 2061 720 2421",
+            "x": 0.3861111111111111,
+            "y": 0.7073863636363636,
+            "center": {
+              "x": 0.3861111111111111,
+              "y": 0.7073863636363636
+            },
+            "tags": [
+              "bottom_tab_candidate"
+            ]
+          },
+          {
+            "index": 4,
+            "label": "GKD",
+            "text": null,
+            "desc": "GKD",
+            "resourceId": null,
+            "class": "android.widget.TextView",
+            "clickable": true,
+            "editable": false,
+            "selected": false,
+            "bounds": "582 2752 857 3064",
+            "x": 0.49930555555555556,
+            "y": 0.9179292929292929,
+            "center": {
+              "x": 0.49930555555555556,
+              "y": 0.9179292929292929
+            },
+            "tags": [
+              "bottom_tab_candidate"
+            ]
+          },
+          {
+            "index": 5,
+            "label": "有问题 找小布按钮 com.android.launcher:id\/page_indicator",
+            "text": null,
+            "desc": "有问题 找小布按钮",
+            "resourceId": "com.android.launcher:id\/page_indicator",
+            "class": "android.widget.FrameLayout",
+            "clickable": false,
+            "editable": false,
+            "selected": false,
+            "bounds": "491 2527 949 2647",
+            "x": 0.5,
+            "y": 0.8166035353535354,
+            "center": {
+              "x": 0.5,
+              "y": 0.8166035353535354
+            },
+            "tags": [
+              "bottom_tab_candidate"
+            ]
+          },
+          {
+            "index": 6,
+            "label": "com.android.launcher:id\/hotseat",
+            "text": null,
+            "desc": null,
+            "resourceId": "com.android.launcher:id\/hotseat",
+            "class": "android.view.ViewGroup",
+            "clickable": false,
+            "editable": false,
+            "selected": false,
+            "bounds": "0 2752 1440 3064",
+            "x": 0.5,
+            "y": 0.9179292929292929,
+            "center": {
+              "x": 0.5,
+              "y": 0.9179292929292929
+            },
+            "tags": [
+              "bottom_tab_candidate"
+            ]
+          },
+          {
+            "index": 7,
+            "label": "com.android.launcher:id\/oplus_clear_all_panel",
+            "text": null,
+            "desc": null,
+            "resourceId": "com.android.launcher:id\/oplus_clear_all_panel",
+            "class": "android.widget.LinearLayout",
+            "clickable": false,
+            "editable": false,
+            "selected": false,
+            "bounds": "0 2811 1440 2999",
+            "x": 0.5,
+            "y": 0.9169823232323232,
+            "center": {
+              "x": 0.5,
+              "y": 0.9169823232323232
+            },
+            "tags": [
+              "bottom_tab_candidate"
+            ]
+          },
+          {
+            "index": 8,
+            "label": "com.android.launcher:id\/clear_and_clean_panel",
+            "text": null,
+            "desc": null,
+            "resourceId": "com.android.launcher:id\/clear_and_clean_panel",
+            "class": "android.widget.RelativeLayout",
+            "clickable": false,
+            "editable": false,
+            "selected": false,
+            "bounds": "0 2811 1440 2999",
+            "x": 0.5,
+            "y": 0.9169823232323232,
+            "center": {
+              "x": 0.5,
+              "y": 0.9169823232323232
+            },
+            "tags": [
+              "bottom_tab_candidate"
+            ]
+          },
+          {
+            "index": 9,
+            "label": "清除 清除 com.android.launcher:id\/btn_clear",
+            "text": "清除",
+            "desc": "清除",
+            "resourceId": "com.android.launcher:id\/btn_clear",
+            "class": "android.widget.Button",
+            "clickable": false,
+            "editable": false,
+            "selected": false,
+            "bounds": "416 2817 1024 2993",
+            "x": 0.5,
+            "y": 0.9169823232323232,
+            "center": {
+              "x": 0.5,
+              "y": 0.9169823232323232
+            },
+            "tags": [
+              "bottom_tab_candidate"
+            ]
+          },
+          {
+            "index": 10,
+            "label": "百度贴吧 百度贴吧",
+            "text": "百度贴吧",
+            "desc": "百度贴吧",
+            "resourceId": null,
+            "class": "android.widget.TextView",
+            "clickable": true,
+            "editable": false,
+            "selected": false,
+            "bounds": "720 2061 1048 2421",
+            "x": 0.6138888888888889,
+            "y": 0.7073863636363636,
+            "center": {
+              "x": 0.6138888888888889,
+              "y": 0.7073863636363636
+            },
+            "tags": [
+              "bottom_tab_candidate"
+            ]
+          },
+          {
+            "index": 11,
+            "label": "Edge",
+            "text": null,
+            "desc": "Edge",
+            "resourceId": null,
+            "class": "android.widget.TextView",
+            "clickable": true,
+            "editable": false,
+            "selected": false,
+            "bounds": "857 2752 1132 3064",
+            "x": 0.6902777777777778,
+            "y": 0.9179292929292929,
+            "center": {
+              "x": 0.6902777777777778,
+              "y": 0.9179292929292929
+            },
+            "tags": [
+              "bottom_tab_candidate"
+            ]
+          }
+        ],
+        "entryCandidates": [],
+        "inputCandidates": [],
+        "exploreReport": {
+          "schemaVersion": 1,
+          "kind": "app_ui_explore_report",
+          "status": "FAILED_NO_UI_STATE",
+          "appPackage": "com.google.android.apps.maps",
+          "appName": "地图",
+          "events": [
+            {
+              "phase": "open_app",
+              "status": "RUNNING",
+              "message": "打开 地图，开始读取首页、底部分屏、入口和输入框",
+              "path": null,
+              "timestamp": 1779213399083
+            },
+            {
+              "phase": "open_app_attempt",
+              "attempt": 1,
+              "strategy": "launcher_root",
+              "success": true,
+              "message": "Launcher root intent sent for com.google.android.apps.maps"
+            },
+            {
+              "phase": "open_app_attempt_wait",
+              "attempt": 1,
+              "strategy": "launcher_root",
+              "success": true,
+              "currentPackage": "com.google.android.apps.maps",
+              "windowClassName": "android.widget.FrameLayout",
+              "overlayDismissed": 0,
+              "overlayEvents": []
+            },
+            {
+              "phase": "wait_foreground",
+              "success": true,
+              "currentPackage": "com.google.android.apps.maps",
+              "windowClassName": "android.widget.FrameLayout",
+              "overlayDismissed": 0,
+              "overlayEvents": []
+            },
+            {
+              "phase": "reactive_overlays",
+              "dismissed": 1,
+              "events": [
+                {
+                  "pass": 1,
+                  "kind": "ad_or_splash",
+                  "label": "账号和设置。 com.google.android.apps.maps:id\/selected_account_disc",
+                  "score": 66,
+                  "reason": "app_ui_explorer",
+                  "success": true,
+                  "message": "dispatchGesture tap sent (normalized=0.896,0.092 px=1290,291 screen=1440x3168)",
+                  "bounds": "1188 195 1392 387"
+                }
+              ]
+            }
+          ],
+          "durationMs": 1763
+        },
+        "durationMs": 1776
+      }
+    },
+    {
+      "packageName": "com.tencent.wework",
+      "label": "企业微信",
+      "versionName": "5.0.8",
+      "versionCode": 70675,
+      "launchable": true,
+      "launchActivity": "com.tencent.wework.launch.LaunchSplashEduActivity",
+      "generatedSkillCount": 11,
+      "dryRunPassed": 11,
+      "dryRunFailed": 0,
+      "candidateDir": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_candidates\/com.tencent.wework",
+      "previewConfigFile": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/app_config_exports\/com.tencent.wework\/app_config_20260520_015640_901.json",
+      "uiProbe": {
+        "status": "SUCCESS_EXPLORED",
+        "appPackage": "com.tencent.wework",
+        "label": "企业微信",
+        "graphFile": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/app_ui_graphs\/com.tencent.wework\/graph_candidate.json",
+        "screenCount": 2,
+        "edgeCount": 2,
+        "nodeCount": 20,
+        "clickableCount": 0,
+        "editableCount": 0,
+        "visibleLabels": [
+          "com.tencent.wework:id\/fj",
+          "android:id\/content",
+          "com.tencent.wework:id\/f4s",
+          "com.tencent.wework:id\/a0e",
+          "com.tencent.wework:id\/d2f",
+          "com.tencent.wework:id\/hkb",
+          "com.tencent.wework:id\/l3a",
+          "厦门大学 com.tencent.wework:id\/d36",
+          "com.tencent.wework:id\/gyg",
+          "com.tencent.wework:id\/gyf",
+          "com.tencent.wework:id\/gye",
+          "com.tencent.wework:id\/gyc",
+          "android:id\/navigationBarBackground"
+        ],
+        "bottomTabs": [
+          {
+            "index": 0,
+            "label": "com.tencent.wework:id\/gyc",
+            "text": null,
+            "desc": null,
+            "resourceId": "com.tencent.wework:id\/gyc",
+            "class": "android.widget.ImageView",
+            "clickable": false,
+            "editable": false,
+            "selected": false,
+            "bounds": "1182 2866 1354 2916",
+            "x": 0.8805555555555555,
+            "y": 0.9125631313131313,
+            "center": {
+              "x": 0.8805555555555555,
+              "y": 0.9125631313131313
+            },
+            "tags": [
+              "bottom_tab_candidate"
+            ]
+          },
+          {
+            "index": 1,
+            "label": "com.tencent.wework:id\/gye",
+            "text": null,
+            "desc": null,
+            "resourceId": "com.tencent.wework:id\/gye",
+            "class": "android.widget.ImageView",
+            "clickable": false,
+            "editable": false,
+            "selected": false,
+            "bounds": "1079 2651 1464 2835",
+            "x": 0.8826388888888889,
+            "y": 0.8658459595959596,
+            "center": {
+              "x": 0.8826388888888889,
+              "y": 0.8658459595959596
+            },
+            "tags": [
+              "bottom_tab_candidate"
+            ]
+          },
+          {
+            "index": 2,
+            "label": "com.tencent.wework:id\/gyg",
+            "text": null,
+            "desc": null,
+            "resourceId": "com.tencent.wework:id\/gyg",
+            "class": "android.widget.LinearLayout",
+            "clickable": false,
+            "editable": false,
+            "selected": false,
+            "bounds": "581 2651 1963 2916",
+            "x": 0.8833333333333333,
+            "y": 0.8784722222222222,
+            "center": {
+              "x": 0.8833333333333333,
+              "y": 0.8784722222222222
+            },
+            "tags": [
+              "bottom_tab_candidate"
+            ]
+          },
+          {
+            "index": 3,
+            "label": "com.tencent.wework:id\/gyf",
+            "text": null,
+            "desc": null,
+            "resourceId": "com.tencent.wework:id\/gyf",
+            "class": "android.widget.LinearLayout",
+            "clickable": false,
+            "editable": false,
+            "selected": false,
+            "bounds": "581 2651 1963 2835",
+            "x": 0.8833333333333333,
+            "y": 0.8658459595959596,
+            "center": {
+              "x": 0.8833333333333333,
+              "y": 0.8658459595959596
+            },
+            "tags": [
+              "bottom_tab_candidate"
+            ]
+          },
+          {
+            "index": 4,
+            "label": "android:id\/navigationBarBackground",
+            "text": null,
+            "desc": null,
+            "resourceId": "android:id\/navigationBarBackground",
+            "class": "android.view.View",
+            "clickable": false,
+            "editable": false,
+            "selected": false,
+            "bounds": "581 3043 1963 3104",
+            "x": 0.8833333333333333,
+            "y": 0.9700126262626263,
+            "center": {
+              "x": 0.8833333333333333,
+              "y": 0.9700126262626263
+            },
+            "tags": [
+              "bottom_tab_candidate"
+            ]
+          }
+        ],
+        "entryCandidates": [],
+        "inputCandidates": [],
+        "exploreReport": {
+          "schemaVersion": 1,
+          "kind": "app_ui_explore_report",
+          "status": "SUCCESS",
+          "appPackage": "com.tencent.wework",
+          "appName": "企业微信",
+          "screenCount": 2,
+          "edgeCount": 2,
+          "graphFile": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/app_ui_graphs\/com.tencent.wework\/graph_candidate.json",
+          "events": [
+            {
+              "phase": "open_app",
+              "status": "RUNNING",
+              "message": "打开 企业微信，开始读取首页、底部分屏、入口和输入框",
+              "path": null,
+              "timestamp": 1779213400903
+            },
+            {
+              "phase": "open_app_attempt",
+              "attempt": 1,
+              "strategy": "launcher_root",
+              "success": true,
+              "message": "Launcher root intent sent for com.tencent.wework"
+            },
+            {
+              "phase": "open_app_attempt_wait",
+              "attempt": 1,
+              "strategy": "launcher_root",
+              "success": true,
+              "currentPackage": "com.tencent.wework",
+              "windowClassName": null,
+              "overlayDismissed": 0,
+              "overlayEvents": []
+            },
+            {
+              "phase": "wait_foreground",
+              "success": true,
+              "currentPackage": "com.tencent.wework",
+              "windowClassName": null,
+              "overlayDismissed": 0,
+              "overlayEvents": []
+            },
+            {
+              "phase": "reactive_overlays",
+              "dismissed": 0,
+              "events": []
+            },
+            {
+              "phase": "capture_home",
+              "status": "SUCCESS",
+              "message": "已记录首页：20 个节点、0 个可点击项",
+              "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_snapshots\/com.tencent.wework\/20260520_015641_285_c63633f6.json",
+              "timestamp": 1779213401542
+            },
+            {
+              "phase": "open_app_attempt",
+              "attempt": 1,
+              "strategy": "launcher_root",
+              "success": true,
+              "message": "Launcher root intent sent for com.tencent.wework"
+            },
+            {
+              "phase": "open_app_attempt_wait",
+              "attempt": 1,
+              "strategy": "launcher_root",
+              "success": true,
+              "currentPackage": "com.tencent.wework",
+              "windowClassName": "android.widget.FrameLayout",
+              "overlayDismissed": 0,
+              "overlayEvents": []
+            },
+            {
+              "phase": "restore_home_before_entry",
+              "label": "com.tencent.wework:id\/gye",
+              "success": true,
+              "message": "target foreground"
+            },
+            {
+              "phase": "explore_entry",
+              "status": "RUNNING",
+              "message": "尝试安全入口：com.tencent.wework:id\/gye",
+              "path": null,
+              "timestamp": 1779213403319
+            },
+            {
+              "phase": "tap_entry",
+              "label": "com.tencent.wework:id\/gye",
+              "success": true,
+              "message": "dispatchGesture tap sent (normalized=0.883,0.866 px=1271,2743 screen=1440x3168)",
+              "candidate": {
+                "index": 1,
+                "label": "com.tencent.wework:id\/gye",
+                "text": null,
+                "desc": null,
+                "resourceId": "com.tencent.wework:id\/gye",
+                "class": "android.widget.ImageView",
+                "clickable": false,
+                "editable": false,
+                "selected": false,
+                "bounds": "1079 2651 1464 2835",
+                "x": 0.8826388888888889,
+                "y": 0.8658459595959596,
+                "center": {
+                  "x": 0.8826388888888889,
+                  "y": 0.8658459595959596
+                },
+                "tags": [
+                  "bottom_tab_candidate"
+                ]
+              }
+            },
+            {
+              "phase": "capture_child",
+              "status": "LOW_CONFIDENCE",
+              "message": "入口 com.tencent.wework:id\/gye 后记录页面：29 个节点，screenKey=ac6401d0",
+              "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_snapshots\/com.tencent.wework\/20260520_015644_724_ac6401d0.json",
+              "timestamp": 1779213405005
+            },
+            {
+              "phase": "open_app_attempt",
+              "attempt": 1,
+              "strategy": "launcher_root",
+              "success": true,
+              "message": "Launcher root intent sent for com.tencent.wework"
+            },
+            {
+              "phase": "open_app_attempt_wait",
+              "attempt": 1,
+              "strategy": "launcher_root",
+              "success": true,
+              "currentPackage": "com.tencent.wework",
+              "windowClassName": null,
+              "overlayDismissed": 0,
+              "overlayEvents": []
+            },
+            {
+              "phase": "restore_home_before_entry",
+              "label": "com.tencent.wework:id\/gyc",
+              "success": true,
+              "message": "target foreground"
+            },
+            {
+              "phase": "explore_entry",
+              "status": "RUNNING",
+              "message": "尝试安全入口：com.tencent.wework:id\/gyc",
+              "path": null,
+              "timestamp": 1779213406642
+            },
+            {
+              "phase": "tap_entry",
+              "label": "com.tencent.wework:id\/gyc",
+              "success": true,
+              "message": "dispatchGesture tap sent (normalized=0.881,0.913 px=1268,2891 screen=1440x3168)",
+              "candidate": {
+                "index": 0,
+                "label": "com.tencent.wework:id\/gyc",
+                "text": null,
+                "desc": null,
+                "resourceId": "com.tencent.wework:id\/gyc",
+                "class": "android.widget.ImageView",
+                "clickable": false,
+                "editable": false,
+                "selected": false,
+                "bounds": "1182 2866 1354 2916",
+                "x": 0.8805555555555555,
+                "y": 0.9125631313131313,
+                "center": {
+                  "x": 0.8805555555555555,
+                  "y": 0.9125631313131313
+                },
+                "tags": [
+                  "bottom_tab_candidate"
+                ]
+              }
+            },
+            {
+              "phase": "open_app_attempt",
+              "attempt": 1,
+              "strategy": "launcher_root",
+              "success": true,
+              "message": "Launcher root intent sent for com.tencent.wework"
+            },
+            {
+              "phase": "open_app_attempt_wait",
+              "attempt": 1,
+              "strategy": "launcher_root",
+              "success": true,
+              "currentPackage": "com.tencent.wework",
+              "windowClassName": null,
+              "overlayDismissed": 0,
+              "overlayEvents": []
+            },
+            {
+              "phase": "restore_home_before_entry",
+              "label": "android:id\/navigationBarBackground",
+              "success": true,
+              "message": "target foreground"
+            },
+            {
+              "phase": "explore_entry",
+              "status": "RUNNING",
+              "message": "尝试安全入口：android:id\/navigationBarBackground",
+              "path": null,
+              "timestamp": 1779213409965
+            },
+            {
+              "phase": "tap_entry",
+              "label": "android:id\/navigationBarBackground",
+              "success": true,
+              "message": "dispatchGesture tap sent (normalized=0.883,0.970 px=1272,3073 screen=1440x3168)",
+              "candidate": {
+                "index": 4,
+                "label": "android:id\/navigationBarBackground",
+                "text": null,
+                "desc": null,
+                "resourceId": "android:id\/navigationBarBackground",
+                "class": "android.view.View",
+                "clickable": false,
+                "editable": false,
+                "selected": false,
+                "bounds": "581 3043 1963 3104",
+                "x": 0.8833333333333333,
+                "y": 0.9700126262626263,
+                "center": {
+                  "x": 0.8833333333333333,
+                  "y": 0.9700126262626263
+                },
+                "tags": [
+                  "bottom_tab_candidate"
+                ]
+              }
+            },
+            {
+              "phase": "capture_child",
+              "status": "LOW_CONFIDENCE",
+              "message": "入口 android:id\/navigationBarBackground 后记录页面：29 个节点，screenKey=ac6401d0",
+              "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_snapshots\/com.tencent.wework\/20260520_015651_403_ac6401d0.json",
+              "timestamp": 1779213411763
+            }
+          ],
+          "durationMs": 11523
+        },
+        "durationMs": 11525
+      }
+    }
+  ],
+  "notes": [
+    "This batch does not train models.",
+    "It writes reusable app-level Skill JSON subsets for future assembly.",
+    "Phone-side UI probe now uses AppUiExplorer: it opens launchable apps through App code, dismisses safe overlays, captures home, sweeps safe bottom tabs\/entries, records subpages, and stores a compact AppUI graph.",
+    "No business submit\/pay\/delete button is clicked during this batch."
+  ],
+  "durationMs": 35723,
+  "createdAt": 1779213412429
+}

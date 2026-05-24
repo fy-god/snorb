@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "kind": "skill_json_dry_run_report",
+  "skillId": "patched.command.1779338878450",
+  "appPackage": "com.taobao.taobao",
+  "passed": true,
+  "status": "DRY_RUN_PASSED",
+  "errors": [],
+  "warnings": [],
+  "summary": "Skill JSON dry-run passed",
+  "timestamp": 1779338894623
+}

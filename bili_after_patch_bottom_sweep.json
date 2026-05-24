@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "kind": "skill_json_bottom_tab_entry_sweep_report",
+  "id": "bottom_tab_entry_sweep_1778526656405",
+  "skillId": "direct.command.1778526648267",
+  "appPackage": "tv.danmaku.bili",
+  "instruction": "打开哔哩哔哩搜索王老菊打开第一个视频",
+  "engine": "bottom_tab_entry_sweep",
+  "approvedRequired": false,
+  "status": "SUCCESS_MEDIUM_CONFIDENCE",
+  "message": "Macro atoms completed; reactiveDismissed=0",
+  "durationMs": 8119,
+  "usedCoordinate": true,
+  "entryAliases": [
+    "搜索",
+    "搜",
+    "查找"
+  ],
+  "skillFile": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_candidates\/tv.danmaku.bili\/direct.command.1778526648267.json",
+  "createdAt": 1778526656405
+}

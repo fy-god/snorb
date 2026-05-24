@@ -1,0 +1,182 @@
+{
+  "schemaVersion": 1,
+  "kind": "app_side_ai_direct_instruction_service_completion",
+  "operation": "API_RUN_APP_SIDE_INSTRUCTION",
+  "id": "app_side_instruction_1778534045360_completion",
+  "requestId": "app_side_instruction_1778534045360",
+  "instruction": "打开哔哩哔哩搜索王老菊打开第一个视频",
+  "appPackage": "tv.danmaku.bili",
+  "status": "FAILED_GOAL_UNVERIFIED",
+  "flowReportFile": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/flow_reports\/tv.danmaku.bili\/ai_direct_flow_1778534116484.json",
+  "stepCount": 28,
+  "events": [
+    {
+      "title": "用户指令进入手机端执行器",
+      "status": "RUNNING",
+      "message": "主输入不再只生成文件：App 将调用 AI，生成可审计 JSON，再由 SkillJsonExecutor 直接执行候选能力。"
+    },
+    {
+      "title": "规则优先执行",
+      "status": "INFO",
+      "message": "已识别为本地有 Skill 子集\/成功案例的任务：先直接生成候选 JSON 并执行；失败或目标校验不过再调用 v4pro 二次判断，避免一上来卡在 AI plan。"
+    },
+    {
+      "title": "规则泛化 B 站搜索 Skill",
+      "status": "SUCCESS",
+      "message": "补齐 8 个细粒度 Skill JSON，搜索词=王老菊；复杂任务会在搜索结果页再让 AI 判断下一步。",
+      "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_candidates\/tv.danmaku.bili\/bilibili.open_app.json"
+    },
+    {
+      "title": "dry-run 静态检查",
+      "status": "SUCCESS",
+      "message": "通过 8\/8。",
+      "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_dry_run_reports\/tv.danmaku.bili\/bilibili.search.search_in_app_1778534045705.json"
+    },
+    {
+      "title": "拼装 app_config 预览",
+      "status": "SUCCESS",
+      "message": "候选\/测试产物已拼为单个 app_config 预览。",
+      "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/app_config_exports\/tv.danmaku.bili\/app_config_20260512_051405_987.json"
+    },
+    {
+      "title": "执行候选 JSON",
+      "status": "RUNNING",
+      "message": "不等待 APPROVED：按用户要求，直接由 SkillJsonExecutor 执行候选 macro=bilibili.search.search_in_app。",
+      "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_candidates\/tv.danmaku.bili\/bilibili.search.search_in_app.json"
+    },
+    {
+      "title": "候选 JSON 执行结果",
+      "status": "FAILED_RECOVER_SCREEN",
+      "message": "bilibili.search.search_in_app -> FAILED_RECOVER_SCREEN；Bilibili recovery exhausted; still not on a trusted home\/search\/results surface. events=[{\"pass\":1,\"surface\":\"message_or_drawer_surface\",\"action\":\"message_surface_global_back\",\"success\":true,\"message\":\"GLOBAL_ACTION_BACK performed\"},{\"pass\":1,\"surface\":\"message_or_drawer_surface\",\"action\":\"message_surface_top_left_back_coordinate\",\"success\":true,\"message\":\"dispatchGesture tap sent (normalized=0.065,0.085 px=93,269 screen=1440x3168)\"},{\"pass\":2,\"action\":\"reactive_overlays\",\"dismissed\":2},{\"pass\":2,\"surface\":\"message_or_drawer_surface\",\"action\":\"message_surface_global_back\",\"success\":true,\"message\":\"GLOBAL_ACTION_BACK performed\"},{\"pass\":2,\"surface\":\"message_or_drawer_surface\",\"action\":\"message_surface_top_left_back_coordinate\",\"success\":true,\"message\":\"dispatchGesture tap sent (normalized=0.065,0.085 px=93,269 screen=1440x3168)\"},{\"pass\":3,\"action\":\"reactive_overlays\",\"dismissed\":1},{\"pass\":3,\"surface\":\"message_or_drawer_surface\",\"action\":\"message_surface_global_back\",\"success\":true,\"message\":\"GLOBAL_ACTION_BACK performed\"},{\"pass\":3,\"surface\":\"message_or_drawer_surface\",\"action\":\"message_surface_top_left_back_coordinate\",\"success\":true,\"message\":\"dispatchGesture tap sent (normalized=0.065,0.085 px=93,269 screen=1440x3168)\"},{\"pass\":4,\"action\":\"reactive_overlays\",\"dismissed\":2},{\"pass\":4,\"surface\":\"message_or_drawer_surface\",\"action\":\"message_surface_global_back\",\"success\":true,\"message\":\"GLOBAL_ACTION_BACK performed\"},{\"pass\":4,\"surface\":\"message_or_drawer_surface\",\"action\":\"message_surface_top_left_back_coordinate\",\"success\":true,\"message\":\"dispatchGesture tap sent (normalized=0.065,0.085 px=93,269 screen=1440x3168)\"}]",
+      "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/runtime\/run_reports\/tv.danmaku.bili\/ai_direct_run_1778534066820.json"
+    },
+    {
+      "title": "本地弹窗规则处理",
+      "status": "SUCCESS",
+      "message": "AI 重判前先由手机端 GKD-like 规则处理阻断弹窗\/广告：节点规则处理 1 个，视觉兜底=false。",
+      "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/runtime\/run_reports\/tv.danmaku.bili\/ai_direct_run_1778534066820.json"
+    },
+    {
+      "title": "失败后 AI 判断",
+      "status": "RUNNING",
+      "message": "当前不是直接停下：App 把失败原因、当前屏幕节点和已跑步骤发给手机端 AI，让 AI 判断下一段补救 JSON。",
+      "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/runtime\/run_reports\/tv.danmaku.bili\/ai_direct_run_1778534066820.json"
+    },
+    {
+      "title": "失败后 AI 判断 返回",
+      "status": "FAILED",
+      "message": "HTTP=402；模型=deepseek-v4-pro；goalCompleted=false；补救步骤=0；诊断=",
+      "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ai_jobs\/2026-05-12\/factory_ai_replan_1778534069404.json"
+    },
+    {
+      "title": "AI 计划失败，启动规则兜底",
+      "status": "RUNNING",
+      "message": "AI 返回的动作计划没有点到目标节点；现在改用 B 站细粒度 Skill JSON 子集继续执行。"
+    },
+    {
+      "title": "规则兜底 Skill 已写入",
+      "status": "SUCCESS",
+      "message": "写入 8 个 atomic\/macro Skill JSON。",
+      "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_candidates\/tv.danmaku.bili\/bilibili.open_app.json"
+    },
+    {
+      "title": "规则兜底 dry-run",
+      "status": "FAILED_DRY_RUN",
+      "message": "通过 413\/424。",
+      "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_dry_run_reports\/tv.danmaku.bili\/direct.command.1778533424801_1778534069761.json"
+    },
+    {
+      "title": "规则兜底执行结果",
+      "status": "FAILED_RECOVER_SCREEN",
+      "message": "bilibili.search.search_in_app -> FAILED_RECOVER_SCREEN；Bilibili recovery exhausted; still not on a trusted home\/search\/results surface. events=[{\"pass\":1,\"surface\":\"message_or_drawer_surface\",\"action\":\"message_surface_global_back\",\"success\":true,\"message\":\"GLOBAL_ACTION_BACK performed\"},{\"pass\":1,\"surface\":\"message_or_drawer_surface\",\"action\":\"message_surface_top_left_back_coordinate\",\"success\":true,\"message\":\"dispatchGesture tap sent (normalized=0.065,0.085 px=93,269 screen=1440x3168)\"},{\"pass\":2,\"action\":\"reactive_overlays\",\"dismissed\":2},{\"pass\":2,\"surface\":\"message_or_drawer_surface\",\"action\":\"message_surface_global_back\",\"success\":true,\"message\":\"GLOBAL_ACTION_BACK performed\"},{\"pass\":2,\"surface\":\"message_or_drawer_surface\",\"action\":\"message_surface_top_left_back_coordinate\",\"success\":true,\"message\":\"dispatchGesture tap sent (normalized=0.065,0.085 px=93,269 screen=1440x3168)\"},{\"pass\":3,\"action\":\"reactive_overlays\",\"dismissed\":1},{\"pass\":3,\"surface\":\"message_or_drawer_surface\",\"action\":\"message_surface_global_back\",\"success\":true,\"message\":\"GLOBAL_ACTION_BACK performed\"},{\"pass\":3,\"surface\":\"message_or_drawer_surface\",\"action\":\"message_surface_top_left_back_coordinate\",\"success\":true,\"message\":\"dispatchGesture tap sent (normalized=0.065,0.085 px=93,269 screen=1440x3168)\"},{\"pass\":4,\"action\":\"reactive_overlays\",\"dismissed\":2},{\"pass\":4,\"surface\":\"message_or_drawer_surface\",\"action\":\"message_surface_global_back\",\"success\":true,\"message\":\"GLOBAL_ACTION_BACK performed\"},{\"pass\":4,\"surface\":\"message_or_drawer_surface\",\"action\":\"message_surface_top_left_back_coordinate\",\"success\":true,\"message\":\"dispatchGesture tap sent (normalized=0.065,0.085 px=93,269 screen=1440x3168)\"}]",
+      "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/runtime\/run_reports\/tv.danmaku.bili\/ai_direct_fallback_run_1778534089436.json"
+    },
+    {
+      "title": "目标未完成，继续 AI 判断",
+      "status": "RUNNING",
+      "message": "当前像 B 站消息\/动态发布相关页面，不是视频详情页，不能报告第一个视频已打开。；第 1\/4 次继续重判当前屏幕。",
+      "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/runtime\/run_reports\/tv.danmaku.bili\/ai_direct_run_1778534066820.json"
+    },
+    {
+      "title": "本地弹窗规则处理",
+      "status": "SUCCESS",
+      "message": "AI 重判前先由手机端 GKD-like 规则处理阻断弹窗\/广告：节点规则处理 1 个，视觉兜底=false。",
+      "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/runtime\/run_reports\/tv.danmaku.bili\/ai_direct_run_1778534066820.json"
+    },
+    {
+      "title": "B 站不在搜索结果页，先恢复搜索",
+      "status": "RUNNING",
+      "message": "当前页面不是可信搜索结果页；先执行 B 站搜索 Skill 子集（含 RecoverBilibiliHomeSurface），再选择第一个视频候选。"
+    },
+    {
+      "title": "AI 计划失败，启动规则兜底",
+      "status": "RUNNING",
+      "message": "AI 返回的动作计划没有点到目标节点；现在改用 B 站细粒度 Skill JSON 子集继续执行。"
+    },
+    {
+      "title": "规则兜底 Skill 已写入",
+      "status": "SUCCESS",
+      "message": "写入 8 个 atomic\/macro Skill JSON。",
+      "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_candidates\/tv.danmaku.bili\/bilibili.open_app.json"
+    },
+    {
+      "title": "规则兜底 dry-run",
+      "status": "FAILED_DRY_RUN",
+      "message": "通过 413\/424。",
+      "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_dry_run_reports\/tv.danmaku.bili\/direct.command.1778533022444_1778534091450.json"
+    },
+    {
+      "title": "规则兜底执行结果",
+      "status": "FAILED_RECOVER_SCREEN",
+      "message": "bilibili.search.search_in_app -> FAILED_RECOVER_SCREEN；Bilibili recovery exhausted; still not on a trusted home\/search\/results surface. events=[{\"pass\":1,\"surface\":\"message_or_drawer_surface\",\"action\":\"message_surface_global_back\",\"success\":true,\"message\":\"GLOBAL_ACTION_BACK performed\"},{\"pass\":1,\"surface\":\"message_or_drawer_surface\",\"action\":\"message_surface_top_left_back_coordinate\",\"success\":true,\"message\":\"dispatchGesture tap sent (normalized=0.065,0.085 px=93,269 screen=1440x3168)\"},{\"pass\":2,\"action\":\"reactive_overlays\",\"dismissed\":2},{\"pass\":2,\"surface\":\"message_or_drawer_surface\",\"action\":\"message_surface_global_back\",\"success\":true,\"message\":\"GLOBAL_ACTION_BACK performed\"},{\"pass\":2,\"surface\":\"message_or_drawer_surface\",\"action\":\"message_surface_top_left_back_coordinate\",\"success\":true,\"message\":\"dispatchGesture tap sent (normalized=0.065,0.085 px=93,269 screen=1440x3168)\"},{\"pass\":3,\"action\":\"reactive_overlays\",\"dismissed\":1},{\"pass\":3,\"surface\":\"message_or_drawer_surface\",\"action\":\"message_surface_global_back\",\"success\":true,\"message\":\"GLOBAL_ACTION_BACK performed\"},{\"pass\":3,\"surface\":\"message_or_drawer_surface\",\"action\":\"message_surface_top_left_back_coordinate\",\"success\":true,\"message\":\"dispatchGesture tap sent (normalized=0.065,0.085 px=93,269 screen=1440x3168)\"},{\"pass\":4,\"action\":\"reactive_overlays\",\"dismissed\":2},{\"pass\":4,\"surface\":\"message_or_drawer_surface\",\"action\":\"message_surface_global_back\",\"success\":true,\"message\":\"GLOBAL_ACTION_BACK performed\"},{\"pass\":4,\"surface\":\"message_or_drawer_surface\",\"action\":\"message_surface_top_left_back_coordinate\",\"success\":true,\"message\":\"dispatchGesture tap sent (normalized=0.065,0.085 px=93,269 screen=1440x3168)\"}]",
+      "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/runtime\/run_reports\/tv.danmaku.bili\/ai_direct_fallback_run_1778534111348.json"
+    },
+    {
+      "title": "本地候选补救停止",
+      "status": "FAILED_ELEMENT_NOT_FOUND",
+      "message": "当前屏幕没有找到可信的第一个视频候选。不会乱点，也不会把搜索页误报为成功。"
+    },
+    {
+      "title": "失败后 AI 判断",
+      "status": "RUNNING",
+      "message": "当前不是直接停下：App 把失败原因、当前屏幕节点和已跑步骤发给手机端 AI，让 AI 判断下一段补救 JSON。",
+      "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/runtime\/run_reports\/tv.danmaku.bili\/ai_direct_run_1778534066820.json"
+    },
+    {
+      "title": "失败后 AI 判断 返回",
+      "status": "FAILED",
+      "message": "HTTP=402；模型=deepseek-v4-pro；goalCompleted=false；补救步骤=0；诊断=",
+      "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ai_jobs\/2026-05-12\/factory_ai_replan_1778534114548.json"
+    },
+    {
+      "title": "AI 未返回补救动作，停止重复等待",
+      "status": "FAILED_NO_REPLAN",
+      "message": "失败后 AI 判断没有产出可执行 JSON，通常是 API 超时\/网络失败\/解析失败；本次停止循环，避免一直卡在 RUNNING。",
+      "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ai_jobs\/2026-05-12\/factory_ai_replan_1778534114548.json"
+    },
+    {
+      "title": "目标完成校验",
+      "status": "FAILED_GOAL_UNVERIFIED",
+      "message": "当前像 B 站消息\/动态发布相关页面，不是视频详情页，不能报告第一个视频已打开。",
+      "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/runtime\/run_reports\/tv.danmaku.bili\/ai_direct_run_1778534066820.json"
+    },
+    {
+      "title": "保留目标应用前台用于证据",
+      "status": "INFO",
+      "message": "本次保留目标应用当前页面，不把 MacroPilot 拉回前台；报告里会记录当前 UI 快照和截图，方便继续让 AI 判断卡点。"
+    },
+    {
+      "title": "用户指令流水线完成",
+      "status": "FAILED_GOAL_UNVERIFIED",
+      "message": "报告=ai_direct_flow_1778534116484.json；步骤=27。",
+      "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/flow_reports\/tv.danmaku.bili\/ai_direct_flow_1778534116484.json"
+    },
+    {
+      "title": "报告已写入",
+      "status": "INFO",
+      "message": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/flow_reports\/tv.danmaku.bili\/ai_direct_flow_1778534116484.json",
+      "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/flow_reports\/tv.danmaku.bili\/ai_direct_flow_1778534116484.json"
+    }
+  ],
+  "createdAt": 1778534116579
+}

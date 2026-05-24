@@ -1,0 +1,55 @@
+{
+  "schemaVersion": 1,
+  "kind": "skill_json_ai_follow_up_run_report",
+  "id": "ai_follow_up_run_1778533104699",
+  "skillId": "direct.command.1778533104131",
+  "failedSkillId": "bilibili.search.search_in_app",
+  "appPackage": "tv.danmaku.bili",
+  "instruction": "打开哔哩哔哩搜索王老菊打开第一个视频",
+  "engine": "ai_runtime_replan",
+  "phase": "REPLAN",
+  "trigger": "GOAL_UNVERIFIED_LOOP_1",
+  "previousStatus": "FAILED_GOAL_UNVERIFIED",
+  "previousMessage": "当前像 B 站消息\/动态发布相关页面，不是视频详情页，不能报告第一个视频已打开。",
+  "previousRuntimeReportFile": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/runtime\/run_reports\/tv.danmaku.bili\/ai_follow_up_run_1778533029811.json",
+  "aiJobFile": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ai_jobs\/2026-05-12\/factory_ai_replan_1778533104108.json",
+  "decision": {
+    "goalCompleted": false,
+    "screenAssessment": "当前为B站首页推荐页，顶部搜索栏内有旧文本“33不是山山”，并未搜索“王老菊”，也未打开任何视频。",
+    "failureDiagnosis": "之前的恢复步骤未能离开消息页面，现已回到首页，但任务未执行。",
+    "confidence": "HIGH",
+    "nextActionReason": "点击搜索栏，输入“王老菊”并触发搜索，为打开第一个视频做准备。"
+  },
+  "approvedRequired": false,
+  "status": "FAILED_ELEMENT_NOT_FOUND",
+  "message": "No matching node",
+  "durationMs": 524,
+  "usedCoordinate": false,
+  "details": {
+    "macroSkillId": "direct.command.1778533104131",
+    "failedAtom": {
+      "index": 0,
+      "skillId": "direct.1778533104131.1.clickselector",
+      "actionType": "ClickSelector",
+      "status": "FAILED_ELEMENT_NOT_FOUND",
+      "message": "No matching node",
+      "usedCoordinate": false,
+      "details": null
+    },
+    "atomTrace": [
+      {
+        "index": 0,
+        "skillId": "direct.1778533104131.1.clickselector",
+        "actionType": "ClickSelector",
+        "status": "FAILED_ELEMENT_NOT_FOUND",
+        "message": "No matching node",
+        "usedCoordinate": false,
+        "details": null
+      }
+    ],
+    "reactiveDismissed": 1
+  },
+  "allowSideEffect": true,
+  "skillFile": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_candidates\/tv.danmaku.bili\/direct.command.1778533104131.json",
+  "createdAt": 1778533104699
+}

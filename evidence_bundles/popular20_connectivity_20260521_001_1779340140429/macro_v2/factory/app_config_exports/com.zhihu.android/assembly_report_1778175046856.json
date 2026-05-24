@@ -1,0 +1,333 @@
+{
+  "schemaVersion": 1,
+  "kind": "skill_json_assembly_report",
+  "id": "assembly_report_1778175046856",
+  "appPackage": "com.zhihu.android",
+  "appName": "知乎",
+  "mode": "FACTORY_PREVIEW",
+  "createdAt": 1778175046856,
+  "steps": [
+    "读取应用下的细粒度 skill JSON 文件",
+    "按状态过滤：预览排除 REJECTED，运行配置只允许 APPROVED",
+    "按 kind 拆分 atomicSkills \/ macroSkills \/ reactiveRules",
+    "合并 screens \/ elements \/ reports \/ runtimePolicy",
+    "写出 app_config JSON，并记录本次装配报告"
+  ],
+  "source": {
+    "skillFileCount": 13,
+    "includedSkillJsonCount": 13,
+    "includedSkillCount": 13,
+    "excludedSkillCount": 0,
+    "dryRunReportCount": 29,
+    "testReportCount": 0
+  },
+  "counts": {
+    "atomicSkills": 11,
+    "macroSkills": 2,
+    "reactiveRules": 0,
+    "screens": 0,
+    "elements": 0
+  },
+  "outputs": {
+    "previewConfigFile": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/app_config_exports\/com.zhihu.android\/app_config_20260508_013046_849.json",
+    "runtimeConfigIsExecutable": false
+  },
+  "runtimePolicy": {
+    "allowCandidateSkill": false,
+    "allowTrial": false,
+    "aiCallsDefault": 0,
+    "screenshotDefault": 0,
+    "maxTaskDurationMs": 30000
+  },
+  "includedSkills": [
+    {
+      "id": "com.zhihu.android.open_app",
+      "name": "打开应用",
+      "kind": "atomic_skill",
+      "implements": "OpenAppSkill",
+      "status": "DRY_RUN_PASSED",
+      "included": true,
+      "reason": "INCLUDED",
+      "file": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_candidates\/com.zhihu.android\/com.zhihu.android.open_app.json",
+      "updatedAt": 1778175046831
+    },
+    {
+      "id": "com.zhihu.android.recover_to_foreground",
+      "name": "恢复到应用前台",
+      "kind": "atomic_skill",
+      "implements": "RecoverToScreenSkill",
+      "status": "DRY_RUN_PASSED",
+      "included": true,
+      "reason": "INCLUDED",
+      "file": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_candidates\/com.zhihu.android\/com.zhihu.android.recover_to_foreground.json",
+      "updatedAt": 1778175046831
+    },
+    {
+      "id": "com.zhihu.android.prepare_app_session",
+      "name": "准备应用会话",
+      "kind": "macro_skill",
+      "implements": "PrepareAppSessionSkill",
+      "status": "DRY_RUN_PASSED",
+      "included": true,
+      "reason": "INCLUDED",
+      "file": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_candidates\/com.zhihu.android\/com.zhihu.android.prepare_app_session.json",
+      "updatedAt": 1778175046831
+    },
+    {
+      "id": "com.zhihu.android.capability_check",
+      "name": "检查应用能力",
+      "kind": "atomic_skill",
+      "implements": "CapabilityCheckSkill",
+      "status": "DRY_RUN_PASSED",
+      "included": true,
+      "reason": "INCLUDED",
+      "file": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_candidates\/com.zhihu.android\/com.zhihu.android.capability_check.json",
+      "updatedAt": 1778175046827
+    },
+    {
+      "id": "direct.1778175046804.3.clickvisibletext",
+      "name": "直接执行步骤 3",
+      "kind": "atomic_skill",
+      "implements": "ClickElementSkill",
+      "status": "DRY_RUN_PASSED",
+      "included": true,
+      "reason": "INCLUDED",
+      "file": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_candidates\/com.zhihu.android\/direct.1778175046804.3.clickvisibletext.json",
+      "updatedAt": 1778175046827
+    },
+    {
+      "id": "direct.1778175046804.4.wait",
+      "name": "直接执行步骤 4",
+      "kind": "atomic_skill",
+      "implements": "WaitUntilSkill",
+      "status": "DRY_RUN_PASSED",
+      "included": true,
+      "reason": "INCLUDED",
+      "file": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_candidates\/com.zhihu.android\/direct.1778175046804.4.wait.json",
+      "updatedAt": 1778175046827
+    },
+    {
+      "id": "direct.1778175046804.1.openapp",
+      "name": "直接执行步骤 1",
+      "kind": "atomic_skill",
+      "implements": "OpenAppSkill",
+      "status": "DRY_RUN_PASSED",
+      "included": true,
+      "reason": "INCLUDED",
+      "file": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_candidates\/com.zhihu.android\/direct.1778175046804.1.openapp.json",
+      "updatedAt": 1778175046823
+    },
+    {
+      "id": "direct.1778175046804.2.wait",
+      "name": "直接执行步骤 2",
+      "kind": "atomic_skill",
+      "implements": "WaitUntilSkill",
+      "status": "DRY_RUN_PASSED",
+      "included": true,
+      "reason": "INCLUDED",
+      "file": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_candidates\/com.zhihu.android\/direct.1778175046804.2.wait.json",
+      "updatedAt": 1778175046823
+    },
+    {
+      "id": "direct.1778175046804.7.clickvisibletext",
+      "name": "直接执行步骤 7",
+      "kind": "atomic_skill",
+      "implements": "ClickElementSkill",
+      "status": "DRY_RUN_PASSED",
+      "included": true,
+      "reason": "INCLUDED",
+      "file": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_candidates\/com.zhihu.android\/direct.1778175046804.7.clickvisibletext.json",
+      "updatedAt": 1778175046823
+    },
+    {
+      "id": "direct.1778175046804.8.wait",
+      "name": "直接执行步骤 8",
+      "kind": "atomic_skill",
+      "implements": "WaitUntilSkill",
+      "status": "DRY_RUN_PASSED",
+      "included": true,
+      "reason": "INCLUDED",
+      "file": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_candidates\/com.zhihu.android\/direct.1778175046804.8.wait.json",
+      "updatedAt": 1778175046823
+    },
+    {
+      "id": "direct.1778175046804.5.typeintofirstinput",
+      "name": "直接执行步骤 5",
+      "kind": "atomic_skill",
+      "implements": "TypeTextSkill",
+      "status": "DRY_RUN_PASSED",
+      "included": true,
+      "reason": "INCLUDED",
+      "file": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_candidates\/com.zhihu.android\/direct.1778175046804.5.typeintofirstinput.json",
+      "updatedAt": 1778175046819
+    },
+    {
+      "id": "direct.1778175046804.6.wait",
+      "name": "直接执行步骤 6",
+      "kind": "atomic_skill",
+      "implements": "WaitUntilSkill",
+      "status": "DRY_RUN_PASSED",
+      "included": true,
+      "reason": "INCLUDED",
+      "file": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_candidates\/com.zhihu.android\/direct.1778175046804.6.wait.json",
+      "updatedAt": 1778175046819
+    },
+    {
+      "id": "direct.command.1778175046804",
+      "name": "用户指令直接执行",
+      "kind": "macro_skill",
+      "implements": "AiDirectInstructionSkill",
+      "status": "DRY_RUN_PASSED",
+      "included": true,
+      "reason": "INCLUDED",
+      "file": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_candidates\/com.zhihu.android\/direct.command.1778175046804.json",
+      "updatedAt": 1778175046819
+    }
+  ],
+  "excludedSkills": [],
+  "sourceFiles": [
+    {
+      "id": "com.zhihu.android.open_app",
+      "name": "打开应用",
+      "kind": "atomic_skill",
+      "implements": "OpenAppSkill",
+      "status": "DRY_RUN_PASSED",
+      "included": true,
+      "reason": "INCLUDED",
+      "file": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_candidates\/com.zhihu.android\/com.zhihu.android.open_app.json",
+      "updatedAt": 1778175046831
+    },
+    {
+      "id": "com.zhihu.android.recover_to_foreground",
+      "name": "恢复到应用前台",
+      "kind": "atomic_skill",
+      "implements": "RecoverToScreenSkill",
+      "status": "DRY_RUN_PASSED",
+      "included": true,
+      "reason": "INCLUDED",
+      "file": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_candidates\/com.zhihu.android\/com.zhihu.android.recover_to_foreground.json",
+      "updatedAt": 1778175046831
+    },
+    {
+      "id": "com.zhihu.android.prepare_app_session",
+      "name": "准备应用会话",
+      "kind": "macro_skill",
+      "implements": "PrepareAppSessionSkill",
+      "status": "DRY_RUN_PASSED",
+      "included": true,
+      "reason": "INCLUDED",
+      "file": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_candidates\/com.zhihu.android\/com.zhihu.android.prepare_app_session.json",
+      "updatedAt": 1778175046831
+    },
+    {
+      "id": "com.zhihu.android.capability_check",
+      "name": "检查应用能力",
+      "kind": "atomic_skill",
+      "implements": "CapabilityCheckSkill",
+      "status": "DRY_RUN_PASSED",
+      "included": true,
+      "reason": "INCLUDED",
+      "file": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_candidates\/com.zhihu.android\/com.zhihu.android.capability_check.json",
+      "updatedAt": 1778175046827
+    },
+    {
+      "id": "direct.1778175046804.3.clickvisibletext",
+      "name": "直接执行步骤 3",
+      "kind": "atomic_skill",
+      "implements": "ClickElementSkill",
+      "status": "DRY_RUN_PASSED",
+      "included": true,
+      "reason": "INCLUDED",
+      "file": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_candidates\/com.zhihu.android\/direct.1778175046804.3.clickvisibletext.json",
+      "updatedAt": 1778175046827
+    },
+    {
+      "id": "direct.1778175046804.4.wait",
+      "name": "直接执行步骤 4",
+      "kind": "atomic_skill",
+      "implements": "WaitUntilSkill",
+      "status": "DRY_RUN_PASSED",
+      "included": true,
+      "reason": "INCLUDED",
+      "file": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_candidates\/com.zhihu.android\/direct.1778175046804.4.wait.json",
+      "updatedAt": 1778175046827
+    },
+    {
+      "id": "direct.1778175046804.1.openapp",
+      "name": "直接执行步骤 1",
+      "kind": "atomic_skill",
+      "implements": "OpenAppSkill",
+      "status": "DRY_RUN_PASSED",
+      "included": true,
+      "reason": "INCLUDED",
+      "file": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_candidates\/com.zhihu.android\/direct.1778175046804.1.openapp.json",
+      "updatedAt": 1778175046823
+    },
+    {
+      "id": "direct.1778175046804.2.wait",
+      "name": "直接执行步骤 2",
+      "kind": "atomic_skill",
+      "implements": "WaitUntilSkill",
+      "status": "DRY_RUN_PASSED",
+      "included": true,
+      "reason": "INCLUDED",
+      "file": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_candidates\/com.zhihu.android\/direct.1778175046804.2.wait.json",
+      "updatedAt": 1778175046823
+    },
+    {
+      "id": "direct.1778175046804.7.clickvisibletext",
+      "name": "直接执行步骤 7",
+      "kind": "atomic_skill",
+      "implements": "ClickElementSkill",
+      "status": "DRY_RUN_PASSED",
+      "included": true,
+      "reason": "INCLUDED",
+      "file": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_candidates\/com.zhihu.android\/direct.1778175046804.7.clickvisibletext.json",
+      "updatedAt": 1778175046823
+    },
+    {
+      "id": "direct.1778175046804.8.wait",
+      "name": "直接执行步骤 8",
+      "kind": "atomic_skill",
+      "implements": "WaitUntilSkill",
+      "status": "DRY_RUN_PASSED",
+      "included": true,
+      "reason": "INCLUDED",
+      "file": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_candidates\/com.zhihu.android\/direct.1778175046804.8.wait.json",
+      "updatedAt": 1778175046823
+    },
+    {
+      "id": "direct.1778175046804.5.typeintofirstinput",
+      "name": "直接执行步骤 5",
+      "kind": "atomic_skill",
+      "implements": "TypeTextSkill",
+      "status": "DRY_RUN_PASSED",
+      "included": true,
+      "reason": "INCLUDED",
+      "file": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_candidates\/com.zhihu.android\/direct.1778175046804.5.typeintofirstinput.json",
+      "updatedAt": 1778175046819
+    },
+    {
+      "id": "direct.1778175046804.6.wait",
+      "name": "直接执行步骤 6",
+      "kind": "atomic_skill",
+      "implements": "WaitUntilSkill",
+      "status": "DRY_RUN_PASSED",
+      "included": true,
+      "reason": "INCLUDED",
+      "file": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_candidates\/com.zhihu.android\/direct.1778175046804.6.wait.json",
+      "updatedAt": 1778175046819
+    },
+    {
+      "id": "direct.command.1778175046804",
+      "name": "用户指令直接执行",
+      "kind": "macro_skill",
+      "implements": "AiDirectInstructionSkill",
+      "status": "DRY_RUN_PASSED",
+      "included": true,
+      "reason": "INCLUDED",
+      "file": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_candidates\/com.zhihu.android\/direct.command.1778175046804.json",
+      "updatedAt": 1778175046819
+    }
+  ]
+}

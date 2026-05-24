@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "kind": "skill_json_bottom_tab_entry_sweep_report",
+  "id": "bottom_tab_entry_sweep_1779338545929",
+  "skillId": "patched.command.1779338532697",
+  "appPackage": "com.sina.weibo",
+  "instruction": "在微博搜索王老菊，停在综合结果页并记录用户、微博、视频分区。\n\n约束：目标 App=微博，包名=com.sina.weibo。必须由 MacroPilot 手机端自己用无障碍、输入法、AI\/Skill JSON 执行，不允许依赖 ADB 手点目标 App。执行前先读取当前 UI；如果遇到广告、弹窗、小字提示，先记录文字并安全关闭。任务完成必须用当前 UI 证据验证，不能只因为步骤执行完就报成功。如果没有现成 skill，先复用已有相似 Skill JSON\/archetype，只改关键槽位如入口文字、坐标、目标文本、验证规则，再组装 atomic\/macro skill。需要探索入口时优先遍历底部标签、顶部小图标、图形化入口、侧边操作和子页面。本任务 stopBeforeSubmit=true：写草稿、评论、订单、支付类流程必须停在提交前，不点击最终发布、发送、提交订单、支付、确认授权。期望证据包括：王老菊、搜索结果。",
+  "engine": "bottom_tab_entry_sweep",
+  "approvedRequired": false,
+  "status": "SUCCESS_MEDIUM_CONFIDENCE",
+  "message": "Macro atoms completed; reactiveDismissed=1",
+  "durationMs": 11628,
+  "usedCoordinate": true,
+  "entryAliases": [
+    "写微博",
+    "发微博",
+    "发布",
+    "创作",
+    "+"
+  ],
+  "skillFile": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_candidates\/com.sina.weibo\/patched.command.1779338532697.json",
+  "createdAt": 1779338545929
+}

@@ -1,0 +1,76 @@
+{
+  "schemaVersion": 1,
+  "kind": "atomic_skill",
+  "id": "patched.1779301860752.8.wait",
+  "name": "改写步骤 8: Wait",
+  "appPackage": "com.xingin.xhs",
+  "appVersion": "*",
+  "status": "DRY_RUN_PASSED",
+  "domain": "app_session",
+  "implements": "WaitUntilSkill",
+  "params": [],
+  "preconditions": [],
+  "dependsOn": [],
+  "resolverPolicy": {
+    "order": [
+      "ACCESSIBILITY",
+      "APP_UI_GRAPH",
+      "COORDINATE_PACK",
+      "AI_PATCH"
+    ],
+    "allowAiSuggestionInFactory": true,
+    "allowAiInRuntime": true
+  },
+  "safety": {
+    "forbiddenTexts": [
+      "支付",
+      "付款",
+      "转账",
+      "删除",
+      "发布",
+      "授权"
+    ]
+  },
+  "factory": {
+    "source": "APP_SIDE_PLAN_PATCH_ASSEMBLER",
+    "instruction": "打开小红书笔记评论区，在评论框输入我是AI测试但不要发送。\n\n约束：目标 App=小红书，包名=com.xingin.xhs。必须由 MacroPilot 手机端自己用无障碍、输入法、AI\/Skill JSON 执行，不允许依赖 ADB 手点目标 App。执行前先读取当前 UI；如果遇到广告、弹窗、小字提示，先记录文字并安全关闭。任务完成必须用当前 UI 证据验证，不能只因为步骤执行完就报成功。如果没有现成 skill，先复用已有相似 Skill JSON\/archetype，只改关键槽位如入口文字、坐标、目标文本、验证规则，再组装 atomic\/macro skill。需要探索入口时优先遍历底部标签、顶部小图标、图形化入口、侧边操作和子页面。本任务 stopBeforeSubmit=true：写草稿、评论、订单、支付类流程必须停在提交前，不点击最终发布、发送、提交订单、支付、确认授权。期望证据包括：评论框、我是AI测试。",
+    "aiJobPath": null,
+    "traceIds": [],
+    "sampleCount": 0,
+    "dryRunStatus": "PASSED",
+    "testRuns": 0,
+    "successRate": 0,
+    "promotionStatus": "NOT_PROMOTED",
+    "createdAt": 1779301864398,
+    "sourceSkillId": "patched.1779301860752.6.wait",
+    "sourceSkillPath": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_candidates\/com.xingin.xhs\/patched.1779301860752.6.wait.json",
+    "sourceOrigin": "LOCAL_JSON",
+    "templateMatchScore": 64,
+    "templateMatchReason": "same_app,same_action_type,same_capability",
+    "patchReason": "reuse_existing_skill_json_and_rewrite_key_slots",
+    "lastDryRunReport": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_dry_run_reports\/com.xingin.xhs\/patched.1779301860752.8.wait_1779338094153.json",
+    "lastDryRunAt": 1779338094154
+  },
+  "capabilityRequired": {
+    "minLevel": "D",
+    "inputRequired": false,
+    "nodeReadablePreferred": true,
+    "coordinateFallbackAllowed": false,
+    "allowedInputChannels": [],
+    "verificationRequired": "MEDIUM"
+  },
+  "action": {
+    "type": "Wait",
+    "timeoutMs": 800
+  },
+  "verify": {
+    "type": "Always",
+    "timeoutMs": 1
+  },
+  "resultPolicy": {
+    "verified": "SUCCESS",
+    "partialVerified": "SUCCESS_MEDIUM_CONFIDENCE",
+    "coordinateOnly": "SUCCESS_LOW_CONFIDENCE",
+    "unverifiable": "FAILED_UNVERIFIABLE"
+  }
+}

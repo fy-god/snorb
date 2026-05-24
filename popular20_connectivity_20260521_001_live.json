@@ -1,0 +1,26 @@
+﻿{
+  "schemaVersion": 1,
+  "kind": "popular_app_task_batch_service_state",
+  "id": "popular20_connectivity_20260521_001",
+  "requestId": "popular20_connectivity_20260521_001",
+  "status": "RUNNING",
+  "message": "[8\/20] 美团 1\/1: meituan_search_food",
+  "requestedPackages": [],
+  "progress": {
+    "phase": "TASK_RUNNING",
+    "appIndex": 8,
+    "appTotal": 20,
+    "taskIndex": 1,
+    "tasksPerApp": 1,
+    "packageName": "com.sankuai.meituan",
+    "appName": "美团",
+    "taskId": "meituan_search_food",
+    "instruction": "在美团搜索奶茶，停在结果页并记录店铺、商品、筛选入口。",
+    "executed": 7,
+    "success": 1,
+    "failed": 6,
+    "blocked": 0
+  },
+  "payload": null,
+  "createdAt": 1779338798276
+}

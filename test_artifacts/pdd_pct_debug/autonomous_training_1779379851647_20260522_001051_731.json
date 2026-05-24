@@ -1,0 +1,2467 @@
+{
+  "schemaVersion": 1,
+  "kind": "autonomous_training_record",
+  "id": "autonomous_training_1779379851647",
+  "appPackage": "com.xunmeng.pinduoduo",
+  "flowReportFile": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/flow_reports\/com.xunmeng.pinduoduo\/ai_direct_flow_1779379851583.json",
+  "input": {
+    "instruction": "在拼多多搜索纸巾，停在结果页并记录筛选、店铺、价格入口。\n\n约束：目标 App=拼多多，包名=com.xunmeng.pinduoduo。必须由 MacroPilot 手机端自己用无障碍、输入法、AI\/Skill JSON 执行，不允许依赖 ADB 手点目标 App。执行前先读取当前 UI；如果遇到广告、弹窗、小字提示，先记录文字并安全关闭。任务完成必须用当前 UI 证据验证，不能只因为步骤执行完就报成功。如果没有现成 skill，先复用已有相似 Skill JSON\/archetype，只改关键槽位如入口文字、坐标、目标文本、验证规则，再组装 atomic\/macro skill。需要探索入口时优先遍历底部标签、顶部小图标、图形化入口、侧边操作和子页面。本任务 stopBeforeSubmit=true：写草稿、评论、订单、支付类流程必须停在提交前，不点击最终发布、发送、提交订单、支付、确认授权。期望证据包括：纸巾、结果。",
+    "appPackage": "com.xunmeng.pinduoduo",
+    "query": "纸巾，停在结果页并记录筛选、店铺、价格入口。\n\n约束：目标 App=拼多多，包名=com.xunmeng.pinduoduo。必须由 MacroPilot 手机端自己用无障碍、输入法、AI\/Skill JSON 执行，不允许依赖 ADB 手点目标 App。执行前先读取当前 UI；如果遇到广告、弹窗、小字提示，先记录文字并安全关闭。任务完成必须用当前 UI 证据验证，不能只因为步骤执行完就报成功。如果没有现成 skill，先复用已有相似 Skill JSON\/archetype，只改关键槽位如入口文字、坐标、目标文本、验证规则，再组装 atomic\/macro skill。需要探索入口时优先遍历底部标签、顶部小图标、图形化入口、侧边操作和子页面。本任务 stopBeforeSubmit=true：写草稿、评论、订单、支付类流程必须停在提交前，不点击最终发布、发送、提交订单、支付、确认授权。期望证据包括：纸巾、结果。",
+    "appUiGraphFile": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/app_ui_graphs\/com.xunmeng.pinduoduo\/graph_candidate.json",
+    "recentUiSnapshots": [
+      {
+        "id": "ui_snapshot_1779379754302",
+        "source": "accessibility_auto",
+        "note": "TYPE_WINDOW_STATE_CHANGED",
+        "appPackage": "com.xunmeng.pinduoduo",
+        "windowClassName": "null",
+        "screenKey": "ab74cd21",
+        "screenshotPath": "null",
+        "visualHash": "null",
+        "summary": {
+          "nodeCount": 17,
+          "clickableCount": 5,
+          "editableCount": 0,
+          "scrollableCount": 0,
+          "labels": [
+            "android:id\/content",
+            "com.xunmeng.pinduoduo:id\/pdd",
+            "com.xunmeng.pinduoduo:id\/pdd",
+            "如何使用「一键找同款」 com.xunmeng.pinduoduo:id\/title",
+            " com.xunmeng.pinduoduo:id\/pdd",
+            "com.xunmeng.pinduoduo:id\/pdd",
+            "com.xunmeng.pinduoduo:id\/pdd",
+            "tronplayer_view",
+            "正在加载中",
+            "取消 com.xunmeng.pinduoduo:id\/pdd",
+            "去开启 com.xunmeng.pinduoduo:id\/pdd"
+          ],
+          "bottomCandidates": [
+            {
+              "label": "取消 com.xunmeng.pinduoduo:id\/pdd",
+              "bounds": {
+                "left": 56,
+                "top": 2780,
+                "right": 700,
+                "bottom": 2960
+              },
+              "clickable": true
+            },
+            {
+              "label": "com.xunmeng.pinduoduo:id\/pdd",
+              "bounds": {
+                "left": 0,
+                "top": 1557,
+                "right": 1440,
+                "bottom": 3104
+              },
+              "clickable": true
+            },
+            {
+              "label": "tronplayer_view",
+              "bounds": {
+                "left": 56,
+                "top": 1757,
+                "right": 1384,
+                "bottom": 2712
+              },
+              "clickable": false
+            },
+            {
+              "label": "正在加载中",
+              "bounds": {
+                "left": 590,
+                "top": 2232,
+                "right": 850,
+                "bottom": 2293
+              },
+              "clickable": false
+            },
+            {
+              "label": "去开启 com.xunmeng.pinduoduo:id\/pdd",
+              "bounds": {
+                "left": 740,
+                "top": 2780,
+                "right": 1384,
+                "bottom": 2960
+              },
+              "clickable": true
+            }
+          ]
+        },
+        "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_snapshots\/com.xunmeng.pinduoduo\/20260522_000914_301_ab74cd21.json"
+      },
+      {
+        "id": "ui_snapshot_1779379753375",
+        "source": "accessibility_auto",
+        "note": "TYPE_WINDOW_STATE_CHANGED",
+        "appPackage": "com.xunmeng.pinduoduo",
+        "windowClassName": "com.xunmeng.pinduoduo.activity.NewPageActivity",
+        "screenKey": "4bf8360",
+        "screenshotPath": "null",
+        "visualHash": "null",
+        "summary": {
+          "nodeCount": 66,
+          "clickableCount": 18,
+          "editableCount": 0,
+          "scrollableCount": 0,
+          "labels": [
+            "android:id\/content",
+            "com.xunmeng.pinduoduo:id\/pdd",
+            "com.xunmeng.pinduoduo:id\/pdd",
+            "com.xunmeng.pinduoduo:id\/pdd",
+            "com.xunmeng.pinduoduo:id\/pdd",
+            "com.xunmeng.pinduoduo:id\/pdd",
+            "com.xunmeng.pinduoduo:id\/pdd",
+            "com.xunmeng.pinduoduo:id\/pdd",
+            "我的相册",
+            "最近搜索",
+            "历史浏览",
+            "com.xunmeng.pinduoduo:id\/pdd",
+            "展开 com.xunmeng.pinduoduo:id\/pdd",
+            "com.xunmeng.pinduoduo:id\/pdd",
+            "com.xunmeng.pinduoduo:id\/pdd",
+            "com.xunmeng.pinduoduo:id\/pdd",
+            "最近项目 com.xunmeng.pinduoduo:id\/pdd",
+            "com.xunmeng.pinduoduo:id\/pdd",
+            "com.xunmeng.pinduoduo:id\/pdd",
+            "com.xunmeng.pinduoduo:id\/pdd",
+            "00:04 com.xunmeng.pinduoduo:id\/pdd",
+            "com.xunmeng.pinduoduo:id\/pdd",
+            "00:04 com.xunmeng.pinduoduo:id\/pdd",
+            "com.xunmeng.pinduoduo:id\/pdd",
+            "com.xunmeng.pinduoduo:id\/pdd",
+            "com.xunmeng.pinduoduo:id\/pdd",
+            "00:04 com.xunmeng.pinduoduo:id\/pdd",
+            "com.xunmeng.pinduoduo:id\/pdd",
+            "00:04 com.xunmeng.pinduoduo:id\/pdd",
+            "com.xunmeng.pinduoduo:id\/pdd",
+            "00:04 com.xunmeng.pinduoduo:id\/pdd",
+            "com.xunmeng.pinduoduo:id\/pdd",
+            "00:04 com.xunmeng.pinduoduo:id\/pdd",
+            "com.xunmeng.pinduoduo:id\/pdd",
+            " com.xunmeng.pinduoduo:id\/pdd",
+            "com.xunmeng.pinduoduo:id\/pdd",
+            "com.xunmeng.pinduoduo:id\/pdd",
+            "com.xunmeng.pinduoduo:id\/iv_floating_window_entry",
+            "com.xunmeng.pinduoduo:id\/pdd",
+            "com.xunmeng.pinduoduo:id\/pdd",
+            "点击按钮 - 权限管理 - 允许摄像头权限 即可进行自动识别 com.xunmeng.pinduoduo:id\/pdd",
+            "com.xunmeng.pinduoduo:id\/pdd",
+            "com.xunmeng.pinduoduo:id\/pdd",
+            "开启相机权限 com.xunmeng.pinduoduo:id\/pdd",
+            "android:id\/navigationBarBackground"
+          ],
+          "bottomCandidates": [
+            {
+              "label": "最近项目 com.xunmeng.pinduoduo:id\/pdd",
+              "bounds": {
+                "left": 0,
+                "top": 2544,
+                "right": 280,
+                "bottom": 2552
+              },
+              "clickable": false
+            },
+            {
+              "label": "",
+              "bounds": {
+                "left": 0,
+                "top": 2368,
+                "right": 352,
+                "bottom": 2544
+              },
+              "clickable": true
+            },
+            {
+              "label": "我的相册",
+              "bounds": {
+                "left": 48,
+                "top": 2413,
+                "right": 304,
+                "bottom": 2499
+              },
+              "clickable": false
+            },
+            {
+              "label": "",
+              "bounds": {
+                "left": 4,
+                "top": 2556,
+                "right": 359,
+                "bottom": 2913
+              },
+              "clickable": true
+            },
+            {
+              "label": "",
+              "bounds": {
+                "left": 4,
+                "top": 2917,
+                "right": 359,
+                "bottom": 3104
+              },
+              "clickable": true
+            },
+            {
+              "label": "00:04 com.xunmeng.pinduoduo:id\/pdd",
+              "bounds": {
+                "left": 151,
+                "top": 2817,
+                "right": 327,
+                "bottom": 2881
+              },
+              "clickable": false
+            },
+            {
+              "label": "00:04 com.xunmeng.pinduoduo:id\/pdd",
+              "bounds": {
+                "left": 151,
+                "top": 3178,
+                "right": 327,
+                "bottom": 3104
+              },
+              "clickable": false
+            },
+            {
+              "label": "",
+              "bounds": {
+                "left": 352,
+                "top": 2368,
+                "right": 704,
+                "bottom": 2544
+              },
+              "clickable": true
+            },
+            {
+              "label": "最近搜索",
+              "bounds": {
+                "left": 400,
+                "top": 2413,
+                "right": 656,
+                "bottom": 2499
+              },
+              "clickable": false
+            },
+            {
+              "label": "",
+              "bounds": {
+                "left": 363,
+                "top": 2556,
+                "right": 718,
+                "bottom": 2913
+              },
+              "clickable": true
+            },
+            {
+              "label": "",
+              "bounds": {
+                "left": 363,
+                "top": 2917,
+                "right": 718,
+                "bottom": 3104
+              },
+              "clickable": true
+            },
+            {
+              "label": "00:04 com.xunmeng.pinduoduo:id\/pdd",
+              "bounds": {
+                "left": 510,
+                "top": 2817,
+                "right": 686,
+                "bottom": 2881
+              },
+              "clickable": false
+            }
+          ]
+        },
+        "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_snapshots\/com.xunmeng.pinduoduo\/20260522_000913_375_4bf8360.json"
+      },
+      {
+        "id": "ui_snapshot_1779379752684",
+        "source": "accessibility_auto",
+        "note": "TYPE_WINDOW_STATE_CHANGED",
+        "appPackage": "com.xunmeng.pinduoduo",
+        "windowClassName": "null",
+        "screenKey": "ab74cd21",
+        "screenshotPath": "null",
+        "visualHash": "null",
+        "summary": {
+          "nodeCount": 17,
+          "clickableCount": 5,
+          "editableCount": 0,
+          "scrollableCount": 0,
+          "labels": [
+            "android:id\/content",
+            "com.xunmeng.pinduoduo:id\/pdd",
+            "com.xunmeng.pinduoduo:id\/pdd",
+            "如何使用「一键找同款」 com.xunmeng.pinduoduo:id\/title",
+            " com.xunmeng.pinduoduo:id\/pdd",
+            "com.xunmeng.pinduoduo:id\/pdd",
+            "com.xunmeng.pinduoduo:id\/pdd",
+            "tronplayer_view",
+            "正在加载中",
+            "取消 com.xunmeng.pinduoduo:id\/pdd",
+            "去开启 com.xunmeng.pinduoduo:id\/pdd"
+          ],
+          "bottomCandidates": [
+            {
+              "label": "取消 com.xunmeng.pinduoduo:id\/pdd",
+              "bounds": {
+                "left": 56,
+                "top": 2780,
+                "right": 700,
+                "bottom": 2960
+              },
+              "clickable": true
+            },
+            {
+              "label": "com.xunmeng.pinduoduo:id\/pdd",
+              "bounds": {
+                "left": 0,
+                "top": 1557,
+                "right": 1440,
+                "bottom": 3104
+              },
+              "clickable": true
+            },
+            {
+              "label": "tronplayer_view",
+              "bounds": {
+                "left": 56,
+                "top": 1757,
+                "right": 1384,
+                "bottom": 2712
+              },
+              "clickable": false
+            },
+            {
+              "label": "正在加载中",
+              "bounds": {
+                "left": 590,
+                "top": 2232,
+                "right": 850,
+                "bottom": 2293
+              },
+              "clickable": false
+            },
+            {
+              "label": "去开启 com.xunmeng.pinduoduo:id\/pdd",
+              "bounds": {
+                "left": 740,
+                "top": 2780,
+                "right": 1384,
+                "bottom": 2960
+              },
+              "clickable": true
+            }
+          ]
+        },
+        "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_snapshots\/com.xunmeng.pinduoduo\/20260522_000912_684_ab74cd21.json"
+      },
+      {
+        "id": "ui_snapshot_1779379751734",
+        "source": "accessibility_auto",
+        "note": "TYPE_WINDOW_STATE_CHANGED",
+        "appPackage": "com.xunmeng.pinduoduo",
+        "windowClassName": "com.xunmeng.pinduoduo.activity.NewPageActivity",
+        "screenKey": "4bf8360",
+        "screenshotPath": "null",
+        "visualHash": "null",
+        "summary": {
+          "nodeCount": 66,
+          "clickableCount": 18,
+          "editableCount": 0,
+          "scrollableCount": 0,
+          "labels": [
+            "android:id\/content",
+            "com.xunmeng.pinduoduo:id\/pdd",
+            "com.xunmeng.pinduoduo:id\/pdd",
+            "com.xunmeng.pinduoduo:id\/pdd",
+            "com.xunmeng.pinduoduo:id\/pdd",
+            "com.xunmeng.pinduoduo:id\/pdd",
+            "com.xunmeng.pinduoduo:id\/pdd",
+            "com.xunmeng.pinduoduo:id\/pdd",
+            "我的相册",
+            "最近搜索",
+            "历史浏览",
+            "com.xunmeng.pinduoduo:id\/pdd",
+            "展开 com.xunmeng.pinduoduo:id\/pdd",
+            "com.xunmeng.pinduoduo:id\/pdd",
+            "com.xunmeng.pinduoduo:id\/pdd",
+            "com.xunmeng.pinduoduo:id\/pdd",
+            "最近项目 com.xunmeng.pinduoduo:id\/pdd",
+            "com.xunmeng.pinduoduo:id\/pdd",
+            "com.xunmeng.pinduoduo:id\/pdd",
+            "com.xunmeng.pinduoduo:id\/pdd",
+            "00:04 com.xunmeng.pinduoduo:id\/pdd",
+            "com.xunmeng.pinduoduo:id\/pdd",
+            "00:04 com.xunmeng.pinduoduo:id\/pdd",
+            "com.xunmeng.pinduoduo:id\/pdd",
+            "com.xunmeng.pinduoduo:id\/pdd",
+            "com.xunmeng.pinduoduo:id\/pdd",
+            "00:04 com.xunmeng.pinduoduo:id\/pdd",
+            "com.xunmeng.pinduoduo:id\/pdd",
+            "00:04 com.xunmeng.pinduoduo:id\/pdd",
+            "com.xunmeng.pinduoduo:id\/pdd",
+            "00:04 com.xunmeng.pinduoduo:id\/pdd",
+            "com.xunmeng.pinduoduo:id\/pdd",
+            "00:04 com.xunmeng.pinduoduo:id\/pdd",
+            "com.xunmeng.pinduoduo:id\/pdd",
+            " com.xunmeng.pinduoduo:id\/pdd",
+            "com.xunmeng.pinduoduo:id\/pdd",
+            "com.xunmeng.pinduoduo:id\/pdd",
+            "com.xunmeng.pinduoduo:id\/iv_floating_window_entry",
+            "com.xunmeng.pinduoduo:id\/pdd",
+            "com.xunmeng.pinduoduo:id\/pdd",
+            "点击按钮 - 权限管理 - 允许摄像头权限 即可进行自动识别 com.xunmeng.pinduoduo:id\/pdd",
+            "com.xunmeng.pinduoduo:id\/pdd",
+            "com.xunmeng.pinduoduo:id\/pdd",
+            "开启相机权限 com.xunmeng.pinduoduo:id\/pdd",
+            "android:id\/navigationBarBackground"
+          ],
+          "bottomCandidates": [
+            {
+              "label": "最近项目 com.xunmeng.pinduoduo:id\/pdd",
+              "bounds": {
+                "left": 0,
+                "top": 2544,
+                "right": 280,
+                "bottom": 2552
+              },
+              "clickable": false
+            },
+            {
+              "label": "",
+              "bounds": {
+                "left": 0,
+                "top": 2368,
+                "right": 352,
+                "bottom": 2544
+              },
+              "clickable": true
+            },
+            {
+              "label": "我的相册",
+              "bounds": {
+                "left": 48,
+                "top": 2413,
+                "right": 304,
+                "bottom": 2499
+              },
+              "clickable": false
+            },
+            {
+              "label": "",
+              "bounds": {
+                "left": 4,
+                "top": 2556,
+                "right": 359,
+                "bottom": 2913
+              },
+              "clickable": true
+            },
+            {
+              "label": "",
+              "bounds": {
+                "left": 4,
+                "top": 2917,
+                "right": 359,
+                "bottom": 3104
+              },
+              "clickable": true
+            },
+            {
+              "label": "00:04 com.xunmeng.pinduoduo:id\/pdd",
+              "bounds": {
+                "left": 151,
+                "top": 2817,
+                "right": 327,
+                "bottom": 2881
+              },
+              "clickable": false
+            },
+            {
+              "label": "00:04 com.xunmeng.pinduoduo:id\/pdd",
+              "bounds": {
+                "left": 151,
+                "top": 3178,
+                "right": 327,
+                "bottom": 3104
+              },
+              "clickable": false
+            },
+            {
+              "label": "",
+              "bounds": {
+                "left": 352,
+                "top": 2368,
+                "right": 704,
+                "bottom": 2544
+              },
+              "clickable": true
+            },
+            {
+              "label": "最近搜索",
+              "bounds": {
+                "left": 400,
+                "top": 2413,
+                "right": 656,
+                "bottom": 2499
+              },
+              "clickable": false
+            },
+            {
+              "label": "",
+              "bounds": {
+                "left": 363,
+                "top": 2556,
+                "right": 718,
+                "bottom": 2913
+              },
+              "clickable": true
+            },
+            {
+              "label": "",
+              "bounds": {
+                "left": 363,
+                "top": 2917,
+                "right": 718,
+                "bottom": 3104
+              },
+              "clickable": true
+            },
+            {
+              "label": "00:04 com.xunmeng.pinduoduo:id\/pdd",
+              "bounds": {
+                "left": 510,
+                "top": 2817,
+                "right": 686,
+                "bottom": 2881
+              },
+              "clickable": false
+            }
+          ]
+        },
+        "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_snapshots\/com.xunmeng.pinduoduo\/20260522_000911_733_4bf8360.json"
+      },
+      {
+        "id": "ui_snapshot_1779379749679",
+        "source": "accessibility_auto",
+        "note": "TYPE_WINDOW_STATE_CHANGED",
+        "appPackage": "com.xunmeng.pinduoduo",
+        "windowClassName": "null",
+        "screenKey": "ab74cd21",
+        "screenshotPath": "null",
+        "visualHash": "null",
+        "summary": {
+          "nodeCount": 17,
+          "clickableCount": 5,
+          "editableCount": 0,
+          "scrollableCount": 0,
+          "labels": [
+            "android:id\/content",
+            "com.xunmeng.pinduoduo:id\/pdd",
+            "com.xunmeng.pinduoduo:id\/pdd",
+            "如何使用「一键找同款」 com.xunmeng.pinduoduo:id\/title",
+            " com.xunmeng.pinduoduo:id\/pdd",
+            "com.xunmeng.pinduoduo:id\/pdd",
+            "com.xunmeng.pinduoduo:id\/pdd",
+            "tronplayer_view",
+            "正在加载中",
+            "取消 com.xunmeng.pinduoduo:id\/pdd",
+            "去开启 com.xunmeng.pinduoduo:id\/pdd"
+          ],
+          "bottomCandidates": [
+            {
+              "label": "取消 com.xunmeng.pinduoduo:id\/pdd",
+              "bounds": {
+                "left": 56,
+                "top": 2780,
+                "right": 700,
+                "bottom": 2960
+              },
+              "clickable": true
+            },
+            {
+              "label": "com.xunmeng.pinduoduo:id\/pdd",
+              "bounds": {
+                "left": 0,
+                "top": 1557,
+                "right": 1440,
+                "bottom": 3104
+              },
+              "clickable": true
+            },
+            {
+              "label": "tronplayer_view",
+              "bounds": {
+                "left": 56,
+                "top": 1757,
+                "right": 1384,
+                "bottom": 2712
+              },
+              "clickable": false
+            },
+            {
+              "label": "正在加载中",
+              "bounds": {
+                "left": 590,
+                "top": 2232,
+                "right": 850,
+                "bottom": 2293
+              },
+              "clickable": false
+            },
+            {
+              "label": "去开启 com.xunmeng.pinduoduo:id\/pdd",
+              "bounds": {
+                "left": 740,
+                "top": 2780,
+                "right": 1384,
+                "bottom": 2960
+              },
+              "clickable": true
+            }
+          ]
+        },
+        "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_snapshots\/com.xunmeng.pinduoduo\/20260522_000909_678_ab74cd21.json"
+      },
+      {
+        "id": "ui_snapshot_1779379747407",
+        "source": "accessibility_auto",
+        "note": "TYPE_WINDOW_STATE_CHANGED",
+        "appPackage": "com.xunmeng.pinduoduo",
+        "windowClassName": "com.xunmeng.pinduoduo.activity.NewPageActivity",
+        "screenKey": "4bf8360",
+        "screenshotPath": "null",
+        "visualHash": "null",
+        "summary": {
+          "nodeCount": 66,
+          "clickableCount": 18,
+          "editableCount": 0,
+          "scrollableCount": 0,
+          "labels": [
+            "android:id\/content",
+            "com.xunmeng.pinduoduo:id\/pdd",
+            "com.xunmeng.pinduoduo:id\/pdd",
+            "com.xunmeng.pinduoduo:id\/pdd",
+            "com.xunmeng.pinduoduo:id\/pdd",
+            "com.xunmeng.pinduoduo:id\/pdd",
+            "com.xunmeng.pinduoduo:id\/pdd",
+            "com.xunmeng.pinduoduo:id\/pdd",
+            "我的相册",
+            "最近搜索",
+            "历史浏览",
+            "com.xunmeng.pinduoduo:id\/pdd",
+            "展开 com.xunmeng.pinduoduo:id\/pdd",
+            "com.xunmeng.pinduoduo:id\/pdd",
+            "com.xunmeng.pinduoduo:id\/pdd",
+            "com.xunmeng.pinduoduo:id\/pdd",
+            "最近项目 com.xunmeng.pinduoduo:id\/pdd",
+            "com.xunmeng.pinduoduo:id\/pdd",
+            "com.xunmeng.pinduoduo:id\/pdd",
+            "com.xunmeng.pinduoduo:id\/pdd",
+            "00:04 com.xunmeng.pinduoduo:id\/pdd",
+            "com.xunmeng.pinduoduo:id\/pdd",
+            "00:04 com.xunmeng.pinduoduo:id\/pdd",
+            "com.xunmeng.pinduoduo:id\/pdd",
+            "com.xunmeng.pinduoduo:id\/pdd",
+            "com.xunmeng.pinduoduo:id\/pdd",
+            "00:04 com.xunmeng.pinduoduo:id\/pdd",
+            "com.xunmeng.pinduoduo:id\/pdd",
+            "00:04 com.xunmeng.pinduoduo:id\/pdd",
+            "com.xunmeng.pinduoduo:id\/pdd",
+            "00:04 com.xunmeng.pinduoduo:id\/pdd",
+            "com.xunmeng.pinduoduo:id\/pdd",
+            "00:04 com.xunmeng.pinduoduo:id\/pdd",
+            "com.xunmeng.pinduoduo:id\/pdd",
+            " com.xunmeng.pinduoduo:id\/pdd",
+            "com.xunmeng.pinduoduo:id\/pdd",
+            "com.xunmeng.pinduoduo:id\/pdd",
+            "com.xunmeng.pinduoduo:id\/iv_floating_window_entry",
+            "com.xunmeng.pinduoduo:id\/pdd",
+            "com.xunmeng.pinduoduo:id\/pdd",
+            "点击按钮 - 权限管理 - 允许摄像头权限 即可进行自动识别 com.xunmeng.pinduoduo:id\/pdd",
+            "com.xunmeng.pinduoduo:id\/pdd",
+            "com.xunmeng.pinduoduo:id\/pdd",
+            "开启相机权限 com.xunmeng.pinduoduo:id\/pdd",
+            "android:id\/navigationBarBackground"
+          ],
+          "bottomCandidates": [
+            {
+              "label": "最近项目 com.xunmeng.pinduoduo:id\/pdd",
+              "bounds": {
+                "left": 0,
+                "top": 2544,
+                "right": 280,
+                "bottom": 2552
+              },
+              "clickable": false
+            },
+            {
+              "label": "",
+              "bounds": {
+                "left": 0,
+                "top": 2368,
+                "right": 352,
+                "bottom": 2544
+              },
+              "clickable": true
+            },
+            {
+              "label": "我的相册",
+              "bounds": {
+                "left": 48,
+                "top": 2413,
+                "right": 304,
+                "bottom": 2499
+              },
+              "clickable": false
+            },
+            {
+              "label": "",
+              "bounds": {
+                "left": 4,
+                "top": 2556,
+                "right": 359,
+                "bottom": 2913
+              },
+              "clickable": true
+            },
+            {
+              "label": "",
+              "bounds": {
+                "left": 4,
+                "top": 2917,
+                "right": 359,
+                "bottom": 3104
+              },
+              "clickable": true
+            },
+            {
+              "label": "00:04 com.xunmeng.pinduoduo:id\/pdd",
+              "bounds": {
+                "left": 151,
+                "top": 2817,
+                "right": 327,
+                "bottom": 2881
+              },
+              "clickable": false
+            },
+            {
+              "label": "00:04 com.xunmeng.pinduoduo:id\/pdd",
+              "bounds": {
+                "left": 151,
+                "top": 3178,
+                "right": 327,
+                "bottom": 3104
+              },
+              "clickable": false
+            },
+            {
+              "label": "",
+              "bounds": {
+                "left": 352,
+                "top": 2368,
+                "right": 704,
+                "bottom": 2544
+              },
+              "clickable": true
+            },
+            {
+              "label": "最近搜索",
+              "bounds": {
+                "left": 400,
+                "top": 2413,
+                "right": 656,
+                "bottom": 2499
+              },
+              "clickable": false
+            },
+            {
+              "label": "",
+              "bounds": {
+                "left": 363,
+                "top": 2556,
+                "right": 718,
+                "bottom": 2913
+              },
+              "clickable": true
+            },
+            {
+              "label": "",
+              "bounds": {
+                "left": 363,
+                "top": 2917,
+                "right": 718,
+                "bottom": 3104
+              },
+              "clickable": true
+            },
+            {
+              "label": "00:04 com.xunmeng.pinduoduo:id\/pdd",
+              "bounds": {
+                "left": 510,
+                "top": 2817,
+                "right": 686,
+                "bottom": 2881
+              },
+              "clickable": false
+            }
+          ]
+        },
+        "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_snapshots\/com.xunmeng.pinduoduo\/20260522_000907_407_4bf8360.json"
+      },
+      {
+        "id": "ui_snapshot_1779379745448",
+        "source": "before_action",
+        "note": "patched.1779379742788.3.findentrybybottomtabsweep:FindEntryByBottomTabSweep",
+        "appPackage": "com.xunmeng.pinduoduo",
+        "windowClassName": "android.widget.FrameLayout",
+        "screenKey": "d873b2a6",
+        "screenshotPath": "null",
+        "visualHash": "null",
+        "summary": {
+          "nodeCount": 17,
+          "clickableCount": 5,
+          "editableCount": 0,
+          "scrollableCount": 0,
+          "labels": [
+            "android:id\/content",
+            "com.xunmeng.pinduoduo:id\/pdd",
+            "com.xunmeng.pinduoduo:id\/pdd",
+            "如何使用「一键找同款」 com.xunmeng.pinduoduo:id\/title",
+            " com.xunmeng.pinduoduo:id\/pdd",
+            "com.xunmeng.pinduoduo:id\/pdd",
+            "com.xunmeng.pinduoduo:id\/pdd",
+            "tronplayer_view",
+            "正在加载中",
+            "取消 com.xunmeng.pinduoduo:id\/pdd",
+            "去开启 com.xunmeng.pinduoduo:id\/pdd"
+          ],
+          "bottomCandidates": [
+            {
+              "label": "取消 com.xunmeng.pinduoduo:id\/pdd",
+              "bounds": {
+                "left": 56,
+                "top": 2780,
+                "right": 700,
+                "bottom": 2960
+              },
+              "clickable": true
+            },
+            {
+              "label": "com.xunmeng.pinduoduo:id\/pdd",
+              "bounds": {
+                "left": 0,
+                "top": 1557,
+                "right": 1440,
+                "bottom": 3104
+              },
+              "clickable": true
+            },
+            {
+              "label": "tronplayer_view",
+              "bounds": {
+                "left": 56,
+                "top": 1757,
+                "right": 1384,
+                "bottom": 2712
+              },
+              "clickable": false
+            },
+            {
+              "label": "正在加载中",
+              "bounds": {
+                "left": 590,
+                "top": 2232,
+                "right": 850,
+                "bottom": 2293
+              },
+              "clickable": false
+            },
+            {
+              "label": "去开启 com.xunmeng.pinduoduo:id\/pdd",
+              "bounds": {
+                "left": 740,
+                "top": 2780,
+                "right": 1384,
+                "bottom": 2960
+              },
+              "clickable": true
+            }
+          ]
+        },
+        "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_snapshots\/com.xunmeng.pinduoduo\/20260522_000905_448_d873b2a6.json"
+      },
+      {
+        "id": "ui_snapshot_1779379745427",
+        "source": "before_macro_atom",
+        "note": "index=2; skillId=patched.1779379742788.3.findentrybybottomtabsweep",
+        "appPackage": "com.xunmeng.pinduoduo",
+        "windowClassName": "android.widget.FrameLayout",
+        "screenKey": "d873b2a6",
+        "screenshotPath": "null",
+        "visualHash": "null",
+        "summary": {
+          "nodeCount": 17,
+          "clickableCount": 5,
+          "editableCount": 0,
+          "scrollableCount": 0,
+          "labels": [
+            "android:id\/content",
+            "com.xunmeng.pinduoduo:id\/pdd",
+            "com.xunmeng.pinduoduo:id\/pdd",
+            "如何使用「一键找同款」 com.xunmeng.pinduoduo:id\/title",
+            " com.xunmeng.pinduoduo:id\/pdd",
+            "com.xunmeng.pinduoduo:id\/pdd",
+            "com.xunmeng.pinduoduo:id\/pdd",
+            "tronplayer_view",
+            "正在加载中",
+            "取消 com.xunmeng.pinduoduo:id\/pdd",
+            "去开启 com.xunmeng.pinduoduo:id\/pdd"
+          ],
+          "bottomCandidates": [
+            {
+              "label": "取消 com.xunmeng.pinduoduo:id\/pdd",
+              "bounds": {
+                "left": 56,
+                "top": 2780,
+                "right": 700,
+                "bottom": 2960
+              },
+              "clickable": true
+            },
+            {
+              "label": "com.xunmeng.pinduoduo:id\/pdd",
+              "bounds": {
+                "left": 0,
+                "top": 1557,
+                "right": 1440,
+                "bottom": 3104
+              },
+              "clickable": true
+            },
+            {
+              "label": "tronplayer_view",
+              "bounds": {
+                "left": 56,
+                "top": 1757,
+                "right": 1384,
+                "bottom": 2712
+              },
+              "clickable": false
+            },
+            {
+              "label": "正在加载中",
+              "bounds": {
+                "left": 590,
+                "top": 2232,
+                "right": 850,
+                "bottom": 2293
+              },
+              "clickable": false
+            },
+            {
+              "label": "去开启 com.xunmeng.pinduoduo:id\/pdd",
+              "bounds": {
+                "left": 740,
+                "top": 2780,
+                "right": 1384,
+                "bottom": 2960
+              },
+              "clickable": true
+            }
+          ]
+        },
+        "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_snapshots\/com.xunmeng.pinduoduo\/20260522_000905_426_d873b2a6.json"
+      },
+      {
+        "id": "ui_snapshot_1779379745379",
+        "source": "after_macro_atom",
+        "note": "index=1; skillId=patched.1779379742788.2.handlereactiveoverlays; status=SUCCESS_MEDIUM_CONFIDENCE",
+        "appPackage": "com.xunmeng.pinduoduo",
+        "windowClassName": "android.widget.FrameLayout",
+        "screenKey": "d873b2a6",
+        "screenshotPath": "null",
+        "visualHash": "null",
+        "summary": {
+          "nodeCount": 17,
+          "clickableCount": 5,
+          "editableCount": 0,
+          "scrollableCount": 0,
+          "labels": [
+            "android:id\/content",
+            "com.xunmeng.pinduoduo:id\/pdd",
+            "com.xunmeng.pinduoduo:id\/pdd",
+            "如何使用「一键找同款」 com.xunmeng.pinduoduo:id\/title",
+            " com.xunmeng.pinduoduo:id\/pdd",
+            "com.xunmeng.pinduoduo:id\/pdd",
+            "com.xunmeng.pinduoduo:id\/pdd",
+            "tronplayer_view",
+            "正在加载中",
+            "取消 com.xunmeng.pinduoduo:id\/pdd",
+            "去开启 com.xunmeng.pinduoduo:id\/pdd"
+          ],
+          "bottomCandidates": [
+            {
+              "label": "取消 com.xunmeng.pinduoduo:id\/pdd",
+              "bounds": {
+                "left": 56,
+                "top": 2780,
+                "right": 700,
+                "bottom": 2960
+              },
+              "clickable": true
+            },
+            {
+              "label": "com.xunmeng.pinduoduo:id\/pdd",
+              "bounds": {
+                "left": 0,
+                "top": 1557,
+                "right": 1440,
+                "bottom": 3104
+              },
+              "clickable": true
+            },
+            {
+              "label": "tronplayer_view",
+              "bounds": {
+                "left": 56,
+                "top": 1757,
+                "right": 1384,
+                "bottom": 2712
+              },
+              "clickable": false
+            },
+            {
+              "label": "正在加载中",
+              "bounds": {
+                "left": 590,
+                "top": 2232,
+                "right": 850,
+                "bottom": 2293
+              },
+              "clickable": false
+            },
+            {
+              "label": "去开启 com.xunmeng.pinduoduo:id\/pdd",
+              "bounds": {
+                "left": 740,
+                "top": 2780,
+                "right": 1384,
+                "bottom": 2960
+              },
+              "clickable": true
+            }
+          ]
+        },
+        "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_snapshots\/com.xunmeng.pinduoduo\/20260522_000905_379_d873b2a6.json"
+      },
+      {
+        "id": "ui_snapshot_1779379745358",
+        "source": "after_action",
+        "note": "patched.1779379742788.2.handlereactiveoverlays:HandleReactiveOverlays:SUCCESS_MEDIUM_CONFIDENCE:Reactive overlay pass completed; dismissed=0",
+        "appPackage": "com.xunmeng.pinduoduo",
+        "windowClassName": "android.widget.FrameLayout",
+        "screenKey": "d873b2a6",
+        "screenshotPath": "null",
+        "visualHash": "null",
+        "summary": {
+          "nodeCount": 17,
+          "clickableCount": 5,
+          "editableCount": 0,
+          "scrollableCount": 0,
+          "labels": [
+            "android:id\/content",
+            "com.xunmeng.pinduoduo:id\/pdd",
+            "com.xunmeng.pinduoduo:id\/pdd",
+            "如何使用「一键找同款」 com.xunmeng.pinduoduo:id\/title",
+            " com.xunmeng.pinduoduo:id\/pdd",
+            "com.xunmeng.pinduoduo:id\/pdd",
+            "com.xunmeng.pinduoduo:id\/pdd",
+            "tronplayer_view",
+            "正在加载中",
+            "取消 com.xunmeng.pinduoduo:id\/pdd",
+            "去开启 com.xunmeng.pinduoduo:id\/pdd"
+          ],
+          "bottomCandidates": [
+            {
+              "label": "取消 com.xunmeng.pinduoduo:id\/pdd",
+              "bounds": {
+                "left": 56,
+                "top": 2780,
+                "right": 700,
+                "bottom": 2960
+              },
+              "clickable": true
+            },
+            {
+              "label": "com.xunmeng.pinduoduo:id\/pdd",
+              "bounds": {
+                "left": 0,
+                "top": 1557,
+                "right": 1440,
+                "bottom": 3104
+              },
+              "clickable": true
+            },
+            {
+              "label": "tronplayer_view",
+              "bounds": {
+                "left": 56,
+                "top": 1757,
+                "right": 1384,
+                "bottom": 2712
+              },
+              "clickable": false
+            },
+            {
+              "label": "正在加载中",
+              "bounds": {
+                "left": 590,
+                "top": 2232,
+                "right": 850,
+                "bottom": 2293
+              },
+              "clickable": false
+            },
+            {
+              "label": "去开启 com.xunmeng.pinduoduo:id\/pdd",
+              "bounds": {
+                "left": 740,
+                "top": 2780,
+                "right": 1384,
+                "bottom": 2960
+              },
+              "clickable": true
+            }
+          ]
+        },
+        "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_snapshots\/com.xunmeng.pinduoduo\/20260522_000905_357_d873b2a6.json"
+      },
+      {
+        "id": "ui_snapshot_1779379745335",
+        "source": "before_action",
+        "note": "patched.1779379742788.2.handlereactiveoverlays:HandleReactiveOverlays",
+        "appPackage": "com.xunmeng.pinduoduo",
+        "windowClassName": "android.widget.FrameLayout",
+        "screenKey": "d873b2a6",
+        "screenshotPath": "null",
+        "visualHash": "null",
+        "summary": {
+          "nodeCount": 17,
+          "clickableCount": 5,
+          "editableCount": 0,
+          "scrollableCount": 0,
+          "labels": [
+            "android:id\/content",
+            "com.xunmeng.pinduoduo:id\/pdd",
+            "com.xunmeng.pinduoduo:id\/pdd",
+            "如何使用「一键找同款」 com.xunmeng.pinduoduo:id\/title",
+            " com.xunmeng.pinduoduo:id\/pdd",
+            "com.xunmeng.pinduoduo:id\/pdd",
+            "com.xunmeng.pinduoduo:id\/pdd",
+            "tronplayer_view",
+            "正在加载中",
+            "取消 com.xunmeng.pinduoduo:id\/pdd",
+            "去开启 com.xunmeng.pinduoduo:id\/pdd"
+          ],
+          "bottomCandidates": [
+            {
+              "label": "取消 com.xunmeng.pinduoduo:id\/pdd",
+              "bounds": {
+                "left": 56,
+                "top": 2780,
+                "right": 700,
+                "bottom": 2960
+              },
+              "clickable": true
+            },
+            {
+              "label": "com.xunmeng.pinduoduo:id\/pdd",
+              "bounds": {
+                "left": 0,
+                "top": 1557,
+                "right": 1440,
+                "bottom": 3104
+              },
+              "clickable": true
+            },
+            {
+              "label": "tronplayer_view",
+              "bounds": {
+                "left": 56,
+                "top": 1757,
+                "right": 1384,
+                "bottom": 2712
+              },
+              "clickable": false
+            },
+            {
+              "label": "正在加载中",
+              "bounds": {
+                "left": 590,
+                "top": 2232,
+                "right": 850,
+                "bottom": 2293
+              },
+              "clickable": false
+            },
+            {
+              "label": "去开启 com.xunmeng.pinduoduo:id\/pdd",
+              "bounds": {
+                "left": 740,
+                "top": 2780,
+                "right": 1384,
+                "bottom": 2960
+              },
+              "clickable": true
+            }
+          ]
+        },
+        "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_snapshots\/com.xunmeng.pinduoduo\/20260522_000905_335_d873b2a6.json"
+      },
+      {
+        "id": "ui_snapshot_1779379745307",
+        "source": "before_macro_atom",
+        "note": "index=1; skillId=patched.1779379742788.2.handlereactiveoverlays",
+        "appPackage": "com.xunmeng.pinduoduo",
+        "windowClassName": "android.widget.FrameLayout",
+        "screenKey": "d873b2a6",
+        "screenshotPath": "null",
+        "visualHash": "null",
+        "summary": {
+          "nodeCount": 17,
+          "clickableCount": 5,
+          "editableCount": 0,
+          "scrollableCount": 0,
+          "labels": [
+            "android:id\/content",
+            "com.xunmeng.pinduoduo:id\/pdd",
+            "com.xunmeng.pinduoduo:id\/pdd",
+            "如何使用「一键找同款」 com.xunmeng.pinduoduo:id\/title",
+            " com.xunmeng.pinduoduo:id\/pdd",
+            "com.xunmeng.pinduoduo:id\/pdd",
+            "com.xunmeng.pinduoduo:id\/pdd",
+            "tronplayer_view",
+            "正在加载中",
+            "取消 com.xunmeng.pinduoduo:id\/pdd",
+            "去开启 com.xunmeng.pinduoduo:id\/pdd"
+          ],
+          "bottomCandidates": [
+            {
+              "label": "取消 com.xunmeng.pinduoduo:id\/pdd",
+              "bounds": {
+                "left": 56,
+                "top": 2780,
+                "right": 700,
+                "bottom": 2960
+              },
+              "clickable": true
+            },
+            {
+              "label": "com.xunmeng.pinduoduo:id\/pdd",
+              "bounds": {
+                "left": 0,
+                "top": 1557,
+                "right": 1440,
+                "bottom": 3104
+              },
+              "clickable": true
+            },
+            {
+              "label": "tronplayer_view",
+              "bounds": {
+                "left": 56,
+                "top": 1757,
+                "right": 1384,
+                "bottom": 2712
+              },
+              "clickable": false
+            },
+            {
+              "label": "正在加载中",
+              "bounds": {
+                "left": 590,
+                "top": 2232,
+                "right": 850,
+                "bottom": 2293
+              },
+              "clickable": false
+            },
+            {
+              "label": "去开启 com.xunmeng.pinduoduo:id\/pdd",
+              "bounds": {
+                "left": 740,
+                "top": 2780,
+                "right": 1384,
+                "bottom": 2960
+              },
+              "clickable": true
+            }
+          ]
+        },
+        "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_snapshots\/com.xunmeng.pinduoduo\/20260522_000905_307_d873b2a6.json"
+      }
+    ]
+  },
+  "teacherOutput": {
+    "aiJobs": [
+      {
+        "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ai_jobs\/2026-05-22\/factory_ai_replan_1779379730757.json",
+        "taskType": "RUNTIME_REPLAN_AFTER_FAILURE",
+        "aiStatus": "FAILED",
+        "httpStatus": null,
+        "model": "qwen3-vl-flash",
+        "baseUrlHost": "dashscope.aliyuncs.com",
+        "parseSuccess": false,
+        "parsedJson": {
+          "decision": {},
+          "planStepCount": 0,
+          "aiCandidateCount": 0,
+          "goalCompleted": false
+        }
+      },
+      {
+        "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ai_jobs\/2026-05-22\/factory_ai_replan_1779379850014.json",
+        "taskType": "RUNTIME_REPLAN_AFTER_FAILURE",
+        "aiStatus": "FAILED",
+        "httpStatus": null,
+        "model": "qwen3-vl-flash",
+        "baseUrlHost": "dashscope.aliyuncs.com",
+        "parseSuccess": false,
+        "parsedJson": {
+          "decision": {},
+          "planStepCount": 0,
+          "aiCandidateCount": 0,
+          "goalCompleted": false
+        }
+      }
+    ],
+    "planReviewOrReplanCount": 2,
+    "source": "deepseek_v4pro_or_phone_side_adapter"
+  },
+  "programOutput": {
+    "status": "FAILED_GOAL_UNVERIFIED",
+    "durationMs": 237537,
+    "steps": [
+      {
+        "title": "用户指令进入手机端执行器",
+        "status": "RUNNING",
+        "message": "主输入不再只生成文件：App 将调用 AI，生成可审计 JSON，再由 SkillJsonExecutor 直接执行候选能力。",
+        "path": null,
+        "extra": {}
+      },
+      {
+        "title": "AppUI 图谱已进入决策上下文",
+        "status": "INFO",
+        "message": "已知页面=40，边=39；AI\/模板改写会优先参考入口、底部分屏、输入框和可点击候选。",
+        "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/app_ui_graphs\/com.xunmeng.pinduoduo\/graph_candidate.json",
+        "extra": {
+          "appPackage": "com.xunmeng.pinduoduo",
+          "status": "CANDIDATE_PARTIAL_TIMEOUT",
+          "screenCount": 40,
+          "edgeCount": 39,
+          "quality": {
+            "usable": true,
+            "reason": "usable_app_ui_graph",
+            "qualityGate": {
+              "bottomPrimaryTabsRequired": true,
+              "bottomPrimaryTabsAttempted": 5,
+              "bottomPrimaryTabsOpened": 5,
+              "topIconsAreNotEnough": true,
+              "repeatedMessagePageIsNotProgress": true
+            },
+            "screenCount": 40,
+            "edgeCount": 39,
+            "nodeCount": 13858,
+            "clickableCount": 1370,
+            "editableCount": 3
+          },
+          "screens": [
+            {
+              "screenId": "screen_93f0acf8",
+              "title": "拍照搜索",
+              "screenKey": "93f0acf8",
+              "nodeCount": 253,
+              "clickableCount": 46,
+              "editableCount": 0,
+              "labels": [
+                "拍照搜索",
+                "android:id\/content",
+                "com.xunmeng.pinduoduo:id\/pdd",
+                "搜索你要的商品 com.xunmeng.pinduoduo:id\/pdd",
+                "拍照搜索 com.xunmeng.pinduoduo:id\/pdd",
+                "推荐",
+                "政府补贴",
+                "食品"
+              ],
+              "bottomTabs": [
+                {
+                  "index": 0,
+                  "label": "首页",
+                  "text": null,
+                  "desc": "首页",
+                  "resourceId": null,
+                  "class": "android.widget.RelativeLayout",
+                  "clickable": false,
+                  "editable": false
+                },
+                {
+                  "index": 1,
+                  "label": "bottom_tab_3",
+                  "text": null,
+                  "desc": null,
+                  "resourceId": null,
+                  "class": "android.view.View",
+                  "clickable": true,
+                  "editable": false
+                },
+                {
+                  "index": 2,
+                  "label": "提前优惠",
+                  "text": null,
+                  "desc": "提前优惠",
+                  "resourceId": null,
+                  "class": "android.widget.RelativeLayout",
+                  "clickable": true,
+                  "editable": false
+                },
+                {
+                  "index": 3,
+                  "label": "聊天183",
+                  "text": null,
+                  "desc": "聊天183",
+                  "resourceId": null,
+                  "class": "android.widget.RelativeLayout",
+                  "clickable": false,
+                  "editable": false
+                },
+                {
+                  "index": 4,
+                  "label": "个人中心",
+                  "text": null,
+                  "desc": "个人中心",
+                  "resourceId": null,
+                  "class": "android.widget.RelativeLayout",
+                  "clickable": false,
+                  "editable": false
+                }
+              ]
+            },
+            {
+              "screenId": "screen_fe8dd9b5",
+              "title": "拍照搜索",
+              "screenKey": "fe8dd9b5",
+              "nodeCount": 253,
+              "clickableCount": 46,
+              "editableCount": 0,
+              "labels": [
+                "拍照搜索",
+                "android:id\/content",
+                "com.xunmeng.pinduoduo:id\/pdd",
+                "搜索你要的商品 com.xunmeng.pinduoduo:id\/pdd",
+                "拍照搜索 com.xunmeng.pinduoduo:id\/pdd",
+                "推荐",
+                "政府补贴",
+                "食品"
+              ],
+              "bottomTabs": [
+                {
+                  "index": 0,
+                  "label": "首页",
+                  "text": null,
+                  "desc": "首页",
+                  "resourceId": null,
+                  "class": "android.widget.RelativeLayout",
+                  "clickable": false,
+                  "editable": false
+                },
+                {
+                  "index": 1,
+                  "label": "bottom_tab_3",
+                  "text": null,
+                  "desc": null,
+                  "resourceId": null,
+                  "class": "android.view.View",
+                  "clickable": true,
+                  "editable": false
+                },
+                {
+                  "index": 2,
+                  "label": "提前优惠",
+                  "text": null,
+                  "desc": "提前优惠",
+                  "resourceId": null,
+                  "class": "android.widget.RelativeLayout",
+                  "clickable": true,
+                  "editable": false
+                },
+                {
+                  "index": 3,
+                  "label": "聊天183",
+                  "text": null,
+                  "desc": "聊天183",
+                  "resourceId": null,
+                  "class": "android.widget.RelativeLayout",
+                  "clickable": false,
+                  "editable": false
+                },
+                {
+                  "index": 4,
+                  "label": "个人中心",
+                  "text": null,
+                  "desc": "个人中心",
+                  "resourceId": null,
+                  "class": "android.widget.RelativeLayout",
+                  "clickable": false,
+                  "editable": false
+                }
+              ]
+            },
+            {
+              "screenId": "screen_c9e86dc7",
+              "title": "拍照搜索",
+              "screenKey": "c9e86dc7",
+              "nodeCount": 531,
+              "clickableCount": 31,
+              "editableCount": 0,
+              "labels": [
+                "拍照搜索",
+                "android:id\/content",
+                "com.xunmeng.pinduoduo:id\/pdd",
+                "下拉刷新 com.xunmeng.pinduoduo:id\/pdd",
+                "tronplayer_view",
+                "双亲江湖路",
+                "家庭情感",
+                "都市"
+              ],
+              "bottomTabs": [
+                {
+                  "index": 0,
+                  "label": "首页",
+                  "text": null,
+                  "desc": "首页",
+                  "resourceId": null,
+                  "class": "android.widget.RelativeLayout",
+                  "clickable": false,
+                  "editable": false
+                },
+                {
+                  "index": 1,
+                  "label": "双亲江湖路",
+                  "text": "双亲江湖路",
+                  "desc": null,
+                  "resourceId": null,
+                  "class": "android.widget.TextView",
+                  "clickable": false,
+                  "editable": false
+                },
+                {
+                  "index": 2,
+                  "label": "bottom_tab_5",
+                  "text": null,
+                  "desc": null,
+                  "resourceId": null,
+                  "class": "android.view.View",
+                  "clickable": true,
+                  "editable": false
+                },
+                {
+                  "index": 3,
+                  "label": "家庭情感",
+                  "text": "家庭情感",
+                  "desc": null,
+                  "resourceId": null,
+                  "class": "android.widget.TextView",
+                  "clickable": false,
+                  "editable": false
+                },
+                {
+                  "index": 4,
+                  "label": "提前优惠",
+                  "text": null,
+                  "desc": "提前优惠",
+                  "resourceId": null,
+                  "class": "android.widget.RelativeLayout",
+                  "clickable": true,
+                  "editable": false
+                },
+                {
+                  "index": 5,
+                  "label": "聊天183",
+                  "text": null,
+                  "desc": "聊天183",
+                  "resourceId": null,
+                  "class": "android.widget.RelativeLayout",
+                  "clickable": false,
+                  "editable": false
+                },
+                {
+                  "index": 6,
+                  "label": "个人中心",
+                  "text": null,
+                  "desc": "个人中心",
+                  "resourceId": null,
+                  "class": "android.widget.RelativeLayout",
+                  "clickable": false,
+                  "editable": false
+                }
+              ]
+            },
+            {
+              "screenId": "screen_fc355721",
+              "title": "拍照搜索",
+              "screenKey": "fc355721",
+              "nodeCount": 52,
+              "clickableCount": 7,
+              "editableCount": 0,
+              "labels": [
+                "拍照搜索",
+                "android:id\/content",
+                "com.xunmeng.pinduoduo:id\/pdd",
+                "大促会场",
+                "app",
+                "w-DcShare",
+                "DcShare",
+                "大促会场 com.xunmeng.pinduoduo:id\/tv_title"
+              ],
+              "bottomTabs": [
+                {
+                  "index": 0,
+                  "label": "首页",
+                  "text": null,
+                  "desc": "首页",
+                  "resourceId": null,
+                  "class": "android.widget.RelativeLayout",
+                  "clickable": false,
+                  "editable": false
+                },
+                {
+                  "index": 1,
+                  "label": "bottom_tab_3",
+                  "text": null,
+                  "desc": null,
+                  "resourceId": null,
+                  "class": "android.view.View",
+                  "clickable": true,
+                  "editable": false
+                },
+                {
+                  "index": 2,
+                  "label": "提前优惠",
+                  "text": null,
+                  "desc": "提前优惠",
+                  "resourceId": null,
+                  "class": "android.widget.RelativeLayout",
+                  "clickable": true,
+                  "editable": false
+                },
+                {
+                  "index": 3,
+                  "label": "聊天183",
+                  "text": null,
+                  "desc": "聊天183",
+                  "resourceId": null,
+                  "class": "android.widget.RelativeLayout",
+                  "clickable": false,
+                  "editable": false
+                },
+                {
+                  "index": 4,
+                  "label": "个人中心",
+                  "text": null,
+                  "desc": "个人中心",
+                  "resourceId": null,
+                  "class": "android.widget.RelativeLayout",
+                  "clickable": false,
+                  "editable": false
+                }
+              ]
+            },
+            {
+              "screenId": "screen_2231570",
+              "title": "首页搜索SSS可以找到本活动",
+              "screenKey": "2231570",
+              "nodeCount": 83,
+              "clickableCount": 1,
+              "editableCount": 0,
+              "labels": [
+                "android:id\/content",
+                "com.xunmeng.pinduoduo:id\/pdd",
+                "首页搜索SSS可以找到本活动",
+                "app",
+                "w-DcShare",
+                "DcShare",
+                "w-p-e4u123l3v",
+                "w-p-5eje8p5lz"
+              ],
+              "bottomTabs": []
+            },
+            {
+              "screenId": "screen_7dc43c43",
+              "title": "首页搜索SSS可以找到本活动",
+              "screenKey": "7dc43c43",
+              "nodeCount": 378,
+              "clickableCount": 28,
+              "editableCount": 0,
+              "labels": [
+                "android:id\/content",
+                "com.xunmeng.pinduoduo:id\/pdd",
+                "首页搜索SSS可以找到本活动",
+                "app",
+                "w-DcShare",
+                "w-p-e4u123l3v",
+                "w-p-5eje8p5lz",
+                "upload-image-fb1a8132037caf9fa22d0bf94177c1eb.png.slim"
+              ],
+              "bottomTabs": [
+                {
+                  "index": 0,
+                  "label": "8元",
+                  "text": "8元",
+                  "desc": null,
+                  "resourceId": "sike-q34kr0rq",
+                  "class": "android.widget.TextView",
+                  "clickable": false,
+                  "editable": false
+                },
+                {
+                  "index": 1,
+                  "label": "先用后付",
+                  "text": "先用后付",
+                  "desc": null,
+                  "resourceId": null,
+                  "class": "android.widget.TextView",
+                  "clickable": false,
+                  "editable": false
+                },
+                {
+                  "index": 2,
+                  "label": "3元",
+                  "text": "3元",
+                  "desc": null,
+                  "resourceId": "sike-q34kr0rq",
+                  "class": "android.widget.TextView",
+                  "clickable": false,
+                  "editable": false
+                }
+              ]
+            },
+            {
+              "screenId": "screen_36677218",
+              "title": "返回",
+              "screenKey": "36677218",
+              "nodeCount": 250,
+              "clickableCount": 27,
+              "editableCount": 0,
+              "labels": [
+                "返回",
+                "android:id\/content",
+                "com.xunmeng.pinduoduo:id\/pdd",
+                "无聊了!弄个坠星者玩玩!三角洲刀皮暗星战斧模型玩具学生礼物 com.xunmeng.pinduoduo:id\/pdd",
+                "无聊了!弄个坠星者玩玩!三角洲刀皮暗星战斧模型玩具学生礼物",
+                "播放 com.xunmeng.pinduoduo:id\/pdd",
+                "1\/11 com.xunmeng.pinduoduo:id\/pdd",
+                "已优惠3元券后0.01已拼908件即将售罄 com.xunmeng.pinduoduo:id\/pdd"
+              ],
+              "bottomTabs": [
+                {
+                  "index": 0,
+                  "label": "收藏",
+                  "text": null,
+                  "desc": "收藏",
+                  "resourceId": null,
+                  "class": "android.widget.LinearLayout",
+                  "clickable": true,
+                  "editable": false
+                }
+              ]
+            },
+            {
+              "screenId": "screen_ea7ecd93",
+              "title": "百亿补贴",
+              "screenKey": "ea7ecd93",
+              "nodeCount": 794,
+              "clickableCount": 94,
+              "editableCount": 0,
+              "labels": [
+                "android:id\/content",
+                "com.xunmeng.pinduoduo:id\/pdd",
+                "百亿补贴",
+                "main",
+                "返回",
+                "module_chunk_0",
+                "resizeObserverHeaderDom",
+                "搜索框"
+              ],
+              "bottomTabs": [
+                {
+                  "index": 0,
+                  "label": "webp",
+                  "text": "webp",
+                  "desc": null,
+                  "resourceId": null,
+                  "class": "android.widget.Image",
+                  "clickable": false,
+                  "editable": false
+                },
+                {
+                  "index": 1,
+                  "label": "webp",
+                  "text": "webp",
+                  "desc": null,
+                  "resourceId": null,
+                  "class": "android.widget.Image",
+                  "clickable": false,
+                  "editable": false
+                },
+                {
+                  "index": 2,
+                  "label": "双汇",
+                  "text": "双汇",
+                  "desc": null,
+                  "resourceId": null,
+                  "class": "android.widget.TextView",
+                  "clickable": false,
+                  "editable": false
+                },
+                {
+                  "index": 3,
+                  "label": "5",
+                  "text": "5",
+                  "desc": null,
+                  "resourceId": null,
+                  "class": "android.widget.TextView",
+                  "clickable": false,
+                  "editable": false
+                },
+                {
+                  "index": 4,
+                  "label": "共省4.95元",
+                  "text": "共省4.95元",
+                  "desc": null,
+                  "resourceId": null,
+                  "class": "android.widget.TextView",
+                  "clickable": false,
+                  "editable": false
+                },
+                {
+                  "index": 5,
+                  "label": "退货包运费",
+                  "text": "退货包运费",
+                  "desc": null,
+                  "resourceId": null,
+                  "class": "android.widget.TextView",
+                  "clickable": false,
+                  "editable": false
+                }
+              ]
+            }
+          ],
+          "updatedAt": 1779378285541,
+          "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/app_ui_graphs\/com.xunmeng.pinduoduo\/graph_candidate.json"
+        }
+      },
+      {
+        "title": "手机端相似 Skill 自适应规划",
+        "status": "SUCCESS",
+        "message": "本机先复用抖音\/小红书成功模式：识别 intent=generic_search，改写出 7 个细粒度步骤；AI v4pro 只在失败或二次判断时接管。",
+        "path": null,
+        "extra": {
+          "planner": "PHONE_SIDE_SIMILAR_SKILL_ADAPTER_V1",
+          "intentId": "generic_search",
+          "appPackage": "com.xunmeng.pinduoduo",
+          "instruction": "在拼多多搜索纸巾，停在结果页并记录筛选、店铺、价格入口。",
+          "source": "local_rules_plus_existing_skill_similarity",
+          "similarCases": [
+            {
+              "skillId": "patched.command.1779377573755",
+              "kind": "macro_skill",
+              "appPackage": "com.xunmeng.pinduoduo",
+              "implements": "AiPlannedMacroSkill",
+              "intentId": "search_in_app",
+              "score": 41,
+              "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_candidates\/com.xunmeng.pinduoduo\/patched.command.1779377573755.json"
+            },
+            {
+              "skillId": "patched.command.1779339041582",
+              "kind": "macro_skill",
+              "appPackage": "com.xunmeng.pinduoduo",
+              "implements": "AiPlannedMacroSkill",
+              "intentId": "search_in_app",
+              "score": 41,
+              "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_candidates\/com.xunmeng.pinduoduo\/patched.command.1779339041582.json"
+            },
+            {
+              "skillId": "patched.command.1779339053576",
+              "kind": "macro_skill",
+              "appPackage": "com.xunmeng.pinduoduo",
+              "implements": "AiPlannedMacroSkill",
+              "intentId": "search_in_app",
+              "score": 41,
+              "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_candidates\/com.xunmeng.pinduoduo\/patched.command.1779339053576.json"
+            },
+            {
+              "skillId": "patched.command.1779379559600",
+              "kind": "macro_skill",
+              "appPackage": "tv.danmaku.bili",
+              "implements": "AiPlannedMacroSkill",
+              "intentId": "search_in_app",
+              "score": 37,
+              "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_candidates\/tv.danmaku.bili\/patched.command.1779379559600.json"
+            },
+            {
+              "skillId": "patched.command.1779297745444",
+              "kind": "macro_skill",
+              "appPackage": "tv.danmaku.bili",
+              "implements": "AiPlannedMacroSkill",
+              "intentId": "search_in_app",
+              "score": 37,
+              "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_candidates\/tv.danmaku.bili\/patched.command.1779297745444.json"
+            },
+            {
+              "skillId": "patched.command.1779296458571",
+              "kind": "macro_skill",
+              "appPackage": "com.xingin.xhs",
+              "implements": "AiPlannedMacroSkill",
+              "intentId": "search_in_app",
+              "score": 37,
+              "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_candidates\/com.xingin.xhs\/patched.command.1779296458571.json"
+            },
+            {
+              "skillId": "patched.command.1779352412956",
+              "kind": "macro_skill",
+              "appPackage": "com.xingin.xhs",
+              "implements": "AiPlannedMacroSkill",
+              "intentId": "search_in_app",
+              "score": 37,
+              "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_candidates\/com.xingin.xhs\/patched.command.1779352412956.json"
+            },
+            {
+              "skillId": "patched.command.1779352450257",
+              "kind": "macro_skill",
+              "appPackage": "com.xingin.xhs",
+              "implements": "AiPlannedMacroSkill",
+              "intentId": "search_in_app",
+              "score": 37,
+              "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_candidates\/com.xingin.xhs\/patched.command.1779352450257.json"
+            }
+          ],
+          "stepCount": 7,
+          "currentPackage": "com.hupu.games",
+          "nodeCount": 21,
+          "notes": [
+            "App-side planner generated candidate JSON without ADB UI control.",
+            "Existing candidate\/approved skills are used as similarity evidence; generated steps are still dry-run checked before execution.",
+            "AI remains a fallback for empty or failed local planning."
+          ]
+        }
+      },
+      {
+        "title": "相似成功案例改写为 Skill JSON",
+        "status": "SUCCESS",
+        "message": "不靠 ADB 拼流程；App 底层把 intent=generic_search 拆成 8 个 candidate JSON，之后统一 dry-run、执行、失败再让 v4pro 二次判断。",
+        "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_candidates\/com.xunmeng.pinduoduo\/patched.command.1779379614671.json",
+        "extra": {
+          "planner": "PHONE_SIDE_SIMILAR_SKILL_ADAPTER_V1",
+          "intentId": "generic_search",
+          "appPackage": "com.xunmeng.pinduoduo",
+          "instruction": "在拼多多搜索纸巾，停在结果页并记录筛选、店铺、价格入口。",
+          "source": "local_rules_plus_existing_skill_similarity",
+          "similarCases": [
+            {
+              "skillId": "patched.command.1779377573755",
+              "kind": "macro_skill",
+              "appPackage": "com.xunmeng.pinduoduo",
+              "implements": "AiPlannedMacroSkill",
+              "intentId": "search_in_app",
+              "score": 41,
+              "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_candidates\/com.xunmeng.pinduoduo\/patched.command.1779377573755.json"
+            },
+            {
+              "skillId": "patched.command.1779339041582",
+              "kind": "macro_skill",
+              "appPackage": "com.xunmeng.pinduoduo",
+              "implements": "AiPlannedMacroSkill",
+              "intentId": "search_in_app",
+              "score": 41,
+              "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_candidates\/com.xunmeng.pinduoduo\/patched.command.1779339041582.json"
+            },
+            {
+              "skillId": "patched.command.1779339053576",
+              "kind": "macro_skill",
+              "appPackage": "com.xunmeng.pinduoduo",
+              "implements": "AiPlannedMacroSkill",
+              "intentId": "search_in_app",
+              "score": 41,
+              "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_candidates\/com.xunmeng.pinduoduo\/patched.command.1779339053576.json"
+            },
+            {
+              "skillId": "patched.command.1779379559600",
+              "kind": "macro_skill",
+              "appPackage": "tv.danmaku.bili",
+              "implements": "AiPlannedMacroSkill",
+              "intentId": "search_in_app",
+              "score": 37,
+              "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_candidates\/tv.danmaku.bili\/patched.command.1779379559600.json"
+            },
+            {
+              "skillId": "patched.command.1779297745444",
+              "kind": "macro_skill",
+              "appPackage": "tv.danmaku.bili",
+              "implements": "AiPlannedMacroSkill",
+              "intentId": "search_in_app",
+              "score": 37,
+              "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_candidates\/tv.danmaku.bili\/patched.command.1779297745444.json"
+            },
+            {
+              "skillId": "patched.command.1779296458571",
+              "kind": "macro_skill",
+              "appPackage": "com.xingin.xhs",
+              "implements": "AiPlannedMacroSkill",
+              "intentId": "search_in_app",
+              "score": 37,
+              "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_candidates\/com.xingin.xhs\/patched.command.1779296458571.json"
+            },
+            {
+              "skillId": "patched.command.1779352412956",
+              "kind": "macro_skill",
+              "appPackage": "com.xingin.xhs",
+              "implements": "AiPlannedMacroSkill",
+              "intentId": "search_in_app",
+              "score": 37,
+              "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_candidates\/com.xingin.xhs\/patched.command.1779352412956.json"
+            },
+            {
+              "skillId": "patched.command.1779352450257",
+              "kind": "macro_skill",
+              "appPackage": "com.xingin.xhs",
+              "implements": "AiPlannedMacroSkill",
+              "intentId": "search_in_app",
+              "score": 37,
+              "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_candidates\/com.xingin.xhs\/patched.command.1779352450257.json"
+            }
+          ],
+          "stepCount": 7,
+          "currentPackage": "com.hupu.games",
+          "nodeCount": 21,
+          "notes": [
+            "App-side planner generated candidate JSON without ADB UI control.",
+            "Existing candidate\/approved skills are used as similarity evidence; generated steps are still dry-run checked before execution.",
+            "AI remains a fallback for empty or failed local planning."
+          ]
+        }
+      },
+      {
+        "title": "dry-run 静态检查",
+        "status": "SUCCESS",
+        "message": "通过 8\/8。",
+        "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_dry_run_reports\/com.xunmeng.pinduoduo\/patched.command.1779379614671_1779379619173.json",
+        "extra": {}
+      },
+      {
+        "title": "拼装 app_config 预览",
+        "status": "SUCCESS",
+        "message": "候选\/测试产物已拼为单个 app_config 预览。",
+        "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/app_config_exports\/com.xunmeng.pinduoduo\/app_config_20260522_000659_199.json",
+        "extra": {}
+      },
+      {
+        "title": "执行候选 JSON",
+        "status": "RUNNING",
+        "message": "不等待 APPROVED：按用户要求，直接由 SkillJsonExecutor 执行候选 macro=patched.command.1779379614671。",
+        "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_candidates\/com.xunmeng.pinduoduo\/patched.command.1779379614671.json",
+        "extra": {}
+      },
+      {
+        "title": "候选 JSON 执行结果",
+        "status": "FAILED_UNVERIFIABLE",
+        "message": "patched.command.1779379614671 -> FAILED_UNVERIFIABLE；Input change could not be verified",
+        "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/runtime\/run_reports\/com.xunmeng.pinduoduo\/ai_direct_run_1779379639875.json",
+        "extra": {}
+      },
+      {
+        "title": "本地弹窗规则处理",
+        "status": "INFO",
+        "message": "检测到疑似阻断弹窗，但没有安全可点的关闭项；保留给 AI 根据当前 UI 再判断。",
+        "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/runtime\/run_reports\/com.xunmeng.pinduoduo\/ai_direct_run_1779379639875.json",
+        "extra": {
+          "trigger": "EXECUTION_FAILED",
+          "blockingDialogsBefore": [
+            {
+              "type": "share_sheet",
+              "hits": [
+                "取消 com.xunmeng.pinduoduo:id\/pdd"
+              ]
+            },
+            {
+              "type": "popup_observed",
+              "events": [],
+              "smallNodes": [
+                "正在加载中"
+              ]
+            }
+          ],
+          "dismissEvents": [],
+          "visualFallback": null
+        }
+      },
+      {
+        "title": "失败后 AI 判断",
+        "status": "RUNNING",
+        "message": "当前不是直接停下：App 把失败原因、当前屏幕节点和已跑步骤发给手机端 AI，让 AI 判断下一段补救 JSON。",
+        "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/runtime\/run_reports\/com.xunmeng.pinduoduo\/ai_direct_run_1779379639875.json",
+        "extra": {
+          "phase": "REPLAN",
+          "trigger": "EXECUTION_FAILED",
+          "previousStatus": "FAILED_UNVERIFIABLE",
+          "previousMessage": "Input change could not be verified"
+        }
+      },
+      {
+        "title": "失败后 AI 判断 返回",
+        "status": "FAILED",
+        "message": "HTTP=-；模型=qwen3-vl-flash；goalCompleted=false；补救步骤=0；诊断=",
+        "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ai_jobs\/2026-05-22\/factory_ai_replan_1779379730757.json",
+        "extra": {
+          "decision": {}
+        }
+      },
+      {
+        "title": "通用第三方搜索兜底启动",
+        "status": "RUNNING",
+        "message": "AI 计划没有命中可点击节点；现在生成通用搜索 Skill JSON：打开应用 -> 点搜索入口 -> 输入关键词 -> 点搜索。坐标只作为低置信兜底。",
+        "path": null,
+        "extra": {
+          "query": "纸巾，停在结果页并记录筛选、店铺、价格入口。\n\n约束：目标 App=拼多多，包名=com.xunmeng.pinduoduo。必须由 MacroPilot 手机端自己用无障碍、输入法、AI\/Skill JSON 执行，不允许依赖 ADB 手点目标 App。执行前先读取当前 UI；如果遇到广告、弹窗、小字提示，先记录文字并安全关闭。任务完成必须用当前 UI 证据验证，不能只因为步骤执行完就报成功。如果没有现成 skill，先复用已有相似 Skill JSON\/archetype，只改关键槽位如入口文字、坐标、目标文本、验证规则，再组装 atomic\/macro skill。需要探索入口时优先遍历底部标签、顶部小图标、图形化入口、侧边操作和子页面。本任务 stopBeforeSubmit=true：写草稿、评论、订单、支付类流程必须停在提交前，不点击最终发布、发送、提交订单、支付、确认授权。期望证据包括：纸巾、结果。",
+          "appPackage": "com.xunmeng.pinduoduo"
+        }
+      },
+      {
+        "title": "通用搜索 Skill JSON 已写入",
+        "status": "SUCCESS",
+        "message": "已写入 9 个候选 JSON，包含文字优先和坐标兜底。",
+        "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_candidates\/com.xunmeng.pinduoduo\/patched.command.1779379730789.json",
+        "extra": {}
+      },
+      {
+        "title": "通用搜索 dry-run",
+        "status": "FAILED_DRY_RUN",
+        "message": "通过 78\/80。",
+        "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_dry_run_reports\/com.xunmeng.pinduoduo\/patched.1779339053576.2.wait_1779379736134.json",
+        "extra": {}
+      },
+      {
+        "title": "通用搜索兜底执行结果",
+        "status": "FAILED_UNVERIFIABLE",
+        "message": "patched.command.1779379730789 -> FAILED_UNVERIFIABLE；Input change could not be verified",
+        "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/runtime\/run_reports\/com.xunmeng.pinduoduo\/generic_search_fallback_1779379742069.json",
+        "extra": {}
+      },
+      {
+        "title": "目标未完成，继续 AI 判断",
+        "status": "RUNNING",
+        "message": "没有同时看到搜索词和结果页标记，不能把搜索任务报告为成功。；第 1\/4 次继续重判当前屏幕。",
+        "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/runtime\/run_reports\/com.xunmeng.pinduoduo\/ai_direct_run_1779379639875.json",
+        "extra": {
+          "serviceConnected": true,
+          "appPackage": "com.xunmeng.pinduoduo",
+          "nodeCount": 17,
+          "goalVerificationSnapshotPath": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_snapshots\/com.xunmeng.pinduoduo\/20260522_000902_071_d873b2a6.json",
+          "goalVerificationScreenshotPath": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_screenshots\/com.xunmeng.pinduoduo\/20260522_000902_071_d873b2a6.png",
+          "goalVerificationScreenshotSha256": "c85d5de7c82066756ab412c413453c93ae3b638e1fab8242370fbfbffb5f5420",
+          "goalVerificationVisualHash": "84d1e8d865db4d901fddef68b0402040713d665bff284eff0cc175e7331e2d60",
+          "sampleTexts": [
+            "如何使用「一键找同款」",
+            "",
+            "tronplayer_view",
+            "正在加载中",
+            "取消",
+            "去开启"
+          ],
+          "query": "纸巾，停在结果页并记录筛选、店铺、价格入口。",
+          "queryVisible": false
+        }
+      },
+      {
+        "title": "本地弹窗规则处理",
+        "status": "INFO",
+        "message": "检测到疑似阻断弹窗，但没有安全可点的关闭项；保留给 AI 根据当前 UI 再判断。",
+        "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/runtime\/run_reports\/com.xunmeng.pinduoduo\/ai_direct_run_1779379639875.json",
+        "extra": {
+          "trigger": "GOAL_UNVERIFIED_LOOP_1",
+          "blockingDialogsBefore": [
+            {
+              "type": "share_sheet",
+              "hits": [
+                "取消 com.xunmeng.pinduoduo:id\/pdd"
+              ]
+            },
+            {
+              "type": "popup_observed",
+              "events": [],
+              "smallNodes": [
+                "正在加载中"
+              ]
+            }
+          ],
+          "dismissEvents": [],
+          "visualFallback": null
+        }
+      },
+      {
+        "title": "入口未找到，启动底部分页扫描",
+        "status": "RUNNING",
+        "message": "回到目标 App 主页，逐个点底部 tab，查找入口：发帖\/发布\/创作\/写\/加号\/+。",
+        "path": null,
+        "extra": {
+          "entryAliases": [
+            "发帖",
+            "发布",
+            "创作",
+            "写",
+            "加号",
+            "+"
+          ],
+          "currentUi": {
+            "serviceConnected": true,
+            "appPackage": "com.xunmeng.pinduoduo",
+            "windowClassName": "android.widget.FrameLayout",
+            "screenWidth": 1440,
+            "screenHeight": 3168,
+            "nodeCount": 17,
+            "snapshotPath": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_snapshots\/com.xunmeng.pinduoduo\/20260522_000902_475_d873b2a6.json",
+            "recentUiSnapshots": [
+              {
+                "id": "ui_snapshot_1779379742769",
+                "source": "current_ui_summary",
+                "note": "factory_ai_context",
+                "appPackage": "com.xunmeng.pinduoduo",
+                "windowClassName": "android.widget.FrameLayout",
+                "screenKey": "d873b2a6",
+                "screenshotPath": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_screenshots\/com.xunmeng.pinduoduo\/20260522_000902_475_d873b2a6.png",
+                "visualHash": "c9faf6af349fa60343c26352d5a63d500e36722682c3cb515452af04b38456f8"
+              },
+              {
+                "id": "ui_snapshot_1779379742445",
+                "source": "goal_verification",
+                "note": "在拼多多搜索纸巾，停在结果页并记录筛选、店铺、价格入口。",
+                "appPackage": "com.xunmeng.pinduoduo",
+                "windowClassName": "android.widget.FrameLayout",
+                "screenKey": "d873b2a6",
+                "screenshotPath": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_screenshots\/com.xunmeng.pinduoduo\/20260522_000902_071_d873b2a6.png",
+                "visualHash": "84d1e8d865db4d901fddef68b0402040713d665bff284eff0cc175e7331e2d60"
+              },
+              {
+                "id": "ui_snapshot_1779379742052",
+                "source": "macro_atom_failed",
+                "note": "index=4; skillId=patched.1779379730789.5.typeintofirstinput; status=FAILED_UNVERIFIABLE; Input change could not be verified",
+                "appPackage": "com.xunmeng.pinduoduo",
+                "windowClassName": "android.widget.FrameLayout",
+                "screenKey": "d873b2a6",
+                "screenshotPath": "null",
+                "visualHash": "null"
+              },
+              {
+                "id": "ui_snapshot_1779379742013",
+                "source": "action_failed",
+                "note": "patched.1779379730789.5.typeintofirstinput:TypeIntoFirstInput:FAILED_UNVERIFIABLE:Input change could not be verified",
+                "appPackage": "com.xunmeng.pinduoduo",
+                "windowClassName": "android.widget.FrameLayout",
+                "screenKey": "d873b2a6",
+                "screenshotPath": "null",
+                "visualHash": "null"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "title": "底部分页扫描 dry-run",
+        "status": "SUCCESS",
+        "message": "通过 5\/5。",
+        "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_dry_run_reports\/com.xunmeng.pinduoduo\/patched.command.1779379742788_1779379745112.json",
+        "extra": {}
+      },
+      {
+        "title": "底部分页扫描结果",
+        "status": "FAILED_ELEMENT_NOT_FOUND",
+        "message": "patched.command.1779379742788 -> FAILED_ELEMENT_NOT_FOUND; Bottom-tab sweep did not find entry aliases=发帖\/发布\/创作\/写\/加号\/+; tabsVisited=5; events=[{\"phase\":\"open_before_recover\",\"packageName\":\"com.xunmeng.pinduoduo\",\"success\":true,\"message\":\"L",
+        "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/runtime\/run_reports\/com.xunmeng.pinduoduo\/bottom_tab_entry_sweep_1779379758681.json",
+        "extra": {
+          "entryAliases": [
+            "发帖",
+            "发布",
+            "创作",
+            "写",
+            "加号",
+            "+"
+          ],
+          "executorStatus": "FAILED_ELEMENT_NOT_FOUND"
+        }
+      },
+      {
+        "title": "失败后 AI 判断",
+        "status": "RUNNING",
+        "message": "当前不是直接停下：App 把失败原因、当前屏幕节点和已跑步骤发给手机端 AI，让 AI 判断下一段补救 JSON。",
+        "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/runtime\/run_reports\/com.xunmeng.pinduoduo\/bottom_tab_entry_sweep_1779379758681.json",
+        "extra": {
+          "phase": "REPLAN",
+          "trigger": "GOAL_UNVERIFIED_LOOP_1",
+          "previousStatus": "FAILED_GOAL_UNVERIFIED",
+          "previousMessage": "没有同时看到搜索词和结果页标记，不能把搜索任务报告为成功。"
+        }
+      },
+      {
+        "title": "失败后 AI 判断 返回",
+        "status": "FAILED",
+        "message": "HTTP=-；模型=qwen3-vl-flash；goalCompleted=false；补救步骤=0；诊断=",
+        "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ai_jobs\/2026-05-22\/factory_ai_replan_1779379850014.json",
+        "extra": {
+          "decision": {}
+        }
+      },
+      {
+        "title": "AI 未返回补救动作，停止重复等待",
+        "status": "FAILED_NO_REPLAN",
+        "message": "失败后 AI 判断没有产出可执行 JSON，通常是 API 超时\/网络失败\/解析失败；本次停止循环，避免一直卡在 RUNNING。",
+        "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ai_jobs\/2026-05-22\/factory_ai_replan_1779379850014.json",
+        "extra": {
+          "goalCheck": {
+            "serviceConnected": true,
+            "appPackage": "com.android.settings",
+            "nodeCount": 12,
+            "goalVerificationSnapshotPath": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_snapshots\/com.android.settings\/20260522_000918_684_3dc9fb40.json",
+            "goalVerificationScreenshotPath": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_screenshots\/com.android.settings\/20260522_000918_684_3dc9fb40.png",
+            "goalVerificationScreenshotSha256": "40702e92ac14a4c635258a69cc13abecaaad1c0b8b367edc30b023003044a3a7",
+            "goalVerificationVisualHash": "03199fcd741c2fc506855c6d791d17600bc51fbb53c7427d8968a1477478e280",
+            "sampleTexts": [
+              "显示系统应用",
+              "全部不允许"
+            ]
+          }
+        }
+      },
+      {
+        "title": "目标完成校验",
+        "status": "FAILED_GOAL_UNVERIFIED",
+        "message": "没有同时看到搜索词和结果页标记，不能把搜索任务报告为成功。",
+        "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/runtime\/run_reports\/com.xunmeng.pinduoduo\/bottom_tab_entry_sweep_1779379758681.json",
+        "extra": {
+          "serviceConnected": true,
+          "appPackage": "com.android.settings",
+          "nodeCount": 12,
+          "goalVerificationSnapshotPath": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_snapshots\/com.android.settings\/20260522_000918_684_3dc9fb40.json",
+          "goalVerificationScreenshotPath": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_screenshots\/com.android.settings\/20260522_000918_684_3dc9fb40.png",
+          "goalVerificationScreenshotSha256": "40702e92ac14a4c635258a69cc13abecaaad1c0b8b367edc30b023003044a3a7",
+          "goalVerificationVisualHash": "03199fcd741c2fc506855c6d791d17600bc51fbb53c7427d8968a1477478e280",
+          "sampleTexts": [
+            "显示系统应用",
+            "全部不允许"
+          ],
+          "query": "纸巾，停在结果页并记录筛选、店铺、价格入口。",
+          "queryVisible": false
+        }
+      },
+      {
+        "title": "保留目标应用前台用于证据",
+        "status": "INFO",
+        "message": "本次保留目标应用当前页面，不把 MacroPilot 拉回前台；报告里会记录当前 UI 快照和截图，方便继续让 AI 判断卡点。",
+        "path": null,
+        "extra": {}
+      }
+    ],
+    "assemblyReports": [
+      {
+        "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/app_config_exports\/com.xunmeng.pinduoduo\/assembly_report_1779379619221.json",
+        "planStepCount": 0,
+        "generatedSkillCount": 0,
+        "macroSkillId": "",
+        "rule": "",
+        "patches": []
+      },
+      {
+        "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/app_config_exports\/com.xunmeng.pinduoduo\/assembly_report_1779377576821.json",
+        "planStepCount": 0,
+        "generatedSkillCount": 0,
+        "macroSkillId": "",
+        "rule": "",
+        "patches": []
+      },
+      {
+        "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/app_config_exports\/com.xunmeng.pinduoduo\/assembly_report_1779376400606.json",
+        "planStepCount": 0,
+        "generatedSkillCount": 0,
+        "macroSkillId": "",
+        "rule": "",
+        "patches": []
+      },
+      {
+        "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/app_config_exports\/com.xunmeng.pinduoduo\/assembly_report_1779339044609.json",
+        "planStepCount": 0,
+        "generatedSkillCount": 0,
+        "macroSkillId": "",
+        "rule": "",
+        "patches": []
+      }
+    ],
+    "previewConfigFile": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/app_config_exports\/com.xunmeng.pinduoduo\/app_config_20260522_000659_199.json",
+    "runtimeRunReport": {
+      "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/runtime\/run_reports\/com.xunmeng.pinduoduo\/bottom_tab_entry_sweep_1779379758681.json",
+      "kind": "skill_json_bottom_tab_entry_sweep_report",
+      "skillId": "patched.command.1779379742788",
+      "status": "FAILED_ELEMENT_NOT_FOUND",
+      "message": "Bottom-tab sweep did not find entry aliases=发帖\/发布\/创作\/写\/加号\/+; tabsVisited=5; events=[{\"phase\":\"open_before_recover\",\"packageName\":\"com.xunmeng.pinduoduo\",\"success\":true,\"message\":\"Launch intent sent for com.xunmeng.pinduoduo\"},{\"phase\":\"home_back\",\"index\":1,\"fromPackage\":\"com.xunmeng.pinduoduo\",\"window\":\"android.widget.FrameLayout\",\"success\":true,\"message\":\"GLOBAL_ACTION_BACK performed\"},{\"phase\":\"home_back\",\"index\":2,\"fromPackage\":\"com.xunmeng.pinduoduo\",\"window\":\"v40.o\",\"success\":true,\"message\"",
+      "durationMs": 13567,
+      "usedCoordinate": true,
+      "goalCheck": {}
+    },
+    "goalTruth": {
+      "status": "FAILED_GOAL_UNVERIFIED",
+      "hasExplicitGoalCheck": true,
+      "goalStepStatus": "FAILED_GOAL_UNVERIFIED",
+      "goalStepMessage": "没有同时看到搜索词和结果页标记，不能把搜索任务报告为成功。",
+      "goalEvidence": {
+        "serviceConnected": true,
+        "appPackage": "com.android.settings",
+        "nodeCount": 12,
+        "goalVerificationSnapshotPath": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_snapshots\/com.android.settings\/20260522_000918_684_3dc9fb40.json",
+        "goalVerificationScreenshotPath": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_screenshots\/com.android.settings\/20260522_000918_684_3dc9fb40.png",
+        "goalVerificationScreenshotSha256": "40702e92ac14a4c635258a69cc13abecaaad1c0b8b367edc30b023003044a3a7",
+        "goalVerificationVisualHash": "03199fcd741c2fc506855c6d791d17600bc51fbb53c7427d8968a1477478e280",
+        "sampleTexts": [
+          "显示系统应用",
+          "全部不允许"
+        ],
+        "query": "纸巾，停在结果页并记录筛选、店铺、价格入口。",
+        "queryVisible": false,
+        "resultMarkerVisible": false
+      }
+    }
+  },
+  "datasetTargets": [
+    "screen_classifier_sft",
+    "element_role_labeler_sft",
+    "task_flow_planner_sft",
+    "skill_patch_generator_sft",
+    "verifier_recovery_sft"
+  ],
+  "qualityGates": {
+    "hasAppUiGraph": true,
+    "hasAssemblyReport": true,
+    "hasRuntimeTrace": true,
+    "hasGoalTruth": true,
+    "eligibleForCleanTraining": true
+  },
+  "storagePolicy": {
+    "rawScreenshotsLongTerm": false,
+    "fullNodeTreesLongTerm": false,
+    "keepsCompactUiGraph": true,
+    "keepsPatchReports": true
+  },
+  "createdAt": 1779379851731
+}

@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "kind": "skill_json_bilibili_open_first_video_fallback_report",
+  "id": "bilibili_open_first_video_1779298398707",
+  "skillId": "patched.command.1779298393812",
+  "appPackage": "tv.danmaku.bili",
+  "instruction": "在哔哩哔哩搜索王老菊并打开第一个视频，必须验证已经进入视频播放页，不能只停在搜索结果页。",
+  "engine": "local_video_candidate_resolver",
+  "status": "SUCCESS_LOW_CONFIDENCE",
+  "message": "Macro atoms completed; reactiveDismissed=0",
+  "durationMs": 3855,
+  "usedCoordinate": true,
+  "allowSideEffect": true,
+  "selectedCandidate": {
+    "text": null,
+    "desc": null,
+    "resourceId": "tv.danmaku.bili:id\/cover",
+    "class": "android.widget.ImageView",
+    "clickable": false,
+    "bounds": "48 1503 736 1891",
+    "center": {
+      "x": 0.2722222222222222,
+      "y": 0.5356691919191919
+    },
+    "score": 83,
+    "hasVideoEvidence": true,
+    "hasQueryEvidence": false,
+    "pageHasQueryEvidence": true,
+    "pageHasSearchResultVideoSet": true
+  },
+  "skillFile": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_candidates\/tv.danmaku.bili\/patched.command.1779298393812.json",
+  "createdAt": 1779298398707
+}

@@ -1,0 +1,215 @@
+{
+  "schemaVersion": 1,
+  "kind": "ui_state_snapshot",
+  "id": "ui_snapshot_1779339083684",
+  "source": "current_ui_summary",
+  "note": "factory_ai_context",
+  "screenshotPath": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_screenshots\/com.tencent.mm\/20260521_125122_454_aa56726a.png",
+  "screenshotSha256": "d6d350089a856d24b2835d16960e4540a6ef7f67ac7b22fb228c85e5ef9a686c",
+  "visualHash": "a90a3f06b73795aaca2e2b68369ab6eb8c4f6466b3aa8c155964ac8f80585053",
+  "screenshotSizeBytes": 2857102,
+  "appPackage": "com.tencent.mm",
+  "windowClassName": "android.widget.FrameLayout",
+  "screenKey": "aa56726a",
+  "relatedSkillId": null,
+  "relatedActionType": null,
+  "capability": {
+    "nodeReadability": "C",
+    "inputCapability": "CUSTOM_IME",
+    "verificationCapability": "LOW",
+    "coordinateFallback": "AVAILABLE",
+    "serviceState": "CONNECTED",
+    "reason": "nodes=1, textLike=0, clickable=0, editable=0, scrollable=0, customIme=true"
+  },
+  "state": {
+    "appPackage": "com.tencent.mm",
+    "windowClassName": "android.widget.FrameLayout",
+    "screenWidth": 1440,
+    "screenHeight": 3168,
+    "timestamp": 1779339082454,
+    "nodeCount": 1,
+    "nodesStored": 1,
+    "nodesStorage": "compact_important_nodes_only",
+    "nodes": [
+      {
+        "nodeId": "0_0_0_0_1440_3168",
+        "packageName": "com.tencent.mm",
+        "text": null,
+        "contentDesc": null,
+        "resourceId": null,
+        "className": "android.widget.FrameLayout",
+        "bounds": {
+          "left": 0,
+          "top": 0,
+          "right": 1440,
+          "bottom": 3168
+        },
+        "clickable": false,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 0,
+        "parentRoleHint": null
+      }
+    ],
+    "eventsSinceLastState": [
+      {
+        "eventType": "TYPE_WINDOW_CONTENT_CHANGED",
+        "packageName": "com.tencent.mm",
+        "className": "android.widget.ImageView",
+        "text": null,
+        "timestamp": 1779339080207
+      },
+      {
+        "eventType": "TYPE_WINDOW_CONTENT_CHANGED",
+        "packageName": "com.tencent.mm",
+        "className": "android.widget.ImageView",
+        "text": null,
+        "timestamp": 1779339080307
+      },
+      {
+        "eventType": "TYPE_4194304",
+        "packageName": null,
+        "className": null,
+        "text": null,
+        "timestamp": 1779339080340
+      },
+      {
+        "eventType": "TYPE_WINDOW_CONTENT_CHANGED",
+        "packageName": "com.tencent.mm",
+        "className": "android.widget.ImageView",
+        "text": null,
+        "timestamp": 1779339080421
+      },
+      {
+        "eventType": "TYPE_WINDOW_CONTENT_CHANGED",
+        "packageName": "com.tencent.mm",
+        "className": "android.widget.ImageView",
+        "text": null,
+        "timestamp": 1779339080521
+      },
+      {
+        "eventType": "TYPE_WINDOW_CONTENT_CHANGED",
+        "packageName": "com.tencent.mm",
+        "className": "android.widget.ImageView",
+        "text": null,
+        "timestamp": 1779339080621
+      },
+      {
+        "eventType": "TYPE_WINDOW_CONTENT_CHANGED",
+        "packageName": "com.tencent.mm",
+        "className": "android.widget.ImageView",
+        "text": null,
+        "timestamp": 1779339080724
+      },
+      {
+        "eventType": "TYPE_WINDOW_CONTENT_CHANGED",
+        "packageName": "com.tencent.mm",
+        "className": "android.widget.ImageView",
+        "text": null,
+        "timestamp": 1779339080824
+      },
+      {
+        "eventType": "TYPE_WINDOW_CONTENT_CHANGED",
+        "packageName": "com.tencent.mm",
+        "className": "android.widget.ImageView",
+        "text": null,
+        "timestamp": 1779339080934
+      },
+      {
+        "eventType": "TYPE_WINDOW_CONTENT_CHANGED",
+        "packageName": "com.tencent.mm",
+        "className": "android.widget.ImageView",
+        "text": null,
+        "timestamp": 1779339081035
+      },
+      {
+        "eventType": "TYPE_WINDOW_CONTENT_CHANGED",
+        "packageName": "com.tencent.mm",
+        "className": "android.widget.FrameLayout",
+        "text": null,
+        "timestamp": 1779339081136
+      },
+      {
+        "eventType": "TYPE_WINDOW_CONTENT_CHANGED",
+        "packageName": "com.tencent.mm",
+        "className": "android.widget.ImageView",
+        "text": null,
+        "timestamp": 1779339081235
+      },
+      {
+        "eventType": "TYPE_WINDOW_CONTENT_CHANGED",
+        "packageName": "com.tencent.mm",
+        "className": "android.widget.ImageView",
+        "text": null,
+        "timestamp": 1779339081335
+      },
+      {
+        "eventType": "TYPE_WINDOW_CONTENT_CHANGED",
+        "packageName": "com.tencent.mm",
+        "className": "android.widget.ImageView",
+        "text": null,
+        "timestamp": 1779339081436
+      },
+      {
+        "eventType": "TYPE_WINDOW_CONTENT_CHANGED",
+        "packageName": "com.tencent.mm",
+        "className": "android.widget.ImageView",
+        "text": null,
+        "timestamp": 1779339081536
+      },
+      {
+        "eventType": "TYPE_WINDOW_CONTENT_CHANGED",
+        "packageName": "com.tencent.mm",
+        "className": "android.widget.FrameLayout",
+        "text": null,
+        "timestamp": 1779339081648
+      },
+      {
+        "eventType": "TYPE_WINDOW_CONTENT_CHANGED",
+        "packageName": "com.tencent.mm",
+        "className": "android.widget.FrameLayout",
+        "text": null,
+        "timestamp": 1779339081748
+      },
+      {
+        "eventType": "TYPE_WINDOW_CONTENT_CHANGED",
+        "packageName": "com.tencent.mm",
+        "className": "android.widget.ImageView",
+        "text": null,
+        "timestamp": 1779339081847
+      },
+      {
+        "eventType": "TYPE_WINDOW_CONTENT_CHANGED",
+        "packageName": "com.tencent.mm",
+        "className": "android.widget.FrameLayout",
+        "text": null,
+        "timestamp": 1779339081948
+      },
+      {
+        "eventType": "TYPE_WINDOW_CONTENT_CHANGED",
+        "packageName": "com.tencent.mm",
+        "className": "android.widget.FrameLayout",
+        "text": null,
+        "timestamp": 1779339082048
+      }
+    ]
+  },
+  "summary": {
+    "nodeCount": 1,
+    "clickableCount": 0,
+    "editableCount": 0,
+    "scrollableCount": 0,
+    "labels": [],
+    "bottomCandidates": []
+  },
+  "retentionPolicy": {
+    "fullNodeTreeStored": false,
+    "storedNodeLimit": 45,
+    "storedEventLimit": 20,
+    "longTermKnowledge": "summary + app_ui_graph + assembly\/runtime reports"
+  },
+  "createdAt": 1779339083685
+}

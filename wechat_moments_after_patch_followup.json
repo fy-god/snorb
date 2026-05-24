@@ -1,0 +1,82 @@
+{
+  "schemaVersion": 1,
+  "kind": "skill_json_ai_follow_up_run_report",
+  "id": "ai_follow_up_run_1778521523849",
+  "skillId": "direct.command.1778521509112",
+  "failedSkillId": "direct.command.1778521377050",
+  "appPackage": "com.tencent.mm",
+  "instruction": "微信发一条朋友圈，内容是我是AI，设置为仅自己可见，然后发表",
+  "engine": "ai_runtime_replan",
+  "phase": "REPLAN",
+  "trigger": "EXECUTION_FAILED",
+  "previousStatus": "FAILED_UI_SNAPSHOT_CAPTURE",
+  "previousMessage": "Captured only 1\/4 verified WeChat bottom tab snapshots. Tap dispatch alone is not success; events=[{\"phase\":\"tab_shell_probe\",\"index\":0,\"visible\":true,\"snapshot\":\"\\\/data\\\/user\\\/0\\\/com.macropilot.app\\\/files\\\/macro_v2\\\/factory\\\/ui_snapshots\\\/com.tencent.mm\\\/20260512_014302_709_83534165.json\",\"screenshotPath\":\"\\\/data\\\/user\\\/0\\\/com.macropilot.app\\\/files\\\/macro_v2\\\/factory\\\/ui_screenshots\\\/com.tencent.mm\\\/20260512_014302_709_83534165.png\",\"selectedEvidence\":{\"selectedIndex\":2,\"selectedScore\":19,\"scores\":[0,0,19,2],\"surfaceWarning\":null}},{\"phase\":\"capture_tab\",\"index\":0,\"tabKey\":\"wechat\",\"tabLabel\":\"微信\",\"accepted\":false,\"snapshot\":null,\"screenshotPath\":null,\"attempts\":[{\"attempt\":0,\"tapY\":0.965,\"usedCoordinate\":true,\"tapSuccess\":true,\"tapMessage\":\"dispatchGesture tap sent (normalized=0.125,0.965 px=180,3057 screen=1440x3168)\",\"snapshot\":\"\\\/data\\\/user\\\/0\\\/com.macropilot.app\\\/files\\\/macro_v2\\\/factory\\\/ui_snapshots\\\/com.tencent.mm\\\/20260512_014305_013_aa56726a.json\",\"screenshotPath\":\"\\\/data\\\/user\\\/0\\\/com.macropilot.app\\\/files\\\/macro_v2\\\/factory\\\/ui_screenshots\\\/com.tencent.mm\\\/20260512_014305_013_aa56726a.png\",\"visualHash\":\"076e147ba8fc0b993cc77c979a8ce5b35642fc3980385efef2d579c733c747bb\",\"duplicateVisualHash\":false,\"selectedEvidence\":{\"selectedIndex\":2,\"selectedScore\":19,\"scores\":[0,0,19,2],\"surfaceWarning\":null},\"accepted\":false},{\"attempt\":1,\"tapY\":0.985,\"usedCoordinate\":true,\"tapSuccess\":true,\"tapMessage\":\"dispatchGesture tap sent (normalized=0.125,0.985 px=180,3120 screen=1440x3168)\",\"snapshot\":\"\\\/data\\\/user\\\/0\\\/com.macropilot.app\\\/files\\\/macro_v2\\\/factory\\\/ui_snapshots\\\/com.tencent.mm\\\/20260512_014306_836_aa56726a.json\",\"screenshotPath\":\"\\\/data\\\/user\\\/0\\\/com.macropilot.app\\\/files\\\/macro_v2\\\/factory\\\/ui_screenshots\\\/com.tencent.mm\\\/20260512_014306_836_aa56726a.png\",\"visualHash\":\"1bed53303f9e92fad3bfa839bce2f79de764a48a78fd021c763e5f5ff65c6ddc\",\"duplicateVisualHash\":false,\"selectedEvidence\":{\"selectedIndex\":2,\"selectedScore\":19,\"scores\":[0,0,19,2],\"surfaceWarning\":null},\"accepted\":false},{\"attempt\":2,\"tapY\":0.945,\"usedCoordinate\":true,\"tapSuccess\":true,\"tapMessage\":\"dispatchGesture tap sent (normalized=0.125,0.945 px=180,2993 screen=1440x3168)\",\"snapshot\":\"\\\/data\\\/user\\\/0\\\/com.macropilot.app\\\/files\\\/macro_v2\\\/factory\\\/ui_snapshots\\\/com.tencent.mm\\\/20260512_014308_823_aa56726a.json\",\"screenshotPath\":\"\\\/data\\\/user\\\/0\\\/com.macropilot.app\\\/files\\\/macro_v2\\\/factory\\\/ui_screenshots\\\/com.tencent.mm\\\/20260512_014308_823_aa56726a.png\",\"visualHash\":\"fe836584fd2477d094",
+  "previousRuntimeReportFile": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/runtime\/run_reports\/com.tencent.mm\/ai_direct_run_1778521417180.json",
+  "aiJobFile": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ai_jobs\/2026-05-12\/factory_ai_replan_1778521509103.json",
+  "decision": {
+    "goalCompleted": false,
+    "screenAssessment": "当前屏幕节点极少（仅2个），窗口为LinearLayout，无任何可点击或可编辑元素。根据日志，之前多次tap发送至x=0.125（‘微信’聊天tab），而非‘发现’或‘我’tab，导致未切换成功。当前页面可能仍停留在微信会话列表或因节点缺失无法确认，但无广告或异常弹窗。",
+    "failureDiagnosis": "上次失败原因为错误地将‘我’tab的点击坐标分配到了x=0.125，实际上‘发现’tab位于x=0.625，‘我’tab位于x=0.875。所有tap均点击了聊天tab，故切换失败。",
+    "confidence": "MEDIUM",
+    "nextActionReason": "修正坐标，直接点击底部第三tab‘发现’(x=0.625, y=0.97)，以进入发现页面，然后点击‘朋友圈’入口坐标，再点击右上角拍照图标进入编辑页。由于UI树缺失，所有步骤均使用归一化坐标点击。"
+  },
+  "approvedRequired": false,
+  "status": "SUCCESS_LOW_CONFIDENCE",
+  "message": "Macro atoms completed; reactiveDismissed=0",
+  "durationMs": 14672,
+  "usedCoordinate": true,
+  "details": {
+    "macroSkillId": "direct.command.1778521509112",
+    "atomTrace": [
+      {
+        "index": 0,
+        "skillId": "direct.1778521509112.1.clickcoordinate",
+        "actionType": "ClickCoordinate",
+        "status": "SUCCESS_LOW_CONFIDENCE",
+        "message": "dispatchGesture tap sent (normalized=0.625,0.970 px=900,3072 screen=1440x3168)",
+        "usedCoordinate": true,
+        "details": null
+      },
+      {
+        "index": 1,
+        "skillId": "direct.1778521509112.2.wait",
+        "actionType": "Wait",
+        "status": "SUCCESS_MEDIUM_CONFIDENCE",
+        "message": "Waited 1500ms; reactiveDismissed=0",
+        "usedCoordinate": false,
+        "details": null
+      },
+      {
+        "index": 2,
+        "skillId": "direct.1778521509112.3.clickcoordinate",
+        "actionType": "ClickCoordinate",
+        "status": "SUCCESS_LOW_CONFIDENCE",
+        "message": "dispatchGesture tap sent (normalized=0.500,0.180 px=720,570 screen=1440x3168)",
+        "usedCoordinate": true,
+        "details": null
+      },
+      {
+        "index": 3,
+        "skillId": "direct.1778521509112.4.wait",
+        "actionType": "Wait",
+        "status": "SUCCESS_MEDIUM_CONFIDENCE",
+        "message": "Waited 1000ms; reactiveDismissed=0",
+        "usedCoordinate": false,
+        "details": null
+      },
+      {
+        "index": 4,
+        "skillId": "direct.1778521509112.5.clickcoordinate",
+        "actionType": "ClickCoordinate",
+        "status": "SUCCESS_LOW_CONFIDENCE",
+        "message": "dispatchGesture tap sent (normalized=0.930,0.080 px=1339,253 screen=1440x3168)",
+        "usedCoordinate": true,
+        "details": null
+      }
+    ],
+    "reactiveDismissed": 0
+  },
+  "allowSideEffect": true,
+  "skillFile": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_candidates\/com.tencent.mm\/direct.command.1778521509112.json",
+  "createdAt": 1778521523849
+}

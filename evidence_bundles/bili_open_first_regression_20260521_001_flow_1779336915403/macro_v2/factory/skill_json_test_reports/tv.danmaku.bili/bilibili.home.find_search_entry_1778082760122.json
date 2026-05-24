@@ -1,0 +1,94 @@
+{
+  "schemaVersion": 1,
+  "kind": "skill_json_test_report",
+  "skillId": "bilibili.home.find_search_entry",
+  "appPackage": "tv.danmaku.bili",
+  "skillKind": "atomic_skill",
+  "testRuns": 10,
+  "success": 10,
+  "mediumConfidence": 0,
+  "lowConfidence": 0,
+  "failed": 0,
+  "timeout": 0,
+  "successRate": 1,
+  "highConfidenceRate": 1,
+  "mediumOrHighConfidenceRate": 1,
+  "avgDurationMs": 8,
+  "p95DurationMs": 11,
+  "failureClusters": [],
+  "runResults": [
+    {
+      "run": 1,
+      "status": "SUCCESS",
+      "message": "Element resolved by accessibility node",
+      "durationMs": 3,
+      "usedCoordinate": false
+    },
+    {
+      "run": 2,
+      "status": "SUCCESS",
+      "message": "Element resolved by accessibility node",
+      "durationMs": 8,
+      "usedCoordinate": false
+    },
+    {
+      "run": 3,
+      "status": "SUCCESS",
+      "message": "Element resolved by accessibility node",
+      "durationMs": 8,
+      "usedCoordinate": false
+    },
+    {
+      "run": 4,
+      "status": "SUCCESS",
+      "message": "Element resolved by accessibility node",
+      "durationMs": 10,
+      "usedCoordinate": false
+    },
+    {
+      "run": 5,
+      "status": "SUCCESS",
+      "message": "Element resolved by accessibility node",
+      "durationMs": 11,
+      "usedCoordinate": false
+    },
+    {
+      "run": 6,
+      "status": "SUCCESS",
+      "message": "Element resolved by accessibility node",
+      "durationMs": 12,
+      "usedCoordinate": false
+    },
+    {
+      "run": 7,
+      "status": "SUCCESS",
+      "message": "Element resolved by accessibility node",
+      "durationMs": 9,
+      "usedCoordinate": false
+    },
+    {
+      "run": 8,
+      "status": "SUCCESS",
+      "message": "Element resolved by accessibility node",
+      "durationMs": 5,
+      "usedCoordinate": false
+    },
+    {
+      "run": 9,
+      "status": "SUCCESS",
+      "message": "Element resolved by accessibility node",
+      "durationMs": 8,
+      "usedCoordinate": false
+    },
+    {
+      "run": 10,
+      "status": "SUCCESS",
+      "message": "Element resolved by accessibility node",
+      "durationMs": 8,
+      "usedCoordinate": false
+    }
+  ],
+  "allowSideEffect": true,
+  "promotionSuggestion": "APPROVE_AS_A_LEVEL",
+  "timestamp": 1778082760121
+}

@@ -1,0 +1,1642 @@
+{
+  "schemaVersion": 1,
+  "kind": "app_ui_explore_report",
+  "id": "app_ui_explore_report_app_ui_graph_tv.danmaku.bili_1779374344718",
+  "graphId": "app_ui_graph_tv.danmaku.bili_1779374344718",
+  "status": "PARTIAL_TIMEOUT",
+  "appPackage": "tv.danmaku.bili",
+  "appName": "哔哩哔哩",
+  "screenCount": 16,
+  "edgeCount": 18,
+  "quality": {
+    "usable": true,
+    "reason": "usable_app_ui_graph",
+    "qualityGate": {
+      "bottomPrimaryTabsRequired": true,
+      "bottomPrimaryTabsAttempted": 5,
+      "bottomPrimaryTabsOpened": 5,
+      "topIconsAreNotEnough": true,
+      "repeatedMessagePageIsNotProgress": true
+    },
+    "screenCount": 16,
+    "edgeCount": 18,
+    "nodeCount": 723,
+    "clickableCount": 185,
+    "editableCount": 9,
+    "labelCount": 218,
+    "bottomTabCount": 20,
+    "topEntryCount": 124,
+    "sideEntryCount": 151,
+    "entryCandidateCount": 10,
+    "inputCandidateCount": 9,
+    "videoCandidateCount": 33,
+    "clickTargetCount": 368,
+    "graphicalCandidateCount": 234,
+    "checkableCandidateCount": 0,
+    "candidateCount": 949,
+    "changedEdgeCount": 18,
+    "edgeCategoryCounts": {
+      "primary_bottom_tab": 5,
+      "primary_tab_surface_entry": 13
+    },
+    "primaryBottomTabAttemptedCount": 5,
+    "primaryBottomTabAttemptedLabels": [
+      "首页",
+      "动态\/关注",
+      "发布",
+      "会员购",
+      "我的"
+    ],
+    "primaryBottomTabOpenedCount": 5,
+    "primaryBottomTabOpenedLabels": [
+      "首页",
+      "动态\/关注",
+      "发布",
+      "会员购",
+      "我的"
+    ],
+    "primaryTabSurfaceEntryChangedCount": 13,
+    "primaryTabSurfaceEntriesByTab": {
+      "首页": [
+        "graphical_ui_5",
+        "2026年5月16日 08:00",
+        "31:08",
+        "40:09",
+        "top_entry_1",
+        "top_entry_4",
+        "摩的司机徐师傅",
+        "side_entry_6"
+      ],
+      "动态\/关注": [
+        "graphical_ui_5",
+        "关注+",
+        "动态",
+        "side_entry_5",
+        "side_entry_6"
+      ]
+    }
+  },
+  "graphFile": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/app_ui_graphs\/tv.danmaku.bili\/graph_candidate.json",
+  "events": [
+    {
+      "phase": "wait_accessibility",
+      "status": "SUCCESS",
+      "attempt": 1,
+      "message": "accessibility service is connected"
+    },
+    {
+      "phase": "open_app",
+      "status": "RUNNING",
+      "message": "打开 哔哩哔哩，开始读取首页、底部分屏、入口和输入框",
+      "path": null,
+      "timestamp": 1779374344719
+    },
+    {
+      "phase": "open_app_attempt",
+      "attempt": 1,
+      "strategy": "launcher_root",
+      "success": true,
+      "message": "Launcher root intent sent for tv.danmaku.bili"
+    },
+    {
+      "phase": "open_app_attempt_wait",
+      "attempt": 1,
+      "strategy": "launcher_root",
+      "success": true,
+      "currentPackage": "tv.danmaku.bili",
+      "windowClassName": "android.widget.FrameLayout",
+      "overlayDismissed": 0,
+      "overlayEvents": []
+    },
+    {
+      "phase": "wait_foreground",
+      "success": true,
+      "currentPackage": "tv.danmaku.bili",
+      "windowClassName": "android.widget.FrameLayout",
+      "overlayDismissed": 0,
+      "overlayEvents": []
+    },
+    {
+      "phase": "reactive_overlays",
+      "dismissed": 2,
+      "events": [
+        {
+          "pass": 2,
+          "kind": "ad_or_splash",
+          "label": "消息,按钮",
+          "score": 66,
+          "reason": "app_ui_explorer",
+          "success": true,
+          "message": "dispatchGesture tap sent (normalized=0.936,0.078 px=1348,247 screen=1440x3168)",
+          "bounds": "1256 160 1440 336"
+        },
+        {
+          "pass": 3,
+          "kind": "ad_or_splash",
+          "label": "消息,按钮",
+          "score": 66,
+          "reason": "app_ui_explorer",
+          "success": true,
+          "message": "dispatchGesture tap sent (normalized=0.936,0.078 px=1348,247 screen=1440x3168)",
+          "bounds": "1256 160 1440 336"
+        }
+      ]
+    },
+    {
+      "phase": "recover_primary_tab_surface_start",
+      "status": "RUNNING",
+      "message": "Need bottom primary tabs before opening top\/icon entries.",
+      "screenKey": "3e959734",
+      "primaryBottomTabCount": 0,
+      "snapshotPath": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_snapshots\/tv.danmaku.bili\/20260521_223906_564_3e959734.json"
+    },
+    {
+      "phase": "recover_primary_tab_back",
+      "attempt": 1,
+      "success": true,
+      "message": "GLOBAL_ACTION_BACK performed"
+    },
+    {
+      "phase": "recover_primary_tab_check",
+      "attempt": 1,
+      "status": "LOW_CONFIDENCE",
+      "nodeCount": 26,
+      "primaryBottomTabCount": 0,
+      "screenKey": "bde6fea2",
+      "snapshotPath": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_snapshots\/tv.danmaku.bili\/20260521_223908_029_bde6fea2.json"
+    },
+    {
+      "phase": "recover_primary_tab_back",
+      "attempt": 2,
+      "success": true,
+      "message": "GLOBAL_ACTION_BACK performed"
+    },
+    {
+      "phase": "recover_primary_tab_check",
+      "attempt": 2,
+      "status": "LOW_CONFIDENCE",
+      "nodeCount": 26,
+      "primaryBottomTabCount": 0,
+      "screenKey": "bde6fea2",
+      "snapshotPath": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_snapshots\/tv.danmaku.bili\/20260521_223909_558_bde6fea2.json"
+    },
+    {
+      "phase": "recover_primary_tab_back",
+      "attempt": 3,
+      "success": true,
+      "message": "GLOBAL_ACTION_BACK performed"
+    },
+    {
+      "phase": "recover_primary_tab_check",
+      "attempt": 3,
+      "status": "LOW_CONFIDENCE",
+      "nodeCount": 26,
+      "primaryBottomTabCount": 0,
+      "screenKey": "bde6fea2",
+      "snapshotPath": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_snapshots\/tv.danmaku.bili\/20260521_223911_129_bde6fea2.json"
+    },
+    {
+      "phase": "recover_primary_tab_surface",
+      "status": "LOW_CONFIDENCE",
+      "message": "Primary-tab surface was not found before probing.",
+      "primaryBottomTabCount": 0
+    },
+    {
+      "phase": "capture_home",
+      "status": "SUCCESS",
+      "message": "已记录首页：26 个节点、15 个可点击项",
+      "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_snapshots\/tv.danmaku.bili\/20260521_223906_564_3e959734.json",
+      "timestamp": 1779374351540
+    },
+    {
+      "phase": "primary_bottom_tab_candidates",
+      "count": 5,
+      "labels": [
+        "首页",
+        "动态\/关注",
+        "发布",
+        "会员购",
+        "我的"
+      ],
+      "detectedCount": 0,
+      "fallbackCount": 5,
+      "message": "primary bottom tabs are explored before top icons"
+    },
+    {
+      "phase": "primary_bottom_tab_sweep",
+      "status": "RUNNING",
+      "message": "open bottom tab first: 首页",
+      "path": null,
+      "timestamp": 1779374351540
+    },
+    {
+      "phase": "tap_primary_bottom_tab",
+      "index": 1,
+      "label": "首页",
+      "success": true,
+      "message": "dispatchGesture tap sent (normalized=0.100,0.940 px=144,2977 screen=1440x3168)",
+      "candidate": {
+        "index": 0,
+        "label": "首页",
+        "text": null,
+        "desc": null,
+        "resourceId": null,
+        "class": "coordinate_fallback_primary_bottom_tab",
+        "clickable": false,
+        "editable": false,
+        "checkable": false,
+        "selected": false,
+        "bounds": "coordinate_fallback",
+        "x": 0.1,
+        "y": 0.94,
+        "center": {
+          "x": 0.1,
+          "y": 0.94
+        },
+        "candidateCategory": "primary_bottom_tab",
+        "coordinateFallback": true,
+        "tags": [
+          "primary_bottom_tab",
+          "bottom_tab",
+          "coordinate_fallback"
+        ]
+      },
+      "beforeScreenKey": "184f3531",
+      "beforeSnapshotPath": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_snapshots\/tv.danmaku.bili\/20260521_223911_541_3e959734.json"
+    },
+    {
+      "phase": "primary_bottom_tab_sweep",
+      "status": "SUCCESS",
+      "message": "bottom tab 首页 captured: changed=true nodes=38",
+      "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_snapshots\/tv.danmaku.bili\/20260521_223912_732_95d2149.json",
+      "timestamp": 1779374353436
+    },
+    {
+      "phase": "primary_bottom_tab_sweep",
+      "status": "RUNNING",
+      "message": "open bottom tab first: 动态\/关注",
+      "path": null,
+      "timestamp": 1779374353436
+    },
+    {
+      "phase": "tap_primary_bottom_tab",
+      "index": 2,
+      "label": "动态\/关注",
+      "success": true,
+      "message": "dispatchGesture tap sent (normalized=0.300,0.940 px=432,2977 screen=1440x3168)",
+      "candidate": {
+        "index": 1,
+        "label": "动态\/关注",
+        "text": null,
+        "desc": null,
+        "resourceId": null,
+        "class": "coordinate_fallback_primary_bottom_tab",
+        "clickable": false,
+        "editable": false,
+        "checkable": false,
+        "selected": false,
+        "bounds": "coordinate_fallback",
+        "x": 0.3,
+        "y": 0.94,
+        "center": {
+          "x": 0.3,
+          "y": 0.94
+        },
+        "candidateCategory": "primary_bottom_tab",
+        "coordinateFallback": true,
+        "tags": [
+          "primary_bottom_tab",
+          "bottom_tab",
+          "coordinate_fallback"
+        ]
+      },
+      "beforeScreenKey": "c3e242ab",
+      "beforeSnapshotPath": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_snapshots\/tv.danmaku.bili\/20260521_223913_437_95d2149.json"
+    },
+    {
+      "phase": "primary_bottom_tab_sweep",
+      "status": "SUCCESS",
+      "message": "bottom tab 动态\/关注 captured: changed=true nodes=32",
+      "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_snapshots\/tv.danmaku.bili\/20260521_223914_959_a5a5c51b.json",
+      "timestamp": 1779374355376
+    },
+    {
+      "phase": "primary_bottom_tab_sweep",
+      "status": "RUNNING",
+      "message": "open bottom tab first: 发布",
+      "path": null,
+      "timestamp": 1779374355376
+    },
+    {
+      "phase": "tap_primary_bottom_tab",
+      "index": 3,
+      "label": "发布",
+      "success": true,
+      "message": "dispatchGesture tap sent (normalized=0.500,0.940 px=720,2977 screen=1440x3168)",
+      "candidate": {
+        "index": 2,
+        "label": "发布",
+        "text": null,
+        "desc": null,
+        "resourceId": null,
+        "class": "coordinate_fallback_primary_bottom_tab",
+        "clickable": false,
+        "editable": false,
+        "checkable": false,
+        "selected": false,
+        "bounds": "coordinate_fallback",
+        "x": 0.5,
+        "y": 0.94,
+        "center": {
+          "x": 0.5,
+          "y": 0.94
+        },
+        "candidateCategory": "primary_bottom_tab",
+        "coordinateFallback": true,
+        "tags": [
+          "primary_bottom_tab",
+          "bottom_tab",
+          "coordinate_fallback"
+        ]
+      },
+      "beforeScreenKey": "6e65553c",
+      "beforeSnapshotPath": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_snapshots\/tv.danmaku.bili\/20260521_223915_377_a5a5c51b.json"
+    },
+    {
+      "phase": "primary_bottom_tab_sweep",
+      "status": "SUCCESS",
+      "message": "bottom tab 发布 captured: changed=true nodes=32",
+      "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_snapshots\/tv.danmaku.bili\/20260521_223916_715_4022042d.json",
+      "timestamp": 1779374357231
+    },
+    {
+      "phase": "primary_bottom_tab_sweep",
+      "status": "RUNNING",
+      "message": "open bottom tab first: 会员购",
+      "path": null,
+      "timestamp": 1779374357231
+    },
+    {
+      "phase": "tap_primary_bottom_tab",
+      "index": 4,
+      "label": "会员购",
+      "success": true,
+      "message": "dispatchGesture tap sent (normalized=0.700,0.940 px=1008,2977 screen=1440x3168)",
+      "candidate": {
+        "index": 3,
+        "label": "会员购",
+        "text": null,
+        "desc": null,
+        "resourceId": null,
+        "class": "coordinate_fallback_primary_bottom_tab",
+        "clickable": false,
+        "editable": false,
+        "checkable": false,
+        "selected": false,
+        "bounds": "coordinate_fallback",
+        "x": 0.7,
+        "y": 0.94,
+        "center": {
+          "x": 0.7,
+          "y": 0.94
+        },
+        "candidateCategory": "primary_bottom_tab",
+        "coordinateFallback": true,
+        "tags": [
+          "primary_bottom_tab",
+          "bottom_tab",
+          "coordinate_fallback"
+        ]
+      },
+      "beforeScreenKey": "791b1d07",
+      "beforeSnapshotPath": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_snapshots\/tv.danmaku.bili\/20260521_223917_233_4022042d.json"
+    },
+    {
+      "phase": "primary_bottom_tab_sweep",
+      "status": "SUCCESS",
+      "message": "bottom tab 会员购 captured: changed=true nodes=32",
+      "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_snapshots\/tv.danmaku.bili\/20260521_223918_577_31e2d0db.json",
+      "timestamp": 1779374359000
+    },
+    {
+      "phase": "primary_bottom_tab_sweep",
+      "status": "RUNNING",
+      "message": "open bottom tab first: 我的",
+      "path": null,
+      "timestamp": 1779374359000
+    },
+    {
+      "phase": "tap_primary_bottom_tab",
+      "index": 5,
+      "label": "我的",
+      "success": true,
+      "message": "dispatchGesture tap sent (normalized=0.900,0.940 px=1296,2977 screen=1440x3168)",
+      "candidate": {
+        "index": 4,
+        "label": "我的",
+        "text": null,
+        "desc": null,
+        "resourceId": null,
+        "class": "coordinate_fallback_primary_bottom_tab",
+        "clickable": false,
+        "editable": false,
+        "checkable": false,
+        "selected": false,
+        "bounds": "coordinate_fallback",
+        "x": 0.9,
+        "y": 0.94,
+        "center": {
+          "x": 0.9,
+          "y": 0.94
+        },
+        "candidateCategory": "primary_bottom_tab",
+        "coordinateFallback": true,
+        "tags": [
+          "primary_bottom_tab",
+          "bottom_tab",
+          "coordinate_fallback"
+        ]
+      },
+      "beforeScreenKey": "5ed82b99",
+      "beforeSnapshotPath": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_snapshots\/tv.danmaku.bili\/20260521_223919_001_31e2d0db.json"
+    },
+    {
+      "phase": "primary_bottom_tab_sweep",
+      "status": "SUCCESS",
+      "message": "bottom tab 我的 captured: changed=true nodes=31",
+      "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_snapshots\/tv.danmaku.bili\/20260521_223920_320_31e2d0db.json",
+      "timestamp": 1779374360750
+    },
+    {
+      "phase": "primary_center_action_candidates",
+      "count": 0,
+      "labels": [],
+      "message": "center +\/publish action is explored separately from bottom tabs"
+    },
+    {
+      "phase": "primary_tab_surface_candidates",
+      "tabLabel": "首页",
+      "count": 8,
+      "labels": [
+        "graphical_ui_5",
+        "2026年5月16日 08:00",
+        "31:08",
+        "40:09",
+        "top_entry_1",
+        "top_entry_4",
+        "摩的司机徐师傅",
+        "side_entry_6"
+      ],
+      "message": "scan first-level UI under each bottom tab before deep BFS"
+    },
+    {
+      "phase": "open_app_attempt",
+      "attempt": 1,
+      "strategy": "launcher_root",
+      "success": true,
+      "message": "Launcher root intent sent for tv.danmaku.bili"
+    },
+    {
+      "phase": "open_app_attempt_wait",
+      "attempt": 1,
+      "strategy": "launcher_root",
+      "success": true,
+      "currentPackage": "tv.danmaku.bili",
+      "windowClassName": "android.view.View",
+      "overlayDismissed": 0,
+      "overlayEvents": []
+    },
+    {
+      "phase": "primary_tab_surface_entry",
+      "status": "RUNNING",
+      "message": "tab=首页 click graphical_ui: graphical_ui_5",
+      "path": null,
+      "timestamp": 1779374362734
+    },
+    {
+      "phase": "tap_primary_tab_surface_entry",
+      "tabLabel": "首页",
+      "category": "graphical_ui",
+      "label": "graphical_ui_5",
+      "success": true,
+      "message": "dispatchGesture tap sent (normalized=0.786,0.947 px=1132,3000 screen=1440x3168)",
+      "fingerprint": "graphical_ui|null|bottom|15|18",
+      "beforeScreenKey": "7fed6a56",
+      "candidate": {
+        "index": 4,
+        "label": "graphical_ui_5",
+        "text": null,
+        "desc": null,
+        "resourceId": null,
+        "class": "android.view.View",
+        "clickable": true,
+        "editable": false,
+        "checkable": false,
+        "selected": false,
+        "bounds": "1040 2904 1224 3096",
+        "x": 0.7861111111111111,
+        "y": 0.946969696969697,
+        "center": {
+          "x": 0.7861111111111111,
+          "y": 0.946969696969697
+        },
+        "tags": [
+          "graphical_ui",
+          "small_icon",
+          "icon_only",
+          "clickable",
+          "bottom_area"
+        ],
+        "candidateCategory": "graphical_ui"
+      }
+    },
+    {
+      "phase": "primary_tab_surface_entry",
+      "status": "SUCCESS",
+      "message": "tab=首页 graphical_ui graphical_ui_5 changed=true nodes=37",
+      "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_snapshots\/tv.danmaku.bili\/20260521_223923_911_48b2dded.json",
+      "timestamp": 1779374364611
+    },
+    {
+      "phase": "open_app_attempt",
+      "attempt": 1,
+      "strategy": "launcher_root",
+      "success": true,
+      "message": "Launcher root intent sent for tv.danmaku.bili"
+    },
+    {
+      "phase": "open_app_attempt_wait",
+      "attempt": 1,
+      "strategy": "launcher_root",
+      "success": true,
+      "currentPackage": "tv.danmaku.bili",
+      "windowClassName": null,
+      "overlayDismissed": 0,
+      "overlayEvents": []
+    },
+    {
+      "phase": "primary_tab_surface_entry",
+      "status": "RUNNING",
+      "message": "tab=首页 click top_icon: 2026年5月16日 08:00",
+      "path": null,
+      "timestamp": 1779374366774
+    },
+    {
+      "phase": "tap_primary_tab_surface_entry",
+      "tabLabel": "首页",
+      "category": "top_icon",
+      "label": "2026年5月16日 08:00",
+      "success": true,
+      "message": "dispatchGesture tap sent (normalized=0.500,0.140 px=720,442 screen=1440x3168)",
+      "fingerprint": "top_icon|null|top_center|10|2",
+      "beforeScreenKey": "368e32e8",
+      "candidate": {
+        "index": 2,
+        "label": "2026年5月16日 08:00",
+        "text": "2026年5月16日 08:00",
+        "desc": null,
+        "resourceId": null,
+        "class": "android.widget.TextView",
+        "clickable": false,
+        "editable": false,
+        "checkable": false,
+        "selected": false,
+        "bounds": "128 414 1312 471",
+        "x": 0.5,
+        "y": 0.13952020202020202,
+        "center": {
+          "x": 0.5,
+          "y": 0.13952020202020202
+        },
+        "tags": [
+          "top_entry",
+          "top_entry_candidate"
+        ],
+        "candidateCategory": "top_icon"
+      }
+    },
+    {
+      "phase": "primary_tab_surface_entry",
+      "status": "SUCCESS",
+      "message": "tab=首页 top_icon 2026年5月16日 08:00 changed=true nodes=125",
+      "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_snapshots\/tv.danmaku.bili\/20260521_223928_013_559d07.json",
+      "timestamp": 1779374368328
+    },
+    {
+      "phase": "open_app_attempt",
+      "attempt": 1,
+      "strategy": "launcher_root",
+      "success": true,
+      "message": "Launcher root intent sent for tv.danmaku.bili"
+    },
+    {
+      "phase": "open_app_attempt_wait",
+      "attempt": 1,
+      "strategy": "launcher_root",
+      "success": true,
+      "currentPackage": "tv.danmaku.bili",
+      "windowClassName": "kntr.common.compose.launcher.ComposeContainerActivity",
+      "overlayDismissed": 0,
+      "overlayEvents": []
+    },
+    {
+      "phase": "primary_tab_surface_entry",
+      "status": "RUNNING",
+      "message": "tab=首页 click side_icon: 31:08",
+      "path": null,
+      "timestamp": 1779374370762
+    },
+    {
+      "phase": "tap_primary_tab_surface_entry",
+      "tabLabel": "首页",
+      "category": "side_icon",
+      "label": "31:08",
+      "success": true,
+      "message": "dispatchGesture tap sent (normalized=0.129,0.381 px=186,1208 screen=1440x3168)",
+      "fingerprint": "side_icon|null|left_side|2|7",
+      "beforeScreenKey": "a3bcdafa",
+      "candidate": {
+        "index": 3,
+        "label": "31:08",
+        "text": "31:08",
+        "desc": null,
+        "resourceId": null,
+        "class": "android.widget.TextView",
+        "clickable": false,
+        "editable": false,
+        "checkable": false,
+        "selected": false,
+        "bounds": "128 1180 245 1237",
+        "x": 0.12916666666666668,
+        "y": 0.3813131313131313,
+        "center": {
+          "x": 0.12916666666666668,
+          "y": 0.3813131313131313
+        },
+        "tags": [
+          "side_entry",
+          "side_entry_candidate"
+        ],
+        "candidateCategory": "side_icon"
+      }
+    },
+    {
+      "phase": "primary_tab_surface_entry",
+      "status": "SUCCESS",
+      "message": "tab=首页 side_icon 31:08 changed=true nodes=37",
+      "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_snapshots\/tv.danmaku.bili\/20260521_223932_036_e93125d9.json",
+      "timestamp": 1779374372409
+    },
+    {
+      "phase": "open_app_attempt",
+      "attempt": 1,
+      "strategy": "launcher_root",
+      "success": true,
+      "message": "Launcher root intent sent for tv.danmaku.bili"
+    },
+    {
+      "phase": "open_app_attempt_wait",
+      "attempt": 1,
+      "strategy": "launcher_root",
+      "success": true,
+      "currentPackage": "tv.danmaku.bili",
+      "windowClassName": null,
+      "overlayDismissed": 0,
+      "overlayEvents": []
+    },
+    {
+      "phase": "primary_tab_surface_entry",
+      "status": "RUNNING",
+      "message": "tab=首页 click side_icon: 40:09",
+      "path": null,
+      "timestamp": 1779374374817
+    },
+    {
+      "phase": "tap_primary_tab_surface_entry",
+      "tabLabel": "首页",
+      "category": "side_icon",
+      "label": "40:09",
+      "success": true,
+      "message": "dispatchGesture tap sent (normalized=0.134,0.752 px=193,2382 screen=1440x3168)",
+      "fingerprint": "side_icon|null|left_side|2|15",
+      "beforeScreenKey": "6aba7a66",
+      "candidate": {
+        "index": 4,
+        "label": "40:09",
+        "text": "40:09",
+        "desc": null,
+        "resourceId": null,
+        "class": "android.widget.TextView",
+        "clickable": false,
+        "editable": false,
+        "checkable": false,
+        "selected": false,
+        "bounds": "128 2354 259 2411",
+        "x": 0.13402777777777777,
+        "y": 0.7518939393939394,
+        "center": {
+          "x": 0.13402777777777777,
+          "y": 0.7518939393939394
+        },
+        "tags": [
+          "side_entry",
+          "side_entry_candidate"
+        ],
+        "candidateCategory": "side_icon"
+      }
+    },
+    {
+      "phase": "primary_tab_surface_entry",
+      "status": "SUCCESS",
+      "message": "tab=首页 side_icon 40:09 changed=true nodes=33",
+      "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_snapshots\/tv.danmaku.bili\/20260521_223935_970_5b45ce44.json",
+      "timestamp": 1779374376451
+    },
+    {
+      "phase": "open_app_attempt",
+      "attempt": 1,
+      "strategy": "launcher_root",
+      "success": true,
+      "message": "Launcher root intent sent for tv.danmaku.bili"
+    },
+    {
+      "phase": "open_app_attempt_wait",
+      "attempt": 1,
+      "strategy": "launcher_root",
+      "success": true,
+      "currentPackage": "tv.danmaku.bili",
+      "windowClassName": "kntr.common.compose.launcher.ComposeContainerActivity",
+      "overlayDismissed": 0,
+      "overlayEvents": []
+    },
+    {
+      "phase": "primary_tab_surface_entry",
+      "status": "RUNNING",
+      "message": "tab=首页 click top_icon: top_entry_1",
+      "path": null,
+      "timestamp": 1779374378870
+    },
+    {
+      "phase": "tap_primary_tab_surface_entry",
+      "tabLabel": "首页",
+      "category": "top_icon",
+      "label": "top_entry_1",
+      "success": true,
+      "message": "dispatchGesture tap sent (normalized=0.067,0.077 px=96,244 screen=1440x3168)",
+      "fingerprint": "top_icon|null|top_left|1|1",
+      "beforeScreenKey": "6eea97b3",
+      "candidate": {
+        "index": 0,
+        "label": "top_entry_1",
+        "text": null,
+        "desc": null,
+        "resourceId": null,
+        "class": "android.view.View",
+        "clickable": true,
+        "editable": false,
+        "checkable": false,
+        "selected": false,
+        "bounds": "0 152 192 336",
+        "x": 0.06666666666666667,
+        "y": 0.07702020202020202,
+        "center": {
+          "x": 0.06666666666666667,
+          "y": 0.07702020202020202
+        },
+        "tags": [
+          "top_entry",
+          "top_entry_candidate"
+        ],
+        "candidateCategory": "top_icon"
+      }
+    },
+    {
+      "phase": "primary_tab_surface_entry",
+      "status": "SUCCESS",
+      "message": "tab=首页 top_icon top_entry_1 changed=true nodes=26",
+      "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_snapshots\/tv.danmaku.bili\/20260521_223940_505_bde6fea2.json",
+      "timestamp": 1779374380896
+    },
+    {
+      "phase": "open_app_attempt",
+      "attempt": 1,
+      "strategy": "launcher_root",
+      "success": true,
+      "message": "Launcher root intent sent for tv.danmaku.bili"
+    },
+    {
+      "phase": "open_app_attempt_wait",
+      "attempt": 1,
+      "strategy": "launcher_root",
+      "success": true,
+      "currentPackage": "tv.danmaku.bili",
+      "windowClassName": null,
+      "overlayDismissed": 0,
+      "overlayEvents": []
+    },
+    {
+      "phase": "primary_tab_surface_entry",
+      "status": "RUNNING",
+      "message": "tab=首页 click top_icon: top_entry_4",
+      "path": null,
+      "timestamp": 1779374383322
+    },
+    {
+      "phase": "tap_primary_tab_surface_entry",
+      "tabLabel": "首页",
+      "category": "top_icon",
+      "label": "top_entry_4",
+      "success": true,
+      "message": "dispatchGesture tap sent (normalized=0.933,0.077 px=1344,244 screen=1440x3168)",
+      "fingerprint": "top_icon|null|top_right|18|1",
+      "beforeScreenKey": "1eda5226",
+      "candidate": {
+        "index": 3,
+        "label": "top_entry_4",
+        "text": null,
+        "desc": null,
+        "resourceId": null,
+        "class": "android.view.View",
+        "clickable": true,
+        "editable": false,
+        "checkable": false,
+        "selected": false,
+        "bounds": "1248 152 1440 336",
+        "x": 0.9333333333333333,
+        "y": 0.07702020202020202,
+        "center": {
+          "x": 0.9333333333333333,
+          "y": 0.07702020202020202
+        },
+        "tags": [
+          "top_entry",
+          "top_entry_candidate"
+        ],
+        "candidateCategory": "top_icon"
+      }
+    },
+    {
+      "phase": "primary_tab_surface_entry",
+      "status": "SUCCESS",
+      "message": "tab=首页 top_icon top_entry_4 changed=true nodes=27",
+      "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_snapshots\/tv.danmaku.bili\/20260521_223944_503_d7783ede.json",
+      "timestamp": 1779374384822
+    },
+    {
+      "phase": "open_app_attempt",
+      "attempt": 1,
+      "strategy": "launcher_root",
+      "success": true,
+      "message": "Launcher root intent sent for tv.danmaku.bili"
+    },
+    {
+      "phase": "open_app_attempt_wait",
+      "attempt": 1,
+      "strategy": "launcher_root",
+      "success": true,
+      "currentPackage": "tv.danmaku.bili",
+      "windowClassName": "kntr.common.compose.launcher.ComposeContainerActivity",
+      "overlayDismissed": 0,
+      "overlayEvents": []
+    },
+    {
+      "phase": "primary_tab_surface_entry",
+      "status": "RUNNING",
+      "message": "tab=首页 click top_icon: 摩的司机徐师傅",
+      "path": null,
+      "timestamp": 1779374387291
+    },
+    {
+      "phase": "tap_primary_tab_surface_entry",
+      "tabLabel": "首页",
+      "category": "top_icon",
+      "label": "摩的司机徐师傅",
+      "success": true,
+      "message": "dispatchGesture tap sent (normalized=0.500,0.078 px=720,247 screen=1440x3168)",
+      "fingerprint": "top_icon|null|top_center|10|1",
+      "beforeScreenKey": "86be5d2b",
+      "candidate": {
+        "index": 1,
+        "label": "摩的司机徐师傅",
+        "text": "摩的司机徐师傅",
+        "desc": null,
+        "resourceId": null,
+        "class": "android.widget.TextView",
+        "clickable": false,
+        "editable": false,
+        "checkable": false,
+        "selected": false,
+        "bounds": "482 208 958 288",
+        "x": 0.5,
+        "y": 0.07828282828282829,
+        "center": {
+          "x": 0.5,
+          "y": 0.07828282828282829
+        },
+        "tags": [
+          "top_entry",
+          "top_entry_candidate"
+        ],
+        "candidateCategory": "top_icon"
+      }
+    },
+    {
+      "phase": "primary_tab_surface_entry",
+      "status": "SUCCESS",
+      "message": "tab=首页 top_icon 摩的司机徐师傅 changed=true nodes=26",
+      "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_snapshots\/tv.danmaku.bili\/20260521_223948_453_3e959734.json",
+      "timestamp": 1779374388747
+    },
+    {
+      "phase": "open_app_attempt",
+      "attempt": 1,
+      "strategy": "launcher_root",
+      "success": true,
+      "message": "Launcher root intent sent for tv.danmaku.bili"
+    },
+    {
+      "phase": "open_app_attempt_wait",
+      "attempt": 1,
+      "strategy": "launcher_root",
+      "success": true,
+      "currentPackage": "tv.danmaku.bili",
+      "windowClassName": "android.widget.FrameLayout",
+      "overlayDismissed": 0,
+      "overlayEvents": []
+    },
+    {
+      "phase": "primary_tab_surface_entry",
+      "status": "RUNNING",
+      "message": "tab=首页 click side_icon: side_entry_6",
+      "path": null,
+      "timestamp": 1779374391093
+    },
+    {
+      "phase": "tap_primary_tab_surface_entry",
+      "tabLabel": "首页",
+      "category": "side_icon",
+      "label": "side_entry_6",
+      "success": true,
+      "message": "dispatchGesture tap sent (normalized=0.067,0.947 px=96,3000 screen=1440x3168)",
+      "fingerprint": "side_icon|null|bottom|1|18",
+      "beforeScreenKey": "42a5b855",
+      "candidate": {
+        "index": 5,
+        "label": "side_entry_6",
+        "text": null,
+        "desc": null,
+        "resourceId": null,
+        "class": "android.view.View",
+        "clickable": true,
+        "editable": false,
+        "checkable": false,
+        "selected": false,
+        "bounds": "0 2904 192 3096",
+        "x": 0.06666666666666667,
+        "y": 0.946969696969697,
+        "center": {
+          "x": 0.06666666666666667,
+          "y": 0.946969696969697
+        },
+        "tags": [
+          "side_entry",
+          "side_entry_candidate"
+        ],
+        "candidateCategory": "side_icon"
+      }
+    },
+    {
+      "phase": "primary_tab_surface_entry",
+      "status": "SUCCESS",
+      "message": "tab=首页 side_icon side_entry_6 changed=true nodes=37",
+      "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_snapshots\/tv.danmaku.bili\/20260521_223952_268_48b2dded.json",
+      "timestamp": 1779374392931
+    },
+    {
+      "phase": "primary_tab_surface_candidates",
+      "tabLabel": "动态\/关注",
+      "count": 10,
+      "labels": [
+        "graphical_ui_5",
+        "关注+",
+        "动态",
+        "昨天 08:00",
+        "40:09",
+        "side_entry_5",
+        "side_entry_6",
+        "top_entry_1",
+        "top_entry_4",
+        "摩的司机徐师傅"
+      ],
+      "message": "scan first-level UI under each bottom tab before deep BFS"
+    },
+    {
+      "phase": "open_app_attempt",
+      "attempt": 1,
+      "strategy": "launcher_root",
+      "success": true,
+      "message": "Launcher root intent sent for tv.danmaku.bili"
+    },
+    {
+      "phase": "open_app_attempt_wait",
+      "attempt": 1,
+      "strategy": "launcher_root",
+      "success": true,
+      "currentPackage": "tv.danmaku.bili",
+      "windowClassName": "kntr.common.compose.launcher.ComposeContainerActivity",
+      "overlayDismissed": 0,
+      "overlayEvents": []
+    },
+    {
+      "phase": "primary_tab_surface_entry",
+      "status": "RUNNING",
+      "message": "tab=动态\/关注 click graphical_ui: graphical_ui_5",
+      "path": null,
+      "timestamp": 1779374395293
+    },
+    {
+      "phase": "tap_primary_tab_surface_entry",
+      "tabLabel": "动态\/关注",
+      "category": "graphical_ui",
+      "label": "graphical_ui_5",
+      "success": true,
+      "message": "dispatchGesture tap sent (normalized=0.786,0.587 px=1132,1859 screen=1440x3168)",
+      "fingerprint": "graphical_ui|null|middle_content|15|11",
+      "beforeScreenKey": "be9879a8",
+      "candidate": {
+        "index": 4,
+        "label": "graphical_ui_5",
+        "text": null,
+        "desc": null,
+        "resourceId": null,
+        "class": "android.view.View",
+        "clickable": true,
+        "editable": false,
+        "checkable": false,
+        "selected": false,
+        "bounds": "1040 1763 1224 1955",
+        "x": 0.7861111111111111,
+        "y": 0.5868055555555556,
+        "center": {
+          "x": 0.7861111111111111,
+          "y": 0.5868055555555556
+        },
+        "tags": [
+          "graphical_ui",
+          "small_icon",
+          "icon_only",
+          "grid_icon",
+          "clickable"
+        ],
+        "candidateCategory": "graphical_ui"
+      }
+    },
+    {
+      "phase": "primary_tab_surface_entry",
+      "status": "SUCCESS",
+      "message": "tab=动态\/关注 graphical_ui graphical_ui_5 changed=true nodes=38",
+      "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_snapshots\/tv.danmaku.bili\/20260521_223956_489_f844b2b2.json",
+      "timestamp": 1779374397133
+    },
+    {
+      "phase": "open_app_attempt",
+      "attempt": 1,
+      "strategy": "launcher_root",
+      "success": true,
+      "message": "Launcher root intent sent for tv.danmaku.bili"
+    },
+    {
+      "phase": "open_app_attempt_wait",
+      "attempt": 1,
+      "strategy": "launcher_root",
+      "success": true,
+      "currentPackage": "tv.danmaku.bili",
+      "windowClassName": "kntr.common.compose.launcher.ComposeContainerActivity",
+      "overlayDismissed": 0,
+      "overlayEvents": []
+    },
+    {
+      "phase": "primary_tab_surface_entry",
+      "status": "RUNNING",
+      "message": "tab=动态\/关注 click graphical_ui: 关注+",
+      "path": null,
+      "timestamp": 1779374399512
+    },
+    {
+      "phase": "tap_primary_tab_surface_entry",
+      "tabLabel": "动态\/关注",
+      "category": "graphical_ui",
+      "label": "关注+",
+      "success": true,
+      "message": "dispatchGesture tap sent (normalized=0.900,0.100 px=1296,316 screen=1440x3168)",
+      "fingerprint": "graphical_ui|关注+|top_right|18|2",
+      "beforeScreenKey": "43e66660",
+      "candidate": {
+        "label": "关注+",
+        "x": 0.9,
+        "y": 0.1,
+        "center": {
+          "x": 0.9,
+          "y": 0.1
+        },
+        "candidateCategory": "graphical_ui",
+        "surfaceTarget": "follow_top_icon",
+        "coordinateFallback": true,
+        "tags": [
+          "graphical_ui",
+          "surface_target",
+          "follow_top_icon"
+        ]
+      }
+    },
+    {
+      "phase": "primary_tab_surface_entry",
+      "status": "SUCCESS",
+      "message": "tab=动态\/关注 graphical_ui 关注+ changed=true nodes=26",
+      "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_snapshots\/tv.danmaku.bili\/20260521_224000_731_cda81779.json",
+      "timestamp": 1779374401018
+    },
+    {
+      "phase": "open_app_attempt",
+      "attempt": 1,
+      "strategy": "launcher_root",
+      "success": true,
+      "message": "Launcher root intent sent for tv.danmaku.bili"
+    },
+    {
+      "phase": "open_app_attempt_wait",
+      "attempt": 1,
+      "strategy": "launcher_root",
+      "success": true,
+      "currentPackage": "tv.danmaku.bili",
+      "windowClassName": null,
+      "overlayDismissed": 0,
+      "overlayEvents": []
+    },
+    {
+      "phase": "primary_tab_surface_entry",
+      "status": "RUNNING",
+      "message": "tab=动态\/关注 click graphical_ui: 动态",
+      "path": null,
+      "timestamp": 1779374403397
+    },
+    {
+      "phase": "tap_primary_tab_surface_entry",
+      "tabLabel": "动态\/关注",
+      "category": "graphical_ui",
+      "label": "动态",
+      "success": true,
+      "message": "dispatchGesture tap sent (normalized=0.220,0.180 px=316,570 screen=1440x3168)",
+      "fingerprint": "graphical_ui|动态|top_left|4|3",
+      "beforeScreenKey": "4104f370",
+      "candidate": {
+        "label": "动态",
+        "x": 0.22,
+        "y": 0.18,
+        "center": {
+          "x": 0.22,
+          "y": 0.18
+        },
+        "candidateCategory": "graphical_ui",
+        "surfaceTarget": "follow_surface_entry",
+        "coordinateFallback": true,
+        "tags": [
+          "graphical_ui",
+          "surface_target",
+          "follow_surface_entry"
+        ]
+      }
+    },
+    {
+      "phase": "primary_tab_surface_entry",
+      "status": "SUCCESS",
+      "message": "tab=动态\/关注 graphical_ui 动态 changed=true nodes=157",
+      "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_snapshots\/tv.danmaku.bili\/20260521_224004_693_5d8613e.json",
+      "timestamp": 1779374405039
+    },
+    {
+      "phase": "open_app_attempt",
+      "attempt": 1,
+      "strategy": "launcher_root",
+      "success": true,
+      "message": "Launcher root intent sent for tv.danmaku.bili"
+    },
+    {
+      "phase": "open_app_attempt_wait",
+      "attempt": 1,
+      "strategy": "launcher_root",
+      "success": true,
+      "currentPackage": "tv.danmaku.bili",
+      "windowClassName": null,
+      "overlayDismissed": 0,
+      "overlayEvents": []
+    },
+    {
+      "phase": "skip_primary_tab_surface_repeat",
+      "tabLabel": "动态\/关注",
+      "category": "top_icon",
+      "label": "昨天 08:00",
+      "fingerprint": "top_icon|null|top_center|10|2",
+      "failures": 0
+    },
+    {
+      "phase": "open_app_attempt",
+      "attempt": 1,
+      "strategy": "launcher_root",
+      "success": true,
+      "message": "Launcher root intent sent for tv.danmaku.bili"
+    },
+    {
+      "phase": "open_app_attempt_wait",
+      "attempt": 1,
+      "strategy": "launcher_root",
+      "success": true,
+      "currentPackage": "tv.danmaku.bili",
+      "windowClassName": "android.view.View",
+      "overlayDismissed": 0,
+      "overlayEvents": []
+    },
+    {
+      "phase": "skip_primary_tab_surface_repeat",
+      "tabLabel": "动态\/关注",
+      "category": "side_icon",
+      "label": "40:09",
+      "fingerprint": "side_icon|null|left_side|2|7",
+      "failures": 0
+    },
+    {
+      "phase": "open_app_attempt",
+      "attempt": 1,
+      "strategy": "launcher_root",
+      "success": true,
+      "message": "Launcher root intent sent for tv.danmaku.bili"
+    },
+    {
+      "phase": "open_app_attempt_wait",
+      "attempt": 1,
+      "strategy": "launcher_root",
+      "success": true,
+      "currentPackage": "tv.danmaku.bili",
+      "windowClassName": "android.view.View",
+      "overlayDismissed": 0,
+      "overlayEvents": []
+    },
+    {
+      "phase": "primary_tab_surface_entry",
+      "status": "RUNNING",
+      "message": "tab=动态\/关注 click side_icon: side_entry_5",
+      "path": null,
+      "timestamp": 1779374411385
+    },
+    {
+      "phase": "tap_primary_tab_surface_entry",
+      "tabLabel": "动态\/关注",
+      "category": "side_icon",
+      "label": "side_entry_5",
+      "success": true,
+      "message": "dispatchGesture tap sent (normalized=0.067,0.587 px=96,1859 screen=1440x3168)",
+      "fingerprint": "side_icon|null|left_side|1|11",
+      "beforeScreenKey": "48ce0657",
+      "candidate": {
+        "index": 4,
+        "label": "side_entry_5",
+        "text": null,
+        "desc": null,
+        "resourceId": null,
+        "class": "android.view.View",
+        "clickable": true,
+        "editable": false,
+        "checkable": false,
+        "selected": false,
+        "bounds": "0 1763 192 1955",
+        "x": 0.06666666666666667,
+        "y": 0.5868055555555556,
+        "center": {
+          "x": 0.06666666666666667,
+          "y": 0.5868055555555556
+        },
+        "tags": [
+          "side_entry",
+          "side_entry_candidate"
+        ],
+        "candidateCategory": "side_icon"
+      }
+    },
+    {
+      "phase": "primary_tab_surface_entry",
+      "status": "SUCCESS",
+      "message": "tab=动态\/关注 side_icon side_entry_5 changed=true nodes=38",
+      "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_snapshots\/tv.danmaku.bili\/20260521_224012_615_f844b2b2.json",
+      "timestamp": 1779374413173
+    },
+    {
+      "phase": "open_app_attempt",
+      "attempt": 1,
+      "strategy": "launcher_root",
+      "success": true,
+      "message": "Launcher root intent sent for tv.danmaku.bili"
+    },
+    {
+      "phase": "open_app_attempt_wait",
+      "attempt": 1,
+      "strategy": "launcher_root",
+      "success": true,
+      "currentPackage": "tv.danmaku.bili",
+      "windowClassName": null,
+      "overlayDismissed": 0,
+      "overlayEvents": []
+    },
+    {
+      "phase": "primary_tab_surface_entry",
+      "status": "RUNNING",
+      "message": "tab=动态\/关注 click side_icon: side_entry_6",
+      "path": null,
+      "timestamp": 1779374415544
+    },
+    {
+      "phase": "tap_primary_tab_surface_entry",
+      "tabLabel": "动态\/关注",
+      "category": "side_icon",
+      "label": "side_entry_6",
+      "success": true,
+      "message": "dispatchGesture tap sent (normalized=0.917,0.587 px=1320,1859 screen=1440x3168)",
+      "fingerprint": "side_icon|null|right_side|18|11",
+      "beforeScreenKey": "f19101be",
+      "candidate": {
+        "index": 5,
+        "label": "side_entry_6",
+        "text": null,
+        "desc": null,
+        "resourceId": null,
+        "class": "android.view.View",
+        "clickable": false,
+        "editable": false,
+        "checkable": false,
+        "selected": false,
+        "bounds": "1224 1763 1416 1955",
+        "x": 0.9166666666666666,
+        "y": 0.5868055555555556,
+        "center": {
+          "x": 0.9166666666666666,
+          "y": 0.5868055555555556
+        },
+        "tags": [
+          "side_entry",
+          "side_entry_candidate"
+        ],
+        "candidateCategory": "side_icon"
+      }
+    },
+    {
+      "phase": "primary_tab_surface_entry",
+      "status": "SUCCESS",
+      "message": "tab=动态\/关注 side_icon side_entry_6 changed=true nodes=38",
+      "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_snapshots\/tv.danmaku.bili\/20260521_224016_789_f844b2b2.json",
+      "timestamp": 1779374417438
+    },
+    {
+      "phase": "open_app_attempt",
+      "attempt": 1,
+      "strategy": "launcher_root",
+      "success": true,
+      "message": "Launcher root intent sent for tv.danmaku.bili"
+    },
+    {
+      "phase": "open_app_attempt_wait",
+      "attempt": 1,
+      "strategy": "launcher_root",
+      "success": true,
+      "currentPackage": "tv.danmaku.bili",
+      "windowClassName": "kntr.common.compose.launcher.ComposeContainerActivity",
+      "overlayDismissed": 0,
+      "overlayEvents": []
+    },
+    {
+      "phase": "skip_primary_tab_surface_repeat",
+      "tabLabel": "动态\/关注",
+      "category": "top_icon",
+      "label": "top_entry_1",
+      "fingerprint": "top_icon|null|top_left|1|1",
+      "failures": 0
+    },
+    {
+      "phase": "open_app_attempt",
+      "attempt": 1,
+      "strategy": "launcher_root",
+      "success": true,
+      "message": "Launcher root intent sent for tv.danmaku.bili"
+    },
+    {
+      "phase": "open_app_attempt_wait",
+      "attempt": 1,
+      "strategy": "launcher_root",
+      "success": true,
+      "currentPackage": "tv.danmaku.bili",
+      "windowClassName": "android.view.View",
+      "overlayDismissed": 0,
+      "overlayEvents": []
+    },
+    {
+      "phase": "skip_primary_tab_surface_repeat",
+      "tabLabel": "动态\/关注",
+      "category": "top_icon",
+      "label": "top_entry_4",
+      "fingerprint": "top_icon|null|top_right|18|1",
+      "failures": 0
+    },
+    {
+      "phase": "open_app_attempt",
+      "attempt": 1,
+      "strategy": "launcher_root",
+      "success": true,
+      "message": "Launcher root intent sent for tv.danmaku.bili"
+    },
+    {
+      "phase": "open_app_attempt_wait",
+      "attempt": 1,
+      "strategy": "launcher_root",
+      "success": true,
+      "currentPackage": "tv.danmaku.bili",
+      "windowClassName": "android.view.View",
+      "overlayDismissed": 0,
+      "overlayEvents": []
+    },
+    {
+      "phase": "skip_primary_tab_surface_repeat",
+      "tabLabel": "动态\/关注",
+      "category": "top_icon",
+      "label": "摩的司机徐师傅",
+      "fingerprint": "top_icon|null|top_center|10|1",
+      "failures": 0
+    },
+    {
+      "phase": "primary_tab_surface_candidates",
+      "tabLabel": "发布",
+      "count": 8,
+      "labels": [
+        "graphical_ui_5",
+        "昨天 08:00",
+        "40:09",
+        "side_entry_5",
+        "side_entry_6",
+        "top_entry_1",
+        "top_entry_4",
+        "摩的司机徐师傅"
+      ],
+      "message": "scan first-level UI under each bottom tab before deep BFS"
+    },
+    {
+      "phase": "open_app_attempt",
+      "attempt": 1,
+      "strategy": "launcher_root",
+      "success": true,
+      "message": "Launcher root intent sent for tv.danmaku.bili"
+    },
+    {
+      "phase": "open_app_attempt_wait",
+      "attempt": 1,
+      "strategy": "launcher_root",
+      "success": true,
+      "currentPackage": "tv.danmaku.bili",
+      "windowClassName": "android.view.View",
+      "overlayDismissed": 0,
+      "overlayEvents": []
+    },
+    {
+      "phase": "skip_primary_tab_surface_repeat",
+      "tabLabel": "发布",
+      "category": "graphical_ui",
+      "label": "graphical_ui_5",
+      "fingerprint": "graphical_ui|null|middle_content|15|11",
+      "failures": 0
+    },
+    {
+      "phase": "open_app_attempt",
+      "attempt": 1,
+      "strategy": "launcher_root",
+      "success": true,
+      "message": "Launcher root intent sent for tv.danmaku.bili"
+    },
+    {
+      "phase": "open_app_attempt_wait",
+      "attempt": 1,
+      "strategy": "launcher_root",
+      "success": true,
+      "currentPackage": "tv.danmaku.bili",
+      "windowClassName": "android.view.View",
+      "overlayDismissed": 0,
+      "overlayEvents": []
+    },
+    {
+      "phase": "skip_primary_tab_surface_repeat",
+      "tabLabel": "发布",
+      "category": "top_icon",
+      "label": "昨天 08:00",
+      "fingerprint": "top_icon|null|top_center|10|2",
+      "failures": 0
+    },
+    {
+      "phase": "open_app_attempt",
+      "attempt": 1,
+      "strategy": "launcher_root",
+      "success": true,
+      "message": "Launcher root intent sent for tv.danmaku.bili"
+    },
+    {
+      "phase": "open_app_attempt_wait",
+      "attempt": 1,
+      "strategy": "launcher_root",
+      "success": true,
+      "currentPackage": "tv.danmaku.bili",
+      "windowClassName": "android.view.View",
+      "overlayDismissed": 0,
+      "overlayEvents": []
+    },
+    {
+      "phase": "skip_primary_tab_surface_repeat",
+      "tabLabel": "发布",
+      "category": "side_icon",
+      "label": "40:09",
+      "fingerprint": "side_icon|null|left_side|2|7",
+      "failures": 0
+    },
+    {
+      "phase": "open_app_attempt",
+      "attempt": 1,
+      "strategy": "launcher_root",
+      "success": true,
+      "message": "Launcher root intent sent for tv.danmaku.bili"
+    },
+    {
+      "phase": "open_app_attempt_wait",
+      "attempt": 1,
+      "strategy": "launcher_root",
+      "success": true,
+      "currentPackage": "tv.danmaku.bili",
+      "windowClassName": "android.view.View",
+      "overlayDismissed": 0,
+      "overlayEvents": []
+    },
+    {
+      "phase": "skip_primary_tab_surface_repeat",
+      "tabLabel": "发布",
+      "category": "side_icon",
+      "label": "side_entry_5",
+      "fingerprint": "side_icon|null|left_side|1|11",
+      "failures": 0
+    },
+    {
+      "phase": "open_app_attempt",
+      "attempt": 1,
+      "strategy": "launcher_root",
+      "success": true,
+      "message": "Launcher root intent sent for tv.danmaku.bili"
+    },
+    {
+      "phase": "open_app_attempt_wait",
+      "attempt": 1,
+      "strategy": "launcher_root",
+      "success": true,
+      "currentPackage": "tv.danmaku.bili",
+      "windowClassName": "android.view.View",
+      "overlayDismissed": 0,
+      "overlayEvents": []
+    },
+    {
+      "phase": "skip_primary_tab_surface_repeat",
+      "tabLabel": "发布",
+      "category": "side_icon",
+      "label": "side_entry_6",
+      "fingerprint": "side_icon|null|right_side|18|11",
+      "failures": 0
+    },
+    {
+      "phase": "open_app_attempt",
+      "attempt": 1,
+      "strategy": "launcher_root",
+      "success": true,
+      "message": "Launcher root intent sent for tv.danmaku.bili"
+    },
+    {
+      "phase": "open_app_attempt_wait",
+      "attempt": 1,
+      "strategy": "launcher_root",
+      "success": true,
+      "currentPackage": "tv.danmaku.bili",
+      "windowClassName": "android.view.View",
+      "overlayDismissed": 0,
+      "overlayEvents": []
+    },
+    {
+      "phase": "skip_primary_tab_surface_repeat",
+      "tabLabel": "发布",
+      "category": "top_icon",
+      "label": "top_entry_1",
+      "fingerprint": "top_icon|null|top_left|1|1",
+      "failures": 0
+    }
+  ],
+  "timedOut": true,
+  "maxDurationMs": 90000,
+  "durationMs": 90522
+}

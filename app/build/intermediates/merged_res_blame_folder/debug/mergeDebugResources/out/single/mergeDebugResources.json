@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "com.macropilot.app-debug-8:/xml_accessibility_service_config.xml.flat",
+        "source": "com.macropilot.app-main-10:/xml/accessibility_service_config.xml"
+    },
+    {
+        "merged": "com.macropilot.app-debug-8:/xml_input_method.xml.flat",
+        "source": "com.macropilot.app-main-10:/xml/input_method.xml"
+    }
+]

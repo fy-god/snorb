@@ -1,0 +1,82 @@
+{
+  "schemaVersion": 1,
+  "kind": "app_ui_probe_service_state",
+  "id": "app_ui_probe_com.xunmeng.pinduoduo_1779374757028",
+  "requestId": "app_ui_probe_com.xunmeng.pinduoduo_1779374757028",
+  "status": "SUCCESS",
+  "message": "App UI probe finished",
+  "appPackage": "com.xunmeng.pinduoduo",
+  "appName": "拼多多",
+  "payload": {
+    "success": true,
+    "reportFile": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/flow_reports\/com.xunmeng.pinduoduo\/app_ui_explore_report_app_ui_graph_com.xunmeng.pinduoduo_1779374757036.json",
+    "graphFile": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/app_ui_graphs\/com.xunmeng.pinduoduo\/graph_candidate.json",
+    "screenCount": 14,
+    "edgeCount": 14,
+    "quality": {
+      "usable": true,
+      "reason": "usable_app_ui_graph",
+      "qualityGate": {
+        "bottomPrimaryTabsRequired": true,
+        "bottomPrimaryTabsAttempted": 5,
+        "bottomPrimaryTabsOpened": 5,
+        "topIconsAreNotEnough": true,
+        "repeatedMessagePageIsNotProgress": true
+      },
+      "screenCount": 14,
+      "edgeCount": 14,
+      "nodeCount": 4247,
+      "clickableCount": 413,
+      "editableCount": 1,
+      "labelCount": 701,
+      "bottomTabCount": 38,
+      "topEntryCount": 241,
+      "sideEntryCount": 244,
+      "entryCandidateCount": 42,
+      "inputCandidateCount": 1,
+      "videoCandidateCount": 26,
+      "clickTargetCount": 1216,
+      "graphicalCandidateCount": 753,
+      "checkableCandidateCount": 0,
+      "candidateCount": 2561,
+      "changedEdgeCount": 14,
+      "edgeCategoryCounts": {
+        "primary_bottom_tab": 5,
+        "primary_tab_surface_entry": 9
+      },
+      "primaryBottomTabAttemptedCount": 5,
+      "primaryBottomTabAttemptedLabels": [
+        "首页",
+        "bottom_tab_3",
+        "提前优惠",
+        "聊天183",
+        "个人中心"
+      ],
+      "primaryBottomTabOpenedCount": 5,
+      "primaryBottomTabOpenedLabels": [
+        "首页",
+        "bottom_tab_3",
+        "提前优惠",
+        "聊天183",
+        "个人中心"
+      ],
+      "primaryTabSurfaceEntryChangedCount": 9,
+      "primaryTabSurfaceEntriesByTab": {
+        "首页": [
+          "pdd",
+          "仅1次",
+          "¥",
+          "多多买菜",
+          "graphical_ui_13",
+          "graphical_ui_16",
+          "graphical_ui_17",
+          "graphical_ui_11"
+        ],
+        "bottom_tab_3": [
+          "搜索"
+        ]
+      }
+    }
+  },
+  "updatedAt": 1779374807891
+}

@@ -1,0 +1,3 @@
+﻿Broadcasting: Intent { act=com.macropilot.app.API_RUN_APP_SIDE_INSTRUCTION flg=0x400000 cmp=com.macropilot.app/.api.MacroPilotApiReceiver (has extras) }
+Broadcast completed: result=-1, data="{"ok":true,"action":"com.macropilot.app.API_RUN_APP_SIDE_INSTRUCTION","timestamp":1778389885592,"status":"ACCEPTED","requestId":"app_side_instruction_1778389885592","appPackage":"com.ss.android.ugc.aweme","message":"手机端已接收指令，后台执行并写入 flow\/runtime 报告。"}", extras: Bundle[mParcelledData.dataSize=548]
+

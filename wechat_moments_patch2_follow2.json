@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 1,
+  "kind": "skill_json_ai_follow_up_run_report",
+  "id": "ai_follow_up_run_1778522322196",
+  "skillId": "direct.command.1778522309006",
+  "failedSkillId": "direct.command.1778522175572",
+  "appPackage": "com.tencent.mm",
+  "instruction": "微信发一条朋友圈，内容是我是AI，设置为仅自己可见，然后发表",
+  "engine": "ai_runtime_replan",
+  "phase": "REPLAN",
+  "trigger": "GOAL_UNVERIFIED_LOOP_1",
+  "previousStatus": "FAILED_GOAL_UNVERIFIED",
+  "previousMessage": "没有在微信当前页看到朋友圈内容，不能报告发布成功。",
+  "previousRuntimeReportFile": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/runtime\/run_reports\/com.tencent.mm\/ai_follow_up_run_1778522263025.json",
+  "aiJobFile": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ai_jobs\/2026-05-12\/factory_ai_replan_1778522309000.json",
+  "decision": {
+    "goalCompleted": false,
+    "screenAssessment": "当前微信页面节点极少（只有2个），可能处于启动页、空白页或弹窗后残留界面，底栏不可见，无法进行下一步操作。",
+    "failureDiagnosis": "上轮因个性化推荐弹窗遮挡导致底栏不可见，尝试点击‘同意’未找到元素，当前界面无有效交互节点。",
+    "confidence": "MEDIUM",
+    "nextActionReason": "需先处理可能存在的系统级弹窗，然后通过底部标签扫描强制回到微信发现页，为后续进入朋友圈做准备。"
+  },
+  "approvedRequired": false,
+  "status": "FAILED_ELEMENT_NOT_FOUND",
+  "message": "Bottom-tab sweep did not find entry aliases=发现; tabsVisited=5; events=[{\"phase\":\"open_before_recover\",\"packageName\":\"com.tencent.mm\",\"success\":true,\"message\":\"Launch intent sent for com.tencent.mm\"},{\"phase\":\"home_back\",\"index\":1,\"fromPackage\":\"com.tencent.mm\",\"window\":\"android.widget.FrameLayout\",\"success\":true,\"message\":\"GLOBAL_ACTION_BACK performed\"},{\"phase\":\"home_back\",\"index\":2,\"fromPackage\":\"com.tencent.mm\",\"window\":\"android.widget.FrameLayout\",\"success\":true,\"message\":\"GLOBAL_ACTION_BACK performed\"},{\"phase\":\"home_back\",\"index\":3,\"fromPackage\":\"com.tencent.mm\",\"window\":\"android.widget.FrameLayout\",\"success\":true,\"message\":\"GLOBAL_ACTION_BACK performed\"},{\"phase\":\"open_after_recover\",\"packageName\":\"com.tencent.mm\",\"success\":true,\"message\":\"Launch intent sent for com.tencent.mm\"},{\"phase\":\"recover_current_package\",\"packageName\":\"com.tencent.mm\"},{\"phase\":\"click_bottom_tab\",\"index\":0,\"label\":\"fallback_tab_1\",\"x\":0.16666667,\"y\":0.925,\"success\":true,\"message\":\"dispatchGesture tap sent (normalized=0.167,0.925 px=240,2930 screen=1440x3168)\"},{\"phase\":\"click_bottom_tab\",\"index\":1,\"label\":\"fallback_tab_2\",\"x\":0.33333334,\"y\":0.925,\"success\":true,\"message\":\"dispatchGesture tap sent (normalized=0.333,0.925 px=480,2930 screen=1440x3168)\"},{\"phase\":\"click_bottom_tab\",\"index\":2,\"label\":\"fallback_tab_3\",\"x\":0.5,\"y\":0.925,\"success\":true,\"message\":\"dispatchGesture tap sent (normalized=0.500,0.925 px=720,2930 screen=1440x3168)\"},{\"phase\":\"click_bottom_tab\",\"index\":3,\"label\":\"fallback_tab_4\",\"x\":0.6666667,\"y\":0.925,\"success\":true,\"message\":\"dispatchGesture tap sent (normalized=0.667,0.925 px=960,2930 screen=1440x3168)\"},{\"phase\":\"click_bottom_tab\",\"index\":4,\"label\":\"fallback_tab_5\",\"x\":0.8333333,\"y\":0.925,\"success\":true,\"message\":\"dispatchGesture tap sent (normalized=0.833,0.925 px=1200,2930 screen=1440x3168)\"}]",
+  "durationMs": 13101,
+  "usedCoordinate": true,
+  "details": {
+    "macroSkillId": "direct.command.1778522309006",
+    "failedAtom": {
+      "index": 1,
+      "skillId": "direct.1778522309006.2.findentrybybottomtabsweep",
+      "actionType": "FindEntryByBottomTabSweep",
+      "status": "FAILED_ELEMENT_NOT_FOUND",
+      "message": "Bottom-tab sweep did not find entry aliases=发现; tabsVisited=5; events=[{\"phase\":\"open_before_recover\",\"packageName\":\"com.tencent.mm\",\"success\":true,\"message\":\"Launch intent sent for com.tencent.mm\"},{\"phase\":\"home_back\",\"index\":1,\"fromPackage\":\"com.tencent.mm\",\"window\":\"android.widget.FrameLayout\",\"success\":true,\"message\":\"GLOBAL_ACTION_BACK performed\"},{\"phase\":\"home_back\",\"index\":2,\"fromPackage\":\"com.tencent.mm\",\"window\":\"android.widget.FrameLayout\",\"success\":true,\"message\":\"GLOBAL_ACTION_BACK performed\"},{\"phase\":\"home_back\",\"index\":3,\"fromPackage\":\"com.tencent.mm\",\"window\":\"android.widget.FrameLayout\",\"success\":true,\"message\":\"GLOBAL_ACTION_BACK performed\"},{\"phase\":\"open_after_recover\",\"packageName\":\"com.tencent.mm\",\"success\":true,\"message\":\"Launch intent sent for com.tencent.mm\"},{\"phase\":\"recover_current_package\",\"packageName\":\"com.tencent.mm\"},{\"phase\":\"click_bottom_tab\",\"index\":0,\"label\":\"fallback_tab_1\",\"x\":0.16666667,\"y\":0.925,\"success\":true,\"message\":\"dispatchGesture tap sent (normalized=0.167,0.925 px=240,2930 screen=1440x3168)\"},{\"phase\":\"click_bottom_tab\",\"index\":1,\"label\":\"fallback_tab_2\",\"x\":0.33333334,\"y\":0.925,\"success\":true,\"message\":\"dispatchGesture tap sent (normalized=0.333,0.925 px=480,2930 screen=1440x3168)\"},{\"phase\":\"click_bottom_tab\",\"index\":2,\"label\":\"fallback_tab_3\",\"x\":0.5,\"y\":0.925,\"success\":true,\"message\":\"dispatchGesture tap sent (normalized=0.500,0.925 px=720,2930 screen=1440x3168)\"},{\"phase\":\"click_bottom_tab\",\"index\":3,\"label\":\"fallback_tab_4\",\"x\":0.6666667,\"y\":0.925,\"success\":true,\"message\":\"dispatchGesture tap sent (normalized=0.667,0.925 px=960,2930 screen=1440x3168)\"},{\"phase\":\"click_bottom_tab\",\"index\":4,\"label\":\"fallback_tab_5\",\"x\":0.8333333,\"y\":0.925,\"success\":true,\"message\":\"dispatchGesture tap sent (normalized=0.833,0.925 px=1200,2930 screen=1440x3168)\"}]",
+      "usedCoordinate": true,
+      "details": null
+    },
+    "atomTrace": [
+      {
+        "index": 0,
+        "skillId": "direct.1778522309006.1.handlereactiveoverlays",
+        "actionType": "HandleReactiveOverlays",
+        "status": "SUCCESS_MEDIUM_CONFIDENCE",
+        "message": "Reactive overlay pass completed; dismissed=0",
+        "usedCoordinate": false,
+        "details": null
+      },
+      {
+        "index": 1,
+        "skillId": "direct.1778522309006.2.findentrybybottomtabsweep",
+        "actionType": "FindEntryByBottomTabSweep",
+        "status": "FAILED_ELEMENT_NOT_FOUND",
+        "message": "Bottom-tab sweep did not find entry aliases=发现; tabsVisited=5; events=[{\"phase\":\"open_before_recover\",\"packageName\":\"com.tencent.mm\",\"success\":true,\"message\":\"Launch intent sent for com.tencent.mm\"},{\"phase\":\"home_back\",\"index\":1,\"fromPackage\":\"com.tencent.mm\",\"window\":\"android.widget.FrameLayout\",\"success\":true,\"message\":\"GLOBAL_ACTION_BACK performed\"},{\"phase\":\"home_back\",\"index\":2,\"fromPackage\":\"com.tencent.mm\",\"window\":\"android.widget.FrameLayout\",\"success\":true,\"message\":\"GLOBAL_ACTION_BACK performed\"},{\"phase\":\"home_back\",\"index\":3,\"fromPackage\":\"com.tencent.mm\",\"window\":\"android.widget.FrameLayout\",\"success\":true,\"message\":\"GLOBAL_ACTION_BACK performed\"},{\"phase\":\"open_after_recover\",\"packageName\":\"com.tencent.mm\",\"success\":true,\"message\":\"Launch intent sent for com.tencent.mm\"},{\"phase\":\"recover_current_package\",\"packageName\":\"com.tencent.mm\"},{\"phase\":\"click_bottom_tab\",\"index\":0,\"label\":\"fallback_tab_1\",\"x\":0.16666667,\"y\":0.925,\"success\":true,\"message\":\"dispatchGesture tap sent (normalized=0.167,0.925 px=240,2930 screen=1440x3168)\"},{\"phase\":\"click_bottom_tab\",\"index\":1,\"label\":\"fallback_tab_2\",\"x\":0.33333334,\"y\":0.925,\"success\":true,\"message\":\"dispatchGesture tap sent (normalized=0.333,0.925 px=480,2930 screen=1440x3168)\"},{\"phase\":\"click_bottom_tab\",\"index\":2,\"label\":\"fallback_tab_3\",\"x\":0.5,\"y\":0.925,\"success\":true,\"message\":\"dispatchGesture tap sent (normalized=0.500,0.925 px=720,2930 screen=1440x3168)\"},{\"phase\":\"click_bottom_tab\",\"index\":3,\"label\":\"fallback_tab_4\",\"x\":0.6666667,\"y\":0.925,\"success\":true,\"message\":\"dispatchGesture tap sent (normalized=0.667,0.925 px=960,2930 screen=1440x3168)\"},{\"phase\":\"click_bottom_tab\",\"index\":4,\"label\":\"fallback_tab_5\",\"x\":0.8333333,\"y\":0.925,\"success\":true,\"message\":\"dispatchGesture tap sent (normalized=0.833,0.925 px=1200,2930 screen=1440x3168)\"}]",
+        "usedCoordinate": true,
+        "details": null
+      }
+    ],
+    "reactiveDismissed": 0
+  },
+  "allowSideEffect": true,
+  "skillFile": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_candidates\/com.tencent.mm\/direct.command.1778522309006.json",
+  "createdAt": 1778522322196
+}

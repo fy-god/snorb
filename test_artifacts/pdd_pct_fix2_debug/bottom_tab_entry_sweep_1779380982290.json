@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "kind": "skill_json_bottom_tab_entry_sweep_report",
+  "id": "bottom_tab_entry_sweep_1779380982290",
+  "skillId": "patched.command.1779380954432",
+  "appPackage": "com.xunmeng.pinduoduo",
+  "instruction": "在拼多多搜索纸巾，停在结果页并记录筛选、店铺、价格入口。\n\n约束：目标 App=拼多多，包名=com.xunmeng.pinduoduo。必须由 MacroPilot 手机端自己用无障碍、输入法、AI\/Skill JSON 执行，不允许依赖 ADB 手点目标 App。执行前先读取当前 UI；如果遇到广告、弹窗、小字提示，先记录文字并安全关闭。任务完成必须用当前 UI 证据验证，不能只因为步骤执行完就报成功。如果没有现成 skill，先复用已有相似 Skill JSON\/archetype，只改关键槽位如入口文字、坐标、目标文本、验证规则，再组装 atomic\/macro skill。需要探索入口时优先遍历底部标签、顶部小图标、图形化入口、侧边操作和子页面。本任务 stopBeforeSubmit=true：写草稿、评论、订单、支付类流程必须停在提交前，不点击最终发布、发送、提交订单、支付、确认授权。期望证据包括：纸巾、结果。",
+  "engine": "bottom_tab_entry_sweep",
+  "approvedRequired": false,
+  "status": "FAILED_ELEMENT_NOT_FOUND",
+  "message": "Bottom-tab sweep did not find entry aliases=发帖\/发布\/创作\/写\/加号\/+; tabsVisited=5; events=[{\"phase\":\"open_before_recover\",\"packageName\":\"com.xunmeng.pinduoduo\",\"success\":true,\"message\":\"Launch intent sent for com.xunmeng.pinduoduo\"},{\"phase\":\"home_back\",\"index\":1,\"fromPackage\":\"com.xunmeng.pinduoduo\",\"window\":null,\"success\":true,\"message\":\"GLOBAL_ACTION_BACK performed\"},{\"phase\":\"home_back\",\"index\":2,\"fromPackage\":\"com.xunmeng.pinduoduo\",\"window\":\"v40.o\",\"success\":true,\"message\":\"GLOBAL_ACTION_BACK performed\"},{\"phase\":\"home_back\",\"index\":3,\"fromPackage\":\"com.xunmeng.pinduoduo\",\"window\":\"v40.o\",\"success\":true,\"message\":\"GLOBAL_ACTION_BACK performed\"},{\"phase\":\"open_after_recover\",\"packageName\":\"com.xunmeng.pinduoduo\",\"success\":true,\"message\":\"Launch intent sent for com.xunmeng.pinduoduo\"},{\"phase\":\"recover_current_package\",\"packageName\":\"com.xunmeng.pinduoduo\"},{\"phase\":\"reactive_after_recover\",\"dismissed\":3},{\"phase\":\"click_bottom_tab\",\"index\":0,\"label\":\"fallback_tab_1\",\"x\":0.16666667,\"y\":0.925,\"success\":true,\"message\":\"dispatchGesture tap sent (normalized=0.167,0.925 px=240,2930 screen=1440x3168)\"},{\"phase\":\"reactive_after_tab\",\"index\":0,\"dismissed\":2},{\"phase\":\"click_bottom_tab\",\"index\":1,\"label\":\"fallback_tab_2\",\"x\":0.33333334,\"y\":0.925,\"success\":true,\"message\":\"dispatchGesture tap sent (normalized=0.333,0.925 px=480,2930 screen=1440x3168)\"},{\"phase\":\"reactive_after_tab\",\"index\":1,\"dismissed\":2},{\"phase\":\"click_bottom_tab\",\"index\":2,\"label\":\"com.xunmeng.pinduoduo:id\\\/pdd\",\"x\":0.5,\"y\":0.7354798,\"success\":true,\"message\":\"dispatchGesture tap sent (normalized=0.500,0.735 px=720,2330 screen=1440x3168)\"},{\"phase\":\"reactive_after_tab\",\"index\":2,\"dismissed\":2},{\"phase\":\"click_bottom_tab\",\"index\":3,\"label\":\"去开启 com.xunmeng.pinduoduo:id\\\/pdd\",\"x\":0.7375,\"y\":0.90593433,\"success\":true,\"message\":\"dispatchGesture tap sent (normalized=0.738,0.906 px=1062,2870 screen=14; reactiveDismissedBeforeAction=2",
+  "durationMs": 25150,
+  "usedCoordinate": true,
+  "entryAliases": [
+    "发帖",
+    "发布",
+    "创作",
+    "写",
+    "加号",
+    "+"
+  ],
+  "skillFile": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_candidates\/com.xunmeng.pinduoduo\/patched.command.1779380954432.json",
+  "createdAt": 1779380982290
+}

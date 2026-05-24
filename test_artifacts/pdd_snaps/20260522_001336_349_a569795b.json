@@ -1,0 +1,1368 @@
+{
+  "schemaVersion": 1,
+  "kind": "ui_state_snapshot",
+  "id": "ui_snapshot_1779380016350",
+  "source": "accessibility_auto",
+  "note": "TYPE_WINDOW_CONTENT_CHANGED",
+  "screenshotPath": null,
+  "screenshotSha256": null,
+  "visualHash": null,
+  "screenshotSizeBytes": null,
+  "appPackage": "com.xunmeng.pinduoduo",
+  "windowClassName": "android.widget.FrameLayout",
+  "screenKey": "a569795b",
+  "relatedSkillId": null,
+  "relatedActionType": null,
+  "capability": {
+    "nodeReadability": "A",
+    "inputCapability": "CUSTOM_IME",
+    "verificationCapability": "HIGH",
+    "coordinateFallback": "AVAILABLE",
+    "serviceState": "CONNECTED",
+    "reason": "nodes=104, textLike=63, clickable=34, editable=0, scrollable=1, customIme=true"
+  },
+  "state": {
+    "appPackage": "com.xunmeng.pinduoduo",
+    "windowClassName": "android.widget.FrameLayout",
+    "screenWidth": 1440,
+    "screenHeight": 3168,
+    "timestamp": 1779380016348,
+    "nodeCount": 104,
+    "nodesStored": 45,
+    "nodesStorage": "compact_important_nodes_only",
+    "nodes": [
+      {
+        "nodeId": "8_20_1160_336_1392_512",
+        "packageName": "com.xunmeng.pinduoduo",
+        "text": null,
+        "contentDesc": null,
+        "resourceId": "com.xunmeng.pinduoduo:id\/pdd",
+        "className": "android.widget.LinearLayout",
+        "bounds": {
+          "left": 1160,
+          "top": 336,
+          "right": 1392,
+          "bottom": 512
+        },
+        "clickable": true,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 8,
+        "parentRoleHint": "android.widget.RelativeLayout"
+      },
+      {
+        "nodeId": "11_17_400_381_656_467",
+        "packageName": "com.xunmeng.pinduoduo",
+        "text": "最近搜索",
+        "contentDesc": null,
+        "resourceId": null,
+        "className": "android.widget.TextView",
+        "bounds": {
+          "left": 400,
+          "top": 381,
+          "right": 656,
+          "bottom": 467
+        },
+        "clickable": false,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 11,
+        "parentRoleHint": "m.a$c"
+      },
+      {
+        "nodeId": "9_25_0_512_1440_688",
+        "packageName": "com.xunmeng.pinduoduo",
+        "text": null,
+        "contentDesc": null,
+        "resourceId": "com.xunmeng.pinduoduo:id\/pdd",
+        "className": "android.view.ViewGroup",
+        "bounds": {
+          "left": 0,
+          "top": 512,
+          "right": 1440,
+          "bottom": 688
+        },
+        "clickable": true,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 9,
+        "parentRoleHint": "android.view.ViewGroup"
+      },
+      {
+        "nodeId": "5_99_420_1294_1020_1450",
+        "packageName": "com.xunmeng.pinduoduo",
+        "text": null,
+        "contentDesc": null,
+        "resourceId": "com.xunmeng.pinduoduo:id\/pdd",
+        "className": "android.view.View",
+        "bounds": {
+          "left": 420,
+          "top": 1294,
+          "right": 1020,
+          "bottom": 1450
+        },
+        "clickable": true,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 5,
+        "parentRoleHint": "android.view.ViewGroup"
+      },
+      {
+        "nodeId": "9_29_0_688_1440_3104",
+        "packageName": "com.xunmeng.pinduoduo",
+        "text": null,
+        "contentDesc": null,
+        "resourceId": "com.xunmeng.pinduoduo:id\/pdd",
+        "className": "androidx.recyclerview.widget.RecyclerView",
+        "bounds": {
+          "left": 0,
+          "top": 688,
+          "right": 1440,
+          "bottom": 3104
+        },
+        "clickable": false,
+        "editable": false,
+        "scrollable": true,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 9,
+        "parentRoleHint": "android.view.ViewGroup"
+      },
+      {
+        "nodeId": "10_14_0_336_352_512",
+        "packageName": "com.xunmeng.pinduoduo",
+        "text": null,
+        "contentDesc": null,
+        "resourceId": null,
+        "className": "m.a$c",
+        "bounds": {
+          "left": 0,
+          "top": 336,
+          "right": 352,
+          "bottom": 512
+        },
+        "clickable": true,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": true,
+        "depth": 10,
+        "parentRoleHint": "android.widget.LinearLayout"
+      },
+      {
+        "nodeId": "10_16_352_336_704_512",
+        "packageName": "com.xunmeng.pinduoduo",
+        "text": null,
+        "contentDesc": null,
+        "resourceId": null,
+        "className": "m.a$c",
+        "bounds": {
+          "left": 352,
+          "top": 336,
+          "right": 704,
+          "bottom": 512
+        },
+        "clickable": true,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 10,
+        "parentRoleHint": "android.widget.LinearLayout"
+      },
+      {
+        "nodeId": "10_18_704_336_1056_512",
+        "packageName": "com.xunmeng.pinduoduo",
+        "text": null,
+        "contentDesc": null,
+        "resourceId": null,
+        "className": "m.a$c",
+        "bounds": {
+          "left": 704,
+          "top": 336,
+          "right": 1056,
+          "bottom": 512
+        },
+        "clickable": true,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 10,
+        "parentRoleHint": "android.widget.LinearLayout"
+      },
+      {
+        "nodeId": "10_30_4_692_359_1049",
+        "packageName": "com.xunmeng.pinduoduo",
+        "text": null,
+        "contentDesc": null,
+        "resourceId": null,
+        "className": "android.view.ViewGroup",
+        "bounds": {
+          "left": 4,
+          "top": 692,
+          "right": 359,
+          "bottom": 1049
+        },
+        "clickable": true,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 10,
+        "parentRoleHint": "androidx.recyclerview.widget.RecyclerView"
+      },
+      {
+        "nodeId": "10_33_363_692_718_1049",
+        "packageName": "com.xunmeng.pinduoduo",
+        "text": null,
+        "contentDesc": null,
+        "resourceId": null,
+        "className": "android.view.ViewGroup",
+        "bounds": {
+          "left": 363,
+          "top": 692,
+          "right": 718,
+          "bottom": 1049
+        },
+        "clickable": true,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 10,
+        "parentRoleHint": "androidx.recyclerview.widget.RecyclerView"
+      },
+      {
+        "nodeId": "10_36_722_692_1077_1049",
+        "packageName": "com.xunmeng.pinduoduo",
+        "text": null,
+        "contentDesc": null,
+        "resourceId": null,
+        "className": "android.view.ViewGroup",
+        "bounds": {
+          "left": 722,
+          "top": 692,
+          "right": 1077,
+          "bottom": 1049
+        },
+        "clickable": true,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 10,
+        "parentRoleHint": "androidx.recyclerview.widget.RecyclerView"
+      },
+      {
+        "nodeId": "10_38_1081_692_1436_1049",
+        "packageName": "com.xunmeng.pinduoduo",
+        "text": null,
+        "contentDesc": null,
+        "resourceId": null,
+        "className": "android.view.ViewGroup",
+        "bounds": {
+          "left": 1081,
+          "top": 692,
+          "right": 1436,
+          "bottom": 1049
+        },
+        "clickable": true,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 10,
+        "parentRoleHint": "androidx.recyclerview.widget.RecyclerView"
+      },
+      {
+        "nodeId": "10_40_4_1053_359_1410",
+        "packageName": "com.xunmeng.pinduoduo",
+        "text": null,
+        "contentDesc": null,
+        "resourceId": null,
+        "className": "android.view.ViewGroup",
+        "bounds": {
+          "left": 4,
+          "top": 1053,
+          "right": 359,
+          "bottom": 1410
+        },
+        "clickable": true,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 10,
+        "parentRoleHint": "androidx.recyclerview.widget.RecyclerView"
+      },
+      {
+        "nodeId": "10_43_363_1053_718_1410",
+        "packageName": "com.xunmeng.pinduoduo",
+        "text": null,
+        "contentDesc": null,
+        "resourceId": null,
+        "className": "android.view.ViewGroup",
+        "bounds": {
+          "left": 363,
+          "top": 1053,
+          "right": 718,
+          "bottom": 1410
+        },
+        "clickable": true,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 10,
+        "parentRoleHint": "androidx.recyclerview.widget.RecyclerView"
+      },
+      {
+        "nodeId": "10_46_722_1053_1077_1410",
+        "packageName": "com.xunmeng.pinduoduo",
+        "text": null,
+        "contentDesc": null,
+        "resourceId": null,
+        "className": "android.view.ViewGroup",
+        "bounds": {
+          "left": 722,
+          "top": 1053,
+          "right": 1077,
+          "bottom": 1410
+        },
+        "clickable": true,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 10,
+        "parentRoleHint": "androidx.recyclerview.widget.RecyclerView"
+      },
+      {
+        "nodeId": "10_49_1081_1053_1436_1410",
+        "packageName": "com.xunmeng.pinduoduo",
+        "text": null,
+        "contentDesc": null,
+        "resourceId": null,
+        "className": "android.view.ViewGroup",
+        "bounds": {
+          "left": 1081,
+          "top": 1053,
+          "right": 1436,
+          "bottom": 1410
+        },
+        "clickable": true,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 10,
+        "parentRoleHint": "androidx.recyclerview.widget.RecyclerView"
+      },
+      {
+        "nodeId": "10_52_4_1414_359_1771",
+        "packageName": "com.xunmeng.pinduoduo",
+        "text": null,
+        "contentDesc": null,
+        "resourceId": null,
+        "className": "android.view.ViewGroup",
+        "bounds": {
+          "left": 4,
+          "top": 1414,
+          "right": 359,
+          "bottom": 1771
+        },
+        "clickable": true,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 10,
+        "parentRoleHint": "androidx.recyclerview.widget.RecyclerView"
+      },
+      {
+        "nodeId": "10_55_363_1414_718_1771",
+        "packageName": "com.xunmeng.pinduoduo",
+        "text": null,
+        "contentDesc": null,
+        "resourceId": null,
+        "className": "android.view.ViewGroup",
+        "bounds": {
+          "left": 363,
+          "top": 1414,
+          "right": 718,
+          "bottom": 1771
+        },
+        "clickable": true,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 10,
+        "parentRoleHint": "androidx.recyclerview.widget.RecyclerView"
+      },
+      {
+        "nodeId": "10_58_722_1414_1077_1771",
+        "packageName": "com.xunmeng.pinduoduo",
+        "text": null,
+        "contentDesc": null,
+        "resourceId": null,
+        "className": "android.view.ViewGroup",
+        "bounds": {
+          "left": 722,
+          "top": 1414,
+          "right": 1077,
+          "bottom": 1771
+        },
+        "clickable": true,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 10,
+        "parentRoleHint": "androidx.recyclerview.widget.RecyclerView"
+      },
+      {
+        "nodeId": "10_60_1081_1414_1436_1771",
+        "packageName": "com.xunmeng.pinduoduo",
+        "text": null,
+        "contentDesc": null,
+        "resourceId": null,
+        "className": "android.view.ViewGroup",
+        "bounds": {
+          "left": 1081,
+          "top": 1414,
+          "right": 1436,
+          "bottom": 1771
+        },
+        "clickable": true,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 10,
+        "parentRoleHint": "androidx.recyclerview.widget.RecyclerView"
+      },
+      {
+        "nodeId": "10_62_4_1775_359_2132",
+        "packageName": "com.xunmeng.pinduoduo",
+        "text": null,
+        "contentDesc": null,
+        "resourceId": null,
+        "className": "android.view.ViewGroup",
+        "bounds": {
+          "left": 4,
+          "top": 1775,
+          "right": 359,
+          "bottom": 2132
+        },
+        "clickable": true,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 10,
+        "parentRoleHint": "androidx.recyclerview.widget.RecyclerView"
+      },
+      {
+        "nodeId": "10_64_363_1775_718_2132",
+        "packageName": "com.xunmeng.pinduoduo",
+        "text": null,
+        "contentDesc": null,
+        "resourceId": null,
+        "className": "android.view.ViewGroup",
+        "bounds": {
+          "left": 363,
+          "top": 1775,
+          "right": 718,
+          "bottom": 2132
+        },
+        "clickable": true,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 10,
+        "parentRoleHint": "androidx.recyclerview.widget.RecyclerView"
+      },
+      {
+        "nodeId": "10_66_722_1775_1077_2132",
+        "packageName": "com.xunmeng.pinduoduo",
+        "text": null,
+        "contentDesc": null,
+        "resourceId": null,
+        "className": "android.view.ViewGroup",
+        "bounds": {
+          "left": 722,
+          "top": 1775,
+          "right": 1077,
+          "bottom": 2132
+        },
+        "clickable": true,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 10,
+        "parentRoleHint": "androidx.recyclerview.widget.RecyclerView"
+      },
+      {
+        "nodeId": "10_68_1081_1775_1436_2132",
+        "packageName": "com.xunmeng.pinduoduo",
+        "text": null,
+        "contentDesc": null,
+        "resourceId": null,
+        "className": "android.view.ViewGroup",
+        "bounds": {
+          "left": 1081,
+          "top": 1775,
+          "right": 1436,
+          "bottom": 2132
+        },
+        "clickable": true,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 10,
+        "parentRoleHint": "androidx.recyclerview.widget.RecyclerView"
+      },
+      {
+        "nodeId": "10_70_4_2136_359_2493",
+        "packageName": "com.xunmeng.pinduoduo",
+        "text": null,
+        "contentDesc": null,
+        "resourceId": null,
+        "className": "android.view.ViewGroup",
+        "bounds": {
+          "left": 4,
+          "top": 2136,
+          "right": 359,
+          "bottom": 2493
+        },
+        "clickable": true,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 10,
+        "parentRoleHint": "androidx.recyclerview.widget.RecyclerView"
+      },
+      {
+        "nodeId": "10_73_363_2136_718_2493",
+        "packageName": "com.xunmeng.pinduoduo",
+        "text": null,
+        "contentDesc": null,
+        "resourceId": null,
+        "className": "android.view.ViewGroup",
+        "bounds": {
+          "left": 363,
+          "top": 2136,
+          "right": 718,
+          "bottom": 2493
+        },
+        "clickable": true,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 10,
+        "parentRoleHint": "androidx.recyclerview.widget.RecyclerView"
+      },
+      {
+        "nodeId": "10_75_722_2136_1077_2493",
+        "packageName": "com.xunmeng.pinduoduo",
+        "text": null,
+        "contentDesc": null,
+        "resourceId": null,
+        "className": "android.view.ViewGroup",
+        "bounds": {
+          "left": 722,
+          "top": 2136,
+          "right": 1077,
+          "bottom": 2493
+        },
+        "clickable": true,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 10,
+        "parentRoleHint": "androidx.recyclerview.widget.RecyclerView"
+      },
+      {
+        "nodeId": "10_77_1081_2136_1436_2493",
+        "packageName": "com.xunmeng.pinduoduo",
+        "text": null,
+        "contentDesc": null,
+        "resourceId": null,
+        "className": "android.view.ViewGroup",
+        "bounds": {
+          "left": 1081,
+          "top": 2136,
+          "right": 1436,
+          "bottom": 2493
+        },
+        "clickable": true,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 10,
+        "parentRoleHint": "androidx.recyclerview.widget.RecyclerView"
+      },
+      {
+        "nodeId": "10_79_4_2497_359_2854",
+        "packageName": "com.xunmeng.pinduoduo",
+        "text": null,
+        "contentDesc": null,
+        "resourceId": null,
+        "className": "android.view.ViewGroup",
+        "bounds": {
+          "left": 4,
+          "top": 2497,
+          "right": 359,
+          "bottom": 2854
+        },
+        "clickable": true,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 10,
+        "parentRoleHint": "androidx.recyclerview.widget.RecyclerView"
+      },
+      {
+        "nodeId": "10_81_363_2497_718_2854",
+        "packageName": "com.xunmeng.pinduoduo",
+        "text": null,
+        "contentDesc": null,
+        "resourceId": null,
+        "className": "android.view.ViewGroup",
+        "bounds": {
+          "left": 363,
+          "top": 2497,
+          "right": 718,
+          "bottom": 2854
+        },
+        "clickable": true,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 10,
+        "parentRoleHint": "androidx.recyclerview.widget.RecyclerView"
+      },
+      {
+        "nodeId": "10_83_722_2497_1077_2854",
+        "packageName": "com.xunmeng.pinduoduo",
+        "text": null,
+        "contentDesc": null,
+        "resourceId": null,
+        "className": "android.view.ViewGroup",
+        "bounds": {
+          "left": 722,
+          "top": 2497,
+          "right": 1077,
+          "bottom": 2854
+        },
+        "clickable": true,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 10,
+        "parentRoleHint": "androidx.recyclerview.widget.RecyclerView"
+      },
+      {
+        "nodeId": "10_85_1081_2497_1436_2854",
+        "packageName": "com.xunmeng.pinduoduo",
+        "text": null,
+        "contentDesc": null,
+        "resourceId": null,
+        "className": "android.view.ViewGroup",
+        "bounds": {
+          "left": 1081,
+          "top": 2497,
+          "right": 1436,
+          "bottom": 2854
+        },
+        "clickable": true,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 10,
+        "parentRoleHint": "androidx.recyclerview.widget.RecyclerView"
+      },
+      {
+        "nodeId": "10_87_4_2858_359_3104",
+        "packageName": "com.xunmeng.pinduoduo",
+        "text": null,
+        "contentDesc": null,
+        "resourceId": null,
+        "className": "android.view.ViewGroup",
+        "bounds": {
+          "left": 4,
+          "top": 2858,
+          "right": 359,
+          "bottom": 3104
+        },
+        "clickable": true,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 10,
+        "parentRoleHint": "androidx.recyclerview.widget.RecyclerView"
+      },
+      {
+        "nodeId": "10_89_363_2858_718_3104",
+        "packageName": "com.xunmeng.pinduoduo",
+        "text": null,
+        "contentDesc": null,
+        "resourceId": null,
+        "className": "android.view.ViewGroup",
+        "bounds": {
+          "left": 363,
+          "top": 2858,
+          "right": 718,
+          "bottom": 3104
+        },
+        "clickable": true,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 10,
+        "parentRoleHint": "androidx.recyclerview.widget.RecyclerView"
+      },
+      {
+        "nodeId": "10_91_722_2858_1077_3104",
+        "packageName": "com.xunmeng.pinduoduo",
+        "text": null,
+        "contentDesc": null,
+        "resourceId": null,
+        "className": "android.view.ViewGroup",
+        "bounds": {
+          "left": 722,
+          "top": 2858,
+          "right": 1077,
+          "bottom": 3104
+        },
+        "clickable": true,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 10,
+        "parentRoleHint": "androidx.recyclerview.widget.RecyclerView"
+      },
+      {
+        "nodeId": "10_93_1081_2858_1436_3104",
+        "packageName": "com.xunmeng.pinduoduo",
+        "text": null,
+        "contentDesc": null,
+        "resourceId": null,
+        "className": "android.view.ViewGroup",
+        "bounds": {
+          "left": 1081,
+          "top": 2858,
+          "right": 1436,
+          "bottom": 3104
+        },
+        "clickable": true,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 10,
+        "parentRoleHint": "androidx.recyclerview.widget.RecyclerView"
+      },
+      {
+        "nodeId": "2_2_0_0_1440_3104",
+        "packageName": "com.xunmeng.pinduoduo",
+        "text": null,
+        "contentDesc": null,
+        "resourceId": "android:id\/content",
+        "className": "android.widget.FrameLayout",
+        "bounds": {
+          "left": 0,
+          "top": 0,
+          "right": 1440,
+          "bottom": 3104
+        },
+        "clickable": false,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 2,
+        "parentRoleHint": "android.widget.LinearLayout"
+      },
+      {
+        "nodeId": "4_4_0_0_1440_3104",
+        "packageName": "com.xunmeng.pinduoduo",
+        "text": null,
+        "contentDesc": null,
+        "resourceId": "com.xunmeng.pinduoduo:id\/pdd",
+        "className": "android.widget.FrameLayout",
+        "bounds": {
+          "left": 0,
+          "top": 0,
+          "right": 1440,
+          "bottom": 3104
+        },
+        "clickable": false,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 4,
+        "parentRoleHint": "android.view.ViewGroup"
+      },
+      {
+        "nodeId": "5_5_0_0_1440_3104",
+        "packageName": "com.xunmeng.pinduoduo",
+        "text": null,
+        "contentDesc": null,
+        "resourceId": "com.xunmeng.pinduoduo:id\/pdd",
+        "className": "android.view.SurfaceView",
+        "bounds": {
+          "left": 0,
+          "top": 0,
+          "right": 1440,
+          "bottom": 3104
+        },
+        "clickable": false,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 5,
+        "parentRoleHint": "android.widget.FrameLayout"
+      },
+      {
+        "nodeId": "4_7_0_0_1440_3104",
+        "packageName": "com.xunmeng.pinduoduo",
+        "text": null,
+        "contentDesc": null,
+        "resourceId": "com.xunmeng.pinduoduo:id\/pdd",
+        "className": "android.widget.FrameLayout",
+        "bounds": {
+          "left": 0,
+          "top": 0,
+          "right": 1440,
+          "bottom": 3104
+        },
+        "clickable": false,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 4,
+        "parentRoleHint": "android.view.ViewGroup"
+      },
+      {
+        "nodeId": "4_8_0_0_1440_3104",
+        "packageName": "com.xunmeng.pinduoduo",
+        "text": null,
+        "contentDesc": null,
+        "resourceId": "com.xunmeng.pinduoduo:id\/pdd",
+        "className": "android.view.ViewGroup",
+        "bounds": {
+          "left": 0,
+          "top": 0,
+          "right": 1440,
+          "bottom": 3104
+        },
+        "clickable": false,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 4,
+        "parentRoleHint": "android.view.ViewGroup"
+      },
+      {
+        "nodeId": "4_95_0_0_1440_160",
+        "packageName": "com.xunmeng.pinduoduo",
+        "text": null,
+        "contentDesc": null,
+        "resourceId": "com.xunmeng.pinduoduo:id\/pdd",
+        "className": "android.view.View",
+        "bounds": {
+          "left": 0,
+          "top": 0,
+          "right": 1440,
+          "bottom": 160
+        },
+        "clickable": false,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 4,
+        "parentRoleHint": "android.view.ViewGroup"
+      },
+      {
+        "nodeId": "4_97_0_304_1440_2192",
+        "packageName": "com.xunmeng.pinduoduo",
+        "text": null,
+        "contentDesc": null,
+        "resourceId": "com.xunmeng.pinduoduo:id\/pdd",
+        "className": "android.view.ViewGroup",
+        "bounds": {
+          "left": 0,
+          "top": 304,
+          "right": 1440,
+          "bottom": 2192
+        },
+        "clickable": false,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 4,
+        "parentRoleHint": "android.view.ViewGroup"
+      },
+      {
+        "nodeId": "6_10_0_336_1440_3104",
+        "packageName": "com.xunmeng.pinduoduo",
+        "text": null,
+        "contentDesc": null,
+        "resourceId": "com.xunmeng.pinduoduo:id\/pdd",
+        "className": "android.widget.RelativeLayout",
+        "bounds": {
+          "left": 0,
+          "top": 336,
+          "right": 1440,
+          "bottom": 3104
+        },
+        "clickable": false,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 6,
+        "parentRoleHint": "android.view.ViewGroup"
+      },
+      {
+        "nodeId": "7_11_0_336_1440_512",
+        "packageName": "com.xunmeng.pinduoduo",
+        "text": null,
+        "contentDesc": null,
+        "resourceId": "com.xunmeng.pinduoduo:id\/pdd",
+        "className": "android.widget.RelativeLayout",
+        "bounds": {
+          "left": 0,
+          "top": 336,
+          "right": 1440,
+          "bottom": 512
+        },
+        "clickable": false,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 7,
+        "parentRoleHint": "android.widget.RelativeLayout"
+      }
+    ],
+    "eventsSinceLastState": [
+      {
+        "eventType": "TYPE_WINDOW_CONTENT_CHANGED",
+        "packageName": "com.xunmeng.pinduoduo",
+        "className": "android.widget.FrameLayout",
+        "text": null,
+        "timestamp": 1779380013096
+      },
+      {
+        "eventType": "TYPE_WINDOW_CONTENT_CHANGED",
+        "packageName": "com.xunmeng.pinduoduo",
+        "className": "android.widget.FrameLayout",
+        "text": null,
+        "timestamp": 1779380013195
+      },
+      {
+        "eventType": "TYPE_WINDOW_CONTENT_CHANGED",
+        "packageName": "com.xunmeng.pinduoduo",
+        "className": "android.widget.FrameLayout",
+        "text": null,
+        "timestamp": 1779380013297
+      },
+      {
+        "eventType": "TYPE_WINDOW_CONTENT_CHANGED",
+        "packageName": "com.xunmeng.pinduoduo",
+        "className": "android.widget.FrameLayout",
+        "text": null,
+        "timestamp": 1779380013396
+      },
+      {
+        "eventType": "TYPE_WINDOW_CONTENT_CHANGED",
+        "packageName": "com.xunmeng.pinduoduo",
+        "className": "android.widget.FrameLayout",
+        "text": null,
+        "timestamp": 1779380013497
+      },
+      {
+        "eventType": "TYPE_WINDOW_CONTENT_CHANGED",
+        "packageName": "com.xunmeng.pinduoduo",
+        "className": "android.widget.FrameLayout",
+        "text": null,
+        "timestamp": 1779380013597
+      },
+      {
+        "eventType": "TYPE_WINDOW_CONTENT_CHANGED",
+        "packageName": "com.xunmeng.pinduoduo",
+        "className": "android.widget.FrameLayout",
+        "text": null,
+        "timestamp": 1779380013697
+      },
+      {
+        "eventType": "TYPE_WINDOW_CONTENT_CHANGED",
+        "packageName": "com.xunmeng.pinduoduo",
+        "className": "android.widget.FrameLayout",
+        "text": null,
+        "timestamp": 1779380013796
+      },
+      {
+        "eventType": "TYPE_WINDOW_CONTENT_CHANGED",
+        "packageName": "com.xunmeng.pinduoduo",
+        "className": "android.widget.FrameLayout",
+        "text": null,
+        "timestamp": 1779380013897
+      },
+      {
+        "eventType": "TYPE_WINDOW_CONTENT_CHANGED",
+        "packageName": "com.xunmeng.pinduoduo",
+        "className": "android.widget.FrameLayout",
+        "text": null,
+        "timestamp": 1779380013998
+      },
+      {
+        "eventType": "TYPE_WINDOW_CONTENT_CHANGED",
+        "packageName": "com.xunmeng.pinduoduo",
+        "className": "android.widget.FrameLayout",
+        "text": null,
+        "timestamp": 1779380014946
+      },
+      {
+        "eventType": "TYPE_WINDOW_CONTENT_CHANGED",
+        "packageName": "com.xunmeng.pinduoduo",
+        "className": "android.widget.FrameLayout",
+        "text": null,
+        "timestamp": 1779380015046
+      },
+      {
+        "eventType": "TYPE_WINDOW_CONTENT_CHANGED",
+        "packageName": "com.xunmeng.pinduoduo",
+        "className": "android.widget.FrameLayout",
+        "text": null,
+        "timestamp": 1779380015162
+      },
+      {
+        "eventType": "TYPE_WINDOW_CONTENT_CHANGED",
+        "packageName": "com.xunmeng.pinduoduo",
+        "className": "android.widget.FrameLayout",
+        "text": null,
+        "timestamp": 1779380015262
+      },
+      {
+        "eventType": "TYPE_WINDOW_CONTENT_CHANGED",
+        "packageName": "com.xunmeng.pinduoduo",
+        "className": "android.widget.FrameLayout",
+        "text": null,
+        "timestamp": 1779380015363
+      },
+      {
+        "eventType": "TYPE_WINDOW_CONTENT_CHANGED",
+        "packageName": "com.xunmeng.pinduoduo",
+        "className": "android.widget.FrameLayout",
+        "text": null,
+        "timestamp": 1779380015461
+      },
+      {
+        "eventType": "TYPE_WINDOW_CONTENT_CHANGED",
+        "packageName": "com.xunmeng.pinduoduo",
+        "className": "android.widget.FrameLayout",
+        "text": null,
+        "timestamp": 1779380015562
+      },
+      {
+        "eventType": "TYPE_WINDOW_CONTENT_CHANGED",
+        "packageName": "com.xunmeng.pinduoduo",
+        "className": "android.widget.FrameLayout",
+        "text": null,
+        "timestamp": 1779380015676
+      },
+      {
+        "eventType": "TYPE_WINDOW_CONTENT_CHANGED",
+        "packageName": "com.xunmeng.pinduoduo",
+        "className": "android.widget.FrameLayout",
+        "text": null,
+        "timestamp": 1779380015793
+      },
+      {
+        "eventType": "TYPE_WINDOW_CONTENT_CHANGED",
+        "packageName": "com.xunmeng.pinduoduo",
+        "className": "android.widget.FrameLayout",
+        "text": null,
+        "timestamp": 1779380015892
+      }
+    ]
+  },
+  "summary": {
+    "nodeCount": 104,
+    "clickableCount": 34,
+    "editableCount": 0,
+    "scrollableCount": 1,
+    "labels": [
+      "android:id\/content",
+      "com.xunmeng.pinduoduo:id\/pdd",
+      "com.xunmeng.pinduoduo:id\/pdd",
+      "com.xunmeng.pinduoduo:id\/pdd",
+      "com.xunmeng.pinduoduo:id\/pdd",
+      "com.xunmeng.pinduoduo:id\/pdd",
+      "com.xunmeng.pinduoduo:id\/pdd",
+      "com.xunmeng.pinduoduo:id\/pdd",
+      "我的相册",
+      "最近搜索",
+      "历史浏览",
+      "com.xunmeng.pinduoduo:id\/pdd",
+      "收起 com.xunmeng.pinduoduo:id\/pdd",
+      "com.xunmeng.pinduoduo:id\/pdd",
+      "com.xunmeng.pinduoduo:id\/pdd",
+      "com.xunmeng.pinduoduo:id\/pdd",
+      "最近项目 com.xunmeng.pinduoduo:id\/pdd",
+      "com.xunmeng.pinduoduo:id\/pdd",
+      "com.xunmeng.pinduoduo:id\/pdd",
+      "com.xunmeng.pinduoduo:id\/pdd",
+      "00:04 com.xunmeng.pinduoduo:id\/pdd",
+      "com.xunmeng.pinduoduo:id\/pdd",
+      "00:04 com.xunmeng.pinduoduo:id\/pdd",
+      "com.xunmeng.pinduoduo:id\/pdd",
+      "com.xunmeng.pinduoduo:id\/pdd",
+      "com.xunmeng.pinduoduo:id\/pdd",
+      "00:04 com.xunmeng.pinduoduo:id\/pdd",
+      "com.xunmeng.pinduoduo:id\/pdd",
+      "00:04 com.xunmeng.pinduoduo:id\/pdd",
+      "com.xunmeng.pinduoduo:id\/pdd",
+      "00:04 com.xunmeng.pinduoduo:id\/pdd",
+      "com.xunmeng.pinduoduo:id\/pdd",
+      "00:04 com.xunmeng.pinduoduo:id\/pdd",
+      "com.xunmeng.pinduoduo:id\/pdd",
+      "00:04 com.xunmeng.pinduoduo:id\/pdd",
+      "com.xunmeng.pinduoduo:id\/pdd",
+      "00:04 com.xunmeng.pinduoduo:id\/pdd",
+      "com.xunmeng.pinduoduo:id\/pdd",
+      "com.xunmeng.pinduoduo:id\/pdd",
+      "com.xunmeng.pinduoduo:id\/pdd",
+      "com.xunmeng.pinduoduo:id\/pdd",
+      "com.xunmeng.pinduoduo:id\/pdd",
+      "com.xunmeng.pinduoduo:id\/pdd",
+      "com.xunmeng.pinduoduo:id\/pdd",
+      "119:19 com.xunmeng.pinduoduo:id\/pdd",
+      "com.xunmeng.pinduoduo:id\/pdd",
+      "com.xunmeng.pinduoduo:id\/pdd",
+      "com.xunmeng.pinduoduo:id\/pdd",
+      "com.xunmeng.pinduoduo:id\/pdd",
+      "com.xunmeng.pinduoduo:id\/pdd",
+      "com.xunmeng.pinduoduo:id\/pdd",
+      "com.xunmeng.pinduoduo:id\/pdd",
+      "com.xunmeng.pinduoduo:id\/pdd",
+      "com.xunmeng.pinduoduo:id\/pdd",
+      "com.xunmeng.pinduoduo:id\/pdd",
+      "com.xunmeng.pinduoduo:id\/pdd",
+      "com.xunmeng.pinduoduo:id\/pdd",
+      "com.xunmeng.pinduoduo:id\/pdd",
+      "点击按钮 - 权限管理 - 允许摄像头权限 即可进行自动识别 com.xunmeng.pinduoduo:id\/pdd",
+      "com.xunmeng.pinduoduo:id\/pdd",
+      "com.xunmeng.pinduoduo:id\/pdd",
+      "开启相机权限 com.xunmeng.pinduoduo:id\/pdd",
+      "android:id\/navigationBarBackground"
+    ],
+    "bottomCandidates": [
+      {
+        "label": "",
+        "bounds": {
+          "left": 4,
+          "top": 2136,
+          "right": 359,
+          "bottom": 2493
+        },
+        "clickable": true
+      },
+      {
+        "label": "",
+        "bounds": {
+          "left": 4,
+          "top": 2497,
+          "right": 359,
+          "bottom": 2854
+        },
+        "clickable": true
+      },
+      {
+        "label": "",
+        "bounds": {
+          "left": 4,
+          "top": 2858,
+          "right": 359,
+          "bottom": 3104
+        },
+        "clickable": true
+      },
+      {
+        "label": "119:19 com.xunmeng.pinduoduo:id\/pdd",
+        "bounds": {
+          "left": 160,
+          "top": 2397,
+          "right": 327,
+          "bottom": 2461
+        },
+        "clickable": false
+      },
+      {
+        "label": "",
+        "bounds": {
+          "left": 363,
+          "top": 2136,
+          "right": 718,
+          "bottom": 2493
+        },
+        "clickable": true
+      },
+      {
+        "label": "",
+        "bounds": {
+          "left": 363,
+          "top": 2497,
+          "right": 718,
+          "bottom": 2854
+        },
+        "clickable": true
+      },
+      {
+        "label": "",
+        "bounds": {
+          "left": 363,
+          "top": 2858,
+          "right": 718,
+          "bottom": 3104
+        },
+        "clickable": true
+      },
+      {
+        "label": "",
+        "bounds": {
+          "left": 722,
+          "top": 2136,
+          "right": 1077,
+          "bottom": 2493
+        },
+        "clickable": true
+      },
+      {
+        "label": "",
+        "bounds": {
+          "left": 722,
+          "top": 2497,
+          "right": 1077,
+          "bottom": 2854
+        },
+        "clickable": true
+      },
+      {
+        "label": "",
+        "bounds": {
+          "left": 722,
+          "top": 2858,
+          "right": 1077,
+          "bottom": 3104
+        },
+        "clickable": true
+      },
+      {
+        "label": "",
+        "bounds": {
+          "left": 1081,
+          "top": 2136,
+          "right": 1436,
+          "bottom": 2493
+        },
+        "clickable": true
+      },
+      {
+        "label": "",
+        "bounds": {
+          "left": 1081,
+          "top": 2497,
+          "right": 1436,
+          "bottom": 2854
+        },
+        "clickable": true
+      }
+    ]
+  },
+  "retentionPolicy": {
+    "fullNodeTreeStored": false,
+    "storedNodeLimit": 45,
+    "storedEventLimit": 20,
+    "longTermKnowledge": "summary + app_ui_graph + assembly\/runtime reports"
+  },
+  "createdAt": 1779380016368
+}

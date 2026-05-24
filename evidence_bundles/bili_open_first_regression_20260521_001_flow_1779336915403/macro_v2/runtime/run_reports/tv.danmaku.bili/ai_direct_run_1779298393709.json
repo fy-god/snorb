@@ -1,0 +1,72 @@
+{
+  "schemaVersion": 1,
+  "kind": "skill_json_ai_direct_run_report",
+  "id": "ai_direct_run_1779298393709",
+  "skillId": "bilibili.search.search_in_app",
+  "appPackage": "tv.danmaku.bili",
+  "instruction": "在哔哩哔哩搜索王老菊并打开第一个视频，必须验证已经进入视频播放页，不能只停在搜索结果页。",
+  "engine": "ai_direct_skill_json",
+  "approvedRequired": false,
+  "status": "SUCCESS_LOW_CONFIDENCE",
+  "message": "Window\/node state changed; Macro atoms completed; reactiveDismissed=14",
+  "durationMs": 15289,
+  "usedCoordinate": true,
+  "details": {
+    "macroSkillId": "bilibili.search.search_in_app",
+    "atomTrace": [
+      {
+        "index": 0,
+        "skillId": "bilibili.open_app",
+        "actionType": "OpenApp",
+        "status": "SUCCESS_MEDIUM_CONFIDENCE",
+        "message": "Bilibili already foreground; skipped launcher root to preserve current surface",
+        "usedCoordinate": false,
+        "details": null
+      },
+      {
+        "index": 1,
+        "skillId": "bilibili.search.open_search_deep_link",
+        "actionType": "OpenBilibiliSearch",
+        "status": "SUCCESS_LOW_CONFIDENCE",
+        "message": "Bilibili search deep link opened for query='王老菊'; ready=false",
+        "usedCoordinate": false,
+        "details": null
+      },
+      {
+        "index": 2,
+        "skillId": "bilibili.search.find_search_input",
+        "actionType": "ResolveElement",
+        "status": "SUCCESS_LOW_CONFIDENCE",
+        "message": "Element resolved by coordinate fallback; reactiveDismissedBeforeAction=2",
+        "usedCoordinate": true,
+        "details": null
+      },
+      {
+        "index": 3,
+        "skillId": "bilibili.search.type_search_query",
+        "actionType": "TypeText",
+        "status": "SUCCESS",
+        "message": "Input node contains text; reactiveDismissedBeforeAction=2",
+        "usedCoordinate": true,
+        "details": null
+      },
+      {
+        "index": 4,
+        "skillId": "bilibili.search.click_search_submit",
+        "actionType": "ClickElement",
+        "status": "SUCCESS_MEDIUM_CONFIDENCE",
+        "message": "Window\/node state changed; ACTION_CLICK performed; reactiveDismissedBeforeAction=2",
+        "usedCoordinate": true,
+        "details": null
+      }
+    ],
+    "reactiveDismissed": 14
+  },
+  "allowSideEffect": true,
+  "params": {
+    "query": "王老菊"
+  },
+  "skillFile": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_candidates\/tv.danmaku.bili\/bilibili.search.search_in_app.json",
+  "previewConfigFile": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/app_config_exports\/tv.danmaku.bili\/app_config_20260521_013258_392.json",
+  "createdAt": 1779298393709
+}

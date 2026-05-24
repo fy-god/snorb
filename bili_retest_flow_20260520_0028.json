@@ -1,0 +1,2971 @@
+﻿{
+  "schemaVersion": 1,
+  "kind": "app_side_ai_direct_instruction_flow_report",
+  "operation": "APP_SIDE_AI_DIRECT_INSTRUCTION",
+  "id": "ai_direct_flow_1779208080325",
+  "instruction": "打开哔哩哔哩搜索王老菊并打开第一个视频",
+  "appPackage": "tv.danmaku.bili",
+  "query": "王老菊",
+  "status": "FAILED_GOAL_UNVERIFIED",
+  "durationMs": 250825,
+  "steps": [
+    {
+      "title": "用户指令进入手机端执行器",
+      "status": "RUNNING",
+      "message": "主输入不再只生成文件：App 将调用 AI，生成可审计 JSON，再由 SkillJsonExecutor 直接执行候选能力。",
+      "path": null,
+      "timestamp": 1779207829500
+    },
+    {
+      "title": "AppUI 图谱已进入决策上下文",
+      "status": "INFO",
+      "message": "已知页面=5，边=5；AI\/模板改写会优先参考入口、底部分屏、输入框和可点击候选。",
+      "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/app_ui_graphs\/tv.danmaku.bili\/graph_candidate.json",
+      "timestamp": 1779207829505,
+      "extra": {
+        "appPackage": "tv.danmaku.bili",
+        "status": "CANDIDATE_EXPLORED",
+        "screenCount": 5,
+        "edgeCount": 5,
+        "screens": [
+          {
+            "screenId": "screen_d97f6a4f",
+            "title": "一键已读",
+            "screenKey": "d97f6a4f",
+            "nodeCount": 26,
+            "clickableCount": 15,
+            "editableCount": 0,
+            "labels": [
+              "tv.danmaku.bili:id\/action_bar_root",
+              "android:id\/content",
+              "一键已读",
+              "菜单",
+              "消息",
+              "极客湾Geekerwan 2小时前  [视频] 拯救者Y900旗舰AI平板上手体验：大屏玩游戏有多爽？",
+              "ETF数据侠 5小时前  [视频] 重仓抄底通信博弈反弹，半导体设备浮盈近50%，是我入市以来做的最好的强烈看好光伏",
+              "嘉宾商学 5小时前  [视频] 智谱唐杰的AI人生",
+              "小Lin说 6小时前  [视频] 小Lin学演戏？张凌赫学投资？｜独家对谈张凌赫",
+              "自然卷阿怪 10小时前  [视频] 摸鱼神器实锤！随时随地都能玩上3A的黑科技！",
+              "长路量价 11小时前  [专栏] 放量光头阳突破后，次日这种开盘全是诱多陷阱",
+              "郑郑得证 13小时前  [专栏] 618红包超级加码！人人都有大红包，20-18",
+              "战国时代_姜汁汽水 16小时前  [视频] 近期热点分析：美债问题，日债问题，利率曲线，利率政策",
+              "科比牢大-擒史皇 昨天 15:50  [视频] 感觉自己压力大的，可以进来看看这期视频（57）",
+              "回复与@",
+              "收到喜欢",
+              "新增粉丝"
+            ],
+            "bottomTabs": [
+              {
+                "index": 0,
+                "label": "长路量价 11小时前  [专栏] 放量光头阳突破后，次日这种开盘全是诱多陷阱",
+                "text": null,
+                "desc": "长路量价 11小时前  [专栏] 放量光头阳突破后，次日这种开盘全是诱多陷阱",
+                "resourceId": null,
+                "class": "android.view.View",
+                "clickable": true,
+                "editable": false,
+                "selected": false,
+                "bounds": "0 2161 1440 2445",
+                "x": 0.5,
+                "y": 0.7269570707070707,
+                "center": {
+                  "x": 0.5,
+                  "y": 0.7269570707070707
+                },
+                "tags": [
+                  "bottom_tab_candidate"
+                ]
+              },
+              {
+                "index": 1,
+                "label": "郑郑得证 13小时前  [专栏] 618红包超级加码！人人都有大红包，20-18",
+                "text": null,
+                "desc": "郑郑得证 13小时前  [专栏] 618红包超级加码！人人都有大红包，20-18",
+                "resourceId": null,
+                "class": "android.view.View",
+                "clickable": true,
+                "editable": false,
+                "selected": false,
+                "bounds": "0 2445 1440 2729",
+                "x": 0.5,
+                "y": 0.8166035353535354,
+                "center": {
+                  "x": 0.5,
+                  "y": 0.8166035353535354
+                },
+                "tags": [
+                  "bottom_tab_candidate"
+                ]
+              },
+              {
+                "index": 2,
+                "label": "战国时代_姜汁汽水 16小时前  [视频] 近期热点分析：美债问题，日债问题，利率曲线，利率政策",
+                "text": null,
+                "desc": "战国时代_姜汁汽水 16小时前  [视频] 近期热点分析：美债问题，日债问题，利率曲线，利率政策",
+                "resourceId": null,
+                "class": "android.view.View",
+                "clickable": true,
+                "editable": false,
+                "selected": false,
+                "bounds": "0 2729 1440 3013",
+                "x": 0.5,
+                "y": 0.90625,
+                "center": {
+                  "x": 0.5,
+                  "y": 0.90625
+                },
+                "tags": [
+                  "bottom_tab_candidate"
+                ]
+              },
+              {
+                "index": 3,
+                "label": "科比牢大-擒史皇 昨天 15:50  [视频] 感觉自己压力大的，可以进来看看这期视频（57）",
+                "text": null,
+                "desc": "科比牢大-擒史皇 昨天 15:50  [视频] 感觉自己压力大的，可以进来看看这期视频（57）",
+                "resourceId": null,
+                "class": "android.view.View",
+                "clickable": true,
+                "editable": false,
+                "selected": false,
+                "bounds": "0 3013 1440 3168",
+                "x": 0.5,
+                "y": 0.9753787878787878,
+                "center": {
+                  "x": 0.5,
+                  "y": 0.9753787878787878
+                },
+                "tags": [
+                  "bottom_tab_candidate"
+                ]
+              }
+            ],
+            "entryCandidates": [
+              {
+                "index": 0,
+                "label": "消息",
+                "text": "消息",
+                "desc": null,
+                "resourceId": null,
+                "class": "android.widget.TextView",
+                "clickable": false,
+                "editable": false,
+                "selected": false,
+                "bounds": "652 208 788 288",
+                "x": 0.5,
+                "y": 0.07828282828282829,
+                "center": {
+                  "x": 0.5,
+                  "y": 0.07828282828282829
+                },
+                "tags": [
+                  "entry_candidate",
+                  "message_entry"
+                ]
+              }
+            ],
+            "inputCandidates": [],
+            "snapshotPath": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_snapshots\/tv.danmaku.bili\/20260519_235101_083_d97f6a4f.json"
+          },
+          {
+            "screenId": "screen_6a7fe7ff",
+            "title": "长路量价",
+            "screenKey": "6a7fe7ff",
+            "nodeCount": 40,
+            "clickableCount": 5,
+            "editableCount": 1,
+            "labels": [
+              "tv.danmaku.bili:id\/action_bar_root",
+              "android:id\/content",
+              "长路量价",
+              "我为什么会收到此类消息 了解更多",
+              "放量光头阳突破后，次日这种开盘全是诱多陷阱",
+              "在股价波动过程中，有很多走势比较明显的强势上涨，但是当你追进去之后，马上这种强势上涨就和你翻脸，变成诱多了。 �放量光头阳突破后，次日这种开盘全是诱多陷阱 而就是这种真假难辨的走势，让很多朋友都陷入亏损的泥潭。但是有很多种比较强势的上涨走势，在当时的上涨过程中，是很不容易区分出来到底是真突破，还是真诱多的。 这个时候就像很多人真总是说我就是以结果推过程一样，就需要后面的结果来证明一下前面的走势了。 什么意思呢？我在前面的文章中反复讲过这个 问题，首先整体的趋势是很重要的，如果...",
+              "11:53",
+              "3:19",
+              "11:47",
+              "再也不用反复坐股市电梯，高位逃顶原来可以这么简单",
+              "在股价波动过程中，有很多朋友不是没有过获利，而是很多人在获利之后，再次获利回吐，把到手的利润亏回去了，让自己在市场中反复做电梯。 �再也不用反复坐股市电梯，高位逃顶原来可以这么简单 为什么会出现这种情况呢？就是因为很多朋友都是在股价上涨过程中，就会以为自己的个股还会上涨，总是怕离场之后踏空，而且很多人还有这么一个习惯，就是宁可没走套住，也不能走了踏空。 这也是为什么很多人总是一直亏损的一个原因，当股价走出来的走势不及预期，那么该离场的时候就要离场，哪怕后面继续上涨了。 而后面...",
+              "昨天 11:53",
+              "发个消息聊聊呗"
+            ],
+            "bottomTabs": [
+              {
+                "index": 0,
+                "label": "",
+                "text": null,
+                "desc": null,
+                "resourceId": null,
+                "class": "android.view.View",
+                "clickable": true,
+                "editable": false,
+                "selected": false,
+                "bounds": "0 2904 184 3096",
+                "x": 0.06388888888888888,
+                "y": 0.946969696969697,
+                "center": {
+                  "x": 0.06388888888888888,
+                  "y": 0.946969696969697
+                },
+                "tags": [
+                  "bottom_tab_candidate"
+                ]
+              },
+              {
+                "index": 1,
+                "label": "",
+                "text": null,
+                "desc": null,
+                "resourceId": null,
+                "class": "android.widget.EditText",
+                "clickable": true,
+                "editable": true,
+                "selected": false,
+                "bounds": "184 2904 1248 3096",
+                "x": 0.49722222222222223,
+                "y": 0.946969696969697,
+                "center": {
+                  "x": 0.49722222222222223,
+                  "y": 0.946969696969697
+                },
+                "tags": [
+                  "bottom_tab_candidate"
+                ]
+              },
+              {
+                "index": 2,
+                "label": "我为什么会收到此类消息 了解更多",
+                "text": "我为什么会收到此类消息 了解更多",
+                "desc": null,
+                "resourceId": null,
+                "class": "android.widget.TextView",
+                "clickable": false,
+                "editable": false,
+                "selected": false,
+                "bounds": "355 2727 1086 2784",
+                "x": 0.5,
+                "y": 0.8696338383838383,
+                "center": {
+                  "x": 0.5,
+                  "y": 0.8696338383838383
+                },
+                "tags": [
+                  "bottom_tab_candidate"
+                ]
+              },
+              {
+                "index": 3,
+                "label": "放量光头阳突破后，次日这种开盘全是诱多陷阱",
+                "text": "放量光头阳突破后，次日这种开盘全是诱多陷阱",
+                "desc": null,
+                "resourceId": null,
+                "class": "android.widget.TextView",
+                "clickable": false,
+                "editable": false,
+                "selected": false,
+                "bounds": "112 2343 1328 2493",
+                "x": 0.5,
+                "y": 0.7632575757575758,
+                "center": {
+                  "x": 0.5,
+                  "y": 0.7632575757575758
+                },
+                "tags": [
+                  "bottom_tab_candidate"
+                ]
+              },
+              {
+                "index": 4,
+                "label": "在股价波动过程中，有很多走势比较明显的强势上涨，但是当你追进去之后，马上这种强势上涨就和你翻脸，变成诱多了。 �放量光头阳突破后，次日这种开盘全是诱多陷阱 而就是这种真假难辨的走势，让很多朋友都陷入亏损的泥潭。但是有很多种比较强势的上涨走势",
+                "text": "在股价波动过程中，有很多走势比较明显的强势上涨，但是当你追进去之后，马上这种强势上涨就和你翻脸，变成诱多了。 �放量光头阳突破后，次日这种开盘全是诱多陷阱 而就是这种真假难辨的走势，让很多朋友都陷入亏损的泥潭。但是有很多种比较强势的上涨走势，在当时的上涨过程中，是很不容易区分出来到底是真突破，还是真诱多的。 这个时候就像很多人真总是说我就是以结果推过程一样，就需要后面的结果来证明一下前面的走势了。 什么意思呢？我在前面的文章中反复讲过这个 问题，首先整体的趋势是很重要的，如果...",
+                "desc": null,
+                "resourceId": null,
+                "class": "android.widget.TextView",
+                "clickable": false,
+                "editable": false,
+                "selected": false,
+                "bounds": "112 2517 1328 2639",
+                "x": 0.5,
+                "y": 0.8137626262626263,
+                "center": {
+                  "x": 0.5,
+                  "y": 0.8137626262626263
+                },
+                "tags": [
+                  "bottom_tab_candidate"
+                ]
+              },
+              {
+                "index": 5,
+                "label": "11:53",
+                "text": "11:53",
+                "desc": null,
+                "resourceId": null,
+                "class": "android.widget.TextView",
+                "clickable": false,
+                "editable": false,
+                "selected": false,
+                "bounds": "128 2174 1312 2231",
+                "x": 0.5,
+                "y": 0.6950757575757576,
+                "center": {
+                  "x": 0.5,
+                  "y": 0.6950757575757576
+                },
+                "tags": [
+                  "bottom_tab_candidate"
+                ]
+              },
+              {
+                "index": 6,
+                "label": "发个消息聊聊呗",
+                "text": "发个消息聊聊呗",
+                "desc": null,
+                "resourceId": null,
+                "class": "android.widget.TextView",
+                "clickable": false,
+                "editable": false,
+                "selected": false,
+                "bounds": "232 2967 1208 3033",
+                "x": 0.5,
+                "y": 0.946969696969697,
+                "center": {
+                  "x": 0.5,
+                  "y": 0.946969696969697
+                },
+                "tags": [
+                  "bottom_tab_candidate"
+                ]
+              },
+              {
+                "index": 7,
+                "label": "",
+                "text": null,
+                "desc": null,
+                "resourceId": null,
+                "class": "android.view.View",
+                "clickable": true,
+                "editable": false,
+                "selected": false,
+                "bounds": "1248 2904 1440 3096",
+                "x": 0.9333333333333333,
+                "y": 0.946969696969697,
+                "center": {
+                  "x": 0.9333333333333333,
+                  "y": 0.946969696969697
+                },
+                "tags": [
+                  "bottom_tab_candidate"
+                ]
+              }
+            ],
+            "entryCandidates": [
+              {
+                "index": 0,
+                "label": "我为什么会收到此类消息 了解更多",
+                "text": "我为什么会收到此类消息 了解更多",
+                "desc": null,
+                "resourceId": null,
+                "class": "android.widget.TextView",
+                "clickable": false,
+                "editable": false,
+                "selected": false,
+                "bounds": "355 2727 1086 2784",
+                "x": 0.5,
+                "y": 0.8696338383838383,
+                "center": {
+                  "x": 0.5,
+                  "y": 0.8696338383838383
+                },
+                "tags": [
+                  "entry_candidate",
+                  "bottom_area",
+                  "message_entry",
+                  "profile_entry"
+                ]
+              },
+              {
+                "index": 1,
+                "label": "发个消息聊聊呗",
+                "text": "发个消息聊聊呗",
+                "desc": null,
+                "resourceId": null,
+                "class": "android.widget.TextView",
+                "clickable": false,
+                "editable": false,
+                "selected": false,
+                "bounds": "232 2967 1208 3033",
+                "x": 0.5,
+                "y": 0.946969696969697,
+                "center": {
+                  "x": 0.5,
+                  "y": 0.946969696969697
+                },
+                "tags": [
+                  "entry_candidate",
+                  "bottom_area",
+                  "message_entry"
+                ]
+              }
+            ],
+            "inputCandidates": [
+              {
+                "index": 0,
+                "label": "",
+                "text": null,
+                "desc": null,
+                "resourceId": null,
+                "class": "android.widget.EditText",
+                "clickable": true,
+                "editable": true,
+                "selected": false,
+                "bounds": "184 2904 1248 3096",
+                "x": 0.49722222222222223,
+                "y": 0.946969696969697,
+                "center": {
+                  "x": 0.49722222222222223,
+                  "y": 0.946969696969697
+                },
+                "tags": [
+                  "input_candidate",
+                  "clickable",
+                  "editable",
+                  "bottom_area"
+                ]
+              }
+            ],
+            "snapshotPath": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_snapshots\/tv.danmaku.bili\/20260519_235107_157_6a7fe7ff.json"
+          },
+          {
+            "screenId": "screen_4bfae062",
+            "title": "郑郑得证",
+            "screenKey": "4bfae062",
+            "nodeCount": 35,
+            "clickableCount": 5,
+            "editableCount": 1,
+            "labels": [
+              "tv.danmaku.bili:id\/action_bar_root",
+              "android:id\/content",
+              "郑郑得证",
+              "618红包超级加码！人人都有大红包，20-18",
+              "618全是大红包，外卖、购物都好用 京东APP嗖→粉丝红包589 美团APP嗖→233233 淘宝APP闪购栏目嗖→233233 小众密令有惊喜，知道的人还不多",
+              "10:00",
+              "9:56",
+              "【手撕球馆】小伙“作死一剪”体育馆3秒碎成渣，半世纪地标直接化为废墟。。。",
+              "昨天 11:24",
+              "618全是大红包，外卖、购物都好用 美团APP嗖→233233 淘宝APP闪购栏目嗖→233233 京东APP嗖→粉丝红包996 小众密令有惊喜，知道的人还不多",
+              "发个消息聊聊呗"
+            ],
+            "bottomTabs": [
+              {
+                "index": 0,
+                "label": "",
+                "text": null,
+                "desc": null,
+                "resourceId": null,
+                "class": "android.view.View",
+                "clickable": true,
+                "editable": false,
+                "selected": false,
+                "bounds": "0 2904 184 3096",
+                "x": 0.06388888888888888,
+                "y": 0.946969696969697,
+                "center": {
+                  "x": 0.06388888888888888,
+                  "y": 0.946969696969697
+                },
+                "tags": [
+                  "bottom_tab_candidate"
+                ]
+              },
+              {
+                "index": 1,
+                "label": "",
+                "text": null,
+                "desc": null,
+                "resourceId": null,
+                "class": "android.widget.EditText",
+                "clickable": true,
+                "editable": true,
+                "selected": false,
+                "bounds": "184 2904 1248 3096",
+                "x": 0.49722222222222223,
+                "y": 0.946969696969697,
+                "center": {
+                  "x": 0.49722222222222223,
+                  "y": 0.946969696969697
+                },
+                "tags": [
+                  "bottom_tab_candidate"
+                ]
+              },
+              {
+                "index": 2,
+                "label": "618红包超级加码！人人都有大红包，20-18",
+                "text": "618红包超级加码！人人都有大红包，20-18",
+                "desc": null,
+                "resourceId": null,
+                "class": "android.widget.TextView",
+                "clickable": false,
+                "editable": false,
+                "selected": false,
+                "bounds": "112 2464 1328 2614",
+                "x": 0.5,
+                "y": 0.8014520202020202,
+                "center": {
+                  "x": 0.5,
+                  "y": 0.8014520202020202
+                },
+                "tags": [
+                  "bottom_tab_candidate"
+                ]
+              },
+              {
+                "index": 3,
+                "label": "618全是大红包，外卖、购物都好用 京东APP嗖→粉丝红包589 美团APP嗖→233233 淘宝APP闪购栏目嗖→233233 小众密令有惊喜，知道的人还不多",
+                "text": "618全是大红包，外卖、购物都好用 京东APP嗖→粉丝红包589 美团APP嗖→233233 淘宝APP闪购栏目嗖→233233 小众密令有惊喜，知道的人还不多",
+                "desc": null,
+                "resourceId": null,
+                "class": "android.widget.TextView",
+                "clickable": false,
+                "editable": false,
+                "selected": false,
+                "bounds": "112 2638 1328 2760",
+                "x": 0.5,
+                "y": 0.8519570707070707,
+                "center": {
+                  "x": 0.5,
+                  "y": 0.8519570707070707
+                },
+                "tags": [
+                  "bottom_tab_candidate"
+                ]
+              },
+              {
+                "index": 4,
+                "label": "发个消息聊聊呗",
+                "text": "发个消息聊聊呗",
+                "desc": null,
+                "resourceId": null,
+                "class": "android.widget.TextView",
+                "clickable": false,
+                "editable": false,
+                "selected": false,
+                "bounds": "232 2967 1208 3033",
+                "x": 0.5,
+                "y": 0.946969696969697,
+                "center": {
+                  "x": 0.5,
+                  "y": 0.946969696969697
+                },
+                "tags": [
+                  "bottom_tab_candidate"
+                ]
+              },
+              {
+                "index": 5,
+                "label": "",
+                "text": null,
+                "desc": null,
+                "resourceId": null,
+                "class": "android.view.View",
+                "clickable": true,
+                "editable": false,
+                "selected": false,
+                "bounds": "1248 2904 1440 3096",
+                "x": 0.9333333333333333,
+                "y": 0.946969696969697,
+                "center": {
+                  "x": 0.9333333333333333,
+                  "y": 0.946969696969697
+                },
+                "tags": [
+                  "bottom_tab_candidate"
+                ]
+              }
+            ],
+            "entryCandidates": [
+              {
+                "index": 0,
+                "label": "发个消息聊聊呗",
+                "text": "发个消息聊聊呗",
+                "desc": null,
+                "resourceId": null,
+                "class": "android.widget.TextView",
+                "clickable": false,
+                "editable": false,
+                "selected": false,
+                "bounds": "232 2967 1208 3033",
+                "x": 0.5,
+                "y": 0.946969696969697,
+                "center": {
+                  "x": 0.5,
+                  "y": 0.946969696969697
+                },
+                "tags": [
+                  "entry_candidate",
+                  "bottom_area",
+                  "message_entry"
+                ]
+              }
+            ],
+            "inputCandidates": [
+              {
+                "index": 0,
+                "label": "",
+                "text": null,
+                "desc": null,
+                "resourceId": null,
+                "class": "android.widget.EditText",
+                "clickable": true,
+                "editable": true,
+                "selected": false,
+                "bounds": "184 2904 1248 3096",
+                "x": 0.49722222222222223,
+                "y": 0.946969696969697,
+                "center": {
+                  "x": 0.49722222222222223,
+                  "y": 0.946969696969697
+                },
+                "tags": [
+                  "input_candidate",
+                  "clickable",
+                  "editable",
+                  "bottom_area"
+                ]
+              }
+            ],
+            "snapshotPath": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_snapshots\/tv.danmaku.bili\/20260519_235110_587_4bfae062.json"
+          },
+          {
+            "screenId": "screen_21dfa0b2",
+            "title": "战国时代_姜汁汽水",
+            "screenKey": "21dfa0b2",
+            "nodeCount": 42,
+            "clickableCount": 5,
+            "editableCount": 1,
+            "labels": [
+              "tv.danmaku.bili:id\/action_bar_root",
+              "android:id\/content",
+              "战国时代_姜汁汽水",
+              "我为什么会收到此类消息 了解更多",
+              "47:48",
+              "近期热点分析：美债问题，日债问题，利率曲线，利率政策",
+              "UP主赠言：感谢您的关注！新的下饭视频来了哦！",
+              "07:04",
+              "26:24",
+              "川普访华：常规领域之外的其他焦点（金融制裁与反制裁）",
+              "发个消息聊聊呗"
+            ],
+            "bottomTabs": [
+              {
+                "index": 0,
+                "label": "",
+                "text": null,
+                "desc": null,
+                "resourceId": null,
+                "class": "android.view.View",
+                "clickable": true,
+                "editable": false,
+                "selected": false,
+                "bounds": "0 2904 184 3096",
+                "x": 0.06388888888888888,
+                "y": 0.946969696969697,
+                "center": {
+                  "x": 0.06388888888888888,
+                  "y": 0.946969696969697
+                },
+                "tags": [
+                  "bottom_tab_candidate"
+                ]
+              },
+              {
+                "index": 1,
+                "label": "47:48",
+                "text": "47:48",
+                "desc": null,
+                "resourceId": null,
+                "class": "android.widget.TextView",
+                "clickable": false,
+                "editable": false,
+                "selected": false,
+                "bounds": "128 2194 255 2251",
+                "x": 0.1326388888888889,
+                "y": 0.7013888888888888,
+                "center": {
+                  "x": 0.1326388888888889,
+                  "y": 0.7013888888888888
+                },
+                "tags": [
+                  "bottom_tab_candidate"
+                ]
+              },
+              {
+                "index": 2,
+                "label": "",
+                "text": null,
+                "desc": null,
+                "resourceId": null,
+                "class": "android.widget.EditText",
+                "clickable": true,
+                "editable": true,
+                "selected": false,
+                "bounds": "184 2904 1248 3096",
+                "x": 0.49722222222222223,
+                "y": 0.946969696969697,
+                "center": {
+                  "x": 0.49722222222222223,
+                  "y": 0.946969696969697
+                },
+                "tags": [
+                  "bottom_tab_candidate"
+                ]
+              },
+              {
+                "index": 3,
+                "label": "我为什么会收到此类消息 了解更多",
+                "text": "我为什么会收到此类消息 了解更多",
+                "desc": null,
+                "resourceId": null,
+                "class": "android.widget.TextView",
+                "clickable": false,
+                "editable": false,
+                "selected": false,
+                "bounds": "355 2727 1086 2784",
+                "x": 0.5,
+                "y": 0.8696338383838383,
+                "center": {
+                  "x": 0.5,
+                  "y": 0.8696338383838383
+                },
+                "tags": [
+                  "bottom_tab_candidate"
+                ]
+              },
+              {
+                "index": 4,
+                "label": "近期热点分析：美债问题，日债问题，利率曲线，利率政策",
+                "text": "近期热点分析：美债问题，日债问题，利率曲线，利率政策",
+                "desc": null,
+                "resourceId": null,
+                "class": "android.widget.TextView",
+                "clickable": false,
+                "editable": false,
+                "selected": false,
+                "bounds": "112 2319 1328 2394",
+                "x": 0.5,
+                "y": 0.7436868686868687,
+                "center": {
+                  "x": 0.5,
+                  "y": 0.7436868686868687
+                },
+                "tags": [
+                  "bottom_tab_candidate"
+                ]
+              },
+              {
+                "index": 5,
+                "label": "发个消息聊聊呗",
+                "text": "发个消息聊聊呗",
+                "desc": null,
+                "resourceId": null,
+                "class": "android.widget.TextView",
+                "clickable": false,
+                "editable": false,
+                "selected": false,
+                "bounds": "232 2967 1208 3033",
+                "x": 0.5,
+                "y": 0.946969696969697,
+                "center": {
+                  "x": 0.5,
+                  "y": 0.946969696969697
+                },
+                "tags": [
+                  "bottom_tab_candidate"
+                ]
+              },
+              {
+                "index": 6,
+                "label": "UP主赠言：感谢您的关注！新的下饭视频来了哦！",
+                "text": "UP主赠言：感谢您的关注！新的下饭视频来了哦！",
+                "desc": null,
+                "resourceId": null,
+                "class": "android.widget.TextView",
+                "clickable": false,
+                "editable": false,
+                "selected": false,
+                "bounds": "224 2466 1296 2599",
+                "x": 0.5277777777777778,
+                "y": 0.7992424242424242,
+                "center": {
+                  "x": 0.5277777777777778,
+                  "y": 0.7992424242424242
+                },
+                "tags": [
+                  "bottom_tab_candidate"
+                ]
+              },
+              {
+                "index": 7,
+                "label": "",
+                "text": null,
+                "desc": null,
+                "resourceId": null,
+                "class": "android.view.View",
+                "clickable": true,
+                "editable": false,
+                "selected": false,
+                "bounds": "1248 2904 1440 3096",
+                "x": 0.9333333333333333,
+                "y": 0.946969696969697,
+                "center": {
+                  "x": 0.9333333333333333,
+                  "y": 0.946969696969697
+                },
+                "tags": [
+                  "bottom_tab_candidate"
+                ]
+              }
+            ],
+            "entryCandidates": [
+              {
+                "index": 0,
+                "label": "我为什么会收到此类消息 了解更多",
+                "text": "我为什么会收到此类消息 了解更多",
+                "desc": null,
+                "resourceId": null,
+                "class": "android.widget.TextView",
+                "clickable": false,
+                "editable": false,
+                "selected": false,
+                "bounds": "355 2727 1086 2784",
+                "x": 0.5,
+                "y": 0.8696338383838383,
+                "center": {
+                  "x": 0.5,
+                  "y": 0.8696338383838383
+                },
+                "tags": [
+                  "entry_candidate",
+                  "bottom_area",
+                  "message_entry",
+                  "profile_entry"
+                ]
+              },
+              {
+                "index": 1,
+                "label": "发个消息聊聊呗",
+                "text": "发个消息聊聊呗",
+                "desc": null,
+                "resourceId": null,
+                "class": "android.widget.TextView",
+                "clickable": false,
+                "editable": false,
+                "selected": false,
+                "bounds": "232 2967 1208 3033",
+                "x": 0.5,
+                "y": 0.946969696969697,
+                "center": {
+                  "x": 0.5,
+                  "y": 0.946969696969697
+                },
+                "tags": [
+                  "entry_candidate",
+                  "bottom_area",
+                  "message_entry"
+                ]
+              }
+            ],
+            "inputCandidates": [
+              {
+                "index": 0,
+                "label": "",
+                "text": null,
+                "desc": null,
+                "resourceId": null,
+                "class": "android.widget.EditText",
+                "clickable": true,
+                "editable": true,
+                "selected": false,
+                "bounds": "184 2904 1248 3096",
+                "x": 0.49722222222222223,
+                "y": 0.946969696969697,
+                "center": {
+                  "x": 0.49722222222222223,
+                  "y": 0.946969696969697
+                },
+                "tags": [
+                  "input_candidate",
+                  "clickable",
+                  "editable",
+                  "bottom_area"
+                ]
+              }
+            ],
+            "snapshotPath": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_snapshots\/tv.danmaku.bili\/20260519_235114_304_21dfa0b2.json"
+          },
+          {
+            "screenId": "screen_268df651",
+            "title": "科比牢大-擒史皇",
+            "screenKey": "268df651",
+            "nodeCount": 44,
+            "clickableCount": 5,
+            "editableCount": 1,
+            "labels": [
+              "tv.danmaku.bili:id\/action_bar_root",
+              "android:id\/content",
+              "科比牢大-擒史皇",
+              "我为什么会收到此类消息 了解更多",
+              "4:00",
+              "感觉自己压力大的，可以进来看看这期视频（57）",
+              "UP主赠言：新鲜出炉的视频请观看",
+              "昨天 15:50",
+              "3:55",
+              "感觉自己压力大的，可以进来看看这期视频（56）",
+              "发个消息聊聊呗"
+            ],
+            "bottomTabs": [
+              {
+                "index": 0,
+                "label": "",
+                "text": null,
+                "desc": null,
+                "resourceId": null,
+                "class": "android.view.View",
+                "clickable": true,
+                "editable": false,
+                "selected": false,
+                "bounds": "0 2904 184 3096",
+                "x": 0.06388888888888888,
+                "y": 0.946969696969697,
+                "center": {
+                  "x": 0.06388888888888888,
+                  "y": 0.946969696969697
+                },
+                "tags": [
+                  "bottom_tab_candidate"
+                ]
+              },
+              {
+                "index": 1,
+                "label": "4:00",
+                "text": "4:00",
+                "desc": null,
+                "resourceId": null,
+                "class": "android.widget.TextView",
+                "clickable": false,
+                "editable": false,
+                "selected": false,
+                "bounds": "128 2263 230 2320",
+                "x": 0.12430555555555556,
+                "y": 0.7231691919191919,
+                "center": {
+                  "x": 0.12430555555555556,
+                  "y": 0.7231691919191919
+                },
+                "tags": [
+                  "bottom_tab_candidate"
+                ]
+              },
+              {
+                "index": 2,
+                "label": "",
+                "text": null,
+                "desc": null,
+                "resourceId": null,
+                "class": "android.widget.EditText",
+                "clickable": true,
+                "editable": true,
+                "selected": false,
+                "bounds": "184 2904 1248 3096",
+                "x": 0.49722222222222223,
+                "y": 0.946969696969697,
+                "center": {
+                  "x": 0.49722222222222223,
+                  "y": 0.946969696969697
+                },
+                "tags": [
+                  "bottom_tab_candidate"
+                ]
+              },
+              {
+                "index": 3,
+                "label": "我为什么会收到此类消息 了解更多",
+                "text": "我为什么会收到此类消息 了解更多",
+                "desc": null,
+                "resourceId": null,
+                "class": "android.widget.TextView",
+                "clickable": false,
+                "editable": false,
+                "selected": false,
+                "bounds": "355 2727 1086 2784",
+                "x": 0.5,
+                "y": 0.8696338383838383,
+                "center": {
+                  "x": 0.5,
+                  "y": 0.8696338383838383
+                },
+                "tags": [
+                  "bottom_tab_candidate"
+                ]
+              },
+              {
+                "index": 4,
+                "label": "感觉自己压力大的，可以进来看看这期视频（57）",
+                "text": "感觉自己压力大的，可以进来看看这期视频（57）",
+                "desc": null,
+                "resourceId": null,
+                "class": "android.widget.TextView",
+                "clickable": false,
+                "editable": false,
+                "selected": false,
+                "bounds": "112 2388 1328 2463",
+                "x": 0.5,
+                "y": 0.7654671717171717,
+                "center": {
+                  "x": 0.5,
+                  "y": 0.7654671717171717
+                },
+                "tags": [
+                  "bottom_tab_candidate"
+                ]
+              },
+              {
+                "index": 5,
+                "label": "发个消息聊聊呗",
+                "text": "发个消息聊聊呗",
+                "desc": null,
+                "resourceId": null,
+                "class": "android.widget.TextView",
+                "clickable": false,
+                "editable": false,
+                "selected": false,
+                "bounds": "232 2967 1208 3033",
+                "x": 0.5,
+                "y": 0.946969696969697,
+                "center": {
+                  "x": 0.5,
+                  "y": 0.946969696969697
+                },
+                "tags": [
+                  "bottom_tab_candidate"
+                ]
+              },
+              {
+                "index": 6,
+                "label": "UP主赠言：新鲜出炉的视频请观看",
+                "text": "UP主赠言：新鲜出炉的视频请观看",
+                "desc": null,
+                "resourceId": null,
+                "class": "android.widget.TextView",
+                "clickable": false,
+                "editable": false,
+                "selected": false,
+                "bounds": "224 2538 1296 2599",
+                "x": 0.5277777777777778,
+                "y": 0.8106060606060606,
+                "center": {
+                  "x": 0.5277777777777778,
+                  "y": 0.8106060606060606
+                },
+                "tags": [
+                  "bottom_tab_candidate"
+                ]
+              },
+              {
+                "index": 7,
+                "label": "",
+                "text": null,
+                "desc": null,
+                "resourceId": null,
+                "class": "android.view.View",
+                "clickable": true,
+                "editable": false,
+                "selected": false,
+                "bounds": "1248 2904 1440 3096",
+                "x": 0.9333333333333333,
+                "y": 0.946969696969697,
+                "center": {
+                  "x": 0.9333333333333333,
+                  "y": 0.946969696969697
+                },
+                "tags": [
+                  "bottom_tab_candidate"
+                ]
+              }
+            ],
+            "entryCandidates": [
+              {
+                "index": 0,
+                "label": "我为什么会收到此类消息 了解更多",
+                "text": "我为什么会收到此类消息 了解更多",
+                "desc": null,
+                "resourceId": null,
+                "class": "android.widget.TextView",
+                "clickable": false,
+                "editable": false,
+                "selected": false,
+                "bounds": "355 2727 1086 2784",
+                "x": 0.5,
+                "y": 0.8696338383838383,
+                "center": {
+                  "x": 0.5,
+                  "y": 0.8696338383838383
+                },
+                "tags": [
+                  "entry_candidate",
+                  "bottom_area",
+                  "message_entry",
+                  "profile_entry"
+                ]
+              },
+              {
+                "index": 1,
+                "label": "发个消息聊聊呗",
+                "text": "发个消息聊聊呗",
+                "desc": null,
+                "resourceId": null,
+                "class": "android.widget.TextView",
+                "clickable": false,
+                "editable": false,
+                "selected": false,
+                "bounds": "232 2967 1208 3033",
+                "x": 0.5,
+                "y": 0.946969696969697,
+                "center": {
+                  "x": 0.5,
+                  "y": 0.946969696969697
+                },
+                "tags": [
+                  "entry_candidate",
+                  "bottom_area",
+                  "message_entry"
+                ]
+              }
+            ],
+            "inputCandidates": [
+              {
+                "index": 0,
+                "label": "",
+                "text": null,
+                "desc": null,
+                "resourceId": null,
+                "class": "android.widget.EditText",
+                "clickable": true,
+                "editable": true,
+                "selected": false,
+                "bounds": "184 2904 1248 3096",
+                "x": 0.49722222222222223,
+                "y": 0.946969696969697,
+                "center": {
+                  "x": 0.49722222222222223,
+                  "y": 0.946969696969697
+                },
+                "tags": [
+                  "input_candidate",
+                  "clickable",
+                  "editable",
+                  "bottom_area"
+                ]
+              }
+            ],
+            "snapshotPath": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_snapshots\/tv.danmaku.bili\/20260519_235117_625_268df651.json"
+          }
+        ],
+        "updatedAt": 1779205878979,
+        "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/app_ui_graphs\/tv.danmaku.bili\/graph_candidate.json"
+      }
+    },
+    {
+      "title": "规则优先执行",
+      "status": "INFO",
+      "message": "已识别为本地有 Skill 子集\/成功案例的任务：先直接生成候选 JSON 并执行；失败或目标校验不过再调用 v4pro 二次判断，避免一上来卡在 AI plan。",
+      "path": null,
+      "timestamp": 1779207829505,
+      "extra": {
+        "appPackage": "tv.danmaku.bili",
+        "instruction": "打开哔哩哔哩搜索王老菊并打开第一个视频"
+      }
+    },
+    {
+      "title": "规则泛化 B 站搜索 Skill",
+      "status": "SUCCESS",
+      "message": "补齐 9 个细粒度 Skill JSON，搜索词=王老菊；复杂任务会在搜索结果页再让 AI 判断下一步。",
+      "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_candidates\/tv.danmaku.bili\/bilibili.open_app.json",
+      "timestamp": 1779207829516
+    },
+    {
+      "title": "dry-run 静态检查",
+      "status": "SUCCESS",
+      "message": "通过 9\/9。",
+      "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_dry_run_reports\/tv.danmaku.bili\/bilibili.search.search_in_app_1779207829573.json",
+      "timestamp": 1779207829575
+    },
+    {
+      "title": "拼装 app_config 预览",
+      "status": "SUCCESS",
+      "message": "候选\/测试产物已拼为单个 app_config 预览。",
+      "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/app_config_exports\/tv.danmaku.bili\/app_config_20260520_002349_599.json",
+      "timestamp": 1779207829616
+    },
+    {
+      "title": "执行候选 JSON",
+      "status": "RUNNING",
+      "message": "不等待 APPROVED：按用户要求，直接由 SkillJsonExecutor 执行候选 macro=bilibili.search.search_in_app。",
+      "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_candidates\/tv.danmaku.bili\/bilibili.search.search_in_app.json",
+      "timestamp": 1779207829616
+    },
+    {
+      "title": "候选 JSON 执行结果",
+      "status": "SUCCESS",
+      "message": "bilibili.search.search_in_app -> SUCCESS_LOW_CONFIDENCE；Window\/node state changed; Macro atoms completed; reactiveDismissed=3",
+      "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/runtime\/run_reports\/tv.danmaku.bili\/ai_direct_run_1779207835188.json",
+      "timestamp": 1779207835191
+    },
+    {
+      "title": "本地候选补救转 Skill JSON",
+      "status": "SUCCESS",
+      "message": "选择第 1 个视频候选并写成 ClickCoordinate 原子 Skill；坐标=(0.189, 0.445)。",
+      "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_candidates\/tv.danmaku.bili\/patched.command.1779207835200.json",
+      "timestamp": 1779207836079,
+      "extra": {
+        "text": "王老菊董事长",
+        "desc": null,
+        "resourceId": "tv.danmaku.bili:id\/tag_name",
+        "class": "android.widget.TextView",
+        "clickable": false,
+        "bounds": "48 1350 496 1470",
+        "center": {
+          "x": 0.18888888888888888,
+          "y": 0.44507575757575757
+        },
+        "score": 33,
+        "hasVideoEvidence": false,
+        "hasQueryEvidence": true,
+        "pageHasQueryEvidence": true,
+        "pageHasSearchResultVideoSet": false
+      }
+    },
+    {
+      "title": "本地候选补救 dry-run",
+      "status": "FAILED_DRY_RUN",
+      "message": "通过 78\/80。",
+      "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_dry_run_reports\/tv.danmaku.bili\/direct.1778532229059.1.clickselector_1779207836262.json",
+      "timestamp": 1779207836263
+    },
+    {
+      "title": "本地打开第一个视频结果",
+      "status": "SUCCESS",
+      "message": "patched.command.1779207835200 -> SUCCESS_LOW_CONFIDENCE；Macro atoms completed; reactiveDismissed=0；随后仍会用详情页证据重新校验，校验不过就失败。",
+      "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/runtime\/run_reports\/tv.danmaku.bili\/bilibili_open_first_video_1779207839917.json",
+      "timestamp": 1779207839920,
+      "extra": {
+        "text": "王老菊董事长",
+        "desc": null,
+        "resourceId": "tv.danmaku.bili:id\/tag_name",
+        "class": "android.widget.TextView",
+        "clickable": false,
+        "bounds": "48 1350 496 1470",
+        "center": {
+          "x": 0.18888888888888888,
+          "y": 0.44507575757575757
+        },
+        "score": 33,
+        "hasVideoEvidence": false,
+        "hasQueryEvidence": true,
+        "pageHasQueryEvidence": true,
+        "pageHasSearchResultVideoSet": false
+      }
+    },
+    {
+      "title": "目标未完成，继续 AI 判断",
+      "status": "RUNNING",
+      "message": "当前仍像搜索结果页：搜索输入框或“综合\/视频\/用户”等结果页 tabs 还在，不能报告第一个视频已打开。；第 1\/4 次继续重判当前屏幕。",
+      "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/runtime\/run_reports\/tv.danmaku.bili\/bilibili_open_first_video_1779207839917.json",
+      "timestamp": 1779207839940,
+      "extra": {
+        "serviceConnected": true,
+        "appPackage": "tv.danmaku.bili",
+        "nodeCount": 151,
+        "sampleTexts": [
+          "返回",
+          "王老菊董事长",
+          "清除查询",
+          "搜索",
+          "综合",
+          "番剧",
+          "直播",
+          "用户",
+          "影视",
+          "图文",
+          "全部",
+          "怕上火暴王老菊",
+          "up主",
+          "菜农来辣",
+          "竞拍之王",
+          "王老菊教你征服异星水域",
+          "怕上火暴王老菊",
+          "96万",
+          "· 5月15日",
+          "【Ai高清修复1080p60帧】【王老菊录播】未来科技董事长教你野兽战斗（模拟器）1",
+          "冬海帝王",
+          "28:07",
+          "3万",
+          "· 2025年9月13日",
+          "0冬海帝王：有同事修复过了 ，而且还做了双版本",
+          "Asaki看《王老菊教你抓伪人》 催更 太好看了 好搞笑！【弹幕版】",
+          "山雀子ovo",
+          "53:33",
+          "11.6万",
+          "· 2025年3月26日"
+        ],
+        "expected": "bilibili_first_video_detail_opened",
+        "searchInputPresent": true,
+        "resultTabsVisible": true,
+        "searchSurfaceVisible": true,
+        "detailMarkerHits": [
+          "弹幕"
+        ],
+        "playerMarkerHits": [],
+        "videoResourceHits": [
+          "play_num",
+          "danmakus_num",
+          "play_num",
+          "danmakus_num",
+          "play_num",
+          "danmakus_num",
+          "play_num",
+          "danmakus_num",
+          "play_num",
+          "danmakus_num"
+        ],
+        "nonVideoResourceHits": [],
+        "nonVideoTextHits": [],
+        "nonVideoDetailSurface": false,
+        "videoSpecificEvidence": true,
+        "blockerHits": [],
+        "shareSheetVisible": false,
+        "unsafePostOrMessageSurface": false,
+        "detailEvidenceStrong": false
+      }
+    },
+    {
+      "title": "本地弹窗规则处理",
+      "status": "SUCCESS",
+      "message": "AI 重判前先由手机端 GKD-like 规则处理阻断弹窗\/广告：节点规则处理 1 个，视觉兜底=false。",
+      "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/runtime\/run_reports\/tv.danmaku.bili\/bilibili_open_first_video_1779207839917.json",
+      "timestamp": 1779207840365,
+      "extra": {
+        "trigger": "GOAL_UNVERIFIED_LOOP_1",
+        "blockingDialogsBefore": [
+          {
+            "type": "popup_observed",
+            "events": [],
+            "smallNodes": [
+              "tv.danmaku.bili:id\/tabs",
+              "tv.danmaku.bili:id\/filter_icon",
+              "全部 tv.danmaku.bili:id\/name",
+              "怕上火暴王老菊 tv.danmaku.bili:id\/name",
+              "up主 tv.danmaku.bili:id\/name",
+              "菜农来辣 tv.danmaku.bili:id\/name",
+              "竞拍之王 tv.danmaku.bili:id\/name",
+              "tv.danmaku.bili:id\/cover",
+              "王老菊教你征服异星水域 tv.danmaku.bili:id\/title",
+              "tv.danmaku.bili:id\/tag_layout"
+            ]
+          }
+        ],
+        "dismissEvents": [
+          {
+            "pass": 1,
+            "kind": "ad_or_splash",
+            "label": "清除查询 tv.danmaku.bili:id\/search_close_btn",
+            "score": 104,
+            "reason": "flow_replan:GOAL_UNVERIFIED_LOOP_1",
+            "success": true,
+            "message": "dispatchGesture tap sent (normalized=0.772,0.082 px=1112,260 screen=1440x3168)",
+            "bounds": "1040 200 1184 320"
+          }
+        ],
+        "visualFallback": null
+      }
+    },
+    {
+      "title": "本地候选补救转 Skill JSON",
+      "status": "SUCCESS",
+      "message": "选择第 1 个视频候选并写成 ClickCoordinate 原子 Skill；坐标=(0.189, 0.445)。",
+      "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_candidates\/tv.danmaku.bili\/patched.command.1779207841284.json",
+      "timestamp": 1779207842150,
+      "extra": {
+        "text": "王老菊董事长",
+        "desc": null,
+        "resourceId": "tv.danmaku.bili:id\/tag_name",
+        "class": "android.widget.TextView",
+        "clickable": false,
+        "bounds": "48 1350 496 1470",
+        "center": {
+          "x": 0.18888888888888888,
+          "y": 0.44507575757575757
+        },
+        "score": 33,
+        "hasVideoEvidence": false,
+        "hasQueryEvidence": true,
+        "pageHasQueryEvidence": true,
+        "pageHasSearchResultVideoSet": false
+      }
+    },
+    {
+      "title": "本地候选补救 dry-run",
+      "status": "FAILED_DRY_RUN",
+      "message": "通过 78\/80。",
+      "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_dry_run_reports\/tv.danmaku.bili\/bilibili.search.search_in_app_1779207842329.json",
+      "timestamp": 1779207842331
+    },
+    {
+      "title": "本地打开第一个视频结果",
+      "status": "SUCCESS",
+      "message": "patched.command.1779207841284 -> SUCCESS_LOW_CONFIDENCE；Macro atoms completed; reactiveDismissed=0；随后仍会用详情页证据重新校验，校验不过就失败。",
+      "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/runtime\/run_reports\/tv.danmaku.bili\/bilibili_open_first_video_1779207845990.json",
+      "timestamp": 1779207845993,
+      "extra": {
+        "text": "王老菊董事长",
+        "desc": null,
+        "resourceId": "tv.danmaku.bili:id\/tag_name",
+        "class": "android.widget.TextView",
+        "clickable": false,
+        "bounds": "48 1350 496 1470",
+        "center": {
+          "x": 0.18888888888888888,
+          "y": 0.44507575757575757
+        },
+        "score": 33,
+        "hasVideoEvidence": false,
+        "hasQueryEvidence": true,
+        "pageHasQueryEvidence": true,
+        "pageHasSearchResultVideoSet": false
+      }
+    },
+    {
+      "title": "失败后 AI 判断",
+      "status": "RUNNING",
+      "message": "当前不是直接停下：App 把失败原因、当前屏幕节点和已跑步骤发给手机端 AI，让 AI 判断下一段补救 JSON。",
+      "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/runtime\/run_reports\/tv.danmaku.bili\/bilibili_open_first_video_1779207845990.json",
+      "timestamp": 1779207846013,
+      "extra": {
+        "phase": "REPLAN",
+        "trigger": "GOAL_UNVERIFIED_LOOP_1",
+        "previousStatus": "FAILED_GOAL_UNVERIFIED",
+        "previousMessage": "当前仍像搜索结果页：搜索输入框或“综合\/视频\/用户”等结果页 tabs 还在，不能报告第一个视频已打开。"
+      }
+    },
+    {
+      "title": "失败后 AI 判断 返回",
+      "status": "SUCCESS",
+      "message": "HTTP=200；模型=deepseek-v4-pro；goalCompleted=false；补救步骤=3；诊断=之前尝试点击坐标(0.189,0.445)未能打开第一个视频，该坐标可能误点击了其他元素。现依据视频候选重新点击。",
+      "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ai_jobs\/2026-05-20\/factory_ai_replan_1779207885281.json",
+      "timestamp": 1779207885288,
+      "extra": {
+        "decision": {
+          "goalCompleted": false,
+          "screenAssessment": "当前为搜索结果页，搜索词'王老菊'，视频列表可见，第一个视频标题'王老菊教你征服异星水域'，有可点击项。",
+          "failureDiagnosis": "之前尝试点击坐标(0.189,0.445)未能打开第一个视频，该坐标可能误点击了其他元素。现依据视频候选重新点击。",
+          "confidence": "MEDIUM",
+          "nextActionReason": "选择第一个视频候选(index 0)，使用其中心坐标(0.5,0.291)点击，期望进入视频播放页。"
+        }
+      }
+    },
+    {
+      "title": "AI 补救计划转 Skill JSON",
+      "status": "SUCCESS",
+      "message": "AI 返回 3 个下一步动作，已转换成 4 个候选 Skill JSON。",
+      "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_candidates\/tv.danmaku.bili\/patched.command.1779207885288.json",
+      "timestamp": 1779207886575,
+      "extra": {
+        "phase": "REPLAN",
+        "trigger": "GOAL_UNVERIFIED_LOOP_1"
+      }
+    },
+    {
+      "title": "AI 补救 dry-run",
+      "status": "SUCCESS",
+      "message": "通过 4\/4。",
+      "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_dry_run_reports\/tv.danmaku.bili\/patched.command.1779207885288_1779207886588.json",
+      "timestamp": 1779207886590
+    },
+    {
+      "title": "AI 补救 JSON 执行结果",
+      "status": "SUCCESS",
+      "message": "patched.command.1779207885288 -> SUCCESS_LOW_CONFIDENCE；Macro atoms completed; reactiveDismissed=2",
+      "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/runtime\/run_reports\/tv.danmaku.bili\/ai_follow_up_run_1779207892423.json",
+      "timestamp": 1779207892426,
+      "extra": {
+        "phase": "REPLAN",
+        "trigger": "GOAL_UNVERIFIED_LOOP_1"
+      }
+    },
+    {
+      "title": "本地候选补救转 Skill JSON",
+      "status": "SUCCESS",
+      "message": "选择第 1 个视频候选并写成 ClickCoordinate 原子 Skill；坐标=(0.189, 0.445)。",
+      "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_candidates\/tv.danmaku.bili\/patched.command.1779207892449.json",
+      "timestamp": 1779207893326,
+      "extra": {
+        "text": "王老菊董事长",
+        "desc": null,
+        "resourceId": "tv.danmaku.bili:id\/tag_name",
+        "class": "android.widget.TextView",
+        "clickable": false,
+        "bounds": "48 1350 496 1470",
+        "center": {
+          "x": 0.18888888888888888,
+          "y": 0.44507575757575757
+        },
+        "score": 33,
+        "hasVideoEvidence": false,
+        "hasQueryEvidence": true,
+        "pageHasQueryEvidence": true,
+        "pageHasSearchResultVideoSet": false
+      }
+    },
+    {
+      "title": "本地候选补救 dry-run",
+      "status": "FAILED_DRY_RUN",
+      "message": "通过 78\/80。",
+      "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_dry_run_reports\/tv.danmaku.bili\/direct.command.1778254630931_1779207893506.json",
+      "timestamp": 1779207893508
+    },
+    {
+      "title": "本地打开第一个视频结果",
+      "status": "SUCCESS",
+      "message": "patched.command.1779207892449 -> SUCCESS_LOW_CONFIDENCE；Macro atoms completed; reactiveDismissed=0；随后仍会用详情页证据重新校验，校验不过就失败。",
+      "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/runtime\/run_reports\/tv.danmaku.bili\/bilibili_open_first_video_1779207897154.json",
+      "timestamp": 1779207897157,
+      "extra": {
+        "text": "王老菊董事长",
+        "desc": null,
+        "resourceId": "tv.danmaku.bili:id\/tag_name",
+        "class": "android.widget.TextView",
+        "clickable": false,
+        "bounds": "48 1350 496 1470",
+        "center": {
+          "x": 0.18888888888888888,
+          "y": 0.44507575757575757
+        },
+        "score": 33,
+        "hasVideoEvidence": false,
+        "hasQueryEvidence": true,
+        "pageHasQueryEvidence": true,
+        "pageHasSearchResultVideoSet": false
+      }
+    },
+    {
+      "title": "目标未完成，继续 AI 判断",
+      "status": "RUNNING",
+      "message": "当前仍像搜索结果页：搜索输入框或“综合\/视频\/用户”等结果页 tabs 还在，不能报告第一个视频已打开。；第 2\/4 次继续重判当前屏幕。",
+      "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/runtime\/run_reports\/tv.danmaku.bili\/bilibili_open_first_video_1779207897154.json",
+      "timestamp": 1779207897178,
+      "extra": {
+        "serviceConnected": true,
+        "appPackage": "tv.danmaku.bili",
+        "nodeCount": 151,
+        "sampleTexts": [
+          "返回",
+          "王老菊董事长",
+          "清除查询",
+          "搜索",
+          "综合",
+          "番剧",
+          "直播",
+          "用户",
+          "影视",
+          "图文",
+          "全部",
+          "怕上火暴王老菊",
+          "up主",
+          "菜农来辣",
+          "竞拍之王",
+          "王老菊教你征服异星水域",
+          "怕上火暴王老菊",
+          "96万",
+          "· 5月15日",
+          "【Ai高清修复1080p60帧】【王老菊录播】未来科技董事长教你野兽战斗（模拟器）1",
+          "冬海帝王",
+          "28:07",
+          "3万",
+          "· 2025年9月13日",
+          "0冬海帝王：有同事修复过了 ，而且还做了双版本",
+          "王老菊教你日墙拳法",
+          "怕上火暴王老菊",
+          "1:13:21",
+          "62.8万",
+          "· 5月12日"
+        ],
+        "expected": "bilibili_first_video_detail_opened",
+        "searchInputPresent": true,
+        "resultTabsVisible": true,
+        "searchSurfaceVisible": true,
+        "detailMarkerHits": [
+          "弹幕"
+        ],
+        "playerMarkerHits": [],
+        "videoResourceHits": [
+          "play_num",
+          "danmakus_num",
+          "play_num",
+          "danmakus_num",
+          "play_num",
+          "danmakus_num",
+          "play_num",
+          "danmakus_num",
+          "play_num",
+          "danmakus_num"
+        ],
+        "nonVideoResourceHits": [],
+        "nonVideoTextHits": [],
+        "nonVideoDetailSurface": false,
+        "videoSpecificEvidence": true,
+        "blockerHits": [],
+        "shareSheetVisible": false,
+        "unsafePostOrMessageSurface": false,
+        "detailEvidenceStrong": false
+      }
+    },
+    {
+      "title": "本地弹窗规则处理",
+      "status": "SUCCESS",
+      "message": "AI 重判前先由手机端 GKD-like 规则处理阻断弹窗\/广告：节点规则处理 1 个，视觉兜底=false。",
+      "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/runtime\/run_reports\/tv.danmaku.bili\/bilibili_open_first_video_1779207897154.json",
+      "timestamp": 1779207897593,
+      "extra": {
+        "trigger": "GOAL_UNVERIFIED_LOOP_2",
+        "blockingDialogsBefore": [
+          {
+            "type": "popup_observed",
+            "events": [],
+            "smallNodes": [
+              "tv.danmaku.bili:id\/tabs",
+              "tv.danmaku.bili:id\/filter_icon",
+              "全部 tv.danmaku.bili:id\/name",
+              "怕上火暴王老菊 tv.danmaku.bili:id\/name",
+              "up主 tv.danmaku.bili:id\/name",
+              "菜农来辣 tv.danmaku.bili:id\/name",
+              "竞拍之王 tv.danmaku.bili:id\/name",
+              "tv.danmaku.bili:id\/cover",
+              "王老菊教你征服异星水域 tv.danmaku.bili:id\/title",
+              "tv.danmaku.bili:id\/tag_layout"
+            ]
+          }
+        ],
+        "dismissEvents": [
+          {
+            "pass": 1,
+            "kind": "ad_or_splash",
+            "label": "清除查询 tv.danmaku.bili:id\/search_close_btn",
+            "score": 104,
+            "reason": "flow_replan:GOAL_UNVERIFIED_LOOP_2",
+            "success": true,
+            "message": "dispatchGesture tap sent (normalized=0.772,0.082 px=1112,260 screen=1440x3168)",
+            "bounds": "1040 200 1184 320"
+          }
+        ],
+        "visualFallback": null
+      }
+    },
+    {
+      "title": "本地候选补救转 Skill JSON",
+      "status": "SUCCESS",
+      "message": "选择第 1 个视频候选并写成 ClickCoordinate 原子 Skill；坐标=(0.189, 0.445)。",
+      "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_candidates\/tv.danmaku.bili\/patched.command.1779207898530.json",
+      "timestamp": 1779207899412,
+      "extra": {
+        "text": "王老菊董事长",
+        "desc": null,
+        "resourceId": "tv.danmaku.bili:id\/tag_name",
+        "class": "android.widget.TextView",
+        "clickable": false,
+        "bounds": "48 1350 496 1470",
+        "center": {
+          "x": 0.18888888888888888,
+          "y": 0.44507575757575757
+        },
+        "score": 33,
+        "hasVideoEvidence": false,
+        "hasQueryEvidence": true,
+        "pageHasQueryEvidence": true,
+        "pageHasSearchResultVideoSet": false
+      }
+    },
+    {
+      "title": "本地候选补救 dry-run",
+      "status": "FAILED_DRY_RUN",
+      "message": "通过 78\/80。",
+      "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_dry_run_reports\/tv.danmaku.bili\/patched.1779207892449.1.clickcoordinate_1779207899590.json",
+      "timestamp": 1779207899592
+    },
+    {
+      "title": "本地打开第一个视频结果",
+      "status": "SUCCESS",
+      "message": "patched.command.1779207898530 -> SUCCESS_LOW_CONFIDENCE；Macro atoms completed; reactiveDismissed=0；随后仍会用详情页证据重新校验，校验不过就失败。",
+      "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/runtime\/run_reports\/tv.danmaku.bili\/bilibili_open_first_video_1779207903248.json",
+      "timestamp": 1779207903250,
+      "extra": {
+        "text": "王老菊董事长",
+        "desc": null,
+        "resourceId": "tv.danmaku.bili:id\/tag_name",
+        "class": "android.widget.TextView",
+        "clickable": false,
+        "bounds": "48 1350 496 1470",
+        "center": {
+          "x": 0.18888888888888888,
+          "y": 0.44507575757575757
+        },
+        "score": 33,
+        "hasVideoEvidence": false,
+        "hasQueryEvidence": true,
+        "pageHasQueryEvidence": true,
+        "pageHasSearchResultVideoSet": false
+      }
+    },
+    {
+      "title": "失败后 AI 判断",
+      "status": "RUNNING",
+      "message": "当前不是直接停下：App 把失败原因、当前屏幕节点和已跑步骤发给手机端 AI，让 AI 判断下一段补救 JSON。",
+      "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/runtime\/run_reports\/tv.danmaku.bili\/bilibili_open_first_video_1779207903248.json",
+      "timestamp": 1779207903270,
+      "extra": {
+        "phase": "REPLAN",
+        "trigger": "GOAL_UNVERIFIED_LOOP_2",
+        "previousStatus": "FAILED_GOAL_UNVERIFIED",
+        "previousMessage": "当前仍像搜索结果页：搜索输入框或“综合\/视频\/用户”等结果页 tabs 还在，不能报告第一个视频已打开。"
+      }
+    },
+    {
+      "title": "失败后 AI 判断 返回",
+      "status": "SUCCESS",
+      "message": "HTTP=200；模型=deepseek-v4-pro；goalCompleted=false；补救步骤=2；诊断=之前尝试点击坐标(0.189,0.445)未能打开第一个视频，可能误触了其他元素。现根据视频候选精准点击。",
+      "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ai_jobs\/2026-05-20\/factory_ai_replan_1779207939236.json",
+      "timestamp": 1779207939243,
+      "extra": {
+        "decision": {
+          "goalCompleted": false,
+          "screenAssessment": "当前仍为搜索结果页，顶部有搜索输入框（文本'王老菊董事长'），下方有综合\/番剧等标签页，核心区域显示多个视频，其中第一个视频标题为'王老菊教你征服异星水域'。",
+          "failureDiagnosis": "之前尝试点击坐标(0.189,0.445)未能打开第一个视频，可能误触了其他元素。现根据视频候选精准点击。",
+          "confidence": "MEDIUM",
+          "nextActionReason": "根据currentUi.videoCandidates，第一个视频候选索引为0，标题为'王老菊教你征服异星水域'，其可点击容器资源ID为tv.danmaku.bili:id\/ad_tint_frame，bounds [0,681,1440,1165]，中心坐标(0.5, 0.29135)。使用ClickSelector精确点击该容器以打开视频。"
+        }
+      }
+    },
+    {
+      "title": "AI 补救计划转 Skill JSON",
+      "status": "SUCCESS",
+      "message": "AI 返回 2 个下一步动作，已转换成 3 个候选 Skill JSON。",
+      "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_candidates\/tv.danmaku.bili\/patched.command.1779207939243.json",
+      "timestamp": 1779207940100,
+      "extra": {
+        "phase": "REPLAN",
+        "trigger": "GOAL_UNVERIFIED_LOOP_2"
+      }
+    },
+    {
+      "title": "AI 补救 dry-run",
+      "status": "FAILED_DRY_RUN",
+      "message": "通过 2\/3。",
+      "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_dry_run_reports\/tv.danmaku.bili\/patched.command.1779207939243_1779207940111.json",
+      "timestamp": 1779207940113
+    },
+    {
+      "title": "AI 补救 JSON 执行结果",
+      "status": "FAILED_ELEMENT_NOT_FOUND",
+      "message": "patched.command.1779207939243 -> FAILED_ELEMENT_NOT_FOUND；No matching node",
+      "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/runtime\/run_reports\/tv.danmaku.bili\/ai_follow_up_run_1779207941560.json",
+      "timestamp": 1779207941563,
+      "extra": {
+        "phase": "REPLAN",
+        "trigger": "GOAL_UNVERIFIED_LOOP_2"
+      }
+    },
+    {
+      "title": "目标未完成，继续 AI 判断",
+      "status": "RUNNING",
+      "message": "当前仍像搜索结果页：搜索输入框或“综合\/视频\/用户”等结果页 tabs 还在，不能报告第一个视频已打开。；第 3\/4 次继续重判当前屏幕。",
+      "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/runtime\/run_reports\/tv.danmaku.bili\/ai_follow_up_run_1779207941560.json",
+      "timestamp": 1779207941576,
+      "extra": {
+        "serviceConnected": true,
+        "appPackage": "tv.danmaku.bili",
+        "nodeCount": 77,
+        "sampleTexts": [
+          "返回",
+          "王老菊董事长 搜索查询",
+          "搜索",
+          "bilibili热搜",
+          "完整榜单",
+          "俄罗斯总统普京抵达北京",
+          "天问一号观测到星际天体尘埃活动",
+          "Tim余华拆人生盲盒",
+          "普京抱过的中国男孩将再见普京",
+          "中美同意开展人工智能政府间对话",
+          "百万英镑 但自己画的",
+          "世界杯球队巡礼之巴西",
+          "普京访华聚焦哪些重点议题",
+          "小Lin说独家对谈张凌赫",
+          "25万美金前男友淘汰赛",
+          "搜索历史",
+          "清空搜索历史",
+          "展开",
+          "王老菊董事长",
+          "王老菊",
+          "宋丹丹桃花坞",
+          "宋丹丹你有什么代表作吗",
+          "给排水专业",
+          "搜索发现",
+          "已隐藏",
+          "显示搜索发现",
+          "反馈"
+        ],
+        "expected": "bilibili_first_video_detail_opened",
+        "searchInputPresent": true,
+        "resultTabsVisible": false,
+        "searchSurfaceVisible": true,
+        "detailMarkerHits": [],
+        "playerMarkerHits": [],
+        "videoResourceHits": [],
+        "nonVideoResourceHits": [],
+        "nonVideoTextHits": [],
+        "nonVideoDetailSurface": false,
+        "videoSpecificEvidence": false,
+        "blockerHits": [],
+        "shareSheetVisible": false,
+        "unsafePostOrMessageSurface": false,
+        "detailEvidenceStrong": false
+      }
+    },
+    {
+      "title": "失败后 AI 判断",
+      "status": "RUNNING",
+      "message": "当前不是直接停下：App 把失败原因、当前屏幕节点和已跑步骤发给手机端 AI，让 AI 判断下一段补救 JSON。",
+      "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/runtime\/run_reports\/tv.danmaku.bili\/ai_follow_up_run_1779207941560.json",
+      "timestamp": 1779207941590,
+      "extra": {
+        "phase": "REPLAN",
+        "trigger": "GOAL_UNVERIFIED_LOOP_3",
+        "previousStatus": "FAILED_GOAL_UNVERIFIED",
+        "previousMessage": "当前仍像搜索结果页：搜索输入框或“综合\/视频\/用户”等结果页 tabs 还在，不能报告第一个视频已打开。"
+      }
+    },
+    {
+      "title": "失败后 AI 判断 返回",
+      "status": "SUCCESS",
+      "message": "HTTP=200；模型=deepseek-v4-pro；goalCompleted=false；补救步骤=2；诊断=之前的补丁步骤尝试用 ClickSelector 点击某个节点失败（FAILED_ELEMENT_NOT_FOUND），因为选择器未匹配到当前界面的元素。根本原",
+      "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ai_jobs\/2026-05-20\/factory_ai_replan_1779207973439.json",
+      "timestamp": 1779207973444,
+      "extra": {
+        "decision": {
+          "goalCompleted": false,
+          "screenAssessment": "当前在哔哩哔哩搜索页面的热搜\/搜索历史视图，顶部搜索输入框内有“王老菊董事长”，右侧有“搜索”按钮，但尚未触发搜索。下方显示的是热搜列表和搜索历史标签，未出现真正的搜索结果。",
+          "failureDiagnosis": "之前的补丁步骤尝试用 ClickSelector 点击某个节点失败（FAILED_ELEMENT_NOT_FOUND），因为选择器未匹配到当前界面的元素。根本原因是尚未执行搜索，所以无法打开第一个视频。",
+          "confidence": "HIGH",
+          "nextActionReason": "点击搜索按钮以提交搜索词，从而加载搜索结果列表，后续才能从中选择第一个视频。"
+        }
+      }
+    },
+    {
+      "title": "AI 补救计划转 Skill JSON",
+      "status": "SUCCESS",
+      "message": "AI 返回 2 个下一步动作，已转换成 3 个候选 Skill JSON。",
+      "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_candidates\/tv.danmaku.bili\/patched.command.1779207973444.json",
+      "timestamp": 1779207974314,
+      "extra": {
+        "phase": "REPLAN",
+        "trigger": "GOAL_UNVERIFIED_LOOP_3"
+      }
+    },
+    {
+      "title": "AI 补救 dry-run",
+      "status": "SUCCESS",
+      "message": "通过 3\/3。",
+      "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_dry_run_reports\/tv.danmaku.bili\/patched.command.1779207973444_1779207974326.json",
+      "timestamp": 1779207974327
+    },
+    {
+      "title": "AI 补救 JSON 执行结果",
+      "status": "SUCCESS",
+      "message": "patched.command.1779207973444 -> SUCCESS_MEDIUM_CONFIDENCE；Macro atoms completed; reactiveDismissed=1",
+      "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/runtime\/run_reports\/tv.danmaku.bili\/ai_follow_up_run_1779207977059.json",
+      "timestamp": 1779207977062,
+      "extra": {
+        "phase": "REPLAN",
+        "trigger": "GOAL_UNVERIFIED_LOOP_3"
+      }
+    },
+    {
+      "title": "目标未完成，继续 AI 判断",
+      "status": "RUNNING",
+      "message": "当前仍像搜索结果页：搜索输入框或“综合\/视频\/用户”等结果页 tabs 还在，不能报告第一个视频已打开。；第 4\/4 次继续重判当前屏幕。",
+      "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/runtime\/run_reports\/tv.danmaku.bili\/ai_follow_up_run_1779207977059.json",
+      "timestamp": 1779207977071,
+      "extra": {
+        "serviceConnected": true,
+        "appPackage": "tv.danmaku.bili",
+        "nodeCount": 77,
+        "sampleTexts": [
+          "返回",
+          "王老菊董事长 搜索查询",
+          "搜索",
+          "bilibili热搜",
+          "完整榜单",
+          "俄罗斯总统普京抵达北京",
+          "天问一号观测到星际天体尘埃活动",
+          "Tim余华拆人生盲盒",
+          "普京抱过的中国男孩将再见普京",
+          "中美同意开展人工智能政府间对话",
+          "百万英镑 但自己画的",
+          "世界杯球队巡礼之巴西",
+          "普京访华聚焦哪些重点议题",
+          "小Lin说独家对谈张凌赫",
+          "25万美金前男友淘汰赛",
+          "搜索历史",
+          "清空搜索历史",
+          "展开",
+          "王老菊董事长",
+          "王老菊",
+          "宋丹丹桃花坞",
+          "宋丹丹你有什么代表作吗",
+          "给排水专业",
+          "搜索发现",
+          "已隐藏",
+          "显示搜索发现",
+          "反馈"
+        ],
+        "expected": "bilibili_first_video_detail_opened",
+        "searchInputPresent": true,
+        "resultTabsVisible": false,
+        "searchSurfaceVisible": true,
+        "detailMarkerHits": [],
+        "playerMarkerHits": [],
+        "videoResourceHits": [],
+        "nonVideoResourceHits": [],
+        "nonVideoTextHits": [],
+        "nonVideoDetailSurface": false,
+        "videoSpecificEvidence": false,
+        "blockerHits": [],
+        "shareSheetVisible": false,
+        "unsafePostOrMessageSurface": false,
+        "detailEvidenceStrong": false
+      }
+    },
+    {
+      "title": "失败后 AI 判断",
+      "status": "RUNNING",
+      "message": "当前不是直接停下：App 把失败原因、当前屏幕节点和已跑步骤发给手机端 AI，让 AI 判断下一段补救 JSON。",
+      "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/runtime\/run_reports\/tv.danmaku.bili\/ai_follow_up_run_1779207977059.json",
+      "timestamp": 1779207977090,
+      "extra": {
+        "phase": "REPLAN",
+        "trigger": "GOAL_UNVERIFIED_LOOP_4",
+        "previousStatus": "FAILED_GOAL_UNVERIFIED",
+        "previousMessage": "当前仍像搜索结果页：搜索输入框或“综合\/视频\/用户”等结果页 tabs 还在，不能报告第一个视频已打开。"
+      }
+    },
+    {
+      "title": "失败后 AI 判断 返回",
+      "status": "SUCCESS",
+      "message": "HTTP=200；模型=deepseek-v4-pro；goalCompleted=false；补救步骤=3；诊断=上一轮点击搜索按钮后曾短暂进入加载页但最终退回此页面，可能因为网络波动或页面状态异常导致搜索请求未成功下发。点击搜索历史标签可能触发更直接的搜索。",
+      "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ai_jobs\/2026-05-20\/factory_ai_replan_1779208073630.json",
+      "timestamp": 1779208073635,
+      "extra": {
+        "decision": {
+          "goalCompleted": false,
+          "screenAssessment": "当前页面是哔哩哔哩搜索建议页，顶栏搜索框中有“王老菊董事长”文字，右侧有“搜索”按钮，页面主体显示热搜榜单、搜索历史等区块，无搜索结果列表。",
+          "failureDiagnosis": "上一轮点击搜索按钮后曾短暂进入加载页但最终退回此页面，可能因为网络波动或页面状态异常导致搜索请求未成功下发。点击搜索历史标签可能触发更直接的搜索。",
+          "confidence": "MEDIUM",
+          "nextActionReason": "点击搜索历史中的“王老菊董事长”标签（中心坐标(0.189, 0.445)）以触发搜索，等待页面加载，然后点击搜索结果中第一个视频的预期位置(0.5, 0.36)。"
+        }
+      }
+    },
+    {
+      "title": "AI 补救计划转 Skill JSON",
+      "status": "SUCCESS",
+      "message": "AI 返回 3 个下一步动作，已转换成 4 个候选 Skill JSON。",
+      "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_candidates\/tv.danmaku.bili\/patched.command.1779208073635.json",
+      "timestamp": 1779208074917,
+      "extra": {
+        "phase": "REPLAN",
+        "trigger": "GOAL_UNVERIFIED_LOOP_4"
+      }
+    },
+    {
+      "title": "AI 补救 dry-run",
+      "status": "SUCCESS",
+      "message": "通过 4\/4。",
+      "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_dry_run_reports\/tv.danmaku.bili\/patched.command.1779208073635_1779208074930.json",
+      "timestamp": 1779208074932
+    },
+    {
+      "title": "AI 补救 JSON 执行结果",
+      "status": "SUCCESS",
+      "message": "patched.command.1779208073635 -> SUCCESS_LOW_CONFIDENCE；Macro atoms completed; reactiveDismissed=3",
+      "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/runtime\/run_reports\/tv.danmaku.bili\/ai_follow_up_run_1779208078790.json",
+      "timestamp": 1779208078793,
+      "extra": {
+        "phase": "REPLAN",
+        "trigger": "GOAL_UNVERIFIED_LOOP_4"
+      }
+    },
+    {
+      "title": "目标完成校验",
+      "status": "FAILED_GOAL_UNVERIFIED",
+      "message": "当前仍像搜索结果页：搜索输入框或“综合\/视频\/用户”等结果页 tabs 还在，不能报告第一个视频已打开。",
+      "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/runtime\/run_reports\/tv.danmaku.bili\/ai_follow_up_run_1779208078790.json",
+      "timestamp": 1779208078803,
+      "extra": {
+        "serviceConnected": true,
+        "appPackage": "tv.danmaku.bili",
+        "nodeCount": 75,
+        "sampleTexts": [
+          "返回",
+          "王老菊 搜索查询",
+          "搜索",
+          "bilibili热搜",
+          "完整榜单",
+          "俄罗斯总统普京抵达北京",
+          "天问一号观测到星际天体尘埃活动",
+          "Tim余华拆人生盲盒",
+          "普京抱过的中国男孩将再见普京",
+          "中美同意开展人工智能政府间对话",
+          "百万英镑 但自己画的",
+          "世界杯球队巡礼之巴西",
+          "普京访华聚焦哪些重点议题",
+          "小Lin说独家对谈张凌赫",
+          "25万美金前男友淘汰赛",
+          "搜索历史",
+          "清空搜索历史",
+          "展开",
+          "25万美金前男友淘汰赛",
+          "王老菊董事长",
+          "王老菊",
+          "宋丹丹桃花坞",
+          "搜索发现",
+          "已隐藏",
+          "显示搜索发现",
+          "反馈"
+        ],
+        "expected": "bilibili_first_video_detail_opened",
+        "searchInputPresent": true,
+        "resultTabsVisible": false,
+        "searchSurfaceVisible": true,
+        "detailMarkerHits": [],
+        "playerMarkerHits": [],
+        "videoResourceHits": [],
+        "nonVideoResourceHits": [],
+        "nonVideoTextHits": [],
+        "nonVideoDetailSurface": false,
+        "videoSpecificEvidence": false,
+        "blockerHits": [],
+        "shareSheetVisible": false,
+        "unsafePostOrMessageSurface": false,
+        "detailEvidenceStrong": false
+      }
+    },
+    {
+      "title": "保留目标应用前台用于证据",
+      "status": "INFO",
+      "message": "本次保留目标应用当前页面，不把 MacroPilot 拉回前台；报告里会记录当前 UI 快照和截图，方便继续让 AI 判断卡点。",
+      "path": null,
+      "timestamp": 1779208080325
+    }
+  ],
+  "outputs": {
+    "aiJobFile": null,
+    "aiJobFiles": [
+      "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ai_jobs\/2026-05-20\/factory_ai_replan_1779207885281.json",
+      "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ai_jobs\/2026-05-20\/factory_ai_replan_1779207939236.json",
+      "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ai_jobs\/2026-05-20\/factory_ai_replan_1779207973439.json",
+      "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ai_jobs\/2026-05-20\/factory_ai_replan_1779208073630.json"
+    ],
+    "previewConfigFile": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/app_config_exports\/tv.danmaku.bili\/app_config_20260520_002349_599.json",
+    "runtimeRunReportFile": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/runtime\/run_reports\/tv.danmaku.bili\/ai_follow_up_run_1779208078790.json",
+    "latestAssemblyReports": [
+      "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/app_config_exports\/tv.danmaku.bili\/assembly_report_1779207829613.json",
+      "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/app_config_exports\/tv.danmaku.bili\/assembly_report_1779207079126.json",
+      "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/app_config_exports\/tv.danmaku.bili\/assembly_report_1779205879127.json",
+      "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/app_config_exports\/tv.danmaku.bili\/assembly_report_1778538353066.json",
+      "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/app_config_exports\/tv.danmaku.bili\/assembly_report_1778538021243.json"
+    ],
+    "appUiGraph": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/app_ui_graphs\/tv.danmaku.bili\/graph_candidate.json",
+    "recentUiSnapshots": [
+      {
+        "id": "ui_snapshot_1779208080295",
+        "source": "current_ui_summary",
+        "note": "factory_ai_context",
+        "appPackage": "tv.danmaku.bili",
+        "windowClassName": "android.widget.FrameLayout",
+        "screenKey": "1ce9d16e",
+        "screenshotPath": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_screenshots\/tv.danmaku.bili\/20260520_002800_025_1ce9d16e.png",
+        "visualHash": "05226712c73202e64ca62220cf86c1249eb315cff24ad1c42a7a74203c4cb4cb",
+        "summary": {
+          "nodeCount": 75,
+          "clickableCount": 22,
+          "editableCount": 1,
+          "scrollableCount": 1,
+          "labels": [
+            "tv.danmaku.bili:id\/action_bar_root",
+            "android:id\/content",
+            "tv.danmaku.bili:id\/ogv_layout",
+            "tv.danmaku.bili:id\/search_input_layout",
+            "返回 tv.danmaku.bili:id\/iv_back_arrow",
+            "tv.danmaku.bili:id\/search_bar_input",
+            "tv.danmaku.bili:id\/search_icon",
+            "tv.danmaku.bili:id\/search_bar",
+            "tv.danmaku.bili:id\/search_plate",
+            "王老菊 搜索查询 tv.danmaku.bili:id\/search_src_text",
+            "搜索 tv.danmaku.bili:id\/action_search",
+            "tv.danmaku.bili:id\/suggest_container",
+            "tv.danmaku.bili:id\/content_container",
+            "tv.danmaku.bili:id\/search_discover_list",
+            "bilibili热搜 tv.danmaku.bili:id\/title",
+            "tv.danmaku.bili:id\/container_entrance",
+            "完整榜单 tv.danmaku.bili:id\/entrance",
+            "tv.danmaku.bili:id\/rank_recycler",
+            "俄罗斯总统普京抵达北京 tv.danmaku.bili:id\/rank_title",
+            "tv.danmaku.bili:id\/rank_icon",
+            "天问一号观测到星际天体尘埃活动 tv.danmaku.bili:id\/rank_title",
+            "tv.danmaku.bili:id\/rank_icon",
+            "Tim余华拆人生盲盒 tv.danmaku.bili:id\/rank_title",
+            "tv.danmaku.bili:id\/rank_icon",
+            "普京抱过的中国男孩将再见普京 tv.danmaku.bili:id\/rank_title",
+            "tv.danmaku.bili:id\/rank_icon",
+            "中美同意开展人工智能政府间对话 tv.danmaku.bili:id\/rank_title",
+            "百万英镑 但自己画的 tv.danmaku.bili:id\/rank_title",
+            "tv.danmaku.bili:id\/rank_icon",
+            "世界杯球队巡礼之巴西 tv.danmaku.bili:id\/rank_title",
+            "tv.danmaku.bili:id\/rank_icon",
+            "普京访华聚焦哪些重点议题 tv.danmaku.bili:id\/rank_title",
+            "小Lin说独家对谈张凌赫 tv.danmaku.bili:id\/rank_title",
+            "tv.danmaku.bili:id\/rank_icon",
+            "25万美金前男友淘汰赛 tv.danmaku.bili:id\/rank_title",
+            "tv.danmaku.bili:id\/container",
+            "搜索历史 tv.danmaku.bili:id\/title",
+            "清空搜索历史 tv.danmaku.bili:id\/delete_all",
+            "tv.danmaku.bili:id\/line",
+            "展开 tv.danmaku.bili:id\/expand",
+            "tv.danmaku.bili:id\/historyRv",
+            "25万美金前男友淘汰赛 tv.danmaku.bili:id\/tag_name",
+            "王老菊董事长 tv.danmaku.bili:id\/tag_name",
+            "王老菊 tv.danmaku.bili:id\/tag_name",
+            "宋丹丹桃花坞 tv.danmaku.bili:id\/tag_name",
+            "搜索发现 tv.danmaku.bili:id\/title",
+            "已隐藏 tv.danmaku.bili:id\/hide_hint_text",
+            "显示搜索发现 tv.danmaku.bili:id\/guess_icon",
+            "tv.danmaku.bili:id\/preview",
+            "tv.danmaku.bili:id\/button",
+            "反馈 tv.danmaku.bili:id\/button_text",
+            "tv.danmaku.bili:id\/button_icon"
+          ],
+          "bottomCandidates": []
+        },
+        "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_snapshots\/tv.danmaku.bili\/20260520_002800_025_1ce9d16e.json"
+      },
+      {
+        "id": "ui_snapshot_1779208080060",
+        "source": "accessibility_auto",
+        "note": "TYPE_WINDOW_CONTENT_CHANGED",
+        "appPackage": "tv.danmaku.bili",
+        "windowClassName": "android.widget.FrameLayout",
+        "screenKey": "1ce9d16e",
+        "screenshotPath": "null",
+        "visualHash": "null",
+        "summary": {
+          "nodeCount": 75,
+          "clickableCount": 22,
+          "editableCount": 1,
+          "scrollableCount": 1,
+          "labels": [
+            "tv.danmaku.bili:id\/action_bar_root",
+            "android:id\/content",
+            "tv.danmaku.bili:id\/ogv_layout",
+            "tv.danmaku.bili:id\/search_input_layout",
+            "返回 tv.danmaku.bili:id\/iv_back_arrow",
+            "tv.danmaku.bili:id\/search_bar_input",
+            "tv.danmaku.bili:id\/search_icon",
+            "tv.danmaku.bili:id\/search_bar",
+            "tv.danmaku.bili:id\/search_plate",
+            "王老菊 搜索查询 tv.danmaku.bili:id\/search_src_text",
+            "搜索 tv.danmaku.bili:id\/action_search",
+            "tv.danmaku.bili:id\/suggest_container",
+            "tv.danmaku.bili:id\/content_container",
+            "tv.danmaku.bili:id\/search_discover_list",
+            "bilibili热搜 tv.danmaku.bili:id\/title",
+            "tv.danmaku.bili:id\/container_entrance",
+            "完整榜单 tv.danmaku.bili:id\/entrance",
+            "tv.danmaku.bili:id\/rank_recycler",
+            "俄罗斯总统普京抵达北京 tv.danmaku.bili:id\/rank_title",
+            "tv.danmaku.bili:id\/rank_icon",
+            "天问一号观测到星际天体尘埃活动 tv.danmaku.bili:id\/rank_title",
+            "tv.danmaku.bili:id\/rank_icon",
+            "Tim余华拆人生盲盒 tv.danmaku.bili:id\/rank_title",
+            "tv.danmaku.bili:id\/rank_icon",
+            "普京抱过的中国男孩将再见普京 tv.danmaku.bili:id\/rank_title",
+            "tv.danmaku.bili:id\/rank_icon",
+            "中美同意开展人工智能政府间对话 tv.danmaku.bili:id\/rank_title",
+            "百万英镑 但自己画的 tv.danmaku.bili:id\/rank_title",
+            "tv.danmaku.bili:id\/rank_icon",
+            "世界杯球队巡礼之巴西 tv.danmaku.bili:id\/rank_title",
+            "tv.danmaku.bili:id\/rank_icon",
+            "普京访华聚焦哪些重点议题 tv.danmaku.bili:id\/rank_title",
+            "小Lin说独家对谈张凌赫 tv.danmaku.bili:id\/rank_title",
+            "tv.danmaku.bili:id\/rank_icon",
+            "25万美金前男友淘汰赛 tv.danmaku.bili:id\/rank_title",
+            "tv.danmaku.bili:id\/container",
+            "搜索历史 tv.danmaku.bili:id\/title",
+            "清空搜索历史 tv.danmaku.bili:id\/delete_all",
+            "tv.danmaku.bili:id\/line",
+            "展开 tv.danmaku.bili:id\/expand",
+            "tv.danmaku.bili:id\/historyRv",
+            "25万美金前男友淘汰赛 tv.danmaku.bili:id\/tag_name",
+            "王老菊董事长 tv.danmaku.bili:id\/tag_name",
+            "王老菊 tv.danmaku.bili:id\/tag_name",
+            "宋丹丹桃花坞 tv.danmaku.bili:id\/tag_name",
+            "搜索发现 tv.danmaku.bili:id\/title",
+            "已隐藏 tv.danmaku.bili:id\/hide_hint_text",
+            "显示搜索发现 tv.danmaku.bili:id\/guess_icon",
+            "tv.danmaku.bili:id\/preview",
+            "tv.danmaku.bili:id\/button",
+            "反馈 tv.danmaku.bili:id\/button_text",
+            "tv.danmaku.bili:id\/button_icon"
+          ],
+          "bottomCandidates": []
+        },
+        "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_snapshots\/tv.danmaku.bili\/20260520_002800_060_1ce9d16e.json"
+      },
+      {
+        "id": "ui_snapshot_1779208079175",
+        "source": "accessibility_auto",
+        "note": "TYPE_WINDOW_CONTENT_CHANGED",
+        "appPackage": "tv.danmaku.bili",
+        "windowClassName": "null",
+        "screenKey": "27f28b13",
+        "screenshotPath": "null",
+        "visualHash": "null",
+        "summary": {
+          "nodeCount": 75,
+          "clickableCount": 22,
+          "editableCount": 1,
+          "scrollableCount": 1,
+          "labels": [
+            "tv.danmaku.bili:id\/action_bar_root",
+            "android:id\/content",
+            "tv.danmaku.bili:id\/ogv_layout",
+            "tv.danmaku.bili:id\/search_input_layout",
+            "返回 tv.danmaku.bili:id\/iv_back_arrow",
+            "tv.danmaku.bili:id\/search_bar_input",
+            "tv.danmaku.bili:id\/search_icon",
+            "tv.danmaku.bili:id\/search_bar",
+            "tv.danmaku.bili:id\/search_plate",
+            "王老菊 搜索查询 tv.danmaku.bili:id\/search_src_text",
+            "搜索 tv.danmaku.bili:id\/action_search",
+            "tv.danmaku.bili:id\/suggest_container",
+            "tv.danmaku.bili:id\/content_container",
+            "tv.danmaku.bili:id\/search_discover_list",
+            "bilibili热搜 tv.danmaku.bili:id\/title",
+            "tv.danmaku.bili:id\/container_entrance",
+            "完整榜单 tv.danmaku.bili:id\/entrance",
+            "tv.danmaku.bili:id\/rank_recycler",
+            "俄罗斯总统普京抵达北京 tv.danmaku.bili:id\/rank_title",
+            "tv.danmaku.bili:id\/rank_icon",
+            "天问一号观测到星际天体尘埃活动 tv.danmaku.bili:id\/rank_title",
+            "tv.danmaku.bili:id\/rank_icon",
+            "Tim余华拆人生盲盒 tv.danmaku.bili:id\/rank_title",
+            "tv.danmaku.bili:id\/rank_icon",
+            "普京抱过的中国男孩将再见普京 tv.danmaku.bili:id\/rank_title",
+            "tv.danmaku.bili:id\/rank_icon",
+            "中美同意开展人工智能政府间对话 tv.danmaku.bili:id\/rank_title",
+            "百万英镑 但自己画的 tv.danmaku.bili:id\/rank_title",
+            "tv.danmaku.bili:id\/rank_icon",
+            "世界杯球队巡礼之巴西 tv.danmaku.bili:id\/rank_title",
+            "tv.danmaku.bili:id\/rank_icon",
+            "普京访华聚焦哪些重点议题 tv.danmaku.bili:id\/rank_title",
+            "小Lin说独家对谈张凌赫 tv.danmaku.bili:id\/rank_title",
+            "tv.danmaku.bili:id\/rank_icon",
+            "25万美金前男友淘汰赛 tv.danmaku.bili:id\/rank_title",
+            "tv.danmaku.bili:id\/container",
+            "搜索历史 tv.danmaku.bili:id\/title",
+            "清空搜索历史 tv.danmaku.bili:id\/delete_all",
+            "tv.danmaku.bili:id\/line",
+            "展开 tv.danmaku.bili:id\/expand",
+            "tv.danmaku.bili:id\/historyRv",
+            "25万美金前男友淘汰赛 tv.danmaku.bili:id\/tag_name",
+            "王老菊董事长 tv.danmaku.bili:id\/tag_name",
+            "王老菊 tv.danmaku.bili:id\/tag_name",
+            "宋丹丹桃花坞 tv.danmaku.bili:id\/tag_name",
+            "搜索发现 tv.danmaku.bili:id\/title",
+            "已隐藏 tv.danmaku.bili:id\/hide_hint_text",
+            "显示搜索发现 tv.danmaku.bili:id\/guess_icon",
+            "tv.danmaku.bili:id\/preview",
+            "tv.danmaku.bili:id\/button",
+            "反馈 tv.danmaku.bili:id\/button_text",
+            "tv.danmaku.bili:id\/button_icon"
+          ],
+          "bottomCandidates": []
+        },
+        "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_snapshots\/tv.danmaku.bili\/20260520_002759_174_27f28b13.json"
+      },
+      {
+        "id": "ui_snapshot_1779208078776",
+        "source": "after_macro",
+        "note": "patched.command.1779208073635; confidence=SUCCESS_LOW_CONFIDENCE; reactiveDismissed=3",
+        "appPackage": "tv.danmaku.bili",
+        "windowClassName": "android.widget.FrameLayout",
+        "screenKey": "1ce9d16e",
+        "screenshotPath": "null",
+        "visualHash": "null",
+        "summary": {
+          "nodeCount": 75,
+          "clickableCount": 22,
+          "editableCount": 1,
+          "scrollableCount": 1,
+          "labels": [
+            "tv.danmaku.bili:id\/action_bar_root",
+            "android:id\/content",
+            "tv.danmaku.bili:id\/ogv_layout",
+            "tv.danmaku.bili:id\/search_input_layout",
+            "返回 tv.danmaku.bili:id\/iv_back_arrow",
+            "tv.danmaku.bili:id\/search_bar_input",
+            "tv.danmaku.bili:id\/search_icon",
+            "tv.danmaku.bili:id\/search_bar",
+            "tv.danmaku.bili:id\/search_plate",
+            "王老菊 搜索查询 tv.danmaku.bili:id\/search_src_text",
+            "搜索 tv.danmaku.bili:id\/action_search",
+            "tv.danmaku.bili:id\/suggest_container",
+            "tv.danmaku.bili:id\/content_container",
+            "tv.danmaku.bili:id\/search_discover_list",
+            "bilibili热搜 tv.danmaku.bili:id\/title",
+            "tv.danmaku.bili:id\/container_entrance",
+            "完整榜单 tv.danmaku.bili:id\/entrance",
+            "tv.danmaku.bili:id\/rank_recycler",
+            "俄罗斯总统普京抵达北京 tv.danmaku.bili:id\/rank_title",
+            "tv.danmaku.bili:id\/rank_icon",
+            "天问一号观测到星际天体尘埃活动 tv.danmaku.bili:id\/rank_title",
+            "tv.danmaku.bili:id\/rank_icon",
+            "Tim余华拆人生盲盒 tv.danmaku.bili:id\/rank_title",
+            "tv.danmaku.bili:id\/rank_icon",
+            "普京抱过的中国男孩将再见普京 tv.danmaku.bili:id\/rank_title",
+            "tv.danmaku.bili:id\/rank_icon",
+            "中美同意开展人工智能政府间对话 tv.danmaku.bili:id\/rank_title",
+            "百万英镑 但自己画的 tv.danmaku.bili:id\/rank_title",
+            "tv.danmaku.bili:id\/rank_icon",
+            "世界杯球队巡礼之巴西 tv.danmaku.bili:id\/rank_title",
+            "tv.danmaku.bili:id\/rank_icon",
+            "普京访华聚焦哪些重点议题 tv.danmaku.bili:id\/rank_title",
+            "小Lin说独家对谈张凌赫 tv.danmaku.bili:id\/rank_title",
+            "tv.danmaku.bili:id\/rank_icon",
+            "25万美金前男友淘汰赛 tv.danmaku.bili:id\/rank_title",
+            "tv.danmaku.bili:id\/container",
+            "搜索历史 tv.danmaku.bili:id\/title",
+            "清空搜索历史 tv.danmaku.bili:id\/delete_all",
+            "tv.danmaku.bili:id\/line",
+            "展开 tv.danmaku.bili:id\/expand",
+            "tv.danmaku.bili:id\/historyRv",
+            "25万美金前男友淘汰赛 tv.danmaku.bili:id\/tag_name",
+            "王老菊董事长 tv.danmaku.bili:id\/tag_name",
+            "王老菊 tv.danmaku.bili:id\/tag_name",
+            "宋丹丹桃花坞 tv.danmaku.bili:id\/tag_name",
+            "搜索发现 tv.danmaku.bili:id\/title",
+            "已隐藏 tv.danmaku.bili:id\/hide_hint_text",
+            "显示搜索发现 tv.danmaku.bili:id\/guess_icon",
+            "tv.danmaku.bili:id\/preview",
+            "tv.danmaku.bili:id\/button",
+            "反馈 tv.danmaku.bili:id\/button_text",
+            "tv.danmaku.bili:id\/button_icon"
+          ],
+          "bottomCandidates": []
+        },
+        "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_snapshots\/tv.danmaku.bili\/20260520_002758_775_1ce9d16e.json"
+      },
+      {
+        "id": "ui_snapshot_1779208078759",
+        "source": "after_macro_atom",
+        "note": "index=2; skillId=patched.1779208073635.3.clickcoordinate; status=SUCCESS_LOW_CONFIDENCE",
+        "appPackage": "tv.danmaku.bili",
+        "windowClassName": "android.widget.FrameLayout",
+        "screenKey": "1ce9d16e",
+        "screenshotPath": "null",
+        "visualHash": "null",
+        "summary": {
+          "nodeCount": 75,
+          "clickableCount": 22,
+          "editableCount": 1,
+          "scrollableCount": 1,
+          "labels": [
+            "tv.danmaku.bili:id\/action_bar_root",
+            "android:id\/content",
+            "tv.danmaku.bili:id\/ogv_layout",
+            "tv.danmaku.bili:id\/search_input_layout",
+            "返回 tv.danmaku.bili:id\/iv_back_arrow",
+            "tv.danmaku.bili:id\/search_bar_input",
+            "tv.danmaku.bili:id\/search_icon",
+            "tv.danmaku.bili:id\/search_bar",
+            "tv.danmaku.bili:id\/search_plate",
+            "王老菊 搜索查询 tv.danmaku.bili:id\/search_src_text",
+            "搜索 tv.danmaku.bili:id\/action_search",
+            "tv.danmaku.bili:id\/suggest_container",
+            "tv.danmaku.bili:id\/content_container",
+            "tv.danmaku.bili:id\/search_discover_list",
+            "bilibili热搜 tv.danmaku.bili:id\/title",
+            "tv.danmaku.bili:id\/container_entrance",
+            "完整榜单 tv.danmaku.bili:id\/entrance",
+            "tv.danmaku.bili:id\/rank_recycler",
+            "俄罗斯总统普京抵达北京 tv.danmaku.bili:id\/rank_title",
+            "tv.danmaku.bili:id\/rank_icon",
+            "天问一号观测到星际天体尘埃活动 tv.danmaku.bili:id\/rank_title",
+            "tv.danmaku.bili:id\/rank_icon",
+            "Tim余华拆人生盲盒 tv.danmaku.bili:id\/rank_title",
+            "tv.danmaku.bili:id\/rank_icon",
+            "普京抱过的中国男孩将再见普京 tv.danmaku.bili:id\/rank_title",
+            "tv.danmaku.bili:id\/rank_icon",
+            "中美同意开展人工智能政府间对话 tv.danmaku.bili:id\/rank_title",
+            "百万英镑 但自己画的 tv.danmaku.bili:id\/rank_title",
+            "tv.danmaku.bili:id\/rank_icon",
+            "世界杯球队巡礼之巴西 tv.danmaku.bili:id\/rank_title",
+            "tv.danmaku.bili:id\/rank_icon",
+            "普京访华聚焦哪些重点议题 tv.danmaku.bili:id\/rank_title",
+            "小Lin说独家对谈张凌赫 tv.danmaku.bili:id\/rank_title",
+            "tv.danmaku.bili:id\/rank_icon",
+            "25万美金前男友淘汰赛 tv.danmaku.bili:id\/rank_title",
+            "tv.danmaku.bili:id\/container",
+            "搜索历史 tv.danmaku.bili:id\/title",
+            "清空搜索历史 tv.danmaku.bili:id\/delete_all",
+            "tv.danmaku.bili:id\/line",
+            "展开 tv.danmaku.bili:id\/expand",
+            "tv.danmaku.bili:id\/historyRv",
+            "25万美金前男友淘汰赛 tv.danmaku.bili:id\/tag_name",
+            "王老菊董事长 tv.danmaku.bili:id\/tag_name",
+            "王老菊 tv.danmaku.bili:id\/tag_name",
+            "宋丹丹桃花坞 tv.danmaku.bili:id\/tag_name",
+            "搜索发现 tv.danmaku.bili:id\/title",
+            "已隐藏 tv.danmaku.bili:id\/hide_hint_text",
+            "显示搜索发现 tv.danmaku.bili:id\/guess_icon",
+            "tv.danmaku.bili:id\/preview",
+            "tv.danmaku.bili:id\/button",
+            "反馈 tv.danmaku.bili:id\/button_text",
+            "tv.danmaku.bili:id\/button_icon"
+          ],
+          "bottomCandidates": []
+        },
+        "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_snapshots\/tv.danmaku.bili\/20260520_002758_759_1ce9d16e.json"
+      },
+      {
+        "id": "ui_snapshot_1779208077982",
+        "source": "after_action",
+        "note": "patched.1779208073635.3.clickcoordinate:ClickCoordinate:SUCCESS_LOW_CONFIDENCE:Window\/node state changed; dispatchGesture tap sent (normalized=0.500,0.360 px=720,1140 screen=1440x3168)",
+        "appPackage": "tv.danmaku.bili",
+        "windowClassName": "android.widget.FrameLayout",
+        "screenKey": "aa5242f5",
+        "screenshotPath": "null",
+        "visualHash": "null",
+        "summary": {
+          "nodeCount": 74,
+          "clickableCount": 21,
+          "editableCount": 0,
+          "scrollableCount": 1,
+          "labels": [
+            "tv.danmaku.bili:id\/action_bar_root",
+            "android:id\/content",
+            "tv.danmaku.bili:id\/ogv_layout",
+            "tv.danmaku.bili:id\/search_input_layout",
+            "返回 tv.danmaku.bili:id\/iv_back_arrow",
+            "tv.danmaku.bili:id\/search_bar_input",
+            "tv.danmaku.bili:id\/search_icon",
+            "tv.danmaku.bili:id\/search_bar",
+            "tv.danmaku.bili:id\/search_plate",
+            "搜索 tv.danmaku.bili:id\/action_search",
+            "tv.danmaku.bili:id\/suggest_container",
+            "tv.danmaku.bili:id\/content_container",
+            "tv.danmaku.bili:id\/search_discover_list",
+            "bilibili热搜 tv.danmaku.bili:id\/title",
+            "tv.danmaku.bili:id\/container_entrance",
+            "完整榜单 tv.danmaku.bili:id\/entrance",
+            "tv.danmaku.bili:id\/rank_recycler",
+            "俄罗斯总统普京抵达北京 tv.danmaku.bili:id\/rank_title",
+            "tv.danmaku.bili:id\/rank_icon",
+            "天问一号观测到星际天体尘埃活动 tv.danmaku.bili:id\/rank_title",
+            "tv.danmaku.bili:id\/rank_icon",
+            "Tim余华拆人生盲盒 tv.danmaku.bili:id\/rank_title",
+            "tv.danmaku.bili:id\/rank_icon",
+            "普京抱过的中国男孩将再见普京 tv.danmaku.bili:id\/rank_title",
+            "tv.danmaku.bili:id\/rank_icon",
+            "中美同意开展人工智能政府间对话 tv.danmaku.bili:id\/rank_title",
+            "百万英镑 但自己画的 tv.danmaku.bili:id\/rank_title",
+            "tv.danmaku.bili:id\/rank_icon",
+            "世界杯球队巡礼之巴西 tv.danmaku.bili:id\/rank_title",
+            "tv.danmaku.bili:id\/rank_icon",
+            "普京访华聚焦哪些重点议题 tv.danmaku.bili:id\/rank_title",
+            "小Lin说独家对谈张凌赫 tv.danmaku.bili:id\/rank_title",
+            "tv.danmaku.bili:id\/rank_icon",
+            "tv.danmaku.bili:id\/container",
+            "搜索历史 tv.danmaku.bili:id\/title",
+            "清空搜索历史 tv.danmaku.bili:id\/delete_all",
+            "tv.danmaku.bili:id\/line",
+            "展开 tv.danmaku.bili:id\/expand",
+            "tv.danmaku.bili:id\/historyRv",
+            "王老菊董事长 tv.danmaku.bili:id\/tag_name",
+            "王老菊 tv.danmaku.bili:id\/tag_name",
+            "宋丹丹桃花坞 tv.danmaku.bili:id\/tag_name",
+            "宋丹丹你有什么代表作吗 tv.danmaku.bili:id\/tag_name",
+            "给排水专业 tv.danmaku.bili:id\/tag_name",
+            "搜索发现 tv.danmaku.bili:id\/title",
+            "已隐藏 tv.danmaku.bili:id\/hide_hint_text",
+            "显示搜索发现 tv.danmaku.bili:id\/guess_icon",
+            "tv.danmaku.bili:id\/preview",
+            "tv.danmaku.bili:id\/button",
+            "反馈 tv.danmaku.bili:id\/button_text",
+            "tv.danmaku.bili:id\/button_icon"
+          ],
+          "bottomCandidates": []
+        },
+        "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_snapshots\/tv.danmaku.bili\/20260520_002757_982_aa5242f5.json"
+      },
+      {
+        "id": "ui_snapshot_1779208077789",
+        "source": "before_action",
+        "note": "patched.1779208073635.3.clickcoordinate:ClickCoordinate",
+        "appPackage": "tv.danmaku.bili",
+        "windowClassName": "android.widget.FrameLayout",
+        "screenKey": "1ce9d16e",
+        "screenshotPath": "null",
+        "visualHash": "null",
+        "summary": {
+          "nodeCount": 77,
+          "clickableCount": 23,
+          "editableCount": 1,
+          "scrollableCount": 1,
+          "labels": [
+            "tv.danmaku.bili:id\/action_bar_root",
+            "android:id\/content",
+            "tv.danmaku.bili:id\/ogv_layout",
+            "tv.danmaku.bili:id\/search_input_layout",
+            "返回 tv.danmaku.bili:id\/iv_back_arrow",
+            "tv.danmaku.bili:id\/search_bar_input",
+            "tv.danmaku.bili:id\/search_icon",
+            "tv.danmaku.bili:id\/search_bar",
+            "tv.danmaku.bili:id\/search_plate",
+            "王老菊 搜索查询 tv.danmaku.bili:id\/search_src_text",
+            "搜索 tv.danmaku.bili:id\/action_search",
+            "tv.danmaku.bili:id\/suggest_container",
+            "tv.danmaku.bili:id\/content_container",
+            "tv.danmaku.bili:id\/search_discover_list",
+            "bilibili热搜 tv.danmaku.bili:id\/title",
+            "tv.danmaku.bili:id\/container_entrance",
+            "完整榜单 tv.danmaku.bili:id\/entrance",
+            "tv.danmaku.bili:id\/rank_recycler",
+            "俄罗斯总统普京抵达北京 tv.danmaku.bili:id\/rank_title",
+            "tv.danmaku.bili:id\/rank_icon",
+            "天问一号观测到星际天体尘埃活动 tv.danmaku.bili:id\/rank_title",
+            "tv.danmaku.bili:id\/rank_icon",
+            "Tim余华拆人生盲盒 tv.danmaku.bili:id\/rank_title",
+            "tv.danmaku.bili:id\/rank_icon",
+            "普京抱过的中国男孩将再见普京 tv.danmaku.bili:id\/rank_title",
+            "tv.danmaku.bili:id\/rank_icon",
+            "中美同意开展人工智能政府间对话 tv.danmaku.bili:id\/rank_title",
+            "百万英镑 但自己画的 tv.danmaku.bili:id\/rank_title",
+            "tv.danmaku.bili:id\/rank_icon",
+            "世界杯球队巡礼之巴西 tv.danmaku.bili:id\/rank_title",
+            "tv.danmaku.bili:id\/rank_icon",
+            "普京访华聚焦哪些重点议题 tv.danmaku.bili:id\/rank_title",
+            "小Lin说独家对谈张凌赫 tv.danmaku.bili:id\/rank_title",
+            "tv.danmaku.bili:id\/rank_icon",
+            "25万美金前男友淘汰赛 tv.danmaku.bili:id\/rank_title",
+            "tv.danmaku.bili:id\/container",
+            "搜索历史 tv.danmaku.bili:id\/title",
+            "清空搜索历史 tv.danmaku.bili:id\/delete_all",
+            "tv.danmaku.bili:id\/line",
+            "展开 tv.danmaku.bili:id\/expand",
+            "tv.danmaku.bili:id\/historyRv",
+            "王老菊董事长 tv.danmaku.bili:id\/tag_name",
+            "王老菊 tv.danmaku.bili:id\/tag_name",
+            "宋丹丹桃花坞 tv.danmaku.bili:id\/tag_name",
+            "宋丹丹你有什么代表作吗 tv.danmaku.bili:id\/tag_name",
+            "给排水专业 tv.danmaku.bili:id\/tag_name",
+            "搜索发现 tv.danmaku.bili:id\/title",
+            "已隐藏 tv.danmaku.bili:id\/hide_hint_text",
+            "显示搜索发现 tv.danmaku.bili:id\/guess_icon",
+            "tv.danmaku.bili:id\/preview",
+            "tv.danmaku.bili:id\/button",
+            "反馈 tv.danmaku.bili:id\/button_text",
+            "tv.danmaku.bili:id\/button_icon"
+          ],
+          "bottomCandidates": []
+        },
+        "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_snapshots\/tv.danmaku.bili\/20260520_002757_789_1ce9d16e.json"
+      },
+      {
+        "id": "ui_snapshot_1779208077768",
+        "source": "before_macro_atom",
+        "note": "index=2; skillId=patched.1779208073635.3.clickcoordinate",
+        "appPackage": "tv.danmaku.bili",
+        "windowClassName": "android.widget.FrameLayout",
+        "screenKey": "1ce9d16e",
+        "screenshotPath": "null",
+        "visualHash": "null",
+        "summary": {
+          "nodeCount": 77,
+          "clickableCount": 23,
+          "editableCount": 1,
+          "scrollableCount": 1,
+          "labels": [
+            "tv.danmaku.bili:id\/action_bar_root",
+            "android:id\/content",
+            "tv.danmaku.bili:id\/ogv_layout",
+            "tv.danmaku.bili:id\/search_input_layout",
+            "返回 tv.danmaku.bili:id\/iv_back_arrow",
+            "tv.danmaku.bili:id\/search_bar_input",
+            "tv.danmaku.bili:id\/search_icon",
+            "tv.danmaku.bili:id\/search_bar",
+            "tv.danmaku.bili:id\/search_plate",
+            "王老菊 搜索查询 tv.danmaku.bili:id\/search_src_text",
+            "搜索 tv.danmaku.bili:id\/action_search",
+            "tv.danmaku.bili:id\/suggest_container",
+            "tv.danmaku.bili:id\/content_container",
+            "tv.danmaku.bili:id\/search_discover_list",
+            "bilibili热搜 tv.danmaku.bili:id\/title",
+            "tv.danmaku.bili:id\/container_entrance",
+            "完整榜单 tv.danmaku.bili:id\/entrance",
+            "tv.danmaku.bili:id\/rank_recycler",
+            "俄罗斯总统普京抵达北京 tv.danmaku.bili:id\/rank_title",
+            "tv.danmaku.bili:id\/rank_icon",
+            "天问一号观测到星际天体尘埃活动 tv.danmaku.bili:id\/rank_title",
+            "tv.danmaku.bili:id\/rank_icon",
+            "Tim余华拆人生盲盒 tv.danmaku.bili:id\/rank_title",
+            "tv.danmaku.bili:id\/rank_icon",
+            "普京抱过的中国男孩将再见普京 tv.danmaku.bili:id\/rank_title",
+            "tv.danmaku.bili:id\/rank_icon",
+            "中美同意开展人工智能政府间对话 tv.danmaku.bili:id\/rank_title",
+            "百万英镑 但自己画的 tv.danmaku.bili:id\/rank_title",
+            "tv.danmaku.bili:id\/rank_icon",
+            "世界杯球队巡礼之巴西 tv.danmaku.bili:id\/rank_title",
+            "tv.danmaku.bili:id\/rank_icon",
+            "普京访华聚焦哪些重点议题 tv.danmaku.bili:id\/rank_title",
+            "小Lin说独家对谈张凌赫 tv.danmaku.bili:id\/rank_title",
+            "tv.danmaku.bili:id\/rank_icon",
+            "25万美金前男友淘汰赛 tv.danmaku.bili:id\/rank_title",
+            "tv.danmaku.bili:id\/container",
+            "搜索历史 tv.danmaku.bili:id\/title",
+            "清空搜索历史 tv.danmaku.bili:id\/delete_all",
+            "tv.danmaku.bili:id\/line",
+            "展开 tv.danmaku.bili:id\/expand",
+            "tv.danmaku.bili:id\/historyRv",
+            "王老菊董事长 tv.danmaku.bili:id\/tag_name",
+            "王老菊 tv.danmaku.bili:id\/tag_name",
+            "宋丹丹桃花坞 tv.danmaku.bili:id\/tag_name",
+            "宋丹丹你有什么代表作吗 tv.danmaku.bili:id\/tag_name",
+            "给排水专业 tv.danmaku.bili:id\/tag_name",
+            "搜索发现 tv.danmaku.bili:id\/title",
+            "已隐藏 tv.danmaku.bili:id\/hide_hint_text",
+            "显示搜索发现 tv.danmaku.bili:id\/guess_icon",
+            "tv.danmaku.bili:id\/preview",
+            "tv.danmaku.bili:id\/button",
+            "反馈 tv.danmaku.bili:id\/button_text",
+            "tv.danmaku.bili:id\/button_icon"
+          ],
+          "bottomCandidates": []
+        },
+        "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_snapshots\/tv.danmaku.bili\/20260520_002757_768_1ce9d16e.json"
+      },
+      {
+        "id": "ui_snapshot_1779208077722",
+        "source": "after_macro_atom",
+        "note": "index=1; skillId=patched.1779208073635.2.wait; status=SUCCESS_MEDIUM_CONFIDENCE",
+        "appPackage": "tv.danmaku.bili",
+        "windowClassName": "android.widget.FrameLayout",
+        "screenKey": "1ce9d16e",
+        "screenshotPath": "null",
+        "visualHash": "null",
+        "summary": {
+          "nodeCount": 77,
+          "clickableCount": 23,
+          "editableCount": 1,
+          "scrollableCount": 1,
+          "labels": [
+            "tv.danmaku.bili:id\/action_bar_root",
+            "android:id\/content",
+            "tv.danmaku.bili:id\/ogv_layout",
+            "tv.danmaku.bili:id\/search_input_layout",
+            "返回 tv.danmaku.bili:id\/iv_back_arrow",
+            "tv.danmaku.bili:id\/search_bar_input",
+            "tv.danmaku.bili:id\/search_icon",
+            "tv.danmaku.bili:id\/search_bar",
+            "tv.danmaku.bili:id\/search_plate",
+            "王老菊 搜索查询 tv.danmaku.bili:id\/search_src_text",
+            "搜索 tv.danmaku.bili:id\/action_search",
+            "tv.danmaku.bili:id\/suggest_container",
+            "tv.danmaku.bili:id\/content_container",
+            "tv.danmaku.bili:id\/search_discover_list",
+            "bilibili热搜 tv.danmaku.bili:id\/title",
+            "tv.danmaku.bili:id\/container_entrance",
+            "完整榜单 tv.danmaku.bili:id\/entrance",
+            "tv.danmaku.bili:id\/rank_recycler",
+            "俄罗斯总统普京抵达北京 tv.danmaku.bili:id\/rank_title",
+            "tv.danmaku.bili:id\/rank_icon",
+            "天问一号观测到星际天体尘埃活动 tv.danmaku.bili:id\/rank_title",
+            "tv.danmaku.bili:id\/rank_icon",
+            "Tim余华拆人生盲盒 tv.danmaku.bili:id\/rank_title",
+            "tv.danmaku.bili:id\/rank_icon",
+            "普京抱过的中国男孩将再见普京 tv.danmaku.bili:id\/rank_title",
+            "tv.danmaku.bili:id\/rank_icon",
+            "中美同意开展人工智能政府间对话 tv.danmaku.bili:id\/rank_title",
+            "百万英镑 但自己画的 tv.danmaku.bili:id\/rank_title",
+            "tv.danmaku.bili:id\/rank_icon",
+            "世界杯球队巡礼之巴西 tv.danmaku.bili:id\/rank_title",
+            "tv.danmaku.bili:id\/rank_icon",
+            "普京访华聚焦哪些重点议题 tv.danmaku.bili:id\/rank_title",
+            "小Lin说独家对谈张凌赫 tv.danmaku.bili:id\/rank_title",
+            "tv.danmaku.bili:id\/rank_icon",
+            "25万美金前男友淘汰赛 tv.danmaku.bili:id\/rank_title",
+            "tv.danmaku.bili:id\/container",
+            "搜索历史 tv.danmaku.bili:id\/title",
+            "清空搜索历史 tv.danmaku.bili:id\/delete_all",
+            "tv.danmaku.bili:id\/line",
+            "展开 tv.danmaku.bili:id\/expand",
+            "tv.danmaku.bili:id\/historyRv",
+            "王老菊董事长 tv.danmaku.bili:id\/tag_name",
+            "王老菊 tv.danmaku.bili:id\/tag_name",
+            "宋丹丹桃花坞 tv.danmaku.bili:id\/tag_name",
+            "宋丹丹你有什么代表作吗 tv.danmaku.bili:id\/tag_name",
+            "给排水专业 tv.danmaku.bili:id\/tag_name",
+            "搜索发现 tv.danmaku.bili:id\/title",
+            "已隐藏 tv.danmaku.bili:id\/hide_hint_text",
+            "显示搜索发现 tv.danmaku.bili:id\/guess_icon",
+            "tv.danmaku.bili:id\/preview",
+            "tv.danmaku.bili:id\/button",
+            "反馈 tv.danmaku.bili:id\/button_text",
+            "tv.danmaku.bili:id\/button_icon"
+          ],
+          "bottomCandidates": []
+        },
+        "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_snapshots\/tv.danmaku.bili\/20260520_002757_722_1ce9d16e.json"
+      },
+      {
+        "id": "ui_snapshot_1779208077703",
+        "source": "after_action",
+        "note": "patched.1779208073635.2.wait:Wait:SUCCESS_MEDIUM_CONFIDENCE:Waited 2000ms; reactiveDismissed=0",
+        "appPackage": "tv.danmaku.bili",
+        "windowClassName": "android.widget.FrameLayout",
+        "screenKey": "1ce9d16e",
+        "screenshotPath": "null",
+        "visualHash": "null",
+        "summary": {
+          "nodeCount": 77,
+          "clickableCount": 23,
+          "editableCount": 1,
+          "scrollableCount": 1,
+          "labels": [
+            "tv.danmaku.bili:id\/action_bar_root",
+            "android:id\/content",
+            "tv.danmaku.bili:id\/ogv_layout",
+            "tv.danmaku.bili:id\/search_input_layout",
+            "返回 tv.danmaku.bili:id\/iv_back_arrow",
+            "tv.danmaku.bili:id\/search_bar_input",
+            "tv.danmaku.bili:id\/search_icon",
+            "tv.danmaku.bili:id\/search_bar",
+            "tv.danmaku.bili:id\/search_plate",
+            "王老菊 搜索查询 tv.danmaku.bili:id\/search_src_text",
+            "搜索 tv.danmaku.bili:id\/action_search",
+            "tv.danmaku.bili:id\/suggest_container",
+            "tv.danmaku.bili:id\/content_container",
+            "tv.danmaku.bili:id\/search_discover_list",
+            "bilibili热搜 tv.danmaku.bili:id\/title",
+            "tv.danmaku.bili:id\/container_entrance",
+            "完整榜单 tv.danmaku.bili:id\/entrance",
+            "tv.danmaku.bili:id\/rank_recycler",
+            "俄罗斯总统普京抵达北京 tv.danmaku.bili:id\/rank_title",
+            "tv.danmaku.bili:id\/rank_icon",
+            "天问一号观测到星际天体尘埃活动 tv.danmaku.bili:id\/rank_title",
+            "tv.danmaku.bili:id\/rank_icon",
+            "Tim余华拆人生盲盒 tv.danmaku.bili:id\/rank_title",
+            "tv.danmaku.bili:id\/rank_icon",
+            "普京抱过的中国男孩将再见普京 tv.danmaku.bili:id\/rank_title",
+            "tv.danmaku.bili:id\/rank_icon",
+            "中美同意开展人工智能政府间对话 tv.danmaku.bili:id\/rank_title",
+            "百万英镑 但自己画的 tv.danmaku.bili:id\/rank_title",
+            "tv.danmaku.bili:id\/rank_icon",
+            "世界杯球队巡礼之巴西 tv.danmaku.bili:id\/rank_title",
+            "tv.danmaku.bili:id\/rank_icon",
+            "普京访华聚焦哪些重点议题 tv.danmaku.bili:id\/rank_title",
+            "小Lin说独家对谈张凌赫 tv.danmaku.bili:id\/rank_title",
+            "tv.danmaku.bili:id\/rank_icon",
+            "25万美金前男友淘汰赛 tv.danmaku.bili:id\/rank_title",
+            "tv.danmaku.bili:id\/container",
+            "搜索历史 tv.danmaku.bili:id\/title",
+            "清空搜索历史 tv.danmaku.bili:id\/delete_all",
+            "tv.danmaku.bili:id\/line",
+            "展开 tv.danmaku.bili:id\/expand",
+            "tv.danmaku.bili:id\/historyRv",
+            "王老菊董事长 tv.danmaku.bili:id\/tag_name",
+            "王老菊 tv.danmaku.bili:id\/tag_name",
+            "宋丹丹桃花坞 tv.danmaku.bili:id\/tag_name",
+            "宋丹丹你有什么代表作吗 tv.danmaku.bili:id\/tag_name",
+            "给排水专业 tv.danmaku.bili:id\/tag_name",
+            "搜索发现 tv.danmaku.bili:id\/title",
+            "已隐藏 tv.danmaku.bili:id\/hide_hint_text",
+            "显示搜索发现 tv.danmaku.bili:id\/guess_icon",
+            "tv.danmaku.bili:id\/preview",
+            "tv.danmaku.bili:id\/button",
+            "反馈 tv.danmaku.bili:id\/button_text",
+            "tv.danmaku.bili:id\/button_icon"
+          ],
+          "bottomCandidates": []
+        },
+        "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_snapshots\/tv.danmaku.bili\/20260520_002757_703_1ce9d16e.json"
+      },
+      {
+        "id": "ui_snapshot_1779208076515",
+        "source": "accessibility_auto",
+        "note": "TYPE_WINDOW_CONTENT_CHANGED",
+        "appPackage": "tv.danmaku.bili",
+        "windowClassName": "android.widget.FrameLayout",
+        "screenKey": "1ce9d16e",
+        "screenshotPath": "null",
+        "visualHash": "null",
+        "summary": {
+          "nodeCount": 77,
+          "clickableCount": 23,
+          "editableCount": 1,
+          "scrollableCount": 1,
+          "labels": [
+            "tv.danmaku.bili:id\/action_bar_root",
+            "android:id\/content",
+            "tv.danmaku.bili:id\/ogv_layout",
+            "tv.danmaku.bili:id\/search_input_layout",
+            "返回 tv.danmaku.bili:id\/iv_back_arrow",
+            "tv.danmaku.bili:id\/search_bar_input",
+            "tv.danmaku.bili:id\/search_icon",
+            "tv.danmaku.bili:id\/search_bar",
+            "tv.danmaku.bili:id\/search_plate",
+            "王老菊 搜索查询 tv.danmaku.bili:id\/search_src_text",
+            "搜索 tv.danmaku.bili:id\/action_search",
+            "tv.danmaku.bili:id\/suggest_container",
+            "tv.danmaku.bili:id\/content_container",
+            "tv.danmaku.bili:id\/search_discover_list",
+            "bilibili热搜 tv.danmaku.bili:id\/title",
+            "tv.danmaku.bili:id\/container_entrance",
+            "完整榜单 tv.danmaku.bili:id\/entrance",
+            "tv.danmaku.bili:id\/rank_recycler",
+            "俄罗斯总统普京抵达北京 tv.danmaku.bili:id\/rank_title",
+            "tv.danmaku.bili:id\/rank_icon",
+            "天问一号观测到星际天体尘埃活动 tv.danmaku.bili:id\/rank_title",
+            "tv.danmaku.bili:id\/rank_icon",
+            "Tim余华拆人生盲盒 tv.danmaku.bili:id\/rank_title",
+            "tv.danmaku.bili:id\/rank_icon",
+            "普京抱过的中国男孩将再见普京 tv.danmaku.bili:id\/rank_title",
+            "tv.danmaku.bili:id\/rank_icon",
+            "中美同意开展人工智能政府间对话 tv.danmaku.bili:id\/rank_title",
+            "百万英镑 但自己画的 tv.danmaku.bili:id\/rank_title",
+            "tv.danmaku.bili:id\/rank_icon",
+            "世界杯球队巡礼之巴西 tv.danmaku.bili:id\/rank_title",
+            "tv.danmaku.bili:id\/rank_icon",
+            "普京访华聚焦哪些重点议题 tv.danmaku.bili:id\/rank_title",
+            "小Lin说独家对谈张凌赫 tv.danmaku.bili:id\/rank_title",
+            "tv.danmaku.bili:id\/rank_icon",
+            "25万美金前男友淘汰赛 tv.danmaku.bili:id\/rank_title",
+            "tv.danmaku.bili:id\/container",
+            "搜索历史 tv.danmaku.bili:id\/title",
+            "清空搜索历史 tv.danmaku.bili:id\/delete_all",
+            "tv.danmaku.bili:id\/line",
+            "展开 tv.danmaku.bili:id\/expand",
+            "tv.danmaku.bili:id\/historyRv",
+            "王老菊董事长 tv.danmaku.bili:id\/tag_name",
+            "王老菊 tv.danmaku.bili:id\/tag_name",
+            "宋丹丹桃花坞 tv.danmaku.bili:id\/tag_name",
+            "宋丹丹你有什么代表作吗 tv.danmaku.bili:id\/tag_name",
+            "给排水专业 tv.danmaku.bili:id\/tag_name",
+            "搜索发现 tv.danmaku.bili:id\/title",
+            "已隐藏 tv.danmaku.bili:id\/hide_hint_text",
+            "显示搜索发现 tv.danmaku.bili:id\/guess_icon",
+            "tv.danmaku.bili:id\/preview",
+            "tv.danmaku.bili:id\/button",
+            "反馈 tv.danmaku.bili:id\/button_text",
+            "tv.danmaku.bili:id\/button_icon"
+          ],
+          "bottomCandidates": []
+        },
+        "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_snapshots\/tv.danmaku.bili\/20260520_002756_514_1ce9d16e.json"
+      },
+      {
+        "id": "ui_snapshot_1779208076039",
+        "source": "accessibility_auto",
+        "note": "TYPE_WINDOW_CONTENT_CHANGED",
+        "appPackage": "tv.danmaku.bili",
+        "windowClassName": "null",
+        "screenKey": "27f28b13",
+        "screenshotPath": "null",
+        "visualHash": "null",
+        "summary": {
+          "nodeCount": 77,
+          "clickableCount": 23,
+          "editableCount": 1,
+          "scrollableCount": 1,
+          "labels": [
+            "tv.danmaku.bili:id\/action_bar_root",
+            "android:id\/content",
+            "tv.danmaku.bili:id\/ogv_layout",
+            "tv.danmaku.bili:id\/search_input_layout",
+            "返回 tv.danmaku.bili:id\/iv_back_arrow",
+            "tv.danmaku.bili:id\/search_bar_input",
+            "tv.danmaku.bili:id\/search_icon",
+            "tv.danmaku.bili:id\/search_bar",
+            "tv.danmaku.bili:id\/search_plate",
+            "王老菊 搜索查询 tv.danmaku.bili:id\/search_src_text",
+            "搜索 tv.danmaku.bili:id\/action_search",
+            "tv.danmaku.bili:id\/suggest_container",
+            "tv.danmaku.bili:id\/content_container",
+            "tv.danmaku.bili:id\/search_discover_list",
+            "bilibili热搜 tv.danmaku.bili:id\/title",
+            "tv.danmaku.bili:id\/container_entrance",
+            "完整榜单 tv.danmaku.bili:id\/entrance",
+            "tv.danmaku.bili:id\/rank_recycler",
+            "俄罗斯总统普京抵达北京 tv.danmaku.bili:id\/rank_title",
+            "tv.danmaku.bili:id\/rank_icon",
+            "天问一号观测到星际天体尘埃活动 tv.danmaku.bili:id\/rank_title",
+            "tv.danmaku.bili:id\/rank_icon",
+            "Tim余华拆人生盲盒 tv.danmaku.bili:id\/rank_title",
+            "tv.danmaku.bili:id\/rank_icon",
+            "普京抱过的中国男孩将再见普京 tv.danmaku.bili:id\/rank_title",
+            "tv.danmaku.bili:id\/rank_icon",
+            "中美同意开展人工智能政府间对话 tv.danmaku.bili:id\/rank_title",
+            "百万英镑 但自己画的 tv.danmaku.bili:id\/rank_title",
+            "tv.danmaku.bili:id\/rank_icon",
+            "世界杯球队巡礼之巴西 tv.danmaku.bili:id\/rank_title",
+            "tv.danmaku.bili:id\/rank_icon",
+            "普京访华聚焦哪些重点议题 tv.danmaku.bili:id\/rank_title",
+            "小Lin说独家对谈张凌赫 tv.danmaku.bili:id\/rank_title",
+            "tv.danmaku.bili:id\/rank_icon",
+            "25万美金前男友淘汰赛 tv.danmaku.bili:id\/rank_title",
+            "tv.danmaku.bili:id\/container",
+            "搜索历史 tv.danmaku.bili:id\/title",
+            "清空搜索历史 tv.danmaku.bili:id\/delete_all",
+            "tv.danmaku.bili:id\/line",
+            "展开 tv.danmaku.bili:id\/expand",
+            "tv.danmaku.bili:id\/historyRv",
+            "王老菊董事长 tv.danmaku.bili:id\/tag_name",
+            "王老菊 tv.danmaku.bili:id\/tag_name",
+            "宋丹丹桃花坞 tv.danmaku.bili:id\/tag_name",
+            "宋丹丹你有什么代表作吗 tv.danmaku.bili:id\/tag_name",
+            "给排水专业 tv.danmaku.bili:id\/tag_name",
+            "搜索发现 tv.danmaku.bili:id\/title",
+            "已隐藏 tv.danmaku.bili:id\/hide_hint_text",
+            "显示搜索发现 tv.danmaku.bili:id\/guess_icon",
+            "tv.danmaku.bili:id\/preview",
+            "tv.danmaku.bili:id\/button",
+            "反馈 tv.danmaku.bili:id\/button_text",
+            "tv.danmaku.bili:id\/button_icon"
+          ],
+          "bottomCandidates": []
+        },
+        "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_snapshots\/tv.danmaku.bili\/20260520_002756_039_27f28b13.json"
+      }
+    ],
+    "autonomousTrainingRecordFile": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/autonomous_training_records\/tv.danmaku.bili\/autonomous_training_1779208080346_20260520_002800_401.json"
+  },
+  "createdAt": 1779208080341,
+  "reportFile": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/flow_reports\/tv.danmaku.bili\/ai_direct_flow_1779208080325.json"
+}

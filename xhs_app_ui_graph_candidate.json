@@ -1,0 +1,5799 @@
+﻿{
+  "schemaVersion": 1,
+  "kind": "app_ui_graph",
+  "status": "CANDIDATE_EXPLORED",
+  "appPackage": "com.xingin.xhs",
+  "appName": "小红书",
+  "reason": "instruction:打开小红书记录页面",
+  "budgets": {
+    "maxScreens": 8,
+    "maxClicks": 6,
+    "maxDepth": 1
+  },
+  "screens": [
+    {
+      "screenId": "screen_bb31fe6f",
+      "screenKey": "bb31fe6f",
+      "title": "笔记  转专业后的绩点 来自妙妙很好 64赞",
+      "appPackage": "com.xingin.xhs",
+      "windowClassName": "androidx.viewpager.widget.ViewPager",
+      "screenWidth": 1440,
+      "screenHeight": 3168,
+      "nodeCount": 184,
+      "clickableCount": 41,
+      "editableCount": 0,
+      "scrollableCount": 5,
+      "labels": [
+        "com.xingin.xhs:id\/0_resource_name_obfuscated",
+        "android:id\/content",
+        "已选定推荐 com.xingin.xhs:id\/0_resource_name_obfuscated",
+        "推荐 com.xingin.xhs:id\/0_resource_name_obfuscated",
+        "视频 com.xingin.xhs:id\/0_resource_name_obfuscated",
+        "直播 com.xingin.xhs:id\/0_resource_name_obfuscated",
+        "短剧 com.xingin.xhs:id\/0_resource_name_obfuscated",
+        "问答 com.xingin.xhs:id\/0_resource_name_obfuscated",
+        "情感 com.xingin.xhs:id\/0_resource_name_obfuscated",
+        "穿搭 com.xingin.xhs:id\/0_resource_name_obfuscated",
+        "笔记 热点 联盟新门面！打爆假MVP，打爆切特！ 来自人到球到 1239赞",
+        "热点 com.xingin.xhs:id\/0_resource_name_obfuscated",
+        "人到球到 com.xingin.xhs:id\/0_resource_name_obfuscated",
+        "1239 com.xingin.xhs:id\/0_resource_name_obfuscated",
+        "笔记  转专业后的绩点 来自妙妙很好 64赞",
+        "妙妙很好 com.xingin.xhs:id\/0_resource_name_obfuscated",
+        "64 com.xingin.xhs:id\/0_resource_name_obfuscated",
+        "视频  每个人的初中时代都有一个善良小胖 来自季佳芊. 705赞",
+        "季佳芊. com.xingin.xhs:id\/0_resource_name_obfuscated",
+        "705 com.xingin.xhs:id\/0_resource_name_obfuscated",
+        "笔记  炒股厉害算得上是一种才华吗 来自久久 89赞",
+        "久久 com.xingin.xhs:id\/0_resource_name_obfuscated",
+        "89 com.xingin.xhs:id\/0_resource_name_obfuscated",
+        "近一周使用小红书时，是否出现让你反感的内容？",
+        "很多",
+        "一般",
+        "少\/没有",
+        "笔记  红书，你到底有多少个momo‼️❓️❓️ 来自无敌吃货～ 183赞",
+        "无敌吃货～ com.xingin.xhs:id\/0_resource_name_obfuscated",
+        "183 com.xingin.xhs:id\/0_resource_name_obfuscated",
+        "附近页面头部图片 com.xingin.xhs:id\/0_resource_name_obfuscated",
+        "菜单 com.xingin.xhs:id\/0_resource_name_obfuscated",
+        "关注",
+        "11",
+        "发现",
+        "福州",
+        "搜索 com.xingin.xhs:id\/0_resource_name_obfuscated",
+        "首页 com.xingin.xhs:id\/0_resource_name_obfuscated",
+        "市集 com.xingin.xhs:id\/index_store",
+        "市集 com.xingin.xhs:id\/0_resource_name_obfuscated",
+        "发布 com.xingin.xhs:id\/0_resource_name_obfuscated",
+        "消息，未读 com.xingin.xhs:id\/0_resource_name_obfuscated",
+        "消息 com.xingin.xhs:id\/0_resource_name_obfuscated",
+        "我 com.xingin.xhs:id\/0_resource_name_obfuscated",
+        "android:id\/navigationBarBackground"
+      ],
+      "bottomTabs": [
+        {
+          "index": 0,
+          "label": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "class": "android.view.View",
+          "clickable": false,
+          "editable": false,
+          "selected": false,
+          "bounds": "44 2750 148 2854",
+          "x": 0.06666666666666667,
+          "y": 0.884469696969697,
+          "center": {
+            "x": 0.06666666666666667,
+            "y": 0.884469696969697
+          },
+          "tags": [
+            "bottom_tab_candidate"
+          ]
+        },
+        {
+          "index": 1,
+          "label": "首页 com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "text": null,
+          "desc": "首页",
+          "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "class": "android.view.ViewGroup",
+          "clickable": true,
+          "editable": false,
+          "selected": true,
+          "bounds": "0 2924 288 3104",
+          "x": 0.1,
+          "y": 0.9513888888888888,
+          "center": {
+            "x": 0.1,
+            "y": 0.9513888888888888
+          },
+          "tags": [
+            "bottom_tab_candidate"
+          ]
+        },
+        {
+          "index": 2,
+          "label": "首页 com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "text": "首页",
+          "desc": null,
+          "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "class": "android.widget.TextView",
+          "clickable": false,
+          "editable": false,
+          "selected": true,
+          "bounds": "74 2975 214 3056",
+          "x": 0.1,
+          "y": 0.9517045454545454,
+          "center": {
+            "x": 0.1,
+            "y": 0.9517045454545454
+          },
+          "tags": [
+            "bottom_tab_candidate"
+          ]
+        },
+        {
+          "index": 3,
+          "label": "季佳芊. com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "text": "季佳芊.",
+          "desc": null,
+          "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "class": "android.widget.TextView",
+          "clickable": false,
+          "editable": false,
+          "selected": false,
+          "bounds": "164 2766 496 2839",
+          "x": 0.22916666666666666,
+          "y": 0.884469696969697,
+          "center": {
+            "x": 0.22916666666666666,
+            "y": 0.884469696969697
+          },
+          "tags": [
+            "bottom_tab_candidate"
+          ]
+        },
+        {
+          "index": 4,
+          "label": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "class": "android.view.ViewGroup",
+          "clickable": true,
+          "editable": false,
+          "selected": false,
+          "bounds": "20 2724 694 2880",
+          "x": 0.24791666666666667,
+          "y": 0.884469696969697,
+          "center": {
+            "x": 0.24791666666666667,
+            "y": 0.884469696969697
+          },
+          "tags": [
+            "bottom_tab_candidate"
+          ]
+        },
+        {
+          "index": 5,
+          "label": "视频  每个人的初中时代都有一个善良小胖 来自季佳芊. 705赞",
+          "text": null,
+          "desc": "视频  每个人的初中时代都有一个善良小胖 来自季佳芊. 705赞",
+          "resourceId": null,
+          "class": "android.widget.FrameLayout",
+          "clickable": false,
+          "editable": false,
+          "selected": false,
+          "bounds": "20 1620 710 2880",
+          "x": 0.2534722222222222,
+          "y": 0.7102272727272727,
+          "center": {
+            "x": 0.2534722222222222,
+            "y": 0.7102272727272727
+          },
+          "tags": [
+            "bottom_tab_candidate"
+          ]
+        },
+        {
+          "index": 6,
+          "label": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "class": "android.widget.FrameLayout",
+          "clickable": true,
+          "editable": false,
+          "selected": false,
+          "bounds": "20 1620 710 2880",
+          "x": 0.2534722222222222,
+          "y": 0.7102272727272727,
+          "center": {
+            "x": 0.2534722222222222,
+            "y": 0.7102272727272727
+          },
+          "tags": [
+            "bottom_tab_candidate"
+          ]
+        },
+        {
+          "index": 7,
+          "label": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "class": "android.view.ViewGroup",
+          "clickable": false,
+          "editable": false,
+          "selected": false,
+          "bounds": "20 1620 710 2880",
+          "x": 0.2534722222222222,
+          "y": 0.7102272727272727,
+          "center": {
+            "x": 0.2534722222222222,
+            "y": 0.7102272727272727
+          },
+          "tags": [
+            "bottom_tab_candidate"
+          ]
+        },
+        {
+          "index": 8,
+          "label": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "class": "android.view.View",
+          "clickable": false,
+          "editable": false,
+          "selected": false,
+          "bounds": "60 2572 670 2724",
+          "x": 0.2534722222222222,
+          "y": 0.8358585858585859,
+          "center": {
+            "x": 0.2534722222222222,
+            "y": 0.8358585858585859
+          },
+          "tags": [
+            "bottom_tab_candidate"
+          ]
+        },
+        {
+          "index": 9,
+          "label": "市集 com.xingin.xhs:id\/index_store",
+          "text": null,
+          "desc": "市集",
+          "resourceId": "com.xingin.xhs:id\/index_store",
+          "class": "android.view.ViewGroup",
+          "clickable": true,
+          "editable": false,
+          "selected": false,
+          "bounds": "288 2924 576 3104",
+          "x": 0.3,
+          "y": 0.9513888888888888,
+          "center": {
+            "x": 0.3,
+            "y": 0.9513888888888888
+          },
+          "tags": [
+            "bottom_tab_candidate"
+          ]
+        },
+        {
+          "index": 10,
+          "label": "市集 com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "text": "市集",
+          "desc": null,
+          "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "class": "android.widget.TextView",
+          "clickable": false,
+          "editable": false,
+          "selected": false,
+          "bounds": "368 2979 496 3052",
+          "x": 0.3,
+          "y": 0.9517045454545454,
+          "center": {
+            "x": 0.3,
+            "y": 0.9517045454545454
+          },
+          "tags": [
+            "bottom_tab_candidate"
+          ]
+        },
+        {
+          "index": 11,
+          "label": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "class": "android.widget.ImageView",
+          "clickable": true,
+          "editable": false,
+          "selected": false,
+          "bounds": "492 2742 612 2862",
+          "x": 0.38333333333333336,
+          "y": 0.884469696969697,
+          "center": {
+            "x": 0.38333333333333336,
+            "y": 0.884469696969697
+          },
+          "tags": [
+            "bottom_tab_candidate"
+          ]
+        }
+      ],
+      "entryCandidates": [
+        {
+          "index": 0,
+          "label": "发现",
+          "text": "发现",
+          "desc": null,
+          "resourceId": null,
+          "class": "android.widget.TextView",
+          "clickable": false,
+          "editable": false,
+          "selected": true,
+          "bounds": "656 199 784 296",
+          "x": 0.5,
+          "y": 0.07796717171717171,
+          "center": {
+            "x": 0.5,
+            "y": 0.07796717171717171
+          },
+          "tags": [
+            "entry_candidate",
+            "selected"
+          ]
+        },
+        {
+          "index": 1,
+          "label": "发现",
+          "text": null,
+          "desc": "发现",
+          "resourceId": null,
+          "class": "androidx.appcompat.app.ActionBar$Tab",
+          "clickable": true,
+          "editable": false,
+          "selected": true,
+          "bounds": "592 184 848 312",
+          "x": 0.5,
+          "y": 0.07828282828282829,
+          "center": {
+            "x": 0.5,
+            "y": 0.07828282828282829
+          },
+          "tags": [
+            "entry_candidate",
+            "clickable",
+            "selected"
+          ]
+        },
+        {
+          "index": 2,
+          "label": "搜索 com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "text": null,
+          "desc": "搜索",
+          "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "class": "android.widget.Button",
+          "clickable": true,
+          "editable": false,
+          "selected": false,
+          "bounds": "1260 176 1404 320",
+          "x": 0.925,
+          "y": 0.07828282828282829,
+          "center": {
+            "x": 0.925,
+            "y": 0.07828282828282829
+          },
+          "tags": [
+            "entry_candidate",
+            "clickable",
+            "search_entry"
+          ]
+        },
+        {
+          "index": 3,
+          "label": "发布 com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "text": null,
+          "desc": "发布",
+          "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "class": "android.widget.RelativeLayout",
+          "clickable": true,
+          "editable": false,
+          "selected": false,
+          "bounds": "576 2924 864 3104",
+          "x": 0.5,
+          "y": 0.9513888888888888,
+          "center": {
+            "x": 0.5,
+            "y": 0.9513888888888888
+          },
+          "tags": [
+            "entry_candidate",
+            "clickable",
+            "bottom_area",
+            "publish_entry"
+          ]
+        },
+        {
+          "index": 4,
+          "label": "消息，未读 com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "text": null,
+          "desc": "消息，未读",
+          "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "class": "android.view.ViewGroup",
+          "clickable": true,
+          "editable": false,
+          "selected": false,
+          "bounds": "864 2924 1152 3104",
+          "x": 0.7,
+          "y": 0.9513888888888888,
+          "center": {
+            "x": 0.7,
+            "y": 0.9513888888888888
+          },
+          "tags": [
+            "entry_candidate",
+            "clickable",
+            "bottom_area",
+            "message_entry"
+          ]
+        },
+        {
+          "index": 5,
+          "label": "消息 com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "text": "消息",
+          "desc": null,
+          "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "class": "android.widget.TextView",
+          "clickable": false,
+          "editable": false,
+          "selected": false,
+          "bounds": "944 2979 1072 3052",
+          "x": 0.7,
+          "y": 0.9517045454545454,
+          "center": {
+            "x": 0.7,
+            "y": 0.9517045454545454
+          },
+          "tags": [
+            "entry_candidate",
+            "bottom_area",
+            "message_entry"
+          ]
+        }
+      ],
+      "inputCandidates": [],
+      "clickTargets": [
+        {
+          "index": 0,
+          "label": "11",
+          "text": "11",
+          "desc": null,
+          "resourceId": null,
+          "class": "android.widget.TextView",
+          "clickable": false,
+          "editable": false,
+          "selected": false,
+          "bounds": "496 199 568 239",
+          "x": 0.36944444444444446,
+          "y": 0.06912878787878787,
+          "center": {
+            "x": 0.36944444444444446,
+            "y": 0.06912878787878787
+          },
+          "tags": []
+        },
+        {
+          "index": 1,
+          "label": "发现",
+          "text": "发现",
+          "desc": null,
+          "resourceId": null,
+          "class": "android.widget.TextView",
+          "clickable": false,
+          "editable": false,
+          "selected": true,
+          "bounds": "656 199 784 296",
+          "x": 0.5,
+          "y": 0.07796717171717171,
+          "center": {
+            "x": 0.5,
+            "y": 0.07796717171717171
+          },
+          "tags": [
+            "selected"
+          ]
+        },
+        {
+          "index": 2,
+          "label": "菜单 com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "text": null,
+          "desc": "菜单",
+          "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "class": "android.widget.ImageView",
+          "clickable": true,
+          "editable": false,
+          "selected": false,
+          "bounds": "36 176 180 320",
+          "x": 0.075,
+          "y": 0.07828282828282829,
+          "center": {
+            "x": 0.075,
+            "y": 0.07828282828282829
+          },
+          "tags": [
+            "clickable"
+          ]
+        },
+        {
+          "index": 3,
+          "label": "关注",
+          "text": null,
+          "desc": "关注",
+          "resourceId": null,
+          "class": "androidx.appcompat.app.ActionBar$Tab",
+          "clickable": true,
+          "editable": false,
+          "selected": false,
+          "bounds": "336 184 592 312",
+          "x": 0.32222222222222224,
+          "y": 0.07828282828282829,
+          "center": {
+            "x": 0.32222222222222224,
+            "y": 0.07828282828282829
+          },
+          "tags": [
+            "clickable"
+          ]
+        },
+        {
+          "index": 4,
+          "label": "关注",
+          "text": "关注",
+          "desc": null,
+          "resourceId": null,
+          "class": "android.widget.TextView",
+          "clickable": false,
+          "editable": false,
+          "selected": false,
+          "bounds": "400 199 528 297",
+          "x": 0.32222222222222224,
+          "y": 0.07828282828282829,
+          "center": {
+            "x": 0.32222222222222224,
+            "y": 0.07828282828282829
+          },
+          "tags": []
+        },
+        {
+          "index": 5,
+          "label": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "class": "android.widget.HorizontalScrollView",
+          "clickable": false,
+          "editable": false,
+          "selected": false,
+          "bounds": "336 184 1104 312",
+          "x": 0.5,
+          "y": 0.07828282828282829,
+          "center": {
+            "x": 0.5,
+            "y": 0.07828282828282829
+          },
+          "tags": []
+        },
+        {
+          "index": 6,
+          "label": "发现",
+          "text": null,
+          "desc": "发现",
+          "resourceId": null,
+          "class": "androidx.appcompat.app.ActionBar$Tab",
+          "clickable": true,
+          "editable": false,
+          "selected": true,
+          "bounds": "592 184 848 312",
+          "x": 0.5,
+          "y": 0.07828282828282829,
+          "center": {
+            "x": 0.5,
+            "y": 0.07828282828282829
+          },
+          "tags": [
+            "clickable",
+            "selected"
+          ]
+        },
+        {
+          "index": 7,
+          "label": "福州",
+          "text": null,
+          "desc": "福州",
+          "resourceId": null,
+          "class": "androidx.appcompat.app.ActionBar$Tab",
+          "clickable": true,
+          "editable": false,
+          "selected": false,
+          "bounds": "848 184 1104 312",
+          "x": 0.6777777777777778,
+          "y": 0.07828282828282829,
+          "center": {
+            "x": 0.6777777777777778,
+            "y": 0.07828282828282829
+          },
+          "tags": [
+            "clickable"
+          ]
+        },
+        {
+          "index": 8,
+          "label": "福州",
+          "text": "福州",
+          "desc": null,
+          "resourceId": null,
+          "class": "android.widget.TextView",
+          "clickable": false,
+          "editable": false,
+          "selected": false,
+          "bounds": "912 199 1040 297",
+          "x": 0.6777777777777778,
+          "y": 0.07828282828282829,
+          "center": {
+            "x": 0.6777777777777778,
+            "y": 0.07828282828282829
+          },
+          "tags": []
+        },
+        {
+          "index": 9,
+          "label": "搜索 com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "text": null,
+          "desc": "搜索",
+          "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "class": "android.widget.Button",
+          "clickable": true,
+          "editable": false,
+          "selected": false,
+          "bounds": "1260 176 1404 320",
+          "x": 0.925,
+          "y": 0.07828282828282829,
+          "center": {
+            "x": 0.925,
+            "y": 0.07828282828282829
+          },
+          "tags": [
+            "clickable",
+            "search_entry"
+          ]
+        },
+        {
+          "index": 10,
+          "label": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "class": "android.widget.FrameLayout",
+          "clickable": false,
+          "editable": false,
+          "selected": false,
+          "bounds": "730 336 1420 943",
+          "x": 0.7465277777777778,
+          "y": 0.20170454545454544,
+          "center": {
+            "x": 0.7465277777777778,
+            "y": 0.20170454545454544
+          },
+          "tags": []
+        },
+        {
+          "index": 11,
+          "label": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "class": "android.widget.ImageView",
+          "clickable": false,
+          "editable": false,
+          "selected": false,
+          "bounds": "730 336 1420 943",
+          "x": 0.7465277777777778,
+          "y": 0.20170454545454544,
+          "center": {
+            "x": 0.7465277777777778,
+            "y": 0.20170454545454544
+          },
+          "tags": []
+        },
+        {
+          "index": 12,
+          "label": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "class": "android.widget.FrameLayout",
+          "clickable": false,
+          "editable": false,
+          "selected": false,
+          "bounds": "20 336 710 1187",
+          "x": 0.2534722222222222,
+          "y": 0.24021464646464646,
+          "center": {
+            "x": 0.2534722222222222,
+            "y": 0.24021464646464646
+          },
+          "tags": []
+        },
+        {
+          "index": 13,
+          "label": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "class": "android.widget.ImageView",
+          "clickable": false,
+          "editable": false,
+          "selected": false,
+          "bounds": "20 336 710 1187",
+          "x": 0.2534722222222222,
+          "y": 0.24021464646464646,
+          "center": {
+            "x": 0.2534722222222222,
+            "y": 0.24021464646464646
+          },
+          "tags": []
+        },
+        {
+          "index": 14,
+          "label": "笔记  转专业后的绩点 来自妙妙很好 64赞",
+          "text": null,
+          "desc": "笔记  转专业后的绩点 来自妙妙很好 64赞",
+          "resourceId": null,
+          "class": "android.widget.FrameLayout",
+          "clickable": false,
+          "editable": false,
+          "selected": false,
+          "bounds": "730 336 1420 1200",
+          "x": 0.7465277777777778,
+          "y": 0.24242424242424243,
+          "center": {
+            "x": 0.7465277777777778,
+            "y": 0.24242424242424243
+          },
+          "tags": []
+        },
+        {
+          "index": 15,
+          "label": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "class": "android.widget.FrameLayout",
+          "clickable": true,
+          "editable": false,
+          "selected": false,
+          "bounds": "730 336 1420 1200",
+          "x": 0.7465277777777778,
+          "y": 0.24242424242424243,
+          "center": {
+            "x": 0.7465277777777778,
+            "y": 0.24242424242424243
+          },
+          "tags": [
+            "clickable"
+          ]
+        },
+        {
+          "index": 16,
+          "label": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "class": "android.view.ViewGroup",
+          "clickable": false,
+          "editable": false,
+          "selected": false,
+          "bounds": "730 336 1420 1200",
+          "x": 0.7465277777777778,
+          "y": 0.24242424242424243,
+          "center": {
+            "x": 0.7465277777777778,
+            "y": 0.24242424242424243
+          },
+          "tags": []
+        },
+        {
+          "index": 17,
+          "label": "笔记 热点 联盟新门面！打爆假MVP，打爆切特！ 来自人到球到 1239赞",
+          "text": null,
+          "desc": "笔记 热点 联盟新门面！打爆假MVP，打爆切特！ 来自人到球到 1239赞",
+          "resourceId": null,
+          "class": "android.widget.FrameLayout",
+          "clickable": false,
+          "editable": false,
+          "selected": false,
+          "bounds": "20 336 710 1600",
+          "x": 0.2534722222222222,
+          "y": 0.3055555555555556,
+          "center": {
+            "x": 0.2534722222222222,
+            "y": 0.3055555555555556
+          },
+          "tags": []
+        },
+        {
+          "index": 18,
+          "label": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "class": "android.widget.FrameLayout",
+          "clickable": true,
+          "editable": false,
+          "selected": false,
+          "bounds": "20 336 710 1600",
+          "x": 0.2534722222222222,
+          "y": 0.3055555555555556,
+          "center": {
+            "x": 0.2534722222222222,
+            "y": 0.3055555555555556
+          },
+          "tags": [
+            "clickable"
+          ]
+        },
+        {
+          "index": 19,
+          "label": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "class": "android.view.ViewGroup",
+          "clickable": false,
+          "editable": false,
+          "selected": false,
+          "bounds": "20 336 710 1600",
+          "x": 0.2534722222222222,
+          "y": 0.3055555555555556,
+          "center": {
+            "x": 0.2534722222222222,
+            "y": 0.3055555555555556
+          },
+          "tags": []
+        },
+        {
+          "index": 20,
+          "label": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "class": "android.view.View",
+          "clickable": false,
+          "editable": false,
+          "selected": false,
+          "bounds": "770 975 1380 1044",
+          "x": 0.7465277777777778,
+          "y": 0.31849747474747475,
+          "center": {
+            "x": 0.7465277777777778,
+            "y": 0.31849747474747475
+          },
+          "tags": []
+        },
+        {
+          "index": 21,
+          "label": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "class": "android.view.View",
+          "clickable": false,
+          "editable": false,
+          "selected": false,
+          "bounds": "754 1070 858 1174",
+          "x": 0.5597222222222222,
+          "y": 0.3541666666666667,
+          "center": {
+            "x": 0.5597222222222222,
+            "y": 0.3541666666666667
+          },
+          "tags": []
+        },
+        {
+          "index": 22,
+          "label": "妙妙很好 com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "text": "妙妙很好",
+          "desc": null,
+          "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "class": "android.widget.TextView",
+          "clickable": false,
+          "editable": false,
+          "selected": false,
+          "bounds": "874 1086 1232 1159",
+          "x": 0.73125,
+          "y": 0.3541666666666667,
+          "center": {
+            "x": 0.73125,
+            "y": 0.3541666666666667
+          },
+          "tags": []
+        },
+        {
+          "index": 23,
+          "label": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "class": "android.view.ViewGroup",
+          "clickable": true,
+          "editable": false,
+          "selected": false,
+          "bounds": "730 1044 1404 1200",
+          "x": 0.7409722222222223,
+          "y": 0.3541666666666667,
+          "center": {
+            "x": 0.7409722222222223,
+            "y": 0.3541666666666667
+          },
+          "tags": [
+            "clickable"
+          ]
+        },
+        {
+          "index": 24,
+          "label": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "class": "android.widget.ImageView",
+          "clickable": true,
+          "editable": false,
+          "selected": false,
+          "bounds": "1228 1062 1348 1182",
+          "x": 0.8944444444444445,
+          "y": 0.3541666666666667,
+          "center": {
+            "x": 0.8944444444444445,
+            "y": 0.3541666666666667
+          },
+          "tags": [
+            "clickable"
+          ]
+        },
+        {
+          "index": 25,
+          "label": "64 com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "text": "64",
+          "desc": null,
+          "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "class": "android.widget.TextView",
+          "clickable": true,
+          "editable": false,
+          "selected": false,
+          "bounds": "1328 1086 1380 1159",
+          "x": 0.9402777777777778,
+          "y": 0.3541666666666667,
+          "center": {
+            "x": 0.9402777777777778,
+            "y": 0.3541666666666667
+          },
+          "tags": [
+            "clickable"
+          ]
+        },
+        {
+          "index": 26,
+          "label": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "class": "android.widget.ImageView",
+          "clickable": false,
+          "editable": false,
+          "selected": false,
+          "bounds": "60 1219 116 1275",
+          "x": 0.06111111111111111,
+          "y": 0.39362373737373735,
+          "center": {
+            "x": 0.06111111111111111,
+            "y": 0.39362373737373735
+          },
+          "tags": []
+        },
+        {
+          "index": 27,
+          "label": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "class": "android.widget.LinearLayout",
+          "clickable": false,
+          "editable": false,
+          "selected": false,
+          "bounds": "20 1211 710 1284",
+          "x": 0.2534722222222222,
+          "y": 0.39362373737373735,
+          "center": {
+            "x": 0.2534722222222222,
+            "y": 0.39362373737373735
+          },
+          "tags": []
+        },
+        {
+          "index": 28,
+          "label": "热点 com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "text": "热点",
+          "desc": null,
+          "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "class": "android.widget.TextView",
+          "clickable": false,
+          "editable": false,
+          "selected": false,
+          "bounds": "124 1211 670 1284",
+          "x": 0.27569444444444446,
+          "y": 0.39362373737373735,
+          "center": {
+            "x": 0.27569444444444446,
+            "y": 0.39362373737373735
+          },
+          "tags": []
+        },
+        {
+          "index": 29,
+          "label": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "class": "android.view.View",
+          "clickable": false,
+          "editable": false,
+          "selected": false,
+          "bounds": "60 1292 670 1444",
+          "x": 0.2534722222222222,
+          "y": 0.4318181818181818,
+          "center": {
+            "x": 0.2534722222222222,
+            "y": 0.4318181818181818
+          },
+          "tags": []
+        },
+        {
+          "index": 30,
+          "label": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "class": "androidx.viewpager.widget.ViewPager",
+          "clickable": false,
+          "editable": false,
+          "selected": false,
+          "bounds": "0 0 1440 2924",
+          "x": 0.5,
+          "y": 0.461489898989899,
+          "center": {
+            "x": 0.5,
+            "y": 0.461489898989899
+          },
+          "tags": []
+        },
+        {
+          "index": 31,
+          "label": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "class": "android.view.ViewGroup",
+          "clickable": false,
+          "editable": false,
+          "selected": false,
+          "bounds": "0 0 1440 2924",
+          "x": 0.5,
+          "y": 0.461489898989899,
+          "center": {
+            "x": 0.5,
+            "y": 0.461489898989899
+          },
+          "tags": []
+        },
+        {
+          "index": 32,
+          "label": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "class": "android.widget.FrameLayout",
+          "clickable": false,
+          "editable": false,
+          "selected": false,
+          "bounds": "0 0 1440 2924",
+          "x": 0.5,
+          "y": 0.461489898989899,
+          "center": {
+            "x": 0.5,
+            "y": 0.461489898989899
+          },
+          "tags": []
+        },
+        {
+          "index": 33,
+          "label": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "class": "androidx.viewpager.widget.ViewPager",
+          "clickable": false,
+          "editable": false,
+          "selected": false,
+          "bounds": "0 0 1440 2924",
+          "x": 0.5,
+          "y": 0.461489898989899,
+          "center": {
+            "x": 0.5,
+            "y": 0.461489898989899
+          },
+          "tags": []
+        },
+        {
+          "index": 34,
+          "label": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "class": "android.view.ViewGroup",
+          "clickable": false,
+          "editable": false,
+          "selected": false,
+          "bounds": "0 0 1440 2924",
+          "x": 0.5,
+          "y": 0.461489898989899,
+          "center": {
+            "x": 0.5,
+            "y": 0.461489898989899
+          },
+          "tags": []
+        },
+        {
+          "index": 35,
+          "label": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "class": "android.view.View",
+          "clickable": false,
+          "editable": false,
+          "selected": false,
+          "bounds": "44 1470 148 1574",
+          "x": 0.06666666666666667,
+          "y": 0.48042929292929293,
+          "center": {
+            "x": 0.06666666666666667,
+            "y": 0.48042929292929293
+          },
+          "tags": []
+        },
+        {
+          "index": 36,
+          "label": "人到球到 com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "text": "人到球到",
+          "desc": null,
+          "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "class": "android.widget.TextView",
+          "clickable": false,
+          "editable": false,
+          "selected": false,
+          "bounds": "164 1486 471 1559",
+          "x": 0.22013888888888888,
+          "y": 0.48042929292929293,
+          "center": {
+            "x": 0.22013888888888888,
+            "y": 0.48042929292929293
+          },
+          "tags": []
+        },
+        {
+          "index": 37,
+          "label": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "class": "android.view.ViewGroup",
+          "clickable": true,
+          "editable": false,
+          "selected": false,
+          "bounds": "20 1444 694 1600",
+          "x": 0.24791666666666667,
+          "y": 0.48042929292929293,
+          "center": {
+            "x": 0.24791666666666667,
+            "y": 0.48042929292929293
+          },
+          "tags": [
+            "clickable"
+          ]
+        },
+        {
+          "index": 38,
+          "label": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "class": "android.widget.ImageView",
+          "clickable": true,
+          "editable": false,
+          "selected": false,
+          "bounds": "467 1462 587 1582",
+          "x": 0.3659722222222222,
+          "y": 0.48042929292929293,
+          "center": {
+            "x": 0.3659722222222222,
+            "y": 0.48042929292929293
+          },
+          "tags": [
+            "clickable"
+          ]
+        },
+        {
+          "index": 39,
+          "label": "1239 com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "text": "1239",
+          "desc": null,
+          "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "class": "android.widget.TextView",
+          "clickable": true,
+          "editable": false,
+          "selected": false,
+          "bounds": "567 1486 670 1559",
+          "x": 0.42916666666666664,
+          "y": 0.48042929292929293,
+          "center": {
+            "x": 0.42916666666666664,
+            "y": 0.48042929292929293
+          },
+          "tags": [
+            "clickable"
+          ]
+        },
+        {
+          "index": 40,
+          "label": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "class": "android.widget.LinearLayout",
+          "clickable": false,
+          "editable": false,
+          "selected": false,
+          "bounds": "0 0 1440 3104",
+          "x": 0.5,
+          "y": 0.4898989898989899,
+          "center": {
+            "x": 0.5,
+            "y": 0.4898989898989899
+          },
+          "tags": []
+        },
+        {
+          "index": 41,
+          "label": "android:id\/content",
+          "text": null,
+          "desc": null,
+          "resourceId": "android:id\/content",
+          "class": "android.widget.FrameLayout",
+          "clickable": false,
+          "editable": false,
+          "selected": false,
+          "bounds": "0 0 1440 3104",
+          "x": 0.5,
+          "y": 0.4898989898989899,
+          "center": {
+            "x": 0.5,
+            "y": 0.4898989898989899
+          },
+          "tags": []
+        },
+        {
+          "index": 42,
+          "label": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "class": "android.view.ViewGroup",
+          "clickable": false,
+          "editable": false,
+          "selected": false,
+          "bounds": "0 0 1440 3104",
+          "x": 0.5,
+          "y": 0.4898989898989899,
+          "center": {
+            "x": 0.5,
+            "y": 0.4898989898989899
+          },
+          "tags": []
+        },
+        {
+          "index": 43,
+          "label": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "class": "android.widget.FrameLayout",
+          "clickable": false,
+          "editable": false,
+          "selected": false,
+          "bounds": "0 0 1440 3168",
+          "x": 0.5,
+          "y": 0.5,
+          "center": {
+            "x": 0.5,
+            "y": 0.5
+          },
+          "tags": []
+        },
+        {
+          "index": 44,
+          "label": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "class": "android.view.ViewGroup",
+          "clickable": false,
+          "editable": false,
+          "selected": false,
+          "bounds": "0 336 1440 2924",
+          "x": 0.5,
+          "y": 0.514520202020202,
+          "center": {
+            "x": 0.5,
+            "y": 0.514520202020202
+          },
+          "tags": []
+        },
+        {
+          "index": 45,
+          "label": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "class": "androidx.viewpager.widget.ViewPager",
+          "clickable": false,
+          "editable": false,
+          "selected": false,
+          "bounds": "0 336 1440 2924",
+          "x": 0.5,
+          "y": 0.514520202020202,
+          "center": {
+            "x": 0.5,
+            "y": 0.514520202020202
+          },
+          "tags": []
+        },
+        {
+          "index": 46,
+          "label": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "class": "android.widget.FrameLayout",
+          "clickable": false,
+          "editable": false,
+          "selected": false,
+          "bounds": "0 336 1440 2924",
+          "x": 0.5,
+          "y": 0.514520202020202,
+          "center": {
+            "x": 0.5,
+            "y": 0.514520202020202
+          },
+          "tags": []
+        },
+        {
+          "index": 47,
+          "label": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "class": "android.view.ViewGroup",
+          "clickable": false,
+          "editable": false,
+          "selected": false,
+          "bounds": "0 336 1440 2924",
+          "x": 0.5,
+          "y": 0.514520202020202,
+          "center": {
+            "x": 0.5,
+            "y": 0.514520202020202
+          },
+          "tags": []
+        },
+        {
+          "index": 48,
+          "label": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "class": "androidx.recyclerview.widget.RecyclerView",
+          "clickable": false,
+          "editable": false,
+          "selected": false,
+          "bounds": "0 336 1440 2924",
+          "x": 0.5,
+          "y": 0.514520202020202,
+          "center": {
+            "x": 0.5,
+            "y": 0.514520202020202
+          },
+          "tags": []
+        },
+        {
+          "index": 49,
+          "label": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "class": "android.widget.FrameLayout",
+          "clickable": false,
+          "editable": false,
+          "selected": false,
+          "bounds": "730 1220 1420 2140",
+          "x": 0.7465277777777778,
+          "y": 0.5303030303030303,
+          "center": {
+            "x": 0.7465277777777778,
+            "y": 0.5303030303030303
+          },
+          "tags": []
+        }
+      ],
+      "capability": {
+        "nodeReadability": "A",
+        "inputCapability": "NONE",
+        "verificationCapability": "HIGH",
+        "coordinateFallback": "AVAILABLE",
+        "serviceState": "CONNECTED"
+      },
+      "snapshotPath": null,
+      "capturedAt": 1779201537788
+    },
+    {
+      "screenId": "screen_1860a32b",
+      "screenKey": "1860a32b",
+      "title": "历史记录",
+      "appPackage": "com.xingin.xhs",
+      "windowClassName": "androidx.viewpager.widget.ViewPager",
+      "screenWidth": 1440,
+      "screenHeight": 3168,
+      "nodeCount": 95,
+      "clickableCount": 23,
+      "editableCount": 1,
+      "scrollableCount": 0,
+      "labels": [
+        "com.xingin.xhs:id\/0_resource_name_obfuscated",
+        "android:id\/content",
+        "返回 com.xingin.xhs:id\/0_resource_name_obfuscated",
+        "搜索, com.xingin.xhs:id\/0_resource_name_obfuscated",
+        "搜索 com.xingin.xhs:id\/0_resource_name_obfuscated",
+        "问ai com.xingin.xhs:id\/0_resource_name_obfuscated",
+        "拍照搜索 com.xingin.xhs:id\/0_resource_name_obfuscated",
+        "拍照搜 com.xingin.xhs:id\/0_resource_name_obfuscated",
+        "历史记录",
+        "gpt plus额度",
+        "gpt plus",
+        "词元神",
+        "api中转站",
+        "api网址",
+        "gpt api",
+        "猜你想搜",
+        "codex额度刷新",
+        "耿同学北航退学",
+        "顺景智能科技有限公司",
+        "api中转违法吗",
+        "杰伦威廉姆斯合同",
+        "怎么确定自己帅不帅",
+        "按住提问  有问必答 com.xingin.xhs:id\/0_resource_name_obfuscated"
+      ],
+      "bottomTabs": [],
+      "entryCandidates": [
+        {
+          "index": 0,
+          "label": "搜索, com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "text": "搜索,",
+          "desc": null,
+          "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "class": "android.widget.EditText",
+          "clickable": true,
+          "editable": true,
+          "selected": false,
+          "bounds": "240 176 1150 352",
+          "x": 0.4826388888888889,
+          "y": 0.08333333333333333,
+          "center": {
+            "x": 0.4826388888888889,
+            "y": 0.08333333333333333
+          },
+          "tags": [
+            "entry_candidate",
+            "clickable",
+            "editable",
+            "search_entry"
+          ]
+        },
+        {
+          "index": 1,
+          "label": "搜索 com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "text": "搜索",
+          "desc": null,
+          "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "class": "android.widget.Button",
+          "clickable": true,
+          "editable": false,
+          "selected": false,
+          "bounds": "1192 176 1312 352",
+          "x": 0.8694444444444445,
+          "y": 0.08333333333333333,
+          "center": {
+            "x": 0.8694444444444445,
+            "y": 0.08333333333333333
+          },
+          "tags": [
+            "entry_candidate",
+            "clickable",
+            "search_entry"
+          ]
+        },
+        {
+          "index": 2,
+          "label": "拍照搜索 com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "text": null,
+          "desc": "拍照搜索",
+          "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "class": "android.widget.ImageView",
+          "clickable": false,
+          "editable": false,
+          "selected": false,
+          "bounds": "477 408 549 480",
+          "x": 0.35625,
+          "y": 0.14015151515151514,
+          "center": {
+            "x": 0.35625,
+            "y": 0.14015151515151514
+          },
+          "tags": [
+            "entry_candidate",
+            "search_entry"
+          ]
+        },
+        {
+          "index": 3,
+          "label": "拍照搜 com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "text": "拍照搜",
+          "desc": null,
+          "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "class": "android.widget.TextView",
+          "clickable": false,
+          "editable": false,
+          "selected": false,
+          "bounds": "565 400 745 488",
+          "x": 0.4548611111111111,
+          "y": 0.14015151515151514,
+          "center": {
+            "x": 0.4548611111111111,
+            "y": 0.14015151515151514
+          },
+          "tags": [
+            "entry_candidate"
+          ]
+        },
+        {
+          "index": 4,
+          "label": "猜你想搜",
+          "text": "猜你想搜",
+          "desc": null,
+          "resourceId": null,
+          "class": "android.widget.TextView",
+          "clickable": false,
+          "editable": false,
+          "selected": false,
+          "bounds": "64 1072 1256 1160",
+          "x": 0.4583333333333333,
+          "y": 0.3522727272727273,
+          "center": {
+            "x": 0.4583333333333333,
+            "y": 0.3522727272727273
+          },
+          "tags": [
+            "entry_candidate"
+          ]
+        }
+      ],
+      "inputCandidates": [
+        {
+          "index": 0,
+          "label": "搜索, com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "text": "搜索,",
+          "desc": null,
+          "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "class": "android.widget.EditText",
+          "clickable": true,
+          "editable": true,
+          "selected": false,
+          "bounds": "240 176 1150 352",
+          "x": 0.4826388888888889,
+          "y": 0.08333333333333333,
+          "center": {
+            "x": 0.4826388888888889,
+            "y": 0.08333333333333333
+          },
+          "tags": [
+            "input_candidate",
+            "clickable",
+            "editable",
+            "search_entry"
+          ]
+        }
+      ],
+      "clickTargets": [
+        {
+          "index": 0,
+          "label": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "class": "android.widget.FrameLayout",
+          "clickable": false,
+          "editable": false,
+          "selected": false,
+          "bounds": "0 0 1440 160",
+          "x": 0.5,
+          "y": 0.025252525252525252,
+          "center": {
+            "x": 0.5,
+            "y": 0.025252525252525252
+          },
+          "tags": []
+        },
+        {
+          "index": 1,
+          "label": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "class": "android.view.View",
+          "clickable": false,
+          "editable": false,
+          "selected": false,
+          "bounds": "0 0 1440 160",
+          "x": 0.5,
+          "y": 0.025252525252525252,
+          "center": {
+            "x": 0.5,
+            "y": 0.025252525252525252
+          },
+          "tags": []
+        },
+        {
+          "index": 2,
+          "label": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "class": "android.view.View",
+          "clickable": false,
+          "editable": false,
+          "selected": false,
+          "bounds": "0 0 1440 160",
+          "x": 0.5,
+          "y": 0.025252525252525252,
+          "center": {
+            "x": 0.5,
+            "y": 0.025252525252525252
+          },
+          "tags": []
+        },
+        {
+          "index": 3,
+          "label": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "class": "android.widget.Button",
+          "clickable": true,
+          "editable": false,
+          "selected": false,
+          "bounds": "0 160 152 368",
+          "x": 0.05277777777777778,
+          "y": 0.08333333333333333,
+          "center": {
+            "x": 0.05277777777777778,
+            "y": 0.08333333333333333
+          },
+          "tags": [
+            "clickable"
+          ]
+        },
+        {
+          "index": 4,
+          "label": "返回 com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "text": null,
+          "desc": "返回",
+          "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "class": "android.widget.ImageView",
+          "clickable": false,
+          "editable": false,
+          "selected": false,
+          "bounds": "64 220 152 308",
+          "x": 0.075,
+          "y": 0.08333333333333333,
+          "center": {
+            "x": 0.075,
+            "y": 0.08333333333333333
+          },
+          "tags": []
+        },
+        {
+          "index": 5,
+          "label": "搜索, com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "text": "搜索,",
+          "desc": null,
+          "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "class": "android.widget.EditText",
+          "clickable": true,
+          "editable": true,
+          "selected": false,
+          "bounds": "240 176 1150 352",
+          "x": 0.4826388888888889,
+          "y": 0.08333333333333333,
+          "center": {
+            "x": 0.4826388888888889,
+            "y": 0.08333333333333333
+          },
+          "tags": [
+            "clickable",
+            "editable",
+            "search_entry"
+          ]
+        },
+        {
+          "index": 6,
+          "label": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "class": "android.widget.LinearLayout",
+          "clickable": true,
+          "editable": false,
+          "selected": false,
+          "bounds": "176 176 1376 352",
+          "x": 0.5388888888888889,
+          "y": 0.08333333333333333,
+          "center": {
+            "x": 0.5388888888888889,
+            "y": 0.08333333333333333
+          },
+          "tags": [
+            "clickable"
+          ]
+        },
+        {
+          "index": 7,
+          "label": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "class": "android.widget.LinearLayout",
+          "clickable": false,
+          "editable": false,
+          "selected": false,
+          "bounds": "1150 176 1312 352",
+          "x": 0.8548611111111111,
+          "y": 0.08333333333333333,
+          "center": {
+            "x": 0.8548611111111111,
+            "y": 0.08333333333333333
+          },
+          "tags": []
+        },
+        {
+          "index": 8,
+          "label": "搜索 com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "text": "搜索",
+          "desc": null,
+          "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "class": "android.widget.Button",
+          "clickable": true,
+          "editable": false,
+          "selected": false,
+          "bounds": "1192 176 1312 352",
+          "x": 0.8694444444444445,
+          "y": 0.08333333333333333,
+          "center": {
+            "x": 0.8694444444444445,
+            "y": 0.08333333333333333
+          },
+          "tags": [
+            "clickable",
+            "search_entry"
+          ]
+        },
+        {
+          "index": 9,
+          "label": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "class": "android.widget.FrameLayout",
+          "clickable": false,
+          "editable": false,
+          "selected": false,
+          "bounds": "112 160 1440 416",
+          "x": 0.5388888888888889,
+          "y": 0.09090909090909091,
+          "center": {
+            "x": 0.5388888888888889,
+            "y": 0.09090909090909091
+          },
+          "tags": []
+        },
+        {
+          "index": 10,
+          "label": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "class": "android.widget.RelativeLayout",
+          "clickable": false,
+          "editable": false,
+          "selected": false,
+          "bounds": "0 160 1440 520",
+          "x": 0.5,
+          "y": 0.10732323232323232,
+          "center": {
+            "x": 0.5,
+            "y": 0.10732323232323232
+          },
+          "tags": []
+        },
+        {
+          "index": 11,
+          "label": "问ai com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "text": null,
+          "desc": "问ai",
+          "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "class": "android.widget.ImageView",
+          "clickable": false,
+          "editable": false,
+          "selected": false,
+          "bounds": "176 412 240 476",
+          "x": 0.14444444444444443,
+          "y": 0.14015151515151514,
+          "center": {
+            "x": 0.14444444444444443,
+            "y": 0.14015151515151514
+          },
+          "tags": []
+        },
+        {
+          "index": 12,
+          "label": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "class": "android.widget.LinearLayout",
+          "clickable": true,
+          "editable": false,
+          "selected": false,
+          "bounds": "176 400 417 488",
+          "x": 0.20555555555555555,
+          "y": 0.14015151515151514,
+          "center": {
+            "x": 0.20555555555555555,
+            "y": 0.14015151515151514
+          },
+          "tags": [
+            "clickable"
+          ]
+        },
+        {
+          "index": 13,
+          "label": "问ai com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "text": "问ai",
+          "desc": null,
+          "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "class": "android.widget.TextView",
+          "clickable": false,
+          "editable": false,
+          "selected": false,
+          "bounds": "256 400 361 488",
+          "x": 0.21388888888888888,
+          "y": 0.14015151515151514,
+          "center": {
+            "x": 0.21388888888888888,
+            "y": 0.14015151515151514
+          },
+          "tags": []
+        },
+        {
+          "index": 14,
+          "label": "拍照搜索 com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "text": null,
+          "desc": "拍照搜索",
+          "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "class": "android.widget.ImageView",
+          "clickable": false,
+          "editable": false,
+          "selected": false,
+          "bounds": "477 408 549 480",
+          "x": 0.35625,
+          "y": 0.14015151515151514,
+          "center": {
+            "x": 0.35625,
+            "y": 0.14015151515151514
+          },
+          "tags": [
+            "search_entry"
+          ]
+        },
+        {
+          "index": 15,
+          "label": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "class": "android.widget.LinearLayout",
+          "clickable": true,
+          "editable": false,
+          "selected": false,
+          "bounds": "421 400 745 488",
+          "x": 0.4048611111111111,
+          "y": 0.14015151515151514,
+          "center": {
+            "x": 0.4048611111111111,
+            "y": 0.14015151515151514
+          },
+          "tags": [
+            "clickable"
+          ]
+        },
+        {
+          "index": 16,
+          "label": "拍照搜 com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "text": "拍照搜",
+          "desc": null,
+          "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "class": "android.widget.TextView",
+          "clickable": false,
+          "editable": false,
+          "selected": false,
+          "bounds": "565 400 745 488",
+          "x": 0.4548611111111111,
+          "y": 0.14015151515151514,
+          "center": {
+            "x": 0.4548611111111111,
+            "y": 0.14015151515151514
+          },
+          "tags": []
+        },
+        {
+          "index": 17,
+          "label": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "class": "android.view.ViewGroup",
+          "clickable": false,
+          "editable": false,
+          "selected": false,
+          "bounds": "176 384 745 520",
+          "x": 0.3194444444444444,
+          "y": 0.14267676767676768,
+          "center": {
+            "x": 0.3194444444444444,
+            "y": 0.14267676767676768
+          },
+          "tags": []
+        },
+        {
+          "index": 18,
+          "label": "历史记录",
+          "text": "历史记录",
+          "desc": null,
+          "resourceId": null,
+          "class": "android.widget.TextView",
+          "clickable": false,
+          "editable": false,
+          "selected": false,
+          "bounds": "64 556 1240 644",
+          "x": 0.4527777777777778,
+          "y": 0.1893939393939394,
+          "center": {
+            "x": 0.4527777777777778,
+            "y": 0.1893939393939394
+          },
+          "tags": []
+        },
+        {
+          "index": 19,
+          "label": "",
+          "text": null,
+          "desc": null,
+          "resourceId": null,
+          "class": "android.view.ViewGroup",
+          "clickable": true,
+          "editable": false,
+          "selected": false,
+          "bounds": "1240 520 1440 696",
+          "x": 0.9305555555555556,
+          "y": 0.1919191919191919,
+          "center": {
+            "x": 0.9305555555555556,
+            "y": 0.1919191919191919
+          },
+          "tags": [
+            "clickable"
+          ]
+        },
+        {
+          "index": 20,
+          "label": "",
+          "text": null,
+          "desc": null,
+          "resourceId": null,
+          "class": "android.view.ViewGroup",
+          "clickable": true,
+          "editable": false,
+          "selected": false,
+          "bounds": "64 696 488 824",
+          "x": 0.19166666666666668,
+          "y": 0.2398989898989899,
+          "center": {
+            "x": 0.19166666666666668,
+            "y": 0.2398989898989899
+          },
+          "tags": [
+            "clickable"
+          ]
+        },
+        {
+          "index": 21,
+          "label": "gpt plus额度",
+          "text": "gpt plus额度",
+          "desc": null,
+          "resourceId": null,
+          "class": "android.widget.TextView",
+          "clickable": false,
+          "editable": false,
+          "selected": false,
+          "bounds": "112 716 440 804",
+          "x": 0.19166666666666668,
+          "y": 0.2398989898989899,
+          "center": {
+            "x": 0.19166666666666668,
+            "y": 0.2398989898989899
+          },
+          "tags": []
+        },
+        {
+          "index": 22,
+          "label": "",
+          "text": null,
+          "desc": null,
+          "resourceId": null,
+          "class": "android.view.ViewGroup",
+          "clickable": true,
+          "editable": false,
+          "selected": false,
+          "bounds": "528 696 832 824",
+          "x": 0.4722222222222222,
+          "y": 0.2398989898989899,
+          "center": {
+            "x": 0.4722222222222222,
+            "y": 0.2398989898989899
+          },
+          "tags": [
+            "clickable"
+          ]
+        },
+        {
+          "index": 23,
+          "label": "gpt plus",
+          "text": "gpt plus",
+          "desc": null,
+          "resourceId": null,
+          "class": "android.widget.TextView",
+          "clickable": false,
+          "editable": false,
+          "selected": false,
+          "bounds": "576 716 784 804",
+          "x": 0.4722222222222222,
+          "y": 0.2398989898989899,
+          "center": {
+            "x": 0.4722222222222222,
+            "y": 0.2398989898989899
+          },
+          "tags": []
+        },
+        {
+          "index": 24,
+          "label": "",
+          "text": null,
+          "desc": null,
+          "resourceId": null,
+          "class": "android.view.ViewGroup",
+          "clickable": true,
+          "editable": false,
+          "selected": false,
+          "bounds": "872 696 1148 824",
+          "x": 0.7013888888888888,
+          "y": 0.2398989898989899,
+          "center": {
+            "x": 0.7013888888888888,
+            "y": 0.2398989898989899
+          },
+          "tags": [
+            "clickable"
+          ]
+        },
+        {
+          "index": 25,
+          "label": "词元神",
+          "text": "词元神",
+          "desc": null,
+          "resourceId": null,
+          "class": "android.widget.TextView",
+          "clickable": false,
+          "editable": false,
+          "selected": false,
+          "bounds": "920 716 1100 804",
+          "x": 0.7013888888888888,
+          "y": 0.2398989898989899,
+          "center": {
+            "x": 0.7013888888888888,
+            "y": 0.2398989898989899
+          },
+          "tags": []
+        },
+        {
+          "index": 26,
+          "label": "",
+          "text": null,
+          "desc": null,
+          "resourceId": null,
+          "class": "android.view.ViewGroup",
+          "clickable": true,
+          "editable": false,
+          "selected": false,
+          "bounds": "64 864 419 992",
+          "x": 0.1673611111111111,
+          "y": 0.29292929292929293,
+          "center": {
+            "x": 0.1673611111111111,
+            "y": 0.29292929292929293
+          },
+          "tags": [
+            "clickable"
+          ]
+        },
+        {
+          "index": 27,
+          "label": "api中转站",
+          "text": "api中转站",
+          "desc": null,
+          "resourceId": null,
+          "class": "android.widget.TextView",
+          "clickable": false,
+          "editable": false,
+          "selected": false,
+          "bounds": "112 884 371 972",
+          "x": 0.1673611111111111,
+          "y": 0.29292929292929293,
+          "center": {
+            "x": 0.1673611111111111,
+            "y": 0.29292929292929293
+          },
+          "tags": []
+        },
+        {
+          "index": 28,
+          "label": "",
+          "text": null,
+          "desc": null,
+          "resourceId": null,
+          "class": "android.view.ViewGroup",
+          "clickable": true,
+          "editable": false,
+          "selected": false,
+          "bounds": "459 864 754 992",
+          "x": 0.42083333333333334,
+          "y": 0.29292929292929293,
+          "center": {
+            "x": 0.42083333333333334,
+            "y": 0.29292929292929293
+          },
+          "tags": [
+            "clickable"
+          ]
+        },
+        {
+          "index": 29,
+          "label": "api网址",
+          "text": "api网址",
+          "desc": null,
+          "resourceId": null,
+          "class": "android.widget.TextView",
+          "clickable": false,
+          "editable": false,
+          "selected": false,
+          "bounds": "507 884 706 972",
+          "x": 0.42083333333333334,
+          "y": 0.29292929292929293,
+          "center": {
+            "x": 0.42083333333333334,
+            "y": 0.29292929292929293
+          },
+          "tags": []
+        },
+        {
+          "index": 30,
+          "label": "",
+          "text": null,
+          "desc": null,
+          "resourceId": null,
+          "class": "android.view.ViewGroup",
+          "clickable": true,
+          "editable": false,
+          "selected": false,
+          "bounds": "794 864 1070 992",
+          "x": 0.6472222222222223,
+          "y": 0.29292929292929293,
+          "center": {
+            "x": 0.6472222222222223,
+            "y": 0.29292929292929293
+          },
+          "tags": [
+            "clickable"
+          ]
+        },
+        {
+          "index": 31,
+          "label": "gpt api",
+          "text": "gpt api",
+          "desc": null,
+          "resourceId": null,
+          "class": "android.widget.TextView",
+          "clickable": false,
+          "editable": false,
+          "selected": false,
+          "bounds": "842 884 1022 972",
+          "x": 0.6472222222222223,
+          "y": 0.29292929292929293,
+          "center": {
+            "x": 0.6472222222222223,
+            "y": 0.29292929292929293
+          },
+          "tags": []
+        },
+        {
+          "index": 32,
+          "label": "",
+          "text": null,
+          "desc": null,
+          "resourceId": null,
+          "class": "android.view.ViewGroup",
+          "clickable": true,
+          "editable": false,
+          "selected": false,
+          "bounds": "1110 864 1238 992",
+          "x": 0.8152777777777778,
+          "y": 0.29292929292929293,
+          "center": {
+            "x": 0.8152777777777778,
+            "y": 0.29292929292929293
+          },
+          "tags": [
+            "clickable"
+          ]
+        },
+        {
+          "index": 33,
+          "label": "猜你想搜",
+          "text": "猜你想搜",
+          "desc": null,
+          "resourceId": null,
+          "class": "android.widget.TextView",
+          "clickable": false,
+          "editable": false,
+          "selected": false,
+          "bounds": "64 1072 1256 1160",
+          "x": 0.4583333333333333,
+          "y": 0.3522727272727273,
+          "center": {
+            "x": 0.4583333333333333,
+            "y": 0.3522727272727273
+          },
+          "tags": []
+        },
+        {
+          "index": 34,
+          "label": "",
+          "text": null,
+          "desc": null,
+          "resourceId": null,
+          "class": "android.view.ViewGroup",
+          "clickable": true,
+          "editable": false,
+          "selected": false,
+          "bounds": "1256 1072 1440 1160",
+          "x": 0.9361111111111111,
+          "y": 0.3522727272727273,
+          "center": {
+            "x": 0.9361111111111111,
+            "y": 0.3522727272727273
+          },
+          "tags": [
+            "clickable"
+          ]
+        },
+        {
+          "index": 35,
+          "label": "codex额度刷新",
+          "text": "codex额度刷新",
+          "desc": null,
+          "resourceId": null,
+          "class": "android.widget.TextView",
+          "clickable": false,
+          "editable": false,
+          "selected": false,
+          "bounds": "64 1216 454 1304",
+          "x": 0.1798611111111111,
+          "y": 0.3977272727272727,
+          "center": {
+            "x": 0.1798611111111111,
+            "y": 0.3977272727272727
+          },
+          "tags": []
+        },
+        {
+          "index": 36,
+          "label": "",
+          "text": null,
+          "desc": null,
+          "resourceId": null,
+          "class": "android.view.ViewGroup",
+          "clickable": true,
+          "editable": false,
+          "selected": false,
+          "bounds": "64 1216 1408 1304",
+          "x": 0.5111111111111111,
+          "y": 0.3977272727272727,
+          "center": {
+            "x": 0.5111111111111111,
+            "y": 0.3977272727272727
+          },
+          "tags": [
+            "clickable"
+          ]
+        },
+        {
+          "index": 37,
+          "label": "耿同学北航退学",
+          "text": "耿同学北航退学",
+          "desc": null,
+          "resourceId": null,
+          "class": "android.widget.TextView",
+          "clickable": false,
+          "editable": false,
+          "selected": false,
+          "bounds": "752 1216 1172 1304",
+          "x": 0.6680555555555555,
+          "y": 0.3977272727272727,
+          "center": {
+            "x": 0.6680555555555555,
+            "y": 0.3977272727272727
+          },
+          "tags": []
+        },
+        {
+          "index": 38,
+          "label": "",
+          "text": null,
+          "desc": null,
+          "resourceId": null,
+          "class": "android.view.ViewGroup",
+          "clickable": true,
+          "editable": false,
+          "selected": false,
+          "bounds": "752 1216 1408 1304",
+          "x": 0.75,
+          "y": 0.3977272727272727,
+          "center": {
+            "x": 0.75,
+            "y": 0.3977272727272727
+          },
+          "tags": [
+            "clickable"
+          ]
+        },
+        {
+          "index": 39,
+          "label": "顺景智能科技有限公司",
+          "text": "顺景智能科技有限公司",
+          "desc": null,
+          "resourceId": null,
+          "class": "android.widget.TextView",
+          "clickable": false,
+          "editable": false,
+          "selected": false,
+          "bounds": "64 1368 664 1456",
+          "x": 0.25277777777777777,
+          "y": 0.4457070707070707,
+          "center": {
+            "x": 0.25277777777777777,
+            "y": 0.4457070707070707
+          },
+          "tags": []
+        },
+        {
+          "index": 40,
+          "label": "",
+          "text": null,
+          "desc": null,
+          "resourceId": null,
+          "class": "android.view.ViewGroup",
+          "clickable": true,
+          "editable": false,
+          "selected": false,
+          "bounds": "64 1368 1408 1456",
+          "x": 0.5111111111111111,
+          "y": 0.4457070707070707,
+          "center": {
+            "x": 0.5111111111111111,
+            "y": 0.4457070707070707
+          },
+          "tags": [
+            "clickable"
+          ]
+        },
+        {
+          "index": 41,
+          "label": "api中转违法吗",
+          "text": "api中转违法吗",
+          "desc": null,
+          "resourceId": null,
+          "class": "android.widget.TextView",
+          "clickable": false,
+          "editable": false,
+          "selected": false,
+          "bounds": "752 1368 1131 1456",
+          "x": 0.6534722222222222,
+          "y": 0.4457070707070707,
+          "center": {
+            "x": 0.6534722222222222,
+            "y": 0.4457070707070707
+          },
+          "tags": []
+        },
+        {
+          "index": 42,
+          "label": "",
+          "text": null,
+          "desc": null,
+          "resourceId": null,
+          "class": "android.view.ViewGroup",
+          "clickable": true,
+          "editable": false,
+          "selected": false,
+          "bounds": "752 1368 1408 1456",
+          "x": 0.75,
+          "y": 0.4457070707070707,
+          "center": {
+            "x": 0.75,
+            "y": 0.4457070707070707
+          },
+          "tags": [
+            "clickable"
+          ]
+        },
+        {
+          "index": 43,
+          "label": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "class": "android.view.View",
+          "clickable": true,
+          "editable": false,
+          "selected": false,
+          "bounds": "0 1429 1440 1541",
+          "x": 0.5,
+          "y": 0.46875,
+          "center": {
+            "x": 0.5,
+            "y": 0.46875
+          },
+          "tags": [
+            "clickable"
+          ]
+        },
+        {
+          "index": 44,
+          "label": "杰伦威廉姆斯合同",
+          "text": "杰伦威廉姆斯合同",
+          "desc": null,
+          "resourceId": null,
+          "class": "android.widget.TextView",
+          "clickable": false,
+          "editable": false,
+          "selected": false,
+          "bounds": "64 1520 544 1608",
+          "x": 0.2111111111111111,
+          "y": 0.4936868686868687,
+          "center": {
+            "x": 0.2111111111111111,
+            "y": 0.4936868686868687
+          },
+          "tags": []
+        },
+        {
+          "index": 45,
+          "label": "",
+          "text": null,
+          "desc": null,
+          "resourceId": null,
+          "class": "android.view.ViewGroup",
+          "clickable": true,
+          "editable": false,
+          "selected": false,
+          "bounds": "64 1520 1408 1608",
+          "x": 0.5111111111111111,
+          "y": 0.4936868686868687,
+          "center": {
+            "x": 0.5111111111111111,
+            "y": 0.4936868686868687
+          },
+          "tags": [
+            "clickable"
+          ]
+        },
+        {
+          "index": 46,
+          "label": "怎么确定自己帅不帅",
+          "text": "怎么确定自己帅不帅",
+          "desc": null,
+          "resourceId": null,
+          "class": "android.widget.TextView",
+          "clickable": false,
+          "editable": false,
+          "selected": false,
+          "bounds": "752 1520 1292 1608",
+          "x": 0.7097222222222223,
+          "y": 0.4936868686868687,
+          "center": {
+            "x": 0.7097222222222223,
+            "y": 0.4936868686868687
+          },
+          "tags": []
+        },
+        {
+          "index": 47,
+          "label": "",
+          "text": null,
+          "desc": null,
+          "resourceId": null,
+          "class": "android.view.ViewGroup",
+          "clickable": true,
+          "editable": false,
+          "selected": false,
+          "bounds": "752 1520 1408 1608",
+          "x": 0.75,
+          "y": 0.4936868686868687,
+          "center": {
+            "x": 0.75,
+            "y": 0.4936868686868687
+          },
+          "tags": [
+            "clickable"
+          ]
+        },
+        {
+          "index": 48,
+          "label": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "class": "android.widget.LinearLayout",
+          "clickable": false,
+          "editable": false,
+          "selected": false,
+          "bounds": "0 0 1440 3168",
+          "x": 0.5,
+          "y": 0.5,
+          "center": {
+            "x": 0.5,
+            "y": 0.5
+          },
+          "tags": []
+        },
+        {
+          "index": 49,
+          "label": "android:id\/content",
+          "text": null,
+          "desc": null,
+          "resourceId": "android:id\/content",
+          "class": "android.widget.FrameLayout",
+          "clickable": false,
+          "editable": false,
+          "selected": false,
+          "bounds": "0 0 1440 3168",
+          "x": 0.5,
+          "y": 0.5,
+          "center": {
+            "x": 0.5,
+            "y": 0.5
+          },
+          "tags": []
+        }
+      ],
+      "capability": {
+        "nodeReadability": "A",
+        "inputCapability": "SET_TEXT",
+        "verificationCapability": "HIGH",
+        "coordinateFallback": "AVAILABLE",
+        "serviceState": "CONNECTED"
+      },
+      "snapshotPath": null,
+      "capturedAt": 1779201544205
+    },
+    {
+      "screenId": "screen_bb42fcec",
+      "screenKey": "bb42fcec",
+      "title": "赞和收藏",
+      "appPackage": "com.xingin.xhs",
+      "windowClassName": "androidx.recyclerview.widget.RecyclerView",
+      "screenWidth": 1440,
+      "screenHeight": 3168,
+      "nodeCount": 140,
+      "clickableCount": 65,
+      "editableCount": 0,
+      "scrollableCount": 2,
+      "labels": [
+        "com.xingin.xhs:id\/0_resource_name_obfuscated",
+        "android:id\/content",
+        "消息 com.xingin.xhs:id\/0_resource_name_obfuscated",
+        "创建按钮 com.xingin.xhs:id\/0_resource_name_obfuscated",
+        "赞和收藏按钮 com.xingin.xhs:id\/0_resource_name_obfuscated",
+        "赞和收藏",
+        "新增关注按钮 com.xingin.xhs:id\/0_resource_name_obfuscated",
+        "新增关注",
+        "评论和@按钮 com.xingin.xhs:id\/0_resource_name_obfuscated",
+        "评论和@",
+        "满风，，，[笑哭R] ，18:49 com.xingin.xhs:id\/0_resource_name_obfuscated",
+        "满风 com.xingin.xhs:id\/0_resource_name_obfuscated",
+        "18:49 com.xingin.xhs:id\/0_resource_name_obfuscated",
+        "[笑哭R] com.xingin.xhs:id\/0_resource_name_obfuscated",
+        "标为未读 com.xingin.xhs:id\/0_resource_name_obfuscated",
+        "不显示 com.xingin.xhs:id\/0_resource_name_obfuscated",
+        "删除 com.xingin.xhs:id\/0_resource_name_obfuscated",
+        "hole，，，api网址给一个，17:45 com.xingin.xhs:id\/0_resource_name_obfuscated",
+        "hole com.xingin.xhs:id\/0_resource_name_obfuscated",
+        "17:45 com.xingin.xhs:id\/0_resource_name_obfuscated",
+        "api网址给一个 com.xingin.xhs:id\/0_resource_name_obfuscated",
+        "活动消息，未读，Ai大会直通名额来了！送你上WAIC，16:32 com.xingin.xhs:id\/0_resource_name_obfuscated",
+        "活动消息 com.xingin.xhs:id\/0_resource_name_obfuscated",
+        "16:32 com.xingin.xhs:id\/0_resource_name_obfuscated",
+        "Ai大会直通名额来了！送你上WAIC com.xingin.xhs:id\/0_resource_name_obfuscated",
+        "标记已读 com.xingin.xhs:id\/0_resource_name_obfuscated",
+        "置顶 com.xingin.xhs:id\/0_resource_name_obfuscated",
+        "Evil4，，，美区官方订阅120哦，星期五 com.xingin.xhs:id\/0_resource_name_obfuscated",
+        "Evil4 com.xingin.xhs:id\/0_resource_name_obfuscated",
+        "星期五 com.xingin.xhs:id\/0_resource_name_obfuscated",
+        "美区官方订阅120哦 com.xingin.xhs:id\/0_resource_name_obfuscated",
+        "小红薯6A0D2947，，，[草稿] 有售后吗被封了，05月02号 com.xingin.xhs:id\/0_resource_name_obfuscated",
+        "小红薯6A0D2947 com.xingin.xhs:id\/0_resource_name_obfuscated",
+        "05-02 com.xingin.xhs:id\/0_resource_name_obfuscated",
+        "[草稿] 有售后吗被封了 com.xingin.xhs:id\/0_resource_name_obfuscated",
+        "渡川入梦，，，如果你只想用网页的话，建议找个便宜的plus和pro 5x。功能差不多。我这pro  20x，实在没办法便宜的[汗颜R] ，05月02号 com.xingin.xhs:id\/0_resource_name_obfuscated",
+        "渡川入梦 com.xingin.xhs:id\/0_resource_name_obfuscated",
+        "如果你只想用网页的话，建议找个便宜的plus和pro 5x。功能差不多。我这pro  20x，实在没办法便宜的[汗颜R] com.xingin.xhs:id\/0_resource_name_obfuscated",
+        "金时的发际线，，，暂时人满啦，05月02号 com.xingin.xhs:id\/0_resource_name_obfuscated",
+        "金时的发际线 com.xingin.xhs:id\/0_resource_name_obfuscated",
+        "暂时人满啦 com.xingin.xhs:id\/0_resource_name_obfuscated",
+        "xixixi，，，[草稿] 1，05月02号 com.xingin.xhs:id\/0_resource_name_obfuscated",
+        "xixixi com.xingin.xhs:id\/0_resource_name_obfuscated",
+        "[草稿] 1 com.xingin.xhs:id\/0_resource_name_obfuscated",
+        "首页 com.xingin.xhs:id\/0_resource_name_obfuscated",
+        "市集 com.xingin.xhs:id\/index_store",
+        "市集 com.xingin.xhs:id\/0_resource_name_obfuscated",
+        "发布 com.xingin.xhs:id\/0_resource_name_obfuscated",
+        "消息，未读 com.xingin.xhs:id\/0_resource_name_obfuscated",
+        "我 com.xingin.xhs:id\/0_resource_name_obfuscated",
+        "android:id\/statusBarBackground",
+        "android:id\/navigationBarBackground"
+      ],
+      "bottomTabs": [
+        {
+          "index": 0,
+          "label": "首页 com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "text": null,
+          "desc": "首页",
+          "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "class": "android.view.ViewGroup",
+          "clickable": true,
+          "editable": false,
+          "selected": false,
+          "bounds": "0 2924 288 3104",
+          "x": 0.1,
+          "y": 0.9513888888888888,
+          "center": {
+            "x": 0.1,
+            "y": 0.9513888888888888
+          },
+          "tags": [
+            "bottom_tab_candidate"
+          ]
+        },
+        {
+          "index": 1,
+          "label": "首页 com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "text": "首页",
+          "desc": null,
+          "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "class": "android.widget.TextView",
+          "clickable": false,
+          "editable": false,
+          "selected": false,
+          "bounds": "80 2979 208 3052",
+          "x": 0.1,
+          "y": 0.9517045454545454,
+          "center": {
+            "x": 0.1,
+            "y": 0.9517045454545454
+          },
+          "tags": [
+            "bottom_tab_candidate"
+          ]
+        },
+        {
+          "index": 2,
+          "label": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "class": "android.view.View",
+          "clickable": true,
+          "editable": false,
+          "selected": false,
+          "bounds": "64 2305 256 2497",
+          "x": 0.1111111111111111,
+          "y": 0.7578914141414141,
+          "center": {
+            "x": 0.1111111111111111,
+            "y": 0.7578914141414141
+          },
+          "tags": [
+            "bottom_tab_candidate"
+          ]
+        },
+        {
+          "index": 3,
+          "label": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "class": "android.view.View",
+          "clickable": true,
+          "editable": false,
+          "selected": false,
+          "bounds": "64 2593 256 2785",
+          "x": 0.1111111111111111,
+          "y": 0.8488005050505051,
+          "center": {
+            "x": 0.1111111111111111,
+            "y": 0.8488005050505051
+          },
+          "tags": [
+            "bottom_tab_candidate"
+          ]
+        },
+        {
+          "index": 4,
+          "label": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "class": "android.view.View",
+          "clickable": true,
+          "editable": false,
+          "selected": false,
+          "bounds": "64 2881 256 2924",
+          "x": 0.1111111111111111,
+          "y": 0.9160353535353535,
+          "center": {
+            "x": 0.1111111111111111,
+            "y": 0.9160353535353535
+          },
+          "tags": [
+            "bottom_tab_candidate"
+          ]
+        },
+        {
+          "index": 5,
+          "label": "xixixi com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "text": "xixixi",
+          "desc": null,
+          "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "class": "android.widget.TextView",
+          "clickable": false,
+          "editable": false,
+          "selected": false,
+          "bounds": "304 2893 438 2924",
+          "x": 0.25763888888888886,
+          "y": 0.9179292929292929,
+          "center": {
+            "x": 0.25763888888888886,
+            "y": 0.9179292929292929
+          },
+          "tags": [
+            "bottom_tab_candidate"
+          ]
+        },
+        {
+          "index": 6,
+          "label": "渡川入梦 com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "text": "渡川入梦",
+          "desc": null,
+          "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "class": "android.widget.TextView",
+          "clickable": false,
+          "editable": false,
+          "selected": false,
+          "bounds": "304 2317 560 2390",
+          "x": 0.3,
+          "y": 0.742739898989899,
+          "center": {
+            "x": 0.3,
+            "y": 0.742739898989899
+          },
+          "tags": [
+            "bottom_tab_candidate"
+          ]
+        },
+        {
+          "index": 7,
+          "label": "市集 com.xingin.xhs:id\/index_store",
+          "text": null,
+          "desc": "市集",
+          "resourceId": "com.xingin.xhs:id\/index_store",
+          "class": "android.view.ViewGroup",
+          "clickable": true,
+          "editable": false,
+          "selected": false,
+          "bounds": "288 2924 576 3104",
+          "x": 0.3,
+          "y": 0.9513888888888888,
+          "center": {
+            "x": 0.3,
+            "y": 0.9513888888888888
+          },
+          "tags": [
+            "bottom_tab_candidate"
+          ]
+        },
+        {
+          "index": 8,
+          "label": "市集 com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "text": "市集",
+          "desc": null,
+          "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "class": "android.widget.TextView",
+          "clickable": false,
+          "editable": false,
+          "selected": false,
+          "bounds": "368 2979 496 3052",
+          "x": 0.3,
+          "y": 0.9517045454545454,
+          "center": {
+            "x": 0.3,
+            "y": 0.9517045454545454
+          },
+          "tags": [
+            "bottom_tab_candidate"
+          ]
+        },
+        {
+          "index": 9,
+          "label": "暂时人满啦 com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "text": "暂时人满啦",
+          "desc": null,
+          "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "class": "android.widget.TextView",
+          "clickable": false,
+          "editable": false,
+          "selected": false,
+          "bounds": "256 2678 648 2758",
+          "x": 0.3138888888888889,
+          "y": 0.8579545454545454,
+          "center": {
+            "x": 0.3138888888888889,
+            "y": 0.8579545454545454
+          },
+          "tags": [
+            "bottom_tab_candidate"
+          ]
+        },
+        {
+          "index": 10,
+          "label": "金时的发际线 com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "text": "金时的发际线",
+          "desc": null,
+          "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "class": "android.widget.TextView",
+          "clickable": false,
+          "editable": false,
+          "selected": false,
+          "bounds": "304 2605 688 2678",
+          "x": 0.34444444444444444,
+          "y": 0.83364898989899,
+          "center": {
+            "x": 0.34444444444444444,
+            "y": 0.83364898989899
+          },
+          "tags": [
+            "bottom_tab_candidate"
+          ]
+        },
+        {
+          "index": 11,
+          "label": "渡川入梦，，，如果你只想用网页的话，建议找个便宜的plus和pro 5x。功能差不多。我这pro  20x，实在没办法便宜的[汗颜R] ，05月02号 com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "text": null,
+          "desc": "渡川入梦，，，如果你只想用网页的话，建议找个便宜的plus和pro 5x。功能差不多。我这pro  20x，实在没办法便宜的[汗颜R] ，05月02号",
+          "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "class": "android.view.ViewGroup",
+          "clickable": true,
+          "editable": false,
+          "selected": false,
+          "bounds": "0 2257 1440 2545",
+          "x": 0.5,
+          "y": 0.7578914141414141,
+          "center": {
+            "x": 0.5,
+            "y": 0.7578914141414141
+          },
+          "tags": [
+            "bottom_tab_candidate"
+          ]
+        }
+      ],
+      "entryCandidates": [
+        {
+          "index": 0,
+          "label": "消息 com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "text": "消息",
+          "desc": null,
+          "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "class": "android.widget.TextView",
+          "clickable": false,
+          "editable": false,
+          "selected": false,
+          "bounds": "656 211 784 284",
+          "x": 0.5,
+          "y": 0.07796717171717171,
+          "center": {
+            "x": 0.5,
+            "y": 0.07796717171717171
+          },
+          "tags": [
+            "entry_candidate",
+            "message_entry"
+          ]
+        },
+        {
+          "index": 1,
+          "label": "活动消息 com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "text": "活动消息",
+          "desc": null,
+          "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "class": "android.widget.TextView",
+          "clickable": false,
+          "editable": false,
+          "selected": false,
+          "bounds": "256 1393 584 1526",
+          "x": 0.2916666666666667,
+          "y": 0.4605429292929293,
+          "center": {
+            "x": 0.2916666666666667,
+            "y": 0.4605429292929293
+          },
+          "tags": [
+            "entry_candidate",
+            "message_entry"
+          ]
+        },
+        {
+          "index": 2,
+          "label": "活动消息，未读，Ai大会直通名额来了！送你上WAIC，16:32 com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "text": null,
+          "desc": "活动消息，未读，Ai大会直通名额来了！送你上WAIC，16:32",
+          "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "class": "android.widget.RelativeLayout",
+          "clickable": true,
+          "editable": false,
+          "selected": false,
+          "bounds": "0 1393 1440 1681",
+          "x": 0.5,
+          "y": 0.48516414141414144,
+          "center": {
+            "x": 0.5,
+            "y": 0.48516414141414144
+          },
+          "tags": [
+            "entry_candidate",
+            "clickable",
+            "message_entry"
+          ]
+        },
+        {
+          "index": 3,
+          "label": "发布 com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "text": null,
+          "desc": "发布",
+          "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "class": "android.widget.RelativeLayout",
+          "clickable": true,
+          "editable": false,
+          "selected": false,
+          "bounds": "576 2924 864 3104",
+          "x": 0.5,
+          "y": 0.9513888888888888,
+          "center": {
+            "x": 0.5,
+            "y": 0.9513888888888888
+          },
+          "tags": [
+            "entry_candidate",
+            "clickable",
+            "bottom_area",
+            "publish_entry"
+          ]
+        },
+        {
+          "index": 4,
+          "label": "消息，未读 com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "text": null,
+          "desc": "消息，未读",
+          "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "class": "android.view.ViewGroup",
+          "clickable": true,
+          "editable": false,
+          "selected": true,
+          "bounds": "864 2924 1152 3104",
+          "x": 0.7,
+          "y": 0.9513888888888888,
+          "center": {
+            "x": 0.7,
+            "y": 0.9513888888888888
+          },
+          "tags": [
+            "entry_candidate",
+            "clickable",
+            "selected",
+            "bottom_area",
+            "message_entry"
+          ]
+        },
+        {
+          "index": 5,
+          "label": "消息 com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "text": "消息",
+          "desc": null,
+          "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "class": "android.widget.TextView",
+          "clickable": false,
+          "editable": false,
+          "selected": true,
+          "bounds": "938 2975 1078 3056",
+          "x": 0.7,
+          "y": 0.9517045454545454,
+          "center": {
+            "x": 0.7,
+            "y": 0.9517045454545454
+          },
+          "tags": [
+            "entry_candidate",
+            "selected",
+            "bottom_area",
+            "message_entry"
+          ]
+        }
+      ],
+      "inputCandidates": [],
+      "clickTargets": [
+        {
+          "index": 0,
+          "label": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "class": "android.view.View",
+          "clickable": false,
+          "editable": false,
+          "selected": false,
+          "bounds": "0 0 1440 160",
+          "x": 0.5,
+          "y": 0.025252525252525252,
+          "center": {
+            "x": 0.5,
+            "y": 0.025252525252525252
+          },
+          "tags": []
+        },
+        {
+          "index": 1,
+          "label": "android:id\/statusBarBackground",
+          "text": null,
+          "desc": null,
+          "resourceId": "android:id\/statusBarBackground",
+          "class": "android.view.View",
+          "clickable": false,
+          "editable": false,
+          "selected": false,
+          "bounds": "0 0 1440 160",
+          "x": 0.5,
+          "y": 0.025252525252525252,
+          "center": {
+            "x": 0.5,
+            "y": 0.025252525252525252
+          },
+          "tags": []
+        },
+        {
+          "index": 2,
+          "label": "消息 com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "text": "消息",
+          "desc": null,
+          "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "class": "android.widget.TextView",
+          "clickable": false,
+          "editable": false,
+          "selected": false,
+          "bounds": "656 211 784 284",
+          "x": 0.5,
+          "y": 0.07796717171717171,
+          "center": {
+            "x": 0.5,
+            "y": 0.07796717171717171
+          },
+          "tags": [
+            "message_entry"
+          ]
+        },
+        {
+          "index": 3,
+          "label": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "class": "android.widget.RelativeLayout",
+          "clickable": false,
+          "editable": false,
+          "selected": false,
+          "bounds": "0 160 1440 336",
+          "x": 0.5,
+          "y": 0.07828282828282829,
+          "center": {
+            "x": 0.5,
+            "y": 0.07828282828282829
+          },
+          "tags": []
+        },
+        {
+          "index": 4,
+          "label": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "class": "android.widget.ImageView",
+          "clickable": true,
+          "editable": false,
+          "selected": false,
+          "bounds": "1080 176 1224 320",
+          "x": 0.8,
+          "y": 0.07828282828282829,
+          "center": {
+            "x": 0.8,
+            "y": 0.07828282828282829
+          },
+          "tags": [
+            "clickable"
+          ]
+        },
+        {
+          "index": 5,
+          "label": "创建按钮 com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "text": null,
+          "desc": "创建按钮",
+          "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "class": "android.view.ViewGroup",
+          "clickable": false,
+          "editable": false,
+          "selected": false,
+          "bounds": "1232 160 1376 336",
+          "x": 0.9055555555555556,
+          "y": 0.07828282828282829,
+          "center": {
+            "x": 0.9055555555555556,
+            "y": 0.07828282828282829
+          },
+          "tags": []
+        },
+        {
+          "index": 6,
+          "label": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "class": "android.view.ViewGroup",
+          "clickable": true,
+          "editable": false,
+          "selected": false,
+          "bounds": "1280 160 1376 336",
+          "x": 0.9222222222222223,
+          "y": 0.07828282828282829,
+          "center": {
+            "x": 0.9222222222222223,
+            "y": 0.07828282828282829
+          },
+          "tags": [
+            "clickable"
+          ]
+        },
+        {
+          "index": 7,
+          "label": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "class": "android.widget.ImageView",
+          "clickable": false,
+          "editable": false,
+          "selected": false,
+          "bounds": "1280 200 1376 296",
+          "x": 0.9222222222222223,
+          "y": 0.07828282828282829,
+          "center": {
+            "x": 0.9222222222222223,
+            "y": 0.07828282828282829
+          },
+          "tags": []
+        },
+        {
+          "index": 8,
+          "label": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "class": "android.widget.ImageView",
+          "clickable": false,
+          "editable": false,
+          "selected": false,
+          "bounds": "186 401 378 593",
+          "x": 0.19583333333333333,
+          "y": 0.15688131313131312,
+          "center": {
+            "x": 0.19583333333333333,
+            "y": 0.15688131313131312
+          },
+          "tags": []
+        },
+        {
+          "index": 9,
+          "label": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "class": "android.widget.ImageView",
+          "clickable": false,
+          "editable": false,
+          "selected": false,
+          "bounds": "623 401 815 593",
+          "x": 0.49930555555555556,
+          "y": 0.15688131313131312,
+          "center": {
+            "x": 0.49930555555555556,
+            "y": 0.15688131313131312
+          },
+          "tags": []
+        },
+        {
+          "index": 10,
+          "label": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "class": "android.widget.ImageView",
+          "clickable": false,
+          "editable": false,
+          "selected": false,
+          "bounds": "1061 401 1253 593",
+          "x": 0.8034722222222223,
+          "y": 0.15688131313131312,
+          "center": {
+            "x": 0.8034722222222223,
+            "y": 0.15688131313131312
+          },
+          "tags": []
+        },
+        {
+          "index": 11,
+          "label": "赞和收藏按钮 com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "text": null,
+          "desc": "赞和收藏按钮",
+          "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "class": "android.widget.RelativeLayout",
+          "clickable": true,
+          "editable": false,
+          "selected": false,
+          "bounds": "64 337 501 745",
+          "x": 0.19583333333333333,
+          "y": 0.17077020202020202,
+          "center": {
+            "x": 0.19583333333333333,
+            "y": 0.17077020202020202
+          },
+          "tags": [
+            "clickable"
+          ]
+        },
+        {
+          "index": 12,
+          "label": "新增关注按钮 com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "text": null,
+          "desc": "新增关注按钮",
+          "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "class": "android.widget.RelativeLayout",
+          "clickable": true,
+          "editable": false,
+          "selected": false,
+          "bounds": "501 337 938 745",
+          "x": 0.49930555555555556,
+          "y": 0.17077020202020202,
+          "center": {
+            "x": 0.49930555555555556,
+            "y": 0.17077020202020202
+          },
+          "tags": [
+            "clickable"
+          ]
+        },
+        {
+          "index": 13,
+          "label": "评论和@按钮 com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "text": null,
+          "desc": "评论和@按钮",
+          "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "class": "android.widget.RelativeLayout",
+          "clickable": true,
+          "editable": false,
+          "selected": false,
+          "bounds": "938 337 1376 745",
+          "x": 0.8034722222222223,
+          "y": 0.17077020202020202,
+          "center": {
+            "x": 0.8034722222222223,
+            "y": 0.17077020202020202
+          },
+          "tags": [
+            "clickable"
+          ]
+        },
+        {
+          "index": 14,
+          "label": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "class": "android.widget.LinearLayout",
+          "clickable": false,
+          "editable": false,
+          "selected": false,
+          "bounds": "0 337 1440 785",
+          "x": 0.5,
+          "y": 0.17708333333333334,
+          "center": {
+            "x": 0.5,
+            "y": 0.17708333333333334
+          },
+          "tags": []
+        },
+        {
+          "index": 15,
+          "label": "赞和收藏",
+          "text": "赞和收藏",
+          "desc": null,
+          "resourceId": null,
+          "class": "android.widget.TextView",
+          "clickable": false,
+          "editable": false,
+          "selected": false,
+          "bounds": "170 641 394 705",
+          "x": 0.19583333333333333,
+          "y": 0.21243686868686867,
+          "center": {
+            "x": 0.19583333333333333,
+            "y": 0.21243686868686867
+          },
+          "tags": []
+        },
+        {
+          "index": 16,
+          "label": "新增关注",
+          "text": "新增关注",
+          "desc": null,
+          "resourceId": null,
+          "class": "android.widget.TextView",
+          "clickable": false,
+          "editable": false,
+          "selected": false,
+          "bounds": "607 641 831 705",
+          "x": 0.49930555555555556,
+          "y": 0.21243686868686867,
+          "center": {
+            "x": 0.49930555555555556,
+            "y": 0.21243686868686867
+          },
+          "tags": []
+        },
+        {
+          "index": 17,
+          "label": "评论和@",
+          "text": "评论和@",
+          "desc": null,
+          "resourceId": null,
+          "class": "android.widget.TextView",
+          "clickable": false,
+          "editable": false,
+          "selected": false,
+          "bounds": "1051 641 1262 705",
+          "x": 0.8027777777777778,
+          "y": 0.21243686868686867,
+          "center": {
+            "x": 0.8027777777777778,
+            "y": 0.21243686868686867
+          },
+          "tags": []
+        },
+        {
+          "index": 18,
+          "label": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "class": "android.view.ViewGroup",
+          "clickable": false,
+          "editable": false,
+          "selected": false,
+          "bounds": "256 817 1263 950",
+          "x": 0.5270833333333333,
+          "y": 0.27872474747474746,
+          "center": {
+            "x": 0.5270833333333333,
+            "y": 0.27872474747474746
+          },
+          "tags": []
+        },
+        {
+          "index": 19,
+          "label": "18:49 com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "text": "18:49",
+          "desc": null,
+          "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "class": "android.widget.TextView",
+          "clickable": false,
+          "editable": false,
+          "selected": false,
+          "bounds": "1263 817 1376 950",
+          "x": 0.9159722222222222,
+          "y": 0.27872474747474746,
+          "center": {
+            "x": 0.9159722222222222,
+            "y": 0.27872474747474746
+          },
+          "tags": []
+        },
+        {
+          "index": 20,
+          "label": "满风 com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "text": "满风",
+          "desc": null,
+          "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "class": "android.widget.TextView",
+          "clickable": false,
+          "editable": false,
+          "selected": false,
+          "bounds": "304 877 432 950",
+          "x": 0.25555555555555554,
+          "y": 0.2881944444444444,
+          "center": {
+            "x": 0.25555555555555554,
+            "y": 0.2881944444444444
+          },
+          "tags": []
+        },
+        {
+          "index": 21,
+          "label": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "class": "android.view.View",
+          "clickable": true,
+          "editable": false,
+          "selected": false,
+          "bounds": "64 865 256 1057",
+          "x": 0.1111111111111111,
+          "y": 0.3033459595959596,
+          "center": {
+            "x": 0.1111111111111111,
+            "y": 0.3033459595959596
+          },
+          "tags": [
+            "clickable"
+          ]
+        },
+        {
+          "index": 22,
+          "label": "满风，，，[笑哭R] ，18:49 com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "text": null,
+          "desc": "满风，，，[笑哭R] ，18:49",
+          "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "class": "android.view.ViewGroup",
+          "clickable": true,
+          "editable": false,
+          "selected": false,
+          "bounds": "0 817 1440 1105",
+          "x": 0.5,
+          "y": 0.3033459595959596,
+          "center": {
+            "x": 0.5,
+            "y": 0.3033459595959596
+          },
+          "tags": [
+            "clickable"
+          ]
+        },
+        {
+          "index": 23,
+          "label": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "class": "android.widget.RelativeLayout",
+          "clickable": true,
+          "editable": false,
+          "selected": false,
+          "bounds": "0 817 1440 1105",
+          "x": 0.5,
+          "y": 0.3033459595959596,
+          "center": {
+            "x": 0.5,
+            "y": 0.3033459595959596
+          },
+          "tags": [
+            "clickable"
+          ]
+        },
+        {
+          "index": 24,
+          "label": "[笑哭R] com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "text": "[笑哭R]",
+          "desc": null,
+          "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "class": "android.widget.TextView",
+          "clickable": false,
+          "editable": false,
+          "selected": false,
+          "bounds": "256 950 445 1030",
+          "x": 0.24305555555555555,
+          "y": 0.3125,
+          "center": {
+            "x": 0.24305555555555555,
+            "y": 0.3125
+          },
+          "tags": []
+        },
+        {
+          "index": 25,
+          "label": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "class": "android.view.ViewGroup",
+          "clickable": false,
+          "editable": false,
+          "selected": false,
+          "bounds": "256 1105 1263 1238",
+          "x": 0.5270833333333333,
+          "y": 0.3696338383838384,
+          "center": {
+            "x": 0.5270833333333333,
+            "y": 0.3696338383838384
+          },
+          "tags": []
+        },
+        {
+          "index": 26,
+          "label": "17:45 com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "text": "17:45",
+          "desc": null,
+          "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "class": "android.widget.TextView",
+          "clickable": false,
+          "editable": false,
+          "selected": false,
+          "bounds": "1263 1105 1376 1238",
+          "x": 0.9159722222222222,
+          "y": 0.3696338383838384,
+          "center": {
+            "x": 0.9159722222222222,
+            "y": 0.3696338383838384
+          },
+          "tags": []
+        },
+        {
+          "index": 27,
+          "label": "hole com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "text": "hole",
+          "desc": null,
+          "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "class": "android.widget.TextView",
+          "clickable": false,
+          "editable": false,
+          "selected": false,
+          "bounds": "304 1165 422 1238",
+          "x": 0.2520833333333333,
+          "y": 0.37910353535353536,
+          "center": {
+            "x": 0.2520833333333333,
+            "y": 0.37910353535353536
+          },
+          "tags": []
+        },
+        {
+          "index": 28,
+          "label": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "class": "android.view.View",
+          "clickable": true,
+          "editable": false,
+          "selected": false,
+          "bounds": "64 1153 256 1345",
+          "x": 0.1111111111111111,
+          "y": 0.3942550505050505,
+          "center": {
+            "x": 0.1111111111111111,
+            "y": 0.3942550505050505
+          },
+          "tags": [
+            "clickable"
+          ]
+        },
+        {
+          "index": 29,
+          "label": "hole，，，api网址给一个，17:45 com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "text": null,
+          "desc": "hole，，，api网址给一个，17:45",
+          "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "class": "android.view.ViewGroup",
+          "clickable": true,
+          "editable": false,
+          "selected": false,
+          "bounds": "0 1105 1440 1393",
+          "x": 0.5,
+          "y": 0.3942550505050505,
+          "center": {
+            "x": 0.5,
+            "y": 0.3942550505050505
+          },
+          "tags": [
+            "clickable"
+          ]
+        },
+        {
+          "index": 30,
+          "label": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "class": "android.widget.RelativeLayout",
+          "clickable": true,
+          "editable": false,
+          "selected": false,
+          "bounds": "0 1105 1440 1393",
+          "x": 0.5,
+          "y": 0.3942550505050505,
+          "center": {
+            "x": 0.5,
+            "y": 0.3942550505050505
+          },
+          "tags": [
+            "clickable"
+          ]
+        },
+        {
+          "index": 31,
+          "label": "api网址给一个 com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "text": "api网址给一个",
+          "desc": null,
+          "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "class": "android.widget.TextView",
+          "clickable": false,
+          "editable": false,
+          "selected": false,
+          "bounds": "256 1238 722 1318",
+          "x": 0.33958333333333335,
+          "y": 0.4034090909090909,
+          "center": {
+            "x": 0.33958333333333335,
+            "y": 0.4034090909090909
+          },
+          "tags": []
+        },
+        {
+          "index": 32,
+          "label": "活动消息 com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "text": "活动消息",
+          "desc": null,
+          "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "class": "android.widget.TextView",
+          "clickable": false,
+          "editable": false,
+          "selected": false,
+          "bounds": "256 1393 584 1526",
+          "x": 0.2916666666666667,
+          "y": 0.4605429292929293,
+          "center": {
+            "x": 0.2916666666666667,
+            "y": 0.4605429292929293
+          },
+          "tags": [
+            "message_entry"
+          ]
+        },
+        {
+          "index": 33,
+          "label": "16:32 com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "text": "16:32",
+          "desc": null,
+          "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "class": "android.widget.TextView",
+          "clickable": false,
+          "editable": false,
+          "selected": false,
+          "bounds": "1263 1393 1376 1526",
+          "x": 0.9159722222222222,
+          "y": 0.4605429292929293,
+          "center": {
+            "x": 0.9159722222222222,
+            "y": 0.4605429292929293
+          },
+          "tags": []
+        },
+        {
+          "index": 34,
+          "label": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "class": "android.widget.ImageView",
+          "clickable": false,
+          "editable": false,
+          "selected": false,
+          "bounds": "64 1441 256 1633",
+          "x": 0.1111111111111111,
+          "y": 0.48516414141414144,
+          "center": {
+            "x": 0.1111111111111111,
+            "y": 0.48516414141414144
+          },
+          "tags": []
+        },
+        {
+          "index": 35,
+          "label": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "class": "android.view.ViewGroup",
+          "clickable": true,
+          "editable": false,
+          "selected": false,
+          "bounds": "0 1393 1440 1681",
+          "x": 0.5,
+          "y": 0.48516414141414144,
+          "center": {
+            "x": 0.5,
+            "y": 0.48516414141414144
+          },
+          "tags": [
+            "clickable"
+          ]
+        },
+        {
+          "index": 36,
+          "label": "活动消息，未读，Ai大会直通名额来了！送你上WAIC，16:32 com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "text": null,
+          "desc": "活动消息，未读，Ai大会直通名额来了！送你上WAIC，16:32",
+          "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "class": "android.widget.RelativeLayout",
+          "clickable": true,
+          "editable": false,
+          "selected": false,
+          "bounds": "0 1393 1440 1681",
+          "x": 0.5,
+          "y": 0.48516414141414144,
+          "center": {
+            "x": 0.5,
+            "y": 0.48516414141414144
+          },
+          "tags": [
+            "clickable",
+            "message_entry"
+          ]
+        },
+        {
+          "index": 37,
+          "label": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "class": "androidx.viewpager.widget.ViewPager",
+          "clickable": false,
+          "editable": false,
+          "selected": false,
+          "bounds": "0 160 1440 2924",
+          "x": 0.5,
+          "y": 0.48674242424242425,
+          "center": {
+            "x": 0.5,
+            "y": 0.48674242424242425
+          },
+          "tags": []
+        },
+        {
+          "index": 38,
+          "label": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "class": "android.widget.FrameLayout",
+          "clickable": false,
+          "editable": false,
+          "selected": false,
+          "bounds": "0 160 1440 2924",
+          "x": 0.5,
+          "y": 0.48674242424242425,
+          "center": {
+            "x": 0.5,
+            "y": 0.48674242424242425
+          },
+          "tags": []
+        },
+        {
+          "index": 39,
+          "label": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "class": "android.widget.LinearLayout",
+          "clickable": false,
+          "editable": false,
+          "selected": false,
+          "bounds": "0 0 1440 3104",
+          "x": 0.5,
+          "y": 0.4898989898989899,
+          "center": {
+            "x": 0.5,
+            "y": 0.4898989898989899
+          },
+          "tags": []
+        },
+        {
+          "index": 40,
+          "label": "android:id\/content",
+          "text": null,
+          "desc": null,
+          "resourceId": "android:id\/content",
+          "class": "android.widget.FrameLayout",
+          "clickable": false,
+          "editable": false,
+          "selected": false,
+          "bounds": "0 0 1440 3104",
+          "x": 0.5,
+          "y": 0.4898989898989899,
+          "center": {
+            "x": 0.5,
+            "y": 0.4898989898989899
+          },
+          "tags": []
+        },
+        {
+          "index": 41,
+          "label": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "class": "android.view.ViewGroup",
+          "clickable": false,
+          "editable": false,
+          "selected": false,
+          "bounds": "0 0 1440 3104",
+          "x": 0.5,
+          "y": 0.4898989898989899,
+          "center": {
+            "x": 0.5,
+            "y": 0.4898989898989899
+          },
+          "tags": []
+        },
+        {
+          "index": 42,
+          "label": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "class": "android.widget.LinearLayout",
+          "clickable": false,
+          "editable": false,
+          "selected": false,
+          "bounds": "1312 1526 1376 1598",
+          "x": 0.9333333333333333,
+          "y": 0.4930555555555556,
+          "center": {
+            "x": 0.9333333333333333,
+            "y": 0.4930555555555556
+          },
+          "tags": []
+        },
+        {
+          "index": 43,
+          "label": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "class": "android.widget.TextView",
+          "clickable": false,
+          "editable": false,
+          "selected": false,
+          "bounds": "1344 1546 1376 1578",
+          "x": 0.9444444444444444,
+          "y": 0.4930555555555556,
+          "center": {
+            "x": 0.9444444444444444,
+            "y": 0.4930555555555556
+          },
+          "tags": []
+        },
+        {
+          "index": 44,
+          "label": "Ai大会直通名额来了！送你上WAIC com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "text": "Ai大会直通名额来了！送你上WAIC",
+          "desc": null,
+          "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "class": "android.widget.TextView",
+          "clickable": false,
+          "editable": false,
+          "selected": false,
+          "bounds": "256 1526 1312 1606",
+          "x": 0.5444444444444444,
+          "y": 0.4943181818181818,
+          "center": {
+            "x": 0.5444444444444444,
+            "y": 0.4943181818181818
+          },
+          "tags": []
+        },
+        {
+          "index": 45,
+          "label": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "class": "android.widget.FrameLayout",
+          "clickable": false,
+          "editable": false,
+          "selected": false,
+          "bounds": "0 0 1440 3168",
+          "x": 0.5,
+          "y": 0.5,
+          "center": {
+            "x": 0.5,
+            "y": 0.5
+          },
+          "tags": []
+        },
+        {
+          "index": 46,
+          "label": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "class": "android.view.ViewGroup",
+          "clickable": false,
+          "editable": false,
+          "selected": false,
+          "bounds": "0 336 1440 2924",
+          "x": 0.5,
+          "y": 0.514520202020202,
+          "center": {
+            "x": 0.5,
+            "y": 0.514520202020202
+          },
+          "tags": []
+        },
+        {
+          "index": 47,
+          "label": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "class": "androidx.recyclerview.widget.RecyclerView",
+          "clickable": false,
+          "editable": false,
+          "selected": false,
+          "bounds": "0 336 1440 2924",
+          "x": 0.5,
+          "y": 0.514520202020202,
+          "center": {
+            "x": 0.5,
+            "y": 0.514520202020202
+          },
+          "tags": []
+        },
+        {
+          "index": 48,
+          "label": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "class": "android.view.ViewGroup",
+          "clickable": false,
+          "editable": false,
+          "selected": false,
+          "bounds": "256 1681 1232 1814",
+          "x": 0.5166666666666667,
+          "y": 0.5514520202020202,
+          "center": {
+            "x": 0.5166666666666667,
+            "y": 0.5514520202020202
+          },
+          "tags": []
+        },
+        {
+          "index": 49,
+          "label": "星期五 com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "text": "星期五",
+          "desc": null,
+          "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "class": "android.widget.TextView",
+          "clickable": false,
+          "editable": false,
+          "selected": false,
+          "bounds": "1232 1681 1376 1814",
+          "x": 0.9055555555555556,
+          "y": 0.5514520202020202,
+          "center": {
+            "x": 0.9055555555555556,
+            "y": 0.5514520202020202
+          },
+          "tags": []
+        }
+      ],
+      "capability": {
+        "nodeReadability": "A",
+        "inputCapability": "NONE",
+        "verificationCapability": "HIGH",
+        "coordinateFallback": "AVAILABLE",
+        "serviceState": "CONNECTED"
+      },
+      "snapshotPath": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_snapshots\/com.xingin.xhs\/20260519_223923_512_bb42fcec.json",
+      "capturedAt": 1779201563808
+    },
+    {
+      "screenId": "screen_2d395783",
+      "screenKey": "2d395783",
+      "title": "关注",
+      "appPackage": "com.xingin.xhs",
+      "windowClassName": null,
+      "screenWidth": 1440,
+      "screenHeight": 3168,
+      "nodeCount": 126,
+      "clickableCount": 24,
+      "editableCount": 0,
+      "scrollableCount": 0,
+      "labels": [
+        "com.xingin.xhs:id\/0_resource_name_obfuscated",
+        "android:id\/content",
+        "com.xingin.xhs:id\/avatarLayout",
+        "噗噗小蜗牛 com.xingin.xhs:id\/nickNameTV",
+        "关注",
+        "com.xingin.xhs:id\/moreOperateIV",
+        "com.xingin.xhs:id\/noteContentLayout",
+        "图片,第1张,共1张,双指左划或右划即可查看更多内容",
+        "#软件著作权 #厦门大学 com.xingin.xhs:id\/0_resource_name_obfuscated",
+        "猜你想搜 com.xingin.xhs:id\/0_resource_name_obfuscated",
+        "厦门大学软著申请条件 com.xingin.xhs:id\/0_resource_name_obfuscated",
+        "今天 20:13福建 com.xingin.xhs:id\/0_resource_name_obfuscated",
+        "com.xingin.xhs:id\/contentDislikeBtn",
+        "不喜欢",
+        "共 1 条评论 com.xingin.xhs:id\/0_resource_name_obfuscated",
+        "留下你的想法吧 com.xingin.xhs:id\/0_resource_name_obfuscated",
+        "噗噗小蜗牛 com.xingin.xhs:id\/0_resource_name_obfuscated",
+        "作者 com.xingin.xhs:id\/0_resource_name_obfuscated",
+        "急急急 com.xingin.xhs:id\/0_resource_name_obfuscated",
+        "1小时前 福建 回复 com.xingin.xhs:id\/0_resource_name_obfuscated",
+        "已到底",
+        "- 到底了 - com.xingin.xhs:id\/0_resource_name_obfuscated",
+        "说点什么... 评论框 com.xingin.xhs:id\/0_resource_name_obfuscated",
+        "点赞 0 com.xingin.xhs:id\/0_resource_name_obfuscated",
+        "点赞 com.xingin.xhs:id\/0_resource_name_obfuscated",
+        "收藏 0 com.xingin.xhs:id\/0_resource_name_obfuscated",
+        "收藏 com.xingin.xhs:id\/0_resource_name_obfuscated",
+        "评论 1 com.xingin.xhs:id\/0_resource_name_obfuscated",
+        "1 com.xingin.xhs:id\/0_resource_name_obfuscated",
+        "android:id\/navigationBarBackground"
+      ],
+      "bottomTabs": [
+        {
+          "index": 0,
+          "label": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "class": "android.widget.ImageView",
+          "clickable": false,
+          "editable": false,
+          "selected": false,
+          "bounds": "88 2553 152 2617",
+          "x": 0.08333333333333333,
+          "y": 0.8159722222222222,
+          "center": {
+            "x": 0.08333333333333333,
+            "y": 0.8159722222222222
+          },
+          "tags": [
+            "bottom_tab_candidate"
+          ]
+        },
+        {
+          "index": 1,
+          "label": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "class": "android.widget.FrameLayout",
+          "clickable": false,
+          "editable": false,
+          "selected": false,
+          "bounds": "60 3057 204 3104",
+          "x": 0.09166666666666666,
+          "y": 0.9722222222222222,
+          "center": {
+            "x": 0.09166666666666666,
+            "y": 0.9722222222222222
+          },
+          "tags": [
+            "bottom_tab_candidate"
+          ]
+        },
+        {
+          "index": 2,
+          "label": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "class": "android.widget.ImageView",
+          "clickable": false,
+          "editable": false,
+          "selected": false,
+          "bounds": "60 3057 204 3104",
+          "x": 0.09166666666666666,
+          "y": 0.9722222222222222,
+          "center": {
+            "x": 0.09166666666666666,
+            "y": 0.9722222222222222
+          },
+          "tags": [
+            "bottom_tab_candidate"
+          ]
+        },
+        {
+          "index": 3,
+          "label": "共 1 条评论 com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "text": "共 1 条评论",
+          "desc": null,
+          "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "class": "android.widget.TextView",
+          "clickable": true,
+          "editable": false,
+          "selected": false,
+          "bounds": "60 2904 337 2985",
+          "x": 0.1375,
+          "y": 0.9292929292929293,
+          "center": {
+            "x": 0.1375,
+            "y": 0.9292929292929293
+          },
+          "tags": [
+            "bottom_tab_candidate"
+          ]
+        },
+        {
+          "index": 4,
+          "label": "猜你想搜 com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "text": "猜你想搜",
+          "desc": null,
+          "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "class": "android.widget.TextView",
+          "clickable": false,
+          "editable": false,
+          "selected": false,
+          "bounds": "160 2544 384 2626",
+          "x": 0.18888888888888888,
+          "y": 0.8159722222222222,
+          "center": {
+            "x": 0.18888888888888888,
+            "y": 0.8159722222222222
+          },
+          "tags": [
+            "bottom_tab_candidate"
+          ]
+        },
+        {
+          "index": 5,
+          "label": "说点什么... 评论框 com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "text": "说点什么...",
+          "desc": "评论框",
+          "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "class": "android.widget.TextView",
+          "clickable": true,
+          "editable": false,
+          "selected": false,
+          "bounds": "60 2920 576 3064",
+          "x": 0.22083333333333333,
+          "y": 0.9444444444444444,
+          "center": {
+            "x": 0.22083333333333333,
+            "y": 0.9444444444444444
+          },
+          "tags": [
+            "bottom_tab_candidate"
+          ]
+        },
+        {
+          "index": 6,
+          "label": "留下你的想法吧 com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "text": "留下你的想法吧",
+          "desc": null,
+          "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "class": "android.widget.TextView",
+          "clickable": false,
+          "editable": false,
+          "selected": false,
+          "bounds": "324 3088 716 3104",
+          "x": 0.3611111111111111,
+          "y": 0.9772727272727273,
+          "center": {
+            "x": 0.3611111111111111,
+            "y": 0.9772727272727273
+          },
+          "tags": [
+            "bottom_tab_candidate"
+          ]
+        },
+        {
+          "index": 7,
+          "label": "",
+          "text": null,
+          "desc": null,
+          "resourceId": null,
+          "class": "android.widget.LinearLayout",
+          "clickable": true,
+          "editable": false,
+          "selected": false,
+          "bounds": "56 2524 1028 2646",
+          "x": 0.3763888888888889,
+          "y": 0.8159722222222222,
+          "center": {
+            "x": 0.3763888888888889,
+            "y": 0.8159722222222222
+          },
+          "tags": [
+            "bottom_tab_candidate"
+          ]
+        },
+        {
+          "index": 8,
+          "label": "今天 20:13福建 com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "text": null,
+          "desc": "今天 20:13福建",
+          "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "class": "android.view.View",
+          "clickable": true,
+          "editable": false,
+          "selected": false,
+          "bounds": "60 2702 1100 2775",
+          "x": 0.4027777777777778,
+          "y": 0.8642676767676768,
+          "center": {
+            "x": 0.4027777777777778,
+            "y": 0.8642676767676768
+          },
+          "tags": [
+            "bottom_tab_candidate"
+          ]
+        },
+        {
+          "index": 9,
+          "label": "厦门大学软著申请条件 com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "text": "厦门大学软著申请条件",
+          "desc": null,
+          "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "class": "android.widget.TextView",
+          "clickable": false,
+          "editable": false,
+          "selected": false,
+          "bounds": "428 2544 988 2626",
+          "x": 0.49166666666666664,
+          "y": 0.8159722222222222,
+          "center": {
+            "x": 0.49166666666666664,
+            "y": 0.8159722222222222
+          },
+          "tags": [
+            "bottom_tab_candidate"
+          ]
+        },
+        {
+          "index": 10,
+          "label": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "class": "android.widget.LinearLayout",
+          "clickable": false,
+          "editable": false,
+          "selected": false,
+          "bounds": "0 2336 1440 2863",
+          "x": 0.5,
+          "y": 0.8203914141414141,
+          "center": {
+            "x": 0.5,
+            "y": 0.8203914141414141
+          },
+          "tags": [
+            "bottom_tab_candidate"
+          ]
+        },
+        {
+          "index": 11,
+          "label": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "class": "android.widget.FrameLayout",
+          "clickable": false,
+          "editable": false,
+          "selected": false,
+          "bounds": "0 2356 1440 2464",
+          "x": 0.5,
+          "y": 0.7607323232323232,
+          "center": {
+            "x": 0.5,
+            "y": 0.7607323232323232
+          },
+          "tags": [
+            "bottom_tab_candidate"
+          ]
+        }
+      ],
+      "entryCandidates": [
+        {
+          "index": 0,
+          "label": "猜你想搜 com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "text": "猜你想搜",
+          "desc": null,
+          "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "class": "android.widget.TextView",
+          "clickable": false,
+          "editable": false,
+          "selected": false,
+          "bounds": "160 2544 384 2626",
+          "x": 0.18888888888888888,
+          "y": 0.8159722222222222,
+          "center": {
+            "x": 0.18888888888888888,
+            "y": 0.8159722222222222
+          },
+          "tags": [
+            "entry_candidate",
+            "bottom_area"
+          ]
+        }
+      ],
+      "inputCandidates": [],
+      "clickTargets": [
+        {
+          "index": 0,
+          "label": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "class": "android.view.View",
+          "clickable": false,
+          "editable": false,
+          "selected": false,
+          "bounds": "0 0 1440 160",
+          "x": 0.5,
+          "y": 0.025252525252525252,
+          "center": {
+            "x": 0.5,
+            "y": 0.025252525252525252
+          },
+          "tags": []
+        },
+        {
+          "index": 1,
+          "label": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "class": "android.view.View",
+          "clickable": false,
+          "editable": false,
+          "selected": false,
+          "bounds": "0 0 1440 160",
+          "x": 0.5,
+          "y": 0.025252525252525252,
+          "center": {
+            "x": 0.5,
+            "y": 0.025252525252525252
+          },
+          "tags": []
+        },
+        {
+          "index": 2,
+          "label": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "class": "android.widget.FrameLayout",
+          "clickable": false,
+          "editable": false,
+          "selected": false,
+          "bounds": "0 0 1440 384",
+          "x": 0.5,
+          "y": 0.06060606060606061,
+          "center": {
+            "x": 0.5,
+            "y": 0.06060606060606061
+          },
+          "tags": []
+        },
+        {
+          "index": 3,
+          "label": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "class": "android.widget.LinearLayout",
+          "clickable": true,
+          "editable": false,
+          "selected": false,
+          "bounds": "0 0 1440 384",
+          "x": 0.5,
+          "y": 0.06060606060606061,
+          "center": {
+            "x": 0.5,
+            "y": 0.06060606060606061
+          },
+          "tags": [
+            "clickable"
+          ]
+        },
+        {
+          "index": 4,
+          "label": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "class": "android.widget.ImageView",
+          "clickable": true,
+          "editable": false,
+          "selected": false,
+          "bounds": "60 236 100 308",
+          "x": 0.05555555555555555,
+          "y": 0.08585858585858586,
+          "center": {
+            "x": 0.05555555555555555,
+            "y": 0.08585858585858586
+          },
+          "tags": [
+            "clickable"
+          ]
+        },
+        {
+          "index": 5,
+          "label": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "class": "android.widget.LinearLayout",
+          "clickable": false,
+          "editable": false,
+          "selected": false,
+          "bounds": "0 160 360 384",
+          "x": 0.125,
+          "y": 0.08585858585858586,
+          "center": {
+            "x": 0.125,
+            "y": 0.08585858585858586
+          },
+          "tags": []
+        },
+        {
+          "index": 6,
+          "label": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "class": "android.widget.FrameLayout",
+          "clickable": false,
+          "editable": false,
+          "selected": false,
+          "bounds": "120 160 360 384",
+          "x": 0.16666666666666666,
+          "y": 0.08585858585858586,
+          "center": {
+            "x": 0.16666666666666666,
+            "y": 0.08585858585858586
+          },
+          "tags": []
+        },
+        {
+          "index": 7,
+          "label": "com.xingin.xhs:id\/avatarLayout",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.xingin.xhs:id\/avatarLayout",
+          "class": "android.view.View",
+          "clickable": false,
+          "editable": false,
+          "selected": false,
+          "bounds": "120 160 360 384",
+          "x": 0.16666666666666666,
+          "y": 0.08585858585858586,
+          "center": {
+            "x": 0.16666666666666666,
+            "y": 0.08585858585858586
+          },
+          "tags": []
+        },
+        {
+          "index": 8,
+          "label": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "class": "android.view.ViewGroup",
+          "clickable": false,
+          "editable": false,
+          "selected": false,
+          "bounds": "360 238 660 306",
+          "x": 0.3541666666666667,
+          "y": 0.08585858585858586,
+          "center": {
+            "x": 0.3541666666666667,
+            "y": 0.08585858585858586
+          },
+          "tags": []
+        },
+        {
+          "index": 9,
+          "label": "噗噗小蜗牛 com.xingin.xhs:id\/nickNameTV",
+          "text": "噗噗小蜗牛",
+          "desc": null,
+          "resourceId": "com.xingin.xhs:id\/nickNameTV",
+          "class": "android.widget.TextView",
+          "clickable": false,
+          "editable": false,
+          "selected": false,
+          "bounds": "360 238 660 306",
+          "x": 0.3541666666666667,
+          "y": 0.08585858585858586,
+          "center": {
+            "x": 0.3541666666666667,
+            "y": 0.08585858585858586
+          },
+          "tags": []
+        },
+        {
+          "index": 10,
+          "label": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "class": "android.widget.LinearLayout",
+          "clickable": false,
+          "editable": false,
+          "selected": false,
+          "bounds": "360 238 924 306",
+          "x": 0.44583333333333336,
+          "y": 0.08585858585858586,
+          "center": {
+            "x": 0.44583333333333336,
+            "y": 0.08585858585858586
+          },
+          "tags": []
+        },
+        {
+          "index": 11,
+          "label": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "class": "android.widget.RelativeLayout",
+          "clickable": false,
+          "editable": false,
+          "selected": false,
+          "bounds": "0 160 1440 384",
+          "x": 0.5,
+          "y": 0.08585858585858586,
+          "center": {
+            "x": 0.5,
+            "y": 0.08585858585858586
+          },
+          "tags": []
+        },
+        {
+          "index": 12,
+          "label": "",
+          "text": null,
+          "desc": null,
+          "resourceId": null,
+          "class": "android.widget.FrameLayout",
+          "clickable": true,
+          "editable": false,
+          "selected": false,
+          "bounds": "972 216 1224 328",
+          "x": 0.7625,
+          "y": 0.08585858585858586,
+          "center": {
+            "x": 0.7625,
+            "y": 0.08585858585858586
+          },
+          "tags": [
+            "clickable"
+          ]
+        },
+        {
+          "index": 13,
+          "label": "关注",
+          "text": "关注",
+          "desc": null,
+          "resourceId": null,
+          "class": "android.widget.TextView",
+          "clickable": false,
+          "editable": false,
+          "selected": false,
+          "bounds": "972 216 1224 328",
+          "x": 0.7625,
+          "y": 0.08585858585858586,
+          "center": {
+            "x": 0.7625,
+            "y": 0.08585858585858586
+          },
+          "tags": []
+        },
+        {
+          "index": 14,
+          "label": "com.xingin.xhs:id\/moreOperateIV",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.xingin.xhs:id\/moreOperateIV",
+          "class": "android.widget.ImageView",
+          "clickable": true,
+          "editable": false,
+          "selected": false,
+          "bounds": "1272 220 1376 324",
+          "x": 0.9194444444444444,
+          "y": 0.08585858585858586,
+          "center": {
+            "x": 0.9194444444444444,
+            "y": 0.08585858585858586
+          },
+          "tags": [
+            "clickable"
+          ]
+        },
+        {
+          "index": 15,
+          "label": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "class": "android.widget.LinearLayout",
+          "clickable": false,
+          "editable": false,
+          "selected": false,
+          "bounds": "0 384 1440 784",
+          "x": 0.5,
+          "y": 0.18434343434343434,
+          "center": {
+            "x": 0.5,
+            "y": 0.18434343434343434
+          },
+          "tags": []
+        },
+        {
+          "index": 16,
+          "label": "图片,第1张,共1张,双指左划或右划即可查看更多内容",
+          "text": null,
+          "desc": "图片,第1张,共1张,双指左划或右划即可查看更多内容",
+          "resourceId": null,
+          "class": "android.widget.FrameLayout",
+          "clickable": false,
+          "editable": false,
+          "selected": false,
+          "bounds": "0 384 1440 2304",
+          "x": 0.5,
+          "y": 0.42424242424242425,
+          "center": {
+            "x": 0.5,
+            "y": 0.42424242424242425
+          },
+          "tags": []
+        },
+        {
+          "index": 17,
+          "label": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "class": "android.widget.FrameLayout",
+          "clickable": false,
+          "editable": false,
+          "selected": false,
+          "bounds": "0 384 1440 2304",
+          "x": 0.5,
+          "y": 0.42424242424242425,
+          "center": {
+            "x": 0.5,
+            "y": 0.42424242424242425
+          },
+          "tags": []
+        },
+        {
+          "index": 18,
+          "label": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "class": "androidx.recyclerview.widget.RecyclerView",
+          "clickable": false,
+          "editable": false,
+          "selected": false,
+          "bounds": "0 384 1440 2304",
+          "x": 0.5,
+          "y": 0.42424242424242425,
+          "center": {
+            "x": 0.5,
+            "y": 0.42424242424242425
+          },
+          "tags": []
+        },
+        {
+          "index": 19,
+          "label": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "class": "android.widget.FrameLayout",
+          "clickable": false,
+          "editable": false,
+          "selected": false,
+          "bounds": "0 384 1440 2304",
+          "x": 0.5,
+          "y": 0.42424242424242425,
+          "center": {
+            "x": 0.5,
+            "y": 0.42424242424242425
+          },
+          "tags": []
+        },
+        {
+          "index": 20,
+          "label": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "class": "android.widget.ImageView",
+          "clickable": false,
+          "editable": false,
+          "selected": false,
+          "bounds": "0 384 1440 2304",
+          "x": 0.5,
+          "y": 0.42424242424242425,
+          "center": {
+            "x": 0.5,
+            "y": 0.42424242424242425
+          },
+          "tags": []
+        },
+        {
+          "index": 21,
+          "label": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "class": "android.widget.FrameLayout",
+          "clickable": false,
+          "editable": false,
+          "selected": false,
+          "bounds": "0 384 1440 2304",
+          "x": 0.5,
+          "y": 0.42424242424242425,
+          "center": {
+            "x": 0.5,
+            "y": 0.42424242424242425
+          },
+          "tags": []
+        },
+        {
+          "index": 22,
+          "label": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "class": "android.widget.FrameLayout",
+          "clickable": false,
+          "editable": false,
+          "selected": false,
+          "bounds": "0 384 1440 2336",
+          "x": 0.5,
+          "y": 0.4292929292929293,
+          "center": {
+            "x": 0.5,
+            "y": 0.4292929292929293
+          },
+          "tags": []
+        },
+        {
+          "index": 23,
+          "label": "com.xingin.xhs:id\/noteContentLayout",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.xingin.xhs:id\/noteContentLayout",
+          "class": "android.widget.LinearLayout",
+          "clickable": false,
+          "editable": false,
+          "selected": false,
+          "bounds": "0 384 1440 2336",
+          "x": 0.5,
+          "y": 0.4292929292929293,
+          "center": {
+            "x": 0.5,
+            "y": 0.4292929292929293
+          },
+          "tags": []
+        },
+        {
+          "index": 24,
+          "label": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "class": "android.widget.LinearLayout",
+          "clickable": false,
+          "editable": false,
+          "selected": false,
+          "bounds": "0 0 1440 3104",
+          "x": 0.5,
+          "y": 0.4898989898989899,
+          "center": {
+            "x": 0.5,
+            "y": 0.4898989898989899
+          },
+          "tags": []
+        },
+        {
+          "index": 25,
+          "label": "android:id\/content",
+          "text": null,
+          "desc": null,
+          "resourceId": "android:id\/content",
+          "class": "android.widget.FrameLayout",
+          "clickable": false,
+          "editable": false,
+          "selected": false,
+          "bounds": "0 0 1440 3104",
+          "x": 0.5,
+          "y": 0.4898989898989899,
+          "center": {
+            "x": 0.5,
+            "y": 0.4898989898989899
+          },
+          "tags": []
+        },
+        {
+          "index": 26,
+          "label": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "class": "android.widget.FrameLayout",
+          "clickable": false,
+          "editable": false,
+          "selected": false,
+          "bounds": "0 0 1440 3104",
+          "x": 0.5,
+          "y": 0.4898989898989899,
+          "center": {
+            "x": 0.5,
+            "y": 0.4898989898989899
+          },
+          "tags": []
+        },
+        {
+          "index": 27,
+          "label": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "class": "android.widget.RelativeLayout",
+          "clickable": false,
+          "editable": false,
+          "selected": false,
+          "bounds": "0 0 1440 3104",
+          "x": 0.5,
+          "y": 0.4898989898989899,
+          "center": {
+            "x": 0.5,
+            "y": 0.4898989898989899
+          },
+          "tags": []
+        },
+        {
+          "index": 28,
+          "label": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "class": "android.widget.FrameLayout",
+          "clickable": false,
+          "editable": false,
+          "selected": false,
+          "bounds": "0 0 1440 3168",
+          "x": 0.5,
+          "y": 0.5,
+          "center": {
+            "x": 0.5,
+            "y": 0.5
+          },
+          "tags": []
+        },
+        {
+          "index": 29,
+          "label": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "class": "android.widget.LinearLayout",
+          "clickable": false,
+          "editable": false,
+          "selected": false,
+          "bounds": "0 384 1440 2863",
+          "x": 0.5,
+          "y": 0.5123106060606061,
+          "center": {
+            "x": 0.5,
+            "y": 0.5123106060606061
+          },
+          "tags": []
+        },
+        {
+          "index": 30,
+          "label": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "class": "android.view.ViewGroup",
+          "clickable": false,
+          "editable": false,
+          "selected": false,
+          "bounds": "0 384 1440 3104",
+          "x": 0.5,
+          "y": 0.5505050505050505,
+          "center": {
+            "x": 0.5,
+            "y": 0.5505050505050505
+          },
+          "tags": []
+        },
+        {
+          "index": 31,
+          "label": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "class": "android.widget.FrameLayout",
+          "clickable": false,
+          "editable": false,
+          "selected": false,
+          "bounds": "0 2356 1440 2464",
+          "x": 0.5,
+          "y": 0.7607323232323232,
+          "center": {
+            "x": 0.5,
+            "y": 0.7607323232323232
+          },
+          "tags": [
+            "bottom_area"
+          ]
+        },
+        {
+          "index": 32,
+          "label": "#软件著作权 #厦门大学 com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "text": "#软件著作权 #厦门大学",
+          "desc": null,
+          "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "class": "android.widget.TextView",
+          "clickable": false,
+          "editable": false,
+          "selected": false,
+          "bounds": "60 2396 1380 2464",
+          "x": 0.5,
+          "y": 0.7670454545454546,
+          "center": {
+            "x": 0.5,
+            "y": 0.7670454545454546
+          },
+          "tags": [
+            "bottom_area"
+          ]
+        },
+        {
+          "index": 33,
+          "label": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "class": "android.widget.LinearLayout",
+          "clickable": false,
+          "editable": false,
+          "selected": false,
+          "bounds": "0 2484 1440 2662",
+          "x": 0.5,
+          "y": 0.8121843434343434,
+          "center": {
+            "x": 0.5,
+            "y": 0.8121843434343434
+          },
+          "tags": [
+            "bottom_area"
+          ]
+        },
+        {
+          "index": 34,
+          "label": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "class": "androidx.recyclerview.widget.RecyclerView",
+          "clickable": false,
+          "editable": false,
+          "selected": false,
+          "bounds": "0 2484 1440 2662",
+          "x": 0.5,
+          "y": 0.8121843434343434,
+          "center": {
+            "x": 0.5,
+            "y": 0.8121843434343434
+          },
+          "tags": [
+            "bottom_area"
+          ]
+        },
+        {
+          "index": 35,
+          "label": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "class": "android.widget.ImageView",
+          "clickable": false,
+          "editable": false,
+          "selected": false,
+          "bounds": "88 2553 152 2617",
+          "x": 0.08333333333333333,
+          "y": 0.8159722222222222,
+          "center": {
+            "x": 0.08333333333333333,
+            "y": 0.8159722222222222
+          },
+          "tags": [
+            "bottom_area"
+          ]
+        },
+        {
+          "index": 36,
+          "label": "猜你想搜 com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "text": "猜你想搜",
+          "desc": null,
+          "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "class": "android.widget.TextView",
+          "clickable": false,
+          "editable": false,
+          "selected": false,
+          "bounds": "160 2544 384 2626",
+          "x": 0.18888888888888888,
+          "y": 0.8159722222222222,
+          "center": {
+            "x": 0.18888888888888888,
+            "y": 0.8159722222222222
+          },
+          "tags": [
+            "bottom_area"
+          ]
+        },
+        {
+          "index": 37,
+          "label": "",
+          "text": null,
+          "desc": null,
+          "resourceId": null,
+          "class": "android.widget.LinearLayout",
+          "clickable": true,
+          "editable": false,
+          "selected": false,
+          "bounds": "56 2524 1028 2646",
+          "x": 0.3763888888888889,
+          "y": 0.8159722222222222,
+          "center": {
+            "x": 0.3763888888888889,
+            "y": 0.8159722222222222
+          },
+          "tags": [
+            "clickable",
+            "bottom_area"
+          ]
+        },
+        {
+          "index": 38,
+          "label": "厦门大学软著申请条件 com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "text": "厦门大学软著申请条件",
+          "desc": null,
+          "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "class": "android.widget.TextView",
+          "clickable": false,
+          "editable": false,
+          "selected": false,
+          "bounds": "428 2544 988 2626",
+          "x": 0.49166666666666664,
+          "y": 0.8159722222222222,
+          "center": {
+            "x": 0.49166666666666664,
+            "y": 0.8159722222222222
+          },
+          "tags": [
+            "bottom_area"
+          ]
+        },
+        {
+          "index": 39,
+          "label": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "class": "android.widget.LinearLayout",
+          "clickable": false,
+          "editable": false,
+          "selected": false,
+          "bounds": "0 2336 1440 2863",
+          "x": 0.5,
+          "y": 0.8203914141414141,
+          "center": {
+            "x": 0.5,
+            "y": 0.8203914141414141
+          },
+          "tags": [
+            "bottom_area"
+          ]
+        },
+        {
+          "index": 40,
+          "label": "今天 20:13福建 com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "text": null,
+          "desc": "今天 20:13福建",
+          "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "class": "android.view.View",
+          "clickable": true,
+          "editable": false,
+          "selected": false,
+          "bounds": "60 2702 1100 2775",
+          "x": 0.4027777777777778,
+          "y": 0.8642676767676768,
+          "center": {
+            "x": 0.4027777777777778,
+            "y": 0.8642676767676768
+          },
+          "tags": [
+            "clickable",
+            "bottom_area"
+          ]
+        },
+        {
+          "index": 41,
+          "label": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "class": "android.widget.ImageView",
+          "clickable": false,
+          "editable": false,
+          "selected": false,
+          "bounds": "1132 2714 1228 2803",
+          "x": 0.8194444444444444,
+          "y": 0.8705808080808081,
+          "center": {
+            "x": 0.8194444444444444,
+            "y": 0.8705808080808081
+          },
+          "tags": [
+            "bottom_area"
+          ]
+        },
+        {
+          "index": 42,
+          "label": "com.xingin.xhs:id\/contentDislikeBtn",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.xingin.xhs:id\/contentDislikeBtn",
+          "class": "android.widget.LinearLayout",
+          "clickable": true,
+          "editable": false,
+          "selected": false,
+          "bounds": "1132 2714 1380 2803",
+          "x": 0.8722222222222222,
+          "y": 0.8705808080808081,
+          "center": {
+            "x": 0.8722222222222222,
+            "y": 0.8705808080808081
+          },
+          "tags": [
+            "clickable",
+            "bottom_area"
+          ]
+        },
+        {
+          "index": 43,
+          "label": "不喜欢",
+          "text": "不喜欢",
+          "desc": null,
+          "resourceId": null,
+          "class": "android.widget.TextView",
+          "clickable": false,
+          "editable": false,
+          "selected": false,
+          "bounds": "1212 2722 1356 2795",
+          "x": 0.8916666666666667,
+          "y": 0.8705808080808081,
+          "center": {
+            "x": 0.8916666666666667,
+            "y": 0.8705808080808081
+          },
+          "tags": [
+            "bottom_area"
+          ]
+        },
+        {
+          "index": 44,
+          "label": "共 1 条评论 com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "text": "共 1 条评论",
+          "desc": null,
+          "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "class": "android.widget.TextView",
+          "clickable": true,
+          "editable": false,
+          "selected": false,
+          "bounds": "60 2904 337 2985",
+          "x": 0.1375,
+          "y": 0.9292929292929293,
+          "center": {
+            "x": 0.1375,
+            "y": 0.9292929292929293
+          },
+          "tags": [
+            "clickable",
+            "bottom_area"
+          ]
+        },
+        {
+          "index": 45,
+          "label": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "class": "android.widget.RelativeLayout",
+          "clickable": false,
+          "editable": false,
+          "selected": false,
+          "bounds": "60 2904 1380 2985",
+          "x": 0.5,
+          "y": 0.9292929292929293,
+          "center": {
+            "x": 0.5,
+            "y": 0.9292929292929293
+          },
+          "tags": [
+            "bottom_area"
+          ]
+        },
+        {
+          "index": 46,
+          "label": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "class": "androidx.recyclerview.widget.RecyclerView",
+          "clickable": false,
+          "editable": false,
+          "selected": false,
+          "bounds": "0 2863 1440 3104",
+          "x": 0.5,
+          "y": 0.9416035353535354,
+          "center": {
+            "x": 0.5,
+            "y": 0.9416035353535354
+          },
+          "tags": [
+            "bottom_area"
+          ]
+        },
+        {
+          "index": 47,
+          "label": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "class": "android.widget.ImageView",
+          "clickable": false,
+          "editable": false,
+          "selected": false,
+          "bounds": "624 2880 912 3096",
+          "x": 0.5333333333333333,
+          "y": 0.9431818181818182,
+          "center": {
+            "x": 0.5333333333333333,
+            "y": 0.9431818181818182
+          },
+          "tags": [
+            "bottom_area"
+          ]
+        },
+        {
+          "index": 48,
+          "label": "说点什么... 评论框 com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "text": "说点什么...",
+          "desc": "评论框",
+          "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "class": "android.widget.TextView",
+          "clickable": true,
+          "editable": false,
+          "selected": false,
+          "bounds": "60 2920 576 3064",
+          "x": 0.22083333333333333,
+          "y": 0.9444444444444444,
+          "center": {
+            "x": 0.22083333333333333,
+            "y": 0.9444444444444444
+          },
+          "tags": [
+            "clickable",
+            "bottom_area"
+          ]
+        },
+        {
+          "index": 49,
+          "label": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "text": null,
+          "desc": null,
+          "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+          "class": "android.widget.FrameLayout",
+          "clickable": false,
+          "editable": false,
+          "selected": false,
+          "bounds": "0 2880 1440 3104",
+          "x": 0.5,
+          "y": 0.9444444444444444,
+          "center": {
+            "x": 0.5,
+            "y": 0.9444444444444444
+          },
+          "tags": [
+            "bottom_area"
+          ]
+        }
+      ],
+      "capability": {
+        "nodeReadability": "A",
+        "inputCapability": "NONE",
+        "verificationCapability": "HIGH",
+        "coordinateFallback": "AVAILABLE",
+        "serviceState": "CONNECTED"
+      },
+      "snapshotPath": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_snapshots\/com.xingin.xhs\/20260519_223925_506_2d395783.json",
+      "capturedAt": 1779201565845
+    }
+  ],
+  "edges": [
+    {
+      "fromScreenKey": "bb31fe6f",
+      "toScreenKey": "bb31fe6f",
+      "action": {
+        "type": "TapCandidate",
+        "label": "首页 com.xingin.xhs:id\/0_resource_name_obfuscated",
+        "x": 0.1,
+        "y": 0.9513888888888888
+      },
+      "changed": false,
+      "depth": 1
+    },
+    {
+      "fromScreenKey": "bb31fe6f",
+      "toScreenKey": "bb31fe6f",
+      "action": {
+        "type": "TapCandidate",
+        "label": "发现",
+        "x": 0.5,
+        "y": 0.07796717171717171
+      },
+      "changed": false,
+      "depth": 1
+    },
+    {
+      "fromScreenKey": "bb31fe6f",
+      "toScreenKey": "1860a32b",
+      "action": {
+        "type": "TapCandidate",
+        "label": "搜索 com.xingin.xhs:id\/0_resource_name_obfuscated",
+        "x": 0.925,
+        "y": 0.07828282828282829
+      },
+      "changed": true,
+      "depth": 1
+    },
+    {
+      "fromScreenKey": "bb31fe6f",
+      "toScreenKey": "1860a32b",
+      "action": {
+        "type": "TapCandidate",
+        "label": "发布 com.xingin.xhs:id\/0_resource_name_obfuscated",
+        "x": 0.5,
+        "y": 0.9513888888888888
+      },
+      "changed": false,
+      "depth": 1
+    },
+    {
+      "fromScreenKey": "bb31fe6f",
+      "toScreenKey": "bb42fcec",
+      "action": {
+        "type": "TapCandidate",
+        "label": "消息，未读 com.xingin.xhs:id\/0_resource_name_obfuscated",
+        "x": 0.7,
+        "y": 0.9513888888888888
+      },
+      "changed": true,
+      "depth": 1
+    },
+    {
+      "fromScreenKey": "bb31fe6f",
+      "toScreenKey": "2d395783",
+      "action": {
+        "type": "TapCandidate",
+        "label": "视频  每个人的初中时代都有一个善良小胖 来自季佳芊. 705赞",
+        "x": 0.2534722222222222,
+        "y": 0.7102272727272727
+      },
+      "changed": true,
+      "depth": 1
+    }
+  ],
+  "events": [
+    {
+      "phase": "open_app",
+      "status": "RUNNING",
+      "message": "打开 小红书，开始读取首页、底部分屏、入口和输入框",
+      "path": null,
+      "timestamp": 1779201535420
+    },
+    {
+      "phase": "open_app_result",
+      "success": true,
+      "message": "Launcher root intent sent for com.xingin.xhs"
+    },
+    {
+      "phase": "reactive_overlays",
+      "dismissed": 0,
+      "events": []
+    },
+    {
+      "phase": "capture_home",
+      "status": "SUCCESS",
+      "message": "已记录首页：184 个节点、41 个可点击项",
+      "path": "null",
+      "timestamp": 1779201537788
+    },
+    {
+      "phase": "explore_entry",
+      "status": "RUNNING",
+      "message": "尝试安全入口：首页 com.xingin.xhs:id\/0_resource_name_obfuscated",
+      "path": null,
+      "timestamp": 1779201537793
+    },
+    {
+      "phase": "tap_entry",
+      "label": "首页 com.xingin.xhs:id\/0_resource_name_obfuscated",
+      "success": true,
+      "message": "dispatchGesture tap sent (normalized=0.100,0.951 px=144,3014 screen=1440x3168)",
+      "candidate": {
+        "index": 1,
+        "label": "首页 com.xingin.xhs:id\/0_resource_name_obfuscated",
+        "text": null,
+        "desc": "首页",
+        "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+        "class": "android.view.ViewGroup",
+        "clickable": true,
+        "editable": false,
+        "selected": true,
+        "bounds": "0 2924 288 3104",
+        "x": 0.1,
+        "y": 0.9513888888888888,
+        "center": {
+          "x": 0.1,
+          "y": 0.9513888888888888
+        },
+        "tags": [
+          "bottom_tab_candidate"
+        ]
+      }
+    },
+    {
+      "phase": "capture_child",
+      "status": "LOW_CONFIDENCE",
+      "message": "入口 首页 com.xingin.xhs:id\/0_resource_name_obfuscated 后记录页面：184 个节点，screenKey=bb31fe6f",
+      "path": "null",
+      "timestamp": 1779201539848
+    },
+    {
+      "phase": "explore_entry",
+      "status": "RUNNING",
+      "message": "尝试安全入口：发现",
+      "path": null,
+      "timestamp": 1779201540499
+    },
+    {
+      "phase": "tap_entry",
+      "label": "发现",
+      "success": true,
+      "message": "dispatchGesture tap sent (normalized=0.500,0.078 px=720,247 screen=1440x3168)",
+      "candidate": {
+        "index": 0,
+        "label": "发现",
+        "text": "发现",
+        "desc": null,
+        "resourceId": null,
+        "class": "android.widget.TextView",
+        "clickable": false,
+        "editable": false,
+        "selected": true,
+        "bounds": "656 199 784 296",
+        "x": 0.5,
+        "y": 0.07796717171717171,
+        "center": {
+          "x": 0.5,
+          "y": 0.07796717171717171
+        },
+        "tags": [
+          "entry_candidate",
+          "selected"
+        ]
+      }
+    },
+    {
+      "phase": "capture_child",
+      "status": "LOW_CONFIDENCE",
+      "message": "入口 发现 后记录页面：184 个节点，screenKey=bb31fe6f",
+      "path": "null",
+      "timestamp": 1779201542181
+    },
+    {
+      "phase": "explore_entry",
+      "status": "RUNNING",
+      "message": "尝试安全入口：搜索 com.xingin.xhs:id\/0_resource_name_obfuscated",
+      "path": null,
+      "timestamp": 1779201542832
+    },
+    {
+      "phase": "tap_entry",
+      "label": "搜索 com.xingin.xhs:id\/0_resource_name_obfuscated",
+      "success": true,
+      "message": "dispatchGesture tap sent (normalized=0.925,0.078 px=1332,247 screen=1440x3168)",
+      "candidate": {
+        "index": 2,
+        "label": "搜索 com.xingin.xhs:id\/0_resource_name_obfuscated",
+        "text": null,
+        "desc": "搜索",
+        "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+        "class": "android.widget.Button",
+        "clickable": true,
+        "editable": false,
+        "selected": false,
+        "bounds": "1260 176 1404 320",
+        "x": 0.925,
+        "y": 0.07828282828282829,
+        "center": {
+          "x": 0.925,
+          "y": 0.07828282828282829
+        },
+        "tags": [
+          "entry_candidate",
+          "clickable",
+          "search_entry"
+        ]
+      }
+    },
+    {
+      "phase": "capture_child",
+      "status": "SUCCESS",
+      "message": "入口 搜索 com.xingin.xhs:id\/0_resource_name_obfuscated 后记录页面：95 个节点，screenKey=1860a32b",
+      "path": "null",
+      "timestamp": 1779201544205
+    },
+    {
+      "phase": "explore_entry",
+      "status": "RUNNING",
+      "message": "尝试安全入口：发布 com.xingin.xhs:id\/0_resource_name_obfuscated",
+      "path": null,
+      "timestamp": 1779201544856
+    },
+    {
+      "phase": "tap_entry",
+      "label": "发布 com.xingin.xhs:id\/0_resource_name_obfuscated",
+      "success": true,
+      "message": "dispatchGesture tap sent (normalized=0.500,0.951 px=720,3014 screen=1440x3168)",
+      "candidate": {
+        "index": 3,
+        "label": "发布 com.xingin.xhs:id\/0_resource_name_obfuscated",
+        "text": null,
+        "desc": "发布",
+        "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+        "class": "android.widget.RelativeLayout",
+        "clickable": true,
+        "editable": false,
+        "selected": false,
+        "bounds": "576 2924 864 3104",
+        "x": 0.5,
+        "y": 0.9513888888888888,
+        "center": {
+          "x": 0.5,
+          "y": 0.9513888888888888
+        },
+        "tags": [
+          "entry_candidate",
+          "clickable",
+          "bottom_area",
+          "publish_entry"
+        ]
+      }
+    },
+    {
+      "phase": "capture_child",
+      "status": "LOW_CONFIDENCE",
+      "message": "入口 发布 com.xingin.xhs:id\/0_resource_name_obfuscated 后记录页面：95 个节点，screenKey=1860a32b",
+      "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_snapshots\/com.xingin.xhs\/20260519_223905_881_1860a32b.json",
+      "timestamp": 1779201561685
+    },
+    {
+      "phase": "explore_entry",
+      "status": "RUNNING",
+      "message": "尝试安全入口：消息，未读 com.xingin.xhs:id\/0_resource_name_obfuscated",
+      "path": null,
+      "timestamp": 1779201562339
+    },
+    {
+      "phase": "tap_entry",
+      "label": "消息，未读 com.xingin.xhs:id\/0_resource_name_obfuscated",
+      "success": true,
+      "message": "dispatchGesture tap sent (normalized=0.700,0.951 px=1008,3014 screen=1440x3168)",
+      "candidate": {
+        "index": 4,
+        "label": "消息，未读 com.xingin.xhs:id\/0_resource_name_obfuscated",
+        "text": null,
+        "desc": "消息，未读",
+        "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+        "class": "android.view.ViewGroup",
+        "clickable": true,
+        "editable": false,
+        "selected": false,
+        "bounds": "864 2924 1152 3104",
+        "x": 0.7,
+        "y": 0.9513888888888888,
+        "center": {
+          "x": 0.7,
+          "y": 0.9513888888888888
+        },
+        "tags": [
+          "entry_candidate",
+          "clickable",
+          "bottom_area",
+          "message_entry"
+        ]
+      }
+    },
+    {
+      "phase": "capture_child",
+      "status": "SUCCESS",
+      "message": "入口 消息，未读 com.xingin.xhs:id\/0_resource_name_obfuscated 后记录页面：140 个节点，screenKey=bb42fcec",
+      "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_snapshots\/com.xingin.xhs\/20260519_223923_512_bb42fcec.json",
+      "timestamp": 1779201563808
+    },
+    {
+      "phase": "explore_entry",
+      "status": "RUNNING",
+      "message": "尝试安全入口：视频  每个人的初中时代都有一个善良小胖 来自季佳芊. 705赞",
+      "path": null,
+      "timestamp": 1779201564459
+    },
+    {
+      "phase": "tap_entry",
+      "label": "视频  每个人的初中时代都有一个善良小胖 来自季佳芊. 705赞",
+      "success": true,
+      "message": "dispatchGesture tap sent (normalized=0.253,0.710 px=364,2250 screen=1440x3168)",
+      "candidate": {
+        "index": 5,
+        "label": "视频  每个人的初中时代都有一个善良小胖 来自季佳芊. 705赞",
+        "text": null,
+        "desc": "视频  每个人的初中时代都有一个善良小胖 来自季佳芊. 705赞",
+        "resourceId": null,
+        "class": "android.widget.FrameLayout",
+        "clickable": false,
+        "editable": false,
+        "selected": false,
+        "bounds": "20 1620 710 2880",
+        "x": 0.2534722222222222,
+        "y": 0.7102272727272727,
+        "center": {
+          "x": 0.2534722222222222,
+          "y": 0.7102272727272727
+        },
+        "tags": [
+          "bottom_tab_candidate"
+        ]
+      }
+    },
+    {
+      "phase": "capture_child",
+      "status": "SUCCESS",
+      "message": "入口 视频  每个人的初中时代都有一个善良小胖 来自季佳芊. 705赞 后记录页面：126 个节点，screenKey=2d395783",
+      "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_snapshots\/com.xingin.xhs\/20260519_223925_506_2d395783.json",
+      "timestamp": 1779201565845
+    }
+  ],
+  "createdAt": 1779201566498,
+  "updatedAt": 1779201566507
+}

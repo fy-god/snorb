@@ -1,0 +1,105 @@
+{
+  "schemaVersion": 1,
+  "kind": "atomic_skill",
+  "id": "com.dianping.v1.back",
+  "name": "返回",
+  "appPackage": "com.dianping.v1",
+  "appVersion": "*",
+  "status": "DRY_RUN_PASSED",
+  "domain": "app_session",
+  "implements": "BackSkill",
+  "params": [],
+  "preconditions": [],
+  "dependsOn": [],
+  "resolverPolicy": {
+    "order": [
+      "ACCESSIBILITY",
+      "COORDINATE_PACK",
+      "PACKAGE_MANAGER"
+    ],
+    "allowAiSuggestionInFactory": true,
+    "allowAiInRuntime": false
+  },
+  "safety": {
+    "forbiddenTexts": [
+      "支付",
+      "付款",
+      "转账",
+      "删除",
+      "发布",
+      "授权"
+    ]
+  },
+  "factory": {
+    "source": "SKILL_ARCHETYPE_TEMPLATE_V0",
+    "archetypeId": "common.app_session.v1",
+    "traceIds": [],
+    "sampleCount": 0,
+    "dryRunStatus": "PASSED",
+    "testRuns": 0,
+    "successRate": 0,
+    "promotionStatus": "NOT_PROMOTED",
+    "createdAt": 1779237420359,
+    "appPatch": {
+      "packageName": "com.dianping.v1",
+      "label": "大众点评",
+      "launchable": true,
+      "launchActivity": "com.dianping.v1.NovaMainActivity",
+      "searchEntryTexts": [
+        "搜索",
+        "搜一搜",
+        "Search"
+      ],
+      "searchSubmitTexts": [
+        "搜索",
+        "确定",
+        "Search"
+      ],
+      "searchEntryCoordinate": {
+        "x": 0.5,
+        "y": 0.08
+      },
+      "searchSubmitCoordinate": {
+        "x": 0.9,
+        "y": 0.08
+      },
+      "postDraftEntryTexts": [
+        "+",
+        "写微博",
+        "发微博",
+        "发帖",
+        "创作",
+        "写帖子",
+        "发动态",
+        "说点什么"
+      ],
+      "postDraftEntryCoordinate": {
+        "x": 0.9,
+        "y": 0.9
+      }
+    },
+    "lastDryRunReport": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_dry_run_reports\/com.dianping.v1\/com.dianping.v1.back_1779338854454.json",
+    "lastDryRunAt": 1779338854455
+  },
+  "capabilityRequired": {
+    "minLevel": "D",
+    "inputRequired": false,
+    "nodeReadablePreferred": false,
+    "coordinateFallbackAllowed": false,
+    "allowedInputChannels": [],
+    "verificationRequired": "LOW"
+  },
+  "action": {
+    "type": "Back",
+    "timeoutMs": 1000
+  },
+  "verify": {
+    "type": "WindowChanged",
+    "timeoutMs": 1000,
+    "allowLowConfidenceWhenUnchanged": true
+  },
+  "resultPolicy": {
+    "changed": "SUCCESS",
+    "unchanged": "SUCCESS_LOW_CONFIDENCE"
+  }
+}

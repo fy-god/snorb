@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "kind": "skill_json_bottom_tab_entry_sweep_report",
+  "id": "bottom_tab_entry_sweep_1779339196103",
+  "skillId": "patched.command.1779339154666",
+  "appPackage": "com.zhihu.android",
+  "instruction": "在知乎搜索人工智能，停在综合结果页并记录回答、文章、用户分区。\n\n约束：目标 App=知乎，包名=com.zhihu.android。必须由 MacroPilot 手机端自己用无障碍、输入法、AI\/Skill JSON 执行，不允许依赖 ADB 手点目标 App。执行前先读取当前 UI；如果遇到广告、弹窗、小字提示，先记录文字并安全关闭。任务完成必须用当前 UI 证据验证，不能只因为步骤执行完就报成功。如果没有现成 skill，先复用已有相似 Skill JSON\/archetype，只改关键槽位如入口文字、坐标、目标文本、验证规则，再组装 atomic\/macro skill。需要探索入口时优先遍历底部标签、顶部小图标、图形化入口、侧边操作和子页面。本任务 stopBeforeSubmit=true：写草稿、评论、订单、支付类流程必须停在提交前，不点击最终发布、发送、提交订单、支付、确认授权。期望证据包括：人工智能、搜索结果。",
+  "engine": "bottom_tab_entry_sweep",
+  "approvedRequired": false,
+  "status": "FAILED_ELEMENT_NOT_FOUND",
+  "message": "Bottom-tab sweep did not find entry aliases=写回答\/发布\/创作\/+; tabsVisited=2; events=[{\"phase\":\"open_before_recover\",\"packageName\":\"com.zhihu.android\",\"success\":true,\"message\":\"Launch intent sent for com.zhihu.android\"},{\"phase\":\"home_back\",\"index\":1,\"fromPackage\":\"com.zhihu.android\",\"window\":\"android.view.ViewGroup\",\"success\":true,\"message\":\"GLOBAL_ACTION_BACK performed\"},{\"phase\":\"home_back\",\"index\":2,\"fromPackage\":\"com.zhihu.android\",\"window\":\"com.zhihu.android.app.SearchResultActivity\",\"success\":true,\"message\":\"GLOBAL_ACTION_BACK performed\"},{\"phase\":\"home_back\",\"index\":3,\"fromPackage\":\"com.zhihu.android\",\"window\":\"android.widget.FrameLayout\",\"success\":true,\"message\":\"GLOBAL_ACTION_BACK performed\"},{\"phase\":\"open_after_recover\",\"packageName\":\"com.zhihu.android\",\"success\":true,\"message\":\"Launch intent sent for com.zhihu.android\"},{\"phase\":\"close_transient_sheet\",\"index\":1,\"window\":\"android.widget.FrameLayout\",\"method\":\"cancel_button_or_text\",\"success\":true,\"message\":\"ACTION_CLICK performed\",\"labels\":[\"com.zhihu.android:id\\\/action_bar_root\",\"android:id\\\/content\",\"com.zhihu.android:id\\\/content_container\",\"com.zhihu.android:id\\\/overlay_container\",\"android:id\\\/content\",\"com.zhihu.android:id\\\/fragment_container\",\"com.zhihu.android:id\\\/parent_fragment_content_id\",\"Block:search_bar\",\"Button:return\",\"泰国取消90国公民60天免签\",\"泰国取消90国公民60天免签\",\"综合 Button:top_tab_btn:1\"]},{\"phase\":\"close_transient_sheet\",\"index\":1,\"method\":\"touch_outside_node\",\"success\":false,\"message\":\"No matching node\"},{\"phase\":\"close_transient_sheet\",\"index\":1,\"method\":\"back\",\"success\":true,\"message\":\"GLOBAL_ACTION_BACK performed\"},{\"phase\":\"close_transient_sheet\",\"index\":1,\"method\":\"outside_tap\",\"success\":true,\"message\":\"dispatchGesture tap sent (normalized=0.500,0.550 px=720,1742 screen=1440x3168)\"},{\"phase\":\"close_transient_sheet\",\"index\":2,\"window\":null,\"method\":\"cancel_button_or_text\",\"success\"",
+  "durationMs": 39688,
+  "usedCoordinate": true,
+  "entryAliases": [
+    "写回答",
+    "发布",
+    "创作",
+    "+"
+  ],
+  "skillFile": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_candidates\/com.zhihu.android\/patched.command.1779339154666.json",
+  "createdAt": 1779339196103
+}

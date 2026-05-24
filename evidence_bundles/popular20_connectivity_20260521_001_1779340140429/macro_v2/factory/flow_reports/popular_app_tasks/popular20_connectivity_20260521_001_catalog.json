@@ -1,0 +1,827 @@
+{
+  "schemaVersion": 1,
+  "kind": "popular_app_task_catalog",
+  "appCount": 20,
+  "tasksPerApp": 1,
+  "totalTaskCount": 20,
+  "apps": [
+    {
+      "packageName": "tv.danmaku.bili",
+      "resolvedPackage": "tv.danmaku.bili",
+      "appName": "哔哩哔哩",
+      "aliases": [],
+      "installed": true,
+      "launchable": true,
+      "taskCount": 1,
+      "tasks": [
+        {
+          "taskId": "bili_search_open_first_video",
+          "instruction": "在哔哩哔哩搜索王老菊并打开第一个视频，必须验证已经进入视频播放页，不能只停在搜索结果页。",
+          "category": "search_open",
+          "riskLevel": "LOW",
+          "requiresLogin": false,
+          "requiresPayment": false,
+          "stopBeforeSubmit": true,
+          "expectedEvidence": [
+            "搜索结果",
+            "第一个视频",
+            "播放页"
+          ]
+        }
+      ],
+      "label": "哔哩哔哩",
+      "selectedTasks": [
+        {
+          "taskId": "bili_search_open_first_video",
+          "instruction": "在哔哩哔哩搜索王老菊并打开第一个视频，必须验证已经进入视频播放页，不能只停在搜索结果页。",
+          "category": "search_open",
+          "riskLevel": "LOW",
+          "requiresLogin": false,
+          "requiresPayment": false,
+          "stopBeforeSubmit": true,
+          "expectedEvidence": [
+            "搜索结果",
+            "第一个视频",
+            "播放页"
+          ]
+        }
+      ]
+    },
+    {
+      "packageName": "com.xingin.xhs",
+      "resolvedPackage": "com.xingin.xhs",
+      "appName": "小红书",
+      "aliases": [],
+      "installed": true,
+      "launchable": true,
+      "taskCount": 1,
+      "tasks": [
+        {
+          "taskId": "xhs_search_keyword",
+          "instruction": "在小红书搜索露营装备，停在综合结果页并记录笔记、商品、用户分区。",
+          "category": "search",
+          "riskLevel": "LOW",
+          "requiresLogin": false,
+          "requiresPayment": false,
+          "stopBeforeSubmit": true,
+          "expectedEvidence": [
+            "露营装备",
+            "搜索结果"
+          ]
+        }
+      ],
+      "label": "小红书",
+      "selectedTasks": [
+        {
+          "taskId": "xhs_search_keyword",
+          "instruction": "在小红书搜索露营装备，停在综合结果页并记录笔记、商品、用户分区。",
+          "category": "search",
+          "riskLevel": "LOW",
+          "requiresLogin": false,
+          "requiresPayment": false,
+          "stopBeforeSubmit": true,
+          "expectedEvidence": [
+            "露营装备",
+            "搜索结果"
+          ]
+        }
+      ]
+    },
+    {
+      "packageName": "com.ss.android.ugc.aweme",
+      "resolvedPackage": "com.ss.android.ugc.aweme",
+      "appName": "抖音",
+      "aliases": [],
+      "installed": true,
+      "launchable": true,
+      "taskCount": 1,
+      "tasks": [
+        {
+          "taskId": "douyin_search_keyword",
+          "instruction": "在抖音搜索王老菊，停在搜索结果页并记录用户、视频、综合分区。",
+          "category": "search",
+          "riskLevel": "LOW",
+          "requiresLogin": false,
+          "requiresPayment": false,
+          "stopBeforeSubmit": true,
+          "expectedEvidence": [
+            "王老菊",
+            "搜索结果"
+          ]
+        }
+      ],
+      "label": "抖音",
+      "selectedTasks": [
+        {
+          "taskId": "douyin_search_keyword",
+          "instruction": "在抖音搜索王老菊，停在搜索结果页并记录用户、视频、综合分区。",
+          "category": "search",
+          "riskLevel": "LOW",
+          "requiresLogin": false,
+          "requiresPayment": false,
+          "stopBeforeSubmit": true,
+          "expectedEvidence": [
+            "王老菊",
+            "搜索结果"
+          ]
+        }
+      ]
+    },
+    {
+      "packageName": "com.hupu.games",
+      "resolvedPackage": "com.hupu.games",
+      "appName": "虎扑",
+      "aliases": [],
+      "installed": true,
+      "launchable": true,
+      "taskCount": 1,
+      "tasks": [
+        {
+          "taskId": "hupu_close_ads_home",
+          "instruction": "打开虎扑，先处理开屏广告和弹窗，再回到虎扑首页读取底部导航。",
+          "category": "ad_dialog_probe",
+          "riskLevel": "LOW",
+          "requiresLogin": false,
+          "requiresPayment": false,
+          "stopBeforeSubmit": true,
+          "expectedEvidence": [
+            "首页",
+            "底部导航"
+          ]
+        }
+      ],
+      "label": "虎扑",
+      "selectedTasks": [
+        {
+          "taskId": "hupu_close_ads_home",
+          "instruction": "打开虎扑，先处理开屏广告和弹窗，再回到虎扑首页读取底部导航。",
+          "category": "ad_dialog_probe",
+          "riskLevel": "LOW",
+          "requiresLogin": false,
+          "requiresPayment": false,
+          "stopBeforeSubmit": true,
+          "expectedEvidence": [
+            "首页",
+            "底部导航"
+          ]
+        }
+      ]
+    },
+    {
+      "packageName": "com.sina.weibo",
+      "resolvedPackage": "com.sina.weibo",
+      "appName": "微博",
+      "aliases": [],
+      "installed": true,
+      "launchable": true,
+      "taskCount": 1,
+      "tasks": [
+        {
+          "taskId": "weibo_search_hot",
+          "instruction": "在微博搜索王老菊，停在综合结果页并记录用户、微博、视频分区。",
+          "category": "search",
+          "riskLevel": "LOW",
+          "requiresLogin": false,
+          "requiresPayment": false,
+          "stopBeforeSubmit": true,
+          "expectedEvidence": [
+            "王老菊",
+            "搜索结果"
+          ]
+        }
+      ],
+      "label": "微博",
+      "selectedTasks": [
+        {
+          "taskId": "weibo_search_hot",
+          "instruction": "在微博搜索王老菊，停在综合结果页并记录用户、微博、视频分区。",
+          "category": "search",
+          "riskLevel": "LOW",
+          "requiresLogin": false,
+          "requiresPayment": false,
+          "stopBeforeSubmit": true,
+          "expectedEvidence": [
+            "王老菊",
+            "搜索结果"
+          ]
+        }
+      ]
+    },
+    {
+      "packageName": "com.tencent.mobileqq",
+      "resolvedPackage": "com.tencent.mobileqq",
+      "appName": "QQ",
+      "aliases": [],
+      "installed": true,
+      "launchable": true,
+      "taskCount": 1,
+      "tasks": [
+        {
+          "taskId": "qq_login_state",
+          "instruction": "打开 QQ，识别快速登录、手机号登录、协议勾选小圈圈等入口，不输入密码。",
+          "category": "login_probe",
+          "riskLevel": "LOW",
+          "requiresLogin": true,
+          "requiresPayment": false,
+          "stopBeforeSubmit": true,
+          "expectedEvidence": [
+            "快速登录",
+            "协议"
+          ]
+        }
+      ],
+      "label": "QQ",
+      "selectedTasks": [
+        {
+          "taskId": "qq_login_state",
+          "instruction": "打开 QQ，识别快速登录、手机号登录、协议勾选小圈圈等入口，不输入密码。",
+          "category": "login_probe",
+          "riskLevel": "LOW",
+          "requiresLogin": true,
+          "requiresPayment": false,
+          "stopBeforeSubmit": true,
+          "expectedEvidence": [
+            "快速登录",
+            "协议"
+          ]
+        }
+      ]
+    },
+    {
+      "packageName": "com.tencent.mm",
+      "resolvedPackage": "com.tencent.mm",
+      "appName": "微信",
+      "aliases": [],
+      "installed": true,
+      "launchable": true,
+      "taskCount": 1,
+      "tasks": [
+        {
+          "taskId": "wechat_bottom_tabs_snapshot",
+          "instruction": "打开微信，依次保存底部微信、通讯录、发现、我四个页面 UI 图谱。",
+          "category": "bottom_tab_probe",
+          "riskLevel": "LOW",
+          "requiresLogin": true,
+          "requiresPayment": false,
+          "stopBeforeSubmit": true,
+          "expectedEvidence": [
+            "微信",
+            "通讯录",
+            "发现",
+            "我"
+          ]
+        }
+      ],
+      "label": "微信",
+      "selectedTasks": [
+        {
+          "taskId": "wechat_bottom_tabs_snapshot",
+          "instruction": "打开微信，依次保存底部微信、通讯录、发现、我四个页面 UI 图谱。",
+          "category": "bottom_tab_probe",
+          "riskLevel": "LOW",
+          "requiresLogin": true,
+          "requiresPayment": false,
+          "stopBeforeSubmit": true,
+          "expectedEvidence": [
+            "微信",
+            "通讯录",
+            "发现",
+            "我"
+          ]
+        }
+      ]
+    },
+    {
+      "packageName": "com.sankuai.meituan",
+      "resolvedPackage": "com.sankuai.meituan",
+      "appName": "美团",
+      "aliases": [],
+      "installed": true,
+      "launchable": true,
+      "taskCount": 1,
+      "tasks": [
+        {
+          "taskId": "meituan_search_food",
+          "instruction": "在美团搜索奶茶，停在结果页并记录店铺、商品、筛选入口。",
+          "category": "search",
+          "riskLevel": "LOW",
+          "requiresLogin": false,
+          "requiresPayment": false,
+          "stopBeforeSubmit": true,
+          "expectedEvidence": [
+            "奶茶",
+            "结果"
+          ]
+        }
+      ],
+      "label": "美团",
+      "selectedTasks": [
+        {
+          "taskId": "meituan_search_food",
+          "instruction": "在美团搜索奶茶，停在结果页并记录店铺、商品、筛选入口。",
+          "category": "search",
+          "riskLevel": "LOW",
+          "requiresLogin": false,
+          "requiresPayment": false,
+          "stopBeforeSubmit": true,
+          "expectedEvidence": [
+            "奶茶",
+            "结果"
+          ]
+        }
+      ]
+    },
+    {
+      "packageName": "com.dianping.v1",
+      "resolvedPackage": "com.dianping.v1",
+      "appName": "大众点评",
+      "aliases": [],
+      "installed": true,
+      "launchable": true,
+      "taskCount": 1,
+      "tasks": [
+        {
+          "taskId": "dianping_search_restaurant",
+          "instruction": "在大众点评搜索火锅，停在结果页并记录榜单、筛选、距离入口。",
+          "category": "search",
+          "riskLevel": "LOW",
+          "requiresLogin": false,
+          "requiresPayment": false,
+          "stopBeforeSubmit": true,
+          "expectedEvidence": [
+            "火锅",
+            "筛选"
+          ]
+        }
+      ],
+      "label": "大众点评",
+      "selectedTasks": [
+        {
+          "taskId": "dianping_search_restaurant",
+          "instruction": "在大众点评搜索火锅，停在结果页并记录榜单、筛选、距离入口。",
+          "category": "search",
+          "riskLevel": "LOW",
+          "requiresLogin": false,
+          "requiresPayment": false,
+          "stopBeforeSubmit": true,
+          "expectedEvidence": [
+            "火锅",
+            "筛选"
+          ]
+        }
+      ]
+    },
+    {
+      "packageName": "com.taobao.taobao",
+      "resolvedPackage": "com.taobao.taobao",
+      "appName": "淘宝",
+      "aliases": [],
+      "installed": true,
+      "launchable": true,
+      "taskCount": 1,
+      "tasks": [
+        {
+          "taskId": "taobao_search_item",
+          "instruction": "在淘宝搜索机械键盘，停在商品结果页并记录筛选、店铺、价格入口。",
+          "category": "search",
+          "riskLevel": "LOW",
+          "requiresLogin": false,
+          "requiresPayment": false,
+          "stopBeforeSubmit": true,
+          "expectedEvidence": [
+            "机械键盘",
+            "商品"
+          ]
+        }
+      ],
+      "label": "淘宝",
+      "selectedTasks": [
+        {
+          "taskId": "taobao_search_item",
+          "instruction": "在淘宝搜索机械键盘，停在商品结果页并记录筛选、店铺、价格入口。",
+          "category": "search",
+          "riskLevel": "LOW",
+          "requiresLogin": false,
+          "requiresPayment": false,
+          "stopBeforeSubmit": true,
+          "expectedEvidence": [
+            "机械键盘",
+            "商品"
+          ]
+        }
+      ]
+    },
+    {
+      "packageName": "com.jingdong.app.mall",
+      "resolvedPackage": "com.jingdong.app.mall",
+      "appName": "京东",
+      "aliases": [],
+      "installed": true,
+      "launchable": true,
+      "taskCount": 1,
+      "tasks": [
+        {
+          "taskId": "jd_search_item",
+          "instruction": "在京东搜索耳机，停在商品结果页并记录筛选、店铺、价格入口。",
+          "category": "search",
+          "riskLevel": "LOW",
+          "requiresLogin": false,
+          "requiresPayment": false,
+          "stopBeforeSubmit": true,
+          "expectedEvidence": [
+            "耳机",
+            "商品"
+          ]
+        }
+      ],
+      "label": "京东",
+      "selectedTasks": [
+        {
+          "taskId": "jd_search_item",
+          "instruction": "在京东搜索耳机，停在商品结果页并记录筛选、店铺、价格入口。",
+          "category": "search",
+          "riskLevel": "LOW",
+          "requiresLogin": false,
+          "requiresPayment": false,
+          "stopBeforeSubmit": true,
+          "expectedEvidence": [
+            "耳机",
+            "商品"
+          ]
+        }
+      ]
+    },
+    {
+      "packageName": "com.xunmeng.pinduoduo",
+      "resolvedPackage": "com.xunmeng.pinduoduo",
+      "appName": "拼多多",
+      "aliases": [],
+      "installed": true,
+      "launchable": true,
+      "taskCount": 1,
+      "tasks": [
+        {
+          "taskId": "pdd_search_item",
+          "instruction": "在拼多多搜索纸巾，停在结果页并记录筛选、店铺、价格入口。",
+          "category": "search",
+          "riskLevel": "LOW",
+          "requiresLogin": false,
+          "requiresPayment": false,
+          "stopBeforeSubmit": true,
+          "expectedEvidence": [
+            "纸巾",
+            "结果"
+          ]
+        }
+      ],
+      "label": "拼多多",
+      "selectedTasks": [
+        {
+          "taskId": "pdd_search_item",
+          "instruction": "在拼多多搜索纸巾，停在结果页并记录筛选、店铺、价格入口。",
+          "category": "search",
+          "riskLevel": "LOW",
+          "requiresLogin": false,
+          "requiresPayment": false,
+          "stopBeforeSubmit": true,
+          "expectedEvidence": [
+            "纸巾",
+            "结果"
+          ]
+        }
+      ]
+    },
+    {
+      "packageName": "com.zhihu.android",
+      "resolvedPackage": "com.zhihu.android",
+      "appName": "知乎",
+      "aliases": [],
+      "installed": true,
+      "launchable": true,
+      "taskCount": 1,
+      "tasks": [
+        {
+          "taskId": "zhihu_search_question",
+          "instruction": "在知乎搜索人工智能，停在综合结果页并记录回答、文章、用户分区。",
+          "category": "search",
+          "riskLevel": "LOW",
+          "requiresLogin": false,
+          "requiresPayment": false,
+          "stopBeforeSubmit": true,
+          "expectedEvidence": [
+            "人工智能",
+            "搜索结果"
+          ]
+        }
+      ],
+      "label": "知乎",
+      "selectedTasks": [
+        {
+          "taskId": "zhihu_search_question",
+          "instruction": "在知乎搜索人工智能，停在综合结果页并记录回答、文章、用户分区。",
+          "category": "search",
+          "riskLevel": "LOW",
+          "requiresLogin": false,
+          "requiresPayment": false,
+          "stopBeforeSubmit": true,
+          "expectedEvidence": [
+            "人工智能",
+            "搜索结果"
+          ]
+        }
+      ]
+    },
+    {
+      "packageName": "com.netease.cloudmusic",
+      "resolvedPackage": "com.netease.cloudmusic",
+      "appName": "网易云音乐",
+      "aliases": [],
+      "installed": true,
+      "launchable": true,
+      "taskCount": 1,
+      "tasks": [
+        {
+          "taskId": "music_search_song",
+          "instruction": "在网易云音乐搜索周杰伦，停在歌曲结果页并记录单曲、歌单、用户分区。",
+          "category": "search",
+          "riskLevel": "LOW",
+          "requiresLogin": false,
+          "requiresPayment": false,
+          "stopBeforeSubmit": true,
+          "expectedEvidence": [
+            "周杰伦",
+            "搜索结果"
+          ]
+        }
+      ],
+      "label": "网易云音乐",
+      "selectedTasks": [
+        {
+          "taskId": "music_search_song",
+          "instruction": "在网易云音乐搜索周杰伦，停在歌曲结果页并记录单曲、歌单、用户分区。",
+          "category": "search",
+          "riskLevel": "LOW",
+          "requiresLogin": false,
+          "requiresPayment": false,
+          "stopBeforeSubmit": true,
+          "expectedEvidence": [
+            "周杰伦",
+            "搜索结果"
+          ]
+        }
+      ]
+    },
+    {
+      "packageName": "com.baidu.BaiduMap",
+      "resolvedPackage": "com.baidu.BaiduMap",
+      "appName": "百度地图",
+      "aliases": [
+        "com.baidu.baidumap"
+      ],
+      "installed": true,
+      "launchable": true,
+      "taskCount": 1,
+      "tasks": [
+        {
+          "taskId": "baidumap_search_place",
+          "instruction": "在百度地图搜索上海站，停在地点结果页并记录路线、收藏、电话入口。",
+          "category": "search",
+          "riskLevel": "LOW",
+          "requiresLogin": false,
+          "requiresPayment": false,
+          "stopBeforeSubmit": true,
+          "expectedEvidence": [
+            "上海站",
+            "地点"
+          ]
+        }
+      ],
+      "label": "百度地图",
+      "selectedTasks": [
+        {
+          "taskId": "baidumap_search_place",
+          "instruction": "在百度地图搜索上海站，停在地点结果页并记录路线、收藏、电话入口。",
+          "category": "search",
+          "riskLevel": "LOW",
+          "requiresLogin": false,
+          "requiresPayment": false,
+          "stopBeforeSubmit": true,
+          "expectedEvidence": [
+            "上海站",
+            "地点"
+          ]
+        }
+      ]
+    },
+    {
+      "packageName": "com.autonavi.minimap",
+      "resolvedPackage": null,
+      "appName": "高德地图",
+      "aliases": [],
+      "installed": false,
+      "launchable": false,
+      "taskCount": 1,
+      "tasks": [
+        {
+          "taskId": "amap_search_place",
+          "instruction": "在高德地图搜索上海站，停在地点结果页并记录路线、收藏、电话入口。",
+          "category": "search",
+          "riskLevel": "LOW",
+          "requiresLogin": false,
+          "requiresPayment": false,
+          "stopBeforeSubmit": true,
+          "expectedEvidence": [
+            "上海站",
+            "地点"
+          ]
+        }
+      ],
+      "label": "高德地图",
+      "selectedTasks": [
+        {
+          "taskId": "amap_search_place",
+          "instruction": "在高德地图搜索上海站，停在地点结果页并记录路线、收藏、电话入口。",
+          "category": "search",
+          "riskLevel": "LOW",
+          "requiresLogin": false,
+          "requiresPayment": false,
+          "stopBeforeSubmit": true,
+          "expectedEvidence": [
+            "上海站",
+            "地点"
+          ]
+        }
+      ]
+    },
+    {
+      "packageName": "com.eg.android.AlipayGphone",
+      "resolvedPackage": "com.eg.android.AlipayGphone",
+      "appName": "支付宝",
+      "aliases": [
+        "com.eg.android.alipaygphone"
+      ],
+      "installed": true,
+      "launchable": true,
+      "taskCount": 1,
+      "tasks": [
+        {
+          "taskId": "alipay_home_icons",
+          "instruction": "打开支付宝首页，识别扫一扫、收付款、出行、卡包、生活缴费等图形化入口，不进入付款确认。",
+          "category": "graphical_entry_probe",
+          "riskLevel": "HIGH",
+          "requiresLogin": false,
+          "requiresPayment": true,
+          "stopBeforeSubmit": true,
+          "expectedEvidence": [
+            "扫一扫",
+            "收付款"
+          ]
+        }
+      ],
+      "label": "支付宝",
+      "selectedTasks": [
+        {
+          "taskId": "alipay_home_icons",
+          "instruction": "打开支付宝首页，识别扫一扫、收付款、出行、卡包、生活缴费等图形化入口，不进入付款确认。",
+          "category": "graphical_entry_probe",
+          "riskLevel": "HIGH",
+          "requiresLogin": false,
+          "requiresPayment": true,
+          "stopBeforeSubmit": true,
+          "expectedEvidence": [
+            "扫一扫",
+            "收付款"
+          ]
+        }
+      ]
+    },
+    {
+      "packageName": "com.unionpay",
+      "resolvedPackage": "com.unionpay",
+      "appName": "云闪付",
+      "aliases": [],
+      "installed": true,
+      "launchable": true,
+      "taskCount": 1,
+      "tasks": [
+        {
+          "taskId": "unionpay_home_icons",
+          "instruction": "打开云闪付首页，识别扫一扫、收付款、乘车码、信用卡等入口，不进入付款确认。",
+          "category": "graphical_entry_probe",
+          "riskLevel": "HIGH",
+          "requiresLogin": false,
+          "requiresPayment": true,
+          "stopBeforeSubmit": true,
+          "expectedEvidence": [
+            "扫一扫",
+            "收付款"
+          ]
+        }
+      ],
+      "label": "云闪付",
+      "selectedTasks": [
+        {
+          "taskId": "unionpay_home_icons",
+          "instruction": "打开云闪付首页，识别扫一扫、收付款、乘车码、信用卡等入口，不进入付款确认。",
+          "category": "graphical_entry_probe",
+          "riskLevel": "HIGH",
+          "requiresLogin": false,
+          "requiresPayment": true,
+          "stopBeforeSubmit": true,
+          "expectedEvidence": [
+            "扫一扫",
+            "收付款"
+          ]
+        }
+      ]
+    },
+    {
+      "packageName": "com.hexin.plat.android",
+      "resolvedPackage": "com.hexin.plat.android",
+      "appName": "同花顺",
+      "aliases": [],
+      "installed": true,
+      "launchable": true,
+      "taskCount": 1,
+      "tasks": [
+        {
+          "taskId": "hexin_search_stock",
+          "instruction": "在同花顺搜索贵州茅台，停在股票详情页并记录盘口、K线、资讯入口，不交易。",
+          "category": "search",
+          "riskLevel": "MEDIUM",
+          "requiresLogin": false,
+          "requiresPayment": false,
+          "stopBeforeSubmit": true,
+          "expectedEvidence": [
+            "贵州茅台",
+            "股票详情"
+          ]
+        }
+      ],
+      "label": "同花顺",
+      "selectedTasks": [
+        {
+          "taskId": "hexin_search_stock",
+          "instruction": "在同花顺搜索贵州茅台，停在股票详情页并记录盘口、K线、资讯入口，不交易。",
+          "category": "search",
+          "riskLevel": "MEDIUM",
+          "requiresLogin": false,
+          "requiresPayment": false,
+          "stopBeforeSubmit": true,
+          "expectedEvidence": [
+            "贵州茅台",
+            "股票详情"
+          ]
+        }
+      ]
+    },
+    {
+      "packageName": "com.alibaba.android.rimet",
+      "resolvedPackage": "com.alibaba.android.rimet",
+      "appName": "钉钉",
+      "aliases": [],
+      "installed": true,
+      "launchable": true,
+      "taskCount": 1,
+      "tasks": [
+        {
+          "taskId": "dingtalk_login_state",
+          "instruction": "打开钉钉，识别登录状态、手机号登录、扫码登录和协议提示，不输入密码。",
+          "category": "login_probe",
+          "riskLevel": "LOW",
+          "requiresLogin": true,
+          "requiresPayment": false,
+          "stopBeforeSubmit": true,
+          "expectedEvidence": [
+            "登录"
+          ]
+        }
+      ],
+      "label": "钉钉",
+      "selectedTasks": [
+        {
+          "taskId": "dingtalk_login_state",
+          "instruction": "打开钉钉，识别登录状态、手机号登录、扫码登录和协议提示，不输入密码。",
+          "category": "login_probe",
+          "riskLevel": "LOW",
+          "requiresLogin": true,
+          "requiresPayment": false,
+          "stopBeforeSubmit": true,
+          "expectedEvidence": [
+            "登录"
+          ]
+        }
+      ]
+    }
+  ],
+  "safetyPolicy": {
+    "adbManualTargetUiControl": false,
+    "paymentPasswordInputAllowed": false,
+    "submitOrderAllowed": false,
+    "publishOrCommentSubmitAllowedByDefault": false,
+    "draftOnlyUnlessExplicitInstruction": true
+  },
+  "createdAt": 1779338045879,
+  "requestId": "popular20_connectivity_20260521_001",
+  "id": "popular20_connectivity_20260521_001_catalog"
+}

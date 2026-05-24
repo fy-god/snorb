@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "kind": "popular_app_task_batch_service_state",
+  "id": "third_round_9apps_20tasks_20260521",
+  "requestId": "third_round_9apps_20tasks_20260521",
+  "status": "RUNNING",
+  "message": "[1\/9] 小红书 5\/20: xhs_mine_page_probe",
+  "requestedPackages": [
+    "com.tencent.mm",
+    "com.sina.weibo",
+    "com.sankuai.meituan",
+    "com.xunmeng.pinduoduo",
+    "com.jingdong.app.mall",
+    "com.taobao.taobao",
+    "com.xingin.xhs",
+    "com.ss.android.ugc.aweme",
+    "com.hexin.plat.android"
+  ],
+  "progress": {
+    "phase": "TASK_RUNNING",
+    "appIndex": 1,
+    "appTotal": 9,
+    "taskIndex": 5,
+    "tasksPerApp": 20,
+    "packageName": "com.xingin.xhs",
+    "appName": "小红书",
+    "taskId": "xhs_mine_page_probe",
+    "instruction": "打开小红书我的页，读取收藏、赞过、笔记、设置等入口。",
+    "executed": 4,
+    "success": 0,
+    "failed": 4,
+    "blocked": 0
+  },
+  "payload": null,
+  "createdAt": 1779300827275
+}

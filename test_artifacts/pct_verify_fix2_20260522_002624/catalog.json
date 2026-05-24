@@ -1,0 +1,141 @@
+{
+  "schemaVersion": 1,
+  "kind": "popular_app_task_catalog",
+  "appCount": 3,
+  "tasksPerApp": 1,
+  "totalTaskCount": 3,
+  "apps": [
+    {
+      "packageName": "tv.danmaku.bili",
+      "resolvedPackage": "tv.danmaku.bili",
+      "appName": "哔哩哔哩",
+      "aliases": [],
+      "installed": true,
+      "launchable": true,
+      "taskCount": 1,
+      "tasks": [
+        {
+          "taskId": "bili_search_open_first_video",
+          "instruction": "在哔哩哔哩搜索王老菊并打开第一个视频，必须验证已经进入视频播放页，不能只停在搜索结果页。",
+          "category": "search_open",
+          "riskLevel": "LOW",
+          "requiresLogin": false,
+          "requiresPayment": false,
+          "stopBeforeSubmit": true,
+          "expectedEvidence": [
+            "搜索结果",
+            "第一个视频",
+            "播放页"
+          ]
+        }
+      ],
+      "label": "哔哩哔哩",
+      "selectedTasks": [
+        {
+          "taskId": "bili_search_open_first_video",
+          "instruction": "在哔哩哔哩搜索王老菊并打开第一个视频，必须验证已经进入视频播放页，不能只停在搜索结果页。",
+          "category": "search_open",
+          "riskLevel": "LOW",
+          "requiresLogin": false,
+          "requiresPayment": false,
+          "stopBeforeSubmit": true,
+          "expectedEvidence": [
+            "搜索结果",
+            "第一个视频",
+            "播放页"
+          ]
+        }
+      ]
+    },
+    {
+      "packageName": "com.hupu.games",
+      "resolvedPackage": "com.hupu.games",
+      "appName": "虎扑",
+      "aliases": [],
+      "installed": true,
+      "launchable": true,
+      "taskCount": 1,
+      "tasks": [
+        {
+          "taskId": "hupu_close_ads_home",
+          "instruction": "打开虎扑，先处理开屏广告和弹窗，再回到虎扑首页读取底部导航。",
+          "category": "ad_dialog_probe",
+          "riskLevel": "LOW",
+          "requiresLogin": false,
+          "requiresPayment": false,
+          "stopBeforeSubmit": true,
+          "expectedEvidence": [
+            "首页",
+            "底部导航"
+          ]
+        }
+      ],
+      "label": "虎扑",
+      "selectedTasks": [
+        {
+          "taskId": "hupu_close_ads_home",
+          "instruction": "打开虎扑，先处理开屏广告和弹窗，再回到虎扑首页读取底部导航。",
+          "category": "ad_dialog_probe",
+          "riskLevel": "LOW",
+          "requiresLogin": false,
+          "requiresPayment": false,
+          "stopBeforeSubmit": true,
+          "expectedEvidence": [
+            "首页",
+            "底部导航"
+          ]
+        }
+      ]
+    },
+    {
+      "packageName": "com.xunmeng.pinduoduo",
+      "resolvedPackage": "com.xunmeng.pinduoduo",
+      "appName": "拼多多",
+      "aliases": [],
+      "installed": true,
+      "launchable": true,
+      "taskCount": 1,
+      "tasks": [
+        {
+          "taskId": "pdd_search_item",
+          "instruction": "在拼多多搜索纸巾，停在结果页并记录筛选、店铺、价格入口。",
+          "category": "search",
+          "riskLevel": "LOW",
+          "requiresLogin": false,
+          "requiresPayment": false,
+          "stopBeforeSubmit": true,
+          "expectedEvidence": [
+            "纸巾",
+            "结果"
+          ]
+        }
+      ],
+      "label": "拼多多",
+      "selectedTasks": [
+        {
+          "taskId": "pdd_search_item",
+          "instruction": "在拼多多搜索纸巾，停在结果页并记录筛选、店铺、价格入口。",
+          "category": "search",
+          "riskLevel": "LOW",
+          "requiresLogin": false,
+          "requiresPayment": false,
+          "stopBeforeSubmit": true,
+          "expectedEvidence": [
+            "纸巾",
+            "结果"
+          ]
+        }
+      ]
+    }
+  ],
+  "safetyPolicy": {
+    "adbManualTargetUiControl": false,
+    "paymentPasswordInputAllowed": false,
+    "submitOrderAllowed": false,
+    "publishOrCommentSubmitAllowedByDefault": false,
+    "draftOnlyUnlessExplicitInstruction": true
+  },
+  "createdAt": 1779380780443,
+  "requestId": "pct_verify_fix2_20260522_002624",
+  "id": "pct_verify_fix2_20260522_002624_catalog"
+}

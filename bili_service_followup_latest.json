@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 1,
+  "kind": "skill_json_ai_follow_up_run_report",
+  "id": "ai_follow_up_run_1778529538956",
+  "skillId": "direct.command.1778529529817",
+  "failedSkillId": "bilibili.search.search_in_app",
+  "appPackage": "tv.danmaku.bili",
+  "instruction": "打开哔哩哔哩搜索王老菊打开第一个视频",
+  "engine": "ai_runtime_replan",
+  "phase": "REPLAN",
+  "trigger": "GOAL_UNVERIFIED_LOOP_3",
+  "previousStatus": "FAILED_GOAL_UNVERIFIED",
+  "previousMessage": "当前是 B 站分享面板\/弹出菜单，不是视频详情页，不能报告第一个视频已打开。",
+  "previousRuntimeReportFile": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/runtime\/run_reports\/tv.danmaku.bili\/ai_follow_up_run_1778529476124.json",
+  "aiJobFile": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ai_jobs\/2026-05-12\/factory_ai_replan_1778529529791.json",
+  "decision": {
+    "goalCompleted": false,
+    "screenAssessment": "当前页面是 B 站分享面板，包含 QQ、微信、朋友圈、微博、动态 等分享选项以及 取消 按钮，下方内容被遮盖，无法判断是否已打开第一个视频。",
+    "failureDiagnosis": "意外进入分享面板，可能是从视频详情页误触发或系统弹窗，导致无法进一步操作或验证视频内容。",
+    "confidence": "MEDIUM",
+    "nextActionReason": "先关闭分享面板，再按返回键回到上一层（搜索结果页或视频列表），为后续正确打开第一个视频铺路。"
+  },
+  "approvedRequired": false,
+  "status": "SUCCESS_MEDIUM_CONFIDENCE",
+  "message": "Macro atoms completed; reactiveDismissed=12",
+  "durationMs": 9081,
+  "usedCoordinate": true,
+  "details": {
+    "macroSkillId": "direct.command.1778529529817",
+    "atomTrace": [
+      {
+        "index": 0,
+        "skillId": "direct.1778529529817.1.clickselector",
+        "actionType": "ClickSelector",
+        "status": "SUCCESS_MEDIUM_CONFIDENCE",
+        "message": "Window\/node state changed; reactiveDismissedBeforeAction=2",
+        "usedCoordinate": true,
+        "details": null
+      },
+      {
+        "index": 1,
+        "skillId": "direct.1778529529817.2.wait",
+        "actionType": "Wait",
+        "status": "SUCCESS_MEDIUM_CONFIDENCE",
+        "message": "Waited 500ms; reactiveDismissed=1; reactiveDismissedBeforeAction=2",
+        "usedCoordinate": true,
+        "details": null
+      },
+      {
+        "index": 2,
+        "skillId": "direct.1778529529817.3.back",
+        "actionType": "Back",
+        "status": "SUCCESS_MEDIUM_CONFIDENCE",
+        "message": "Window\/node state changed; reactiveDismissedBeforeAction=2",
+        "usedCoordinate": true,
+        "details": null
+      }
+    ],
+    "reactiveDismissed": 12
+  },
+  "allowSideEffect": true,
+  "skillFile": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_candidates\/tv.danmaku.bili\/direct.command.1778529529817.json",
+  "createdAt": 1778529538957
+}

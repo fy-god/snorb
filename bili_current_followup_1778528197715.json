@@ -1,0 +1,55 @@
+{
+  "schemaVersion": 1,
+  "kind": "skill_json_ai_follow_up_run_report",
+  "id": "ai_follow_up_run_1778528197715",
+  "skillId": "direct.command.1778528190690",
+  "failedSkillId": "bilibili.search.search_in_app",
+  "appPackage": "tv.danmaku.bili",
+  "instruction": "打开哔哩哔哩搜索王老菊打开第一个视频",
+  "engine": "ai_runtime_replan",
+  "phase": "REPLAN",
+  "trigger": "GOAL_UNVERIFIED_LOOP_2",
+  "previousStatus": "FAILED_GOAL_UNVERIFIED",
+  "previousMessage": "没有看到 B 站视频详情页\/播放页的强证据，不能报告第一个视频已打开。",
+  "previousRuntimeReportFile": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/runtime\/run_reports\/tv.danmaku.bili\/ai_follow_up_run_1778528136107.json",
+  "aiJobFile": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ai_jobs\/2026-05-12\/factory_ai_replan_1778528190671.json",
+  "decision": {
+    "goalCompleted": false,
+    "screenAssessment": "当前屏幕显示微信(com.tencent.mm)，节点极少，可能因误触分享按钮进入了微信分享界面。不是B站视频详情页。",
+    "failureDiagnosis": "之前尝试打开第一个视频时，可能误触了分享按钮，将内容分享到了微信，导致离开了 B 站。",
+    "confidence": "LOW",
+    "nextActionReason": "需要先返回 B 站，再判断当前所在页面，决定下一步。"
+  },
+  "approvedRequired": false,
+  "status": "SUCCESS_MEDIUM_CONFIDENCE",
+  "message": "Macro atoms completed; reactiveDismissed=6",
+  "durationMs": 6902,
+  "usedCoordinate": true,
+  "details": {
+    "macroSkillId": "direct.command.1778528190690",
+    "atomTrace": [
+      {
+        "index": 0,
+        "skillId": "direct.1778528190690.1.back",
+        "actionType": "Back",
+        "status": "SUCCESS_MEDIUM_CONFIDENCE",
+        "message": "Window\/node state changed",
+        "usedCoordinate": false,
+        "details": null
+      },
+      {
+        "index": 1,
+        "skillId": "direct.1778528190690.2.wait",
+        "actionType": "Wait",
+        "status": "SUCCESS_MEDIUM_CONFIDENCE",
+        "message": "Waited 1500ms; reactiveDismissed=3; reactiveDismissedBeforeAction=2",
+        "usedCoordinate": true,
+        "details": null
+      }
+    ],
+    "reactiveDismissed": 6
+  },
+  "allowSideEffect": true,
+  "skillFile": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_candidates\/tv.danmaku.bili\/direct.command.1778528190690.json",
+  "createdAt": 1778528197715
+}

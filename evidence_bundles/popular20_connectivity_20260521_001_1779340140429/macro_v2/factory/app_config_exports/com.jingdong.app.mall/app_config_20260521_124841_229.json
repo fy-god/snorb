@@ -1,0 +1,2611 @@
+{
+  "schemaVersion": 1,
+  "kind": "app_config",
+  "appPackage": "com.jingdong.app.mall",
+  "appName": "京东",
+  "screens": [],
+  "elements": [],
+  "atomicSkills": [
+    {
+      "schemaVersion": 1,
+      "kind": "atomic_skill",
+      "id": "patched.1779338918226.6.clickvisibletext",
+      "name": "改写步骤 6: ClickVisibleText",
+      "appPackage": "com.jingdong.app.mall",
+      "appVersion": "*",
+      "status": "DRY_RUN_PASSED",
+      "domain": "app_session",
+      "implements": "ClickElementSkill",
+      "params": [
+        {
+          "name": "text",
+          "type": "TEXT",
+          "required": true
+        }
+      ],
+      "preconditions": [],
+      "dependsOn": [],
+      "resolverPolicy": {
+        "order": [
+          "ACCESSIBILITY",
+          "APP_UI_GRAPH",
+          "COORDINATE_PACK",
+          "AI_PATCH"
+        ],
+        "allowAiSuggestionInFactory": true,
+        "allowAiInRuntime": true
+      },
+      "safety": {
+        "forbiddenTexts": [
+          "支付",
+          "付款",
+          "转账",
+          "删除",
+          "发布",
+          "授权"
+        ]
+      },
+      "factory": {
+        "source": "APP_SIDE_PLAN_PATCH_ASSEMBLER",
+        "instruction": "在京东搜索耳机，停在商品结果页并记录筛选、店铺、价格入口。\n\n约束：目标 App=京东，包名=com.jingdong.app.mall。必须由 MacroPilot 手机端自己用无障碍、输入法、AI\/Skill JSON 执行，不允许依赖 ADB 手点目标 App。执行前先读取当前 UI；如果遇到广告、弹窗、小字提示，先记录文字并安全关闭。任务完成必须用当前 UI 证据验证，不能只因为步骤执行完就报成功。如果没有现成 skill，先复用已有相似 Skill JSON\/archetype，只改关键槽位如入口文字、坐标、目标文本、验证规则，再组装 atomic\/macro skill。需要探索入口时优先遍历底部标签、顶部小图标、图形化入口、侧边操作和子页面。本任务 stopBeforeSubmit=true：写草稿、评论、订单、支付类流程必须停在提交前，不点击最终发布、发送、提交订单、支付、确认授权。期望证据包括：耳机、商品。",
+        "aiJobPath": null,
+        "traceIds": [],
+        "sampleCount": 0,
+        "dryRunStatus": "PASSED",
+        "testRuns": 0,
+        "successRate": 0,
+        "promotionStatus": "NOT_PROMOTED",
+        "createdAt": 1779338920775,
+        "sourceSkillId": "com.jingdong.app.mall.common.click_visible_text",
+        "sourceSkillPath": "builtin:\/\/archetype\/com.jingdong.app.mall.common.click_visible_text",
+        "sourceOrigin": "BUILTIN_ARCHETYPE",
+        "templateMatchScore": 90,
+        "templateMatchReason": "same_app,same_action_type,same_capability,archetype_available,same_label,search_intent,publish_intent",
+        "patchReason": "reuse_existing_skill_json_and_rewrite_key_slots",
+        "lastDryRunReport": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_dry_run_reports\/com.jingdong.app.mall\/patched.1779338918226.6.clickvisibletext_1779338921206.json",
+        "lastDryRunAt": 1779338921207
+      },
+      "capabilityRequired": {
+        "minLevel": "D",
+        "inputRequired": false,
+        "nodeReadablePreferred": true,
+        "coordinateFallbackAllowed": false,
+        "allowedInputChannels": [],
+        "verificationRequired": "MEDIUM"
+      },
+      "action": {
+        "type": "ClickVisibleText",
+        "text": "搜索",
+        "textAliases": [
+          "搜索",
+          "确定"
+        ],
+        "timeoutMs": 1500
+      },
+      "verify": {
+        "type": "WindowChangedOrNodeStateChanged",
+        "timeoutMs": 1500,
+        "allowLowConfidenceWhenCoordinateOnly": true
+      },
+      "resultPolicy": {
+        "verified": "SUCCESS",
+        "partialVerified": "SUCCESS_MEDIUM_CONFIDENCE",
+        "coordinateOnly": "SUCCESS_LOW_CONFIDENCE",
+        "unverifiable": "FAILED_UNVERIFIABLE"
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "kind": "atomic_skill",
+      "id": "patched.1779338918226.7.wait",
+      "name": "改写步骤 7: Wait",
+      "appPackage": "com.jingdong.app.mall",
+      "appVersion": "*",
+      "status": "DRY_RUN_PASSED",
+      "domain": "app_session",
+      "implements": "WaitUntilSkill",
+      "params": [],
+      "preconditions": [],
+      "dependsOn": [],
+      "resolverPolicy": {
+        "order": [
+          "ACCESSIBILITY",
+          "APP_UI_GRAPH",
+          "COORDINATE_PACK",
+          "AI_PATCH"
+        ],
+        "allowAiSuggestionInFactory": true,
+        "allowAiInRuntime": true
+      },
+      "safety": {
+        "forbiddenTexts": [
+          "支付",
+          "付款",
+          "转账",
+          "删除",
+          "发布",
+          "授权"
+        ]
+      },
+      "factory": {
+        "source": "APP_SIDE_PLAN_PATCH_ASSEMBLER",
+        "instruction": "在京东搜索耳机，停在商品结果页并记录筛选、店铺、价格入口。\n\n约束：目标 App=京东，包名=com.jingdong.app.mall。必须由 MacroPilot 手机端自己用无障碍、输入法、AI\/Skill JSON 执行，不允许依赖 ADB 手点目标 App。执行前先读取当前 UI；如果遇到广告、弹窗、小字提示，先记录文字并安全关闭。任务完成必须用当前 UI 证据验证，不能只因为步骤执行完就报成功。如果没有现成 skill，先复用已有相似 Skill JSON\/archetype，只改关键槽位如入口文字、坐标、目标文本、验证规则，再组装 atomic\/macro skill。需要探索入口时优先遍历底部标签、顶部小图标、图形化入口、侧边操作和子页面。本任务 stopBeforeSubmit=true：写草稿、评论、订单、支付类流程必须停在提交前，不点击最终发布、发送、提交订单、支付、确认授权。期望证据包括：耳机、商品。",
+        "aiJobPath": null,
+        "traceIds": [],
+        "sampleCount": 0,
+        "dryRunStatus": "PASSED",
+        "testRuns": 0,
+        "successRate": 0,
+        "promotionStatus": "NOT_PROMOTED",
+        "createdAt": 1779338921189,
+        "sourceSkillId": "patched.1779338918226.4.wait",
+        "sourceSkillPath": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_candidates\/com.jingdong.app.mall\/patched.1779338918226.4.wait.json",
+        "sourceOrigin": "LOCAL_JSON",
+        "templateMatchScore": 70,
+        "templateMatchReason": "same_app,same_action_type,same_capability,search_intent",
+        "patchReason": "reuse_existing_skill_json_and_rewrite_key_slots",
+        "lastDryRunReport": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_dry_run_reports\/com.jingdong.app.mall\/patched.1779338918226.7.wait_1779338921207.json",
+        "lastDryRunAt": 1779338921208
+      },
+      "capabilityRequired": {
+        "minLevel": "D",
+        "inputRequired": false,
+        "nodeReadablePreferred": true,
+        "coordinateFallbackAllowed": false,
+        "allowedInputChannels": [],
+        "verificationRequired": "MEDIUM"
+      },
+      "action": {
+        "type": "Wait",
+        "timeoutMs": 1800
+      },
+      "verify": {
+        "type": "Always",
+        "timeoutMs": 1
+      },
+      "resultPolicy": {
+        "verified": "SUCCESS",
+        "partialVerified": "SUCCESS_MEDIUM_CONFIDENCE",
+        "coordinateOnly": "SUCCESS_LOW_CONFIDENCE",
+        "unverifiable": "FAILED_UNVERIFIABLE"
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "kind": "atomic_skill",
+      "id": "patched.1779338918226.3.clickvisibletext",
+      "name": "改写步骤 3: ClickVisibleText",
+      "appPackage": "com.jingdong.app.mall",
+      "appVersion": "*",
+      "status": "DRY_RUN_PASSED",
+      "domain": "app_session",
+      "implements": "ClickElementSkill",
+      "params": [
+        {
+          "name": "text",
+          "type": "TEXT",
+          "required": true
+        }
+      ],
+      "preconditions": [],
+      "dependsOn": [],
+      "resolverPolicy": {
+        "order": [
+          "ACCESSIBILITY",
+          "APP_UI_GRAPH",
+          "COORDINATE_PACK",
+          "AI_PATCH"
+        ],
+        "allowAiSuggestionInFactory": true,
+        "allowAiInRuntime": true
+      },
+      "safety": {
+        "forbiddenTexts": [
+          "支付",
+          "付款",
+          "转账",
+          "删除",
+          "发布",
+          "授权"
+        ]
+      },
+      "factory": {
+        "source": "APP_SIDE_PLAN_PATCH_ASSEMBLER",
+        "instruction": "在京东搜索耳机，停在商品结果页并记录筛选、店铺、价格入口。\n\n约束：目标 App=京东，包名=com.jingdong.app.mall。必须由 MacroPilot 手机端自己用无障碍、输入法、AI\/Skill JSON 执行，不允许依赖 ADB 手点目标 App。执行前先读取当前 UI；如果遇到广告、弹窗、小字提示，先记录文字并安全关闭。任务完成必须用当前 UI 证据验证，不能只因为步骤执行完就报成功。如果没有现成 skill，先复用已有相似 Skill JSON\/archetype，只改关键槽位如入口文字、坐标、目标文本、验证规则，再组装 atomic\/macro skill。需要探索入口时优先遍历底部标签、顶部小图标、图形化入口、侧边操作和子页面。本任务 stopBeforeSubmit=true：写草稿、评论、订单、支付类流程必须停在提交前，不点击最终发布、发送、提交订单、支付、确认授权。期望证据包括：耳机、商品。",
+        "aiJobPath": null,
+        "traceIds": [],
+        "sampleCount": 0,
+        "dryRunStatus": "PASSED",
+        "testRuns": 0,
+        "successRate": 0,
+        "promotionStatus": "NOT_PROMOTED",
+        "createdAt": 1779338919480,
+        "sourceSkillId": "com.jingdong.app.mall.common.click_visible_text",
+        "sourceSkillPath": "builtin:\/\/archetype\/com.jingdong.app.mall.common.click_visible_text",
+        "sourceOrigin": "BUILTIN_ARCHETYPE",
+        "templateMatchScore": 90,
+        "templateMatchReason": "same_app,same_action_type,same_capability,archetype_available,same_label,search_intent,publish_intent",
+        "patchReason": "reuse_existing_skill_json_and_rewrite_key_slots",
+        "lastDryRunReport": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_dry_run_reports\/com.jingdong.app.mall\/patched.1779338918226.3.clickvisibletext_1779338921202.json",
+        "lastDryRunAt": 1779338921203
+      },
+      "capabilityRequired": {
+        "minLevel": "C",
+        "inputRequired": false,
+        "nodeReadablePreferred": true,
+        "coordinateFallbackAllowed": true,
+        "allowedInputChannels": [],
+        "verificationRequired": "LOW"
+      },
+      "action": {
+        "type": "ClickVisibleText",
+        "text": "搜索",
+        "textAliases": [
+          "搜索",
+          "搜",
+          "查找"
+        ],
+        "x": 0.88,
+        "y": 0.08,
+        "requiresUiStateForCoordinate": false
+      },
+      "verify": {
+        "type": "WindowChangedOrNodeStateChanged",
+        "timeoutMs": 1500,
+        "allowLowConfidenceWhenCoordinateOnly": true
+      },
+      "resultPolicy": {
+        "verified": "SUCCESS",
+        "partialVerified": "SUCCESS_MEDIUM_CONFIDENCE",
+        "coordinateOnly": "SUCCESS_LOW_CONFIDENCE",
+        "unverifiable": "FAILED_UNVERIFIABLE"
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "kind": "atomic_skill",
+      "id": "patched.1779338918226.4.wait",
+      "name": "改写步骤 4: Wait",
+      "appPackage": "com.jingdong.app.mall",
+      "appVersion": "*",
+      "status": "DRY_RUN_PASSED",
+      "domain": "app_session",
+      "implements": "WaitUntilSkill",
+      "params": [],
+      "preconditions": [],
+      "dependsOn": [],
+      "resolverPolicy": {
+        "order": [
+          "ACCESSIBILITY",
+          "APP_UI_GRAPH",
+          "COORDINATE_PACK",
+          "AI_PATCH"
+        ],
+        "allowAiSuggestionInFactory": true,
+        "allowAiInRuntime": true
+      },
+      "safety": {
+        "forbiddenTexts": [
+          "支付",
+          "付款",
+          "转账",
+          "删除",
+          "发布",
+          "授权"
+        ]
+      },
+      "factory": {
+        "source": "APP_SIDE_PLAN_PATCH_ASSEMBLER",
+        "instruction": "在京东搜索耳机，停在商品结果页并记录筛选、店铺、价格入口。\n\n约束：目标 App=京东，包名=com.jingdong.app.mall。必须由 MacroPilot 手机端自己用无障碍、输入法、AI\/Skill JSON 执行，不允许依赖 ADB 手点目标 App。执行前先读取当前 UI；如果遇到广告、弹窗、小字提示，先记录文字并安全关闭。任务完成必须用当前 UI 证据验证，不能只因为步骤执行完就报成功。如果没有现成 skill，先复用已有相似 Skill JSON\/archetype，只改关键槽位如入口文字、坐标、目标文本、验证规则，再组装 atomic\/macro skill。需要探索入口时优先遍历底部标签、顶部小图标、图形化入口、侧边操作和子页面。本任务 stopBeforeSubmit=true：写草稿、评论、订单、支付类流程必须停在提交前，不点击最终发布、发送、提交订单、支付、确认授权。期望证据包括：耳机、商品。",
+        "aiJobPath": null,
+        "traceIds": [],
+        "sampleCount": 0,
+        "dryRunStatus": "PASSED",
+        "testRuns": 0,
+        "successRate": 0,
+        "promotionStatus": "NOT_PROMOTED",
+        "createdAt": 1779338919903,
+        "sourceSkillId": "patched.1779338901944.4.wait",
+        "sourceSkillPath": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_candidates\/com.taobao.taobao\/patched.1779338901944.4.wait.json",
+        "sourceOrigin": "LOCAL_JSON",
+        "templateMatchScore": 58,
+        "templateMatchReason": "same_action_type,same_capability,search_intent",
+        "patchReason": "reuse_existing_skill_json_and_rewrite_key_slots",
+        "lastDryRunReport": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_dry_run_reports\/com.jingdong.app.mall\/patched.1779338918226.4.wait_1779338921203.json",
+        "lastDryRunAt": 1779338921204
+      },
+      "capabilityRequired": {
+        "minLevel": "D",
+        "inputRequired": false,
+        "nodeReadablePreferred": true,
+        "coordinateFallbackAllowed": false,
+        "allowedInputChannels": [],
+        "verificationRequired": "MEDIUM"
+      },
+      "action": {
+        "type": "Wait",
+        "timeoutMs": 600
+      },
+      "verify": {
+        "type": "Always",
+        "timeoutMs": 1
+      },
+      "resultPolicy": {
+        "verified": "SUCCESS",
+        "partialVerified": "SUCCESS_MEDIUM_CONFIDENCE",
+        "coordinateOnly": "SUCCESS_LOW_CONFIDENCE",
+        "unverifiable": "FAILED_UNVERIFIABLE"
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "kind": "atomic_skill",
+      "id": "patched.1779338918226.1.openapp",
+      "name": "改写步骤 1: OpenApp",
+      "appPackage": "com.jingdong.app.mall",
+      "appVersion": "*",
+      "status": "DRY_RUN_PASSED",
+      "domain": "app_session",
+      "implements": "OpenAppSkill",
+      "params": [],
+      "preconditions": [],
+      "dependsOn": [],
+      "resolverPolicy": {
+        "order": [
+          "ACCESSIBILITY",
+          "APP_UI_GRAPH",
+          "COORDINATE_PACK",
+          "AI_PATCH"
+        ],
+        "allowAiSuggestionInFactory": true,
+        "allowAiInRuntime": true
+      },
+      "safety": {
+        "forbiddenTexts": [
+          "支付",
+          "付款",
+          "转账",
+          "删除",
+          "发布",
+          "授权"
+        ]
+      },
+      "factory": {
+        "source": "APP_SIDE_PLAN_PATCH_ASSEMBLER",
+        "instruction": "在京东搜索耳机，停在商品结果页并记录筛选、店铺、价格入口。\n\n约束：目标 App=京东，包名=com.jingdong.app.mall。必须由 MacroPilot 手机端自己用无障碍、输入法、AI\/Skill JSON 执行，不允许依赖 ADB 手点目标 App。执行前先读取当前 UI；如果遇到广告、弹窗、小字提示，先记录文字并安全关闭。任务完成必须用当前 UI 证据验证，不能只因为步骤执行完就报成功。如果没有现成 skill，先复用已有相似 Skill JSON\/archetype，只改关键槽位如入口文字、坐标、目标文本、验证规则，再组装 atomic\/macro skill。需要探索入口时优先遍历底部标签、顶部小图标、图形化入口、侧边操作和子页面。本任务 stopBeforeSubmit=true：写草稿、评论、订单、支付类流程必须停在提交前，不点击最终发布、发送、提交订单、支付、确认授权。期望证据包括：耳机、商品。",
+        "aiJobPath": null,
+        "traceIds": [],
+        "sampleCount": 0,
+        "dryRunStatus": "PASSED",
+        "testRuns": 0,
+        "successRate": 0,
+        "promotionStatus": "NOT_PROMOTED",
+        "createdAt": 1779338918644,
+        "sourceSkillId": "com.jingdong.app.mall.open_app",
+        "sourceSkillPath": "builtin:\/\/archetype\/com.jingdong.app.mall.open_app",
+        "sourceOrigin": "BUILTIN_ARCHETYPE",
+        "templateMatchScore": 90,
+        "templateMatchReason": "same_app,same_action_type,same_capability,archetype_available,same_label,search_intent,publish_intent",
+        "patchReason": "reuse_existing_skill_json_and_rewrite_key_slots",
+        "lastDryRunReport": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_dry_run_reports\/com.jingdong.app.mall\/patched.1779338918226.1.openapp_1779338921197.json",
+        "lastDryRunAt": 1779338921200
+      },
+      "capabilityRequired": {
+        "minLevel": "D",
+        "inputRequired": false,
+        "nodeReadablePreferred": true,
+        "coordinateFallbackAllowed": false,
+        "allowedInputChannels": [],
+        "verificationRequired": "MEDIUM"
+      },
+      "action": {
+        "type": "OpenApp",
+        "packageName": "com.jingdong.app.mall",
+        "timeoutMs": 3000
+      },
+      "verify": {
+        "type": "ForegroundPackage",
+        "packageName": "com.jingdong.app.mall",
+        "timeoutMs": 3000,
+        "allowUnverifiedWhenAccessibilityDisconnected": true
+      },
+      "resultPolicy": {
+        "verified": "SUCCESS",
+        "partialVerified": "SUCCESS_MEDIUM_CONFIDENCE",
+        "coordinateOnly": "SUCCESS_LOW_CONFIDENCE",
+        "unverifiable": "FAILED_UNVERIFIABLE"
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "kind": "atomic_skill",
+      "id": "patched.1779338918226.2.handlereactiveoverlays",
+      "name": "改写步骤 2: HandleReactiveOverlays",
+      "appPackage": "com.jingdong.app.mall",
+      "status": "DRY_RUN_PASSED",
+      "implements": "DismissDialogSkill",
+      "params": [],
+      "preconditions": [],
+      "dependsOn": [],
+      "capabilityRequired": {
+        "minLevel": "D",
+        "inputRequired": false,
+        "nodeReadablePreferred": true,
+        "coordinateFallbackAllowed": false,
+        "allowedInputChannels": [],
+        "verificationRequired": "MEDIUM"
+      },
+      "resolverPolicy": {
+        "order": [
+          "ACCESSIBILITY",
+          "APP_UI_GRAPH",
+          "COORDINATE_PACK",
+          "AI_PATCH"
+        ],
+        "allowAiSuggestionInFactory": true,
+        "allowAiInRuntime": true
+      },
+      "safety": {},
+      "action": {
+        "type": "HandleReactiveOverlays",
+        "appPackage": "com.jingdong.app.mall",
+        "maxPasses": 3
+      },
+      "verify": {
+        "type": "Always",
+        "timeoutMs": 1
+      },
+      "resultPolicy": {
+        "verified": "SUCCESS",
+        "partialVerified": "SUCCESS_MEDIUM_CONFIDENCE",
+        "coordinateOnly": "SUCCESS_LOW_CONFIDENCE",
+        "unverifiable": "FAILED_UNVERIFIABLE"
+      },
+      "factory": {
+        "source": "APP_SIDE_PLAN_PATCH_ASSEMBLER",
+        "instruction": "在京东搜索耳机，停在商品结果页并记录筛选、店铺、价格入口。\n\n约束：目标 App=京东，包名=com.jingdong.app.mall。必须由 MacroPilot 手机端自己用无障碍、输入法、AI\/Skill JSON 执行，不允许依赖 ADB 手点目标 App。执行前先读取当前 UI；如果遇到广告、弹窗、小字提示，先记录文字并安全关闭。任务完成必须用当前 UI 证据验证，不能只因为步骤执行完就报成功。如果没有现成 skill，先复用已有相似 Skill JSON\/archetype，只改关键槽位如入口文字、坐标、目标文本、验证规则，再组装 atomic\/macro skill。需要探索入口时优先遍历底部标签、顶部小图标、图形化入口、侧边操作和子页面。本任务 stopBeforeSubmit=true：写草稿、评论、订单、支付类流程必须停在提交前，不点击最终发布、发送、提交订单、支付、确认授权。期望证据包括：耳机、商品。",
+        "aiJobPath": null,
+        "traceIds": [],
+        "sampleCount": 0,
+        "dryRunStatus": "PASSED",
+        "testRuns": 0,
+        "successRate": 0,
+        "promotionStatus": "NOT_PROMOTED",
+        "createdAt": 1779338919059,
+        "sourceSkillId": "patched.1779338901944.2.handlereactiveoverlays",
+        "sourceSkillPath": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_candidates\/com.taobao.taobao\/patched.1779338901944.2.handlereactiveoverlays.json",
+        "sourceOrigin": "LOCAL_JSON",
+        "templateMatchScore": 52,
+        "templateMatchReason": "same_action_type,same_capability",
+        "patchReason": "reuse_existing_skill_json_and_rewrite_key_slots",
+        "lastDryRunReport": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_dry_run_reports\/com.jingdong.app.mall\/patched.1779338918226.2.handlereactiveoverlays_1779338921201.json",
+        "lastDryRunAt": 1779338921201
+      },
+      "appVersion": "*"
+    },
+    {
+      "schemaVersion": 1,
+      "kind": "atomic_skill",
+      "id": "com.jingdong.app.mall.search.click_submit",
+      "name": "点击搜索确认",
+      "appPackage": "com.jingdong.app.mall",
+      "appVersion": "*",
+      "status": "DRY_RUN_PASSED",
+      "domain": "app_session",
+      "implements": "ClickElementSkill",
+      "params": [],
+      "preconditions": [],
+      "dependsOn": [],
+      "resolverPolicy": {
+        "order": [
+          "ACCESSIBILITY",
+          "COORDINATE_PACK",
+          "PACKAGE_MANAGER"
+        ],
+        "allowAiSuggestionInFactory": true,
+        "allowAiInRuntime": false
+      },
+      "safety": {
+        "forbiddenTexts": [
+          "支付",
+          "付款",
+          "转账",
+          "删除",
+          "发布",
+          "授权"
+        ]
+      },
+      "factory": {
+        "source": "SKILL_ARCHETYPE_TEMPLATE_V0",
+        "archetypeId": "common.search_in_app.v1",
+        "traceIds": [],
+        "sampleCount": 0,
+        "dryRunStatus": "PASSED",
+        "testRuns": 0,
+        "successRate": 0,
+        "promotionStatus": "NOT_PROMOTED",
+        "createdAt": 1779262161098,
+        "appPatch": {
+          "packageName": "com.jingdong.app.mall",
+          "label": "京东",
+          "launchable": true,
+          "launchActivity": "com.jingdong.app.mall.MainFrameActivity",
+          "searchEntryTexts": [
+            "搜索",
+            "搜一搜",
+            "Search"
+          ],
+          "searchSubmitTexts": [
+            "搜索",
+            "确定",
+            "Search"
+          ],
+          "searchEntryCoordinate": {
+            "x": 0.5,
+            "y": 0.08
+          },
+          "searchSubmitCoordinate": {
+            "x": 0.9,
+            "y": 0.08
+          },
+          "postDraftEntryTexts": [
+            "+",
+            "写微博",
+            "发微博",
+            "发帖",
+            "创作",
+            "写帖子",
+            "发动态",
+            "说点什么"
+          ],
+          "postDraftEntryCoordinate": {
+            "x": 0.9,
+            "y": 0.9
+          }
+        },
+        "lastDryRunReport": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_dry_run_reports\/com.jingdong.app.mall\/com.jingdong.app.mall.search.click_submit_1779262161118.json",
+        "lastDryRunAt": 1779262161118
+      },
+      "capabilityRequired": {
+        "minLevel": "C",
+        "inputRequired": false,
+        "nodeReadablePreferred": true,
+        "coordinateFallbackAllowed": true,
+        "allowedInputChannels": [],
+        "verificationRequired": "MEDIUM"
+      },
+      "action": {
+        "type": "ClickVisibleText",
+        "text": "搜索",
+        "textAliases": [
+          "搜索",
+          "确定",
+          "Search"
+        ],
+        "x": 0.9,
+        "y": 0.08,
+        "timeoutMs": 1200
+      },
+      "verify": {
+        "type": "WindowChangedOrNodeStateChanged",
+        "timeoutMs": 1800,
+        "allowLowConfidenceWhenUnchanged": true
+      },
+      "resultPolicy": {
+        "nodeClickedAndVerified": "SUCCESS",
+        "coordinateClicked": "SUCCESS_LOW_CONFIDENCE",
+        "notFound": "FAILED_ELEMENT_NOT_FOUND"
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "kind": "atomic_skill",
+      "id": "com.jingdong.app.mall.search.click_entry",
+      "name": "点击搜索入口",
+      "appPackage": "com.jingdong.app.mall",
+      "appVersion": "*",
+      "status": "DRY_RUN_PASSED",
+      "domain": "app_session",
+      "implements": "ClickElementSkill",
+      "params": [],
+      "preconditions": [],
+      "dependsOn": [],
+      "resolverPolicy": {
+        "order": [
+          "ACCESSIBILITY",
+          "COORDINATE_PACK",
+          "PACKAGE_MANAGER"
+        ],
+        "allowAiSuggestionInFactory": true,
+        "allowAiInRuntime": false
+      },
+      "safety": {
+        "forbiddenTexts": [
+          "支付",
+          "付款",
+          "转账",
+          "删除",
+          "发布",
+          "授权"
+        ]
+      },
+      "factory": {
+        "source": "SKILL_ARCHETYPE_TEMPLATE_V0",
+        "archetypeId": "common.search_in_app.v1",
+        "traceIds": [],
+        "sampleCount": 0,
+        "dryRunStatus": "PASSED",
+        "testRuns": 0,
+        "successRate": 0,
+        "promotionStatus": "NOT_PROMOTED",
+        "createdAt": 1779262161098,
+        "appPatch": {
+          "packageName": "com.jingdong.app.mall",
+          "label": "京东",
+          "launchable": true,
+          "launchActivity": "com.jingdong.app.mall.MainFrameActivity",
+          "searchEntryTexts": [
+            "搜索",
+            "搜一搜",
+            "Search"
+          ],
+          "searchSubmitTexts": [
+            "搜索",
+            "确定",
+            "Search"
+          ],
+          "searchEntryCoordinate": {
+            "x": 0.5,
+            "y": 0.08
+          },
+          "searchSubmitCoordinate": {
+            "x": 0.9,
+            "y": 0.08
+          },
+          "postDraftEntryTexts": [
+            "+",
+            "写微博",
+            "发微博",
+            "发帖",
+            "创作",
+            "写帖子",
+            "发动态",
+            "说点什么"
+          ],
+          "postDraftEntryCoordinate": {
+            "x": 0.9,
+            "y": 0.9
+          }
+        },
+        "lastDryRunReport": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_dry_run_reports\/com.jingdong.app.mall\/com.jingdong.app.mall.search.click_entry_1779262161115.json",
+        "lastDryRunAt": 1779262161116
+      },
+      "capabilityRequired": {
+        "minLevel": "C",
+        "inputRequired": false,
+        "nodeReadablePreferred": true,
+        "coordinateFallbackAllowed": true,
+        "allowedInputChannels": [],
+        "verificationRequired": "MEDIUM"
+      },
+      "action": {
+        "type": "ClickVisibleText",
+        "text": "搜索",
+        "textAliases": [
+          "搜索",
+          "搜一搜",
+          "Search"
+        ],
+        "x": 0.5,
+        "y": 0.08,
+        "timeoutMs": 1200
+      },
+      "verify": {
+        "type": "WindowChangedOrNodeStateChanged",
+        "timeoutMs": 1500
+      },
+      "resultPolicy": {
+        "nodeClickedAndVerified": "SUCCESS",
+        "coordinateClicked": "SUCCESS_LOW_CONFIDENCE",
+        "notFound": "FAILED_ELEMENT_NOT_FOUND"
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "kind": "atomic_skill",
+      "id": "com.jingdong.app.mall.search.type_query",
+      "name": "输入搜索词",
+      "appPackage": "com.jingdong.app.mall",
+      "appVersion": "*",
+      "status": "DRY_RUN_PASSED",
+      "domain": "app_session",
+      "implements": "TypeTextSkill",
+      "params": [
+        {
+          "name": "query",
+          "type": "TEXT",
+          "required": true,
+          "example": ""
+        }
+      ],
+      "preconditions": [],
+      "dependsOn": [],
+      "resolverPolicy": {
+        "order": [
+          "ACCESSIBILITY",
+          "COORDINATE_PACK",
+          "PACKAGE_MANAGER"
+        ],
+        "allowAiSuggestionInFactory": true,
+        "allowAiInRuntime": false
+      },
+      "safety": {
+        "forbiddenTexts": [
+          "支付",
+          "付款",
+          "转账",
+          "删除",
+          "发布",
+          "授权"
+        ]
+      },
+      "factory": {
+        "source": "SKILL_ARCHETYPE_TEMPLATE_V0",
+        "archetypeId": "common.search_in_app.v1",
+        "traceIds": [],
+        "sampleCount": 0,
+        "dryRunStatus": "PASSED",
+        "testRuns": 0,
+        "successRate": 0,
+        "promotionStatus": "NOT_PROMOTED",
+        "createdAt": 1779262161098,
+        "appPatch": {
+          "packageName": "com.jingdong.app.mall",
+          "label": "京东",
+          "launchable": true,
+          "launchActivity": "com.jingdong.app.mall.MainFrameActivity",
+          "searchEntryTexts": [
+            "搜索",
+            "搜一搜",
+            "Search"
+          ],
+          "searchSubmitTexts": [
+            "搜索",
+            "确定",
+            "Search"
+          ],
+          "searchEntryCoordinate": {
+            "x": 0.5,
+            "y": 0.08
+          },
+          "searchSubmitCoordinate": {
+            "x": 0.9,
+            "y": 0.08
+          },
+          "postDraftEntryTexts": [
+            "+",
+            "写微博",
+            "发微博",
+            "发帖",
+            "创作",
+            "写帖子",
+            "发动态",
+            "说点什么"
+          ],
+          "postDraftEntryCoordinate": {
+            "x": 0.9,
+            "y": 0.9
+          }
+        },
+        "lastDryRunReport": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_dry_run_reports\/com.jingdong.app.mall\/com.jingdong.app.mall.search.type_query_1779262161116.json",
+        "lastDryRunAt": 1779262161117
+      },
+      "capabilityRequired": {
+        "minLevel": "C",
+        "inputRequired": true,
+        "nodeReadablePreferred": true,
+        "coordinateFallbackAllowed": true,
+        "allowedInputChannels": [
+          "ACTION_SET_TEXT",
+          "PASTE",
+          "CUSTOM_IME",
+          "SHIZUKU_ADB"
+        ],
+        "verificationRequired": "MEDIUM"
+      },
+      "action": {
+        "type": "TypeIntoFirstInput",
+        "textParam": "query",
+        "timeoutMs": 2200
+      },
+      "verify": {
+        "type": "InputContainsOrTextChangedEvent",
+        "textParam": "query",
+        "timeoutMs": 1800,
+        "allowMediumConfidenceWhenEventOnly": true
+      },
+      "resultPolicy": {
+        "inputNodeContainsText": "SUCCESS",
+        "textChangedEventOnly": "SUCCESS_MEDIUM_CONFIDENCE",
+        "coordinateOnlyNoInputNode": "SUCCESS_LOW_CONFIDENCE",
+        "noInputChannel": "FAILED_INPUT_CHANNEL_MISSING"
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "kind": "atomic_skill",
+      "id": "com.jingdong.app.mall.common.click_visible_text",
+      "name": "点击可见文字",
+      "appPackage": "com.jingdong.app.mall",
+      "appVersion": "*",
+      "status": "DRY_RUN_PASSED",
+      "domain": "app_session",
+      "implements": "ClickElementSkill",
+      "params": [
+        {
+          "name": "text",
+          "type": "TEXT",
+          "required": true
+        }
+      ],
+      "preconditions": [],
+      "dependsOn": [],
+      "resolverPolicy": {
+        "order": [
+          "ACCESSIBILITY",
+          "COORDINATE_PACK",
+          "PACKAGE_MANAGER"
+        ],
+        "allowAiSuggestionInFactory": true,
+        "allowAiInRuntime": false
+      },
+      "safety": {
+        "forbiddenTexts": [
+          "支付",
+          "付款",
+          "转账",
+          "删除",
+          "发布",
+          "授权"
+        ]
+      },
+      "factory": {
+        "source": "SKILL_ARCHETYPE_TEMPLATE_V0",
+        "archetypeId": "common.app_session.v1",
+        "traceIds": [],
+        "sampleCount": 0,
+        "dryRunStatus": "PASSED",
+        "testRuns": 0,
+        "successRate": 0,
+        "promotionStatus": "NOT_PROMOTED",
+        "createdAt": 1779262161098,
+        "appPatch": {
+          "packageName": "com.jingdong.app.mall",
+          "label": "京东",
+          "launchable": true,
+          "launchActivity": "com.jingdong.app.mall.MainFrameActivity",
+          "searchEntryTexts": [
+            "搜索",
+            "搜一搜",
+            "Search"
+          ],
+          "searchSubmitTexts": [
+            "搜索",
+            "确定",
+            "Search"
+          ],
+          "searchEntryCoordinate": {
+            "x": 0.5,
+            "y": 0.08
+          },
+          "searchSubmitCoordinate": {
+            "x": 0.9,
+            "y": 0.08
+          },
+          "postDraftEntryTexts": [
+            "+",
+            "写微博",
+            "发微博",
+            "发帖",
+            "创作",
+            "写帖子",
+            "发动态",
+            "说点什么"
+          ],
+          "postDraftEntryCoordinate": {
+            "x": 0.9,
+            "y": 0.9
+          }
+        },
+        "lastDryRunReport": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_dry_run_reports\/com.jingdong.app.mall\/com.jingdong.app.mall.common.click_visible_text_1779262161109.json",
+        "lastDryRunAt": 1779262161110
+      },
+      "capabilityRequired": {
+        "minLevel": "C",
+        "inputRequired": false,
+        "nodeReadablePreferred": true,
+        "coordinateFallbackAllowed": false,
+        "allowedInputChannels": [],
+        "verificationRequired": "MEDIUM"
+      },
+      "action": {
+        "type": "ClickVisibleText",
+        "textParam": "text",
+        "timeoutMs": 1500
+      },
+      "verify": {
+        "type": "WindowChangedOrNodeStateChanged",
+        "timeoutMs": 1500,
+        "allowLowConfidenceWhenUnchanged": true
+      },
+      "resultPolicy": {
+        "nodeClickedAndVerified": "SUCCESS",
+        "clickedButWeakVerify": "SUCCESS_MEDIUM_CONFIDENCE",
+        "notFound": "FAILED_ELEMENT_NOT_FOUND"
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "kind": "atomic_skill",
+      "id": "com.jingdong.app.mall.common.type_first_input",
+      "name": "向第一个输入框输入",
+      "appPackage": "com.jingdong.app.mall",
+      "appVersion": "*",
+      "status": "DRY_RUN_PASSED",
+      "domain": "app_session",
+      "implements": "TypeTextSkill",
+      "params": [
+        {
+          "name": "text",
+          "type": "TEXT",
+          "required": true
+        }
+      ],
+      "preconditions": [],
+      "dependsOn": [],
+      "resolverPolicy": {
+        "order": [
+          "ACCESSIBILITY",
+          "COORDINATE_PACK",
+          "PACKAGE_MANAGER"
+        ],
+        "allowAiSuggestionInFactory": true,
+        "allowAiInRuntime": false
+      },
+      "safety": {
+        "forbiddenTexts": [
+          "支付",
+          "付款",
+          "转账",
+          "删除",
+          "发布",
+          "授权"
+        ]
+      },
+      "factory": {
+        "source": "SKILL_ARCHETYPE_TEMPLATE_V0",
+        "archetypeId": "common.app_session.v1",
+        "traceIds": [],
+        "sampleCount": 0,
+        "dryRunStatus": "PASSED",
+        "testRuns": 0,
+        "successRate": 0,
+        "promotionStatus": "NOT_PROMOTED",
+        "createdAt": 1779262161098,
+        "appPatch": {
+          "packageName": "com.jingdong.app.mall",
+          "label": "京东",
+          "launchable": true,
+          "launchActivity": "com.jingdong.app.mall.MainFrameActivity",
+          "searchEntryTexts": [
+            "搜索",
+            "搜一搜",
+            "Search"
+          ],
+          "searchSubmitTexts": [
+            "搜索",
+            "确定",
+            "Search"
+          ],
+          "searchEntryCoordinate": {
+            "x": 0.5,
+            "y": 0.08
+          },
+          "searchSubmitCoordinate": {
+            "x": 0.9,
+            "y": 0.08
+          },
+          "postDraftEntryTexts": [
+            "+",
+            "写微博",
+            "发微博",
+            "发帖",
+            "创作",
+            "写帖子",
+            "发动态",
+            "说点什么"
+          ],
+          "postDraftEntryCoordinate": {
+            "x": 0.9,
+            "y": 0.9
+          }
+        },
+        "lastDryRunReport": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_dry_run_reports\/com.jingdong.app.mall\/com.jingdong.app.mall.common.type_first_input_1779262161111.json",
+        "lastDryRunAt": 1779262161112
+      },
+      "capabilityRequired": {
+        "minLevel": "C",
+        "inputRequired": true,
+        "nodeReadablePreferred": true,
+        "coordinateFallbackAllowed": false,
+        "allowedInputChannels": [
+          "ACTION_SET_TEXT",
+          "PASTE",
+          "CUSTOM_IME",
+          "SHIZUKU_ADB"
+        ],
+        "verificationRequired": "MEDIUM"
+      },
+      "action": {
+        "type": "TypeIntoFirstInput",
+        "textParam": "text",
+        "timeoutMs": 2200
+      },
+      "verify": {
+        "type": "InputContainsOrTextChangedEvent",
+        "textParam": "text",
+        "timeoutMs": 1800,
+        "allowMediumConfidenceWhenEventOnly": true
+      },
+      "resultPolicy": {
+        "inputNodeContainsText": "SUCCESS",
+        "textChangedEventOnly": "SUCCESS_MEDIUM_CONFIDENCE",
+        "noInputChannel": "FAILED_INPUT_CHANNEL_MISSING",
+        "unverifiable": "FAILED_UNVERIFIABLE"
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "kind": "atomic_skill",
+      "id": "com.jingdong.app.mall.back",
+      "name": "返回",
+      "appPackage": "com.jingdong.app.mall",
+      "appVersion": "*",
+      "status": "DRY_RUN_PASSED",
+      "domain": "app_session",
+      "implements": "BackSkill",
+      "params": [],
+      "preconditions": [],
+      "dependsOn": [],
+      "resolverPolicy": {
+        "order": [
+          "ACCESSIBILITY",
+          "COORDINATE_PACK",
+          "PACKAGE_MANAGER"
+        ],
+        "allowAiSuggestionInFactory": true,
+        "allowAiInRuntime": false
+      },
+      "safety": {
+        "forbiddenTexts": [
+          "支付",
+          "付款",
+          "转账",
+          "删除",
+          "发布",
+          "授权"
+        ]
+      },
+      "factory": {
+        "source": "SKILL_ARCHETYPE_TEMPLATE_V0",
+        "archetypeId": "common.app_session.v1",
+        "traceIds": [],
+        "sampleCount": 0,
+        "dryRunStatus": "PASSED",
+        "testRuns": 0,
+        "successRate": 0,
+        "promotionStatus": "NOT_PROMOTED",
+        "createdAt": 1779262161098,
+        "appPatch": {
+          "packageName": "com.jingdong.app.mall",
+          "label": "京东",
+          "launchable": true,
+          "launchActivity": "com.jingdong.app.mall.MainFrameActivity",
+          "searchEntryTexts": [
+            "搜索",
+            "搜一搜",
+            "Search"
+          ],
+          "searchSubmitTexts": [
+            "搜索",
+            "确定",
+            "Search"
+          ],
+          "searchEntryCoordinate": {
+            "x": 0.5,
+            "y": 0.08
+          },
+          "searchSubmitCoordinate": {
+            "x": 0.9,
+            "y": 0.08
+          },
+          "postDraftEntryTexts": [
+            "+",
+            "写微博",
+            "发微博",
+            "发帖",
+            "创作",
+            "写帖子",
+            "发动态",
+            "说点什么"
+          ],
+          "postDraftEntryCoordinate": {
+            "x": 0.9,
+            "y": 0.9
+          }
+        },
+        "lastDryRunReport": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_dry_run_reports\/com.jingdong.app.mall\/com.jingdong.app.mall.back_1779262161105.json",
+        "lastDryRunAt": 1779262161106
+      },
+      "capabilityRequired": {
+        "minLevel": "D",
+        "inputRequired": false,
+        "nodeReadablePreferred": false,
+        "coordinateFallbackAllowed": false,
+        "allowedInputChannels": [],
+        "verificationRequired": "LOW"
+      },
+      "action": {
+        "type": "Back",
+        "timeoutMs": 1000
+      },
+      "verify": {
+        "type": "WindowChanged",
+        "timeoutMs": 1000,
+        "allowLowConfidenceWhenUnchanged": true
+      },
+      "resultPolicy": {
+        "changed": "SUCCESS",
+        "unchanged": "SUCCESS_LOW_CONFIDENCE"
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "kind": "atomic_skill",
+      "id": "com.jingdong.app.mall.recover_to_foreground",
+      "name": "恢复到应用前台",
+      "appPackage": "com.jingdong.app.mall",
+      "appVersion": "*",
+      "status": "DRY_RUN_PASSED",
+      "domain": "app_session",
+      "implements": "RecoverToScreenSkill",
+      "params": [],
+      "preconditions": [],
+      "dependsOn": [
+        "com.jingdong.app.mall.open_app"
+      ],
+      "resolverPolicy": {
+        "order": [
+          "ACCESSIBILITY",
+          "COORDINATE_PACK",
+          "PACKAGE_MANAGER"
+        ],
+        "allowAiSuggestionInFactory": true,
+        "allowAiInRuntime": false
+      },
+      "safety": {
+        "forbiddenTexts": [
+          "支付",
+          "付款",
+          "转账",
+          "删除",
+          "发布",
+          "授权"
+        ]
+      },
+      "factory": {
+        "source": "SKILL_ARCHETYPE_TEMPLATE_V0",
+        "archetypeId": "common.app_session.v1",
+        "traceIds": [],
+        "sampleCount": 0,
+        "dryRunStatus": "PASSED",
+        "testRuns": 0,
+        "successRate": 0,
+        "promotionStatus": "NOT_PROMOTED",
+        "createdAt": 1779262161098,
+        "appPatch": {
+          "packageName": "com.jingdong.app.mall",
+          "label": "京东",
+          "launchable": true,
+          "launchActivity": "com.jingdong.app.mall.MainFrameActivity",
+          "searchEntryTexts": [
+            "搜索",
+            "搜一搜",
+            "Search"
+          ],
+          "searchSubmitTexts": [
+            "搜索",
+            "确定",
+            "Search"
+          ],
+          "searchEntryCoordinate": {
+            "x": 0.5,
+            "y": 0.08
+          },
+          "searchSubmitCoordinate": {
+            "x": 0.9,
+            "y": 0.08
+          },
+          "postDraftEntryTexts": [
+            "+",
+            "写微博",
+            "发微博",
+            "发帖",
+            "创作",
+            "写帖子",
+            "发动态",
+            "说点什么"
+          ],
+          "postDraftEntryCoordinate": {
+            "x": 0.9,
+            "y": 0.9
+          }
+        },
+        "lastDryRunReport": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_dry_run_reports\/com.jingdong.app.mall\/com.jingdong.app.mall.recover_to_foreground_1779262161108.json",
+        "lastDryRunAt": 1779262161109
+      },
+      "capabilityRequired": {
+        "minLevel": "D",
+        "inputRequired": false,
+        "nodeReadablePreferred": false,
+        "coordinateFallbackAllowed": false,
+        "allowedInputChannels": [],
+        "verificationRequired": "LOW"
+      },
+      "action": {
+        "type": "OpenApp",
+        "packageName": "com.jingdong.app.mall",
+        "timeoutMs": 3000
+      },
+      "verify": {
+        "type": "ForegroundPackage",
+        "packageName": "com.jingdong.app.mall",
+        "timeoutMs": 3000,
+        "allowUnverifiedWhenAccessibilityDisconnected": true
+      },
+      "resultPolicy": {
+        "recovered": "SUCCESS",
+        "launchIntentSentOnly": "SUCCESS_LOW_CONFIDENCE",
+        "failed": "FAILED_RECOVER_SCREEN"
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "kind": "atomic_skill",
+      "id": "com.jingdong.app.mall.capability_check",
+      "name": "检查应用能力",
+      "appPackage": "com.jingdong.app.mall",
+      "appVersion": "*",
+      "status": "DRY_RUN_PASSED",
+      "domain": "app_session",
+      "implements": "CapabilityCheckSkill",
+      "params": [],
+      "preconditions": [],
+      "dependsOn": [],
+      "resolverPolicy": {
+        "order": [
+          "ACCESSIBILITY",
+          "COORDINATE_PACK",
+          "PACKAGE_MANAGER"
+        ],
+        "allowAiSuggestionInFactory": true,
+        "allowAiInRuntime": false
+      },
+      "safety": {
+        "forbiddenTexts": [
+          "支付",
+          "付款",
+          "转账",
+          "删除",
+          "发布",
+          "授权"
+        ]
+      },
+      "factory": {
+        "source": "SKILL_ARCHETYPE_TEMPLATE_V0",
+        "archetypeId": "common.app_session.v1",
+        "traceIds": [],
+        "sampleCount": 0,
+        "dryRunStatus": "PASSED",
+        "testRuns": 0,
+        "successRate": 0,
+        "promotionStatus": "NOT_PROMOTED",
+        "createdAt": 1779262161098,
+        "appPatch": {
+          "packageName": "com.jingdong.app.mall",
+          "label": "京东",
+          "launchable": true,
+          "launchActivity": "com.jingdong.app.mall.MainFrameActivity",
+          "searchEntryTexts": [
+            "搜索",
+            "搜一搜",
+            "Search"
+          ],
+          "searchSubmitTexts": [
+            "搜索",
+            "确定",
+            "Search"
+          ],
+          "searchEntryCoordinate": {
+            "x": 0.5,
+            "y": 0.08
+          },
+          "searchSubmitCoordinate": {
+            "x": 0.9,
+            "y": 0.08
+          },
+          "postDraftEntryTexts": [
+            "+",
+            "写微博",
+            "发微博",
+            "发帖",
+            "创作",
+            "写帖子",
+            "发动态",
+            "说点什么"
+          ],
+          "postDraftEntryCoordinate": {
+            "x": 0.9,
+            "y": 0.9
+          }
+        },
+        "lastDryRunReport": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_dry_run_reports\/com.jingdong.app.mall\/com.jingdong.app.mall.capability_check_1779262161104.json",
+        "lastDryRunAt": 1779262161105
+      },
+      "capabilityRequired": {
+        "minLevel": "D",
+        "inputRequired": false,
+        "nodeReadablePreferred": false,
+        "coordinateFallbackAllowed": false,
+        "allowedInputChannels": [],
+        "verificationRequired": "LOW"
+      },
+      "action": {
+        "type": "CheckCapability",
+        "packageName": "com.jingdong.app.mall"
+      },
+      "verify": {
+        "type": "CapabilityObserved",
+        "packageName": "com.jingdong.app.mall",
+        "timeoutMs": 500
+      },
+      "resultPolicy": {
+        "levelA": "SUCCESS",
+        "levelB": "SUCCESS_MEDIUM_CONFIDENCE",
+        "levelC": "SUCCESS_LOW_CONFIDENCE",
+        "levelD": "FAILED_CAPABILITY_D"
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "kind": "atomic_skill",
+      "id": "com.jingdong.app.mall.open_app",
+      "name": "打开应用",
+      "appPackage": "com.jingdong.app.mall",
+      "appVersion": "*",
+      "status": "DRY_RUN_PASSED",
+      "domain": "app_session",
+      "implements": "OpenAppSkill",
+      "params": [],
+      "preconditions": [],
+      "dependsOn": [],
+      "resolverPolicy": {
+        "order": [
+          "ACCESSIBILITY",
+          "COORDINATE_PACK",
+          "PACKAGE_MANAGER"
+        ],
+        "allowAiSuggestionInFactory": true,
+        "allowAiInRuntime": false
+      },
+      "safety": {
+        "forbiddenTexts": [
+          "支付",
+          "付款",
+          "转账",
+          "删除",
+          "发布",
+          "授权"
+        ]
+      },
+      "factory": {
+        "source": "SKILL_ARCHETYPE_TEMPLATE_V0",
+        "archetypeId": "common.app_session.v1",
+        "traceIds": [],
+        "sampleCount": 0,
+        "dryRunStatus": "PASSED",
+        "testRuns": 0,
+        "successRate": 0,
+        "promotionStatus": "NOT_PROMOTED",
+        "createdAt": 1779262161098,
+        "appPatch": {
+          "packageName": "com.jingdong.app.mall",
+          "label": "京东",
+          "launchable": true,
+          "launchActivity": "com.jingdong.app.mall.MainFrameActivity",
+          "searchEntryTexts": [
+            "搜索",
+            "搜一搜",
+            "Search"
+          ],
+          "searchSubmitTexts": [
+            "搜索",
+            "确定",
+            "Search"
+          ],
+          "searchEntryCoordinate": {
+            "x": 0.5,
+            "y": 0.08
+          },
+          "searchSubmitCoordinate": {
+            "x": 0.9,
+            "y": 0.08
+          },
+          "postDraftEntryTexts": [
+            "+",
+            "写微博",
+            "发微博",
+            "发帖",
+            "创作",
+            "写帖子",
+            "发动态",
+            "说点什么"
+          ],
+          "postDraftEntryCoordinate": {
+            "x": 0.9,
+            "y": 0.9
+          }
+        },
+        "lastDryRunReport": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_dry_run_reports\/com.jingdong.app.mall\/com.jingdong.app.mall.open_app_1779262161103.json",
+        "lastDryRunAt": 1779262161104
+      },
+      "capabilityRequired": {
+        "minLevel": "D",
+        "inputRequired": false,
+        "nodeReadablePreferred": false,
+        "coordinateFallbackAllowed": false,
+        "allowedInputChannels": [],
+        "verificationRequired": "LOW"
+      },
+      "action": {
+        "type": "OpenApp",
+        "packageName": "com.jingdong.app.mall",
+        "timeoutMs": 3000
+      },
+      "verify": {
+        "type": "ForegroundPackage",
+        "packageName": "com.jingdong.app.mall",
+        "timeoutMs": 3000,
+        "allowUnverifiedWhenAccessibilityDisconnected": true
+      },
+      "resultPolicy": {
+        "foregroundVerified": "SUCCESS",
+        "launchIntentSentOnly": "SUCCESS_LOW_CONFIDENCE",
+        "noLaunchIntent": "FAILED_NO_LAUNCH_INTENT",
+        "unverifiable": "FAILED_UNVERIFIABLE"
+      }
+    }
+  ],
+  "macroSkills": [
+    {
+      "schemaVersion": 1,
+      "kind": "macro_skill",
+      "id": "patched.command.1779338918226",
+      "name": "手机端任务拼装 Skill",
+      "appPackage": "com.jingdong.app.mall",
+      "appVersion": "*",
+      "status": "DRY_RUN_PASSED",
+      "implements": "AiPlannedMacroSkill",
+      "intentId": "search_in_app",
+      "params": [],
+      "preconditions": [],
+      "atoms": [
+        {
+          "type": "UseSkill",
+          "skillId": "patched.1779338918226.1.openapp"
+        },
+        {
+          "type": "UseSkill",
+          "skillId": "patched.1779338918226.2.handlereactiveoverlays"
+        },
+        {
+          "type": "UseSkill",
+          "skillId": "patched.1779338918226.3.clickvisibletext"
+        },
+        {
+          "type": "UseSkill",
+          "skillId": "patched.1779338918226.4.wait"
+        },
+        {
+          "type": "UseSkill",
+          "skillId": "patched.1779338918226.5.typeintofirstinput"
+        },
+        {
+          "type": "UseSkill",
+          "skillId": "patched.1779338918226.6.clickvisibletext"
+        },
+        {
+          "type": "UseSkill",
+          "skillId": "patched.1779338918226.7.wait"
+        }
+      ],
+      "verify": {
+        "type": "GoalEvidenceOrNoFailedAtom",
+        "instruction": "在京东搜索耳机，停在商品结果页并记录筛选、店铺、价格入口。\n\n约束：目标 App=京东，包名=com.jingdong.app.mall。必须由 MacroPilot 手机端自己用无障碍、输入法、AI\/Skill JSON 执行，不允许依赖 ADB 手点目标 App。执行前先读取当前 UI；如果遇到广告、弹窗、小字提示，先记录文字并安全关闭。任务完成必须用当前 UI 证据验证，不能只因为步骤执行完就报成功。如果没有现成 skill，先复用已有相似 Skill JSON\/arc",
+        "timeoutMs": 2000,
+        "allowLowConfidenceWhenNodeUnreadable": true
+      },
+      "resultPolicy": {
+        "allAtomicSuccess": "SUCCESS",
+        "partialAtomicSuccess": "SUCCESS_MEDIUM_CONFIDENCE",
+        "coordinateOnly": "SUCCESS_LOW_CONFIDENCE",
+        "unverifiable": "FAILED_UNVERIFIABLE"
+      },
+      "timeoutMs": 30000,
+      "factory": {
+        "source": "APP_SIDE_PLAN_PATCH_ASSEMBLER",
+        "instruction": "在京东搜索耳机，停在商品结果页并记录筛选、店铺、价格入口。\n\n约束：目标 App=京东，包名=com.jingdong.app.mall。必须由 MacroPilot 手机端自己用无障碍、输入法、AI\/Skill JSON 执行，不允许依赖 ADB 手点目标 App。执行前先读取当前 UI；如果遇到广告、弹窗、小字提示，先记录文字并安全关闭。任务完成必须用当前 UI 证据验证，不能只因为步骤执行完就报成功。如果没有现成 skill，先复用已有相似 Skill JSON\/archetype，只改关键槽位如入口文字、坐标、目标文本、验证规则，再组装 atomic\/macro skill。需要探索入口时优先遍历底部标签、顶部小图标、图形化入口、侧边操作和子页面。本任务 stopBeforeSubmit=true：写草稿、评论、订单、支付类流程必须停在提交前，不点击最终发布、发送、提交订单、支付、确认授权。期望证据包括：耳机、商品。",
+        "aiJobPath": null,
+        "traceIds": [],
+        "sampleCount": 0,
+        "dryRunStatus": "PASSED",
+        "testRuns": 0,
+        "successRate": 0,
+        "promotionStatus": "NOT_PROMOTED",
+        "createdAt": 1779338921190,
+        "assemblyStrategy": "rewrite_allowed_slots_from_existing_skill_json",
+        "requiredAtomicSkills": [
+          "patched.1779338918226.1.openapp",
+          "patched.1779338918226.2.handlereactiveoverlays",
+          "patched.1779338918226.3.clickvisibletext",
+          "patched.1779338918226.4.wait",
+          "patched.1779338918226.5.typeintofirstinput",
+          "patched.1779338918226.6.clickvisibletext",
+          "patched.1779338918226.7.wait"
+        ],
+        "lastDryRunReport": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_dry_run_reports\/com.jingdong.app.mall\/patched.command.1779338918226_1779338921210.json",
+        "lastDryRunAt": 1779338921211
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "kind": "macro_skill",
+      "id": "com.jingdong.app.mall.search.search_in_app",
+      "name": "通用站内搜索",
+      "appPackage": "com.jingdong.app.mall",
+      "appVersion": "*",
+      "status": "DRY_RUN_PASSED",
+      "implements": "SearchInAppSkill",
+      "intentId": "search_in_app",
+      "params": [
+        {
+          "name": "query",
+          "type": "TEXT",
+          "required": true,
+          "example": ""
+        }
+      ],
+      "preconditions": [
+        {
+          "type": "CapabilityAtLeast",
+          "level": "C"
+        },
+        {
+          "type": "InputChannelAvailable",
+          "channels": [
+            "ACTION_SET_TEXT",
+            "PASTE",
+            "CUSTOM_IME",
+            "SHIZUKU_ADB"
+          ]
+        }
+      ],
+      "atoms": [
+        {
+          "type": "UseSkill",
+          "skillId": "com.jingdong.app.mall.open_app"
+        },
+        {
+          "type": "UseSkill",
+          "skillId": "com.jingdong.app.mall.search.click_entry"
+        },
+        {
+          "type": "UseSkill",
+          "skillId": "com.jingdong.app.mall.search.type_query",
+          "params": {
+            "query": "$query"
+          }
+        },
+        {
+          "type": "UseSkill",
+          "skillId": "com.jingdong.app.mall.search.click_submit"
+        }
+      ],
+      "verify": {
+        "type": "WindowChangedOrNodeStateChanged",
+        "timeoutMs": 2500,
+        "allowLowConfidenceWhenNodeUnreadable": true
+      },
+      "resultPolicy": {
+        "allAtomicSuccess": "SUCCESS",
+        "partialAtomicSuccess": "SUCCESS_MEDIUM_CONFIDENCE",
+        "coordinateOnly": "SUCCESS_LOW_CONFIDENCE",
+        "unverifiable": "FAILED_UNVERIFIABLE"
+      },
+      "timeoutMs": 10000,
+      "factory": {
+        "source": "COMPOSED_FROM_SKILL_ARCHETYPE",
+        "archetypeId": "common.search_in_app.v1",
+        "traceIds": [],
+        "sampleCount": 0,
+        "dryRunStatus": "PASSED",
+        "testRuns": 0,
+        "successRate": 0,
+        "promotionStatus": "NOT_PROMOTED",
+        "createdAt": 1779262161098,
+        "appPatch": {
+          "packageName": "com.jingdong.app.mall",
+          "label": "京东",
+          "launchable": true,
+          "launchActivity": "com.jingdong.app.mall.MainFrameActivity",
+          "searchEntryTexts": [
+            "搜索",
+            "搜一搜",
+            "Search"
+          ],
+          "searchSubmitTexts": [
+            "搜索",
+            "确定",
+            "Search"
+          ],
+          "searchEntryCoordinate": {
+            "x": 0.5,
+            "y": 0.08
+          },
+          "searchSubmitCoordinate": {
+            "x": 0.9,
+            "y": 0.08
+          },
+          "postDraftEntryTexts": [
+            "+",
+            "写微博",
+            "发微博",
+            "发帖",
+            "创作",
+            "写帖子",
+            "发动态",
+            "说点什么"
+          ],
+          "postDraftEntryCoordinate": {
+            "x": 0.9,
+            "y": 0.9
+          }
+        },
+        "requiredAtomicSkills": [
+          "com.jingdong.app.mall.open_app",
+          "com.jingdong.app.mall.search.click_entry",
+          "com.jingdong.app.mall.search.type_query",
+          "com.jingdong.app.mall.search.click_submit"
+        ],
+        "promotionRule": "requires_dry_run_real_test_and_promotion_gate",
+        "lastDryRunReport": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_dry_run_reports\/com.jingdong.app.mall\/com.jingdong.app.mall.search.search_in_app_1779262161119.json",
+        "lastDryRunAt": 1779262161120
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "kind": "macro_skill",
+      "id": "com.jingdong.app.mall.prepare_app_session",
+      "name": "准备应用会话",
+      "appPackage": "com.jingdong.app.mall",
+      "appVersion": "*",
+      "status": "DRY_RUN_PASSED",
+      "implements": "PrepareAppSessionSkill",
+      "intentId": "prepare_app_session",
+      "params": [],
+      "preconditions": [],
+      "atoms": [
+        {
+          "type": "UseSkill",
+          "skillId": "com.jingdong.app.mall.open_app"
+        },
+        {
+          "type": "UseSkill",
+          "skillId": "com.jingdong.app.mall.capability_check"
+        }
+      ],
+      "verify": {
+        "type": "CapabilityObserved",
+        "packageName": "com.jingdong.app.mall",
+        "timeoutMs": 1000
+      },
+      "resultPolicy": {
+        "allAtomicSuccess": "SUCCESS",
+        "partialAtomicSuccess": "SUCCESS_MEDIUM_CONFIDENCE",
+        "unverifiable": "FAILED_UNVERIFIABLE"
+      },
+      "timeoutMs": 6000,
+      "factory": {
+        "source": "COMPOSED_FROM_SKILL_ARCHETYPE",
+        "archetypeId": "common.app_session.v1",
+        "traceIds": [],
+        "sampleCount": 0,
+        "dryRunStatus": "PASSED",
+        "testRuns": 0,
+        "successRate": 0,
+        "promotionStatus": "NOT_PROMOTED",
+        "createdAt": 1779262161098,
+        "appPatch": {
+          "packageName": "com.jingdong.app.mall",
+          "label": "京东",
+          "launchable": true,
+          "launchActivity": "com.jingdong.app.mall.MainFrameActivity",
+          "searchEntryTexts": [
+            "搜索",
+            "搜一搜",
+            "Search"
+          ],
+          "searchSubmitTexts": [
+            "搜索",
+            "确定",
+            "Search"
+          ],
+          "searchEntryCoordinate": {
+            "x": 0.5,
+            "y": 0.08
+          },
+          "searchSubmitCoordinate": {
+            "x": 0.9,
+            "y": 0.08
+          },
+          "postDraftEntryTexts": [
+            "+",
+            "写微博",
+            "发微博",
+            "发帖",
+            "创作",
+            "写帖子",
+            "发动态",
+            "说点什么"
+          ],
+          "postDraftEntryCoordinate": {
+            "x": 0.9,
+            "y": 0.9
+          }
+        },
+        "requiredAtomicSkills": [
+          "com.jingdong.app.mall.open_app",
+          "com.jingdong.app.mall.capability_check"
+        ],
+        "promotionRule": "requires_real_probe_and_promotion_gate",
+        "lastDryRunReport": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_dry_run_reports\/com.jingdong.app.mall\/com.jingdong.app.mall.prepare_app_session_1779262161114.json",
+        "lastDryRunAt": 1779262161115
+      }
+    }
+  ],
+  "reactiveRules": [],
+  "runtimePolicy": {
+    "allowCandidateSkill": false,
+    "allowTrial": false,
+    "aiCallsDefault": 0,
+    "screenshotDefault": 0,
+    "maxTaskDurationMs": 30000
+  },
+  "factoryReports": {
+    "dryRunReports": [
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "patched.command.1779338918226",
+        "appPackage": "com.jingdong.app.mall",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779338921210
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "patched.1779338918226.6.clickvisibletext",
+        "appPackage": "com.jingdong.app.mall",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779338921206
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "patched.1779338918226.7.wait",
+        "appPackage": "com.jingdong.app.mall",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779338921207
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "patched.1779338918226.3.clickvisibletext",
+        "appPackage": "com.jingdong.app.mall",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779338921202
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "patched.1779338918226.4.wait",
+        "appPackage": "com.jingdong.app.mall",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779338921203
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "patched.1779338918226.5.typeintofirstinput",
+        "appPackage": "com.jingdong.app.mall",
+        "passed": false,
+        "status": "REJECTED",
+        "errors": [
+          "dangerous_action:支付"
+        ],
+        "warnings": [],
+        "timestamp": 1779338921205
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "patched.1779338918226.2.handlereactiveoverlays",
+        "appPackage": "com.jingdong.app.mall",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779338921201
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "patched.1779338918226.1.openapp",
+        "appPackage": "com.jingdong.app.mall",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779338921197
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.jingdong.app.mall.search.search_in_app",
+        "appPackage": "com.jingdong.app.mall",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779262161119
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.jingdong.app.mall.search.click_entry",
+        "appPackage": "com.jingdong.app.mall",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779262161115
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.jingdong.app.mall.search.click_submit",
+        "appPackage": "com.jingdong.app.mall",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779262161118
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.jingdong.app.mall.search.type_query",
+        "appPackage": "com.jingdong.app.mall",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779262161116
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.jingdong.app.mall.common.type_first_input",
+        "appPackage": "com.jingdong.app.mall",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779262161111
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.jingdong.app.mall.prepare_app_session",
+        "appPackage": "com.jingdong.app.mall",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779262161114
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.jingdong.app.mall.common.click_visible_text",
+        "appPackage": "com.jingdong.app.mall",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779262161109
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.jingdong.app.mall.recover_to_foreground",
+        "appPackage": "com.jingdong.app.mall",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779262161108
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.jingdong.app.mall.back",
+        "appPackage": "com.jingdong.app.mall",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779262161105
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.jingdong.app.mall.capability_check",
+        "appPackage": "com.jingdong.app.mall",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779262161104
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.jingdong.app.mall.open_app",
+        "appPackage": "com.jingdong.app.mall",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779262161103
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.jingdong.app.mall.search.click_entry",
+        "appPackage": "com.jingdong.app.mall",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779237221037
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.jingdong.app.mall.search.click_submit",
+        "appPackage": "com.jingdong.app.mall",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779237221039
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.jingdong.app.mall.search.search_in_app",
+        "appPackage": "com.jingdong.app.mall",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779237221040
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.jingdong.app.mall.search.type_query",
+        "appPackage": "com.jingdong.app.mall",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779237221038
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.jingdong.app.mall.common.click_visible_text",
+        "appPackage": "com.jingdong.app.mall",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779237221033
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.jingdong.app.mall.common.type_first_input",
+        "appPackage": "com.jingdong.app.mall",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779237221034
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.jingdong.app.mall.prepare_app_session",
+        "appPackage": "com.jingdong.app.mall",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779237221036
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.jingdong.app.mall.back",
+        "appPackage": "com.jingdong.app.mall",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779237221031
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.jingdong.app.mall.capability_check",
+        "appPackage": "com.jingdong.app.mall",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779237221029
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.jingdong.app.mall.recover_to_foreground",
+        "appPackage": "com.jingdong.app.mall",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779237221032
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.jingdong.app.mall.open_app",
+        "appPackage": "com.jingdong.app.mall",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779237221025
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.jingdong.app.mall.search.click_submit",
+        "appPackage": "com.jingdong.app.mall",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779221443100
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.jingdong.app.mall.search.search_in_app",
+        "appPackage": "com.jingdong.app.mall",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779221443101
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.jingdong.app.mall.common.type_first_input",
+        "appPackage": "com.jingdong.app.mall",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779221443095
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.jingdong.app.mall.prepare_app_session",
+        "appPackage": "com.jingdong.app.mall",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779221443096
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.jingdong.app.mall.search.click_entry",
+        "appPackage": "com.jingdong.app.mall",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779221443098
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.jingdong.app.mall.search.type_query",
+        "appPackage": "com.jingdong.app.mall",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779221443099
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.jingdong.app.mall.back",
+        "appPackage": "com.jingdong.app.mall",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779221443092
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.jingdong.app.mall.common.click_visible_text",
+        "appPackage": "com.jingdong.app.mall",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779221443094
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.jingdong.app.mall.recover_to_foreground",
+        "appPackage": "com.jingdong.app.mall",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779221443093
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.jingdong.app.mall.capability_check",
+        "appPackage": "com.jingdong.app.mall",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779221443091
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.jingdong.app.mall.open_app",
+        "appPackage": "com.jingdong.app.mall",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779221443090
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.jingdong.app.mall.search.search_in_app",
+        "appPackage": "com.jingdong.app.mall",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779220605765
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.jingdong.app.mall.search.click_submit",
+        "appPackage": "com.jingdong.app.mall",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779220605763
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.jingdong.app.mall.search.type_query",
+        "appPackage": "com.jingdong.app.mall",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779220605761
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.jingdong.app.mall.prepare_app_session",
+        "appPackage": "com.jingdong.app.mall",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779220605757
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.jingdong.app.mall.search.click_entry",
+        "appPackage": "com.jingdong.app.mall",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779220605759
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.jingdong.app.mall.common.click_visible_text",
+        "appPackage": "com.jingdong.app.mall",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779220605753
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.jingdong.app.mall.common.type_first_input",
+        "appPackage": "com.jingdong.app.mall",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779220605755
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.jingdong.app.mall.back",
+        "appPackage": "com.jingdong.app.mall",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779220605749
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.jingdong.app.mall.recover_to_foreground",
+        "appPackage": "com.jingdong.app.mall",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779220605751
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.jingdong.app.mall.capability_check",
+        "appPackage": "com.jingdong.app.mall",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779220605747
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.jingdong.app.mall.open_app",
+        "appPackage": "com.jingdong.app.mall",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779220605745
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.jingdong.app.mall.search.search_in_app",
+        "appPackage": "com.jingdong.app.mall",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779214103100
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.jingdong.app.mall.search.click_submit",
+        "appPackage": "com.jingdong.app.mall",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779214103098
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.jingdong.app.mall.search.type_query",
+        "appPackage": "com.jingdong.app.mall",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779214103096
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.jingdong.app.mall.prepare_app_session",
+        "appPackage": "com.jingdong.app.mall",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779214103092
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.jingdong.app.mall.search.click_entry",
+        "appPackage": "com.jingdong.app.mall",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779214103094
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.jingdong.app.mall.common.click_visible_text",
+        "appPackage": "com.jingdong.app.mall",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779214103088
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.jingdong.app.mall.common.type_first_input",
+        "appPackage": "com.jingdong.app.mall",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779214103090
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.jingdong.app.mall.back",
+        "appPackage": "com.jingdong.app.mall",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779214103084
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.jingdong.app.mall.recover_to_foreground",
+        "appPackage": "com.jingdong.app.mall",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779214103086
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.jingdong.app.mall.capability_check",
+        "appPackage": "com.jingdong.app.mall",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779214103082
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.jingdong.app.mall.open_app",
+        "appPackage": "com.jingdong.app.mall",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779214103076
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.jingdong.app.mall.search.search_in_app",
+        "appPackage": "com.jingdong.app.mall",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779213623809
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.jingdong.app.mall.search.click_submit",
+        "appPackage": "com.jingdong.app.mall",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779213623806
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.jingdong.app.mall.search.type_query",
+        "appPackage": "com.jingdong.app.mall",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779213623804
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.jingdong.app.mall.prepare_app_session",
+        "appPackage": "com.jingdong.app.mall",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779213623799
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.jingdong.app.mall.search.click_entry",
+        "appPackage": "com.jingdong.app.mall",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779213623802
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.jingdong.app.mall.common.type_first_input",
+        "appPackage": "com.jingdong.app.mall",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779213623796
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.jingdong.app.mall.common.click_visible_text",
+        "appPackage": "com.jingdong.app.mall",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779213623794
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.jingdong.app.mall.back",
+        "appPackage": "com.jingdong.app.mall",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779213623789
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.jingdong.app.mall.recover_to_foreground",
+        "appPackage": "com.jingdong.app.mall",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779213623791
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.jingdong.app.mall.capability_check",
+        "appPackage": "com.jingdong.app.mall",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779213623786
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.jingdong.app.mall.open_app",
+        "appPackage": "com.jingdong.app.mall",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779213623773
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.jingdong.app.mall.search.search_in_app",
+        "appPackage": "com.jingdong.app.mall",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779213029744
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.jingdong.app.mall.search.click_submit",
+        "appPackage": "com.jingdong.app.mall",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779213029742
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.jingdong.app.mall.search.type_query",
+        "appPackage": "com.jingdong.app.mall",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779213029740
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.jingdong.app.mall.prepare_app_session",
+        "appPackage": "com.jingdong.app.mall",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779213029736
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.jingdong.app.mall.search.click_entry",
+        "appPackage": "com.jingdong.app.mall",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779213029738
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.jingdong.app.mall.common.click_visible_text",
+        "appPackage": "com.jingdong.app.mall",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779213029733
+      }
+    ],
+    "exportedAt": 1779338921229
+  }
+}

@@ -1,0 +1,492 @@
+-- Merging decision tree log ---
+manifest
+ADDED from D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:2:1-168:12
+INJECTED from D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:2:1-168:12
+INJECTED from D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:2:1-168:12
+INJECTED from D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:2:1-168:12
+MERGED from [androidx.core:core:1.12.0] C:\Users\30834\.gradle\caches\8.9\transforms\1bdc206626008da73e301766f474e09e\transformed\core-1.12.0\AndroidManifest.xml:17:1-30:12
+MERGED from [androidx.core:core-ktx:1.12.0] C:\Users\30834\.gradle\caches\8.9\transforms\c986bab37ec271cabeee197d5ff28134\transformed\core-ktx-1.12.0\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.annotation:annotation-experimental:1.3.0] C:\Users\30834\.gradle\caches\8.9\transforms\6265806dd394bcd4e3422a639f941e4e\transformed\annotation-experimental-1.3.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\30834\.gradle\caches\8.9\transforms\e19a196721a9b7eba0e7a2ed6b0e54cc\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:17:1-27:12
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\30834\.gradle\caches\8.9\transforms\57930b39b4fdda6853b532a3019fbb38\transformed\interpolator-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.3.1] C:\Users\30834\.gradle\caches\8.9\transforms\9e54571547917a15e205048ec348d3bb\transformed\lifecycle-runtime-2.3.1\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.arch.core:core-runtime:2.1.0] C:\Users\30834\.gradle\caches\8.9\transforms\192a543d5c5ecb2dae43cfbdcc41d157\transformed\core-runtime-2.1.0\AndroidManifest.xml:17:1-24:12
+	package
+		INJECTED from D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml
+	android:versionName
+		INJECTED from D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml
+	android:versionCode
+		INJECTED from D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:2:11-69
+uses-permission#android.permission.QUERY_ALL_PACKAGES
+ADDED from D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:4:5-77
+	android:name
+		ADDED from D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:4:22-74
+uses-permission#android.permission.INTERNET
+ADDED from D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:5:5-67
+	android:name
+		ADDED from D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:5:22-64
+uses-permission#android.permission.WRITE_SECURE_SETTINGS
+ADDED from D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:6:5-80
+	android:name
+		ADDED from D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:6:22-77
+uses-permission#android.permission.FOREGROUND_SERVICE
+ADDED from D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:7:5-77
+	android:name
+		ADDED from D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:7:22-74
+uses-permission#android.permission.FOREGROUND_SERVICE_DATA_SYNC
+ADDED from D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:8:5-87
+	android:name
+		ADDED from D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:8:22-84
+queries
+ADDED from D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:10:5-15:15
+intent#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:11:9-14:18
+action#android.intent.action.MAIN
+ADDED from D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:12:13-65
+	android:name
+		ADDED from D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:12:21-62
+category#android.intent.category.LAUNCHER
+ADDED from D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:13:13-73
+	android:name
+		ADDED from D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:13:23-70
+application
+ADDED from D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:17:5-167:19
+INJECTED from D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:17:5-167:19
+MERGED from [androidx.core:core:1.12.0] C:\Users\30834\.gradle\caches\8.9\transforms\1bdc206626008da73e301766f474e09e\transformed\core-1.12.0\AndroidManifest.xml:28:5-89
+MERGED from [androidx.core:core:1.12.0] C:\Users\30834\.gradle\caches\8.9\transforms\1bdc206626008da73e301766f474e09e\transformed\core-1.12.0\AndroidManifest.xml:28:5-89
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\30834\.gradle\caches\8.9\transforms\e19a196721a9b7eba0e7a2ed6b0e54cc\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\30834\.gradle\caches\8.9\transforms\e19a196721a9b7eba0e7a2ed6b0e54cc\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:24:5-25:19
+	android:extractNativeLibs
+		INJECTED from D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml
+	android:appComponentFactory
+		ADDED from [androidx.core:core:1.12.0] C:\Users\30834\.gradle\caches\8.9\transforms\1bdc206626008da73e301766f474e09e\transformed\core-1.12.0\AndroidManifest.xml:28:18-86
+	android:supportsRtl
+		ADDED from D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:20:9-35
+	android:label
+		ADDED from D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:19:9-41
+	android:allowBackup
+		ADDED from D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:18:9-35
+	android:theme
+		ADDED from D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:21:9-40
+activity#com.macropilot.app.MainActivity
+ADDED from D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:23:9-33:20
+	android:turnScreenOn
+		ADDED from D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:27:13-40
+	android:excludeFromRecents
+		ADDED from D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:28:13-46
+	android:showWhenLocked
+		ADDED from D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:26:13-42
+	android:exported
+		ADDED from D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:25:13-36
+	android:name
+		ADDED from D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:24:13-41
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:29:13-32:29
+receiver#com.macropilot.app.debug.DebugCommandReceiver
+ADDED from D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:35:9-58:20
+	android:exported
+		ADDED from D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:37:13-36
+	android:name
+		ADDED from D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:36:13-55
+intent-filter#action:name:com.macropilot.app.DEBUG_COMPACT_FACTORY_ARTIFACTS+action:name:com.macropilot.app.DEBUG_DELETE_COORDINATE_CANDIDATES+action:name:com.macropilot.app.DEBUG_DELETE_EXPORTS+action:name:com.macropilot.app.DEBUG_DELETE_FACTORY_ARTIFACTS+action:name:com.macropilot.app.DEBUG_DELETE_RUN_LOGS+action:name:com.macropilot.app.DEBUG_DELETE_TRAINING_SAMPLES+action:name:com.macropilot.app.DEBUG_EXPORT_PREVIEW+action:name:com.macropilot.app.DEBUG_EXPORT_TRAINING_SAMPLES+action:name:com.macropilot.app.DEBUG_INVENTORY+action:name:com.macropilot.app.DEBUG_RUN_SETTINGS_RECOVERY_TEST+action:name:com.macropilot.app.DEBUG_RUN_SETTINGS_SCROLL_TEST+action:name:com.macropilot.app.DEBUG_RUN_SETTINGS_SEARCH+action:name:com.macropilot.app.DEBUG_RUN_SETTINGS_SELECT_TEST+action:name:com.macropilot.app.DEBUG_RUN_SETTINGS_TESTS+action:name:com.macropilot.app.DEBUG_SAVE_COORDINATE_CANDIDATE+action:name:com.macropilot.app.DEBUG_SAVE_SAMPLE+action:name:com.macropilot.app.DEBUG_SEED_BUILTINS+action:name:com.macropilot.app.DEBUG_SELF_CHECK
+ADDED from D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:38:13-57:29
+action#com.macropilot.app.DEBUG_SAVE_SAMPLE
+ADDED from D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:39:17-79
+	android:name
+		ADDED from D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:39:25-76
+action#com.macropilot.app.DEBUG_SEED_BUILTINS
+ADDED from D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:40:17-81
+	android:name
+		ADDED from D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:40:25-78
+action#com.macropilot.app.DEBUG_INVENTORY
+ADDED from D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:41:17-77
+	android:name
+		ADDED from D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:41:25-74
+action#com.macropilot.app.DEBUG_DELETE_TRAINING_SAMPLES
+ADDED from D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:42:17-91
+	android:name
+		ADDED from D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:42:25-88
+action#com.macropilot.app.DEBUG_DELETE_FACTORY_ARTIFACTS
+ADDED from D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:43:17-92
+	android:name
+		ADDED from D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:43:25-89
+action#com.macropilot.app.DEBUG_COMPACT_FACTORY_ARTIFACTS
+ADDED from D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:44:17-93
+	android:name
+		ADDED from D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:44:25-90
+action#com.macropilot.app.DEBUG_DELETE_RUN_LOGS
+ADDED from D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:45:17-83
+	android:name
+		ADDED from D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:45:25-80
+action#com.macropilot.app.DEBUG_SELF_CHECK
+ADDED from D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:46:17-78
+	android:name
+		ADDED from D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:46:25-75
+action#com.macropilot.app.DEBUG_EXPORT_PREVIEW
+ADDED from D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:47:17-82
+	android:name
+		ADDED from D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:47:25-79
+action#com.macropilot.app.DEBUG_EXPORT_TRAINING_SAMPLES
+ADDED from D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:48:17-91
+	android:name
+		ADDED from D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:48:25-88
+action#com.macropilot.app.DEBUG_DELETE_EXPORTS
+ADDED from D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:49:17-82
+	android:name
+		ADDED from D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:49:25-79
+action#com.macropilot.app.DEBUG_DELETE_COORDINATE_CANDIDATES
+ADDED from D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:50:17-96
+	android:name
+		ADDED from D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:50:25-93
+action#com.macropilot.app.DEBUG_SAVE_COORDINATE_CANDIDATE
+ADDED from D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:51:17-93
+	android:name
+		ADDED from D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:51:25-90
+action#com.macropilot.app.DEBUG_RUN_SETTINGS_SEARCH
+ADDED from D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:52:17-87
+	android:name
+		ADDED from D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:52:25-84
+action#com.macropilot.app.DEBUG_RUN_SETTINGS_TESTS
+ADDED from D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:53:17-86
+	android:name
+		ADDED from D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:53:25-83
+action#com.macropilot.app.DEBUG_RUN_SETTINGS_RECOVERY_TEST
+ADDED from D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:54:17-94
+	android:name
+		ADDED from D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:54:25-91
+action#com.macropilot.app.DEBUG_RUN_SETTINGS_SCROLL_TEST
+ADDED from D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:55:17-92
+	android:name
+		ADDED from D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:55:25-89
+action#com.macropilot.app.DEBUG_RUN_SETTINGS_SELECT_TEST
+ADDED from D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:56:17-92
+	android:name
+		ADDED from D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:56:25-89
+receiver#com.macropilot.app.api.MacroPilotApiReceiver
+ADDED from D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:60:9-100:20
+	android:exported
+		ADDED from D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:62:13-36
+	android:name
+		ADDED from D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:61:13-54
+intent-filter#action:name:com.macropilot.app.API_CANCEL_POPULAR_APP_TASK_BATCH+action:name:com.macropilot.app.API_CANCEL_THIRD_PARTY_APP_BATCH+action:name:com.macropilot.app.API_CREATE_CANDIDATE_REQUEST+action:name:com.macropilot.app.API_CREATE_WECHAT_CALIBRATION_REQUEST+action:name:com.macropilot.app.API_CREATE_WECHAT_TYPE_CANDIDATE+action:name:com.macropilot.app.API_DELETE_APPROVED_SKILL+action:name:com.macropilot.app.API_DELETE_CANDIDATE+action:name:com.macropilot.app.API_DRY_RUN_SKILL_DRAFT+action:name:com.macropilot.app.API_DRY_RUN_SKILL_JSON+action:name:com.macropilot.app.API_EXPORT_APP_CONFIG_JSON+action:name:com.macropilot.app.API_FACTORY_AI_INSTRUCTION+action:name:com.macropilot.app.API_FACTORY_DASHBOARD+action:name:com.macropilot.app.API_FACTORY_SELF_TEST+action:name:com.macropilot.app.API_GENERATE_SKILL_DRAFT+action:name:com.macropilot.app.API_GENERATE_THIRD_PARTY_APP_SKILL_SUBSETS+action:name:com.macropilot.app.API_GENERATE_WECHAT_SKILL_JSON+action:name:com.macropilot.app.API_GET_STATUS+action:name:com.macropilot.app.API_LIST_APPROVED_SKILLS+action:name:com.macropilot.app.API_LIST_APPROVED_SKILL_JSON+action:name:com.macropilot.app.API_LIST_APPS+action:name:com.macropilot.app.API_LIST_CANDIDATES+action:name:com.macropilot.app.API_LIST_POPULAR_APP_TASK_CATALOG+action:name:com.macropilot.app.API_LIST_SKILL_DRAFTS+action:name:com.macropilot.app.API_LIST_SKILL_JSON+action:name:com.macropilot.app.API_PROBE_APP_CAPABILITY+action:name:com.macropilot.app.API_PROBE_APP_UI_GRAPH+action:name:com.macropilot.app.API_PROMOTE_SKILL_DRAFT+action:name:com.macropilot.app.API_PROMOTE_SKILL_JSON+action:name:com.macropilot.app.API_RUN_APP_SIDE_INSTRUCTION+action:name:com.macropilot.app.API_RUN_POPULAR_APP_TASK_BATCH+action:name:com.macropilot.app.API_RUN_SKILL+action:name:com.macropilot.app.API_RUN_THIRD_PARTY_APP_BATCH+action:name:com.macropilot.app.API_SAVE_COORDINATE_POINT_CANDIDATE+action:name:com.macropilot.app.API_TEST_SKILL_DRAFT+action:name:com.macropilot.app.API_TEST_SKILL_JSON
+ADDED from D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:63:13-99:29
+action#com.macropilot.app.API_LIST_APPS
+ADDED from D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:64:17-75
+	android:name
+		ADDED from D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:64:25-72
+action#com.macropilot.app.API_PROBE_APP_CAPABILITY
+ADDED from D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:65:17-86
+	android:name
+		ADDED from D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:65:25-83
+action#com.macropilot.app.API_CREATE_WECHAT_CALIBRATION_REQUEST
+ADDED from D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:66:17-99
+	android:name
+		ADDED from D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:66:25-96
+action#com.macropilot.app.API_SAVE_COORDINATE_POINT_CANDIDATE
+ADDED from D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:67:17-97
+	android:name
+		ADDED from D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:67:25-94
+action#com.macropilot.app.API_CREATE_WECHAT_TYPE_CANDIDATE
+ADDED from D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:68:17-94
+	android:name
+		ADDED from D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:68:25-91
+action#com.macropilot.app.API_LIST_APPROVED_SKILLS
+ADDED from D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:69:17-86
+	android:name
+		ADDED from D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:69:25-83
+action#com.macropilot.app.API_LIST_CANDIDATES
+ADDED from D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:70:17-81
+	android:name
+		ADDED from D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:70:25-78
+action#com.macropilot.app.API_CREATE_CANDIDATE_REQUEST
+ADDED from D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:71:17-90
+	android:name
+		ADDED from D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:71:25-87
+action#com.macropilot.app.API_GENERATE_SKILL_DRAFT
+ADDED from D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:72:17-86
+	android:name
+		ADDED from D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:72:25-83
+action#com.macropilot.app.API_LIST_SKILL_DRAFTS
+ADDED from D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:73:17-83
+	android:name
+		ADDED from D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:73:25-80
+action#com.macropilot.app.API_DRY_RUN_SKILL_DRAFT
+ADDED from D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:74:17-85
+	android:name
+		ADDED from D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:74:25-82
+action#com.macropilot.app.API_TEST_SKILL_DRAFT
+ADDED from D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:75:17-82
+	android:name
+		ADDED from D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:75:25-79
+action#com.macropilot.app.API_PROMOTE_SKILL_DRAFT
+ADDED from D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:76:17-85
+	android:name
+		ADDED from D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:76:25-82
+action#com.macropilot.app.API_FACTORY_AI_INSTRUCTION
+ADDED from D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:77:17-88
+	android:name
+		ADDED from D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:77:25-85
+action#com.macropilot.app.API_RUN_APP_SIDE_INSTRUCTION
+ADDED from D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:78:17-90
+	android:name
+		ADDED from D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:78:25-87
+action#com.macropilot.app.API_GENERATE_WECHAT_SKILL_JSON
+ADDED from D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:79:17-92
+	android:name
+		ADDED from D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:79:25-89
+action#com.macropilot.app.API_LIST_SKILL_JSON
+ADDED from D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:80:17-81
+	android:name
+		ADDED from D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:80:25-78
+action#com.macropilot.app.API_DRY_RUN_SKILL_JSON
+ADDED from D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:81:17-84
+	android:name
+		ADDED from D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:81:25-81
+action#com.macropilot.app.API_TEST_SKILL_JSON
+ADDED from D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:82:17-81
+	android:name
+		ADDED from D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:82:25-78
+action#com.macropilot.app.API_PROMOTE_SKILL_JSON
+ADDED from D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:83:17-84
+	android:name
+		ADDED from D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:83:25-81
+action#com.macropilot.app.API_LIST_APPROVED_SKILL_JSON
+ADDED from D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:84:17-90
+	android:name
+		ADDED from D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:84:25-87
+action#com.macropilot.app.API_EXPORT_APP_CONFIG_JSON
+ADDED from D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:85:17-88
+	android:name
+		ADDED from D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:85:25-85
+action#com.macropilot.app.API_FACTORY_DASHBOARD
+ADDED from D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:86:17-83
+	android:name
+		ADDED from D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:86:25-80
+action#com.macropilot.app.API_FACTORY_SELF_TEST
+ADDED from D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:87:17-83
+	android:name
+		ADDED from D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:87:25-80
+action#com.macropilot.app.API_GENERATE_THIRD_PARTY_APP_SKILL_SUBSETS
+ADDED from D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:88:17-104
+	android:name
+		ADDED from D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:88:25-101
+action#com.macropilot.app.API_PROBE_APP_UI_GRAPH
+ADDED from D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:89:17-84
+	android:name
+		ADDED from D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:89:25-81
+action#com.macropilot.app.API_RUN_THIRD_PARTY_APP_BATCH
+ADDED from D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:90:17-91
+	android:name
+		ADDED from D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:90:25-88
+action#com.macropilot.app.API_CANCEL_THIRD_PARTY_APP_BATCH
+ADDED from D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:91:17-94
+	android:name
+		ADDED from D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:91:25-91
+action#com.macropilot.app.API_LIST_POPULAR_APP_TASK_CATALOG
+ADDED from D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:92:17-95
+	android:name
+		ADDED from D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:92:25-92
+action#com.macropilot.app.API_RUN_POPULAR_APP_TASK_BATCH
+ADDED from D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:93:17-92
+	android:name
+		ADDED from D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:93:25-89
+action#com.macropilot.app.API_CANCEL_POPULAR_APP_TASK_BATCH
+ADDED from D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:94:17-95
+	android:name
+		ADDED from D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:94:25-92
+action#com.macropilot.app.API_DELETE_APPROVED_SKILL
+ADDED from D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:95:17-87
+	android:name
+		ADDED from D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:95:25-84
+action#com.macropilot.app.API_DELETE_CANDIDATE
+ADDED from D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:96:17-82
+	android:name
+		ADDED from D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:96:25-79
+action#com.macropilot.app.API_RUN_SKILL
+ADDED from D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:97:17-75
+	android:name
+		ADDED from D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:97:25-72
+action#com.macropilot.app.API_GET_STATUS
+ADDED from D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:98:17-76
+	android:name
+		ADDED from D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:98:25-73
+receiver#com.macropilot.app.ai.AiAssistApiReceiver
+ADDED from D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:102:9-120:20
+	android:exported
+		ADDED from D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:104:13-36
+	android:name
+		ADDED from D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:103:13-51
+intent-filter#action:name:com.macropilot.app.AI_APPLY_PATCH+action:name:com.macropilot.app.AI_DELETE_LOGS+action:name:com.macropilot.app.AI_DISABLE+action:name:com.macropilot.app.AI_DRY_RUN_CANDIDATE_MODULE+action:name:com.macropilot.app.AI_GET_CONFIG+action:name:com.macropilot.app.AI_IMPORT_PATCH_CANDIDATE+action:name:com.macropilot.app.AI_LIST_CANDIDATE_MODULES+action:name:com.macropilot.app.AI_LIST_LOGS+action:name:com.macropilot.app.AI_REQUEST+action:name:com.macropilot.app.AI_REVIEW_PATCH+action:name:com.macropilot.app.AI_SAVE_CONFIG+action:name:com.macropilot.app.AI_SUGGEST_UI_PATCH+action:name:com.macropilot.app.AI_TEST_POLICY
+ADDED from D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:105:13-119:29
+action#com.macropilot.app.AI_GET_CONFIG
+ADDED from D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:106:17-75
+	android:name
+		ADDED from D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:106:25-72
+action#com.macropilot.app.AI_SAVE_CONFIG
+ADDED from D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:107:17-76
+	android:name
+		ADDED from D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:107:25-73
+action#com.macropilot.app.AI_DISABLE
+ADDED from D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:108:17-72
+	android:name
+		ADDED from D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:108:25-69
+action#com.macropilot.app.AI_REQUEST
+ADDED from D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:109:17-72
+	android:name
+		ADDED from D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:109:25-69
+action#com.macropilot.app.AI_SUGGEST_UI_PATCH
+ADDED from D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:110:17-81
+	android:name
+		ADDED from D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:110:25-78
+action#com.macropilot.app.AI_IMPORT_PATCH_CANDIDATE
+ADDED from D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:111:17-87
+	android:name
+		ADDED from D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:111:25-84
+action#com.macropilot.app.AI_REVIEW_PATCH
+ADDED from D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:112:17-77
+	android:name
+		ADDED from D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:112:25-74
+action#com.macropilot.app.AI_APPLY_PATCH
+ADDED from D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:113:17-76
+	android:name
+		ADDED from D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:113:25-73
+action#com.macropilot.app.AI_DRY_RUN_CANDIDATE_MODULE
+ADDED from D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:114:17-89
+	android:name
+		ADDED from D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:114:25-86
+action#com.macropilot.app.AI_LIST_CANDIDATE_MODULES
+ADDED from D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:115:17-87
+	android:name
+		ADDED from D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:115:25-84
+action#com.macropilot.app.AI_TEST_POLICY
+ADDED from D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:116:17-76
+	android:name
+		ADDED from D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:116:25-73
+action#com.macropilot.app.AI_LIST_LOGS
+ADDED from D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:117:17-74
+	android:name
+		ADDED from D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:117:25-71
+action#com.macropilot.app.AI_DELETE_LOGS
+ADDED from D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:118:17-76
+	android:name
+		ADDED from D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:118:25-73
+service#com.macropilot.app.factory.AppSideInstructionService
+ADDED from D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:122:9-125:56
+	android:exported
+		ADDED from D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:124:13-37
+	android:foregroundServiceType
+		ADDED from D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:125:13-53
+	android:name
+		ADDED from D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:123:13-62
+service#com.macropilot.app.factory.ThirdPartyAppBatchService
+ADDED from D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:127:9-130:56
+	android:exported
+		ADDED from D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:129:13-37
+	android:foregroundServiceType
+		ADDED from D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:130:13-53
+	android:name
+		ADDED from D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:128:13-62
+service#com.macropilot.app.factory.PopularAppTaskBatchService
+ADDED from D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:132:9-135:56
+	android:exported
+		ADDED from D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:134:13-37
+	android:foregroundServiceType
+		ADDED from D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:135:13-53
+	android:name
+		ADDED from D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:133:13-63
+service#com.macropilot.app.factory.AppUiProbeService
+ADDED from D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:137:9-140:56
+	android:exported
+		ADDED from D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:139:13-37
+	android:foregroundServiceType
+		ADDED from D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:140:13-53
+	android:name
+		ADDED from D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:138:13-54
+service#com.macropilot.app.automation.MacroPilotAccessibilityService
+ADDED from D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:142:9-153:19
+	android:label
+		ADDED from D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:145:13-64
+	android:exported
+		ADDED from D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:144:13-36
+	android:permission
+		ADDED from D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:146:13-79
+	android:name
+		ADDED from D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:143:13-70
+intent-filter#action:name:android.accessibilityservice.AccessibilityService
+ADDED from D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:147:13-149:29
+action#android.accessibilityservice.AccessibilityService
+ADDED from D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:148:17-92
+	android:name
+		ADDED from D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:148:25-89
+meta-data#android.accessibilityservice
+ADDED from D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:150:13-152:72
+	android:resource
+		ADDED from D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:152:17-69
+	android:name
+		ADDED from D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:151:17-60
+service#com.macropilot.app.automation.MacroPilotImeService
+ADDED from D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:155:9-166:19
+	android:label
+		ADDED from D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:158:13-54
+	android:exported
+		ADDED from D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:157:13-36
+	android:permission
+		ADDED from D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:159:13-70
+	android:name
+		ADDED from D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:156:13-60
+intent-filter#action:name:android.view.InputMethod
+ADDED from D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:160:13-162:29
+action#android.view.InputMethod
+ADDED from D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:161:17-67
+	android:name
+		ADDED from D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:161:25-64
+meta-data#android.view.im
+ADDED from D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:163:13-165:56
+	android:resource
+		ADDED from D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:165:17-53
+	android:name
+		ADDED from D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:164:17-47
+uses-sdk
+INJECTED from D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml
+INJECTED from D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml
+MERGED from [androidx.core:core:1.12.0] C:\Users\30834\.gradle\caches\8.9\transforms\1bdc206626008da73e301766f474e09e\transformed\core-1.12.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.12.0] C:\Users\30834\.gradle\caches\8.9\transforms\1bdc206626008da73e301766f474e09e\transformed\core-1.12.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core-ktx:1.12.0] C:\Users\30834\.gradle\caches\8.9\transforms\c986bab37ec271cabeee197d5ff28134\transformed\core-ktx-1.12.0\AndroidManifest.xml:5:5-44
+MERGED from [androidx.core:core-ktx:1.12.0] C:\Users\30834\.gradle\caches\8.9\transforms\c986bab37ec271cabeee197d5ff28134\transformed\core-ktx-1.12.0\AndroidManifest.xml:5:5-44
+MERGED from [androidx.annotation:annotation-experimental:1.3.0] C:\Users\30834\.gradle\caches\8.9\transforms\6265806dd394bcd4e3422a639f941e4e\transformed\annotation-experimental-1.3.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.annotation:annotation-experimental:1.3.0] C:\Users\30834\.gradle\caches\8.9\transforms\6265806dd394bcd4e3422a639f941e4e\transformed\annotation-experimental-1.3.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\30834\.gradle\caches\8.9\transforms\e19a196721a9b7eba0e7a2ed6b0e54cc\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\30834\.gradle\caches\8.9\transforms\e19a196721a9b7eba0e7a2ed6b0e54cc\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\30834\.gradle\caches\8.9\transforms\57930b39b4fdda6853b532a3019fbb38\transformed\interpolator-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\30834\.gradle\caches\8.9\transforms\57930b39b4fdda6853b532a3019fbb38\transformed\interpolator-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.3.1] C:\Users\30834\.gradle\caches\8.9\transforms\9e54571547917a15e205048ec348d3bb\transformed\lifecycle-runtime-2.3.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.3.1] C:\Users\30834\.gradle\caches\8.9\transforms\9e54571547917a15e205048ec348d3bb\transformed\lifecycle-runtime-2.3.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.arch.core:core-runtime:2.1.0] C:\Users\30834\.gradle\caches\8.9\transforms\192a543d5c5ecb2dae43cfbdcc41d157\transformed\core-runtime-2.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.arch.core:core-runtime:2.1.0] C:\Users\30834\.gradle\caches\8.9\transforms\192a543d5c5ecb2dae43cfbdcc41d157\transformed\core-runtime-2.1.0\AndroidManifest.xml:20:5-22:41
+	android:targetSdkVersion
+		INJECTED from D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml
+permission#${applicationId}.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+ADDED from [androidx.core:core:1.12.0] C:\Users\30834\.gradle\caches\8.9\transforms\1bdc206626008da73e301766f474e09e\transformed\core-1.12.0\AndroidManifest.xml:22:5-24:47
+	android:protectionLevel
+		ADDED from [androidx.core:core:1.12.0] C:\Users\30834\.gradle\caches\8.9\transforms\1bdc206626008da73e301766f474e09e\transformed\core-1.12.0\AndroidManifest.xml:24:9-44
+	android:name
+		ADDED from [androidx.core:core:1.12.0] C:\Users\30834\.gradle\caches\8.9\transforms\1bdc206626008da73e301766f474e09e\transformed\core-1.12.0\AndroidManifest.xml:23:9-81
+permission#com.macropilot.app.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+ADDED from [androidx.core:core:1.12.0] C:\Users\30834\.gradle\caches\8.9\transforms\1bdc206626008da73e301766f474e09e\transformed\core-1.12.0\AndroidManifest.xml:22:5-24:47
+	android:protectionLevel
+		ADDED from [androidx.core:core:1.12.0] C:\Users\30834\.gradle\caches\8.9\transforms\1bdc206626008da73e301766f474e09e\transformed\core-1.12.0\AndroidManifest.xml:24:9-44
+	android:name
+		ADDED from [androidx.core:core:1.12.0] C:\Users\30834\.gradle\caches\8.9\transforms\1bdc206626008da73e301766f474e09e\transformed\core-1.12.0\AndroidManifest.xml:23:9-81
+uses-permission#${applicationId}.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+ADDED from [androidx.core:core:1.12.0] C:\Users\30834\.gradle\caches\8.9\transforms\1bdc206626008da73e301766f474e09e\transformed\core-1.12.0\AndroidManifest.xml:26:5-97
+	android:name
+		ADDED from [androidx.core:core:1.12.0] C:\Users\30834\.gradle\caches\8.9\transforms\1bdc206626008da73e301766f474e09e\transformed\core-1.12.0\AndroidManifest.xml:26:22-94
+uses-permission#com.macropilot.app.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+ADDED from [androidx.core:core:1.12.0] C:\Users\30834\.gradle\caches\8.9\transforms\1bdc206626008da73e301766f474e09e\transformed\core-1.12.0\AndroidManifest.xml:26:5-97
+	android:name
+		ADDED from [androidx.core:core:1.12.0] C:\Users\30834\.gradle\caches\8.9\transforms\1bdc206626008da73e301766f474e09e\transformed\core-1.12.0\AndroidManifest.xml:26:22-94

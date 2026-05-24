@@ -1,0 +1,698 @@
+{
+  "schemaVersion": 1,
+  "kind": "ui_state_snapshot",
+  "id": "ui_snapshot_1779299626778",
+  "source": "accessibility_auto",
+  "note": "TYPE_WINDOW_CONTENT_CHANGED",
+  "screenshotPath": null,
+  "screenshotSha256": null,
+  "visualHash": null,
+  "screenshotSizeBytes": null,
+  "appPackage": "tv.danmaku.bili",
+  "windowClassName": "android.widget.FrameLayout",
+  "screenKey": "cf538e3b",
+  "relatedSkillId": null,
+  "relatedActionType": null,
+  "capability": {
+    "nodeReadability": "A",
+    "inputCapability": "CUSTOM_IME",
+    "verificationCapability": "HIGH",
+    "coordinateFallback": "AVAILABLE",
+    "serviceState": "CONNECTED",
+    "reason": "nodes=26, textLike=17, clickable=15, editable=0, scrollable=1, customIme=true"
+  },
+  "state": {
+    "appPackage": "tv.danmaku.bili",
+    "windowClassName": "android.widget.FrameLayout",
+    "screenWidth": 1440,
+    "screenHeight": 3168,
+    "timestamp": 1779299626771,
+    "nodeCount": 26,
+    "nodesStored": 26,
+    "nodesStorage": "compact_important_nodes_only",
+    "nodes": [
+      {
+        "nodeId": "8_10_1072_152_1248_336",
+        "packageName": "tv.danmaku.bili",
+        "text": null,
+        "contentDesc": "一键已读",
+        "resourceId": null,
+        "className": "android.widget.ImageView",
+        "bounds": {
+          "left": 1072,
+          "top": 152,
+          "right": 1248,
+          "bottom": 336
+        },
+        "clickable": true,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 8,
+        "parentRoleHint": "android.view.View"
+      },
+      {
+        "nodeId": "8_11_1248_152_1440_336",
+        "packageName": "tv.danmaku.bili",
+        "text": null,
+        "contentDesc": "菜单",
+        "resourceId": null,
+        "className": "android.widget.ImageView",
+        "bounds": {
+          "left": 1248,
+          "top": 152,
+          "right": 1440,
+          "bottom": 336
+        },
+        "clickable": true,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 8,
+        "parentRoleHint": "android.view.View"
+      },
+      {
+        "nodeId": "9_23_128_336_506_741",
+        "packageName": "tv.danmaku.bili",
+        "text": null,
+        "contentDesc": "回复与@",
+        "resourceId": null,
+        "className": "android.view.View",
+        "bounds": {
+          "left": 128,
+          "top": 336,
+          "right": 506,
+          "bottom": 741
+        },
+        "clickable": true,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 9,
+        "parentRoleHint": "android.view.View"
+      },
+      {
+        "nodeId": "9_24_530_336_909_741",
+        "packageName": "tv.danmaku.bili",
+        "text": null,
+        "contentDesc": "收到喜欢",
+        "resourceId": null,
+        "className": "android.view.View",
+        "bounds": {
+          "left": 530,
+          "top": 336,
+          "right": 909,
+          "bottom": 741
+        },
+        "clickable": true,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 9,
+        "parentRoleHint": "android.view.View"
+      },
+      {
+        "nodeId": "9_25_933_336_1312_741",
+        "packageName": "tv.danmaku.bili",
+        "text": null,
+        "contentDesc": "新增粉丝",
+        "resourceId": null,
+        "className": "android.view.View",
+        "bounds": {
+          "left": 933,
+          "top": 336,
+          "right": 1312,
+          "bottom": 741
+        },
+        "clickable": true,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 9,
+        "parentRoleHint": "android.view.View"
+      },
+      {
+        "nodeId": "9_14_0_741_1440_1025",
+        "packageName": "tv.danmaku.bili",
+        "text": null,
+        "contentDesc": "笔记本维修厮 1小时前  [视频] 2000的电脑价值2900？商业 bug 来了",
+        "resourceId": null,
+        "className": "android.view.View",
+        "bounds": {
+          "left": 0,
+          "top": 741,
+          "right": 1440,
+          "bottom": 1025
+        },
+        "clickable": true,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 9,
+        "parentRoleHint": "android.view.View"
+      },
+      {
+        "nodeId": "9_15_0_1025_1440_1309",
+        "packageName": "tv.danmaku.bili",
+        "text": null,
+        "contentDesc": "ETF数据侠 2小时前  [视频] 决战封测之巅！长电、通富、华天三巨头终究对决！",
+        "resourceId": null,
+        "className": "android.view.View",
+        "bounds": {
+          "left": 0,
+          "top": 1025,
+          "right": 1440,
+          "bottom": 1309
+        },
+        "clickable": true,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 9,
+        "parentRoleHint": "android.view.View"
+      },
+      {
+        "nodeId": "9_16_0_1309_1440_1593",
+        "packageName": "tv.danmaku.bili",
+        "text": null,
+        "contentDesc": "科比牢大-擒史皇 6小时前  [视频] 我最讨厌的就是事后道歉！杀神嘉豪（57）",
+        "resourceId": null,
+        "className": "android.view.View",
+        "bounds": {
+          "left": 0,
+          "top": 1309,
+          "right": 1440,
+          "bottom": 1593
+        },
+        "clickable": true,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 9,
+        "parentRoleHint": "android.view.View"
+      },
+      {
+        "nodeId": "9_17_0_1593_1440_1877",
+        "packageName": "tv.danmaku.bili",
+        "text": null,
+        "contentDesc": "玛珂娜 8小时前  [视频] 《千千阙歌》，但是弱智AI填词",
+        "resourceId": null,
+        "className": "android.view.View",
+        "bounds": {
+          "left": 0,
+          "top": 1593,
+          "right": 1440,
+          "bottom": 1877
+        },
+        "clickable": true,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 9,
+        "parentRoleHint": "android.view.View"
+      },
+      {
+        "nodeId": "9_18_0_1877_1440_2161",
+        "packageName": "tv.danmaku.bili",
+        "text": null,
+        "contentDesc": "郑郑得证 9小时前  [视频] 【食尸驱魔案】女孩被迫吞尸粉驱魔11天入土，这是她身体发生的变化。。。",
+        "resourceId": null,
+        "className": "android.view.View",
+        "bounds": {
+          "left": 0,
+          "top": 1877,
+          "right": 1440,
+          "bottom": 2161
+        },
+        "clickable": true,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 9,
+        "parentRoleHint": "android.view.View"
+      },
+      {
+        "nodeId": "9_19_0_2161_1440_2445",
+        "packageName": "tv.danmaku.bili",
+        "text": null,
+        "contentDesc": "长路量价 14小时前  [专栏] 不要再被这种高位放量欺骗，这不是出货，而是继续上涨的先兆",
+        "resourceId": null,
+        "className": "android.view.View",
+        "bounds": {
+          "left": 0,
+          "top": 2161,
+          "right": 1440,
+          "bottom": 2445
+        },
+        "clickable": true,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 9,
+        "parentRoleHint": "android.view.View"
+      },
+      {
+        "nodeId": "9_20_0_2445_1440_2729",
+        "packageName": "tv.danmaku.bili",
+        "text": null,
+        "contentDesc": "嘉宾商学 14小时前  [视频] Q Business 吴婷对话产业之王集锦 先睹为快",
+        "resourceId": null,
+        "className": "android.view.View",
+        "bounds": {
+          "left": 0,
+          "top": 2445,
+          "right": 1440,
+          "bottom": 2729
+        },
+        "clickable": true,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 9,
+        "parentRoleHint": "android.view.View"
+      },
+      {
+        "nodeId": "9_21_0_2729_1440_3013",
+        "packageName": "tv.danmaku.bili",
+        "text": null,
+        "contentDesc": "摩的司机徐师傅 17小时前  [视频] 江西纯情富二代，被女友精神控制8年后终于醒悟，挣脱束缚后打算开启全新人生",
+        "resourceId": null,
+        "className": "android.view.View",
+        "bounds": {
+          "left": 0,
+          "top": 2729,
+          "right": 1440,
+          "bottom": 3013
+        },
+        "clickable": true,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 9,
+        "parentRoleHint": "android.view.View"
+      },
+      {
+        "nodeId": "9_22_0_3013_1440_3168",
+        "packageName": "tv.danmaku.bili",
+        "text": null,
+        "contentDesc": "极客湾Geekerwan 2天前  [视频] 拯救者Y900旗舰AI平板上手体验：大屏玩游戏有多爽？",
+        "resourceId": null,
+        "className": "android.view.View",
+        "bounds": {
+          "left": 0,
+          "top": 3013,
+          "right": 1440,
+          "bottom": 3168
+        },
+        "clickable": true,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 9,
+        "parentRoleHint": "android.view.View"
+      },
+      {
+        "nodeId": "8_9_0_152_192_336",
+        "packageName": "tv.danmaku.bili",
+        "text": null,
+        "contentDesc": null,
+        "resourceId": null,
+        "className": "android.view.View",
+        "bounds": {
+          "left": 0,
+          "top": 152,
+          "right": 192,
+          "bottom": 336
+        },
+        "clickable": true,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 8,
+        "parentRoleHint": "android.view.View"
+      },
+      {
+        "nodeId": "3_3_0_0_1440_3168",
+        "packageName": "tv.danmaku.bili",
+        "text": null,
+        "contentDesc": null,
+        "resourceId": "tv.danmaku.bili:id\/action_bar_root",
+        "className": "android.widget.LinearLayout",
+        "bounds": {
+          "left": 0,
+          "top": 0,
+          "right": 1440,
+          "bottom": 3168
+        },
+        "clickable": false,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 3,
+        "parentRoleHint": "android.widget.FrameLayout"
+      },
+      {
+        "nodeId": "4_4_0_0_1440_3168",
+        "packageName": "tv.danmaku.bili",
+        "text": null,
+        "contentDesc": null,
+        "resourceId": "android:id\/content",
+        "className": "android.widget.FrameLayout",
+        "bounds": {
+          "left": 0,
+          "top": 0,
+          "right": 1440,
+          "bottom": 3168
+        },
+        "clickable": false,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 4,
+        "parentRoleHint": "android.widget.LinearLayout"
+      },
+      {
+        "nodeId": "8_12_652_208_788_288",
+        "packageName": "tv.danmaku.bili",
+        "text": "消息",
+        "contentDesc": null,
+        "resourceId": null,
+        "className": "android.widget.TextView",
+        "bounds": {
+          "left": 652,
+          "top": 208,
+          "right": 788,
+          "bottom": 288
+        },
+        "clickable": false,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 8,
+        "parentRoleHint": "android.view.View"
+      },
+      {
+        "nodeId": "8_13_0_336_1440_3168",
+        "packageName": "tv.danmaku.bili",
+        "text": null,
+        "contentDesc": null,
+        "resourceId": null,
+        "className": "android.view.View",
+        "bounds": {
+          "left": 0,
+          "top": 336,
+          "right": 1440,
+          "bottom": 3168
+        },
+        "clickable": false,
+        "editable": false,
+        "scrollable": true,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 8,
+        "parentRoleHint": "android.view.View"
+      },
+      {
+        "nodeId": "0_0_0_0_1440_3168",
+        "packageName": "tv.danmaku.bili",
+        "text": null,
+        "contentDesc": null,
+        "resourceId": null,
+        "className": "android.widget.FrameLayout",
+        "bounds": {
+          "left": 0,
+          "top": 0,
+          "right": 1440,
+          "bottom": 3168
+        },
+        "clickable": false,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 0,
+        "parentRoleHint": null
+      },
+      {
+        "nodeId": "1_1_0_0_1440_3168",
+        "packageName": "tv.danmaku.bili",
+        "text": null,
+        "contentDesc": null,
+        "resourceId": null,
+        "className": "android.widget.LinearLayout",
+        "bounds": {
+          "left": 0,
+          "top": 0,
+          "right": 1440,
+          "bottom": 3168
+        },
+        "clickable": false,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 1,
+        "parentRoleHint": "android.widget.FrameLayout"
+      },
+      {
+        "nodeId": "2_2_0_0_1440_3168",
+        "packageName": "tv.danmaku.bili",
+        "text": null,
+        "contentDesc": null,
+        "resourceId": null,
+        "className": "android.widget.FrameLayout",
+        "bounds": {
+          "left": 0,
+          "top": 0,
+          "right": 1440,
+          "bottom": 3168
+        },
+        "clickable": false,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 2,
+        "parentRoleHint": "android.widget.LinearLayout"
+      },
+      {
+        "nodeId": "5_5_0_0_1440_3168",
+        "packageName": "tv.danmaku.bili",
+        "text": null,
+        "contentDesc": null,
+        "resourceId": null,
+        "className": "androidx.compose.ui.platform.ComposeView",
+        "bounds": {
+          "left": 0,
+          "top": 0,
+          "right": 1440,
+          "bottom": 3168
+        },
+        "clickable": false,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 5,
+        "parentRoleHint": "android.widget.FrameLayout"
+      },
+      {
+        "nodeId": "6_6_0_0_1440_3168",
+        "packageName": "tv.danmaku.bili",
+        "text": null,
+        "contentDesc": null,
+        "resourceId": null,
+        "className": "android.view.View",
+        "bounds": {
+          "left": 0,
+          "top": 0,
+          "right": 1440,
+          "bottom": 3168
+        },
+        "clickable": false,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 6,
+        "parentRoleHint": "androidx.compose.ui.platform.ComposeView"
+      },
+      {
+        "nodeId": "7_7_0_0_1440_3168",
+        "packageName": "tv.danmaku.bili",
+        "text": null,
+        "contentDesc": null,
+        "resourceId": null,
+        "className": "android.view.View",
+        "bounds": {
+          "left": 0,
+          "top": 0,
+          "right": 1440,
+          "bottom": 3168
+        },
+        "clickable": false,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 7,
+        "parentRoleHint": "android.view.View"
+      },
+      {
+        "nodeId": "8_8_0_0_1440_336",
+        "packageName": "tv.danmaku.bili",
+        "text": null,
+        "contentDesc": null,
+        "resourceId": null,
+        "className": "android.view.View",
+        "bounds": {
+          "left": 0,
+          "top": 0,
+          "right": 1440,
+          "bottom": 336
+        },
+        "clickable": false,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 8,
+        "parentRoleHint": "android.view.View"
+      }
+    ],
+    "eventsSinceLastState": [
+      {
+        "eventType": "TYPE_WINDOW_CONTENT_CHANGED",
+        "packageName": "com.android.systemui",
+        "className": "android.widget.FrameLayout",
+        "text": null,
+        "timestamp": 1779299626243
+      },
+      {
+        "eventType": "TYPE_WINDOW_CONTENT_CHANGED",
+        "packageName": "com.android.systemui",
+        "className": "android.widget.FrameLayout",
+        "text": null,
+        "timestamp": 1779299626340
+      }
+    ]
+  },
+  "summary": {
+    "nodeCount": 26,
+    "clickableCount": 15,
+    "editableCount": 0,
+    "scrollableCount": 1,
+    "labels": [
+      "tv.danmaku.bili:id\/action_bar_root",
+      "android:id\/content",
+      "一键已读",
+      "菜单",
+      "消息",
+      "笔记本维修厮 1小时前  [视频] 2000的电脑价值2900？商业 bug 来了",
+      "ETF数据侠 2小时前  [视频] 决战封测之巅！长电、通富、华天三巨头终究对决！",
+      "科比牢大-擒史皇 6小时前  [视频] 我最讨厌的就是事后道歉！杀神嘉豪（57）",
+      "玛珂娜 8小时前  [视频] 《千千阙歌》，但是弱智AI填词",
+      "郑郑得证 9小时前  [视频] 【食尸驱魔案】女孩被迫吞尸粉驱魔11天入土，这是她身体发生的变化。。。",
+      "长路量价 14小时前  [专栏] 不要再被这种高位放量欺骗，这不是出货，而是继续上涨的先兆",
+      "嘉宾商学 14小时前  [视频] Q Business 吴婷对话产业之王集锦 先睹为快",
+      "摩的司机徐师傅 17小时前  [视频] 江西纯情富二代，被女友精神控制8年后终于醒悟，挣脱束缚后打算开启全新人生",
+      "极客湾Geekerwan 2天前  [视频] 拯救者Y900旗舰AI平板上手体验：大屏玩游戏有多爽？",
+      "回复与@",
+      "收到喜欢",
+      "新增粉丝"
+    ],
+    "bottomCandidates": [
+      {
+        "label": "长路量价 14小时前  [专栏] 不要再被这种高位放量欺骗，这不是出货，而是继续上涨的先兆",
+        "bounds": {
+          "left": 0,
+          "top": 2161,
+          "right": 1440,
+          "bottom": 2445
+        },
+        "clickable": true
+      },
+      {
+        "label": "嘉宾商学 14小时前  [视频] Q Business 吴婷对话产业之王集锦 先睹为快",
+        "bounds": {
+          "left": 0,
+          "top": 2445,
+          "right": 1440,
+          "bottom": 2729
+        },
+        "clickable": true
+      },
+      {
+        "label": "摩的司机徐师傅 17小时前  [视频] 江西纯情富二代，被女友精神控制8年后终于醒悟，挣脱束缚后打算开启全新人生",
+        "bounds": {
+          "left": 0,
+          "top": 2729,
+          "right": 1440,
+          "bottom": 3013
+        },
+        "clickable": true
+      },
+      {
+        "label": "极客湾Geekerwan 2天前  [视频] 拯救者Y900旗舰AI平板上手体验：大屏玩游戏有多爽？",
+        "bounds": {
+          "left": 0,
+          "top": 3013,
+          "right": 1440,
+          "bottom": 3168
+        },
+        "clickable": true
+      }
+    ]
+  },
+  "retentionPolicy": {
+    "fullNodeTreeStored": false,
+    "storedNodeLimit": 45,
+    "storedEventLimit": 20,
+    "longTermKnowledge": "summary + app_ui_graph + assembly\/runtime reports"
+  },
+  "createdAt": 1779299626813
+}

@@ -1,0 +1,55 @@
+{
+  "schemaVersion": 1,
+  "kind": "skill_json_ai_follow_up_run_report",
+  "id": "ai_follow_up_run_1778529304361",
+  "skillId": "direct.command.1778529297627",
+  "failedSkillId": "bilibili.search.search_in_app",
+  "appPackage": "tv.danmaku.bili",
+  "instruction": "打开哔哩哔哩搜索王老菊打开第一个视频",
+  "engine": "ai_runtime_checkpoint",
+  "phase": "CHECKPOINT",
+  "trigger": "COMPLEX_TASK_CHECKPOINT",
+  "previousStatus": "SUCCESS_LOW_CONFIDENCE",
+  "previousMessage": "Macro atoms completed; reactiveDismissed=12",
+  "previousRuntimeReportFile": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/runtime\/run_reports\/tv.danmaku.bili\/ai_direct_run_1778529203852.json",
+  "aiJobFile": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ai_jobs\/2026-05-12\/factory_ai_checkpoint_1778529297601.json",
+  "decision": {
+    "goalCompleted": false,
+    "screenAssessment": "当前页面是UP主“郑郑得证”的个人空间页，不是“王老菊”搜索结果页，也不是视频播放页。可能是上一步搜索后误触弹窗或误入其他作者页面。",
+    "failureDiagnosis": "搜索宏 bilibili.search.search_in_app 执行后可能触发了分享弹窗或误触其他入口，未正确进入搜索结果页，导致停留在作者空间页，未完成打开第一个视频的目标。",
+    "confidence": "MEDIUM",
+    "nextActionReason": "先按返回键退出当前空间页，期望回到之前的搜索结果页或主界面，以便重新搜索或直接在搜索结果中打开第一个视频。"
+  },
+  "approvedRequired": false,
+  "status": "SUCCESS_MEDIUM_CONFIDENCE",
+  "message": "Macro atoms completed; reactiveDismissed=8",
+  "durationMs": 6691,
+  "usedCoordinate": true,
+  "details": {
+    "macroSkillId": "direct.command.1778529297627",
+    "atomTrace": [
+      {
+        "index": 0,
+        "skillId": "direct.1778529297627.1.back",
+        "actionType": "Back",
+        "status": "SUCCESS_MEDIUM_CONFIDENCE",
+        "message": "Window\/node state changed; reactiveDismissedBeforeAction=2",
+        "usedCoordinate": true,
+        "details": null
+      },
+      {
+        "index": 1,
+        "skillId": "direct.1778529297627.2.wait",
+        "actionType": "Wait",
+        "status": "SUCCESS_MEDIUM_CONFIDENCE",
+        "message": "Waited 800ms; reactiveDismissed=2; reactiveDismissedBeforeAction=2",
+        "usedCoordinate": true,
+        "details": null
+      }
+    ],
+    "reactiveDismissed": 8
+  },
+  "allowSideEffect": true,
+  "skillFile": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_candidates\/tv.danmaku.bili\/direct.command.1778529297627.json",
+  "createdAt": 1778529304361
+}

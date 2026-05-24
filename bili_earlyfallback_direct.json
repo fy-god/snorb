@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "kind": "skill_json_ai_direct_run_report",
+  "id": "ai_direct_run_1778530622863",
+  "skillId": "bilibili.search.search_in_app",
+  "appPackage": "tv.danmaku.bili",
+  "instruction": "打开哔哩哔哩搜索王老菊打开第一个视频",
+  "engine": "ai_direct_skill_json",
+  "approvedRequired": false,
+  "status": "SUCCESS_LOW_CONFIDENCE",
+  "message": "Window\/node state changed",
+  "durationMs": 5572,
+  "usedCoordinate": false,
+  "details": null,
+  "allowSideEffect": true,
+  "params": {
+    "query": "王老菊"
+  },
+  "skillFile": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_candidates\/tv.danmaku.bili\/bilibili.search.search_in_app.json",
+  "previewConfigFile": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/app_config_exports\/tv.danmaku.bili\/app_config_20260512_041657_148.json",
+  "createdAt": 1778530622863
+}

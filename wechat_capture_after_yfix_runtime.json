@@ -1,0 +1,311 @@
+{
+  "schemaVersion": 1,
+  "kind": "skill_json_ai_direct_run_report",
+  "id": "ai_direct_run_1778522755661",
+  "skillId": "direct.command.1778522734166",
+  "appPackage": "com.tencent.mm",
+  "instruction": "记录微信底栏四个界面的UI，只采样保存微信、通讯录、发现、我，不发布任何内容",
+  "engine": "ai_direct_skill_json",
+  "approvedRequired": false,
+  "status": "SUCCESS_MEDIUM_CONFIDENCE",
+  "message": "Macro atoms completed; reactiveDismissed=0",
+  "durationMs": 21367,
+  "usedCoordinate": true,
+  "details": {
+    "macroSkillId": "direct.command.1778522734166",
+    "atomTrace": [
+      {
+        "index": 0,
+        "skillId": "direct.1778522734166.1.openapp",
+        "actionType": "OpenApp",
+        "status": "SUCCESS_MEDIUM_CONFIDENCE",
+        "message": "Launch intent sent for com.tencent.mm",
+        "usedCoordinate": false,
+        "details": null
+      },
+      {
+        "index": 1,
+        "skillId": "direct.1778522734166.2.handlereactiveoverlays",
+        "actionType": "HandleReactiveOverlays",
+        "status": "SUCCESS_MEDIUM_CONFIDENCE",
+        "message": "Reactive overlay pass completed; dismissed=0",
+        "usedCoordinate": false,
+        "details": null
+      },
+      {
+        "index": 2,
+        "skillId": "direct.1778522734166.3.capturewechatbottomtabs",
+        "actionType": "CaptureWechatBottomTabs",
+        "status": "SUCCESS_MEDIUM_CONFIDENCE",
+        "message": "Captured verified WeChat bottom tab UI snapshots: 4\/4; events=[{\"phase\":\"tab_shell_probe\",\"index\":0,\"visible\":false,\"snapshot\":\"\\\/data\\\/user\\\/0\\\/com.macropilot.app\\\/files\\\/macro_v2\\\/factory\\\/ui_snapshots\\\/com.tencent.mm\\\/20260512_020539_180_7aaab248.json\",\"screenshotPath\":\"\\\/data\\\/user\\\/0\\\/com.macropilot.app\\\/files\\\/macro_v2\\\/factory\\\/ui_screenshots\\\/com.tencent.mm\\\/20260512_020539_180_7aaab248.png\",\"selectedEvidence\":{\"selectedIndex\":-1,\"selectedScore\":0,\"scores\":[0,0,19,2],\"reason\":\"bottom_sheet_dialog_visible\"}},{\"phase\":\"tab_shell_dismiss_wechat_bottom_sheet\",\"index\":0,\"success\":true,\"message\":\"dispatchGesture tap sent (normalized=0.330,0.885 px=475,2803 screen=1440x3168)\",\"reason\":\"bottom_sheet_dialog_visible\"},{\"phase\":\"tab_shell_probe\",\"index\":1,\"visible\":false,\"snapshot\":\"\\\/data\\\/user\\\/0\\\/com.macropilot.app\\\/files\\\/macro_v2\\\/factory\\\/ui_snapshots\\\/com.tencent.mm\\\/20260512_020540_653_1a9e5eb3.json\",\"screenshotPath\":\"\\\/data\\\/user\\\/0\\\/com.macropilot.app\\\/files\\\/macro_v2\\\/factory\\\/ui_screenshots\\\/com.tencent.mm\\\/20260512_020540_653_1a9e5eb3.png\",\"selectedEvidence\":{\"selectedIndex\":-1,\"selectedScore\":0,\"scores\":[0,0,0,0],\"surfaceWarning\":null}},{\"phase\":\"tab_shell_back\",\"index\":1,\"success\":true,\"message\":\"GLOBAL_ACTION_BACK performed\",\"reason\":null},{\"phase\":\"tab_shell_probe\",\"index\":2,\"visible\":false,\"snapshot\":\"\\\/data\\\/user\\\/0\\\/com.macropilot.app\\\/files\\\/macro_v2\\\/factory\\\/ui_snapshots\\\/com.tencent.mm\\\/20260512_020542_018_d90f1c6c.json\",\"screenshotPath\":\"\\\/data\\\/user\\\/0\\\/com.macropilot.app\\\/files\\\/macro_v2\\\/factory\\\/ui_screenshots\\\/com.tencent.mm\\\/20260512_020542_018_d90f1c6c.png\",\"selectedEvidence\":{\"selectedIndex\":-1,\"selectedScore\":0,\"scores\":[0,0,0,0],\"surfaceWarning\":null}},{\"phase\":\"tab_shell_back\",\"index\":2,\"success\":true,\"message\":\"GLOBAL_ACTION_BACK performed\",\"reason\":null},{\"phase\":\"tab_shell_probe\",\"index\":3,\"visible\":false,\"snapshot\":\"\\\/data\\\/user\\\/0\\\/com.macropilot.app\\\/files\\\/macro_v2\\\/factory\\\/ui_snapshots\\\/com.tencent.mm\\\/20260512_020543_855_3f5f2f9.json\",\"screenshotPath\":\"\\\/data\\\/user\\\/0\\\/com.macropilot.app\\\/files\\\/macro_v2\\\/factory\\\/ui_screenshots\\\/com.tencent.mm\\\/20260512_020543_855_3f5f2f9.png\",\"selectedEvidence\":{\"selectedIndex\":-1,\"selectedScore\":0,\"scores\":[0,0,0,0],\"surfaceWarning\":null}},{\"phase\":\"tab_shell_back\",\"index\":3,\"success\":true,\"message\":\"GLOBAL_ACTION_BACK performed\",\"reason\":null},{\"phase\":\"tab_shell_probe\",\"index\":4,\"visible\":true,\"snapshot\":\"\\\/data\\\/user\\\/0\\\/com.macropilot.a",
+        "usedCoordinate": true,
+        "details": {
+          "captured": 4,
+          "expected": 4,
+          "events": [
+            {
+              "phase": "tab_shell_probe",
+              "index": 0,
+              "visible": false,
+              "snapshot": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_snapshots\/com.tencent.mm\/20260512_020539_180_7aaab248.json",
+              "screenshotPath": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_screenshots\/com.tencent.mm\/20260512_020539_180_7aaab248.png",
+              "selectedEvidence": {
+                "selectedIndex": -1,
+                "selectedScore": 0,
+                "scores": [
+                  0,
+                  0,
+                  19,
+                  2
+                ],
+                "reason": "bottom_sheet_dialog_visible"
+              }
+            },
+            {
+              "phase": "tab_shell_dismiss_wechat_bottom_sheet",
+              "index": 0,
+              "success": true,
+              "message": "dispatchGesture tap sent (normalized=0.330,0.885 px=475,2803 screen=1440x3168)",
+              "reason": "bottom_sheet_dialog_visible"
+            },
+            {
+              "phase": "tab_shell_probe",
+              "index": 1,
+              "visible": false,
+              "snapshot": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_snapshots\/com.tencent.mm\/20260512_020540_653_1a9e5eb3.json",
+              "screenshotPath": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_screenshots\/com.tencent.mm\/20260512_020540_653_1a9e5eb3.png",
+              "selectedEvidence": {
+                "selectedIndex": -1,
+                "selectedScore": 0,
+                "scores": [
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                "surfaceWarning": null
+              }
+            },
+            {
+              "phase": "tab_shell_back",
+              "index": 1,
+              "success": true,
+              "message": "GLOBAL_ACTION_BACK performed",
+              "reason": null
+            },
+            {
+              "phase": "tab_shell_probe",
+              "index": 2,
+              "visible": false,
+              "snapshot": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_snapshots\/com.tencent.mm\/20260512_020542_018_d90f1c6c.json",
+              "screenshotPath": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_screenshots\/com.tencent.mm\/20260512_020542_018_d90f1c6c.png",
+              "selectedEvidence": {
+                "selectedIndex": -1,
+                "selectedScore": 0,
+                "scores": [
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                "surfaceWarning": null
+              }
+            },
+            {
+              "phase": "tab_shell_back",
+              "index": 2,
+              "success": true,
+              "message": "GLOBAL_ACTION_BACK performed",
+              "reason": null
+            },
+            {
+              "phase": "tab_shell_probe",
+              "index": 3,
+              "visible": false,
+              "snapshot": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_snapshots\/com.tencent.mm\/20260512_020543_855_3f5f2f9.json",
+              "screenshotPath": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_screenshots\/com.tencent.mm\/20260512_020543_855_3f5f2f9.png",
+              "selectedEvidence": {
+                "selectedIndex": -1,
+                "selectedScore": 0,
+                "scores": [
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                "surfaceWarning": null
+              }
+            },
+            {
+              "phase": "tab_shell_back",
+              "index": 3,
+              "success": true,
+              "message": "GLOBAL_ACTION_BACK performed",
+              "reason": null
+            },
+            {
+              "phase": "tab_shell_probe",
+              "index": 4,
+              "visible": true,
+              "snapshot": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_snapshots\/com.tencent.mm\/20260512_020545_025_d86e7fcf.json",
+              "screenshotPath": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_screenshots\/com.tencent.mm\/20260512_020545_025_d86e7fcf.png",
+              "selectedEvidence": {
+                "selectedIndex": 3,
+                "selectedScore": 29,
+                "scores": [
+                  0,
+                  0,
+                  0,
+                  29
+                ],
+                "surfaceWarning": null
+              }
+            },
+            {
+              "phase": "capture_tab",
+              "index": 0,
+              "tabKey": "wechat",
+              "tabLabel": "微信",
+              "accepted": true,
+              "snapshot": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_snapshots\/com.tencent.mm\/20260512_020547_361_78355494.json",
+              "screenshotPath": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_screenshots\/com.tencent.mm\/20260512_020547_361_78355494.png",
+              "attempts": [
+                {
+                  "attempt": 0,
+                  "tapY": 0.965,
+                  "usedCoordinate": true,
+                  "tapSuccess": true,
+                  "tapMessage": "dispatchGesture tap sent (normalized=0.125,0.965 px=180,3057 screen=1440x3168)",
+                  "snapshot": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_snapshots\/com.tencent.mm\/20260512_020547_361_78355494.json",
+                  "screenshotPath": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_screenshots\/com.tencent.mm\/20260512_020547_361_78355494.png",
+                  "visualHash": "36aa1d864af7d8126992ff8566f439a2add4a1bb19408b425c2e31590de8f5a9",
+                  "duplicateVisualHash": false,
+                  "selectedEvidence": {
+                    "selectedIndex": 0,
+                    "selectedScore": 35,
+                    "scores": [
+                      35,
+                      0,
+                      0,
+                      0
+                    ],
+                    "surfaceWarning": "chat_composer_visible"
+                  },
+                  "accepted": true
+                }
+              ]
+            },
+            {
+              "phase": "capture_tab",
+              "index": 1,
+              "tabKey": "contacts",
+              "tabLabel": "通讯录",
+              "accepted": true,
+              "snapshot": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_snapshots\/com.tencent.mm\/20260512_020549_445_ec7c67e6.json",
+              "screenshotPath": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_screenshots\/com.tencent.mm\/20260512_020549_445_ec7c67e6.png",
+              "attempts": [
+                {
+                  "attempt": 0,
+                  "tapY": 0.965,
+                  "usedCoordinate": true,
+                  "tapSuccess": true,
+                  "tapMessage": "dispatchGesture tap sent (normalized=0.375,0.965 px=540,3057 screen=1440x3168)",
+                  "snapshot": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_snapshots\/com.tencent.mm\/20260512_020549_445_ec7c67e6.json",
+                  "screenshotPath": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_screenshots\/com.tencent.mm\/20260512_020549_445_ec7c67e6.png",
+                  "visualHash": "7380ebb6fbcc8f66d1bd01b5f8387a6d4192854c8ab7caa2931ee8d954e7f47e",
+                  "duplicateVisualHash": false,
+                  "selectedEvidence": {
+                    "selectedIndex": 1,
+                    "selectedScore": 37,
+                    "scores": [
+                      0,
+                      37,
+                      0,
+                      0
+                    ],
+                    "surfaceWarning": "chat_composer_visible"
+                  },
+                  "accepted": true
+                }
+              ]
+            },
+            {
+              "phase": "capture_tab",
+              "index": 2,
+              "tabKey": "discover",
+              "tabLabel": "发现",
+              "accepted": true,
+              "snapshot": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_snapshots\/com.tencent.mm\/20260512_020551_471_78355494.json",
+              "screenshotPath": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_screenshots\/com.tencent.mm\/20260512_020551_471_78355494.png",
+              "attempts": [
+                {
+                  "attempt": 0,
+                  "tapY": 0.965,
+                  "usedCoordinate": true,
+                  "tapSuccess": true,
+                  "tapMessage": "dispatchGesture tap sent (normalized=0.625,0.965 px=900,3057 screen=1440x3168)",
+                  "snapshot": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_snapshots\/com.tencent.mm\/20260512_020551_471_78355494.json",
+                  "screenshotPath": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_screenshots\/com.tencent.mm\/20260512_020551_471_78355494.png",
+                  "visualHash": "f45217d91f159ec850050264c933ecec3d198f5a18fc74eb509d9a9aea7f7827",
+                  "duplicateVisualHash": false,
+                  "selectedEvidence": {
+                    "selectedIndex": 2,
+                    "selectedScore": 42,
+                    "scores": [
+                      0,
+                      0,
+                      42,
+                      0
+                    ],
+                    "surfaceWarning": null
+                  },
+                  "accepted": true
+                }
+              ]
+            },
+            {
+              "phase": "capture_tab",
+              "index": 3,
+              "tabKey": "me",
+              "tabLabel": "我",
+              "accepted": true,
+              "snapshot": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_snapshots\/com.tencent.mm\/20260512_020553_477_78355494.json",
+              "screenshotPath": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_screenshots\/com.tencent.mm\/20260512_020553_477_78355494.png",
+              "attempts": [
+                {
+                  "attempt": 0,
+                  "tapY": 0.965,
+                  "usedCoordinate": true,
+                  "tapSuccess": true,
+                  "tapMessage": "dispatchGesture tap sent (normalized=0.875,0.965 px=1260,3057 screen=1440x3168)",
+                  "snapshot": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_snapshots\/com.tencent.mm\/20260512_020553_477_78355494.json",
+                  "screenshotPath": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_screenshots\/com.tencent.mm\/20260512_020553_477_78355494.png",
+                  "visualHash": "ecf11e2a2a019ad76ee193f3b542863c637a50e22b9b61dc21299263a9918cec",
+                  "duplicateVisualHash": false,
+                  "selectedEvidence": {
+                    "selectedIndex": 3,
+                    "selectedScore": 29,
+                    "scores": [
+                      0,
+                      0,
+                      0,
+                      29
+                    ],
+                    "surfaceWarning": null
+                  },
+                  "accepted": true
+                }
+              ]
+            }
+          ]
+        }
+      }
+    ],
+    "reactiveDismissed": 0
+  },
+  "allowSideEffect": true,
+  "params": {},
+  "skillFile": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_candidates\/com.tencent.mm\/direct.command.1778522734166.json",
+  "previewConfigFile": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/app_config_exports\/com.tencent.mm\/app_config_20260512_020534_233.json",
+  "createdAt": 1778522755661
+}

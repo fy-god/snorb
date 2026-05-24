@@ -1,0 +1,14 @@
+{
+  "schemaVersion": 1,
+  "kind": "skill_json_dry_run_report",
+  "skillId": "patched.1779300677424.9.typeatcoordinate",
+  "appPackage": "com.xingin.xhs",
+  "passed": false,
+  "status": "REJECTED",
+  "errors": [
+    "dangerous_action:支付"
+  ],
+  "warnings": [],
+  "summary": "dangerous_action:支付",
+  "timestamp": 1779338094169
+}

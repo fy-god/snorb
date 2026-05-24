@@ -1,0 +1,1996 @@
+{
+  "schemaVersion": 1,
+  "kind": "autonomous_training_record",
+  "id": "autonomous_training_1779339630404",
+  "appPackage": "com.baidu.BaiduMap",
+  "flowReportFile": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/flow_reports\/com.baidu.baidumap\/ai_direct_flow_1779339630368.json",
+  "input": {
+    "instruction": "在百度地图搜索上海站，停在地点结果页并记录路线、收藏、电话入口。\n\n约束：目标 App=百度地图，包名=com.baidu.BaiduMap。必须由 MacroPilot 手机端自己用无障碍、输入法、AI\/Skill JSON 执行，不允许依赖 ADB 手点目标 App。执行前先读取当前 UI；如果遇到广告、弹窗、小字提示，先记录文字并安全关闭。任务完成必须用当前 UI 证据验证，不能只因为步骤执行完就报成功。如果没有现成 skill，先复用已有相似 Skill JSON\/archetype，只改关键槽位如入口文字、坐标、目标文本、验证规则，再组装 atomic\/macro skill。需要探索入口时优先遍历底部标签、顶部小图标、图形化入口、侧边操作和子页面。本任务 stopBeforeSubmit=true：写草稿、评论、订单、支付类流程必须停在提交前，不点击最终发布、发送、提交订单、支付、确认授权。期望证据包括：上海站、地点。",
+    "appPackage": "com.baidu.BaiduMap",
+    "query": "上海站，停在地点结果页并记录路线、收藏、电话入口。\n\n约束：目标 App=百度地图，包名=com.baidu.BaiduMap。必须由 MacroPilot 手机端自己用无障碍、输入法、AI\/Skill JSON 执行，不允许依赖 ADB 手点目标 App。执行前先读取当前 UI；如果遇到广告、弹窗、小字提示，先记录文字并安全关闭。任务完成必须用当前 UI 证据验证，不能只因为步骤执行完就报成功。如果没有现成 skill，先复用已有相似 Skill JSON\/archetype，只改关键槽位如入口文字、坐标、目标文本、验证规则，再组装 atomic\/macro skill。需要探索入口时优先遍历底部标签、顶部小图标、图形化入口、侧边操作和子页面。本任务 stopBeforeSubmit=true：写草稿、评论、订单、支付类流程必须停在提交前，不点击最终发布、发送、提交订单、支付、确认授权。期望证据包括：上海站、地点。",
+    "appUiGraphFile": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/app_ui_graphs\/com.baidu.baidumap\/graph_candidate.json",
+    "recentUiSnapshots": [
+      {
+        "id": "ui_snapshot_1779339610996",
+        "source": "before_action",
+        "note": "patched.1779339608697.1.openapp:OpenApp",
+        "appPackage": "com.baidu.BaiduMap",
+        "windowClassName": "null",
+        "screenKey": "480c76e4",
+        "screenshotPath": "null",
+        "visualHash": "null",
+        "summary": {
+          "nodeCount": 11,
+          "clickableCount": 3,
+          "editableCount": 0,
+          "scrollableCount": 0,
+          "labels": [
+            "android:id\/content",
+            "com.baidu.BaiduMap:id\/round_layout",
+            "欢迎使用本功能服务 com.baidu.BaiduMap:id\/title_tv",
+            "com.baidu.BaiduMap:id\/voice_privacy_cancel_icon",
+            "在使用【地图AI助手】前，请您仔细阅读本扩展功能隐私政策。如您同意前述隐私政策，即代表您同意为了向您提供本扩展功能服务，我们处理所需的相关个人信息并在会话中应用。 com.baidu.BaiduMap:id\/voice_privacy_content_tv",
+            "同意 com.baidu.BaiduMap:id\/confirm_tv",
+            "拒绝 com.baidu.BaiduMap:id\/refuse_tv",
+            "android:id\/navigationBarBackground"
+          ],
+          "bottomCandidates": [
+            {
+              "label": "欢迎使用本功能服务 com.baidu.BaiduMap:id\/title_tv",
+              "bounds": {
+                "left": 80,
+                "top": 2192,
+                "right": 656,
+                "bottom": 2278
+              },
+              "clickable": false
+            },
+            {
+              "label": "在使用【地图AI助手】前，请您仔细阅读本扩展功能隐私政策。如您同意前述隐私政策，即代表您同意为了向您提供本扩展功能服务，我们处理所需的相关个人信息并在会话中应用。 com.baidu.BaiduMap:id\/voice_privacy_content_tv",
+              "bounds": {
+                "left": 80,
+                "top": 2346,
+                "right": 1360,
+                "bottom": 2620
+              },
+              "clickable": false
+            },
+            {
+              "label": "同意 com.baidu.BaiduMap:id\/confirm_tv",
+              "bounds": {
+                "left": 80,
+                "top": 2684,
+                "right": 1360,
+                "bottom": 2836
+              },
+              "clickable": true
+            },
+            {
+              "label": "拒绝 com.baidu.BaiduMap:id\/refuse_tv",
+              "bounds": {
+                "left": 664,
+                "top": 2932,
+                "right": 776,
+                "bottom": 3008
+              },
+              "clickable": true
+            },
+            {
+              "label": "com.baidu.BaiduMap:id\/voice_privacy_cancel_icon",
+              "bounds": {
+                "left": 1264,
+                "top": 2160,
+                "right": 1416,
+                "bottom": 2312
+              },
+              "clickable": true
+            }
+          ]
+        },
+        "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_snapshots\/com.baidu.baidumap\/20260521_130010_996_480c76e4.json"
+      },
+      {
+        "id": "ui_snapshot_1779339610929",
+        "source": "before_macro_atom",
+        "note": "index=0; skillId=patched.1779339608697.1.openapp",
+        "appPackage": "com.baidu.BaiduMap",
+        "windowClassName": "null",
+        "screenKey": "480c76e4",
+        "screenshotPath": "null",
+        "visualHash": "null",
+        "summary": {
+          "nodeCount": 11,
+          "clickableCount": 3,
+          "editableCount": 0,
+          "scrollableCount": 0,
+          "labels": [
+            "android:id\/content",
+            "com.baidu.BaiduMap:id\/round_layout",
+            "欢迎使用本功能服务 com.baidu.BaiduMap:id\/title_tv",
+            "com.baidu.BaiduMap:id\/voice_privacy_cancel_icon",
+            "在使用【地图AI助手】前，请您仔细阅读本扩展功能隐私政策。如您同意前述隐私政策，即代表您同意为了向您提供本扩展功能服务，我们处理所需的相关个人信息并在会话中应用。 com.baidu.BaiduMap:id\/voice_privacy_content_tv",
+            "同意 com.baidu.BaiduMap:id\/confirm_tv",
+            "拒绝 com.baidu.BaiduMap:id\/refuse_tv",
+            "android:id\/navigationBarBackground"
+          ],
+          "bottomCandidates": [
+            {
+              "label": "欢迎使用本功能服务 com.baidu.BaiduMap:id\/title_tv",
+              "bounds": {
+                "left": 80,
+                "top": 2192,
+                "right": 656,
+                "bottom": 2278
+              },
+              "clickable": false
+            },
+            {
+              "label": "在使用【地图AI助手】前，请您仔细阅读本扩展功能隐私政策。如您同意前述隐私政策，即代表您同意为了向您提供本扩展功能服务，我们处理所需的相关个人信息并在会话中应用。 com.baidu.BaiduMap:id\/voice_privacy_content_tv",
+              "bounds": {
+                "left": 80,
+                "top": 2346,
+                "right": 1360,
+                "bottom": 2620
+              },
+              "clickable": false
+            },
+            {
+              "label": "同意 com.baidu.BaiduMap:id\/confirm_tv",
+              "bounds": {
+                "left": 80,
+                "top": 2684,
+                "right": 1360,
+                "bottom": 2836
+              },
+              "clickable": true
+            },
+            {
+              "label": "拒绝 com.baidu.BaiduMap:id\/refuse_tv",
+              "bounds": {
+                "left": 664,
+                "top": 2932,
+                "right": 776,
+                "bottom": 3008
+              },
+              "clickable": true
+            },
+            {
+              "label": "com.baidu.BaiduMap:id\/voice_privacy_cancel_icon",
+              "bounds": {
+                "left": 1264,
+                "top": 2160,
+                "right": 1416,
+                "bottom": 2312
+              },
+              "clickable": true
+            }
+          ]
+        },
+        "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_snapshots\/com.baidu.baidumap\/20260521_130010_929_480c76e4.json"
+      },
+      {
+        "id": "ui_snapshot_1779339610875",
+        "source": "before_macro",
+        "note": "patched.command.1779339608697",
+        "appPackage": "com.baidu.BaiduMap",
+        "windowClassName": "null",
+        "screenKey": "480c76e4",
+        "screenshotPath": "null",
+        "visualHash": "null",
+        "summary": {
+          "nodeCount": 11,
+          "clickableCount": 3,
+          "editableCount": 0,
+          "scrollableCount": 0,
+          "labels": [
+            "android:id\/content",
+            "com.baidu.BaiduMap:id\/round_layout",
+            "欢迎使用本功能服务 com.baidu.BaiduMap:id\/title_tv",
+            "com.baidu.BaiduMap:id\/voice_privacy_cancel_icon",
+            "在使用【地图AI助手】前，请您仔细阅读本扩展功能隐私政策。如您同意前述隐私政策，即代表您同意为了向您提供本扩展功能服务，我们处理所需的相关个人信息并在会话中应用。 com.baidu.BaiduMap:id\/voice_privacy_content_tv",
+            "同意 com.baidu.BaiduMap:id\/confirm_tv",
+            "拒绝 com.baidu.BaiduMap:id\/refuse_tv",
+            "android:id\/navigationBarBackground"
+          ],
+          "bottomCandidates": [
+            {
+              "label": "欢迎使用本功能服务 com.baidu.BaiduMap:id\/title_tv",
+              "bounds": {
+                "left": 80,
+                "top": 2192,
+                "right": 656,
+                "bottom": 2278
+              },
+              "clickable": false
+            },
+            {
+              "label": "在使用【地图AI助手】前，请您仔细阅读本扩展功能隐私政策。如您同意前述隐私政策，即代表您同意为了向您提供本扩展功能服务，我们处理所需的相关个人信息并在会话中应用。 com.baidu.BaiduMap:id\/voice_privacy_content_tv",
+              "bounds": {
+                "left": 80,
+                "top": 2346,
+                "right": 1360,
+                "bottom": 2620
+              },
+              "clickable": false
+            },
+            {
+              "label": "同意 com.baidu.BaiduMap:id\/confirm_tv",
+              "bounds": {
+                "left": 80,
+                "top": 2684,
+                "right": 1360,
+                "bottom": 2836
+              },
+              "clickable": true
+            },
+            {
+              "label": "拒绝 com.baidu.BaiduMap:id\/refuse_tv",
+              "bounds": {
+                "left": 664,
+                "top": 2932,
+                "right": 776,
+                "bottom": 3008
+              },
+              "clickable": true
+            },
+            {
+              "label": "com.baidu.BaiduMap:id\/voice_privacy_cancel_icon",
+              "bounds": {
+                "left": 1264,
+                "top": 2160,
+                "right": 1416,
+                "bottom": 2312
+              },
+              "clickable": true
+            }
+          ]
+        },
+        "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_snapshots\/com.baidu.baidumap\/20260521_130010_875_480c76e4.json"
+      },
+      {
+        "id": "ui_snapshot_1779339610412",
+        "source": "before_action",
+        "note": "patched.1779339606084.2.wait:Wait",
+        "appPackage": "com.baidu.BaiduMap",
+        "windowClassName": "null",
+        "screenKey": "480c76e4",
+        "screenshotPath": "null",
+        "visualHash": "null",
+        "summary": {
+          "nodeCount": 11,
+          "clickableCount": 3,
+          "editableCount": 0,
+          "scrollableCount": 0,
+          "labels": [
+            "android:id\/content",
+            "com.baidu.BaiduMap:id\/round_layout",
+            "欢迎使用本功能服务 com.baidu.BaiduMap:id\/title_tv",
+            "com.baidu.BaiduMap:id\/voice_privacy_cancel_icon",
+            "在使用【地图AI助手】前，请您仔细阅读本扩展功能隐私政策。如您同意前述隐私政策，即代表您同意为了向您提供本扩展功能服务，我们处理所需的相关个人信息并在会话中应用。 com.baidu.BaiduMap:id\/voice_privacy_content_tv",
+            "同意 com.baidu.BaiduMap:id\/confirm_tv",
+            "拒绝 com.baidu.BaiduMap:id\/refuse_tv",
+            "android:id\/navigationBarBackground"
+          ],
+          "bottomCandidates": [
+            {
+              "label": "欢迎使用本功能服务 com.baidu.BaiduMap:id\/title_tv",
+              "bounds": {
+                "left": 80,
+                "top": 2192,
+                "right": 656,
+                "bottom": 2278
+              },
+              "clickable": false
+            },
+            {
+              "label": "在使用【地图AI助手】前，请您仔细阅读本扩展功能隐私政策。如您同意前述隐私政策，即代表您同意为了向您提供本扩展功能服务，我们处理所需的相关个人信息并在会话中应用。 com.baidu.BaiduMap:id\/voice_privacy_content_tv",
+              "bounds": {
+                "left": 80,
+                "top": 2346,
+                "right": 1360,
+                "bottom": 2620
+              },
+              "clickable": false
+            },
+            {
+              "label": "同意 com.baidu.BaiduMap:id\/confirm_tv",
+              "bounds": {
+                "left": 80,
+                "top": 2684,
+                "right": 1360,
+                "bottom": 2836
+              },
+              "clickable": true
+            },
+            {
+              "label": "拒绝 com.baidu.BaiduMap:id\/refuse_tv",
+              "bounds": {
+                "left": 664,
+                "top": 2932,
+                "right": 776,
+                "bottom": 3008
+              },
+              "clickable": true
+            },
+            {
+              "label": "com.baidu.BaiduMap:id\/voice_privacy_cancel_icon",
+              "bounds": {
+                "left": 1264,
+                "top": 2160,
+                "right": 1416,
+                "bottom": 2312
+              },
+              "clickable": true
+            }
+          ]
+        },
+        "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_snapshots\/com.baidu.baidumap\/20260521_130010_412_480c76e4.json"
+      },
+      {
+        "id": "ui_snapshot_1779339610343",
+        "source": "before_macro_atom",
+        "note": "index=1; skillId=patched.1779339606084.2.wait",
+        "appPackage": "com.baidu.BaiduMap",
+        "windowClassName": "null",
+        "screenKey": "480c76e4",
+        "screenshotPath": "null",
+        "visualHash": "null",
+        "summary": {
+          "nodeCount": 11,
+          "clickableCount": 3,
+          "editableCount": 0,
+          "scrollableCount": 0,
+          "labels": [
+            "android:id\/content",
+            "com.baidu.BaiduMap:id\/round_layout",
+            "欢迎使用本功能服务 com.baidu.BaiduMap:id\/title_tv",
+            "com.baidu.BaiduMap:id\/voice_privacy_cancel_icon",
+            "在使用【地图AI助手】前，请您仔细阅读本扩展功能隐私政策。如您同意前述隐私政策，即代表您同意为了向您提供本扩展功能服务，我们处理所需的相关个人信息并在会话中应用。 com.baidu.BaiduMap:id\/voice_privacy_content_tv",
+            "同意 com.baidu.BaiduMap:id\/confirm_tv",
+            "拒绝 com.baidu.BaiduMap:id\/refuse_tv",
+            "android:id\/navigationBarBackground"
+          ],
+          "bottomCandidates": [
+            {
+              "label": "欢迎使用本功能服务 com.baidu.BaiduMap:id\/title_tv",
+              "bounds": {
+                "left": 80,
+                "top": 2192,
+                "right": 656,
+                "bottom": 2278
+              },
+              "clickable": false
+            },
+            {
+              "label": "在使用【地图AI助手】前，请您仔细阅读本扩展功能隐私政策。如您同意前述隐私政策，即代表您同意为了向您提供本扩展功能服务，我们处理所需的相关个人信息并在会话中应用。 com.baidu.BaiduMap:id\/voice_privacy_content_tv",
+              "bounds": {
+                "left": 80,
+                "top": 2346,
+                "right": 1360,
+                "bottom": 2620
+              },
+              "clickable": false
+            },
+            {
+              "label": "同意 com.baidu.BaiduMap:id\/confirm_tv",
+              "bounds": {
+                "left": 80,
+                "top": 2684,
+                "right": 1360,
+                "bottom": 2836
+              },
+              "clickable": true
+            },
+            {
+              "label": "拒绝 com.baidu.BaiduMap:id\/refuse_tv",
+              "bounds": {
+                "left": 664,
+                "top": 2932,
+                "right": 776,
+                "bottom": 3008
+              },
+              "clickable": true
+            },
+            {
+              "label": "com.baidu.BaiduMap:id\/voice_privacy_cancel_icon",
+              "bounds": {
+                "left": 1264,
+                "top": 2160,
+                "right": 1416,
+                "bottom": 2312
+              },
+              "clickable": true
+            }
+          ]
+        },
+        "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_snapshots\/com.baidu.baidumap\/20260521_130010_342_480c76e4.json"
+      },
+      {
+        "id": "ui_snapshot_1779339610280",
+        "source": "after_macro_atom",
+        "note": "index=0; skillId=patched.1779339606084.1.openapp; status=SUCCESS_MEDIUM_CONFIDENCE",
+        "appPackage": "com.baidu.BaiduMap",
+        "windowClassName": "null",
+        "screenKey": "480c76e4",
+        "screenshotPath": "null",
+        "visualHash": "null",
+        "summary": {
+          "nodeCount": 11,
+          "clickableCount": 3,
+          "editableCount": 0,
+          "scrollableCount": 0,
+          "labels": [
+            "android:id\/content",
+            "com.baidu.BaiduMap:id\/round_layout",
+            "欢迎使用本功能服务 com.baidu.BaiduMap:id\/title_tv",
+            "com.baidu.BaiduMap:id\/voice_privacy_cancel_icon",
+            "在使用【地图AI助手】前，请您仔细阅读本扩展功能隐私政策。如您同意前述隐私政策，即代表您同意为了向您提供本扩展功能服务，我们处理所需的相关个人信息并在会话中应用。 com.baidu.BaiduMap:id\/voice_privacy_content_tv",
+            "同意 com.baidu.BaiduMap:id\/confirm_tv",
+            "拒绝 com.baidu.BaiduMap:id\/refuse_tv",
+            "android:id\/navigationBarBackground"
+          ],
+          "bottomCandidates": [
+            {
+              "label": "欢迎使用本功能服务 com.baidu.BaiduMap:id\/title_tv",
+              "bounds": {
+                "left": 80,
+                "top": 2192,
+                "right": 656,
+                "bottom": 2278
+              },
+              "clickable": false
+            },
+            {
+              "label": "在使用【地图AI助手】前，请您仔细阅读本扩展功能隐私政策。如您同意前述隐私政策，即代表您同意为了向您提供本扩展功能服务，我们处理所需的相关个人信息并在会话中应用。 com.baidu.BaiduMap:id\/voice_privacy_content_tv",
+              "bounds": {
+                "left": 80,
+                "top": 2346,
+                "right": 1360,
+                "bottom": 2620
+              },
+              "clickable": false
+            },
+            {
+              "label": "同意 com.baidu.BaiduMap:id\/confirm_tv",
+              "bounds": {
+                "left": 80,
+                "top": 2684,
+                "right": 1360,
+                "bottom": 2836
+              },
+              "clickable": true
+            },
+            {
+              "label": "拒绝 com.baidu.BaiduMap:id\/refuse_tv",
+              "bounds": {
+                "left": 664,
+                "top": 2932,
+                "right": 776,
+                "bottom": 3008
+              },
+              "clickable": true
+            },
+            {
+              "label": "com.baidu.BaiduMap:id\/voice_privacy_cancel_icon",
+              "bounds": {
+                "left": 1264,
+                "top": 2160,
+                "right": 1416,
+                "bottom": 2312
+              },
+              "clickable": true
+            }
+          ]
+        },
+        "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_snapshots\/com.baidu.baidumap\/20260521_130010_280_480c76e4.json"
+      },
+      {
+        "id": "ui_snapshot_1779339610210",
+        "source": "after_action",
+        "note": "patched.1779339606084.1.openapp:OpenApp:SUCCESS_MEDIUM_CONFIDENCE:Launch intent sent for com.baidu.BaiduMap",
+        "appPackage": "com.baidu.BaiduMap",
+        "windowClassName": "null",
+        "screenKey": "480c76e4",
+        "screenshotPath": "null",
+        "visualHash": "null",
+        "summary": {
+          "nodeCount": 11,
+          "clickableCount": 3,
+          "editableCount": 0,
+          "scrollableCount": 0,
+          "labels": [
+            "android:id\/content",
+            "com.baidu.BaiduMap:id\/round_layout",
+            "欢迎使用本功能服务 com.baidu.BaiduMap:id\/title_tv",
+            "com.baidu.BaiduMap:id\/voice_privacy_cancel_icon",
+            "在使用【地图AI助手】前，请您仔细阅读本扩展功能隐私政策。如您同意前述隐私政策，即代表您同意为了向您提供本扩展功能服务，我们处理所需的相关个人信息并在会话中应用。 com.baidu.BaiduMap:id\/voice_privacy_content_tv",
+            "同意 com.baidu.BaiduMap:id\/confirm_tv",
+            "拒绝 com.baidu.BaiduMap:id\/refuse_tv",
+            "android:id\/navigationBarBackground"
+          ],
+          "bottomCandidates": [
+            {
+              "label": "欢迎使用本功能服务 com.baidu.BaiduMap:id\/title_tv",
+              "bounds": {
+                "left": 80,
+                "top": 2192,
+                "right": 656,
+                "bottom": 2278
+              },
+              "clickable": false
+            },
+            {
+              "label": "在使用【地图AI助手】前，请您仔细阅读本扩展功能隐私政策。如您同意前述隐私政策，即代表您同意为了向您提供本扩展功能服务，我们处理所需的相关个人信息并在会话中应用。 com.baidu.BaiduMap:id\/voice_privacy_content_tv",
+              "bounds": {
+                "left": 80,
+                "top": 2346,
+                "right": 1360,
+                "bottom": 2620
+              },
+              "clickable": false
+            },
+            {
+              "label": "同意 com.baidu.BaiduMap:id\/confirm_tv",
+              "bounds": {
+                "left": 80,
+                "top": 2684,
+                "right": 1360,
+                "bottom": 2836
+              },
+              "clickable": true
+            },
+            {
+              "label": "拒绝 com.baidu.BaiduMap:id\/refuse_tv",
+              "bounds": {
+                "left": 664,
+                "top": 2932,
+                "right": 776,
+                "bottom": 3008
+              },
+              "clickable": true
+            },
+            {
+              "label": "com.baidu.BaiduMap:id\/voice_privacy_cancel_icon",
+              "bounds": {
+                "left": 1264,
+                "top": 2160,
+                "right": 1416,
+                "bottom": 2312
+              },
+              "clickable": true
+            }
+          ]
+        },
+        "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_snapshots\/com.baidu.baidumap\/20260521_130010_210_480c76e4.json"
+      },
+      {
+        "id": "ui_snapshot_1779339610128",
+        "source": "before_action",
+        "note": "patched.1779339606084.1.openapp:OpenApp",
+        "appPackage": "com.baidu.BaiduMap",
+        "windowClassName": "null",
+        "screenKey": "480c76e4",
+        "screenshotPath": "null",
+        "visualHash": "null",
+        "summary": {
+          "nodeCount": 11,
+          "clickableCount": 3,
+          "editableCount": 0,
+          "scrollableCount": 0,
+          "labels": [
+            "android:id\/content",
+            "com.baidu.BaiduMap:id\/round_layout",
+            "欢迎使用本功能服务 com.baidu.BaiduMap:id\/title_tv",
+            "com.baidu.BaiduMap:id\/voice_privacy_cancel_icon",
+            "在使用【地图AI助手】前，请您仔细阅读本扩展功能隐私政策。如您同意前述隐私政策，即代表您同意为了向您提供本扩展功能服务，我们处理所需的相关个人信息并在会话中应用。 com.baidu.BaiduMap:id\/voice_privacy_content_tv",
+            "同意 com.baidu.BaiduMap:id\/confirm_tv",
+            "拒绝 com.baidu.BaiduMap:id\/refuse_tv",
+            "android:id\/navigationBarBackground"
+          ],
+          "bottomCandidates": [
+            {
+              "label": "欢迎使用本功能服务 com.baidu.BaiduMap:id\/title_tv",
+              "bounds": {
+                "left": 80,
+                "top": 2192,
+                "right": 656,
+                "bottom": 2278
+              },
+              "clickable": false
+            },
+            {
+              "label": "在使用【地图AI助手】前，请您仔细阅读本扩展功能隐私政策。如您同意前述隐私政策，即代表您同意为了向您提供本扩展功能服务，我们处理所需的相关个人信息并在会话中应用。 com.baidu.BaiduMap:id\/voice_privacy_content_tv",
+              "bounds": {
+                "left": 80,
+                "top": 2346,
+                "right": 1360,
+                "bottom": 2620
+              },
+              "clickable": false
+            },
+            {
+              "label": "同意 com.baidu.BaiduMap:id\/confirm_tv",
+              "bounds": {
+                "left": 80,
+                "top": 2684,
+                "right": 1360,
+                "bottom": 2836
+              },
+              "clickable": true
+            },
+            {
+              "label": "拒绝 com.baidu.BaiduMap:id\/refuse_tv",
+              "bounds": {
+                "left": 664,
+                "top": 2932,
+                "right": 776,
+                "bottom": 3008
+              },
+              "clickable": true
+            },
+            {
+              "label": "com.baidu.BaiduMap:id\/voice_privacy_cancel_icon",
+              "bounds": {
+                "left": 1264,
+                "top": 2160,
+                "right": 1416,
+                "bottom": 2312
+              },
+              "clickable": true
+            }
+          ]
+        },
+        "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_snapshots\/com.baidu.baidumap\/20260521_130010_128_480c76e4.json"
+      },
+      {
+        "id": "ui_snapshot_1779339610062",
+        "source": "before_macro_atom",
+        "note": "index=0; skillId=patched.1779339606084.1.openapp",
+        "appPackage": "com.baidu.BaiduMap",
+        "windowClassName": "null",
+        "screenKey": "480c76e4",
+        "screenshotPath": "null",
+        "visualHash": "null",
+        "summary": {
+          "nodeCount": 11,
+          "clickableCount": 3,
+          "editableCount": 0,
+          "scrollableCount": 0,
+          "labels": [
+            "android:id\/content",
+            "com.baidu.BaiduMap:id\/round_layout",
+            "欢迎使用本功能服务 com.baidu.BaiduMap:id\/title_tv",
+            "com.baidu.BaiduMap:id\/voice_privacy_cancel_icon",
+            "在使用【地图AI助手】前，请您仔细阅读本扩展功能隐私政策。如您同意前述隐私政策，即代表您同意为了向您提供本扩展功能服务，我们处理所需的相关个人信息并在会话中应用。 com.baidu.BaiduMap:id\/voice_privacy_content_tv",
+            "同意 com.baidu.BaiduMap:id\/confirm_tv",
+            "拒绝 com.baidu.BaiduMap:id\/refuse_tv",
+            "android:id\/navigationBarBackground"
+          ],
+          "bottomCandidates": [
+            {
+              "label": "欢迎使用本功能服务 com.baidu.BaiduMap:id\/title_tv",
+              "bounds": {
+                "left": 80,
+                "top": 2192,
+                "right": 656,
+                "bottom": 2278
+              },
+              "clickable": false
+            },
+            {
+              "label": "在使用【地图AI助手】前，请您仔细阅读本扩展功能隐私政策。如您同意前述隐私政策，即代表您同意为了向您提供本扩展功能服务，我们处理所需的相关个人信息并在会话中应用。 com.baidu.BaiduMap:id\/voice_privacy_content_tv",
+              "bounds": {
+                "left": 80,
+                "top": 2346,
+                "right": 1360,
+                "bottom": 2620
+              },
+              "clickable": false
+            },
+            {
+              "label": "同意 com.baidu.BaiduMap:id\/confirm_tv",
+              "bounds": {
+                "left": 80,
+                "top": 2684,
+                "right": 1360,
+                "bottom": 2836
+              },
+              "clickable": true
+            },
+            {
+              "label": "拒绝 com.baidu.BaiduMap:id\/refuse_tv",
+              "bounds": {
+                "left": 664,
+                "top": 2932,
+                "right": 776,
+                "bottom": 3008
+              },
+              "clickable": true
+            },
+            {
+              "label": "com.baidu.BaiduMap:id\/voice_privacy_cancel_icon",
+              "bounds": {
+                "left": 1264,
+                "top": 2160,
+                "right": 1416,
+                "bottom": 2312
+              },
+              "clickable": true
+            }
+          ]
+        },
+        "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_snapshots\/com.baidu.baidumap\/20260521_130010_062_480c76e4.json"
+      },
+      {
+        "id": "ui_snapshot_1779339610011",
+        "source": "before_macro",
+        "note": "patched.command.1779339606084",
+        "appPackage": "com.baidu.BaiduMap",
+        "windowClassName": "null",
+        "screenKey": "480c76e4",
+        "screenshotPath": "null",
+        "visualHash": "null",
+        "summary": {
+          "nodeCount": 11,
+          "clickableCount": 3,
+          "editableCount": 0,
+          "scrollableCount": 0,
+          "labels": [
+            "android:id\/content",
+            "com.baidu.BaiduMap:id\/round_layout",
+            "欢迎使用本功能服务 com.baidu.BaiduMap:id\/title_tv",
+            "com.baidu.BaiduMap:id\/voice_privacy_cancel_icon",
+            "在使用【地图AI助手】前，请您仔细阅读本扩展功能隐私政策。如您同意前述隐私政策，即代表您同意为了向您提供本扩展功能服务，我们处理所需的相关个人信息并在会话中应用。 com.baidu.BaiduMap:id\/voice_privacy_content_tv",
+            "同意 com.baidu.BaiduMap:id\/confirm_tv",
+            "拒绝 com.baidu.BaiduMap:id\/refuse_tv",
+            "android:id\/navigationBarBackground"
+          ],
+          "bottomCandidates": [
+            {
+              "label": "欢迎使用本功能服务 com.baidu.BaiduMap:id\/title_tv",
+              "bounds": {
+                "left": 80,
+                "top": 2192,
+                "right": 656,
+                "bottom": 2278
+              },
+              "clickable": false
+            },
+            {
+              "label": "在使用【地图AI助手】前，请您仔细阅读本扩展功能隐私政策。如您同意前述隐私政策，即代表您同意为了向您提供本扩展功能服务，我们处理所需的相关个人信息并在会话中应用。 com.baidu.BaiduMap:id\/voice_privacy_content_tv",
+              "bounds": {
+                "left": 80,
+                "top": 2346,
+                "right": 1360,
+                "bottom": 2620
+              },
+              "clickable": false
+            },
+            {
+              "label": "同意 com.baidu.BaiduMap:id\/confirm_tv",
+              "bounds": {
+                "left": 80,
+                "top": 2684,
+                "right": 1360,
+                "bottom": 2836
+              },
+              "clickable": true
+            },
+            {
+              "label": "拒绝 com.baidu.BaiduMap:id\/refuse_tv",
+              "bounds": {
+                "left": 664,
+                "top": 2932,
+                "right": 776,
+                "bottom": 3008
+              },
+              "clickable": true
+            },
+            {
+              "label": "com.baidu.BaiduMap:id\/voice_privacy_cancel_icon",
+              "bounds": {
+                "left": 1264,
+                "top": 2160,
+                "right": 1416,
+                "bottom": 2312
+              },
+              "clickable": true
+            }
+          ]
+        },
+        "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_snapshots\/com.baidu.baidumap\/20260521_130010_011_480c76e4.json"
+      },
+      {
+        "id": "ui_snapshot_1779339608670",
+        "source": "current_ui_summary",
+        "note": "factory_ai_context",
+        "appPackage": "com.baidu.BaiduMap",
+        "windowClassName": "null",
+        "screenKey": "480c76e4",
+        "screenshotPath": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_screenshots\/com.baidu.baidumap\/20260521_130008_306_480c76e4.png",
+        "visualHash": "5f64451dd7f0d05dc98b3814de7c472a385033cf05a2f82015fb502f1582465c",
+        "summary": {
+          "nodeCount": 11,
+          "clickableCount": 3,
+          "editableCount": 0,
+          "scrollableCount": 0,
+          "labels": [
+            "android:id\/content",
+            "com.baidu.BaiduMap:id\/round_layout",
+            "欢迎使用本功能服务 com.baidu.BaiduMap:id\/title_tv",
+            "com.baidu.BaiduMap:id\/voice_privacy_cancel_icon",
+            "在使用【地图AI助手】前，请您仔细阅读本扩展功能隐私政策。如您同意前述隐私政策，即代表您同意为了向您提供本扩展功能服务，我们处理所需的相关个人信息并在会话中应用。 com.baidu.BaiduMap:id\/voice_privacy_content_tv",
+            "同意 com.baidu.BaiduMap:id\/confirm_tv",
+            "拒绝 com.baidu.BaiduMap:id\/refuse_tv",
+            "android:id\/navigationBarBackground"
+          ],
+          "bottomCandidates": [
+            {
+              "label": "欢迎使用本功能服务 com.baidu.BaiduMap:id\/title_tv",
+              "bounds": {
+                "left": 80,
+                "top": 2192,
+                "right": 656,
+                "bottom": 2278
+              },
+              "clickable": false
+            },
+            {
+              "label": "在使用【地图AI助手】前，请您仔细阅读本扩展功能隐私政策。如您同意前述隐私政策，即代表您同意为了向您提供本扩展功能服务，我们处理所需的相关个人信息并在会话中应用。 com.baidu.BaiduMap:id\/voice_privacy_content_tv",
+              "bounds": {
+                "left": 80,
+                "top": 2346,
+                "right": 1360,
+                "bottom": 2620
+              },
+              "clickable": false
+            },
+            {
+              "label": "同意 com.baidu.BaiduMap:id\/confirm_tv",
+              "bounds": {
+                "left": 80,
+                "top": 2684,
+                "right": 1360,
+                "bottom": 2836
+              },
+              "clickable": true
+            },
+            {
+              "label": "拒绝 com.baidu.BaiduMap:id\/refuse_tv",
+              "bounds": {
+                "left": 664,
+                "top": 2932,
+                "right": 776,
+                "bottom": 3008
+              },
+              "clickable": true
+            },
+            {
+              "label": "com.baidu.BaiduMap:id\/voice_privacy_cancel_icon",
+              "bounds": {
+                "left": 1264,
+                "top": 2160,
+                "right": 1416,
+                "bottom": 2312
+              },
+              "clickable": true
+            }
+          ]
+        },
+        "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_snapshots\/com.baidu.baidumap\/20260521_130008_306_480c76e4.json"
+      },
+      {
+        "id": "ui_snapshot_1779339608215",
+        "source": "goal_verification",
+        "note": "在网易云音乐搜索周杰伦，停在歌曲结果页并记录单曲、歌单、用户分区。",
+        "appPackage": "com.baidu.BaiduMap",
+        "windowClassName": "null",
+        "screenKey": "480c76e4",
+        "screenshotPath": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_screenshots\/com.baidu.baidumap\/20260521_130007_857_480c76e4.png",
+        "visualHash": "c2ab6a07bef015dbb1b1a64f10bdd1da18c1d27609058f423046c2420ec84fbf",
+        "summary": {
+          "nodeCount": 11,
+          "clickableCount": 3,
+          "editableCount": 0,
+          "scrollableCount": 0,
+          "labels": [
+            "android:id\/content",
+            "com.baidu.BaiduMap:id\/round_layout",
+            "欢迎使用本功能服务 com.baidu.BaiduMap:id\/title_tv",
+            "com.baidu.BaiduMap:id\/voice_privacy_cancel_icon",
+            "在使用【地图AI助手】前，请您仔细阅读本扩展功能隐私政策。如您同意前述隐私政策，即代表您同意为了向您提供本扩展功能服务，我们处理所需的相关个人信息并在会话中应用。 com.baidu.BaiduMap:id\/voice_privacy_content_tv",
+            "同意 com.baidu.BaiduMap:id\/confirm_tv",
+            "拒绝 com.baidu.BaiduMap:id\/refuse_tv",
+            "android:id\/navigationBarBackground"
+          ],
+          "bottomCandidates": [
+            {
+              "label": "欢迎使用本功能服务 com.baidu.BaiduMap:id\/title_tv",
+              "bounds": {
+                "left": 80,
+                "top": 2192,
+                "right": 656,
+                "bottom": 2278
+              },
+              "clickable": false
+            },
+            {
+              "label": "在使用【地图AI助手】前，请您仔细阅读本扩展功能隐私政策。如您同意前述隐私政策，即代表您同意为了向您提供本扩展功能服务，我们处理所需的相关个人信息并在会话中应用。 com.baidu.BaiduMap:id\/voice_privacy_content_tv",
+              "bounds": {
+                "left": 80,
+                "top": 2346,
+                "right": 1360,
+                "bottom": 2620
+              },
+              "clickable": false
+            },
+            {
+              "label": "同意 com.baidu.BaiduMap:id\/confirm_tv",
+              "bounds": {
+                "left": 80,
+                "top": 2684,
+                "right": 1360,
+                "bottom": 2836
+              },
+              "clickable": true
+            },
+            {
+              "label": "拒绝 com.baidu.BaiduMap:id\/refuse_tv",
+              "bounds": {
+                "left": 664,
+                "top": 2932,
+                "right": 776,
+                "bottom": 3008
+              },
+              "clickable": true
+            },
+            {
+              "label": "com.baidu.BaiduMap:id\/voice_privacy_cancel_icon",
+              "bounds": {
+                "left": 1264,
+                "top": 2160,
+                "right": 1416,
+                "bottom": 2312
+              },
+              "clickable": true
+            }
+          ]
+        },
+        "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_snapshots\/com.baidu.baidumap\/20260521_130007_857_480c76e4.json"
+      }
+    ]
+  },
+  "teacherOutput": {
+    "aiJobs": [
+      {
+        "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ai_jobs\/2026-05-21\/factory_ai_plan_review_1779339509886.json",
+        "taskType": "RUNTIME_PLAN_REVIEW_BEFORE_EXECUTION",
+        "aiStatus": "SUCCESS",
+        "httpStatus": 200,
+        "model": "deepseek-v4-pro",
+        "baseUrlHost": "api.deepseek.com",
+        "parseSuccess": true,
+        "parsedJson": {
+          "decision": {
+            "usePatchedSteps": true,
+            "screenAssessment": "当前UI在知乎APP，与目标任务无关。需切换到百度地图。",
+            "planRisk": "原计划输入框填入完整指令而非搜索词，且点击'搜索'文本可能不匹配百度地图的搜索入口（实际为'地点搜索'），可能导致搜索失败。",
+            "confidence": "MEDIUM",
+            "nextActionReason": "修正搜索入口和搜索词，增加搜索结果验证前的等待和关键词检查。"
+          },
+          "usePatchedSteps": true,
+          "patchedStepCount": 8
+        }
+      },
+      {
+        "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ai_jobs\/2026-05-21\/factory_ai_replan_1779339593468.json",
+        "taskType": "RUNTIME_REPLAN_AFTER_FAILURE",
+        "aiStatus": "SUCCESS",
+        "httpStatus": 200,
+        "model": "deepseek-v4-pro",
+        "baseUrlHost": "api.deepseek.com",
+        "parseSuccess": true,
+        "parsedJson": {
+          "decision": {
+            "goalCompleted": false,
+            "screenAssessment": "当前处于 li.songe.gkd (Shizuku\/GKD)，非百度地图。检测到 permission_or_notice 和 popup_observed，但非目标 app。",
+            "failureDiagnosis": "上一步 TypeIntoFirstInput 在百度地图内失败（输入变化无法验证），且 app 跳转到 Shizuku，可能由于弹窗或意外返回。需要重新聚焦百度地图并从头开始搜索流程。",
+            "confidence": "HIGH",
+            "nextActionReason": "直接打开百度地图，处理可能存在的权限\/弹窗，然后点击搜索框并输入“上海站”重新触发搜索。"
+          },
+          "planStepCount": 5,
+          "aiCandidateCount": 0,
+          "goalCompleted": false
+        }
+      }
+    ],
+    "planReviewOrReplanCount": 2,
+    "source": "deepseek_v4pro_or_phone_side_adapter"
+  },
+  "programOutput": {
+    "status": "SUCCESS",
+    "durationMs": 241941,
+    "steps": [
+      {
+        "title": "用户指令进入手机端执行器",
+        "status": "RUNNING",
+        "message": "主输入不再只生成文件：App 将调用 AI，生成可审计 JSON，再由 SkillJsonExecutor 直接执行候选能力。",
+        "path": null,
+        "extra": {}
+      },
+      {
+        "title": "AppUI 图谱已进入决策上下文",
+        "status": "INFO",
+        "message": "已知页面=5，边=4；AI\/模板改写会优先参考入口、底部分屏、输入框和可点击候选。",
+        "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/app_ui_graphs\/com.baidu.baidumap\/graph_candidate.json",
+        "extra": {
+          "appPackage": "com.baidu.BaiduMap",
+          "status": "CANDIDATE_EXPLORED",
+          "screenCount": 5,
+          "edgeCount": 4,
+          "quality": {
+            "usable": true,
+            "screenCount": 5,
+            "edgeCount": 4,
+            "nodeCount": 1024,
+            "clickableCount": 164,
+            "editableCount": 0,
+            "labelCount": 198,
+            "bottomTabCount": 33
+          },
+          "screens": [
+            {
+              "screenId": "screen_480c76e4",
+              "title": "",
+              "screenKey": "480c76e4",
+              "nodeCount": 11,
+              "clickableCount": 3,
+              "editableCount": 0,
+              "labels": [
+                "android:id\/content",
+                "com.baidu.BaiduMap:id\/round_layout",
+                "欢迎使用本功能服务 com.baidu.BaiduMap:id\/title_tv",
+                "com.baidu.BaiduMap:id\/voice_privacy_cancel_icon",
+                "在使用【地图AI助手】前，请您仔细阅读本扩展功能隐私政策。如您同意前述隐私政策，即代表您同意为了向您提供本扩展功能服务，我们处理所需的相关个人信息并在会话中应用。 com.baidu.BaiduMap:id\/voice_privacy_content_tv",
+                "同意 com.baidu.BaiduMap:id\/confirm_tv",
+                "拒绝 com.baidu.BaiduMap:id\/refuse_tv",
+                "android:id\/navigationBarBackground"
+              ],
+              "bottomTabs": [
+                {
+                  "index": 0,
+                  "label": "欢迎使用本功能服务 com.baidu.BaiduMap:id\/title_tv",
+                  "text": "欢迎使用本功能服务",
+                  "desc": null,
+                  "resourceId": "com.baidu.BaiduMap:id\/title_tv",
+                  "class": "android.widget.TextView",
+                  "clickable": false,
+                  "editable": false
+                },
+                {
+                  "index": 1,
+                  "label": "com.baidu.BaiduMap:id\/round_layout",
+                  "text": null,
+                  "desc": null,
+                  "resourceId": "com.baidu.BaiduMap:id\/round_layout",
+                  "class": "android.view.ViewGroup",
+                  "clickable": false,
+                  "editable": false
+                },
+                {
+                  "index": 2,
+                  "label": "在使用【地图AI助手】前，请您仔细阅读本扩展功能隐私政策。如您同意前述隐私政策，即代表您同意为了向您提供本扩展功能服务，我们处理所需的相关个人信息并在会话中应用。 com.baidu.BaiduMap:id\/voice_privacy_co",
+                  "text": "在使用【地图AI助手】前，请您仔细阅读本扩展功能隐私政策。如您同意前述隐私政策，即代表您同意为了向您提供本扩展功能服务，我们处理所需的相关个人信息并在会话中应用。",
+                  "desc": null,
+                  "resourceId": "com.baidu.BaiduMap:id\/voice_privacy_content_tv",
+                  "class": "android.widget.TextView",
+                  "clickable": false,
+                  "editable": false
+                },
+                {
+                  "index": 3,
+                  "label": "同意 com.baidu.BaiduMap:id\/confirm_tv",
+                  "text": "同意",
+                  "desc": null,
+                  "resourceId": "com.baidu.BaiduMap:id\/confirm_tv",
+                  "class": "android.widget.TextView",
+                  "clickable": true,
+                  "editable": false
+                },
+                {
+                  "index": 4,
+                  "label": "拒绝 com.baidu.BaiduMap:id\/refuse_tv",
+                  "text": "拒绝",
+                  "desc": null,
+                  "resourceId": "com.baidu.BaiduMap:id\/refuse_tv",
+                  "class": "android.widget.TextView",
+                  "clickable": true,
+                  "editable": false
+                },
+                {
+                  "index": 5,
+                  "label": "android:id\/navigationBarBackground",
+                  "text": null,
+                  "desc": null,
+                  "resourceId": "android:id\/navigationBarBackground",
+                  "class": "android.view.View",
+                  "clickable": false,
+                  "editable": false
+                },
+                {
+                  "index": 6,
+                  "label": "com.baidu.BaiduMap:id\/voice_privacy_cancel_icon",
+                  "text": null,
+                  "desc": null,
+                  "resourceId": "com.baidu.BaiduMap:id\/voice_privacy_cancel_icon",
+                  "class": "android.widget.ImageView",
+                  "clickable": true,
+                  "editable": false
+                }
+              ]
+            },
+            {
+              "screenId": "screen_32040f27",
+              "title": "",
+              "screenKey": "32040f27",
+              "nodeCount": 22,
+              "clickableCount": 0,
+              "editableCount": 0,
+              "labels": [
+                "com.baidu.BaiduMap:id\/action_bar_root",
+                "android:id\/content",
+                "com.baidu.BaiduMap:id\/voice_view_ui",
+                "com.baidu.BaiduMap:id\/operation_behavior",
+                "com.baidu.BaiduMap:id\/stack_root",
+                "com.baidu.BaiduMap:id\/arnew_surfaceview",
+                "地图图区 com.baidu.BaiduMap:id\/map_container",
+                "com.baidu.BaiduMap:id\/commonPopupContainer"
+              ],
+              "bottomTabs": [
+                {
+                  "index": 0,
+                  "label": "android:id\/navigationBarBackground",
+                  "text": null,
+                  "desc": null,
+                  "resourceId": "android:id\/navigationBarBackground",
+                  "class": "android.view.View",
+                  "clickable": false,
+                  "editable": false
+                }
+              ]
+            },
+            {
+              "screenId": "screen_7d8d6efa",
+              "title": "输入功能名称进行查找",
+              "screenKey": "7d8d6efa",
+              "nodeCount": 591,
+              "clickableCount": 106,
+              "editableCount": 0,
+              "labels": [
+                "com.baidu.BaiduMap:id\/action_bar_root",
+                "android:id\/content",
+                "com.baidu.BaiduMap:id\/voice_view_ui",
+                "com.baidu.BaiduMap:id\/operation_behavior",
+                "com.baidu.BaiduMap:id\/stack_root",
+                "com.baidu.BaiduMap:id\/arnew_surfaceview",
+                "地图图区 com.baidu.BaiduMap:id\/map_container",
+                "com.baidu.BaiduMap:id\/commonPopupContainer"
+              ],
+              "bottomTabs": [
+                {
+                  "index": 0,
+                  "label": "com.baidu.BaiduMap:id\/more_func_diamond_1",
+                  "text": null,
+                  "desc": null,
+                  "resourceId": "com.baidu.BaiduMap:id\/more_func_diamond_1",
+                  "class": "android.widget.RelativeLayout",
+                  "clickable": true,
+                  "editable": false
+                },
+                {
+                  "index": 1,
+                  "label": "com.baidu.BaiduMap:id\/diamond_icon_layout",
+                  "text": null,
+                  "desc": null,
+                  "resourceId": "com.baidu.BaiduMap:id\/diamond_icon_layout",
+                  "class": "android.widget.RelativeLayout",
+                  "clickable": false,
+                  "editable": false
+                },
+                {
+                  "index": 2,
+                  "label": "com.baidu.BaiduMap:id\/icon_bg",
+                  "text": null,
+                  "desc": null,
+                  "resourceId": "com.baidu.BaiduMap:id\/icon_bg",
+                  "class": "android.widget.ImageView",
+                  "clickable": false,
+                  "editable": false
+                },
+                {
+                  "index": 3,
+                  "label": "com.baidu.BaiduMap:id\/diamond_icon_small",
+                  "text": null,
+                  "desc": null,
+                  "resourceId": "com.baidu.BaiduMap:id\/diamond_icon_small",
+                  "class": "android.widget.ImageView",
+                  "clickable": false,
+                  "editable": false
+                },
+                {
+                  "index": 4,
+                  "label": "摩托车 com.baidu.BaiduMap:id\/diamond_title",
+                  "text": "摩托车",
+                  "desc": null,
+                  "resourceId": "com.baidu.BaiduMap:id\/diamond_title",
+                  "class": "android.widget.TextView",
+                  "clickable": false,
+                  "editable": false
+                },
+                {
+                  "index": 5,
+                  "label": "com.baidu.BaiduMap:id\/more_func_diamond_1",
+                  "text": null,
+                  "desc": null,
+                  "resourceId": "com.baidu.BaiduMap:id\/more_func_diamond_1",
+                  "class": "android.widget.RelativeLayout",
+                  "clickable": true,
+                  "editable": false
+                },
+                {
+                  "index": 6,
+                  "label": "com.baidu.BaiduMap:id\/diamond_icon_layout",
+                  "text": null,
+                  "desc": null,
+                  "resourceId": "com.baidu.BaiduMap:id\/diamond_icon_layout",
+                  "class": "android.widget.RelativeLayout",
+                  "clickable": false,
+                  "editable": false
+                },
+                {
+                  "index": 7,
+                  "label": "com.baidu.BaiduMap:id\/icon_bg",
+                  "text": null,
+                  "desc": null,
+                  "resourceId": "com.baidu.BaiduMap:id\/icon_bg",
+                  "class": "android.widget.ImageView",
+                  "clickable": false,
+                  "editable": false
+                }
+              ]
+            },
+            {
+              "screenId": "screen_3d8d5782",
+              "title": "",
+              "screenKey": "3d8d5782",
+              "nodeCount": 22,
+              "clickableCount": 0,
+              "editableCount": 0,
+              "labels": [
+                "com.baidu.BaiduMap:id\/action_bar_root",
+                "android:id\/content",
+                "com.baidu.BaiduMap:id\/voice_view_ui",
+                "com.baidu.BaiduMap:id\/operation_behavior",
+                "com.baidu.BaiduMap:id\/stack_root",
+                "com.baidu.BaiduMap:id\/arnew_surfaceview",
+                "地图图区 com.baidu.BaiduMap:id\/map_container",
+                "com.baidu.BaiduMap:id\/commonPopupContainer"
+              ],
+              "bottomTabs": [
+                {
+                  "index": 0,
+                  "label": "android:id\/navigationBarBackground",
+                  "text": null,
+                  "desc": null,
+                  "resourceId": "android:id\/navigationBarBackground",
+                  "class": "android.view.View",
+                  "clickable": false,
+                  "editable": false
+                }
+              ]
+            },
+            {
+              "screenId": "screen_1f9a44dc",
+              "title": "早八省",
+              "screenKey": "1f9a44dc",
+              "nodeCount": 378,
+              "clickableCount": 55,
+              "editableCount": 0,
+              "labels": [
+                "com.baidu.BaiduMap:id\/action_bar_root",
+                "android:id\/content",
+                "com.baidu.BaiduMap:id\/voice_view_ui",
+                "com.baidu.BaiduMap:id\/operation_behavior",
+                "com.baidu.BaiduMap:id\/stack_root",
+                "com.baidu.BaiduMap:id\/arnew_surfaceview",
+                "地图图区 com.baidu.BaiduMap:id\/map_container",
+                "com.baidu.BaiduMap:id\/commonPopupContainer"
+              ],
+              "bottomTabs": [
+                {
+                  "index": 0,
+                  "label": "com.baidu.BaiduMap:id\/icon_home",
+                  "text": null,
+                  "desc": null,
+                  "resourceId": "com.baidu.BaiduMap:id\/icon_home",
+                  "class": "android.widget.ImageView",
+                  "clickable": false,
+                  "editable": false
+                },
+                {
+                  "index": 1,
+                  "label": "com.baidu.BaiduMap:id\/new_route",
+                  "text": null,
+                  "desc": null,
+                  "resourceId": "com.baidu.BaiduMap:id\/new_route",
+                  "class": "android.widget.FrameLayout",
+                  "clickable": true,
+                  "editable": false
+                },
+                {
+                  "index": 2,
+                  "label": "com.baidu.BaiduMap:id\/new_route_icon",
+                  "text": null,
+                  "desc": null,
+                  "resourceId": "com.baidu.BaiduMap:id\/new_route_icon",
+                  "class": "android.widget.ImageView",
+                  "clickable": false,
+                  "editable": false
+                },
+                {
+                  "index": 3,
+                  "label": "com.baidu.BaiduMap:id\/route_tab_anim",
+                  "text": null,
+                  "desc": null,
+                  "resourceId": "com.baidu.BaiduMap:id\/route_tab_anim",
+                  "class": "android.widget.ImageView",
+                  "clickable": false,
+                  "editable": false
+                },
+                {
+                  "index": 4,
+                  "label": "首页 com.baidu.BaiduMap:id\/new_route_text",
+                  "text": "首页",
+                  "desc": null,
+                  "resourceId": "com.baidu.BaiduMap:id\/new_route_text",
+                  "class": "android.widget.TextView",
+                  "clickable": false,
+                  "editable": false
+                },
+                {
+                  "index": 5,
+                  "label": "",
+                  "text": null,
+                  "desc": null,
+                  "resourceId": null,
+                  "class": "android.widget.FrameLayout",
+                  "clickable": true,
+                  "editable": false
+                },
+                {
+                  "index": 6,
+                  "label": "com.baidu.BaiduMap:id\/image",
+                  "text": null,
+                  "desc": null,
+                  "resourceId": "com.baidu.BaiduMap:id\/image",
+                  "class": "android.widget.ImageView",
+                  "clickable": false,
+                  "editable": false
+                },
+                {
+                  "index": 7,
+                  "label": "顺风车 com.baidu.BaiduMap:id\/text",
+                  "text": "顺风车",
+                  "desc": null,
+                  "resourceId": "com.baidu.BaiduMap:id\/text",
+                  "class": "android.widget.TextView",
+                  "clickable": false,
+                  "editable": false
+                }
+              ]
+            }
+          ],
+          "updatedAt": 1779214265598,
+          "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/app_ui_graphs\/com.baidu.baidumap\/graph_candidate.json"
+        }
+      },
+      {
+        "title": "手机端相似 Skill 自适应规划",
+        "status": "SUCCESS",
+        "message": "本机先复用抖音\/小红书成功模式：识别 intent=generic_search，改写出 7 个细粒度步骤；AI v4pro 只在失败或二次判断时接管。",
+        "path": null,
+        "extra": {
+          "planner": "PHONE_SIDE_SIMILAR_SKILL_ADAPTER_V1",
+          "intentId": "generic_search",
+          "appPackage": "com.baidu.BaiduMap",
+          "instruction": "在百度地图搜索上海站，停在地点结果页并记录路线、收藏、电话入口。\n\n约束：目标 App=百度地图，包名=com.baidu.BaiduMap。必须由 MacroPilot 手机端自己用无障碍、输入法、AI\/Skill JSON 执行，不允许依赖 ADB 手点目标 App。执行前先读取当前 UI；如果遇到广告、弹窗、小字提示，先记录文字并安全关闭。任务完成必须用当前 UI 证据验证，不能只因为步骤执行完就报成功。如果没有现成 skill，先复用已有相似 Skill JSON\/archetype，只改关键槽位如入口文字、坐标、目标文本、验证规则，再组装 atomic\/macro skill。需要探",
+          "source": "local_rules_plus_existing_skill_similarity",
+          "similarCases": [
+            {
+              "skillId": "patched.command.1779339085824",
+              "kind": "macro_skill",
+              "appPackage": "com.zhihu.android",
+              "implements": "AiPlannedMacroSkill",
+              "intentId": "search_in_app",
+              "score": 53,
+              "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_candidates\/com.zhihu.android\/patched.command.1779339085824.json"
+            },
+            {
+              "skillId": "patched.command.1779339041582",
+              "kind": "macro_skill",
+              "appPackage": "com.xunmeng.pinduoduo",
+              "implements": "AiPlannedMacroSkill",
+              "intentId": "search_in_app",
+              "score": 53,
+              "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_candidates\/com.xunmeng.pinduoduo\/patched.command.1779339041582.json"
+            },
+            {
+              "skillId": "patched.command.1779339053576",
+              "kind": "macro_skill",
+              "appPackage": "com.xunmeng.pinduoduo",
+              "implements": "AiPlannedMacroSkill",
+              "intentId": "search_in_app",
+              "score": 53,
+              "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_candidates\/com.xunmeng.pinduoduo\/patched.command.1779339053576.json"
+            },
+            {
+              "skillId": "patched.command.1779338918226",
+              "kind": "macro_skill",
+              "appPackage": "com.jingdong.app.mall",
+              "implements": "AiPlannedMacroSkill",
+              "intentId": "search_in_app",
+              "score": 53,
+              "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_candidates\/com.jingdong.app.mall\/patched.command.1779338918226.json"
+            },
+            {
+              "skillId": "patched.command.1779338949541",
+              "kind": "macro_skill",
+              "appPackage": "com.jingdong.app.mall",
+              "implements": "AiPlannedMacroSkill",
+              "intentId": "search_in_app",
+              "score": 53,
+              "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_candidates\/com.jingdong.app.mall\/patched.command.1779338949541.json"
+            },
+            {
+              "skillId": "patched.command.1779338878450",
+              "kind": "macro_skill",
+              "appPackage": "com.taobao.taobao",
+              "implements": "AiPlannedMacroSkill",
+              "intentId": "search_in_app",
+              "score": 53,
+              "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_candidates\/com.taobao.taobao\/patched.command.1779338878450.json"
+            },
+            {
+              "skillId": "patched.command.1779338890723",
+              "kind": "macro_skill",
+              "appPackage": "com.taobao.taobao",
+              "implements": "AiPlannedMacroSkill",
+              "intentId": "search_in_app",
+              "score": 53,
+              "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_candidates\/com.taobao.taobao\/patched.command.1779338890723.json"
+            },
+            {
+              "skillId": "patched.command.1779338840458",
+              "kind": "macro_skill",
+              "appPackage": "com.dianping.v1",
+              "implements": "AiPlannedMacroSkill",
+              "intentId": "search_in_app",
+              "score": 53,
+              "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_candidates\/com.dianping.v1\/patched.command.1779338840458.json"
+            }
+          ],
+          "stepCount": 7,
+          "currentPackage": "com.zhihu.android",
+          "nodeCount": 40,
+          "notes": [
+            "App-side planner generated candidate JSON without ADB UI control.",
+            "Existing candidate\/approved skills are used as similarity evidence; generated steps are still dry-run checked before execution.",
+            "AI remains a fallback for empty or failed local planning."
+          ]
+        }
+      },
+      {
+        "title": "v4pro 执行前复核",
+        "status": "SUCCESS",
+        "message": "模型=deepseek-v4-pro；HTTP=200；patchedSteps=8；usePatched=true；修正搜索入口和搜索词，增加搜索结果验证前的等待和关键词检查。",
+        "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ai_jobs\/2026-05-21\/factory_ai_plan_review_1779339509886.json",
+        "extra": {
+          "decision": {
+            "usePatchedSteps": true,
+            "screenAssessment": "当前UI在知乎APP，与目标任务无关。需切换到百度地图。",
+            "planRisk": "原计划输入框填入完整指令而非搜索词，且点击'搜索'文本可能不匹配百度地图的搜索入口（实际为'地点搜索'），可能导致搜索失败。",
+            "confidence": "MEDIUM",
+            "nextActionReason": "修正搜索入口和搜索词，增加搜索结果验证前的等待和关键词检查。"
+          }
+        }
+      },
+      {
+        "title": "v4pro 复核已改写计划",
+        "status": "SUCCESS",
+        "message": "执行前 AI 认为本地相似计划需要改写，已用 8 个复核步骤重新生成 Skill JSON。",
+        "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ai_jobs\/2026-05-21\/factory_ai_plan_review_1779339509886.json",
+        "extra": {
+          "planner": "PHONE_SIDE_SIMILAR_SKILL_ADAPTER_V1",
+          "intentId": "generic_search",
+          "appPackage": "com.baidu.BaiduMap",
+          "instruction": "在百度地图搜索上海站，停在地点结果页并记录路线、收藏、电话入口。\n\n约束：目标 App=百度地图，包名=com.baidu.BaiduMap。必须由 MacroPilot 手机端自己用无障碍、输入法、AI\/Skill JSON 执行，不允许依赖 ADB 手点目标 App。执行前先读取当前 UI；如果遇到广告、弹窗、小字提示，先记录文字并安全关闭。任务完成必须用当前 UI 证据验证，不能只因为步骤执行完就报成功。如果没有现成 skill，先复用已有相似 Skill JSON\/archetype，只改关键槽位如入口文字、坐标、目标文本、验证规则，再组装 atomic\/macro skill。需要探",
+          "source": "local_rules_plus_existing_skill_similarity",
+          "similarCases": [
+            {
+              "skillId": "patched.command.1779339085824",
+              "kind": "macro_skill",
+              "appPackage": "com.zhihu.android",
+              "implements": "AiPlannedMacroSkill",
+              "intentId": "search_in_app",
+              "score": 53,
+              "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_candidates\/com.zhihu.android\/patched.command.1779339085824.json"
+            },
+            {
+              "skillId": "patched.command.1779339041582",
+              "kind": "macro_skill",
+              "appPackage": "com.xunmeng.pinduoduo",
+              "implements": "AiPlannedMacroSkill",
+              "intentId": "search_in_app",
+              "score": 53,
+              "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_candidates\/com.xunmeng.pinduoduo\/patched.command.1779339041582.json"
+            },
+            {
+              "skillId": "patched.command.1779339053576",
+              "kind": "macro_skill",
+              "appPackage": "com.xunmeng.pinduoduo",
+              "implements": "AiPlannedMacroSkill",
+              "intentId": "search_in_app",
+              "score": 53,
+              "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_candidates\/com.xunmeng.pinduoduo\/patched.command.1779339053576.json"
+            },
+            {
+              "skillId": "patched.command.1779338918226",
+              "kind": "macro_skill",
+              "appPackage": "com.jingdong.app.mall",
+              "implements": "AiPlannedMacroSkill",
+              "intentId": "search_in_app",
+              "score": 53,
+              "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_candidates\/com.jingdong.app.mall\/patched.command.1779338918226.json"
+            },
+            {
+              "skillId": "patched.command.1779338949541",
+              "kind": "macro_skill",
+              "appPackage": "com.jingdong.app.mall",
+              "implements": "AiPlannedMacroSkill",
+              "intentId": "search_in_app",
+              "score": 53,
+              "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_candidates\/com.jingdong.app.mall\/patched.command.1779338949541.json"
+            },
+            {
+              "skillId": "patched.command.1779338878450",
+              "kind": "macro_skill",
+              "appPackage": "com.taobao.taobao",
+              "implements": "AiPlannedMacroSkill",
+              "intentId": "search_in_app",
+              "score": 53,
+              "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_candidates\/com.taobao.taobao\/patched.command.1779338878450.json"
+            },
+            {
+              "skillId": "patched.command.1779338890723",
+              "kind": "macro_skill",
+              "appPackage": "com.taobao.taobao",
+              "implements": "AiPlannedMacroSkill",
+              "intentId": "search_in_app",
+              "score": 53,
+              "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_candidates\/com.taobao.taobao\/patched.command.1779338890723.json"
+            },
+            {
+              "skillId": "patched.command.1779338840458",
+              "kind": "macro_skill",
+              "appPackage": "com.dianping.v1",
+              "implements": "AiPlannedMacroSkill",
+              "intentId": "search_in_app",
+              "score": 53,
+              "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_candidates\/com.dianping.v1\/patched.command.1779338840458.json"
+            }
+          ],
+          "stepCount": 7,
+          "currentPackage": "com.zhihu.android",
+          "nodeCount": 40,
+          "notes": [
+            "App-side planner generated candidate JSON without ADB UI control.",
+            "Existing candidate\/approved skills are used as similarity evidence; generated steps are still dry-run checked before execution.",
+            "AI remains a fallback for empty or failed local planning."
+          ]
+        }
+      },
+      {
+        "title": "相似成功案例改写为 Skill JSON",
+        "status": "SUCCESS",
+        "message": "不靠 ADB 拼流程；App 底层把 intent=generic_search 拆成 9 个 candidate JSON，之后统一 dry-run、执行、失败再让 v4pro 二次判断。",
+        "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_candidates\/com.baidu.baidumap\/patched.command.1779339509897.json",
+        "extra": {
+          "planner": "PHONE_SIDE_SIMILAR_SKILL_ADAPTER_V1",
+          "intentId": "generic_search",
+          "appPackage": "com.baidu.BaiduMap",
+          "instruction": "在百度地图搜索上海站，停在地点结果页并记录路线、收藏、电话入口。\n\n约束：目标 App=百度地图，包名=com.baidu.BaiduMap。必须由 MacroPilot 手机端自己用无障碍、输入法、AI\/Skill JSON 执行，不允许依赖 ADB 手点目标 App。执行前先读取当前 UI；如果遇到广告、弹窗、小字提示，先记录文字并安全关闭。任务完成必须用当前 UI 证据验证，不能只因为步骤执行完就报成功。如果没有现成 skill，先复用已有相似 Skill JSON\/archetype，只改关键槽位如入口文字、坐标、目标文本、验证规则，再组装 atomic\/macro skill。需要探",
+          "source": "local_rules_plus_existing_skill_similarity",
+          "similarCases": [
+            {
+              "skillId": "patched.command.1779339085824",
+              "kind": "macro_skill",
+              "appPackage": "com.zhihu.android",
+              "implements": "AiPlannedMacroSkill",
+              "intentId": "search_in_app",
+              "score": 53,
+              "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_candidates\/com.zhihu.android\/patched.command.1779339085824.json"
+            },
+            {
+              "skillId": "patched.command.1779339041582",
+              "kind": "macro_skill",
+              "appPackage": "com.xunmeng.pinduoduo",
+              "implements": "AiPlannedMacroSkill",
+              "intentId": "search_in_app",
+              "score": 53,
+              "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_candidates\/com.xunmeng.pinduoduo\/patched.command.1779339041582.json"
+            },
+            {
+              "skillId": "patched.command.1779339053576",
+              "kind": "macro_skill",
+              "appPackage": "com.xunmeng.pinduoduo",
+              "implements": "AiPlannedMacroSkill",
+              "intentId": "search_in_app",
+              "score": 53,
+              "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_candidates\/com.xunmeng.pinduoduo\/patched.command.1779339053576.json"
+            },
+            {
+              "skillId": "patched.command.1779338918226",
+              "kind": "macro_skill",
+              "appPackage": "com.jingdong.app.mall",
+              "implements": "AiPlannedMacroSkill",
+              "intentId": "search_in_app",
+              "score": 53,
+              "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_candidates\/com.jingdong.app.mall\/patched.command.1779338918226.json"
+            },
+            {
+              "skillId": "patched.command.1779338949541",
+              "kind": "macro_skill",
+              "appPackage": "com.jingdong.app.mall",
+              "implements": "AiPlannedMacroSkill",
+              "intentId": "search_in_app",
+              "score": 53,
+              "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_candidates\/com.jingdong.app.mall\/patched.command.1779338949541.json"
+            },
+            {
+              "skillId": "patched.command.1779338878450",
+              "kind": "macro_skill",
+              "appPackage": "com.taobao.taobao",
+              "implements": "AiPlannedMacroSkill",
+              "intentId": "search_in_app",
+              "score": 53,
+              "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_candidates\/com.taobao.taobao\/patched.command.1779338878450.json"
+            },
+            {
+              "skillId": "patched.command.1779338890723",
+              "kind": "macro_skill",
+              "appPackage": "com.taobao.taobao",
+              "implements": "AiPlannedMacroSkill",
+              "intentId": "search_in_app",
+              "score": 53,
+              "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_candidates\/com.taobao.taobao\/patched.command.1779338890723.json"
+            },
+            {
+              "skillId": "patched.command.1779338840458",
+              "kind": "macro_skill",
+              "appPackage": "com.dianping.v1",
+              "implements": "AiPlannedMacroSkill",
+              "intentId": "search_in_app",
+              "score": 53,
+              "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_candidates\/com.dianping.v1\/patched.command.1779338840458.json"
+            }
+          ],
+          "stepCount": 7,
+          "currentPackage": "com.zhihu.android",
+          "nodeCount": 40,
+          "notes": [
+            "App-side planner generated candidate JSON without ADB UI control.",
+            "Existing candidate\/approved skills are used as similarity evidence; generated steps are still dry-run checked before execution.",
+            "AI remains a fallback for empty or failed local planning."
+          ]
+        }
+      },
+      {
+        "title": "dry-run 静态检查",
+        "status": "SUCCESS",
+        "message": "通过 9\/9。",
+        "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_dry_run_reports\/com.baidu.baidumap\/patched.command.1779339509897_1779339513869.json",
+        "extra": {}
+      },
+      {
+        "title": "拼装 app_config 预览",
+        "status": "SUCCESS",
+        "message": "候选\/测试产物已拼为单个 app_config 预览。",
+        "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/app_config_exports\/com.baidu.baidumap\/app_config_20260521_125833_884.json",
+        "extra": {}
+      },
+      {
+        "title": "执行候选 JSON",
+        "status": "RUNNING",
+        "message": "不等待 APPROVED：按用户要求，直接由 SkillJsonExecutor 执行候选 macro=patched.command.1779339509897。",
+        "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_candidates\/com.baidu.baidumap\/patched.command.1779339509897.json",
+        "extra": {}
+      },
+      {
+        "title": "候选 JSON 执行结果",
+        "status": "FAILED_UNVERIFIABLE",
+        "message": "patched.command.1779339509897 -> FAILED_UNVERIFIABLE；Input change could not be verified; reactiveDismissedBeforeAction=2",
+        "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/runtime\/run_reports\/com.baidu.baidumap\/ai_direct_run_1779339544842.json",
+        "extra": {}
+      },
+      {
+        "title": "本地弹窗规则处理",
+        "status": "SUCCESS",
+        "message": "AI 重判前先由手机端 GKD-like 规则处理阻断弹窗\/广告：节点规则处理 3 个，视觉兜底=false。",
+        "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/runtime\/run_reports\/com.baidu.baidumap\/ai_direct_run_1779339544842.json",
+        "extra": {
+          "trigger": "EXECUTION_FAILED",
+          "blockingDialogsBefore": [
+            {
+              "type": "popup_observed",
+              "events": [],
+              "smallNodes": [
+                "授权状态",
+                "IUserService",
+                "IActivityManager",
+                "IActivityTaskManager",
+                "IAppOpsService",
+                "IInputManager",
+                "IPackageManager",
+                "IUserManager"
+              ]
+            }
+          ],
+          "dismissEvents": [
+            {
+              "pass": 1,
+              "kind": "dialog",
+              "label": "我知道了",
+              "score": 94,
+              "reason": "flow_replan:EXECUTION_FAILED",
+              "success": true,
+              "message": "dispatchGesture tap sent (normalized=0.710,0.674 px=1022,2136 screen=1440x3168)",
+              "bounds": "909 2096 1136 2176"
+            },
+            {
+              "pass": 2,
+              "kind": "dialog",
+              "label": "Shizuku 状态",
+              "score": 66,
+              "reason": "flow_replan:EXECUTION_FAILED",
+              "success": true,
+              "message": "dispatchGesture tap sent (normalized=0.928,0.144 px=1336,456 screen=1440x3168)",
+              "bounds": "1240 360 1432 552"
+            },
+            {
+              "pass": 3,
+              "kind": "dialog",
+              "label": "我知道了",
+              "score": 94,
+              "reason": "flow_replan:EXECUTION_FAILED",
+              "success": true,
+              "message": "dispatchGesture tap sent (normalized=0.710,0.699 px=1022,2214 screen=1440x3168)",
+              "bounds": "909 2174 1136 2254"
+            }
+          ],
+          "visualFallback": null
+        }
+      },
+      {
+        "title": "失败后 AI 判断",
+        "status": "RUNNING",
+        "message": "当前不是直接停下：App 把失败原因、当前屏幕节点和已跑步骤发给手机端 AI，让 AI 判断下一段补救 JSON。",
+        "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/runtime\/run_reports\/com.baidu.baidumap\/ai_direct_run_1779339544842.json",
+        "extra": {
+          "phase": "REPLAN",
+          "trigger": "EXECUTION_FAILED",
+          "previousStatus": "FAILED_UNVERIFIABLE",
+          "previousMessage": "Input change could not be verified; reactiveDismissedBeforeAction=2"
+        }
+      },
+      {
+        "title": "失败后 AI 判断 返回",
+        "status": "SUCCESS",
+        "message": "HTTP=200；模型=deepseek-v4-pro；goalCompleted=false；补救步骤=5；诊断=上一步 TypeIntoFirstInput 在百度地图内失败（输入变化无法验证），且 app 跳转到 Shizuku，可能由于弹窗或意外返回。需要重新聚焦百度",
+        "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ai_jobs\/2026-05-21\/factory_ai_replan_1779339593468.json",
+        "extra": {
+          "decision": {
+            "goalCompleted": false,
+            "screenAssessment": "当前处于 li.songe.gkd (Shizuku\/GKD)，非百度地图。检测到 permission_or_notice 和 popup_observed，但非目标 app。",
+            "failureDiagnosis": "上一步 TypeIntoFirstInput 在百度地图内失败（输入变化无法验证），且 app 跳转到 Shizuku，可能由于弹窗或意外返回。需要重新聚焦百度地图并从头开始搜索流程。",
+            "confidence": "HIGH",
+            "nextActionReason": "直接打开百度地图，处理可能存在的权限\/弹窗，然后点击搜索框并输入“上海站”重新触发搜索。"
+          }
+        }
+      },
+      {
+        "title": "AI 补救计划转 Skill JSON",
+        "status": "SUCCESS",
+        "message": "AI 返回 5 个下一步动作，已转换成 6 个候选 Skill JSON。",
+        "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_candidates\/com.baidu.baidumap\/patched.command.1779339593489.json",
+        "extra": {
+          "phase": "REPLAN",
+          "trigger": "EXECUTION_FAILED"
+        }
+      },
+      {
+        "title": "AI 补救 dry-run",
+        "status": "SUCCESS",
+        "message": "通过 6\/6。",
+        "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_dry_run_reports\/com.baidu.baidumap\/patched.command.1779339593489_1779339595919.json",
+        "extra": {}
+      },
+      {
+        "title": "AI 补救 JSON 执行结果",
+        "status": "FAILED_ELEMENT_NOT_FOUND",
+        "message": "patched.command.1779339593489 -> FAILED_ELEMENT_NOT_FOUND；No matching node",
+        "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/runtime\/run_reports\/com.baidu.baidumap\/ai_follow_up_run_1779339606083.json",
+        "extra": {
+          "phase": "REPLAN",
+          "trigger": "EXECUTION_FAILED"
+        }
+      },
+      {
+        "title": "通用第三方搜索兜底启动",
+        "status": "RUNNING",
+        "message": "AI 计划没有命中可点击节点；现在生成通用搜索 Skill JSON：打开应用 -> 点搜索入口 -> 输入关键词 -> 点搜索。坐标只作为低置信兜底。",
+        "path": null,
+        "extra": {
+          "query": "上海站，停在地点结果页并记录路线、收藏、电话入口。\n\n约束：目标 App=百度地图，包名=com.baidu.BaiduMap。必须由 MacroPilot 手机端自己用无障碍、输入法、AI\/Skill JSON 执行，不允许依赖 ADB 手点目标 App。执行前先读取当前 UI；如果遇到广告、弹窗、小字提示，先记录文字并安全关闭。任务完成必须用当前 UI 证据验证，不能只因为步骤执行完就报成功。如果没有现成 skill，先复用已有相似 Skill JSON\/archetype，只改关键槽位如入口文字、坐标、目标文本、验证规则，再组装 atomic\/macro skill。需要探索入口时优先遍历底部标签、顶部小图标、图形化入口、侧边操作和子页面。本任务 stopBeforeSubmit=true：写草稿、评论、订单、支付类流程必须停在提交前，不点击最终发布、发送、提交订单、支付、确认授权。期望证据包括：上海站、地点。",
+          "appPackage": "com.baidu.BaiduMap"
+        }
+      },
+      {
+        "title": "通用搜索 Skill JSON 已写入",
+        "status": "SUCCESS",
+        "message": "已写入 9 个候选 JSON，包含文字优先和坐标兜底。",
+        "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_candidates\/com.baidu.baidumap\/patched.command.1779339606084.json",
+        "extra": {}
+      },
+      {
+        "title": "通用搜索 dry-run",
+        "status": "FAILED_DRY_RUN",
+        "message": "通过 34\/35。",
+        "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_dry_run_reports\/com.baidu.baidumap\/com.baidu.baidumap.open_app_1779339609997.json",
+        "extra": {}
+      },
+      {
+        "title": "通用搜索兜底执行结果",
+        "status": "FAILED_UNVERIFIABLE",
+        "message": "patched.command.1779339606084 -> FAILED_UNVERIFIABLE；Input change could not be verified; reactiveDismissedBeforeAction=2",
+        "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/runtime\/run_reports\/com.baidu.baidumap\/generic_search_fallback_1779339628905.json",
+        "extra": {}
+      },
+      {
+        "title": "目标完成校验",
+        "status": "SUCCESS",
+        "message": "已看到搜索词和结果页标记。",
+        "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/runtime\/run_reports\/com.baidu.baidumap\/ai_follow_up_run_1779339606083.json",
+        "extra": {
+          "serviceConnected": true,
+          "appPackage": "com.netease.cloudmusic",
+          "nodeCount": 349,
+          "goalVerificationSnapshotPath": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_snapshots\/com.netease.cloudmusic\/20260521_130028_907_fd376f04.json",
+          "goalVerificationScreenshotPath": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_screenshots\/com.netease.cloudmusic\/20260521_130028_907_fd376f04.png",
+          "goalVerificationScreenshotSha256": "1d564320ce9164a20506e09d7af1a74cdee8258c8c07075c03ab4295284e4e62",
+          "goalVerificationVisualHash": "a0c69d976835d9e29099038bcdcbc1c55408674c7adc9b3a6099301c21400b59",
+          "sampleTexts": [
+            "上海站，停在地点结果页并记录路线、收藏、电话入口。  约束：目标 App=百度地图，包名=com.baidu.BaiduMap。必须由 MacroPilot 手机端自己用无障碍、输入法、AI\/Skill JSON 执行，不允许依赖 ADB 手点目标 App。执行前先读取当前 UI；如果遇到广告、弹窗、小字提示，先记录文字并安全关闭。任务完成必须用当前 UI 证据验证，不能只因为步骤执行完就报成功。如果没有现成 skill，先复用已有相似 Skill JSON\/archetyp...",
+            "搜索",
+            "歌手",
+            "曲风",
+            "专区",
+            "识曲",
+            "听书",
+            "搜索历史"
+          ],
+          "query": "上海站，停在地点结果页并记录路线、收藏、电话入口。",
+          "queryVisible": true
+        }
+      },
+      {
+        "title": "返回 MacroPilot 显示报告",
+        "status": "INFO",
+        "message": "已把 MacroPilot 拉回前台，用户可以直接看 AI、JSON、dry-run、app_config 和执行报告。",
+        "path": null,
+        "extra": {}
+      }
+    ],
+    "assemblyReports": [
+      {
+        "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/app_config_exports\/com.baidu.baidumap\/assembly_report_1779339513889.json",
+        "planStepCount": 0,
+        "generatedSkillCount": 0,
+        "macroSkillId": "",
+        "rule": "",
+        "patches": []
+      }
+    ],
+    "previewConfigFile": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/app_config_exports\/com.baidu.baidumap\/app_config_20260521_125833_884.json",
+    "runtimeRunReport": {
+      "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/runtime\/run_reports\/com.baidu.baidumap\/ai_follow_up_run_1779339606083.json",
+      "kind": "skill_json_ai_follow_up_run_report",
+      "skillId": "patched.command.1779339593489",
+      "status": "FAILED_ELEMENT_NOT_FOUND",
+      "message": "No matching node",
+      "durationMs": 10162,
+      "usedCoordinate": false,
+      "goalCheck": {}
+    },
+    "goalTruth": {
+      "status": "SUCCESS",
+      "hasExplicitGoalCheck": true,
+      "goalStepStatus": "SUCCESS",
+      "goalStepMessage": "已看到搜索词和结果页标记。",
+      "goalEvidence": {
+        "serviceConnected": true,
+        "appPackage": "com.netease.cloudmusic",
+        "nodeCount": 349,
+        "goalVerificationSnapshotPath": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_snapshots\/com.netease.cloudmusic\/20260521_130028_907_fd376f04.json",
+        "goalVerificationScreenshotPath": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_screenshots\/com.netease.cloudmusic\/20260521_130028_907_fd376f04.png",
+        "goalVerificationScreenshotSha256": "1d564320ce9164a20506e09d7af1a74cdee8258c8c07075c03ab4295284e4e62",
+        "goalVerificationVisualHash": "a0c69d976835d9e29099038bcdcbc1c55408674c7adc9b3a6099301c21400b59",
+        "sampleTexts": [
+          "上海站，停在地点结果页并记录路线、收藏、电话入口。  约束：目标 App=百度地图，包名=com.baidu.BaiduMap。必须由 MacroPilot 手机端自己用无障碍、输入法、AI\/Skill JSON 执行，不允许依赖 ADB 手点目标 App。执行前先读取当前 UI；如果遇到广告、弹窗、小字提示，先记录文字并安全关闭。任务完成必须用当前 UI 证据验证，不能只因为步骤执行完就报成功。如果没有现成 skill，先复用已有相似 Skill JSON\/archetyp...",
+          "搜索",
+          "歌手",
+          "曲风",
+          "专区",
+          "识曲",
+          "听书",
+          "搜索历史",
+          "雨天",
+          "惊鸿一面",
+          "听见下雨的声音",
+          "海屿你",
+          "吻得太逼真",
+          "到时候说爱我",
+          "你伤害了我还一笑而过",
+          "There For You",
+          "生活大爆炸",
+          "当一艘船沉入海底当一个人成了谜",
+          "猜你喜欢",
+          "王菲",
+          "周传雄",
+          "孙燕姿",
+          "红豆",
+          "执迷不悔(国)",
+          "惊鸿一面",
+          "热搜榜",
+          "播放",
+          "1",
+          "玻璃",
+          "2"
+        ],
+        "query": "上海站，停在地点结果页并记录路线、收藏、电话入口。",
+        "queryVisible": true,
+        "resultMarkerVisible": true
+      }
+    }
+  },
+  "datasetTargets": [
+    "screen_classifier_sft",
+    "element_role_labeler_sft",
+    "task_flow_planner_sft",
+    "skill_patch_generator_sft",
+    "verifier_recovery_sft"
+  ],
+  "qualityGates": {
+    "hasAppUiGraph": true,
+    "hasAssemblyReport": true,
+    "hasRuntimeTrace": true,
+    "hasGoalTruth": true,
+    "eligibleForCleanTraining": true
+  },
+  "storagePolicy": {
+    "rawScreenshotsLongTerm": false,
+    "fullNodeTreesLongTerm": false,
+    "keepsCompactUiGraph": true,
+    "keepsPatchReports": true
+  },
+  "createdAt": 1779339630413
+}

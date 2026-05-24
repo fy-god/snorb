@@ -1,0 +1,55 @@
+{
+  "schemaVersion": 1,
+  "kind": "skill_json_ai_follow_up_run_report",
+  "id": "ai_follow_up_run_1778523543397",
+  "skillId": "direct.command.1778523536291",
+  "failedSkillId": "direct.command.1778523372529",
+  "appPackage": "com.tencent.mm",
+  "instruction": "微信发一条朋友圈，内容是我是AI，设置为仅自己可见，然后发表",
+  "engine": "ai_runtime_checkpoint",
+  "phase": "CHECKPOINT",
+  "trigger": "COMPLEX_TASK_CHECKPOINT",
+  "previousStatus": "SUCCESS_LOW_CONFIDENCE",
+  "previousMessage": "Macro atoms completed; reactiveDismissed=0",
+  "previousRuntimeReportFile": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/runtime\/run_reports\/com.tencent.mm\/ai_direct_run_1778523434055.json",
+  "aiJobFile": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ai_jobs\/2026-05-12\/factory_ai_checkpoint_1778523536290.json",
+  "decision": {
+    "goalCompleted": false,
+    "screenAssessment": "当前屏幕疑似微信朋友圈发布页面 (SnsUploadUI)，但无障碍服务只返回一个空节点 (nodeCount=1, bounds=0 0 0 0)，无可读交互元素。近期快照显示窗口类名曾变为 SnsUploadUI，但当前视觉哈希未变化。",
+    "failureDiagnosis": "上一步尝试点击“发表”按钮时，因无障碍节点缺失而使用了坐标兜底 (x=0.90, y=0.04)，可能未命中或点击无效。后续等待 2.5 秒无屏幕变化，因此发布可能未成功。隐私设置“仅自己可见”是否已生效未知。",
+    "confidence": "LOW",
+    "nextActionReason": "基于典型微信朋友圈编辑界面布局，再次尝试通过坐标点击右上角“发表”按钮（估计位置 x=0.92, y=0.04），并短暂等待以查看是否触发发布流程或屏幕变化。"
+  },
+  "approvedRequired": false,
+  "status": "SUCCESS_LOW_CONFIDENCE",
+  "message": "Macro atoms completed; reactiveDismissed=0",
+  "durationMs": 7081,
+  "usedCoordinate": true,
+  "details": {
+    "macroSkillId": "direct.command.1778523536291",
+    "atomTrace": [
+      {
+        "index": 0,
+        "skillId": "direct.1778523536291.1.clickcoordinate",
+        "actionType": "ClickCoordinate",
+        "status": "SUCCESS_LOW_CONFIDENCE",
+        "message": "dispatchGesture tap sent (normalized=0.920,0.040 px=1324,126 screen=1440x3168)",
+        "usedCoordinate": true,
+        "details": null
+      },
+      {
+        "index": 1,
+        "skillId": "direct.1778523536291.2.wait",
+        "actionType": "Wait",
+        "status": "SUCCESS_MEDIUM_CONFIDENCE",
+        "message": "Waited 2000ms; reactiveDismissed=0",
+        "usedCoordinate": false,
+        "details": null
+      }
+    ],
+    "reactiveDismissed": 0
+  },
+  "allowSideEffect": true,
+  "skillFile": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_candidates\/com.tencent.mm\/direct.command.1778523536291.json",
+  "createdAt": 1778523543397
+}

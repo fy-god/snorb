@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "kind": "app_side_ai_direct_instruction_service_state",
+  "operation": "API_RUN_APP_SIDE_INSTRUCTION",
+  "id": "app_side_instruction_1778530568532_running",
+  "requestId": "app_side_instruction_1778530568532",
+  "instruction": "打开哔哩哔哩搜索王老菊打开第一个视频",
+  "appPackage": "tv.danmaku.bili",
+  "status": "RUNNING",
+  "message": "手机端 Service 已接管任务，正在运行 AI\/Skill JSON 流水线。",
+  "createdAt": 1778530568581
+}

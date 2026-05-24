@@ -1,0 +1,14 @@
+{
+  "schemaVersion": 1,
+  "kind": "skill_json_dry_run_report",
+  "skillId": "patched.1779339263218.1.clickselector",
+  "appPackage": "com.zhihu.android",
+  "passed": false,
+  "status": "REJECTED",
+  "errors": [
+    "click_selector_unsupported_hierarchy_or_css:[resourceId='com.zhihu.android:id\/clear']"
+  ],
+  "warnings": [],
+  "summary": "click_selector_unsupported_hierarchy_or_css:[resourceId='com.zhihu.android:id\/clear']",
+  "timestamp": 1779339264860
+}

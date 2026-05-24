@@ -1,0 +1,94 @@
+{
+  "schemaVersion": 1,
+  "kind": "skill_json_test_report",
+  "skillId": "bilibili.search.find_search_input",
+  "appPackage": "tv.danmaku.bili",
+  "skillKind": "atomic_skill",
+  "testRuns": 10,
+  "success": 0,
+  "mediumConfidence": 0,
+  "lowConfidence": 10,
+  "failed": 0,
+  "timeout": 0,
+  "successRate": 1,
+  "highConfidenceRate": 0,
+  "mediumOrHighConfidenceRate": 0,
+  "avgDurationMs": 2,
+  "p95DurationMs": 2,
+  "failureClusters": [],
+  "runResults": [
+    {
+      "run": 1,
+      "status": "SUCCESS_LOW_CONFIDENCE",
+      "message": "Element resolved by coordinate fallback",
+      "durationMs": 2,
+      "usedCoordinate": true
+    },
+    {
+      "run": 2,
+      "status": "SUCCESS_LOW_CONFIDENCE",
+      "message": "Element resolved by coordinate fallback",
+      "durationMs": 2,
+      "usedCoordinate": true
+    },
+    {
+      "run": 3,
+      "status": "SUCCESS_LOW_CONFIDENCE",
+      "message": "Element resolved by coordinate fallback",
+      "durationMs": 2,
+      "usedCoordinate": true
+    },
+    {
+      "run": 4,
+      "status": "SUCCESS_LOW_CONFIDENCE",
+      "message": "Element resolved by coordinate fallback",
+      "durationMs": 2,
+      "usedCoordinate": true
+    },
+    {
+      "run": 5,
+      "status": "SUCCESS_LOW_CONFIDENCE",
+      "message": "Element resolved by coordinate fallback",
+      "durationMs": 1,
+      "usedCoordinate": true
+    },
+    {
+      "run": 6,
+      "status": "SUCCESS_LOW_CONFIDENCE",
+      "message": "Element resolved by coordinate fallback",
+      "durationMs": 11,
+      "usedCoordinate": true
+    },
+    {
+      "run": 7,
+      "status": "SUCCESS_LOW_CONFIDENCE",
+      "message": "Element resolved by coordinate fallback",
+      "durationMs": 1,
+      "usedCoordinate": true
+    },
+    {
+      "run": 8,
+      "status": "SUCCESS_LOW_CONFIDENCE",
+      "message": "Element resolved by coordinate fallback",
+      "durationMs": 2,
+      "usedCoordinate": true
+    },
+    {
+      "run": 9,
+      "status": "SUCCESS_LOW_CONFIDENCE",
+      "message": "Element resolved by coordinate fallback",
+      "durationMs": 1,
+      "usedCoordinate": true
+    },
+    {
+      "run": 10,
+      "status": "SUCCESS_LOW_CONFIDENCE",
+      "message": "Element resolved by coordinate fallback",
+      "durationMs": 1,
+      "usedCoordinate": true
+    }
+  ],
+  "allowSideEffect": false,
+  "promotionSuggestion": "APPROVE_AS_C_LEVEL_LOW_CONFIDENCE",
+  "timestamp": 1778080727540
+}

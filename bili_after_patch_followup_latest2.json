@@ -1,0 +1,55 @@
+{
+  "schemaVersion": 1,
+  "kind": "skill_json_ai_follow_up_run_report",
+  "id": "ai_follow_up_run_1778527191633",
+  "skillId": "direct.command.1778527190403",
+  "failedSkillId": "bilibili.search.search_in_app",
+  "appPackage": "tv.danmaku.bili",
+  "instruction": "打开哔哩哔哩搜索王老菊打开第一个视频",
+  "engine": "ai_runtime_checkpoint",
+  "phase": "CHECKPOINT",
+  "trigger": "COMPLEX_TASK_CHECKPOINT",
+  "previousStatus": "SUCCESS_LOW_CONFIDENCE",
+  "previousMessage": "Macro atoms completed; reactiveDismissed=3",
+  "previousRuntimeReportFile": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/runtime\/run_reports\/tv.danmaku.bili\/ai_direct_run_1778527136914.json",
+  "aiJobFile": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ai_jobs\/2026-05-12\/factory_ai_checkpoint_1778527190389.json",
+  "decision": {
+    "goalCompleted": false,
+    "screenAssessment": "当前页面是B站分享面板，包含多个分享选项（QQ、微信等）和“取消”按钮。用户指令是搜索王老菊并打开第一个视频，但流程误触了分享按钮，导致被此面板阻塞。",
+    "failureDiagnosis": "执行搜索后可能误点击了非视频元素，触发了分享面板，未能进入视频详情页。",
+    "confidence": "HIGH",
+    "nextActionReason": "先点击“取消”关闭分享面板，让页面退回为可用状态，以便后续重新定位并打开第一个视频。"
+  },
+  "approvedRequired": false,
+  "status": "SUCCESS_MEDIUM_CONFIDENCE",
+  "message": "Macro atoms completed; reactiveDismissed=0",
+  "durationMs": 1189,
+  "usedCoordinate": false,
+  "details": {
+    "macroSkillId": "direct.command.1778527190403",
+    "atomTrace": [
+      {
+        "index": 0,
+        "skillId": "direct.1778527190403.1.clickselector",
+        "actionType": "ClickSelector",
+        "status": "SUCCESS_MEDIUM_CONFIDENCE",
+        "message": "Window\/node state changed",
+        "usedCoordinate": false,
+        "details": null
+      },
+      {
+        "index": 1,
+        "skillId": "direct.1778527190403.2.wait",
+        "actionType": "Wait",
+        "status": "SUCCESS_MEDIUM_CONFIDENCE",
+        "message": "Waited 800ms; reactiveDismissed=0",
+        "usedCoordinate": false,
+        "details": null
+      }
+    ],
+    "reactiveDismissed": 0
+  },
+  "allowSideEffect": true,
+  "skillFile": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_candidates\/tv.danmaku.bili\/direct.command.1778527190403.json",
+  "createdAt": 1778527191633
+}

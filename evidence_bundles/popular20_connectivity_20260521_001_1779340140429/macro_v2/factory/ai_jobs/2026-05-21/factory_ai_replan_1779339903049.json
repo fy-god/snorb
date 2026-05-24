@@ -1,0 +1,4305 @@
+{
+  "schemaVersion": 1,
+  "kind": "factory_ai_job",
+  "id": "factory_ai_replan_1779339903049",
+  "taskType": "RUNTIME_REPLAN_AFTER_FAILURE",
+  "phase": "REPLAN",
+  "trigger": "EXECUTION_FAILED",
+  "appPackage": "com.hexin.plat.android",
+  "relatedCandidateIds": [
+    "patched.command.1779339757860"
+  ],
+  "createdAt": 1779339903049,
+  "inputSummary": "EXECUTION_FAILED: FAILED_ELEMENT_NOT_FOUND Bottom-tab sweep did not find entry aliases=首页; tabsVisited=5; events=[{\"phase\":\"open_before_recover\",\"packageName\":\"com.hexin.plat.android\",\"success\":true,\"message\":\"Launch intent sent for com.hexin.plat.android\"},{\"phase\":\"home_back\",\"index\":1,\"fromPackage\":\"com.hexin.plat.android\",\"window\":null,\"success\":true,\"message\":\"GLOBAL_ACTION_BACK performed\"},{\"phase\":\"home_back\",\"index\":2,\"fromPackage\":\"com.hexin.plat.android\",\"window\":null,\"success\":true,\"m",
+  "promptSnapshot": {
+    "taskType": "RUNTIME_REPLAN_AFTER_FAILURE",
+    "phase": "REPLAN",
+    "trigger": "EXECUTION_FAILED",
+    "instruction": "在同花顺搜索贵州茅台，停在股票详情页并记录盘口、K线、资讯入口，不交易。\n\n约束：目标 App=同花顺，包名=com.hexin.plat.android。必须由 MacroPilot 手机端自己用无障碍、输入法、AI\/Skill JSON 执行，不允许依赖 ADB 手点目标 App。执行前先读取当前 UI；如果遇到广告、弹窗、小字提示，先记录文字并安全关闭。任务完成必须用当前 UI 证据验证，不能只因为步骤执行完就报成功。如果没有现成 skill，先复用已有相似 Skill JSON\/archetype，只改关键槽位如入口文字、坐标、目标文本、验证规则，再组装 atomic\/macro skill。需要探索入口时优先遍历底部标签、顶部小图标、图形化入口、侧边操作和子页面。本任务 stopBeforeSubmit=true：写草稿、评论、订单、支付类流程必须停在提交前，不点击最终发布、发送、提交订单、支付、确认授权。期望证据包括：贵州茅台、股票详情。",
+    "appPackage": "com.hexin.plat.android",
+    "failedSkillId": "patched.command.1779339757860",
+    "previousResult": {
+      "status": "FAILED_ELEMENT_NOT_FOUND",
+      "message": "Bottom-tab sweep did not find entry aliases=首页; tabsVisited=5; events=[{\"phase\":\"open_before_recover\",\"packageName\":\"com.hexin.plat.android\",\"success\":true,\"message\":\"Launch intent sent for com.hexin.plat.android\"},{\"phase\":\"home_back\",\"index\":1,\"fromPackage\":\"com.hexin.plat.android\",\"window\":null,\"success\":true,\"message\":\"GLOBAL_ACTION_BACK performed\"},{\"phase\":\"home_back\",\"index\":2,\"fromPackage\":\"com.hexin.plat.android\",\"window\":null,\"success\":true,\"message\":\"GLOBAL_ACTION_BACK performed\"},{\"phase\":\"home_back\",\"index\":3,\"fromPackage\":\"com.hexin.plat.android\",\"window\":null,\"success\":true,\"message\":\"GLOBAL_ACTION_BACK performed\"},{\"phase\":\"open_after_recover\",\"packageName\":\"com.hexin.plat.android\",\"success\":true,\"message\":\"Launch intent sent for com.hexin.plat.android\"},{\"phase\":\"recover_current_package\",\"packageName\":\"com.hexin.plat.android\"},{\"phase\":\"click_bottom_tab\",\"index\":0,\"label\":\"fallback_tab_1\",\"x\":0.16666667,\"y\":0.925,\"success\":true,\"message\":\"dispatchGesture tap sent (normalized=0.167,0.925 px=240,2930 screen=1440x3168)\"},{\"phase\":\"reactive_after_tab\",\"index\":0,\"dismissed\":1},{\"phase\":\"click_bottom_tab\",\"index\":1,\"label\":\"fallback_tab_2\",\"x\":0.33333334,\"y\":0.925,\"success\":true,\"message\":\"dispatchGesture tap sent (normalized=0.333,0.925 px=480,2930 screen=1440x3168)\"},{\"phase\":\"reactive_after_tab\",\"index\":1,\"dismissed\":1},{\"phase\":\"click_bottom_tab\",\"index\":2,\"label\":\"fallback_tab_3\",\"x\":0.5,\"y\":0.925,\"success\":true,\"message\":\"dispatchGesture tap sent (normalized=0.500,0.925 px=720,2930 screen=1440x3168)\"},{\"phase\":\"reactive_after_tab\",\"index\":2,\"dismissed\":1},{\"phase\":\"click_bottom_tab\",\"index\":3,\"label\":\"fallback_tab_4\",\"x\":0.6666667,\"y\":0.925,\"success\":true,\"message\":\"dispatchGesture tap sent (normalized=0.667,0.925 px=960,2930 screen=1440x3168)\"},{\"phase\":\"reactive_after_tab\",\"index\":3,\"dismissed\":1},{\"phase\":\"click_bottom",
+      "durationMs": 34469,
+      "usedCoordinate": true
+    },
+    "previousRuntimeReportFile": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/runtime\/run_reports\/com.hexin.plat.android\/ai_direct_run_1779339800146.json",
+    "currentUi": {
+      "serviceConnected": true,
+      "appPackage": "com.hexin.plat.android",
+      "screenWidth": 1440,
+      "screenHeight": 3168,
+      "nodeCount": 8,
+      "snapshotPath": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_snapshots\/com.hexin.plat.android\/20260521_130320_152_636a5532.json",
+      "recentUiSnapshots": [
+        {
+          "id": "ui_snapshot_1779339800401",
+          "source": "current_ui_summary",
+          "note": "factory_ai_context",
+          "appPackage": "com.hexin.plat.android",
+          "windowClassName": "null",
+          "screenKey": "636a5532",
+          "screenshotPath": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_screenshots\/com.hexin.plat.android\/20260521_130320_152_636a5532.png",
+          "visualHash": "b44d02f836a12e2a9a3e8d335c25cd33504cb2b005c6c2f755b4f82a2a751da3",
+          "summary": {
+            "nodeCount": 8,
+            "clickableCount": 1,
+            "editableCount": 0,
+            "scrollableCount": 0,
+            "labels": [
+              "com.hexin.plat.android:id\/ll_container_menu",
+              "com.hexin.plat.android:id\/ll_find_group",
+              "com.hexin.plat.android:id\/img_found_group",
+              "发现群聊"
+            ],
+            "bottomCandidates": []
+          },
+          "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_snapshots\/com.hexin.plat.android\/20260521_130320_152_636a5532.json"
+        },
+        {
+          "id": "ui_snapshot_1779339800117",
+          "source": "macro_atom_failed",
+          "note": "index=2; skillId=patched.1779339757860.3.findentrybybottomtabsweep; status=FAILED_ELEMENT_NOT_FOUND; Bottom-tab sweep did not find entry aliases=首页; tabsVisited=5; events=[{\"phase\":\"open_before_recover\",\"packageName\":\"com.hexin.plat.android\",\"success\":true,\"message\":\"Launch intent",
+          "appPackage": "com.hexin.plat.android",
+          "windowClassName": "null",
+          "screenKey": "636a5532",
+          "screenshotPath": "null",
+          "visualHash": "null",
+          "summary": {
+            "nodeCount": 8,
+            "clickableCount": 1,
+            "editableCount": 0,
+            "scrollableCount": 0,
+            "labels": [
+              "com.hexin.plat.android:id\/ll_container_menu",
+              "com.hexin.plat.android:id\/ll_find_group",
+              "com.hexin.plat.android:id\/img_found_group",
+              "发现群聊"
+            ],
+            "bottomCandidates": []
+          },
+          "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_snapshots\/com.hexin.plat.android\/20260521_130320_117_636a5532.json"
+        },
+        {
+          "id": "ui_snapshot_1779339800051",
+          "source": "action_failed",
+          "note": "patched.1779339757860.3.findentrybybottomtabsweep:FindEntryByBottomTabSweep:FAILED_ELEMENT_NOT_FOUND:Bottom-tab sweep did not find entry aliases=首页; tabsVisited=5; events=[{\"phase\":\"open_before_recover\",\"packageName\":\"com.hexin.plat.android\",\"success\":true,\"message\":\"Launch intent",
+          "appPackage": "com.hexin.plat.android",
+          "windowClassName": "null",
+          "screenKey": "636a5532",
+          "screenshotPath": "null",
+          "visualHash": "null",
+          "summary": {
+            "nodeCount": 8,
+            "clickableCount": 1,
+            "editableCount": 0,
+            "scrollableCount": 0,
+            "labels": [
+              "com.hexin.plat.android:id\/ll_container_menu",
+              "com.hexin.plat.android:id\/ll_find_group",
+              "com.hexin.plat.android:id\/img_found_group",
+              "发现群聊"
+            ],
+            "bottomCandidates": []
+          },
+          "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_snapshots\/com.hexin.plat.android\/20260521_130320_050_636a5532.json"
+        },
+        {
+          "id": "ui_snapshot_1779339799927",
+          "source": "accessibility_auto",
+          "note": "TYPE_WINDOW_STATE_CHANGED",
+          "appPackage": "com.hexin.plat.android",
+          "windowClassName": "null",
+          "screenKey": "636a5532",
+          "screenshotPath": "null",
+          "visualHash": "null",
+          "summary": {
+            "nodeCount": 8,
+            "clickableCount": 1,
+            "editableCount": 0,
+            "scrollableCount": 0,
+            "labels": [
+              "com.hexin.plat.android:id\/ll_container_menu",
+              "com.hexin.plat.android:id\/ll_find_group",
+              "com.hexin.plat.android:id\/img_found_group",
+              "发现群聊"
+            ],
+            "bottomCandidates": []
+          },
+          "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_snapshots\/com.hexin.plat.android\/20260521_130319_926_636a5532.json"
+        }
+      ],
+      "capability": {
+        "nodeReadability": "B",
+        "inputCapability": "CUSTOM_IME",
+        "verificationCapability": "MEDIUM"
+      },
+      "nodes": [
+        {
+          "class": "android.widget.FrameLayout",
+          "clickable": false,
+          "editable": false,
+          "scrollable": false,
+          "bounds": "864 336 1440 534"
+        },
+        {
+          "class": "android.widget.FrameLayout",
+          "clickable": false,
+          "editable": false,
+          "scrollable": false,
+          "bounds": "864 336 1440 534"
+        },
+        {
+          "class": "android.widget.LinearLayout",
+          "clickable": false,
+          "editable": false,
+          "scrollable": false,
+          "bounds": "864 336 1440 534"
+        },
+        {
+          "resourceId": "com.hexin.plat.android:id\/ll_container_menu",
+          "class": "android.widget.LinearLayout",
+          "clickable": false,
+          "editable": false,
+          "scrollable": false,
+          "bounds": "864 336 1400 534"
+        },
+        {
+          "resourceId": "com.hexin.plat.android:id\/ll_find_group",
+          "class": "android.widget.LinearLayout",
+          "clickable": true,
+          "editable": false,
+          "scrollable": false,
+          "bounds": "864 356 1400 532"
+        },
+        {
+          "resourceId": "com.hexin.plat.android:id\/img_found_group",
+          "class": "android.widget.ImageView",
+          "clickable": false,
+          "editable": false,
+          "scrollable": false,
+          "bounds": "928 396 1024 492"
+        },
+        {
+          "text": "发现群聊",
+          "class": "android.widget.TextView",
+          "clickable": false,
+          "editable": false,
+          "scrollable": false,
+          "bounds": "1048 411 1272 477"
+        },
+        {
+          "class": "android.view.View",
+          "clickable": false,
+          "editable": false,
+          "scrollable": false,
+          "bounds": "1048 532 1400 534"
+        }
+      ],
+      "blockingDialogs": [
+        {
+          "type": "popup_observed",
+          "events": [],
+          "smallNodes": [
+            "com.hexin.plat.android:id\/ll_container_menu",
+            "发现群聊"
+          ]
+        }
+      ],
+      "clickTargets": [
+        {
+          "index": 0,
+          "text": null,
+          "desc": null,
+          "resourceId": "com.hexin.plat.android:id\/ll_find_group",
+          "class": "android.widget.LinearLayout",
+          "clickable": true,
+          "selected": false,
+          "bounds": "864 356 1400 532",
+          "center": {
+            "x": 0.7861111111111111,
+            "y": 0.14015151515151514
+          },
+          "tags": [
+            "clickable",
+            "author_or_query"
+          ]
+        },
+        {
+          "index": 1,
+          "text": "发现群聊",
+          "desc": null,
+          "resourceId": null,
+          "class": "android.widget.TextView",
+          "clickable": false,
+          "selected": false,
+          "bounds": "1048 411 1272 477",
+          "center": {
+            "x": 0.8055555555555556,
+            "y": 0.14015151515151514
+          },
+          "tags": [
+            "video_like"
+          ]
+        }
+      ],
+      "bottomTabs": [],
+      "entryCandidates": [
+        {
+          "index": 0,
+          "text": "发现群聊",
+          "desc": null,
+          "resourceId": null,
+          "class": "android.widget.TextView",
+          "clickable": false,
+          "selected": false,
+          "bounds": "1048 411 1272 477",
+          "center": {
+            "x": 0.8055555555555556,
+            "y": 0.14015151515151514
+          },
+          "tags": [
+            "video_like",
+            "entry_candidate"
+          ]
+        }
+      ],
+      "videoCandidates": []
+    },
+    "appUiGraph": {
+      "appPackage": "com.hexin.plat.android",
+      "status": "CANDIDATE_PARTIAL_TIMEOUT",
+      "screenCount": 3,
+      "edgeCount": 7,
+      "quality": {
+        "usable": false,
+        "reason": "primary_bottom_tabs_not_opened",
+        "qualityGate": {
+          "bottomPrimaryTabsRequired": true,
+          "bottomPrimaryTabsAttempted": 5,
+          "bottomPrimaryTabsOpened": 0,
+          "topIconsAreNotEnough": true,
+          "repeatedMessagePageIsNotProgress": true
+        },
+        "screenCount": 3,
+        "edgeCount": 7,
+        "nodeCount": 369,
+        "clickableCount": 91,
+        "editableCount": 0,
+        "labelCount": 128,
+        "bottomTabCount": 18,
+        "topEntryCount": 44,
+        "sideEntryCount": 22,
+        "entryCandidateCount": 5,
+        "inputCandidateCount": 0,
+        "videoCandidateCount": 0,
+        "clickTargetCount": 98,
+        "graphicalCandidateCount": 21,
+        "checkableCandidateCount": 0,
+        "candidateCount": 208,
+        "changedEdgeCount": 2,
+        "edgeCategoryCounts": {
+          "primary_bottom_tab": 5,
+          "primary_tab_surface_entry": 2
+        },
+        "primaryBottomTabAttemptedCount": 5,
+        "primaryBottomTabAttemptedLabels": [
+          "tab_1",
+          "tab_2",
+          "tab_3",
+          "tab_4",
+          "tab_5"
+        ],
+        "primaryBottomTabOpenedCount": 0,
+        "primaryBottomTabOpenedLabels": [],
+        "primaryTabSurfaceEntryChangedCount": 2,
+        "primaryTabSurfaceEntriesByTab": {
+          "tab_1": [
+            "com.hexin.plat.android:id\/ll_container_menu",
+            "com.hexin.plat.android:id\/img_found_group"
+          ]
+        }
+      },
+      "screens": [
+        {
+          "screenId": "screen_636a5532",
+          "title": "发现群聊",
+          "screenKey": "636a5532",
+          "nodeCount": 8,
+          "clickableCount": 1,
+          "editableCount": 0,
+          "labels": [
+            "com.hexin.plat.android:id\/ll_container_menu",
+            "com.hexin.plat.android:id\/ll_find_group",
+            "com.hexin.plat.android:id\/img_found_group",
+            "发现群聊"
+          ],
+          "bottomTabs": [],
+          "topEntries": [
+            {
+              "index": 0,
+              "label": "com.hexin.plat.android:id\/img_found_group",
+              "text": null,
+              "desc": null,
+              "resourceId": "com.hexin.plat.android:id\/img_found_group",
+              "class": "android.widget.ImageView",
+              "clickable": false,
+              "editable": false,
+              "checkable": false,
+              "selected": false,
+              "bounds": "928 396 1024 492",
+              "x": 0.6777777777777778,
+              "y": 0.14015151515151514,
+              "center": {
+                "x": 0.6777777777777778,
+                "y": 0.14015151515151514
+              },
+              "tags": [
+                "top_entry",
+                "top_entry_candidate"
+              ]
+            },
+            {
+              "index": 1,
+              "label": "com.hexin.plat.android:id\/ll_container_menu",
+              "text": null,
+              "desc": null,
+              "resourceId": "com.hexin.plat.android:id\/ll_container_menu",
+              "class": "android.widget.LinearLayout",
+              "clickable": false,
+              "editable": false,
+              "checkable": false,
+              "selected": false,
+              "bounds": "864 336 1400 534",
+              "x": 0.7861111111111111,
+              "y": 0.13731060606060605,
+              "center": {
+                "x": 0.7861111111111111,
+                "y": 0.13731060606060605
+              },
+              "tags": [
+                "top_entry",
+                "top_entry_candidate"
+              ]
+            },
+            {
+              "index": 2,
+              "label": "com.hexin.plat.android:id\/ll_find_group",
+              "text": null,
+              "desc": null,
+              "resourceId": "com.hexin.plat.android:id\/ll_find_group",
+              "class": "android.widget.LinearLayout",
+              "clickable": true,
+              "editable": false,
+              "checkable": false,
+              "selected": false,
+              "bounds": "864 356 1400 532",
+              "x": 0.7861111111111111,
+              "y": 0.14015151515151514,
+              "center": {
+                "x": 0.7861111111111111,
+                "y": 0.14015151515151514
+              },
+              "tags": [
+                "top_entry",
+                "top_entry_candidate"
+              ]
+            },
+            {
+              "index": 3,
+              "label": "发现群聊",
+              "text": "发现群聊",
+              "desc": null,
+              "resourceId": null,
+              "class": "android.widget.TextView",
+              "clickable": false,
+              "editable": false,
+              "checkable": false,
+              "selected": false,
+              "bounds": "1048 411 1272 477",
+              "x": 0.8055555555555556,
+              "y": 0.14015151515151514,
+              "center": {
+                "x": 0.8055555555555556,
+                "y": 0.14015151515151514
+              },
+              "tags": [
+                "top_entry",
+                "top_entry_candidate"
+              ]
+            }
+          ],
+          "sideEntries": [],
+          "graphicalCandidates": [],
+          "checkableCandidates": [],
+          "entryCandidates": [
+            {
+              "index": 0,
+              "label": "发现群聊",
+              "text": "发现群聊",
+              "desc": null,
+              "resourceId": null,
+              "class": "android.widget.TextView",
+              "clickable": false,
+              "editable": false,
+              "checkable": false,
+              "selected": false,
+              "bounds": "1048 411 1272 477",
+              "x": 0.8055555555555556,
+              "y": 0.14015151515151514,
+              "center": {
+                "x": 0.8055555555555556,
+                "y": 0.14015151515151514
+              },
+              "tags": [
+                "entry_candidate"
+              ]
+            }
+          ],
+          "inputCandidates": [],
+          "videoCandidates": [],
+          "snapshotPath": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_snapshots\/com.hexin.plat.android\/20260520_181600_042_636a5532.json"
+        },
+        {
+          "screenId": "screen_5e1cdbdd",
+          "title": "互动消息",
+          "screenKey": "5e1cdbdd",
+          "nodeCount": 97,
+          "clickableCount": 15,
+          "editableCount": 0,
+          "labels": [
+            "com.hexin.plat.android:id\/status_background",
+            "com.hexin.plat.android:id\/status_textView",
+            "com.hexin.plat.android:id\/action_bar_root",
+            "android:id\/content",
+            "com.hexin.plat.android:id\/frame_layout",
+            "com.hexin.plat.android:id\/unified_float_ball_container",
+            "com.hexin.plat.android:id\/jump_float_container",
+            "com.hexin.plat.android:id\/statusBarContainer",
+            "com.hexin.plat.android:id\/shadowBarContainer",
+            "com.hexin.plat.android:id\/shadow_status_bar",
+            "com.hexin.plat.android:id\/page_title_bar",
+            "com.hexin.plat.android:id\/title_bar_left_container",
+            "返回 com.hexin.plat.android:id\/title_bar_img",
+            "com.hexin.plat.android:id\/title_bar_middle_container",
+            "互动消息 com.hexin.plat.android:id\/title_bar_middle",
+            "com.hexin.plat.android:id\/title_bar_right_container",
+            "com.hexin.plat.android:id\/page_content",
+            "互动消息",
+            "app",
+            "评论",
+            "@我",
+            "点赞",
+            "通知",
+            "正在加载更多",
+            "com.hexin.plat.android:id\/coordinatorLayout",
+            "com.hexin.plat.android:id\/zx_bottom_bar",
+            "com.hexin.plat.android:id\/tab_widget",
+            "temp",
+            "com.hexin.plat.android:id\/content_container",
+            "com.hexin.plat.android:id\/icon",
+            "TEMP com.hexin.plat.android:id\/title",
+            "理财",
+            "理财 com.hexin.plat.android:id\/title",
+            "资讯",
+            "资讯 com.hexin.plat.android:id\/title",
+            "交易",
+            "交易 com.hexin.plat.android:id\/title",
+            "自选",
+            "自选 com.hexin.plat.android:id\/title",
+            "行情",
+            "行情 com.hexin.plat.android:id\/title",
+            "首页",
+            "首页 com.hexin.plat.android:id\/title",
+            "android:id\/navigationBarBackground"
+          ],
+          "bottomTabs": [],
+          "topEntries": [
+            {
+              "index": 0,
+              "label": "com.hexin.plat.android:id\/title_bar_left_container",
+              "text": null,
+              "desc": null,
+              "resourceId": "com.hexin.plat.android:id\/title_bar_left_container",
+              "class": "android.widget.LinearLayout",
+              "clickable": false,
+              "editable": false,
+              "checkable": false,
+              "selected": false,
+              "bounds": "0 160 252 352",
+              "x": 0.0875,
+              "y": 0.08080808080808081,
+              "center": {
+                "x": 0.0875,
+                "y": 0.08080808080808081
+              },
+              "tags": [
+                "top_entry",
+                "top_entry_candidate"
+              ]
+            },
+            {
+              "index": 1,
+              "label": "返回 com.hexin.plat.android:id\/title_bar_img",
+              "text": null,
+              "desc": "返回",
+              "resourceId": "com.hexin.plat.android:id\/title_bar_img",
+              "class": "android.widget.ImageView",
+              "clickable": true,
+              "editable": false,
+              "checkable": false,
+              "selected": false,
+              "bounds": "0 160 252 352",
+              "x": 0.0875,
+              "y": 0.08080808080808081,
+              "center": {
+                "x": 0.0875,
+                "y": 0.08080808080808081
+              },
+              "tags": [
+                "top_entry",
+                "top_entry_candidate"
+              ]
+            },
+            {
+              "index": 2,
+              "label": "",
+              "text": null,
+              "desc": null,
+              "resourceId": null,
+              "class": "android.view.View",
+              "clickable": true,
+              "editable": false,
+              "checkable": false,
+              "selected": false,
+              "bounds": "0 352 360 508",
+              "x": 0.125,
+              "y": 0.13573232323232323,
+              "center": {
+                "x": 0.125,
+                "y": 0.13573232323232323
+              },
+              "tags": [
+                "top_entry",
+                "top_entry_candidate"
+              ]
+            },
+            {
+              "index": 3,
+              "label": "评论",
+              "text": "评论",
+              "desc": null,
+              "resourceId": null,
+              "class": "android.widget.TextView",
+              "clickable": false,
+              "editable": false,
+              "checkable": false,
+              "selected": false,
+              "bounds": "124 400 236 456",
+              "x": 0.125,
+              "y": 0.1351010101010101,
+              "center": {
+                "x": 0.125,
+                "y": 0.1351010101010101
+              },
+              "tags": [
+                "top_entry",
+                "top_entry_candidate"
+              ]
+            },
+            {
+              "index": 4,
+              "label": "正在加载更多",
+              "text": "正在加载更多",
+              "desc": null,
+              "resourceId": null,
+              "class": "android.widget.TextView",
+              "clickable": false,
+              "editable": false,
+              "checkable": false,
+              "selected": false,
+              "bounds": "284 556 596 616",
+              "x": 0.3055555555555556,
+              "y": 0.1849747474747475,
+              "center": {
+                "x": 0.3055555555555556,
+                "y": 0.1849747474747475
+              },
+              "tags": [
+                "top_entry",
+                "top_entry_candidate"
+              ]
+            },
+            {
+              "index": 5,
+              "label": "",
+              "text": null,
+              "desc": null,
+              "resourceId": null,
+              "class": "android.view.View",
+              "clickable": true,
+              "editable": false,
+              "checkable": false,
+              "selected": false,
+              "bounds": "360 352 720 508",
+              "x": 0.375,
+              "y": 0.13573232323232323,
+              "center": {
+                "x": 0.375,
+                "y": 0.13573232323232323
+              },
+              "tags": [
+                "top_entry",
+                "top_entry_candidate"
+              ]
+            },
+            {
+              "index": 6,
+              "label": "@我",
+              "text": "@我",
+              "desc": null,
+              "resourceId": null,
+              "class": "android.widget.TextView",
+              "clickable": false,
+              "editable": false,
+              "checkable": false,
+              "selected": false,
+              "bounds": "488 400 592 456",
+              "x": 0.375,
+              "y": 0.1351010101010101,
+              "center": {
+                "x": 0.375,
+                "y": 0.1351010101010101
+              },
+              "tags": [
+                "top_entry",
+                "top_entry_candidate"
+              ]
+            },
+            {
+              "index": 7,
+              "label": "com.hexin.plat.android:id\/shadowBarContainer",
+              "text": null,
+              "desc": null,
+              "resourceId": "com.hexin.plat.android:id\/shadowBarContainer",
+              "class": "android.widget.FrameLayout",
+              "clickable": false,
+              "editable": false,
+              "checkable": false,
+              "selected": false,
+              "bounds": "0 0 1440 160",
+              "x": 0.5,
+              "y": 0.025252525252525252,
+              "center": {
+                "x": 0.5,
+                "y": 0.025252525252525252
+              },
+              "tags": [
+                "top_entry",
+                "top_entry_candidate"
+              ]
+            },
+            {
+              "index": 8,
+              "label": "com.hexin.plat.android:id\/shadow_status_bar",
+              "text": null,
+              "desc": null,
+              "resourceId": "com.hexin.plat.android:id\/shadow_status_bar",
+              "class": "android.widget.TextView",
+              "clickable": false,
+              "editable": false,
+              "checkable": false,
+              "selected": false,
+              "bounds": "0 0 1440 160",
+              "x": 0.5,
+              "y": 0.025252525252525252,
+              "center": {
+                "x": 0.5,
+                "y": 0.025252525252525252
+              },
+              "tags": [
+                "top_entry",
+                "top_entry_candidate"
+              ]
+            },
+            {
+              "index": 9,
+              "label": "com.hexin.plat.android:id\/page_title_bar",
+              "text": null,
+              "desc": null,
+              "resourceId": "com.hexin.plat.android:id\/page_title_bar",
+              "class": "android.widget.RelativeLayout",
+              "clickable": false,
+              "editable": false,
+              "checkable": false,
+              "selected": false,
+              "bounds": "0 160 1440 352",
+              "x": 0.5,
+              "y": 0.08080808080808081,
+              "center": {
+                "x": 0.5,
+                "y": 0.08080808080808081
+              },
+              "tags": [
+                "top_entry",
+                "top_entry_candidate"
+              ]
+            },
+            {
+              "index": 10,
+              "label": "com.hexin.plat.android:id\/title_bar_middle_container",
+              "text": null,
+              "desc": null,
+              "resourceId": "com.hexin.plat.android:id\/title_bar_middle_container",
+              "class": "android.widget.LinearLayout",
+              "clickable": false,
+              "editable": false,
+              "checkable": false,
+              "selected": false,
+              "bounds": "252 160 1188 352",
+              "x": 0.5,
+              "y": 0.08080808080808081,
+              "center": {
+                "x": 0.5,
+                "y": 0.08080808080808081
+              },
+              "tags": [
+                "top_entry",
+                "top_entry_candidate"
+              ]
+            },
+            {
+              "index": 11,
+              "label": "互动消息 com.hexin.plat.android:id\/title_bar_middle",
+              "text": "互动消息",
+              "desc": null,
+              "resourceId": "com.hexin.plat.android:id\/title_bar_middle",
+              "class": "android.widget.TextView",
+              "clickable": true,
+              "editable": false,
+              "checkable": false,
+              "selected": false,
+              "bounds": "590 160 850 352",
+              "x": 0.5,
+              "y": 0.08080808080808081,
+              "center": {
+                "x": 0.5,
+                "y": 0.08080808080808081
+              },
+              "tags": [
+                "top_entry",
+                "top_entry_candidate"
+              ]
+            },
+            {
+              "index": 12,
+              "label": "",
+              "text": null,
+              "desc": null,
+              "resourceId": null,
+              "class": "android.view.View",
+              "clickable": true,
+              "editable": false,
+              "checkable": false,
+              "selected": false,
+              "bounds": "720 352 1080 508",
+              "x": 0.625,
+              "y": 0.13573232323232323,
+              "center": {
+                "x": 0.625,
+                "y": 0.13573232323232323
+              },
+              "tags": [
+                "top_entry",
+                "top_entry_candidate"
+              ]
+            },
+            {
+              "index": 13,
+              "label": "点赞",
+              "text": "点赞",
+              "desc": null,
+              "resourceId": null,
+              "class": "android.widget.TextView",
+              "clickable": false,
+              "editable": false,
+              "checkable": false,
+              "selected": false,
+              "bounds": "832 400 968 456",
+              "x": 0.625,
+              "y": 0.1351010101010101,
+              "center": {
+                "x": 0.625,
+                "y": 0.1351010101010101
+              },
+              "tags": [
+                "top_entry",
+                "top_entry_candidate"
+              ]
+            },
+            {
+              "index": 14,
+              "label": "",
+              "text": null,
+              "desc": null,
+              "resourceId": null,
+              "class": "android.view.View",
+              "clickable": true,
+              "editable": false,
+              "checkable": false,
+              "selected": false,
+              "bounds": "1080 352 1440 508",
+              "x": 0.875,
+              "y": 0.13573232323232323,
+              "center": {
+                "x": 0.875,
+                "y": 0.13573232323232323
+              },
+              "tags": [
+                "top_entry",
+                "top_entry_candidate"
+              ]
+            },
+            {
+              "index": 15,
+              "label": "通知",
+              "text": "通知",
+              "desc": null,
+              "resourceId": null,
+              "class": "android.widget.TextView",
+              "clickable": false,
+              "editable": false,
+              "checkable": false,
+              "selected": false,
+              "bounds": "1204 400 1316 456",
+              "x": 0.875,
+              "y": 0.1351010101010101,
+              "center": {
+                "x": 0.875,
+                "y": 0.1351010101010101
+              },
+              "tags": [
+                "top_entry",
+                "top_entry_candidate"
+              ]
+            }
+          ],
+          "sideEntries": [
+            {
+              "index": 0,
+              "label": "com.hexin.plat.android:id\/title_bar_left_container",
+              "text": null,
+              "desc": null,
+              "resourceId": "com.hexin.plat.android:id\/title_bar_left_container",
+              "class": "android.widget.LinearLayout",
+              "clickable": false,
+              "editable": false,
+              "checkable": false,
+              "selected": false,
+              "bounds": "0 160 252 352",
+              "x": 0.0875,
+              "y": 0.08080808080808081,
+              "center": {
+                "x": 0.0875,
+                "y": 0.08080808080808081
+              },
+              "tags": [
+                "side_entry",
+                "side_entry_candidate"
+              ]
+            },
+            {
+              "index": 1,
+              "label": "返回 com.hexin.plat.android:id\/title_bar_img",
+              "text": null,
+              "desc": "返回",
+              "resourceId": "com.hexin.plat.android:id\/title_bar_img",
+              "class": "android.widget.ImageView",
+              "clickable": true,
+              "editable": false,
+              "checkable": false,
+              "selected": false,
+              "bounds": "0 160 252 352",
+              "x": 0.0875,
+              "y": 0.08080808080808081,
+              "center": {
+                "x": 0.0875,
+                "y": 0.08080808080808081
+              },
+              "tags": [
+                "side_entry",
+                "side_entry_candidate"
+              ]
+            },
+            {
+              "index": 2,
+              "label": "评论",
+              "text": "评论",
+              "desc": null,
+              "resourceId": null,
+              "class": "android.widget.TextView",
+              "clickable": false,
+              "editable": false,
+              "checkable": false,
+              "selected": false,
+              "bounds": "124 400 236 456",
+              "x": 0.125,
+              "y": 0.1351010101010101,
+              "center": {
+                "x": 0.125,
+                "y": 0.1351010101010101
+              },
+              "tags": [
+                "side_entry",
+                "side_entry_candidate"
+              ]
+            },
+            {
+              "index": 3,
+              "label": "通知",
+              "text": "通知",
+              "desc": null,
+              "resourceId": null,
+              "class": "android.widget.TextView",
+              "clickable": false,
+              "editable": false,
+              "checkable": false,
+              "selected": false,
+              "bounds": "1204 400 1316 456",
+              "x": 0.875,
+              "y": 0.1351010101010101,
+              "center": {
+                "x": 0.875,
+                "y": 0.1351010101010101
+              },
+              "tags": [
+                "side_entry",
+                "side_entry_candidate"
+              ]
+            },
+            {
+              "index": 4,
+              "label": "",
+              "text": null,
+              "desc": null,
+              "resourceId": null,
+              "class": "android.view.View",
+              "clickable": true,
+              "editable": false,
+              "checkable": false,
+              "selected": false,
+              "bounds": "0 352 360 508",
+              "x": 0.125,
+              "y": 0.13573232323232323,
+              "center": {
+                "x": 0.125,
+                "y": 0.13573232323232323
+              },
+              "tags": [
+                "side_entry",
+                "side_entry_candidate"
+              ]
+            },
+            {
+              "index": 5,
+              "label": "",
+              "text": null,
+              "desc": null,
+              "resourceId": null,
+              "class": "android.view.View",
+              "clickable": true,
+              "editable": false,
+              "checkable": false,
+              "selected": false,
+              "bounds": "1080 352 1440 508",
+              "x": 0.875,
+              "y": 0.13573232323232323,
+              "center": {
+                "x": 0.875,
+                "y": 0.13573232323232323
+              },
+              "tags": [
+                "side_entry",
+                "side_entry_candidate"
+              ]
+            }
+          ],
+          "graphicalCandidates": [
+            {
+              "index": 0,
+              "label": "",
+              "text": null,
+              "desc": null,
+              "resourceId": null,
+              "class": "android.view.View",
+              "clickable": true,
+              "editable": false,
+              "checkable": false,
+              "selected": false,
+              "bounds": "0 352 360 508",
+              "x": 0.125,
+              "y": 0.13573232323232323,
+              "center": {
+                "x": 0.125,
+                "y": 0.13573232323232323
+              },
+              "tags": [
+                "graphical_ui",
+                "small_icon",
+                "clickable"
+              ]
+            },
+            {
+              "index": 1,
+              "label": "",
+              "text": null,
+              "desc": null,
+              "resourceId": null,
+              "class": "android.view.View",
+              "clickable": true,
+              "editable": false,
+              "checkable": false,
+              "selected": false,
+              "bounds": "360 352 720 508",
+              "x": 0.375,
+              "y": 0.13573232323232323,
+              "center": {
+                "x": 0.375,
+                "y": 0.13573232323232323
+              },
+              "tags": [
+                "graphical_ui",
+                "small_icon",
+                "clickable"
+              ]
+            },
+            {
+              "index": 2,
+              "label": "",
+              "text": null,
+              "desc": null,
+              "resourceId": null,
+              "class": "android.view.View",
+              "clickable": true,
+              "editable": false,
+              "checkable": false,
+              "selected": false,
+              "bounds": "720 352 1080 508",
+              "x": 0.625,
+              "y": 0.13573232323232323,
+              "center": {
+                "x": 0.625,
+                "y": 0.13573232323232323
+              },
+              "tags": [
+                "graphical_ui",
+                "small_icon",
+                "clickable"
+              ]
+            },
+            {
+              "index": 3,
+              "label": "",
+              "text": null,
+              "desc": null,
+              "resourceId": null,
+              "class": "android.view.View",
+              "clickable": true,
+              "editable": false,
+              "checkable": false,
+              "selected": false,
+              "bounds": "1080 352 1440 508",
+              "x": 0.875,
+              "y": 0.13573232323232323,
+              "center": {
+                "x": 0.875,
+                "y": 0.13573232323232323
+              },
+              "tags": [
+                "graphical_ui",
+                "small_icon",
+                "clickable"
+              ]
+            },
+            {
+              "index": 4,
+              "label": "返回 com.hexin.plat.android:id\/title_bar_img",
+              "text": null,
+              "desc": "返回",
+              "resourceId": "com.hexin.plat.android:id\/title_bar_img",
+              "class": "android.widget.ImageView",
+              "clickable": true,
+              "editable": false,
+              "checkable": false,
+              "selected": false,
+              "bounds": "0 160 252 352",
+              "x": 0.0875,
+              "y": 0.08080808080808081,
+              "center": {
+                "x": 0.0875,
+                "y": 0.08080808080808081
+              },
+              "tags": [
+                "graphical_ui",
+                "small_icon",
+                "clickable"
+              ]
+            },
+            {
+              "index": 5,
+              "label": "互动消息 com.hexin.plat.android:id\/title_bar_middle",
+              "text": "互动消息",
+              "desc": null,
+              "resourceId": "com.hexin.plat.android:id\/title_bar_middle",
+              "class": "android.widget.TextView",
+              "clickable": true,
+              "editable": false,
+              "checkable": false,
+              "selected": false,
+              "bounds": "590 160 850 352",
+              "x": 0.5,
+              "y": 0.08080808080808081,
+              "center": {
+                "x": 0.5,
+                "y": 0.08080808080808081
+              },
+              "tags": [
+                "graphical_ui",
+                "small_icon",
+                "clickable",
+                "message_entry"
+              ]
+            }
+          ],
+          "checkableCandidates": [],
+          "entryCandidates": [
+            {
+              "index": 0,
+              "label": "互动消息 com.hexin.plat.android:id\/title_bar_middle",
+              "text": "互动消息",
+              "desc": null,
+              "resourceId": "com.hexin.plat.android:id\/title_bar_middle",
+              "class": "android.widget.TextView",
+              "clickable": true,
+              "editable": false,
+              "checkable": false,
+              "selected": false,
+              "bounds": "590 160 850 352",
+              "x": 0.5,
+              "y": 0.08080808080808081,
+              "center": {
+                "x": 0.5,
+                "y": 0.08080808080808081
+              },
+              "tags": [
+                "entry_candidate",
+                "clickable",
+                "message_entry"
+              ]
+            },
+            {
+              "index": 1,
+              "label": "互动消息",
+              "text": "互动消息",
+              "desc": null,
+              "resourceId": null,
+              "class": "android.webkit.WebView",
+              "clickable": false,
+              "editable": false,
+              "checkable": false,
+              "selected": false,
+              "bounds": "0 352 1440 3104",
+              "x": 0.5,
+              "y": 0.5454545454545454,
+              "center": {
+                "x": 0.5,
+                "y": 0.5454545454545454
+              },
+              "tags": [
+                "entry_candidate",
+                "message_entry"
+              ]
+            }
+          ],
+          "inputCandidates": [],
+          "videoCandidates": [],
+          "snapshotPath": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_snapshots\/com.hexin.plat.android\/20260520_181629_793_5e1cdbdd.json"
+        },
+        {
+          "screenId": "screen_cb070aaa",
+          "title": "互动消息",
+          "screenKey": "cb070aaa",
+          "nodeCount": 264,
+          "clickableCount": 75,
+          "editableCount": 0,
+          "labels": [
+            "com.hexin.plat.android:id\/status_background",
+            "com.hexin.plat.android:id\/status_textView",
+            "com.hexin.plat.android:id\/action_bar_root",
+            "android:id\/content",
+            "com.hexin.plat.android:id\/frame_layout",
+            "com.hexin.plat.android:id\/unified_float_ball_container",
+            "com.hexin.plat.android:id\/jump_float_container",
+            "com.hexin.plat.android:id\/statusBarContainer",
+            "com.hexin.plat.android:id\/shadowBarContainer",
+            "com.hexin.plat.android:id\/shadow_status_bar",
+            "com.hexin.plat.android:id\/page_title_bar",
+            "com.hexin.plat.android:id\/title_bar_left_container",
+            "返回 com.hexin.plat.android:id\/title_bar_img",
+            "com.hexin.plat.android:id\/title_bar_middle_container",
+            "互动消息 com.hexin.plat.android:id\/title_bar_middle",
+            "com.hexin.plat.android:id\/title_bar_right_container",
+            "com.hexin.plat.android:id\/page_content",
+            "互动消息",
+            "app",
+            "评论",
+            "@我",
+            "点赞",
+            "通知",
+            "正在加载更多",
+            "35a65e104ed31696c558f70af4dc09fe",
+            "规矩的小韭菜",
+            "赞了你",
+            "04-27 21:10 来自 $泰嘉股份",
+            "$泰嘉股份(002843)$",
+            "名字太差 ！建议董事会改名叫迪迦股份",
+            "f01219b922b954c88d3579364de37ff8",
+            "公子无圣杯",
+            "04-27 17:52 来自 $泰嘉股份",
+            "a0b7604fa2e46229fe8c9c224ed1c8a6",
+            "百八十元",
+            "04-27 16:29 来自 $泰嘉股份",
+            "12_108_108",
+            "mx_****521qse",
+            "04-27 15:59 来自 $泰嘉股份",
+            "013d6c5c960f2e630b5019a56df29359",
+            "森安哥",
+            "04-24 14:38 来自 $拓维信息",
+            "$拓维信息(002261)$",
+            "懂不懂？多大的预期差",
+            "89a4d3df302285801fc45c1a71095bc6",
+            "比红色更红",
+            "04-24 12:27 来自 $拓维信息",
+            "列御风",
+            "04-24 12:13 来自 $拓维信息",
+            "sh_***372m8b",
+            "04-14 10:04 来自 $顺钠股份",
+            "$顺钠股份(000533)$",
+            "这就结束了。。。。",
+            "094f6491c82c325684aa38595e858b15",
+            "慎重的贾元春3",
+            "9a35992971947a3f286062c1de5d56b8",
+            "me_****55707989",
+            "03-11 05:15 来自 $云南锗业",
+            "$云南锗业(002428)$",
+            "axt两天涨了快四十了为什么这个庄这么拉几啊",
+            "6c8a5f3272f833b167930cd87d10a2a0",
+            "觉非觉悟非悟",
+            "03-10 23:44 来自 $云南锗业",
+            "d48c970af62a8b97e5a7342763655374",
+            "剪刀刀",
+            "03-10 21:54 来自 $云南锗业",
+            "bf10d1c397b163289347ece2f213cd50",
+            "mx_697****38",
+            "02-10 19:01 来自 $完美世界",
+            "$完美世界(002624)$",
+            "第一次涨停的时候有人波高了，第二次回封的时候忘记ban猛犸了",
+            "sh_**623thb",
+            "02-10 15:56 来自 $完美世界",
+            "ruru等我赚够钱了我就娶了你",
+            "com.hexin.plat.android:id\/coordinatorLayout",
+            "com.hexin.plat.android:id\/zx_bottom_bar",
+            "com.hexin.plat.android:id\/tab_widget",
+            "temp",
+            "com.hexin.plat.android:id\/content_container",
+            "com.hexin.plat.android:id\/icon"
+          ],
+          "bottomTabs": [
+            {
+              "index": 0,
+              "label": "",
+              "text": null,
+              "desc": null,
+              "resourceId": null,
+              "class": "android.view.View",
+              "clickable": true,
+              "editable": false,
+              "checkable": false,
+              "selected": false,
+              "bounds": "60 2232 200 2376",
+              "x": 0.09027777777777778,
+              "y": 0.7272727272727273,
+              "center": {
+                "x": 0.09027777777777778,
+                "y": 0.7272727272727273
+              },
+              "tags": [
+                "bottom_tab",
+                "bottom_tab_candidate"
+              ]
+            },
+            {
+              "index": 1,
+              "label": "12_108_108",
+              "text": "12_108_108",
+              "desc": null,
+              "resourceId": null,
+              "class": "android.widget.Image",
+              "clickable": false,
+              "editable": false,
+              "checkable": false,
+              "selected": false,
+              "bounds": "60 2232 200 2376",
+              "x": 0.09027777777777778,
+              "y": 0.7272727272727273,
+              "center": {
+                "x": 0.09027777777777778,
+                "y": 0.7272727272727273
+              },
+              "tags": [
+                "bottom_tab",
+                "bottom_tab_candidate"
+              ]
+            },
+            {
+              "index": 2,
+              "label": "",
+              "text": null,
+              "desc": null,
+              "resourceId": null,
+              "class": "android.view.View",
+              "clickable": true,
+              "editable": false,
+              "checkable": false,
+              "selected": false,
+              "bounds": "60 2784 200 2928",
+              "x": 0.09027777777777778,
+              "y": 0.9015151515151515,
+              "center": {
+                "x": 0.09027777777777778,
+                "y": 0.9015151515151515
+              },
+              "tags": [
+                "bottom_tab",
+                "bottom_tab_candidate"
+              ]
+            },
+            {
+              "index": 3,
+              "label": "013d6c5c960f2e630b5019a56df29359",
+              "text": "013d6c5c960f2e630b5019a56df29359",
+              "desc": null,
+              "resourceId": null,
+              "class": "android.widget.Image",
+              "clickable": false,
+              "editable": false,
+              "checkable": false,
+              "selected": false,
+              "bounds": "60 2784 200 2928",
+              "x": 0.09027777777777778,
+              "y": 0.9015151515151515,
+              "center": {
+                "x": 0.09027777777777778,
+                "y": 0.9015151515151515
+              },
+              "tags": [
+                "bottom_tab",
+                "bottom_tab_candidate"
+              ]
+            },
+            {
+              "index": 4,
+              "label": "森安哥",
+              "text": "森安哥",
+              "desc": null,
+              "resourceId": null,
+              "class": "android.widget.TextView",
+              "clickable": true,
+              "editable": false,
+              "checkable": false,
+              "selected": false,
+              "bounds": "244 2780 420 2860",
+              "x": 0.23055555555555557,
+              "y": 0.8901515151515151,
+              "center": {
+                "x": 0.23055555555555557,
+                "y": 0.8901515151515151
+              },
+              "tags": [
+                "bottom_tab",
+                "bottom_tab_candidate"
+              ]
+            },
+            {
+              "index": 5,
+              "label": "$泰嘉股份(002843)$",
+              "text": null,
+              "desc": "$泰嘉股份(002843)$",
+              "resourceId": null,
+              "class": "android.view.View",
+              "clickable": true,
+              "editable": false,
+              "checkable": false,
+              "selected": false,
+              "bounds": "104 2456 624 2524",
+              "x": 0.25277777777777777,
+              "y": 0.7859848484848485,
+              "center": {
+                "x": 0.25277777777777777,
+                "y": 0.7859848484848485
+              },
+              "tags": [
+                "bottom_tab",
+                "bottom_tab_candidate"
+              ]
+            },
+            {
+              "index": 6,
+              "label": "$泰嘉股份(002843)$",
+              "text": "$泰嘉股份(002843)$",
+              "desc": null,
+              "resourceId": null,
+              "class": "android.widget.TextView",
+              "clickable": false,
+              "editable": false,
+              "checkable": false,
+              "selected": false,
+              "bounds": "104 2456 624 2524",
+              "x": 0.25277777777777777,
+              "y": 0.7859848484848485,
+              "center": {
+                "x": 0.25277777777777777,
+                "y": 0.7859848484848485
+              },
+              "tags": [
+                "bottom_tab",
+                "bottom_tab_candidate"
+              ]
+            },
+            {
+              "index": 7,
+              "label": "mx_****521qse",
+              "text": "mx_****521qse",
+              "desc": null,
+              "resourceId": null,
+              "class": "android.widget.TextView",
+              "clickable": true,
+              "editable": false,
+              "checkable": false,
+              "selected": false,
+              "bounds": "244 2228 680 2308",
+              "x": 0.32083333333333336,
+              "y": 0.7159090909090909,
+              "center": {
+                "x": 0.32083333333333336,
+                "y": 0.7159090909090909
+              },
+              "tags": [
+                "bottom_tab",
+                "bottom_tab_candidate"
+              ]
+            },
+            {
+              "index": 8,
+              "label": "赞了你",
+              "text": "赞了你",
+              "desc": null,
+              "resourceId": null,
+              "class": "android.widget.TextView",
+              "clickable": false,
+              "editable": false,
+              "checkable": false,
+              "selected": false,
+              "bounds": "448 2788 620 2852",
+              "x": 0.37083333333333335,
+              "y": 0.8901515151515151,
+              "center": {
+                "x": 0.37083333333333335,
+                "y": 0.8901515151515151
+              },
+              "tags": [
+                "bottom_tab",
+                "bottom_tab_candidate"
+              ]
+            },
+            {
+              "index": 9,
+              "label": "$拓维信息(002261)$",
+              "text": null,
+              "desc": "$拓维信息(002261)$",
+              "resourceId": null,
+              "class": "android.view.View",
+              "clickable": true,
+              "editable": false,
+              "checkable": false,
+              "selected": false,
+              "bounds": "300 3012 808 3076",
+              "x": 0.38472222222222224,
+              "y": 0.9608585858585859,
+              "center": {
+                "x": 0.38472222222222224,
+                "y": 0.9608585858585859
+              },
+              "tags": [
+                "bottom_tab",
+                "bottom_tab_candidate"
+              ]
+            },
+            {
+              "index": 10,
+              "label": "$拓维信息(002261)$",
+              "text": "$拓维信息(002261)$",
+              "desc": null,
+              "resourceId": null,
+              "class": "android.widget.TextView",
+              "clickable": false,
+              "editable": false,
+              "checkable": false,
+              "selected": false,
+              "bounds": "300 3012 808 3076",
+              "x": 0.38472222222222224,
+              "y": 0.9608585858585859,
+              "center": {
+                "x": 0.38472222222222224,
+                "y": 0.9608585858585859
+              },
+              "tags": [
+                "bottom_tab",
+                "bottom_tab_candidate"
+              ]
+            },
+            {
+              "index": 11,
+              "label": "04-27 15:59 来自 $泰嘉股份",
+              "text": "04-27 15:59 来自 $泰嘉股份",
+              "desc": null,
+              "resourceId": null,
+              "class": "android.widget.TextView",
+              "clickable": false,
+              "editable": false,
+              "checkable": false,
+              "selected": false,
+              "bounds": "244 2316 964 2384",
+              "x": 0.41944444444444445,
+              "y": 0.7417929292929293,
+              "center": {
+                "x": 0.41944444444444445,
+                "y": 0.7417929292929293
+              },
+              "tags": [
+                "bottom_tab",
+                "bottom_tab_candidate"
+              ]
+            },
+            {
+              "index": 12,
+              "label": "04-24 14:38 来自 $拓维信息",
+              "text": "04-24 14:38 来自 $拓维信息",
+              "desc": null,
+              "resourceId": null,
+              "class": "android.widget.TextView",
+              "clickable": false,
+              "editable": false,
+              "checkable": false,
+              "selected": false,
+              "bounds": "244 2872 964 2936",
+              "x": 0.41944444444444445,
+              "y": 0.9166666666666666,
+              "center": {
+                "x": 0.41944444444444445,
+                "y": 0.9166666666666666
+              },
+              "tags": [
+                "bottom_tab",
+                "bottom_tab_candidate"
+              ]
+            },
+            {
+              "index": 13,
+              "label": "名字太差 ！建议董事会改名叫迪迦股份",
+              "text": "名字太差 ！建议董事会改名叫迪迦股份",
+              "desc": null,
+              "resourceId": null,
+              "class": "android.widget.TextView",
+              "clickable": false,
+              "editable": false,
+              "checkable": false,
+              "selected": false,
+              "bounds": "104 2456 1292 2604",
+              "x": 0.4847222222222222,
+              "y": 0.7986111111111112,
+              "center": {
+                "x": 0.4847222222222222,
+                "y": 0.7986111111111112
+              },
+              "tags": [
+                "bottom_tab",
+                "bottom_tab_candidate"
+              ]
+            },
+            {
+              "index": 14,
+              "label": "",
+              "text": null,
+              "desc": null,
+              "resourceId": null,
+              "class": "android.view.View",
+              "clickable": true,
+              "editable": false,
+              "checkable": false,
+              "selected": false,
+              "bounds": "60 2416 1380 2648",
+              "x": 0.5,
+              "y": 0.7992424242424242,
+              "center": {
+                "x": 0.5,
+                "y": 0.7992424242424242
+              },
+              "tags": [
+                "bottom_tab",
+                "bottom_tab_candidate"
+              ]
+            },
+            {
+              "index": 15,
+              "label": "",
+              "text": null,
+              "desc": null,
+              "resourceId": null,
+              "class": "android.view.View",
+              "clickable": true,
+              "editable": false,
+              "checkable": false,
+              "selected": false,
+              "bounds": "60 2972 1380 3104",
+              "x": 0.5,
+              "y": 0.9589646464646465,
+              "center": {
+                "x": 0.5,
+                "y": 0.9589646464646465
+              },
+              "tags": [
+                "bottom_tab",
+                "bottom_tab_candidate"
+              ]
+            },
+            {
+              "index": 16,
+              "label": "赞了你",
+              "text": "赞了你",
+              "desc": null,
+              "resourceId": null,
+              "class": "android.widget.TextView",
+              "clickable": false,
+              "editable": false,
+              "checkable": false,
+              "selected": false,
+              "bounds": "704 2236 880 2296",
+              "x": 0.55,
+              "y": 0.7152777777777778,
+              "center": {
+                "x": 0.55,
+                "y": 0.7152777777777778
+              },
+              "tags": [
+                "bottom_tab",
+                "bottom_tab_candidate"
+              ]
+            },
+            {
+              "index": 17,
+              "label": "懂不懂？多大的预期差",
+              "text": "懂不懂？多大的预期差",
+              "desc": null,
+              "resourceId": null,
+              "class": "android.widget.TextView",
+              "clickable": false,
+              "editable": false,
+              "checkable": false,
+              "selected": false,
+              "bounds": "300 3012 1304 3104",
+              "x": 0.5569444444444445,
+              "y": 0.9652777777777778,
+              "center": {
+                "x": 0.5569444444444445,
+                "y": 0.9652777777777778
+              },
+              "tags": [
+                "bottom_tab",
+                "bottom_tab_candidate"
+              ]
+            }
+          ],
+          "topEntries": [
+            {
+              "index": 0,
+              "label": "com.hexin.plat.android:id\/title_bar_left_container",
+              "text": null,
+              "desc": null,
+              "resourceId": "com.hexin.plat.android:id\/title_bar_left_container",
+              "class": "android.widget.LinearLayout",
+              "clickable": false,
+              "editable": false,
+              "checkable": false,
+              "selected": false,
+              "bounds": "0 160 252 352",
+              "x": 0.0875,
+              "y": 0.08080808080808081,
+              "center": {
+                "x": 0.0875,
+                "y": 0.08080808080808081
+              },
+              "tags": [
+                "top_entry",
+                "top_entry_candidate"
+              ]
+            },
+            {
+              "index": 1,
+              "label": "返回 com.hexin.plat.android:id\/title_bar_img",
+              "text": null,
+              "desc": "返回",
+              "resourceId": "com.hexin.plat.android:id\/title_bar_img",
+              "class": "android.widget.ImageView",
+              "clickable": true,
+              "editable": false,
+              "checkable": false,
+              "selected": false,
+              "bounds": "0 160 252 352",
+              "x": 0.0875,
+              "y": 0.08080808080808081,
+              "center": {
+                "x": 0.0875,
+                "y": 0.08080808080808081
+              },
+              "tags": [
+                "top_entry",
+                "top_entry_candidate"
+              ]
+            },
+            {
+              "index": 2,
+              "label": "",
+              "text": null,
+              "desc": null,
+              "resourceId": null,
+              "class": "android.view.View",
+              "clickable": true,
+              "editable": false,
+              "checkable": false,
+              "selected": false,
+              "bounds": "60 572 200 716",
+              "x": 0.09027777777777778,
+              "y": 0.2032828282828283,
+              "center": {
+                "x": 0.09027777777777778,
+                "y": 0.2032828282828283
+              },
+              "tags": [
+                "top_entry",
+                "top_entry_candidate"
+              ]
+            },
+            {
+              "index": 3,
+              "label": "35a65e104ed31696c558f70af4dc09fe",
+              "text": "35a65e104ed31696c558f70af4dc09fe",
+              "desc": null,
+              "resourceId": null,
+              "class": "android.widget.Image",
+              "clickable": false,
+              "editable": false,
+              "checkable": false,
+              "selected": false,
+              "bounds": "60 572 200 716",
+              "x": 0.09027777777777778,
+              "y": 0.2032828282828283,
+              "center": {
+                "x": 0.09027777777777778,
+                "y": 0.2032828282828283
+              },
+              "tags": [
+                "top_entry",
+                "top_entry_candidate"
+              ]
+            },
+            {
+              "index": 4,
+              "label": "",
+              "text": null,
+              "desc": null,
+              "resourceId": null,
+              "class": "android.view.View",
+              "clickable": true,
+              "editable": false,
+              "checkable": false,
+              "selected": false,
+              "bounds": "0 352 360 508",
+              "x": 0.125,
+              "y": 0.13573232323232323,
+              "center": {
+                "x": 0.125,
+                "y": 0.13573232323232323
+              },
+              "tags": [
+                "top_entry",
+                "top_entry_candidate"
+              ]
+            },
+            {
+              "index": 5,
+              "label": "评论",
+              "text": "评论",
+              "desc": null,
+              "resourceId": null,
+              "class": "android.widget.TextView",
+              "clickable": false,
+              "editable": false,
+              "checkable": false,
+              "selected": false,
+              "bounds": "124 400 236 456",
+              "x": 0.125,
+              "y": 0.1351010101010101,
+              "center": {
+                "x": 0.125,
+                "y": 0.1351010101010101
+              },
+              "tags": [
+                "top_entry",
+                "top_entry_candidate"
+              ]
+            },
+            {
+              "index": 6,
+              "label": "$泰嘉股份(002843)$",
+              "text": null,
+              "desc": "$泰嘉股份(002843)$",
+              "resourceId": null,
+              "class": "android.view.View",
+              "clickable": true,
+              "editable": false,
+              "checkable": false,
+              "selected": false,
+              "bounds": "104 796 624 864",
+              "x": 0.25277777777777777,
+              "y": 0.2619949494949495,
+              "center": {
+                "x": 0.25277777777777777,
+                "y": 0.2619949494949495
+              },
+              "tags": [
+                "top_entry",
+                "top_entry_candidate"
+              ]
+            },
+            {
+              "index": 7,
+              "label": "$泰嘉股份(002843)$",
+              "text": "$泰嘉股份(002843)$",
+              "desc": null,
+              "resourceId": null,
+              "class": "android.widget.TextView",
+              "clickable": false,
+              "editable": false,
+              "checkable": false,
+              "selected": false,
+              "bounds": "104 796 624 864",
+              "x": 0.25277777777777777,
+              "y": 0.2619949494949495,
+              "center": {
+                "x": 0.25277777777777777,
+                "y": 0.2619949494949495
+              },
+              "tags": [
+                "top_entry",
+                "top_entry_candidate"
+              ]
+            },
+            {
+              "index": 8,
+              "label": "规矩的小韭菜",
+              "text": "规矩的小韭菜",
+              "desc": null,
+              "resourceId": null,
+              "class": "android.widget.TextView",
+              "clickable": true,
+              "editable": false,
+              "checkable": false,
+              "selected": false,
+              "bounds": "244 568 592 648",
+              "x": 0.2902777777777778,
+              "y": 0.1919191919191919,
+              "center": {
+                "x": 0.2902777777777778,
+                "y": 0.1919191919191919
+              },
+              "tags": [
+                "top_entry",
+                "top_entry_candidate"
+              ]
+            },
+            {
+              "index": 9,
+              "label": "",
+              "text": null,
+              "desc": null,
+              "resourceId": null,
+              "class": "android.view.View",
+              "clickable": true,
+              "editable": false,
+              "checkable": false,
+              "selected": false,
+              "bounds": "360 352 720 508",
+              "x": 0.375,
+              "y": 0.13573232323232323,
+              "center": {
+                "x": 0.375,
+                "y": 0.13573232323232323
+              },
+              "tags": [
+                "top_entry",
+                "top_entry_candidate"
+              ]
+            },
+            {
+              "index": 10,
+              "label": "@我",
+              "text": "@我",
+              "desc": null,
+              "resourceId": null,
+              "class": "android.widget.TextView",
+              "clickable": false,
+              "editable": false,
+              "checkable": false,
+              "selected": false,
+              "bounds": "488 400 592 456",
+              "x": 0.375,
+              "y": 0.1351010101010101,
+              "center": {
+                "x": 0.375,
+                "y": 0.1351010101010101
+              },
+              "tags": [
+                "top_entry",
+                "top_entry_candidate"
+              ]
+            },
+            {
+              "index": 11,
+              "label": "04-27 21:10 来自 $泰嘉股份",
+              "text": "04-27 21:10 来自 $泰嘉股份",
+              "desc": null,
+              "resourceId": null,
+              "class": "android.widget.TextView",
+              "clickable": false,
+              "editable": false,
+              "checkable": false,
+              "selected": false,
+              "bounds": "244 656 964 724",
+              "x": 0.41944444444444445,
+              "y": 0.2178030303030303,
+              "center": {
+                "x": 0.41944444444444445,
+                "y": 0.2178030303030303
+              },
+              "tags": [
+                "top_entry",
+                "top_entry_candidate"
+              ]
+            },
+            {
+              "index": 12,
+              "label": "名字太差 ！建议董事会改名叫迪迦股份",
+              "text": "名字太差 ！建议董事会改名叫迪迦股份",
+              "desc": null,
+              "resourceId": null,
+              "class": "android.widget.TextView",
+              "clickable": false,
+              "editable": false,
+              "checkable": false,
+              "selected": false,
+              "bounds": "104 796 1292 944",
+              "x": 0.4847222222222222,
+              "y": 0.2746212121212121,
+              "center": {
+                "x": 0.4847222222222222,
+                "y": 0.2746212121212121
+              },
+              "tags": [
+                "top_entry",
+                "top_entry_candidate"
+              ]
+            },
+            {
+              "index": 13,
+              "label": "赞了你",
+              "text": "赞了你",
+              "desc": null,
+              "resourceId": null,
+              "class": "android.widget.TextView",
+              "clickable": false,
+              "editable": false,
+              "checkable": false,
+              "selected": false,
+              "bounds": "616 576 792 640",
+              "x": 0.4888888888888889,
+              "y": 0.1919191919191919,
+              "center": {
+                "x": 0.4888888888888889,
+                "y": 0.1919191919191919
+              },
+              "tags": [
+                "top_entry",
+                "top_entry_candidate"
+              ]
+            },
+            {
+              "index": 14,
+              "label": "com.hexin.plat.android:id\/shadowBarContainer",
+              "text": null,
+              "desc": null,
+              "resourceId": "com.hexin.plat.android:id\/shadowBarContainer",
+              "class": "android.widget.FrameLayout",
+              "clickable": false,
+              "editable": false,
+              "checkable": false,
+              "selected": false,
+              "bounds": "0 0 1440 160",
+              "x": 0.5,
+              "y": 0.025252525252525252,
+              "center": {
+                "x": 0.5,
+                "y": 0.025252525252525252
+              },
+              "tags": [
+                "top_entry",
+                "top_entry_candidate"
+              ]
+            },
+            {
+              "index": 15,
+              "label": "com.hexin.plat.android:id\/shadow_status_bar",
+              "text": null,
+              "desc": null,
+              "resourceId": "com.hexin.plat.android:id\/shadow_status_bar",
+              "class": "android.widget.TextView",
+              "clickable": false,
+              "editable": false,
+              "checkable": false,
+              "selected": false,
+              "bounds": "0 0 1440 160",
+              "x": 0.5,
+              "y": 0.025252525252525252,
+              "center": {
+                "x": 0.5,
+                "y": 0.025252525252525252
+              },
+              "tags": [
+                "top_entry",
+                "top_entry_candidate"
+              ]
+            },
+            {
+              "index": 16,
+              "label": "com.hexin.plat.android:id\/page_title_bar",
+              "text": null,
+              "desc": null,
+              "resourceId": "com.hexin.plat.android:id\/page_title_bar",
+              "class": "android.widget.RelativeLayout",
+              "clickable": false,
+              "editable": false,
+              "checkable": false,
+              "selected": false,
+              "bounds": "0 160 1440 352",
+              "x": 0.5,
+              "y": 0.08080808080808081,
+              "center": {
+                "x": 0.5,
+                "y": 0.08080808080808081
+              },
+              "tags": [
+                "top_entry",
+                "top_entry_candidate"
+              ]
+            },
+            {
+              "index": 17,
+              "label": "com.hexin.plat.android:id\/title_bar_middle_container",
+              "text": null,
+              "desc": null,
+              "resourceId": "com.hexin.plat.android:id\/title_bar_middle_container",
+              "class": "android.widget.LinearLayout",
+              "clickable": false,
+              "editable": false,
+              "checkable": false,
+              "selected": false,
+              "bounds": "252 160 1188 352",
+              "x": 0.5,
+              "y": 0.08080808080808081,
+              "center": {
+                "x": 0.5,
+                "y": 0.08080808080808081
+              },
+              "tags": [
+                "top_entry",
+                "top_entry_candidate"
+              ]
+            },
+            {
+              "index": 18,
+              "label": "互动消息 com.hexin.plat.android:id\/title_bar_middle",
+              "text": "互动消息",
+              "desc": null,
+              "resourceId": "com.hexin.plat.android:id\/title_bar_middle",
+              "class": "android.widget.TextView",
+              "clickable": true,
+              "editable": false,
+              "checkable": false,
+              "selected": false,
+              "bounds": "590 160 850 352",
+              "x": 0.5,
+              "y": 0.08080808080808081,
+              "center": {
+                "x": 0.5,
+                "y": 0.08080808080808081
+              },
+              "tags": [
+                "top_entry",
+                "top_entry_candidate"
+              ]
+            },
+            {
+              "index": 19,
+              "label": "",
+              "text": null,
+              "desc": null,
+              "resourceId": null,
+              "class": "android.view.View",
+              "clickable": true,
+              "editable": false,
+              "checkable": false,
+              "selected": false,
+              "bounds": "60 756 1380 988",
+              "x": 0.5,
+              "y": 0.27525252525252525,
+              "center": {
+                "x": 0.5,
+                "y": 0.27525252525252525
+              },
+              "tags": [
+                "top_entry",
+                "top_entry_candidate"
+              ]
+            },
+            {
+              "index": 20,
+              "label": "",
+              "text": null,
+              "desc": null,
+              "resourceId": null,
+              "class": "android.view.View",
+              "clickable": true,
+              "editable": false,
+              "checkable": false,
+              "selected": false,
+              "bounds": "720 352 1080 508",
+              "x": 0.625,
+              "y": 0.13573232323232323,
+              "center": {
+                "x": 0.625,
+                "y": 0.13573232323232323
+              },
+              "tags": [
+                "top_entry",
+                "top_entry_candidate"
+              ]
+            },
+            {
+              "index": 21,
+              "label": "点赞",
+              "text": "点赞",
+              "desc": null,
+              "resourceId": null,
+              "class": "android.widget.TextView",
+              "clickable": false,
+              "editable": false,
+              "checkable": false,
+              "selected": false,
+              "bounds": "832 400 968 456",
+              "x": 0.625,
+              "y": 0.1351010101010101,
+              "center": {
+                "x": 0.625,
+                "y": 0.1351010101010101
+              },
+              "tags": [
+                "top_entry",
+                "top_entry_candidate"
+              ]
+            },
+            {
+              "index": 22,
+              "label": "",
+              "text": null,
+              "desc": null,
+              "resourceId": null,
+              "class": "android.view.View",
+              "clickable": true,
+              "editable": false,
+              "checkable": false,
+              "selected": false,
+              "bounds": "1080 352 1440 508",
+              "x": 0.875,
+              "y": 0.13573232323232323,
+              "center": {
+                "x": 0.875,
+                "y": 0.13573232323232323
+              },
+              "tags": [
+                "top_entry",
+                "top_entry_candidate"
+              ]
+            },
+            {
+              "index": 23,
+              "label": "通知",
+              "text": "通知",
+              "desc": null,
+              "resourceId": null,
+              "class": "android.widget.TextView",
+              "clickable": false,
+              "editable": false,
+              "checkable": false,
+              "selected": false,
+              "bounds": "1204 400 1316 456",
+              "x": 0.875,
+              "y": 0.1351010101010101,
+              "center": {
+                "x": 0.875,
+                "y": 0.1351010101010101
+              },
+              "tags": [
+                "top_entry",
+                "top_entry_candidate"
+              ]
+            }
+          ],
+          "sideEntries": [
+            {
+              "index": 0,
+              "label": "com.hexin.plat.android:id\/title_bar_left_container",
+              "text": null,
+              "desc": null,
+              "resourceId": "com.hexin.plat.android:id\/title_bar_left_container",
+              "class": "android.widget.LinearLayout",
+              "clickable": false,
+              "editable": false,
+              "checkable": false,
+              "selected": false,
+              "bounds": "0 160 252 352",
+              "x": 0.0875,
+              "y": 0.08080808080808081,
+              "center": {
+                "x": 0.0875,
+                "y": 0.08080808080808081
+              },
+              "tags": [
+                "side_entry",
+                "side_entry_candidate"
+              ]
+            },
+            {
+              "index": 1,
+              "label": "返回 com.hexin.plat.android:id\/title_bar_img",
+              "text": null,
+              "desc": "返回",
+              "resourceId": "com.hexin.plat.android:id\/title_bar_img",
+              "class": "android.widget.ImageView",
+              "clickable": true,
+              "editable": false,
+              "checkable": false,
+              "selected": false,
+              "bounds": "0 160 252 352",
+              "x": 0.0875,
+              "y": 0.08080808080808081,
+              "center": {
+                "x": 0.0875,
+                "y": 0.08080808080808081
+              },
+              "tags": [
+                "side_entry",
+                "side_entry_candidate"
+              ]
+            },
+            {
+              "index": 2,
+              "label": "评论",
+              "text": "评论",
+              "desc": null,
+              "resourceId": null,
+              "class": "android.widget.TextView",
+              "clickable": false,
+              "editable": false,
+              "checkable": false,
+              "selected": false,
+              "bounds": "124 400 236 456",
+              "x": 0.125,
+              "y": 0.1351010101010101,
+              "center": {
+                "x": 0.125,
+                "y": 0.1351010101010101
+              },
+              "tags": [
+                "side_entry",
+                "side_entry_candidate"
+              ]
+            },
+            {
+              "index": 3,
+              "label": "通知",
+              "text": "通知",
+              "desc": null,
+              "resourceId": null,
+              "class": "android.widget.TextView",
+              "clickable": false,
+              "editable": false,
+              "checkable": false,
+              "selected": false,
+              "bounds": "1204 400 1316 456",
+              "x": 0.875,
+              "y": 0.1351010101010101,
+              "center": {
+                "x": 0.875,
+                "y": 0.1351010101010101
+              },
+              "tags": [
+                "side_entry",
+                "side_entry_candidate"
+              ]
+            },
+            {
+              "index": 4,
+              "label": "",
+              "text": null,
+              "desc": null,
+              "resourceId": null,
+              "class": "android.view.View",
+              "clickable": true,
+              "editable": false,
+              "checkable": false,
+              "selected": false,
+              "bounds": "0 352 360 508",
+              "x": 0.125,
+              "y": 0.13573232323232323,
+              "center": {
+                "x": 0.125,
+                "y": 0.13573232323232323
+              },
+              "tags": [
+                "side_entry",
+                "side_entry_candidate"
+              ]
+            },
+            {
+              "index": 5,
+              "label": "",
+              "text": null,
+              "desc": null,
+              "resourceId": null,
+              "class": "android.view.View",
+              "clickable": true,
+              "editable": false,
+              "checkable": false,
+              "selected": false,
+              "bounds": "1080 352 1440 508",
+              "x": 0.875,
+              "y": 0.13573232323232323,
+              "center": {
+                "x": 0.875,
+                "y": 0.13573232323232323
+              },
+              "tags": [
+                "side_entry",
+                "side_entry_candidate"
+              ]
+            },
+            {
+              "index": 6,
+              "label": "",
+              "text": null,
+              "desc": null,
+              "resourceId": null,
+              "class": "android.view.View",
+              "clickable": true,
+              "editable": false,
+              "checkable": false,
+              "selected": false,
+              "bounds": "60 572 200 716",
+              "x": 0.09027777777777778,
+              "y": 0.2032828282828283,
+              "center": {
+                "x": 0.09027777777777778,
+                "y": 0.2032828282828283
+              },
+              "tags": [
+                "side_entry",
+                "side_entry_candidate"
+              ]
+            },
+            {
+              "index": 7,
+              "label": "35a65e104ed31696c558f70af4dc09fe",
+              "text": "35a65e104ed31696c558f70af4dc09fe",
+              "desc": null,
+              "resourceId": null,
+              "class": "android.widget.Image",
+              "clickable": false,
+              "editable": false,
+              "checkable": false,
+              "selected": false,
+              "bounds": "60 572 200 716",
+              "x": 0.09027777777777778,
+              "y": 0.2032828282828283,
+              "center": {
+                "x": 0.09027777777777778,
+                "y": 0.2032828282828283
+              },
+              "tags": [
+                "side_entry",
+                "side_entry_candidate"
+              ]
+            },
+            {
+              "index": 8,
+              "label": "",
+              "text": null,
+              "desc": null,
+              "resourceId": null,
+              "class": "android.view.View",
+              "clickable": true,
+              "editable": false,
+              "checkable": false,
+              "selected": false,
+              "bounds": "60 1124 200 1268",
+              "x": 0.09027777777777778,
+              "y": 0.37752525252525254,
+              "center": {
+                "x": 0.09027777777777778,
+                "y": 0.37752525252525254
+              },
+              "tags": [
+                "side_entry",
+                "side_entry_candidate"
+              ]
+            },
+            {
+              "index": 9,
+              "label": "f01219b922b954c88d3579364de37ff8",
+              "text": "f01219b922b954c88d3579364de37ff8",
+              "desc": null,
+              "resourceId": null,
+              "class": "android.widget.Image",
+              "clickable": false,
+              "editable": false,
+              "checkable": false,
+              "selected": false,
+              "bounds": "60 1124 200 1268",
+              "x": 0.09027777777777778,
+              "y": 0.37752525252525254,
+              "center": {
+                "x": 0.09027777777777778,
+                "y": 0.37752525252525254
+              },
+              "tags": [
+                "side_entry",
+                "side_entry_candidate"
+              ]
+            },
+            {
+              "index": 10,
+              "label": "",
+              "text": null,
+              "desc": null,
+              "resourceId": null,
+              "class": "android.view.View",
+              "clickable": true,
+              "editable": false,
+              "checkable": false,
+              "selected": false,
+              "bounds": "60 1680 200 1820",
+              "x": 0.09027777777777778,
+              "y": 0.55239898989899,
+              "center": {
+                "x": 0.09027777777777778,
+                "y": 0.55239898989899
+              },
+              "tags": [
+                "side_entry",
+                "side_entry_candidate"
+              ]
+            },
+            {
+              "index": 11,
+              "label": "a0b7604fa2e46229fe8c9c224ed1c8a6",
+              "text": "a0b7604fa2e46229fe8c9c224ed1c8a6",
+              "desc": null,
+              "resourceId": null,
+              "class": "android.widget.Image",
+              "clickable": false,
+              "editable": false,
+              "checkable": false,
+              "selected": false,
+              "bounds": "60 1680 200 1820",
+              "x": 0.09027777777777778,
+              "y": 0.55239898989899,
+              "center": {
+                "x": 0.09027777777777778,
+                "y": 0.55239898989899
+              },
+              "tags": [
+                "side_entry",
+                "side_entry_candidate"
+              ]
+            },
+            {
+              "index": 12,
+              "label": "",
+              "text": null,
+              "desc": null,
+              "resourceId": null,
+              "class": "android.view.View",
+              "clickable": true,
+              "editable": false,
+              "checkable": false,
+              "selected": false,
+              "bounds": "60 2232 200 2376",
+              "x": 0.09027777777777778,
+              "y": 0.7272727272727273,
+              "center": {
+                "x": 0.09027777777777778,
+                "y": 0.7272727272727273
+              },
+              "tags": [
+                "side_entry",
+                "side_entry_candidate"
+              ]
+            },
+            {
+              "index": 13,
+              "label": "12_108_108",
+              "text": "12_108_108",
+              "desc": null,
+              "resourceId": null,
+              "class": "android.widget.Image",
+              "clickable": false,
+              "editable": false,
+              "checkable": false,
+              "selected": false,
+              "bounds": "60 2232 200 2376",
+              "x": 0.09027777777777778,
+              "y": 0.7272727272727273,
+              "center": {
+                "x": 0.09027777777777778,
+                "y": 0.7272727272727273
+              },
+              "tags": [
+                "side_entry",
+                "side_entry_candidate"
+              ]
+            },
+            {
+              "index": 14,
+              "label": "",
+              "text": null,
+              "desc": null,
+              "resourceId": null,
+              "class": "android.view.View",
+              "clickable": true,
+              "editable": false,
+              "checkable": false,
+              "selected": false,
+              "bounds": "60 2784 200 2928",
+              "x": 0.09027777777777778,
+              "y": 0.9015151515151515,
+              "center": {
+                "x": 0.09027777777777778,
+                "y": 0.9015151515151515
+              },
+              "tags": [
+                "side_entry",
+                "side_entry_candidate"
+              ]
+            },
+            {
+              "index": 15,
+              "label": "013d6c5c960f2e630b5019a56df29359",
+              "text": "013d6c5c960f2e630b5019a56df29359",
+              "desc": null,
+              "resourceId": null,
+              "class": "android.widget.Image",
+              "clickable": false,
+              "editable": false,
+              "checkable": false,
+              "selected": false,
+              "bounds": "60 2784 200 2928",
+              "x": 0.09027777777777778,
+              "y": 0.9015151515151515,
+              "center": {
+                "x": 0.09027777777777778,
+                "y": 0.9015151515151515
+              },
+              "tags": [
+                "side_entry",
+                "side_entry_candidate"
+              ]
+            }
+          ],
+          "graphicalCandidates": [
+            {
+              "index": 0,
+              "label": "",
+              "text": null,
+              "desc": null,
+              "resourceId": null,
+              "class": "android.view.View",
+              "clickable": true,
+              "editable": false,
+              "checkable": false,
+              "selected": false,
+              "bounds": "0 352 360 508",
+              "x": 0.125,
+              "y": 0.13573232323232323,
+              "center": {
+                "x": 0.125,
+                "y": 0.13573232323232323
+              },
+              "tags": [
+                "graphical_ui",
+                "small_icon",
+                "clickable"
+              ]
+            },
+            {
+              "index": 1,
+              "label": "",
+              "text": null,
+              "desc": null,
+              "resourceId": null,
+              "class": "android.view.View",
+              "clickable": true,
+              "editable": false,
+              "checkable": false,
+              "selected": false,
+              "bounds": "360 352 720 508",
+              "x": 0.375,
+              "y": 0.13573232323232323,
+              "center": {
+                "x": 0.375,
+                "y": 0.13573232323232323
+              },
+              "tags": [
+                "graphical_ui",
+                "small_icon",
+                "clickable"
+              ]
+            },
+            {
+              "index": 2,
+              "label": "",
+              "text": null,
+              "desc": null,
+              "resourceId": null,
+              "class": "android.view.View",
+              "clickable": true,
+              "editable": false,
+              "checkable": false,
+              "selected": false,
+              "bounds": "720 352 1080 508",
+              "x": 0.625,
+              "y": 0.13573232323232323,
+              "center": {
+                "x": 0.625,
+                "y": 0.13573232323232323
+              },
+              "tags": [
+                "graphical_ui",
+                "small_icon",
+                "clickable"
+              ]
+            },
+            {
+              "index": 3,
+              "label": "",
+              "text": null,
+              "desc": null,
+              "resourceId": null,
+              "class": "android.view.View",
+              "clickable": true,
+              "editable": false,
+              "checkable": false,
+              "selected": false,
+              "bounds": "1080 352 1440 508",
+              "x": 0.875,
+              "y": 0.13573232323232323,
+              "center": {
+                "x": 0.875,
+                "y": 0.13573232323232323
+              },
+              "tags": [
+                "graphical_ui",
+                "small_icon",
+                "clickable"
+              ]
+            },
+            {
+              "index": 4,
+              "label": "",
+              "text": null,
+              "desc": null,
+              "resourceId": null,
+              "class": "android.view.View",
+              "clickable": true,
+              "editable": false,
+              "checkable": false,
+              "selected": false,
+              "bounds": "60 572 200 716",
+              "x": 0.09027777777777778,
+              "y": 0.2032828282828283,
+              "center": {
+                "x": 0.09027777777777778,
+                "y": 0.2032828282828283
+              },
+              "tags": [
+                "graphical_ui",
+                "small_icon",
+                "clickable"
+              ]
+            },
+            {
+              "index": 5,
+              "label": "",
+              "text": null,
+              "desc": null,
+              "resourceId": null,
+              "class": "android.view.View",
+              "clickable": true,
+              "editable": false,
+              "checkable": false,
+              "selected": false,
+              "bounds": "60 1124 200 1268",
+              "x": 0.09027777777777778,
+              "y": 0.37752525252525254,
+              "center": {
+                "x": 0.09027777777777778,
+                "y": 0.37752525252525254
+              },
+              "tags": [
+                "graphical_ui",
+                "small_icon",
+                "clickable"
+              ]
+            },
+            {
+              "index": 6,
+              "label": "",
+              "text": null,
+              "desc": null,
+              "resourceId": null,
+              "class": "android.view.View",
+              "clickable": true,
+              "editable": false,
+              "checkable": false,
+              "selected": false,
+              "bounds": "60 1680 200 1820",
+              "x": 0.09027777777777778,
+              "y": 0.55239898989899,
+              "center": {
+                "x": 0.09027777777777778,
+                "y": 0.55239898989899
+              },
+              "tags": [
+                "graphical_ui",
+                "small_icon",
+                "clickable"
+              ]
+            },
+            {
+              "index": 7,
+              "label": "",
+              "text": null,
+              "desc": null,
+              "resourceId": null,
+              "class": "android.view.View",
+              "clickable": true,
+              "editable": false,
+              "checkable": false,
+              "selected": false,
+              "bounds": "60 2232 200 2376",
+              "x": 0.09027777777777778,
+              "y": 0.7272727272727273,
+              "center": {
+                "x": 0.09027777777777778,
+                "y": 0.7272727272727273
+              },
+              "tags": [
+                "graphical_ui",
+                "small_icon",
+                "clickable",
+                "bottom_area"
+              ]
+            },
+            {
+              "index": 8,
+              "label": "",
+              "text": null,
+              "desc": null,
+              "resourceId": null,
+              "class": "android.view.View",
+              "clickable": true,
+              "editable": false,
+              "checkable": false,
+              "selected": false,
+              "bounds": "60 2784 200 2928",
+              "x": 0.09027777777777778,
+              "y": 0.9015151515151515,
+              "center": {
+                "x": 0.09027777777777778,
+                "y": 0.9015151515151515
+              },
+              "tags": [
+                "graphical_ui",
+                "small_icon",
+                "clickable",
+                "bottom_area"
+              ]
+            },
+            {
+              "index": 9,
+              "label": "返回 com.hexin.plat.android:id\/title_bar_img",
+              "text": null,
+              "desc": "返回",
+              "resourceId": "com.hexin.plat.android:id\/title_bar_img",
+              "class": "android.widget.ImageView",
+              "clickable": true,
+              "editable": false,
+              "checkable": false,
+              "selected": false,
+              "bounds": "0 160 252 352",
+              "x": 0.0875,
+              "y": 0.08080808080808081,
+              "center": {
+                "x": 0.0875,
+                "y": 0.08080808080808081
+              },
+              "tags": [
+                "graphical_ui",
+                "small_icon",
+                "clickable"
+              ]
+            },
+            {
+              "index": 10,
+              "label": "互动消息 com.hexin.plat.android:id\/title_bar_middle",
+              "text": "互动消息",
+              "desc": null,
+              "resourceId": "com.hexin.plat.android:id\/title_bar_middle",
+              "class": "android.widget.TextView",
+              "clickable": true,
+              "editable": false,
+              "checkable": false,
+              "selected": false,
+              "bounds": "590 160 850 352",
+              "x": 0.5,
+              "y": 0.08080808080808081,
+              "center": {
+                "x": 0.5,
+                "y": 0.08080808080808081
+              },
+              "tags": [
+                "graphical_ui",
+                "small_icon",
+                "clickable",
+                "message_entry"
+              ]
+            },
+            {
+              "index": 11,
+              "label": "规矩的小韭菜",
+              "text": "规矩的小韭菜",
+              "desc": null,
+              "resourceId": null,
+              "class": "android.widget.TextView",
+              "clickable": true,
+              "editable": false,
+              "checkable": false,
+              "selected": false,
+              "bounds": "244 568 592 648",
+              "x": 0.2902777777777778,
+              "y": 0.1919191919191919,
+              "center": {
+                "x": 0.2902777777777778,
+                "y": 0.1919191919191919
+              },
+              "tags": [
+                "graphical_ui",
+                "small_icon",
+                "clickable"
+              ]
+            },
+            {
+              "index": 12,
+              "label": "公子无圣杯",
+              "text": "公子无圣杯",
+              "desc": null,
+              "resourceId": null,
+              "class": "android.widget.TextView",
+              "clickable": true,
+              "editable": false,
+              "checkable": false,
+              "selected": false,
+              "bounds": "244 1120 532 1200",
+              "x": 0.26944444444444443,
+              "y": 0.3661616161616162,
+              "center": {
+                "x": 0.26944444444444443,
+                "y": 0.3661616161616162
+              },
+              "tags": [
+                "graphical_ui",
+                "small_icon",
+                "clickable"
+              ]
+            },
+            {
+              "index": 13,
+              "label": "百八十元",
+              "text": "百八十元",
+              "desc": null,
+              "resourceId": null,
+              "class": "android.widget.TextView",
+              "clickable": true,
+              "editable": false,
+              "checkable": false,
+              "selected": false,
+              "bounds": "244 1672 476 1756",
+              "x": 0.25,
+              "y": 0.5410353535353535,
+              "center": {
+                "x": 0.25,
+                "y": 0.5410353535353535
+              },
+              "tags": [
+                "graphical_ui",
+                "small_icon",
+                "clickable"
+              ]
+            },
+            {
+              "index": 14,
+              "label": "森安哥",
+              "text": "森安哥",
+              "desc": null,
+              "resourceId": null,
+              "class": "android.widget.TextView",
+              "clickable": true,
+              "editable": false,
+              "checkable": false,
+              "selected": false,
+              "bounds": "244 2780 420 2860",
+              "x": 0.23055555555555557,
+              "y": 0.8901515151515151,
+              "center": {
+                "x": 0.23055555555555557,
+                "y": 0.8901515151515151
+              },
+              "tags": [
+                "graphical_ui",
+                "small_icon",
+                "clickable",
+                "bottom_area"
+              ]
+            }
+          ],
+          "checkableCandidates": [],
+          "entryCandidates": [
+            {
+              "index": 0,
+              "label": "互动消息 com.hexin.plat.android:id\/title_bar_middle",
+              "text": "互动消息",
+              "desc": null,
+              "resourceId": "com.hexin.plat.android:id\/title_bar_middle",
+              "class": "android.widget.TextView",
+              "clickable": true,
+              "editable": false,
+              "checkable": false,
+              "selected": false,
+              "bounds": "590 160 850 352",
+              "x": 0.5,
+              "y": 0.08080808080808081,
+              "center": {
+                "x": 0.5,
+                "y": 0.08080808080808081
+              },
+              "tags": [
+                "entry_candidate",
+                "clickable",
+                "message_entry"
+              ]
+            },
+            {
+              "index": 1,
+              "label": "互动消息",
+              "text": "互动消息",
+              "desc": null,
+              "resourceId": null,
+              "class": "android.webkit.WebView",
+              "clickable": false,
+              "editable": false,
+              "checkable": false,
+              "selected": false,
+              "bounds": "0 352 1440 3104",
+              "x": 0.5,
+              "y": 0.5454545454545454,
+              "center": {
+                "x": 0.5,
+                "y": 0.5454545454545454
+              },
+              "tags": [
+                "entry_candidate",
+                "message_entry"
+              ]
+            }
+          ],
+          "inputCandidates": [],
+          "videoCandidates": [],
+          "snapshotPath": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_snapshots\/com.hexin.plat.android\/20260520_181646_751_cb070aaa.json"
+        }
+      ],
+      "updatedAt": 1779272230836
+    },
+    "availableSkillTemplates": [
+      {
+        "id": "patched.1779339757860.15.wait",
+        "kind": "atomic_skill",
+        "implements": "WaitUntilSkill",
+        "status": "DRY_RUN_PASSED",
+        "actionType": "Wait",
+        "intentId": "",
+        "file": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_candidates\/com.hexin.plat.android\/patched.1779339757860.15.wait.json"
+      },
+      {
+        "id": "patched.1779339757860.16.clickvisibletext",
+        "kind": "atomic_skill",
+        "implements": "ClickElementSkill",
+        "status": "DRY_RUN_PASSED",
+        "actionType": "ClickVisibleText",
+        "intentId": "",
+        "file": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_candidates\/com.hexin.plat.android\/patched.1779339757860.16.clickvisibletext.json"
+      },
+      {
+        "id": "patched.1779339757860.17.wait",
+        "kind": "atomic_skill",
+        "implements": "WaitUntilSkill",
+        "status": "DRY_RUN_PASSED",
+        "actionType": "Wait",
+        "intentId": "",
+        "file": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_candidates\/com.hexin.plat.android\/patched.1779339757860.17.wait.json"
+      },
+      {
+        "id": "patched.command.1779339757860",
+        "kind": "macro_skill",
+        "implements": "AiPlannedMacroSkill",
+        "status": "DRY_RUN_PASSED",
+        "intentId": "search_in_app",
+        "file": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_candidates\/com.hexin.plat.android\/patched.command.1779339757860.json"
+      },
+      {
+        "id": "patched.1779339757860.11.clickvisibletext",
+        "kind": "atomic_skill",
+        "implements": "ClickElementSkill",
+        "status": "DRY_RUN_PASSED",
+        "actionType": "ClickVisibleText",
+        "intentId": "",
+        "file": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_candidates\/com.hexin.plat.android\/patched.1779339757860.11.clickvisibletext.json"
+      },
+      {
+        "id": "patched.1779339757860.12.wait",
+        "kind": "atomic_skill",
+        "implements": "WaitUntilSkill",
+        "status": "DRY_RUN_PASSED",
+        "actionType": "Wait",
+        "intentId": "",
+        "file": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_candidates\/com.hexin.plat.android\/patched.1779339757860.12.wait.json"
+      },
+      {
+        "id": "patched.1779339757860.13.handlereactiveoverlays",
+        "kind": "atomic_skill",
+        "implements": "DismissDialogSkill",
+        "status": "DRY_RUN_PASSED",
+        "actionType": "HandleReactiveOverlays",
+        "intentId": "",
+        "file": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_candidates\/com.hexin.plat.android\/patched.1779339757860.13.handlereactiveoverlays.json"
+      },
+      {
+        "id": "patched.1779339757860.14.scrollforward",
+        "kind": "atomic_skill",
+        "implements": "ScrollUntilVisibleSkill",
+        "status": "DRY_RUN_PASSED",
+        "actionType": "ScrollForward",
+        "intentId": "",
+        "file": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_candidates\/com.hexin.plat.android\/patched.1779339757860.14.scrollforward.json"
+      },
+      {
+        "id": "patched.1779339757860.10.scrollforward",
+        "kind": "atomic_skill",
+        "implements": "ScrollUntilVisibleSkill",
+        "status": "DRY_RUN_PASSED",
+        "actionType": "ScrollForward",
+        "intentId": "",
+        "file": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_candidates\/com.hexin.plat.android\/patched.1779339757860.10.scrollforward.json"
+      },
+      {
+        "id": "patched.1779339757860.7.typeintofirstinput",
+        "kind": "atomic_skill",
+        "implements": "TypeTextSkill",
+        "status": "DRY_RUN_PASSED",
+        "actionType": "TypeIntoFirstInput",
+        "intentId": "",
+        "file": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_candidates\/com.hexin.plat.android\/patched.1779339757860.7.typeintofirstinput.json"
+      },
+      {
+        "id": "patched.1779339757860.8.clickvisibletext",
+        "kind": "atomic_skill",
+        "implements": "ClickElementSkill",
+        "status": "DRY_RUN_PASSED",
+        "actionType": "ClickVisibleText",
+        "intentId": "",
+        "file": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_candidates\/com.hexin.plat.android\/patched.1779339757860.8.clickvisibletext.json"
+      },
+      {
+        "id": "patched.1779339757860.9.wait",
+        "kind": "atomic_skill",
+        "implements": "WaitUntilSkill",
+        "status": "DRY_RUN_PASSED",
+        "actionType": "Wait",
+        "intentId": "",
+        "file": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_candidates\/com.hexin.plat.android\/patched.1779339757860.9.wait.json"
+      },
+      {
+        "id": "patched.1779339757860.3.findentrybybottomtabsweep",
+        "kind": "atomic_skill",
+        "implements": "FindEntrySkill",
+        "status": "DRY_RUN_PASSED",
+        "actionType": "FindEntryByBottomTabSweep",
+        "intentId": "",
+        "file": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_candidates\/com.hexin.plat.android\/patched.1779339757860.3.findentrybybottomtabsweep.json"
+      },
+      {
+        "id": "patched.1779339757860.4.wait",
+        "kind": "atomic_skill",
+        "implements": "WaitUntilSkill",
+        "status": "DRY_RUN_PASSED",
+        "actionType": "Wait",
+        "intentId": "",
+        "file": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_candidates\/com.hexin.plat.android\/patched.1779339757860.4.wait.json"
+      },
+      {
+        "id": "patched.1779339757860.5.clickvisibletext",
+        "kind": "atomic_skill",
+        "implements": "ClickElementSkill",
+        "status": "DRY_RUN_PASSED",
+        "actionType": "ClickVisibleText",
+        "intentId": "",
+        "file": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_candidates\/com.hexin.plat.android\/patched.1779339757860.5.clickvisibletext.json"
+      },
+      {
+        "id": "patched.1779339757860.6.wait",
+        "kind": "atomic_skill",
+        "implements": "WaitUntilSkill",
+        "status": "DRY_RUN_PASSED",
+        "actionType": "Wait",
+        "intentId": "",
+        "file": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_candidates\/com.hexin.plat.android\/patched.1779339757860.6.wait.json"
+      },
+      {
+        "id": "patched.1779339757860.1.openapp",
+        "kind": "atomic_skill",
+        "implements": "OpenAppSkill",
+        "status": "DRY_RUN_PASSED",
+        "actionType": "OpenApp",
+        "intentId": "",
+        "file": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_candidates\/com.hexin.plat.android\/patched.1779339757860.1.openapp.json"
+      },
+      {
+        "id": "patched.1779339757860.2.handlereactiveoverlays",
+        "kind": "atomic_skill",
+        "implements": "DismissDialogSkill",
+        "status": "DRY_RUN_PASSED",
+        "actionType": "HandleReactiveOverlays",
+        "intentId": "",
+        "file": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_candidates\/com.hexin.plat.android\/patched.1779339757860.2.handlereactiveoverlays.json"
+      },
+      {
+        "id": "com.hexin.plat.android.search.click_entry",
+        "kind": "atomic_skill",
+        "implements": "ClickElementSkill",
+        "status": "DRY_RUN_PASSED",
+        "actionType": "ClickVisibleText",
+        "intentId": "",
+        "file": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_candidates\/com.hexin.plat.android\/com.hexin.plat.android.search.click_entry.json"
+      },
+      {
+        "id": "com.hexin.plat.android.search.click_submit",
+        "kind": "atomic_skill",
+        "implements": "ClickElementSkill",
+        "status": "DRY_RUN_PASSED",
+        "actionType": "ClickVisibleText",
+        "intentId": "",
+        "file": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_candidates\/com.hexin.plat.android\/com.hexin.plat.android.search.click_submit.json"
+      },
+      {
+        "id": "com.hexin.plat.android.search.search_in_app",
+        "kind": "macro_skill",
+        "implements": "SearchInAppSkill",
+        "status": "DRY_RUN_PASSED",
+        "intentId": "search_in_app",
+        "file": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_candidates\/com.hexin.plat.android\/com.hexin.plat.android.search.search_in_app.json"
+      },
+      {
+        "id": "com.hexin.plat.android.search.type_query",
+        "kind": "atomic_skill",
+        "implements": "TypeTextSkill",
+        "status": "DRY_RUN_PASSED",
+        "actionType": "TypeIntoFirstInput",
+        "intentId": "",
+        "file": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_candidates\/com.hexin.plat.android\/com.hexin.plat.android.search.type_query.json"
+      },
+      {
+        "id": "com.hexin.plat.android.back",
+        "kind": "atomic_skill",
+        "implements": "BackSkill",
+        "status": "DRY_RUN_PASSED",
+        "actionType": "Back",
+        "intentId": "",
+        "file": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_candidates\/com.hexin.plat.android\/com.hexin.plat.android.back.json"
+      },
+      {
+        "id": "com.hexin.plat.android.capability_check",
+        "kind": "atomic_skill",
+        "implements": "CapabilityCheckSkill",
+        "status": "DRY_RUN_PASSED",
+        "actionType": "CheckCapability",
+        "intentId": "",
+        "file": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_candidates\/com.hexin.plat.android\/com.hexin.plat.android.capability_check.json"
+      }
+    ],
+    "recentUiSnapshots": [
+      {
+        "id": "ui_snapshot_1779339800401",
+        "source": "current_ui_summary",
+        "note": "factory_ai_context",
+        "appPackage": "com.hexin.plat.android",
+        "windowClassName": "null",
+        "screenKey": "636a5532",
+        "screenshotPath": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_screenshots\/com.hexin.plat.android\/20260521_130320_152_636a5532.png",
+        "visualHash": "b44d02f836a12e2a9a3e8d335c25cd33504cb2b005c6c2f755b4f82a2a751da3",
+        "summary": {
+          "nodeCount": 8,
+          "clickableCount": 1,
+          "editableCount": 0,
+          "scrollableCount": 0,
+          "labels": [
+            "com.hexin.plat.android:id\/ll_container_menu",
+            "com.hexin.plat.android:id\/ll_find_group",
+            "com.hexin.plat.android:id\/img_found_group",
+            "发现群聊"
+          ],
+          "bottomCandidates": []
+        },
+        "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_snapshots\/com.hexin.plat.android\/20260521_130320_152_636a5532.json"
+      },
+      {
+        "id": "ui_snapshot_1779339800117",
+        "source": "macro_atom_failed",
+        "note": "index=2; skillId=patched.1779339757860.3.findentrybybottomtabsweep; status=FAILED_ELEMENT_NOT_FOUND; Bottom-tab sweep did not find entry aliases=首页; tabsVisited=5; events=[{\"phase\":\"open_before_recover\",\"packageName\":\"com.hexin.plat.android\",\"success\":true,\"message\":\"Launch intent",
+        "appPackage": "com.hexin.plat.android",
+        "windowClassName": "null",
+        "screenKey": "636a5532",
+        "screenshotPath": "null",
+        "visualHash": "null",
+        "summary": {
+          "nodeCount": 8,
+          "clickableCount": 1,
+          "editableCount": 0,
+          "scrollableCount": 0,
+          "labels": [
+            "com.hexin.plat.android:id\/ll_container_menu",
+            "com.hexin.plat.android:id\/ll_find_group",
+            "com.hexin.plat.android:id\/img_found_group",
+            "发现群聊"
+          ],
+          "bottomCandidates": []
+        },
+        "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_snapshots\/com.hexin.plat.android\/20260521_130320_117_636a5532.json"
+      },
+      {
+        "id": "ui_snapshot_1779339800051",
+        "source": "action_failed",
+        "note": "patched.1779339757860.3.findentrybybottomtabsweep:FindEntryByBottomTabSweep:FAILED_ELEMENT_NOT_FOUND:Bottom-tab sweep did not find entry aliases=首页; tabsVisited=5; events=[{\"phase\":\"open_before_recover\",\"packageName\":\"com.hexin.plat.android\",\"success\":true,\"message\":\"Launch intent",
+        "appPackage": "com.hexin.plat.android",
+        "windowClassName": "null",
+        "screenKey": "636a5532",
+        "screenshotPath": "null",
+        "visualHash": "null",
+        "summary": {
+          "nodeCount": 8,
+          "clickableCount": 1,
+          "editableCount": 0,
+          "scrollableCount": 0,
+          "labels": [
+            "com.hexin.plat.android:id\/ll_container_menu",
+            "com.hexin.plat.android:id\/ll_find_group",
+            "com.hexin.plat.android:id\/img_found_group",
+            "发现群聊"
+          ],
+          "bottomCandidates": []
+        },
+        "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_snapshots\/com.hexin.plat.android\/20260521_130320_050_636a5532.json"
+      },
+      {
+        "id": "ui_snapshot_1779339799927",
+        "source": "accessibility_auto",
+        "note": "TYPE_WINDOW_STATE_CHANGED",
+        "appPackage": "com.hexin.plat.android",
+        "windowClassName": "null",
+        "screenKey": "636a5532",
+        "screenshotPath": "null",
+        "visualHash": "null",
+        "summary": {
+          "nodeCount": 8,
+          "clickableCount": 1,
+          "editableCount": 0,
+          "scrollableCount": 0,
+          "labels": [
+            "com.hexin.plat.android:id\/ll_container_menu",
+            "com.hexin.plat.android:id\/ll_find_group",
+            "com.hexin.plat.android:id\/img_found_group",
+            "发现群聊"
+          ],
+          "bottomCandidates": []
+        },
+        "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_snapshots\/com.hexin.plat.android\/20260521_130319_926_636a5532.json"
+      },
+      {
+        "id": "ui_snapshot_1779339799039",
+        "source": "accessibility_auto",
+        "note": "TYPE_WINDOW_STATE_CHANGED",
+        "appPackage": "com.hexin.plat.android",
+        "windowClassName": "com.hexin.plat.android.Hexin",
+        "screenKey": "fbfd221b",
+        "screenshotPath": "null",
+        "visualHash": "null",
+        "summary": {
+          "nodeCount": 173,
+          "clickableCount": 45,
+          "editableCount": 0,
+          "scrollableCount": 0,
+          "labels": [
+            "com.hexin.plat.android:id\/status_background",
+            "com.hexin.plat.android:id\/status_textView",
+            "com.hexin.plat.android:id\/action_bar_root",
+            "android:id\/content",
+            "com.hexin.plat.android:id\/frame_layout",
+            "com.hexin.plat.android:id\/unified_float_ball_container",
+            "com.hexin.plat.android:id\/jump_float_container",
+            "com.hexin.plat.android:id\/statusBarContainer",
+            "com.hexin.plat.android:id\/shadowBarContainer",
+            "com.hexin.plat.android:id\/shadow_status_bar",
+            "com.hexin.plat.android:id\/page_content",
+            "com.hexin.plat.android:id\/page_chat_test",
+            "com.hexin.plat.android:id\/fcv_container",
+            "com.hexin.plat.android:id\/fcv_container",
+            "com.hexin.plat.android:id\/cl_root",
+            "返回 com.hexin.plat.android:id\/iv_back",
+            "消息中心 com.hexin.plat.android:id\/tv_title",
+            "com.hexin.plat.android:id\/iv_box",
+            "com.hexin.plat.android:id\/rv_content",
+            "com.hexin.plat.android:id\/rl_at_me",
+            "com.hexin.plat.android:id\/iv_avatar_at",
+            "@我的 com.hexin.plat.android:id\/tv_name_at",
+            "com.hexin.plat.android:id\/rl_comment_me",
+            "com.hexin.plat.android:id\/iv_avatar_comment",
+            "评论我的 com.hexin.plat.android:id\/tv_name_comment",
+            "com.hexin.plat.android:id\/rl_like_me",
+            "com.hexin.plat.android:id\/iv_avatar_like",
+            "点赞 com.hexin.plat.android:id\/tv_name_like",
+            "com.hexin.plat.android:id\/swipe",
+            "com.hexin.plat.android:id\/cl_content",
+            "com.hexin.plat.android:id\/iv_avatar",
+            "官方暗盘资金群1018X com.hexin.plat.android:id\/tv_name",
+            "12:56 com.hexin.plat.android:id\/tv_time",
+            "订阅群 com.hexin.plat.android:id\/tv_subscribe",
+            "[群主] com.hexin.plat.android:id\/tv_content_hint",
+            "同花顺金牌投顾：午间点评：早盘市场借外盘修复之势快速上冲，特别是科技线，依然是市场最火爆的方向，但科技线内部的分歧较大，一是产能瓶颈导致的短期关注的转移，二是技术路径引发的中期博弈加剧，所以科技线内部轮动加剧，而这种加剧又导致情绪波动加大，进一步放大市场的波动，所以早盘市场在快速上冲之后也是出现了明显的回落。这个时候我们更要做到不以涨喜，不以跌悲，冷静看待波动，现在的市场就好比是风箱老鼠，上下两难，跌下来的时候反而要更加关注潜在机会。 相关建议仅供参考，不构成投资依据，涉及个... com.hexin.plat.android:id\/tv_content",
+            "com.hexin.plat.android:id\/iv_mute",
+            "com.hexin.plat.android:id\/iv_mute_dot",
+            "com.hexin.plat.android:id\/line",
+            "com.hexin.plat.android:id\/ll_menu",
+            "置顶 com.hexin.plat.android:id\/btn_top",
+            "删除 com.hexin.plat.android:id\/btn_delete",
+            "com.hexin.plat.android:id\/swipe",
+            "com.hexin.plat.android:id\/cl_content",
+            "com.hexin.plat.android:id\/iv_avatar",
+            "自选股公告 com.hexin.plat.android:id\/tv_name",
+            "12:00 com.hexin.plat.android:id\/tv_time",
+            "【午间自选股公告】您的自选股银轮股份(002126)、供销大集(000564)等几只股票有新公告发布，快来看！ com.hexin.plat.android:id\/tv_content",
+            "com.hexin.plat.android:id\/tv_content_hint",
+            "20 com.hexin.plat.android:id\/tv_count",
+            "com.hexin.plat.android:id\/line",
+            "com.hexin.plat.android:id\/ll_menu",
+            "置顶 com.hexin.plat.android:id\/btn_top",
+            "收入官方号 com.hexin.plat.android:id\/btn_fold",
+            "删除 com.hexin.plat.android:id\/btn_delete",
+            "com.hexin.plat.android:id\/swipe",
+            "com.hexin.plat.android:id\/cl_content",
+            "com.hexin.plat.android:id\/iv_avatar",
+            "新闻资讯 com.hexin.plat.android:id\/tv_name",
+            "11:28 com.hexin.plat.android:id\/tv_time",
+            "英伟达Q1业绩超预期，但不够惊艳，股价盘后小跌。VeraRubin和VeraCPU将支撑下一阶段的增长。指引未计入中国市场，若在华获批将是额外助力。 com.hexin.plat.android:id\/tv_content",
+            "com.hexin.plat.android:id\/tv_content_hint",
+            "99+ com.hexin.plat.android:id\/tv_count",
+            "com.hexin.plat.android:id\/line",
+            "com.hexin.plat.android:id\/ll_menu",
+            "置顶 com.hexin.plat.android:id\/btn_top",
+            "收入官方号 com.hexin.plat.android:id\/btn_fold",
+            "删除 com.hexin.plat.android:id\/btn_delete",
+            "com.hexin.plat.android:id\/swipe",
+            "com.hexin.plat.android:id\/cl_content",
+            "com.hexin.plat.android:id\/iv_avatar",
+            "活动助手 com.hexin.plat.android:id\/tv_name",
+            "10:46 com.hexin.plat.android:id\/tv_time",
+            "你关注的股出现异常放量，疑有“万手哥”入场，主力疯狂抢筹，随时准备“拉升”，快用决策工具帮你监测盘面，立即查看>> com.hexin.plat.android:id\/tv_content",
+            "com.hexin.plat.android:id\/tv_content_hint",
+            "18 com.hexin.plat.android:id\/tv_count",
+            "com.hexin.plat.android:id\/line",
+            "com.hexin.plat.android:id\/ll_menu",
+            "置顶 com.hexin.plat.android:id\/btn_top",
+            "收入官方号 com.hexin.plat.android:id\/btn_fold"
+          ],
+          "bottomCandidates": [
+            {
+              "label": "首页 com.hexin.plat.android:id\/title",
+              "bounds": {
+                "left": 76,
+                "top": 3152,
+                "right": 164,
+                "bottom": 3104
+              },
+              "clickable": false
+            },
+            {
+              "label": "首页",
+              "bounds": {
+                "left": 0,
+                "top": 3104,
+                "right": 248,
+                "bottom": 3104
+              },
+              "clickable": true
+            },
+            {
+              "label": "行情",
+              "bounds": {
+                "left": 232,
+                "top": 3104,
+                "right": 488,
+                "bottom": 3104
+              },
+              "clickable": true
+            },
+            {
+              "label": "行情 com.hexin.plat.android:id\/title",
+              "bounds": {
+                "left": 316,
+                "top": 3152,
+                "right": 404,
+                "bottom": 3104
+              },
+              "clickable": false
+            },
+            {
+              "label": "自选",
+              "bounds": {
+                "left": 472,
+                "top": 3104,
+                "right": 728,
+                "bottom": 3104
+              },
+              "clickable": true
+            },
+            {
+              "label": "自选 com.hexin.plat.android:id\/title",
+              "bounds": {
+                "left": 556,
+                "top": 3152,
+                "right": 644,
+                "bottom": 3104
+              },
+              "clickable": false
+            },
+            {
+              "label": "精选复盘解读 com.hexin.plat.android:id\/tv_name",
+              "bounds": {
+                "left": 304,
+                "top": 2300,
+                "right": 947,
+                "bottom": 2375
+              },
+              "clickable": false
+            },
+            {
+              "label": "com.hexin.plat.android:id\/cl_content",
+              "bounds": {
+                "left": 0,
+                "top": 2234,
+                "right": 1440,
+                "bottom": 2522
+              },
+              "clickable": true
+            },
+            {
+              "label": "com.hexin.plat.android:id\/cl_content",
+              "bounds": {
+                "left": 0,
+                "top": 2522,
+                "right": 1440,
+                "bottom": 2810
+              },
+              "clickable": true
+            },
+            {
+              "label": "com.hexin.plat.android:id\/cl_content",
+              "bounds": {
+                "left": 0,
+                "top": 2810,
+                "right": 1440,
+                "bottom": 3098
+              },
+              "clickable": true
+            },
+            {
+              "label": "com.hexin.plat.android:id\/tab_widget",
+              "bounds": {
+                "left": 0,
+                "top": 3104,
+                "right": 1440,
+                "bottom": 3104
+              },
+              "clickable": true
+            },
+            {
+              "label": "上海凤凰将在14:00进行路演互动，点击立即参与路演 com.hexin.plat.android:id\/tv_content",
+              "bounds": {
+                "left": 304,
+                "top": 2399,
+                "right": 1192,
+                "bottom": 2456
+              },
+              "clickable": false
+            }
+          ]
+        },
+        "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_snapshots\/com.hexin.plat.android\/20260521_130319_036_fbfd221b.json"
+      },
+      {
+        "id": "ui_snapshot_1779339798265",
+        "source": "accessibility_auto",
+        "note": "TYPE_WINDOW_STATE_CHANGED",
+        "appPackage": "com.hexin.plat.android",
+        "windowClassName": "null",
+        "screenKey": "636a5532",
+        "screenshotPath": "null",
+        "visualHash": "null",
+        "summary": {
+          "nodeCount": 8,
+          "clickableCount": 1,
+          "editableCount": 0,
+          "scrollableCount": 0,
+          "labels": [
+            "com.hexin.plat.android:id\/ll_container_menu",
+            "com.hexin.plat.android:id\/ll_find_group",
+            "com.hexin.plat.android:id\/img_found_group",
+            "发现群聊"
+          ],
+          "bottomCandidates": []
+        },
+        "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_snapshots\/com.hexin.plat.android\/20260521_130318_264_636a5532.json"
+      },
+      {
+        "id": "ui_snapshot_1779339797264",
+        "source": "accessibility_auto",
+        "note": "TYPE_WINDOW_STATE_CHANGED",
+        "appPackage": "com.hexin.plat.android",
+        "windowClassName": "com.hexin.plat.android.Hexin",
+        "screenKey": "fbfd221b",
+        "screenshotPath": "null",
+        "visualHash": "null",
+        "summary": {
+          "nodeCount": 173,
+          "clickableCount": 45,
+          "editableCount": 0,
+          "scrollableCount": 0,
+          "labels": [
+            "com.hexin.plat.android:id\/status_background",
+            "com.hexin.plat.android:id\/status_textView",
+            "com.hexin.plat.android:id\/action_bar_root",
+            "android:id\/content",
+            "com.hexin.plat.android:id\/frame_layout",
+            "com.hexin.plat.android:id\/unified_float_ball_container",
+            "com.hexin.plat.android:id\/jump_float_container",
+            "com.hexin.plat.android:id\/statusBarContainer",
+            "com.hexin.plat.android:id\/shadowBarContainer",
+            "com.hexin.plat.android:id\/shadow_status_bar",
+            "com.hexin.plat.android:id\/page_content",
+            "com.hexin.plat.android:id\/page_chat_test",
+            "com.hexin.plat.android:id\/fcv_container",
+            "com.hexin.plat.android:id\/fcv_container",
+            "com.hexin.plat.android:id\/cl_root",
+            "返回 com.hexin.plat.android:id\/iv_back",
+            "消息中心 com.hexin.plat.android:id\/tv_title",
+            "com.hexin.plat.android:id\/iv_box",
+            "com.hexin.plat.android:id\/rv_content",
+            "com.hexin.plat.android:id\/rl_at_me",
+            "com.hexin.plat.android:id\/iv_avatar_at",
+            "@我的 com.hexin.plat.android:id\/tv_name_at",
+            "com.hexin.plat.android:id\/rl_comment_me",
+            "com.hexin.plat.android:id\/iv_avatar_comment",
+            "评论我的 com.hexin.plat.android:id\/tv_name_comment",
+            "com.hexin.plat.android:id\/rl_like_me",
+            "com.hexin.plat.android:id\/iv_avatar_like",
+            "点赞 com.hexin.plat.android:id\/tv_name_like",
+            "com.hexin.plat.android:id\/swipe",
+            "com.hexin.plat.android:id\/cl_content",
+            "com.hexin.plat.android:id\/iv_avatar",
+            "官方暗盘资金群1018X com.hexin.plat.android:id\/tv_name",
+            "12:56 com.hexin.plat.android:id\/tv_time",
+            "订阅群 com.hexin.plat.android:id\/tv_subscribe",
+            "[群主] com.hexin.plat.android:id\/tv_content_hint",
+            "同花顺金牌投顾：午间点评：早盘市场借外盘修复之势快速上冲，特别是科技线，依然是市场最火爆的方向，但科技线内部的分歧较大，一是产能瓶颈导致的短期关注的转移，二是技术路径引发的中期博弈加剧，所以科技线内部轮动加剧，而这种加剧又导致情绪波动加大，进一步放大市场的波动，所以早盘市场在快速上冲之后也是出现了明显的回落。这个时候我们更要做到不以涨喜，不以跌悲，冷静看待波动，现在的市场就好比是风箱老鼠，上下两难，跌下来的时候反而要更加关注潜在机会。 相关建议仅供参考，不构成投资依据，涉及个... com.hexin.plat.android:id\/tv_content",
+            "com.hexin.plat.android:id\/iv_mute",
+            "com.hexin.plat.android:id\/iv_mute_dot",
+            "com.hexin.plat.android:id\/line",
+            "com.hexin.plat.android:id\/ll_menu",
+            "置顶 com.hexin.plat.android:id\/btn_top",
+            "删除 com.hexin.plat.android:id\/btn_delete",
+            "com.hexin.plat.android:id\/swipe",
+            "com.hexin.plat.android:id\/cl_content",
+            "com.hexin.plat.android:id\/iv_avatar",
+            "自选股公告 com.hexin.plat.android:id\/tv_name",
+            "12:00 com.hexin.plat.android:id\/tv_time",
+            "【午间自选股公告】您的自选股银轮股份(002126)、供销大集(000564)等几只股票有新公告发布，快来看！ com.hexin.plat.android:id\/tv_content",
+            "com.hexin.plat.android:id\/tv_content_hint",
+            "20 com.hexin.plat.android:id\/tv_count",
+            "com.hexin.plat.android:id\/line",
+            "com.hexin.plat.android:id\/ll_menu",
+            "置顶 com.hexin.plat.android:id\/btn_top",
+            "收入官方号 com.hexin.plat.android:id\/btn_fold",
+            "删除 com.hexin.plat.android:id\/btn_delete",
+            "com.hexin.plat.android:id\/swipe",
+            "com.hexin.plat.android:id\/cl_content",
+            "com.hexin.plat.android:id\/iv_avatar",
+            "新闻资讯 com.hexin.plat.android:id\/tv_name",
+            "11:28 com.hexin.plat.android:id\/tv_time",
+            "英伟达Q1业绩超预期，但不够惊艳，股价盘后小跌。VeraRubin和VeraCPU将支撑下一阶段的增长。指引未计入中国市场，若在华获批将是额外助力。 com.hexin.plat.android:id\/tv_content",
+            "com.hexin.plat.android:id\/tv_content_hint",
+            "99+ com.hexin.plat.android:id\/tv_count",
+            "com.hexin.plat.android:id\/line",
+            "com.hexin.plat.android:id\/ll_menu",
+            "置顶 com.hexin.plat.android:id\/btn_top",
+            "收入官方号 com.hexin.plat.android:id\/btn_fold",
+            "删除 com.hexin.plat.android:id\/btn_delete",
+            "com.hexin.plat.android:id\/swipe",
+            "com.hexin.plat.android:id\/cl_content",
+            "com.hexin.plat.android:id\/iv_avatar",
+            "活动助手 com.hexin.plat.android:id\/tv_name",
+            "10:46 com.hexin.plat.android:id\/tv_time",
+            "你关注的股出现异常放量，疑有“万手哥”入场，主力疯狂抢筹，随时准备“拉升”，快用决策工具帮你监测盘面，立即查看>> com.hexin.plat.android:id\/tv_content",
+            "com.hexin.plat.android:id\/tv_content_hint",
+            "18 com.hexin.plat.android:id\/tv_count",
+            "com.hexin.plat.android:id\/line",
+            "com.hexin.plat.android:id\/ll_menu",
+            "置顶 com.hexin.plat.android:id\/btn_top",
+            "收入官方号 com.hexin.plat.android:id\/btn_fold"
+          ],
+          "bottomCandidates": [
+            {
+              "label": "首页 com.hexin.plat.android:id\/title",
+              "bounds": {
+                "left": 76,
+                "top": 3152,
+                "right": 164,
+                "bottom": 3104
+              },
+              "clickable": false
+            },
+            {
+              "label": "首页",
+              "bounds": {
+                "left": 0,
+                "top": 3104,
+                "right": 248,
+                "bottom": 3104
+              },
+              "clickable": true
+            },
+            {
+              "label": "行情",
+              "bounds": {
+                "left": 232,
+                "top": 3104,
+                "right": 488,
+                "bottom": 3104
+              },
+              "clickable": true
+            },
+            {
+              "label": "行情 com.hexin.plat.android:id\/title",
+              "bounds": {
+                "left": 316,
+                "top": 3152,
+                "right": 404,
+                "bottom": 3104
+              },
+              "clickable": false
+            },
+            {
+              "label": "自选",
+              "bounds": {
+                "left": 472,
+                "top": 3104,
+                "right": 728,
+                "bottom": 3104
+              },
+              "clickable": true
+            },
+            {
+              "label": "自选 com.hexin.plat.android:id\/title",
+              "bounds": {
+                "left": 556,
+                "top": 3152,
+                "right": 644,
+                "bottom": 3104
+              },
+              "clickable": false
+            },
+            {
+              "label": "精选复盘解读 com.hexin.plat.android:id\/tv_name",
+              "bounds": {
+                "left": 304,
+                "top": 2300,
+                "right": 947,
+                "bottom": 2375
+              },
+              "clickable": false
+            },
+            {
+              "label": "com.hexin.plat.android:id\/cl_content",
+              "bounds": {
+                "left": 0,
+                "top": 2234,
+                "right": 1440,
+                "bottom": 2522
+              },
+              "clickable": true
+            },
+            {
+              "label": "com.hexin.plat.android:id\/cl_content",
+              "bounds": {
+                "left": 0,
+                "top": 2522,
+                "right": 1440,
+                "bottom": 2810
+              },
+              "clickable": true
+            },
+            {
+              "label": "com.hexin.plat.android:id\/cl_content",
+              "bounds": {
+                "left": 0,
+                "top": 2810,
+                "right": 1440,
+                "bottom": 3098
+              },
+              "clickable": true
+            },
+            {
+              "label": "com.hexin.plat.android:id\/tab_widget",
+              "bounds": {
+                "left": 0,
+                "top": 3104,
+                "right": 1440,
+                "bottom": 3104
+              },
+              "clickable": true
+            },
+            {
+              "label": "上海凤凰将在14:00进行路演互动，点击立即参与路演 com.hexin.plat.android:id\/tv_content",
+              "bounds": {
+                "left": 304,
+                "top": 2399,
+                "right": 1192,
+                "bottom": 2456
+              },
+              "clickable": false
+            }
+          ]
+        },
+        "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_snapshots\/com.hexin.plat.android\/20260521_130317_264_fbfd221b.json"
+      },
+      {
+        "id": "ui_snapshot_1779339796603",
+        "source": "accessibility_auto",
+        "note": "TYPE_WINDOW_STATE_CHANGED",
+        "appPackage": "com.hexin.plat.android",
+        "windowClassName": "null",
+        "screenKey": "636a5532",
+        "screenshotPath": "null",
+        "visualHash": "null",
+        "summary": {
+          "nodeCount": 8,
+          "clickableCount": 1,
+          "editableCount": 0,
+          "scrollableCount": 0,
+          "labels": [
+            "com.hexin.plat.android:id\/ll_container_menu",
+            "com.hexin.plat.android:id\/ll_find_group",
+            "com.hexin.plat.android:id\/img_found_group",
+            "发现群聊"
+          ],
+          "bottomCandidates": []
+        },
+        "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_snapshots\/com.hexin.plat.android\/20260521_130316_602_636a5532.json"
+      },
+      {
+        "id": "ui_snapshot_1779339795621",
+        "source": "accessibility_auto",
+        "note": "TYPE_WINDOW_STATE_CHANGED",
+        "appPackage": "com.hexin.plat.android",
+        "windowClassName": "com.hexin.plat.android.Hexin",
+        "screenKey": "fbfd221b",
+        "screenshotPath": "null",
+        "visualHash": "null",
+        "summary": {
+          "nodeCount": 173,
+          "clickableCount": 45,
+          "editableCount": 0,
+          "scrollableCount": 0,
+          "labels": [
+            "com.hexin.plat.android:id\/status_background",
+            "com.hexin.plat.android:id\/status_textView",
+            "com.hexin.plat.android:id\/action_bar_root",
+            "android:id\/content",
+            "com.hexin.plat.android:id\/frame_layout",
+            "com.hexin.plat.android:id\/unified_float_ball_container",
+            "com.hexin.plat.android:id\/jump_float_container",
+            "com.hexin.plat.android:id\/statusBarContainer",
+            "com.hexin.plat.android:id\/shadowBarContainer",
+            "com.hexin.plat.android:id\/shadow_status_bar",
+            "com.hexin.plat.android:id\/page_content",
+            "com.hexin.plat.android:id\/page_chat_test",
+            "com.hexin.plat.android:id\/fcv_container",
+            "com.hexin.plat.android:id\/fcv_container",
+            "com.hexin.plat.android:id\/cl_root",
+            "返回 com.hexin.plat.android:id\/iv_back",
+            "消息中心 com.hexin.plat.android:id\/tv_title",
+            "com.hexin.plat.android:id\/iv_box",
+            "com.hexin.plat.android:id\/rv_content",
+            "com.hexin.plat.android:id\/rl_at_me",
+            "com.hexin.plat.android:id\/iv_avatar_at",
+            "@我的 com.hexin.plat.android:id\/tv_name_at",
+            "com.hexin.plat.android:id\/rl_comment_me",
+            "com.hexin.plat.android:id\/iv_avatar_comment",
+            "评论我的 com.hexin.plat.android:id\/tv_name_comment",
+            "com.hexin.plat.android:id\/rl_like_me",
+            "com.hexin.plat.android:id\/iv_avatar_like",
+            "点赞 com.hexin.plat.android:id\/tv_name_like",
+            "com.hexin.plat.android:id\/swipe",
+            "com.hexin.plat.android:id\/cl_content",
+            "com.hexin.plat.android:id\/iv_avatar",
+            "官方暗盘资金群1018X com.hexin.plat.android:id\/tv_name",
+            "12:56 com.hexin.plat.android:id\/tv_time",
+            "订阅群 com.hexin.plat.android:id\/tv_subscribe",
+            "[群主] com.hexin.plat.android:id\/tv_content_hint",
+            "同花顺金牌投顾：午间点评：早盘市场借外盘修复之势快速上冲，特别是科技线，依然是市场最火爆的方向，但科技线内部的分歧较大，一是产能瓶颈导致的短期关注的转移，二是技术路径引发的中期博弈加剧，所以科技线内部轮动加剧，而这种加剧又导致情绪波动加大，进一步放大市场的波动，所以早盘市场在快速上冲之后也是出现了明显的回落。这个时候我们更要做到不以涨喜，不以跌悲，冷静看待波动，现在的市场就好比是风箱老鼠，上下两难，跌下来的时候反而要更加关注潜在机会。 相关建议仅供参考，不构成投资依据，涉及个... com.hexin.plat.android:id\/tv_content",
+            "com.hexin.plat.android:id\/iv_mute",
+            "com.hexin.plat.android:id\/iv_mute_dot",
+            "com.hexin.plat.android:id\/line",
+            "com.hexin.plat.android:id\/ll_menu",
+            "置顶 com.hexin.plat.android:id\/btn_top",
+            "删除 com.hexin.plat.android:id\/btn_delete",
+            "com.hexin.plat.android:id\/swipe",
+            "com.hexin.plat.android:id\/cl_content",
+            "com.hexin.plat.android:id\/iv_avatar",
+            "自选股公告 com.hexin.plat.android:id\/tv_name",
+            "12:00 com.hexin.plat.android:id\/tv_time",
+            "【午间自选股公告】您的自选股银轮股份(002126)、供销大集(000564)等几只股票有新公告发布，快来看！ com.hexin.plat.android:id\/tv_content",
+            "com.hexin.plat.android:id\/tv_content_hint",
+            "20 com.hexin.plat.android:id\/tv_count",
+            "com.hexin.plat.android:id\/line",
+            "com.hexin.plat.android:id\/ll_menu",
+            "置顶 com.hexin.plat.android:id\/btn_top",
+            "收入官方号 com.hexin.plat.android:id\/btn_fold",
+            "删除 com.hexin.plat.android:id\/btn_delete",
+            "com.hexin.plat.android:id\/swipe",
+            "com.hexin.plat.android:id\/cl_content",
+            "com.hexin.plat.android:id\/iv_avatar",
+            "新闻资讯 com.hexin.plat.android:id\/tv_name",
+            "11:28 com.hexin.plat.android:id\/tv_time",
+            "英伟达Q1业绩超预期，但不够惊艳，股价盘后小跌。VeraRubin和VeraCPU将支撑下一阶段的增长。指引未计入中国市场，若在华获批将是额外助力。 com.hexin.plat.android:id\/tv_content",
+            "com.hexin.plat.android:id\/tv_content_hint",
+            "99+ com.hexin.plat.android:id\/tv_count",
+            "com.hexin.plat.android:id\/line",
+            "com.hexin.plat.android:id\/ll_menu",
+            "置顶 com.hexin.plat.android:id\/btn_top",
+            "收入官方号 com.hexin.plat.android:id\/btn_fold",
+            "删除 com.hexin.plat.android:id\/btn_delete",
+            "com.hexin.plat.android:id\/swipe",
+            "com.hexin.plat.android:id\/cl_content",
+            "com.hexin.plat.android:id\/iv_avatar",
+            "活动助手 com.hexin.plat.android:id\/tv_name",
+            "10:46 com.hexin.plat.android:id\/tv_time",
+            "你关注的股出现异常放量，疑有“万手哥”入场，主力疯狂抢筹，随时准备“拉升”，快用决策工具帮你监测盘面，立即查看>> com.hexin.plat.android:id\/tv_content",
+            "com.hexin.plat.android:id\/tv_content_hint",
+            "18 com.hexin.plat.android:id\/tv_count",
+            "com.hexin.plat.android:id\/line",
+            "com.hexin.plat.android:id\/ll_menu",
+            "置顶 com.hexin.plat.android:id\/btn_top",
+            "收入官方号 com.hexin.plat.android:id\/btn_fold"
+          ],
+          "bottomCandidates": [
+            {
+              "label": "首页 com.hexin.plat.android:id\/title",
+              "bounds": {
+                "left": 76,
+                "top": 3152,
+                "right": 164,
+                "bottom": 3104
+              },
+              "clickable": false
+            },
+            {
+              "label": "首页",
+              "bounds": {
+                "left": 0,
+                "top": 3104,
+                "right": 248,
+                "bottom": 3104
+              },
+              "clickable": true
+            },
+            {
+              "label": "行情",
+              "bounds": {
+                "left": 232,
+                "top": 3104,
+                "right": 488,
+                "bottom": 3104
+              },
+              "clickable": true
+            },
+            {
+              "label": "行情 com.hexin.plat.android:id\/title",
+              "bounds": {
+                "left": 316,
+                "top": 3152,
+                "right": 404,
+                "bottom": 3104
+              },
+              "clickable": false
+            },
+            {
+              "label": "自选",
+              "bounds": {
+                "left": 472,
+                "top": 3104,
+                "right": 728,
+                "bottom": 3104
+              },
+              "clickable": true
+            },
+            {
+              "label": "自选 com.hexin.plat.android:id\/title",
+              "bounds": {
+                "left": 556,
+                "top": 3152,
+                "right": 644,
+                "bottom": 3104
+              },
+              "clickable": false
+            },
+            {
+              "label": "精选复盘解读 com.hexin.plat.android:id\/tv_name",
+              "bounds": {
+                "left": 304,
+                "top": 2300,
+                "right": 947,
+                "bottom": 2375
+              },
+              "clickable": false
+            },
+            {
+              "label": "com.hexin.plat.android:id\/cl_content",
+              "bounds": {
+                "left": 0,
+                "top": 2234,
+                "right": 1440,
+                "bottom": 2522
+              },
+              "clickable": true
+            },
+            {
+              "label": "com.hexin.plat.android:id\/cl_content",
+              "bounds": {
+                "left": 0,
+                "top": 2522,
+                "right": 1440,
+                "bottom": 2810
+              },
+              "clickable": true
+            },
+            {
+              "label": "com.hexin.plat.android:id\/cl_content",
+              "bounds": {
+                "left": 0,
+                "top": 2810,
+                "right": 1440,
+                "bottom": 3098
+              },
+              "clickable": true
+            },
+            {
+              "label": "com.hexin.plat.android:id\/tab_widget",
+              "bounds": {
+                "left": 0,
+                "top": 3104,
+                "right": 1440,
+                "bottom": 3104
+              },
+              "clickable": true
+            },
+            {
+              "label": "上海凤凰将在14:00进行路演互动，点击立即参与路演 com.hexin.plat.android:id\/tv_content",
+              "bounds": {
+                "left": 304,
+                "top": 2399,
+                "right": 1192,
+                "bottom": 2456
+              },
+              "clickable": false
+            }
+          ]
+        },
+        "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_snapshots\/com.hexin.plat.android\/20260521_130315_620_fbfd221b.json"
+      },
+      {
+        "id": "ui_snapshot_1779339794950",
+        "source": "accessibility_auto",
+        "note": "TYPE_WINDOW_STATE_CHANGED",
+        "appPackage": "com.hexin.plat.android",
+        "windowClassName": "null",
+        "screenKey": "636a5532",
+        "screenshotPath": "null",
+        "visualHash": "null",
+        "summary": {
+          "nodeCount": 8,
+          "clickableCount": 1,
+          "editableCount": 0,
+          "scrollableCount": 0,
+          "labels": [
+            "com.hexin.plat.android:id\/ll_container_menu",
+            "com.hexin.plat.android:id\/ll_find_group",
+            "com.hexin.plat.android:id\/img_found_group",
+            "发现群聊"
+          ],
+          "bottomCandidates": []
+        },
+        "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_snapshots\/com.hexin.plat.android\/20260521_130314_950_636a5532.json"
+      }
+    ],
+    "recentFlowSteps": [
+      {
+        "title": "用户指令进入手机端执行器",
+        "status": "RUNNING",
+        "message": "主输入不再只生成文件：App 将调用 AI，生成可审计 JSON，再由 SkillJsonExecutor 直接执行候选能力。",
+        "path": "null"
+      },
+      {
+        "title": "AppUI 图谱已进入决策上下文",
+        "status": "INFO",
+        "message": "已知页面=3，边=7；AI\/模板改写会优先参考入口、底部分屏、输入框和可点击候选。",
+        "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/app_ui_graphs\/com.hexin.plat.android\/graph_candidate.json"
+      },
+      {
+        "title": "手机端相似 Skill 自适应规划",
+        "status": "SUCCESS",
+        "message": "本机先复用抖音\/小红书成功模式：识别 intent=generic_search，改写出 7 个细粒度步骤；AI v4pro 只在失败或二次判断时接管。",
+        "path": "null"
+      },
+      {
+        "title": "v4pro 执行前复核",
+        "status": "SUCCESS",
+        "message": "模型=deepseek-v4-pro；HTTP=200；patchedSteps=17；usePatched=true；必须替换为打开同花顺、导航至首页、搜索贵州茅台、进入详情页并确保盘口\/K线\/资讯入口可见的完整计划。",
+        "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ai_jobs\/2026-05-21\/factory_ai_plan_review_1779339757842.json"
+      },
+      {
+        "title": "v4pro 复核已改写计划",
+        "status": "SUCCESS",
+        "message": "执行前 AI 认为本地相似计划需要改写，已用 17 个复核步骤重新生成 Skill JSON。",
+        "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ai_jobs\/2026-05-21\/factory_ai_plan_review_1779339757842.json"
+      },
+      {
+        "title": "相似成功案例改写为 Skill JSON",
+        "status": "SUCCESS",
+        "message": "不靠 ADB 拼流程；App 底层把 intent=generic_search 拆成 18 个 candidate JSON，之后统一 dry-run、执行、失败再让 v4pro 二次判断。",
+        "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_candidates\/com.hexin.plat.android\/patched.command.1779339757860.json"
+      },
+      {
+        "title": "dry-run 静态检查",
+        "status": "SUCCESS",
+        "message": "通过 18\/18。",
+        "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_dry_run_reports\/com.hexin.plat.android\/patched.command.1779339757860_1779339765657.json"
+      },
+      {
+        "title": "拼装 app_config 预览",
+        "status": "SUCCESS",
+        "message": "候选\/测试产物已拼为单个 app_config 预览。",
+        "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/app_config_exports\/com.hexin.plat.android\/app_config_20260521_130245_669.json"
+      },
+      {
+        "title": "执行候选 JSON",
+        "status": "RUNNING",
+        "message": "不等待 APPROVED：按用户要求，直接由 SkillJsonExecutor 执行候选 macro=patched.command.1779339757860。",
+        "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_candidates\/com.hexin.plat.android\/patched.command.1779339757860.json"
+      },
+      {
+        "title": "候选 JSON 执行结果",
+        "status": "FAILED_ELEMENT_NOT_FOUND",
+        "message": "patched.command.1779339757860 -> FAILED_ELEMENT_NOT_FOUND；Bottom-tab sweep did not find entry aliases=首页; tabsVisited=5; events=[{\"phase\":\"open_before_recover\",\"packageName\":\"com.hexin.plat.android\",\"success\":true,\"message\":\"Launch intent sent for com.hexin.pl",
+        "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/runtime\/run_reports\/com.hexin.plat.android\/ai_direct_run_1779339800146.json"
+      },
+      {
+        "title": "失败后 AI 判断",
+        "status": "RUNNING",
+        "message": "当前不是直接停下：App 把失败原因、当前屏幕节点和已跑步骤发给手机端 AI，让 AI 判断下一段补救 JSON。",
+        "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/runtime\/run_reports\/com.hexin.plat.android\/ai_direct_run_1779339800146.json"
+      }
+    ],
+    "outputContract": {
+      "decision": {
+        "goalCompleted": false,
+        "screenAssessment": "当前页面是什么，看到哪些关键节点",
+        "failureDiagnosis": "失败\/歧义原因，例如搜索结果页、详情页、节点缺失、输入失败、需要返回",
+        "confidence": "HIGH | MEDIUM | LOW",
+        "nextActionReason": "为什么选择下一步动作"
+      },
+      "steps": [
+        {
+          "type": "ClickVisibleText",
+          "text": "可见文字"
+        },
+        {
+          "type": "ClickSelector",
+          "selector": "[text='搜索'][clickable=true]"
+        },
+        {
+          "type": "ClickCoordinate",
+          "x": 0.5,
+          "y": 0.3
+        },
+        {
+          "type": "TypeIntoFirstInput",
+          "text": "输入内容"
+        },
+        {
+          "type": "TypeIntoFocusedInput",
+          "text": "输入到当前聚焦框"
+        },
+        {
+          "type": "ScrollForward"
+        },
+        {
+          "type": "Back"
+        },
+        {
+          "type": "HandleReactiveOverlays",
+          "maxPasses": 3
+        },
+        {
+          "type": "RecoverBilibiliHomeSurface",
+          "timeoutMs": 6000
+        },
+        {
+          "type": "FindEntryByBottomTabSweep",
+          "entryAliases": [
+            "发帖",
+            "发布",
+            "创作",
+            "搜索",
+            "消息",
+            "+"
+          ],
+          "maxTabs": 5
+        },
+        {
+          "type": "EnsureHupuSectionSelected"
+        },
+        {
+          "type": "Wait",
+          "timeoutMs": 800
+        }
+      ],
+      "candidates": "optional fine-grained SkillCandidate JSON array"
+    },
+    "rules": [
+      "先判断当前屏幕，再给下一小段动作。",
+      "失败后不要重复整条旧计划，只输出能够把当前页面推进一步的 1-5 个 steps。",
+      "优先参考 appUiGraph 和 availableSkillTemplates：先判断卡在哪个 screen\/entry\/input，再返回可被模板补丁拼装的关键 slot。",
+      "如果当前在搜索结果页并且用户要第一个视频，就优先打开第一个视频结果。",
+      "如果当前在视频详情页并且用户要点赞，就优先找“点赞\/赞\/like”节点；节点不可读时才用低置信坐标。",
+      "你会收到 currentUi.clickTargets 和 currentUi.videoCandidates。点击哪个视频必须基于这些候选：在 decision.nextActionReason 写 targetCandidateIndex、候选文本\/描述\/bounds 和选择理由。",
+      "如果用户说“第一个视频”，选择 videoCandidates 中第一个位于内容区且不是搜索栏\/返回\/清除按钮的候选；如果没有候选或还在 loading，只能 Wait 或 ScrollForward，不能乱点。",
+      "如果目标是打开第一个视频，不能只因为搜索结果页出现“视频\/播放\/王老菊”就说 goalCompleted=true；必须看到视频详情页\/播放页证据，并且搜索输入框和结果页 tabs 已经不在当前页面。",
+      "B 站任务里 ComposeActivity、opus_detail、dy_opus、动态、分享面板、评论区底栏、我的消息\/系统通知\/游戏通知都不是“第一个视频已打开”；如果看到这些页面，优先输出 RecoverBilibiliHomeSurface 或 Back 回到主页后重新搜索，不能点底部分享。",
+      "如果目标是发小红书\/写小红书草稿，不能只因为打开了小红书或点过底部加号就说 goalCompleted=true；必须看到草稿编辑页证据，并且看到标题或正文文本已经写入。",
+      "小红书草稿任务优先找 currentUi.clickTargets 中 tags 包含 create_control、draft_editor、title_input、body_input、next_step 的节点；没有可靠节点时才使用低置信坐标：底部创作入口一般 x=0.50 y=0.935，标题区域 x=0.50 y=0.34，正文区域 x=0.50 y=0.49。",
+      "小红书任务默认只写草稿，除非用户明确说“现在发布\/确认发布”，否则不要点击最终发布按钮。",
+      "currentUi.blockingDialogs 是硬证据：如果包含 ad_or_splash，先关闭\/跳过广告；如果包含 hupu_section_required，说明虎扑发帖被专区选择拦住，下一步必须选择专区\/板块，不能继续 Wait 或重复原计划。",
+      "如果你选择候选，steps 应使用 ClickCoordinate，并使用该候选 center.x\/center.y；不要自己编造 selector。",
+      "ClickSelector 只能使用简单选择器：[text='文字']、[text*='文字']、[desc='描述']、[desc*='描述']、[resourceId='完整id']、[class='完整类名'][clickable=true]。不要输出 >、:first-child、空格层级选择器或 CSS\/XPath。",
+      "如果只能判断大概位置，直接输出 ClickCoordinate，搜索结果第一个视频一般可先尝试 x=0.50 y=0.36；视频详情点赞区域一般可先尝试 x=0.26 y=0.86，但必须低置信并等待验证。",
+      "如果目标已经完成，decision.goalCompleted=true 且 steps=[]。",
+      "所有坐标必须是 0..1 归一化坐标。"
+    ]
+  },
+  "aiStatus": "FAILED",
+  "aiMessage": "thread interrupted",
+  "provider": "OPENAI_COMPAT_CHAT",
+  "httpStatus": null,
+  "model": "deepseek-v4-pro",
+  "baseUrlHost": "api.deepseek.com",
+  "rawResponse": null,
+  "parsedJson": {
+    "decision": {},
+    "planStepCount": 0,
+    "aiCandidateCount": 0,
+    "goalCompleted": false
+  },
+  "parseSuccess": false,
+  "errors": [
+    "thread interrupted"
+  ],
+  "accepted": false,
+  "acceptedBy": "APP_SIDE_RUNTIME_REPLAN",
+  "acceptedAt": 1779339903050
+}

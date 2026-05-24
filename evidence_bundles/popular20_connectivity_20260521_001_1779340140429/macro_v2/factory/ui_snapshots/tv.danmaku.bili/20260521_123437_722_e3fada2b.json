@@ -1,0 +1,724 @@
+{
+  "schemaVersion": 1,
+  "kind": "ui_state_snapshot",
+  "id": "ui_snapshot_1779338078369",
+  "source": "current_ui_summary",
+  "note": "factory_ai_context",
+  "screenshotPath": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_screenshots\/tv.danmaku.bili\/20260521_123437_722_e3fada2b.png",
+  "screenshotSha256": "b4d65506aca6cc42c52cb3fad76c3508a421b21f38a0327d0bfb1f5c089a1702",
+  "visualHash": "d12fbe28005bba7c4bbe482e6b806c4d3a0fe61ae2efd5411c119e349f1a034b",
+  "screenshotSizeBytes": 1873212,
+  "appPackage": "tv.danmaku.bili",
+  "windowClassName": "com.bilibili.search2.main.BiliMainSearchActivity",
+  "screenKey": "e3fada2b",
+  "relatedSkillId": null,
+  "relatedActionType": null,
+  "capability": {
+    "nodeReadability": "B",
+    "inputCapability": "CUSTOM_IME",
+    "verificationCapability": "MEDIUM",
+    "coordinateFallback": "AVAILABLE",
+    "serviceState": "CONNECTED",
+    "reason": "nodes=22, textLike=15, clickable=2, editable=0, scrollable=0, customIme=true"
+  },
+  "state": {
+    "appPackage": "tv.danmaku.bili",
+    "windowClassName": "com.bilibili.search2.main.BiliMainSearchActivity",
+    "screenWidth": 1440,
+    "screenHeight": 3168,
+    "timestamp": 1779338077721,
+    "nodeCount": 22,
+    "nodesStored": 22,
+    "nodesStorage": "compact_important_nodes_only",
+    "nodes": [
+      {
+        "nodeId": "7_21_1023_2882_1376_3058",
+        "packageName": "tv.danmaku.bili",
+        "text": "跳过 5",
+        "contentDesc": null,
+        "resourceId": "tv.danmaku.bili:id\/count_down",
+        "className": "android.widget.TextView",
+        "bounds": {
+          "left": 1023,
+          "top": 2882,
+          "right": 1376,
+          "bottom": 3058
+        },
+        "clickable": true,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 7,
+        "parentRoleHint": "android.view.ViewGroup"
+      },
+      {
+        "nodeId": "5_5_0_0_1440_3168",
+        "packageName": "tv.danmaku.bili",
+        "text": null,
+        "contentDesc": null,
+        "resourceId": "tv.danmaku.bili:id\/root_container",
+        "className": "android.view.ViewGroup",
+        "bounds": {
+          "left": 0,
+          "top": 0,
+          "right": 1440,
+          "bottom": 3168
+        },
+        "clickable": true,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 5,
+        "parentRoleHint": "android.widget.FrameLayout"
+      },
+      {
+        "nodeId": "3_3_0_0_1440_3168",
+        "packageName": "tv.danmaku.bili",
+        "text": null,
+        "contentDesc": null,
+        "resourceId": "tv.danmaku.bili:id\/action_bar_root",
+        "className": "android.widget.LinearLayout",
+        "bounds": {
+          "left": 0,
+          "top": 0,
+          "right": 1440,
+          "bottom": 3168
+        },
+        "clickable": false,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 3,
+        "parentRoleHint": "android.widget.FrameLayout"
+      },
+      {
+        "nodeId": "4_4_0_0_1440_3168",
+        "packageName": "tv.danmaku.bili",
+        "text": null,
+        "contentDesc": null,
+        "resourceId": "android:id\/content",
+        "className": "android.widget.FrameLayout",
+        "bounds": {
+          "left": 0,
+          "top": 0,
+          "right": 1440,
+          "bottom": 3168
+        },
+        "clickable": false,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 4,
+        "parentRoleHint": "android.widget.LinearLayout"
+      },
+      {
+        "nodeId": "6_6_0_0_1440_3168",
+        "packageName": "tv.danmaku.bili",
+        "text": null,
+        "contentDesc": null,
+        "resourceId": "tv.danmaku.bili:id\/mainImageView",
+        "className": "android.widget.ImageView",
+        "bounds": {
+          "left": 0,
+          "top": 0,
+          "right": 1440,
+          "bottom": 3168
+        },
+        "clickable": false,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 6,
+        "parentRoleHint": "android.view.ViewGroup"
+      },
+      {
+        "nodeId": "6_7_0_0_1440_3168",
+        "packageName": "tv.danmaku.bili",
+        "text": null,
+        "contentDesc": null,
+        "resourceId": "tv.danmaku.bili:id\/main_video_layer",
+        "className": "android.view.ViewGroup",
+        "bounds": {
+          "left": 0,
+          "top": 0,
+          "right": 1440,
+          "bottom": 3168
+        },
+        "clickable": false,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 6,
+        "parentRoleHint": "android.view.ViewGroup"
+      },
+      {
+        "nodeId": "6_9_0_0_1440_3168",
+        "packageName": "tv.danmaku.bili",
+        "text": null,
+        "contentDesc": null,
+        "resourceId": "tv.danmaku.bili:id\/hot_tap_zone",
+        "className": "android.widget.FrameLayout",
+        "bounds": {
+          "left": 0,
+          "top": 0,
+          "right": 1440,
+          "bottom": 3168
+        },
+        "clickable": false,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 6,
+        "parentRoleHint": "android.view.ViewGroup"
+      },
+      {
+        "nodeId": "6_10_0_0_1440_3168",
+        "packageName": "tv.danmaku.bili",
+        "text": null,
+        "contentDesc": null,
+        "resourceId": "tv.danmaku.bili:id\/physic_view",
+        "className": "androidx.compose.ui.platform.ComposeView",
+        "bounds": {
+          "left": 0,
+          "top": 0,
+          "right": 1440,
+          "bottom": 3168
+        },
+        "clickable": false,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 6,
+        "parentRoleHint": "android.view.ViewGroup"
+      },
+      {
+        "nodeId": "6_12_0_0_1440_3168",
+        "packageName": "tv.danmaku.bili",
+        "text": null,
+        "contentDesc": null,
+        "resourceId": "tv.danmaku.bili:id\/splash_button_container",
+        "className": "android.widget.FrameLayout",
+        "bounds": {
+          "left": 0,
+          "top": 0,
+          "right": 1440,
+          "bottom": 3168
+        },
+        "clickable": false,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 6,
+        "parentRoleHint": "android.view.ViewGroup"
+      },
+      {
+        "nodeId": "6_17_1248_208_1376_280",
+        "packageName": "tv.danmaku.bili",
+        "text": null,
+        "contentDesc": null,
+        "resourceId": "tv.danmaku.bili:id\/label_layout",
+        "className": "android.widget.LinearLayout",
+        "bounds": {
+          "left": 1248,
+          "top": 208,
+          "right": 1376,
+          "bottom": 280
+        },
+        "clickable": false,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 6,
+        "parentRoleHint": "android.view.ViewGroup"
+      },
+      {
+        "nodeId": "7_18_1248_208_1376_280",
+        "packageName": "tv.danmaku.bili",
+        "text": "广告",
+        "contentDesc": null,
+        "resourceId": "tv.danmaku.bili:id\/label_ad",
+        "className": "android.widget.TextView",
+        "bounds": {
+          "left": 1248,
+          "top": 208,
+          "right": 1376,
+          "bottom": 280
+        },
+        "clickable": false,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 7,
+        "parentRoleHint": "android.widget.LinearLayout"
+      },
+      {
+        "nodeId": "7_13_216_2456_1224_2677",
+        "packageName": "tv.danmaku.bili",
+        "text": "扭一扭",
+        "contentDesc": null,
+        "resourceId": null,
+        "className": "android.widget.TextView",
+        "bounds": {
+          "left": 216,
+          "top": 2456,
+          "right": 1224,
+          "bottom": 2677
+        },
+        "clickable": false,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 7,
+        "parentRoleHint": "android.widget.FrameLayout"
+      },
+      {
+        "nodeId": "7_14_216_2551_1224_2772",
+        "packageName": "tv.danmaku.bili",
+        "text": "进入淘宝app",
+        "contentDesc": null,
+        "resourceId": null,
+        "className": "android.widget.TextView",
+        "bounds": {
+          "left": 216,
+          "top": 2551,
+          "right": 1224,
+          "bottom": 2772
+        },
+        "clickable": false,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 7,
+        "parentRoleHint": "android.widget.FrameLayout"
+      },
+      {
+        "nodeId": "6_19_0_2772_1440_3168",
+        "packageName": "tv.danmaku.bili",
+        "text": null,
+        "contentDesc": null,
+        "resourceId": "tv.danmaku.bili:id\/logo_layout",
+        "className": "android.view.ViewGroup",
+        "bounds": {
+          "left": 0,
+          "top": 2772,
+          "right": 1440,
+          "bottom": 3168
+        },
+        "clickable": false,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 6,
+        "parentRoleHint": "android.view.ViewGroup"
+      },
+      {
+        "nodeId": "7_20_0_2860_442_3081",
+        "packageName": "tv.danmaku.bili",
+        "text": null,
+        "contentDesc": null,
+        "resourceId": "tv.danmaku.bili:id\/logo",
+        "className": "android.widget.ImageView",
+        "bounds": {
+          "left": 0,
+          "top": 2860,
+          "right": 442,
+          "bottom": 3081
+        },
+        "clickable": false,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 7,
+        "parentRoleHint": "android.view.ViewGroup"
+      },
+      {
+        "nodeId": "0_0_0_0_1440_3168",
+        "packageName": "tv.danmaku.bili",
+        "text": null,
+        "contentDesc": null,
+        "resourceId": null,
+        "className": "android.widget.FrameLayout",
+        "bounds": {
+          "left": 0,
+          "top": 0,
+          "right": 1440,
+          "bottom": 3168
+        },
+        "clickable": false,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 0,
+        "parentRoleHint": null
+      },
+      {
+        "nodeId": "1_1_0_0_1440_3168",
+        "packageName": "tv.danmaku.bili",
+        "text": null,
+        "contentDesc": null,
+        "resourceId": null,
+        "className": "android.widget.LinearLayout",
+        "bounds": {
+          "left": 0,
+          "top": 0,
+          "right": 1440,
+          "bottom": 3168
+        },
+        "clickable": false,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 1,
+        "parentRoleHint": "android.widget.FrameLayout"
+      },
+      {
+        "nodeId": "2_2_0_0_1440_3168",
+        "packageName": "tv.danmaku.bili",
+        "text": null,
+        "contentDesc": null,
+        "resourceId": null,
+        "className": "android.widget.FrameLayout",
+        "bounds": {
+          "left": 0,
+          "top": 0,
+          "right": 1440,
+          "bottom": 3168
+        },
+        "clickable": false,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 2,
+        "parentRoleHint": "android.widget.LinearLayout"
+      },
+      {
+        "nodeId": "7_8_0_0_1440_3168",
+        "packageName": "tv.danmaku.bili",
+        "text": null,
+        "contentDesc": null,
+        "resourceId": null,
+        "className": "android.view.TextureView",
+        "bounds": {
+          "left": 0,
+          "top": 0,
+          "right": 1440,
+          "bottom": 3168
+        },
+        "clickable": false,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 7,
+        "parentRoleHint": "android.view.ViewGroup"
+      },
+      {
+        "nodeId": "7_11_0_0_1440_3168",
+        "packageName": "tv.danmaku.bili",
+        "text": null,
+        "contentDesc": null,
+        "resourceId": null,
+        "className": "android.view.View",
+        "bounds": {
+          "left": 0,
+          "top": 0,
+          "right": 1440,
+          "bottom": 3168
+        },
+        "clickable": false,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 7,
+        "parentRoleHint": "androidx.compose.ui.platform.ComposeView"
+      },
+      {
+        "nodeId": "7_15_216_2313_1224_2503",
+        "packageName": "tv.danmaku.bili",
+        "text": null,
+        "contentDesc": null,
+        "resourceId": null,
+        "className": "android.widget.FrameLayout",
+        "bounds": {
+          "left": 216,
+          "top": 2313,
+          "right": 1224,
+          "bottom": 2503
+        },
+        "clickable": false,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 7,
+        "parentRoleHint": "android.widget.FrameLayout"
+      },
+      {
+        "nodeId": "8_16_598_2313_842_2503",
+        "packageName": "tv.danmaku.bili",
+        "text": null,
+        "contentDesc": null,
+        "resourceId": null,
+        "className": "android.widget.ImageView",
+        "bounds": {
+          "left": 598,
+          "top": 2313,
+          "right": 842,
+          "bottom": 2503
+        },
+        "clickable": false,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 8,
+        "parentRoleHint": "android.widget.FrameLayout"
+      }
+    ],
+    "eventsSinceLastState": [
+      {
+        "eventType": "TYPE_WINDOW_CONTENT_CHANGED",
+        "packageName": "com.android.launcher",
+        "className": "android.widget.FrameLayout",
+        "text": null,
+        "timestamp": 1779338076842
+      },
+      {
+        "eventType": "TYPE_WINDOW_CONTENT_CHANGED",
+        "packageName": "com.android.launcher",
+        "className": "android.widget.FrameLayout",
+        "text": null,
+        "timestamp": 1779338076950
+      },
+      {
+        "eventType": "TYPE_WINDOW_CONTENT_CHANGED",
+        "packageName": "com.android.launcher",
+        "className": "android.widget.FrameLayout",
+        "text": null,
+        "timestamp": 1779338076983
+      },
+      {
+        "eventType": "TYPE_WINDOW_STATE_CHANGED",
+        "packageName": "com.android.launcher",
+        "className": "com.android.launcher.Launcher",
+        "text": "最近用过的应用",
+        "timestamp": 1779338076984
+      },
+      {
+        "eventType": "TYPE_4194304",
+        "packageName": null,
+        "className": null,
+        "text": null,
+        "timestamp": 1779338076984
+      },
+      {
+        "eventType": "TYPE_WINDOW_CONTENT_CHANGED",
+        "packageName": "com.android.launcher",
+        "className": "android.widget.FrameLayout",
+        "text": null,
+        "timestamp": 1779338077047
+      },
+      {
+        "eventType": "TYPE_VIEW_CLICKED",
+        "packageName": "com.android.launcher",
+        "className": "android.widget.FrameLayout",
+        "text": "哔哩哔哩 更多",
+        "timestamp": 1779338077047
+      },
+      {
+        "eventType": "TYPE_4194304",
+        "packageName": null,
+        "className": null,
+        "text": null,
+        "timestamp": 1779338077055
+      },
+      {
+        "eventType": "TYPE_WINDOW_CONTENT_CHANGED",
+        "packageName": "com.android.launcher",
+        "className": "android.widget.FrameLayout",
+        "text": null,
+        "timestamp": 1779338077066
+      },
+      {
+        "eventType": "TYPE_WINDOW_CONTENT_CHANGED",
+        "packageName": "com.android.launcher",
+        "className": "android.widget.FrameLayout",
+        "text": null,
+        "timestamp": 1779338077099
+      },
+      {
+        "eventType": "TYPE_WINDOW_STATE_CHANGED",
+        "packageName": "com.android.launcher",
+        "className": "com.android.launcher.Launcher",
+        "text": "最近用过的应用",
+        "timestamp": 1779338077100
+      },
+      {
+        "eventType": "TYPE_VIEW_FOCUSED",
+        "packageName": "com.android.launcher",
+        "className": "android.widget.FrameLayout",
+        "text": null,
+        "timestamp": 1779338077105
+      },
+      {
+        "eventType": "TYPE_4194304",
+        "packageName": null,
+        "className": null,
+        "text": null,
+        "timestamp": 1779338077153
+      },
+      {
+        "eventType": "TYPE_WINDOW_CONTENT_CHANGED",
+        "packageName": "tv.danmaku.bili",
+        "className": "android.widget.FrameLayout",
+        "text": null,
+        "timestamp": 1779338077154
+      },
+      {
+        "eventType": "TYPE_WINDOW_CONTENT_CHANGED",
+        "packageName": "tv.danmaku.bili",
+        "className": "android.widget.FrameLayout",
+        "text": null,
+        "timestamp": 1779338077277
+      },
+      {
+        "eventType": "TYPE_WINDOW_CONTENT_CHANGED",
+        "packageName": "tv.danmaku.bili",
+        "className": "android.view.View",
+        "text": null,
+        "timestamp": 1779338077287
+      },
+      {
+        "eventType": "TYPE_WINDOW_CONTENT_CHANGED",
+        "packageName": "tv.danmaku.bili",
+        "className": "android.view.ViewGroup",
+        "text": null,
+        "timestamp": 1779338077380
+      },
+      {
+        "eventType": "TYPE_WINDOW_CONTENT_CHANGED",
+        "packageName": "com.android.systemui",
+        "className": "android.widget.FrameLayout",
+        "text": null,
+        "timestamp": 1779338077618
+      },
+      {
+        "eventType": "TYPE_4194304",
+        "packageName": null,
+        "className": null,
+        "text": null,
+        "timestamp": 1779338077652
+      },
+      {
+        "eventType": "TYPE_WINDOW_STATE_CHANGED",
+        "packageName": "tv.danmaku.bili",
+        "className": "com.bilibili.search2.main.BiliMainSearchActivity",
+        "text": "哔哩哔哩",
+        "timestamp": 1779338077656
+      }
+    ]
+  },
+  "summary": {
+    "nodeCount": 22,
+    "clickableCount": 2,
+    "editableCount": 0,
+    "scrollableCount": 0,
+    "labels": [
+      "tv.danmaku.bili:id\/action_bar_root",
+      "android:id\/content",
+      "tv.danmaku.bili:id\/root_container",
+      "tv.danmaku.bili:id\/mainImageView",
+      "tv.danmaku.bili:id\/main_video_layer",
+      "tv.danmaku.bili:id\/hot_tap_zone",
+      "tv.danmaku.bili:id\/physic_view",
+      "tv.danmaku.bili:id\/splash_button_container",
+      "扭一扭",
+      "进入淘宝app",
+      "tv.danmaku.bili:id\/label_layout",
+      "广告 tv.danmaku.bili:id\/label_ad",
+      "tv.danmaku.bili:id\/logo_layout",
+      "tv.danmaku.bili:id\/logo",
+      "跳过 5 tv.danmaku.bili:id\/count_down"
+    ],
+    "bottomCandidates": [
+      {
+        "label": "扭一扭",
+        "bounds": {
+          "left": 216,
+          "top": 2456,
+          "right": 1224,
+          "bottom": 2677
+        },
+        "clickable": false
+      },
+      {
+        "label": "进入淘宝app",
+        "bounds": {
+          "left": 216,
+          "top": 2551,
+          "right": 1224,
+          "bottom": 2772
+        },
+        "clickable": false
+      },
+      {
+        "label": "跳过 5 tv.danmaku.bili:id\/count_down",
+        "bounds": {
+          "left": 1023,
+          "top": 2882,
+          "right": 1376,
+          "bottom": 3058
+        },
+        "clickable": true
+      }
+    ]
+  },
+  "retentionPolicy": {
+    "fullNodeTreeStored": false,
+    "storedNodeLimit": 45,
+    "storedEventLimit": 20,
+    "longTermKnowledge": "summary + app_ui_graph + assembly\/runtime reports"
+  },
+  "createdAt": 1779338078370
+}

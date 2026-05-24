@@ -1,0 +1,93 @@
+{
+  "schemaVersion": 1,
+  "kind": "atomic_skill",
+  "id": "patched.1779338532697.3.findentrybybottomtabsweep",
+  "name": "改写步骤 3: FindEntryByBottomTabSweep",
+  "appPackage": "com.sina.weibo",
+  "status": "DRY_RUN_PASSED",
+  "implements": "FindEntrySkill",
+  "params": [],
+  "preconditions": [],
+  "dependsOn": [],
+  "capabilityRequired": {
+    "minLevel": "C",
+    "inputRequired": false,
+    "nodeReadablePreferred": true,
+    "coordinateFallbackAllowed": true,
+    "allowedInputChannels": [],
+    "verificationRequired": "LOW"
+  },
+  "resolverPolicy": {
+    "order": [
+      "ACCESSIBILITY",
+      "APP_UI_GRAPH",
+      "COORDINATE_PACK",
+      "AI_PATCH"
+    ],
+    "allowAiSuggestionInFactory": true,
+    "allowAiInRuntime": true
+  },
+  "safety": {
+    "userConfirmedDangerousAction": true,
+    "allowedDangerousKeywords": [
+      "发布",
+      "发表",
+      "上传",
+      "授权",
+      "允许",
+      "同意",
+      "发帖",
+      "创作",
+      "publish",
+      "upload"
+    ],
+    "reason": "这是返回 App 首页后扫描发布\/发帖\/创作等入口，不是点击最终提交按钮"
+  },
+  "action": {
+    "type": "FindEntryByBottomTabSweep",
+    "appPackage": "com.sina.weibo",
+    "entryAliases": [
+      "写微博",
+      "发微博",
+      "发布",
+      "创作",
+      "+"
+    ],
+    "maxTabs": 5,
+    "homeBackPresses": 3,
+    "timeoutMs": 12000,
+    "allowDangerousAction": true,
+    "safetyReason": "这是返回 App 首页后扫描发布\/发帖\/创作等入口，不是点击最终提交按钮"
+  },
+  "verify": {
+    "type": "Always",
+    "timeoutMs": 1
+  },
+  "resultPolicy": {
+    "verified": "SUCCESS",
+    "partialVerified": "SUCCESS_MEDIUM_CONFIDENCE",
+    "coordinateOnly": "SUCCESS_LOW_CONFIDENCE",
+    "unverifiable": "FAILED_UNVERIFIABLE"
+  },
+  "factory": {
+    "source": "APP_SIDE_PLAN_PATCH_ASSEMBLER",
+    "instruction": "在微博搜索王老菊，停在综合结果页并记录用户、微博、视频分区。\n\n约束：目标 App=微博，包名=com.sina.weibo。必须由 MacroPilot 手机端自己用无障碍、输入法、AI\/Skill JSON 执行，不允许依赖 ADB 手点目标 App。执行前先读取当前 UI；如果遇到广告、弹窗、小字提示，先记录文字并安全关闭。任务完成必须用当前 UI 证据验证，不能只因为步骤执行完就报成功。如果没有现成 skill，先复用已有相似 Skill JSON\/archetype，只改关键槽位如入口文字、坐标、目标文本、验证规则，再组装 atomic\/macro skill。需要探索入口时优先遍历底部标签、顶部小图标、图形化入口、侧边操作和子页面。本任务 stopBeforeSubmit=true：写草稿、评论、订单、支付类流程必须停在提交前，不点击最终发布、发送、提交订单、支付、确认授权。期望证据包括：王老菊、搜索结果。",
+    "aiJobPath": null,
+    "traceIds": [],
+    "sampleCount": 0,
+    "dryRunStatus": "PASSED",
+    "testRuns": 0,
+    "successRate": 0,
+    "promotionStatus": "NOT_PROMOTED",
+    "createdAt": 1779338533885,
+    "sourceSkillId": "patched.1779296760824.3.findentrybybottomtabsweep",
+    "sourceSkillPath": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_candidates\/com.sina.weibo\/patched.1779296760824.3.findentrybybottomtabsweep.json",
+    "sourceOrigin": "LOCAL_JSON",
+    "templateMatchScore": 76,
+    "templateMatchReason": "same_app,same_action_type,same_capability,search_intent,publish_intent",
+    "patchReason": "reuse_existing_skill_json_and_rewrite_key_slots",
+    "lastDryRunReport": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_dry_run_reports\/com.sina.weibo\/patched.1779338532697.3.findentrybybottomtabsweep_1779338534296.json",
+    "lastDryRunAt": 1779338534297
+  },
+  "appVersion": "*"
+}

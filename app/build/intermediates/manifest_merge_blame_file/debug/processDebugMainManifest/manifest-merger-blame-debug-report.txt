@@ -1,0 +1,401 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.macropilot.app"
+4    android:versionCode="1"
+5    android:versionName="0.1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="26"
+9        android:targetSdkVersion="34" />
+10
+11    <uses-permission android:name="android.permission.QUERY_ALL_PACKAGES" />
+11-->D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:4:5-77
+11-->D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:4:22-74
+12    <uses-permission android:name="android.permission.INTERNET" />
+12-->D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:5:5-67
+12-->D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:5:22-64
+13    <uses-permission android:name="android.permission.WRITE_SECURE_SETTINGS" />
+13-->D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:6:5-80
+13-->D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:6:22-77
+14    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+14-->D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:7:5-77
+14-->D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:7:22-74
+15    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_DATA_SYNC" />
+15-->D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:8:5-87
+15-->D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:8:22-84
+16
+17    <queries>
+17-->D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:10:5-15:15
+18        <intent>
+18-->D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:11:9-14:18
+19            <action android:name="android.intent.action.MAIN" />
+19-->D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:12:13-65
+19-->D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:12:21-62
+20
+21            <category android:name="android.intent.category.LAUNCHER" />
+21-->D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:13:13-73
+21-->D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:13:23-70
+22        </intent>
+23    </queries>
+24
+25    <permission
+25-->[androidx.core:core:1.12.0] C:\Users\30834\.gradle\caches\8.9\transforms\1bdc206626008da73e301766f474e09e\transformed\core-1.12.0\AndroidManifest.xml:22:5-24:47
+26        android:name="com.macropilot.app.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+26-->[androidx.core:core:1.12.0] C:\Users\30834\.gradle\caches\8.9\transforms\1bdc206626008da73e301766f474e09e\transformed\core-1.12.0\AndroidManifest.xml:23:9-81
+27        android:protectionLevel="signature" />
+27-->[androidx.core:core:1.12.0] C:\Users\30834\.gradle\caches\8.9\transforms\1bdc206626008da73e301766f474e09e\transformed\core-1.12.0\AndroidManifest.xml:24:9-44
+28
+29    <uses-permission android:name="com.macropilot.app.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+29-->[androidx.core:core:1.12.0] C:\Users\30834\.gradle\caches\8.9\transforms\1bdc206626008da73e301766f474e09e\transformed\core-1.12.0\AndroidManifest.xml:26:5-97
+29-->[androidx.core:core:1.12.0] C:\Users\30834\.gradle\caches\8.9\transforms\1bdc206626008da73e301766f474e09e\transformed\core-1.12.0\AndroidManifest.xml:26:22-94
+30
+31    <application
+31-->D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:17:5-167:19
+32        android:allowBackup="true"
+32-->D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:18:9-35
+33        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+33-->[androidx.core:core:1.12.0] C:\Users\30834\.gradle\caches\8.9\transforms\1bdc206626008da73e301766f474e09e\transformed\core-1.12.0\AndroidManifest.xml:28:18-86
+34        android:debuggable="true"
+35        android:extractNativeLibs="false"
+36        android:label="@string/app_name"
+36-->D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:19:9-41
+37        android:supportsRtl="true"
+37-->D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:20:9-35
+38        android:theme="@style/AppTheme" >
+38-->D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:21:9-40
+39        <activity
+39-->D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:23:9-33:20
+40            android:name="com.macropilot.app.MainActivity"
+40-->D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:24:13-41
+41            android:excludeFromRecents="true"
+41-->D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:28:13-46
+42            android:exported="true"
+42-->D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:25:13-36
+43            android:showWhenLocked="true"
+43-->D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:26:13-42
+44            android:turnScreenOn="true" >
+44-->D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:27:13-40
+45            <intent-filter>
+45-->D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:29:13-32:29
+46                <action android:name="android.intent.action.MAIN" />
+46-->D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:12:13-65
+46-->D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:12:21-62
+47
+48                <category android:name="android.intent.category.LAUNCHER" />
+48-->D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:13:13-73
+48-->D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:13:23-70
+49            </intent-filter>
+50        </activity>
+51
+52        <receiver
+52-->D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:35:9-58:20
+53            android:name="com.macropilot.app.debug.DebugCommandReceiver"
+53-->D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:36:13-55
+54            android:exported="true" >
+54-->D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:37:13-36
+55            <intent-filter>
+55-->D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:38:13-57:29
+56                <action android:name="com.macropilot.app.DEBUG_SAVE_SAMPLE" />
+56-->D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:39:17-79
+56-->D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:39:25-76
+57                <action android:name="com.macropilot.app.DEBUG_SEED_BUILTINS" />
+57-->D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:40:17-81
+57-->D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:40:25-78
+58                <action android:name="com.macropilot.app.DEBUG_INVENTORY" />
+58-->D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:41:17-77
+58-->D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:41:25-74
+59                <action android:name="com.macropilot.app.DEBUG_DELETE_TRAINING_SAMPLES" />
+59-->D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:42:17-91
+59-->D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:42:25-88
+60                <action android:name="com.macropilot.app.DEBUG_DELETE_FACTORY_ARTIFACTS" />
+60-->D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:43:17-92
+60-->D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:43:25-89
+61                <action android:name="com.macropilot.app.DEBUG_COMPACT_FACTORY_ARTIFACTS" />
+61-->D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:44:17-93
+61-->D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:44:25-90
+62                <action android:name="com.macropilot.app.DEBUG_DELETE_RUN_LOGS" />
+62-->D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:45:17-83
+62-->D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:45:25-80
+63                <action android:name="com.macropilot.app.DEBUG_SELF_CHECK" />
+63-->D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:46:17-78
+63-->D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:46:25-75
+64                <action android:name="com.macropilot.app.DEBUG_EXPORT_PREVIEW" />
+64-->D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:47:17-82
+64-->D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:47:25-79
+65                <action android:name="com.macropilot.app.DEBUG_EXPORT_TRAINING_SAMPLES" />
+65-->D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:48:17-91
+65-->D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:48:25-88
+66                <action android:name="com.macropilot.app.DEBUG_DELETE_EXPORTS" />
+66-->D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:49:17-82
+66-->D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:49:25-79
+67                <action android:name="com.macropilot.app.DEBUG_DELETE_COORDINATE_CANDIDATES" />
+67-->D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:50:17-96
+67-->D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:50:25-93
+68                <action android:name="com.macropilot.app.DEBUG_SAVE_COORDINATE_CANDIDATE" />
+68-->D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:51:17-93
+68-->D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:51:25-90
+69                <action android:name="com.macropilot.app.DEBUG_RUN_SETTINGS_SEARCH" />
+69-->D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:52:17-87
+69-->D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:52:25-84
+70                <action android:name="com.macropilot.app.DEBUG_RUN_SETTINGS_TESTS" />
+70-->D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:53:17-86
+70-->D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:53:25-83
+71                <action android:name="com.macropilot.app.DEBUG_RUN_SETTINGS_RECOVERY_TEST" />
+71-->D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:54:17-94
+71-->D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:54:25-91
+72                <action android:name="com.macropilot.app.DEBUG_RUN_SETTINGS_SCROLL_TEST" />
+72-->D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:55:17-92
+72-->D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:55:25-89
+73                <action android:name="com.macropilot.app.DEBUG_RUN_SETTINGS_SELECT_TEST" />
+73-->D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:56:17-92
+73-->D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:56:25-89
+74            </intent-filter>
+75        </receiver>
+76        <receiver
+76-->D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:60:9-100:20
+77            android:name="com.macropilot.app.api.MacroPilotApiReceiver"
+77-->D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:61:13-54
+78            android:exported="true" >
+78-->D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:62:13-36
+79            <intent-filter>
+79-->D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:63:13-99:29
+80                <action android:name="com.macropilot.app.API_LIST_APPS" />
+80-->D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:64:17-75
+80-->D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:64:25-72
+81                <action android:name="com.macropilot.app.API_PROBE_APP_CAPABILITY" />
+81-->D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:65:17-86
+81-->D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:65:25-83
+82                <action android:name="com.macropilot.app.API_CREATE_WECHAT_CALIBRATION_REQUEST" />
+82-->D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:66:17-99
+82-->D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:66:25-96
+83                <action android:name="com.macropilot.app.API_SAVE_COORDINATE_POINT_CANDIDATE" />
+83-->D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:67:17-97
+83-->D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:67:25-94
+84                <action android:name="com.macropilot.app.API_CREATE_WECHAT_TYPE_CANDIDATE" />
+84-->D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:68:17-94
+84-->D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:68:25-91
+85                <action android:name="com.macropilot.app.API_LIST_APPROVED_SKILLS" />
+85-->D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:69:17-86
+85-->D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:69:25-83
+86                <action android:name="com.macropilot.app.API_LIST_CANDIDATES" />
+86-->D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:70:17-81
+86-->D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:70:25-78
+87                <action android:name="com.macropilot.app.API_CREATE_CANDIDATE_REQUEST" />
+87-->D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:71:17-90
+87-->D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:71:25-87
+88                <action android:name="com.macropilot.app.API_GENERATE_SKILL_DRAFT" />
+88-->D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:72:17-86
+88-->D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:72:25-83
+89                <action android:name="com.macropilot.app.API_LIST_SKILL_DRAFTS" />
+89-->D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:73:17-83
+89-->D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:73:25-80
+90                <action android:name="com.macropilot.app.API_DRY_RUN_SKILL_DRAFT" />
+90-->D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:74:17-85
+90-->D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:74:25-82
+91                <action android:name="com.macropilot.app.API_TEST_SKILL_DRAFT" />
+91-->D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:75:17-82
+91-->D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:75:25-79
+92                <action android:name="com.macropilot.app.API_PROMOTE_SKILL_DRAFT" />
+92-->D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:76:17-85
+92-->D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:76:25-82
+93                <action android:name="com.macropilot.app.API_FACTORY_AI_INSTRUCTION" />
+93-->D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:77:17-88
+93-->D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:77:25-85
+94                <action android:name="com.macropilot.app.API_RUN_APP_SIDE_INSTRUCTION" />
+94-->D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:78:17-90
+94-->D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:78:25-87
+95                <action android:name="com.macropilot.app.API_GENERATE_WECHAT_SKILL_JSON" />
+95-->D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:79:17-92
+95-->D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:79:25-89
+96                <action android:name="com.macropilot.app.API_LIST_SKILL_JSON" />
+96-->D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:80:17-81
+96-->D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:80:25-78
+97                <action android:name="com.macropilot.app.API_DRY_RUN_SKILL_JSON" />
+97-->D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:81:17-84
+97-->D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:81:25-81
+98                <action android:name="com.macropilot.app.API_TEST_SKILL_JSON" />
+98-->D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:82:17-81
+98-->D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:82:25-78
+99                <action android:name="com.macropilot.app.API_PROMOTE_SKILL_JSON" />
+99-->D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:83:17-84
+99-->D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:83:25-81
+100                <action android:name="com.macropilot.app.API_LIST_APPROVED_SKILL_JSON" />
+100-->D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:84:17-90
+100-->D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:84:25-87
+101                <action android:name="com.macropilot.app.API_EXPORT_APP_CONFIG_JSON" />
+101-->D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:85:17-88
+101-->D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:85:25-85
+102                <action android:name="com.macropilot.app.API_FACTORY_DASHBOARD" />
+102-->D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:86:17-83
+102-->D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:86:25-80
+103                <action android:name="com.macropilot.app.API_FACTORY_SELF_TEST" />
+103-->D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:87:17-83
+103-->D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:87:25-80
+104                <action android:name="com.macropilot.app.API_GENERATE_THIRD_PARTY_APP_SKILL_SUBSETS" />
+104-->D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:88:17-104
+104-->D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:88:25-101
+105                <action android:name="com.macropilot.app.API_PROBE_APP_UI_GRAPH" />
+105-->D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:89:17-84
+105-->D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:89:25-81
+106                <action android:name="com.macropilot.app.API_RUN_THIRD_PARTY_APP_BATCH" />
+106-->D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:90:17-91
+106-->D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:90:25-88
+107                <action android:name="com.macropilot.app.API_CANCEL_THIRD_PARTY_APP_BATCH" />
+107-->D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:91:17-94
+107-->D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:91:25-91
+108                <action android:name="com.macropilot.app.API_LIST_POPULAR_APP_TASK_CATALOG" />
+108-->D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:92:17-95
+108-->D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:92:25-92
+109                <action android:name="com.macropilot.app.API_RUN_POPULAR_APP_TASK_BATCH" />
+109-->D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:93:17-92
+109-->D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:93:25-89
+110                <action android:name="com.macropilot.app.API_CANCEL_POPULAR_APP_TASK_BATCH" />
+110-->D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:94:17-95
+110-->D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:94:25-92
+111                <action android:name="com.macropilot.app.API_DELETE_APPROVED_SKILL" />
+111-->D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:95:17-87
+111-->D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:95:25-84
+112                <action android:name="com.macropilot.app.API_DELETE_CANDIDATE" />
+112-->D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:96:17-82
+112-->D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:96:25-79
+113                <action android:name="com.macropilot.app.API_RUN_SKILL" />
+113-->D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:97:17-75
+113-->D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:97:25-72
+114                <action android:name="com.macropilot.app.API_GET_STATUS" />
+114-->D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:98:17-76
+114-->D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:98:25-73
+115            </intent-filter>
+116        </receiver>
+117        <receiver
+117-->D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:102:9-120:20
+118            android:name="com.macropilot.app.ai.AiAssistApiReceiver"
+118-->D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:103:13-51
+119            android:exported="true" >
+119-->D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:104:13-36
+120            <intent-filter>
+120-->D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:105:13-119:29
+121                <action android:name="com.macropilot.app.AI_GET_CONFIG" />
+121-->D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:106:17-75
+121-->D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:106:25-72
+122                <action android:name="com.macropilot.app.AI_SAVE_CONFIG" />
+122-->D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:107:17-76
+122-->D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:107:25-73
+123                <action android:name="com.macropilot.app.AI_DISABLE" />
+123-->D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:108:17-72
+123-->D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:108:25-69
+124                <action android:name="com.macropilot.app.AI_REQUEST" />
+124-->D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:109:17-72
+124-->D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:109:25-69
+125                <action android:name="com.macropilot.app.AI_SUGGEST_UI_PATCH" />
+125-->D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:110:17-81
+125-->D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:110:25-78
+126                <action android:name="com.macropilot.app.AI_IMPORT_PATCH_CANDIDATE" />
+126-->D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:111:17-87
+126-->D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:111:25-84
+127                <action android:name="com.macropilot.app.AI_REVIEW_PATCH" />
+127-->D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:112:17-77
+127-->D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:112:25-74
+128                <action android:name="com.macropilot.app.AI_APPLY_PATCH" />
+128-->D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:113:17-76
+128-->D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:113:25-73
+129                <action android:name="com.macropilot.app.AI_DRY_RUN_CANDIDATE_MODULE" />
+129-->D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:114:17-89
+129-->D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:114:25-86
+130                <action android:name="com.macropilot.app.AI_LIST_CANDIDATE_MODULES" />
+130-->D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:115:17-87
+130-->D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:115:25-84
+131                <action android:name="com.macropilot.app.AI_TEST_POLICY" />
+131-->D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:116:17-76
+131-->D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:116:25-73
+132                <action android:name="com.macropilot.app.AI_LIST_LOGS" />
+132-->D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:117:17-74
+132-->D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:117:25-71
+133                <action android:name="com.macropilot.app.AI_DELETE_LOGS" />
+133-->D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:118:17-76
+133-->D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:118:25-73
+134            </intent-filter>
+135        </receiver>
+136
+137        <service
+137-->D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:122:9-125:56
+138            android:name="com.macropilot.app.factory.AppSideInstructionService"
+138-->D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:123:13-62
+139            android:exported="false"
+139-->D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:124:13-37
+140            android:foregroundServiceType="dataSync" />
+140-->D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:125:13-53
+141        <service
+141-->D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:127:9-130:56
+142            android:name="com.macropilot.app.factory.ThirdPartyAppBatchService"
+142-->D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:128:13-62
+143            android:exported="false"
+143-->D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:129:13-37
+144            android:foregroundServiceType="dataSync" />
+144-->D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:130:13-53
+145        <service
+145-->D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:132:9-135:56
+146            android:name="com.macropilot.app.factory.PopularAppTaskBatchService"
+146-->D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:133:13-63
+147            android:exported="false"
+147-->D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:134:13-37
+148            android:foregroundServiceType="dataSync" />
+148-->D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:135:13-53
+149        <service
+149-->D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:137:9-140:56
+150            android:name="com.macropilot.app.factory.AppUiProbeService"
+150-->D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:138:13-54
+151            android:exported="false"
+151-->D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:139:13-37
+152            android:foregroundServiceType="dataSync" />
+152-->D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:140:13-53
+153        <service
+153-->D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:142:9-153:19
+154            android:name="com.macropilot.app.automation.MacroPilotAccessibilityService"
+154-->D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:143:13-70
+155            android:exported="true"
+155-->D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:144:13-36
+156            android:label="@string/accessibility_service_label"
+156-->D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:145:13-64
+157            android:permission="android.permission.BIND_ACCESSIBILITY_SERVICE" >
+157-->D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:146:13-79
+158            <intent-filter>
+158-->D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:147:13-149:29
+159                <action android:name="android.accessibilityservice.AccessibilityService" />
+159-->D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:148:17-92
+159-->D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:148:25-89
+160            </intent-filter>
+161
+162            <meta-data
+162-->D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:150:13-152:72
+163                android:name="android.accessibilityservice"
+163-->D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:151:17-60
+164                android:resource="@xml/accessibility_service_config" />
+164-->D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:152:17-69
+165        </service>
+166        <service
+166-->D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:155:9-166:19
+167            android:name="com.macropilot.app.automation.MacroPilotImeService"
+167-->D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:156:13-60
+168            android:exported="true"
+168-->D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:157:13-36
+169            android:label="@string/ime_service_label"
+169-->D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:158:13-54
+170            android:permission="android.permission.BIND_INPUT_METHOD" >
+170-->D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:159:13-70
+171            <intent-filter>
+171-->D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:160:13-162:29
+172                <action android:name="android.view.InputMethod" />
+172-->D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:161:17-67
+172-->D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:161:25-64
+173            </intent-filter>
+174
+175            <meta-data
+175-->D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:163:13-165:56
+176                android:name="android.view.im"
+176-->D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:164:17-47
+177                android:resource="@xml/input_method" />
+177-->D:\controlphone\MacroPilot\app\src\main\AndroidManifest.xml:165:17-53
+178        </service>
+179    </application>
+180
+181</manifest>

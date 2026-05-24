@@ -1,0 +1,222 @@
+﻿[
+    {
+        "app":  "哔哩哔哩",
+        "status":  "PENDING_INPUT_FLOW_SINGLE_TASK",
+        "message":  "已登记为单任务执行：popular_app_deferred_bili_search_open_first_video_retry_1779354837204.json",
+        "flowReportFile":  "/data/user/0/com.macropilot.app/files/macro_v2/factory/flow_reports/tv.danmaku.bili/popular_app_deferred_bili_search_open_first_video_retry_1779354837204.json",
+        "graphFile":  null,
+        "screenCount":  null,
+        "edgeCount":  null,
+        "beforeSnapshot":  null,
+        "afterSnapshot":  null
+    },
+    {
+        "app":  "小红书",
+        "status":  "PENDING_INPUT_FLOW_SINGLE_TASK",
+        "message":  "已登记为单任务执行：popular_app_deferred_xhs_search_keyword_retry_1779354837215.json",
+        "flowReportFile":  "/data/user/0/com.macropilot.app/files/macro_v2/factory/flow_reports/com.xingin.xhs/popular_app_deferred_xhs_search_keyword_retry_1779354837215.json",
+        "graphFile":  null,
+        "screenCount":  null,
+        "edgeCount":  null,
+        "beforeSnapshot":  null,
+        "afterSnapshot":  null
+    },
+    {
+        "app":  "抖音",
+        "status":  "PENDING_INPUT_FLOW_SINGLE_TASK",
+        "message":  "已登记为单任务执行：popular_app_deferred_douyin_search_keyword_retry_1779354837224.json",
+        "flowReportFile":  "/data/user/0/com.macropilot.app/files/macro_v2/factory/flow_reports/com.ss.android.ugc.aweme/popular_app_deferred_douyin_search_keyword_retry_1779354837224.json",
+        "graphFile":  null,
+        "screenCount":  null,
+        "edgeCount":  null,
+        "beforeSnapshot":  null,
+        "afterSnapshot":  null
+    },
+    {
+        "app":  "虎扑",
+        "status":  "SUCCESS_UI_GRAPH_EXPLORED",
+        "message":  "UI 图谱读取完成：screens=9 edges=20 report=popular_app_ui_task_hupu_close_ads_home_1779354958758.json",
+        "flowReportFile":  "/data/user/0/com.macropilot.app/files/macro_v2/factory/flow_reports/com.hupu.games/popular_app_ui_task_hupu_close_ads_home_1779354958758.json",
+        "graphFile":  "/data/user/0/com.macropilot.app/files/macro_v2/factory/app_ui_graphs/com.hupu.games/graph_candidate.json",
+        "screenCount":  9,
+        "edgeCount":  20,
+        "beforeSnapshot":  null,
+        "afterSnapshot":  null
+    },
+    {
+        "app":  "微博",
+        "status":  "PENDING_INPUT_FLOW_SINGLE_TASK",
+        "message":  "已登记为单任务执行：popular_app_deferred_weibo_search_hot_retry_1779354962302.json",
+        "flowReportFile":  "/data/user/0/com.macropilot.app/files/macro_v2/factory/flow_reports/com.sina.weibo/popular_app_deferred_weibo_search_hot_retry_1779354962302.json",
+        "graphFile":  null,
+        "screenCount":  null,
+        "edgeCount":  null,
+        "beforeSnapshot":  null,
+        "afterSnapshot":  null
+    },
+    {
+        "app":  "QQ",
+        "status":  "SUCCESS_UI_GRAPH_EXPLORED",
+        "message":  "UI 图谱读取完成：screens=10 edges=28 report=popular_app_ui_task_qq_login_state_1779355084169.json",
+        "flowReportFile":  "/data/user/0/com.macropilot.app/files/macro_v2/factory/flow_reports/com.tencent.mobileqq/popular_app_ui_task_qq_login_state_1779355084169.json",
+        "graphFile":  "/data/user/0/com.macropilot.app/files/macro_v2/factory/app_ui_graphs/com.tencent.mobileqq/graph_candidate.json",
+        "screenCount":  10,
+        "edgeCount":  28,
+        "beforeSnapshot":  null,
+        "afterSnapshot":  null
+    },
+    {
+        "app":  "微信",
+        "status":  "SUCCESS_UI_GRAPH_EXPLORED",
+        "message":  "UI 图谱读取完成：screens=5 edges=4 report=popular_app_ui_task_wechat_bottom_tabs_snapshot_1779355154828.json",
+        "flowReportFile":  "/data/user/0/com.macropilot.app/files/macro_v2/factory/flow_reports/com.tencent.mm/popular_app_ui_task_wechat_bottom_tabs_snapshot_1779355154828.json",
+        "graphFile":  "/data/user/0/com.macropilot.app/files/macro_v2/factory/app_ui_graphs/com.tencent.mm/graph_candidate.json",
+        "screenCount":  5,
+        "edgeCount":  4,
+        "beforeSnapshot":  null,
+        "afterSnapshot":  null
+    },
+    {
+        "app":  "美团",
+        "status":  "PENDING_INPUT_FLOW_SINGLE_TASK",
+        "message":  "已登记为单任务执行：popular_app_deferred_meituan_search_food_retry_1779355154849.json",
+        "flowReportFile":  "/data/user/0/com.macropilot.app/files/macro_v2/factory/flow_reports/com.sankuai.meituan/popular_app_deferred_meituan_search_food_retry_1779355154849.json",
+        "graphFile":  null,
+        "screenCount":  null,
+        "edgeCount":  null,
+        "beforeSnapshot":  null,
+        "afterSnapshot":  null
+    },
+    {
+        "app":  "大众点评",
+        "status":  "PENDING_INPUT_FLOW_SINGLE_TASK",
+        "message":  "已登记为单任务执行：popular_app_deferred_dianping_search_restaurant_retry_1779355154855.json",
+        "flowReportFile":  "/data/user/0/com.macropilot.app/files/macro_v2/factory/flow_reports/com.dianping.v1/popular_app_deferred_dianping_search_restaurant_retry_1779355154855.json",
+        "graphFile":  null,
+        "screenCount":  null,
+        "edgeCount":  null,
+        "beforeSnapshot":  null,
+        "afterSnapshot":  null
+    },
+    {
+        "app":  "淘宝",
+        "status":  "PENDING_INPUT_FLOW_SINGLE_TASK",
+        "message":  "已登记为单任务执行：popular_app_deferred_taobao_search_item_retry_1779355154862.json",
+        "flowReportFile":  "/data/user/0/com.macropilot.app/files/macro_v2/factory/flow_reports/com.taobao.taobao/popular_app_deferred_taobao_search_item_retry_1779355154862.json",
+        "graphFile":  null,
+        "screenCount":  null,
+        "edgeCount":  null,
+        "beforeSnapshot":  null,
+        "afterSnapshot":  null
+    },
+    {
+        "app":  "京东",
+        "status":  "PENDING_INPUT_FLOW_SINGLE_TASK",
+        "message":  "已登记为单任务执行：popular_app_deferred_jd_search_item_retry_1779355154869.json",
+        "flowReportFile":  "/data/user/0/com.macropilot.app/files/macro_v2/factory/flow_reports/com.jingdong.app.mall/popular_app_deferred_jd_search_item_retry_1779355154869.json",
+        "graphFile":  null,
+        "screenCount":  null,
+        "edgeCount":  null,
+        "beforeSnapshot":  null,
+        "afterSnapshot":  null
+    },
+    {
+        "app":  "拼多多",
+        "status":  "PENDING_INPUT_FLOW_SINGLE_TASK",
+        "message":  "已登记为单任务执行：popular_app_deferred_pdd_search_item_retry_1779355154877.json",
+        "flowReportFile":  "/data/user/0/com.macropilot.app/files/macro_v2/factory/flow_reports/com.xunmeng.pinduoduo/popular_app_deferred_pdd_search_item_retry_1779355154877.json",
+        "graphFile":  null,
+        "screenCount":  null,
+        "edgeCount":  null,
+        "beforeSnapshot":  null,
+        "afterSnapshot":  null
+    },
+    {
+        "app":  "知乎",
+        "status":  "PENDING_INPUT_FLOW_SINGLE_TASK",
+        "message":  "已登记为单任务执行：popular_app_deferred_zhihu_search_question_retry_1779355154885.json",
+        "flowReportFile":  "/data/user/0/com.macropilot.app/files/macro_v2/factory/flow_reports/com.zhihu.android/popular_app_deferred_zhihu_search_question_retry_1779355154885.json",
+        "graphFile":  null,
+        "screenCount":  null,
+        "edgeCount":  null,
+        "beforeSnapshot":  null,
+        "afterSnapshot":  null
+    },
+    {
+        "app":  "网易云音乐",
+        "status":  "PENDING_INPUT_FLOW_SINGLE_TASK",
+        "message":  "已登记为单任务执行：popular_app_deferred_music_search_song_retry_1779355154919.json",
+        "flowReportFile":  "/data/user/0/com.macropilot.app/files/macro_v2/factory/flow_reports/com.netease.cloudmusic/popular_app_deferred_music_search_song_retry_1779355154919.json",
+        "graphFile":  null,
+        "screenCount":  null,
+        "edgeCount":  null,
+        "beforeSnapshot":  null,
+        "afterSnapshot":  null
+    },
+    {
+        "app":  "百度地图",
+        "status":  "PENDING_INPUT_FLOW_SINGLE_TASK",
+        "message":  "已登记为单任务执行：popular_app_deferred_baidumap_search_place_retry_1779355154927.json",
+        "flowReportFile":  "/data/user/0/com.macropilot.app/files/macro_v2/factory/flow_reports/com.baidu.baidumap/popular_app_deferred_baidumap_search_place_retry_1779355154927.json",
+        "graphFile":  null,
+        "screenCount":  null,
+        "edgeCount":  null,
+        "beforeSnapshot":  null,
+        "afterSnapshot":  null
+    },
+    {
+        "app":  "高德地图",
+        "status":  "BLOCKED_APP_NOT_INSTALLED",
+        "message":  "目标 App 未安装或包名未匹配。",
+        "flowReportFile":  null,
+        "graphFile":  null,
+        "screenCount":  null,
+        "edgeCount":  null,
+        "beforeSnapshot":  null,
+        "afterSnapshot":  null
+    },
+    {
+        "app":  "支付宝",
+        "status":  "BLOCKED_HIGH_RISK_GUARD_ONLY",
+        "message":  "高风险任务已按安全策略停止：popular_app_guard_alipay_home_icons_1779355154933.json",
+        "flowReportFile":  "/data/user/0/com.macropilot.app/files/macro_v2/factory/flow_reports/com.eg.android.alipaygphone/popular_app_guard_alipay_home_icons_1779355154933.json",
+        "graphFile":  null,
+        "screenCount":  null,
+        "edgeCount":  null,
+        "beforeSnapshot":  null,
+        "afterSnapshot":  null
+    },
+    {
+        "app":  "云闪付",
+        "status":  "BLOCKED_HIGH_RISK_GUARD_ONLY",
+        "message":  "高风险任务已按安全策略停止：popular_app_guard_unionpay_home_icons_1779355154940.json",
+        "flowReportFile":  "/data/user/0/com.macropilot.app/files/macro_v2/factory/flow_reports/com.unionpay/popular_app_guard_unionpay_home_icons_1779355154940.json",
+        "graphFile":  null,
+        "screenCount":  null,
+        "edgeCount":  null,
+        "beforeSnapshot":  null,
+        "afterSnapshot":  null
+    },
+    {
+        "app":  "同花顺",
+        "status":  "BLOCKED_HIGH_RISK_GUARD_ONLY",
+        "message":  "高风险任务已按安全策略停止：popular_app_guard_hexin_search_stock_1779355154945.json",
+        "flowReportFile":  "/data/user/0/com.macropilot.app/files/macro_v2/factory/flow_reports/com.hexin.plat.android/popular_app_guard_hexin_search_stock_1779355154945.json",
+        "graphFile":  null,
+        "screenCount":  null,
+        "edgeCount":  null,
+        "beforeSnapshot":  null,
+        "afterSnapshot":  null
+    },
+    {
+        "app":  "钉钉",
+        "status":  "SUCCESS_UI_GRAPH_EXPLORED",
+        "message":  "UI 图谱读取完成：screens=14 edges=32 report=popular_app_ui_task_dingtalk_login_state_1779355275840.json",
+        "flowReportFile":  "/data/user/0/com.macropilot.app/files/macro_v2/factory/flow_reports/com.alibaba.android.rimet/popular_app_ui_task_dingtalk_login_state_1779355275840.json",
+        "graphFile":  "/data/user/0/com.macropilot.app/files/macro_v2/factory/app_ui_graphs/com.alibaba.android.rimet/graph_candidate.json",
+        "screenCount":  14,
+        "edgeCount":  32,
+        "beforeSnapshot":  null,
+        "afterSnapshot":  null
+    }
+]

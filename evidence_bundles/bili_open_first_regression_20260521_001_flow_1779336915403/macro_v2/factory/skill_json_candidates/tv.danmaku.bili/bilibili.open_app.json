@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 1,
+  "kind": "atomic_skill",
+  "id": "bilibili.open_app",
+  "name": "打开哔哩哔哩",
+  "appPackage": "tv.danmaku.bili",
+  "appVersion": "*",
+  "status": "DRY_RUN_PASSED",
+  "domain": "video_search",
+  "implements": "OpenAppSkill",
+  "params": [],
+  "preconditions": [],
+  "dependsOn": [],
+  "resolverPolicy": {
+    "order": [
+      "ACCESSIBILITY",
+      "COORDINATE_PACK"
+    ],
+    "allowAiSuggestionInFactory": true,
+    "allowAiInRuntime": false
+  },
+  "safety": {
+    "forbiddenTexts": [
+      "支付",
+      "付款",
+      "转账",
+      "删除",
+      "发布",
+      "授权"
+    ]
+  },
+  "factory": {
+    "source": "RULE_GENERALIZER_V0",
+    "traceIds": [],
+    "sampleCount": 0,
+    "dryRunStatus": "PASSED",
+    "testRuns": 0,
+    "successRate": 0,
+    "promotionStatus": "NOT_PROMOTED",
+    "createdAt": 1779298378183,
+    "lastDryRunReport": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_dry_run_reports\/tv.danmaku.bili\/bilibili.open_app_1779298586420.json",
+    "lastDryRunAt": 1779298586421
+  },
+  "capabilityRequired": {
+    "minLevel": "C",
+    "inputRequired": false,
+    "nodeReadablePreferred": true,
+    "coordinateFallbackAllowed": false,
+    "allowedInputChannels": [],
+    "verificationRequired": "LOW"
+  },
+  "action": {
+    "type": "OpenApp",
+    "packageName": "tv.danmaku.bili",
+    "launcherRoot": true,
+    "timeoutMs": 3000
+  },
+  "verify": {
+    "type": "ForegroundPackage",
+    "packageName": "tv.danmaku.bili",
+    "timeoutMs": 3000
+  },
+  "resultPolicy": {
+    "verified": "SUCCESS",
+    "timeout": "FAILED_TIMEOUT"
+  }
+}

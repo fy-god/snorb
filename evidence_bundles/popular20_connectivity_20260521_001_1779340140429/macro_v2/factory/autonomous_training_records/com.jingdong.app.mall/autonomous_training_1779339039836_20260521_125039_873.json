@@ -1,0 +1,3880 @@
+{
+  "schemaVersion": 1,
+  "kind": "autonomous_training_record",
+  "id": "autonomous_training_1779339039836",
+  "appPackage": "com.jingdong.app.mall",
+  "flowReportFile": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/flow_reports\/com.jingdong.app.mall\/ai_direct_flow_1779339039803.json",
+  "input": {
+    "instruction": "在京东搜索耳机，停在商品结果页并记录筛选、店铺、价格入口。\n\n约束：目标 App=京东，包名=com.jingdong.app.mall。必须由 MacroPilot 手机端自己用无障碍、输入法、AI\/Skill JSON 执行，不允许依赖 ADB 手点目标 App。执行前先读取当前 UI；如果遇到广告、弹窗、小字提示，先记录文字并安全关闭。任务完成必须用当前 UI 证据验证，不能只因为步骤执行完就报成功。如果没有现成 skill，先复用已有相似 Skill JSON\/archetype，只改关键槽位如入口文字、坐标、目标文本、验证规则，再组装 atomic\/macro skill。需要探索入口时优先遍历底部标签、顶部小图标、图形化入口、侧边操作和子页面。本任务 stopBeforeSubmit=true：写草稿、评论、订单、支付类流程必须停在提交前，不点击最终发布、发送、提交订单、支付、确认授权。期望证据包括：耳机、商品。",
+    "appPackage": "com.jingdong.app.mall",
+    "query": "耳机，停在商品结果页并记录筛选、店铺、价格入口。\n\n约束：目标 App=京东，包名=com.jingdong.app.mall。必须由 MacroPilot 手机端自己用无障碍、输入法、AI\/Skill JSON 执行，不允许依赖 ADB 手点目标 App。执行前先读取当前 UI；如果遇到广告、弹窗、小字提示，先记录文字并安全关闭。任务完成必须用当前 UI 证据验证，不能只因为步骤执行完就报成功。如果没有现成 skill，先复用已有相似 Skill JSON\/archetype，只改关键槽位如入口文字、坐标、目标文本、验证规则，再组装 atomic\/macro skill。需要探索入口时优先遍历底部标签、顶部小图标、图形化入口、侧边操作和子页面。本任务 stopBeforeSubmit=true：写草稿、评论、订单、支付类流程必须停在提交前，不点击最终发布、发送、提交订单、支付、确认授权。期望证据包括：耳机、商品。",
+    "appUiGraphFile": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/app_ui_graphs\/com.jingdong.app.mall\/graph_candidate.json",
+    "recentUiSnapshots": [
+      {
+        "id": "ui_snapshot_1779339039756",
+        "source": "current_ui_summary",
+        "note": "factory_ai_context",
+        "appPackage": "com.jingdong.app.mall",
+        "windowClassName": "com.jd.lib.productdetail.ProductDetailActivity",
+        "screenKey": "17373f87",
+        "screenshotPath": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_screenshots\/com.jingdong.app.mall\/20260521_125039_209_17373f87.png",
+        "visualHash": "fe83b13b3702d1d00e9d6e748f6209bc3ff037c81b3d9b998189dbe41b33b49b",
+        "summary": {
+          "nodeCount": 270,
+          "clickableCount": 29,
+          "editableCount": 0,
+          "scrollableCount": 4,
+          "labels": [
+            "android:id\/content",
+            "com.jd.lib.productdetail.feature:id\/a1_",
+            "com.jd.lib.productdetail.feature:id\/ma",
+            "com.jd.lib.productdetail.feature:id\/aks",
+            "com.jd.lib.productdetail.feature:id\/b8w",
+            "com.jd.lib.productdetail.feature:id\/akr",
+            "com.jd.lib.productdetail.feature:id\/bji",
+            "com.jd.lib.productdetail.feature:id\/a1d",
+            "com.jd.lib.productdetail.feature:id\/and",
+            "com.jd.lib.productdetail.feature:id\/a5d",
+            "com.jd.lib.productdetail.feature:id\/cu",
+            "com.jingdong.app.mall:id\/d32",
+            "com.jingdong.app.mall:id\/d0y",
+            "商品图片1 com.jingdong.app.mall:id\/d9w",
+            "com.jingdong.app.mall:id\/d9x",
+            "com.jingdong.app.mall:id\/cbi",
+            "商品图片2 com.jingdong.app.mall:id\/d9w",
+            "com.jingdong.app.mall:id\/d9x",
+            "com.jingdong.app.mall:id\/cbi",
+            "com.jingdong.app.mall:id\/d0w",
+            "com.jingdong.app.mall:id\/cwq",
+            "com.jingdong.app.mall:id\/d0p",
+            "com.jingdong.app.mall:id\/d9t",
+            "1 com.jingdong.app.mall:id\/d9s",
+            "2 com.jingdong.app.mall:id\/d9u",
+            "com.jingdong.app.mall:id\/d9r",
+            "com.jd.lib.productdetail.feature:id\/avr",
+            "com.jd.lib.productdetail.feature:id\/avn",
+            "5.9折到手价 com.jd.lib.productdetail.feature:id\/avo",
+            "com.jd.lib.productdetail.feature:id\/avp",
+            "com.jd.lib.productdetail.feature:id\/avq",
+            "已售200+ com.jd.lib.productdetail.feature:id\/avv",
+            "com.jd.lib.productdetail.feature:id\/avu",
+            "¥5.9",
+            "零售价 com.jd.lib.productdetail.feature:id\/avs",
+            "¥10 com.jd.lib.productdetail.feature:id\/avt",
+            "团购优惠 com.jd.lib.productdetail.feature:id\/avs",
+            "¥4.1 com.jd.lib.productdetail.feature:id\/avt",
+            "com.jd.lib.productdetail.feature:id\/a8k",
+            "com.jd.lib.productdetail.feature:id\/a8j",
+            "com.jd.lib.productdetail.feature:id\/a8u",
+            "com.jd.lib.productdetail.feature:id\/a8r",
+            "com.jd.lib.productdetail.feature:id\/a8n",
+            "2元百亿补贴 com.jd.lib.productdetail.feature:id\/a8s",
+            "com.jd.lib.productdetail.feature:id\/a8p",
+            "凑单 com.jd.lib.productdetail.feature:id\/a8q",
+            "com.jd.lib.productdetail.feature:id\/a8m",
+            "com.jd.lib.productdetail.feature:id\/a8t",
+            "com.jd.lib.productdetail.feature:id\/a8l",
+            "com.jd.lib.productdetail.feature:id\/blq",
+            "com.jd.lib.productdetail.feature:id\/blp",
+            "com.jd.lib.productdetail.feature:id\/blr",
+            "com.jd.lib.productdetail.feature:id\/blo",
+            "【套餐搭配】人气小食任选1 【套餐搭配】人气小食任选1 com.jd.lib.productdetail.feature:id\/c9",
+            "服务",
+            "先囤后用",
+            "随时退",
+            "过期自动退",
+            "须知 com.jd.lib.productdetail.feature:id\/ai7",
+            "com.jd.lib.productdetail.feature:id\/ai6",
+            "购买后当日起7日内可用",
+            "商家营业时间内均可用",
+            "到店使用",
+            "周一至周日可用",
+            "com.jd.lib.productdetail.feature:id\/ai4",
+            "到店",
+            "2.7km",
+            "塔斯汀·中国汉堡(井大路店)",
+            "11473家通用",
+            "提示",
+            "附近无可兑换门店，可浏览其他门店",
+            "com.jingdong.app.mall:id\/b12",
+            "商品详情 com.jd.lib.productdetail.feature:id\/aud",
+            "com.jd.lib.productdetail.feature:id\/aub",
+            "com.jd.lib.productdetail.feature:id\/au_",
+            "自选搭配7选1 不可重复选 com.jd.lib.productdetail.feature:id\/aud",
+            "com.jd.lib.productdetail.feature:id\/aub",
+            "盐酥鸡米花 com.jd.lib.productdetail.feature:id\/aud",
+            "com.jd.lib.productdetail.feature:id\/au9",
+            "1个 com.jd.lib.productdetail.feature:id\/awu"
+          ],
+          "bottomCandidates": [
+            {
+              "label": "须知 com.jd.lib.productdetail.feature:id\/ai7",
+              "bounds": {
+                "left": 64,
+                "top": 2214,
+                "right": 168,
+                "bottom": 2275
+              },
+              "clickable": false
+            },
+            {
+              "label": "到店",
+              "bounds": {
+                "left": 64,
+                "top": 2331,
+                "right": 168,
+                "bottom": 2392
+              },
+              "clickable": false
+            },
+            {
+              "label": "提示",
+              "bounds": {
+                "left": 64,
+                "top": 2424,
+                "right": 168,
+                "bottom": 2485
+              },
+              "clickable": false
+            },
+            {
+              "label": "粗薯 com.jd.lib.productdetail.feature:id\/aud",
+              "bounds": {
+                "left": 112,
+                "top": 3120,
+                "right": 224,
+                "bottom": 2863
+              },
+              "clickable": false
+            },
+            {
+              "label": "购物车 com.jd.lib.productdetail.feature:id\/mt",
+              "bounds": {
+                "left": 114,
+                "top": 2864,
+                "right": 234,
+                "bottom": 3064
+              },
+              "clickable": true
+            },
+            {
+              "label": "购物车 com.jd.lib.productdetail.feature:id\/bgj",
+              "bounds": {
+                "left": 114,
+                "top": 2985,
+                "right": 234,
+                "bottom": 3039
+              },
+              "clickable": false
+            },
+            {
+              "label": "商品详情 com.jd.lib.productdetail.feature:id\/aud",
+              "bounds": {
+                "left": 64,
+                "top": 2589,
+                "right": 320,
+                "bottom": 2664
+              },
+              "clickable": false
+            },
+            {
+              "label": "购买后当日起7日内可用",
+              "bounds": {
+                "left": 200,
+                "top": 2214,
+                "right": 200,
+                "bottom": 2214
+              },
+              "clickable": false
+            },
+            {
+              "label": "商家营业时间内均可用",
+              "bounds": {
+                "left": 200,
+                "top": 2214,
+                "right": 200,
+                "bottom": 2214
+              },
+              "clickable": false
+            },
+            {
+              "label": "塔塔鸡块 com.jd.lib.productdetail.feature:id\/aud",
+              "bounds": {
+                "left": 112,
+                "top": 3218,
+                "right": 336,
+                "bottom": 2863
+              },
+              "clickable": false
+            },
+            {
+              "label": "香辣鸡翅 com.jd.lib.productdetail.feature:id\/aud",
+              "bounds": {
+                "left": 112,
+                "top": 3316,
+                "right": 336,
+                "bottom": 2863
+              },
+              "clickable": false
+            },
+            {
+              "label": "盐酥鸡米花 com.jd.lib.productdetail.feature:id\/aud",
+              "bounds": {
+                "left": 112,
+                "top": 2826,
+                "right": 392,
+                "bottom": 2863
+              },
+              "clickable": false
+            }
+          ]
+        },
+        "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_snapshots\/com.jingdong.app.mall\/20260521_125039_209_17373f87.json"
+      },
+      {
+        "id": "ui_snapshot_1779339037186",
+        "source": "current_ui_summary",
+        "note": "factory_ai_context",
+        "appPackage": "com.jingdong.app.mall",
+        "windowClassName": "com.jd.lib.productdetail.ProductDetailActivity",
+        "screenKey": "17373f87",
+        "screenshotPath": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_screenshots\/com.jingdong.app.mall\/20260521_125036_652_17373f87.png",
+        "visualHash": "75612ecae1e66376d55439db83690113dbc7145cf82606651b1df7524b235f65",
+        "summary": {
+          "nodeCount": 270,
+          "clickableCount": 29,
+          "editableCount": 0,
+          "scrollableCount": 4,
+          "labels": [
+            "android:id\/content",
+            "com.jd.lib.productdetail.feature:id\/a1_",
+            "com.jd.lib.productdetail.feature:id\/ma",
+            "com.jd.lib.productdetail.feature:id\/aks",
+            "com.jd.lib.productdetail.feature:id\/b8w",
+            "com.jd.lib.productdetail.feature:id\/akr",
+            "com.jd.lib.productdetail.feature:id\/bji",
+            "com.jd.lib.productdetail.feature:id\/a1d",
+            "com.jd.lib.productdetail.feature:id\/and",
+            "com.jd.lib.productdetail.feature:id\/a5d",
+            "com.jd.lib.productdetail.feature:id\/cu",
+            "com.jingdong.app.mall:id\/d32",
+            "com.jingdong.app.mall:id\/d0y",
+            "商品图片1 com.jingdong.app.mall:id\/d9w",
+            "com.jingdong.app.mall:id\/d9x",
+            "com.jingdong.app.mall:id\/cbi",
+            "商品图片2 com.jingdong.app.mall:id\/d9w",
+            "com.jingdong.app.mall:id\/d9x",
+            "com.jingdong.app.mall:id\/cbi",
+            "com.jingdong.app.mall:id\/d0w",
+            "com.jingdong.app.mall:id\/cwq",
+            "com.jingdong.app.mall:id\/d0p",
+            "com.jingdong.app.mall:id\/d9t",
+            "1 com.jingdong.app.mall:id\/d9s",
+            "2 com.jingdong.app.mall:id\/d9u",
+            "com.jingdong.app.mall:id\/d9r",
+            "com.jd.lib.productdetail.feature:id\/avr",
+            "com.jd.lib.productdetail.feature:id\/avn",
+            "5.9折到手价 com.jd.lib.productdetail.feature:id\/avo",
+            "com.jd.lib.productdetail.feature:id\/avp",
+            "com.jd.lib.productdetail.feature:id\/avq",
+            "已售200+ com.jd.lib.productdetail.feature:id\/avv",
+            "com.jd.lib.productdetail.feature:id\/avu",
+            "¥5.9",
+            "零售价 com.jd.lib.productdetail.feature:id\/avs",
+            "¥10 com.jd.lib.productdetail.feature:id\/avt",
+            "团购优惠 com.jd.lib.productdetail.feature:id\/avs",
+            "¥4.1 com.jd.lib.productdetail.feature:id\/avt",
+            "com.jd.lib.productdetail.feature:id\/a8k",
+            "com.jd.lib.productdetail.feature:id\/a8j",
+            "com.jd.lib.productdetail.feature:id\/a8u",
+            "com.jd.lib.productdetail.feature:id\/a8r",
+            "com.jd.lib.productdetail.feature:id\/a8n",
+            "2元百亿补贴 com.jd.lib.productdetail.feature:id\/a8s",
+            "com.jd.lib.productdetail.feature:id\/a8p",
+            "凑单 com.jd.lib.productdetail.feature:id\/a8q",
+            "com.jd.lib.productdetail.feature:id\/a8m",
+            "com.jd.lib.productdetail.feature:id\/a8t",
+            "com.jd.lib.productdetail.feature:id\/a8l",
+            "com.jd.lib.productdetail.feature:id\/blq",
+            "com.jd.lib.productdetail.feature:id\/blp",
+            "com.jd.lib.productdetail.feature:id\/blr",
+            "com.jd.lib.productdetail.feature:id\/blo",
+            "【套餐搭配】人气小食任选1 【套餐搭配】人气小食任选1 com.jd.lib.productdetail.feature:id\/c9",
+            "服务",
+            "先囤后用",
+            "随时退",
+            "过期自动退",
+            "须知 com.jd.lib.productdetail.feature:id\/ai7",
+            "com.jd.lib.productdetail.feature:id\/ai6",
+            "购买后当日起7日内可用",
+            "商家营业时间内均可用",
+            "到店使用",
+            "周一至周日可用",
+            "com.jd.lib.productdetail.feature:id\/ai4",
+            "到店",
+            "2.7km",
+            "塔斯汀·中国汉堡(井大路店)",
+            "11473家通用",
+            "提示",
+            "附近无可兑换门店，可浏览其他门店",
+            "com.jingdong.app.mall:id\/b12",
+            "商品详情 com.jd.lib.productdetail.feature:id\/aud",
+            "com.jd.lib.productdetail.feature:id\/aub",
+            "com.jd.lib.productdetail.feature:id\/au_",
+            "自选搭配7选1 不可重复选 com.jd.lib.productdetail.feature:id\/aud",
+            "com.jd.lib.productdetail.feature:id\/aub",
+            "盐酥鸡米花 com.jd.lib.productdetail.feature:id\/aud",
+            "com.jd.lib.productdetail.feature:id\/au9",
+            "1个 com.jd.lib.productdetail.feature:id\/awu"
+          ],
+          "bottomCandidates": [
+            {
+              "label": "须知 com.jd.lib.productdetail.feature:id\/ai7",
+              "bounds": {
+                "left": 64,
+                "top": 2214,
+                "right": 168,
+                "bottom": 2275
+              },
+              "clickable": false
+            },
+            {
+              "label": "到店",
+              "bounds": {
+                "left": 64,
+                "top": 2331,
+                "right": 168,
+                "bottom": 2392
+              },
+              "clickable": false
+            },
+            {
+              "label": "提示",
+              "bounds": {
+                "left": 64,
+                "top": 2424,
+                "right": 168,
+                "bottom": 2485
+              },
+              "clickable": false
+            },
+            {
+              "label": "粗薯 com.jd.lib.productdetail.feature:id\/aud",
+              "bounds": {
+                "left": 112,
+                "top": 3120,
+                "right": 224,
+                "bottom": 2863
+              },
+              "clickable": false
+            },
+            {
+              "label": "购物车 com.jd.lib.productdetail.feature:id\/mt",
+              "bounds": {
+                "left": 114,
+                "top": 2864,
+                "right": 234,
+                "bottom": 3064
+              },
+              "clickable": true
+            },
+            {
+              "label": "购物车 com.jd.lib.productdetail.feature:id\/bgj",
+              "bounds": {
+                "left": 114,
+                "top": 2985,
+                "right": 234,
+                "bottom": 3039
+              },
+              "clickable": false
+            },
+            {
+              "label": "商品详情 com.jd.lib.productdetail.feature:id\/aud",
+              "bounds": {
+                "left": 64,
+                "top": 2589,
+                "right": 320,
+                "bottom": 2664
+              },
+              "clickable": false
+            },
+            {
+              "label": "购买后当日起7日内可用",
+              "bounds": {
+                "left": 200,
+                "top": 2214,
+                "right": 200,
+                "bottom": 2214
+              },
+              "clickable": false
+            },
+            {
+              "label": "商家营业时间内均可用",
+              "bounds": {
+                "left": 200,
+                "top": 2214,
+                "right": 200,
+                "bottom": 2214
+              },
+              "clickable": false
+            },
+            {
+              "label": "塔塔鸡块 com.jd.lib.productdetail.feature:id\/aud",
+              "bounds": {
+                "left": 112,
+                "top": 3218,
+                "right": 336,
+                "bottom": 2863
+              },
+              "clickable": false
+            },
+            {
+              "label": "香辣鸡翅 com.jd.lib.productdetail.feature:id\/aud",
+              "bounds": {
+                "left": 112,
+                "top": 3316,
+                "right": 336,
+                "bottom": 2863
+              },
+              "clickable": false
+            },
+            {
+              "label": "盐酥鸡米花 com.jd.lib.productdetail.feature:id\/aud",
+              "bounds": {
+                "left": 112,
+                "top": 2826,
+                "right": 392,
+                "bottom": 2863
+              },
+              "clickable": false
+            }
+          ]
+        },
+        "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_snapshots\/com.jingdong.app.mall\/20260521_125036_652_17373f87.json"
+      },
+      {
+        "id": "ui_snapshot_1779339036618",
+        "source": "goal_verification",
+        "note": "在京东搜索耳机，停在商品结果页并记录筛选、店铺、价格入口。",
+        "appPackage": "com.jingdong.app.mall",
+        "windowClassName": "com.jd.lib.productdetail.ProductDetailActivity",
+        "screenKey": "17373f87",
+        "screenshotPath": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_screenshots\/com.jingdong.app.mall\/20260521_125035_965_17373f87.png",
+        "visualHash": "1a00d2eda27a6456849ab5c2d224909c77fcad05debb2dce0919efd74c3627e6",
+        "summary": {
+          "nodeCount": 270,
+          "clickableCount": 29,
+          "editableCount": 0,
+          "scrollableCount": 4,
+          "labels": [
+            "android:id\/content",
+            "com.jd.lib.productdetail.feature:id\/a1_",
+            "com.jd.lib.productdetail.feature:id\/ma",
+            "com.jd.lib.productdetail.feature:id\/aks",
+            "com.jd.lib.productdetail.feature:id\/b8w",
+            "com.jd.lib.productdetail.feature:id\/akr",
+            "com.jd.lib.productdetail.feature:id\/bji",
+            "com.jd.lib.productdetail.feature:id\/a1d",
+            "com.jd.lib.productdetail.feature:id\/and",
+            "com.jd.lib.productdetail.feature:id\/a5d",
+            "com.jd.lib.productdetail.feature:id\/cu",
+            "com.jingdong.app.mall:id\/d32",
+            "com.jingdong.app.mall:id\/d0y",
+            "商品图片1 com.jingdong.app.mall:id\/d9w",
+            "com.jingdong.app.mall:id\/d9x",
+            "com.jingdong.app.mall:id\/cbi",
+            "商品图片2 com.jingdong.app.mall:id\/d9w",
+            "com.jingdong.app.mall:id\/d9x",
+            "com.jingdong.app.mall:id\/cbi",
+            "com.jingdong.app.mall:id\/d0w",
+            "com.jingdong.app.mall:id\/cwq",
+            "com.jingdong.app.mall:id\/d0p",
+            "com.jingdong.app.mall:id\/d9t",
+            "1 com.jingdong.app.mall:id\/d9s",
+            "2 com.jingdong.app.mall:id\/d9u",
+            "com.jingdong.app.mall:id\/d9r",
+            "com.jd.lib.productdetail.feature:id\/avr",
+            "com.jd.lib.productdetail.feature:id\/avn",
+            "5.9折到手价 com.jd.lib.productdetail.feature:id\/avo",
+            "com.jd.lib.productdetail.feature:id\/avp",
+            "com.jd.lib.productdetail.feature:id\/avq",
+            "已售200+ com.jd.lib.productdetail.feature:id\/avv",
+            "com.jd.lib.productdetail.feature:id\/avu",
+            "¥5.9",
+            "零售价 com.jd.lib.productdetail.feature:id\/avs",
+            "¥10 com.jd.lib.productdetail.feature:id\/avt",
+            "团购优惠 com.jd.lib.productdetail.feature:id\/avs",
+            "¥4.1 com.jd.lib.productdetail.feature:id\/avt",
+            "com.jd.lib.productdetail.feature:id\/a8k",
+            "com.jd.lib.productdetail.feature:id\/a8j",
+            "com.jd.lib.productdetail.feature:id\/a8u",
+            "com.jd.lib.productdetail.feature:id\/a8r",
+            "com.jd.lib.productdetail.feature:id\/a8n",
+            "2元百亿补贴 com.jd.lib.productdetail.feature:id\/a8s",
+            "com.jd.lib.productdetail.feature:id\/a8p",
+            "凑单 com.jd.lib.productdetail.feature:id\/a8q",
+            "com.jd.lib.productdetail.feature:id\/a8m",
+            "com.jd.lib.productdetail.feature:id\/a8t",
+            "com.jd.lib.productdetail.feature:id\/a8l",
+            "com.jd.lib.productdetail.feature:id\/blq",
+            "com.jd.lib.productdetail.feature:id\/blp",
+            "com.jd.lib.productdetail.feature:id\/blr",
+            "com.jd.lib.productdetail.feature:id\/blo",
+            "【套餐搭配】人气小食任选1 【套餐搭配】人气小食任选1 com.jd.lib.productdetail.feature:id\/c9",
+            "服务",
+            "先囤后用",
+            "随时退",
+            "过期自动退",
+            "须知 com.jd.lib.productdetail.feature:id\/ai7",
+            "com.jd.lib.productdetail.feature:id\/ai6",
+            "购买后当日起7日内可用",
+            "商家营业时间内均可用",
+            "到店使用",
+            "周一至周日可用",
+            "com.jd.lib.productdetail.feature:id\/ai4",
+            "到店",
+            "2.7km",
+            "塔斯汀·中国汉堡(井大路店)",
+            "11473家通用",
+            "提示",
+            "附近无可兑换门店，可浏览其他门店",
+            "com.jingdong.app.mall:id\/b12",
+            "商品详情 com.jd.lib.productdetail.feature:id\/aud",
+            "com.jd.lib.productdetail.feature:id\/aub",
+            "com.jd.lib.productdetail.feature:id\/au_",
+            "自选搭配7选1 不可重复选 com.jd.lib.productdetail.feature:id\/aud",
+            "com.jd.lib.productdetail.feature:id\/aub",
+            "盐酥鸡米花 com.jd.lib.productdetail.feature:id\/aud",
+            "com.jd.lib.productdetail.feature:id\/au9",
+            "1个 com.jd.lib.productdetail.feature:id\/awu"
+          ],
+          "bottomCandidates": [
+            {
+              "label": "须知 com.jd.lib.productdetail.feature:id\/ai7",
+              "bounds": {
+                "left": 64,
+                "top": 2214,
+                "right": 168,
+                "bottom": 2275
+              },
+              "clickable": false
+            },
+            {
+              "label": "到店",
+              "bounds": {
+                "left": 64,
+                "top": 2331,
+                "right": 168,
+                "bottom": 2392
+              },
+              "clickable": false
+            },
+            {
+              "label": "提示",
+              "bounds": {
+                "left": 64,
+                "top": 2424,
+                "right": 168,
+                "bottom": 2485
+              },
+              "clickable": false
+            },
+            {
+              "label": "粗薯 com.jd.lib.productdetail.feature:id\/aud",
+              "bounds": {
+                "left": 112,
+                "top": 3120,
+                "right": 224,
+                "bottom": 2863
+              },
+              "clickable": false
+            },
+            {
+              "label": "购物车 com.jd.lib.productdetail.feature:id\/mt",
+              "bounds": {
+                "left": 114,
+                "top": 2864,
+                "right": 234,
+                "bottom": 3064
+              },
+              "clickable": true
+            },
+            {
+              "label": "购物车 com.jd.lib.productdetail.feature:id\/bgj",
+              "bounds": {
+                "left": 114,
+                "top": 2985,
+                "right": 234,
+                "bottom": 3039
+              },
+              "clickable": false
+            },
+            {
+              "label": "商品详情 com.jd.lib.productdetail.feature:id\/aud",
+              "bounds": {
+                "left": 64,
+                "top": 2589,
+                "right": 320,
+                "bottom": 2664
+              },
+              "clickable": false
+            },
+            {
+              "label": "购买后当日起7日内可用",
+              "bounds": {
+                "left": 200,
+                "top": 2214,
+                "right": 200,
+                "bottom": 2214
+              },
+              "clickable": false
+            },
+            {
+              "label": "商家营业时间内均可用",
+              "bounds": {
+                "left": 200,
+                "top": 2214,
+                "right": 200,
+                "bottom": 2214
+              },
+              "clickable": false
+            },
+            {
+              "label": "塔塔鸡块 com.jd.lib.productdetail.feature:id\/aud",
+              "bounds": {
+                "left": 112,
+                "top": 3218,
+                "right": 336,
+                "bottom": 2863
+              },
+              "clickable": false
+            },
+            {
+              "label": "香辣鸡翅 com.jd.lib.productdetail.feature:id\/aud",
+              "bounds": {
+                "left": 112,
+                "top": 3316,
+                "right": 336,
+                "bottom": 2863
+              },
+              "clickable": false
+            },
+            {
+              "label": "盐酥鸡米花 com.jd.lib.productdetail.feature:id\/aud",
+              "bounds": {
+                "left": 112,
+                "top": 2826,
+                "right": 392,
+                "bottom": 2863
+              },
+              "clickable": false
+            }
+          ]
+        },
+        "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_snapshots\/com.jingdong.app.mall\/20260521_125035_965_17373f87.json"
+      },
+      {
+        "id": "ui_snapshot_1779339035974",
+        "source": "accessibility_auto",
+        "note": "TYPE_WINDOW_STATE_CHANGED",
+        "appPackage": "com.jingdong.app.mall",
+        "windowClassName": "com.jd.lib.productdetail.ProductDetailActivity",
+        "screenKey": "17373f87",
+        "screenshotPath": "null",
+        "visualHash": "null",
+        "summary": {
+          "nodeCount": 270,
+          "clickableCount": 29,
+          "editableCount": 0,
+          "scrollableCount": 4,
+          "labels": [
+            "android:id\/content",
+            "com.jd.lib.productdetail.feature:id\/a1_",
+            "com.jd.lib.productdetail.feature:id\/ma",
+            "com.jd.lib.productdetail.feature:id\/aks",
+            "com.jd.lib.productdetail.feature:id\/b8w",
+            "com.jd.lib.productdetail.feature:id\/akr",
+            "com.jd.lib.productdetail.feature:id\/bji",
+            "com.jd.lib.productdetail.feature:id\/a1d",
+            "com.jd.lib.productdetail.feature:id\/and",
+            "com.jd.lib.productdetail.feature:id\/a5d",
+            "com.jd.lib.productdetail.feature:id\/cu",
+            "com.jingdong.app.mall:id\/d32",
+            "com.jingdong.app.mall:id\/d0y",
+            "商品图片1 com.jingdong.app.mall:id\/d9w",
+            "com.jingdong.app.mall:id\/d9x",
+            "com.jingdong.app.mall:id\/cbi",
+            "商品图片2 com.jingdong.app.mall:id\/d9w",
+            "com.jingdong.app.mall:id\/d9x",
+            "com.jingdong.app.mall:id\/cbi",
+            "com.jingdong.app.mall:id\/d0w",
+            "com.jingdong.app.mall:id\/cwq",
+            "com.jingdong.app.mall:id\/d0p",
+            "com.jingdong.app.mall:id\/d9t",
+            "1 com.jingdong.app.mall:id\/d9s",
+            "2 com.jingdong.app.mall:id\/d9u",
+            "com.jingdong.app.mall:id\/d9r",
+            "com.jd.lib.productdetail.feature:id\/avr",
+            "com.jd.lib.productdetail.feature:id\/avn",
+            "5.9折到手价 com.jd.lib.productdetail.feature:id\/avo",
+            "com.jd.lib.productdetail.feature:id\/avp",
+            "com.jd.lib.productdetail.feature:id\/avq",
+            "已售200+ com.jd.lib.productdetail.feature:id\/avv",
+            "com.jd.lib.productdetail.feature:id\/avu",
+            "¥5.9",
+            "零售价 com.jd.lib.productdetail.feature:id\/avs",
+            "¥10 com.jd.lib.productdetail.feature:id\/avt",
+            "团购优惠 com.jd.lib.productdetail.feature:id\/avs",
+            "¥4.1 com.jd.lib.productdetail.feature:id\/avt",
+            "com.jd.lib.productdetail.feature:id\/a8k",
+            "com.jd.lib.productdetail.feature:id\/a8j",
+            "com.jd.lib.productdetail.feature:id\/a8u",
+            "com.jd.lib.productdetail.feature:id\/a8r",
+            "com.jd.lib.productdetail.feature:id\/a8n",
+            "2元百亿补贴 com.jd.lib.productdetail.feature:id\/a8s",
+            "com.jd.lib.productdetail.feature:id\/a8p",
+            "凑单 com.jd.lib.productdetail.feature:id\/a8q",
+            "com.jd.lib.productdetail.feature:id\/a8m",
+            "com.jd.lib.productdetail.feature:id\/a8t",
+            "com.jd.lib.productdetail.feature:id\/a8l",
+            "com.jd.lib.productdetail.feature:id\/blq",
+            "com.jd.lib.productdetail.feature:id\/blp",
+            "com.jd.lib.productdetail.feature:id\/blr",
+            "com.jd.lib.productdetail.feature:id\/blo",
+            "【套餐搭配】人气小食任选1 【套餐搭配】人气小食任选1 com.jd.lib.productdetail.feature:id\/c9",
+            "服务",
+            "先囤后用",
+            "随时退",
+            "过期自动退",
+            "须知 com.jd.lib.productdetail.feature:id\/ai7",
+            "com.jd.lib.productdetail.feature:id\/ai6",
+            "购买后当日起7日内可用",
+            "商家营业时间内均可用",
+            "到店使用",
+            "周一至周日可用",
+            "com.jd.lib.productdetail.feature:id\/ai4",
+            "到店",
+            "2.7km",
+            "塔斯汀·中国汉堡(井大路店)",
+            "11473家通用",
+            "提示",
+            "附近无可兑换门店，可浏览其他门店",
+            "com.jingdong.app.mall:id\/b12",
+            "商品详情 com.jd.lib.productdetail.feature:id\/aud",
+            "com.jd.lib.productdetail.feature:id\/aub",
+            "com.jd.lib.productdetail.feature:id\/au_",
+            "自选搭配7选1 不可重复选 com.jd.lib.productdetail.feature:id\/aud",
+            "com.jd.lib.productdetail.feature:id\/aub",
+            "盐酥鸡米花 com.jd.lib.productdetail.feature:id\/aud",
+            "com.jd.lib.productdetail.feature:id\/au9",
+            "1个 com.jd.lib.productdetail.feature:id\/awu"
+          ],
+          "bottomCandidates": [
+            {
+              "label": "须知 com.jd.lib.productdetail.feature:id\/ai7",
+              "bounds": {
+                "left": 64,
+                "top": 2214,
+                "right": 168,
+                "bottom": 2275
+              },
+              "clickable": false
+            },
+            {
+              "label": "到店",
+              "bounds": {
+                "left": 64,
+                "top": 2331,
+                "right": 168,
+                "bottom": 2392
+              },
+              "clickable": false
+            },
+            {
+              "label": "提示",
+              "bounds": {
+                "left": 64,
+                "top": 2424,
+                "right": 168,
+                "bottom": 2485
+              },
+              "clickable": false
+            },
+            {
+              "label": "粗薯 com.jd.lib.productdetail.feature:id\/aud",
+              "bounds": {
+                "left": 112,
+                "top": 3120,
+                "right": 224,
+                "bottom": 2863
+              },
+              "clickable": false
+            },
+            {
+              "label": "购物车 com.jd.lib.productdetail.feature:id\/mt",
+              "bounds": {
+                "left": 114,
+                "top": 2864,
+                "right": 234,
+                "bottom": 3064
+              },
+              "clickable": true
+            },
+            {
+              "label": "购物车 com.jd.lib.productdetail.feature:id\/bgj",
+              "bounds": {
+                "left": 114,
+                "top": 2985,
+                "right": 234,
+                "bottom": 3039
+              },
+              "clickable": false
+            },
+            {
+              "label": "商品详情 com.jd.lib.productdetail.feature:id\/aud",
+              "bounds": {
+                "left": 64,
+                "top": 2589,
+                "right": 320,
+                "bottom": 2664
+              },
+              "clickable": false
+            },
+            {
+              "label": "购买后当日起7日内可用",
+              "bounds": {
+                "left": 200,
+                "top": 2214,
+                "right": 200,
+                "bottom": 2214
+              },
+              "clickable": false
+            },
+            {
+              "label": "商家营业时间内均可用",
+              "bounds": {
+                "left": 200,
+                "top": 2214,
+                "right": 200,
+                "bottom": 2214
+              },
+              "clickable": false
+            },
+            {
+              "label": "塔塔鸡块 com.jd.lib.productdetail.feature:id\/aud",
+              "bounds": {
+                "left": 112,
+                "top": 3218,
+                "right": 336,
+                "bottom": 2863
+              },
+              "clickable": false
+            },
+            {
+              "label": "香辣鸡翅 com.jd.lib.productdetail.feature:id\/aud",
+              "bounds": {
+                "left": 112,
+                "top": 3316,
+                "right": 336,
+                "bottom": 2863
+              },
+              "clickable": false
+            },
+            {
+              "label": "盐酥鸡米花 com.jd.lib.productdetail.feature:id\/aud",
+              "bounds": {
+                "left": 112,
+                "top": 2826,
+                "right": 392,
+                "bottom": 2863
+              },
+              "clickable": false
+            }
+          ]
+        },
+        "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_snapshots\/com.jingdong.app.mall\/20260521_125035_971_17373f87.json"
+      },
+      {
+        "id": "ui_snapshot_1779339035941",
+        "source": "macro_atom_failed",
+        "note": "index=2; skillId=patched.1779338980649.3.findentrybybottomtabsweep; status=FAILED_ELEMENT_NOT_FOUND; Bottom-tab sweep did not find entry aliases=发帖\/发布\/创作\/写\/加号\/+; tabsVisited=5; events=[{\"phase\":\"open_before_recover\",\"packageName\":\"com.jingdong.app.mall\",\"success\":true,\"message\":\"L",
+        "appPackage": "com.jingdong.app.mall",
+        "windowClassName": "com.jd.lib.productdetail.ProductDetailActivity",
+        "screenKey": "17373f87",
+        "screenshotPath": "null",
+        "visualHash": "null",
+        "summary": {
+          "nodeCount": 270,
+          "clickableCount": 29,
+          "editableCount": 0,
+          "scrollableCount": 4,
+          "labels": [
+            "android:id\/content",
+            "com.jd.lib.productdetail.feature:id\/a1_",
+            "com.jd.lib.productdetail.feature:id\/ma",
+            "com.jd.lib.productdetail.feature:id\/aks",
+            "com.jd.lib.productdetail.feature:id\/b8w",
+            "com.jd.lib.productdetail.feature:id\/akr",
+            "com.jd.lib.productdetail.feature:id\/bji",
+            "com.jd.lib.productdetail.feature:id\/a1d",
+            "com.jd.lib.productdetail.feature:id\/and",
+            "com.jd.lib.productdetail.feature:id\/a5d",
+            "com.jd.lib.productdetail.feature:id\/cu",
+            "com.jingdong.app.mall:id\/d32",
+            "com.jingdong.app.mall:id\/d0y",
+            "商品图片1 com.jingdong.app.mall:id\/d9w",
+            "com.jingdong.app.mall:id\/d9x",
+            "com.jingdong.app.mall:id\/cbi",
+            "商品图片2 com.jingdong.app.mall:id\/d9w",
+            "com.jingdong.app.mall:id\/d9x",
+            "com.jingdong.app.mall:id\/cbi",
+            "com.jingdong.app.mall:id\/d0w",
+            "com.jingdong.app.mall:id\/cwq",
+            "com.jingdong.app.mall:id\/d0p",
+            "com.jingdong.app.mall:id\/d9t",
+            "1 com.jingdong.app.mall:id\/d9s",
+            "2 com.jingdong.app.mall:id\/d9u",
+            "com.jingdong.app.mall:id\/d9r",
+            "com.jd.lib.productdetail.feature:id\/avr",
+            "com.jd.lib.productdetail.feature:id\/avn",
+            "5.9折到手价 com.jd.lib.productdetail.feature:id\/avo",
+            "com.jd.lib.productdetail.feature:id\/avp",
+            "com.jd.lib.productdetail.feature:id\/avq",
+            "已售200+ com.jd.lib.productdetail.feature:id\/avv",
+            "com.jd.lib.productdetail.feature:id\/avu",
+            "¥5.9",
+            "零售价 com.jd.lib.productdetail.feature:id\/avs",
+            "¥10 com.jd.lib.productdetail.feature:id\/avt",
+            "团购优惠 com.jd.lib.productdetail.feature:id\/avs",
+            "¥4.1 com.jd.lib.productdetail.feature:id\/avt",
+            "com.jd.lib.productdetail.feature:id\/a8k",
+            "com.jd.lib.productdetail.feature:id\/a8j",
+            "com.jd.lib.productdetail.feature:id\/a8u",
+            "com.jd.lib.productdetail.feature:id\/a8r",
+            "com.jd.lib.productdetail.feature:id\/a8n",
+            "2元百亿补贴 com.jd.lib.productdetail.feature:id\/a8s",
+            "com.jd.lib.productdetail.feature:id\/a8p",
+            "凑单 com.jd.lib.productdetail.feature:id\/a8q",
+            "com.jd.lib.productdetail.feature:id\/a8m",
+            "com.jd.lib.productdetail.feature:id\/a8t",
+            "com.jd.lib.productdetail.feature:id\/a8l",
+            "com.jd.lib.productdetail.feature:id\/blq",
+            "com.jd.lib.productdetail.feature:id\/blp",
+            "com.jd.lib.productdetail.feature:id\/blr",
+            "com.jd.lib.productdetail.feature:id\/blo",
+            "【套餐搭配】人气小食任选1 【套餐搭配】人气小食任选1 com.jd.lib.productdetail.feature:id\/c9",
+            "服务",
+            "先囤后用",
+            "随时退",
+            "过期自动退",
+            "须知 com.jd.lib.productdetail.feature:id\/ai7",
+            "com.jd.lib.productdetail.feature:id\/ai6",
+            "购买后当日起7日内可用",
+            "商家营业时间内均可用",
+            "到店使用",
+            "周一至周日可用",
+            "com.jd.lib.productdetail.feature:id\/ai4",
+            "到店",
+            "2.7km",
+            "塔斯汀·中国汉堡(井大路店)",
+            "11473家通用",
+            "提示",
+            "附近无可兑换门店，可浏览其他门店",
+            "com.jingdong.app.mall:id\/b12",
+            "商品详情 com.jd.lib.productdetail.feature:id\/aud",
+            "com.jd.lib.productdetail.feature:id\/aub",
+            "com.jd.lib.productdetail.feature:id\/au_",
+            "自选搭配7选1 不可重复选 com.jd.lib.productdetail.feature:id\/aud",
+            "com.jd.lib.productdetail.feature:id\/aub",
+            "盐酥鸡米花 com.jd.lib.productdetail.feature:id\/aud",
+            "com.jd.lib.productdetail.feature:id\/au9",
+            "1个 com.jd.lib.productdetail.feature:id\/awu"
+          ],
+          "bottomCandidates": [
+            {
+              "label": "须知 com.jd.lib.productdetail.feature:id\/ai7",
+              "bounds": {
+                "left": 64,
+                "top": 2214,
+                "right": 168,
+                "bottom": 2275
+              },
+              "clickable": false
+            },
+            {
+              "label": "到店",
+              "bounds": {
+                "left": 64,
+                "top": 2331,
+                "right": 168,
+                "bottom": 2392
+              },
+              "clickable": false
+            },
+            {
+              "label": "提示",
+              "bounds": {
+                "left": 64,
+                "top": 2424,
+                "right": 168,
+                "bottom": 2485
+              },
+              "clickable": false
+            },
+            {
+              "label": "粗薯 com.jd.lib.productdetail.feature:id\/aud",
+              "bounds": {
+                "left": 112,
+                "top": 3120,
+                "right": 224,
+                "bottom": 2863
+              },
+              "clickable": false
+            },
+            {
+              "label": "购物车 com.jd.lib.productdetail.feature:id\/mt",
+              "bounds": {
+                "left": 114,
+                "top": 2864,
+                "right": 234,
+                "bottom": 3064
+              },
+              "clickable": true
+            },
+            {
+              "label": "购物车 com.jd.lib.productdetail.feature:id\/bgj",
+              "bounds": {
+                "left": 114,
+                "top": 2985,
+                "right": 234,
+                "bottom": 3039
+              },
+              "clickable": false
+            },
+            {
+              "label": "商品详情 com.jd.lib.productdetail.feature:id\/aud",
+              "bounds": {
+                "left": 64,
+                "top": 2589,
+                "right": 320,
+                "bottom": 2664
+              },
+              "clickable": false
+            },
+            {
+              "label": "购买后当日起7日内可用",
+              "bounds": {
+                "left": 200,
+                "top": 2214,
+                "right": 200,
+                "bottom": 2214
+              },
+              "clickable": false
+            },
+            {
+              "label": "商家营业时间内均可用",
+              "bounds": {
+                "left": 200,
+                "top": 2214,
+                "right": 200,
+                "bottom": 2214
+              },
+              "clickable": false
+            },
+            {
+              "label": "塔塔鸡块 com.jd.lib.productdetail.feature:id\/aud",
+              "bounds": {
+                "left": 112,
+                "top": 3218,
+                "right": 336,
+                "bottom": 2863
+              },
+              "clickable": false
+            },
+            {
+              "label": "香辣鸡翅 com.jd.lib.productdetail.feature:id\/aud",
+              "bounds": {
+                "left": 112,
+                "top": 3316,
+                "right": 336,
+                "bottom": 2863
+              },
+              "clickable": false
+            },
+            {
+              "label": "盐酥鸡米花 com.jd.lib.productdetail.feature:id\/aud",
+              "bounds": {
+                "left": 112,
+                "top": 2826,
+                "right": 392,
+                "bottom": 2863
+              },
+              "clickable": false
+            }
+          ]
+        },
+        "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_snapshots\/com.jingdong.app.mall\/20260521_125035_941_17373f87.json"
+      },
+      {
+        "id": "ui_snapshot_1779339035898",
+        "source": "action_failed",
+        "note": "patched.1779338980649.3.findentrybybottomtabsweep:FindEntryByBottomTabSweep:FAILED_ELEMENT_NOT_FOUND:Bottom-tab sweep did not find entry aliases=发帖\/发布\/创作\/写\/加号\/+; tabsVisited=5; events=[{\"phase\":\"open_before_recover\",\"packageName\":\"com.jingdong.app.mall\",\"success\":true,\"message\":\"L",
+        "appPackage": "com.jingdong.app.mall",
+        "windowClassName": "com.jd.lib.productdetail.ProductDetailActivity",
+        "screenKey": "17373f87",
+        "screenshotPath": "null",
+        "visualHash": "null",
+        "summary": {
+          "nodeCount": 270,
+          "clickableCount": 29,
+          "editableCount": 0,
+          "scrollableCount": 4,
+          "labels": [
+            "android:id\/content",
+            "com.jd.lib.productdetail.feature:id\/a1_",
+            "com.jd.lib.productdetail.feature:id\/ma",
+            "com.jd.lib.productdetail.feature:id\/aks",
+            "com.jd.lib.productdetail.feature:id\/b8w",
+            "com.jd.lib.productdetail.feature:id\/akr",
+            "com.jd.lib.productdetail.feature:id\/bji",
+            "com.jd.lib.productdetail.feature:id\/a1d",
+            "com.jd.lib.productdetail.feature:id\/and",
+            "com.jd.lib.productdetail.feature:id\/a5d",
+            "com.jd.lib.productdetail.feature:id\/cu",
+            "com.jingdong.app.mall:id\/d32",
+            "com.jingdong.app.mall:id\/d0y",
+            "商品图片1 com.jingdong.app.mall:id\/d9w",
+            "com.jingdong.app.mall:id\/d9x",
+            "com.jingdong.app.mall:id\/cbi",
+            "商品图片2 com.jingdong.app.mall:id\/d9w",
+            "com.jingdong.app.mall:id\/d9x",
+            "com.jingdong.app.mall:id\/cbi",
+            "com.jingdong.app.mall:id\/d0w",
+            "com.jingdong.app.mall:id\/cwq",
+            "com.jingdong.app.mall:id\/d0p",
+            "com.jingdong.app.mall:id\/d9t",
+            "1 com.jingdong.app.mall:id\/d9s",
+            "2 com.jingdong.app.mall:id\/d9u",
+            "com.jingdong.app.mall:id\/d9r",
+            "com.jd.lib.productdetail.feature:id\/avr",
+            "com.jd.lib.productdetail.feature:id\/avn",
+            "5.9折到手价 com.jd.lib.productdetail.feature:id\/avo",
+            "com.jd.lib.productdetail.feature:id\/avp",
+            "com.jd.lib.productdetail.feature:id\/avq",
+            "已售200+ com.jd.lib.productdetail.feature:id\/avv",
+            "com.jd.lib.productdetail.feature:id\/avu",
+            "¥5.9",
+            "零售价 com.jd.lib.productdetail.feature:id\/avs",
+            "¥10 com.jd.lib.productdetail.feature:id\/avt",
+            "团购优惠 com.jd.lib.productdetail.feature:id\/avs",
+            "¥4.1 com.jd.lib.productdetail.feature:id\/avt",
+            "com.jd.lib.productdetail.feature:id\/a8k",
+            "com.jd.lib.productdetail.feature:id\/a8j",
+            "com.jd.lib.productdetail.feature:id\/a8u",
+            "com.jd.lib.productdetail.feature:id\/a8r",
+            "com.jd.lib.productdetail.feature:id\/a8n",
+            "2元百亿补贴 com.jd.lib.productdetail.feature:id\/a8s",
+            "com.jd.lib.productdetail.feature:id\/a8p",
+            "凑单 com.jd.lib.productdetail.feature:id\/a8q",
+            "com.jd.lib.productdetail.feature:id\/a8m",
+            "com.jd.lib.productdetail.feature:id\/a8t",
+            "com.jd.lib.productdetail.feature:id\/a8l",
+            "com.jd.lib.productdetail.feature:id\/blq",
+            "com.jd.lib.productdetail.feature:id\/blp",
+            "com.jd.lib.productdetail.feature:id\/blr",
+            "com.jd.lib.productdetail.feature:id\/blo",
+            "【套餐搭配】人气小食任选1 【套餐搭配】人气小食任选1 com.jd.lib.productdetail.feature:id\/c9",
+            "服务",
+            "先囤后用",
+            "随时退",
+            "过期自动退",
+            "须知 com.jd.lib.productdetail.feature:id\/ai7",
+            "com.jd.lib.productdetail.feature:id\/ai6",
+            "购买后当日起7日内可用",
+            "商家营业时间内均可用",
+            "到店使用",
+            "周一至周日可用",
+            "com.jd.lib.productdetail.feature:id\/ai4",
+            "到店",
+            "2.7km",
+            "塔斯汀·中国汉堡(井大路店)",
+            "11473家通用",
+            "提示",
+            "附近无可兑换门店，可浏览其他门店",
+            "com.jingdong.app.mall:id\/b12",
+            "商品详情 com.jd.lib.productdetail.feature:id\/aud",
+            "com.jd.lib.productdetail.feature:id\/aub",
+            "com.jd.lib.productdetail.feature:id\/au_",
+            "自选搭配7选1 不可重复选 com.jd.lib.productdetail.feature:id\/aud",
+            "com.jd.lib.productdetail.feature:id\/aub",
+            "盐酥鸡米花 com.jd.lib.productdetail.feature:id\/aud",
+            "com.jd.lib.productdetail.feature:id\/au9",
+            "1个 com.jd.lib.productdetail.feature:id\/awu"
+          ],
+          "bottomCandidates": [
+            {
+              "label": "须知 com.jd.lib.productdetail.feature:id\/ai7",
+              "bounds": {
+                "left": 64,
+                "top": 2214,
+                "right": 168,
+                "bottom": 2275
+              },
+              "clickable": false
+            },
+            {
+              "label": "到店",
+              "bounds": {
+                "left": 64,
+                "top": 2331,
+                "right": 168,
+                "bottom": 2392
+              },
+              "clickable": false
+            },
+            {
+              "label": "提示",
+              "bounds": {
+                "left": 64,
+                "top": 2424,
+                "right": 168,
+                "bottom": 2485
+              },
+              "clickable": false
+            },
+            {
+              "label": "粗薯 com.jd.lib.productdetail.feature:id\/aud",
+              "bounds": {
+                "left": 112,
+                "top": 3120,
+                "right": 224,
+                "bottom": 2863
+              },
+              "clickable": false
+            },
+            {
+              "label": "购物车 com.jd.lib.productdetail.feature:id\/mt",
+              "bounds": {
+                "left": 114,
+                "top": 2864,
+                "right": 234,
+                "bottom": 3064
+              },
+              "clickable": true
+            },
+            {
+              "label": "购物车 com.jd.lib.productdetail.feature:id\/bgj",
+              "bounds": {
+                "left": 114,
+                "top": 2985,
+                "right": 234,
+                "bottom": 3039
+              },
+              "clickable": false
+            },
+            {
+              "label": "商品详情 com.jd.lib.productdetail.feature:id\/aud",
+              "bounds": {
+                "left": 64,
+                "top": 2589,
+                "right": 320,
+                "bottom": 2664
+              },
+              "clickable": false
+            },
+            {
+              "label": "购买后当日起7日内可用",
+              "bounds": {
+                "left": 200,
+                "top": 2214,
+                "right": 200,
+                "bottom": 2214
+              },
+              "clickable": false
+            },
+            {
+              "label": "商家营业时间内均可用",
+              "bounds": {
+                "left": 200,
+                "top": 2214,
+                "right": 200,
+                "bottom": 2214
+              },
+              "clickable": false
+            },
+            {
+              "label": "塔塔鸡块 com.jd.lib.productdetail.feature:id\/aud",
+              "bounds": {
+                "left": 112,
+                "top": 3218,
+                "right": 336,
+                "bottom": 2863
+              },
+              "clickable": false
+            },
+            {
+              "label": "香辣鸡翅 com.jd.lib.productdetail.feature:id\/aud",
+              "bounds": {
+                "left": 112,
+                "top": 3316,
+                "right": 336,
+                "bottom": 2863
+              },
+              "clickable": false
+            },
+            {
+              "label": "盐酥鸡米花 com.jd.lib.productdetail.feature:id\/aud",
+              "bounds": {
+                "left": 112,
+                "top": 2826,
+                "right": 392,
+                "bottom": 2863
+              },
+              "clickable": false
+            }
+          ]
+        },
+        "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_snapshots\/com.jingdong.app.mall\/20260521_125035_897_17373f87.json"
+      },
+      {
+        "id": "ui_snapshot_1779339034559",
+        "source": "accessibility_auto",
+        "note": "TYPE_VIEW_SCROLLED",
+        "appPackage": "com.jingdong.app.mall",
+        "windowClassName": "androidx.recyclerview.widget.RecyclerView",
+        "screenKey": "aefd73ca",
+        "screenshotPath": "null",
+        "visualHash": "null",
+        "summary": {
+          "nodeCount": 14,
+          "clickableCount": 4,
+          "editableCount": 0,
+          "scrollableCount": 0,
+          "labels": [
+            "android:id\/content",
+            "com.jingdong.app.mall:id\/b7g",
+            "com.jingdong.app.mall:id\/f45",
+            "分享到",
+            "关闭",
+            "微信好友",
+            "com.jingdong.app.mall:id\/dw",
+            "微信好友 com.jingdong.app.mall:id\/dx",
+            "android:id\/navigationBarBackground"
+          ],
+          "bottomCandidates": [
+            {
+              "label": "微信好友",
+              "bounds": {
+                "left": 605,
+                "top": 2673,
+                "right": 834,
+                "bottom": 3027
+              },
+              "clickable": true
+            },
+            {
+              "label": "微信好友 com.jingdong.app.mall:id\/dx",
+              "bounds": {
+                "left": 613,
+                "top": 2903,
+                "right": 825,
+                "bottom": 2974
+              },
+              "clickable": false
+            },
+            {
+              "label": "com.jingdong.app.mall:id\/f45",
+              "bounds": {
+                "left": 0,
+                "top": 2423,
+                "right": 1440,
+                "bottom": 3104
+              },
+              "clickable": true
+            },
+            {
+              "label": "分享到",
+              "bounds": {
+                "left": 0,
+                "top": 2484,
+                "right": 1440,
+                "bottom": 2557
+              },
+              "clickable": false
+            },
+            {
+              "label": "关闭",
+              "bounds": {
+                "left": 1282,
+                "top": 2423,
+                "right": 1409,
+                "bottom": 2619
+              },
+              "clickable": true
+            }
+          ]
+        },
+        "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_snapshots\/com.jingdong.app.mall\/20260521_125034_558_aefd73ca.json"
+      },
+      {
+        "id": "ui_snapshot_1779339033473",
+        "source": "accessibility_auto",
+        "note": "TYPE_VIEW_SCROLLED",
+        "appPackage": "com.jingdong.app.mall",
+        "windowClassName": "null",
+        "screenKey": "61fc975d",
+        "screenshotPath": "null",
+        "visualHash": "null",
+        "summary": {
+          "nodeCount": 272,
+          "clickableCount": 29,
+          "editableCount": 0,
+          "scrollableCount": 4,
+          "labels": [
+            "android:id\/content",
+            "com.jd.lib.productdetail.feature:id\/a1_",
+            "com.jd.lib.productdetail.feature:id\/ma",
+            "com.jd.lib.productdetail.feature:id\/aks",
+            "com.jd.lib.productdetail.feature:id\/b8w",
+            "com.jd.lib.productdetail.feature:id\/akr",
+            "com.jd.lib.productdetail.feature:id\/bji",
+            "com.jd.lib.productdetail.feature:id\/a1d",
+            "com.jd.lib.productdetail.feature:id\/and",
+            "com.jd.lib.productdetail.feature:id\/a5d",
+            "com.jd.lib.productdetail.feature:id\/cu",
+            "com.jingdong.app.mall:id\/d32",
+            "com.jingdong.app.mall:id\/d0y",
+            "商品图片1 com.jingdong.app.mall:id\/d9w",
+            "com.jingdong.app.mall:id\/d9x",
+            "com.jingdong.app.mall:id\/cbi",
+            "商品图片2 com.jingdong.app.mall:id\/d9w",
+            "com.jingdong.app.mall:id\/d9x",
+            "com.jingdong.app.mall:id\/cbi",
+            "com.jingdong.app.mall:id\/d0w",
+            "com.jingdong.app.mall:id\/cwq",
+            "com.jingdong.app.mall:id\/d0p",
+            "com.jingdong.app.mall:id\/d9t",
+            "1 com.jingdong.app.mall:id\/d9s",
+            "2 com.jingdong.app.mall:id\/d9u",
+            "com.jingdong.app.mall:id\/d9r",
+            "com.jd.lib.productdetail.feature:id\/avr",
+            "com.jd.lib.productdetail.feature:id\/avn",
+            "5.9折到手价 com.jd.lib.productdetail.feature:id\/avo",
+            "com.jd.lib.productdetail.feature:id\/avp",
+            "com.jd.lib.productdetail.feature:id\/avq",
+            "已售200+ com.jd.lib.productdetail.feature:id\/avv",
+            "com.jd.lib.productdetail.feature:id\/avu",
+            "¥5.9",
+            "零售价 com.jd.lib.productdetail.feature:id\/avs",
+            "¥10 com.jd.lib.productdetail.feature:id\/avt",
+            "团购优惠 com.jd.lib.productdetail.feature:id\/avs",
+            "¥4.1 com.jd.lib.productdetail.feature:id\/avt",
+            "com.jd.lib.productdetail.feature:id\/a8k",
+            "com.jd.lib.productdetail.feature:id\/a8j",
+            "com.jd.lib.productdetail.feature:id\/a8u",
+            "com.jd.lib.productdetail.feature:id\/a8r",
+            "com.jd.lib.productdetail.feature:id\/a8n",
+            "2元百亿补贴 com.jd.lib.productdetail.feature:id\/a8s",
+            "com.jd.lib.productdetail.feature:id\/a8p",
+            "凑单 com.jd.lib.productdetail.feature:id\/a8q",
+            "com.jd.lib.productdetail.feature:id\/a8m",
+            "com.jd.lib.productdetail.feature:id\/a8t",
+            "com.jd.lib.productdetail.feature:id\/a8l",
+            "com.jd.lib.productdetail.feature:id\/blq",
+            "com.jd.lib.productdetail.feature:id\/blp",
+            "com.jd.lib.productdetail.feature:id\/blr",
+            "com.jd.lib.productdetail.feature:id\/blo",
+            "【套餐搭配】人气小食任选1 【套餐搭配】人气小食任选1 com.jd.lib.productdetail.feature:id\/c9",
+            "服务",
+            "先囤后用",
+            "随时退",
+            "过期自动退",
+            "须知 com.jd.lib.productdetail.feature:id\/ai7",
+            "com.jd.lib.productdetail.feature:id\/ai6",
+            "购买后当日起7日内可用",
+            "商家营业时间内均可用",
+            "到店使用",
+            "周一至周日可用",
+            "com.jd.lib.productdetail.feature:id\/ai4",
+            "到店",
+            "2.7km",
+            "塔斯汀·中国汉堡(井大路店)",
+            "11473家通用",
+            "提示",
+            "附近无可兑换门店，可浏览其他门店",
+            "com.jingdong.app.mall:id\/b12",
+            "商品详情 com.jd.lib.productdetail.feature:id\/aud",
+            "com.jd.lib.productdetail.feature:id\/aub",
+            "com.jd.lib.productdetail.feature:id\/au_",
+            "自选搭配7选1 不可重复选 com.jd.lib.productdetail.feature:id\/aud",
+            "com.jd.lib.productdetail.feature:id\/aub",
+            "盐酥鸡米花 com.jd.lib.productdetail.feature:id\/aud",
+            "com.jd.lib.productdetail.feature:id\/au9",
+            "1个 com.jd.lib.productdetail.feature:id\/awu"
+          ],
+          "bottomCandidates": [
+            {
+              "label": "须知 com.jd.lib.productdetail.feature:id\/ai7",
+              "bounds": {
+                "left": 64,
+                "top": 2214,
+                "right": 168,
+                "bottom": 2275
+              },
+              "clickable": false
+            },
+            {
+              "label": "到店",
+              "bounds": {
+                "left": 64,
+                "top": 2331,
+                "right": 168,
+                "bottom": 2392
+              },
+              "clickable": false
+            },
+            {
+              "label": "提示",
+              "bounds": {
+                "left": 64,
+                "top": 2424,
+                "right": 168,
+                "bottom": 2485
+              },
+              "clickable": false
+            },
+            {
+              "label": "粗薯 com.jd.lib.productdetail.feature:id\/aud",
+              "bounds": {
+                "left": 112,
+                "top": 3120,
+                "right": 224,
+                "bottom": 2863
+              },
+              "clickable": false
+            },
+            {
+              "label": "购物车 com.jd.lib.productdetail.feature:id\/mt",
+              "bounds": {
+                "left": 114,
+                "top": 2864,
+                "right": 234,
+                "bottom": 3064
+              },
+              "clickable": true
+            },
+            {
+              "label": "购物车 com.jd.lib.productdetail.feature:id\/bgj",
+              "bounds": {
+                "left": 114,
+                "top": 2985,
+                "right": 234,
+                "bottom": 3039
+              },
+              "clickable": false
+            },
+            {
+              "label": "商品详情 com.jd.lib.productdetail.feature:id\/aud",
+              "bounds": {
+                "left": 64,
+                "top": 2589,
+                "right": 320,
+                "bottom": 2664
+              },
+              "clickable": false
+            },
+            {
+              "label": "购买后当日起7日内可用",
+              "bounds": {
+                "left": 200,
+                "top": 2214,
+                "right": 200,
+                "bottom": 2214
+              },
+              "clickable": false
+            },
+            {
+              "label": "商家营业时间内均可用",
+              "bounds": {
+                "left": 200,
+                "top": 2214,
+                "right": 200,
+                "bottom": 2214
+              },
+              "clickable": false
+            },
+            {
+              "label": "塔塔鸡块 com.jd.lib.productdetail.feature:id\/aud",
+              "bounds": {
+                "left": 112,
+                "top": 3218,
+                "right": 336,
+                "bottom": 2863
+              },
+              "clickable": false
+            },
+            {
+              "label": "香辣鸡翅 com.jd.lib.productdetail.feature:id\/aud",
+              "bounds": {
+                "left": 112,
+                "top": 3316,
+                "right": 336,
+                "bottom": 2863
+              },
+              "clickable": false
+            },
+            {
+              "label": "盐酥鸡米花 com.jd.lib.productdetail.feature:id\/aud",
+              "bounds": {
+                "left": 112,
+                "top": 2826,
+                "right": 392,
+                "bottom": 2863
+              },
+              "clickable": false
+            }
+          ]
+        },
+        "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_snapshots\/com.jingdong.app.mall\/20260521_125033_472_61fc975d.json"
+      },
+      {
+        "id": "ui_snapshot_1779339032562",
+        "source": "accessibility_auto",
+        "note": "TYPE_WINDOW_CONTENT_CHANGED",
+        "appPackage": "com.jingdong.app.mall",
+        "windowClassName": "android.widget.FrameLayout",
+        "screenKey": "db4a5a58",
+        "screenshotPath": "null",
+        "visualHash": "null",
+        "summary": {
+          "nodeCount": 815,
+          "clickableCount": 74,
+          "editableCount": 0,
+          "scrollableCount": 9,
+          "labels": [
+            "android:id\/content",
+            "com.jingdong.app.mall:id\/nn",
+            "com.jingdong.app.mall:id\/tk",
+            "com.jingdong.app.mall:id\/tf",
+            "com.jingdong.app.mall:id\/sh",
+            "com.jd.lib.message.feature:id\/f1",
+            "com.jd.lib.message.feature:id\/gx",
+            "com.jd.lib.message.feature:id\/dk",
+            "com.jd.lib.message.feature:id\/gw",
+            "com.jd.lib.message.feature:id\/gc",
+            "消息",
+            "小扫把清空未读消息",
+            "清除未读",
+            "更多",
+            "com.jd.lib.message.feature:id\/gb",
+            "com.jd.lib.message.feature:id\/cc",
+            "com.jd.lib.message.feature:id\/cb",
+            "com.jd.lib.message.feature:id\/ga",
+            "客服，未选中，有2条未读消息",
+            "com.jd.lib.message.feature:id\/g_",
+            "com.jd.lib.message.feature:id\/y",
+            "com.jd.lib.message.feature:id\/jo",
+            "com.jd.lib.message.feature:id\/g2",
+            "com.jd.lib.message.feature:id\/ba",
+            "2 有2条未读消息 com.jd.lib.message.feature:id\/ib",
+            "com.jd.lib.message.feature:id\/a1",
+            "com.jd.lib.message.feature:id\/aq",
+            "客服 com.jd.lib.message.feature:id\/au",
+            "物流，未选中，有4条未读消息",
+            "com.jd.lib.message.feature:id\/g_",
+            "com.jd.lib.message.feature:id\/jo",
+            "com.jd.lib.message.feature:id\/g2",
+            "com.jd.lib.message.feature:id\/a1",
+            "订单已完成 com.jd.lib.message.feature:id\/y",
+            "com.jd.lib.message.feature:id\/ba",
+            "4 有4条未读消息 com.jd.lib.message.feature:id\/ib",
+            "com.jd.lib.message.feature:id\/aq",
+            "物流 com.jd.lib.message.feature:id\/au",
+            "提醒，未选中，",
+            "com.jd.lib.message.feature:id\/g_",
+            "com.jd.lib.message.feature:id\/y",
+            "com.jd.lib.message.feature:id\/jo",
+            "com.jd.lib.message.feature:id\/g2",
+            "com.jd.lib.message.feature:id\/ba",
+            "com.jd.lib.message.feature:id\/a1",
+            "com.jd.lib.message.feature:id\/aq",
+            "提醒 com.jd.lib.message.feature:id\/au",
+            "优惠，已选中，",
+            "com.jd.lib.message.feature:id\/g_",
+            "com.jd.lib.message.feature:id\/y",
+            "com.jd.lib.message.feature:id\/g2",
+            "com.jd.lib.message.feature:id\/ba",
+            "com.jd.lib.message.feature:id\/a1",
+            "com.jd.lib.message.feature:id\/aq",
+            "优惠 com.jd.lib.message.feature:id\/au",
+            "互动，未选中，",
+            "com.jd.lib.message.feature:id\/g_",
+            "com.jd.lib.message.feature:id\/y",
+            "com.jd.lib.message.feature:id\/jo",
+            "com.jd.lib.message.feature:id\/g2",
+            "com.jd.lib.message.feature:id\/ba",
+            "com.jd.lib.message.feature:id\/a1",
+            "com.jd.lib.message.feature:id\/aq",
+            "互动 com.jd.lib.message.feature:id\/au",
+            "com.jd.lib.message.feature:id\/d5",
+            "com.jd.lib.message.feature:id\/e5",
+            "com.jd.lib.message.feature:id\/e8",
+            "com.jd.lib.message.feature:id\/gc",
+            "全部，已选中",
+            "全部",
+            "购物，未选中",
+            "购物",
+            "秒送，未选中",
+            "秒送",
+            "com.jd.lib.message.feature:id\/b9",
+            "com.jd.lib.message.feature:id\/gc",
+            "骑手-葛渊清，BIGSHAKE黄油芝士炸鸡·贝果（五四路店），昨天，收到最新消息：，[图片]，有2条未读消息",
+            "骑手-葛渊清",
+            "BIGSHAKE黄油芝士炸鸡·贝果（五四路店）",
+            "昨天"
+          ],
+          "bottomCandidates": [
+            {
+              "label": "¥3.80",
+              "bounds": {
+                "left": 0,
+                "top": 3348,
+                "right": -4109,
+                "bottom": 2904
+              },
+              "clickable": false
+            },
+            {
+              "label": "骑手-汤华",
+              "bounds": {
+                "left": 0,
+                "top": 2240,
+                "right": -3751,
+                "bottom": 2315
+              },
+              "clickable": false
+            },
+            {
+              "label": "骑手-杨航",
+              "bounds": {
+                "left": 0,
+                "top": 2532,
+                "right": -3751,
+                "bottom": 2607
+              },
+              "clickable": false
+            },
+            {
+              "label": "​​​​​​​​​​​​​​​ 抱​枕​靠​垫​ ​办​公​室​腰​枕​床​头​靠​枕​汽​车​腰​靠​卡​通​风​可​拆​洗​抱​枕​可​机​洗​ ​皮​卡​丘​ ​3​6​c​m​*​3​6​c​m​ ​枕​套​ ​（​单​只​装​）​",
+              "bounds": {
+                "left": 0,
+                "top": 3178,
+                "right": -3649,
+                "bottom": 2904
+              },
+              "clickable": false
+            },
+            {
+              "label": "",
+              "bounds": {
+                "left": 0,
+                "top": 2480,
+                "right": -3616,
+                "bottom": 2904
+              },
+              "clickable": true
+            },
+            {
+              "label": "抱枕靠垫 办公室腰枕床头靠枕汽车腰靠卡通风可拆洗抱枕可机洗 皮卡丘 36cm*36cm 枕套 （单只装） 人民币3.80",
+              "bounds": {
+                "left": 0,
+                "top": 2480,
+                "right": -3616,
+                "bottom": 2904
+              },
+              "clickable": false
+            },
+            {
+              "label": "加入购物车按钮",
+              "bounds": {
+                "left": 0,
+                "top": 3302,
+                "right": -3616,
+                "bottom": 2904
+              },
+              "clickable": true
+            },
+            {
+              "label": "不感兴趣 com.jingdong.app.mall:id\/bwl",
+              "bounds": {
+                "left": 0,
+                "top": 2480,
+                "right": -3616,
+                "bottom": 2618
+              },
+              "clickable": true
+            },
+            {
+              "label": "富盈数码经营部",
+              "bounds": {
+                "left": 0,
+                "top": 2824,
+                "right": -3584,
+                "bottom": 2899
+              },
+              "clickable": false
+            },
+            {
+              "label": "¥1.50",
+              "bounds": {
+                "left": 0,
+                "top": 3348,
+                "right": -3425,
+                "bottom": 2904
+              },
+              "clickable": false
+            },
+            {
+              "label": "到手价",
+              "bounds": {
+                "left": 0,
+                "top": 3356,
+                "right": -3291,
+                "bottom": 2904
+              },
+              "clickable": false
+            },
+            {
+              "label": "¥6.50",
+              "bounds": {
+                "left": 0,
+                "top": 3356,
+                "right": -3162,
+                "bottom": 2904
+              },
+              "clickable": false
+            }
+          ]
+        },
+        "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_snapshots\/com.jingdong.app.mall\/20260521_125032_561_db4a5a58.json"
+      },
+      {
+        "id": "ui_snapshot_1779339031639",
+        "source": "accessibility_auto",
+        "note": "TYPE_VIEW_SCROLLED",
+        "appPackage": "com.jingdong.app.mall",
+        "windowClassName": "android.widget.HorizontalScrollView",
+        "screenKey": "50925802",
+        "screenshotPath": "null",
+        "visualHash": "null",
+        "summary": {
+          "nodeCount": 221,
+          "clickableCount": 36,
+          "editableCount": 0,
+          "scrollableCount": 4,
+          "labels": [
+            "android:id\/content",
+            "com.jingdong.app.mall:id\/nn",
+            "com.jingdong.app.mall:id\/tk",
+            "com.jingdong.app.mall:id\/tf",
+            "com.jingdong.app.mall:id\/sh",
+            "com.jd.lib.Discovery.feature:id\/aw",
+            "com.jd.lib.Discovery.feature:id\/aj",
+            "com.jd.lib.Discovery.feature:id\/al",
+            "com.jd.lib.Discovery.feature:id\/bb",
+            "com.jd.lib.Discovery.feature:id\/j",
+            "com.jd.lib.Discovery.feature:id\/ke",
+            "com.jd.lib.Discovery.feature:id\/kd",
+            "com.jd.lib.Discovery.feature:id\/g_",
+            "com.jd.lib.Discovery.feature:id\/ai",
+            "com.jd.lib.Discovery.feature:id\/fm",
+            "com.jd.lib.Discovery.feature:id\/kn",
+            "com.jd.lib.Discovery.feature:id\/km",
+            "com.jd.lib.Discovery.feature:id\/jg",
+            "com.jd.lib.Discovery.feature:id\/bz",
+            "com.jd.lib.Discovery.feature:id\/b_",
+            "com.jd.lib.Discovery.feature:id\/bd",
+            "com.jd.lib.Discovery.feature:id\/bi",
+            "com.jd.lib.Discovery.feature:id\/bm",
+            "com.jd.lib.Discovery.feature:id\/b9",
+            "com.jd.lib.Discovery.feature:id\/jj",
+            "com.jd.lib.Discovery.feature:id\/jk",
+            "com.jd.lib.Discovery.feature:id\/gk",
+            "com.jd.lib.Discovery.feature:id\/b8",
+            "com.jd.lib.Discovery.feature:id\/bf",
+            "com.jd.lib.Discovery.feature:id\/bo",
+            "com.jd.lib.Discovery.feature:id\/fj",
+            "com.jd.lib.Discovery.feature:id\/k7",
+            "com.jd.lib.Discovery.feature:id\/fi",
+            "00:01 com.jd.lib.Discovery.feature:id\/hg",
+            "\/",
+            "03:50 com.jd.lib.Discovery.feature:id\/hr",
+            "com.jd.lib.Discovery.feature:id\/g4",
+            "com.jd.lib.Discovery.feature:id\/k6",
+            "com.jd.lib.Discovery.feature:id\/cm",
+            "com.jd.lib.Discovery.feature:id\/g8",
+            "com.jd.lib.Discovery.feature:id\/cy",
+            "com.jd.lib.Discovery.feature:id\/e0",
+            "com.jd.lib.Discovery.feature:id\/e9",
+            "com.jd.lib.Discovery.feature:id\/ib",
+            "搜索当前画面 com.jd.lib.Discovery.feature:id\/ic",
+            "com.jd.lib.Discovery.feature:id\/jm",
+            "com.jd.lib.Discovery.feature:id\/bn",
+            "com.jd.lib.Discovery.feature:id\/f7",
+            "com.jd.lib.Discovery.feature:id\/az",
+            "com.jd.lib.Discovery.feature:id\/d9",
+            "com.jd.lib.Discovery.feature:id\/cu",
+            "com.jd.lib.Discovery.feature:id\/f5",
+            "com.jd.lib.Discovery.feature:id\/kc",
+            "com.jd.lib.Discovery.feature:id\/ew",
+            "com.jd.lib.Discovery.feature:id\/bw",
+            "@放假必追韩剧社 @放假必追韩剧社",
+            "第5集丨张楚岚因爷爷尸体的离奇... 展开 第5集丨张楚岚因爷爷尸体的离奇... 展开",
+            "点赞 1.0万",
+            "1.0万",
+            "评论200+",
+            "200+",
+            "分享",
+            "分享",
+            "合集・《异人之下第一季》解说版",
+            "共60集",
+            "下一集",
+            "com.jd.lib.Discovery.feature:id\/ej",
+            "com.jd.lib.Discovery.feature:id\/as",
+            "com.jd.lib.Discovery.feature:id\/bt",
+            "com.jd.lib.Discovery.feature:id\/ct",
+            "com.jd.lib.Discovery.feature:id\/at",
+            "com.jd.lib.Discovery.feature:id\/e_",
+            "com.jd.lib.Discovery.feature:id\/bc",
+            "com.jd.lib.Discovery.feature:id\/g0",
+            "com.jd.lib.Discovery.feature:id\/gq",
+            "京言",
+            "com.jd.lib.Discovery.feature:id\/gg",
+            "com.jd.lib.Discovery.feature:id\/ap",
+            "京言 com.jd.lib.Discovery.feature:id\/gi",
+            "JoyAI"
+          ],
+          "bottomCandidates": [
+            {
+              "label": "首页",
+              "bounds": {
+                "left": 0,
+                "top": 2904,
+                "right": 288,
+                "bottom": 3104
+              },
+              "clickable": true
+            },
+            {
+              "label": "首页",
+              "bounds": {
+                "left": 0,
+                "top": 3026,
+                "right": 288,
+                "bottom": 3080
+              },
+              "clickable": false
+            },
+            {
+              "label": "@放假必追韩剧社 @放假必追韩剧社",
+              "bounds": {
+                "left": 44,
+                "top": 2676,
+                "right": 564,
+                "bottom": 2764
+              },
+              "clickable": true
+            },
+            {
+              "label": "合集・《异人之下第一季》解说版",
+              "bounds": {
+                "left": 164,
+                "top": 2986,
+                "right": 690,
+                "bottom": 2904
+              },
+              "clickable": false
+            },
+            {
+              "label": "逛",
+              "bounds": {
+                "left": 288,
+                "top": 2904,
+                "right": 576,
+                "bottom": 3104
+              },
+              "clickable": true
+            },
+            {
+              "label": "逛",
+              "bounds": {
+                "left": 288,
+                "top": 3026,
+                "right": 576,
+                "bottom": 3080
+              },
+              "clickable": false
+            },
+            {
+              "label": "00:01 com.jd.lib.Discovery.feature:id\/hg",
+              "bounds": {
+                "left": 364,
+                "top": 2462,
+                "right": 632,
+                "bottom": 2576
+              },
+              "clickable": false
+            },
+            {
+              "label": "",
+              "bounds": {
+                "left": 44,
+                "top": 2952,
+                "right": 1004,
+                "bottom": 2904
+              },
+              "clickable": true
+            },
+            {
+              "label": "第5集丨张楚岚因爷爷尸体的离奇... 展开 第5集丨张楚岚因爷爷尸体的离奇... 展开",
+              "bounds": {
+                "left": 44,
+                "top": 2780,
+                "right": 1036,
+                "bottom": 2848
+              },
+              "clickable": false
+            },
+            {
+              "label": "",
+              "bounds": {
+                "left": 44,
+                "top": 2780,
+                "right": 1080,
+                "bottom": 2848
+              },
+              "clickable": true
+            },
+            {
+              "label": "\/",
+              "bounds": {
+                "left": 696,
+                "top": 2468,
+                "right": 722,
+                "bottom": 2554
+              },
+              "clickable": false
+            },
+            {
+              "label": "com.jd.lib.Discovery.feature:id\/k6",
+              "bounds": {
+                "left": 0,
+                "top": 2840,
+                "right": 1440,
+                "bottom": 2904
+              },
+              "clickable": true
+            }
+          ]
+        },
+        "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_snapshots\/com.jingdong.app.mall\/20260521_125031_638_50925802.json"
+      },
+      {
+        "id": "ui_snapshot_1779339029391",
+        "source": "accessibility_auto",
+        "note": "TYPE_WINDOW_CONTENT_CHANGED",
+        "appPackage": "com.jingdong.app.mall",
+        "windowClassName": "androidx.recyclerview.widget.RecyclerView",
+        "screenKey": "dcabc4d9",
+        "screenshotPath": "null",
+        "visualHash": "null",
+        "summary": {
+          "nodeCount": 606,
+          "clickableCount": 84,
+          "editableCount": 0,
+          "scrollableCount": 13,
+          "labels": [
+            "android:id\/content",
+            "com.jingdong.app.mall:id\/nn",
+            "com.jingdong.app.mall:id\/tk",
+            "com.jingdong.app.mall:id\/tf",
+            "com.jingdong.app.mall:id\/a8d",
+            "com.jingdong.app.mall:id\/dpu",
+            "com.jingdong.app.mall:id\/dou",
+            "com.jd.lib.babel.feature:id\/layout_id",
+            "com.jd.lib.babel.feature:id\/babel_module_head",
+            "com.jd.lib.babel.feature:id\/babel_module_float",
+            "com.jd.lib.babel.feature:id\/babel_native_layout_id",
+            "com.jd.lib.babel.feature:id\/babel_module_contents",
+            "com.jd.lib.babel.feature:id\/pull_to_refresh_wrapper",
+            "com.jingdong.app.mall:id\/dpr",
+            "com.jingdong.app.mall:id\/dps",
+            "com.jingdong.app.mall:id\/a0i",
+            "满小饱同厂肥汁米线特色粉丝螺蛳粉港式口味夜宵速食方便面 活动肥汁米线310g*1袋 人民币6.9",
+            "​​​​​​​​​​​​​​​ 满​小​饱​同​厂​肥​汁​米​线​特​色​粉​丝​螺​蛳​粉​港​式​口​味​夜​宵​速​食​方​便​面​ ​活​动​肥​汁​米​线​3​1​0​g​*​1​袋​",
+            "特价特色米粉榜第10名",
+            "¥6.9",
+            "立即购买",
+            "不感兴趣 com.jingdong.app.mall:id\/bwl",
+            "com.jingdong.app.mall:id\/a0i",
+            "com.jingdong.app.mall:id\/a0i",
+            "¥5",
+            "满5.9元可用",
+            "仅可购买部分玩具乐器商品",
+            "立即领取",
+            "¥4",
+            "满4.9元可用",
+            "仅可购买部分品类活动商品",
+            "立即领取",
+            "com.jingdong.app.mall:id\/a0i",
+            "塔斯汀中国汉堡黄金香酥鸡柳\/香辣鸡腿堡2选1兑换券单人餐团购优惠 到店自取未用可退 香酥鸡柳香辣鸡腿堡2选1 人民币7.47",
+            "塔​斯​汀​中​国​汉​堡​黄​金​香​酥​鸡​柳​\/​香​辣​鸡​腿​堡​2​选​1​兑​换​券​单​人​餐​团​购​优​惠​ ​到​店​自​取​未​用​可​退​ ​香​酥​鸡​柳​香​辣​鸡​腿​堡​2​选​1​",
+            "¥7.47",
+            "立即购买",
+            "不感兴趣 com.jingdong.app.mall:id\/bwl",
+            "com.jingdong.app.mall:id\/a0i",
+            "塔斯汀中国汉堡新品香酥鸡柳多人餐8件套\/单人餐香辣鸡腿堡汉堡套餐团购优惠非外卖到店取餐 全国通用红枣甜心1+1 人民币11.29",
+            "塔​斯​汀​中​国​汉​堡​新​品​香​酥​鸡​柳​多​人​餐​8​件​套​\/​单​人​餐​香​辣​鸡​腿​堡​汉​堡​套​餐​团​购​优​惠​非​外​卖​到​店​取​餐​ ​全​国​通​用​红​枣​甜​心​1​+​1​",
+            "¥11.29",
+            "立即购买",
+            "不感兴趣 com.jingdong.app.mall:id\/bwl",
+            "com.jingdong.app.mall:id\/a0i",
+            "京东特价",
+            "关注",
+            "com.jingdong.app.mall:id\/a0i",
+            "湿水都不破 心相印太强了 人民币5.39",
+            "湿​水​都​不​破​ ​心​相​印​太​强​了​",
+            "¥5.39",
+            "立即购买",
+            "不感兴趣 com.jingdong.app.mall:id\/bwl",
+            "com.jingdong.app.mall:id\/b16",
+            "com.jd.lib.babel.feature:id\/babel_module_float_bottom",
+            "com.jingdong.app.mall:id\/dpm",
+            "com.jingdong.app.mall:id\/dpv",
+            "com.jingdong.app.mall:id\/dpt",
+            "com.jingdong.app.mall:id\/dow",
+            "com.jingdong.app.mall:id\/dp5",
+            "com.jingdong.app.mall:id\/dp4",
+            "com.jingdong.app.mall:id\/doz",
+            "推荐 com.jingdong.app.mall:id\/dox",
+            "com.jingdong.app.mall:id\/dp5",
+            "com.jingdong.app.mall:id\/doy",
+            "com.jingdong.app.mall:id\/dpp",
+            "特价 com.jingdong.app.mall:id\/dox",
+            "com.jingdong.app.mall:id\/dp5",
+            "com.jingdong.app.mall:id\/doy",
+            "com.jingdong.app.mall:id\/dpp",
+            "9.9包邮 com.jingdong.app.mall:id\/dox",
+            "com.jingdong.app.mall:id\/dp5",
+            "com.jingdong.app.mall:id\/doy",
+            "领券中心 com.jingdong.app.mall:id\/dox",
+            "com.jingdong.app.mall:id\/dp5",
+            "com.jingdong.app.mall:id\/doy",
+            "京喜自营 com.jingdong.app.mall:id\/dox",
+            "com.jingdong.app.mall:id\/dp5",
+            "com.jingdong.app.mall:id\/doy",
+            "试用领取 com.jingdong.app.mall:id\/dox"
+          ],
+          "bottomCandidates": [
+            {
+              "label": "首页",
+              "bounds": {
+                "left": 0,
+                "top": 2904,
+                "right": 288,
+                "bottom": 3104
+              },
+              "clickable": true
+            },
+            {
+              "label": "¥7.47",
+              "bounds": {
+                "left": 87,
+                "top": 2704,
+                "right": 279,
+                "bottom": 2784
+              },
+              "clickable": false
+            },
+            {
+              "label": "京东特价",
+              "bounds": {
+                "left": 155,
+                "top": 2903,
+                "right": 395,
+                "bottom": 2904
+              },
+              "clickable": false
+            },
+            {
+              "label": "塔​斯​汀​中​国​汉​堡​黄​金​香​酥​鸡​柳​\/​香​辣​鸡​腿​堡​2​选​1​兑​换​券​单​人​餐​团​购​优​惠​ ​到​店​自​取​未​用​可​退​ ​香​酥​鸡​柳​香​辣​鸡​腿​堡​2​选​1​",
+              "bounds": {
+                "left": 63,
+                "top": 2517,
+                "right": 653,
+                "bottom": 2578
+              },
+              "clickable": false
+            },
+            {
+              "label": "",
+              "bounds": {
+                "left": 31,
+                "top": 1827,
+                "right": 707,
+                "bottom": 2840
+              },
+              "clickable": true
+            },
+            {
+              "label": "塔斯汀中国汉堡黄金香酥鸡柳\/香辣鸡腿堡2选1兑换券单人餐团购优惠 到店自取未用可退 香酥鸡柳香辣鸡腿堡2选1 人民币7.47",
+              "bounds": {
+                "left": 31,
+                "top": 1827,
+                "right": 707,
+                "bottom": 2840
+              },
+              "clickable": false
+            },
+            {
+              "label": "",
+              "bounds": {
+                "left": 31,
+                "top": 2866,
+                "right": 707,
+                "bottom": 2904
+              },
+              "clickable": true
+            },
+            {
+              "label": "逛",
+              "bounds": {
+                "left": 288,
+                "top": 2904,
+                "right": 576,
+                "bottom": 3104
+              },
+              "clickable": true
+            },
+            {
+              "label": "逛",
+              "bounds": {
+                "left": 288,
+                "top": 3026,
+                "right": 576,
+                "bottom": 3080
+              },
+              "clickable": false
+            },
+            {
+              "label": "",
+              "bounds": {
+                "left": 475,
+                "top": 2898,
+                "right": 675,
+                "bottom": 2904
+              },
+              "clickable": true
+            },
+            {
+              "label": "立即购买",
+              "bounds": {
+                "left": 483,
+                "top": 2680,
+                "right": 675,
+                "bottom": 2808
+              },
+              "clickable": true
+            },
+            {
+              "label": "关注",
+              "bounds": {
+                "left": 563,
+                "top": 2915,
+                "right": 643,
+                "bottom": 2904
+              },
+              "clickable": false
+            }
+          ]
+        },
+        "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_snapshots\/com.jingdong.app.mall\/20260521_125029_391_dcabc4d9.json"
+      },
+      {
+        "id": "ui_snapshot_1779339025866",
+        "source": "accessibility_auto",
+        "note": "TYPE_WINDOW_CONTENT_CHANGED",
+        "appPackage": "com.jingdong.app.mall",
+        "windowClassName": "androidx.recyclerview.widget.RecyclerView",
+        "screenKey": "dcabc4d9",
+        "screenshotPath": "null",
+        "visualHash": "null",
+        "summary": {
+          "nodeCount": 603,
+          "clickableCount": 84,
+          "editableCount": 0,
+          "scrollableCount": 14,
+          "labels": [
+            "android:id\/content",
+            "com.jingdong.app.mall:id\/nn",
+            "com.jingdong.app.mall:id\/tk",
+            "com.jingdong.app.mall:id\/tf",
+            "com.jingdong.app.mall:id\/a8d",
+            "com.jingdong.app.mall:id\/dpu",
+            "com.jingdong.app.mall:id\/dou",
+            "com.jd.lib.babel.feature:id\/layout_id",
+            "com.jd.lib.babel.feature:id\/babel_module_head",
+            "com.jd.lib.babel.feature:id\/babel_module_float",
+            "com.jd.lib.babel.feature:id\/babel_native_layout_id",
+            "com.jd.lib.babel.feature:id\/babel_module_contents",
+            "com.jd.lib.babel.feature:id\/pull_to_refresh_wrapper",
+            "com.jingdong.app.mall:id\/dpr",
+            "com.jingdong.app.mall:id\/dps",
+            "com.jingdong.app.mall:id\/a0i",
+            "【超级爆品】正宗柳州螺蛳粉超级爆款米线特产方便速食夜宵 300g*4袋 人民币11.89",
+            "​​​​​​​​​​​​​​​ 【​超​级​爆​品​】​正​宗​柳​州​螺​蛳​粉​超​级​爆​款​米​线​特​产​方​便​速​食​夜​宵​ ​3​0​0​g​*​4​袋​",
+            "¥11.89",
+            "立即购买",
+            "不感兴趣 com.jingdong.app.mall:id\/bwl",
+            "com.jingdong.app.mall:id\/a0i",
+            "com.jingdong.app.mall:id\/a0i",
+            "¥5",
+            "满5.9元可用",
+            "仅可购买部分玩具乐器商品",
+            "立即领取",
+            "¥4",
+            "满4.9元可用",
+            "仅可购买部分品类活动商品",
+            "立即领取",
+            "com.jingdong.app.mall:id\/a0i",
+            "鹌鹑蛋五香卤蛋乡巴佬风味随便无壳盐焗蜂蜜独立小包装宿舍囤零食 10个混合装鹌鹑蛋 人民币3.9",
+            "​​​​​​​​​​​​​​​ 鹌​鹑​蛋​五​香​卤​蛋​乡​巴​佬​风​味​随​便​无​壳​盐​焗​蜂​蜜​独​立​小​包​装​宿​舍​囤​零​食​ ​1​0​个​混​合​装​鹌​鹑​蛋​",
+            "袋装鹌鹑蛋类榜第19名",
+            "¥3.9",
+            "立即购买",
+            "不感兴趣 com.jingdong.app.mall:id\/bwl",
+            "com.jingdong.app.mall:id\/a0i",
+            "比比赞山楂条片500g蜜饯果干果脯解馋办公室零食小吃休闲食品批发 共约32条山楂条200g*1袋 人民币4.9",
+            "​​​​​​​​​​​​​​​ 比​比​赞​山​楂​条​片​5​0​0​g​蜜​饯​果​干​果​脯​解​馋​办​公​室​零​食​小​吃​休​闲​食​品​批​发​ ​共​约​3​2​条​山​楂​条​2​0​0​g​*​1​袋​",
+            "¥4.9",
+            "立即购买",
+            "不感兴趣 com.jingdong.app.mall:id\/bwl",
+            "com.jingdong.app.mall:id\/a0i",
+            "京东特价",
+            "关注",
+            "com.jingdong.app.mall:id\/a0i",
+            "比比赞芝士味夹心饼干整箱办公室早餐解馋小零食小吃休闲食品批发 买赠芝士味夹心饼干240g 人民币4.99",
+            "​​​​​​​​​​​​​​​ 比​比​赞​芝​士​味​夹​心​饼​干​整​箱​办​公​室​早​餐​解​馋​小​零​食​小​吃​休​闲​食​品​批​发​ ​买​赠​芝​士​味​夹​心​饼​干​2​4​0​g​",
+            "箱装夹心饼干榜第11名",
+            "¥4.99",
+            "立即购买",
+            "不感兴趣 com.jingdong.app.mall:id\/bwl",
+            "com.jd.lib.babel.feature:id\/babel_module_float_bottom",
+            "com.jingdong.app.mall:id\/dpm",
+            "com.jingdong.app.mall:id\/dpv",
+            "com.jingdong.app.mall:id\/dpt",
+            "com.jingdong.app.mall:id\/dow",
+            "com.jingdong.app.mall:id\/dp5",
+            "com.jingdong.app.mall:id\/dp4",
+            "com.jingdong.app.mall:id\/doz",
+            "推荐 com.jingdong.app.mall:id\/dox",
+            "com.jingdong.app.mall:id\/dp5",
+            "com.jingdong.app.mall:id\/doy",
+            "com.jingdong.app.mall:id\/dpp",
+            "特价 com.jingdong.app.mall:id\/dox",
+            "com.jingdong.app.mall:id\/dp5",
+            "com.jingdong.app.mall:id\/doy",
+            "com.jingdong.app.mall:id\/dpp",
+            "9.9包邮 com.jingdong.app.mall:id\/dox",
+            "com.jingdong.app.mall:id\/dp5",
+            "com.jingdong.app.mall:id\/doy",
+            "领券中心 com.jingdong.app.mall:id\/dox",
+            "com.jingdong.app.mall:id\/dp5",
+            "com.jingdong.app.mall:id\/doy",
+            "京喜自营 com.jingdong.app.mall:id\/dox",
+            "com.jingdong.app.mall:id\/dp5",
+            "com.jingdong.app.mall:id\/doy",
+            "试用领取 com.jingdong.app.mall:id\/dox"
+          ],
+          "bottomCandidates": [
+            {
+              "label": "首页",
+              "bounds": {
+                "left": 0,
+                "top": 2904,
+                "right": 288,
+                "bottom": 3104
+              },
+              "clickable": true
+            },
+            {
+              "label": "¥3.9",
+              "bounds": {
+                "left": 87,
+                "top": 2708,
+                "right": 241,
+                "bottom": 2788
+              },
+              "clickable": false
+            },
+            {
+              "label": "京东特价",
+              "bounds": {
+                "left": 155,
+                "top": 2907,
+                "right": 395,
+                "bottom": 2904
+              },
+              "clickable": false
+            },
+            {
+              "label": "​​​​​​​​​​​​​​​ 鹌​鹑​蛋​五​香​卤​蛋​乡​巴​佬​风​味​随​便​无​壳​盐​焗​蜂​蜜​独​立​小​包​装​宿​舍​囤​零​食​ ​1​0​个​混​合​装​鹌​鹑​蛋​",
+              "bounds": {
+                "left": 63,
+                "top": 2517,
+                "right": 667,
+                "bottom": 2582
+              },
+              "clickable": false
+            },
+            {
+              "label": "",
+              "bounds": {
+                "left": 31,
+                "top": 1827,
+                "right": 707,
+                "bottom": 2844
+              },
+              "clickable": true
+            },
+            {
+              "label": "鹌鹑蛋五香卤蛋乡巴佬风味随便无壳盐焗蜂蜜独立小包装宿舍囤零食 10个混合装鹌鹑蛋 人民币3.9",
+              "bounds": {
+                "left": 31,
+                "top": 1827,
+                "right": 707,
+                "bottom": 2844
+              },
+              "clickable": false
+            },
+            {
+              "label": "袋装鹌鹑蛋类榜第19名",
+              "bounds": {
+                "left": 63,
+                "top": 2600,
+                "right": 675,
+                "bottom": 2664
+              },
+              "clickable": false
+            },
+            {
+              "label": "",
+              "bounds": {
+                "left": 31,
+                "top": 2870,
+                "right": 707,
+                "bottom": 2904
+              },
+              "clickable": true
+            },
+            {
+              "label": "逛",
+              "bounds": {
+                "left": 288,
+                "top": 2904,
+                "right": 576,
+                "bottom": 3104
+              },
+              "clickable": true
+            },
+            {
+              "label": "逛",
+              "bounds": {
+                "left": 288,
+                "top": 3026,
+                "right": 576,
+                "bottom": 3080
+              },
+              "clickable": false
+            },
+            {
+              "label": "",
+              "bounds": {
+                "left": 475,
+                "top": 2902,
+                "right": 675,
+                "bottom": 2904
+              },
+              "clickable": true
+            },
+            {
+              "label": "立即购买",
+              "bounds": {
+                "left": 483,
+                "top": 2684,
+                "right": 675,
+                "bottom": 2812
+              },
+              "clickable": true
+            }
+          ]
+        },
+        "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_snapshots\/com.jingdong.app.mall\/20260521_125025_863_dcabc4d9.json"
+      }
+    ]
+  },
+  "teacherOutput": {
+    "aiJobs": [
+      {
+        "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ai_jobs\/2026-05-21\/factory_ai_plan_review_1779338918214.json",
+        "taskType": "RUNTIME_PLAN_REVIEW_BEFORE_EXECUTION",
+        "aiStatus": "FAILED",
+        "httpStatus": 402,
+        "model": "deepseek-v4-pro",
+        "baseUrlHost": "api.deepseek.com",
+        "parseSuccess": false,
+        "parsedJson": {
+          "decision": {},
+          "usePatchedSteps": false,
+          "patchedStepCount": 0
+        }
+      },
+      {
+        "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ai_jobs\/2026-05-21\/factory_ai_replan_1779338949512.json",
+        "taskType": "RUNTIME_REPLAN_AFTER_FAILURE",
+        "aiStatus": "FAILED",
+        "httpStatus": 402,
+        "model": "deepseek-v4-pro",
+        "baseUrlHost": "api.deepseek.com",
+        "parseSuccess": false,
+        "parsedJson": {
+          "decision": {},
+          "planStepCount": 0,
+          "aiCandidateCount": 0,
+          "goalCompleted": false
+        }
+      },
+      {
+        "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ai_jobs\/2026-05-21\/factory_ai_replan_1779339037977.json",
+        "taskType": "RUNTIME_REPLAN_AFTER_FAILURE",
+        "aiStatus": "FAILED",
+        "httpStatus": 402,
+        "model": "deepseek-v4-pro",
+        "baseUrlHost": "api.deepseek.com",
+        "parseSuccess": false,
+        "parsedJson": {
+          "decision": {},
+          "planStepCount": 0,
+          "aiCandidateCount": 0,
+          "goalCompleted": false
+        }
+      }
+    ],
+    "planReviewOrReplanCount": 3,
+    "source": "deepseek_v4pro_or_phone_side_adapter"
+  },
+  "programOutput": {
+    "status": "FAILED_GOAL_UNVERIFIED",
+    "durationMs": 122631,
+    "steps": [
+      {
+        "title": "用户指令进入手机端执行器",
+        "status": "RUNNING",
+        "message": "主输入不再只生成文件：App 将调用 AI，生成可审计 JSON，再由 SkillJsonExecutor 直接执行候选能力。",
+        "path": null,
+        "extra": {}
+      },
+      {
+        "title": "AppUI 图谱已进入决策上下文",
+        "status": "INFO",
+        "message": "已知页面=9，边=14；AI\/模板改写会优先参考入口、底部分屏、输入框和可点击候选。",
+        "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/app_ui_graphs\/com.jingdong.app.mall\/graph_candidate.json",
+        "extra": {
+          "appPackage": "com.jingdong.app.mall",
+          "status": "CANDIDATE_EXPLORED",
+          "screenCount": 9,
+          "edgeCount": 14,
+          "quality": {
+            "usable": true,
+            "reason": "usable_app_ui_graph",
+            "screenCount": 9,
+            "edgeCount": 14,
+            "nodeCount": 2889,
+            "clickableCount": 461,
+            "editableCount": 0,
+            "labelCount": 446
+          },
+          "screens": [
+            {
+              "screenId": "screen_e155eded",
+              "title": "¥3.99",
+              "screenKey": "e155eded",
+              "nodeCount": 895,
+              "clickableCount": 113,
+              "editableCount": 0,
+              "labels": [
+                "android:id\/content",
+                "com.jingdong.app.mall:id\/nn",
+                "com.jingdong.app.mall:id\/tk",
+                "com.jingdong.app.mall:id\/tf",
+                "com.jingdong.app.mall:id\/a8d",
+                "com.jingdong.app.mall:id\/dpu",
+                "com.jingdong.app.mall:id\/dou",
+                "com.jd.lib.babel.feature:id\/layout_id"
+              ],
+              "bottomTabs": [
+                {
+                  "index": 0,
+                  "label": "首页",
+                  "text": null,
+                  "desc": "首页",
+                  "resourceId": null,
+                  "class": "android.view.View",
+                  "clickable": true,
+                  "editable": false
+                },
+                {
+                  "index": 1,
+                  "label": "¥12.89",
+                  "text": "¥12.89",
+                  "desc": null,
+                  "resourceId": null,
+                  "class": "android.widget.TextView",
+                  "clickable": false,
+                  "editable": false
+                },
+                {
+                  "index": 2,
+                  "label": "​​​​​​​​​​​​​​​ 猴​头​菇​酥​性​曲​奇​奶​油​奶​香​味​营​养​早​餐​零​食​养​胃​代​餐​独​立​包​蜜​饯​果​干​ ​猴​头​菇​饼​干​ ​1​0​0​0​g​独​立​包​装​",
+                  "text": "​​​​​​​​​​​​​​​ 猴​头​菇​酥​性​曲​奇​奶​油​奶​香​味​营​养​早​餐​零​食​养​胃​代​餐​独​立​包​蜜​饯​果​干​ ​猴​头​菇​饼​干​ ​1​0​0​0​g​独​立​包​装​",
+                  "desc": null,
+                  "resourceId": null,
+                  "class": "android.widget.TextView",
+                  "clickable": false,
+                  "editable": false
+                },
+                {
+                  "index": 3,
+                  "label": "",
+                  "text": null,
+                  "desc": null,
+                  "resourceId": null,
+                  "class": "android.widget.FrameLayout",
+                  "clickable": true,
+                  "editable": false
+                },
+                {
+                  "index": 4,
+                  "label": "com.jingdong.app.mall:id\/a0i",
+                  "text": null,
+                  "desc": null,
+                  "resourceId": "com.jingdong.app.mall:id\/a0i",
+                  "class": "android.widget.RelativeLayout",
+                  "clickable": false,
+                  "editable": false
+                },
+                {
+                  "index": 5,
+                  "label": "猴头菇酥性曲奇奶油奶香味营养早餐零食养胃代餐独立包蜜饯果干 猴头菇饼干 1000g独立包装 人民币12.89",
+                  "text": null,
+                  "desc": "猴头菇酥性曲奇奶油奶香味营养早餐零食养胃代餐独立包蜜饯果干 猴头菇饼干 1000g独立包装 人民币12.89",
+                  "resourceId": null,
+                  "class": "android.view.ViewGroup",
+                  "clickable": false,
+                  "editable": false
+                },
+                {
+                  "index": 6,
+                  "label": "",
+                  "text": null,
+                  "desc": null,
+                  "resourceId": null,
+                  "class": "android.widget.FrameLayout",
+                  "clickable": true,
+                  "editable": false
+                },
+                {
+                  "index": 7,
+                  "label": "com.jingdong.app.mall:id\/a0i",
+                  "text": null,
+                  "desc": null,
+                  "resourceId": "com.jingdong.app.mall:id\/a0i",
+                  "class": "android.widget.RelativeLayout",
+                  "clickable": false,
+                  "editable": false
+                }
+              ]
+            },
+            {
+              "screenId": "screen_13197c3e",
+              "title": "不感兴趣",
+              "screenKey": "13197c3e",
+              "nodeCount": 60,
+              "clickableCount": 10,
+              "editableCount": 0,
+              "labels": [
+                "不感兴趣",
+                "商品不感兴趣",
+                "不想看这类商品",
+                "已经买了",
+                "相似商品过多",
+                "商品问题",
+                "引人不适",
+                "疑似AI图"
+              ],
+              "bottomTabs": []
+            },
+            {
+              "screenId": "screen_17944b7d",
+              "title": "AMD 京东超级品牌日",
+              "screenKey": "17944b7d",
+              "nodeCount": 129,
+              "clickableCount": 22,
+              "editableCount": 0,
+              "labels": [
+                "android:id\/content",
+                "com.jingdong.app.mall:id\/dov",
+                "com.jingdong.app.mall:id\/dpu",
+                "com.jingdong.app.mall:id\/dou",
+                "AMD 京东超级品牌日",
+                "bab_aid_02105663",
+                "J_babelOpt",
+                "J_babelOptPage"
+              ],
+              "bottomTabs": [
+                {
+                  "index": 0,
+                  "label": "开通学生认证至高再叠2000元专享",
+                  "text": null,
+                  "desc": "开通学生认证至高再叠2000元专享",
+                  "resourceId": null,
+                  "class": "android.view.View",
+                  "clickable": true,
+                  "editable": false
+                },
+                {
+                  "index": 1,
+                  "label": "点击图片访问新内容",
+                  "text": null,
+                  "desc": "点击图片访问新内容",
+                  "resourceId": null,
+                  "class": "android.view.View",
+                  "clickable": true,
+                  "editable": false
+                },
+                {
+                  "index": 2,
+                  "label": "图片",
+                  "text": "图片",
+                  "desc": null,
+                  "resourceId": null,
+                  "class": "android.widget.Image",
+                  "clickable": false,
+                  "editable": false
+                },
+                {
+                  "index": 3,
+                  "label": "图片",
+                  "text": "图片",
+                  "desc": null,
+                  "resourceId": null,
+                  "class": "android.widget.Image",
+                  "clickable": false,
+                  "editable": false
+                },
+                {
+                  "index": 4,
+                  "label": "图片",
+                  "text": "图片",
+                  "desc": null,
+                  "resourceId": null,
+                  "class": "android.widget.Image",
+                  "clickable": false,
+                  "editable": false
+                },
+                {
+                  "index": 5,
+                  "label": "图片",
+                  "text": "图片",
+                  "desc": null,
+                  "resourceId": null,
+                  "class": "android.widget.Image",
+                  "clickable": false,
+                  "editable": false
+                },
+                {
+                  "index": 6,
+                  "label": "android:id\/navigationBarBackground",
+                  "text": null,
+                  "desc": null,
+                  "resourceId": "android:id\/navigationBarBackground",
+                  "class": "android.view.View",
+                  "clickable": false,
+                  "editable": false
+                },
+                {
+                  "index": 7,
+                  "label": "点击图片访问新内容",
+                  "text": null,
+                  "desc": "点击图片访问新内容",
+                  "resourceId": null,
+                  "class": "android.view.View",
+                  "clickable": true,
+                  "editable": false
+                }
+              ]
+            },
+            {
+              "screenId": "screen_a6d51991",
+              "title": "不感兴趣",
+              "screenKey": "a6d51991",
+              "nodeCount": 30,
+              "clickableCount": 4,
+              "editableCount": 0,
+              "labels": [
+                "不感兴趣",
+                "商品不感兴趣",
+                "图片引起不适",
+                "不想看该内容"
+              ],
+              "bottomTabs": []
+            },
+            {
+              "screenId": "screen_1c0f75b2",
+              "title": "心动购物季主会场",
+              "screenKey": "1c0f75b2",
+              "nodeCount": 86,
+              "clickableCount": 11,
+              "editableCount": 0,
+              "labels": [
+                "android:id\/content",
+                "com.jingdong.app.mall:id\/dov",
+                "com.jingdong.app.mall:id\/dpu",
+                "com.jingdong.app.mall:id\/dou",
+                "心动购物季主会场",
+                "bab_aid_01923620",
+                "com.jingdong.app.mall:id\/dpm",
+                "com.jingdong.app.mall:id\/f_v"
+              ],
+              "bottomTabs": [
+                {
+                  "index": 0,
+                  "label": "android:id\/navigationBarBackground",
+                  "text": null,
+                  "desc": null,
+                  "resourceId": "android:id\/navigationBarBackground",
+                  "class": "android.view.View",
+                  "clickable": false,
+                  "editable": false
+                }
+              ]
+            },
+            {
+              "screenId": "screen_66f87792",
+              "title": "bab_aid_02095970",
+              "screenKey": "66f87792",
+              "nodeCount": 75,
+              "clickableCount": 9,
+              "editableCount": 0,
+              "labels": [
+                "android:id\/content",
+                "com.jd.lib.babel.feature:id\/babel_root",
+                "com.jd.lib.babel.feature:id\/babel_contents",
+                "bab_aid_02095970",
+                "J_babelOpt",
+                "J_babelOptPage",
+                "主会场 双击选中",
+                "低价热卖"
+              ],
+              "bottomTabs": [
+                {
+                  "index": 0,
+                  "label": "主会场 双击选中",
+                  "text": "主会场 双击选中",
+                  "desc": null,
+                  "resourceId": null,
+                  "class": "android.widget.Button",
+                  "clickable": true,
+                  "editable": false
+                },
+                {
+                  "index": 1,
+                  "label": "低价热卖",
+                  "text": "低价热卖",
+                  "desc": null,
+                  "resourceId": null,
+                  "class": "android.widget.Button",
+                  "clickable": true,
+                  "editable": false
+                },
+                {
+                  "index": 2,
+                  "label": "chunkplaceholder6",
+                  "text": null,
+                  "desc": null,
+                  "resourceId": "chunkplaceholder6",
+                  "class": "android.widget.TextView",
+                  "clickable": false,
+                  "editable": false
+                },
+                {
+                  "index": 3,
+                  "label": "chunkplaceholder7",
+                  "text": null,
+                  "desc": null,
+                  "resourceId": "chunkplaceholder7",
+                  "class": "android.widget.TextView",
+                  "clickable": false,
+                  "editable": false
+                },
+                {
+                  "index": 4,
+                  "label": "android:id\/navigationBarBackground",
+                  "text": null,
+                  "desc": null,
+                  "resourceId": "android:id\/navigationBarBackground",
+                  "class": "android.view.View",
+                  "clickable": false,
+                  "editable": false
+                },
+                {
+                  "index": 5,
+                  "label": "520好礼 双击选中",
+                  "text": "520好礼 双击选中",
+                  "desc": null,
+                  "resourceId": null,
+                  "class": "android.widget.Button",
+                  "clickable": true,
+                  "editable": false
+                },
+                {
+                  "index": 6,
+                  "label": "全部会场 双击选中",
+                  "text": "全部会场 双击选中",
+                  "desc": null,
+                  "resourceId": null,
+                  "class": "android.widget.Button",
+                  "clickable": true,
+                  "editable": false
+                },
+                {
+                  "index": 7,
+                  "label": "收起",
+                  "text": "收起",
+                  "desc": null,
+                  "resourceId": null,
+                  "class": "android.widget.TextView",
+                  "clickable": false,
+                  "editable": false
+                }
+              ]
+            },
+            {
+              "screenId": "screen_a2b08a15",
+              "title": "拍拍二手会场",
+              "screenKey": "a2b08a15",
+              "nodeCount": 218,
+              "clickableCount": 19,
+              "editableCount": 0,
+              "labels": [
+                "android:id\/content",
+                "com.jd.lib.babel.feature:id\/babel_root",
+                "com.jd.lib.babel.feature:id\/babel_contents",
+                "拍拍二手会场",
+                "bab_aid_01150129",
+                "J_babelOpt",
+                "J_babelOptPage",
+                "135de2ec15af9175"
+              ],
+              "bottomTabs": [
+                {
+                  "index": 0,
+                  "label": "主会场",
+                  "text": null,
+                  "desc": "主会场",
+                  "resourceId": null,
+                  "class": "android.view.View",
+                  "clickable": true,
+                  "editable": false
+                },
+                {
+                  "index": 1,
+                  "label": "主会场",
+                  "text": "主会场",
+                  "desc": null,
+                  "resourceId": null,
+                  "class": "android.widget.TextView",
+                  "clickable": false,
+                  "editable": false
+                },
+                {
+                  "index": 2,
+                  "label": "image",
+                  "text": "image",
+                  "desc": null,
+                  "resourceId": null,
+                  "class": "android.widget.Image",
+                  "clickable": false,
+                  "editable": false
+                },
+                {
+                  "index": 3,
+                  "label": "image",
+                  "text": "image",
+                  "desc": null,
+                  "resourceId": null,
+                  "class": "android.widget.Image",
+                  "clickable": false,
+                  "editable": false
+                },
+                {
+                  "index": 4,
+                  "label": "image",
+                  "text": "image",
+                  "desc": null,
+                  "resourceId": null,
+                  "class": "android.widget.Image",
+                  "clickable": false,
+                  "editable": false
+                },
+                {
+                  "index": 5,
+                  "label": "低价热卖",
+                  "text": null,
+                  "desc": "低价热卖",
+                  "resourceId": null,
+                  "class": "android.view.View",
+                  "clickable": true,
+                  "editable": false
+                },
+                {
+                  "index": 6,
+                  "label": "低价热卖",
+                  "text": "低价热卖",
+                  "desc": null,
+                  "resourceId": null,
+                  "class": "android.widget.TextView",
+                  "clickable": false,
+                  "editable": false
+                },
+                {
+                  "index": 7,
+                  "label": "低价热卖",
+                  "text": "低价热卖",
+                  "desc": null,
+                  "resourceId": null,
+                  "class": "android.widget.TextView",
+                  "clickable": false,
+                  "editable": false
+                }
+              ]
+            },
+            {
+              "screenId": "screen_2732c0fe",
+              "title": "关闭",
+              "screenKey": "2732c0fe",
+              "nodeCount": 420,
+              "clickableCount": 119,
+              "editableCount": 0,
+              "labels": [
+                "关闭",
+                "android:id\/content",
+                "com.jingdong.app.mall:id\/dov",
+                "com.jingdong.app.mall:id\/dpu",
+                "com.jingdong.app.mall:id\/dou",
+                "手机数码",
+                "bab_aid_00379505",
+                "J_babelOpt"
+              ],
+              "bottomTabs": [
+                {
+                  "index": 0,
+                  "label": "",
+                  "text": null,
+                  "desc": null,
+                  "resourceId": null,
+                  "class": "android.view.View",
+                  "clickable": true,
+                  "editable": false
+                },
+                {
+                  "index": 1,
+                  "label": "一加Ace6至尊版",
+                  "text": "一加Ace6至尊版",
+                  "desc": null,
+                  "resourceId": null,
+                  "class": "android.widget.TextView",
+                  "clickable": false,
+                  "editable": false
+                },
+                {
+                  "index": 2,
+                  "label": "享国补",
+                  "text": "享国补",
+                  "desc": null,
+                  "resourceId": null,
+                  "class": "android.widget.TextView",
+                  "clickable": false,
+                  "editable": false
+                },
+                {
+                  "index": 3,
+                  "label": "￥2999",
+                  "text": "￥2999",
+                  "desc": null,
+                  "resourceId": null,
+                  "class": "android.widget.TextView",
+                  "clickable": false,
+                  "editable": false
+                },
+                {
+                  "index": 4,
+                  "label": "",
+                  "text": null,
+                  "desc": null,
+                  "resourceId": null,
+                  "class": "android.view.View",
+                  "clickable": true,
+                  "editable": false
+                },
+                {
+                  "index": 5,
+                  "label": "image",
+                  "text": "image",
+                  "desc": null,
+                  "resourceId": null,
+                  "class": "android.widget.Image",
+                  "clickable": false,
+                  "editable": false
+                },
+                {
+                  "index": 6,
+                  "label": "",
+                  "text": null,
+                  "desc": null,
+                  "resourceId": null,
+                  "class": "android.view.View",
+                  "clickable": true,
+                  "editable": false
+                },
+                {
+                  "index": 7,
+                  "label": "",
+                  "text": null,
+                  "desc": null,
+                  "resourceId": null,
+                  "class": "android.view.View",
+                  "clickable": true,
+                  "editable": false
+                }
+              ]
+            }
+          ],
+          "updatedAt": 1779237326770,
+          "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/app_ui_graphs\/com.jingdong.app.mall\/graph_candidate.json"
+        }
+      },
+      {
+        "title": "手机端相似 Skill 自适应规划",
+        "status": "SUCCESS",
+        "message": "本机先复用抖音\/小红书成功模式：识别 intent=generic_search，改写出 7 个细粒度步骤；AI v4pro 只在失败或二次判断时接管。",
+        "path": null,
+        "extra": {
+          "planner": "PHONE_SIDE_SIMILAR_SKILL_ADAPTER_V1",
+          "intentId": "generic_search",
+          "appPackage": "com.jingdong.app.mall",
+          "instruction": "在京东搜索耳机，停在商品结果页并记录筛选、店铺、价格入口。\n\n约束：目标 App=京东，包名=com.jingdong.app.mall。必须由 MacroPilot 手机端自己用无障碍、输入法、AI\/Skill JSON 执行，不允许依赖 ADB 手点目标 App。执行前先读取当前 UI；如果遇到广告、弹窗、小字提示，先记录文字并安全关闭。任务完成必须用当前 UI 证据验证，不能只因为步骤执行完就报成功。如果没有现成 skill，先复用已有相似 Skill JSON\/archetype，只改关键槽位如入口文字、坐标、目标文本、验证规则，再组装 atomic\/macro skill。需要探索入",
+          "source": "local_rules_plus_existing_skill_similarity",
+          "similarCases": [
+            {
+              "skillId": "patched.command.1779338878450",
+              "kind": "macro_skill",
+              "appPackage": "com.taobao.taobao",
+              "implements": "AiPlannedMacroSkill",
+              "intentId": "search_in_app",
+              "score": 53,
+              "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_candidates\/com.taobao.taobao\/patched.command.1779338878450.json"
+            },
+            {
+              "skillId": "patched.command.1779338890723",
+              "kind": "macro_skill",
+              "appPackage": "com.taobao.taobao",
+              "implements": "AiPlannedMacroSkill",
+              "intentId": "search_in_app",
+              "score": 53,
+              "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_candidates\/com.taobao.taobao\/patched.command.1779338890723.json"
+            },
+            {
+              "skillId": "patched.command.1779338840458",
+              "kind": "macro_skill",
+              "appPackage": "com.dianping.v1",
+              "implements": "AiPlannedMacroSkill",
+              "intentId": "search_in_app",
+              "score": 53,
+              "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_candidates\/com.dianping.v1\/patched.command.1779338840458.json"
+            },
+            {
+              "skillId": "patched.command.1779338850577",
+              "kind": "macro_skill",
+              "appPackage": "com.dianping.v1",
+              "implements": "AiPlannedMacroSkill",
+              "intentId": "search_in_app",
+              "score": 53,
+              "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_candidates\/com.dianping.v1\/patched.command.1779338850577.json"
+            },
+            {
+              "skillId": "patched.command.1779306802719",
+              "kind": "macro_skill",
+              "appPackage": "com.sankuai.meituan",
+              "implements": "AiPlannedMacroSkill",
+              "intentId": "search_in_app",
+              "score": 53,
+              "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_candidates\/com.sankuai.meituan\/patched.command.1779306802719.json"
+            },
+            {
+              "skillId": "patched.command.1779306791298",
+              "kind": "macro_skill",
+              "appPackage": "com.sankuai.meituan",
+              "implements": "AiPlannedMacroSkill",
+              "intentId": "search_in_app",
+              "score": 53,
+              "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_candidates\/com.sankuai.meituan\/patched.command.1779306791298.json"
+            },
+            {
+              "skillId": "patched.command.1779338800012",
+              "kind": "macro_skill",
+              "appPackage": "com.sankuai.meituan",
+              "implements": "AiPlannedMacroSkill",
+              "intentId": "search_in_app",
+              "score": 53,
+              "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_candidates\/com.sankuai.meituan\/patched.command.1779338800012.json"
+            },
+            {
+              "skillId": "patched.command.1779338812522",
+              "kind": "macro_skill",
+              "appPackage": "com.sankuai.meituan",
+              "implements": "AiPlannedMacroSkill",
+              "intentId": "search_in_app",
+              "score": 53,
+              "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_candidates\/com.sankuai.meituan\/patched.command.1779338812522.json"
+            }
+          ],
+          "stepCount": 7,
+          "currentPackage": "com.taobao.taobao",
+          "nodeCount": 38,
+          "notes": [
+            "App-side planner generated candidate JSON without ADB UI control.",
+            "Existing candidate\/approved skills are used as similarity evidence; generated steps are still dry-run checked before execution.",
+            "AI remains a fallback for empty or failed local planning."
+          ]
+        }
+      },
+      {
+        "title": "v4pro 执行前复核",
+        "status": "FAILED",
+        "message": "模型=deepseek-v4-pro；HTTP=402；patchedSteps=0；usePatched=false；",
+        "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ai_jobs\/2026-05-21\/factory_ai_plan_review_1779338918214.json",
+        "extra": {
+          "decision": {}
+        }
+      },
+      {
+        "title": "相似成功案例改写为 Skill JSON",
+        "status": "SUCCESS",
+        "message": "不靠 ADB 拼流程；App 底层把 intent=generic_search 拆成 8 个 candidate JSON，之后统一 dry-run、执行、失败再让 v4pro 二次判断。",
+        "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_candidates\/com.jingdong.app.mall\/patched.command.1779338918226.json",
+        "extra": {
+          "planner": "PHONE_SIDE_SIMILAR_SKILL_ADAPTER_V1",
+          "intentId": "generic_search",
+          "appPackage": "com.jingdong.app.mall",
+          "instruction": "在京东搜索耳机，停在商品结果页并记录筛选、店铺、价格入口。\n\n约束：目标 App=京东，包名=com.jingdong.app.mall。必须由 MacroPilot 手机端自己用无障碍、输入法、AI\/Skill JSON 执行，不允许依赖 ADB 手点目标 App。执行前先读取当前 UI；如果遇到广告、弹窗、小字提示，先记录文字并安全关闭。任务完成必须用当前 UI 证据验证，不能只因为步骤执行完就报成功。如果没有现成 skill，先复用已有相似 Skill JSON\/archetype，只改关键槽位如入口文字、坐标、目标文本、验证规则，再组装 atomic\/macro skill。需要探索入",
+          "source": "local_rules_plus_existing_skill_similarity",
+          "similarCases": [
+            {
+              "skillId": "patched.command.1779338878450",
+              "kind": "macro_skill",
+              "appPackage": "com.taobao.taobao",
+              "implements": "AiPlannedMacroSkill",
+              "intentId": "search_in_app",
+              "score": 53,
+              "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_candidates\/com.taobao.taobao\/patched.command.1779338878450.json"
+            },
+            {
+              "skillId": "patched.command.1779338890723",
+              "kind": "macro_skill",
+              "appPackage": "com.taobao.taobao",
+              "implements": "AiPlannedMacroSkill",
+              "intentId": "search_in_app",
+              "score": 53,
+              "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_candidates\/com.taobao.taobao\/patched.command.1779338890723.json"
+            },
+            {
+              "skillId": "patched.command.1779338840458",
+              "kind": "macro_skill",
+              "appPackage": "com.dianping.v1",
+              "implements": "AiPlannedMacroSkill",
+              "intentId": "search_in_app",
+              "score": 53,
+              "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_candidates\/com.dianping.v1\/patched.command.1779338840458.json"
+            },
+            {
+              "skillId": "patched.command.1779338850577",
+              "kind": "macro_skill",
+              "appPackage": "com.dianping.v1",
+              "implements": "AiPlannedMacroSkill",
+              "intentId": "search_in_app",
+              "score": 53,
+              "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_candidates\/com.dianping.v1\/patched.command.1779338850577.json"
+            },
+            {
+              "skillId": "patched.command.1779306802719",
+              "kind": "macro_skill",
+              "appPackage": "com.sankuai.meituan",
+              "implements": "AiPlannedMacroSkill",
+              "intentId": "search_in_app",
+              "score": 53,
+              "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_candidates\/com.sankuai.meituan\/patched.command.1779306802719.json"
+            },
+            {
+              "skillId": "patched.command.1779306791298",
+              "kind": "macro_skill",
+              "appPackage": "com.sankuai.meituan",
+              "implements": "AiPlannedMacroSkill",
+              "intentId": "search_in_app",
+              "score": 53,
+              "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_candidates\/com.sankuai.meituan\/patched.command.1779306791298.json"
+            },
+            {
+              "skillId": "patched.command.1779338800012",
+              "kind": "macro_skill",
+              "appPackage": "com.sankuai.meituan",
+              "implements": "AiPlannedMacroSkill",
+              "intentId": "search_in_app",
+              "score": 53,
+              "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_candidates\/com.sankuai.meituan\/patched.command.1779338800012.json"
+            },
+            {
+              "skillId": "patched.command.1779338812522",
+              "kind": "macro_skill",
+              "appPackage": "com.sankuai.meituan",
+              "implements": "AiPlannedMacroSkill",
+              "intentId": "search_in_app",
+              "score": 53,
+              "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_candidates\/com.sankuai.meituan\/patched.command.1779338812522.json"
+            }
+          ],
+          "stepCount": 7,
+          "currentPackage": "com.taobao.taobao",
+          "nodeCount": 38,
+          "notes": [
+            "App-side planner generated candidate JSON without ADB UI control.",
+            "Existing candidate\/approved skills are used as similarity evidence; generated steps are still dry-run checked before execution.",
+            "AI remains a fallback for empty or failed local planning."
+          ]
+        }
+      },
+      {
+        "title": "dry-run 静态检查",
+        "status": "FAILED_DRY_RUN",
+        "message": "通过 7\/8。",
+        "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_dry_run_reports\/com.jingdong.app.mall\/patched.command.1779338918226_1779338921210.json",
+        "extra": {}
+      },
+      {
+        "title": "拼装 app_config 预览",
+        "status": "SUCCESS",
+        "message": "候选\/测试产物已拼为单个 app_config 预览。",
+        "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/app_config_exports\/com.jingdong.app.mall\/app_config_20260521_124841_229.json",
+        "extra": {}
+      },
+      {
+        "title": "执行候选 JSON",
+        "status": "RUNNING",
+        "message": "不等待 APPROVED：按用户要求，直接由 SkillJsonExecutor 执行候选 macro=patched.command.1779338918226。",
+        "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_candidates\/com.jingdong.app.mall\/patched.command.1779338918226.json",
+        "extra": {}
+      },
+      {
+        "title": "候选 JSON 执行结果",
+        "status": "FAILED_UNVERIFIABLE",
+        "message": "patched.command.1779338918226 -> FAILED_UNVERIFIABLE；Input change could not be verified; reactiveDismissedBeforeAction=2",
+        "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/runtime\/run_reports\/com.jingdong.app.mall\/ai_direct_run_1779338945812.json",
+        "extra": {}
+      },
+      {
+        "title": "本地弹窗规则处理",
+        "status": "SUCCESS",
+        "message": "AI 重判前先由手机端 GKD-like 规则处理阻断弹窗\/广告：节点规则处理 3 个，视觉兜底=false。",
+        "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/runtime\/run_reports\/com.jingdong.app.mall\/ai_direct_run_1779338945812.json",
+        "extra": {
+          "trigger": "EXECUTION_FAILED",
+          "blockingDialogsBefore": [
+            {
+              "type": "ad_or_splash",
+              "hits": [
+                "广告商品 com.jd.lib.omnichannelsearch.feature:id\/fd",
+                "广告商品 com.jd.lib.omnichannelsearch.feature:id\/fd"
+              ]
+            },
+            {
+              "type": "popup_observed",
+              "events": [],
+              "smallNodes": [
+                "京言导购助手 com.jd.lib.search.feature:id\/ye",
+                "com.jingdong.app.mall:id\/fcl",
+                "com.jingdong.app.mall:id\/fco",
+                "打开我的购物车 com.jd.lib.search.feature:id\/yd",
+                "京东物流 京东物流",
+                "新奥尔良味",
+                "全部",
+                "新品"
+              ]
+            }
+          ],
+          "dismissEvents": [
+            {
+              "pass": 1,
+              "kind": "ad_or_splash",
+              "label": "显示模式, 大图",
+              "score": 66,
+              "reason": "flow_replan:EXECUTION_FAILED",
+              "success": true,
+              "message": "dispatchGesture tap sent (normalized=0.911,0.081 px=1312,258 screen=1440x3168)",
+              "bounds": "1248 178 1376 338"
+            },
+            {
+              "pass": 2,
+              "kind": "ad_or_splash",
+              "label": "显示模式, 列表",
+              "score": 66,
+              "reason": "flow_replan:EXECUTION_FAILED",
+              "success": true,
+              "message": "dispatchGesture tap sent (normalized=0.911,0.081 px=1312,258 screen=1440x3168)",
+              "bounds": "1248 178 1376 338"
+            },
+            {
+              "pass": 3,
+              "kind": "ad_or_splash",
+              "label": "显示模式, 大图",
+              "score": 66,
+              "reason": "flow_replan:EXECUTION_FAILED",
+              "success": true,
+              "message": "dispatchGesture tap sent (normalized=0.911,0.081 px=1312,258 screen=1440x3168)",
+              "bounds": "1248 178 1376 338"
+            }
+          ],
+          "visualFallback": null
+        }
+      },
+      {
+        "title": "失败后 AI 判断",
+        "status": "RUNNING",
+        "message": "当前不是直接停下：App 把失败原因、当前屏幕节点和已跑步骤发给手机端 AI，让 AI 判断下一段补救 JSON。",
+        "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/runtime\/run_reports\/com.jingdong.app.mall\/ai_direct_run_1779338945812.json",
+        "extra": {
+          "phase": "REPLAN",
+          "trigger": "EXECUTION_FAILED",
+          "previousStatus": "FAILED_UNVERIFIABLE",
+          "previousMessage": "Input change could not be verified; reactiveDismissedBeforeAction=2"
+        }
+      },
+      {
+        "title": "失败后 AI 判断 返回",
+        "status": "FAILED",
+        "message": "HTTP=402；模型=deepseek-v4-pro；goalCompleted=false；补救步骤=0；诊断=",
+        "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ai_jobs\/2026-05-21\/factory_ai_replan_1779338949512.json",
+        "extra": {
+          "decision": {}
+        }
+      },
+      {
+        "title": "通用第三方搜索兜底启动",
+        "status": "RUNNING",
+        "message": "AI 计划没有命中可点击节点；现在生成通用搜索 Skill JSON：打开应用 -> 点搜索入口 -> 输入关键词 -> 点搜索。坐标只作为低置信兜底。",
+        "path": null,
+        "extra": {
+          "query": "耳机，停在商品结果页并记录筛选、店铺、价格入口。\n\n约束：目标 App=京东，包名=com.jingdong.app.mall。必须由 MacroPilot 手机端自己用无障碍、输入法、AI\/Skill JSON 执行，不允许依赖 ADB 手点目标 App。执行前先读取当前 UI；如果遇到广告、弹窗、小字提示，先记录文字并安全关闭。任务完成必须用当前 UI 证据验证，不能只因为步骤执行完就报成功。如果没有现成 skill，先复用已有相似 Skill JSON\/archetype，只改关键槽位如入口文字、坐标、目标文本、验证规则，再组装 atomic\/macro skill。需要探索入口时优先遍历底部标签、顶部小图标、图形化入口、侧边操作和子页面。本任务 stopBeforeSubmit=true：写草稿、评论、订单、支付类流程必须停在提交前，不点击最终发布、发送、提交订单、支付、确认授权。期望证据包括：耳机、商品。",
+          "appPackage": "com.jingdong.app.mall"
+        }
+      },
+      {
+        "title": "通用搜索 Skill JSON 已写入",
+        "status": "SUCCESS",
+        "message": "已写入 9 个候选 JSON，包含文字优先和坐标兜底。",
+        "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_candidates\/com.jingdong.app.mall\/patched.command.1779338949541.json",
+        "extra": {}
+      },
+      {
+        "title": "通用搜索 dry-run",
+        "status": "FAILED_DRY_RUN",
+        "message": "通过 26\/28。",
+        "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_dry_run_reports\/com.jingdong.app.mall\/com.jingdong.app.mall.open_app_1779338953506.json",
+        "extra": {}
+      },
+      {
+        "title": "通用搜索兜底执行结果",
+        "status": "FAILED_UNVERIFIABLE",
+        "message": "patched.command.1779338949541 -> FAILED_UNVERIFIABLE；Input change could not be verified; reactiveDismissedBeforeAction=2",
+        "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/runtime\/run_reports\/com.jingdong.app.mall\/generic_search_fallback_1779338976638.json",
+        "extra": {}
+      },
+      {
+        "title": "目标未完成，继续 AI 判断",
+        "status": "RUNNING",
+        "message": "没有同时看到搜索词和结果页标记，不能把搜索任务报告为成功。；第 1\/4 次继续重判当前屏幕。",
+        "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/runtime\/run_reports\/com.jingdong.app.mall\/ai_direct_run_1779338945812.json",
+        "extra": {
+          "serviceConnected": true,
+          "appPackage": "com.jingdong.app.mall",
+          "nodeCount": 466,
+          "goalVerificationSnapshotPath": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_snapshots\/com.jingdong.app.mall\/20260521_124936_641_e6fce4c5.json",
+          "goalVerificationScreenshotPath": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_screenshots\/com.jingdong.app.mall\/20260521_124936_641_e6fce4c5.png",
+          "goalVerificationScreenshotSha256": "0b489705bcf20d5f842d1b4e48a9f05342db705c08ca0677173fe5ba7810eaf7",
+          "goalVerificationVisualHash": "5149e7452f3ca47c27177c4b9176327567de2c13b1b8a6dce4e2967b88e3e5f1",
+          "sampleTexts": [
+            "京言导购助手",
+            "打开我的购物车",
+            "61",
+            "浏览记录",
+            "返回",
+            "搜频道",
+            "鸡腿",
+            "删除"
+          ],
+          "query": "耳机，停在商品结果页并记录筛选、店铺、价格入口。",
+          "queryVisible": false
+        }
+      },
+      {
+        "title": "本地弹窗规则处理",
+        "status": "SUCCESS",
+        "message": "AI 重判前先由手机端 GKD-like 规则处理阻断弹窗\/广告：节点规则处理 3 个，视觉兜底=false。",
+        "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/runtime\/run_reports\/com.jingdong.app.mall\/ai_direct_run_1779338945812.json",
+        "extra": {
+          "trigger": "GOAL_UNVERIFIED_LOOP_1",
+          "blockingDialogsBefore": [
+            {
+              "type": "ad_or_splash",
+              "hits": [
+                "广告商品 com.jd.lib.omnichannelsearch.feature:id\/fd",
+                "广告商品 com.jd.lib.omnichannelsearch.feature:id\/fd"
+              ]
+            },
+            {
+              "type": "popup_observed",
+              "events": [],
+              "smallNodes": [
+                "京言导购助手 com.jd.lib.search.feature:id\/ye",
+                "com.jingdong.app.mall:id\/fcl",
+                "com.jingdong.app.mall:id\/fco",
+                "打开我的购物车 com.jd.lib.search.feature:id\/yd",
+                "京东物流 京东物流",
+                "新奥尔良味",
+                "全部",
+                "新品"
+              ]
+            }
+          ],
+          "dismissEvents": [
+            {
+              "pass": 1,
+              "kind": "ad_or_splash",
+              "label": "显示模式, 列表",
+              "score": 66,
+              "reason": "flow_replan:GOAL_UNVERIFIED_LOOP_1",
+              "success": true,
+              "message": "dispatchGesture tap sent (normalized=0.911,0.081 px=1312,258 screen=1440x3168)",
+              "bounds": "1248 178 1376 338"
+            },
+            {
+              "pass": 2,
+              "kind": "ad_or_splash",
+              "label": "显示模式, 大图",
+              "score": 66,
+              "reason": "flow_replan:GOAL_UNVERIFIED_LOOP_1",
+              "success": true,
+              "message": "dispatchGesture tap sent (normalized=0.911,0.081 px=1312,258 screen=1440x3168)",
+              "bounds": "1248 178 1376 338"
+            },
+            {
+              "pass": 3,
+              "kind": "ad_or_splash",
+              "label": "显示模式, 列表",
+              "score": 66,
+              "reason": "flow_replan:GOAL_UNVERIFIED_LOOP_1",
+              "success": true,
+              "message": "dispatchGesture tap sent (normalized=0.911,0.081 px=1312,258 screen=1440x3168)",
+              "bounds": "1248 178 1376 338"
+            }
+          ],
+          "visualFallback": null
+        }
+      },
+      {
+        "title": "入口未找到，启动底部分页扫描",
+        "status": "RUNNING",
+        "message": "回到目标 App 主页，逐个点底部 tab，查找入口：发帖\/发布\/创作\/写\/加号\/+。",
+        "path": null,
+        "extra": {
+          "entryAliases": [
+            "发帖",
+            "发布",
+            "创作",
+            "写",
+            "加号",
+            "+"
+          ],
+          "currentUi": {
+            "serviceConnected": true,
+            "appPackage": "com.jingdong.app.mall",
+            "windowClassName": "androidx.recyclerview.widget.RecyclerView",
+            "screenWidth": 1440,
+            "screenHeight": 3168,
+            "nodeCount": 422,
+            "snapshotPath": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_snapshots\/com.jingdong.app.mall\/20260521_124940_138_e6fce4c5.json",
+            "recentUiSnapshots": [
+              {
+                "id": "ui_snapshot_1779338980600",
+                "source": "current_ui_summary",
+                "note": "factory_ai_context",
+                "appPackage": "com.jingdong.app.mall",
+                "windowClassName": "androidx.recyclerview.widget.RecyclerView",
+                "screenKey": "e6fce4c5",
+                "screenshotPath": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_screenshots\/com.jingdong.app.mall\/20260521_124940_138_e6fce4c5.png",
+                "visualHash": "e5ecebc8fd555d032a1a3846a58cd01904c7a909911e63c4d32c0eaaebe4ef65"
+              },
+              {
+                "id": "ui_snapshot_1779338980108",
+                "source": "goal_verification",
+                "note": "在京东搜索耳机，停在商品结果页并记录筛选、店铺、价格入口。",
+                "appPackage": "com.jingdong.app.mall",
+                "windowClassName": "androidx.recyclerview.widget.RecyclerView",
+                "screenKey": "e6fce4c5",
+                "screenshotPath": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_screenshots\/com.jingdong.app.mall\/20260521_124939_537_e6fce4c5.png",
+                "visualHash": "d96fae14f7351a18fd064bd14bd748d97dcb0abf876b00a84ae634cbd16326e9"
+              },
+              {
+                "id": "ui_snapshot_1779338979320",
+                "source": "accessibility_auto",
+                "note": "TYPE_WINDOW_CONTENT_CHANGED",
+                "appPackage": "com.jingdong.app.mall",
+                "windowClassName": "androidx.recyclerview.widget.RecyclerView",
+                "screenKey": "e6fce4c5",
+                "screenshotPath": "null",
+                "visualHash": "null"
+              },
+              {
+                "id": "ui_snapshot_1779338977052",
+                "source": "goal_verification",
+                "note": "在京东搜索耳机，停在商品结果页并记录筛选、店铺、价格入口。",
+                "appPackage": "com.jingdong.app.mall",
+                "windowClassName": "androidx.recyclerview.widget.RecyclerView",
+                "screenKey": "e6fce4c5",
+                "screenshotPath": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_screenshots\/com.jingdong.app.mall\/20260521_124936_641_e6fce4c5.png",
+                "visualHash": "5149e7452f3ca47c27177c4b9176327567de2c13b1b8a6dce4e2967b88e3e5f1"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "title": "底部分页扫描 dry-run",
+        "status": "SUCCESS",
+        "message": "通过 5\/5。",
+        "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_dry_run_reports\/com.jingdong.app.mall\/patched.command.1779338980649_1779338982370.json",
+        "extra": {}
+      },
+      {
+        "title": "底部分页扫描结果",
+        "status": "FAILED_ELEMENT_NOT_FOUND",
+        "message": "patched.command.1779338980649 -> FAILED_ELEMENT_NOT_FOUND; Bottom-tab sweep did not find entry aliases=发帖\/发布\/创作\/写\/加号\/+; tabsVisited=5; events=[{\"phase\":\"open_before_recover\",\"packageName\":\"com.jingdong.app.mall\",\"success\":true,\"message\":\"L",
+        "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/runtime\/run_reports\/com.jingdong.app.mall\/bottom_tab_entry_sweep_1779339035962.json",
+        "extra": {
+          "entryAliases": [
+            "发帖",
+            "发布",
+            "创作",
+            "写",
+            "加号",
+            "+"
+          ],
+          "executorStatus": "FAILED_ELEMENT_NOT_FOUND"
+        }
+      },
+      {
+        "title": "失败后 AI 判断",
+        "status": "RUNNING",
+        "message": "当前不是直接停下：App 把失败原因、当前屏幕节点和已跑步骤发给手机端 AI，让 AI 判断下一段补救 JSON。",
+        "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/runtime\/run_reports\/com.jingdong.app.mall\/bottom_tab_entry_sweep_1779339035962.json",
+        "extra": {
+          "phase": "REPLAN",
+          "trigger": "GOAL_UNVERIFIED_LOOP_1",
+          "previousStatus": "FAILED_GOAL_UNVERIFIED",
+          "previousMessage": "没有同时看到搜索词和结果页标记，不能把搜索任务报告为成功。"
+        }
+      },
+      {
+        "title": "失败后 AI 判断 返回",
+        "status": "FAILED",
+        "message": "HTTP=402；模型=deepseek-v4-pro；goalCompleted=false；补救步骤=0；诊断=",
+        "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ai_jobs\/2026-05-21\/factory_ai_replan_1779339037977.json",
+        "extra": {
+          "decision": {}
+        }
+      },
+      {
+        "title": "AI 未返回补救动作，停止重复等待",
+        "status": "FAILED_NO_REPLAN",
+        "message": "失败后 AI 判断没有产出可执行 JSON，通常是 API 超时\/网络失败\/解析失败；本次停止循环，避免一直卡在 RUNNING。",
+        "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ai_jobs\/2026-05-21\/factory_ai_replan_1779339037977.json",
+        "extra": {
+          "goalCheck": {
+            "serviceConnected": true,
+            "appPackage": "com.jingdong.app.mall",
+            "nodeCount": 270,
+            "goalVerificationSnapshotPath": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_snapshots\/com.jingdong.app.mall\/20260521_125035_965_17373f87.json",
+            "goalVerificationScreenshotPath": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_screenshots\/com.jingdong.app.mall\/20260521_125035_965_17373f87.png",
+            "goalVerificationScreenshotSha256": "70abc8f46cdb865b8004c20777405c71994851c6ff02869923af86613aba3c2c",
+            "goalVerificationVisualHash": "1a00d2eda27a6456849ab5c2d224909c77fcad05debb2dce0919efd74c3627e6",
+            "sampleTexts": [
+              "商品图片1",
+              "商品图片2",
+              "1",
+              "2",
+              "5.9折到手价",
+              "已售200+",
+              "¥5.9",
+              "零售价"
+            ]
+          }
+        }
+      },
+      {
+        "title": "目标完成校验",
+        "status": "FAILED_GOAL_UNVERIFIED",
+        "message": "没有同时看到搜索词和结果页标记，不能把搜索任务报告为成功。",
+        "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/runtime\/run_reports\/com.jingdong.app.mall\/bottom_tab_entry_sweep_1779339035962.json",
+        "extra": {
+          "serviceConnected": true,
+          "appPackage": "com.jingdong.app.mall",
+          "nodeCount": 270,
+          "goalVerificationSnapshotPath": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_snapshots\/com.jingdong.app.mall\/20260521_125035_965_17373f87.json",
+          "goalVerificationScreenshotPath": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_screenshots\/com.jingdong.app.mall\/20260521_125035_965_17373f87.png",
+          "goalVerificationScreenshotSha256": "70abc8f46cdb865b8004c20777405c71994851c6ff02869923af86613aba3c2c",
+          "goalVerificationVisualHash": "1a00d2eda27a6456849ab5c2d224909c77fcad05debb2dce0919efd74c3627e6",
+          "sampleTexts": [
+            "商品图片1",
+            "商品图片2",
+            "1",
+            "2",
+            "5.9折到手价",
+            "已售200+",
+            "¥5.9",
+            "零售价"
+          ],
+          "query": "耳机，停在商品结果页并记录筛选、店铺、价格入口。",
+          "queryVisible": false
+        }
+      },
+      {
+        "title": "保留目标应用前台用于证据",
+        "status": "INFO",
+        "message": "本次保留目标应用当前页面，不把 MacroPilot 拉回前台；报告里会记录当前 UI 快照和截图，方便继续让 AI 判断卡点。",
+        "path": null,
+        "extra": {}
+      }
+    ],
+    "assemblyReports": [
+      {
+        "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/app_config_exports\/com.jingdong.app.mall\/assembly_report_1779338921234.json",
+        "planStepCount": 0,
+        "generatedSkillCount": 0,
+        "macroSkillId": "",
+        "rule": "",
+        "patches": []
+      }
+    ],
+    "previewConfigFile": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/app_config_exports\/com.jingdong.app.mall\/app_config_20260521_124841_229.json",
+    "runtimeRunReport": {
+      "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/runtime\/run_reports\/com.jingdong.app.mall\/bottom_tab_entry_sweep_1779339035962.json",
+      "kind": "skill_json_bottom_tab_entry_sweep_report",
+      "skillId": "patched.command.1779338980649",
+      "status": "FAILED_ELEMENT_NOT_FOUND",
+      "message": "Bottom-tab sweep did not find entry aliases=发帖\/发布\/创作\/写\/加号\/+; tabsVisited=5; events=[{\"phase\":\"open_before_recover\",\"packageName\":\"com.jingdong.app.mall\",\"success\":true,\"message\":\"Launch intent sent for com.jingdong.app.mall\"},{\"phase\":\"home_back\",\"index\":1,\"fromPackage\":\"com.jingdong.app.mall\",\"window\":\"android.widget.FrameLayout\",\"success\":true,\"message\":\"GLOBAL_ACTION_BACK performed\"},{\"phase\":\"home_back\",\"index\":2,\"fromPackage\":\"com.jingdong.app.mall\",\"window\":\"android.widget.ImageView\",\"succ",
+      "durationMs": 53591,
+      "usedCoordinate": true,
+      "goalCheck": {}
+    },
+    "goalTruth": {
+      "status": "FAILED_GOAL_UNVERIFIED",
+      "hasExplicitGoalCheck": true,
+      "goalStepStatus": "FAILED_GOAL_UNVERIFIED",
+      "goalStepMessage": "没有同时看到搜索词和结果页标记，不能把搜索任务报告为成功。",
+      "goalEvidence": {
+        "serviceConnected": true,
+        "appPackage": "com.jingdong.app.mall",
+        "nodeCount": 270,
+        "goalVerificationSnapshotPath": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_snapshots\/com.jingdong.app.mall\/20260521_125035_965_17373f87.json",
+        "goalVerificationScreenshotPath": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_screenshots\/com.jingdong.app.mall\/20260521_125035_965_17373f87.png",
+        "goalVerificationScreenshotSha256": "70abc8f46cdb865b8004c20777405c71994851c6ff02869923af86613aba3c2c",
+        "goalVerificationVisualHash": "1a00d2eda27a6456849ab5c2d224909c77fcad05debb2dce0919efd74c3627e6",
+        "sampleTexts": [
+          "商品图片1",
+          "商品图片2",
+          "1",
+          "2",
+          "5.9折到手价",
+          "已售200+",
+          "¥5.9",
+          "零售价",
+          "¥10",
+          "团购优惠",
+          "¥4.1",
+          "2元百亿补贴",
+          "凑单",
+          "【套餐搭配】人气小食任选1 【套餐搭配】人气小食任选1",
+          "服务",
+          "先囤后用",
+          "随时退",
+          "过期自动退",
+          "须知",
+          "购买后当日起7日内可用",
+          "商家营业时间内均可用",
+          "到店使用",
+          "周一至周日可用",
+          "到店",
+          "2.7km",
+          "塔斯汀·中国汉堡(井大路店)",
+          "11473家通用",
+          "提示",
+          "附近无可兑换门店，可浏览其他门店",
+          "商品详情"
+        ],
+        "query": "耳机，停在商品结果页并记录筛选、店铺、价格入口。",
+        "queryVisible": false,
+        "resultMarkerVisible": false
+      }
+    }
+  },
+  "datasetTargets": [
+    "screen_classifier_sft",
+    "element_role_labeler_sft",
+    "task_flow_planner_sft",
+    "skill_patch_generator_sft",
+    "verifier_recovery_sft"
+  ],
+  "qualityGates": {
+    "hasAppUiGraph": true,
+    "hasAssemblyReport": true,
+    "hasRuntimeTrace": true,
+    "hasGoalTruth": true,
+    "eligibleForCleanTraining": true
+  },
+  "storagePolicy": {
+    "rawScreenshotsLongTerm": false,
+    "fullNodeTreesLongTerm": false,
+    "keepsCompactUiGraph": true,
+    "keepsPatchReports": true
+  },
+  "createdAt": 1779339039873
+}

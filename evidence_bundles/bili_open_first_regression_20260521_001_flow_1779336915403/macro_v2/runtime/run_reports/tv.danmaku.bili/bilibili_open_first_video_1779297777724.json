@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "kind": "skill_json_bilibili_open_first_video_fallback_report",
+  "id": "bilibili_open_first_video_1779297777724",
+  "skillId": "patched.command.1779297773206",
+  "appPackage": "tv.danmaku.bili",
+  "instruction": "在哔哩哔哩搜索王老菊并打开第一个视频，必须验证已经进入视频播放页，不能只停在搜索结果页。\n\n约束：目标 App=哔哩哔哩，包名=tv.danmaku.bili。必须由 MacroPilot 手机端自己用无障碍、输入法、AI\/Skill JSON 执行，不允许依赖 ADB 手点目标 App。执行前先读取当前 UI；如果遇到广告、弹窗、小字提示，先记录文字并安全关闭。任务完成必须用当前 UI 证据验证，不能只因为步骤执行完就报成功。如果没有现成 skill，先复用已有相似 Skill JSON\/archetype，只改关键槽位如入口文字、坐标、目标文本、验证规则，再组装 atomic\/macro skill。需要探索入口时优先遍历底部标签、顶部小图标、图形化入口、侧边操作和子页面。本任务 stopBeforeSubmit=true：写草稿、评论、订单、支付类流程必须停在提交前，不点击最终发布、发送、提交订单、支付、确认授权。期望证据包括：搜索结果、第一个视频、播放页。",
+  "engine": "local_video_candidate_resolver",
+  "status": "SUCCESS_LOW_CONFIDENCE",
+  "message": "Macro atoms completed; reactiveDismissed=0",
+  "durationMs": 3830,
+  "usedCoordinate": true,
+  "allowSideEffect": true,
+  "selectedCandidate": {
+    "text": null,
+    "desc": null,
+    "resourceId": "tv.danmaku.bili:id\/cover",
+    "class": "android.widget.ImageView",
+    "clickable": false,
+    "bounds": "48 1503 736 1891",
+    "center": {
+      "x": 0.2722222222222222,
+      "y": 0.5356691919191919
+    },
+    "score": 83,
+    "hasVideoEvidence": true,
+    "hasQueryEvidence": false,
+    "pageHasQueryEvidence": true,
+    "pageHasSearchResultVideoSet": true
+  },
+  "skillFile": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_candidates\/tv.danmaku.bili\/patched.command.1779297773206.json",
+  "createdAt": 1779297777724
+}

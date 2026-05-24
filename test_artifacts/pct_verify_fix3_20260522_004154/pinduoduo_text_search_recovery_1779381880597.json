@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "kind": "skill_json_pinduoduo_text_search_recovery_report",
+  "id": "pinduoduo_text_search_recovery_1779381880597",
+  "skillId": "patched.command.1779381867945",
+  "appPackage": "com.xunmeng.pinduoduo",
+  "instruction": "在拼多多搜索纸巾，停在结果页并记录筛选、店铺、价格入口。",
+  "query": "纸巾，停在结果页并记录筛选、店铺、价格入口。",
+  "engine": "pinduoduo_text_search_recovery",
+  "approvedRequired": false,
+  "status": "FAILED_TIMEOUT",
+  "executorStatus": "FAILED_TIMEOUT",
+  "message": "Foreground package did not become com.xunmeng.pinduoduo",
+  "durationMs": 5089,
+  "usedCoordinate": false,
+  "allowSideEffect": true,
+  "goalCheck": {
+    "passed": false,
+    "message": "没有同时看到搜索词和结果页标记，不能把搜索任务报告为成功。",
+    "evidence": {
+      "serviceConnected": true,
+      "appPackage": "com.android.settings",
+      "nodeCount": 13,
+      "goalVerificationSnapshotPath": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_snapshots\/com.android.settings\/20260522_004440_291_e9f18e18.json",
+      "goalVerificationScreenshotPath": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_screenshots\/com.android.settings\/20260522_004440_291_e9f18e18.png",
+      "goalVerificationScreenshotSha256": "9564ec7c1fe75e6d37fdd03490b8e1743f3e6a7b73e19c50ad22ee3b421fc830",
+      "goalVerificationVisualHash": "51ccafab4c8ecbe1c13ae5acdf9143129ef298f154d8d8c9b2ac328eb4f322de",
+      "sampleTexts": [
+        "显示系统应用",
+        "全部不允许"
+      ],
+      "query": "纸巾，停在结果页并记录筛选、店铺、价格入口。",
+      "queryVisible": false,
+      "resultMarkerVisible": false,
+      "ecommerceResultMarkerVisible": false,
+      "pinduoduoCameraSearchSurface": false
+    }
+  },
+  "skillFile": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_candidates\/com.xunmeng.pinduoduo\/patched.command.1779381867945.json",
+  "createdAt": 1779381880597
+}

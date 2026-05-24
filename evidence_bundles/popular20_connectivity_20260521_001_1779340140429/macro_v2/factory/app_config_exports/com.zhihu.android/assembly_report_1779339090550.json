@@ -1,0 +1,532 @@
+{
+  "schemaVersion": 1,
+  "kind": "skill_json_assembly_report",
+  "id": "assembly_report_1779339090550",
+  "appPackage": "com.zhihu.android",
+  "appName": "知乎",
+  "mode": "FACTORY_PREVIEW",
+  "createdAt": 1779339090550,
+  "steps": [
+    "读取应用下的细粒度 skill JSON 文件",
+    "按状态过滤：预览排除 REJECTED，运行配置只允许 APPROVED",
+    "按 kind 拆分 atomicSkills \/ macroSkills \/ reactiveRules",
+    "合并 screens \/ elements \/ reports \/ runtimePolicy",
+    "写出 app_config JSON，并记录本次装配报告"
+  ],
+  "source": {
+    "skillFileCount": 22,
+    "includedSkillJsonCount": 21,
+    "includedSkillCount": 21,
+    "excludedSkillCount": 1,
+    "dryRunReportCount": 80,
+    "testReportCount": 0
+  },
+  "counts": {
+    "atomicSkills": 17,
+    "macroSkills": 4,
+    "reactiveRules": 0,
+    "screens": 0,
+    "elements": 0
+  },
+  "outputs": {
+    "previewConfigFile": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/app_config_exports\/com.zhihu.android\/app_config_20260521_125130_543.json",
+    "runtimeConfigIsExecutable": false
+  },
+  "runtimePolicy": {
+    "allowCandidateSkill": false,
+    "allowTrial": false,
+    "aiCallsDefault": 0,
+    "screenshotDefault": 0,
+    "maxTaskDurationMs": 30000
+  },
+  "includedSkills": [
+    {
+      "id": "patched.command.1779339085824",
+      "name": "手机端任务拼装 Skill",
+      "kind": "macro_skill",
+      "implements": "AiPlannedMacroSkill",
+      "status": "DRY_RUN_PASSED",
+      "included": true,
+      "reason": "INCLUDED",
+      "file": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_candidates\/com.zhihu.android\/patched.command.1779339085824.json",
+      "updatedAt": 1779339090524
+    },
+    {
+      "id": "patched.1779339085824.6.clickvisibletext",
+      "name": "改写步骤 6: ClickVisibleText",
+      "kind": "atomic_skill",
+      "implements": "ClickElementSkill",
+      "status": "DRY_RUN_PASSED",
+      "included": true,
+      "reason": "INCLUDED",
+      "file": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_candidates\/com.zhihu.android\/patched.1779339085824.6.clickvisibletext.json",
+      "updatedAt": 1779339090520
+    },
+    {
+      "id": "patched.1779339085824.7.wait",
+      "name": "改写步骤 7: Wait",
+      "kind": "atomic_skill",
+      "implements": "WaitUntilSkill",
+      "status": "DRY_RUN_PASSED",
+      "included": true,
+      "reason": "INCLUDED",
+      "file": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_candidates\/com.zhihu.android\/patched.1779339085824.7.wait.json",
+      "updatedAt": 1779339090520
+    },
+    {
+      "id": "patched.1779339085824.3.clickvisibletext",
+      "name": "改写步骤 3: ClickVisibleText",
+      "kind": "atomic_skill",
+      "implements": "ClickElementSkill",
+      "status": "DRY_RUN_PASSED",
+      "included": true,
+      "reason": "INCLUDED",
+      "file": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_candidates\/com.zhihu.android\/patched.1779339085824.3.clickvisibletext.json",
+      "updatedAt": 1779339090516
+    },
+    {
+      "id": "patched.1779339085824.4.wait",
+      "name": "改写步骤 4: Wait",
+      "kind": "atomic_skill",
+      "implements": "WaitUntilSkill",
+      "status": "DRY_RUN_PASSED",
+      "included": true,
+      "reason": "INCLUDED",
+      "file": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_candidates\/com.zhihu.android\/patched.1779339085824.4.wait.json",
+      "updatedAt": 1779339090516
+    },
+    {
+      "id": "patched.1779339085824.1.openapp",
+      "name": "改写步骤 1: OpenApp",
+      "kind": "atomic_skill",
+      "implements": "OpenAppSkill",
+      "status": "DRY_RUN_PASSED",
+      "included": true,
+      "reason": "INCLUDED",
+      "file": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_candidates\/com.zhihu.android\/patched.1779339085824.1.openapp.json",
+      "updatedAt": 1779339090512
+    },
+    {
+      "id": "patched.1779339085824.2.handlereactiveoverlays",
+      "name": "改写步骤 2: HandleReactiveOverlays",
+      "kind": "atomic_skill",
+      "implements": "DismissDialogSkill",
+      "status": "DRY_RUN_PASSED",
+      "included": true,
+      "reason": "INCLUDED",
+      "file": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_candidates\/com.zhihu.android\/patched.1779339085824.2.handlereactiveoverlays.json",
+      "updatedAt": 1779339090512
+    },
+    {
+      "id": "com.zhihu.android.post.click_draft_entry",
+      "name": "点击创作入口",
+      "kind": "atomic_skill",
+      "implements": "ClickElementSkill",
+      "status": "DRY_RUN_PASSED",
+      "included": true,
+      "reason": "INCLUDED",
+      "file": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_candidates\/com.zhihu.android\/com.zhihu.android.post.click_draft_entry.json",
+      "updatedAt": 1779261613463
+    },
+    {
+      "id": "com.zhihu.android.post.create_draft",
+      "name": "通用发帖草稿",
+      "kind": "macro_skill",
+      "implements": "CreatePostDraftSkill",
+      "status": "DRY_RUN_PASSED",
+      "included": true,
+      "reason": "INCLUDED",
+      "file": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_candidates\/com.zhihu.android\/com.zhihu.android.post.create_draft.json",
+      "updatedAt": 1779261613463
+    },
+    {
+      "id": "com.zhihu.android.post.type_draft_content",
+      "name": "输入草稿内容",
+      "kind": "atomic_skill",
+      "implements": "TypeTextSkill",
+      "status": "DRY_RUN_PASSED",
+      "included": true,
+      "reason": "INCLUDED",
+      "file": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_candidates\/com.zhihu.android\/com.zhihu.android.post.type_draft_content.json",
+      "updatedAt": 1779261613463
+    },
+    {
+      "id": "com.zhihu.android.search.click_submit",
+      "name": "点击搜索确认",
+      "kind": "atomic_skill",
+      "implements": "ClickElementSkill",
+      "status": "DRY_RUN_PASSED",
+      "included": true,
+      "reason": "INCLUDED",
+      "file": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_candidates\/com.zhihu.android\/com.zhihu.android.search.click_submit.json",
+      "updatedAt": 1779261613459
+    },
+    {
+      "id": "com.zhihu.android.search.search_in_app",
+      "name": "通用站内搜索",
+      "kind": "macro_skill",
+      "implements": "SearchInAppSkill",
+      "status": "DRY_RUN_PASSED",
+      "included": true,
+      "reason": "INCLUDED",
+      "file": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_candidates\/com.zhihu.android\/com.zhihu.android.search.search_in_app.json",
+      "updatedAt": 1779261613459
+    },
+    {
+      "id": "com.zhihu.android.prepare_app_session",
+      "name": "准备应用会话",
+      "kind": "macro_skill",
+      "implements": "PrepareAppSessionSkill",
+      "status": "DRY_RUN_PASSED",
+      "included": true,
+      "reason": "INCLUDED",
+      "file": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_candidates\/com.zhihu.android\/com.zhihu.android.prepare_app_session.json",
+      "updatedAt": 1779261613455
+    },
+    {
+      "id": "com.zhihu.android.search.click_entry",
+      "name": "点击搜索入口",
+      "kind": "atomic_skill",
+      "implements": "ClickElementSkill",
+      "status": "DRY_RUN_PASSED",
+      "included": true,
+      "reason": "INCLUDED",
+      "file": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_candidates\/com.zhihu.android\/com.zhihu.android.search.click_entry.json",
+      "updatedAt": 1779261613455
+    },
+    {
+      "id": "com.zhihu.android.search.type_query",
+      "name": "输入搜索词",
+      "kind": "atomic_skill",
+      "implements": "TypeTextSkill",
+      "status": "DRY_RUN_PASSED",
+      "included": true,
+      "reason": "INCLUDED",
+      "file": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_candidates\/com.zhihu.android\/com.zhihu.android.search.type_query.json",
+      "updatedAt": 1779261613455
+    },
+    {
+      "id": "com.zhihu.android.common.click_visible_text",
+      "name": "点击可见文字",
+      "kind": "atomic_skill",
+      "implements": "ClickElementSkill",
+      "status": "DRY_RUN_PASSED",
+      "included": true,
+      "reason": "INCLUDED",
+      "file": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_candidates\/com.zhihu.android\/com.zhihu.android.common.click_visible_text.json",
+      "updatedAt": 1779261613451
+    },
+    {
+      "id": "com.zhihu.android.common.type_first_input",
+      "name": "向第一个输入框输入",
+      "kind": "atomic_skill",
+      "implements": "TypeTextSkill",
+      "status": "DRY_RUN_PASSED",
+      "included": true,
+      "reason": "INCLUDED",
+      "file": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_candidates\/com.zhihu.android\/com.zhihu.android.common.type_first_input.json",
+      "updatedAt": 1779261613451
+    },
+    {
+      "id": "com.zhihu.android.recover_to_foreground",
+      "name": "恢复到应用前台",
+      "kind": "atomic_skill",
+      "implements": "RecoverToScreenSkill",
+      "status": "DRY_RUN_PASSED",
+      "included": true,
+      "reason": "INCLUDED",
+      "file": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_candidates\/com.zhihu.android\/com.zhihu.android.recover_to_foreground.json",
+      "updatedAt": 1779261613451
+    },
+    {
+      "id": "com.zhihu.android.back",
+      "name": "返回",
+      "kind": "atomic_skill",
+      "implements": "BackSkill",
+      "status": "DRY_RUN_PASSED",
+      "included": true,
+      "reason": "INCLUDED",
+      "file": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_candidates\/com.zhihu.android\/com.zhihu.android.back.json",
+      "updatedAt": 1779261613447
+    },
+    {
+      "id": "com.zhihu.android.capability_check",
+      "name": "检查应用能力",
+      "kind": "atomic_skill",
+      "implements": "CapabilityCheckSkill",
+      "status": "DRY_RUN_PASSED",
+      "included": true,
+      "reason": "INCLUDED",
+      "file": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_candidates\/com.zhihu.android\/com.zhihu.android.capability_check.json",
+      "updatedAt": 1779261613447
+    },
+    {
+      "id": "com.zhihu.android.open_app",
+      "name": "打开应用",
+      "kind": "atomic_skill",
+      "implements": "OpenAppSkill",
+      "status": "DRY_RUN_PASSED",
+      "included": true,
+      "reason": "INCLUDED",
+      "file": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_candidates\/com.zhihu.android\/com.zhihu.android.open_app.json",
+      "updatedAt": 1779261613447
+    }
+  ],
+  "excludedSkills": [
+    {
+      "id": "patched.1779339085824.5.typeintofirstinput",
+      "name": "改写步骤 5: TypeIntoFirstInput",
+      "kind": "atomic_skill",
+      "implements": "TypeTextSkill",
+      "status": "REJECTED",
+      "included": false,
+      "reason": "REJECTED_SKILL_EXCLUDED",
+      "file": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_candidates\/com.zhihu.android\/patched.1779339085824.5.typeintofirstinput.json",
+      "updatedAt": 1779339090520
+    }
+  ],
+  "sourceFiles": [
+    {
+      "id": "patched.command.1779339085824",
+      "name": "手机端任务拼装 Skill",
+      "kind": "macro_skill",
+      "implements": "AiPlannedMacroSkill",
+      "status": "DRY_RUN_PASSED",
+      "included": true,
+      "reason": "INCLUDED",
+      "file": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_candidates\/com.zhihu.android\/patched.command.1779339085824.json",
+      "updatedAt": 1779339090524
+    },
+    {
+      "id": "patched.1779339085824.5.typeintofirstinput",
+      "name": "改写步骤 5: TypeIntoFirstInput",
+      "kind": "atomic_skill",
+      "implements": "TypeTextSkill",
+      "status": "REJECTED",
+      "included": false,
+      "reason": "REJECTED_SKILL_EXCLUDED",
+      "file": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_candidates\/com.zhihu.android\/patched.1779339085824.5.typeintofirstinput.json",
+      "updatedAt": 1779339090520
+    },
+    {
+      "id": "patched.1779339085824.6.clickvisibletext",
+      "name": "改写步骤 6: ClickVisibleText",
+      "kind": "atomic_skill",
+      "implements": "ClickElementSkill",
+      "status": "DRY_RUN_PASSED",
+      "included": true,
+      "reason": "INCLUDED",
+      "file": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_candidates\/com.zhihu.android\/patched.1779339085824.6.clickvisibletext.json",
+      "updatedAt": 1779339090520
+    },
+    {
+      "id": "patched.1779339085824.7.wait",
+      "name": "改写步骤 7: Wait",
+      "kind": "atomic_skill",
+      "implements": "WaitUntilSkill",
+      "status": "DRY_RUN_PASSED",
+      "included": true,
+      "reason": "INCLUDED",
+      "file": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_candidates\/com.zhihu.android\/patched.1779339085824.7.wait.json",
+      "updatedAt": 1779339090520
+    },
+    {
+      "id": "patched.1779339085824.3.clickvisibletext",
+      "name": "改写步骤 3: ClickVisibleText",
+      "kind": "atomic_skill",
+      "implements": "ClickElementSkill",
+      "status": "DRY_RUN_PASSED",
+      "included": true,
+      "reason": "INCLUDED",
+      "file": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_candidates\/com.zhihu.android\/patched.1779339085824.3.clickvisibletext.json",
+      "updatedAt": 1779339090516
+    },
+    {
+      "id": "patched.1779339085824.4.wait",
+      "name": "改写步骤 4: Wait",
+      "kind": "atomic_skill",
+      "implements": "WaitUntilSkill",
+      "status": "DRY_RUN_PASSED",
+      "included": true,
+      "reason": "INCLUDED",
+      "file": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_candidates\/com.zhihu.android\/patched.1779339085824.4.wait.json",
+      "updatedAt": 1779339090516
+    },
+    {
+      "id": "patched.1779339085824.1.openapp",
+      "name": "改写步骤 1: OpenApp",
+      "kind": "atomic_skill",
+      "implements": "OpenAppSkill",
+      "status": "DRY_RUN_PASSED",
+      "included": true,
+      "reason": "INCLUDED",
+      "file": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_candidates\/com.zhihu.android\/patched.1779339085824.1.openapp.json",
+      "updatedAt": 1779339090512
+    },
+    {
+      "id": "patched.1779339085824.2.handlereactiveoverlays",
+      "name": "改写步骤 2: HandleReactiveOverlays",
+      "kind": "atomic_skill",
+      "implements": "DismissDialogSkill",
+      "status": "DRY_RUN_PASSED",
+      "included": true,
+      "reason": "INCLUDED",
+      "file": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_candidates\/com.zhihu.android\/patched.1779339085824.2.handlereactiveoverlays.json",
+      "updatedAt": 1779339090512
+    },
+    {
+      "id": "com.zhihu.android.post.click_draft_entry",
+      "name": "点击创作入口",
+      "kind": "atomic_skill",
+      "implements": "ClickElementSkill",
+      "status": "DRY_RUN_PASSED",
+      "included": true,
+      "reason": "INCLUDED",
+      "file": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_candidates\/com.zhihu.android\/com.zhihu.android.post.click_draft_entry.json",
+      "updatedAt": 1779261613463
+    },
+    {
+      "id": "com.zhihu.android.post.create_draft",
+      "name": "通用发帖草稿",
+      "kind": "macro_skill",
+      "implements": "CreatePostDraftSkill",
+      "status": "DRY_RUN_PASSED",
+      "included": true,
+      "reason": "INCLUDED",
+      "file": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_candidates\/com.zhihu.android\/com.zhihu.android.post.create_draft.json",
+      "updatedAt": 1779261613463
+    },
+    {
+      "id": "com.zhihu.android.post.type_draft_content",
+      "name": "输入草稿内容",
+      "kind": "atomic_skill",
+      "implements": "TypeTextSkill",
+      "status": "DRY_RUN_PASSED",
+      "included": true,
+      "reason": "INCLUDED",
+      "file": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_candidates\/com.zhihu.android\/com.zhihu.android.post.type_draft_content.json",
+      "updatedAt": 1779261613463
+    },
+    {
+      "id": "com.zhihu.android.search.click_submit",
+      "name": "点击搜索确认",
+      "kind": "atomic_skill",
+      "implements": "ClickElementSkill",
+      "status": "DRY_RUN_PASSED",
+      "included": true,
+      "reason": "INCLUDED",
+      "file": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_candidates\/com.zhihu.android\/com.zhihu.android.search.click_submit.json",
+      "updatedAt": 1779261613459
+    },
+    {
+      "id": "com.zhihu.android.search.search_in_app",
+      "name": "通用站内搜索",
+      "kind": "macro_skill",
+      "implements": "SearchInAppSkill",
+      "status": "DRY_RUN_PASSED",
+      "included": true,
+      "reason": "INCLUDED",
+      "file": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_candidates\/com.zhihu.android\/com.zhihu.android.search.search_in_app.json",
+      "updatedAt": 1779261613459
+    },
+    {
+      "id": "com.zhihu.android.prepare_app_session",
+      "name": "准备应用会话",
+      "kind": "macro_skill",
+      "implements": "PrepareAppSessionSkill",
+      "status": "DRY_RUN_PASSED",
+      "included": true,
+      "reason": "INCLUDED",
+      "file": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_candidates\/com.zhihu.android\/com.zhihu.android.prepare_app_session.json",
+      "updatedAt": 1779261613455
+    },
+    {
+      "id": "com.zhihu.android.search.click_entry",
+      "name": "点击搜索入口",
+      "kind": "atomic_skill",
+      "implements": "ClickElementSkill",
+      "status": "DRY_RUN_PASSED",
+      "included": true,
+      "reason": "INCLUDED",
+      "file": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_candidates\/com.zhihu.android\/com.zhihu.android.search.click_entry.json",
+      "updatedAt": 1779261613455
+    },
+    {
+      "id": "com.zhihu.android.search.type_query",
+      "name": "输入搜索词",
+      "kind": "atomic_skill",
+      "implements": "TypeTextSkill",
+      "status": "DRY_RUN_PASSED",
+      "included": true,
+      "reason": "INCLUDED",
+      "file": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_candidates\/com.zhihu.android\/com.zhihu.android.search.type_query.json",
+      "updatedAt": 1779261613455
+    },
+    {
+      "id": "com.zhihu.android.common.click_visible_text",
+      "name": "点击可见文字",
+      "kind": "atomic_skill",
+      "implements": "ClickElementSkill",
+      "status": "DRY_RUN_PASSED",
+      "included": true,
+      "reason": "INCLUDED",
+      "file": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_candidates\/com.zhihu.android\/com.zhihu.android.common.click_visible_text.json",
+      "updatedAt": 1779261613451
+    },
+    {
+      "id": "com.zhihu.android.common.type_first_input",
+      "name": "向第一个输入框输入",
+      "kind": "atomic_skill",
+      "implements": "TypeTextSkill",
+      "status": "DRY_RUN_PASSED",
+      "included": true,
+      "reason": "INCLUDED",
+      "file": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_candidates\/com.zhihu.android\/com.zhihu.android.common.type_first_input.json",
+      "updatedAt": 1779261613451
+    },
+    {
+      "id": "com.zhihu.android.recover_to_foreground",
+      "name": "恢复到应用前台",
+      "kind": "atomic_skill",
+      "implements": "RecoverToScreenSkill",
+      "status": "DRY_RUN_PASSED",
+      "included": true,
+      "reason": "INCLUDED",
+      "file": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_candidates\/com.zhihu.android\/com.zhihu.android.recover_to_foreground.json",
+      "updatedAt": 1779261613451
+    },
+    {
+      "id": "com.zhihu.android.back",
+      "name": "返回",
+      "kind": "atomic_skill",
+      "implements": "BackSkill",
+      "status": "DRY_RUN_PASSED",
+      "included": true,
+      "reason": "INCLUDED",
+      "file": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_candidates\/com.zhihu.android\/com.zhihu.android.back.json",
+      "updatedAt": 1779261613447
+    },
+    {
+      "id": "com.zhihu.android.capability_check",
+      "name": "检查应用能力",
+      "kind": "atomic_skill",
+      "implements": "CapabilityCheckSkill",
+      "status": "DRY_RUN_PASSED",
+      "included": true,
+      "reason": "INCLUDED",
+      "file": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_candidates\/com.zhihu.android\/com.zhihu.android.capability_check.json",
+      "updatedAt": 1779261613447
+    },
+    {
+      "id": "com.zhihu.android.open_app",
+      "name": "打开应用",
+      "kind": "atomic_skill",
+      "implements": "OpenAppSkill",
+      "status": "DRY_RUN_PASSED",
+      "included": true,
+      "reason": "INCLUDED",
+      "file": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_candidates\/com.zhihu.android\/com.zhihu.android.open_app.json",
+      "updatedAt": 1779261613447
+    }
+  ]
+}

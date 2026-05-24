@@ -1,0 +1,55 @@
+{
+  "schemaVersion": 1,
+  "kind": "skill_json_ai_follow_up_run_report",
+  "id": "ai_follow_up_run_1778522263025",
+  "skillId": "direct.command.1778522260943",
+  "failedSkillId": "direct.command.1778522175572",
+  "appPackage": "com.tencent.mm",
+  "instruction": "微信发一条朋友圈，内容是我是AI，设置为仅自己可见，然后发表",
+  "engine": "ai_runtime_replan",
+  "phase": "REPLAN",
+  "trigger": "EXECUTION_FAILED",
+  "previousStatus": "FAILED_WECHAT_TAB_SHELL_NOT_VISIBLE",
+  "previousMessage": "微信底栏不可见，已停止坐标点击，避免继续点到聊天内容；events=[{\"phase\":\"tab_shell_probe\",\"index\":0,\"visible\":false,\"snapshot\":\"\\\/data\\\/user\\\/0\\\/com.macropilot.app\\\/files\\\/macro_v2\\\/factory\\\/ui_snapshots\\\/com.tencent.mm\\\/20260512_015621_661_7aaab248.json\",\"screenshotPath\":\"\\\/data\\\/user\\\/0\\\/com.macropilot.app\\\/files\\\/macro_v2\\\/factory\\\/ui_screenshots\\\/com.tencent.mm\\\/20260512_015621_661_7aaab248.png\",\"selectedEvidence\":{\"selectedIndex\":-1,\"selectedScore\":0,\"scores\":[0,0,19,2],\"reason\":\"bottom_sheet_dialog_visible\"}},{\"phase\":\"tab_shell_dismiss_wechat_bottom_sheet\",\"index\":0,\"success\":true,\"message\":\"dispatchGesture tap sent (normalized=0.330,0.835 px=475,2645 screen=1440x3168)\",\"reason\":\"bottom_sheet_dialog_visible\"},{\"phase\":\"tab_shell_probe\",\"index\":1,\"visible\":false,\"snapshot\":\"\\\/data\\\/user\\\/0\\\/com.macropilot.app\\\/files\\\/macro_v2\\\/factory\\\/ui_snapshots\\\/com.tencent.mm\\\/20260512_015623_235_aa56726a.json\",\"screenshotPath\":\"\\\/data\\\/user\\\/0\\\/com.macropilot.app\\\/files\\\/macro_v2\\\/factory\\\/ui_screenshots\\\/com.tencent.mm\\\/20260512_015623_235_aa56726a.png\",\"selectedEvidence\":{\"selectedIndex\":-1,\"selectedScore\":0,\"scores\":[0,0,19,2],\"reason\":\"bottom_sheet_dialog_visible\"}},{\"phase\":\"tab_shell_dismiss_wechat_bottom_sheet\",\"index\":1,\"success\":true,\"message\":\"dispatchGesture tap sent (normalized=0.330,0.835 px=475,2645 screen=1440x3168)\",\"reason\":\"bottom_sheet_dialog_visible\"},{\"phase\":\"tab_shell_probe\",\"index\":2,\"visible\":false,\"snapshot\":\"\\\/data\\\/user\\\/0\\\/com.macropilot.app\\\/files\\\/macro_v2\\\/factory\\\/ui_snapshots\\\/com.tencent.mm\\\/20260512_015624_817_aa56726a.json\",\"screenshotPath\":\"\\\/data\\\/user\\\/0\\\/com.macropilot.app\\\/files\\\/macro_v2\\\/factory\\\/ui_screenshots\\\/com.tencent.mm\\\/20260512_015624_817_aa56726a.png\",\"selectedEvidence\":{\"selectedIndex\":-1,\"selectedScore\":0,\"scores\":[0,0,19,2],\"reason\":\"bottom_sheet_dialog_visible\"}},{\"phase\":\"tab_s",
+  "previousRuntimeReportFile": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/runtime\/run_reports\/com.tencent.mm\/ai_direct_run_1778522192115.json",
+  "aiJobFile": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ai_jobs\/2026-05-12\/factory_ai_replan_1778522260937.json",
+  "decision": {
+    "goalCompleted": false,
+    "screenAssessment": "WeChat 界面被全屏个性化推荐弹窗覆盖，弹窗上可见“暂不启用”和“同意”两个按钮，底栏完全被遮挡，无法进行任何朋友圈操作。",
+    "failureDiagnosis": "上轮失败因底栏未捕获，实际上是因为个性化推荐弹窗持续遮挡界面，之前的遮罩点击未能消除该弹窗，导致后续操作全部失效。",
+    "confidence": "MEDIUM",
+    "nextActionReason": "当前弹窗是阻塞交互的根本原因，必须首先消除弹窗。弹窗上的“同意”按钮文本可见，点击此按钮可接受推荐并关闭弹窗，使主界面和底栏重新可用，为后续朋友圈操作铺平道路。"
+  },
+  "approvedRequired": false,
+  "status": "FAILED_ELEMENT_NOT_FOUND",
+  "message": "同意=No matching node; No action coordinate fallback",
+  "durationMs": 2012,
+  "usedCoordinate": false,
+  "details": {
+    "macroSkillId": "direct.command.1778522260943",
+    "failedAtom": {
+      "index": 0,
+      "skillId": "direct.1778522260943.1.clickvisibletext",
+      "actionType": "ClickVisibleText",
+      "status": "FAILED_ELEMENT_NOT_FOUND",
+      "message": "同意=No matching node; No action coordinate fallback",
+      "usedCoordinate": false,
+      "details": null
+    },
+    "atomTrace": [
+      {
+        "index": 0,
+        "skillId": "direct.1778522260943.1.clickvisibletext",
+        "actionType": "ClickVisibleText",
+        "status": "FAILED_ELEMENT_NOT_FOUND",
+        "message": "同意=No matching node; No action coordinate fallback",
+        "usedCoordinate": false,
+        "details": null
+      }
+    ],
+    "reactiveDismissed": 0
+  },
+  "allowSideEffect": true,
+  "skillFile": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_candidates\/com.tencent.mm\/direct.command.1778522260943.json",
+  "createdAt": 1778522263025
+}

@@ -1,0 +1,2936 @@
+﻿{
+  "schemaVersion": 1,
+  "kind": "app_side_ai_direct_instruction_flow_report",
+  "operation": "APP_SIDE_AI_DIRECT_INSTRUCTION",
+  "id": "ai_direct_flow_1778262218221",
+  "instruction": "在小红书发布 我是ai",
+  "appPackage": "com.xingin.xhs",
+  "query": "在小红书发布 我是ai",
+  "status": "FAILED_GOAL_UNVERIFIED",
+  "durationMs": 43991,
+  "steps": [
+    {
+      "title": "用户指令进入手机端执行器",
+      "status": "RUNNING",
+      "message": "主输入不再只生成文件：App 将调用 AI，生成可审计 JSON，再由 SkillJsonExecutor 直接执行候选能力。",
+      "path": null,
+      "timestamp": 1778262174231
+    },
+    {
+      "title": "AI 决策返回",
+      "status": "SUCCESS",
+      "message": "HTTP=200；模型=deepseek-v4-flash；计划步骤=0；AI候选=0",
+      "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ai_jobs\/2026-05-09\/factory_ai_direct_1778262177343.json",
+      "timestamp": 1778262177351,
+      "extra": {
+        "intentDraft": {
+          "appPackage": "com.xingin.xhs",
+          "intentId": "custom",
+          "params": {
+            "query": "在小红书发布 我是ai",
+            "message": "布 我是ai"
+          },
+          "source": "EXPLICIT_TARGET_PACKAGE"
+        }
+      }
+    },
+    {
+      "title": "规则泛化小红书发布任务",
+      "status": "SUCCESS",
+      "message": "专用细粒度 JSON：进入创作页 -> 填写内容 -> 下一步 -> 点击最终发布；发布按钮只因本次用户明确要求才放行。",
+      "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_candidates\/com.xingin.xhs\/direct.command.1778262177351.json",
+      "timestamp": 1778262177355
+    },
+    {
+      "title": "dry-run 静态检查",
+      "status": "SUCCESS",
+      "message": "通过 8\/8。",
+      "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_dry_run_reports\/com.xingin.xhs\/direct.command.1778262177351_1778262177413.json",
+      "timestamp": 1778262177413
+    },
+    {
+      "title": "拼装 app_config 预览",
+      "status": "SUCCESS",
+      "message": "候选\/测试产物已拼为单个 app_config 预览。",
+      "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/app_config_exports\/com.xingin.xhs\/app_config_20260509_014257_499.json",
+      "timestamp": 1778262177581
+    },
+    {
+      "title": "执行候选 JSON",
+      "status": "RUNNING",
+      "message": "不等待 APPROVED：按用户要求，直接由 SkillJsonExecutor 执行候选 macro=direct.command.1778262177351。",
+      "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_candidates\/com.xingin.xhs\/direct.command.1778262177351.json",
+      "timestamp": 1778262177581
+    },
+    {
+      "title": "候选 JSON 执行结果",
+      "status": "SUCCESS",
+      "message": "direct.command.1778262177351 -> SUCCESS_LOW_CONFIDENCE；Macro atoms completed",
+      "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/runtime\/run_reports\/com.xingin.xhs\/ai_direct_run_1778262191285.json",
+      "timestamp": 1778262191287
+    },
+    {
+      "title": "中途 AI 检查点",
+      "status": "RUNNING",
+      "message": "当前不是直接停下：App 把失败原因、当前屏幕节点和已跑步骤发给手机端 AI，让 AI 判断下一段补救 JSON。",
+      "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/runtime\/run_reports\/com.xingin.xhs\/ai_direct_run_1778262191285.json",
+      "timestamp": 1778262191288,
+      "extra": {
+        "phase": "CHECKPOINT",
+        "trigger": "COMPLEX_TASK_CHECKPOINT",
+        "previousStatus": "SUCCESS_LOW_CONFIDENCE",
+        "previousMessage": "Macro atoms completed"
+      }
+    },
+    {
+      "title": "中途 AI 检查点 返回",
+      "status": "SUCCESS",
+      "message": "HTTP=200；模型=deepseek-v4-flash；goalCompleted=false；补救步骤=1；诊断=之前执行的任务是发布内容，但当前页面是配图编辑页，尚未进入发布流程。需要点击'下一步'进入发布页面。",
+      "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ai_jobs\/2026-05-09\/factory_ai_checkpoint_1778262194446.json",
+      "timestamp": 1778262194455,
+      "extra": {
+        "decision": {
+          "goalCompleted": false,
+          "screenAssessment": "当前页面是小红书AI配图编辑页，顶部有返回和预览，中间显示生成的图片（描述为'我是ai'），底部有卡片模板选择（基础、备忘、边框、简约、手写），其中'简约'模板被选中，右下角有'下一步'按钮。",
+          "failureDiagnosis": "之前执行的任务是发布内容，但当前页面是配图编辑页，尚未进入发布流程。需要点击'下一步'进入发布页面。",
+          "confidence": "HIGH",
+          "nextActionReason": "点击'下一步'按钮以进入发布页面，继续完成发布任务。"
+        }
+      }
+    },
+    {
+      "title": "AI 补救计划转 Skill JSON",
+      "status": "SUCCESS",
+      "message": "AI 返回 1 个下一步动作，已转换成 2 个候选 Skill JSON。",
+      "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_candidates\/com.xingin.xhs\/direct.command.1778262194455.json",
+      "timestamp": 1778262194456,
+      "extra": {
+        "phase": "CHECKPOINT",
+        "trigger": "COMPLEX_TASK_CHECKPOINT"
+      }
+    },
+    {
+      "title": "AI 补救 dry-run",
+      "status": "SUCCESS",
+      "message": "通过 2\/2。",
+      "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_dry_run_reports\/com.xingin.xhs\/direct.command.1778262194455_1778262194516.json",
+      "timestamp": 1778262194516
+    },
+    {
+      "title": "AI 补救 JSON 执行结果",
+      "status": "SUCCESS",
+      "message": "direct.command.1778262194455 -> SUCCESS_MEDIUM_CONFIDENCE；Macro atoms completed",
+      "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/runtime\/run_reports\/com.xingin.xhs\/ai_follow_up_run_1778262194869.json",
+      "timestamp": 1778262194870,
+      "extra": {
+        "phase": "CHECKPOINT",
+        "trigger": "COMPLEX_TASK_CHECKPOINT"
+      }
+    },
+    {
+      "title": "目标未完成，继续 AI 判断",
+      "status": "RUNNING",
+      "message": "未看到小红书发布成功\/审核中等明确平台反馈，短文本不允许用首页信息流误判成已发布。；第 1\/4 次继续重判当前屏幕。",
+      "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/runtime\/run_reports\/com.xingin.xhs\/ai_follow_up_run_1778262194869.json",
+      "timestamp": 1778262194878,
+      "extra": {
+        "serviceConnected": true,
+        "appPackage": "com.xingin.xhs",
+        "nodeCount": 93,
+        "sampleTexts": [
+          "添加标题",
+          "展开说说",
+          "加载中...",
+          "话题",
+          "用户",
+          "投票",
+          "标记地点 标记地点",
+          "公开可见 笔记公开可见",
+          "添加组件 添加组件",
+          "可添加文件",
+          "高级选项 高级选项",
+          "笔记内容声明",
+          "返回",
+          "存草稿",
+          "发布笔记"
+        ],
+        "expected": "xiaohongshu_post_published",
+        "titleNeedle": "我是ai",
+        "bodyNeedle": "我是ai",
+        "titleVisible": false,
+        "bodyVisible": false,
+        "shortContentRequiresPublishMarker": true,
+        "securityBlockerHits": [],
+        "publishMarkerHits": [],
+        "detailMarkerHits": [],
+        "detailEvidenceStrong": false,
+        "editorMarkerHits": [
+          "存草稿",
+          "发布笔记",
+          "添加标题",
+          "展开说说"
+        ],
+        "editorStillVisible": true,
+        "feedSurfaceMarkers": [],
+        "feedSurfaceVisible": false,
+        "inXiaohongshu": true,
+        "finalPublishRequested": true
+      }
+    },
+    {
+      "title": "失败后 AI 判断",
+      "status": "RUNNING",
+      "message": "当前不是直接停下：App 把失败原因、当前屏幕节点和已跑步骤发给手机端 AI，让 AI 判断下一段补救 JSON。",
+      "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/runtime\/run_reports\/com.xingin.xhs\/ai_follow_up_run_1778262194869.json",
+      "timestamp": 1778262194878,
+      "extra": {
+        "phase": "REPLAN",
+        "trigger": "GOAL_UNVERIFIED_LOOP_1",
+        "previousStatus": "FAILED_GOAL_UNVERIFIED",
+        "previousMessage": "未看到小红书发布成功\/审核中等明确平台反馈，短文本不允许用首页信息流误判成已发布。"
+      }
+    },
+    {
+      "title": "失败后 AI 判断 返回",
+      "status": "SUCCESS",
+      "message": "HTTP=200；模型=deepseek-v4-flash；goalCompleted=false；补救步骤=5；诊断=之前执行的任务是发布内容，但当前页面是编辑页，尚未填写标题和正文，也未点击发布。需要先填写内容再发布。",
+      "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ai_jobs\/2026-05-09\/factory_ai_replan_1778262199351.json",
+      "timestamp": 1778262199361,
+      "extra": {
+        "decision": {
+          "goalCompleted": false,
+          "screenAssessment": "当前页面是小红书发布笔记编辑页（CapaPostNotePlatformActivity），可见标题输入框（添加标题）、正文输入框（展开说说）、话题、用户、投票等组件，底部有“存草稿”和“发布笔记”按钮。标题和正文尚未填写内容。",
+          "failureDiagnosis": "之前执行的任务是发布内容，但当前页面是编辑页，尚未填写标题和正文，也未点击发布。需要先填写内容再发布。",
+          "confidence": "HIGH",
+          "nextActionReason": "用户指令是“发布 我是ai”，需要先填写标题和正文。标题输入框和正文输入框均可见且可点击，优先使用ClickSelector点击输入框，然后TypeIntoFirstInput填入内容。"
+        }
+      }
+    },
+    {
+      "title": "AI 补救计划转 Skill JSON",
+      "status": "SUCCESS",
+      "message": "AI 返回 5 个下一步动作，已转换成 6 个候选 Skill JSON。",
+      "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_candidates\/com.xingin.xhs\/direct.command.1778262199361.json",
+      "timestamp": 1778262199371,
+      "extra": {
+        "phase": "REPLAN",
+        "trigger": "GOAL_UNVERIFIED_LOOP_1"
+      }
+    },
+    {
+      "title": "AI 补救 dry-run",
+      "status": "SUCCESS",
+      "message": "通过 6\/6。",
+      "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_dry_run_reports\/com.xingin.xhs\/direct.command.1778262199361_1778262199445.json",
+      "timestamp": 1778262199446
+    },
+    {
+      "title": "AI 补救 JSON 执行结果",
+      "status": "SUCCESS",
+      "message": "direct.command.1778262199361 -> SUCCESS_MEDIUM_CONFIDENCE；Macro atoms completed",
+      "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/runtime\/run_reports\/com.xingin.xhs\/ai_follow_up_run_1778262200123.json",
+      "timestamp": 1778262200124,
+      "extra": {
+        "phase": "REPLAN",
+        "trigger": "GOAL_UNVERIFIED_LOOP_1"
+      }
+    },
+    {
+      "title": "小红书发布本地兜底启动",
+      "status": "RUNNING",
+      "message": "用户明确要求发布：生成发布专用细粒度 Skill JSON，允许点击最终发布按钮，并用发布后页面证据校验。",
+      "path": null,
+      "timestamp": 1778262200295,
+      "extra": {
+        "title": "我是ai",
+        "body": "我是ai",
+        "currentUi": {
+          "serviceConnected": true,
+          "appPackage": "com.xingin.xhs",
+          "windowClassName": "com.xingin.xhs.index.v2.IndexActivityV2",
+          "screenWidth": 1440,
+          "screenHeight": 2944,
+          "nodeCount": 264,
+          "capability": {
+            "nodeReadability": "A",
+            "inputCapability": "NONE",
+            "verificationCapability": "HIGH"
+          },
+          "nodes": [
+            {
+              "class": "android.widget.FrameLayout",
+              "clickable": false,
+              "editable": false,
+              "scrollable": false,
+              "bounds": "0 0 1440 3168"
+            },
+            {
+              "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+              "class": "android.widget.FrameLayout",
+              "clickable": false,
+              "editable": false,
+              "scrollable": false,
+              "bounds": "0 0 1440 3168"
+            },
+            {
+              "class": "android.widget.LinearLayout",
+              "clickable": false,
+              "editable": false,
+              "scrollable": false,
+              "bounds": "0 0 1440 3104"
+            },
+            {
+              "class": "android.widget.FrameLayout",
+              "clickable": false,
+              "editable": false,
+              "scrollable": false,
+              "bounds": "0 0 1440 3104"
+            },
+            {
+              "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+              "class": "android.widget.LinearLayout",
+              "clickable": false,
+              "editable": false,
+              "scrollable": false,
+              "bounds": "0 0 1440 3104"
+            },
+            {
+              "resourceId": "android:id\/content",
+              "class": "android.widget.FrameLayout",
+              "clickable": false,
+              "editable": false,
+              "scrollable": false,
+              "bounds": "0 0 1440 3104"
+            },
+            {
+              "class": "android.widget.FrameLayout",
+              "clickable": false,
+              "editable": false,
+              "scrollable": false,
+              "bounds": "0 0 1440 3104"
+            },
+            {
+              "class": "androidx.drawerlayout.widget.DrawerLayout",
+              "clickable": false,
+              "editable": false,
+              "scrollable": false,
+              "bounds": "0 0 1440 3104"
+            },
+            {
+              "class": "android.widget.LinearLayout",
+              "clickable": false,
+              "editable": false,
+              "scrollable": false,
+              "bounds": "0 0 1440 3104"
+            },
+            {
+              "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+              "class": "androidx.viewpager.widget.ViewPager",
+              "clickable": false,
+              "editable": false,
+              "scrollable": true,
+              "bounds": "0 0 1440 2924"
+            },
+            {
+              "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+              "class": "android.view.ViewGroup",
+              "clickable": false,
+              "editable": false,
+              "scrollable": false,
+              "bounds": "0 0 1440 2924"
+            },
+            {
+              "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+              "class": "android.widget.FrameLayout",
+              "clickable": false,
+              "editable": false,
+              "scrollable": false,
+              "bounds": "0 0 0 0"
+            },
+            {
+              "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+              "class": "android.widget.FrameLayout",
+              "clickable": false,
+              "editable": false,
+              "scrollable": false,
+              "bounds": "0 0 1440 2924"
+            },
+            {
+              "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+              "class": "androidx.viewpager.widget.ViewPager",
+              "clickable": false,
+              "editable": false,
+              "scrollable": true,
+              "bounds": "0 0 1440 2924"
+            },
+            {
+              "class": "android.widget.FrameLayout",
+              "clickable": false,
+              "editable": false,
+              "scrollable": false,
+              "bounds": "0 0 0 2924"
+            },
+            {
+              "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+              "class": "android.widget.FrameLayout",
+              "clickable": false,
+              "editable": false,
+              "scrollable": false,
+              "bounds": "0 336 0 2924"
+            },
+            {
+              "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+              "class": "android.view.ViewGroup",
+              "clickable": false,
+              "editable": false,
+              "scrollable": false,
+              "bounds": "0 336 0 2924"
+            },
+            {
+              "class": "android.widget.FrameLayout",
+              "clickable": false,
+              "editable": false,
+              "scrollable": false,
+              "bounds": "0 336 0 2924"
+            },
+            {
+              "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+              "class": "androidx.recyclerview.widget.RecyclerView",
+              "clickable": false,
+              "editable": false,
+              "scrollable": true,
+              "bounds": "0 336 0 2924"
+            },
+            {
+              "class": "android.view.ViewGroup",
+              "clickable": false,
+              "editable": false,
+              "scrollable": false,
+              "bounds": "0 336 0 732"
+            },
+            {
+              "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+              "class": "androidx.recyclerview.widget.RecyclerView",
+              "clickable": false,
+              "editable": false,
+              "scrollable": true,
+              "bounds": "0 336 0 732"
+            },
+            {
+              "class": "android.view.ViewGroup",
+              "clickable": true,
+              "editable": false,
+              "scrollable": false,
+              "bounds": "0 336 -1136 732"
+            },
+            {
+              "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+              "class": "android.widget.RelativeLayout",
+              "clickable": false,
+              "editable": false,
+              "scrollable": false,
+              "bounds": "0 372 -1136 596"
+            },
+            {
+              "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+              "class": "android.view.View",
+              "clickable": false,
+              "editable": false,
+              "scrollable": false,
+              "bounds": "0 374 -1154 594"
+            },
+            {
+              "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+              "class": "android.view.View",
+              "clickable": false,
+              "editable": false,
+              "scrollable": false,
+              "bounds": "0 416 -1180 448"
+            },
+            {
+              "text": "财联社",
+              "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+              "class": "android.widget.TextView",
+              "clickable": false,
+              "editable": false,
+              "scrollable": false,
+              "bounds": "0 620 -1192 684"
+            },
+            {
+              "class": "android.view.ViewGroup",
+              "clickable": true,
+              "editable": false,
+              "scrollable": false,
+              "bounds": "0 336 -864 732"
+            },
+            {
+              "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+              "class": "android.widget.RelativeLayout",
+              "clickable": false,
+              "editable": false,
+              "scrollable": false,
+              "bounds": "0 372 -864 596"
+            },
+            {
+              "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+              "class": "android.view.View",
+              "clickable": false,
+              "editable": false,
+              "scrollable": false,
+              "bounds": "-1313 374 -431 594"
+            },
+            {
+              "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+              "class": "android.view.View",
+              "clickable": false,
+              "editable": false,
+              "scrollable": false,
+              "bounds": "-1339 416 -431 448"
+            },
+            {
+              "text": "王小雨",
+              "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+              "class": "android.widget.TextView",
+              "clickable": false,
+              "editable": false,
+              "scrollable": false,
+              "bounds": "-1351 620 -431 684"
+            },
+            {
+              "class": "android.view.ViewGroup",
+              "clickable": true,
+              "editable": false,
+              "scrollable": false,
+              "bounds": "-1023 336 -431 732"
+            },
+            {
+              "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+              "class": "android.widget.RelativeLayout",
+              "clickable": false,
+              "editable": false,
+              "scrollable": false,
+              "bounds": "-1023 372 -431 596"
+            },
+            {
+              "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+              "class": "android.view.View",
+              "clickable": false,
+              "editable": false,
+              "scrollable": false,
+              "bounds": "-1041 374 -431 594"
+            },
+            {
+              "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+              "class": "android.view.View",
+              "clickable": false,
+              "editable": false,
+              "scrollable": false,
+              "bounds": "-1067 416 -431 448"
+            },
+            {
+              "text": "阿哲Ai小剧场",
+              "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+              "class": "android.widget.TextView",
+              "clickable": false,
+              "editable": false,
+              "scrollable": false,
+              "bounds": "-1023 620 -431 684"
+            },
+            {
+              "class": "android.view.ViewGroup",
+              "clickable": true,
+              "editable": false,
+              "scrollable": false,
+              "bounds": "-751 336 -431 732"
+            },
+            {
+              "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+              "class": "android.widget.RelativeLayout",
+              "clickable": false,
+              "editable": false,
+              "scrollable": false,
+              "bounds": "-751 372 -431 596"
+            },
+            {
+              "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+              "class": "android.view.View",
+              "clickable": false,
+              "editable": false,
+              "scrollable": false,
+              "bounds": "-769 374 -431 594"
+            },
+            {
+              "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+              "class": "android.view.View",
+              "clickable": false,
+              "editable": false,
+              "scrollable": false,
+              "bounds": "-795 416 -431 448"
+            },
+            {
+              "text": "小狗拌面（接恋爱咨询）",
+              "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+              "class": "android.widget.TextView",
+              "clickable": false,
+              "editable": false,
+              "scrollable": false,
+              "bounds": "-751 620 -431 684"
+            },
+            {
+              "class": "android.view.ViewGroup",
+              "clickable": true,
+              "editable": false,
+              "scrollable": false,
+              "bounds": "-479 336 -431 732"
+            },
+            {
+              "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+              "class": "android.widget.RelativeLayout",
+              "clickable": false,
+              "editable": false,
+              "scrollable": false,
+              "bounds": "-479 372 -431 596"
+            },
+            {
+              "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+              "class": "android.view.View",
+              "clickable": false,
+              "editable": false,
+              "scrollable": false,
+              "bounds": "-497 374 -431 594"
+            },
+            {
+              "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+              "class": "android.view.View",
+              "clickable": false,
+              "editable": false,
+              "scrollable": false,
+              "bounds": "-523 416 -431 448"
+            },
+            {
+              "text": "老头们的快乐生活",
+              "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+              "class": "android.widget.TextView",
+              "clickable": false,
+              "editable": false,
+              "scrollable": false,
+              "bounds": "-479 620 -431 684"
+            },
+            {
+              "class": "android.view.ViewGroup",
+              "clickable": true,
+              "editable": false,
+              "scrollable": false,
+              "bounds": "-431 336 -431 732"
+            },
+            {
+              "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+              "class": "android.widget.RelativeLayout",
+              "clickable": false,
+              "editable": false,
+              "scrollable": false,
+              "bounds": "-431 372 -431 596"
+            },
+            {
+              "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+              "class": "android.view.View",
+              "clickable": false,
+              "editable": false,
+              "scrollable": false,
+              "bounds": "-431 374 -431 594"
+            },
+            {
+              "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+              "class": "android.view.View",
+              "clickable": false,
+              "editable": false,
+              "scrollable": false,
+              "bounds": "-431 416 -283 448"
+            },
+            {
+              "text": "星探AI",
+              "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+              "class": "android.widget.TextView",
+              "clickable": false,
+              "editable": false,
+              "scrollable": false,
+              "bounds": "-431 620 -404 684"
+            },
+            {
+              "class": "android.widget.FrameLayout",
+              "clickable": false,
+              "editable": false,
+              "scrollable": false,
+              "bounds": "0 752 -730 1975"
+            },
+            {
+              "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+              "class": "android.view.ViewGroup",
+              "clickable": true,
+              "editable": false,
+              "scrollable": false,
+              "bounds": "-1161 752 -431 1975"
+            },
+            {
+              "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+              "class": "android.widget.ImageView",
+              "clickable": false,
+              "editable": false,
+              "scrollable": false,
+              "bounds": "-1161 752 -431 1672"
+            },
+            {
+              "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+              "class": "android.view.View",
+              "clickable": false,
+              "editable": false,
+              "scrollable": false,
+              "bounds": "-1181 1704 -431 1773"
+            },
+            {
+              "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+              "class": "android.view.View",
+              "clickable": true,
+              "editable": false,
+              "scrollable": false,
+              "bounds": "-1711 1820 -431 1916"
+            },
+            {
+              "text": "水人从小就爱波高地",
+              "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+              "class": "android.widget.TextView",
+              "clickable": true,
+              "editable": false,
+              "scrollable": false,
+              "bounds": "-1393 1805 -431 1878"
+            },
+            {
+              "text": "刚刚",
+              "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+              "class": "android.widget.TextView",
+              "clickable": true,
+              "editable": false,
+              "scrollable": false,
+              "bounds": "-1594 1878 -431 1935"
+            },
+            {
+              "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+              "class": "android.widget.ImageView",
+              "clickable": true,
+              "editable": false,
+              "scrollable": false,
+              "bounds": "-1241 1814 -431 1926"
+            },
+            {
+              "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+              "class": "android.view.View",
+              "clickable": false,
+              "editable": false,
+              "scrollable": false,
+              "bounds": "-1233 1820 -431 1916"
+            },
+            {
+              "text": "赞",
+              "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+              "class": "android.widget.TextView",
+              "clickable": true,
+              "editable": false,
+              "scrollable": false,
+              "bounds": "-1209 1834 -431 1907"
+            },
+            {
+              "class": "android.widget.FrameLayout",
+              "clickable": false,
+              "editable": false,
+              "scrollable": false,
+              "bounds": "0 752 -20 1975"
+            },
+            {
+              "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+              "class": "android.view.ViewGroup",
+              "clickable": true,
+              "editable": false,
+              "scrollable": false,
+              "bounds": "-451 752 -431 1975"
+            },
+            {
+              "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+              "class": "android.widget.ImageView",
+              "clickable": false,
+              "editable": false,
+              "scrollable": false,
+              "bounds": "-451 752 -431 1672"
+            },
+            {
+              "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+              "class": "android.widget.ImageView",
+              "clickable": false,
+              "editable": false,
+              "scrollable": false,
+              "bounds": "-491 792 -431 872"
+            },
+            {
+              "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+              "class": "android.view.View",
+              "clickable": false,
+              "editable": false,
+              "scrollable": false,
+              "bounds": "-471 1704 -431 1773"
+            },
+            {
+              "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+              "class": "android.view.View",
+              "clickable": true,
+              "editable": false,
+              "scrollable": false,
+              "bounds": "-1001 1820 -431 1916"
+            },
+            {
+              "text": "王小雨",
+              "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+              "class": "android.widget.TextView",
+              "clickable": true,
+              "editable": false,
+              "scrollable": false,
+              "bounds": "-829 1805 -431 1878"
+            },
+            {
+              "text": "昨天 11:51",
+              "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+              "class": "android.widget.TextView",
+              "clickable": true,
+              "editable": false,
+              "scrollable": false,
+              "bounds": "-795 1878 -431 1935"
+            },
+            {
+              "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+              "class": "android.widget.ImageView",
+              "clickable": true,
+              "editable": false,
+              "scrollable": false,
+              "bounds": "-561 1814 -431 1926"
+            },
+            {
+              "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+              "class": "android.view.View",
+              "clickable": false,
+              "editable": false,
+              "scrollable": false,
+              "bounds": "-553 1820 -431 1916"
+            },
+            {
+              "text": "209",
+              "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+              "class": "android.widget.TextView",
+              "clickable": true,
+              "editable": false,
+              "scrollable": false,
+              "bounds": "-499 1834 -431 1907"
+            },
+            {
+              "class": "android.widget.FrameLayout",
+              "clickable": false,
+              "editable": false,
+              "scrollable": false,
+              "bounds": "0 1995 -730 2924"
+            },
+            {
+              "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+              "class": "android.view.ViewGroup",
+              "clickable": true,
+              "editable": false,
+              "scrollable": false,
+              "bounds": "-1161 1995 -431 2924"
+            },
+            {
+              "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+              "class": "android.widget.ImageView",
+              "clickable": false,
+              "editable": false,
+              "scrollable": false,
+              "bounds": "-1161 1995 -431 2915"
+            },
+            {
+              "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+              "class": "android.widget.ImageView",
+              "clickable": false,
+              "editable": false,
+              "scrollable": false,
+              "bounds": "-1201 2035 -431 2115"
+            },
+            {
+              "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+              "class": "android.view.View",
+              "clickable": false,
+              "editable": false,
+              "scrollable": false,
+              "bounds": "-1181 2924 -431 2947"
+            },
+            {
+              "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+              "class": "android.view.View",
+              "clickable": true,
+              "editable": false,
+              "scrollable": false,
+              "bounds": "-1711 2924 -431 3146"
+            },
+            {
+              "text": "星探AI",
+              "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+              "class": "android.widget.TextView",
+              "clickable": true,
+              "editable": false,
+              "scrollable": false,
+              "bounds": "-1545 2924 -431 3131"
+            },
+            {
+              "text": "昨天 19:51",
+              "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+              "class": "android.widget.TextView",
+              "clickable": true,
+              "editable": false,
+              "scrollable": false,
+              "bounds": "-1504 2924 -431 3204"
+            },
+            {
+              "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+              "class": "android.widget.ImageView",
+              "clickable": true,
+              "editable": false,
+              "scrollable": false,
+              "bounds": "-1270 2924 -431 3140"
+            },
+            {
+              "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+              "class": "android.view.View",
+              "clickable": false,
+              "editable": false,
+              "scrollable": false,
+              "bounds": "-1262 2924 -431 3146"
+            },
+            {
+              "text": "143",
+              "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+              "class": "android.widget.TextView",
+              "clickable": true,
+              "editable": false,
+              "scrollable": false,
+              "bounds": "-1209 2924 -431 3160"
+            },
+            {
+              "class": "android.widget.FrameLayout",
+              "clickable": false,
+              "editable": false,
+              "scrollable": false,
+              "bounds": "0 1995 -20 2924"
+            },
+            {
+              "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+              "class": "android.view.ViewGroup",
+              "clickable": true,
+              "editable": false,
+              "scrollable": false,
+              "bounds": "-451 1995 -431 2924"
+            },
+            {
+              "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+              "class": "android.widget.ImageView",
+              "clickable": false,
+              "editable": false,
+              "scrollable": false,
+              "bounds": "-451 1995 -431 2914"
+            },
+            {
+              "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+              "class": "android.view.View",
+              "clickable": false,
+              "editable": false,
+              "scrollable": false,
+              "bounds": "-471 2924 -431 2946"
+            },
+            {
+              "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+              "class": "android.view.View",
+              "clickable": true,
+              "editable": false,
+              "scrollable": false,
+              "bounds": "-1001 2924 -431 3145"
+            },
+            {
+              "text": "乐鑫信息科技",
+              "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+              "class": "android.widget.TextView",
+              "clickable": true,
+              "editable": false,
+              "scrollable": false,
+              "bounds": "-685 2924 -431 3130"
+            },
+            {
+              "text": "昨天 14:13",
+              "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+              "class": "android.widget.TextView",
+              "clickable": true,
+              "editable": false,
+              "scrollable": false,
+              "bounds": "-794 2924 -431 3203"
+            }
+          ],
+          "clickTargets": [
+            {
+              "index": 0,
+              "text": "王小雨",
+              "desc": null,
+              "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+              "class": "android.widget.TextView",
+              "clickable": false,
+              "selected": false,
+              "bounds": "-1351 620 -431 684",
+              "center": {
+                "x": 0,
+                "y": 0.22146739130434784
+              },
+              "tags": [
+                "content_area",
+                "video_like"
+              ]
+            },
+            {
+              "index": 1,
+              "text": null,
+              "desc": null,
+              "resourceId": null,
+              "class": "android.view.ViewGroup",
+              "clickable": true,
+              "selected": false,
+              "bounds": "-1023 336 -431 732",
+              "center": {
+                "x": 0,
+                "y": 0.18138586956521738
+              },
+              "tags": [
+                "clickable",
+                "content_area",
+                "video_like",
+                "author_or_query"
+              ]
+            },
+            {
+              "index": 2,
+              "text": "阿哲Ai小剧场",
+              "desc": null,
+              "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+              "class": "android.widget.TextView",
+              "clickable": false,
+              "selected": false,
+              "bounds": "-1023 620 -431 684",
+              "center": {
+                "x": 0,
+                "y": 0.22146739130434784
+              },
+              "tags": [
+                "content_area",
+                "video_like"
+              ]
+            },
+            {
+              "index": 3,
+              "text": null,
+              "desc": null,
+              "resourceId": null,
+              "class": "android.view.ViewGroup",
+              "clickable": true,
+              "selected": false,
+              "bounds": "-751 336 -431 732",
+              "center": {
+                "x": 0,
+                "y": 0.18138586956521738
+              },
+              "tags": [
+                "clickable",
+                "content_area",
+                "video_like",
+                "author_or_query"
+              ]
+            },
+            {
+              "index": 4,
+              "text": "小狗拌面（接恋爱咨询）",
+              "desc": null,
+              "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+              "class": "android.widget.TextView",
+              "clickable": false,
+              "selected": false,
+              "bounds": "-751 620 -431 684",
+              "center": {
+                "x": 0,
+                "y": 0.22146739130434784
+              },
+              "tags": [
+                "content_area",
+                "video_like"
+              ]
+            },
+            {
+              "index": 5,
+              "text": null,
+              "desc": null,
+              "resourceId": null,
+              "class": "android.view.ViewGroup",
+              "clickable": true,
+              "selected": false,
+              "bounds": "-479 336 -431 732",
+              "center": {
+                "x": 0,
+                "y": 0.18138586956521738
+              },
+              "tags": [
+                "clickable",
+                "content_area",
+                "video_like",
+                "author_or_query"
+              ]
+            },
+            {
+              "index": 6,
+              "text": "老头们的快乐生活",
+              "desc": null,
+              "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+              "class": "android.widget.TextView",
+              "clickable": false,
+              "selected": false,
+              "bounds": "-479 620 -431 684",
+              "center": {
+                "x": 0,
+                "y": 0.22146739130434784
+              },
+              "tags": [
+                "content_area",
+                "video_like"
+              ]
+            },
+            {
+              "index": 7,
+              "text": "星探AI",
+              "desc": null,
+              "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+              "class": "android.widget.TextView",
+              "clickable": false,
+              "selected": false,
+              "bounds": "-431 620 -404 684",
+              "center": {
+                "x": 0,
+                "y": 0.22146739130434784
+              },
+              "tags": [
+                "content_area",
+                "video_like"
+              ]
+            },
+            {
+              "index": 8,
+              "text": null,
+              "desc": null,
+              "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+              "class": "android.view.ViewGroup",
+              "clickable": true,
+              "selected": false,
+              "bounds": "-1161 752 -431 1975",
+              "center": {
+                "x": 0,
+                "y": 0.46297554347826086
+              },
+              "tags": [
+                "clickable",
+                "content_area",
+                "video_like",
+                "author_or_query"
+              ]
+            },
+            {
+              "index": 9,
+              "text": null,
+              "desc": null,
+              "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+              "class": "android.view.View",
+              "clickable": true,
+              "selected": false,
+              "bounds": "-1711 1820 -431 1916",
+              "center": {
+                "x": 0,
+                "y": 0.6345108695652174
+              },
+              "tags": [
+                "clickable",
+                "content_area",
+                "video_like"
+              ]
+            },
+            {
+              "index": 10,
+              "text": "水人从小就爱波高地",
+              "desc": null,
+              "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+              "class": "android.widget.TextView",
+              "clickable": true,
+              "selected": false,
+              "bounds": "-1393 1805 -431 1878",
+              "center": {
+                "x": 0,
+                "y": 0.6253396739130435
+              },
+              "tags": [
+                "clickable",
+                "content_area",
+                "video_like"
+              ]
+            },
+            {
+              "index": 11,
+              "text": "刚刚",
+              "desc": null,
+              "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+              "class": "android.widget.TextView",
+              "clickable": true,
+              "selected": false,
+              "bounds": "-1594 1878 -431 1935",
+              "center": {
+                "x": 0,
+                "y": 0.6474184782608695
+              },
+              "tags": [
+                "clickable",
+                "content_area",
+                "video_like"
+              ]
+            },
+            {
+              "index": 12,
+              "text": null,
+              "desc": null,
+              "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+              "class": "android.widget.ImageView",
+              "clickable": true,
+              "selected": false,
+              "bounds": "-1241 1814 -431 1926",
+              "center": {
+                "x": 0,
+                "y": 0.6351902173913043
+              },
+              "tags": [
+                "clickable",
+                "content_area",
+                "video_like"
+              ]
+            },
+            {
+              "index": 13,
+              "text": "赞",
+              "desc": null,
+              "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+              "class": "android.widget.TextView",
+              "clickable": true,
+              "selected": false,
+              "bounds": "-1209 1834 -431 1907",
+              "center": {
+                "x": 0,
+                "y": 0.6351902173913043
+              },
+              "tags": [
+                "clickable",
+                "content_area",
+                "video_like",
+                "like_control"
+              ]
+            },
+            {
+              "index": 14,
+              "text": null,
+              "desc": null,
+              "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+              "class": "android.view.ViewGroup",
+              "clickable": true,
+              "selected": false,
+              "bounds": "-451 752 -431 1975",
+              "center": {
+                "x": 0,
+                "y": 0.46297554347826086
+              },
+              "tags": [
+                "clickable",
+                "content_area",
+                "video_like",
+                "author_or_query"
+              ]
+            },
+            {
+              "index": 15,
+              "text": null,
+              "desc": null,
+              "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+              "class": "android.view.View",
+              "clickable": true,
+              "selected": false,
+              "bounds": "-1001 1820 -431 1916",
+              "center": {
+                "x": 0,
+                "y": 0.6345108695652174
+              },
+              "tags": [
+                "clickable",
+                "content_area",
+                "video_like"
+              ]
+            },
+            {
+              "index": 16,
+              "text": "王小雨",
+              "desc": null,
+              "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+              "class": "android.widget.TextView",
+              "clickable": true,
+              "selected": false,
+              "bounds": "-829 1805 -431 1878",
+              "center": {
+                "x": 0,
+                "y": 0.6253396739130435
+              },
+              "tags": [
+                "clickable",
+                "content_area",
+                "video_like"
+              ]
+            },
+            {
+              "index": 17,
+              "text": "昨天 11:51",
+              "desc": null,
+              "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+              "class": "android.widget.TextView",
+              "clickable": true,
+              "selected": false,
+              "bounds": "-795 1878 -431 1935",
+              "center": {
+                "x": 0,
+                "y": 0.6474184782608695
+              },
+              "tags": [
+                "clickable",
+                "content_area",
+                "video_like"
+              ]
+            },
+            {
+              "index": 18,
+              "text": null,
+              "desc": null,
+              "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+              "class": "android.widget.ImageView",
+              "clickable": true,
+              "selected": false,
+              "bounds": "-561 1814 -431 1926",
+              "center": {
+                "x": 0,
+                "y": 0.6351902173913043
+              },
+              "tags": [
+                "clickable",
+                "content_area",
+                "video_like"
+              ]
+            },
+            {
+              "index": 19,
+              "text": "209",
+              "desc": null,
+              "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+              "class": "android.widget.TextView",
+              "clickable": true,
+              "selected": false,
+              "bounds": "-499 1834 -431 1907",
+              "center": {
+                "x": 0,
+                "y": 0.6351902173913043
+              },
+              "tags": [
+                "clickable",
+                "content_area",
+                "video_like"
+              ]
+            },
+            {
+              "index": 20,
+              "text": null,
+              "desc": null,
+              "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+              "class": "android.view.ViewGroup",
+              "clickable": true,
+              "selected": false,
+              "bounds": "-1161 1995 -431 2924",
+              "center": {
+                "x": 0,
+                "y": 0.8352581521739131
+              },
+              "tags": [
+                "clickable",
+                "content_area",
+                "video_like",
+                "author_or_query"
+              ]
+            },
+            {
+              "index": 21,
+              "text": null,
+              "desc": null,
+              "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+              "class": "android.view.View",
+              "clickable": true,
+              "selected": false,
+              "bounds": "-1711 2924 -431 3146",
+              "center": {
+                "x": 0,
+                "y": 1
+              },
+              "tags": [
+                "clickable",
+                "content_area",
+                "video_like"
+              ]
+            },
+            {
+              "index": 22,
+              "text": "星探AI",
+              "desc": null,
+              "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+              "class": "android.widget.TextView",
+              "clickable": true,
+              "selected": false,
+              "bounds": "-1545 2924 -431 3131",
+              "center": {
+                "x": 0,
+                "y": 1
+              },
+              "tags": [
+                "clickable",
+                "content_area",
+                "video_like"
+              ]
+            },
+            {
+              "index": 23,
+              "text": "昨天 19:51",
+              "desc": null,
+              "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+              "class": "android.widget.TextView",
+              "clickable": true,
+              "selected": false,
+              "bounds": "-1504 2924 -431 3204",
+              "center": {
+                "x": 0,
+                "y": 1
+              },
+              "tags": [
+                "clickable",
+                "content_area",
+                "video_like"
+              ]
+            },
+            {
+              "index": 24,
+              "text": null,
+              "desc": null,
+              "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+              "class": "android.widget.ImageView",
+              "clickable": true,
+              "selected": false,
+              "bounds": "-1270 2924 -431 3140",
+              "center": {
+                "x": 0,
+                "y": 1
+              },
+              "tags": [
+                "clickable",
+                "content_area",
+                "video_like"
+              ]
+            },
+            {
+              "index": 25,
+              "text": "143",
+              "desc": null,
+              "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+              "class": "android.widget.TextView",
+              "clickable": true,
+              "selected": false,
+              "bounds": "-1209 2924 -431 3160",
+              "center": {
+                "x": 0,
+                "y": 1
+              },
+              "tags": [
+                "clickable",
+                "content_area",
+                "video_like"
+              ]
+            },
+            {
+              "index": 26,
+              "text": null,
+              "desc": null,
+              "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+              "class": "android.view.ViewGroup",
+              "clickable": true,
+              "selected": false,
+              "bounds": "-451 1995 -431 2924",
+              "center": {
+                "x": 0,
+                "y": 0.8352581521739131
+              },
+              "tags": [
+                "clickable",
+                "content_area",
+                "video_like",
+                "author_or_query"
+              ]
+            },
+            {
+              "index": 27,
+              "text": null,
+              "desc": null,
+              "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+              "class": "android.view.View",
+              "clickable": true,
+              "selected": false,
+              "bounds": "-1001 2924 -431 3145",
+              "center": {
+                "x": 0,
+                "y": 1
+              },
+              "tags": [
+                "clickable",
+                "content_area",
+                "video_like"
+              ]
+            },
+            {
+              "index": 28,
+              "text": "乐鑫信息科技",
+              "desc": null,
+              "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+              "class": "android.widget.TextView",
+              "clickable": true,
+              "selected": false,
+              "bounds": "-685 2924 -431 3130",
+              "center": {
+                "x": 0,
+                "y": 1
+              },
+              "tags": [
+                "clickable",
+                "content_area",
+                "video_like"
+              ]
+            },
+            {
+              "index": 29,
+              "text": "昨天 14:13",
+              "desc": null,
+              "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+              "class": "android.widget.TextView",
+              "clickable": true,
+              "selected": false,
+              "bounds": "-794 2924 -431 3203",
+              "center": {
+                "x": 0,
+                "y": 1
+              },
+              "tags": [
+                "clickable",
+                "content_area",
+                "video_like"
+              ]
+            },
+            {
+              "index": 30,
+              "text": null,
+              "desc": null,
+              "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+              "class": "android.widget.ImageView",
+              "clickable": true,
+              "selected": false,
+              "bounds": "-509 2924 -431 3139",
+              "center": {
+                "x": 0,
+                "y": 1
+              },
+              "tags": [
+                "clickable",
+                "content_area",
+                "video_like"
+              ]
+            },
+            {
+              "index": 31,
+              "text": "4",
+              "desc": null,
+              "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+              "class": "android.widget.TextView",
+              "clickable": true,
+              "selected": false,
+              "bounds": "-499 2924 -431 3159",
+              "center": {
+                "x": 0,
+                "y": 1
+              },
+              "tags": [
+                "clickable",
+                "content_area",
+                "video_like"
+              ]
+            },
+            {
+              "index": 32,
+              "text": null,
+              "desc": null,
+              "resourceId": null,
+              "class": "android.widget.FrameLayout",
+              "clickable": true,
+              "selected": false,
+              "bounds": "-431 336 -219 496",
+              "center": {
+                "x": 0,
+                "y": 0.14130434782608695
+              },
+              "tags": [
+                "clickable"
+              ]
+            },
+            {
+              "index": 33,
+              "text": null,
+              "desc": "已选定推荐",
+              "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+              "class": "android.view.ViewGroup",
+              "clickable": false,
+              "selected": false,
+              "bounds": "-431 375 -219 456",
+              "center": {
+                "x": 0,
+                "y": 0.1409646739130435
+              },
+              "tags": [
+                "video_like",
+                "author_or_query"
+              ]
+            },
+            {
+              "index": 34,
+              "text": "推荐",
+              "desc": null,
+              "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+              "class": "android.widget.TextView",
+              "clickable": false,
+              "selected": false,
+              "bounds": "-431 375 -219 456",
+              "center": {
+                "x": 0,
+                "y": 0.1409646739130435
+              },
+              "tags": [
+                "video_like"
+              ]
+            },
+            {
+              "index": 35,
+              "text": null,
+              "desc": null,
+              "resourceId": null,
+              "class": "android.widget.FrameLayout",
+              "clickable": true,
+              "selected": false,
+              "bounds": "-219 336 -7 496",
+              "center": {
+                "x": 0,
+                "y": 0.14130434782608695
+              },
+              "tags": [
+                "clickable"
+              ]
+            },
+            {
+              "index": 36,
+              "text": null,
+              "desc": "视频",
+              "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+              "class": "android.view.ViewGroup",
+              "clickable": false,
+              "selected": false,
+              "bounds": "-219 375 -7 457",
+              "center": {
+                "x": 0,
+                "y": 0.14130434782608695
+              },
+              "tags": [
+                "video_like",
+                "author_or_query"
+              ]
+            },
+            {
+              "index": 37,
+              "text": "视频",
+              "desc": null,
+              "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+              "class": "android.widget.TextView",
+              "clickable": false,
+              "selected": false,
+              "bounds": "-219 375 -7 457",
+              "center": {
+                "x": 0,
+                "y": 0.14130434782608695
+              },
+              "tags": [
+                "video_like"
+              ]
+            },
+            {
+              "index": 38,
+              "text": null,
+              "desc": null,
+              "resourceId": null,
+              "class": "android.widget.FrameLayout",
+              "clickable": true,
+              "selected": false,
+              "bounds": "-7 336 204 496",
+              "center": {
+                "x": 0.06805555555555555,
+                "y": 0.14130434782608695
+              },
+              "tags": [
+                "clickable"
+              ]
+            },
+            {
+              "index": 39,
+              "text": null,
+              "desc": "直播",
+              "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+              "class": "android.view.ViewGroup",
+              "clickable": false,
+              "selected": false,
+              "bounds": "-7 375 204 457",
+              "center": {
+                "x": 0.06805555555555555,
+                "y": 0.14130434782608695
+              },
+              "tags": [
+                "video_like",
+                "author_or_query"
+              ]
+            },
+            {
+              "index": 40,
+              "text": "直播",
+              "desc": null,
+              "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+              "class": "android.widget.TextView",
+              "clickable": false,
+              "selected": false,
+              "bounds": "-7 375 204 457",
+              "center": {
+                "x": 0.06805555555555555,
+                "y": 0.14130434782608695
+              },
+              "tags": [
+                "video_like"
+              ]
+            },
+            {
+              "index": 41,
+              "text": null,
+              "desc": null,
+              "resourceId": null,
+              "class": "android.widget.FrameLayout",
+              "clickable": true,
+              "selected": false,
+              "bounds": "204 336 416 496",
+              "center": {
+                "x": 0.2152777777777778,
+                "y": 0.14130434782608695
+              },
+              "tags": [
+                "clickable"
+              ]
+            },
+            {
+              "index": 42,
+              "text": null,
+              "desc": "短剧",
+              "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+              "class": "android.view.ViewGroup",
+              "clickable": false,
+              "selected": false,
+              "bounds": "232 375 444 457",
+              "center": {
+                "x": 0.23472222222222222,
+                "y": 0.14130434782608695
+              },
+              "tags": [
+                "video_like",
+                "author_or_query"
+              ]
+            },
+            {
+              "index": 43,
+              "text": "短剧",
+              "desc": null,
+              "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+              "class": "android.widget.TextView",
+              "clickable": false,
+              "selected": false,
+              "bounds": "232 375 444 457",
+              "center": {
+                "x": 0.23472222222222222,
+                "y": 0.14130434782608695
+              },
+              "tags": [
+                "video_like"
+              ]
+            },
+            {
+              "index": 44,
+              "text": null,
+              "desc": null,
+              "resourceId": null,
+              "class": "android.widget.FrameLayout",
+              "clickable": true,
+              "selected": false,
+              "bounds": "444 336 656 496",
+              "center": {
+                "x": 0.3819444444444444,
+                "y": 0.14130434782608695
+              },
+              "tags": [
+                "clickable"
+              ]
+            },
+            {
+              "index": 45,
+              "text": null,
+              "desc": "问答",
+              "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+              "class": "android.view.ViewGroup",
+              "clickable": false,
+              "selected": false,
+              "bounds": "444 375 656 457",
+              "center": {
+                "x": 0.3819444444444444,
+                "y": 0.14130434782608695
+              },
+              "tags": [
+                "video_like",
+                "author_or_query"
+              ]
+            },
+            {
+              "index": 46,
+              "text": "问答",
+              "desc": null,
+              "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+              "class": "android.widget.TextView",
+              "clickable": false,
+              "selected": false,
+              "bounds": "444 375 656 457",
+              "center": {
+                "x": 0.3819444444444444,
+                "y": 0.14130434782608695
+              },
+              "tags": [
+                "video_like"
+              ]
+            },
+            {
+              "index": 47,
+              "text": null,
+              "desc": null,
+              "resourceId": null,
+              "class": "android.widget.FrameLayout",
+              "clickable": true,
+              "selected": false,
+              "bounds": "656 336 868 496",
+              "center": {
+                "x": 0.5291666666666667,
+                "y": 0.14130434782608695
+              },
+              "tags": [
+                "clickable"
+              ]
+            },
+            {
+              "index": 48,
+              "text": null,
+              "desc": "穿搭",
+              "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+              "class": "android.view.ViewGroup",
+              "clickable": false,
+              "selected": false,
+              "bounds": "656 375 868 457",
+              "center": {
+                "x": 0.5291666666666667,
+                "y": 0.14130434782608695
+              },
+              "tags": [
+                "video_like",
+                "author_or_query"
+              ]
+            },
+            {
+              "index": 49,
+              "text": "穿搭",
+              "desc": null,
+              "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+              "class": "android.widget.TextView",
+              "clickable": false,
+              "selected": false,
+              "bounds": "656 375 868 457",
+              "center": {
+                "x": 0.5291666666666667,
+                "y": 0.14130434782608695
+              },
+              "tags": [
+                "video_like"
+              ]
+            },
+            {
+              "index": 50,
+              "text": null,
+              "desc": null,
+              "resourceId": null,
+              "class": "android.widget.FrameLayout",
+              "clickable": true,
+              "selected": false,
+              "bounds": "868 336 916 496",
+              "center": {
+                "x": 0.6194444444444445,
+                "y": 0.14130434782608695
+              },
+              "tags": [
+                "clickable"
+              ]
+            },
+            {
+              "index": 51,
+              "text": null,
+              "desc": "美食",
+              "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+              "class": "android.view.ViewGroup",
+              "clickable": false,
+              "selected": false,
+              "bounds": "868 375 916 457",
+              "center": {
+                "x": 0.6194444444444445,
+                "y": 0.14130434782608695
+              },
+              "tags": [
+                "video_like",
+                "author_or_query"
+              ]
+            },
+            {
+              "index": 52,
+              "text": "美食",
+              "desc": null,
+              "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+              "class": "android.widget.TextView",
+              "clickable": false,
+              "selected": false,
+              "bounds": "868 375 916 457",
+              "center": {
+                "x": 0.6194444444444445,
+                "y": 0.14130434782608695
+              },
+              "tags": [
+                "video_like"
+              ]
+            },
+            {
+              "index": 53,
+              "text": null,
+              "desc": null,
+              "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+              "class": "android.widget.ImageView",
+              "clickable": true,
+              "selected": false,
+              "bounds": "924 384 988 448",
+              "center": {
+                "x": 0.6638888888888889,
+                "y": 0.14130434782608695
+              },
+              "tags": [
+                "clickable",
+                "video_like"
+              ]
+            },
+            {
+              "index": 54,
+              "text": null,
+              "desc": "视频  詹姆斯#强烈推荐 #原创 #热点 来自北京（帝都） 17赞",
+              "resourceId": null,
+              "class": "android.widget.FrameLayout",
+              "clickable": false,
+              "selected": false,
+              "bounds": "-383 496 306 1756",
+              "center": {
+                "x": 0,
+                "y": 0.38247282608695654
+              },
+              "tags": [
+                "content_area",
+                "video_like",
+                "like_control"
+              ]
+            },
+            {
+              "index": 55,
+              "text": null,
+              "desc": null,
+              "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+              "class": "android.widget.FrameLayout",
+              "clickable": true,
+              "selected": false,
+              "bounds": "-383 496 306 1756",
+              "center": {
+                "x": 0,
+                "y": 0.38247282608695654
+              },
+              "tags": [
+                "clickable",
+                "content_area"
+              ]
+            },
+            {
+              "index": 56,
+              "text": null,
+              "desc": null,
+              "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+              "class": "android.view.ViewGroup",
+              "clickable": true,
+              "selected": false,
+              "bounds": "-383 1600 290 1756",
+              "center": {
+                "x": 0,
+                "y": 0.5699728260869565
+              },
+              "tags": [
+                "clickable",
+                "content_area",
+                "video_like",
+                "author_or_query"
+              ]
+            },
+            {
+              "index": 57,
+              "text": "北京（帝都）",
+              "desc": null,
+              "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+              "class": "android.widget.TextView",
+              "clickable": false,
+              "selected": false,
+              "bounds": "-239 1642 119 1715",
+              "center": {
+                "x": 0,
+                "y": 0.5699728260869565
+              },
+              "tags": [
+                "content_area",
+                "video_like"
+              ]
+            },
+            {
+              "index": 58,
+              "text": null,
+              "desc": null,
+              "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+              "class": "android.widget.ImageView",
+              "clickable": true,
+              "selected": false,
+              "bounds": "115 1618 235 1738",
+              "center": {
+                "x": 0.12152777777777778,
+                "y": 0.5699728260869565
+              },
+              "tags": [
+                "clickable",
+                "content_area",
+                "video_like"
+              ]
+            },
+            {
+              "index": 59,
+              "text": "17",
+              "desc": null,
+              "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+              "class": "android.widget.TextView",
+              "clickable": true,
+              "selected": false,
+              "bounds": "215 1642 266 1715",
+              "center": {
+                "x": 0.16666666666666666,
+                "y": 0.5699728260869565
+              },
+              "tags": [
+                "clickable",
+                "content_area",
+                "video_like"
+              ]
+            }
+          ],
+          "videoCandidates": [
+            {
+              "index": 0,
+              "text": "王小雨",
+              "desc": null,
+              "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+              "class": "android.widget.TextView",
+              "clickable": false,
+              "selected": false,
+              "bounds": "-1351 620 -431 684",
+              "center": {
+                "x": 0,
+                "y": 0.22146739130434784
+              },
+              "tags": [
+                "content_area",
+                "video_like"
+              ]
+            },
+            {
+              "index": 1,
+              "text": "阿哲Ai小剧场",
+              "desc": null,
+              "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+              "class": "android.widget.TextView",
+              "clickable": false,
+              "selected": false,
+              "bounds": "-1023 620 -431 684",
+              "center": {
+                "x": 0,
+                "y": 0.22146739130434784
+              },
+              "tags": [
+                "content_area",
+                "video_like"
+              ]
+            },
+            {
+              "index": 2,
+              "text": "小狗拌面（接恋爱咨询）",
+              "desc": null,
+              "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+              "class": "android.widget.TextView",
+              "clickable": false,
+              "selected": false,
+              "bounds": "-751 620 -431 684",
+              "center": {
+                "x": 0,
+                "y": 0.22146739130434784
+              },
+              "tags": [
+                "content_area",
+                "video_like"
+              ]
+            },
+            {
+              "index": 3,
+              "text": null,
+              "desc": null,
+              "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+              "class": "android.view.ViewGroup",
+              "clickable": true,
+              "selected": false,
+              "bounds": "-1161 752 -431 1975",
+              "center": {
+                "x": 0,
+                "y": 0.46297554347826086
+              },
+              "tags": [
+                "clickable",
+                "content_area",
+                "video_like",
+                "author_or_query"
+              ]
+            },
+            {
+              "index": 4,
+              "text": null,
+              "desc": null,
+              "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+              "class": "android.view.View",
+              "clickable": true,
+              "selected": false,
+              "bounds": "-1711 1820 -431 1916",
+              "center": {
+                "x": 0,
+                "y": 0.6345108695652174
+              },
+              "tags": [
+                "clickable",
+                "content_area",
+                "video_like"
+              ]
+            },
+            {
+              "index": 5,
+              "text": "水人从小就爱波高地",
+              "desc": null,
+              "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+              "class": "android.widget.TextView",
+              "clickable": true,
+              "selected": false,
+              "bounds": "-1393 1805 -431 1878",
+              "center": {
+                "x": 0,
+                "y": 0.6253396739130435
+              },
+              "tags": [
+                "clickable",
+                "content_area",
+                "video_like"
+              ]
+            },
+            {
+              "index": 6,
+              "text": "刚刚",
+              "desc": null,
+              "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+              "class": "android.widget.TextView",
+              "clickable": true,
+              "selected": false,
+              "bounds": "-1594 1878 -431 1935",
+              "center": {
+                "x": 0,
+                "y": 0.6474184782608695
+              },
+              "tags": [
+                "clickable",
+                "content_area",
+                "video_like"
+              ]
+            },
+            {
+              "index": 7,
+              "text": null,
+              "desc": null,
+              "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+              "class": "android.widget.ImageView",
+              "clickable": true,
+              "selected": false,
+              "bounds": "-1241 1814 -431 1926",
+              "center": {
+                "x": 0,
+                "y": 0.6351902173913043
+              },
+              "tags": [
+                "clickable",
+                "content_area",
+                "video_like"
+              ]
+            },
+            {
+              "index": 8,
+              "text": "赞",
+              "desc": null,
+              "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+              "class": "android.widget.TextView",
+              "clickable": true,
+              "selected": false,
+              "bounds": "-1209 1834 -431 1907",
+              "center": {
+                "x": 0,
+                "y": 0.6351902173913043
+              },
+              "tags": [
+                "clickable",
+                "content_area",
+                "video_like",
+                "like_control"
+              ]
+            },
+            {
+              "index": 9,
+              "text": null,
+              "desc": null,
+              "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+              "class": "android.view.View",
+              "clickable": true,
+              "selected": false,
+              "bounds": "-1001 1820 -431 1916",
+              "center": {
+                "x": 0,
+                "y": 0.6345108695652174
+              },
+              "tags": [
+                "clickable",
+                "content_area",
+                "video_like"
+              ]
+            },
+            {
+              "index": 10,
+              "text": "王小雨",
+              "desc": null,
+              "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+              "class": "android.widget.TextView",
+              "clickable": true,
+              "selected": false,
+              "bounds": "-829 1805 -431 1878",
+              "center": {
+                "x": 0,
+                "y": 0.6253396739130435
+              },
+              "tags": [
+                "clickable",
+                "content_area",
+                "video_like"
+              ]
+            },
+            {
+              "index": 11,
+              "text": "昨天 11:51",
+              "desc": null,
+              "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+              "class": "android.widget.TextView",
+              "clickable": true,
+              "selected": false,
+              "bounds": "-795 1878 -431 1935",
+              "center": {
+                "x": 0,
+                "y": 0.6474184782608695
+              },
+              "tags": [
+                "clickable",
+                "content_area",
+                "video_like"
+              ]
+            },
+            {
+              "index": 12,
+              "text": null,
+              "desc": null,
+              "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+              "class": "android.view.ViewGroup",
+              "clickable": true,
+              "selected": false,
+              "bounds": "-1161 1995 -431 2924",
+              "center": {
+                "x": 0,
+                "y": 0.8352581521739131
+              },
+              "tags": [
+                "clickable",
+                "content_area",
+                "video_like",
+                "author_or_query"
+              ]
+            },
+            {
+              "index": 13,
+              "text": null,
+              "desc": "视频  詹姆斯#强烈推荐 #原创 #热点 来自北京（帝都） 17赞",
+              "resourceId": null,
+              "class": "android.widget.FrameLayout",
+              "clickable": false,
+              "selected": false,
+              "bounds": "-383 496 306 1756",
+              "center": {
+                "x": 0,
+                "y": 0.38247282608695654
+              },
+              "tags": [
+                "content_area",
+                "video_like",
+                "like_control"
+              ]
+            },
+            {
+              "index": 14,
+              "text": null,
+              "desc": null,
+              "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+              "class": "android.widget.FrameLayout",
+              "clickable": true,
+              "selected": false,
+              "bounds": "-383 496 306 1756",
+              "center": {
+                "x": 0,
+                "y": 0.38247282608695654
+              },
+              "tags": [
+                "clickable",
+                "content_area"
+              ]
+            },
+            {
+              "index": 15,
+              "text": null,
+              "desc": null,
+              "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+              "class": "android.view.ViewGroup",
+              "clickable": true,
+              "selected": false,
+              "bounds": "-383 1600 290 1756",
+              "center": {
+                "x": 0,
+                "y": 0.5699728260869565
+              },
+              "tags": [
+                "clickable",
+                "content_area",
+                "video_like",
+                "author_or_query"
+              ]
+            },
+            {
+              "index": 16,
+              "text": "北京（帝都）",
+              "desc": null,
+              "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+              "class": "android.widget.TextView",
+              "clickable": false,
+              "selected": false,
+              "bounds": "-239 1642 119 1715",
+              "center": {
+                "x": 0,
+                "y": 0.5699728260869565
+              },
+              "tags": [
+                "content_area",
+                "video_like"
+              ]
+            },
+            {
+              "index": 17,
+              "text": null,
+              "desc": "笔记  大厂Claude来路正经吗 来自皮蛋 solo粥 180赞",
+              "resourceId": null,
+              "class": "android.widget.FrameLayout",
+              "clickable": false,
+              "selected": false,
+              "bounds": "326 496 1016 1673",
+              "center": {
+                "x": 0.46597222222222223,
+                "y": 0.36820652173913043
+              },
+              "tags": [
+                "content_area",
+                "like_control"
+              ]
+            },
+            {
+              "index": 18,
+              "text": null,
+              "desc": null,
+              "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+              "class": "android.widget.FrameLayout",
+              "clickable": true,
+              "selected": false,
+              "bounds": "326 496 1016 1673",
+              "center": {
+                "x": 0.46597222222222223,
+                "y": 0.36820652173913043
+              },
+              "tags": [
+                "clickable",
+                "content_area"
+              ]
+            },
+            {
+              "index": 19,
+              "text": null,
+              "desc": null,
+              "resourceId": "com.xingin.xhs:id\/0_resource_name_obfuscated",
+              "class": "android.view.ViewGroup",
+              "clickable": true,
+              "selected": false,
+              "bounds": "326 1517 1000 1673",
+              "center": {
+                "x": 0.46041666666666664,
+                "y": 0.5417798913043478
+              },
+              "tags": [
+                "clickable",
+                "content_area",
+                "video_like",
+                "author_or_query"
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "title": "小红书发布 Skill JSON 已写入",
+      "status": "SUCCESS",
+      "message": "已写入 8 个候选 JSON：进入编辑器、替换输入内容、下一步、发布。",
+      "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_candidates\/com.xingin.xhs\/direct.command.1778262200296.json",
+      "timestamp": 1778262200299
+    },
+    {
+      "title": "小红书发布 dry-run",
+      "status": "SUCCESS",
+      "message": "通过 8\/8。",
+      "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_dry_run_reports\/com.xingin.xhs\/direct.command.1778262200296_1778262200334.json",
+      "timestamp": 1778262200334
+    },
+    {
+      "title": "小红书发布兜底执行结果",
+      "status": "FAILED_ELEMENT_NOT_FOUND",
+      "message": "direct.command.1778262200296 -> FAILED_ELEMENT_NOT_FOUND；小红书返回安全限制\/设备异常，发布被平台阻止，不能报告成功。",
+      "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/runtime\/run_reports\/com.xingin.xhs\/xhs_publish_fallback_1778262205875.json",
+      "timestamp": 1778262205877,
+      "extra": {
+        "serviceConnected": true,
+        "appPackage": "com.xingin.xhs",
+        "nodeCount": 39,
+        "sampleTexts": [
+          "返回",
+          "",
+          "安全限制",
+          "设备异常，请尝试关闭\/卸载风险插件或重启试试",
+          "反馈",
+          "反馈",
+          "知道了",
+          "知道了"
+        ],
+        "expected": "xiaohongshu_post_published",
+        "titleNeedle": "我是ai",
+        "bodyNeedle": "我是ai",
+        "titleVisible": false,
+        "bodyVisible": false,
+        "shortContentRequiresPublishMarker": true,
+        "securityBlockerHits": [
+          "安全限制",
+          "设备异常",
+          "风险插件",
+          "关闭\/卸载",
+          "尝试关闭",
+          "重启试试"
+        ],
+        "publishMarkerHits": [],
+        "detailMarkerHits": [],
+        "detailEvidenceStrong": false,
+        "editorMarkerHits": [],
+        "editorStillVisible": false,
+        "feedSurfaceMarkers": [],
+        "feedSurfaceVisible": false,
+        "inXiaohongshu": true,
+        "finalPublishRequested": true
+      }
+    },
+    {
+      "title": "目标未完成，继续 AI 判断",
+      "status": "RUNNING",
+      "message": "小红书返回安全限制\/设备异常，发布被平台阻止，不能报告成功。；第 2\/4 次继续重判当前屏幕。",
+      "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/runtime\/run_reports\/com.xingin.xhs\/xhs_publish_fallback_1778262205875.json",
+      "timestamp": 1778262205889,
+      "extra": {
+        "serviceConnected": true,
+        "appPackage": "com.xingin.xhs",
+        "nodeCount": 39,
+        "sampleTexts": [
+          "返回",
+          "",
+          "安全限制",
+          "设备异常，请尝试关闭\/卸载风险插件或重启试试",
+          "反馈",
+          "反馈",
+          "知道了",
+          "知道了"
+        ],
+        "expected": "xiaohongshu_post_published",
+        "titleNeedle": "我是ai",
+        "bodyNeedle": "我是ai",
+        "titleVisible": false,
+        "bodyVisible": false,
+        "shortContentRequiresPublishMarker": true,
+        "securityBlockerHits": [
+          "安全限制",
+          "设备异常",
+          "风险插件",
+          "关闭\/卸载",
+          "尝试关闭",
+          "重启试试"
+        ],
+        "publishMarkerHits": [],
+        "detailMarkerHits": [],
+        "detailEvidenceStrong": false,
+        "editorMarkerHits": [],
+        "editorStillVisible": false,
+        "feedSurfaceMarkers": [],
+        "feedSurfaceVisible": false,
+        "inXiaohongshu": true,
+        "finalPublishRequested": true
+      }
+    },
+    {
+      "title": "失败后 AI 判断",
+      "status": "RUNNING",
+      "message": "当前不是直接停下：App 把失败原因、当前屏幕节点和已跑步骤发给手机端 AI，让 AI 判断下一段补救 JSON。",
+      "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/runtime\/run_reports\/com.xingin.xhs\/xhs_publish_fallback_1778262205875.json",
+      "timestamp": 1778262205889,
+      "extra": {
+        "phase": "REPLAN",
+        "trigger": "GOAL_UNVERIFIED_LOOP_2",
+        "previousStatus": "FAILED_GOAL_UNVERIFIED",
+        "previousMessage": "小红书返回安全限制\/设备异常，发布被平台阻止，不能报告成功。"
+      }
+    },
+    {
+      "title": "失败后 AI 判断 返回",
+      "status": "SUCCESS",
+      "message": "HTTP=200；模型=deepseek-v4-flash；goalCompleted=false；补救步骤=3；诊断=小红书发布被平台安全机制阻止，设备异常，无法完成发布。",
+      "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ai_jobs\/2026-05-09\/factory_ai_replan_1778262209210.json",
+      "timestamp": 1778262209219,
+      "extra": {
+        "decision": {
+          "goalCompleted": false,
+          "screenAssessment": "当前页面是小红书的安全限制弹窗，显示'安全限制'标题和'设备异常，请尝试关闭\/卸载风险插件或重启试试'提示，底部有'反馈'和'知道了'两个按钮。",
+          "failureDiagnosis": "小红书发布被平台安全机制阻止，设备异常，无法完成发布。",
+          "confidence": "HIGH",
+          "nextActionReason": "由于发布被平台阻止，无法继续执行发布任务。点击'知道了'关闭弹窗，然后返回首页，任务无法完成。"
+        }
+      }
+    },
+    {
+      "title": "AI 补救计划转 Skill JSON",
+      "status": "SUCCESS",
+      "message": "AI 返回 3 个下一步动作，已转换成 4 个候选 Skill JSON。",
+      "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_candidates\/com.xingin.xhs\/direct.command.1778262209219.json",
+      "timestamp": 1778262209224,
+      "extra": {
+        "phase": "REPLAN",
+        "trigger": "GOAL_UNVERIFIED_LOOP_2"
+      }
+    },
+    {
+      "title": "AI 补救 dry-run",
+      "status": "SUCCESS",
+      "message": "通过 4\/4。",
+      "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_dry_run_reports\/com.xingin.xhs\/direct.command.1778262209219_1778262209306.json",
+      "timestamp": 1778262209306
+    },
+    {
+      "title": "AI 补救 JSON 执行结果",
+      "status": "SUCCESS",
+      "message": "direct.command.1778262209219 -> SUCCESS_MEDIUM_CONFIDENCE；Macro atoms completed",
+      "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/runtime\/run_reports\/com.xingin.xhs\/ai_follow_up_run_1778262210436.json",
+      "timestamp": 1778262210437,
+      "extra": {
+        "phase": "REPLAN",
+        "trigger": "GOAL_UNVERIFIED_LOOP_2"
+      }
+    },
+    {
+      "title": "目标未完成，继续 AI 判断",
+      "status": "RUNNING",
+      "message": "未看到小红书发布成功\/审核中等明确平台反馈，短文本不允许用首页信息流误判成已发布。；第 3\/4 次继续重判当前屏幕。",
+      "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/runtime\/run_reports\/com.xingin.xhs\/ai_follow_up_run_1778262210436.json",
+      "timestamp": 1778262210507,
+      "extra": {
+        "serviceConnected": true,
+        "appPackage": "com.xingin.xhs",
+        "nodeCount": 272,
+        "sampleTexts": [
+          "财联社",
+          "王小雨",
+          "阿哲Ai小剧场",
+          "小狗拌面（接恋爱咨询）",
+          "老头们的快乐生活",
+          "星探AI",
+          "水人从小就爱波高地",
+          "刚刚",
+          "赞",
+          "王小雨",
+          "1天前",
+          "381",
+          "财联社",
+          "昨天 19:48",
+          "164",
+          "羊咩咩（羊羊不吃草）",
+          "3天前",
+          "837",
+          "看不见的砝码",
+          "1天前",
+          "11",
+          "乐鑫信息科技",
+          "1天前",
+          "7",
+          "已选定推荐",
+          "推荐",
+          "视频",
+          "视频",
+          "直播",
+          "直播"
+        ],
+        "expected": "xiaohongshu_post_published",
+        "titleNeedle": "我是ai",
+        "bodyNeedle": "我是ai",
+        "titleVisible": false,
+        "bodyVisible": false,
+        "shortContentRequiresPublishMarker": true,
+        "securityBlockerHits": [],
+        "publishMarkerHits": [],
+        "detailMarkerHits": [
+          "赞",
+          "关注"
+        ],
+        "detailEvidenceStrong": false,
+        "editorMarkerHits": [],
+        "editorStillVisible": false,
+        "feedSurfaceMarkers": [
+          "已选定推荐",
+          "推荐",
+          "视频",
+          "直播",
+          "短剧",
+          "穿搭"
+        ],
+        "feedSurfaceVisible": true,
+        "inXiaohongshu": true,
+        "finalPublishRequested": true
+      }
+    },
+    {
+      "title": "失败后 AI 判断",
+      "status": "RUNNING",
+      "message": "当前不是直接停下：App 把失败原因、当前屏幕节点和已跑步骤发给手机端 AI，让 AI 判断下一段补救 JSON。",
+      "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/runtime\/run_reports\/com.xingin.xhs\/ai_follow_up_run_1778262210436.json",
+      "timestamp": 1778262210507,
+      "extra": {
+        "phase": "REPLAN",
+        "trigger": "GOAL_UNVERIFIED_LOOP_3",
+        "previousStatus": "FAILED_GOAL_UNVERIFIED",
+        "previousMessage": "未看到小红书发布成功\/审核中等明确平台反馈，短文本不允许用首页信息流误判成已发布。"
+      }
+    },
+    {
+      "title": "失败后 AI 判断 返回",
+      "status": "SUCCESS",
+      "message": "HTTP=200；模型=deepseek-v4-flash；goalCompleted=false；补救步骤=0；诊断=之前尝试发布内容被平台安全机制阻止，设备异常，无法完成发布。当前页面为首页，未进入编辑页或发布流程。",
+      "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ai_jobs\/2026-05-09\/factory_ai_replan_1778262213691.json",
+      "timestamp": 1778262213705,
+      "extra": {
+        "decision": {
+          "goalCompleted": false,
+          "screenAssessment": "当前页面为小红书首页推荐信息流，顶部有推荐、视频、直播等tab，底部有首页、市集、发布、消息等导航栏。页面显示多条笔记\/视频内容，未看到发布成功或审核中的提示。",
+          "failureDiagnosis": "之前尝试发布内容被平台安全机制阻止，设备异常，无法完成发布。当前页面为首页，未进入编辑页或发布流程。",
+          "confidence": "HIGH",
+          "nextActionReason": "由于发布被平台阻止，无法继续发布流程。任务目标为在小红书发布'我是ai'，但当前设备\/账号可能受限，无法完成。建议终止任务并报告失败。"
+        }
+      }
+    },
+    {
+      "title": "失败后 AI 判断 没有可执行补救动作",
+      "status": "FAILED_NO_REPLAN",
+      "message": "AI 没有返回 steps，也没有确认目标完成。",
+      "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ai_jobs\/2026-05-09\/factory_ai_replan_1778262213691.json",
+      "timestamp": 1778262213705
+    },
+    {
+      "title": "目标未完成，继续 AI 判断",
+      "status": "RUNNING",
+      "message": "未看到小红书发布成功\/审核中等明确平台反馈，短文本不允许用首页信息流误判成已发布。；第 4\/4 次继续重判当前屏幕。",
+      "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/runtime\/run_reports\/com.xingin.xhs\/ai_follow_up_run_1778262210436.json",
+      "timestamp": 1778262213722,
+      "extra": {
+        "serviceConnected": true,
+        "appPackage": "com.xingin.xhs",
+        "nodeCount": 272,
+        "sampleTexts": [
+          "财联社",
+          "王小雨",
+          "阿哲Ai小剧场",
+          "小狗拌面（接恋爱咨询）",
+          "老头们的快乐生活",
+          "星探AI",
+          "水人从小就爱波高地",
+          "刚刚",
+          "赞",
+          "王小雨",
+          "1天前",
+          "381",
+          "财联社",
+          "昨天 19:48",
+          "164",
+          "羊咩咩（羊羊不吃草）",
+          "3天前",
+          "837",
+          "看不见的砝码",
+          "1天前",
+          "11",
+          "乐鑫信息科技",
+          "1天前",
+          "7",
+          "已选定推荐",
+          "推荐",
+          "视频",
+          "视频",
+          "直播",
+          "直播"
+        ],
+        "expected": "xiaohongshu_post_published",
+        "titleNeedle": "我是ai",
+        "bodyNeedle": "我是ai",
+        "titleVisible": false,
+        "bodyVisible": false,
+        "shortContentRequiresPublishMarker": true,
+        "securityBlockerHits": [],
+        "publishMarkerHits": [],
+        "detailMarkerHits": [
+          "赞",
+          "关注"
+        ],
+        "detailEvidenceStrong": false,
+        "editorMarkerHits": [],
+        "editorStillVisible": false,
+        "feedSurfaceMarkers": [
+          "已选定推荐",
+          "推荐",
+          "视频",
+          "直播",
+          "短剧",
+          "穿搭"
+        ],
+        "feedSurfaceVisible": true,
+        "inXiaohongshu": true,
+        "finalPublishRequested": true
+      }
+    },
+    {
+      "title": "失败后 AI 判断",
+      "status": "RUNNING",
+      "message": "当前不是直接停下：App 把失败原因、当前屏幕节点和已跑步骤发给手机端 AI，让 AI 判断下一段补救 JSON。",
+      "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/runtime\/run_reports\/com.xingin.xhs\/ai_follow_up_run_1778262210436.json",
+      "timestamp": 1778262213722,
+      "extra": {
+        "phase": "REPLAN",
+        "trigger": "GOAL_UNVERIFIED_LOOP_4",
+        "previousStatus": "FAILED_GOAL_UNVERIFIED",
+        "previousMessage": "未看到小红书发布成功\/审核中等明确平台反馈，短文本不允许用首页信息流误判成已发布。"
+      }
+    },
+    {
+      "title": "失败后 AI 判断 返回",
+      "status": "SUCCESS",
+      "message": "HTTP=200；模型=deepseek-v4-flash；goalCompleted=false；补救步骤=0；诊断=之前尝试发布内容被平台安全机制阻止，设备异常，无法完成发布。当前页面为首页，未进入编辑页或发布流程。",
+      "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ai_jobs\/2026-05-09\/factory_ai_replan_1778262216981.json",
+      "timestamp": 1778262216987,
+      "extra": {
+        "decision": {
+          "goalCompleted": false,
+          "screenAssessment": "当前页面为小红书首页（IndexActivityV2），顶部有推荐、视频、直播等标签，底部有首页、市集、发布、消息等导航栏。信息流中显示多条笔记\/视频内容，未看到发布编辑页或发布成功\/审核中的提示。",
+          "failureDiagnosis": "之前尝试发布内容被平台安全机制阻止，设备异常，无法完成发布。当前页面为首页，未进入编辑页或发布流程。",
+          "confidence": "HIGH",
+          "nextActionReason": "用户要求发布内容，但平台持续阻止。当前已重试4次均失败，且AI判断无有效补救步骤。建议放弃本次发布任务，标记目标为未完成。"
+        }
+      }
+    },
+    {
+      "title": "失败后 AI 判断 没有可执行补救动作",
+      "status": "FAILED_NO_REPLAN",
+      "message": "AI 没有返回 steps，也没有确认目标完成。",
+      "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ai_jobs\/2026-05-09\/factory_ai_replan_1778262216981.json",
+      "timestamp": 1778262216987
+    },
+    {
+      "title": "目标完成校验",
+      "status": "FAILED_GOAL_UNVERIFIED",
+      "message": "未看到小红书发布成功\/审核中等明确平台反馈，短文本不允许用首页信息流误判成已发布。",
+      "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/runtime\/run_reports\/com.xingin.xhs\/ai_follow_up_run_1778262210436.json",
+      "timestamp": 1778262216997,
+      "extra": {
+        "serviceConnected": true,
+        "appPackage": "com.xingin.xhs",
+        "nodeCount": 272,
+        "sampleTexts": [
+          "财联社",
+          "王小雨",
+          "阿哲Ai小剧场",
+          "小狗拌面（接恋爱咨询）",
+          "老头们的快乐生活",
+          "星探AI",
+          "水人从小就爱波高地",
+          "刚刚",
+          "赞",
+          "王小雨",
+          "1天前",
+          "381",
+          "财联社",
+          "昨天 19:48",
+          "164",
+          "羊咩咩（羊羊不吃草）",
+          "3天前",
+          "837",
+          "看不见的砝码",
+          "1天前",
+          "11",
+          "乐鑫信息科技",
+          "1天前",
+          "7",
+          "已选定推荐",
+          "推荐",
+          "视频",
+          "视频",
+          "直播",
+          "直播"
+        ],
+        "expected": "xiaohongshu_post_published",
+        "titleNeedle": "我是ai",
+        "bodyNeedle": "我是ai",
+        "titleVisible": false,
+        "bodyVisible": false,
+        "shortContentRequiresPublishMarker": true,
+        "securityBlockerHits": [],
+        "publishMarkerHits": [],
+        "detailMarkerHits": [
+          "赞",
+          "关注"
+        ],
+        "detailEvidenceStrong": false,
+        "editorMarkerHits": [],
+        "editorStillVisible": false,
+        "feedSurfaceMarkers": [
+          "已选定推荐",
+          "推荐",
+          "视频",
+          "直播",
+          "短剧",
+          "穿搭"
+        ],
+        "feedSurfaceVisible": true,
+        "inXiaohongshu": true,
+        "finalPublishRequested": true
+      }
+    },
+    {
+      "title": "返回 MacroPilot 显示报告",
+      "status": "INFO",
+      "message": "已把 MacroPilot 拉回前台，用户可以直接看 AI、JSON、dry-run、app_config 和执行报告。",
+      "path": null,
+      "timestamp": 1778262218220
+    }
+  ],
+  "outputs": {
+    "aiJobFile": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ai_jobs\/2026-05-09\/factory_ai_direct_1778262177343.json",
+    "aiJobFiles": [
+      "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ai_jobs\/2026-05-09\/factory_ai_direct_1778262177343.json",
+      "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ai_jobs\/2026-05-09\/factory_ai_checkpoint_1778262194446.json",
+      "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ai_jobs\/2026-05-09\/factory_ai_replan_1778262199351.json",
+      "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ai_jobs\/2026-05-09\/factory_ai_replan_1778262209210.json",
+      "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ai_jobs\/2026-05-09\/factory_ai_replan_1778262213691.json",
+      "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ai_jobs\/2026-05-09\/factory_ai_replan_1778262216981.json"
+    ],
+    "previewConfigFile": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/app_config_exports\/com.xingin.xhs\/app_config_20260509_014257_499.json",
+    "runtimeRunReportFile": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/runtime\/run_reports\/com.xingin.xhs\/ai_follow_up_run_1778262210436.json"
+  },
+  "createdAt": 1778262218221
+}

@@ -1,0 +1,1046 @@
+{
+  "schemaVersion": 1,
+  "kind": "app_ui_explore_report",
+  "id": "app_ui_explore_report_app_ui_graph_com.xunmeng.pinduoduo_1779374757036",
+  "graphId": "app_ui_graph_com.xunmeng.pinduoduo_1779374757036",
+  "status": "SUCCESS",
+  "appPackage": "com.xunmeng.pinduoduo",
+  "appName": "拼多多",
+  "screenCount": 14,
+  "edgeCount": 14,
+  "quality": {
+    "usable": true,
+    "reason": "usable_app_ui_graph",
+    "qualityGate": {
+      "bottomPrimaryTabsRequired": true,
+      "bottomPrimaryTabsAttempted": 5,
+      "bottomPrimaryTabsOpened": 5,
+      "topIconsAreNotEnough": true,
+      "repeatedMessagePageIsNotProgress": true
+    },
+    "screenCount": 14,
+    "edgeCount": 14,
+    "nodeCount": 4247,
+    "clickableCount": 413,
+    "editableCount": 1,
+    "labelCount": 701,
+    "bottomTabCount": 38,
+    "topEntryCount": 241,
+    "sideEntryCount": 244,
+    "entryCandidateCount": 42,
+    "inputCandidateCount": 1,
+    "videoCandidateCount": 26,
+    "clickTargetCount": 1216,
+    "graphicalCandidateCount": 753,
+    "checkableCandidateCount": 0,
+    "candidateCount": 2561,
+    "changedEdgeCount": 14,
+    "edgeCategoryCounts": {
+      "primary_bottom_tab": 5,
+      "primary_tab_surface_entry": 9
+    },
+    "primaryBottomTabAttemptedCount": 5,
+    "primaryBottomTabAttemptedLabels": [
+      "首页",
+      "bottom_tab_3",
+      "提前优惠",
+      "聊天183",
+      "个人中心"
+    ],
+    "primaryBottomTabOpenedCount": 5,
+    "primaryBottomTabOpenedLabels": [
+      "首页",
+      "bottom_tab_3",
+      "提前优惠",
+      "聊天183",
+      "个人中心"
+    ],
+    "primaryTabSurfaceEntryChangedCount": 9,
+    "primaryTabSurfaceEntriesByTab": {
+      "首页": [
+        "pdd",
+        "仅1次",
+        "¥",
+        "多多买菜",
+        "graphical_ui_13",
+        "graphical_ui_16",
+        "graphical_ui_17",
+        "graphical_ui_11"
+      ],
+      "bottom_tab_3": [
+        "搜索"
+      ]
+    }
+  },
+  "graphFile": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/app_ui_graphs\/com.xunmeng.pinduoduo\/graph_candidate.json",
+  "events": [
+    {
+      "phase": "wait_accessibility",
+      "status": "SUCCESS",
+      "attempt": 1,
+      "message": "accessibility service is connected"
+    },
+    {
+      "phase": "open_app",
+      "status": "RUNNING",
+      "message": "打开 拼多多，开始读取首页、底部分屏、入口和输入框",
+      "path": null,
+      "timestamp": 1779374757037
+    },
+    {
+      "phase": "open_app_attempt",
+      "attempt": 1,
+      "strategy": "launcher_root",
+      "success": true,
+      "message": "Launcher root intent sent for com.xunmeng.pinduoduo"
+    },
+    {
+      "phase": "open_app_attempt_wait",
+      "attempt": 1,
+      "strategy": "launcher_root",
+      "success": true,
+      "currentPackage": "com.xunmeng.pinduoduo",
+      "windowClassName": "androidx.recyclerview.widget.RecyclerView",
+      "overlayDismissed": 0,
+      "overlayEvents": []
+    },
+    {
+      "phase": "wait_foreground",
+      "success": true,
+      "currentPackage": "com.xunmeng.pinduoduo",
+      "windowClassName": "androidx.recyclerview.widget.RecyclerView",
+      "overlayDismissed": 0,
+      "overlayEvents": []
+    },
+    {
+      "phase": "reactive_overlays",
+      "dismissed": 0,
+      "events": []
+    },
+    {
+      "phase": "capture_home",
+      "status": "SUCCESS",
+      "message": "已记录首页：250 个节点、45 个可点击项",
+      "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_snapshots\/com.xunmeng.pinduoduo\/20260521_224557_916_9fa43ebf.json",
+      "timestamp": 1779374758483
+    },
+    {
+      "phase": "primary_bottom_tab_candidates",
+      "count": 5,
+      "labels": [
+        "首页",
+        "bottom_tab_3",
+        "提前优惠",
+        "聊天183",
+        "个人中心"
+      ],
+      "detectedCount": 5,
+      "fallbackCount": 0,
+      "message": "primary bottom tabs are explored before top icons"
+    },
+    {
+      "phase": "primary_bottom_tab_sweep",
+      "status": "RUNNING",
+      "message": "open bottom tab first: 首页",
+      "path": null,
+      "timestamp": 1779374758484
+    },
+    {
+      "phase": "tap_primary_bottom_tab",
+      "index": 1,
+      "label": "首页",
+      "success": true,
+      "message": "dispatchGesture tap sent (normalized=0.100,0.949 px=144,3006 screen=1440x3168)",
+      "candidate": {
+        "index": 0,
+        "label": "首页",
+        "text": null,
+        "desc": "首页",
+        "resourceId": null,
+        "class": "android.widget.RelativeLayout",
+        "clickable": false,
+        "editable": false,
+        "checkable": false,
+        "selected": false,
+        "bounds": "0 2908 288 3104",
+        "x": 0.1,
+        "y": 0.9488636363636364,
+        "center": {
+          "x": 0.1,
+          "y": 0.9488636363636364
+        },
+        "tags": [
+          "primary_bottom_tab",
+          "bottom_tab",
+          "bottom_area",
+          "side_icon"
+        ],
+        "candidateCategory": "primary_bottom_tab"
+      },
+      "beforeScreenKey": "4802279f",
+      "beforeSnapshotPath": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_snapshots\/com.xunmeng.pinduoduo\/20260521_224558_489_9fa43ebf.json"
+    },
+    {
+      "phase": "primary_bottom_tab_sweep",
+      "status": "SUCCESS",
+      "message": "bottom tab 首页 captured: changed=true nodes=250",
+      "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_snapshots\/com.xunmeng.pinduoduo\/20260521_224559_901_fe8dd9b5.json",
+      "timestamp": 1779374760358
+    },
+    {
+      "phase": "primary_bottom_tab_sweep",
+      "status": "RUNNING",
+      "message": "open bottom tab first: bottom_tab_3",
+      "path": null,
+      "timestamp": 1779374760358
+    },
+    {
+      "phase": "tap_primary_bottom_tab",
+      "index": 2,
+      "label": "bottom_tab_3",
+      "success": true,
+      "message": "dispatchGesture tap sent (normalized=0.300,0.949 px=432,3006 screen=1440x3168)",
+      "candidate": {
+        "index": 2,
+        "label": "bottom_tab_3",
+        "text": null,
+        "desc": null,
+        "resourceId": null,
+        "class": "android.view.View",
+        "clickable": true,
+        "editable": false,
+        "checkable": false,
+        "selected": false,
+        "bounds": "288 2908 576 3104",
+        "x": 0.3,
+        "y": 0.9488636363636364,
+        "center": {
+          "x": 0.3,
+          "y": 0.9488636363636364
+        },
+        "tags": [
+          "primary_bottom_tab",
+          "bottom_tab",
+          "clickable",
+          "bottom_area"
+        ],
+        "candidateCategory": "primary_bottom_tab"
+      },
+      "beforeScreenKey": "1bf32698",
+      "beforeSnapshotPath": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_snapshots\/com.xunmeng.pinduoduo\/20260521_224600_360_93f0acf8.json"
+    },
+    {
+      "phase": "primary_bottom_tab_sweep",
+      "status": "SUCCESS",
+      "message": "bottom tab bottom_tab_3 captured: changed=true nodes=149",
+      "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_snapshots\/com.xunmeng.pinduoduo\/20260521_224601_758_e1a2f39c.json",
+      "timestamp": 1779374762196
+    },
+    {
+      "phase": "primary_bottom_tab_sweep",
+      "status": "RUNNING",
+      "message": "open bottom tab first: 提前优惠",
+      "path": null,
+      "timestamp": 1779374762196
+    },
+    {
+      "phase": "tap_primary_bottom_tab",
+      "index": 3,
+      "label": "提前优惠",
+      "success": true,
+      "message": "dispatchGesture tap sent (normalized=0.500,0.949 px=720,3006 screen=1440x3168)",
+      "candidate": {
+        "index": 3,
+        "label": "提前优惠",
+        "text": null,
+        "desc": "提前优惠",
+        "resourceId": null,
+        "class": "android.widget.RelativeLayout",
+        "clickable": true,
+        "editable": false,
+        "checkable": false,
+        "selected": false,
+        "bounds": "576 2908 864 3104",
+        "x": 0.5,
+        "y": 0.9488636363636364,
+        "center": {
+          "x": 0.5,
+          "y": 0.9488636363636364
+        },
+        "tags": [
+          "primary_bottom_tab",
+          "bottom_tab",
+          "clickable",
+          "bottom_area"
+        ],
+        "candidateCategory": "primary_bottom_tab"
+      },
+      "beforeScreenKey": "3c48c29a",
+      "beforeSnapshotPath": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_snapshots\/com.xunmeng.pinduoduo\/20260521_224602_238_e1a2f39c.json"
+    },
+    {
+      "phase": "primary_bottom_tab_sweep",
+      "status": "SUCCESS",
+      "message": "bottom tab 提前优惠 captured: changed=true nodes=493",
+      "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_snapshots\/com.xunmeng.pinduoduo\/20260521_224604_026_e1a2f39c.json",
+      "timestamp": 1779374764602
+    },
+    {
+      "phase": "primary_bottom_tab_sweep",
+      "status": "RUNNING",
+      "message": "open bottom tab first: 聊天183",
+      "path": null,
+      "timestamp": 1779374764602
+    },
+    {
+      "phase": "tap_primary_bottom_tab",
+      "index": 4,
+      "label": "聊天183",
+      "success": true,
+      "message": "dispatchGesture tap sent (normalized=0.700,0.949 px=1008,3006 screen=1440x3168)",
+      "candidate": {
+        "index": 4,
+        "label": "聊天183",
+        "text": null,
+        "desc": "聊天183",
+        "resourceId": null,
+        "class": "android.widget.RelativeLayout",
+        "clickable": false,
+        "editable": false,
+        "checkable": false,
+        "selected": false,
+        "bounds": "864 2908 1152 3104",
+        "x": 0.7,
+        "y": 0.9488636363636364,
+        "center": {
+          "x": 0.7,
+          "y": 0.9488636363636364
+        },
+        "tags": [
+          "primary_bottom_tab",
+          "bottom_tab",
+          "bottom_area"
+        ],
+        "candidateCategory": "primary_bottom_tab"
+      },
+      "beforeScreenKey": "c6b727de",
+      "beforeSnapshotPath": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_snapshots\/com.xunmeng.pinduoduo\/20260521_224604_671_e1a2f39c.json"
+    },
+    {
+      "phase": "primary_bottom_tab_sweep",
+      "status": "SUCCESS",
+      "message": "bottom tab 聊天183 captured: changed=true nodes=595",
+      "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_snapshots\/com.xunmeng.pinduoduo\/20260521_224607_063_e1a2f39c.json",
+      "timestamp": 1779374767733
+    },
+    {
+      "phase": "primary_bottom_tab_sweep",
+      "status": "RUNNING",
+      "message": "open bottom tab first: 个人中心",
+      "path": null,
+      "timestamp": 1779374767733
+    },
+    {
+      "phase": "tap_primary_bottom_tab",
+      "index": 5,
+      "label": "个人中心",
+      "success": true,
+      "message": "dispatchGesture tap sent (normalized=0.900,0.949 px=1296,3006 screen=1440x3168)",
+      "candidate": {
+        "index": 6,
+        "label": "个人中心",
+        "text": null,
+        "desc": "个人中心",
+        "resourceId": null,
+        "class": "android.widget.RelativeLayout",
+        "clickable": false,
+        "editable": false,
+        "checkable": false,
+        "selected": false,
+        "bounds": "1152 2908 1440 3104",
+        "x": 0.9,
+        "y": 0.9488636363636364,
+        "center": {
+          "x": 0.9,
+          "y": 0.9488636363636364
+        },
+        "tags": [
+          "primary_bottom_tab",
+          "bottom_tab",
+          "bottom_area",
+          "side_icon"
+        ],
+        "candidateCategory": "primary_bottom_tab"
+      },
+      "beforeScreenKey": "99191a98",
+      "beforeSnapshotPath": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_snapshots\/com.xunmeng.pinduoduo\/20260521_224609_034_e1a2f39c.json"
+    },
+    {
+      "phase": "primary_bottom_tab_sweep",
+      "status": "SUCCESS",
+      "message": "bottom tab 个人中心 captured: changed=true nodes=15",
+      "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_snapshots\/com.xunmeng.pinduoduo\/20260521_224610_702_f41f24a5.json",
+      "timestamp": 1779374771151
+    },
+    {
+      "phase": "primary_center_action_candidates",
+      "count": 0,
+      "labels": [],
+      "message": "center +\/publish action is explored separately from bottom tabs"
+    },
+    {
+      "phase": "primary_tab_surface_candidates",
+      "tabLabel": "首页",
+      "count": 8,
+      "labels": [
+        "pdd",
+        "仅1次",
+        "¥",
+        "多多买菜",
+        "graphical_ui_13",
+        "graphical_ui_16",
+        "graphical_ui_17",
+        "graphical_ui_11"
+      ],
+      "message": "scan first-level UI under each bottom tab before deep BFS"
+    },
+    {
+      "phase": "open_app_attempt",
+      "attempt": 1,
+      "strategy": "launcher_root",
+      "success": true,
+      "message": "Launcher root intent sent for com.xunmeng.pinduoduo"
+    },
+    {
+      "phase": "open_app_attempt_wait",
+      "attempt": 1,
+      "strategy": "launcher_root",
+      "success": true,
+      "currentPackage": "com.xunmeng.pinduoduo",
+      "windowClassName": null,
+      "overlayDismissed": 0,
+      "overlayEvents": []
+    },
+    {
+      "phase": "primary_tab_surface_entry",
+      "status": "RUNNING",
+      "message": "tab=首页 click graphical_ui: pdd",
+      "path": null,
+      "timestamp": 1779374773120
+    },
+    {
+      "phase": "tap_primary_tab_surface_entry",
+      "tabLabel": "首页",
+      "category": "graphical_ui",
+      "label": "pdd",
+      "success": true,
+      "message": "dispatchGesture tap sent (normalized=0.103,0.700 px=148,2218 screen=1440x3168)",
+      "fingerprint": "graphical_ui|pdd|left_side|2|14",
+      "beforeScreenKey": "3470444a",
+      "candidate": {
+        "index": 66,
+        "label": "pdd",
+        "text": null,
+        "desc": null,
+        "resourceId": "com.xunmeng.pinduoduo:id\/pdd",
+        "class": "android.widget.ImageView",
+        "clickable": false,
+        "editable": false,
+        "checkable": false,
+        "selected": false,
+        "bounds": "44 2190 252 2246",
+        "x": 0.10277777777777777,
+        "y": 0.7001262626262627,
+        "center": {
+          "x": 0.10277777777777777,
+          "y": 0.7001262626262627
+        },
+        "tags": [
+          "graphical_ui",
+          "small_icon",
+          "coordinate_probe",
+          "grid_icon",
+          "bottom_area",
+          "icon_only",
+          "side_icon"
+        ],
+        "candidateCategory": "graphical_ui"
+      }
+    },
+    {
+      "phase": "primary_tab_surface_entry",
+      "status": "SUCCESS",
+      "message": "tab=首页 graphical_ui pdd changed=true nodes=235",
+      "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_snapshots\/com.xunmeng.pinduoduo\/20260521_224614_387_45927675.json",
+      "timestamp": 1779374775097
+    },
+    {
+      "phase": "open_app_attempt",
+      "attempt": 1,
+      "strategy": "launcher_root",
+      "success": true,
+      "message": "Launcher root intent sent for com.xunmeng.pinduoduo"
+    },
+    {
+      "phase": "open_app_attempt_wait",
+      "attempt": 1,
+      "strategy": "launcher_root",
+      "success": true,
+      "currentPackage": "com.xunmeng.pinduoduo",
+      "windowClassName": "androidx.recyclerview.widget.RecyclerView",
+      "overlayDismissed": 0,
+      "overlayEvents": []
+    },
+    {
+      "phase": "primary_tab_surface_entry",
+      "status": "RUNNING",
+      "message": "tab=首页 click graphical_ui: 仅1次",
+      "path": null,
+      "timestamp": 1779374777114
+    },
+    {
+      "phase": "tap_primary_tab_surface_entry",
+      "tabLabel": "首页",
+      "category": "graphical_ui",
+      "label": "仅1次",
+      "success": true,
+      "message": "dispatchGesture tap sent (normalized=0.074,0.763 px=106,2418 screen=1440x3168)",
+      "fingerprint": "graphical_ui|pdd|left_side|1|15",
+      "beforeScreenKey": "55702108",
+      "candidate": {
+        "index": 76,
+        "label": "仅1次",
+        "text": "仅1次",
+        "desc": null,
+        "resourceId": "com.xunmeng.pinduoduo:id\/pdd",
+        "class": "android.widget.TextView",
+        "clickable": false,
+        "editable": false,
+        "checkable": false,
+        "selected": false,
+        "bounds": "44 2388 168 2449",
+        "x": 0.07361111111111111,
+        "y": 0.7632575757575758,
+        "center": {
+          "x": 0.07361111111111111,
+          "y": 0.7632575757575758
+        },
+        "tags": [
+          "graphical_ui",
+          "small_icon",
+          "coordinate_probe",
+          "grid_icon",
+          "bottom_area",
+          "icon_only",
+          "side_icon"
+        ],
+        "candidateCategory": "graphical_ui"
+      }
+    },
+    {
+      "phase": "primary_tab_surface_entry",
+      "status": "SUCCESS",
+      "message": "tab=首页 graphical_ui 仅1次 changed=true nodes=248",
+      "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_snapshots\/com.xunmeng.pinduoduo\/20260521_224618_473_7cc9c0b9.json",
+      "timestamp": 1779374779091
+    },
+    {
+      "phase": "open_app_attempt",
+      "attempt": 1,
+      "strategy": "launcher_root",
+      "success": true,
+      "message": "Launcher root intent sent for com.xunmeng.pinduoduo"
+    },
+    {
+      "phase": "open_app_attempt_wait",
+      "attempt": 1,
+      "strategy": "launcher_root",
+      "success": true,
+      "currentPackage": "com.xunmeng.pinduoduo",
+      "windowClassName": "androidx.recyclerview.widget.RecyclerView",
+      "overlayDismissed": 0,
+      "overlayEvents": []
+    },
+    {
+      "phase": "primary_tab_surface_entry",
+      "status": "RUNNING",
+      "message": "tab=首页 click graphical_ui: ¥",
+      "path": null,
+      "timestamp": 1779374781007
+    },
+    {
+      "phase": "tap_primary_tab_surface_entry",
+      "tabLabel": "首页",
+      "category": "graphical_ui",
+      "label": "¥",
+      "success": true,
+      "message": "dispatchGesture tap sent (normalized=0.130,0.764 px=187,2421 screen=1440x3168)",
+      "fingerprint": "graphical_ui|pdd|left_side|2|15",
+      "beforeScreenKey": "803b124f",
+      "candidate": {
+        "index": 78,
+        "label": "¥",
+        "text": "¥",
+        "desc": null,
+        "resourceId": "com.xunmeng.pinduoduo:id\/pdd",
+        "class": "android.widget.TextView",
+        "clickable": false,
+        "editable": false,
+        "checkable": false,
+        "selected": false,
+        "bounds": "172 2389 202 2454",
+        "x": 0.12986111111111112,
+        "y": 0.7642045454545454,
+        "center": {
+          "x": 0.12986111111111112,
+          "y": 0.7642045454545454
+        },
+        "tags": [
+          "graphical_ui",
+          "small_icon",
+          "coordinate_probe",
+          "grid_icon",
+          "bottom_area",
+          "icon_only",
+          "side_icon"
+        ],
+        "candidateCategory": "graphical_ui"
+      }
+    },
+    {
+      "phase": "primary_tab_surface_entry",
+      "status": "SUCCESS",
+      "message": "tab=首页 graphical_ui ¥ changed=true nodes=237",
+      "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_snapshots\/com.xunmeng.pinduoduo\/20260521_224622_568_407060a0.json",
+      "timestamp": 1779374783348
+    },
+    {
+      "phase": "open_app_attempt",
+      "attempt": 1,
+      "strategy": "launcher_root",
+      "success": true,
+      "message": "Launcher root intent sent for com.xunmeng.pinduoduo"
+    },
+    {
+      "phase": "open_app_attempt_wait",
+      "attempt": 1,
+      "strategy": "launcher_root",
+      "success": true,
+      "currentPackage": "com.xunmeng.pinduoduo",
+      "windowClassName": "androidx.recyclerview.widget.RecyclerView",
+      "overlayDismissed": 0,
+      "overlayEvents": []
+    },
+    {
+      "phase": "primary_tab_surface_entry",
+      "status": "RUNNING",
+      "message": "tab=首页 click graphical_ui: 多多买菜",
+      "path": null,
+      "timestamp": 1779374785380
+    },
+    {
+      "phase": "tap_primary_tab_surface_entry",
+      "tabLabel": "首页",
+      "category": "graphical_ui",
+      "label": "多多买菜",
+      "success": true,
+      "message": "dispatchGesture tap sent (normalized=0.700,0.240 px=1008,759 screen=1440x3168)",
+      "fingerprint": "graphical_ui|name|upper_content|14|4",
+      "beforeScreenKey": "91f14876",
+      "candidate": {
+        "index": 52,
+        "label": "多多买菜",
+        "text": "多多买菜",
+        "desc": null,
+        "resourceId": "com.xunmeng.pinduoduo:id\/name",
+        "class": "android.widget.TextView",
+        "clickable": false,
+        "editable": false,
+        "checkable": false,
+        "selected": false,
+        "bounds": "904 725 1112 793",
+        "x": 0.7,
+        "y": 0.23958333333333334,
+        "center": {
+          "x": 0.7,
+          "y": 0.23958333333333334
+        },
+        "tags": [
+          "graphical_ui",
+          "small_icon",
+          "coordinate_probe",
+          "grid_icon",
+          "icon_only"
+        ],
+        "candidateCategory": "graphical_ui"
+      }
+    },
+    {
+      "phase": "primary_tab_surface_entry",
+      "status": "SUCCESS",
+      "message": "tab=首页 graphical_ui 多多买菜 changed=true nodes=65",
+      "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_snapshots\/com.xunmeng.pinduoduo\/20260521_224626_849_ad3b01fc.json",
+      "timestamp": 1779374787061
+    },
+    {
+      "phase": "open_app_attempt",
+      "attempt": 1,
+      "strategy": "launcher_root",
+      "success": true,
+      "message": "Launcher root intent sent for com.xunmeng.pinduoduo"
+    },
+    {
+      "phase": "open_app_attempt_wait",
+      "attempt": 1,
+      "strategy": "launcher_root",
+      "success": true,
+      "currentPackage": "com.xunmeng.pinduoduo",
+      "windowClassName": "androidx.recyclerview.widget.RecyclerView",
+      "overlayDismissed": 0,
+      "overlayEvents": []
+    },
+    {
+      "phase": "primary_tab_surface_entry",
+      "status": "RUNNING",
+      "message": "tab=首页 click graphical_ui: graphical_ui_13",
+      "path": null,
+      "timestamp": 1779374789146
+    },
+    {
+      "phase": "tap_primary_tab_surface_entry",
+      "tabLabel": "首页",
+      "category": "graphical_ui",
+      "label": "graphical_ui_13",
+      "success": true,
+      "message": "dispatchGesture tap sent (normalized=0.746,0.301 px=1074,953 screen=1440x3168)",
+      "fingerprint": "graphical_ui|null|upper_content|14|6",
+      "beforeScreenKey": "20c58a17",
+      "candidate": {
+        "index": 12,
+        "label": "graphical_ui_13",
+        "text": null,
+        "desc": null,
+        "resourceId": null,
+        "class": "android.widget.ImageView",
+        "clickable": false,
+        "editable": false,
+        "checkable": false,
+        "selected": false,
+        "bounds": "1046 925 1102 981",
+        "x": 0.7458333333333333,
+        "y": 0.30082070707070707,
+        "center": {
+          "x": 0.7458333333333333,
+          "y": 0.30082070707070707
+        },
+        "tags": [
+          "graphical_ui",
+          "small_icon",
+          "coordinate_probe",
+          "icon_only",
+          "grid_icon"
+        ],
+        "candidateCategory": "graphical_ui"
+      }
+    },
+    {
+      "phase": "primary_tab_surface_entry",
+      "status": "SUCCESS",
+      "message": "tab=首页 graphical_ui graphical_ui_13 changed=true nodes=117",
+      "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_snapshots\/com.xunmeng.pinduoduo\/20260521_224630_499_d21746a9.json",
+      "timestamp": 1779374790893
+    },
+    {
+      "phase": "open_app_attempt",
+      "attempt": 1,
+      "strategy": "launcher_root",
+      "success": true,
+      "message": "Launcher root intent sent for com.xunmeng.pinduoduo"
+    },
+    {
+      "phase": "open_app_attempt_wait",
+      "attempt": 1,
+      "strategy": "launcher_root",
+      "success": true,
+      "currentPackage": "com.xunmeng.pinduoduo",
+      "windowClassName": "android.widget.FrameLayout",
+      "overlayDismissed": 0,
+      "overlayEvents": []
+    },
+    {
+      "phase": "primary_tab_surface_entry",
+      "status": "RUNNING",
+      "message": "tab=首页 click graphical_ui: graphical_ui_16",
+      "path": null,
+      "timestamp": 1779374792730
+    },
+    {
+      "phase": "tap_primary_tab_surface_entry",
+      "tabLabel": "首页",
+      "category": "graphical_ui",
+      "label": "graphical_ui_16",
+      "success": true,
+      "message": "dispatchGesture tap sent (normalized=0.379,0.370 px=546,1173 screen=1440x3168)",
+      "fingerprint": "graphical_ui|null|upper_content|7|7",
+      "beforeScreenKey": "d2bc16a0",
+      "candidate": {
+        "index": 15,
+        "label": "graphical_ui_16",
+        "text": null,
+        "desc": null,
+        "resourceId": null,
+        "class": "android.widget.ImageView",
+        "clickable": false,
+        "editable": false,
+        "checkable": false,
+        "selected": false,
+        "bounds": "394 1021 698 1325",
+        "x": 0.37916666666666665,
+        "y": 0.3702651515151515,
+        "center": {
+          "x": 0.37916666666666665,
+          "y": 0.3702651515151515
+        },
+        "tags": [
+          "graphical_ui",
+          "small_icon",
+          "coordinate_probe",
+          "icon_only",
+          "grid_icon"
+        ],
+        "candidateCategory": "graphical_ui"
+      }
+    },
+    {
+      "phase": "primary_tab_surface_entry",
+      "status": "SUCCESS",
+      "message": "tab=首页 graphical_ui graphical_ui_16 changed=true nodes=23",
+      "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_snapshots\/com.xunmeng.pinduoduo\/20260521_224634_059_9de250b0.json",
+      "timestamp": 1779374794642
+    },
+    {
+      "phase": "open_app_attempt",
+      "attempt": 1,
+      "strategy": "launcher_root",
+      "success": true,
+      "message": "Launcher root intent sent for com.xunmeng.pinduoduo"
+    },
+    {
+      "phase": "open_app_attempt_wait",
+      "attempt": 1,
+      "strategy": "launcher_root",
+      "success": true,
+      "currentPackage": "com.xunmeng.pinduoduo",
+      "windowClassName": "androidx.recyclerview.widget.RecyclerView",
+      "overlayDismissed": 0,
+      "overlayEvents": []
+    },
+    {
+      "phase": "primary_tab_surface_entry",
+      "status": "RUNNING",
+      "message": "tab=首页 click graphical_ui: graphical_ui_17",
+      "path": null,
+      "timestamp": 1779374796491
+    },
+    {
+      "phase": "tap_primary_tab_surface_entry",
+      "tabLabel": "首页",
+      "category": "graphical_ui",
+      "label": "graphical_ui_17",
+      "success": true,
+      "message": "dispatchGesture tap sent (normalized=0.621,0.370 px=894,1173 screen=1440x3168)",
+      "fingerprint": "graphical_ui|null|upper_content|12|7",
+      "beforeScreenKey": "4cbb4125",
+      "candidate": {
+        "index": 16,
+        "label": "graphical_ui_17",
+        "text": null,
+        "desc": null,
+        "resourceId": null,
+        "class": "android.widget.ImageView",
+        "clickable": false,
+        "editable": false,
+        "checkable": false,
+        "selected": false,
+        "bounds": "742 1021 1046 1325",
+        "x": 0.6208333333333333,
+        "y": 0.3702651515151515,
+        "center": {
+          "x": 0.6208333333333333,
+          "y": 0.3702651515151515
+        },
+        "tags": [
+          "graphical_ui",
+          "small_icon",
+          "coordinate_probe",
+          "icon_only",
+          "grid_icon"
+        ],
+        "candidateCategory": "graphical_ui"
+      }
+    },
+    {
+      "phase": "primary_tab_surface_entry",
+      "status": "SUCCESS",
+      "message": "tab=首页 graphical_ui graphical_ui_17 changed=true nodes=764",
+      "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_snapshots\/com.xunmeng.pinduoduo\/20260521_224638_731_ea7ecd93.json",
+      "timestamp": 1779374799350
+    },
+    {
+      "phase": "open_app_attempt",
+      "attempt": 1,
+      "strategy": "launcher_root",
+      "success": true,
+      "message": "Launcher root intent sent for com.xunmeng.pinduoduo"
+    },
+    {
+      "phase": "open_app_attempt_wait",
+      "attempt": 1,
+      "strategy": "launcher_root",
+      "success": true,
+      "currentPackage": "com.xunmeng.pinduoduo",
+      "windowClassName": "androidx.recyclerview.widget.RecyclerView",
+      "overlayDismissed": 0,
+      "overlayEvents": []
+    },
+    {
+      "phase": "primary_tab_surface_entry",
+      "status": "RUNNING",
+      "message": "tab=首页 click graphical_ui: graphical_ui_11",
+      "path": null,
+      "timestamp": 1779374801251
+    },
+    {
+      "phase": "tap_primary_tab_surface_entry",
+      "tabLabel": "首页",
+      "category": "graphical_ui",
+      "label": "graphical_ui_11",
+      "success": true,
+      "message": "dispatchGesture tap sent (normalized=0.700,0.207 px=1008,657 screen=1440x3168)",
+      "fingerprint": "graphical_ui|null|upper_content|14|4",
+      "beforeScreenKey": "b6f9d0cb",
+      "candidate": {
+        "index": 10,
+        "label": "graphical_ui_11",
+        "text": null,
+        "desc": null,
+        "resourceId": null,
+        "class": "android.widget.RelativeLayout",
+        "clickable": true,
+        "editable": false,
+        "checkable": false,
+        "selected": false,
+        "bounds": "864 517 1152 797",
+        "x": 0.7,
+        "y": 0.20738636363636365,
+        "center": {
+          "x": 0.7,
+          "y": 0.20738636363636365
+        },
+        "tags": [
+          "graphical_ui",
+          "small_icon",
+          "icon_only",
+          "grid_icon",
+          "clickable"
+        ],
+        "candidateCategory": "graphical_ui"
+      }
+    },
+    {
+      "phase": "primary_tab_surface_entry",
+      "status": "SUCCESS",
+      "message": "tab=首页 graphical_ui graphical_ui_11 changed=true nodes=65",
+      "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_snapshots\/com.xunmeng.pinduoduo\/20260521_224642_555_ad3b01fc.json",
+      "timestamp": 1779374802754
+    },
+    {
+      "phase": "primary_tab_surface_candidates",
+      "tabLabel": "bottom_tab_3",
+      "count": 8,
+      "labels": [
+        "搜索",
+        "关注+",
+        "动态",
+        "graphical_ui_16",
+        "的",
+        "每人仅限1次",
+        "99+",
+        "graphical_ui_13"
+      ],
+      "message": "scan first-level UI under each bottom tab before deep BFS"
+    },
+    {
+      "phase": "open_app_attempt",
+      "attempt": 1,
+      "strategy": "launcher_root",
+      "success": true,
+      "message": "Launcher root intent sent for com.xunmeng.pinduoduo"
+    },
+    {
+      "phase": "open_app_attempt_wait",
+      "attempt": 1,
+      "strategy": "launcher_root",
+      "success": true,
+      "currentPackage": "com.xunmeng.pinduoduo",
+      "windowClassName": "androidx.recyclerview.widget.RecyclerView",
+      "overlayDismissed": 0,
+      "overlayEvents": []
+    },
+    {
+      "phase": "primary_tab_surface_entry",
+      "status": "RUNNING",
+      "message": "tab=bottom_tab_3 click graphical_ui: 搜索",
+      "path": null,
+      "timestamp": 1779374805047
+    },
+    {
+      "phase": "tap_primary_tab_surface_entry",
+      "tabLabel": "bottom_tab_3",
+      "category": "graphical_ui",
+      "label": "搜索",
+      "success": true,
+      "message": "dispatchGesture tap sent (normalized=0.828,0.083 px=1192,264 screen=1440x3168)",
+      "fingerprint": "graphical_ui|pdd|top_right|16|1",
+      "beforeScreenKey": "a60ef71e",
+      "candidate": {
+        "index": 23,
+        "label": "搜索",
+        "text": null,
+        "desc": "搜索",
+        "resourceId": "com.xunmeng.pinduoduo:id\/pdd",
+        "class": "android.widget.ImageView",
+        "clickable": true,
+        "editable": false,
+        "checkable": false,
+        "selected": false,
+        "bounds": "1136 208 1248 320",
+        "x": 0.8277777777777777,
+        "y": 0.08333333333333333,
+        "center": {
+          "x": 0.8277777777777777,
+          "y": 0.08333333333333333
+        },
+        "tags": [
+          "graphical_ui",
+          "small_icon",
+          "clickable",
+          "search_entry",
+          "icon_only",
+          "top_icon"
+        ],
+        "candidateCategory": "graphical_ui"
+      }
+    },
+    {
+      "phase": "primary_tab_surface_entry",
+      "status": "SUCCESS",
+      "message": "tab=bottom_tab_3 graphical_ui 搜索 changed=true nodes=806",
+      "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_snapshots\/com.xunmeng.pinduoduo\/20260521_224646_938_e1a2f39c.json",
+      "timestamp": 1779374807250
+    }
+  ],
+  "timedOut": false,
+  "maxDurationMs": 80000,
+  "durationMs": 50853
+}

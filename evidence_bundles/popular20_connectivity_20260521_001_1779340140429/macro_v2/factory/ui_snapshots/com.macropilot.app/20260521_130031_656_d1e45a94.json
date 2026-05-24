@@ -1,0 +1,1252 @@
+{
+  "schemaVersion": 1,
+  "kind": "ui_state_snapshot",
+  "id": "ui_snapshot_1779339632164",
+  "source": "current_ui_summary",
+  "note": "factory_ai_context",
+  "screenshotPath": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_screenshots\/com.macropilot.app\/20260521_130031_656_d1e45a94.png",
+  "screenshotSha256": "8929e919f1f6c91dcb54030278de4efe2b4fd3baeade5116db209e9fa759befe",
+  "visualHash": "30cc2e4086c3c6992a8d928512176934f22ddd25c9b70691876e60aefd329e69",
+  "screenshotSizeBytes": 559447,
+  "appPackage": "com.macropilot.app",
+  "windowClassName": null,
+  "screenKey": "d1e45a94",
+  "relatedSkillId": null,
+  "relatedActionType": null,
+  "capability": {
+    "nodeReadability": "A",
+    "inputCapability": "SET_TEXT",
+    "verificationCapability": "HIGH",
+    "coordinateFallback": "AVAILABLE",
+    "serviceState": "CONNECTED",
+    "reason": "nodes=507, textLike=303, clickable=75, editable=3, scrollable=1, customIme=true"
+  },
+  "state": {
+    "appPackage": "com.macropilot.app",
+    "windowClassName": null,
+    "screenWidth": 1440,
+    "screenHeight": 3168,
+    "timestamp": 1779339631656,
+    "nodeCount": 507,
+    "nodesStored": 45,
+    "nodesStorage": "compact_important_nodes_only",
+    "nodes": [
+      {
+        "nodeId": "9_26_152_1888_1288_2072",
+        "packageName": "com.macropilot.app",
+        "text": "打开哔哩哔哩搜索猫和老鼠",
+        "contentDesc": null,
+        "resourceId": null,
+        "className": "android.widget.EditText",
+        "bounds": {
+          "left": 152,
+          "top": 1888,
+          "right": 1288,
+          "bottom": 2072
+        },
+        "clickable": true,
+        "editable": true,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 9,
+        "parentRoleHint": "android.widget.LinearLayout"
+      },
+      {
+        "nodeId": "8_151_96_10046_1344_2824",
+        "packageName": "com.macropilot.app",
+        "text": "打开哔哩哔哩搜索猫和老鼠",
+        "contentDesc": null,
+        "resourceId": null,
+        "className": "android.widget.EditText",
+        "bounds": {
+          "left": 96,
+          "top": 10046,
+          "right": 1344,
+          "bottom": 2824
+        },
+        "clickable": true,
+        "editable": true,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 8,
+        "parentRoleHint": "android.widget.LinearLayout"
+      },
+      {
+        "nodeId": "8_148_96_9760_1344_2824",
+        "packageName": "com.macropilot.app",
+        "text": "com.unionpay",
+        "contentDesc": null,
+        "resourceId": null,
+        "className": "android.widget.EditText",
+        "bounds": {
+          "left": 96,
+          "top": 9760,
+          "right": 1344,
+          "bottom": 2824
+        },
+        "clickable": true,
+        "editable": true,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 8,
+        "parentRoleHint": "android.widget.LinearLayout"
+      },
+      {
+        "nodeId": "9_39_152_2712_704_2824",
+        "packageName": "com.macropilot.app",
+        "text": "1 搜索",
+        "contentDesc": null,
+        "resourceId": null,
+        "className": "android.widget.TextView",
+        "bounds": {
+          "left": 152,
+          "top": 2712,
+          "right": 704,
+          "bottom": 2824
+        },
+        "clickable": true,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 9,
+        "parentRoleHint": "android.widget.LinearLayout"
+      },
+      {
+        "nodeId": "9_41_736_2712_1288_2824",
+        "packageName": "com.macropilot.app",
+        "text": "2 评论草稿",
+        "contentDesc": null,
+        "resourceId": null,
+        "className": "android.widget.TextView",
+        "bounds": {
+          "left": 736,
+          "top": 2712,
+          "right": 1288,
+          "bottom": 2824
+        },
+        "clickable": true,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 9,
+        "parentRoleHint": "android.widget.LinearLayout"
+      },
+      {
+        "nodeId": "9_28_152_2146_700_2330",
+        "packageName": "com.macropilot.app",
+        "text": "执行这句话",
+        "contentDesc": null,
+        "resourceId": null,
+        "className": "android.widget.TextView",
+        "bounds": {
+          "left": 152,
+          "top": 2146,
+          "right": 700,
+          "bottom": 2330
+        },
+        "clickable": true,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 9,
+        "parentRoleHint": "android.widget.LinearLayout"
+      },
+      {
+        "nodeId": "9_30_740_2146_1288_2330",
+        "packageName": "com.macropilot.app",
+        "text": "AI 接口设置",
+        "contentDesc": null,
+        "resourceId": null,
+        "className": "android.widget.TextView",
+        "bounds": {
+          "left": 740,
+          "top": 2146,
+          "right": 1288,
+          "bottom": 2330
+        },
+        "clickable": true,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 9,
+        "parentRoleHint": "android.widget.LinearLayout"
+      },
+      {
+        "nodeId": "9_32_152_2362_700_2530",
+        "packageName": "com.macropilot.app",
+        "text": "测试 AI 连接",
+        "contentDesc": null,
+        "resourceId": null,
+        "className": "android.widget.TextView",
+        "bounds": {
+          "left": 152,
+          "top": 2362,
+          "right": 700,
+          "bottom": 2530
+        },
+        "clickable": true,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 9,
+        "parentRoleHint": "android.widget.LinearLayout"
+      },
+      {
+        "nodeId": "9_34_740_2362_1288_2530",
+        "packageName": "com.macropilot.app",
+        "text": "刷新输出",
+        "contentDesc": null,
+        "resourceId": null,
+        "className": "android.widget.TextView",
+        "bounds": {
+          "left": 740,
+          "top": 2362,
+          "right": 1288,
+          "bottom": 2530
+        },
+        "clickable": true,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 9,
+        "parentRoleHint": "android.widget.LinearLayout"
+      },
+      {
+        "nodeId": "9_43_152_2912_704_2824",
+        "packageName": "com.macropilot.app",
+        "text": "3 小红书草稿",
+        "contentDesc": null,
+        "resourceId": null,
+        "className": "android.widget.TextView",
+        "bounds": {
+          "left": 152,
+          "top": 2912,
+          "right": 704,
+          "bottom": 2824
+        },
+        "clickable": true,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 9,
+        "parentRoleHint": "android.widget.LinearLayout"
+      },
+      {
+        "nodeId": "9_45_736_2912_1288_2824",
+        "packageName": "com.macropilot.app",
+        "text": "4 本机第三方 App",
+        "contentDesc": null,
+        "resourceId": null,
+        "className": "android.widget.TextView",
+        "bounds": {
+          "left": 736,
+          "top": 2912,
+          "right": 1288,
+          "bottom": 2824
+        },
+        "clickable": true,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 9,
+        "parentRoleHint": "android.widget.LinearLayout"
+      },
+      {
+        "nodeId": "9_47_152_3112_1288_2824",
+        "packageName": "com.macropilot.app",
+        "text": "批量生成子集",
+        "contentDesc": null,
+        "resourceId": null,
+        "className": "android.widget.TextView",
+        "bounds": {
+          "left": 152,
+          "top": 3112,
+          "right": 1288,
+          "bottom": 2824
+        },
+        "clickable": true,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 9,
+        "parentRoleHint": "android.widget.LinearLayout"
+      },
+      {
+        "nodeId": "8_199_152_12934_1288_2824",
+        "packageName": "com.macropilot.app",
+        "text": "说明：连接后这些按钮会真实读取节点、写入 JSON 报告，并可按用户指令直接运行候选 Skill JSON。评论类任务默认只写草稿，除非明确要求发布。",
+        "contentDesc": null,
+        "resourceId": null,
+        "className": "android.widget.TextView",
+        "bounds": {
+          "left": 152,
+          "top": 12934,
+          "right": 1288,
+          "bottom": 2824
+        },
+        "clickable": false,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 8,
+        "parentRoleHint": "android.widget.LinearLayout"
+      },
+      {
+        "nodeId": "11_330_152_21697_1016_2824",
+        "packageName": "com.macropilot.app",
+        "text": "点击搜索入口",
+        "contentDesc": null,
+        "resourceId": null,
+        "className": "android.widget.TextView",
+        "bounds": {
+          "left": 152,
+          "top": 21697,
+          "right": 1016,
+          "bottom": 2824
+        },
+        "clickable": false,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 11,
+        "parentRoleHint": "android.widget.LinearLayout"
+      },
+      {
+        "nodeId": "11_337_152_22115_1016_2824",
+        "packageName": "com.macropilot.app",
+        "text": "点击搜索确认",
+        "contentDesc": null,
+        "resourceId": null,
+        "className": "android.widget.TextView",
+        "bounds": {
+          "left": 152,
+          "top": 22115,
+          "right": 1016,
+          "bottom": 2824
+        },
+        "clickable": false,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 11,
+        "parentRoleHint": "android.widget.LinearLayout"
+      },
+      {
+        "nodeId": "11_344_152_22533_1016_2824",
+        "packageName": "com.macropilot.app",
+        "text": "输入搜索词",
+        "contentDesc": null,
+        "resourceId": null,
+        "className": "android.widget.TextView",
+        "bounds": {
+          "left": 152,
+          "top": 22533,
+          "right": 1016,
+          "bottom": 2824
+        },
+        "clickable": false,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 11,
+        "parentRoleHint": "android.widget.LinearLayout"
+      },
+      {
+        "nodeId": "11_354_152_23053_1016_2824",
+        "packageName": "com.macropilot.app",
+        "text": "通用站内搜索",
+        "contentDesc": null,
+        "resourceId": null,
+        "className": "android.widget.TextView",
+        "bounds": {
+          "left": 152,
+          "top": 23053,
+          "right": 1016,
+          "bottom": 2824
+        },
+        "clickable": false,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 11,
+        "parentRoleHint": "android.widget.LinearLayout"
+      },
+      {
+        "nodeId": "11_356_152_23245_1016_2824",
+        "packageName": "com.macropilot.app",
+        "text": "com.unionpay.search.search_in_app · 组合 Skill · 应用内搜索",
+        "contentDesc": null,
+        "resourceId": null,
+        "className": "android.widget.TextView",
+        "bounds": {
+          "left": 152,
+          "top": 23245,
+          "right": 1016,
+          "bottom": 2824
+        },
+        "clickable": false,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 11,
+        "parentRoleHint": "android.widget.LinearLayout"
+      },
+      {
+        "nodeId": "5_487_32_2840_261_3080",
+        "packageName": "com.macropilot.app",
+        "text": null,
+        "contentDesc": null,
+        "resourceId": null,
+        "className": "android.widget.LinearLayout",
+        "bounds": {
+          "left": 32,
+          "top": 2840,
+          "right": 261,
+          "bottom": 3080
+        },
+        "clickable": true,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 5,
+        "parentRoleHint": "android.widget.LinearLayout"
+      },
+      {
+        "nodeId": "5_490_261_2840_490_3080",
+        "packageName": "com.macropilot.app",
+        "text": null,
+        "contentDesc": null,
+        "resourceId": null,
+        "className": "android.widget.LinearLayout",
+        "bounds": {
+          "left": 261,
+          "top": 2840,
+          "right": 490,
+          "bottom": 3080
+        },
+        "clickable": true,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 5,
+        "parentRoleHint": "android.widget.LinearLayout"
+      },
+      {
+        "nodeId": "5_493_490_2840_719_3080",
+        "packageName": "com.macropilot.app",
+        "text": null,
+        "contentDesc": null,
+        "resourceId": null,
+        "className": "android.widget.LinearLayout",
+        "bounds": {
+          "left": 490,
+          "top": 2840,
+          "right": 719,
+          "bottom": 3080
+        },
+        "clickable": true,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 5,
+        "parentRoleHint": "android.widget.LinearLayout"
+      },
+      {
+        "nodeId": "5_496_719_2840_948_3080",
+        "packageName": "com.macropilot.app",
+        "text": null,
+        "contentDesc": null,
+        "resourceId": null,
+        "className": "android.widget.LinearLayout",
+        "bounds": {
+          "left": 719,
+          "top": 2840,
+          "right": 948,
+          "bottom": 3080
+        },
+        "clickable": true,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 5,
+        "parentRoleHint": "android.widget.LinearLayout"
+      },
+      {
+        "nodeId": "5_499_948_2840_1178_3080",
+        "packageName": "com.macropilot.app",
+        "text": null,
+        "contentDesc": null,
+        "resourceId": null,
+        "className": "android.widget.LinearLayout",
+        "bounds": {
+          "left": 948,
+          "top": 2840,
+          "right": 1178,
+          "bottom": 3080
+        },
+        "clickable": true,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 5,
+        "parentRoleHint": "android.widget.LinearLayout"
+      },
+      {
+        "nodeId": "5_502_1178_2840_1408_3080",
+        "packageName": "com.macropilot.app",
+        "text": null,
+        "contentDesc": null,
+        "resourceId": null,
+        "className": "android.widget.LinearLayout",
+        "bounds": {
+          "left": 1178,
+          "top": 2840,
+          "right": 1408,
+          "bottom": 3080
+        },
+        "clickable": true,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 5,
+        "parentRoleHint": "android.widget.LinearLayout"
+      },
+      {
+        "nodeId": "8_93_152_6136_1288_2824",
+        "packageName": "com.macropilot.app",
+        "text": null,
+        "contentDesc": null,
+        "resourceId": null,
+        "className": "android.widget.LinearLayout",
+        "bounds": {
+          "left": 152,
+          "top": 6136,
+          "right": 1288,
+          "bottom": 2824
+        },
+        "clickable": true,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 8,
+        "parentRoleHint": "android.widget.LinearLayout"
+      },
+      {
+        "nodeId": "8_100_152_6736_1288_2824",
+        "packageName": "com.macropilot.app",
+        "text": null,
+        "contentDesc": null,
+        "resourceId": null,
+        "className": "android.widget.LinearLayout",
+        "bounds": {
+          "left": 152,
+          "top": 6736,
+          "right": 1288,
+          "bottom": 2824
+        },
+        "clickable": true,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 8,
+        "parentRoleHint": "android.widget.LinearLayout"
+      },
+      {
+        "nodeId": "8_107_152_7393_1288_2824",
+        "packageName": "com.macropilot.app",
+        "text": null,
+        "contentDesc": null,
+        "resourceId": null,
+        "className": "android.widget.LinearLayout",
+        "bounds": {
+          "left": 152,
+          "top": 7393,
+          "right": 1288,
+          "bottom": 2824
+        },
+        "clickable": true,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 8,
+        "parentRoleHint": "android.widget.LinearLayout"
+      },
+      {
+        "nodeId": "10_170_152_11406_700_2824",
+        "packageName": "com.macropilot.app",
+        "text": null,
+        "contentDesc": null,
+        "resourceId": null,
+        "className": "android.widget.LinearLayout",
+        "bounds": {
+          "left": 152,
+          "top": 11406,
+          "right": 700,
+          "bottom": 2824
+        },
+        "clickable": true,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 10,
+        "parentRoleHint": "android.widget.LinearLayout"
+      },
+      {
+        "nodeId": "10_175_740_11406_1288_2824",
+        "packageName": "com.macropilot.app",
+        "text": null,
+        "contentDesc": null,
+        "resourceId": null,
+        "className": "android.widget.LinearLayout",
+        "bounds": {
+          "left": 740,
+          "top": 11406,
+          "right": 1288,
+          "bottom": 2824
+        },
+        "clickable": true,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 10,
+        "parentRoleHint": "android.widget.LinearLayout"
+      },
+      {
+        "nodeId": "10_180_152_11918_700_2824",
+        "packageName": "com.macropilot.app",
+        "text": null,
+        "contentDesc": null,
+        "resourceId": null,
+        "className": "android.widget.LinearLayout",
+        "bounds": {
+          "left": 152,
+          "top": 11918,
+          "right": 700,
+          "bottom": 2824
+        },
+        "clickable": true,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 10,
+        "parentRoleHint": "android.widget.LinearLayout"
+      },
+      {
+        "nodeId": "10_185_740_11918_1288_2824",
+        "packageName": "com.macropilot.app",
+        "text": null,
+        "contentDesc": null,
+        "resourceId": null,
+        "className": "android.widget.LinearLayout",
+        "bounds": {
+          "left": 740,
+          "top": 11918,
+          "right": 1288,
+          "bottom": 2824
+        },
+        "clickable": true,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 10,
+        "parentRoleHint": "android.widget.LinearLayout"
+      },
+      {
+        "nodeId": "10_190_152_12430_700_2824",
+        "packageName": "com.macropilot.app",
+        "text": null,
+        "contentDesc": null,
+        "resourceId": null,
+        "className": "android.widget.LinearLayout",
+        "bounds": {
+          "left": 152,
+          "top": 12430,
+          "right": 700,
+          "bottom": 2824
+        },
+        "clickable": true,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 10,
+        "parentRoleHint": "android.widget.LinearLayout"
+      },
+      {
+        "nodeId": "10_195_740_12430_1288_2824",
+        "packageName": "com.macropilot.app",
+        "text": null,
+        "contentDesc": null,
+        "resourceId": null,
+        "className": "android.widget.LinearLayout",
+        "bounds": {
+          "left": 740,
+          "top": 12430,
+          "right": 1288,
+          "bottom": 2824
+        },
+        "clickable": true,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 10,
+        "parentRoleHint": "android.widget.LinearLayout"
+      },
+      {
+        "nodeId": "9_203_96_13375_700_2824",
+        "packageName": "com.macropilot.app",
+        "text": null,
+        "contentDesc": null,
+        "resourceId": null,
+        "className": "android.widget.LinearLayout",
+        "bounds": {
+          "left": 96,
+          "top": 13375,
+          "right": 700,
+          "bottom": 2824
+        },
+        "clickable": true,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 9,
+        "parentRoleHint": "android.widget.LinearLayout"
+      },
+      {
+        "nodeId": "9_208_740_13375_1344_2824",
+        "packageName": "com.macropilot.app",
+        "text": null,
+        "contentDesc": null,
+        "resourceId": null,
+        "className": "android.widget.LinearLayout",
+        "bounds": {
+          "left": 740,
+          "top": 13375,
+          "right": 1344,
+          "bottom": 2824
+        },
+        "clickable": true,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 9,
+        "parentRoleHint": "android.widget.LinearLayout"
+      },
+      {
+        "nodeId": "9_213_96_13887_700_2824",
+        "packageName": "com.macropilot.app",
+        "text": null,
+        "contentDesc": null,
+        "resourceId": null,
+        "className": "android.widget.LinearLayout",
+        "bounds": {
+          "left": 96,
+          "top": 13887,
+          "right": 700,
+          "bottom": 2824
+        },
+        "clickable": true,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 9,
+        "parentRoleHint": "android.widget.LinearLayout"
+      },
+      {
+        "nodeId": "9_218_740_13887_1344_2824",
+        "packageName": "com.macropilot.app",
+        "text": null,
+        "contentDesc": null,
+        "resourceId": null,
+        "className": "android.widget.LinearLayout",
+        "bounds": {
+          "left": 740,
+          "top": 13887,
+          "right": 1344,
+          "bottom": 2824
+        },
+        "clickable": true,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 9,
+        "parentRoleHint": "android.widget.LinearLayout"
+      },
+      {
+        "nodeId": "9_223_96_14399_700_2824",
+        "packageName": "com.macropilot.app",
+        "text": null,
+        "contentDesc": null,
+        "resourceId": null,
+        "className": "android.widget.LinearLayout",
+        "bounds": {
+          "left": 96,
+          "top": 14399,
+          "right": 700,
+          "bottom": 2824
+        },
+        "clickable": true,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 9,
+        "parentRoleHint": "android.widget.LinearLayout"
+      },
+      {
+        "nodeId": "9_228_740_14399_1344_2824",
+        "packageName": "com.macropilot.app",
+        "text": null,
+        "contentDesc": null,
+        "resourceId": null,
+        "className": "android.widget.LinearLayout",
+        "bounds": {
+          "left": 740,
+          "top": 14399,
+          "right": 1344,
+          "bottom": 2824
+        },
+        "clickable": true,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 9,
+        "parentRoleHint": "android.widget.LinearLayout"
+      },
+      {
+        "nodeId": "9_233_96_14911_700_2824",
+        "packageName": "com.macropilot.app",
+        "text": null,
+        "contentDesc": null,
+        "resourceId": null,
+        "className": "android.widget.LinearLayout",
+        "bounds": {
+          "left": 96,
+          "top": 14911,
+          "right": 700,
+          "bottom": 2824
+        },
+        "clickable": true,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 9,
+        "parentRoleHint": "android.widget.LinearLayout"
+      },
+      {
+        "nodeId": "9_238_740_14911_1344_2824",
+        "packageName": "com.macropilot.app",
+        "text": null,
+        "contentDesc": null,
+        "resourceId": null,
+        "className": "android.widget.LinearLayout",
+        "bounds": {
+          "left": 740,
+          "top": 14911,
+          "right": 1344,
+          "bottom": 2824
+        },
+        "clickable": true,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 9,
+        "parentRoleHint": "android.widget.LinearLayout"
+      },
+      {
+        "nodeId": "9_243_96_15423_700_2824",
+        "packageName": "com.macropilot.app",
+        "text": null,
+        "contentDesc": null,
+        "resourceId": null,
+        "className": "android.widget.LinearLayout",
+        "bounds": {
+          "left": 96,
+          "top": 15423,
+          "right": 700,
+          "bottom": 2824
+        },
+        "clickable": true,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 9,
+        "parentRoleHint": "android.widget.LinearLayout"
+      },
+      {
+        "nodeId": "9_248_740_15423_1344_2824",
+        "packageName": "com.macropilot.app",
+        "text": null,
+        "contentDesc": null,
+        "resourceId": null,
+        "className": "android.widget.LinearLayout",
+        "bounds": {
+          "left": 740,
+          "top": 15423,
+          "right": 1344,
+          "bottom": 2824
+        },
+        "clickable": true,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 9,
+        "parentRoleHint": "android.widget.LinearLayout"
+      },
+      {
+        "nodeId": "8_254_152_16165_1288_2824",
+        "packageName": "com.macropilot.app",
+        "text": null,
+        "contentDesc": null,
+        "resourceId": null,
+        "className": "android.widget.LinearLayout",
+        "bounds": {
+          "left": 152,
+          "top": 16165,
+          "right": 1288,
+          "bottom": 2824
+        },
+        "clickable": true,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 8,
+        "parentRoleHint": "android.widget.LinearLayout"
+      },
+      {
+        "nodeId": "8_258_152_16660_1288_2824",
+        "packageName": "com.macropilot.app",
+        "text": null,
+        "contentDesc": null,
+        "resourceId": null,
+        "className": "android.widget.LinearLayout",
+        "bounds": {
+          "left": 152,
+          "top": 16660,
+          "right": 1288,
+          "bottom": 2824
+        },
+        "clickable": true,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 8,
+        "parentRoleHint": "android.widget.LinearLayout"
+      }
+    ],
+    "eventsSinceLastState": [
+      {
+        "eventType": "TYPE_4194304",
+        "packageName": null,
+        "className": null,
+        "text": null,
+        "timestamp": 1779339631404
+      }
+    ]
+  },
+  "summary": {
+    "nodeCount": 507,
+    "clickableCount": 75,
+    "editableCount": 3,
+    "scrollableCount": 1,
+    "labels": [
+      "android:id\/content",
+      "工厂运行台",
+      "输入一句话就执行。AI 负责决策和生成 JSON；手机端会直接运行候选 Skill JSON，并把证据链显示出来。",
+      "当前状态：成功",
+      "Factory AI=已配置 \/ AI 直控候选 JSON=已打开 \/ 当前包=com.unionpay",
+      "无障碍=已连接，节点=A 可读，输入=MacroPilot 输入法已选。用户输入会进入 AI 决策，生成 Skill JSON、dry-run、拼 app_config，然后直接执行候选 JSON。",
+      "真实测试运行台",
+      "这里就是手机端主入口：输入一句话，App 自己调用 AI，生成\/拼装 Skill JSON，并直接执行候选 JSON。每一步都会写到下面。",
+      "当前手机能力",
+      "无障碍=已连接 \/ 节点=A 可读 \/ 输入=MacroPilot 输入法已选",
+      "最近运行结果",
+      "成功 \/ 无障碍已连接 \/ MacroPilot Runtime 已绑定，可以读取节点、执行点击\/输入，并显示悬浮执行反馈。",
+      "用户输入",
+      "打开哔哩哔哩搜索猫和老鼠",
+      "执行这句话",
+      "AI 接口设置",
+      "测试 AI 连接",
+      "刷新输出",
+      "常用任务",
+      "点一下就跑，结果留在下面",
+      "1 搜索",
+      "2 评论草稿",
+      "3 小红书草稿",
+      "4 本机第三方 App",
+      "批量生成子集",
+      "输出不靠弹窗：实时流水线会显示 AI HTTP、AI 决策、Skill JSON、dry-run、app_config、候选 JSON 执行报告和失败原因。",
+      "实时流水线反馈",
+      "不再只弹小提示。AI、生成、dry-run、拼装、Runtime 调用都会留在这里。",
+      "成功",
+      "当前动作",
+      "无障碍已连接",
+      "目标应用",
+      "com.unionpay",
+      "页面反馈",
+      "MacroPilot Runtime 已绑定，可以读取节点、执行点击\/输入，并显示悬浮执行反馈。",
+      "最新输出文件",
+      "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/flow_reports\/com.unionpay\/popular_app_guard_unionpay_home_icons_1779339630536.json",
+      "本次步骤",
+      "1 条",
+      "无障碍已连接",
+      "成功",
+      "MacroPilot Runtime 已绑定，可以读取节点、执行点击\/输入，并显示悬浮执行反馈。",
+      "最近一次真实输出",
+      "这里直接显示 AI 调用、JSON 生成、测试报告和 Runtime 结果，不需要去文件夹里猜。",
+      "BLOCKED_HIGH_RISK_GUARD_ONLY",
+      "应用 \/ 任务",
+      "com.unionpay \/ - \/ popular_app_high_risk_guard_report",
+      "最终步骤",
+      "步骤为空",
+      "步骤数量",
+      "0 步；耗时 0ms",
+      "关键阶段",
+      "还没有步骤。",
+      "展开流水线 JSON",
+      "点开能看到每一步：AI、dry-run、测试、PromotionGate、Runtime 调用。",
+      "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/flow_reports\/com.unionpay\/popular_app_guard_unionpay_home_icons_1779339630536.json",
+      "AI 调用",
+      "状态=成功；HTTP=200；模型=deepseek-v4-pro；AI计划=5步；AI候选=0；规则兜底=0",
+      "展开 AI Job",
+      "能看到 prompt、rawResponse、parsedJson，以及为什么 AI 输出被拒绝或采纳。",
+      "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ai_jobs\/2026-05-21\/factory_ai_replan_1779339593468.json",
+      "Runtime 调用",
+      "patched.command.1779339606084 -> 无法验证；Input change could not be verified; reactiveDismissedBeforeAction=2",
+      "展开 Runtime 报告",
+      "能看到 skillId、params、runtimeSkillFile、runtimeConfigFile 和失败原因。",
+      "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/runtime\/run_reports\/com.baidu.baidumap\/generic_search_fallback_1779339628905.json",
+      "候选 Skill",
+      "11",
+      "dry-run 报告",
+      "30",
+      "测试报告",
+      "0",
+      "已晋级",
+      "0",
+      "AI Job",
+      "100",
+      "app_config",
+      "7",
+      "Runtime config",
+      "未生成"
+    ],
+    "bottomCandidates": [
+      {
+        "label": "",
+        "bounds": {
+          "left": 32,
+          "top": 2840,
+          "right": 261,
+          "bottom": 3080
+        },
+        "clickable": true
+      },
+      {
+        "label": "F",
+        "bounds": {
+          "left": 34,
+          "top": 2862,
+          "right": 258,
+          "bottom": 2998
+        },
+        "clickable": false
+      },
+      {
+        "label": "工厂",
+        "bounds": {
+          "left": 32,
+          "top": 2998,
+          "right": 261,
+          "bottom": 3057
+        },
+        "clickable": false
+      },
+      {
+        "label": "最近一次真实输出",
+        "bounds": {
+          "left": 152,
+          "top": 5199,
+          "right": 362,
+          "bottom": 2824
+        },
+        "clickable": false
+      },
+      {
+        "label": "这里直接显示 AI 调用、JSON 生成、测试报告和 Runtime 结果，不需要去文件夹里猜。",
+        "bounds": {
+          "left": 152,
+          "top": 5285,
+          "right": 362,
+          "bottom": 2824
+        },
+        "clickable": false
+      },
+      {
+        "label": "",
+        "bounds": {
+          "left": 261,
+          "top": 2840,
+          "right": 490,
+          "bottom": 3080
+        },
+        "clickable": true
+      },
+      {
+        "label": "⌂",
+        "bounds": {
+          "left": 263,
+          "top": 2862,
+          "right": 487,
+          "bottom": 2998
+        },
+        "clickable": false
+      },
+      {
+        "label": "主界面",
+        "bounds": {
+          "left": 261,
+          "top": 2998,
+          "right": 490,
+          "bottom": 3057
+        },
+        "clickable": false
+      },
+      {
+        "label": "候选 Skill",
+        "bounds": {
+          "left": 144,
+          "top": 7902,
+          "right": 652,
+          "bottom": 2824
+        },
+        "clickable": false
+      },
+      {
+        "label": "11",
+        "bounds": {
+          "left": 144,
+          "top": 7967,
+          "right": 652,
+          "bottom": 2824
+        },
+        "clickable": false
+      },
+      {
+        "label": "测试报告",
+        "bounds": {
+          "left": 144,
+          "top": 8190,
+          "right": 652,
+          "bottom": 2824
+        },
+        "clickable": false
+      },
+      {
+        "label": "0",
+        "bounds": {
+          "left": 144,
+          "top": 8255,
+          "right": 652,
+          "bottom": 2824
+        },
+        "clickable": false
+      }
+    ]
+  },
+  "retentionPolicy": {
+    "fullNodeTreeStored": false,
+    "storedNodeLimit": 45,
+    "storedEventLimit": 20,
+    "longTermKnowledge": "summary + app_ui_graph + assembly\/runtime reports"
+  },
+  "createdAt": 1779339632181
+}

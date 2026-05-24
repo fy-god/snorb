@@ -1,0 +1,1168 @@
+{
+  "schemaVersion": 1,
+  "kind": "ui_state_snapshot",
+  "id": "ui_snapshot_1779338874106",
+  "source": "macro_atom_failed",
+  "note": "index=2; skillId=patched.1779338861752.3.findentrybybottomtabsweep; status=FAILED_ELEMENT_NOT_FOUND; Bottom-tab sweep did not find entry aliases=发帖\/发布\/创作\/写\/加号\/+; tabsVisited=5; events=[{\"phase\":\"open_before_recover\",\"packageName\":\"com.dianping.v1\",\"success\":true,\"message\":\"Launch ",
+  "screenshotPath": null,
+  "screenshotSha256": null,
+  "visualHash": null,
+  "screenshotSizeBytes": null,
+  "appPackage": "com.dianping.v1",
+  "windowClassName": "android.widget.FrameLayout",
+  "screenKey": "d4272619",
+  "relatedSkillId": "patched.1779338861752.3.findentrybybottomtabsweep",
+  "relatedActionType": "FindEntryByBottomTabSweep",
+  "capability": {
+    "nodeReadability": "A",
+    "inputCapability": "CUSTOM_IME",
+    "verificationCapability": "HIGH",
+    "coordinateFallback": "AVAILABLE",
+    "serviceState": "CONNECTED",
+    "reason": "nodes=119, textLike=24, clickable=21, editable=0, scrollable=0, customIme=true"
+  },
+  "state": {
+    "appPackage": "com.dianping.v1",
+    "windowClassName": "android.widget.FrameLayout",
+    "screenWidth": 1440,
+    "screenHeight": 3168,
+    "timestamp": 1779338874105,
+    "nodeCount": 119,
+    "nodesStored": 45,
+    "nodesStorage": "compact_important_nodes_only",
+    "nodes": [
+      {
+        "nodeId": "12_50_1004_608_1320_717",
+        "packageName": "com.dianping.v1",
+        "text": "立即登录",
+        "contentDesc": null,
+        "resourceId": null,
+        "className": "android.widget.TextView",
+        "bounds": {
+          "left": 1004,
+          "top": 608,
+          "right": 1320,
+          "bottom": 717
+        },
+        "clickable": true,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 12,
+        "parentRoleHint": "android.widget.FrameLayout"
+      },
+      {
+        "nodeId": "21_89_966_2548_1174_2609",
+        "packageName": "com.dianping.v1",
+        "text": "搜索建议",
+        "contentDesc": null,
+        "resourceId": null,
+        "className": "android.widget.TextView",
+        "bounds": {
+          "left": 966,
+          "top": 2548,
+          "right": 1174,
+          "bottom": 2609
+        },
+        "clickable": false,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 21,
+        "parentRoleHint": "android.widget.FrameLayout"
+      },
+      {
+        "nodeId": "11_101_996_2768_1400_2928",
+        "packageName": "com.dianping.v1",
+        "text": null,
+        "contentDesc": "ShowListBtnModule",
+        "resourceId": null,
+        "className": "android.widget.FrameLayout",
+        "bounds": {
+          "left": 996,
+          "top": 2768,
+          "right": 1400,
+          "bottom": 2928
+        },
+        "clickable": true,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 11,
+        "parentRoleHint": "android.widget.FrameLayout"
+      },
+      {
+        "nodeId": "12_67_592_839_456_905",
+        "packageName": "com.dianping.v1",
+        "text": "在此区域搜索",
+        "contentDesc": null,
+        "resourceId": null,
+        "className": "android.widget.TextView",
+        "bounds": {
+          "left": 592,
+          "top": 839,
+          "right": 456,
+          "bottom": 905
+        },
+        "clickable": false,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 12,
+        "parentRoleHint": "android.widget.FrameLayout"
+      },
+      {
+        "nodeId": "13_15_0_0_1440_3104",
+        "packageName": "com.dianping.v1",
+        "text": null,
+        "contentDesc": null,
+        "resourceId": null,
+        "className": "android.widget.FrameLayout",
+        "bounds": {
+          "left": 0,
+          "top": 0,
+          "right": 1440,
+          "bottom": 3104
+        },
+        "clickable": true,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 13,
+        "parentRoleHint": "android.widget.FrameLayout"
+      },
+      {
+        "nodeId": "12_21_40_200_1400_372",
+        "packageName": "com.dianping.v1",
+        "text": null,
+        "contentDesc": null,
+        "resourceId": null,
+        "className": "android.widget.FrameLayout",
+        "bounds": {
+          "left": 40,
+          "top": 200,
+          "right": 1400,
+          "bottom": 372
+        },
+        "clickable": true,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 12,
+        "parentRoleHint": "android.widget.FrameLayout"
+      },
+      {
+        "nodeId": "14_23_40_200_180_372",
+        "packageName": "com.dianping.v1",
+        "text": null,
+        "contentDesc": null,
+        "resourceId": null,
+        "className": "android.widget.FrameLayout",
+        "bounds": {
+          "left": 40,
+          "top": 200,
+          "right": 180,
+          "bottom": 372
+        },
+        "clickable": true,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 14,
+        "parentRoleHint": "android.widget.FrameLayout"
+      },
+      {
+        "nodeId": "13_27_1256_200_1360_372",
+        "packageName": "com.dianping.v1",
+        "text": null,
+        "contentDesc": null,
+        "resourceId": null,
+        "className": "android.widget.FrameLayout",
+        "bounds": {
+          "left": 1256,
+          "top": 200,
+          "right": 1360,
+          "bottom": 372
+        },
+        "clickable": true,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 13,
+        "parentRoleHint": "android.widget.FrameLayout"
+      },
+      {
+        "nodeId": "12_29_40_372_1400_528",
+        "packageName": "com.dianping.v1",
+        "text": null,
+        "contentDesc": null,
+        "resourceId": null,
+        "className": "android.widget.FrameLayout",
+        "bounds": {
+          "left": 40,
+          "top": 372,
+          "right": 1400,
+          "bottom": 528
+        },
+        "clickable": true,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 12,
+        "parentRoleHint": "android.widget.FrameLayout"
+      },
+      {
+        "nodeId": "14_31_80_400_485_500",
+        "packageName": "com.dianping.v1",
+        "text": null,
+        "contentDesc": null,
+        "resourceId": null,
+        "className": "android.widget.FrameLayout",
+        "bounds": {
+          "left": 80,
+          "top": 400,
+          "right": 485,
+          "bottom": 500
+        },
+        "clickable": true,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 14,
+        "parentRoleHint": "android.widget.FrameLayout"
+      },
+      {
+        "nodeId": "14_34_517_400_922_500",
+        "packageName": "com.dianping.v1",
+        "text": null,
+        "contentDesc": null,
+        "resourceId": null,
+        "className": "android.widget.FrameLayout",
+        "bounds": {
+          "left": 517,
+          "top": 400,
+          "right": 922,
+          "bottom": 500
+        },
+        "clickable": true,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 14,
+        "parentRoleHint": "android.widget.FrameLayout"
+      },
+      {
+        "nodeId": "14_37_955_400_1360_500",
+        "packageName": "com.dianping.v1",
+        "text": null,
+        "contentDesc": null,
+        "resourceId": null,
+        "className": "android.widget.FrameLayout",
+        "bounds": {
+          "left": 955,
+          "top": 400,
+          "right": 1360,
+          "bottom": 500
+        },
+        "clickable": true,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 14,
+        "parentRoleHint": "android.widget.FrameLayout"
+      },
+      {
+        "nodeId": "11_48_40_572_1400_752",
+        "packageName": "com.dianping.v1",
+        "text": null,
+        "contentDesc": null,
+        "resourceId": null,
+        "className": "android.widget.FrameLayout",
+        "bounds": {
+          "left": 40,
+          "top": 572,
+          "right": 1400,
+          "bottom": 752
+        },
+        "clickable": true,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 11,
+        "parentRoleHint": "android.widget.FrameLayout"
+      },
+      {
+        "nodeId": "12_69_0_1464_1440_1688",
+        "packageName": "com.dianping.v1",
+        "text": null,
+        "contentDesc": null,
+        "resourceId": null,
+        "className": "android.widget.FrameLayout",
+        "bounds": {
+          "left": 0,
+          "top": 1464,
+          "right": 1440,
+          "bottom": 1688
+        },
+        "clickable": true,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 12,
+        "parentRoleHint": "android.widget.FrameLayout"
+      },
+      {
+        "nodeId": "20_83_260_2404_480_2624",
+        "packageName": "com.dianping.v1",
+        "text": null,
+        "contentDesc": null,
+        "resourceId": null,
+        "className": "android.widget.FrameLayout",
+        "bounds": {
+          "left": 260,
+          "top": 2404,
+          "right": 480,
+          "bottom": 2624
+        },
+        "clickable": true,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 20,
+        "parentRoleHint": "android.widget.FrameLayout"
+      },
+      {
+        "nodeId": "20_87_960_2404_1180_2624",
+        "packageName": "com.dianping.v1",
+        "text": null,
+        "contentDesc": null,
+        "resourceId": null,
+        "className": "android.widget.FrameLayout",
+        "bounds": {
+          "left": 960,
+          "top": 2404,
+          "right": 1180,
+          "bottom": 2624
+        },
+        "clickable": true,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 20,
+        "parentRoleHint": "android.widget.FrameLayout"
+      },
+      {
+        "nodeId": "11_12_0_0_0_0",
+        "packageName": "com.dianping.v1",
+        "text": null,
+        "contentDesc": null,
+        "resourceId": null,
+        "className": "android.widget.FrameLayout",
+        "bounds": {
+          "left": 0,
+          "top": 0,
+          "right": 0,
+          "bottom": 0
+        },
+        "clickable": true,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 11,
+        "parentRoleHint": "android.widget.FrameLayout"
+      },
+      {
+        "nodeId": "13_46_664_564_0_544",
+        "packageName": "com.dianping.v1",
+        "text": null,
+        "contentDesc": null,
+        "resourceId": null,
+        "className": "android.widget.FrameLayout",
+        "bounds": {
+          "left": 664,
+          "top": 564,
+          "right": 0,
+          "bottom": 544
+        },
+        "clickable": true,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 13,
+        "parentRoleHint": "android.widget.FrameLayout"
+      },
+      {
+        "nodeId": "11_51_0_792_0_792",
+        "packageName": "com.dianping.v1",
+        "text": null,
+        "contentDesc": null,
+        "resourceId": null,
+        "className": "android.widget.FrameLayout",
+        "bounds": {
+          "left": 0,
+          "top": 792,
+          "right": 0,
+          "bottom": 792
+        },
+        "clickable": true,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 11,
+        "parentRoleHint": "android.widget.FrameLayout"
+      },
+      {
+        "nodeId": "12_56_0_792_0_792",
+        "packageName": "com.dianping.v1",
+        "text": null,
+        "contentDesc": null,
+        "resourceId": null,
+        "className": "android.widget.FrameLayout",
+        "bounds": {
+          "left": 0,
+          "top": 792,
+          "right": 0,
+          "bottom": 792
+        },
+        "clickable": true,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 12,
+        "parentRoleHint": "android.widget.FrameLayout"
+      },
+      {
+        "nodeId": "11_65_456_792_456_952",
+        "packageName": "com.dianping.v1",
+        "text": null,
+        "contentDesc": null,
+        "resourceId": null,
+        "className": "android.widget.FrameLayout",
+        "bounds": {
+          "left": 456,
+          "top": 792,
+          "right": 456,
+          "bottom": 952
+        },
+        "clickable": true,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 11,
+        "parentRoleHint": "android.widget.FrameLayout"
+      },
+      {
+        "nodeId": "13_97_1960_2464_1440_2464",
+        "packageName": "com.dianping.v1",
+        "text": null,
+        "contentDesc": null,
+        "resourceId": null,
+        "className": "android.widget.FrameLayout",
+        "bounds": {
+          "left": 1960,
+          "top": 2464,
+          "right": 1440,
+          "bottom": 2464
+        },
+        "clickable": true,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 13,
+        "parentRoleHint": "android.widget.FrameLayout"
+      },
+      {
+        "nodeId": "12_117_108_3104_1332_3104",
+        "packageName": "com.dianping.v1",
+        "text": null,
+        "contentDesc": null,
+        "resourceId": null,
+        "className": "android.widget.FrameLayout",
+        "bounds": {
+          "left": 108,
+          "top": 3104,
+          "right": 1332,
+          "bottom": 3104
+        },
+        "clickable": true,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 12,
+        "parentRoleHint": "android.widget.FrameLayout"
+      },
+      {
+        "nodeId": "4_4_0_0_1440_3104",
+        "packageName": "com.dianping.v1",
+        "text": null,
+        "contentDesc": null,
+        "resourceId": "com.dianping.v1:id\/action_bar_root",
+        "className": "android.widget.LinearLayout",
+        "bounds": {
+          "left": 0,
+          "top": 0,
+          "right": 1440,
+          "bottom": 3104
+        },
+        "clickable": false,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 4,
+        "parentRoleHint": "android.widget.FrameLayout"
+      },
+      {
+        "nodeId": "5_5_0_0_1440_3104",
+        "packageName": "com.dianping.v1",
+        "text": null,
+        "contentDesc": null,
+        "resourceId": "android:id\/content",
+        "className": "android.widget.FrameLayout",
+        "bounds": {
+          "left": 0,
+          "top": 0,
+          "right": 1440,
+          "bottom": 3104
+        },
+        "clickable": false,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 5,
+        "parentRoleHint": "android.widget.LinearLayout"
+      },
+      {
+        "nodeId": "6_6_0_0_1440_3104",
+        "packageName": "com.dianping.v1",
+        "text": null,
+        "contentDesc": null,
+        "resourceId": "com.dianping.v1:id\/root_view",
+        "className": "android.widget.FrameLayout",
+        "bounds": {
+          "left": 0,
+          "top": 0,
+          "right": 1440,
+          "bottom": 3104
+        },
+        "clickable": false,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 6,
+        "parentRoleHint": "android.widget.FrameLayout"
+      },
+      {
+        "nodeId": "8_8_0_0_1440_3104",
+        "packageName": "com.dianping.v1",
+        "text": null,
+        "contentDesc": null,
+        "resourceId": "com.dianping.v1:id\/root",
+        "className": "android.widget.FrameLayout",
+        "bounds": {
+          "left": 0,
+          "top": 0,
+          "right": 1440,
+          "bottom": 3104
+        },
+        "clickable": false,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 8,
+        "parentRoleHint": "android.widget.FrameLayout"
+      },
+      {
+        "nodeId": "9_9_0_0_1440_3104",
+        "packageName": "com.dianping.v1",
+        "text": null,
+        "contentDesc": null,
+        "resourceId": "com.dianping.v1:id\/picasso_view",
+        "className": "android.widget.FrameLayout",
+        "bounds": {
+          "left": 0,
+          "top": 0,
+          "right": 1440,
+          "bottom": 3104
+        },
+        "clickable": false,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 9,
+        "parentRoleHint": "android.widget.FrameLayout"
+      },
+      {
+        "nodeId": "13_26_222_253_726_319",
+        "packageName": "com.dianping.v1",
+        "text": "简单的美食制作方法",
+        "contentDesc": null,
+        "resourceId": null,
+        "className": "android.widget.TextView",
+        "bounds": {
+          "left": 222,
+          "top": 253,
+          "right": 726,
+          "bottom": 319
+        },
+        "clickable": false,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 13,
+        "parentRoleHint": "android.widget.FrameLayout"
+      },
+      {
+        "nodeId": "15_32_161_422_353_479",
+        "packageName": "com.dianping.v1",
+        "text": "全部分类",
+        "contentDesc": "FilterBarModule-FilterButtonTitle-全部分类",
+        "resourceId": null,
+        "className": "android.widget.TextView",
+        "bounds": {
+          "left": 161,
+          "top": 422,
+          "right": 353,
+          "bottom": 479
+        },
+        "clickable": false,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 15,
+        "parentRoleHint": "android.widget.FrameLayout"
+      },
+      {
+        "nodeId": "15_35_588_422_799_479",
+        "packageName": "com.dianping.v1",
+        "text": "距离\/区域",
+        "contentDesc": "FilterBarModule-FilterButtonTitle-距离\/区域",
+        "resourceId": null,
+        "className": "android.widget.TextView",
+        "bounds": {
+          "left": 588,
+          "top": 422,
+          "right": 799,
+          "bottom": 479
+        },
+        "clickable": false,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 15,
+        "parentRoleHint": "android.widget.FrameLayout"
+      },
+      {
+        "nodeId": "15_38_1036_422_1228_479",
+        "packageName": "com.dianping.v1",
+        "text": "更多筛选",
+        "contentDesc": "FilterBarModule-FilterButtonTitle-更多筛选",
+        "resourceId": null,
+        "className": "android.widget.TextView",
+        "bounds": {
+          "left": 1036,
+          "top": 422,
+          "right": 1228,
+          "bottom": 479
+        },
+        "clickable": false,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 15,
+        "parentRoleHint": "android.widget.FrameLayout"
+      },
+      {
+        "nodeId": "12_49_100_627_880_698",
+        "packageName": "com.dianping.v1",
+        "text": "登录可查看当前区域更多商户",
+        "contentDesc": null,
+        "resourceId": null,
+        "className": "android.widget.TextView",
+        "bounds": {
+          "left": 100,
+          "top": 627,
+          "right": 880,
+          "bottom": 698
+        },
+        "clickable": false,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 12,
+        "parentRoleHint": "android.widget.FrameLayout"
+      },
+      {
+        "nodeId": "11_68_0_1464_1440_3104",
+        "packageName": "com.dianping.v1",
+        "text": null,
+        "contentDesc": "PoiListModule",
+        "resourceId": null,
+        "className": "android.widget.FrameLayout",
+        "bounds": {
+          "left": 0,
+          "top": 1464,
+          "right": 1440,
+          "bottom": 3104
+        },
+        "clickable": false,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 11,
+        "parentRoleHint": "android.widget.FrameLayout"
+      },
+      {
+        "nodeId": "16_76_0_1544_1440_1744",
+        "packageName": "com.dianping.v1",
+        "text": null,
+        "contentDesc": null,
+        "resourceId": "com.dianping.v1:id\/list_item",
+        "className": "android.widget.FrameLayout",
+        "bounds": {
+          "left": 0,
+          "top": 1544,
+          "right": 1440,
+          "bottom": 1744
+        },
+        "clickable": false,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 16,
+        "parentRoleHint": "android.view.ViewGroup"
+      },
+      {
+        "nodeId": "15_93_68_1580_676_1670",
+        "packageName": "com.dianping.v1",
+        "text": "没有找到相关结果",
+        "contentDesc": null,
+        "resourceId": null,
+        "className": "android.widget.TextView",
+        "bounds": {
+          "left": 68,
+          "top": 1580,
+          "right": 676,
+          "bottom": 1670
+        },
+        "clickable": false,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 15,
+        "parentRoleHint": "android.widget.FrameLayout"
+      },
+      {
+        "nodeId": "21_85_266_2548_474_2609",
+        "packageName": "com.dianping.v1",
+        "text": "商家入驻",
+        "contentDesc": null,
+        "resourceId": null,
+        "className": "android.widget.TextView",
+        "bounds": {
+          "left": 266,
+          "top": 2548,
+          "right": 474,
+          "bottom": 2609
+        },
+        "clickable": false,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 21,
+        "parentRoleHint": "android.widget.FrameLayout"
+      },
+      {
+        "nodeId": "12_103_1138_2818_1346_2879",
+        "packageName": "com.dianping.v1",
+        "text": "查看地图",
+        "contentDesc": null,
+        "resourceId": null,
+        "className": "android.widget.TextView",
+        "bounds": {
+          "left": 1138,
+          "top": 2818,
+          "right": 1346,
+          "bottom": 2879
+        },
+        "clickable": false,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 12,
+        "parentRoleHint": "android.widget.FrameLayout"
+      },
+      {
+        "nodeId": "1_118_0_3104_1440_3168",
+        "packageName": "com.dianping.v1",
+        "text": null,
+        "contentDesc": null,
+        "resourceId": "android:id\/navigationBarBackground",
+        "className": "android.view.View",
+        "bounds": {
+          "left": 0,
+          "top": 3104,
+          "right": 1440,
+          "bottom": 3168
+        },
+        "clickable": false,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 1,
+        "parentRoleHint": "android.widget.FrameLayout"
+      },
+      {
+        "nodeId": "13_45_40_564_0_544",
+        "packageName": "com.dianping.v1",
+        "text": "已根据你的选择智能展示商户",
+        "contentDesc": null,
+        "resourceId": null,
+        "className": "android.widget.TextView",
+        "bounds": {
+          "left": 40,
+          "top": 564,
+          "right": 0,
+          "bottom": 544
+        },
+        "clickable": false,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 13,
+        "parentRoleHint": "android.widget.FrameLayout"
+      },
+      {
+        "nodeId": "12_61_310_882_130_882",
+        "packageName": "com.dianping.v1",
+        "text": "没有找到相关结果，换个位置试试",
+        "contentDesc": null,
+        "resourceId": null,
+        "className": "android.widget.TextView",
+        "bounds": {
+          "left": 310,
+          "top": 882,
+          "right": 130,
+          "bottom": 882
+        },
+        "clickable": false,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 12,
+        "parentRoleHint": "android.widget.FrameLayout"
+      },
+      {
+        "nodeId": "13_96_1480_2464_1440_2464",
+        "packageName": "com.dianping.v1",
+        "text": "点击开启实时定位",
+        "contentDesc": null,
+        "resourceId": null,
+        "className": "android.widget.TextView",
+        "bounds": {
+          "left": 1480,
+          "top": 2464,
+          "right": 1440,
+          "bottom": 2464
+        },
+        "clickable": false,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 13,
+        "parentRoleHint": "android.widget.FrameLayout"
+      },
+      {
+        "nodeId": "15_18_1404_3068_1404_3068",
+        "packageName": "com.dianping.v1",
+        "text": null,
+        "contentDesc": null,
+        "resourceId": "com.dianping.v1:id\/map_zoom_container",
+        "className": "android.widget.LinearLayout",
+        "bounds": {
+          "left": 1404,
+          "top": 3068,
+          "right": 1404,
+          "bottom": 3068
+        },
+        "clickable": false,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 15,
+        "parentRoleHint": "android.widget.FrameLayout"
+      },
+      {
+        "nodeId": "0_0_0_0_1440_3168",
+        "packageName": "com.dianping.v1",
+        "text": null,
+        "contentDesc": null,
+        "resourceId": null,
+        "className": "android.widget.FrameLayout",
+        "bounds": {
+          "left": 0,
+          "top": 0,
+          "right": 1440,
+          "bottom": 3168
+        },
+        "clickable": false,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 0,
+        "parentRoleHint": null
+      },
+      {
+        "nodeId": "1_1_0_0_1440_3168",
+        "packageName": "com.dianping.v1",
+        "text": null,
+        "contentDesc": null,
+        "resourceId": null,
+        "className": "android.widget.FrameLayout",
+        "bounds": {
+          "left": 0,
+          "top": 0,
+          "right": 1440,
+          "bottom": 3168
+        },
+        "clickable": false,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 1,
+        "parentRoleHint": "android.widget.FrameLayout"
+      }
+    ],
+    "eventsSinceLastState": []
+  },
+  "summary": {
+    "nodeCount": 119,
+    "clickableCount": 21,
+    "editableCount": 0,
+    "scrollableCount": 0,
+    "labels": [
+      "com.dianping.v1:id\/action_bar_root",
+      "android:id\/content",
+      "com.dianping.v1:id\/root_view",
+      "com.dianping.v1:id\/root",
+      "com.dianping.v1:id\/picasso_view",
+      "com.dianping.v1:id\/map_zoom_container",
+      "简单的美食制作方法",
+      "全部分类 FilterBarModule-FilterButtonTitle-全部分类",
+      "距离\/区域 FilterBarModule-FilterButtonTitle-距离\/区域",
+      "更多筛选 FilterBarModule-FilterButtonTitle-更多筛选",
+      "已根据你的选择智能展示商户",
+      "登录可查看当前区域更多商户",
+      "立即登录",
+      "没有找到相关结果，换个位置试试",
+      "在此区域搜索",
+      "PoiListModule",
+      "com.dianping.v1:id\/list_item",
+      "商家入驻",
+      "搜索建议",
+      "没有找到相关结果",
+      "点击开启实时定位",
+      "ShowListBtnModule",
+      "查看地图",
+      "android:id\/navigationBarBackground"
+    ],
+    "bottomCandidates": [
+      {
+        "label": "",
+        "bounds": {
+          "left": 260,
+          "top": 2404,
+          "right": 480,
+          "bottom": 2624
+        },
+        "clickable": true
+      },
+      {
+        "label": "商家入驻",
+        "bounds": {
+          "left": 266,
+          "top": 2548,
+          "right": 474,
+          "bottom": 2609
+        },
+        "clickable": false
+      },
+      {
+        "label": "PoiListModule",
+        "bounds": {
+          "left": 0,
+          "top": 1464,
+          "right": 1440,
+          "bottom": 3104
+        },
+        "clickable": false
+      },
+      {
+        "label": "",
+        "bounds": {
+          "left": 108,
+          "top": 3104,
+          "right": 1332,
+          "bottom": 3104
+        },
+        "clickable": true
+      },
+      {
+        "label": "",
+        "bounds": {
+          "left": 960,
+          "top": 2404,
+          "right": 1180,
+          "bottom": 2624
+        },
+        "clickable": true
+      },
+      {
+        "label": "搜索建议",
+        "bounds": {
+          "left": 966,
+          "top": 2548,
+          "right": 1174,
+          "bottom": 2609
+        },
+        "clickable": false
+      },
+      {
+        "label": "ShowListBtnModule",
+        "bounds": {
+          "left": 996,
+          "top": 2768,
+          "right": 1400,
+          "bottom": 2928
+        },
+        "clickable": true
+      },
+      {
+        "label": "查看地图",
+        "bounds": {
+          "left": 1138,
+          "top": 2818,
+          "right": 1346,
+          "bottom": 2879
+        },
+        "clickable": false
+      },
+      {
+        "label": "点击开启实时定位",
+        "bounds": {
+          "left": 1480,
+          "top": 2464,
+          "right": 1440,
+          "bottom": 2464
+        },
+        "clickable": false
+      },
+      {
+        "label": "",
+        "bounds": {
+          "left": 1960,
+          "top": 2464,
+          "right": 1440,
+          "bottom": 2464
+        },
+        "clickable": true
+      }
+    ]
+  },
+  "retentionPolicy": {
+    "fullNodeTreeStored": false,
+    "storedNodeLimit": 45,
+    "storedEventLimit": 20,
+    "longTermKnowledge": "summary + app_ui_graph + assembly\/runtime reports"
+  },
+  "createdAt": 1779338874109
+}

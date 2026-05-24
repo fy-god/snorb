@@ -1,0 +1,78 @@
+{
+  "schemaVersion": 1,
+  "kind": "atomic_skill",
+  "id": "patched.1779297780698.1.openapp",
+  "name": "改写步骤 1: OpenApp",
+  "appPackage": "tv.danmaku.bili",
+  "appVersion": "*",
+  "status": "DRY_RUN_PASSED",
+  "domain": "app_session",
+  "implements": "OpenAppSkill",
+  "params": [],
+  "preconditions": [],
+  "dependsOn": [],
+  "resolverPolicy": {
+    "order": [
+      "ACCESSIBILITY",
+      "APP_UI_GRAPH",
+      "COORDINATE_PACK",
+      "AI_PATCH"
+    ],
+    "allowAiSuggestionInFactory": true,
+    "allowAiInRuntime": true
+  },
+  "safety": {
+    "forbiddenTexts": [
+      "支付",
+      "付款",
+      "转账",
+      "删除",
+      "发布",
+      "授权"
+    ]
+  },
+  "factory": {
+    "source": "APP_SIDE_PLAN_PATCH_ASSEMBLER",
+    "instruction": "在哔哩哔哩搜索王老菊并打开第一个视频，必须验证已经进入视频播放页，不能只停在搜索结果页。。这是失败后的第二次自调试重试：先读取当前 UI 和已有 AppUI 图谱，判断卡住位置；如果目标入口不在当前页，回到该 App 主页面，按底部导航、顶部小图标、图形化入口、子页面入口的顺序查找；不要重复同一个错误点击。上次失败状态=FAILED_GOAL_UNVERIFIED；失败信息=报告已写入 \/ INFO: \/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/flow_reports\/tv.danmaku.bili\/ai_direct_flow_1779297780576.json；上次报告=\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/flow_reports\/tv.danmaku.bili\/ai_direct_flow_1779297780576.json；请参考上次最后一步=报告已写入 \/ INFO: \/data\/user\/0\/com.macropilot.app\/",
+    "aiJobPath": null,
+    "traceIds": [],
+    "sampleCount": 0,
+    "dryRunStatus": "PASSED",
+    "testRuns": 0,
+    "successRate": 0,
+    "promotionStatus": "NOT_PROMOTED",
+    "createdAt": 1779297781063,
+    "sourceSkillId": "tv.danmaku.bili.open_app",
+    "sourceSkillPath": "builtin:\/\/archetype\/tv.danmaku.bili.open_app",
+    "sourceOrigin": "BUILTIN_ARCHETYPE",
+    "templateMatchScore": 90,
+    "templateMatchReason": "same_app,same_action_type,same_capability,archetype_available,same_label,search_intent,publish_intent",
+    "patchReason": "reuse_existing_skill_json_and_rewrite_key_slots",
+    "lastDryRunReport": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_dry_run_reports\/tv.danmaku.bili\/patched.1779297780698.1.openapp_1779338058621.json",
+    "lastDryRunAt": 1779338058622
+  },
+  "capabilityRequired": {
+    "minLevel": "D",
+    "inputRequired": false,
+    "nodeReadablePreferred": true,
+    "coordinateFallbackAllowed": false,
+    "allowedInputChannels": [],
+    "verificationRequired": "MEDIUM"
+  },
+  "action": {
+    "type": "OpenApp",
+    "packageName": "tv.danmaku.bili"
+  },
+  "verify": {
+    "type": "ForegroundPackage",
+    "packageName": "tv.danmaku.bili",
+    "timeoutMs": 3000,
+    "allowUnverifiedWhenAccessibilityDisconnected": true
+  },
+  "resultPolicy": {
+    "verified": "SUCCESS",
+    "partialVerified": "SUCCESS_MEDIUM_CONFIDENCE",
+    "coordinateOnly": "SUCCESS_LOW_CONFIDENCE",
+    "unverifiable": "FAILED_UNVERIFIABLE"
+  }
+}

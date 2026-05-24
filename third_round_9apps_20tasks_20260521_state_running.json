@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "kind": "popular_app_task_batch_service_state",
+  "id": "third_round_9apps_20tasks_20260521",
+  "requestId": "third_round_9apps_20tasks_20260521",
+  "status": "RUNNING",
+  "message": "[1\/9] 小红书 3\/20: xhs_publish_text_draft",
+  "requestedPackages": [
+    "com.tencent.mm",
+    "com.sina.weibo",
+    "com.sankuai.meituan",
+    "com.xunmeng.pinduoduo",
+    "com.jingdong.app.mall",
+    "com.taobao.taobao",
+    "com.xingin.xhs",
+    "com.ss.android.ugc.aweme",
+    "com.hexin.plat.android"
+  ],
+  "progress": {
+    "phase": "TASK_RUNNING",
+    "appIndex": 1,
+    "appTotal": 9,
+    "taskIndex": 3,
+    "tasksPerApp": 20,
+    "packageName": "com.xingin.xhs",
+    "appName": "小红书",
+    "taskId": "xhs_publish_text_draft",
+    "instruction": "在小红书进入发布入口，创建文字草稿，内容写我是AI，但不要点击最终发布。",
+    "executed": 2,
+    "success": 0,
+    "failed": 2,
+    "blocked": 0
+  },
+  "payload": null,
+  "createdAt": 1779300660123
+}

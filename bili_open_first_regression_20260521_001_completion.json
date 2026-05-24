@@ -1,0 +1,102 @@
+{
+  "schemaVersion": 1,
+  "kind": "app_side_ai_direct_instruction_service_completion",
+  "operation": "API_RUN_APP_SIDE_INSTRUCTION",
+  "id": "app_side_instruction_1779298378063_completion",
+  "requestId": "app_side_instruction_1779298378063",
+  "instruction": "在哔哩哔哩搜索王老菊并打开第一个视频，必须验证已经进入视频播放页，不能只停在搜索结果页。",
+  "appPackage": "tv.danmaku.bili",
+  "status": "SUCCESS",
+  "flowReportFile": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/flow_reports\/tv.danmaku.bili\/ai_direct_flow_1779298400437.json",
+  "stepCount": 14,
+  "events": [
+    {
+      "title": "用户指令进入手机端执行器",
+      "status": "RUNNING",
+      "message": "主输入不再只生成文件：App 将调用 AI，生成可审计 JSON，再由 SkillJsonExecutor 直接执行候选能力。"
+    },
+    {
+      "title": "AppUI 图谱已进入决策上下文",
+      "status": "INFO",
+      "message": "已知页面=12，边=31；AI\/模板改写会优先参考入口、底部分屏、输入框和可点击候选。",
+      "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/app_ui_graphs\/tv.danmaku.bili\/graph_candidate.json"
+    },
+    {
+      "title": "规则优先执行",
+      "status": "INFO",
+      "message": "已识别为本地有 Skill 子集\/成功案例的任务：先直接生成候选 JSON 并执行；失败或目标校验不过再调用 v4pro 二次判断，避免一上来卡在 AI plan。"
+    },
+    {
+      "title": "规则泛化 B 站搜索 Skill",
+      "status": "SUCCESS",
+      "message": "补齐 9 个细粒度 Skill JSON，搜索词=王老菊；复杂任务会在搜索结果页再让 AI 判断下一步。",
+      "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_candidates\/tv.danmaku.bili\/bilibili.open_app.json"
+    },
+    {
+      "title": "dry-run 静态检查",
+      "status": "SUCCESS",
+      "message": "通过 9\/9。",
+      "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_dry_run_reports\/tv.danmaku.bili\/bilibili.search.search_in_app_1779298378355.json"
+    },
+    {
+      "title": "拼装 app_config 预览",
+      "status": "SUCCESS",
+      "message": "候选\/测试产物已拼为单个 app_config 预览。",
+      "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/app_config_exports\/tv.danmaku.bili\/app_config_20260521_013258_392.json"
+    },
+    {
+      "title": "执行候选 JSON",
+      "status": "RUNNING",
+      "message": "不等待 APPROVED：按用户要求，直接由 SkillJsonExecutor 执行候选 macro=bilibili.search.search_in_app。",
+      "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_candidates\/tv.danmaku.bili\/bilibili.search.search_in_app.json"
+    },
+    {
+      "title": "候选 JSON 执行结果",
+      "status": "SUCCESS",
+      "message": "bilibili.search.search_in_app -> SUCCESS_LOW_CONFIDENCE；Window\/node state changed; Macro atoms completed; reactiveDismissed=14",
+      "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/runtime\/run_reports\/tv.danmaku.bili\/ai_direct_run_1779298393709.json"
+    },
+    {
+      "title": "本地候选补救转 Skill JSON",
+      "status": "SUCCESS",
+      "message": "选择第 1 个视频候选并写成 ClickCoordinate 原子 Skill；坐标=(0.272, 0.536)。",
+      "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_candidates\/tv.danmaku.bili\/patched.command.1779298393812.json"
+    },
+    {
+      "title": "本地候选补救 dry-run",
+      "status": "SUCCESS",
+      "message": "通过 3\/3。",
+      "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_dry_run_reports\/tv.danmaku.bili\/patched.command.1779298393812_1779298394850.json"
+    },
+    {
+      "title": "本地打开第一个视频结果",
+      "status": "SUCCESS",
+      "message": "patched.command.1779298393812 -> SUCCESS_LOW_CONFIDENCE；Macro atoms completed; reactiveDismissed=0；随后仍会用详情页证据重新校验，校验不过就失败。",
+      "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/runtime\/run_reports\/tv.danmaku.bili\/bilibili_open_first_video_1779298398707.json"
+    },
+    {
+      "title": "目标完成校验",
+      "status": "SUCCESS",
+      "message": "已看到 B 站视频详情页\/播放页证据，且搜索输入框和结果页 tabs 已消失。",
+      "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/runtime\/run_reports\/tv.danmaku.bili\/bilibili_open_first_video_1779298398707.json"
+    },
+    {
+      "title": "保留目标应用前台用于证据",
+      "status": "INFO",
+      "message": "本次保留目标应用当前页面，不把 MacroPilot 拉回前台；报告里会记录当前 UI 快照和截图，方便继续让 AI 判断卡点。"
+    },
+    {
+      "title": "用户指令流水线完成",
+      "status": "SUCCESS",
+      "message": "报告=ai_direct_flow_1779298400437.json；训练记录=autonomous_training_1779298400464_20260521_013320_474.json；步骤=13。",
+      "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/flow_reports\/tv.danmaku.bili\/ai_direct_flow_1779298400437.json"
+    },
+    {
+      "title": "报告已写入",
+      "status": "INFO",
+      "message": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/flow_reports\/tv.danmaku.bili\/ai_direct_flow_1779298400437.json",
+      "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/flow_reports\/tv.danmaku.bili\/ai_direct_flow_1779298400437.json"
+    }
+  ],
+  "createdAt": 1779298400490
+}

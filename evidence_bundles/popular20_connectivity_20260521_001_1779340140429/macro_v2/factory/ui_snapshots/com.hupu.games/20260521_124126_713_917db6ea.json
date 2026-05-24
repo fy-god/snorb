@@ -1,0 +1,300 @@
+{
+  "schemaVersion": 1,
+  "kind": "ui_state_snapshot",
+  "id": "ui_snapshot_1779338486922",
+  "source": "app_ui_after_primary_tab_surface_entry",
+  "note": "popular_app_task_batch:hupu_close_ads_home:虎扑:tab_surface_after:tab_3:side_icon:iv right",
+  "screenshotPath": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_screenshots\/com.hupu.games\/20260521_124126_713_917db6ea.png",
+  "screenshotSha256": "1bf72815a74355d3efa92e9d2d5336ead10013484de3dbd3689d20c6e2e433db",
+  "visualHash": "e354064b6271e85a07da321a1d2af07a918e3d6722871b0cb2e2c30bec26b856",
+  "screenshotSizeBytes": 199009,
+  "appPackage": "com.hupu.games",
+  "windowClassName": null,
+  "screenKey": "917db6ea",
+  "relatedSkillId": null,
+  "relatedActionType": null,
+  "capability": {
+    "nodeReadability": "B",
+    "inputCapability": "CUSTOM_IME",
+    "verificationCapability": "MEDIUM",
+    "coordinateFallback": "AVAILABLE",
+    "serviceState": "CONNECTED",
+    "reason": "nodes=11, textLike=5, clickable=2, editable=0, scrollable=0, customIme=true"
+  },
+  "state": {
+    "appPackage": "com.hupu.games",
+    "windowClassName": null,
+    "screenWidth": 1440,
+    "screenHeight": 3168,
+    "timestamp": 1779338486713,
+    "nodeCount": 11,
+    "nodesStored": 11,
+    "nodesStorage": "compact_important_nodes_only",
+    "nodes": [
+      {
+        "nodeId": "6_6_0_160_1440_3104",
+        "packageName": "com.hupu.games",
+        "text": null,
+        "contentDesc": null,
+        "resourceId": "com.hupu.games:id\/web_view",
+        "className": "android.widget.FrameLayout",
+        "bounds": {
+          "left": 0,
+          "top": 160,
+          "right": 1440,
+          "bottom": 3104
+        },
+        "clickable": true,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 6,
+        "parentRoleHint": "android.view.ViewGroup"
+      },
+      {
+        "nodeId": "8_8_0_160_1440_3104",
+        "packageName": "com.hupu.games",
+        "text": null,
+        "contentDesc": null,
+        "resourceId": null,
+        "className": "android.webkit.WebView",
+        "bounds": {
+          "left": 0,
+          "top": 160,
+          "right": 1440,
+          "bottom": 3104
+        },
+        "clickable": true,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 8,
+        "parentRoleHint": "android.widget.FrameLayout"
+      },
+      {
+        "nodeId": "3_3_0_0_1440_3104",
+        "packageName": "com.hupu.games",
+        "text": null,
+        "contentDesc": null,
+        "resourceId": "com.hupu.games:id\/action_bar_root",
+        "className": "android.widget.LinearLayout",
+        "bounds": {
+          "left": 0,
+          "top": 0,
+          "right": 1440,
+          "bottom": 3104
+        },
+        "clickable": false,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 3,
+        "parentRoleHint": "android.widget.FrameLayout"
+      },
+      {
+        "nodeId": "4_4_0_0_1440_3104",
+        "packageName": "com.hupu.games",
+        "text": null,
+        "contentDesc": null,
+        "resourceId": "android:id\/content",
+        "className": "android.widget.FrameLayout",
+        "bounds": {
+          "left": 0,
+          "top": 0,
+          "right": 1440,
+          "bottom": 3104
+        },
+        "clickable": false,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 4,
+        "parentRoleHint": "android.widget.LinearLayout"
+      },
+      {
+        "nodeId": "1_9_0_0_1440_160",
+        "packageName": "com.hupu.games",
+        "text": null,
+        "contentDesc": null,
+        "resourceId": "android:id\/statusBarBackground",
+        "className": "android.view.View",
+        "bounds": {
+          "left": 0,
+          "top": 0,
+          "right": 1440,
+          "bottom": 160
+        },
+        "clickable": false,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 1,
+        "parentRoleHint": "android.widget.FrameLayout"
+      },
+      {
+        "nodeId": "1_10_0_3104_1440_3168",
+        "packageName": "com.hupu.games",
+        "text": null,
+        "contentDesc": null,
+        "resourceId": "android:id\/navigationBarBackground",
+        "className": "android.view.View",
+        "bounds": {
+          "left": 0,
+          "top": 3104,
+          "right": 1440,
+          "bottom": 3168
+        },
+        "clickable": false,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 1,
+        "parentRoleHint": "android.widget.FrameLayout"
+      },
+      {
+        "nodeId": "0_0_0_0_1440_3168",
+        "packageName": "com.hupu.games",
+        "text": null,
+        "contentDesc": null,
+        "resourceId": null,
+        "className": "android.widget.FrameLayout",
+        "bounds": {
+          "left": 0,
+          "top": 0,
+          "right": 1440,
+          "bottom": 3168
+        },
+        "clickable": false,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 0,
+        "parentRoleHint": null
+      },
+      {
+        "nodeId": "1_1_0_0_1440_3104",
+        "packageName": "com.hupu.games",
+        "text": null,
+        "contentDesc": null,
+        "resourceId": null,
+        "className": "android.widget.LinearLayout",
+        "bounds": {
+          "left": 0,
+          "top": 0,
+          "right": 1440,
+          "bottom": 3104
+        },
+        "clickable": false,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 1,
+        "parentRoleHint": "android.widget.FrameLayout"
+      },
+      {
+        "nodeId": "2_2_0_0_1440_3104",
+        "packageName": "com.hupu.games",
+        "text": null,
+        "contentDesc": null,
+        "resourceId": null,
+        "className": "android.widget.FrameLayout",
+        "bounds": {
+          "left": 0,
+          "top": 0,
+          "right": 1440,
+          "bottom": 3104
+        },
+        "clickable": false,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 2,
+        "parentRoleHint": "android.widget.LinearLayout"
+      },
+      {
+        "nodeId": "5_5_0_0_1440_3104",
+        "packageName": "com.hupu.games",
+        "text": null,
+        "contentDesc": null,
+        "resourceId": null,
+        "className": "android.view.ViewGroup",
+        "bounds": {
+          "left": 0,
+          "top": 0,
+          "right": 1440,
+          "bottom": 3104
+        },
+        "clickable": false,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 5,
+        "parentRoleHint": "android.widget.FrameLayout"
+      },
+      {
+        "nodeId": "7_7_0_160_1440_3104",
+        "packageName": "com.hupu.games",
+        "text": null,
+        "contentDesc": null,
+        "resourceId": null,
+        "className": "android.widget.FrameLayout",
+        "bounds": {
+          "left": 0,
+          "top": 160,
+          "right": 1440,
+          "bottom": 3104
+        },
+        "clickable": false,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 7,
+        "parentRoleHint": "android.widget.FrameLayout"
+      }
+    ],
+    "eventsSinceLastState": []
+  },
+  "summary": {
+    "nodeCount": 11,
+    "clickableCount": 2,
+    "editableCount": 0,
+    "scrollableCount": 0,
+    "labels": [
+      "com.hupu.games:id\/action_bar_root",
+      "android:id\/content",
+      "com.hupu.games:id\/web_view",
+      "android:id\/statusBarBackground",
+      "android:id\/navigationBarBackground"
+    ],
+    "bottomCandidates": []
+  },
+  "retentionPolicy": {
+    "fullNodeTreeStored": false,
+    "storedNodeLimit": 45,
+    "storedEventLimit": 20,
+    "longTermKnowledge": "summary + app_ui_graph + assembly\/runtime reports"
+  },
+  "createdAt": 1779338486923
+}

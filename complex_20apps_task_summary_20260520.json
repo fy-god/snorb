@@ -1,0 +1,186 @@
+﻿[
+    {
+        "packageName":  "com.tencent.mm",
+        "status":  "FAILED",
+        "steps":  0,
+        "latestFile":  "app_side_instruction_1779221900727_completion.json",
+        "localFile":  "D:\\controlphone\\MacroPilot\\pulled_com.tencent.mm_app_side_instruction_1779221900727_completion.json",
+        "message":  null
+    },
+    {
+        "packageName":  "tv.danmaku.bili",
+        "status":  "FAILED",
+        "steps":  3,
+        "latestFile":  "ai_direct_flow_1779221905115.json",
+        "localFile":  "D:\\controlphone\\MacroPilot\\pulled_tv.danmaku.bili_ai_direct_flow_1779221905115.json",
+        "message":  "设备当前不能执行复杂任务：device_not_interactive,keyguard_locked,input_capability_none。本次不会继续空转或假报成功。"
+    },
+    {
+        "packageName":  "com.ss.android.ugc.aweme",
+        "status":  "FAILED",
+        "steps":  3,
+        "latestFile":  "ai_direct_flow_1779221909181.json",
+        "localFile":  "D:\\controlphone\\MacroPilot\\pulled_com.ss.android.ugc.aweme_ai_direct_flow_1779221909181.json",
+        "message":  "设备当前不能执行复杂任务：device_not_interactive,keyguard_locked,input_capability_none。本次不会继续空转或假报成功。"
+    },
+    {
+        "packageName":  "com.xingin.xhs",
+        "status":  "FAILED",
+        "steps":  3,
+        "latestFile":  "ai_direct_flow_1779221913400.json",
+        "localFile":  "D:\\controlphone\\MacroPilot\\pulled_com.xingin.xhs_ai_direct_flow_1779221913400.json",
+        "message":  "设备当前不能执行复杂任务：device_not_interactive,keyguard_locked,input_capability_none。本次不会继续空转或假报成功。"
+    },
+    {
+        "packageName":  "com.sina.weibo",
+        "status":  "FAILED",
+        "steps":  3,
+        "latestFile":  "ai_direct_flow_1779221917630.json",
+        "localFile":  "D:\\controlphone\\MacroPilot\\pulled_com.sina.weibo_ai_direct_flow_1779221917630.json",
+        "message":  "设备当前不能执行复杂任务：device_not_interactive,keyguard_locked,input_capability_none。本次不会继续空转或假报成功。"
+    },
+    {
+        "packageName":  "com.hupu.games",
+        "status":  "FAILED",
+        "steps":  5,
+        "latestFile":  "ai_direct_flow_1779221921818.json",
+        "localFile":  "D:\\controlphone\\MacroPilot\\pulled_com.hupu.games_ai_direct_flow_1779221921818.json",
+        "message":  "设备当前不能执行复杂任务：device_not_interactive,keyguard_locked,input_capability_none。本次不会继续空转或假报成功。"
+    },
+    {
+        "packageName":  "com.zhihu.android",
+        "status":  "FAILED",
+        "steps":  0,
+        "latestFile":  "app_side_instruction_1779221925944_completion.json",
+        "localFile":  "D:\\controlphone\\MacroPilot\\pulled_com.zhihu.android_app_side_instruction_1779221925944_completion.json",
+        "message":  null
+    },
+    {
+        "packageName":  "com.tencent.mobileqq",
+        "status":  "FAILED",
+        "steps":  3,
+        "latestFile":  "ai_direct_flow_1779221930193.json",
+        "localFile":  "D:\\controlphone\\MacroPilot\\pulled_com.tencent.mobileqq_ai_direct_flow_1779221930193.json",
+        "message":  "设备当前不能执行复杂任务：device_not_interactive,keyguard_locked,input_capability_none。本次不会继续空转或假报成功。"
+    },
+    {
+        "packageName":  "com.taobao.taobao",
+        "status":  "FAILED",
+        "steps":  0,
+        "latestFile":  "app_side_instruction_1779221934317_completion.json",
+        "localFile":  "D:\\controlphone\\MacroPilot\\pulled_com.taobao.taobao_app_side_instruction_1779221934317_completion.json",
+        "message":  null
+    },
+    {
+        "packageName":  "com.jingdong.app.mall",
+        "status":  "FAILED",
+        "steps":  3,
+        "latestFile":  "ai_direct_flow_1779221938554.json",
+        "localFile":  "D:\\controlphone\\MacroPilot\\pulled_com.jingdong.app.mall_ai_direct_flow_1779221938554.json",
+        "message":  "设备当前不能执行复杂任务：device_not_interactive,keyguard_locked,input_capability_none。本次不会继续空转或假报成功。"
+    },
+    {
+        "packageName":  "com.xunmeng.pinduoduo",
+        "status":  "FAILED",
+        "steps":  3,
+        "latestFile":  "ai_direct_flow_1779221942834.json",
+        "localFile":  "D:\\controlphone\\MacroPilot\\pulled_com.xunmeng.pinduoduo_ai_direct_flow_1779221942834.json",
+        "message":  "设备当前不能执行复杂任务：device_not_interactive,keyguard_locked,input_capability_none。本次不会继续空转或假报成功。"
+    },
+    {
+        "packageName":  "com.sankuai.meituan",
+        "status":  "FAILED",
+        "steps":  3,
+        "latestFile":  "ai_direct_flow_1779221947026.json",
+        "localFile":  "D:\\controlphone\\MacroPilot\\pulled_com.sankuai.meituan_ai_direct_flow_1779221947026.json",
+        "message":  "设备当前不能执行复杂任务：device_not_interactive,keyguard_locked,input_capability_none。本次不会继续空转或假报成功。"
+    },
+    {
+        "packageName":  "com.dianping.v1",
+        "status":  "FAILED",
+        "steps":  3,
+        "latestFile":  "ai_direct_flow_1779221951203.json",
+        "localFile":  "D:\\controlphone\\MacroPilot\\pulled_com.dianping.v1_ai_direct_flow_1779221951203.json",
+        "message":  "设备当前不能执行复杂任务：device_not_interactive,keyguard_locked,input_capability_none。本次不会继续空转或假报成功。"
+    },
+    {
+        "packageName":  "com.baidu.BaiduMap",
+        "status":  "NO_REPORT",
+        "steps":  0,
+        "latestFile":  null,
+        "localFile":  "",
+        "message":  ""
+    },
+    {
+        "packageName":  "com.google.android.apps.maps",
+        "status":  "FAILED",
+        "steps":  5,
+        "latestFile":  "ai_direct_flow_1779221959656.json",
+        "localFile":  "D:\\controlphone\\MacroPilot\\pulled_com.google.android.apps.maps_ai_direct_flow_1779221959656.json",
+        "message":  "设备当前不能执行复杂任务：device_not_interactive,keyguard_locked,input_capability_none。本次不会继续空转或假报成功。"
+    },
+    {
+        "packageName":  "com.alibaba.android.rimet",
+        "status":  "FAILED",
+        "steps":  3,
+        "latestFile":  "ai_direct_flow_1779221963893.json",
+        "localFile":  "D:\\controlphone\\MacroPilot\\pulled_com.alibaba.android.rimet_ai_direct_flow_1779221963893.json",
+        "message":  "设备当前不能执行复杂任务：device_not_interactive,keyguard_locked,input_capability_none。本次不会继续空转或假报成功。"
+    },
+    {
+        "packageName":  "com.tencent.wework",
+        "status":  "FAILED",
+        "steps":  0,
+        "latestFile":  "app_side_instruction_1779221967987_completion.json",
+        "localFile":  "D:\\controlphone\\MacroPilot\\pulled_com.tencent.wework_app_side_instruction_1779221967987_completion.json",
+        "message":  null
+    },
+    {
+        "packageName":  "com.openai.chatgpt",
+        "status":  "FAILED",
+        "steps":  5,
+        "latestFile":  "ai_direct_flow_1779221972252.json",
+        "localFile":  "D:\\controlphone\\MacroPilot\\pulled_com.openai.chatgpt_ai_direct_flow_1779221972252.json",
+        "message":  "设备当前不能执行复杂任务：device_not_interactive,keyguard_locked,input_capability_none。本次不会继续空转或假报成功。"
+    },
+    {
+        "packageName":  "com.deepseek.chat",
+        "status":  "FAILED",
+        "steps":  3,
+        "latestFile":  "ai_direct_flow_1779221976428.json",
+        "localFile":  "D:\\controlphone\\MacroPilot\\pulled_com.deepseek.chat_ai_direct_flow_1779221976428.json",
+        "message":  "设备当前不能执行复杂任务：device_not_interactive,keyguard_locked,input_capability_none。本次不会继续空转或假报成功。"
+    },
+    {
+        "packageName":  "com.netease.cloudmusic",
+        "status":  "FAILED",
+        "steps":  3,
+        "latestFile":  "ai_direct_flow_1779221980570.json",
+        "localFile":  "D:\\controlphone\\MacroPilot\\pulled_com.netease.cloudmusic_ai_direct_flow_1779221980570.json",
+        "message":  "设备当前不能执行复杂任务：device_not_interactive,keyguard_locked,input_capability_none。本次不会继续空转或假报成功。"
+    },
+    {
+        "packageName":  "com.eg.android.AlipayGphone",
+        "status":  "NO_REPORT",
+        "steps":  0,
+        "latestFile":  null,
+        "localFile":  "",
+        "message":  ""
+    },
+    {
+        "packageName":  "com.unionpay",
+        "status":  "FAILED_BUSY",
+        "steps":  0,
+        "latestFile":  "app_side_instruction_1779221442668_busy.json",
+        "localFile":  "D:\\controlphone\\MacroPilot\\pulled_com.unionpay_app_side_instruction_1779221442668_busy.json",
+        "message":  "已有一个手机端 app-side 任务正在运行；为避免两个 App 任务同时抢前台，本次请求没有执行。"
+    },
+    {
+        "packageName":  "com.hexin.plat.android",
+        "status":  "FAILED",
+        "steps":  5,
+        "latestFile":  "ai_direct_flow_1779221442699.json",
+        "localFile":  "D:\\controlphone\\MacroPilot\\pulled_com.hexin.plat.android_ai_direct_flow_1779221442699.json",
+        "message":  "设备当前不能执行复杂任务：device_not_interactive,keyguard_locked,input_capability_none。本次不会继续空转或假报成功。"
+    }
+]

@@ -1,0 +1,2974 @@
+{
+  "schemaVersion": 1,
+  "kind": "app_config",
+  "appPackage": "com.zhihu.android",
+  "appName": "知乎",
+  "screens": [],
+  "elements": [],
+  "atomicSkills": [
+    {
+      "schemaVersion": 1,
+      "kind": "atomic_skill",
+      "id": "patched.1779339085824.6.clickvisibletext",
+      "name": "改写步骤 6: ClickVisibleText",
+      "appPackage": "com.zhihu.android",
+      "appVersion": "*",
+      "status": "DRY_RUN_PASSED",
+      "domain": "app_session",
+      "implements": "ClickElementSkill",
+      "params": [
+        {
+          "name": "text",
+          "type": "TEXT",
+          "required": true
+        }
+      ],
+      "preconditions": [],
+      "dependsOn": [],
+      "resolverPolicy": {
+        "order": [
+          "ACCESSIBILITY",
+          "APP_UI_GRAPH",
+          "COORDINATE_PACK",
+          "AI_PATCH"
+        ],
+        "allowAiSuggestionInFactory": true,
+        "allowAiInRuntime": true
+      },
+      "safety": {
+        "forbiddenTexts": [
+          "支付",
+          "付款",
+          "转账",
+          "删除",
+          "发布",
+          "授权"
+        ]
+      },
+      "factory": {
+        "source": "APP_SIDE_PLAN_PATCH_ASSEMBLER",
+        "instruction": "在知乎搜索人工智能，停在综合结果页并记录回答、文章、用户分区。\n\n约束：目标 App=知乎，包名=com.zhihu.android。必须由 MacroPilot 手机端自己用无障碍、输入法、AI\/Skill JSON 执行，不允许依赖 ADB 手点目标 App。执行前先读取当前 UI；如果遇到广告、弹窗、小字提示，先记录文字并安全关闭。任务完成必须用当前 UI 证据验证，不能只因为步骤执行完就报成功。如果没有现成 skill，先复用已有相似 Skill JSON\/archetype，只改关键槽位如入口文字、坐标、目标文本、验证规则，再组装 atomic\/macro skill。需要探索入口时优先遍历底部标签、顶部小图标、图形化入口、侧边操作和子页面。本任务 stopBeforeSubmit=true：写草稿、评论、订单、支付类流程必须停在提交前，不点击最终发布、发送、提交订单、支付、确认授权。期望证据包括：人工智能、搜索结果。",
+        "aiJobPath": null,
+        "traceIds": [],
+        "sampleCount": 0,
+        "dryRunStatus": "PASSED",
+        "testRuns": 0,
+        "successRate": 0,
+        "promotionStatus": "NOT_PROMOTED",
+        "createdAt": 1779339089999,
+        "sourceSkillId": "com.zhihu.android.common.click_visible_text",
+        "sourceSkillPath": "builtin:\/\/archetype\/com.zhihu.android.common.click_visible_text",
+        "sourceOrigin": "BUILTIN_ARCHETYPE",
+        "templateMatchScore": 90,
+        "templateMatchReason": "same_app,same_action_type,same_capability,archetype_available,same_label,search_intent,publish_intent",
+        "patchReason": "reuse_existing_skill_json_and_rewrite_key_slots",
+        "lastDryRunReport": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_dry_run_reports\/com.zhihu.android\/patched.1779339085824.6.clickvisibletext_1779339090523.json",
+        "lastDryRunAt": 1779339090524
+      },
+      "capabilityRequired": {
+        "minLevel": "D",
+        "inputRequired": false,
+        "nodeReadablePreferred": true,
+        "coordinateFallbackAllowed": false,
+        "allowedInputChannels": [],
+        "verificationRequired": "MEDIUM"
+      },
+      "action": {
+        "type": "ClickVisibleText",
+        "text": "搜索",
+        "textAliases": [
+          "搜索",
+          "确定"
+        ],
+        "timeoutMs": 1500
+      },
+      "verify": {
+        "type": "WindowChangedOrNodeStateChanged",
+        "timeoutMs": 1500,
+        "allowLowConfidenceWhenCoordinateOnly": true
+      },
+      "resultPolicy": {
+        "verified": "SUCCESS",
+        "partialVerified": "SUCCESS_MEDIUM_CONFIDENCE",
+        "coordinateOnly": "SUCCESS_LOW_CONFIDENCE",
+        "unverifiable": "FAILED_UNVERIFIABLE"
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "kind": "atomic_skill",
+      "id": "patched.1779339085824.7.wait",
+      "name": "改写步骤 7: Wait",
+      "appPackage": "com.zhihu.android",
+      "appVersion": "*",
+      "status": "DRY_RUN_PASSED",
+      "domain": "app_session",
+      "implements": "WaitUntilSkill",
+      "params": [],
+      "preconditions": [],
+      "dependsOn": [],
+      "resolverPolicy": {
+        "order": [
+          "ACCESSIBILITY",
+          "APP_UI_GRAPH",
+          "COORDINATE_PACK",
+          "AI_PATCH"
+        ],
+        "allowAiSuggestionInFactory": true,
+        "allowAiInRuntime": true
+      },
+      "safety": {
+        "forbiddenTexts": [
+          "支付",
+          "付款",
+          "转账",
+          "删除",
+          "发布",
+          "授权"
+        ]
+      },
+      "factory": {
+        "source": "APP_SIDE_PLAN_PATCH_ASSEMBLER",
+        "instruction": "在知乎搜索人工智能，停在综合结果页并记录回答、文章、用户分区。\n\n约束：目标 App=知乎，包名=com.zhihu.android。必须由 MacroPilot 手机端自己用无障碍、输入法、AI\/Skill JSON 执行，不允许依赖 ADB 手点目标 App。执行前先读取当前 UI；如果遇到广告、弹窗、小字提示，先记录文字并安全关闭。任务完成必须用当前 UI 证据验证，不能只因为步骤执行完就报成功。如果没有现成 skill，先复用已有相似 Skill JSON\/archetype，只改关键槽位如入口文字、坐标、目标文本、验证规则，再组装 atomic\/macro skill。需要探索入口时优先遍历底部标签、顶部小图标、图形化入口、侧边操作和子页面。本任务 stopBeforeSubmit=true：写草稿、评论、订单、支付类流程必须停在提交前，不点击最终发布、发送、提交订单、支付、确认授权。期望证据包括：人工智能、搜索结果。",
+        "aiJobPath": null,
+        "traceIds": [],
+        "sampleCount": 0,
+        "dryRunStatus": "PASSED",
+        "testRuns": 0,
+        "successRate": 0,
+        "promotionStatus": "NOT_PROMOTED",
+        "createdAt": 1779339090506,
+        "sourceSkillId": "patched.1779339085824.4.wait",
+        "sourceSkillPath": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_candidates\/com.zhihu.android\/patched.1779339085824.4.wait.json",
+        "sourceOrigin": "LOCAL_JSON",
+        "templateMatchScore": 70,
+        "templateMatchReason": "same_app,same_action_type,same_capability,search_intent",
+        "patchReason": "reuse_existing_skill_json_and_rewrite_key_slots",
+        "lastDryRunReport": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_dry_run_reports\/com.zhihu.android\/patched.1779339085824.7.wait_1779339090524.json",
+        "lastDryRunAt": 1779339090525
+      },
+      "capabilityRequired": {
+        "minLevel": "D",
+        "inputRequired": false,
+        "nodeReadablePreferred": true,
+        "coordinateFallbackAllowed": false,
+        "allowedInputChannels": [],
+        "verificationRequired": "MEDIUM"
+      },
+      "action": {
+        "type": "Wait",
+        "timeoutMs": 1800
+      },
+      "verify": {
+        "type": "Always",
+        "timeoutMs": 1
+      },
+      "resultPolicy": {
+        "verified": "SUCCESS",
+        "partialVerified": "SUCCESS_MEDIUM_CONFIDENCE",
+        "coordinateOnly": "SUCCESS_LOW_CONFIDENCE",
+        "unverifiable": "FAILED_UNVERIFIABLE"
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "kind": "atomic_skill",
+      "id": "patched.1779339085824.3.clickvisibletext",
+      "name": "改写步骤 3: ClickVisibleText",
+      "appPackage": "com.zhihu.android",
+      "appVersion": "*",
+      "status": "DRY_RUN_PASSED",
+      "domain": "app_session",
+      "implements": "ClickElementSkill",
+      "params": [
+        {
+          "name": "text",
+          "type": "TEXT",
+          "required": true
+        }
+      ],
+      "preconditions": [],
+      "dependsOn": [],
+      "resolverPolicy": {
+        "order": [
+          "ACCESSIBILITY",
+          "APP_UI_GRAPH",
+          "COORDINATE_PACK",
+          "AI_PATCH"
+        ],
+        "allowAiSuggestionInFactory": true,
+        "allowAiInRuntime": true
+      },
+      "safety": {
+        "forbiddenTexts": [
+          "支付",
+          "付款",
+          "转账",
+          "删除",
+          "发布",
+          "授权"
+        ]
+      },
+      "factory": {
+        "source": "APP_SIDE_PLAN_PATCH_ASSEMBLER",
+        "instruction": "在知乎搜索人工智能，停在综合结果页并记录回答、文章、用户分区。\n\n约束：目标 App=知乎，包名=com.zhihu.android。必须由 MacroPilot 手机端自己用无障碍、输入法、AI\/Skill JSON 执行，不允许依赖 ADB 手点目标 App。执行前先读取当前 UI；如果遇到广告、弹窗、小字提示，先记录文字并安全关闭。任务完成必须用当前 UI 证据验证，不能只因为步骤执行完就报成功。如果没有现成 skill，先复用已有相似 Skill JSON\/archetype，只改关键槽位如入口文字、坐标、目标文本、验证规则，再组装 atomic\/macro skill。需要探索入口时优先遍历底部标签、顶部小图标、图形化入口、侧边操作和子页面。本任务 stopBeforeSubmit=true：写草稿、评论、订单、支付类流程必须停在提交前，不点击最终发布、发送、提交订单、支付、确认授权。期望证据包括：人工智能、搜索结果。",
+        "aiJobPath": null,
+        "traceIds": [],
+        "sampleCount": 0,
+        "dryRunStatus": "PASSED",
+        "testRuns": 0,
+        "successRate": 0,
+        "promotionStatus": "NOT_PROMOTED",
+        "createdAt": 1779339087887,
+        "sourceSkillId": "com.zhihu.android.common.click_visible_text",
+        "sourceSkillPath": "builtin:\/\/archetype\/com.zhihu.android.common.click_visible_text",
+        "sourceOrigin": "BUILTIN_ARCHETYPE",
+        "templateMatchScore": 90,
+        "templateMatchReason": "same_app,same_action_type,same_capability,archetype_available,same_label,search_intent,publish_intent",
+        "patchReason": "reuse_existing_skill_json_and_rewrite_key_slots",
+        "lastDryRunReport": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_dry_run_reports\/com.zhihu.android\/patched.1779339085824.3.clickvisibletext_1779339090518.json",
+        "lastDryRunAt": 1779339090519
+      },
+      "capabilityRequired": {
+        "minLevel": "C",
+        "inputRequired": false,
+        "nodeReadablePreferred": true,
+        "coordinateFallbackAllowed": true,
+        "allowedInputChannels": [],
+        "verificationRequired": "LOW"
+      },
+      "action": {
+        "type": "ClickVisibleText",
+        "text": "搜索",
+        "textAliases": [
+          "搜索",
+          "搜",
+          "查找"
+        ],
+        "x": 0.88,
+        "y": 0.08,
+        "requiresUiStateForCoordinate": false
+      },
+      "verify": {
+        "type": "WindowChangedOrNodeStateChanged",
+        "timeoutMs": 1500,
+        "allowLowConfidenceWhenCoordinateOnly": true
+      },
+      "resultPolicy": {
+        "verified": "SUCCESS",
+        "partialVerified": "SUCCESS_MEDIUM_CONFIDENCE",
+        "coordinateOnly": "SUCCESS_LOW_CONFIDENCE",
+        "unverifiable": "FAILED_UNVERIFIABLE"
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "kind": "atomic_skill",
+      "id": "patched.1779339085824.4.wait",
+      "name": "改写步骤 4: Wait",
+      "appPackage": "com.zhihu.android",
+      "appVersion": "*",
+      "status": "DRY_RUN_PASSED",
+      "domain": "app_session",
+      "implements": "WaitUntilSkill",
+      "params": [],
+      "preconditions": [],
+      "dependsOn": [],
+      "resolverPolicy": {
+        "order": [
+          "ACCESSIBILITY",
+          "APP_UI_GRAPH",
+          "COORDINATE_PACK",
+          "AI_PATCH"
+        ],
+        "allowAiSuggestionInFactory": true,
+        "allowAiInRuntime": true
+      },
+      "safety": {
+        "forbiddenTexts": [
+          "支付",
+          "付款",
+          "转账",
+          "删除",
+          "发布",
+          "授权"
+        ]
+      },
+      "factory": {
+        "source": "APP_SIDE_PLAN_PATCH_ASSEMBLER",
+        "instruction": "在知乎搜索人工智能，停在综合结果页并记录回答、文章、用户分区。\n\n约束：目标 App=知乎，包名=com.zhihu.android。必须由 MacroPilot 手机端自己用无障碍、输入法、AI\/Skill JSON 执行，不允许依赖 ADB 手点目标 App。执行前先读取当前 UI；如果遇到广告、弹窗、小字提示，先记录文字并安全关闭。任务完成必须用当前 UI 证据验证，不能只因为步骤执行完就报成功。如果没有现成 skill，先复用已有相似 Skill JSON\/archetype，只改关键槽位如入口文字、坐标、目标文本、验证规则，再组装 atomic\/macro skill。需要探索入口时优先遍历底部标签、顶部小图标、图形化入口、侧边操作和子页面。本任务 stopBeforeSubmit=true：写草稿、评论、订单、支付类流程必须停在提交前，不点击最终发布、发送、提交订单、支付、确认授权。期望证据包括：人工智能、搜索结果。",
+        "aiJobPath": null,
+        "traceIds": [],
+        "sampleCount": 0,
+        "dryRunStatus": "PASSED",
+        "testRuns": 0,
+        "successRate": 0,
+        "promotionStatus": "NOT_PROMOTED",
+        "createdAt": 1779339088691,
+        "sourceSkillId": "patched.1779339066153.4.wait",
+        "sourceSkillPath": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_candidates\/com.xunmeng.pinduoduo\/patched.1779339066153.4.wait.json",
+        "sourceOrigin": "LOCAL_JSON",
+        "templateMatchScore": 58,
+        "templateMatchReason": "same_action_type,same_capability,search_intent",
+        "patchReason": "reuse_existing_skill_json_and_rewrite_key_slots",
+        "lastDryRunReport": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_dry_run_reports\/com.zhihu.android\/patched.1779339085824.4.wait_1779339090519.json",
+        "lastDryRunAt": 1779339090520
+      },
+      "capabilityRequired": {
+        "minLevel": "D",
+        "inputRequired": false,
+        "nodeReadablePreferred": true,
+        "coordinateFallbackAllowed": false,
+        "allowedInputChannels": [],
+        "verificationRequired": "MEDIUM"
+      },
+      "action": {
+        "type": "Wait",
+        "timeoutMs": 600
+      },
+      "verify": {
+        "type": "Always",
+        "timeoutMs": 1
+      },
+      "resultPolicy": {
+        "verified": "SUCCESS",
+        "partialVerified": "SUCCESS_MEDIUM_CONFIDENCE",
+        "coordinateOnly": "SUCCESS_LOW_CONFIDENCE",
+        "unverifiable": "FAILED_UNVERIFIABLE"
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "kind": "atomic_skill",
+      "id": "patched.1779339085824.1.openapp",
+      "name": "改写步骤 1: OpenApp",
+      "appPackage": "com.zhihu.android",
+      "appVersion": "*",
+      "status": "DRY_RUN_PASSED",
+      "domain": "app_session",
+      "implements": "OpenAppSkill",
+      "params": [],
+      "preconditions": [],
+      "dependsOn": [],
+      "resolverPolicy": {
+        "order": [
+          "ACCESSIBILITY",
+          "APP_UI_GRAPH",
+          "COORDINATE_PACK",
+          "AI_PATCH"
+        ],
+        "allowAiSuggestionInFactory": true,
+        "allowAiInRuntime": true
+      },
+      "safety": {
+        "forbiddenTexts": [
+          "支付",
+          "付款",
+          "转账",
+          "删除",
+          "发布",
+          "授权"
+        ]
+      },
+      "factory": {
+        "source": "APP_SIDE_PLAN_PATCH_ASSEMBLER",
+        "instruction": "在知乎搜索人工智能，停在综合结果页并记录回答、文章、用户分区。\n\n约束：目标 App=知乎，包名=com.zhihu.android。必须由 MacroPilot 手机端自己用无障碍、输入法、AI\/Skill JSON 执行，不允许依赖 ADB 手点目标 App。执行前先读取当前 UI；如果遇到广告、弹窗、小字提示，先记录文字并安全关闭。任务完成必须用当前 UI 证据验证，不能只因为步骤执行完就报成功。如果没有现成 skill，先复用已有相似 Skill JSON\/archetype，只改关键槽位如入口文字、坐标、目标文本、验证规则，再组装 atomic\/macro skill。需要探索入口时优先遍历底部标签、顶部小图标、图形化入口、侧边操作和子页面。本任务 stopBeforeSubmit=true：写草稿、评论、订单、支付类流程必须停在提交前，不点击最终发布、发送、提交订单、支付、确认授权。期望证据包括：人工智能、搜索结果。",
+        "aiJobPath": null,
+        "traceIds": [],
+        "sampleCount": 0,
+        "dryRunStatus": "PASSED",
+        "testRuns": 0,
+        "successRate": 0,
+        "promotionStatus": "NOT_PROMOTED",
+        "createdAt": 1779339086778,
+        "sourceSkillId": "com.zhihu.android.open_app",
+        "sourceSkillPath": "builtin:\/\/archetype\/com.zhihu.android.open_app",
+        "sourceOrigin": "BUILTIN_ARCHETYPE",
+        "templateMatchScore": 90,
+        "templateMatchReason": "same_app,same_action_type,same_capability,archetype_available,same_label,search_intent,publish_intent",
+        "patchReason": "reuse_existing_skill_json_and_rewrite_key_slots",
+        "lastDryRunReport": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_dry_run_reports\/com.zhihu.android\/patched.1779339085824.1.openapp_1779339090513.json",
+        "lastDryRunAt": 1779339090516
+      },
+      "capabilityRequired": {
+        "minLevel": "D",
+        "inputRequired": false,
+        "nodeReadablePreferred": true,
+        "coordinateFallbackAllowed": false,
+        "allowedInputChannels": [],
+        "verificationRequired": "MEDIUM"
+      },
+      "action": {
+        "type": "OpenApp",
+        "packageName": "com.zhihu.android",
+        "timeoutMs": 3000
+      },
+      "verify": {
+        "type": "ForegroundPackage",
+        "packageName": "com.zhihu.android",
+        "timeoutMs": 3000,
+        "allowUnverifiedWhenAccessibilityDisconnected": true
+      },
+      "resultPolicy": {
+        "verified": "SUCCESS",
+        "partialVerified": "SUCCESS_MEDIUM_CONFIDENCE",
+        "coordinateOnly": "SUCCESS_LOW_CONFIDENCE",
+        "unverifiable": "FAILED_UNVERIFIABLE"
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "kind": "atomic_skill",
+      "id": "patched.1779339085824.2.handlereactiveoverlays",
+      "name": "改写步骤 2: HandleReactiveOverlays",
+      "appPackage": "com.zhihu.android",
+      "status": "DRY_RUN_PASSED",
+      "implements": "DismissDialogSkill",
+      "params": [],
+      "preconditions": [],
+      "dependsOn": [],
+      "capabilityRequired": {
+        "minLevel": "D",
+        "inputRequired": false,
+        "nodeReadablePreferred": true,
+        "coordinateFallbackAllowed": false,
+        "allowedInputChannels": [],
+        "verificationRequired": "MEDIUM"
+      },
+      "resolverPolicy": {
+        "order": [
+          "ACCESSIBILITY",
+          "APP_UI_GRAPH",
+          "COORDINATE_PACK",
+          "AI_PATCH"
+        ],
+        "allowAiSuggestionInFactory": true,
+        "allowAiInRuntime": true
+      },
+      "safety": {},
+      "action": {
+        "type": "HandleReactiveOverlays",
+        "appPackage": "com.zhihu.android",
+        "maxPasses": 3
+      },
+      "verify": {
+        "type": "Always",
+        "timeoutMs": 1
+      },
+      "resultPolicy": {
+        "verified": "SUCCESS",
+        "partialVerified": "SUCCESS_MEDIUM_CONFIDENCE",
+        "coordinateOnly": "SUCCESS_LOW_CONFIDENCE",
+        "unverifiable": "FAILED_UNVERIFIABLE"
+      },
+      "factory": {
+        "source": "APP_SIDE_PLAN_PATCH_ASSEMBLER",
+        "instruction": "在知乎搜索人工智能，停在综合结果页并记录回答、文章、用户分区。\n\n约束：目标 App=知乎，包名=com.zhihu.android。必须由 MacroPilot 手机端自己用无障碍、输入法、AI\/Skill JSON 执行，不允许依赖 ADB 手点目标 App。执行前先读取当前 UI；如果遇到广告、弹窗、小字提示，先记录文字并安全关闭。任务完成必须用当前 UI 证据验证，不能只因为步骤执行完就报成功。如果没有现成 skill，先复用已有相似 Skill JSON\/archetype，只改关键槽位如入口文字、坐标、目标文本、验证规则，再组装 atomic\/macro skill。需要探索入口时优先遍历底部标签、顶部小图标、图形化入口、侧边操作和子页面。本任务 stopBeforeSubmit=true：写草稿、评论、订单、支付类流程必须停在提交前，不点击最终发布、发送、提交订单、支付、确认授权。期望证据包括：人工智能、搜索结果。",
+        "aiJobPath": null,
+        "traceIds": [],
+        "sampleCount": 0,
+        "dryRunStatus": "PASSED",
+        "testRuns": 0,
+        "successRate": 0,
+        "promotionStatus": "NOT_PROMOTED",
+        "createdAt": 1779339087259,
+        "sourceSkillId": "patched.1779339066153.2.handlereactiveoverlays",
+        "sourceSkillPath": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_candidates\/com.xunmeng.pinduoduo\/patched.1779339066153.2.handlereactiveoverlays.json",
+        "sourceOrigin": "LOCAL_JSON",
+        "templateMatchScore": 52,
+        "templateMatchReason": "same_action_type,same_capability",
+        "patchReason": "reuse_existing_skill_json_and_rewrite_key_slots",
+        "lastDryRunReport": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_dry_run_reports\/com.zhihu.android\/patched.1779339085824.2.handlereactiveoverlays_1779339090516.json",
+        "lastDryRunAt": 1779339090517
+      },
+      "appVersion": "*"
+    },
+    {
+      "schemaVersion": 1,
+      "kind": "atomic_skill",
+      "id": "com.zhihu.android.post.click_draft_entry",
+      "name": "点击创作入口",
+      "appPackage": "com.zhihu.android",
+      "appVersion": "*",
+      "status": "DRY_RUN_PASSED",
+      "domain": "app_session",
+      "implements": "ClickElementSkill",
+      "params": [],
+      "preconditions": [],
+      "dependsOn": [],
+      "resolverPolicy": {
+        "order": [
+          "ACCESSIBILITY",
+          "COORDINATE_PACK",
+          "PACKAGE_MANAGER"
+        ],
+        "allowAiSuggestionInFactory": true,
+        "allowAiInRuntime": false
+      },
+      "safety": {
+        "forbiddenTexts": [
+          "支付",
+          "付款",
+          "转账",
+          "删除",
+          "发布",
+          "授权"
+        ]
+      },
+      "factory": {
+        "source": "SKILL_ARCHETYPE_TEMPLATE_V0",
+        "archetypeId": "common.post_draft.v1",
+        "traceIds": [],
+        "sampleCount": 0,
+        "dryRunStatus": "PASSED",
+        "testRuns": 0,
+        "successRate": 0,
+        "promotionStatus": "NOT_PROMOTED",
+        "createdAt": 1779261613440,
+        "appPatch": {
+          "packageName": "com.zhihu.android",
+          "label": "知乎",
+          "launchable": true,
+          "launchActivity": "com.zhihu.android.app.ui.activity.LauncherActivity",
+          "searchEntryTexts": [
+            "搜索",
+            "搜一搜",
+            "Search"
+          ],
+          "searchSubmitTexts": [
+            "搜索",
+            "确定",
+            "Search"
+          ],
+          "searchEntryCoordinate": {
+            "x": 0.5,
+            "y": 0.08
+          },
+          "searchSubmitCoordinate": {
+            "x": 0.9,
+            "y": 0.08
+          },
+          "postDraftEntryTexts": [
+            "+",
+            "写微博",
+            "发微博",
+            "发帖",
+            "创作",
+            "写帖子",
+            "发动态",
+            "说点什么"
+          ],
+          "postDraftEntryCoordinate": {
+            "x": 0.9,
+            "y": 0.9
+          }
+        },
+        "lastDryRunReport": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_dry_run_reports\/com.zhihu.android\/com.zhihu.android.post.click_draft_entry_1779261613465.json",
+        "lastDryRunAt": 1779261613466
+      },
+      "capabilityRequired": {
+        "minLevel": "C",
+        "inputRequired": false,
+        "nodeReadablePreferred": true,
+        "coordinateFallbackAllowed": true,
+        "allowedInputChannels": [],
+        "verificationRequired": "MEDIUM"
+      },
+      "action": {
+        "type": "ClickVisibleText",
+        "text": "+",
+        "textAliases": [
+          "+",
+          "写微博",
+          "发微博",
+          "发帖",
+          "创作",
+          "写帖子",
+          "发动态",
+          "说点什么"
+        ],
+        "x": 0.9,
+        "y": 0.9,
+        "timeoutMs": 1500
+      },
+      "verify": {
+        "type": "WindowChangedOrNodeStateChanged",
+        "timeoutMs": 2000,
+        "allowLowConfidenceWhenUnchanged": true
+      },
+      "resultPolicy": {
+        "nodeClickedAndVerified": "SUCCESS",
+        "coordinateClicked": "SUCCESS_LOW_CONFIDENCE",
+        "notFound": "FAILED_ELEMENT_NOT_FOUND"
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "kind": "atomic_skill",
+      "id": "com.zhihu.android.post.type_draft_content",
+      "name": "输入草稿内容",
+      "appPackage": "com.zhihu.android",
+      "appVersion": "*",
+      "status": "DRY_RUN_PASSED",
+      "domain": "app_session",
+      "implements": "TypeTextSkill",
+      "params": [
+        {
+          "name": "content",
+          "type": "TEXT",
+          "required": true
+        }
+      ],
+      "preconditions": [],
+      "dependsOn": [],
+      "resolverPolicy": {
+        "order": [
+          "ACCESSIBILITY",
+          "COORDINATE_PACK",
+          "PACKAGE_MANAGER"
+        ],
+        "allowAiSuggestionInFactory": true,
+        "allowAiInRuntime": false
+      },
+      "safety": {
+        "forbiddenTexts": [
+          "支付",
+          "付款",
+          "转账",
+          "删除",
+          "发布",
+          "授权"
+        ]
+      },
+      "factory": {
+        "source": "SKILL_ARCHETYPE_TEMPLATE_V0",
+        "archetypeId": "common.post_draft.v1",
+        "traceIds": [],
+        "sampleCount": 0,
+        "dryRunStatus": "PASSED",
+        "testRuns": 0,
+        "successRate": 0,
+        "promotionStatus": "NOT_PROMOTED",
+        "createdAt": 1779261613440,
+        "appPatch": {
+          "packageName": "com.zhihu.android",
+          "label": "知乎",
+          "launchable": true,
+          "launchActivity": "com.zhihu.android.app.ui.activity.LauncherActivity",
+          "searchEntryTexts": [
+            "搜索",
+            "搜一搜",
+            "Search"
+          ],
+          "searchSubmitTexts": [
+            "搜索",
+            "确定",
+            "Search"
+          ],
+          "searchEntryCoordinate": {
+            "x": 0.5,
+            "y": 0.08
+          },
+          "searchSubmitCoordinate": {
+            "x": 0.9,
+            "y": 0.08
+          },
+          "postDraftEntryTexts": [
+            "+",
+            "写微博",
+            "发微博",
+            "发帖",
+            "创作",
+            "写帖子",
+            "发动态",
+            "说点什么"
+          ],
+          "postDraftEntryCoordinate": {
+            "x": 0.9,
+            "y": 0.9
+          }
+        },
+        "lastDryRunReport": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_dry_run_reports\/com.zhihu.android\/com.zhihu.android.post.type_draft_content_1779261613467.json",
+        "lastDryRunAt": 1779261613467
+      },
+      "capabilityRequired": {
+        "minLevel": "C",
+        "inputRequired": true,
+        "nodeReadablePreferred": true,
+        "coordinateFallbackAllowed": true,
+        "allowedInputChannels": [
+          "ACTION_SET_TEXT",
+          "PASTE",
+          "CUSTOM_IME",
+          "SHIZUKU_ADB"
+        ],
+        "verificationRequired": "MEDIUM"
+      },
+      "action": {
+        "type": "TypeIntoFirstInput",
+        "textParam": "content",
+        "timeoutMs": 2600
+      },
+      "verify": {
+        "type": "InputContainsOrTextChangedEvent",
+        "textParam": "content",
+        "timeoutMs": 1800,
+        "allowMediumConfidenceWhenEventOnly": true
+      },
+      "resultPolicy": {
+        "inputNodeContainsText": "SUCCESS",
+        "textChangedEventOnly": "SUCCESS_MEDIUM_CONFIDENCE",
+        "coordinateOnlyNoInputNode": "SUCCESS_LOW_CONFIDENCE",
+        "noInputChannel": "FAILED_INPUT_CHANNEL_MISSING"
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "kind": "atomic_skill",
+      "id": "com.zhihu.android.search.click_submit",
+      "name": "点击搜索确认",
+      "appPackage": "com.zhihu.android",
+      "appVersion": "*",
+      "status": "DRY_RUN_PASSED",
+      "domain": "app_session",
+      "implements": "ClickElementSkill",
+      "params": [],
+      "preconditions": [],
+      "dependsOn": [],
+      "resolverPolicy": {
+        "order": [
+          "ACCESSIBILITY",
+          "COORDINATE_PACK",
+          "PACKAGE_MANAGER"
+        ],
+        "allowAiSuggestionInFactory": true,
+        "allowAiInRuntime": false
+      },
+      "safety": {
+        "forbiddenTexts": [
+          "支付",
+          "付款",
+          "转账",
+          "删除",
+          "发布",
+          "授权"
+        ]
+      },
+      "factory": {
+        "source": "SKILL_ARCHETYPE_TEMPLATE_V0",
+        "archetypeId": "common.search_in_app.v1",
+        "traceIds": [],
+        "sampleCount": 0,
+        "dryRunStatus": "PASSED",
+        "testRuns": 0,
+        "successRate": 0,
+        "promotionStatus": "NOT_PROMOTED",
+        "createdAt": 1779261613440,
+        "appPatch": {
+          "packageName": "com.zhihu.android",
+          "label": "知乎",
+          "launchable": true,
+          "launchActivity": "com.zhihu.android.app.ui.activity.LauncherActivity",
+          "searchEntryTexts": [
+            "搜索",
+            "搜一搜",
+            "Search"
+          ],
+          "searchSubmitTexts": [
+            "搜索",
+            "确定",
+            "Search"
+          ],
+          "searchEntryCoordinate": {
+            "x": 0.5,
+            "y": 0.08
+          },
+          "searchSubmitCoordinate": {
+            "x": 0.9,
+            "y": 0.08
+          },
+          "postDraftEntryTexts": [
+            "+",
+            "写微博",
+            "发微博",
+            "发帖",
+            "创作",
+            "写帖子",
+            "发动态",
+            "说点什么"
+          ],
+          "postDraftEntryCoordinate": {
+            "x": 0.9,
+            "y": 0.9
+          }
+        },
+        "lastDryRunReport": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_dry_run_reports\/com.zhihu.android\/com.zhihu.android.search.click_submit_1779261613462.json",
+        "lastDryRunAt": 1779261613463
+      },
+      "capabilityRequired": {
+        "minLevel": "C",
+        "inputRequired": false,
+        "nodeReadablePreferred": true,
+        "coordinateFallbackAllowed": true,
+        "allowedInputChannels": [],
+        "verificationRequired": "MEDIUM"
+      },
+      "action": {
+        "type": "ClickVisibleText",
+        "text": "搜索",
+        "textAliases": [
+          "搜索",
+          "确定",
+          "Search"
+        ],
+        "x": 0.9,
+        "y": 0.08,
+        "timeoutMs": 1200
+      },
+      "verify": {
+        "type": "WindowChangedOrNodeStateChanged",
+        "timeoutMs": 1800,
+        "allowLowConfidenceWhenUnchanged": true
+      },
+      "resultPolicy": {
+        "nodeClickedAndVerified": "SUCCESS",
+        "coordinateClicked": "SUCCESS_LOW_CONFIDENCE",
+        "notFound": "FAILED_ELEMENT_NOT_FOUND"
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "kind": "atomic_skill",
+      "id": "com.zhihu.android.search.click_entry",
+      "name": "点击搜索入口",
+      "appPackage": "com.zhihu.android",
+      "appVersion": "*",
+      "status": "DRY_RUN_PASSED",
+      "domain": "app_session",
+      "implements": "ClickElementSkill",
+      "params": [],
+      "preconditions": [],
+      "dependsOn": [],
+      "resolverPolicy": {
+        "order": [
+          "ACCESSIBILITY",
+          "COORDINATE_PACK",
+          "PACKAGE_MANAGER"
+        ],
+        "allowAiSuggestionInFactory": true,
+        "allowAiInRuntime": false
+      },
+      "safety": {
+        "forbiddenTexts": [
+          "支付",
+          "付款",
+          "转账",
+          "删除",
+          "发布",
+          "授权"
+        ]
+      },
+      "factory": {
+        "source": "SKILL_ARCHETYPE_TEMPLATE_V0",
+        "archetypeId": "common.search_in_app.v1",
+        "traceIds": [],
+        "sampleCount": 0,
+        "dryRunStatus": "PASSED",
+        "testRuns": 0,
+        "successRate": 0,
+        "promotionStatus": "NOT_PROMOTED",
+        "createdAt": 1779261613440,
+        "appPatch": {
+          "packageName": "com.zhihu.android",
+          "label": "知乎",
+          "launchable": true,
+          "launchActivity": "com.zhihu.android.app.ui.activity.LauncherActivity",
+          "searchEntryTexts": [
+            "搜索",
+            "搜一搜",
+            "Search"
+          ],
+          "searchSubmitTexts": [
+            "搜索",
+            "确定",
+            "Search"
+          ],
+          "searchEntryCoordinate": {
+            "x": 0.5,
+            "y": 0.08
+          },
+          "searchSubmitCoordinate": {
+            "x": 0.9,
+            "y": 0.08
+          },
+          "postDraftEntryTexts": [
+            "+",
+            "写微博",
+            "发微博",
+            "发帖",
+            "创作",
+            "写帖子",
+            "发动态",
+            "说点什么"
+          ],
+          "postDraftEntryCoordinate": {
+            "x": 0.9,
+            "y": 0.9
+          }
+        },
+        "lastDryRunReport": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_dry_run_reports\/com.zhihu.android\/com.zhihu.android.search.click_entry_1779261613459.json",
+        "lastDryRunAt": 1779261613460
+      },
+      "capabilityRequired": {
+        "minLevel": "C",
+        "inputRequired": false,
+        "nodeReadablePreferred": true,
+        "coordinateFallbackAllowed": true,
+        "allowedInputChannels": [],
+        "verificationRequired": "MEDIUM"
+      },
+      "action": {
+        "type": "ClickVisibleText",
+        "text": "搜索",
+        "textAliases": [
+          "搜索",
+          "搜一搜",
+          "Search"
+        ],
+        "x": 0.5,
+        "y": 0.08,
+        "timeoutMs": 1200
+      },
+      "verify": {
+        "type": "WindowChangedOrNodeStateChanged",
+        "timeoutMs": 1500
+      },
+      "resultPolicy": {
+        "nodeClickedAndVerified": "SUCCESS",
+        "coordinateClicked": "SUCCESS_LOW_CONFIDENCE",
+        "notFound": "FAILED_ELEMENT_NOT_FOUND"
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "kind": "atomic_skill",
+      "id": "com.zhihu.android.search.type_query",
+      "name": "输入搜索词",
+      "appPackage": "com.zhihu.android",
+      "appVersion": "*",
+      "status": "DRY_RUN_PASSED",
+      "domain": "app_session",
+      "implements": "TypeTextSkill",
+      "params": [
+        {
+          "name": "query",
+          "type": "TEXT",
+          "required": true,
+          "example": ""
+        }
+      ],
+      "preconditions": [],
+      "dependsOn": [],
+      "resolverPolicy": {
+        "order": [
+          "ACCESSIBILITY",
+          "COORDINATE_PACK",
+          "PACKAGE_MANAGER"
+        ],
+        "allowAiSuggestionInFactory": true,
+        "allowAiInRuntime": false
+      },
+      "safety": {
+        "forbiddenTexts": [
+          "支付",
+          "付款",
+          "转账",
+          "删除",
+          "发布",
+          "授权"
+        ]
+      },
+      "factory": {
+        "source": "SKILL_ARCHETYPE_TEMPLATE_V0",
+        "archetypeId": "common.search_in_app.v1",
+        "traceIds": [],
+        "sampleCount": 0,
+        "dryRunStatus": "PASSED",
+        "testRuns": 0,
+        "successRate": 0,
+        "promotionStatus": "NOT_PROMOTED",
+        "createdAt": 1779261613440,
+        "appPatch": {
+          "packageName": "com.zhihu.android",
+          "label": "知乎",
+          "launchable": true,
+          "launchActivity": "com.zhihu.android.app.ui.activity.LauncherActivity",
+          "searchEntryTexts": [
+            "搜索",
+            "搜一搜",
+            "Search"
+          ],
+          "searchSubmitTexts": [
+            "搜索",
+            "确定",
+            "Search"
+          ],
+          "searchEntryCoordinate": {
+            "x": 0.5,
+            "y": 0.08
+          },
+          "searchSubmitCoordinate": {
+            "x": 0.9,
+            "y": 0.08
+          },
+          "postDraftEntryTexts": [
+            "+",
+            "写微博",
+            "发微博",
+            "发帖",
+            "创作",
+            "写帖子",
+            "发动态",
+            "说点什么"
+          ],
+          "postDraftEntryCoordinate": {
+            "x": 0.9,
+            "y": 0.9
+          }
+        },
+        "lastDryRunReport": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_dry_run_reports\/com.zhihu.android\/com.zhihu.android.search.type_query_1779261613461.json",
+        "lastDryRunAt": 1779261613462
+      },
+      "capabilityRequired": {
+        "minLevel": "C",
+        "inputRequired": true,
+        "nodeReadablePreferred": true,
+        "coordinateFallbackAllowed": true,
+        "allowedInputChannels": [
+          "ACTION_SET_TEXT",
+          "PASTE",
+          "CUSTOM_IME",
+          "SHIZUKU_ADB"
+        ],
+        "verificationRequired": "MEDIUM"
+      },
+      "action": {
+        "type": "TypeIntoFirstInput",
+        "textParam": "query",
+        "timeoutMs": 2200
+      },
+      "verify": {
+        "type": "InputContainsOrTextChangedEvent",
+        "textParam": "query",
+        "timeoutMs": 1800,
+        "allowMediumConfidenceWhenEventOnly": true
+      },
+      "resultPolicy": {
+        "inputNodeContainsText": "SUCCESS",
+        "textChangedEventOnly": "SUCCESS_MEDIUM_CONFIDENCE",
+        "coordinateOnlyNoInputNode": "SUCCESS_LOW_CONFIDENCE",
+        "noInputChannel": "FAILED_INPUT_CHANNEL_MISSING"
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "kind": "atomic_skill",
+      "id": "com.zhihu.android.common.click_visible_text",
+      "name": "点击可见文字",
+      "appPackage": "com.zhihu.android",
+      "appVersion": "*",
+      "status": "DRY_RUN_PASSED",
+      "domain": "app_session",
+      "implements": "ClickElementSkill",
+      "params": [
+        {
+          "name": "text",
+          "type": "TEXT",
+          "required": true
+        }
+      ],
+      "preconditions": [],
+      "dependsOn": [],
+      "resolverPolicy": {
+        "order": [
+          "ACCESSIBILITY",
+          "COORDINATE_PACK",
+          "PACKAGE_MANAGER"
+        ],
+        "allowAiSuggestionInFactory": true,
+        "allowAiInRuntime": false
+      },
+      "safety": {
+        "forbiddenTexts": [
+          "支付",
+          "付款",
+          "转账",
+          "删除",
+          "发布",
+          "授权"
+        ]
+      },
+      "factory": {
+        "source": "SKILL_ARCHETYPE_TEMPLATE_V0",
+        "archetypeId": "common.app_session.v1",
+        "traceIds": [],
+        "sampleCount": 0,
+        "dryRunStatus": "PASSED",
+        "testRuns": 0,
+        "successRate": 0,
+        "promotionStatus": "NOT_PROMOTED",
+        "createdAt": 1779261613440,
+        "appPatch": {
+          "packageName": "com.zhihu.android",
+          "label": "知乎",
+          "launchable": true,
+          "launchActivity": "com.zhihu.android.app.ui.activity.LauncherActivity",
+          "searchEntryTexts": [
+            "搜索",
+            "搜一搜",
+            "Search"
+          ],
+          "searchSubmitTexts": [
+            "搜索",
+            "确定",
+            "Search"
+          ],
+          "searchEntryCoordinate": {
+            "x": 0.5,
+            "y": 0.08
+          },
+          "searchSubmitCoordinate": {
+            "x": 0.9,
+            "y": 0.08
+          },
+          "postDraftEntryTexts": [
+            "+",
+            "写微博",
+            "发微博",
+            "发帖",
+            "创作",
+            "写帖子",
+            "发动态",
+            "说点什么"
+          ],
+          "postDraftEntryCoordinate": {
+            "x": 0.9,
+            "y": 0.9
+          }
+        },
+        "lastDryRunReport": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_dry_run_reports\/com.zhihu.android\/com.zhihu.android.common.click_visible_text_1779261613455.json",
+        "lastDryRunAt": 1779261613456
+      },
+      "capabilityRequired": {
+        "minLevel": "C",
+        "inputRequired": false,
+        "nodeReadablePreferred": true,
+        "coordinateFallbackAllowed": false,
+        "allowedInputChannels": [],
+        "verificationRequired": "MEDIUM"
+      },
+      "action": {
+        "type": "ClickVisibleText",
+        "textParam": "text",
+        "timeoutMs": 1500
+      },
+      "verify": {
+        "type": "WindowChangedOrNodeStateChanged",
+        "timeoutMs": 1500,
+        "allowLowConfidenceWhenUnchanged": true
+      },
+      "resultPolicy": {
+        "nodeClickedAndVerified": "SUCCESS",
+        "clickedButWeakVerify": "SUCCESS_MEDIUM_CONFIDENCE",
+        "notFound": "FAILED_ELEMENT_NOT_FOUND"
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "kind": "atomic_skill",
+      "id": "com.zhihu.android.common.type_first_input",
+      "name": "向第一个输入框输入",
+      "appPackage": "com.zhihu.android",
+      "appVersion": "*",
+      "status": "DRY_RUN_PASSED",
+      "domain": "app_session",
+      "implements": "TypeTextSkill",
+      "params": [
+        {
+          "name": "text",
+          "type": "TEXT",
+          "required": true
+        }
+      ],
+      "preconditions": [],
+      "dependsOn": [],
+      "resolverPolicy": {
+        "order": [
+          "ACCESSIBILITY",
+          "COORDINATE_PACK",
+          "PACKAGE_MANAGER"
+        ],
+        "allowAiSuggestionInFactory": true,
+        "allowAiInRuntime": false
+      },
+      "safety": {
+        "forbiddenTexts": [
+          "支付",
+          "付款",
+          "转账",
+          "删除",
+          "发布",
+          "授权"
+        ]
+      },
+      "factory": {
+        "source": "SKILL_ARCHETYPE_TEMPLATE_V0",
+        "archetypeId": "common.app_session.v1",
+        "traceIds": [],
+        "sampleCount": 0,
+        "dryRunStatus": "PASSED",
+        "testRuns": 0,
+        "successRate": 0,
+        "promotionStatus": "NOT_PROMOTED",
+        "createdAt": 1779261613440,
+        "appPatch": {
+          "packageName": "com.zhihu.android",
+          "label": "知乎",
+          "launchable": true,
+          "launchActivity": "com.zhihu.android.app.ui.activity.LauncherActivity",
+          "searchEntryTexts": [
+            "搜索",
+            "搜一搜",
+            "Search"
+          ],
+          "searchSubmitTexts": [
+            "搜索",
+            "确定",
+            "Search"
+          ],
+          "searchEntryCoordinate": {
+            "x": 0.5,
+            "y": 0.08
+          },
+          "searchSubmitCoordinate": {
+            "x": 0.9,
+            "y": 0.08
+          },
+          "postDraftEntryTexts": [
+            "+",
+            "写微博",
+            "发微博",
+            "发帖",
+            "创作",
+            "写帖子",
+            "发动态",
+            "说点什么"
+          ],
+          "postDraftEntryCoordinate": {
+            "x": 0.9,
+            "y": 0.9
+          }
+        },
+        "lastDryRunReport": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_dry_run_reports\/com.zhihu.android\/com.zhihu.android.common.type_first_input_1779261613457.json",
+        "lastDryRunAt": 1779261613458
+      },
+      "capabilityRequired": {
+        "minLevel": "C",
+        "inputRequired": true,
+        "nodeReadablePreferred": true,
+        "coordinateFallbackAllowed": false,
+        "allowedInputChannels": [
+          "ACTION_SET_TEXT",
+          "PASTE",
+          "CUSTOM_IME",
+          "SHIZUKU_ADB"
+        ],
+        "verificationRequired": "MEDIUM"
+      },
+      "action": {
+        "type": "TypeIntoFirstInput",
+        "textParam": "text",
+        "timeoutMs": 2200
+      },
+      "verify": {
+        "type": "InputContainsOrTextChangedEvent",
+        "textParam": "text",
+        "timeoutMs": 1800,
+        "allowMediumConfidenceWhenEventOnly": true
+      },
+      "resultPolicy": {
+        "inputNodeContainsText": "SUCCESS",
+        "textChangedEventOnly": "SUCCESS_MEDIUM_CONFIDENCE",
+        "noInputChannel": "FAILED_INPUT_CHANNEL_MISSING",
+        "unverifiable": "FAILED_UNVERIFIABLE"
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "kind": "atomic_skill",
+      "id": "com.zhihu.android.recover_to_foreground",
+      "name": "恢复到应用前台",
+      "appPackage": "com.zhihu.android",
+      "appVersion": "*",
+      "status": "DRY_RUN_PASSED",
+      "domain": "app_session",
+      "implements": "RecoverToScreenSkill",
+      "params": [],
+      "preconditions": [],
+      "dependsOn": [
+        "com.zhihu.android.open_app"
+      ],
+      "resolverPolicy": {
+        "order": [
+          "ACCESSIBILITY",
+          "COORDINATE_PACK",
+          "PACKAGE_MANAGER"
+        ],
+        "allowAiSuggestionInFactory": true,
+        "allowAiInRuntime": false
+      },
+      "safety": {
+        "forbiddenTexts": [
+          "支付",
+          "付款",
+          "转账",
+          "删除",
+          "发布",
+          "授权"
+        ]
+      },
+      "factory": {
+        "source": "SKILL_ARCHETYPE_TEMPLATE_V0",
+        "archetypeId": "common.app_session.v1",
+        "traceIds": [],
+        "sampleCount": 0,
+        "dryRunStatus": "PASSED",
+        "testRuns": 0,
+        "successRate": 0,
+        "promotionStatus": "NOT_PROMOTED",
+        "createdAt": 1779261613440,
+        "appPatch": {
+          "packageName": "com.zhihu.android",
+          "label": "知乎",
+          "launchable": true,
+          "launchActivity": "com.zhihu.android.app.ui.activity.LauncherActivity",
+          "searchEntryTexts": [
+            "搜索",
+            "搜一搜",
+            "Search"
+          ],
+          "searchSubmitTexts": [
+            "搜索",
+            "确定",
+            "Search"
+          ],
+          "searchEntryCoordinate": {
+            "x": 0.5,
+            "y": 0.08
+          },
+          "searchSubmitCoordinate": {
+            "x": 0.9,
+            "y": 0.08
+          },
+          "postDraftEntryTexts": [
+            "+",
+            "写微博",
+            "发微博",
+            "发帖",
+            "创作",
+            "写帖子",
+            "发动态",
+            "说点什么"
+          ],
+          "postDraftEntryCoordinate": {
+            "x": 0.9,
+            "y": 0.9
+          }
+        },
+        "lastDryRunReport": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_dry_run_reports\/com.zhihu.android\/com.zhihu.android.recover_to_foreground_1779261613454.json",
+        "lastDryRunAt": 1779261613455
+      },
+      "capabilityRequired": {
+        "minLevel": "D",
+        "inputRequired": false,
+        "nodeReadablePreferred": false,
+        "coordinateFallbackAllowed": false,
+        "allowedInputChannels": [],
+        "verificationRequired": "LOW"
+      },
+      "action": {
+        "type": "OpenApp",
+        "packageName": "com.zhihu.android",
+        "timeoutMs": 3000
+      },
+      "verify": {
+        "type": "ForegroundPackage",
+        "packageName": "com.zhihu.android",
+        "timeoutMs": 3000,
+        "allowUnverifiedWhenAccessibilityDisconnected": true
+      },
+      "resultPolicy": {
+        "recovered": "SUCCESS",
+        "launchIntentSentOnly": "SUCCESS_LOW_CONFIDENCE",
+        "failed": "FAILED_RECOVER_SCREEN"
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "kind": "atomic_skill",
+      "id": "com.zhihu.android.back",
+      "name": "返回",
+      "appPackage": "com.zhihu.android",
+      "appVersion": "*",
+      "status": "DRY_RUN_PASSED",
+      "domain": "app_session",
+      "implements": "BackSkill",
+      "params": [],
+      "preconditions": [],
+      "dependsOn": [],
+      "resolverPolicy": {
+        "order": [
+          "ACCESSIBILITY",
+          "COORDINATE_PACK",
+          "PACKAGE_MANAGER"
+        ],
+        "allowAiSuggestionInFactory": true,
+        "allowAiInRuntime": false
+      },
+      "safety": {
+        "forbiddenTexts": [
+          "支付",
+          "付款",
+          "转账",
+          "删除",
+          "发布",
+          "授权"
+        ]
+      },
+      "factory": {
+        "source": "SKILL_ARCHETYPE_TEMPLATE_V0",
+        "archetypeId": "common.app_session.v1",
+        "traceIds": [],
+        "sampleCount": 0,
+        "dryRunStatus": "PASSED",
+        "testRuns": 0,
+        "successRate": 0,
+        "promotionStatus": "NOT_PROMOTED",
+        "createdAt": 1779261613440,
+        "appPatch": {
+          "packageName": "com.zhihu.android",
+          "label": "知乎",
+          "launchable": true,
+          "launchActivity": "com.zhihu.android.app.ui.activity.LauncherActivity",
+          "searchEntryTexts": [
+            "搜索",
+            "搜一搜",
+            "Search"
+          ],
+          "searchSubmitTexts": [
+            "搜索",
+            "确定",
+            "Search"
+          ],
+          "searchEntryCoordinate": {
+            "x": 0.5,
+            "y": 0.08
+          },
+          "searchSubmitCoordinate": {
+            "x": 0.9,
+            "y": 0.08
+          },
+          "postDraftEntryTexts": [
+            "+",
+            "写微博",
+            "发微博",
+            "发帖",
+            "创作",
+            "写帖子",
+            "发动态",
+            "说点什么"
+          ],
+          "postDraftEntryCoordinate": {
+            "x": 0.9,
+            "y": 0.9
+          }
+        },
+        "lastDryRunReport": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_dry_run_reports\/com.zhihu.android\/com.zhihu.android.back_1779261613453.json",
+        "lastDryRunAt": 1779261613453
+      },
+      "capabilityRequired": {
+        "minLevel": "D",
+        "inputRequired": false,
+        "nodeReadablePreferred": false,
+        "coordinateFallbackAllowed": false,
+        "allowedInputChannels": [],
+        "verificationRequired": "LOW"
+      },
+      "action": {
+        "type": "Back",
+        "timeoutMs": 1000
+      },
+      "verify": {
+        "type": "WindowChanged",
+        "timeoutMs": 1000,
+        "allowLowConfidenceWhenUnchanged": true
+      },
+      "resultPolicy": {
+        "changed": "SUCCESS",
+        "unchanged": "SUCCESS_LOW_CONFIDENCE"
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "kind": "atomic_skill",
+      "id": "com.zhihu.android.capability_check",
+      "name": "检查应用能力",
+      "appPackage": "com.zhihu.android",
+      "appVersion": "*",
+      "status": "DRY_RUN_PASSED",
+      "domain": "app_session",
+      "implements": "CapabilityCheckSkill",
+      "params": [],
+      "preconditions": [],
+      "dependsOn": [],
+      "resolverPolicy": {
+        "order": [
+          "ACCESSIBILITY",
+          "COORDINATE_PACK",
+          "PACKAGE_MANAGER"
+        ],
+        "allowAiSuggestionInFactory": true,
+        "allowAiInRuntime": false
+      },
+      "safety": {
+        "forbiddenTexts": [
+          "支付",
+          "付款",
+          "转账",
+          "删除",
+          "发布",
+          "授权"
+        ]
+      },
+      "factory": {
+        "source": "SKILL_ARCHETYPE_TEMPLATE_V0",
+        "archetypeId": "common.app_session.v1",
+        "traceIds": [],
+        "sampleCount": 0,
+        "dryRunStatus": "PASSED",
+        "testRuns": 0,
+        "successRate": 0,
+        "promotionStatus": "NOT_PROMOTED",
+        "createdAt": 1779261613440,
+        "appPatch": {
+          "packageName": "com.zhihu.android",
+          "label": "知乎",
+          "launchable": true,
+          "launchActivity": "com.zhihu.android.app.ui.activity.LauncherActivity",
+          "searchEntryTexts": [
+            "搜索",
+            "搜一搜",
+            "Search"
+          ],
+          "searchSubmitTexts": [
+            "搜索",
+            "确定",
+            "Search"
+          ],
+          "searchEntryCoordinate": {
+            "x": 0.5,
+            "y": 0.08
+          },
+          "searchSubmitCoordinate": {
+            "x": 0.9,
+            "y": 0.08
+          },
+          "postDraftEntryTexts": [
+            "+",
+            "写微博",
+            "发微博",
+            "发帖",
+            "创作",
+            "写帖子",
+            "发动态",
+            "说点什么"
+          ],
+          "postDraftEntryCoordinate": {
+            "x": 0.9,
+            "y": 0.9
+          }
+        },
+        "lastDryRunReport": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_dry_run_reports\/com.zhihu.android\/com.zhihu.android.capability_check_1779261613451.json",
+        "lastDryRunAt": 1779261613452
+      },
+      "capabilityRequired": {
+        "minLevel": "D",
+        "inputRequired": false,
+        "nodeReadablePreferred": false,
+        "coordinateFallbackAllowed": false,
+        "allowedInputChannels": [],
+        "verificationRequired": "LOW"
+      },
+      "action": {
+        "type": "CheckCapability",
+        "packageName": "com.zhihu.android"
+      },
+      "verify": {
+        "type": "CapabilityObserved",
+        "packageName": "com.zhihu.android",
+        "timeoutMs": 500
+      },
+      "resultPolicy": {
+        "levelA": "SUCCESS",
+        "levelB": "SUCCESS_MEDIUM_CONFIDENCE",
+        "levelC": "SUCCESS_LOW_CONFIDENCE",
+        "levelD": "FAILED_CAPABILITY_D"
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "kind": "atomic_skill",
+      "id": "com.zhihu.android.open_app",
+      "name": "打开应用",
+      "appPackage": "com.zhihu.android",
+      "appVersion": "*",
+      "status": "DRY_RUN_PASSED",
+      "domain": "app_session",
+      "implements": "OpenAppSkill",
+      "params": [],
+      "preconditions": [],
+      "dependsOn": [],
+      "resolverPolicy": {
+        "order": [
+          "ACCESSIBILITY",
+          "COORDINATE_PACK",
+          "PACKAGE_MANAGER"
+        ],
+        "allowAiSuggestionInFactory": true,
+        "allowAiInRuntime": false
+      },
+      "safety": {
+        "forbiddenTexts": [
+          "支付",
+          "付款",
+          "转账",
+          "删除",
+          "发布",
+          "授权"
+        ]
+      },
+      "factory": {
+        "source": "SKILL_ARCHETYPE_TEMPLATE_V0",
+        "archetypeId": "common.app_session.v1",
+        "traceIds": [],
+        "sampleCount": 0,
+        "dryRunStatus": "PASSED",
+        "testRuns": 0,
+        "successRate": 0,
+        "promotionStatus": "NOT_PROMOTED",
+        "createdAt": 1779261613440,
+        "appPatch": {
+          "packageName": "com.zhihu.android",
+          "label": "知乎",
+          "launchable": true,
+          "launchActivity": "com.zhihu.android.app.ui.activity.LauncherActivity",
+          "searchEntryTexts": [
+            "搜索",
+            "搜一搜",
+            "Search"
+          ],
+          "searchSubmitTexts": [
+            "搜索",
+            "确定",
+            "Search"
+          ],
+          "searchEntryCoordinate": {
+            "x": 0.5,
+            "y": 0.08
+          },
+          "searchSubmitCoordinate": {
+            "x": 0.9,
+            "y": 0.08
+          },
+          "postDraftEntryTexts": [
+            "+",
+            "写微博",
+            "发微博",
+            "发帖",
+            "创作",
+            "写帖子",
+            "发动态",
+            "说点什么"
+          ],
+          "postDraftEntryCoordinate": {
+            "x": 0.9,
+            "y": 0.9
+          }
+        },
+        "lastDryRunReport": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_dry_run_reports\/com.zhihu.android\/com.zhihu.android.open_app_1779261613449.json",
+        "lastDryRunAt": 1779261613451
+      },
+      "capabilityRequired": {
+        "minLevel": "D",
+        "inputRequired": false,
+        "nodeReadablePreferred": false,
+        "coordinateFallbackAllowed": false,
+        "allowedInputChannels": [],
+        "verificationRequired": "LOW"
+      },
+      "action": {
+        "type": "OpenApp",
+        "packageName": "com.zhihu.android",
+        "timeoutMs": 3000
+      },
+      "verify": {
+        "type": "ForegroundPackage",
+        "packageName": "com.zhihu.android",
+        "timeoutMs": 3000,
+        "allowUnverifiedWhenAccessibilityDisconnected": true
+      },
+      "resultPolicy": {
+        "foregroundVerified": "SUCCESS",
+        "launchIntentSentOnly": "SUCCESS_LOW_CONFIDENCE",
+        "noLaunchIntent": "FAILED_NO_LAUNCH_INTENT",
+        "unverifiable": "FAILED_UNVERIFIABLE"
+      }
+    }
+  ],
+  "macroSkills": [
+    {
+      "schemaVersion": 1,
+      "kind": "macro_skill",
+      "id": "patched.command.1779339085824",
+      "name": "手机端任务拼装 Skill",
+      "appPackage": "com.zhihu.android",
+      "appVersion": "*",
+      "status": "DRY_RUN_PASSED",
+      "implements": "AiPlannedMacroSkill",
+      "intentId": "search_in_app",
+      "params": [],
+      "preconditions": [],
+      "atoms": [
+        {
+          "type": "UseSkill",
+          "skillId": "patched.1779339085824.1.openapp"
+        },
+        {
+          "type": "UseSkill",
+          "skillId": "patched.1779339085824.2.handlereactiveoverlays"
+        },
+        {
+          "type": "UseSkill",
+          "skillId": "patched.1779339085824.3.clickvisibletext"
+        },
+        {
+          "type": "UseSkill",
+          "skillId": "patched.1779339085824.4.wait"
+        },
+        {
+          "type": "UseSkill",
+          "skillId": "patched.1779339085824.5.typeintofirstinput"
+        },
+        {
+          "type": "UseSkill",
+          "skillId": "patched.1779339085824.6.clickvisibletext"
+        },
+        {
+          "type": "UseSkill",
+          "skillId": "patched.1779339085824.7.wait"
+        }
+      ],
+      "verify": {
+        "type": "GoalEvidenceOrNoFailedAtom",
+        "instruction": "在知乎搜索人工智能，停在综合结果页并记录回答、文章、用户分区。\n\n约束：目标 App=知乎，包名=com.zhihu.android。必须由 MacroPilot 手机端自己用无障碍、输入法、AI\/Skill JSON 执行，不允许依赖 ADB 手点目标 App。执行前先读取当前 UI；如果遇到广告、弹窗、小字提示，先记录文字并安全关闭。任务完成必须用当前 UI 证据验证，不能只因为步骤执行完就报成功。如果没有现成 skill，先复用已有相似 Skill JSON\/arche",
+        "timeoutMs": 2000,
+        "allowLowConfidenceWhenNodeUnreadable": true
+      },
+      "resultPolicy": {
+        "allAtomicSuccess": "SUCCESS",
+        "partialAtomicSuccess": "SUCCESS_MEDIUM_CONFIDENCE",
+        "coordinateOnly": "SUCCESS_LOW_CONFIDENCE",
+        "unverifiable": "FAILED_UNVERIFIABLE"
+      },
+      "timeoutMs": 30000,
+      "factory": {
+        "source": "APP_SIDE_PLAN_PATCH_ASSEMBLER",
+        "instruction": "在知乎搜索人工智能，停在综合结果页并记录回答、文章、用户分区。\n\n约束：目标 App=知乎，包名=com.zhihu.android。必须由 MacroPilot 手机端自己用无障碍、输入法、AI\/Skill JSON 执行，不允许依赖 ADB 手点目标 App。执行前先读取当前 UI；如果遇到广告、弹窗、小字提示，先记录文字并安全关闭。任务完成必须用当前 UI 证据验证，不能只因为步骤执行完就报成功。如果没有现成 skill，先复用已有相似 Skill JSON\/archetype，只改关键槽位如入口文字、坐标、目标文本、验证规则，再组装 atomic\/macro skill。需要探索入口时优先遍历底部标签、顶部小图标、图形化入口、侧边操作和子页面。本任务 stopBeforeSubmit=true：写草稿、评论、订单、支付类流程必须停在提交前，不点击最终发布、发送、提交订单、支付、确认授权。期望证据包括：人工智能、搜索结果。",
+        "aiJobPath": null,
+        "traceIds": [],
+        "sampleCount": 0,
+        "dryRunStatus": "PASSED",
+        "testRuns": 0,
+        "successRate": 0,
+        "promotionStatus": "NOT_PROMOTED",
+        "createdAt": 1779339090506,
+        "assemblyStrategy": "rewrite_allowed_slots_from_existing_skill_json",
+        "requiredAtomicSkills": [
+          "patched.1779339085824.1.openapp",
+          "patched.1779339085824.2.handlereactiveoverlays",
+          "patched.1779339085824.3.clickvisibletext",
+          "patched.1779339085824.4.wait",
+          "patched.1779339085824.5.typeintofirstinput",
+          "patched.1779339085824.6.clickvisibletext",
+          "patched.1779339085824.7.wait"
+        ],
+        "lastDryRunReport": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_dry_run_reports\/com.zhihu.android\/patched.command.1779339085824_1779339090526.json",
+        "lastDryRunAt": 1779339090526
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "kind": "macro_skill",
+      "id": "com.zhihu.android.post.create_draft",
+      "name": "通用发帖草稿",
+      "appPackage": "com.zhihu.android",
+      "appVersion": "*",
+      "status": "DRY_RUN_PASSED",
+      "implements": "CreatePostDraftSkill",
+      "intentId": "create_post_draft",
+      "params": [
+        {
+          "name": "content",
+          "type": "TEXT",
+          "required": true
+        }
+      ],
+      "preconditions": [
+        {
+          "type": "CapabilityAtLeast",
+          "level": "C"
+        },
+        {
+          "type": "InputChannelAvailable",
+          "channels": [
+            "ACTION_SET_TEXT",
+            "PASTE",
+            "CUSTOM_IME",
+            "SHIZUKU_ADB"
+          ]
+        }
+      ],
+      "atoms": [
+        {
+          "type": "UseSkill",
+          "skillId": "com.zhihu.android.open_app"
+        },
+        {
+          "type": "UseSkill",
+          "skillId": "com.zhihu.android.post.click_draft_entry"
+        },
+        {
+          "type": "UseSkill",
+          "skillId": "com.zhihu.android.post.type_draft_content",
+          "params": {
+            "content": "$content"
+          }
+        }
+      ],
+      "verify": {
+        "type": "InputContainsOrTextChangedEvent",
+        "textParam": "content",
+        "timeoutMs": 2500,
+        "allowLowConfidenceWhenNodeUnreadable": true
+      },
+      "resultPolicy": {
+        "draftTextVisible": "SUCCESS",
+        "textChangedEventOnly": "SUCCESS_MEDIUM_CONFIDENCE",
+        "coordinateOnly": "SUCCESS_LOW_CONFIDENCE",
+        "unverifiable": "FAILED_UNVERIFIABLE"
+      },
+      "safety": {
+        "finalPublishAllowed": false,
+        "note": "Draft archetype stops before final publish\/submit."
+      },
+      "timeoutMs": 10000,
+      "factory": {
+        "source": "COMPOSED_FROM_SKILL_ARCHETYPE",
+        "archetypeId": "common.post_draft.v1",
+        "traceIds": [],
+        "sampleCount": 0,
+        "dryRunStatus": "PASSED",
+        "testRuns": 0,
+        "successRate": 0,
+        "promotionStatus": "NOT_PROMOTED",
+        "createdAt": 1779261613440,
+        "appPatch": {
+          "packageName": "com.zhihu.android",
+          "label": "知乎",
+          "launchable": true,
+          "launchActivity": "com.zhihu.android.app.ui.activity.LauncherActivity",
+          "searchEntryTexts": [
+            "搜索",
+            "搜一搜",
+            "Search"
+          ],
+          "searchSubmitTexts": [
+            "搜索",
+            "确定",
+            "Search"
+          ],
+          "searchEntryCoordinate": {
+            "x": 0.5,
+            "y": 0.08
+          },
+          "searchSubmitCoordinate": {
+            "x": 0.9,
+            "y": 0.08
+          },
+          "postDraftEntryTexts": [
+            "+",
+            "写微博",
+            "发微博",
+            "发帖",
+            "创作",
+            "写帖子",
+            "发动态",
+            "说点什么"
+          ],
+          "postDraftEntryCoordinate": {
+            "x": 0.9,
+            "y": 0.9
+          }
+        },
+        "requiredAtomicSkills": [
+          "com.zhihu.android.open_app",
+          "com.zhihu.android.post.click_draft_entry",
+          "com.zhihu.android.post.type_draft_content"
+        ],
+        "promotionRule": "draft_only_requires_visible_text_or_text_changed_event",
+        "lastDryRunReport": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_dry_run_reports\/com.zhihu.android\/com.zhihu.android.post.create_draft_1779261613468.json",
+        "lastDryRunAt": 1779261613469
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "kind": "macro_skill",
+      "id": "com.zhihu.android.search.search_in_app",
+      "name": "通用站内搜索",
+      "appPackage": "com.zhihu.android",
+      "appVersion": "*",
+      "status": "DRY_RUN_PASSED",
+      "implements": "SearchInAppSkill",
+      "intentId": "search_in_app",
+      "params": [
+        {
+          "name": "query",
+          "type": "TEXT",
+          "required": true,
+          "example": ""
+        }
+      ],
+      "preconditions": [
+        {
+          "type": "CapabilityAtLeast",
+          "level": "C"
+        },
+        {
+          "type": "InputChannelAvailable",
+          "channels": [
+            "ACTION_SET_TEXT",
+            "PASTE",
+            "CUSTOM_IME",
+            "SHIZUKU_ADB"
+          ]
+        }
+      ],
+      "atoms": [
+        {
+          "type": "UseSkill",
+          "skillId": "com.zhihu.android.open_app"
+        },
+        {
+          "type": "UseSkill",
+          "skillId": "com.zhihu.android.search.click_entry"
+        },
+        {
+          "type": "UseSkill",
+          "skillId": "com.zhihu.android.search.type_query",
+          "params": {
+            "query": "$query"
+          }
+        },
+        {
+          "type": "UseSkill",
+          "skillId": "com.zhihu.android.search.click_submit"
+        }
+      ],
+      "verify": {
+        "type": "WindowChangedOrNodeStateChanged",
+        "timeoutMs": 2500,
+        "allowLowConfidenceWhenNodeUnreadable": true
+      },
+      "resultPolicy": {
+        "allAtomicSuccess": "SUCCESS",
+        "partialAtomicSuccess": "SUCCESS_MEDIUM_CONFIDENCE",
+        "coordinateOnly": "SUCCESS_LOW_CONFIDENCE",
+        "unverifiable": "FAILED_UNVERIFIABLE"
+      },
+      "timeoutMs": 10000,
+      "factory": {
+        "source": "COMPOSED_FROM_SKILL_ARCHETYPE",
+        "archetypeId": "common.search_in_app.v1",
+        "traceIds": [],
+        "sampleCount": 0,
+        "dryRunStatus": "PASSED",
+        "testRuns": 0,
+        "successRate": 0,
+        "promotionStatus": "NOT_PROMOTED",
+        "createdAt": 1779261613440,
+        "appPatch": {
+          "packageName": "com.zhihu.android",
+          "label": "知乎",
+          "launchable": true,
+          "launchActivity": "com.zhihu.android.app.ui.activity.LauncherActivity",
+          "searchEntryTexts": [
+            "搜索",
+            "搜一搜",
+            "Search"
+          ],
+          "searchSubmitTexts": [
+            "搜索",
+            "确定",
+            "Search"
+          ],
+          "searchEntryCoordinate": {
+            "x": 0.5,
+            "y": 0.08
+          },
+          "searchSubmitCoordinate": {
+            "x": 0.9,
+            "y": 0.08
+          },
+          "postDraftEntryTexts": [
+            "+",
+            "写微博",
+            "发微博",
+            "发帖",
+            "创作",
+            "写帖子",
+            "发动态",
+            "说点什么"
+          ],
+          "postDraftEntryCoordinate": {
+            "x": 0.9,
+            "y": 0.9
+          }
+        },
+        "requiredAtomicSkills": [
+          "com.zhihu.android.open_app",
+          "com.zhihu.android.search.click_entry",
+          "com.zhihu.android.search.type_query",
+          "com.zhihu.android.search.click_submit"
+        ],
+        "promotionRule": "requires_dry_run_real_test_and_promotion_gate",
+        "lastDryRunReport": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_dry_run_reports\/com.zhihu.android\/com.zhihu.android.search.search_in_app_1779261613464.json",
+        "lastDryRunAt": 1779261613465
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "kind": "macro_skill",
+      "id": "com.zhihu.android.prepare_app_session",
+      "name": "准备应用会话",
+      "appPackage": "com.zhihu.android",
+      "appVersion": "*",
+      "status": "DRY_RUN_PASSED",
+      "implements": "PrepareAppSessionSkill",
+      "intentId": "prepare_app_session",
+      "params": [],
+      "preconditions": [],
+      "atoms": [
+        {
+          "type": "UseSkill",
+          "skillId": "com.zhihu.android.open_app"
+        },
+        {
+          "type": "UseSkill",
+          "skillId": "com.zhihu.android.capability_check"
+        }
+      ],
+      "verify": {
+        "type": "CapabilityObserved",
+        "packageName": "com.zhihu.android",
+        "timeoutMs": 1000
+      },
+      "resultPolicy": {
+        "allAtomicSuccess": "SUCCESS",
+        "partialAtomicSuccess": "SUCCESS_MEDIUM_CONFIDENCE",
+        "unverifiable": "FAILED_UNVERIFIABLE"
+      },
+      "timeoutMs": 6000,
+      "factory": {
+        "source": "COMPOSED_FROM_SKILL_ARCHETYPE",
+        "archetypeId": "common.app_session.v1",
+        "traceIds": [],
+        "sampleCount": 0,
+        "dryRunStatus": "PASSED",
+        "testRuns": 0,
+        "successRate": 0,
+        "promotionStatus": "NOT_PROMOTED",
+        "createdAt": 1779261613440,
+        "appPatch": {
+          "packageName": "com.zhihu.android",
+          "label": "知乎",
+          "launchable": true,
+          "launchActivity": "com.zhihu.android.app.ui.activity.LauncherActivity",
+          "searchEntryTexts": [
+            "搜索",
+            "搜一搜",
+            "Search"
+          ],
+          "searchSubmitTexts": [
+            "搜索",
+            "确定",
+            "Search"
+          ],
+          "searchEntryCoordinate": {
+            "x": 0.5,
+            "y": 0.08
+          },
+          "searchSubmitCoordinate": {
+            "x": 0.9,
+            "y": 0.08
+          },
+          "postDraftEntryTexts": [
+            "+",
+            "写微博",
+            "发微博",
+            "发帖",
+            "创作",
+            "写帖子",
+            "发动态",
+            "说点什么"
+          ],
+          "postDraftEntryCoordinate": {
+            "x": 0.9,
+            "y": 0.9
+          }
+        },
+        "requiredAtomicSkills": [
+          "com.zhihu.android.open_app",
+          "com.zhihu.android.capability_check"
+        ],
+        "promotionRule": "requires_real_probe_and_promotion_gate",
+        "lastDryRunReport": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_dry_run_reports\/com.zhihu.android\/com.zhihu.android.prepare_app_session_1779261613458.json",
+        "lastDryRunAt": 1779261613459
+      }
+    }
+  ],
+  "reactiveRules": [],
+  "runtimePolicy": {
+    "allowCandidateSkill": false,
+    "allowTrial": false,
+    "aiCallsDefault": 0,
+    "screenshotDefault": 0,
+    "maxTaskDurationMs": 30000
+  },
+  "factoryReports": {
+    "dryRunReports": [
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "patched.1779339085824.6.clickvisibletext",
+        "appPackage": "com.zhihu.android",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779339090523
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "patched.1779339085824.7.wait",
+        "appPackage": "com.zhihu.android",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779339090524
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "patched.command.1779339085824",
+        "appPackage": "com.zhihu.android",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779339090526
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "patched.1779339085824.4.wait",
+        "appPackage": "com.zhihu.android",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779339090519
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "patched.1779339085824.5.typeintofirstinput",
+        "appPackage": "com.zhihu.android",
+        "passed": false,
+        "status": "REJECTED",
+        "errors": [
+          "dangerous_action:支付"
+        ],
+        "warnings": [],
+        "timestamp": 1779339090521
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "patched.1779339085824.2.handlereactiveoverlays",
+        "appPackage": "com.zhihu.android",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779339090516
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "patched.1779339085824.3.clickvisibletext",
+        "appPackage": "com.zhihu.android",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779339090518
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "patched.1779339085824.1.openapp",
+        "appPackage": "com.zhihu.android",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779339090512
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.zhihu.android.post.create_draft",
+        "appPackage": "com.zhihu.android",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779261613468
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.zhihu.android.post.type_draft_content",
+        "appPackage": "com.zhihu.android",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779261613466
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.zhihu.android.post.click_draft_entry",
+        "appPackage": "com.zhihu.android",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779261613465
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.zhihu.android.search.click_submit",
+        "appPackage": "com.zhihu.android",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779261613462
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.zhihu.android.search.search_in_app",
+        "appPackage": "com.zhihu.android",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779261613463
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.zhihu.android.prepare_app_session",
+        "appPackage": "com.zhihu.android",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779261613458
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.zhihu.android.search.click_entry",
+        "appPackage": "com.zhihu.android",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779261613459
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.zhihu.android.search.type_query",
+        "appPackage": "com.zhihu.android",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779261613461
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.zhihu.android.common.click_visible_text",
+        "appPackage": "com.zhihu.android",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779261613455
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.zhihu.android.common.type_first_input",
+        "appPackage": "com.zhihu.android",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779261613457
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.zhihu.android.recover_to_foreground",
+        "appPackage": "com.zhihu.android",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779261613454
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.zhihu.android.back",
+        "appPackage": "com.zhihu.android",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779261613452
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.zhihu.android.capability_check",
+        "appPackage": "com.zhihu.android",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779261613451
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.zhihu.android.open_app",
+        "appPackage": "com.zhihu.android",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779261613449
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.zhihu.android.post.create_draft",
+        "appPackage": "com.zhihu.android",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779237083365
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.zhihu.android.post.type_draft_content",
+        "appPackage": "com.zhihu.android",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779237083363
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.zhihu.android.post.click_draft_entry",
+        "appPackage": "com.zhihu.android",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779237083360
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.zhihu.android.search.search_in_app",
+        "appPackage": "com.zhihu.android",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779237083358
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.zhihu.android.search.click_submit",
+        "appPackage": "com.zhihu.android",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779237083355
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.zhihu.android.search.type_query",
+        "appPackage": "com.zhihu.android",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779237083352
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.zhihu.android.search.click_entry",
+        "appPackage": "com.zhihu.android",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779237083350
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.zhihu.android.common.type_first_input",
+        "appPackage": "com.zhihu.android",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779237083345
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.zhihu.android.prepare_app_session",
+        "appPackage": "com.zhihu.android",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779237083347
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.zhihu.android.common.click_visible_text",
+        "appPackage": "com.zhihu.android",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779237083341
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.zhihu.android.recover_to_foreground",
+        "appPackage": "com.zhihu.android",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779237083338
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.zhihu.android.back",
+        "appPackage": "com.zhihu.android",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779237083334
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.zhihu.android.capability_check",
+        "appPackage": "com.zhihu.android",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779237083331
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.zhihu.android.open_app",
+        "appPackage": "com.zhihu.android",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779237083323
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.zhihu.android.post.create_draft",
+        "appPackage": "com.zhihu.android",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779221443036
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.zhihu.android.post.click_draft_entry",
+        "appPackage": "com.zhihu.android",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779221443033
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.zhihu.android.post.type_draft_content",
+        "appPackage": "com.zhihu.android",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779221443035
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.zhihu.android.search.search_in_app",
+        "appPackage": "com.zhihu.android",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779221443032
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.zhihu.android.search.click_entry",
+        "appPackage": "com.zhihu.android",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779221443028
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.zhihu.android.search.click_submit",
+        "appPackage": "com.zhihu.android",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779221443031
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.zhihu.android.search.type_query",
+        "appPackage": "com.zhihu.android",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779221443029
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.zhihu.android.common.click_visible_text",
+        "appPackage": "com.zhihu.android",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779221443024
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.zhihu.android.common.type_first_input",
+        "appPackage": "com.zhihu.android",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779221443025
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.zhihu.android.prepare_app_session",
+        "appPackage": "com.zhihu.android",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779221443026
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.zhihu.android.back",
+        "appPackage": "com.zhihu.android",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779221443021
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.zhihu.android.capability_check",
+        "appPackage": "com.zhihu.android",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779221443020
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.zhihu.android.recover_to_foreground",
+        "appPackage": "com.zhihu.android",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779221443022
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.zhihu.android.open_app",
+        "appPackage": "com.zhihu.android",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779221443018
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.zhihu.android.post.create_draft",
+        "appPackage": "com.zhihu.android",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779220605635
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.zhihu.android.post.type_draft_content",
+        "appPackage": "com.zhihu.android",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779220605632
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.zhihu.android.post.click_draft_entry",
+        "appPackage": "com.zhihu.android",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779220605630
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.zhihu.android.search.click_submit",
+        "appPackage": "com.zhihu.android",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779220605625
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.zhihu.android.search.search_in_app",
+        "appPackage": "com.zhihu.android",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779220605627
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.zhihu.android.search.click_entry",
+        "appPackage": "com.zhihu.android",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779220605619
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.zhihu.android.search.type_query",
+        "appPackage": "com.zhihu.android",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779220605622
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.zhihu.android.prepare_app_session",
+        "appPackage": "com.zhihu.android",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779220605617
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.zhihu.android.common.click_visible_text",
+        "appPackage": "com.zhihu.android",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779220605612
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.zhihu.android.common.type_first_input",
+        "appPackage": "com.zhihu.android",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779220605614
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.zhihu.android.recover_to_foreground",
+        "appPackage": "com.zhihu.android",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779220605609
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.zhihu.android.back",
+        "appPackage": "com.zhihu.android",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779220605606
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.zhihu.android.capability_check",
+        "appPackage": "com.zhihu.android",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779220605604
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.zhihu.android.open_app",
+        "appPackage": "com.zhihu.android",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779220605601
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.zhihu.android.post.create_draft",
+        "appPackage": "com.zhihu.android",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779214062326
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.zhihu.android.post.type_draft_content",
+        "appPackage": "com.zhihu.android",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779214062324
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.zhihu.android.post.click_draft_entry",
+        "appPackage": "com.zhihu.android",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779214062322
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.zhihu.android.search.search_in_app",
+        "appPackage": "com.zhihu.android",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779214062320
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.zhihu.android.search.click_submit",
+        "appPackage": "com.zhihu.android",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779214062317
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.zhihu.android.search.click_entry",
+        "appPackage": "com.zhihu.android",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779214062312
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.zhihu.android.search.type_query",
+        "appPackage": "com.zhihu.android",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779214062315
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.zhihu.android.prepare_app_session",
+        "appPackage": "com.zhihu.android",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779214062310
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.zhihu.android.common.click_visible_text",
+        "appPackage": "com.zhihu.android",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779214062305
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.zhihu.android.common.type_first_input",
+        "appPackage": "com.zhihu.android",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779214062307
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.zhihu.android.recover_to_foreground",
+        "appPackage": "com.zhihu.android",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779214062302
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.zhihu.android.back",
+        "appPackage": "com.zhihu.android",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779214062299
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.zhihu.android.capability_check",
+        "appPackage": "com.zhihu.android",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779214062294
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.zhihu.android.open_app",
+        "appPackage": "com.zhihu.android",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779214062289
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.zhihu.android.post.create_draft",
+        "appPackage": "com.zhihu.android",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779213607222
+      },
+      {
+        "kind": "skill_json_dry_run_report",
+        "skillId": "com.zhihu.android.post.type_draft_content",
+        "appPackage": "com.zhihu.android",
+        "passed": true,
+        "status": "DRY_RUN_PASSED",
+        "errors": [],
+        "warnings": [],
+        "timestamp": 1779213607220
+      }
+    ],
+    "exportedAt": 1779339090542
+  }
+}

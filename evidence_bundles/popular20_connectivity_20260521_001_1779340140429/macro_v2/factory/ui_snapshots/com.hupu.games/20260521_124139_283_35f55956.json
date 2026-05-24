@@ -1,0 +1,1371 @@
+{
+  "schemaVersion": 1,
+  "kind": "ui_state_snapshot",
+  "id": "ui_snapshot_1779338499763",
+  "source": "current_ui_summary",
+  "note": "factory_ai_context",
+  "screenshotPath": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_screenshots\/com.hupu.games\/20260521_124139_283_35f55956.png",
+  "screenshotSha256": "bde89d459a2b7f717150e0ced9df0a0196112373f791f4bb8682f4c7dabc0bfa",
+  "visualHash": "0d1415cb84e7fdbb6af8ded11074fed37fe3d0ccca03d2850b1c4a154dcebe4f",
+  "screenshotSizeBytes": 1340873,
+  "appPackage": "com.hupu.games",
+  "windowClassName": "android.view.ViewGroup",
+  "screenKey": "35f55956",
+  "relatedSkillId": null,
+  "relatedActionType": null,
+  "capability": {
+    "nodeReadability": "A",
+    "inputCapability": "CUSTOM_IME",
+    "verificationCapability": "HIGH",
+    "coordinateFallback": "AVAILABLE",
+    "serviceState": "CONNECTED",
+    "reason": "nodes=565, textLike=339, clickable=102, editable=0, scrollable=10, customIme=true"
+  },
+  "state": {
+    "appPackage": "com.hupu.games",
+    "windowClassName": "android.view.ViewGroup",
+    "screenWidth": 1440,
+    "screenHeight": 3168,
+    "timestamp": 1779338499280,
+    "nodeCount": 565,
+    "nodesStored": 45,
+    "nodesStorage": "compact_important_nodes_only",
+    "nodes": [
+      {
+        "nodeId": "15_19_1152_176_1352_288",
+        "packageName": "com.hupu.games",
+        "text": "搜索",
+        "contentDesc": null,
+        "resourceId": "com.hupu.games:id\/tv_search",
+        "className": "android.widget.TextView",
+        "bounds": {
+          "left": 1152,
+          "top": 176,
+          "right": 1352,
+          "bottom": 288
+        },
+        "clickable": true,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 15,
+        "parentRoleHint": "android.view.ViewGroup"
+      },
+      {
+        "nodeId": "15_310_3896_212_1440_288",
+        "packageName": "com.hupu.games",
+        "text": "搜索",
+        "contentDesc": null,
+        "resourceId": "com.hupu.games:id\/searchText",
+        "className": "android.widget.TextView",
+        "bounds": {
+          "left": 3896,
+          "top": 212,
+          "right": 1440,
+          "bottom": 288
+        },
+        "clickable": true,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 15,
+        "parentRoleHint": "android.view.ViewGroup"
+      },
+      {
+        "nodeId": "12_96_1304_304_1440_480",
+        "packageName": "com.hupu.games",
+        "text": null,
+        "contentDesc": null,
+        "resourceId": "com.hupu.games:id\/fl_right_edit",
+        "className": "android.widget.FrameLayout",
+        "bounds": {
+          "left": 1304,
+          "top": 304,
+          "right": 1440,
+          "bottom": 480
+        },
+        "clickable": true,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 12,
+        "parentRoleHint": "android.widget.LinearLayout"
+      },
+      {
+        "nodeId": "19_111_48_480_1392_726",
+        "packageName": "com.hupu.games",
+        "text": null,
+        "contentDesc": null,
+        "resourceId": "com.hupu.games:id\/podcastImageView",
+        "className": "android.widget.ImageView",
+        "bounds": {
+          "left": 48,
+          "top": 480,
+          "right": 1392,
+          "bottom": 726
+        },
+        "clickable": true,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 19,
+        "parentRoleHint": "android.view.ViewGroup"
+      },
+      {
+        "nodeId": "19_129_0_1054_1440_1140",
+        "packageName": "com.hupu.games",
+        "text": null,
+        "contentDesc": null,
+        "resourceId": "com.hupu.games:id\/titleRootView",
+        "className": "android.view.ViewGroup",
+        "bounds": {
+          "left": 0,
+          "top": 1054,
+          "right": 1440,
+          "bottom": 1140
+        },
+        "clickable": true,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 19,
+        "parentRoleHint": "android.view.ViewGroup"
+      },
+      {
+        "nodeId": "20_133_48_1172_1392_1572",
+        "packageName": "com.hupu.games",
+        "text": null,
+        "contentDesc": null,
+        "resourceId": "com.hupu.games:id\/rankViewFirst",
+        "className": "android.view.ViewGroup",
+        "bounds": {
+          "left": 48,
+          "top": 1172,
+          "right": 1392,
+          "bottom": 1572
+        },
+        "clickable": true,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 20,
+        "parentRoleHint": "android.widget.LinearLayout"
+      },
+      {
+        "nodeId": "23_140_448_1429_698_1509",
+        "packageName": "com.hupu.games",
+        "text": null,
+        "contentDesc": null,
+        "resourceId": "com.hupu.games:id\/rankPlayView",
+        "className": "android.widget.FrameLayout",
+        "bounds": {
+          "left": 448,
+          "top": 1429,
+          "right": 698,
+          "bottom": 1509
+        },
+        "clickable": true,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 23,
+        "parentRoleHint": "android.view.ViewGroup"
+      },
+      {
+        "nodeId": "20_158_48_1580_1392_1980",
+        "packageName": "com.hupu.games",
+        "text": null,
+        "contentDesc": null,
+        "resourceId": "com.hupu.games:id\/rankViewSecond",
+        "className": "android.view.ViewGroup",
+        "bounds": {
+          "left": 48,
+          "top": 1580,
+          "right": 1392,
+          "bottom": 1980
+        },
+        "clickable": true,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 20,
+        "parentRoleHint": "android.widget.LinearLayout"
+      },
+      {
+        "nodeId": "23_164_448_1837_729_1917",
+        "packageName": "com.hupu.games",
+        "text": null,
+        "contentDesc": null,
+        "resourceId": "com.hupu.games:id\/rankPlayView",
+        "className": "android.widget.FrameLayout",
+        "bounds": {
+          "left": 448,
+          "top": 1837,
+          "right": 729,
+          "bottom": 1917
+        },
+        "clickable": true,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 23,
+        "parentRoleHint": "android.view.ViewGroup"
+      },
+      {
+        "nodeId": "20_174_48_1988_1392_2388",
+        "packageName": "com.hupu.games",
+        "text": null,
+        "contentDesc": null,
+        "resourceId": "com.hupu.games:id\/rankViewThird",
+        "className": "android.view.ViewGroup",
+        "bounds": {
+          "left": 48,
+          "top": 1988,
+          "right": 1392,
+          "bottom": 2388
+        },
+        "clickable": true,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 20,
+        "parentRoleHint": "android.widget.LinearLayout"
+      },
+      {
+        "nodeId": "23_180_448_2245_720_2325",
+        "packageName": "com.hupu.games",
+        "text": null,
+        "contentDesc": null,
+        "resourceId": "com.hupu.games:id\/rankPlayView",
+        "className": "android.widget.FrameLayout",
+        "bounds": {
+          "left": 448,
+          "top": 2245,
+          "right": 720,
+          "bottom": 2325
+        },
+        "clickable": true,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 23,
+        "parentRoleHint": "android.view.ViewGroup"
+      },
+      {
+        "nodeId": "21_200_460_2939_759_2984",
+        "packageName": "com.hupu.games",
+        "text": null,
+        "contentDesc": null,
+        "resourceId": "com.hupu.games:id\/podcastProgressView",
+        "className": "android.widget.FrameLayout",
+        "bounds": {
+          "left": 460,
+          "top": 2939,
+          "right": 759,
+          "bottom": 2984
+        },
+        "clickable": true,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 21,
+        "parentRoleHint": "android.view.ViewGroup"
+      },
+      {
+        "nodeId": "12_229_2704_160_1440_336",
+        "packageName": "com.hupu.games",
+        "text": null,
+        "contentDesc": null,
+        "resourceId": "com.hupu.games:id\/btn_search",
+        "className": "android.widget.LinearLayout",
+        "bounds": {
+          "left": 2704,
+          "top": 160,
+          "right": 1440,
+          "bottom": 336
+        },
+        "clickable": true,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 12,
+        "parentRoleHint": "android.widget.FrameLayout"
+      },
+      {
+        "nodeId": "13_312_4168_176_1440_323",
+        "packageName": "com.hupu.games",
+        "text": null,
+        "contentDesc": null,
+        "resourceId": "com.hupu.games:id\/cl_create_rating",
+        "className": "android.view.ViewGroup",
+        "bounds": {
+          "left": 4168,
+          "top": 176,
+          "right": 1440,
+          "bottom": 323
+        },
+        "clickable": true,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 13,
+        "parentRoleHint": "android.view.ViewGroup"
+      },
+      {
+        "nodeId": "14_340_4384_205_1440_333",
+        "packageName": "com.hupu.games",
+        "text": null,
+        "contentDesc": null,
+        "resourceId": "com.hupu.games:id\/cl_feedback",
+        "className": "android.view.ViewGroup",
+        "bounds": {
+          "left": 4384,
+          "top": 205,
+          "right": 1440,
+          "bottom": 333
+        },
+        "clickable": true,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 14,
+        "parentRoleHint": "android.view.ViewGroup"
+      },
+      {
+        "nodeId": "14_344_5440_224_1440_312",
+        "packageName": "com.hupu.games",
+        "text": null,
+        "contentDesc": null,
+        "resourceId": "com.hupu.games:id\/iiv_day_night",
+        "className": "android.widget.ImageView",
+        "bounds": {
+          "left": 5440,
+          "top": 224,
+          "right": 1440,
+          "bottom": 312
+        },
+        "clickable": true,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 14,
+        "parentRoleHint": "android.view.ViewGroup"
+      },
+      {
+        "nodeId": "14_345_5608_224_1440_312",
+        "packageName": "com.hupu.games",
+        "text": null,
+        "contentDesc": null,
+        "resourceId": "com.hupu.games:id\/iiv_setup",
+        "className": "android.widget.ImageView",
+        "bounds": {
+          "left": 5608,
+          "top": 224,
+          "right": 1440,
+          "bottom": 312
+        },
+        "clickable": true,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 14,
+        "parentRoleHint": "android.view.ViewGroup"
+      },
+      {
+        "nodeId": "21_242_1472_386_1440_858",
+        "packageName": "com.hupu.games",
+        "text": null,
+        "contentDesc": null,
+        "resourceId": "com.hupu.games:id\/rootLayout",
+        "className": "android.view.ViewGroup",
+        "bounds": {
+          "left": 1472,
+          "top": 386,
+          "right": 1440,
+          "bottom": 858
+        },
+        "clickable": true,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 21,
+        "parentRoleHint": "android.widget.FrameLayout"
+      },
+      {
+        "nodeId": "21_258_1941_386_1440_858",
+        "packageName": "com.hupu.games",
+        "text": null,
+        "contentDesc": null,
+        "resourceId": "com.hupu.games:id\/rootLayout",
+        "className": "android.view.ViewGroup",
+        "bounds": {
+          "left": 1941,
+          "top": 386,
+          "right": 1440,
+          "bottom": 858
+        },
+        "clickable": true,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 21,
+        "parentRoleHint": "android.widget.FrameLayout"
+      },
+      {
+        "nodeId": "23_273_2410_386_1440_722",
+        "packageName": "com.hupu.games",
+        "text": null,
+        "contentDesc": null,
+        "resourceId": "com.hupu.games:id\/rootLayout",
+        "className": "android.view.ViewGroup",
+        "bounds": {
+          "left": 2410,
+          "top": 386,
+          "right": 1440,
+          "bottom": 722
+        },
+        "clickable": true,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 23,
+        "parentRoleHint": "android.widget.FrameLayout"
+      },
+      {
+        "nodeId": "15_347_4384_428_1440_664",
+        "packageName": "com.hupu.games",
+        "text": null,
+        "contentDesc": null,
+        "resourceId": "com.hupu.games:id\/ulv_logged",
+        "className": "android.view.ViewGroup",
+        "bounds": {
+          "left": 4384,
+          "top": 428,
+          "right": 1440,
+          "bottom": 664
+        },
+        "clickable": true,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 15,
+        "parentRoleHint": "android.widget.FrameLayout"
+      },
+      {
+        "nodeId": "18_356_5064_562_1440_627",
+        "packageName": "com.hupu.games",
+        "text": null,
+        "contentDesc": null,
+        "resourceId": "com.hupu.games:id\/cl_fame",
+        "className": "android.view.ViewGroup",
+        "bounds": {
+          "left": 5064,
+          "top": 562,
+          "right": 1440,
+          "bottom": 627
+        },
+        "clickable": true,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 18,
+        "parentRoleHint": "android.view.ViewGroup"
+      },
+      {
+        "nodeId": "15_361_4320_664_1440_866",
+        "packageName": "com.hupu.games",
+        "text": null,
+        "contentDesc": null,
+        "resourceId": "com.hupu.games:id\/ttv_post",
+        "className": "android.view.ViewGroup",
+        "bounds": {
+          "left": 4320,
+          "top": 664,
+          "right": 1440,
+          "bottom": 866
+        },
+        "clickable": true,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 15,
+        "parentRoleHint": "androidx.appcompat.widget.LinearLayoutCompat"
+      },
+      {
+        "nodeId": "15_364_4608_664_1440_866",
+        "packageName": "com.hupu.games",
+        "text": null,
+        "contentDesc": null,
+        "resourceId": "com.hupu.games:id\/ttv_reply",
+        "className": "android.view.ViewGroup",
+        "bounds": {
+          "left": 4608,
+          "top": 664,
+          "right": 1440,
+          "bottom": 866
+        },
+        "clickable": true,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 15,
+        "parentRoleHint": "androidx.appcompat.widget.LinearLayoutCompat"
+      },
+      {
+        "nodeId": "15_367_4896_664_1440_866",
+        "packageName": "com.hupu.games",
+        "text": null,
+        "contentDesc": null,
+        "resourceId": "com.hupu.games:id\/ttv_score",
+        "className": "android.view.ViewGroup",
+        "bounds": {
+          "left": 4896,
+          "top": 664,
+          "right": 1440,
+          "bottom": 866
+        },
+        "clickable": true,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 15,
+        "parentRoleHint": "androidx.appcompat.widget.LinearLayoutCompat"
+      },
+      {
+        "nodeId": "15_370_5184_664_1440_866",
+        "packageName": "com.hupu.games",
+        "text": null,
+        "contentDesc": null,
+        "resourceId": "com.hupu.games:id\/ttv_hpdollar",
+        "className": "android.view.ViewGroup",
+        "bounds": {
+          "left": 5184,
+          "top": 664,
+          "right": 1440,
+          "bottom": 866
+        },
+        "clickable": true,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 15,
+        "parentRoleHint": "androidx.appcompat.widget.LinearLayoutCompat"
+      },
+      {
+        "nodeId": "15_373_5472_664_1440_866",
+        "packageName": "com.hupu.games",
+        "text": null,
+        "contentDesc": null,
+        "resourceId": "com.hupu.games:id\/ttv_dollar",
+        "className": "android.view.ViewGroup",
+        "bounds": {
+          "left": 5472,
+          "top": 664,
+          "right": 1440,
+          "bottom": 866
+        },
+        "clickable": true,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 15,
+        "parentRoleHint": "androidx.appcompat.widget.LinearLayoutCompat"
+      },
+      {
+        "nodeId": "22_253_1504_722_1440_826",
+        "packageName": "com.hupu.games",
+        "text": null,
+        "contentDesc": null,
+        "resourceId": "com.hupu.games:id\/rlBottomBtn",
+        "className": "android.widget.RelativeLayout",
+        "bounds": {
+          "left": 1504,
+          "top": 722,
+          "right": 1440,
+          "bottom": 826
+        },
+        "clickable": true,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 22,
+        "parentRoleHint": "android.view.ViewGroup"
+      },
+      {
+        "nodeId": "22_266_1973_722_1440_826",
+        "packageName": "com.hupu.games",
+        "text": null,
+        "contentDesc": null,
+        "resourceId": "com.hupu.games:id\/rlBottomBtn",
+        "className": "android.widget.RelativeLayout",
+        "bounds": {
+          "left": 1973,
+          "top": 722,
+          "right": 1440,
+          "bottom": 826
+        },
+        "clickable": true,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 22,
+        "parentRoleHint": "android.view.ViewGroup"
+      },
+      {
+        "nodeId": "22_279_2442_722_1440_826",
+        "packageName": "com.hupu.games",
+        "text": null,
+        "contentDesc": null,
+        "resourceId": "com.hupu.games:id\/rlBottomBtn",
+        "className": "android.widget.RelativeLayout",
+        "bounds": {
+          "left": 2442,
+          "top": 722,
+          "right": 1440,
+          "bottom": 826
+        },
+        "clickable": true,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 22,
+        "parentRoleHint": "android.view.ViewGroup"
+      },
+      {
+        "nodeId": "14_376_4432_922_1440_1058",
+        "packageName": "com.hupu.games",
+        "text": null,
+        "contentDesc": null,
+        "resourceId": "com.hupu.games:id\/vipTipsView",
+        "className": "android.view.ViewGroup",
+        "bounds": {
+          "left": 4432,
+          "top": 922,
+          "right": 1440,
+          "bottom": 1058
+        },
+        "clickable": true,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 14,
+        "parentRoleHint": "android.view.ViewGroup"
+      },
+      {
+        "nodeId": "15_393_4384_1290_1440_1414",
+        "packageName": "com.hupu.games",
+        "text": null,
+        "contentDesc": null,
+        "resourceId": "com.hupu.games:id\/cl_podcast_top",
+        "className": "android.view.ViewGroup",
+        "bounds": {
+          "left": 4384,
+          "top": 1290,
+          "right": 1440,
+          "bottom": 1414
+        },
+        "clickable": true,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 15,
+        "parentRoleHint": "android.view.ViewGroup"
+      },
+      {
+        "nodeId": "15_396_5040_1290_1440_1414",
+        "packageName": "com.hupu.games",
+        "text": null,
+        "contentDesc": null,
+        "resourceId": "com.hupu.games:id\/cl_score_top",
+        "className": "android.view.ViewGroup",
+        "bounds": {
+          "left": 5040,
+          "top": 1290,
+          "right": 1440,
+          "bottom": 1414
+        },
+        "clickable": true,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 15,
+        "parentRoleHint": "android.view.ViewGroup"
+      },
+      {
+        "nodeId": "15_399_4384_1454_1440_1654",
+        "packageName": "com.hupu.games",
+        "text": null,
+        "contentDesc": null,
+        "resourceId": "com.hupu.games:id\/cl_podcast_content",
+        "className": "android.view.ViewGroup",
+        "bounds": {
+          "left": 4384,
+          "top": 1454,
+          "right": 1440,
+          "bottom": 1654
+        },
+        "clickable": true,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 15,
+        "parentRoleHint": "android.view.ViewGroup"
+      },
+      {
+        "nodeId": "15_404_5040_1454_1440_1654",
+        "packageName": "com.hupu.games",
+        "text": null,
+        "contentDesc": null,
+        "resourceId": "com.hupu.games:id\/cl_score_content",
+        "className": "android.view.ViewGroup",
+        "bounds": {
+          "left": 5040,
+          "top": 1454,
+          "right": 1440,
+          "bottom": 1654
+        },
+        "clickable": true,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 15,
+        "parentRoleHint": "android.view.ViewGroup"
+      },
+      {
+        "nodeId": "18_464_5456_2152_1440_2272",
+        "packageName": "com.hupu.games",
+        "text": null,
+        "contentDesc": null,
+        "resourceId": "com.hupu.games:id\/cl_drama",
+        "className": "android.view.ViewGroup",
+        "bounds": {
+          "left": 5456,
+          "top": 2152,
+          "right": 1440,
+          "bottom": 2272
+        },
+        "clickable": true,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 18,
+        "parentRoleHint": "android.view.ViewGroup"
+      },
+      {
+        "nodeId": "16_18_376_194_1120_270",
+        "packageName": "com.hupu.games",
+        "text": "大家都在搜：马刺",
+        "contentDesc": null,
+        "resourceId": null,
+        "className": "android.widget.TextView",
+        "bounds": {
+          "left": 376,
+          "top": 194,
+          "right": 1120,
+          "bottom": 270
+        },
+        "clickable": false,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 16,
+        "parentRoleHint": "android.widget.TextSwitcher"
+      },
+      {
+        "nodeId": "11_98_0_480_1440_2984",
+        "packageName": "com.hupu.games",
+        "text": null,
+        "contentDesc": null,
+        "resourceId": "com.hupu.games:id\/vp_pager",
+        "className": "androidx.viewpager.widget.ViewPager",
+        "bounds": {
+          "left": 0,
+          "top": 480,
+          "right": 1440,
+          "bottom": 2984
+        },
+        "clickable": false,
+        "editable": false,
+        "scrollable": true,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 11,
+        "parentRoleHint": "android.view.ViewGroup"
+      },
+      {
+        "nodeId": "17_108_0_480_1440_2984",
+        "packageName": "com.hupu.games",
+        "text": null,
+        "contentDesc": null,
+        "resourceId": "com.hupu.games:id\/recyclerView",
+        "className": "androidx.recyclerview.widget.RecyclerView",
+        "bounds": {
+          "left": 0,
+          "top": 480,
+          "right": 1440,
+          "bottom": 2984
+        },
+        "clickable": false,
+        "editable": false,
+        "scrollable": true,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 17,
+        "parentRoleHint": "android.view.ViewGroup"
+      },
+      {
+        "nodeId": "14_15_248_162_1368_302",
+        "packageName": "com.hupu.games",
+        "text": null,
+        "contentDesc": null,
+        "resourceId": null,
+        "className": "android.view.ViewGroup",
+        "bounds": {
+          "left": 248,
+          "top": 162,
+          "right": 1368,
+          "bottom": 302
+        },
+        "clickable": true,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 14,
+        "parentRoleHint": "android.widget.FrameLayout"
+      },
+      {
+        "nodeId": "15_24_28_304_228_480",
+        "packageName": "com.hupu.games",
+        "text": null,
+        "contentDesc": null,
+        "resourceId": null,
+        "className": "android.widget.FrameLayout",
+        "bounds": {
+          "left": 28,
+          "top": 304,
+          "right": 228,
+          "bottom": 480
+        },
+        "clickable": true,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 15,
+        "parentRoleHint": "android.widget.LinearLayout"
+      },
+      {
+        "nodeId": "15_27_228_304_428_480",
+        "packageName": "com.hupu.games",
+        "text": null,
+        "contentDesc": null,
+        "resourceId": null,
+        "className": "android.widget.FrameLayout",
+        "bounds": {
+          "left": 228,
+          "top": 304,
+          "right": 428,
+          "bottom": 480
+        },
+        "clickable": true,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 15,
+        "parentRoleHint": "android.widget.LinearLayout"
+      },
+      {
+        "nodeId": "15_30_428_304_628_480",
+        "packageName": "com.hupu.games",
+        "text": null,
+        "contentDesc": null,
+        "resourceId": null,
+        "className": "android.widget.FrameLayout",
+        "bounds": {
+          "left": 428,
+          "top": 304,
+          "right": 628,
+          "bottom": 480
+        },
+        "clickable": true,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 15,
+        "parentRoleHint": "android.widget.LinearLayout"
+      },
+      {
+        "nodeId": "15_33_628_304_820_480",
+        "packageName": "com.hupu.games",
+        "text": null,
+        "contentDesc": null,
+        "resourceId": null,
+        "className": "android.widget.FrameLayout",
+        "bounds": {
+          "left": 628,
+          "top": 304,
+          "right": 820,
+          "bottom": 480
+        },
+        "clickable": true,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 15,
+        "parentRoleHint": "android.widget.LinearLayout"
+      },
+      {
+        "nodeId": "15_36_820_304_1021_480",
+        "packageName": "com.hupu.games",
+        "text": null,
+        "contentDesc": null,
+        "resourceId": null,
+        "className": "android.widget.FrameLayout",
+        "bounds": {
+          "left": 820,
+          "top": 304,
+          "right": 1021,
+          "bottom": 480
+        },
+        "clickable": true,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 15,
+        "parentRoleHint": "android.widget.LinearLayout"
+      }
+    ],
+    "eventsSinceLastState": [
+      {
+        "eventType": "TYPE_WINDOW_CONTENT_CHANGED",
+        "packageName": "com.hupu.games",
+        "className": "android.view.ViewGroup",
+        "text": null,
+        "timestamp": 1779338497487
+      },
+      {
+        "eventType": "TYPE_WINDOW_CONTENT_CHANGED",
+        "packageName": "com.hupu.games",
+        "className": "android.view.ViewGroup",
+        "text": null,
+        "timestamp": 1779338497601
+      },
+      {
+        "eventType": "TYPE_WINDOW_CONTENT_CHANGED",
+        "packageName": "com.hupu.games",
+        "className": "android.view.ViewGroup",
+        "text": null,
+        "timestamp": 1779338497702
+      },
+      {
+        "eventType": "TYPE_WINDOW_CONTENT_CHANGED",
+        "packageName": "com.hupu.games",
+        "className": "android.view.ViewGroup",
+        "text": null,
+        "timestamp": 1779338497800
+      },
+      {
+        "eventType": "TYPE_WINDOW_CONTENT_CHANGED",
+        "packageName": "com.hupu.games",
+        "className": "android.view.ViewGroup",
+        "text": null,
+        "timestamp": 1779338497901
+      },
+      {
+        "eventType": "TYPE_WINDOW_CONTENT_CHANGED",
+        "packageName": "com.hupu.games",
+        "className": "android.view.ViewGroup",
+        "text": null,
+        "timestamp": 1779338498004
+      },
+      {
+        "eventType": "TYPE_WINDOW_CONTENT_CHANGED",
+        "packageName": "com.hupu.games",
+        "className": "android.view.ViewGroup",
+        "text": null,
+        "timestamp": 1779338498103
+      },
+      {
+        "eventType": "TYPE_WINDOW_CONTENT_CHANGED",
+        "packageName": "com.hupu.games",
+        "className": "android.view.ViewGroup",
+        "text": null,
+        "timestamp": 1779338498215
+      },
+      {
+        "eventType": "TYPE_WINDOW_CONTENT_CHANGED",
+        "packageName": "com.hupu.games",
+        "className": "android.view.ViewGroup",
+        "text": null,
+        "timestamp": 1779338498315
+      },
+      {
+        "eventType": "TYPE_WINDOW_CONTENT_CHANGED",
+        "packageName": "com.hupu.games",
+        "className": "android.view.ViewGroup",
+        "text": null,
+        "timestamp": 1779338498430
+      },
+      {
+        "eventType": "TYPE_WINDOW_CONTENT_CHANGED",
+        "packageName": "com.hupu.games",
+        "className": "android.view.ViewGroup",
+        "text": null,
+        "timestamp": 1779338498529
+      },
+      {
+        "eventType": "TYPE_WINDOW_CONTENT_CHANGED",
+        "packageName": "com.hupu.games",
+        "className": "android.view.ViewGroup",
+        "text": null,
+        "timestamp": 1779338498646
+      },
+      {
+        "eventType": "TYPE_WINDOW_CONTENT_CHANGED",
+        "packageName": "com.hupu.games",
+        "className": "android.view.ViewGroup",
+        "text": null,
+        "timestamp": 1779338498745
+      },
+      {
+        "eventType": "TYPE_WINDOW_CONTENT_CHANGED",
+        "packageName": "com.hupu.games",
+        "className": "android.view.ViewGroup",
+        "text": null,
+        "timestamp": 1779338498862
+      },
+      {
+        "eventType": "TYPE_WINDOW_CONTENT_CHANGED",
+        "packageName": "com.hupu.games",
+        "className": "android.view.ViewGroup",
+        "text": null,
+        "timestamp": 1779338498961
+      },
+      {
+        "eventType": "TYPE_WINDOW_CONTENT_CHANGED",
+        "packageName": "com.hupu.games",
+        "className": "android.view.ViewGroup",
+        "text": null,
+        "timestamp": 1779338499074
+      },
+      {
+        "eventType": "TYPE_WINDOW_CONTENT_CHANGED",
+        "packageName": "com.hupu.games",
+        "className": "android.view.ViewGroup",
+        "text": null,
+        "timestamp": 1779338499180
+      },
+      {
+        "eventType": "TYPE_WINDOW_CONTENT_CHANGED",
+        "packageName": "com.hupu.games",
+        "className": "android.view.ViewGroup",
+        "text": null,
+        "timestamp": 1779338499277
+      }
+    ]
+  },
+  "summary": {
+    "nodeCount": 565,
+    "clickableCount": 102,
+    "editableCount": 0,
+    "scrollableCount": 10,
+    "labels": [
+      "com.hupu.games:id\/action_bar_root",
+      "android:id\/content",
+      "com.hupu.games:id\/fl_content",
+      "com.hupu.games:id\/cl_main",
+      "com.hupu.games:id\/vp2_main",
+      "com.hupu.games:id\/cl_home_root_v3",
+      "com.hupu.games:id\/cl_search",
+      "com.hupu.games:id\/iv_logo",
+      "com.hupu.games:id\/fl_search",
+      "com.hupu.games:id\/iv_search",
+      "com.hupu.games:id\/tv_tip",
+      "大家都在搜：马刺",
+      "搜索 com.hupu.games:id\/tv_search",
+      "com.hupu.games:id\/cl_indicator",
+      "com.hupu.games:id\/indicator_home",
+      "热榜 com.hupu.games:id\/tv_title",
+      "播客 com.hupu.games:id\/tv_title",
+      "推荐 com.hupu.games:id\/tv_title",
+      "CS2 com.hupu.games:id\/tv_title",
+      "NBA com.hupu.games:id\/tv_title",
+      "国际足球 com.hupu.games:id\/tv_title",
+      "辩论大赛 com.hupu.games:id\/tv_title",
+      "英雄联盟 com.hupu.games:id\/tv_title",
+      "综合体育 com.hupu.games:id\/tv_title",
+      "中国篮球 com.hupu.games:id\/tv_title",
+      "影视娱乐 com.hupu.games:id\/tv_title",
+      "恋爱 com.hupu.games:id\/tv_title",
+      "江苏联 com.hupu.games:id\/tv_title",
+      "中国足球 com.hupu.games:id\/tv_title",
+      "com.hupu.games:id\/iv_title",
+      "汽车 com.hupu.games:id\/tv_title",
+      "无畏契约 com.hupu.games:id\/tv_title",
+      "乒乓球 com.hupu.games:id\/tv_title",
+      "装备 com.hupu.games:id\/tv_title",
+      "动漫 com.hupu.games:id\/tv_title",
+      "绝地求生 com.hupu.games:id\/tv_title",
+      "游戏 com.hupu.games:id\/tv_title",
+      "和平精英 com.hupu.games:id\/tv_title",
+      "游戏中心 com.hupu.games:id\/tv_title",
+      "com.hupu.games:id\/fl_right_edit",
+      "com.hupu.games:id\/iv_right_edit",
+      "com.hupu.games:id\/vp_pager",
+      "com.hupu.games:id\/nsh_home_tab",
+      "com.hupu.games:id\/cl_content",
+      "com.hupu.games:id\/iv_bg",
+      "com.hupu.games:id\/refresh_layout",
+      "com.hupu.games:id\/refresh_view",
+      "下拉刷新 com.hupu.games:id\/tv_state",
+      "com.hupu.games:id\/recyclerView",
+      "com.hupu.games:id\/podcastImageView",
+      "节目广场 com.hupu.games:id\/titleTextView",
+      "com.hupu.games:id\/titleRightRootView",
+      "com.hupu.games:id\/subscribeScrollView",
+      "com.hupu.games:id\/titleMoreIcon",
+      "com.hupu.games:id\/titleRootView",
+      "播客榜单 com.hupu.games:id\/titleTextView",
+      "com.hupu.games:id\/titleMoreIcon",
+      "com.hupu.games:id\/carouselView",
+      "com.hupu.games:id\/rankViewFirst",
+      "com.hupu.games:id\/rankContentView",
+      "com.hupu.games:id\/rankBgViewGroup",
+      "com.hupu.games:id\/rankBgView",
+      "体育梗百科 com.hupu.games:id\/rankTagView",
+      "骑士领先22分被尼克斯翻盘，哈登的锅有多大？ com.hupu.games:id\/rankTitleView",
+      "com.hupu.games:id\/rankPlayView",
+      "com.hupu.games:id\/playIcon",
+      "2分钟 com.hupu.games:id\/timeTextView",
+      "com.hupu.games:id\/rankBgViewRight",
+      "com.hupu.games:id\/rankAnimateImageViewGroup",
+      "com.hupu.games:id\/rankAnimateImageView1",
+      "com.hupu.games:id\/rankAnimateImageView2",
+      "com.hupu.games:id\/hotIcon",
+      "热播中 com.hupu.games:id\/hotNum",
+      "com.hupu.games:id\/rankImageGroupView",
+      "com.hupu.games:id\/rankImageView",
+      "com.hupu.games:id\/commonPodcastImageView",
+      "com.hupu.games:id\/commonPodcastLabelView",
+      "com.hupu.games:id\/commonPodcastIconView",
+      "视频 com.hupu.games:id\/commonPodcastTextView",
+      "com.hupu.games:id\/rankIndexImageView"
+    ],
+    "bottomCandidates": [
+      {
+        "label": "",
+        "bounds": {
+          "left": 0,
+          "top": 2904,
+          "right": 288,
+          "bottom": 3104
+        },
+        "clickable": true
+      },
+      {
+        "label": "首页 com.hupu.games:id\/tv_tab",
+        "bounds": {
+          "left": 96,
+          "top": 3023,
+          "right": 192,
+          "bottom": 3088
+        },
+        "clickable": false
+      },
+      {
+        "label": "|  浪荡没顾忌：起高楼宴宾客 com.hupu.games:id\/podcastCommentQuoteInfoView",
+        "bounds": {
+          "left": 96,
+          "top": 3120,
+          "right": 757,
+          "bottom": 2984
+        },
+        "clickable": false
+      },
+      {
+        "label": "",
+        "bounds": {
+          "left": 288,
+          "top": 2904,
+          "right": 576,
+          "bottom": 3104
+        },
+        "clickable": true
+      },
+      {
+        "label": "专区 com.hupu.games:id\/tv_tab",
+        "bounds": {
+          "left": 384,
+          "top": 3023,
+          "right": 480,
+          "bottom": 3088
+        },
+        "clickable": false
+      },
+      {
+        "label": "com.hupu.games:id\/rankPlayView",
+        "bounds": {
+          "left": 448,
+          "top": 2245,
+          "right": 720,
+          "bottom": 2325
+        },
+        "clickable": true
+      },
+      {
+        "label": "com.hupu.games:id\/podcastProgressView",
+        "bounds": {
+          "left": 460,
+          "top": 2939,
+          "right": 759,
+          "bottom": 2984
+        },
+        "clickable": true
+      },
+      {
+        "label": "10分钟 com.hupu.games:id\/timeTextView",
+        "bounds": {
+          "left": 547,
+          "top": 2256,
+          "right": 692,
+          "bottom": 2313
+        },
+        "clickable": false
+      },
+      {
+        "label": "103分钟 com.hupu.games:id\/timeTextView",
+        "bounds": {
+          "left": 559,
+          "top": 2950,
+          "right": 731,
+          "bottom": 2984
+        },
+        "clickable": false
+      },
+      {
+        "label": "亮评:看他起高楼看他宴宾客看他楼塌了可憎的是，楼塌的底下埋的是攒了一辈子钱买恒大交不了房的老百姓，给恒大的供货商， com.hupu.games:id\/podcastCommentView",
+        "bounds": {
+          "left": 96,
+          "top": 3207,
+          "right": 1279,
+          "bottom": 2984
+        },
+        "clickable": false
+      },
+      {
+        "label": "com.hupu.games:id\/rankViewThird",
+        "bounds": {
+          "left": 48,
+          "top": 1988,
+          "right": 1392,
+          "bottom": 2388
+        },
+        "clickable": true
+      },
+      {
+        "label": "",
+        "bounds": {
+          "left": 0,
+          "top": 2452,
+          "right": 1440,
+          "bottom": 2602
+        },
+        "clickable": true
+      }
+    ]
+  },
+  "retentionPolicy": {
+    "fullNodeTreeStored": false,
+    "storedNodeLimit": 45,
+    "storedEventLimit": 20,
+    "longTermKnowledge": "summary + app_ui_graph + assembly\/runtime reports"
+  },
+  "createdAt": 1779338499781
+}

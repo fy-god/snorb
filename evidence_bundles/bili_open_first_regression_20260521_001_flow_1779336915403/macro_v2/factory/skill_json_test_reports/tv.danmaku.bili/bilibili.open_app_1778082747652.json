@@ -1,0 +1,94 @@
+{
+  "schemaVersion": 1,
+  "kind": "skill_json_test_report",
+  "skillId": "bilibili.open_app",
+  "appPackage": "tv.danmaku.bili",
+  "skillKind": "atomic_skill",
+  "testRuns": 10,
+  "success": 0,
+  "mediumConfidence": 10,
+  "lowConfidence": 0,
+  "failed": 0,
+  "timeout": 0,
+  "successRate": 1,
+  "highConfidenceRate": 0,
+  "mediumOrHighConfidenceRate": 1,
+  "avgDurationMs": 76,
+  "p95DurationMs": 39,
+  "failureClusters": [],
+  "runResults": [
+    {
+      "run": 1,
+      "status": "SUCCESS_MEDIUM_CONFIDENCE",
+      "message": "Launch intent sent for tv.danmaku.bili",
+      "durationMs": 620,
+      "usedCoordinate": false
+    },
+    {
+      "run": 2,
+      "status": "SUCCESS_MEDIUM_CONFIDENCE",
+      "message": "Launch intent sent for tv.danmaku.bili",
+      "durationMs": 10,
+      "usedCoordinate": false
+    },
+    {
+      "run": 3,
+      "status": "SUCCESS_MEDIUM_CONFIDENCE",
+      "message": "Launch intent sent for tv.danmaku.bili",
+      "durationMs": 9,
+      "usedCoordinate": false
+    },
+    {
+      "run": 4,
+      "status": "SUCCESS_MEDIUM_CONFIDENCE",
+      "message": "Launch intent sent for tv.danmaku.bili",
+      "durationMs": 11,
+      "usedCoordinate": false
+    },
+    {
+      "run": 5,
+      "status": "SUCCESS_MEDIUM_CONFIDENCE",
+      "message": "Launch intent sent for tv.danmaku.bili",
+      "durationMs": 27,
+      "usedCoordinate": false
+    },
+    {
+      "run": 6,
+      "status": "SUCCESS_MEDIUM_CONFIDENCE",
+      "message": "Launch intent sent for tv.danmaku.bili",
+      "durationMs": 21,
+      "usedCoordinate": false
+    },
+    {
+      "run": 7,
+      "status": "SUCCESS_MEDIUM_CONFIDENCE",
+      "message": "Launch intent sent for tv.danmaku.bili",
+      "durationMs": 8,
+      "usedCoordinate": false
+    },
+    {
+      "run": 8,
+      "status": "SUCCESS_MEDIUM_CONFIDENCE",
+      "message": "Launch intent sent for tv.danmaku.bili",
+      "durationMs": 39,
+      "usedCoordinate": false
+    },
+    {
+      "run": 9,
+      "status": "SUCCESS_MEDIUM_CONFIDENCE",
+      "message": "Launch intent sent for tv.danmaku.bili",
+      "durationMs": 8,
+      "usedCoordinate": false
+    },
+    {
+      "run": 10,
+      "status": "SUCCESS_MEDIUM_CONFIDENCE",
+      "message": "Launch intent sent for tv.danmaku.bili",
+      "durationMs": 8,
+      "usedCoordinate": false
+    }
+  ],
+  "allowSideEffect": true,
+  "promotionSuggestion": "APPROVE_AS_B_LEVEL",
+  "timestamp": 1778082747652
+}

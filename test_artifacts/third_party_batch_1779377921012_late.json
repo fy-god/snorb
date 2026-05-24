@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "kind": "third_party_app_batch_service_state",
+  "id": "third_party_batch_1779377921012",
+  "requestId": "third_party_batch_1779377921012",
+  "status": "RUNNING",
+  "message": "正在深探 拼多多(com.xunmeng.pinduoduo)：primary_tab_surface_entry\/RUNNING，tab=bottom_tab_3 click graphical_ui: graphical_ui_56，elapsed=64999ms",
+  "requestedPackages": [
+    "tv.danmaku.bili",
+    "com.xunmeng.pinduoduo",
+    "com.hupu.games"
+  ],
+  "progress": {
+    "phase": "UI_PROBE_EVENT",
+    "packageName": "com.xunmeng.pinduoduo",
+    "label": "拼多多",
+    "uiPhase": "primary_tab_surface_entry",
+    "uiStatus": "RUNNING",
+    "uiMessage": "tab=bottom_tab_3 click graphical_ui: graphical_ui_56",
+    "path": null,
+    "elapsedMs": 64999
+  },
+  "payload": null,
+  "createdAt": 1779378170234
+}

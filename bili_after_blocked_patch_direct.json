@@ -1,0 +1,87 @@
+{
+  "schemaVersion": 1,
+  "kind": "skill_json_ai_direct_run_report",
+  "id": "ai_direct_run_1778532799381",
+  "skillId": "bilibili.search.search_in_app",
+  "appPackage": "tv.danmaku.bili",
+  "instruction": "打开哔哩哔哩搜索王老菊打开第一个视频",
+  "engine": "ai_direct_skill_json",
+  "approvedRequired": false,
+  "status": "SUCCESS_LOW_CONFIDENCE",
+  "message": "Window\/node state changed; Macro atoms completed; reactiveDismissed=3",
+  "durationMs": 8470,
+  "usedCoordinate": true,
+  "details": {
+    "macroSkillId": "bilibili.search.search_in_app",
+    "atomTrace": [
+      {
+        "index": 0,
+        "skillId": "bilibili.open_app",
+        "actionType": "OpenApp",
+        "status": "SUCCESS_MEDIUM_CONFIDENCE",
+        "message": "Launcher root intent sent for tv.danmaku.bili",
+        "usedCoordinate": false,
+        "details": null
+      },
+      {
+        "index": 1,
+        "skillId": "bilibili.recover.home_surface",
+        "actionType": "RecoverBilibiliHomeSurface",
+        "status": "SUCCESS_MEDIUM_CONFIDENCE",
+        "message": "Bilibili ready after leaving message surface; events=[{\"pass\":1,\"surface\":\"message_or_drawer_surface\",\"action\":\"message_surface_global_back\",\"success\":true,\"message\":\"GLOBAL_ACTION_BACK performed\"},{\"pass\":1,\"phase\":\"ready_after_message_escape\",\"surface\":\"game_message_surface\"}]",
+        "usedCoordinate": true,
+        "details": {
+          "events": [
+            {
+              "pass": 1,
+              "surface": "message_or_drawer_surface",
+              "action": "message_surface_global_back",
+              "success": true,
+              "message": "GLOBAL_ACTION_BACK performed"
+            },
+            {
+              "pass": 1,
+              "phase": "ready_after_message_escape",
+              "surface": "game_message_surface"
+            }
+          ]
+        }
+      },
+      {
+        "index": 2,
+        "skillId": "bilibili.home.click_search_entry",
+        "actionType": "ClickElement",
+        "status": "SUCCESS_LOW_CONFIDENCE",
+        "message": "dispatchGesture tap sent (normalized=0.455,0.078 px=655,247 screen=1440x3168)",
+        "usedCoordinate": true,
+        "details": null
+      },
+      {
+        "index": 3,
+        "skillId": "bilibili.search.type_search_query",
+        "actionType": "TypeText",
+        "status": "SUCCESS_LOW_CONFIDENCE",
+        "message": "MacroPilot IME committed text",
+        "usedCoordinate": true,
+        "details": null
+      },
+      {
+        "index": 4,
+        "skillId": "bilibili.search.click_search_submit",
+        "actionType": "ClickElement",
+        "status": "SUCCESS_LOW_CONFIDENCE",
+        "message": "Window\/node state changed; dispatchGesture tap sent (normalized=0.910,0.082 px=1310,259 screen=1440x3168)",
+        "usedCoordinate": true,
+        "details": null
+      }
+    ],
+    "reactiveDismissed": 3
+  },
+  "allowSideEffect": true,
+  "params": {
+    "query": "王老菊"
+  },
+  "skillFile": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_candidates\/tv.danmaku.bili\/bilibili.search.search_in_app.json",
+  "previewConfigFile": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/app_config_exports\/tv.danmaku.bili\/app_config_20260512_045310_713.json",
+  "createdAt": 1778532799381
+}

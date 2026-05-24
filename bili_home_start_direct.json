@@ -1,0 +1,190 @@
+{
+  "schemaVersion": 1,
+  "kind": "skill_json_ai_direct_run_report",
+  "id": "ai_direct_run_1778534324574",
+  "skillId": "bilibili.search.search_in_app",
+  "appPackage": "tv.danmaku.bili",
+  "instruction": "打开哔哩哔哩搜索王老菊打开第一个视频",
+  "engine": "ai_direct_skill_json",
+  "approvedRequired": false,
+  "status": "FAILED_RECOVER_SCREEN",
+  "message": "Bilibili recovery exhausted; still not on a trusted home\/search\/results surface. events=[{\"pass\":1,\"surface\":\"message_or_drawer_surface\",\"action\":\"message_surface_global_back\",\"success\":true,\"message\":\"GLOBAL_ACTION_BACK performed\"},{\"pass\":1,\"surface\":\"message_or_drawer_surface\",\"action\":\"message_surface_top_left_back_coordinate\",\"success\":true,\"message\":\"dispatchGesture tap sent (normalized=0.065,0.085 px=93,269 screen=1440x3168)\"},{\"pass\":2,\"action\":\"reactive_overlays\",\"dismissed\":2},{\"pass\":2,\"surface\":\"message_or_drawer_surface\",\"action\":\"message_surface_global_back\",\"success\":true,\"message\":\"GLOBAL_ACTION_BACK performed\"},{\"pass\":2,\"surface\":\"message_or_drawer_surface\",\"action\":\"message_surface_top_left_back_coordinate\",\"success\":true,\"message\":\"dispatchGesture tap sent (normalized=0.065,0.085 px=93,269 screen=1440x3168)\"},{\"pass\":3,\"action\":\"reactive_overlays\",\"dismissed\":1},{\"pass\":3,\"surface\":\"message_or_drawer_surface\",\"action\":\"message_surface_global_back\",\"success\":true,\"message\":\"GLOBAL_ACTION_BACK performed\"},{\"pass\":3,\"surface\":\"message_or_drawer_surface\",\"action\":\"message_surface_top_left_back_coordinate\",\"success\":true,\"message\":\"dispatchGesture tap sent (normalized=0.065,0.085 px=93,269 screen=1440x3168)\"},{\"pass\":4,\"surface\":\"unknown\",\"action\":\"tap_top_back\",\"success\":true,\"message\":\"dispatchGesture tap sent (normalized=0.067,0.078 px=96,247 screen=1440x3168)\"},{\"pass\":4,\"action\":\"reopen_launcher_root\",\"success\":true,\"message\":\"Launcher root intent sent for tv.danmaku.bili\"}]",
+  "durationMs": 16679,
+  "usedCoordinate": true,
+  "details": {
+    "macroSkillId": "bilibili.search.search_in_app",
+    "failedAtom": {
+      "index": 1,
+      "skillId": "bilibili.recover.home_surface",
+      "actionType": "RecoverBilibiliHomeSurface",
+      "status": "FAILED_RECOVER_SCREEN",
+      "message": "Bilibili recovery exhausted; still not on a trusted home\/search\/results surface. events=[{\"pass\":1,\"surface\":\"message_or_drawer_surface\",\"action\":\"message_surface_global_back\",\"success\":true,\"message\":\"GLOBAL_ACTION_BACK performed\"},{\"pass\":1,\"surface\":\"message_or_drawer_surface\",\"action\":\"message_surface_top_left_back_coordinate\",\"success\":true,\"message\":\"dispatchGesture tap sent (normalized=0.065,0.085 px=93,269 screen=1440x3168)\"},{\"pass\":2,\"action\":\"reactive_overlays\",\"dismissed\":2},{\"pass\":2,\"surface\":\"message_or_drawer_surface\",\"action\":\"message_surface_global_back\",\"success\":true,\"message\":\"GLOBAL_ACTION_BACK performed\"},{\"pass\":2,\"surface\":\"message_or_drawer_surface\",\"action\":\"message_surface_top_left_back_coordinate\",\"success\":true,\"message\":\"dispatchGesture tap sent (normalized=0.065,0.085 px=93,269 screen=1440x3168)\"},{\"pass\":3,\"action\":\"reactive_overlays\",\"dismissed\":1},{\"pass\":3,\"surface\":\"message_or_drawer_surface\",\"action\":\"message_surface_global_back\",\"success\":true,\"message\":\"GLOBAL_ACTION_BACK performed\"},{\"pass\":3,\"surface\":\"message_or_drawer_surface\",\"action\":\"message_surface_top_left_back_coordinate\",\"success\":true,\"message\":\"dispatchGesture tap sent (normalized=0.065,0.085 px=93,269 screen=1440x3168)\"},{\"pass\":4,\"surface\":\"unknown\",\"action\":\"tap_top_back\",\"success\":true,\"message\":\"dispatchGesture tap sent (normalized=0.067,0.078 px=96,247 screen=1440x3168)\"},{\"pass\":4,\"action\":\"reopen_launcher_root\",\"success\":true,\"message\":\"Launcher root intent sent for tv.danmaku.bili\"}]",
+      "usedCoordinate": true,
+      "details": {
+        "events": [
+          {
+            "pass": 1,
+            "surface": "message_or_drawer_surface",
+            "action": "message_surface_global_back",
+            "success": true,
+            "message": "GLOBAL_ACTION_BACK performed"
+          },
+          {
+            "pass": 1,
+            "surface": "message_or_drawer_surface",
+            "action": "message_surface_top_left_back_coordinate",
+            "success": true,
+            "message": "dispatchGesture tap sent (normalized=0.065,0.085 px=93,269 screen=1440x3168)"
+          },
+          {
+            "pass": 2,
+            "action": "reactive_overlays",
+            "dismissed": 2
+          },
+          {
+            "pass": 2,
+            "surface": "message_or_drawer_surface",
+            "action": "message_surface_global_back",
+            "success": true,
+            "message": "GLOBAL_ACTION_BACK performed"
+          },
+          {
+            "pass": 2,
+            "surface": "message_or_drawer_surface",
+            "action": "message_surface_top_left_back_coordinate",
+            "success": true,
+            "message": "dispatchGesture tap sent (normalized=0.065,0.085 px=93,269 screen=1440x3168)"
+          },
+          {
+            "pass": 3,
+            "action": "reactive_overlays",
+            "dismissed": 1
+          },
+          {
+            "pass": 3,
+            "surface": "message_or_drawer_surface",
+            "action": "message_surface_global_back",
+            "success": true,
+            "message": "GLOBAL_ACTION_BACK performed"
+          },
+          {
+            "pass": 3,
+            "surface": "message_or_drawer_surface",
+            "action": "message_surface_top_left_back_coordinate",
+            "success": true,
+            "message": "dispatchGesture tap sent (normalized=0.065,0.085 px=93,269 screen=1440x3168)"
+          },
+          {
+            "pass": 4,
+            "surface": "unknown",
+            "action": "tap_top_back",
+            "success": true,
+            "message": "dispatchGesture tap sent (normalized=0.067,0.078 px=96,247 screen=1440x3168)"
+          },
+          {
+            "pass": 4,
+            "action": "reopen_launcher_root",
+            "success": true,
+            "message": "Launcher root intent sent for tv.danmaku.bili"
+          }
+        ]
+      }
+    },
+    "atomTrace": [
+      {
+        "index": 0,
+        "skillId": "bilibili.open_app",
+        "actionType": "OpenApp",
+        "status": "SUCCESS_MEDIUM_CONFIDENCE",
+        "message": "Launcher root intent sent for tv.danmaku.bili",
+        "usedCoordinate": false,
+        "details": null
+      },
+      {
+        "index": 1,
+        "skillId": "bilibili.recover.home_surface",
+        "actionType": "RecoverBilibiliHomeSurface",
+        "status": "FAILED_RECOVER_SCREEN",
+        "message": "Bilibili recovery exhausted; still not on a trusted home\/search\/results surface. events=[{\"pass\":1,\"surface\":\"message_or_drawer_surface\",\"action\":\"message_surface_global_back\",\"success\":true,\"message\":\"GLOBAL_ACTION_BACK performed\"},{\"pass\":1,\"surface\":\"message_or_drawer_surface\",\"action\":\"message_surface_top_left_back_coordinate\",\"success\":true,\"message\":\"dispatchGesture tap sent (normalized=0.065,0.085 px=93,269 screen=1440x3168)\"},{\"pass\":2,\"action\":\"reactive_overlays\",\"dismissed\":2},{\"pass\":2,\"surface\":\"message_or_drawer_surface\",\"action\":\"message_surface_global_back\",\"success\":true,\"message\":\"GLOBAL_ACTION_BACK performed\"},{\"pass\":2,\"surface\":\"message_or_drawer_surface\",\"action\":\"message_surface_top_left_back_coordinate\",\"success\":true,\"message\":\"dispatchGesture tap sent (normalized=0.065,0.085 px=93,269 screen=1440x3168)\"},{\"pass\":3,\"action\":\"reactive_overlays\",\"dismissed\":1},{\"pass\":3,\"surface\":\"message_or_drawer_surface\",\"action\":\"message_surface_global_back\",\"success\":true,\"message\":\"GLOBAL_ACTION_BACK performed\"},{\"pass\":3,\"surface\":\"message_or_drawer_surface\",\"action\":\"message_surface_top_left_back_coordinate\",\"success\":true,\"message\":\"dispatchGesture tap sent (normalized=0.065,0.085 px=93,269 screen=1440x3168)\"},{\"pass\":4,\"surface\":\"unknown\",\"action\":\"tap_top_back\",\"success\":true,\"message\":\"dispatchGesture tap sent (normalized=0.067,0.078 px=96,247 screen=1440x3168)\"},{\"pass\":4,\"action\":\"reopen_launcher_root\",\"success\":true,\"message\":\"Launcher root intent sent for tv.danmaku.bili\"}]",
+        "usedCoordinate": true,
+        "details": {
+          "events": [
+            {
+              "pass": 1,
+              "surface": "message_or_drawer_surface",
+              "action": "message_surface_global_back",
+              "success": true,
+              "message": "GLOBAL_ACTION_BACK performed"
+            },
+            {
+              "pass": 1,
+              "surface": "message_or_drawer_surface",
+              "action": "message_surface_top_left_back_coordinate",
+              "success": true,
+              "message": "dispatchGesture tap sent (normalized=0.065,0.085 px=93,269 screen=1440x3168)"
+            },
+            {
+              "pass": 2,
+              "action": "reactive_overlays",
+              "dismissed": 2
+            },
+            {
+              "pass": 2,
+              "surface": "message_or_drawer_surface",
+              "action": "message_surface_global_back",
+              "success": true,
+              "message": "GLOBAL_ACTION_BACK performed"
+            },
+            {
+              "pass": 2,
+              "surface": "message_or_drawer_surface",
+              "action": "message_surface_top_left_back_coordinate",
+              "success": true,
+              "message": "dispatchGesture tap sent (normalized=0.065,0.085 px=93,269 screen=1440x3168)"
+            },
+            {
+              "pass": 3,
+              "action": "reactive_overlays",
+              "dismissed": 1
+            },
+            {
+              "pass": 3,
+              "surface": "message_or_drawer_surface",
+              "action": "message_surface_global_back",
+              "success": true,
+              "message": "GLOBAL_ACTION_BACK performed"
+            },
+            {
+              "pass": 3,
+              "surface": "message_or_drawer_surface",
+              "action": "message_surface_top_left_back_coordinate",
+              "success": true,
+              "message": "dispatchGesture tap sent (normalized=0.065,0.085 px=93,269 screen=1440x3168)"
+            },
+            {
+              "pass": 4,
+              "surface": "unknown",
+              "action": "tap_top_back",
+              "success": true,
+              "message": "dispatchGesture tap sent (normalized=0.067,0.078 px=96,247 screen=1440x3168)"
+            },
+            {
+              "pass": 4,
+              "action": "reopen_launcher_root",
+              "success": true,
+              "message": "Launcher root intent sent for tv.danmaku.bili"
+            }
+          ]
+        }
+      }
+    ],
+    "reactiveDismissed": 3
+  },
+  "allowSideEffect": true,
+  "params": {
+    "query": "王老菊"
+  },
+  "skillFile": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/skill_json_candidates\/tv.danmaku.bili\/bilibili.search.search_in_app.json",
+  "previewConfigFile": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/app_config_exports\/tv.danmaku.bili\/app_config_20260512_051827_706.json",
+  "createdAt": 1778534324574
+}

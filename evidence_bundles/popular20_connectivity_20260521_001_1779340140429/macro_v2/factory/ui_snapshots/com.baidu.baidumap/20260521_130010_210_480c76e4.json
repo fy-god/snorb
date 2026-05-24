@@ -1,0 +1,354 @@
+{
+  "schemaVersion": 1,
+  "kind": "ui_state_snapshot",
+  "id": "ui_snapshot_1779339610210",
+  "source": "after_action",
+  "note": "patched.1779339606084.1.openapp:OpenApp:SUCCESS_MEDIUM_CONFIDENCE:Launch intent sent for com.baidu.BaiduMap",
+  "screenshotPath": null,
+  "screenshotSha256": null,
+  "visualHash": null,
+  "screenshotSizeBytes": null,
+  "appPackage": "com.baidu.BaiduMap",
+  "windowClassName": null,
+  "screenKey": "480c76e4",
+  "relatedSkillId": "patched.1779339606084.1.openapp",
+  "relatedActionType": "OpenApp",
+  "capability": {
+    "nodeReadability": "B",
+    "inputCapability": "CUSTOM_IME",
+    "verificationCapability": "MEDIUM",
+    "coordinateFallback": "AVAILABLE",
+    "serviceState": "CONNECTED",
+    "reason": "nodes=11, textLike=8, clickable=3, editable=0, scrollable=0, customIme=true"
+  },
+  "state": {
+    "appPackage": "com.baidu.BaiduMap",
+    "windowClassName": null,
+    "screenWidth": 1440,
+    "screenHeight": 3168,
+    "timestamp": 1779339610210,
+    "nodeCount": 11,
+    "nodesStored": 11,
+    "nodesStorage": "compact_important_nodes_only",
+    "nodes": [
+      {
+        "nodeId": "5_6_1264_2160_1416_2312",
+        "packageName": "com.baidu.BaiduMap",
+        "text": null,
+        "contentDesc": null,
+        "resourceId": "com.baidu.BaiduMap:id\/voice_privacy_cancel_icon",
+        "className": "android.widget.ImageView",
+        "bounds": {
+          "left": 1264,
+          "top": 2160,
+          "right": 1416,
+          "bottom": 2312
+        },
+        "clickable": true,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 5,
+        "parentRoleHint": "android.view.ViewGroup"
+      },
+      {
+        "nodeId": "5_8_80_2684_1360_2836",
+        "packageName": "com.baidu.BaiduMap",
+        "text": "同意",
+        "contentDesc": null,
+        "resourceId": "com.baidu.BaiduMap:id\/confirm_tv",
+        "className": "android.widget.TextView",
+        "bounds": {
+          "left": 80,
+          "top": 2684,
+          "right": 1360,
+          "bottom": 2836
+        },
+        "clickable": true,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 5,
+        "parentRoleHint": "android.view.ViewGroup"
+      },
+      {
+        "nodeId": "5_9_664_2932_776_3008",
+        "packageName": "com.baidu.BaiduMap",
+        "text": "拒绝",
+        "contentDesc": null,
+        "resourceId": "com.baidu.BaiduMap:id\/refuse_tv",
+        "className": "android.widget.TextView",
+        "bounds": {
+          "left": 664,
+          "top": 2932,
+          "right": 776,
+          "bottom": 3008
+        },
+        "clickable": true,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 5,
+        "parentRoleHint": "android.view.ViewGroup"
+      },
+      {
+        "nodeId": "2_2_0_0_1440_3104",
+        "packageName": "com.baidu.BaiduMap",
+        "text": null,
+        "contentDesc": null,
+        "resourceId": "android:id\/content",
+        "className": "android.widget.FrameLayout",
+        "bounds": {
+          "left": 0,
+          "top": 0,
+          "right": 1440,
+          "bottom": 3104
+        },
+        "clickable": false,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 2,
+        "parentRoleHint": "android.widget.FrameLayout"
+      },
+      {
+        "nodeId": "4_4_0_2124_1440_3104",
+        "packageName": "com.baidu.BaiduMap",
+        "text": null,
+        "contentDesc": null,
+        "resourceId": "com.baidu.BaiduMap:id\/round_layout",
+        "className": "android.view.ViewGroup",
+        "bounds": {
+          "left": 0,
+          "top": 2124,
+          "right": 1440,
+          "bottom": 3104
+        },
+        "clickable": false,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 4,
+        "parentRoleHint": "android.widget.LinearLayout"
+      },
+      {
+        "nodeId": "5_5_80_2192_656_2278",
+        "packageName": "com.baidu.BaiduMap",
+        "text": "欢迎使用本功能服务",
+        "contentDesc": null,
+        "resourceId": "com.baidu.BaiduMap:id\/title_tv",
+        "className": "android.widget.TextView",
+        "bounds": {
+          "left": 80,
+          "top": 2192,
+          "right": 656,
+          "bottom": 2278
+        },
+        "clickable": false,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 5,
+        "parentRoleHint": "android.view.ViewGroup"
+      },
+      {
+        "nodeId": "5_7_80_2346_1360_2620",
+        "packageName": "com.baidu.BaiduMap",
+        "text": "在使用【地图AI助手】前，请您仔细阅读本扩展功能隐私政策。如您同意前述隐私政策，即代表您同意为了向您提供本扩展功能服务，我们处理所需的相关个人信息并在会话中应用。",
+        "contentDesc": null,
+        "resourceId": "com.baidu.BaiduMap:id\/voice_privacy_content_tv",
+        "className": "android.widget.TextView",
+        "bounds": {
+          "left": 80,
+          "top": 2346,
+          "right": 1360,
+          "bottom": 2620
+        },
+        "clickable": false,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 5,
+        "parentRoleHint": "android.view.ViewGroup"
+      },
+      {
+        "nodeId": "1_10_0_3104_1440_3168",
+        "packageName": "com.baidu.BaiduMap",
+        "text": null,
+        "contentDesc": null,
+        "resourceId": "android:id\/navigationBarBackground",
+        "className": "android.view.View",
+        "bounds": {
+          "left": 0,
+          "top": 3104,
+          "right": 1440,
+          "bottom": 3168
+        },
+        "clickable": false,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 1,
+        "parentRoleHint": "android.widget.FrameLayout"
+      },
+      {
+        "nodeId": "0_0_0_0_1440_3168",
+        "packageName": "com.baidu.BaiduMap",
+        "text": null,
+        "contentDesc": null,
+        "resourceId": null,
+        "className": "android.widget.FrameLayout",
+        "bounds": {
+          "left": 0,
+          "top": 0,
+          "right": 1440,
+          "bottom": 3168
+        },
+        "clickable": false,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 0,
+        "parentRoleHint": null
+      },
+      {
+        "nodeId": "1_1_0_0_1440_3104",
+        "packageName": "com.baidu.BaiduMap",
+        "text": null,
+        "contentDesc": null,
+        "resourceId": null,
+        "className": "android.widget.FrameLayout",
+        "bounds": {
+          "left": 0,
+          "top": 0,
+          "right": 1440,
+          "bottom": 3104
+        },
+        "clickable": false,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 1,
+        "parentRoleHint": "android.widget.FrameLayout"
+      },
+      {
+        "nodeId": "3_3_0_0_1440_3104",
+        "packageName": "com.baidu.BaiduMap",
+        "text": null,
+        "contentDesc": null,
+        "resourceId": null,
+        "className": "android.widget.LinearLayout",
+        "bounds": {
+          "left": 0,
+          "top": 0,
+          "right": 1440,
+          "bottom": 3104
+        },
+        "clickable": false,
+        "editable": false,
+        "scrollable": false,
+        "focused": false,
+        "enabled": true,
+        "selected": false,
+        "depth": 3,
+        "parentRoleHint": "android.widget.FrameLayout"
+      }
+    ],
+    "eventsSinceLastState": []
+  },
+  "summary": {
+    "nodeCount": 11,
+    "clickableCount": 3,
+    "editableCount": 0,
+    "scrollableCount": 0,
+    "labels": [
+      "android:id\/content",
+      "com.baidu.BaiduMap:id\/round_layout",
+      "欢迎使用本功能服务 com.baidu.BaiduMap:id\/title_tv",
+      "com.baidu.BaiduMap:id\/voice_privacy_cancel_icon",
+      "在使用【地图AI助手】前，请您仔细阅读本扩展功能隐私政策。如您同意前述隐私政策，即代表您同意为了向您提供本扩展功能服务，我们处理所需的相关个人信息并在会话中应用。 com.baidu.BaiduMap:id\/voice_privacy_content_tv",
+      "同意 com.baidu.BaiduMap:id\/confirm_tv",
+      "拒绝 com.baidu.BaiduMap:id\/refuse_tv",
+      "android:id\/navigationBarBackground"
+    ],
+    "bottomCandidates": [
+      {
+        "label": "欢迎使用本功能服务 com.baidu.BaiduMap:id\/title_tv",
+        "bounds": {
+          "left": 80,
+          "top": 2192,
+          "right": 656,
+          "bottom": 2278
+        },
+        "clickable": false
+      },
+      {
+        "label": "在使用【地图AI助手】前，请您仔细阅读本扩展功能隐私政策。如您同意前述隐私政策，即代表您同意为了向您提供本扩展功能服务，我们处理所需的相关个人信息并在会话中应用。 com.baidu.BaiduMap:id\/voice_privacy_content_tv",
+        "bounds": {
+          "left": 80,
+          "top": 2346,
+          "right": 1360,
+          "bottom": 2620
+        },
+        "clickable": false
+      },
+      {
+        "label": "同意 com.baidu.BaiduMap:id\/confirm_tv",
+        "bounds": {
+          "left": 80,
+          "top": 2684,
+          "right": 1360,
+          "bottom": 2836
+        },
+        "clickable": true
+      },
+      {
+        "label": "拒绝 com.baidu.BaiduMap:id\/refuse_tv",
+        "bounds": {
+          "left": 664,
+          "top": 2932,
+          "right": 776,
+          "bottom": 3008
+        },
+        "clickable": true
+      },
+      {
+        "label": "com.baidu.BaiduMap:id\/voice_privacy_cancel_icon",
+        "bounds": {
+          "left": 1264,
+          "top": 2160,
+          "right": 1416,
+          "bottom": 2312
+        },
+        "clickable": true
+      }
+    ]
+  },
+  "retentionPolicy": {
+    "fullNodeTreeStored": false,
+    "storedNodeLimit": 45,
+    "storedEventLimit": 20,
+    "longTermKnowledge": "summary + app_ui_graph + assembly\/runtime reports"
+  },
+  "createdAt": 1779339610211
+}

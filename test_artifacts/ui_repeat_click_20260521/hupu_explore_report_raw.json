@@ -1,0 +1,612 @@
+{
+  "schemaVersion": 1,
+  "kind": "app_ui_explore_report",
+  "id": "app_ui_explore_report_app_ui_graph_com.hupu.games_1779374935113",
+  "graphId": "app_ui_graph_com.hupu.games_1779374935113",
+  "status": "PARTIAL_TIMEOUT",
+  "appPackage": "com.hupu.games",
+  "appName": "虎扑",
+  "screenCount": 7,
+  "edgeCount": 7,
+  "quality": {
+    "usable": true,
+    "reason": "usable_app_ui_graph",
+    "qualityGate": {
+      "bottomPrimaryTabsRequired": true,
+      "bottomPrimaryTabsAttempted": 5,
+      "bottomPrimaryTabsOpened": 5,
+      "topIconsAreNotEnough": true,
+      "repeatedMessagePageIsNotProgress": true
+    },
+    "screenCount": 7,
+    "edgeCount": 7,
+    "nodeCount": 3759,
+    "clickableCount": 686,
+    "editableCount": 0,
+    "labelCount": 491,
+    "bottomTabCount": 33,
+    "topEntryCount": 144,
+    "sideEntryCount": 148,
+    "entryCandidateCount": 39,
+    "inputCandidateCount": 0,
+    "videoCandidateCount": 28,
+    "clickTargetCount": 735,
+    "graphicalCandidateCount": 487,
+    "checkableCandidateCount": 6,
+    "candidateCount": 1620,
+    "changedEdgeCount": 7,
+    "edgeCategoryCounts": {
+      "primary_bottom_tab": 5,
+      "primary_tab_surface_entry": 2
+    },
+    "primaryBottomTabAttemptedCount": 5,
+    "primaryBottomTabAttemptedLabels": [
+      "bottom_tab_1",
+      "bottom_tab_2",
+      "bottom_tab_3",
+      "bottom_tab_5",
+      "bottom_tab_6"
+    ],
+    "primaryBottomTabOpenedCount": 5,
+    "primaryBottomTabOpenedLabels": [
+      "bottom_tab_1",
+      "bottom_tab_2",
+      "bottom_tab_3",
+      "bottom_tab_5",
+      "bottom_tab_6"
+    ],
+    "primaryTabSurfaceEntryChangedCount": 2,
+    "primaryTabSurfaceEntriesByTab": {
+      "bottom_tab_1": [
+        "搜索"
+      ]
+    }
+  },
+  "graphFile": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/app_ui_graphs\/com.hupu.games\/graph_candidate.json",
+  "events": [
+    {
+      "phase": "wait_accessibility",
+      "status": "SUCCESS",
+      "attempt": 1,
+      "message": "accessibility service is connected"
+    },
+    {
+      "phase": "open_app",
+      "status": "RUNNING",
+      "message": "打开 虎扑，开始读取首页、底部分屏、入口和输入框",
+      "path": null,
+      "timestamp": 1779374935113
+    },
+    {
+      "phase": "open_app_attempt",
+      "attempt": 1,
+      "strategy": "launcher_root",
+      "success": true,
+      "message": "Launcher root intent sent for com.hupu.games"
+    },
+    {
+      "phase": "open_app_attempt_wait",
+      "attempt": 1,
+      "strategy": "launcher_root",
+      "success": false,
+      "currentPackage": "com.xunmeng.pinduoduo",
+      "windowClassName": "android.widget.FrameLayout",
+      "overlayDismissed": 0,
+      "overlayEvents": []
+    },
+    {
+      "phase": "open_app_attempt",
+      "attempt": 2,
+      "strategy": "home_then_launcher_root",
+      "success": true,
+      "message": "Launcher root intent sent for com.hupu.games"
+    },
+    {
+      "phase": "open_app_attempt_wait",
+      "attempt": 2,
+      "strategy": "home_then_launcher_root",
+      "success": true,
+      "currentPackage": "com.hupu.games",
+      "windowClassName": null,
+      "overlayDismissed": 0,
+      "overlayEvents": []
+    },
+    {
+      "phase": "wait_foreground",
+      "success": true,
+      "currentPackage": "com.hupu.games",
+      "windowClassName": null,
+      "overlayDismissed": 0,
+      "overlayEvents": []
+    },
+    {
+      "phase": "reactive_overlays",
+      "dismissed": 0,
+      "events": []
+    },
+    {
+      "phase": "recover_primary_tab_surface_start",
+      "status": "RUNNING",
+      "message": "Need bottom primary tabs before opening top\/icon entries.",
+      "screenKey": "84d349df",
+      "primaryBottomTabCount": 0,
+      "snapshotPath": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_snapshots\/com.hupu.games\/20260521_224902_582_84d349df.json"
+    },
+    {
+      "phase": "recover_primary_tab_back",
+      "attempt": 1,
+      "success": true,
+      "message": "GLOBAL_ACTION_BACK performed"
+    },
+    {
+      "phase": "recover_primary_tab_check",
+      "attempt": 1,
+      "status": "LOW_CONFIDENCE",
+      "nodeCount": 8,
+      "primaryBottomTabCount": 0,
+      "screenKey": "4e08d345",
+      "snapshotPath": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_snapshots\/com.hupu.games\/20260521_224903_525_4e08d345.json"
+    },
+    {
+      "phase": "recover_primary_tab_back",
+      "attempt": 2,
+      "success": true,
+      "message": "GLOBAL_ACTION_BACK performed"
+    },
+    {
+      "phase": "recover_primary_tab_check",
+      "attempt": 2,
+      "status": "LOW_CONFIDENCE",
+      "nodeCount": 8,
+      "primaryBottomTabCount": 0,
+      "screenKey": "4e08d345",
+      "snapshotPath": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_snapshots\/com.hupu.games\/20260521_224904_430_4e08d345.json"
+    },
+    {
+      "phase": "recover_primary_tab_back",
+      "attempt": 3,
+      "success": true,
+      "message": "GLOBAL_ACTION_BACK performed"
+    },
+    {
+      "phase": "recover_primary_tab_check",
+      "attempt": 3,
+      "status": "SUCCESS",
+      "nodeCount": 574,
+      "primaryBottomTabCount": 5,
+      "screenKey": "a386eab9",
+      "snapshotPath": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_snapshots\/com.hupu.games\/20260521_224906_102_a386eab9.json"
+    },
+    {
+      "phase": "recover_primary_tab_surface",
+      "status": "SUCCESS",
+      "message": "Recovered to a primary-tab surface before deep probing.",
+      "beforeScreenKey": "84d349df",
+      "afterScreenKey": "a386eab9",
+      "primaryBottomTabCount": 5
+    },
+    {
+      "phase": "capture_home",
+      "status": "SUCCESS",
+      "message": "已记录首页：574 个节点、102 个可点击项",
+      "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_snapshots\/com.hupu.games\/20260521_224906_102_a386eab9.json",
+      "timestamp": 1779374946671
+    },
+    {
+      "phase": "primary_bottom_tab_candidates",
+      "count": 5,
+      "labels": [
+        "bottom_tab_1",
+        "bottom_tab_2",
+        "bottom_tab_3",
+        "bottom_tab_5",
+        "bottom_tab_6"
+      ],
+      "detectedCount": 5,
+      "fallbackCount": 0,
+      "message": "primary bottom tabs are explored before top icons"
+    },
+    {
+      "phase": "primary_bottom_tab_sweep",
+      "status": "RUNNING",
+      "message": "open bottom tab first: bottom_tab_1",
+      "path": null,
+      "timestamp": 1779374946672
+    },
+    {
+      "phase": "tap_primary_bottom_tab",
+      "index": 1,
+      "label": "bottom_tab_1",
+      "success": true,
+      "message": "dispatchGesture tap sent (normalized=0.000,0.948 px=0,3004 screen=1440x3168)",
+      "candidate": {
+        "index": 0,
+        "label": "bottom_tab_1",
+        "text": null,
+        "desc": null,
+        "resourceId": null,
+        "class": "android.widget.FrameLayout",
+        "clickable": true,
+        "editable": false,
+        "checkable": false,
+        "selected": false,
+        "bounds": "-403 2904 -115 3104",
+        "x": 0,
+        "y": 0.9482323232323232,
+        "center": {
+          "x": 0,
+          "y": 0.9482323232323232
+        },
+        "tags": [
+          "primary_bottom_tab",
+          "bottom_tab",
+          "clickable",
+          "bottom_area",
+          "side_icon"
+        ],
+        "candidateCategory": "primary_bottom_tab"
+      },
+      "beforeScreenKey": "11b5c0d1",
+      "beforeSnapshotPath": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_snapshots\/com.hupu.games\/20260521_224906_856_8669d060.json"
+    },
+    {
+      "phase": "primary_bottom_tab_sweep",
+      "status": "SUCCESS",
+      "message": "bottom tab bottom_tab_1 captured: changed=true nodes=567",
+      "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_snapshots\/com.hupu.games\/20260521_224917_996_8669d060.json",
+      "timestamp": 1779374958556
+    },
+    {
+      "phase": "primary_bottom_tab_sweep",
+      "status": "RUNNING",
+      "message": "open bottom tab first: bottom_tab_2",
+      "path": null,
+      "timestamp": 1779374958556
+    },
+    {
+      "phase": "tap_primary_bottom_tab",
+      "index": 2,
+      "label": "bottom_tab_2",
+      "success": true,
+      "message": "dispatchGesture tap sent (normalized=0.300,0.948 px=432,3004 screen=1440x3168)",
+      "candidate": {
+        "index": 1,
+        "label": "bottom_tab_2",
+        "text": null,
+        "desc": null,
+        "resourceId": null,
+        "class": "android.widget.FrameLayout",
+        "clickable": true,
+        "editable": false,
+        "checkable": false,
+        "selected": false,
+        "bounds": "288 2904 576 3104",
+        "x": 0.3,
+        "y": 0.9482323232323232,
+        "center": {
+          "x": 0.3,
+          "y": 0.9482323232323232
+        },
+        "tags": [
+          "primary_bottom_tab",
+          "bottom_tab",
+          "clickable",
+          "bottom_area"
+        ],
+        "candidateCategory": "primary_bottom_tab"
+      },
+      "beforeScreenKey": "c8be89ac",
+      "beforeSnapshotPath": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_snapshots\/com.hupu.games\/20260521_224921_282_8669d060.json"
+    },
+    {
+      "phase": "primary_bottom_tab_sweep",
+      "status": "SUCCESS",
+      "message": "bottom tab bottom_tab_2 captured: changed=true nodes=731",
+      "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_snapshots\/com.hupu.games\/20260521_224929_669_8669d060.json",
+      "timestamp": 1779374970126
+    },
+    {
+      "phase": "primary_bottom_tab_sweep",
+      "status": "RUNNING",
+      "message": "open bottom tab first: bottom_tab_3",
+      "path": null,
+      "timestamp": 1779374970127
+    },
+    {
+      "phase": "tap_primary_bottom_tab",
+      "index": 3,
+      "label": "bottom_tab_3",
+      "success": true,
+      "message": "dispatchGesture tap sent (normalized=0.500,0.948 px=720,3004 screen=1440x3168)",
+      "candidate": {
+        "index": 2,
+        "label": "bottom_tab_3",
+        "text": null,
+        "desc": null,
+        "resourceId": null,
+        "class": "android.widget.FrameLayout",
+        "clickable": true,
+        "editable": false,
+        "checkable": false,
+        "selected": false,
+        "bounds": "576 2904 864 3104",
+        "x": 0.5,
+        "y": 0.9482323232323232,
+        "center": {
+          "x": 0.5,
+          "y": 0.9482323232323232
+        },
+        "tags": [
+          "primary_bottom_tab",
+          "bottom_tab",
+          "clickable",
+          "bottom_area"
+        ],
+        "candidateCategory": "primary_bottom_tab"
+      },
+      "beforeScreenKey": "992e448",
+      "beforeSnapshotPath": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_snapshots\/com.hupu.games\/20260521_224932_169_8669d060.json"
+    },
+    {
+      "phase": "primary_bottom_tab_sweep",
+      "status": "SUCCESS",
+      "message": "bottom tab bottom_tab_3 captured: changed=true nodes=18",
+      "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_snapshots\/com.hupu.games\/20260521_224933_533_72ddda96.json",
+      "timestamp": 1779374973856
+    },
+    {
+      "phase": "primary_bottom_tab_sweep",
+      "status": "RUNNING",
+      "message": "open bottom tab first: bottom_tab_5",
+      "path": null,
+      "timestamp": 1779374973856
+    },
+    {
+      "phase": "tap_primary_bottom_tab",
+      "index": 4,
+      "label": "bottom_tab_5",
+      "success": true,
+      "message": "dispatchGesture tap sent (normalized=0.700,0.948 px=1008,3004 screen=1440x3168)",
+      "candidate": {
+        "index": 4,
+        "label": "bottom_tab_5",
+        "text": null,
+        "desc": null,
+        "resourceId": null,
+        "class": "android.widget.FrameLayout",
+        "clickable": true,
+        "editable": false,
+        "checkable": false,
+        "selected": false,
+        "bounds": "864 2904 1152 3104",
+        "x": 0.7,
+        "y": 0.9482323232323232,
+        "center": {
+          "x": 0.7,
+          "y": 0.9482323232323232
+        },
+        "tags": [
+          "primary_bottom_tab",
+          "bottom_tab",
+          "clickable",
+          "bottom_area"
+        ],
+        "candidateCategory": "primary_bottom_tab"
+      },
+      "beforeScreenKey": "c9f9410d",
+      "beforeSnapshotPath": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_snapshots\/com.hupu.games\/20260521_224933_864_72ddda96.json"
+    },
+    {
+      "phase": "primary_bottom_tab_sweep",
+      "status": "SUCCESS",
+      "message": "bottom tab bottom_tab_5 captured: changed=true nodes=731",
+      "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_snapshots\/com.hupu.games\/20260521_224945_434_8669d060.json",
+      "timestamp": 1779374985978
+    },
+    {
+      "phase": "primary_bottom_tab_sweep",
+      "status": "RUNNING",
+      "message": "open bottom tab first: bottom_tab_6",
+      "path": null,
+      "timestamp": 1779374985978
+    },
+    {
+      "phase": "tap_primary_bottom_tab",
+      "index": 5,
+      "label": "bottom_tab_6",
+      "success": true,
+      "message": "dispatchGesture tap sent (normalized=0.900,0.948 px=1296,3004 screen=1440x3168)",
+      "candidate": {
+        "index": 5,
+        "label": "bottom_tab_6",
+        "text": null,
+        "desc": null,
+        "resourceId": null,
+        "class": "android.widget.FrameLayout",
+        "clickable": true,
+        "editable": false,
+        "checkable": false,
+        "selected": false,
+        "bounds": "1152 2904 1440 3104",
+        "x": 0.9,
+        "y": 0.9482323232323232,
+        "center": {
+          "x": 0.9,
+          "y": 0.9482323232323232
+        },
+        "tags": [
+          "primary_bottom_tab",
+          "bottom_tab",
+          "clickable",
+          "bottom_area",
+          "side_icon"
+        ],
+        "candidateCategory": "primary_bottom_tab"
+      },
+      "beforeScreenKey": "992e448",
+      "beforeSnapshotPath": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_snapshots\/com.hupu.games\/20260521_224946_538_8669d060.json"
+    },
+    {
+      "phase": "primary_bottom_tab_sweep",
+      "status": "SUCCESS",
+      "message": "bottom tab bottom_tab_6 captured: changed=true nodes=731",
+      "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_snapshots\/com.hupu.games\/20260521_224951_606_8669d060.json",
+      "timestamp": 1779374992090
+    },
+    {
+      "phase": "primary_center_action_candidates",
+      "count": 0,
+      "labels": [],
+      "message": "center +\/publish action is explored separately from bottom tabs"
+    },
+    {
+      "phase": "primary_tab_surface_candidates",
+      "tabLabel": "bottom_tab_1",
+      "count": 8,
+      "labels": [
+        "搜索",
+        "搜索",
+        "搜索",
+        "搜索",
+        "我的服务",
+        "6.8万",
+        "rankAnimateImageView1",
+        "2分钟"
+      ],
+      "message": "scan first-level UI under each bottom tab before deep BFS"
+    },
+    {
+      "phase": "open_app_attempt",
+      "attempt": 1,
+      "strategy": "launcher_root",
+      "success": true,
+      "message": "Launcher root intent sent for com.hupu.games"
+    },
+    {
+      "phase": "open_app_attempt_wait",
+      "attempt": 1,
+      "strategy": "launcher_root",
+      "success": true,
+      "currentPackage": "com.hupu.games",
+      "windowClassName": "android.view.ViewGroup",
+      "overlayDismissed": 0,
+      "overlayEvents": []
+    },
+    {
+      "phase": "primary_tab_surface_entry",
+      "status": "RUNNING",
+      "message": "tab=bottom_tab_1 click top_icon: 搜索",
+      "path": null,
+      "timestamp": 1779374994480
+    },
+    {
+      "phase": "tap_primary_tab_surface_entry",
+      "tabLabel": "bottom_tab_1",
+      "category": "top_icon",
+      "label": "搜索",
+      "success": true,
+      "message": "dispatchGesture tap sent (normalized=0.231,0.073 px=332,232 screen=1440x3168)",
+      "fingerprint": "top_icon|iv_search|top_left|4|1",
+      "beforeScreenKey": "ebd8937b",
+      "candidate": {
+        "index": 7,
+        "label": "搜索",
+        "text": null,
+        "desc": null,
+        "resourceId": "com.hupu.games:id\/iv_search",
+        "class": "android.widget.ImageView",
+        "clickable": false,
+        "editable": false,
+        "checkable": false,
+        "selected": false,
+        "bounds": "304 204 360 260",
+        "x": 0.23055555555555557,
+        "y": 0.07323232323232323,
+        "center": {
+          "x": 0.23055555555555557,
+          "y": 0.07323232323232323
+        },
+        "tags": [
+          "top_entry",
+          "top_entry_candidate"
+        ],
+        "candidateCategory": "top_icon"
+      }
+    },
+    {
+      "phase": "primary_tab_surface_entry",
+      "status": "SUCCESS",
+      "message": "tab=bottom_tab_1 top_icon 搜索 changed=true nodes=571",
+      "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_snapshots\/com.hupu.games\/20260521_225003_272_623c174a.json",
+      "timestamp": 1779375003937
+    },
+    {
+      "phase": "open_app_attempt",
+      "attempt": 1,
+      "strategy": "launcher_root",
+      "success": true,
+      "message": "Launcher root intent sent for com.hupu.games"
+    },
+    {
+      "phase": "open_app_attempt_wait",
+      "attempt": 1,
+      "strategy": "launcher_root",
+      "success": true,
+      "currentPackage": "com.hupu.games",
+      "windowClassName": "android.view.ViewGroup",
+      "overlayDismissed": 0,
+      "overlayEvents": []
+    },
+    {
+      "phase": "primary_tab_surface_entry",
+      "status": "RUNNING",
+      "message": "tab=bottom_tab_1 click top_icon: 搜索",
+      "path": null,
+      "timestamp": 1779375006484
+    },
+    {
+      "phase": "tap_primary_tab_surface_entry",
+      "tabLabel": "bottom_tab_1",
+      "category": "top_icon",
+      "label": "搜索",
+      "success": true,
+      "message": "dispatchGesture tap sent (normalized=0.500,0.073 px=720,232 screen=1440x3168)",
+      "fingerprint": "top_icon|cl_search|top_center|10|1",
+      "beforeScreenKey": "90b17939",
+      "candidate": {
+        "index": 13,
+        "label": "搜索",
+        "text": null,
+        "desc": null,
+        "resourceId": "com.hupu.games:id\/cl_search",
+        "class": "android.view.ViewGroup",
+        "clickable": false,
+        "editable": false,
+        "checkable": false,
+        "selected": false,
+        "bounds": "0 160 1440 304",
+        "x": 0.5,
+        "y": 0.07323232323232323,
+        "center": {
+          "x": 0.5,
+          "y": 0.07323232323232323
+        },
+        "tags": [
+          "top_entry",
+          "top_entry_candidate"
+        ],
+        "candidateCategory": "top_icon"
+      }
+    },
+    {
+      "phase": "primary_tab_surface_entry",
+      "status": "SUCCESS",
+      "message": "tab=bottom_tab_1 top_icon 搜索 changed=true nodes=567",
+      "path": "\/data\/user\/0\/com.macropilot.app\/files\/macro_v2\/factory\/ui_snapshots\/com.hupu.games\/20260521_225015_725_35f55956.json",
+      "timestamp": 1779375016374
+    }
+  ],
+  "timedOut": true,
+  "maxDurationMs": 80000,
+  "durationMs": 81819
+}

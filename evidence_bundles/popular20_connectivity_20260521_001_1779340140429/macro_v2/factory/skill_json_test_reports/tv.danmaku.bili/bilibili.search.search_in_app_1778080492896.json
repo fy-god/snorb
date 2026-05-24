@@ -1,0 +1,164 @@
+{
+  "schemaVersion": 1,
+  "kind": "skill_json_test_report",
+  "skillId": "bilibili.search.search_in_app",
+  "appPackage": "tv.danmaku.bili",
+  "skillKind": "macro_skill",
+  "testRuns": 20,
+  "success": 0,
+  "mediumConfidence": 20,
+  "lowConfidence": 0,
+  "failed": 0,
+  "timeout": 0,
+  "successRate": 1,
+  "highConfidenceRate": 0,
+  "mediumOrHighConfidenceRate": 1,
+  "avgDurationMs": 1761,
+  "p95DurationMs": 2738,
+  "failureClusters": [],
+  "runResults": [
+    {
+      "run": 1,
+      "status": "SUCCESS_MEDIUM_CONFIDENCE",
+      "message": "Window\/node state changed",
+      "durationMs": 865,
+      "usedCoordinate": false
+    },
+    {
+      "run": 2,
+      "status": "SUCCESS_MEDIUM_CONFIDENCE",
+      "message": "Window\/node state changed",
+      "durationMs": 2738,
+      "usedCoordinate": false
+    },
+    {
+      "run": 3,
+      "status": "SUCCESS_MEDIUM_CONFIDENCE",
+      "message": "Window\/node state changed",
+      "durationMs": 932,
+      "usedCoordinate": false
+    },
+    {
+      "run": 4,
+      "status": "SUCCESS_MEDIUM_CONFIDENCE",
+      "message": "Window\/node state changed",
+      "durationMs": 2773,
+      "usedCoordinate": false
+    },
+    {
+      "run": 5,
+      "status": "SUCCESS_MEDIUM_CONFIDENCE",
+      "message": "Window\/node state changed",
+      "durationMs": 827,
+      "usedCoordinate": false
+    },
+    {
+      "run": 6,
+      "status": "SUCCESS_MEDIUM_CONFIDENCE",
+      "message": "Window\/node state changed",
+      "durationMs": 2227,
+      "usedCoordinate": false
+    },
+    {
+      "run": 7,
+      "status": "SUCCESS_MEDIUM_CONFIDENCE",
+      "message": "Window\/node state changed",
+      "durationMs": 2653,
+      "usedCoordinate": false
+    },
+    {
+      "run": 8,
+      "status": "SUCCESS_MEDIUM_CONFIDENCE",
+      "message": "Window\/node state changed",
+      "durationMs": 764,
+      "usedCoordinate": false
+    },
+    {
+      "run": 9,
+      "status": "SUCCESS_MEDIUM_CONFIDENCE",
+      "message": "Window\/node state changed",
+      "durationMs": 2618,
+      "usedCoordinate": false
+    },
+    {
+      "run": 10,
+      "status": "SUCCESS_MEDIUM_CONFIDENCE",
+      "message": "Window\/node state changed",
+      "durationMs": 826,
+      "usedCoordinate": false
+    },
+    {
+      "run": 11,
+      "status": "SUCCESS_MEDIUM_CONFIDENCE",
+      "message": "Window\/node state changed",
+      "durationMs": 2241,
+      "usedCoordinate": false
+    },
+    {
+      "run": 12,
+      "status": "SUCCESS_MEDIUM_CONFIDENCE",
+      "message": "Window\/node state changed",
+      "durationMs": 797,
+      "usedCoordinate": false
+    },
+    {
+      "run": 13,
+      "status": "SUCCESS_MEDIUM_CONFIDENCE",
+      "message": "Window\/node state changed",
+      "durationMs": 2180,
+      "usedCoordinate": false
+    },
+    {
+      "run": 14,
+      "status": "SUCCESS_MEDIUM_CONFIDENCE",
+      "message": "Window\/node state changed",
+      "durationMs": 795,
+      "usedCoordinate": false
+    },
+    {
+      "run": 15,
+      "status": "SUCCESS_MEDIUM_CONFIDENCE",
+      "message": "Window\/node state changed",
+      "durationMs": 2292,
+      "usedCoordinate": false
+    },
+    {
+      "run": 16,
+      "status": "SUCCESS_MEDIUM_CONFIDENCE",
+      "message": "Window\/node state changed",
+      "durationMs": 2391,
+      "usedCoordinate": false
+    },
+    {
+      "run": 17,
+      "status": "SUCCESS_MEDIUM_CONFIDENCE",
+      "message": "Window\/node state changed",
+      "durationMs": 795,
+      "usedCoordinate": false
+    },
+    {
+      "run": 18,
+      "status": "SUCCESS_MEDIUM_CONFIDENCE",
+      "message": "Window\/node state changed",
+      "durationMs": 2205,
+      "usedCoordinate": false
+    },
+    {
+      "run": 19,
+      "status": "SUCCESS_MEDIUM_CONFIDENCE",
+      "message": "Window\/node state changed",
+      "durationMs": 2156,
+      "usedCoordinate": false
+    },
+    {
+      "run": 20,
+      "status": "SUCCESS_MEDIUM_CONFIDENCE",
+      "message": "Window\/node state changed",
+      "durationMs": 2157,
+      "usedCoordinate": false
+    }
+  ],
+  "allowSideEffect": false,
+  "promotionSuggestion": "APPROVE_AS_B_LEVEL",
+  "timestamp": 1778080492894
+}

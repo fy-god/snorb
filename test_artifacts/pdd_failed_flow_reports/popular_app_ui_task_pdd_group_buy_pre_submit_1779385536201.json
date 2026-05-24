@@ -1,0 +1,128 @@
+{
+  "schemaVersion": 1,
+  "kind": "popular_app_ui_task_report",
+  "id": "popular_app_ui_task_pdd_group_buy_pre_submit_1779385536201",
+  "appPackage": "com.xunmeng.pinduoduo",
+  "appName": "拼多多",
+  "task": {
+    "taskId": "pdd_group_buy_pre_submit",
+    "instruction": "搜索纸巾并打开商品详情，识别单独购买、拼单、规格选择和确认页入口，不提交订单。",
+    "category": "order_probe",
+    "riskLevel": "MEDIUM",
+    "requiresLogin": true,
+    "requiresPayment": false,
+    "stopBeforeSubmit": true,
+    "expectedEvidence": [
+      "拼单",
+      "规格",
+      "提交订单"
+    ]
+  },
+  "attempt": 1,
+  "status": "FAILED_FOREGROUND_PACKAGE_MISMATCH",
+  "message": "UI graph task finished",
+  "graphFile": null,
+  "graphId": "",
+  "exploreReport": {
+    "schemaVersion": 1,
+    "kind": "app_ui_explore_report",
+    "status": "FAILED_FOREGROUND_PACKAGE_MISMATCH",
+    "appPackage": "com.xunmeng.pinduoduo",
+    "appName": "拼多多",
+    "currentPackage": "com.android.launcher",
+    "windowClassName": "android.widget.LinearLayout",
+    "events": [
+      {
+        "phase": "wait_accessibility",
+        "status": "SUCCESS",
+        "attempt": 1,
+        "message": "accessibility service is connected"
+      },
+      {
+        "phase": "open_app",
+        "status": "RUNNING",
+        "message": "打开 拼多多，开始读取首页、底部分屏、入口和输入框",
+        "path": null,
+        "timestamp": 1779385513906
+      },
+      {
+        "phase": "open_app_attempt",
+        "attempt": 1,
+        "strategy": "launcher_root",
+        "success": true,
+        "message": "Launcher root intent sent for com.xunmeng.pinduoduo"
+      },
+      {
+        "phase": "open_app_attempt_wait",
+        "attempt": 1,
+        "strategy": "launcher_root",
+        "success": false,
+        "currentPackage": "com.android.launcher",
+        "windowClassName": "android.widget.FrameLayout",
+        "overlayDismissed": 0,
+        "overlayEvents": []
+      },
+      {
+        "phase": "open_app_attempt",
+        "attempt": 2,
+        "strategy": "home_then_launcher_root",
+        "success": true,
+        "message": "Launcher root intent sent for com.xunmeng.pinduoduo"
+      },
+      {
+        "phase": "open_app_attempt_wait",
+        "attempt": 2,
+        "strategy": "home_then_launcher_root",
+        "success": false,
+        "currentPackage": "com.android.launcher",
+        "windowClassName": "android.widget.LinearLayout",
+        "overlayDismissed": 0,
+        "overlayEvents": []
+      },
+      {
+        "phase": "open_app_attempt",
+        "attempt": 3,
+        "strategy": "explicit_launcher_activity",
+        "success": true,
+        "message": "Explicit launcher activity sent for com.xunmeng.pinduoduo\/ComponentInfo{com.xunmeng.pinduoduo\/com.xunmeng.pinduoduo.ui.activity.MainFrameActivity}"
+      },
+      {
+        "phase": "open_app_attempt_wait",
+        "attempt": 3,
+        "strategy": "explicit_launcher_activity",
+        "success": false,
+        "currentPackage": "com.android.launcher",
+        "windowClassName": "android.widget.LinearLayout",
+        "overlayDismissed": 0,
+        "overlayEvents": []
+      },
+      {
+        "phase": "wait_foreground",
+        "success": false,
+        "currentPackage": "com.android.launcher",
+        "windowClassName": "android.widget.LinearLayout",
+        "overlayDismissed": 0,
+        "overlayEvents": []
+      }
+    ],
+    "durationMs": 22296
+  },
+  "summaryGraph": {
+    "appPackage": "com.xunmeng.pinduoduo",
+    "status": "FAILED_FOREGROUND_PACKAGE_MISMATCH",
+    "screenCount": 0,
+    "edgeCount": 0,
+    "quality": {}
+  },
+  "events": [
+    {
+      "phase": "open_app",
+      "status": "RUNNING",
+      "message": "打开 拼多多，开始读取首页、底部分屏、入口和输入框",
+      "path": null,
+      "timestamp": 1779385513906
+    }
+  ],
+  "durationMs": 22296,
+  "createdAt": 1779385536201
+}
