@@ -1,4 +1,4 @@
-# MacroPilot
+# snorb / MacroPilot
 
 MacroPilot is an Android automation prototype focused on app-side AI planning, Skill JSON generation, accessibility-driven execution, input-method support, dry-run checks, runtime reports, and UI exploration records.
 
