@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(adb logcat *)",
+      "Bash(./gradlew assembleDebug *)",
+      "Bash(D:/controlphone/.claude/roubao-main/roubao-main/gradlew *)",
+      "Bash(adb devices *)",
+      "Bash(adb install *)",
+      "Bash(\"D:/controlphone/.claude/roubao-main/roubao-main/gradlew\" -p \"D:/controlphone/.claude/roubao-main/roubao-main\" assembleDebug)",
+      "Skill(update-config)",
+      "Bash(python *)"
+    ]
+  }
+}

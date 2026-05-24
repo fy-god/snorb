@@ -1,0 +1,169 @@
+[
+  {
+    "id": "wf_wechat_send",
+    "name": "发微信消息",
+    "appPackage": "com.tencent.mm",
+    "appName": "微信",
+    "keywords": ["发微信", "微信发", "发消息给", "给…发", "微信消息"],
+    "params": [
+      {"name": "contact", "description": "联系人名字", "extractPattern": "给(.+?)发"},
+      {"name": "message", "description": "消息内容", "extractPattern": "发(.+)"}
+    ],
+    "steps": [
+      {"action": "open_app", "text": "微信"},
+      {"action": "click", "coordinate": [540, 110]},
+      {"action": "wait", "duration": 1},
+      {"action": "type", "text": "{contact}"},
+      {"action": "wait", "duration": 1},
+      {"action": "click", "coordinate": [540, 380]},
+      {"action": "click", "coordinate": [540, 2100]},
+      {"action": "wait", "duration": 1},
+      {"action": "type", "text": "{message}"},
+      {"action": "click", "coordinate": [980, 2100]}
+    ]
+  },
+  {
+    "id": "wf_wechat_moments",
+    "name": "微信朋友圈",
+    "appPackage": "com.tencent.mm",
+    "appName": "微信",
+    "keywords": ["朋友圈", "刷朋友圈", "看朋友圈"],
+    "params": [],
+    "steps": [
+      {"action": "open_app", "text": "微信"},
+      {"action": "wait", "duration": 2},
+      {"action": "click", "coordinate": [360, 2330]},
+      {"action": "wait", "duration": 1},
+      {"action": "click", "coordinate": [540, 1900]}
+    ]
+  },
+  {
+    "id": "wf_browser_search",
+    "name": "浏览器搜索",
+    "appPackage": "com.android.browser",
+    "appName": "浏览器",
+    "keywords": ["搜索", "搜一下", "查一下", "百度搜索", "浏览器搜"],
+    "params": [
+      {"name": "query", "description": "搜索内容", "extractPattern": "搜(.+)"}
+    ],
+    "steps": [
+      {"action": "open_app", "text": "浏览器"},
+      {"action": "wait", "duration": 2},
+      {"action": "click", "coordinate": [540, 150]},
+      {"action": "type", "text": "{query}"},
+      {"action": "system_button", "button": "Enter"}
+    ]
+  },
+  {
+    "id": "wf_settings_search",
+    "name": "打开系统设置",
+    "appPackage": "com.android.settings",
+    "appName": "设置",
+    "keywords": ["打开设置", "系统设置", "设置蓝牙", "设置WiFi", "开蓝牙", "关蓝牙", "开WiFi", "关WiFi"],
+    "params": [
+      {"name": "setting_name", "description": "设置项名称", "extractPattern": "设置(.+)"}
+    ],
+    "steps": [
+      {"action": "open_app", "text": "设置"},
+      {"action": "wait", "duration": 2},
+      {"action": "click", "coordinate": [540, 110]},
+      {"action": "type", "text": "{setting_name}"},
+      {"action": "wait", "duration": 1},
+      {"action": "click", "coordinate": [540, 400]}
+    ]
+  },
+  {
+    "id": "wf_douyin_search",
+    "name": "抖音搜索",
+    "appPackage": "com.ss.android.ugc.aweme",
+    "appName": "抖音",
+    "keywords": ["抖音搜", "抖音搜索", "刷抖音", "抖音找"],
+    "params": [
+      {"name": "query", "description": "搜索内容", "extractPattern": "搜(.+)"}
+    ],
+    "steps": [
+      {"action": "open_app", "text": "抖音"},
+      {"action": "wait", "duration": 3},
+      {"action": "click", "coordinate": [980, 110]},
+      {"action": "wait", "duration": 1},
+      {"action": "click", "coordinate": [540, 150]},
+      {"action": "type", "text": "{query}"},
+      {"action": "system_button", "button": "Enter"}
+    ]
+  },
+  {
+    "id": "wf_meituan_food",
+    "name": "美团点外卖",
+    "appPackage": "com.sankuai.meituan",
+    "appName": "美团",
+    "keywords": ["点外卖", "叫外卖", "美团外卖", "外卖"],
+    "params": [],
+    "steps": [
+      {"action": "open_app", "text": "美团"},
+      {"action": "wait", "duration": 3},
+      {"action": "click", "coordinate": [540, 2100]}
+    ]
+  },
+  {
+    "id": "wf_taobao_search",
+    "name": "淘宝搜索",
+    "appPackage": "com.taobao.taobao",
+    "appName": "淘宝",
+    "keywords": ["淘宝搜", "淘宝找", "逛淘宝", "买"],
+    "params": [
+      {"name": "query", "description": "搜索内容", "extractPattern": "搜(.+)"}
+    ],
+    "steps": [
+      {"action": "open_app", "text": "淘宝"},
+      {"action": "wait", "duration": 3},
+      {"action": "click", "coordinate": [540, 150]},
+      {"action": "type", "text": "{query}"},
+      {"action": "system_button", "button": "Enter"}
+    ]
+  },
+  {
+    "id": "wf_alipay_scan",
+    "name": "支付宝扫一扫",
+    "appPackage": "com.eg.android.AlipayGphone",
+    "appName": "支付宝",
+    "keywords": ["扫一扫", "扫码", "付款码", "支付宝扫码"],
+    "params": [],
+    "steps": [
+      {"action": "open_app", "text": "支付宝"},
+      {"action": "wait", "duration": 2},
+      {"action": "click", "coordinate": [540, 2200]}
+    ]
+  },
+  {
+    "id": "wf_wechat_scan",
+    "name": "微信扫一扫",
+    "appPackage": "com.tencent.mm",
+    "appName": "微信",
+    "keywords": ["微信扫码", "微信扫一扫", "微信付款"],
+    "params": [],
+    "steps": [
+      {"action": "open_app", "text": "微信"},
+      {"action": "wait", "duration": 2},
+      {"action": "click", "coordinate": [100, 2330]}
+    ]
+  },
+  {
+    "id": "wf_phone_dial",
+    "name": "拨打电话",
+    "appPackage": "com.android.dialer",
+    "appName": "电话",
+    "keywords": ["打电话", "拨打", "拨号", "给…打电话"],
+    "params": [
+      {"name": "contact", "description": "联系人或号码", "extractPattern": "给(.+?)打"}
+    ],
+    "steps": [
+      {"action": "open_app", "text": "电话"},
+      {"action": "wait", "duration": 2},
+      {"action": "click", "coordinate": [540, 150]},
+      {"action": "type", "text": "{contact}"},
+      {"action": "wait", "duration": 1},
+      {"action": "click", "coordinate": [540, 350]},
+      {"action": "click", "coordinate": [540, 2200]}
+    ]
+  }
+]

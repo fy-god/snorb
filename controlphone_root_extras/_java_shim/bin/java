@@ -1,0 +1,22 @@
+#!/usr/bin/env bash
+
+JAVA_EXE="/mnt/c/Program Files/Android/Android Studio/jbr/bin/java.exe"
+args=()
+
+while [[ $# -gt 0 ]]; do
+  case "$1" in
+    -classpath|-cp)
+      args+=("$1")
+      shift
+      if [[ $# -gt 0 ]]; then
+        args+=("$(wslpath -w "$1")")
+      fi
+      ;;
+    *)
+      args+=("$1")
+      ;;
+  esac
+  shift
+done
+
+exec "$JAVA_EXE" "${args[@]}"

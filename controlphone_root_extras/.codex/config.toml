@@ -1,0 +1,11 @@
+[shell_environment_policy]
+inherit = "core"
+
+[shell_environment_policy.set]
+ANTHROPIC_AUTH_TOKEN = "sk-[REDACTED_TOKEN]"
+ANTHROPIC_BASE_URL = "https://api.deepseek.com/anthropic"
+ANTHROPIC_DEFAULT_HAIKU_MODEL = "deepseek-v4-pro"
+ANTHROPIC_DEFAULT_OPUS_MODEL = "deepseek-v4-pro"
+ANTHROPIC_DEFAULT_SONNET_MODEL = "deepseek-v4-pro"
+ANTHROPIC_MODEL = "deepseek-v4-pro"
+ANTHROPIC_REASONING_MODEL = "deepseek-v4-pro"

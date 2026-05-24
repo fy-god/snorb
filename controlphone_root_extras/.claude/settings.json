@@ -1,0 +1,45 @@
+{
+  "permissions": {
+    "allow": [
+      "Read",
+      "Write",
+      "Edit",
+      "Glob",
+      "Grep",
+      "WebSearch",
+      "WebFetch",
+      "Bash",
+      "Bash(*)",
+      "Bash(\"D:/controlphone/.claude/roubao-main/roubao-main/gradlew\" *)",
+      "Bash(adb *)",
+      "Bash(git *)",
+      "PowerShell",
+      "NotebookEdit",
+      "TaskCreate",
+      "TaskUpdate",
+      "AskUserQuestion",
+      "EnterPlanMode",
+      "ExitPlanMode",
+      "Agent",
+      "Monitor",
+      "Skill",
+      "PushNotification",
+      "Bash(python *)",
+      "PowerShell(*)"
+    ],
+    "defaultMode": "bypassPermissions"
+  },
+  "env": {
+    "ANTHROPIC_BASE_URL": "https://api.deepseek.com/anthropic",
+    "ANTHROPIC_AUTH_TOKEN": "sk-[REDACTED_TOKEN]",
+    "ANTHROPIC_MODEL": "deepseek-v4-pro",
+    "ANTHROPIC_DEFAULT_HAIKU_MODEL": "deepseek-v4-pro",
+    "ANTHROPIC_DEFAULT_SONNET_MODEL": "deepseek-v4-pro",
+    "ANTHROPIC_DEFAULT_OPUS_MODEL": "deepseek-v4-pro",
+    "ANTHROPIC_REASONING_MODEL": "deepseek-v4-pro"
+  },
+  "skipDangerousModePermissionPrompt": true,
+  "skipAutoPermissionPrompt": true,
+  "autoUpdatesChannel": "latest",
+  "model": "opus[1m]"
+}

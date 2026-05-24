@@ -1,0 +1,313 @@
+{
+  "fragments": [
+    {
+      "id": "wechat_open",
+      "name": "微信-打开应用",
+      "appPackage": "com.tencent.mm",
+      "appName": "微信",
+      "category": "open",
+      "precondition": "任意",
+      "resultState": "微信主页",
+      "params": [],
+      "steps": [
+        {"action": "open_app", "text": "微信"},
+        {"action": "wait", "duration": 2}
+      ]
+    },
+    {
+      "id": "wechat_search_contact",
+      "name": "微信-搜索联系人",
+      "appPackage": "com.tencent.mm",
+      "appName": "微信",
+      "category": "search",
+      "precondition": "微信主页",
+      "resultState": "聊天界面",
+      "params": ["contact"],
+      "steps": [
+        {"action": "click", "coordinate": [500, 190]},
+        {"action": "wait", "duration": 1},
+        {"action": "type", "text": "{contact}"},
+        {"action": "wait", "duration": 1},
+        {"action": "click", "coordinate": [500, 380]}
+      ]
+    },
+    {
+      "id": "wechat_type_message",
+      "name": "微信-输入消息",
+      "appPackage": "com.tencent.mm",
+      "appName": "微信",
+      "category": "input",
+      "precondition": "聊天界面",
+      "resultState": "聊天界面(已输入)",
+      "params": ["message"],
+      "steps": [
+        {"action": "click", "coordinate": [500, 860]},
+        {"action": "wait", "duration": 0.5},
+        {"action": "type", "text": "{message}"}
+      ]
+    },
+    {
+      "id": "wechat_send",
+      "name": "微信-点击发送",
+      "appPackage": "com.tencent.mm",
+      "appName": "微信",
+      "category": "send",
+      "precondition": "聊天界面(已输入)",
+      "resultState": "聊天界面(已发送)",
+      "params": [],
+      "steps": [
+        {"action": "click", "coordinate": [900, 860]}
+      ]
+    },
+    {
+      "id": "wechat_moments_nav",
+      "name": "微信-进入朋友圈",
+      "appPackage": "com.tencent.mm",
+      "appName": "微信",
+      "category": "navigate",
+      "precondition": "微信主页",
+      "resultState": "朋友圈",
+      "params": [],
+      "steps": [
+        {"action": "click", "coordinate": [330, 940]},
+        {"action": "wait", "duration": 0.5},
+        {"action": "click", "coordinate": [500, 780]}
+      ]
+    },
+    {
+      "id": "browser_open",
+      "name": "浏览器-打开应用",
+      "appPackage": "com.android.browser",
+      "appName": "浏览器",
+      "category": "open",
+      "precondition": "任意",
+      "resultState": "浏览器主页",
+      "params": [],
+      "steps": [
+        {"action": "open_app", "text": "浏览器"},
+        {"action": "wait", "duration": 2}
+      ]
+    },
+    {
+      "id": "browser_search_box",
+      "name": "浏览器-搜索框输入",
+      "appPackage": "com.android.browser",
+      "appName": "浏览器",
+      "category": "search",
+      "precondition": "浏览器主页",
+      "resultState": "搜索结果页",
+      "params": ["query"],
+      "steps": [
+        {"action": "click", "coordinate": [500, 140]},
+        {"action": "wait", "duration": 0.5},
+        {"action": "type", "text": "{query}"},
+        {"action": "system_button", "button": "Enter"}
+      ]
+    },
+    {
+      "id": "douyin_open",
+      "name": "抖音-打开应用",
+      "appPackage": "com.ss.android.ugc.aweme",
+      "appName": "抖音",
+      "category": "open",
+      "precondition": "任意",
+      "resultState": "抖音首页",
+      "params": [],
+      "steps": [
+        {"action": "open_app", "text": "抖音"},
+        {"action": "wait", "duration": 3}
+      ]
+    },
+    {
+      "id": "douyin_search",
+      "name": "抖音-搜索",
+      "appPackage": "com.ss.android.ugc.aweme",
+      "appName": "抖音",
+      "category": "search",
+      "precondition": "抖音首页",
+      "resultState": "搜索结果页",
+      "params": ["query"],
+      "steps": [
+        {"action": "click", "coordinate": [900, 100]},
+        {"action": "wait", "duration": 0.8},
+        {"action": "click", "coordinate": [500, 140]},
+        {"action": "type", "text": "{query}"},
+        {"action": "system_button", "button": "Enter"}
+      ]
+    },
+    {
+      "id": "taobao_open",
+      "name": "淘宝-打开应用",
+      "appPackage": "com.taobao.taobao",
+      "appName": "淘宝",
+      "category": "open",
+      "precondition": "任意",
+      "resultState": "淘宝首页",
+      "params": [],
+      "steps": [
+        {"action": "open_app", "text": "淘宝"},
+        {"action": "wait", "duration": 3}
+      ]
+    },
+    {
+      "id": "settings_open",
+      "name": "设置-打开应用",
+      "appPackage": "com.android.settings",
+      "appName": "设置",
+      "category": "open",
+      "precondition": "任意",
+      "resultState": "设置主页",
+      "params": [],
+      "steps": [
+        {"action": "open_app", "text": "设置"},
+        {"action": "wait", "duration": 1.5}
+      ]
+    },
+    {
+      "id": "settings_search_item",
+      "name": "设置-搜索设置项",
+      "appPackage": "com.android.settings",
+      "appName": "设置",
+      "category": "search",
+      "precondition": "设置主页",
+      "resultState": "设置项详情",
+      "params": ["item"],
+      "steps": [
+        {"action": "click", "coordinate": [500, 100]},
+        {"action": "wait", "duration": 0.5},
+        {"action": "type", "text": "{item}"},
+        {"action": "wait", "duration": 0.8},
+        {"action": "click", "coordinate": [500, 400]}
+      ]
+    },
+    {
+      "id": "alipay_open",
+      "name": "支付宝-打开应用",
+      "appPackage": "com.eg.android.AlipayGphone",
+      "appName": "支付宝",
+      "category": "open",
+      "precondition": "任意",
+      "resultState": "支付宝首页",
+      "params": [],
+      "steps": [
+        {"action": "open_app", "text": "支付宝"},
+        {"action": "wait", "duration": 2}
+      ]
+    },
+    {
+      "id": "alipay_scan_btn",
+      "name": "支付宝-点击扫一扫",
+      "appPackage": "com.eg.android.AlipayGphone",
+      "appName": "支付宝",
+      "category": "navigate",
+      "precondition": "支付宝首页",
+      "resultState": "扫码页面",
+      "params": [],
+      "steps": [
+        {"action": "click", "coordinate": [500, 900]}
+      ]
+    },
+    {
+      "id": "home_button",
+      "name": "通用-返回桌面",
+      "appPackage": "*",
+      "appName": "通用",
+      "category": "navigate",
+      "precondition": "任意",
+      "resultState": "桌面",
+      "params": [],
+      "steps": [
+        {"action": "system_button", "button": "Home"},
+        {"action": "wait", "duration": 0.5}
+      ]
+    },
+    {
+      "id": "back_button",
+      "name": "通用-返回",
+      "appPackage": "*",
+      "appName": "通用",
+      "category": "navigate",
+      "precondition": "任意",
+      "resultState": "上一页",
+      "params": [],
+      "steps": [
+        {"action": "system_button", "button": "Back"},
+        {"action": "wait", "duration": 0.3}
+      ]
+    }
+  ],
+  "templates": [
+    {
+      "id": "wechat_send_message",
+      "name": "发微信消息",
+      "intentPatterns": ["给X发Y", "发微信给X Y"],
+      "appMatcher": "com.tencent.mm",
+      "fragments": ["wechat_open", "wechat_search_contact", "wechat_type_message", "wechat_send"],
+      "paramMapping": {"X": "contact", "Y": "message"}
+    },
+    {
+      "id": "wechat_search",
+      "name": "微信搜索",
+      "intentPatterns": ["微信搜X"],
+      "appMatcher": "com.tencent.mm",
+      "fragments": ["wechat_open", "wechat_search_contact"],
+      "paramMapping": {"X": "contact"}
+    },
+    {
+      "id": "wechat_moments",
+      "name": "微信朋友圈",
+      "intentPatterns": ["朋友圈"],
+      "appMatcher": "com.tencent.mm",
+      "fragments": ["wechat_open", "wechat_moments_nav"],
+      "paramMapping": {}
+    },
+    {
+      "id": "browser_search",
+      "name": "浏览器搜索",
+      "intentPatterns": ["搜X", "百度X"],
+      "appMatcher": "com.android.browser",
+      "fragments": ["browser_open", "browser_search_box"],
+      "paramMapping": {"X": "query"}
+    },
+    {
+      "id": "douyin_search",
+      "name": "抖音搜索",
+      "intentPatterns": ["抖音搜X"],
+      "appMatcher": "com.ss.android.ugc.aweme",
+      "fragments": ["douyin_open", "douyin_search"],
+      "paramMapping": {"X": "query"}
+    },
+    {
+      "id": "taobao_open",
+      "name": "打开淘宝",
+      "intentPatterns": ["淘宝"],
+      "appMatcher": "com.taobao.taobao",
+      "fragments": ["taobao_open"],
+      "paramMapping": {}
+    },
+    {
+      "id": "settings_open",
+      "name": "打开设置项",
+      "intentPatterns": ["设置X"],
+      "appMatcher": "com.android.settings",
+      "fragments": ["settings_open", "settings_search_item"],
+      "paramMapping": {"X": "item"}
+    },
+    {
+      "id": "alipay_scan",
+      "name": "支付宝扫码",
+      "intentPatterns": ["扫码", "扫一扫"],
+      "appMatcher": "com.eg.android.AlipayGphone",
+      "fragments": ["alipay_open", "alipay_scan_btn"],
+      "paramMapping": {}
+    },
+    {
+      "id": "open_app_only",
+      "name": "打开应用",
+      "intentPatterns": ["打开X"],
+      "appMatcher": "_any_",
+      "fragments": ["home_button"],
+      "paramMapping": {}
+    }
+  ]
+}

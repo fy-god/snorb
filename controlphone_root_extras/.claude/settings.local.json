@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "WebSearch",
+      "WebFetch(domain:github.com)",
+      "WebFetch(domain:mobilerun.ai)",
+      "WebFetch(domain:raw.githubusercontent.com)",
+      "Bash(./gradlew assembleDebug)"
+    ]
+  }
+}
