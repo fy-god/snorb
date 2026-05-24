@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <uses-permission android:name="android.permission.QUERY_ALL_PACKAGES" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_SECURE_SETTINGS" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_DATA_SYNC" />
+
+    <queries>
+        <intent>
+            <action android:name="android.intent.action.MAIN" />
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent>
+    </queries>
+
+    <application
+        android:allowBackup="true"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:showWhenLocked="true"
+            android:turnScreenOn="true"
+            android:excludeFromRecents="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <receiver
+            android:name=".debug.DebugCommandReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.macropilot.app.DEBUG_SAVE_SAMPLE" />
+                <action android:name="com.macropilot.app.DEBUG_SEED_BUILTINS" />
+                <action android:name="com.macropilot.app.DEBUG_INVENTORY" />
+                <action android:name="com.macropilot.app.DEBUG_DELETE_TRAINING_SAMPLES" />
+                <action android:name="com.macropilot.app.DEBUG_DELETE_FACTORY_ARTIFACTS" />
+                <action android:name="com.macropilot.app.DEBUG_COMPACT_FACTORY_ARTIFACTS" />
+                <action android:name="com.macropilot.app.DEBUG_DELETE_RUN_LOGS" />
+                <action android:name="com.macropilot.app.DEBUG_SELF_CHECK" />
+                <action android:name="com.macropilot.app.DEBUG_EXPORT_PREVIEW" />
+                <action android:name="com.macropilot.app.DEBUG_EXPORT_TRAINING_SAMPLES" />
+                <action android:name="com.macropilot.app.DEBUG_DELETE_EXPORTS" />
+                <action android:name="com.macropilot.app.DEBUG_DELETE_COORDINATE_CANDIDATES" />
+                <action android:name="com.macropilot.app.DEBUG_SAVE_COORDINATE_CANDIDATE" />
+                <action android:name="com.macropilot.app.DEBUG_RUN_SETTINGS_SEARCH" />
+                <action android:name="com.macropilot.app.DEBUG_RUN_SETTINGS_TESTS" />
+                <action android:name="com.macropilot.app.DEBUG_RUN_SETTINGS_RECOVERY_TEST" />
+                <action android:name="com.macropilot.app.DEBUG_RUN_SETTINGS_SCROLL_TEST" />
+                <action android:name="com.macropilot.app.DEBUG_RUN_SETTINGS_SELECT_TEST" />
+            </intent-filter>
+        </receiver>
+
+        <receiver
+            android:name=".api.MacroPilotApiReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.macropilot.app.API_LIST_APPS" />
+                <action android:name="com.macropilot.app.API_PROBE_APP_CAPABILITY" />
+                <action android:name="com.macropilot.app.API_CREATE_WECHAT_CALIBRATION_REQUEST" />
+                <action android:name="com.macropilot.app.API_SAVE_COORDINATE_POINT_CANDIDATE" />
+                <action android:name="com.macropilot.app.API_CREATE_WECHAT_TYPE_CANDIDATE" />
+                <action android:name="com.macropilot.app.API_LIST_APPROVED_SKILLS" />
+                <action android:name="com.macropilot.app.API_LIST_CANDIDATES" />
+                <action android:name="com.macropilot.app.API_CREATE_CANDIDATE_REQUEST" />
+                <action android:name="com.macropilot.app.API_GENERATE_SKILL_DRAFT" />
+                <action android:name="com.macropilot.app.API_LIST_SKILL_DRAFTS" />
+                <action android:name="com.macropilot.app.API_DRY_RUN_SKILL_DRAFT" />
+                <action android:name="com.macropilot.app.API_TEST_SKILL_DRAFT" />
+                <action android:name="com.macropilot.app.API_PROMOTE_SKILL_DRAFT" />
+                <action android:name="com.macropilot.app.API_FACTORY_AI_INSTRUCTION" />
+                <action android:name="com.macropilot.app.API_RUN_APP_SIDE_INSTRUCTION" />
+                <action android:name="com.macropilot.app.API_GENERATE_WECHAT_SKILL_JSON" />
+                <action android:name="com.macropilot.app.API_LIST_SKILL_JSON" />
+                <action android:name="com.macropilot.app.API_DRY_RUN_SKILL_JSON" />
+                <action android:name="com.macropilot.app.API_TEST_SKILL_JSON" />
+                <action android:name="com.macropilot.app.API_PROMOTE_SKILL_JSON" />
+                <action android:name="com.macropilot.app.API_LIST_APPROVED_SKILL_JSON" />
+                <action android:name="com.macropilot.app.API_EXPORT_APP_CONFIG_JSON" />
+                <action android:name="com.macropilot.app.API_FACTORY_DASHBOARD" />
+                <action android:name="com.macropilot.app.API_FACTORY_SELF_TEST" />
+                <action android:name="com.macropilot.app.API_GENERATE_THIRD_PARTY_APP_SKILL_SUBSETS" />
+                <action android:name="com.macropilot.app.API_PROBE_APP_UI_GRAPH" />
+                <action android:name="com.macropilot.app.API_RUN_THIRD_PARTY_APP_BATCH" />
+                <action android:name="com.macropilot.app.API_CANCEL_THIRD_PARTY_APP_BATCH" />
+                <action android:name="com.macropilot.app.API_LIST_POPULAR_APP_TASK_CATALOG" />
+                <action android:name="com.macropilot.app.API_RUN_POPULAR_APP_TASK_BATCH" />
+                <action android:name="com.macropilot.app.API_CANCEL_POPULAR_APP_TASK_BATCH" />
+                <action android:name="com.macropilot.app.API_DELETE_APPROVED_SKILL" />
+                <action android:name="com.macropilot.app.API_DELETE_CANDIDATE" />
+                <action android:name="com.macropilot.app.API_RUN_SKILL" />
+                <action android:name="com.macropilot.app.API_GET_STATUS" />
+            </intent-filter>
+        </receiver>
+
+        <receiver
+            android:name=".ai.AiAssistApiReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.macropilot.app.AI_GET_CONFIG" />
+                <action android:name="com.macropilot.app.AI_SAVE_CONFIG" />
+                <action android:name="com.macropilot.app.AI_DISABLE" />
+                <action android:name="com.macropilot.app.AI_REQUEST" />
+                <action android:name="com.macropilot.app.AI_SUGGEST_UI_PATCH" />
+                <action android:name="com.macropilot.app.AI_IMPORT_PATCH_CANDIDATE" />
+                <action android:name="com.macropilot.app.AI_REVIEW_PATCH" />
+                <action android:name="com.macropilot.app.AI_APPLY_PATCH" />
+                <action android:name="com.macropilot.app.AI_DRY_RUN_CANDIDATE_MODULE" />
+                <action android:name="com.macropilot.app.AI_LIST_CANDIDATE_MODULES" />
+                <action android:name="com.macropilot.app.AI_TEST_POLICY" />
+                <action android:name="com.macropilot.app.AI_LIST_LOGS" />
+                <action android:name="com.macropilot.app.AI_DELETE_LOGS" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name=".factory.AppSideInstructionService"
+            android:exported="false"
+            android:foregroundServiceType="dataSync" />
+
+        <service
+            android:name=".factory.ThirdPartyAppBatchService"
+            android:exported="false"
+            android:foregroundServiceType="dataSync" />
+
+        <service
+            android:name=".factory.PopularAppTaskBatchService"
+            android:exported="false"
+            android:foregroundServiceType="dataSync" />
+
+        <service
+            android:name=".factory.AppUiProbeService"
+            android:exported="false"
+            android:foregroundServiceType="dataSync" />
+
+        <service
+            android:name=".automation.MacroPilotAccessibilityService"
+            android:exported="true"
+            android:label="@string/accessibility_service_label"
+            android:permission="android.permission.BIND_ACCESSIBILITY_SERVICE">
+            <intent-filter>
+                <action android:name="android.accessibilityservice.AccessibilityService" />
+            </intent-filter>
+            <meta-data
+                android:name="android.accessibilityservice"
+                android:resource="@xml/accessibility_service_config" />
+        </service>
+
+        <service
+            android:name=".automation.MacroPilotImeService"
+            android:exported="true"
+            android:label="@string/ime_service_label"
+            android:permission="android.permission.BIND_INPUT_METHOD">
+            <intent-filter>
+                <action android:name="android.view.InputMethod" />
+            </intent-filter>
+            <meta-data
+                android:name="android.view.im"
+                android:resource="@xml/input_method" />
+        </service>
+    </application>
+</manifest>

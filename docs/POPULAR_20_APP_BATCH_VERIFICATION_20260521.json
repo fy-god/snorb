@@ -1,0 +1,1098 @@
+{
+  "schemaVersion": 1,
+  "kind": "popular_20_app_batch_computer_verification",
+  "generatedAt": "2026-05-21T05:20:50.417Z",
+  "policy": {
+    "adbManualTargetUiControl": false,
+    "phoneSideSuccessIsNotEnough": true,
+    "passRequiresGoalOrStrongUiEvidence": true,
+    "highRiskPaymentTradeIsBlocked": true
+  },
+  "summary": {
+    "sourceReport": "D:\\controlphone\\MacroPilot\\popular20_connectivity_20260521_001.json",
+    "phoneStatus": "PARTIAL",
+    "appCount": 20,
+    "taskCount": 20,
+    "executedAttempts": 19,
+    "phoneSuccess": 2,
+    "phoneFailed": 15,
+    "phoneBlocked": 3,
+    "computerPass": 3,
+    "computerFail": 14,
+    "computerUnknown": 3,
+    "aiJobs": 38,
+    "aiSuccess": 9,
+    "aiFailed": 31,
+    "aiHttp402": 28,
+    "localPngs": 65,
+    "pulledEvidenceFiles": 1932,
+    "failedEvidenceFiles": 3401
+  },
+  "rows": [
+    {
+      "appName": "哔哩哔哩",
+      "packageName": "tv.danmaku.bili",
+      "taskId": "bili_search_open_first_video",
+      "instruction": "在哔哩哔哩搜索王老菊并打开第一个视频，必须验证已经进入视频播放页，不能只停在搜索结果页。",
+      "phoneStatus": "FAILED_GOAL_UNVERIFIED",
+      "computerVerdict": "FAIL",
+      "confidence": "HIGH",
+      "message": "报告已写入 / INFO: /data/user/0/com.macropilot.app/files/macro_v2/factory/flow_reports/tv.danmaku.bili/ai_direct_flow_1779338078387.json",
+      "flowReportFile": "/data/user/0/com.macropilot.app/files/macro_v2/factory/flow_reports/tv.danmaku.bili/ai_direct_flow_1779338078387.json",
+      "blockers": [
+        "Phone task status is FAILED_GOAL_UNVERIFIED.",
+        "DeepSeek/v4pro API returned HTTP 402 2 time(s)."
+      ],
+      "reasons": [
+        "AI jobs observed: 2, model(s): deepseek-v4-pro.",
+        "Generated artifacts: skillJson=6, appConfig=14."
+      ],
+      "ai": {
+        "jobCount": 2,
+        "successCount": 0,
+        "failedCount": 2,
+        "http402Count": 2,
+        "http200Count": 0,
+        "models": {
+          "deepseek-v4-pro": 2
+        },
+        "samples": [
+          "D:\\controlphone\\MacroPilot\\evidence_bundles\\popular20_connectivity_20260521_001_1779340140429\\macro_v2\\factory\\ai_jobs\\2026-05-21\\factory_ai_replan_1779338052656.json",
+          "D:\\controlphone\\MacroPilot\\evidence_bundles\\popular20_connectivity_20260521_001_1779340140429\\macro_v2\\factory\\ai_jobs\\2026-05-21\\factory_ai_replan_1779338076506.json"
+        ]
+      },
+      "artifacts": {
+        "skillJsonCount": 6,
+        "dryRunReportCount": 2,
+        "appConfigCount": 14,
+        "runtimeReportCount": 16,
+        "graphCount": 5
+      },
+      "evidence": {
+        "referencedPathCount": 121,
+        "localPathCount": 76,
+        "missingPathCount": 45,
+        "localPngCount": 3,
+        "localSnapshotCount": 10,
+        "localFlowReportCount": 8,
+        "pngSamples": [
+          "D:\\controlphone\\MacroPilot\\evidence_bundles\\popular20_connectivity_20260521_001_1779340140429\\macro_v2\\factory\\ui_screenshots\\com.android.systemui\\20260521_123434_806_cc4d9d62.png",
+          "D:\\controlphone\\MacroPilot\\evidence_bundles\\popular20_connectivity_20260521_001_1779340140429\\macro_v2\\factory\\ui_screenshots\\tv.danmaku.bili\\20260521_123437_722_e3fada2b.png",
+          "D:\\controlphone\\MacroPilot\\evidence_bundles\\popular20_connectivity_20260521_001_1779340140429\\macro_v2\\factory\\ui_screenshots\\tv.danmaku.bili\\20260521_123437_722_e3fada2b.png"
+        ],
+        "snapshotSamples": [
+          "D:\\controlphone\\MacroPilot\\evidence_bundles\\popular20_connectivity_20260521_001_1779340140429\\macro_v2\\factory\\ui_snapshots\\com.android.systemui\\20260521_123434_806_cc4d9d62.json",
+          "D:\\controlphone\\MacroPilot\\evidence_bundles\\popular20_connectivity_20260521_001_1779340140429\\macro_v2\\factory\\ui_snapshots\\com.android.systemui\\20260521_123434_806_cc4d9d62.json",
+          "D:\\controlphone\\MacroPilot\\evidence_bundles\\popular20_connectivity_20260521_001_1779340140429\\macro_v2\\factory\\ui_snapshots\\tv.danmaku.bili\\20260521_123437_722_e3fada2b.json",
+          "D:\\controlphone\\MacroPilot\\evidence_bundles\\popular20_connectivity_20260521_001_1779340140429\\macro_v2\\factory\\ui_snapshots\\tv.danmaku.bili\\20260521_123438_081_e3fada2b.json",
+          "D:\\controlphone\\MacroPilot\\evidence_bundles\\popular20_connectivity_20260521_001_1779340140429\\macro_v2\\factory\\ui_snapshots\\tv.danmaku.bili\\20260521_123431_582_193b2613.json"
+        ]
+      }
+    },
+    {
+      "appName": "小红书",
+      "packageName": "com.xingin.xhs",
+      "taskId": "xhs_search_keyword",
+      "instruction": "在小红书搜索露营装备，停在综合结果页并记录笔记、商品、用户分区。",
+      "phoneStatus": "FAILED_GOAL_UNVERIFIED",
+      "computerVerdict": "FAIL",
+      "confidence": "HIGH",
+      "message": "报告已写入 / INFO: /data/user/0/com.macropilot.app/files/macro_v2/factory/flow_reports/com.xingin.xhs/ai_direct_flow_1779338114721.json",
+      "flowReportFile": "/data/user/0/com.macropilot.app/files/macro_v2/factory/flow_reports/com.xingin.xhs/ai_direct_flow_1779338114721.json",
+      "blockers": [
+        "Phone task status is FAILED_GOAL_UNVERIFIED.",
+        "DeepSeek/v4pro API returned HTTP 402 3 time(s)."
+      ],
+      "reasons": [
+        "AI jobs observed: 3, model(s): deepseek-v4-pro.",
+        "Generated artifacts: skillJson=14, appConfig=14."
+      ],
+      "ai": {
+        "jobCount": 3,
+        "successCount": 0,
+        "failedCount": 3,
+        "http402Count": 3,
+        "http200Count": 0,
+        "models": {
+          "deepseek-v4-pro": 3
+        },
+        "samples": [
+          "D:\\controlphone\\MacroPilot\\evidence_bundles\\popular20_connectivity_20260521_001_1779340140429\\macro_v2\\factory\\ai_jobs\\2026-05-21\\factory_ai_direct_1779338080114.json",
+          "D:\\controlphone\\MacroPilot\\evidence_bundles\\popular20_connectivity_20260521_001_1779340140429\\macro_v2\\factory\\ai_jobs\\2026-05-21\\factory_ai_replan_1779338090865.json",
+          "D:\\controlphone\\MacroPilot\\evidence_bundles\\popular20_connectivity_20260521_001_1779340140429\\macro_v2\\factory\\ai_jobs\\2026-05-21\\factory_ai_replan_1779338113241.json"
+        ]
+      },
+      "artifacts": {
+        "skillJsonCount": 14,
+        "dryRunReportCount": 4,
+        "appConfigCount": 14,
+        "runtimeReportCount": 16,
+        "graphCount": 5
+      },
+      "evidence": {
+        "referencedPathCount": 134,
+        "localPathCount": 113,
+        "missingPathCount": 21,
+        "localPngCount": 8,
+        "localSnapshotCount": 26,
+        "localFlowReportCount": 8,
+        "pngSamples": [
+          "D:\\controlphone\\MacroPilot\\evidence_bundles\\popular20_connectivity_20260521_001_1779340140429\\macro_v2\\factory\\ui_screenshots\\com.xingin.xhs\\20260521_123511_767_1e6f1072.png",
+          "D:\\controlphone\\MacroPilot\\evidence_bundles\\popular20_connectivity_20260521_001_1779340140429\\macro_v2\\factory\\ui_screenshots\\com.xingin.xhs\\20260521_123511_767_1e6f1072.png",
+          "D:\\controlphone\\MacroPilot\\evidence_bundles\\popular20_connectivity_20260521_001_1779340140429\\macro_v2\\factory\\ui_screenshots\\com.xingin.xhs\\20260521_123514_459_1e6f1072.png",
+          "D:\\controlphone\\MacroPilot\\evidence_bundles\\popular20_connectivity_20260521_001_1779340140429\\macro_v2\\factory\\ui_screenshots\\com.xingin.xhs\\20260521_123511_999_1e6f1072.png",
+          "D:\\controlphone\\MacroPilot\\evidence_bundles\\popular20_connectivity_20260521_001_1779340140429\\macro_v2\\factory\\ui_screenshots\\com.xingin.xhs\\20260521_123511_767_1e6f1072.png"
+        ],
+        "snapshotSamples": [
+          "D:\\controlphone\\MacroPilot\\evidence_bundles\\popular20_connectivity_20260521_001_1779340140429\\macro_v2\\factory\\ui_snapshots\\com.xingin.xhs\\20260521_123511_767_1e6f1072.json",
+          "D:\\controlphone\\MacroPilot\\evidence_bundles\\popular20_connectivity_20260521_001_1779340140429\\macro_v2\\factory\\ui_snapshots\\com.xingin.xhs\\20260521_123511_767_1e6f1072.json",
+          "D:\\controlphone\\MacroPilot\\evidence_bundles\\popular20_connectivity_20260521_001_1779340140429\\macro_v2\\factory\\ui_snapshots\\com.xingin.xhs\\20260521_123514_459_1e6f1072.json",
+          "D:\\controlphone\\MacroPilot\\evidence_bundles\\popular20_connectivity_20260521_001_1779340140429\\macro_v2\\factory\\ui_snapshots\\com.xingin.xhs\\20260521_123511_999_1e6f1072.json",
+          "D:\\controlphone\\MacroPilot\\evidence_bundles\\popular20_connectivity_20260521_001_1779340140429\\macro_v2\\factory\\ui_snapshots\\com.xingin.xhs\\20260521_123511_767_1e6f1072.json"
+        ]
+      }
+    },
+    {
+      "appName": "抖音",
+      "packageName": "com.ss.android.ugc.aweme",
+      "taskId": "douyin_search_keyword",
+      "instruction": "在抖音搜索王老菊，停在搜索结果页并记录用户、视频、综合分区。",
+      "phoneStatus": "FAILED_GOAL_UNVERIFIED",
+      "computerVerdict": "FAIL",
+      "confidence": "HIGH",
+      "message": "报告已写入 / INFO: /data/user/0/com.macropilot.app/files/macro_v2/factory/flow_reports/com.ss.android.ugc.aweme/ai_direct_flow_1779338312524.json",
+      "flowReportFile": "/data/user/0/com.macropilot.app/files/macro_v2/factory/flow_reports/com.ss.android.ugc.aweme/ai_direct_flow_1779338312524.json",
+      "blockers": [
+        "Phone task status is FAILED_GOAL_UNVERIFIED.",
+        "DeepSeek/v4pro API returned HTTP 402 2 time(s)."
+      ],
+      "reasons": [
+        "AI jobs observed: 2, model(s): deepseek-v4-pro.",
+        "Generated artifacts: skillJson=4, appConfig=14."
+      ],
+      "ai": {
+        "jobCount": 2,
+        "successCount": 0,
+        "failedCount": 2,
+        "http402Count": 2,
+        "http200Count": 0,
+        "models": {
+          "deepseek-v4-pro": 2
+        },
+        "samples": [
+          "D:\\controlphone\\MacroPilot\\evidence_bundles\\popular20_connectivity_20260521_001_1779340140429\\macro_v2\\factory\\ai_jobs\\2026-05-21\\factory_ai_replan_1779338282955.json",
+          "D:\\controlphone\\MacroPilot\\evidence_bundles\\popular20_connectivity_20260521_001_1779340140429\\macro_v2\\factory\\ai_jobs\\2026-05-21\\factory_ai_replan_1779338310606.json"
+        ]
+      },
+      "artifacts": {
+        "skillJsonCount": 4,
+        "dryRunReportCount": 4,
+        "appConfigCount": 14,
+        "runtimeReportCount": 16,
+        "graphCount": 10
+      },
+      "evidence": {
+        "referencedPathCount": 257,
+        "localPathCount": 100,
+        "missingPathCount": 157,
+        "localPngCount": 8,
+        "localSnapshotCount": 24,
+        "localFlowReportCount": 8,
+        "pngSamples": [
+          "D:\\controlphone\\MacroPilot\\evidence_bundles\\popular20_connectivity_20260521_001_1779340140429\\macro_v2\\factory\\ui_screenshots\\com.ss.android.ugc.aweme\\20260521_123828_429_8a6b89c4.png",
+          "D:\\controlphone\\MacroPilot\\evidence_bundles\\popular20_connectivity_20260521_001_1779340140429\\macro_v2\\factory\\ui_screenshots\\com.ss.android.ugc.aweme\\20260521_123828_429_8a6b89c4.png",
+          "D:\\controlphone\\MacroPilot\\evidence_bundles\\popular20_connectivity_20260521_001_1779340140429\\macro_v2\\factory\\ui_screenshots\\com.ss.android.ugc.aweme\\20260521_123831_865_8a6b89c4.png",
+          "D:\\controlphone\\MacroPilot\\evidence_bundles\\popular20_connectivity_20260521_001_1779340140429\\macro_v2\\factory\\ui_screenshots\\com.ss.android.ugc.aweme\\20260521_123829_154_8a6b89c4.png",
+          "D:\\controlphone\\MacroPilot\\evidence_bundles\\popular20_connectivity_20260521_001_1779340140429\\macro_v2\\factory\\ui_screenshots\\com.ss.android.ugc.aweme\\20260521_123828_429_8a6b89c4.png"
+        ],
+        "snapshotSamples": [
+          "D:\\controlphone\\MacroPilot\\evidence_bundles\\popular20_connectivity_20260521_001_1779340140429\\macro_v2\\factory\\ui_snapshots\\com.ss.android.ugc.aweme\\20260521_123828_429_8a6b89c4.json",
+          "D:\\controlphone\\MacroPilot\\evidence_bundles\\popular20_connectivity_20260521_001_1779340140429\\macro_v2\\factory\\ui_snapshots\\com.ss.android.ugc.aweme\\20260521_123828_429_8a6b89c4.json",
+          "D:\\controlphone\\MacroPilot\\evidence_bundles\\popular20_connectivity_20260521_001_1779340140429\\macro_v2\\factory\\ui_snapshots\\com.ss.android.ugc.aweme\\20260521_123831_865_8a6b89c4.json",
+          "D:\\controlphone\\MacroPilot\\evidence_bundles\\popular20_connectivity_20260521_001_1779340140429\\macro_v2\\factory\\ui_snapshots\\com.ss.android.ugc.aweme\\20260521_123829_154_8a6b89c4.json",
+          "D:\\controlphone\\MacroPilot\\evidence_bundles\\popular20_connectivity_20260521_001_1779340140429\\macro_v2\\factory\\ui_snapshots\\com.ss.android.ugc.aweme\\20260521_123828_429_8a6b89c4.json"
+        ]
+      }
+    },
+    {
+      "appName": "虎扑",
+      "packageName": "com.hupu.games",
+      "taskId": "hupu_close_ads_home",
+      "instruction": "打开虎扑，先处理开屏广告和弹窗，再回到虎扑首页读取底部导航。",
+      "phoneStatus": "PARTIAL_TIMEOUT",
+      "computerVerdict": "UNKNOWN",
+      "confidence": "MEDIUM",
+      "message": "UI 图谱读取完成：status=PARTIAL_TIMEOUT screens=17 edges=27 report=popular_app_ui_task_hupu_close_ads_home_1779338493911.json",
+      "flowReportFile": "/data/user/0/com.macropilot.app/files/macro_v2/factory/flow_reports/com.hupu.games/popular_app_ui_task_hupu_close_ads_home_1779338493911.json",
+      "blockers": [
+        "UI graph exploration timed out or was partial."
+      ],
+      "reasons": [],
+      "ai": {
+        "jobCount": 0,
+        "successCount": 0,
+        "failedCount": 0,
+        "http402Count": 0,
+        "http200Count": 0,
+        "models": {},
+        "samples": []
+      },
+      "artifacts": {
+        "skillJsonCount": 0,
+        "dryRunReportCount": 0,
+        "appConfigCount": 0,
+        "runtimeReportCount": 0,
+        "graphCount": 3
+      },
+      "evidence": {
+        "referencedPathCount": 115,
+        "localPathCount": 15,
+        "missingPathCount": 100,
+        "localPngCount": 0,
+        "localSnapshotCount": 10,
+        "localFlowReportCount": 2,
+        "pngSamples": [],
+        "snapshotSamples": [
+          "D:\\controlphone\\MacroPilot\\evidence_bundles\\popular20_connectivity_20260521_001_1779340140429\\macro_v2\\factory\\ui_snapshots\\com.hupu.games\\20260521_124126_713_917db6ea.json",
+          "D:\\controlphone\\MacroPilot\\evidence_bundles\\popular20_connectivity_20260521_001_1779340140429\\macro_v2\\factory\\ui_snapshots\\com.hupu.games\\20260521_124129_876_917db6ea.json",
+          "D:\\controlphone\\MacroPilot\\evidence_bundles\\popular20_connectivity_20260521_001_1779340140429\\macro_v2\\factory\\ui_snapshots\\com.hupu.games\\20260521_124133_013_40b4ee98.json",
+          "D:\\controlphone\\MacroPilot\\evidence_bundles\\popular20_connectivity_20260521_001_1779340140429\\macro_v2\\factory\\ui_snapshots\\com.hupu.games\\20260521_124126_713_917db6ea.json",
+          "D:\\controlphone\\MacroPilot\\evidence_bundles\\popular20_connectivity_20260521_001_1779340140429\\macro_v2\\factory\\ui_snapshots\\com.hupu.games\\20260521_124126_713_917db6ea.json"
+        ]
+      }
+    },
+    {
+      "appName": "微博",
+      "packageName": "com.sina.weibo",
+      "taskId": "weibo_search_hot",
+      "instruction": "在微博搜索王老菊，停在综合结果页并记录用户、微博、视频分区。",
+      "phoneStatus": "FAILED_GOAL_UNVERIFIED",
+      "computerVerdict": "FAIL",
+      "confidence": "HIGH",
+      "message": "报告已写入 / INFO: /data/user/0/com.macropilot.app/files/macro_v2/factory/flow_reports/com.sina.weibo/ai_direct_flow_1779338549497.json",
+      "flowReportFile": "/data/user/0/com.macropilot.app/files/macro_v2/factory/flow_reports/com.sina.weibo/ai_direct_flow_1779338549497.json",
+      "blockers": [
+        "Phone task status is FAILED_GOAL_UNVERIFIED.",
+        "DeepSeek/v4pro API returned HTTP 402 3 time(s)."
+      ],
+      "reasons": [
+        "AI jobs observed: 3, model(s): deepseek-v4-pro.",
+        "Generated artifacts: skillJson=20, appConfig=14."
+      ],
+      "ai": {
+        "jobCount": 3,
+        "successCount": 0,
+        "failedCount": 3,
+        "http402Count": 3,
+        "http200Count": 0,
+        "models": {
+          "deepseek-v4-pro": 3
+        },
+        "samples": [
+          "D:\\controlphone\\MacroPilot\\evidence_bundles\\popular20_connectivity_20260521_001_1779340140429\\macro_v2\\factory\\ai_jobs\\2026-05-21\\factory_ai_plan_review_1779338500623.json",
+          "D:\\controlphone\\MacroPilot\\evidence_bundles\\popular20_connectivity_20260521_001_1779340140429\\macro_v2\\factory\\ai_jobs\\2026-05-21\\factory_ai_replan_1779338521350.json",
+          "D:\\controlphone\\MacroPilot\\evidence_bundles\\popular20_connectivity_20260521_001_1779340140429\\macro_v2\\factory\\ai_jobs\\2026-05-21\\factory_ai_replan_1779338547779.json"
+        ]
+      },
+      "artifacts": {
+        "skillJsonCount": 20,
+        "dryRunReportCount": 4,
+        "appConfigCount": 14,
+        "runtimeReportCount": 16,
+        "graphCount": 5
+      },
+      "evidence": {
+        "referencedPathCount": 142,
+        "localPathCount": 117,
+        "missingPathCount": 25,
+        "localPngCount": 8,
+        "localSnapshotCount": 26,
+        "localFlowReportCount": 8,
+        "pngSamples": [
+          "D:\\controlphone\\MacroPilot\\evidence_bundles\\popular20_connectivity_20260521_001_1779340140429\\macro_v2\\factory\\ui_screenshots\\com.sina.weibo\\20260521_124225_998_e7b755c7.png",
+          "D:\\controlphone\\MacroPilot\\evidence_bundles\\popular20_connectivity_20260521_001_1779340140429\\macro_v2\\factory\\ui_screenshots\\com.sina.weibo\\20260521_124225_998_e7b755c7.png",
+          "D:\\controlphone\\MacroPilot\\evidence_bundles\\popular20_connectivity_20260521_001_1779340140429\\macro_v2\\factory\\ui_screenshots\\com.sina.weibo\\20260521_124229_048_942ce4a2.png",
+          "D:\\controlphone\\MacroPilot\\evidence_bundles\\popular20_connectivity_20260521_001_1779340140429\\macro_v2\\factory\\ui_screenshots\\com.sina.weibo\\20260521_124226_489_e7b755c7.png",
+          "D:\\controlphone\\MacroPilot\\evidence_bundles\\popular20_connectivity_20260521_001_1779340140429\\macro_v2\\factory\\ui_screenshots\\com.sina.weibo\\20260521_124225_998_e7b755c7.png"
+        ],
+        "snapshotSamples": [
+          "D:\\controlphone\\MacroPilot\\evidence_bundles\\popular20_connectivity_20260521_001_1779340140429\\macro_v2\\factory\\ui_snapshots\\com.sina.weibo\\20260521_124225_998_e7b755c7.json",
+          "D:\\controlphone\\MacroPilot\\evidence_bundles\\popular20_connectivity_20260521_001_1779340140429\\macro_v2\\factory\\ui_snapshots\\com.sina.weibo\\20260521_124225_998_e7b755c7.json",
+          "D:\\controlphone\\MacroPilot\\evidence_bundles\\popular20_connectivity_20260521_001_1779340140429\\macro_v2\\factory\\ui_snapshots\\com.sina.weibo\\20260521_124229_048_942ce4a2.json",
+          "D:\\controlphone\\MacroPilot\\evidence_bundles\\popular20_connectivity_20260521_001_1779340140429\\macro_v2\\factory\\ui_snapshots\\com.sina.weibo\\20260521_124228_583_942ce4a2.json",
+          "D:\\controlphone\\MacroPilot\\evidence_bundles\\popular20_connectivity_20260521_001_1779340140429\\macro_v2\\factory\\ui_snapshots\\com.sina.weibo\\20260521_124226_489_e7b755c7.json"
+        ]
+      }
+    },
+    {
+      "appName": "QQ",
+      "packageName": "com.tencent.mobileqq",
+      "taskId": "qq_login_state",
+      "instruction": "打开 QQ，识别快速登录、手机号登录、协议勾选小圈圈等入口，不输入密码。",
+      "phoneStatus": "PARTIAL_TIMEOUT",
+      "computerVerdict": "FAIL",
+      "confidence": "MEDIUM",
+      "message": "UI 图谱读取完成：status=PARTIAL_TIMEOUT screens=6 edges=44 report=popular_app_ui_task_qq_login_state_1779338730264.json",
+      "flowReportFile": "/data/user/0/com.macropilot.app/files/macro_v2/factory/flow_reports/com.tencent.mobileqq/popular_app_ui_task_qq_login_state_1779338730264.json",
+      "blockers": [
+        "UI graph exploration timed out or was partial."
+      ],
+      "reasons": [],
+      "ai": {
+        "jobCount": 0,
+        "successCount": 0,
+        "failedCount": 0,
+        "http402Count": 0,
+        "http200Count": 0,
+        "models": {},
+        "samples": []
+      },
+      "artifacts": {
+        "skillJsonCount": 0,
+        "dryRunReportCount": 0,
+        "appConfigCount": 0,
+        "runtimeReportCount": 0,
+        "graphCount": 3
+      },
+      "evidence": {
+        "referencedPathCount": 155,
+        "localPathCount": 5,
+        "missingPathCount": 150,
+        "localPngCount": 0,
+        "localSnapshotCount": 0,
+        "localFlowReportCount": 2,
+        "pngSamples": [],
+        "snapshotSamples": []
+      }
+    },
+    {
+      "appName": "微信",
+      "packageName": "com.tencent.mm",
+      "taskId": "wechat_bottom_tabs_snapshot",
+      "instruction": "打开微信，依次保存底部微信、通讯录、发现、我四个页面 UI 图谱。",
+      "phoneStatus": "SUCCESS_UI_GRAPH_EXPLORED",
+      "computerVerdict": "UNKNOWN",
+      "confidence": "MEDIUM",
+      "message": "UI 图谱读取完成：status=SUCCESS screens=1 edges=0 report=popular_app_ui_task_wechat_bottom_tabs_snapshot_1779338798270.json",
+      "flowReportFile": "/data/user/0/com.macropilot.app/files/macro_v2/factory/flow_reports/com.tencent.mm/popular_app_ui_task_wechat_bottom_tabs_snapshot_1779338798270.json",
+      "blockers": [
+        "Phone marked UI graph success but events include FAILED_NO_AFTER_SCREEN."
+      ],
+      "reasons": [],
+      "ai": {
+        "jobCount": 0,
+        "successCount": 0,
+        "failedCount": 0,
+        "http402Count": 0,
+        "http200Count": 0,
+        "models": {},
+        "samples": []
+      },
+      "artifacts": {
+        "skillJsonCount": 0,
+        "dryRunReportCount": 0,
+        "appConfigCount": 0,
+        "runtimeReportCount": 0,
+        "graphCount": 3
+      },
+      "evidence": {
+        "referencedPathCount": 10,
+        "localPathCount": 5,
+        "missingPathCount": 5,
+        "localPngCount": 0,
+        "localSnapshotCount": 0,
+        "localFlowReportCount": 2,
+        "pngSamples": [],
+        "snapshotSamples": []
+      }
+    },
+    {
+      "appName": "美团",
+      "packageName": "com.sankuai.meituan",
+      "taskId": "meituan_search_food",
+      "instruction": "在美团搜索奶茶，停在结果页并记录店铺、商品、筛选入口。",
+      "phoneStatus": "FAILED_GOAL_UNVERIFIED",
+      "computerVerdict": "FAIL",
+      "confidence": "HIGH",
+      "message": "报告已写入 / INFO: /data/user/0/com.macropilot.app/files/macro_v2/factory/flow_reports/com.sankuai.meituan/ai_direct_flow_1779338839125.json",
+      "flowReportFile": "/data/user/0/com.macropilot.app/files/macro_v2/factory/flow_reports/com.sankuai.meituan/ai_direct_flow_1779338839125.json",
+      "blockers": [
+        "Phone task status is FAILED_GOAL_UNVERIFIED.",
+        "DeepSeek/v4pro API returned HTTP 402 3 time(s)."
+      ],
+      "reasons": [
+        "AI jobs observed: 3, model(s): deepseek-v4-pro.",
+        "Generated artifacts: skillJson=22, appConfig=8."
+      ],
+      "ai": {
+        "jobCount": 3,
+        "successCount": 0,
+        "failedCount": 3,
+        "http402Count": 3,
+        "http200Count": 0,
+        "models": {
+          "deepseek-v4-pro": 3
+        },
+        "samples": [
+          "D:\\controlphone\\MacroPilot\\evidence_bundles\\popular20_connectivity_20260521_001_1779340140429\\macro_v2\\factory\\ai_jobs\\2026-05-21\\factory_ai_plan_review_1779338799993.json",
+          "D:\\controlphone\\MacroPilot\\evidence_bundles\\popular20_connectivity_20260521_001_1779340140429\\macro_v2\\factory\\ai_jobs\\2026-05-21\\factory_ai_replan_1779338812508.json",
+          "D:\\controlphone\\MacroPilot\\evidence_bundles\\popular20_connectivity_20260521_001_1779340140429\\macro_v2\\factory\\ai_jobs\\2026-05-21\\factory_ai_replan_1779338837517.json"
+        ]
+      },
+      "artifacts": {
+        "skillJsonCount": 22,
+        "dryRunReportCount": 6,
+        "appConfigCount": 8,
+        "runtimeReportCount": 16,
+        "graphCount": 5
+      },
+      "evidence": {
+        "referencedPathCount": 136,
+        "localPathCount": 107,
+        "missingPathCount": 29,
+        "localPngCount": 8,
+        "localSnapshotCount": 18,
+        "localFlowReportCount": 8,
+        "pngSamples": [
+          "D:\\controlphone\\MacroPilot\\evidence_bundles\\popular20_connectivity_20260521_001_1779340140429\\macro_v2\\factory\\ui_screenshots\\com.sankuai.meituan\\20260521_124715_993_3147467a.png",
+          "D:\\controlphone\\MacroPilot\\evidence_bundles\\popular20_connectivity_20260521_001_1779340140429\\macro_v2\\factory\\ui_screenshots\\com.sankuai.meituan\\20260521_124715_993_3147467a.png",
+          "D:\\controlphone\\MacroPilot\\evidence_bundles\\popular20_connectivity_20260521_001_1779340140429\\macro_v2\\factory\\ui_screenshots\\com.sankuai.meituan\\20260521_124718_753_dc2254c5.png",
+          "D:\\controlphone\\MacroPilot\\evidence_bundles\\popular20_connectivity_20260521_001_1779340140429\\macro_v2\\factory\\ui_screenshots\\com.sankuai.meituan\\20260521_124716_285_3147467a.png",
+          "D:\\controlphone\\MacroPilot\\evidence_bundles\\popular20_connectivity_20260521_001_1779340140429\\macro_v2\\factory\\ui_screenshots\\com.sankuai.meituan\\20260521_124715_993_3147467a.png"
+        ],
+        "snapshotSamples": [
+          "D:\\controlphone\\MacroPilot\\evidence_bundles\\popular20_connectivity_20260521_001_1779340140429\\macro_v2\\factory\\ui_snapshots\\com.sankuai.meituan\\20260521_124715_993_3147467a.json",
+          "D:\\controlphone\\MacroPilot\\evidence_bundles\\popular20_connectivity_20260521_001_1779340140429\\macro_v2\\factory\\ui_snapshots\\com.sankuai.meituan\\20260521_124715_993_3147467a.json",
+          "D:\\controlphone\\MacroPilot\\evidence_bundles\\popular20_connectivity_20260521_001_1779340140429\\macro_v2\\factory\\ui_snapshots\\com.sankuai.meituan\\20260521_124718_753_dc2254c5.json",
+          "D:\\controlphone\\MacroPilot\\evidence_bundles\\popular20_connectivity_20260521_001_1779340140429\\macro_v2\\factory\\ui_snapshots\\com.sankuai.meituan\\20260521_124718_640_dc2254c5.json",
+          "D:\\controlphone\\MacroPilot\\evidence_bundles\\popular20_connectivity_20260521_001_1779340140429\\macro_v2\\factory\\ui_snapshots\\com.sankuai.meituan\\20260521_124716_285_3147467a.json"
+        ]
+      }
+    },
+    {
+      "appName": "大众点评",
+      "packageName": "com.dianping.v1",
+      "taskId": "dianping_search_restaurant",
+      "instruction": "在大众点评搜索火锅，停在结果页并记录榜单、筛选、距离入口。",
+      "phoneStatus": "FAILED_GOAL_UNVERIFIED",
+      "computerVerdict": "FAIL",
+      "confidence": "HIGH",
+      "message": "报告已写入 / INFO: /data/user/0/com.macropilot.app/files/macro_v2/factory/flow_reports/com.dianping.v1/ai_direct_flow_1779338877169.json",
+      "flowReportFile": "/data/user/0/com.macropilot.app/files/macro_v2/factory/flow_reports/com.dianping.v1/ai_direct_flow_1779338877169.json",
+      "blockers": [
+        "Phone task status is FAILED_GOAL_UNVERIFIED.",
+        "DeepSeek/v4pro API returned HTTP 402 3 time(s)."
+      ],
+      "reasons": [
+        "AI jobs observed: 3, model(s): deepseek-v4-pro.",
+        "Generated artifacts: skillJson=22, appConfig=6."
+      ],
+      "ai": {
+        "jobCount": 3,
+        "successCount": 0,
+        "failedCount": 3,
+        "http402Count": 3,
+        "http200Count": 0,
+        "models": {
+          "deepseek-v4-pro": 3
+        },
+        "samples": [
+          "D:\\controlphone\\MacroPilot\\evidence_bundles\\popular20_connectivity_20260521_001_1779340140429\\macro_v2\\factory\\ai_jobs\\2026-05-21\\factory_ai_plan_review_1779338840436.json",
+          "D:\\controlphone\\MacroPilot\\evidence_bundles\\popular20_connectivity_20260521_001_1779340140429\\macro_v2\\factory\\ai_jobs\\2026-05-21\\factory_ai_replan_1779338850565.json",
+          "D:\\controlphone\\MacroPilot\\evidence_bundles\\popular20_connectivity_20260521_001_1779340140429\\macro_v2\\factory\\ai_jobs\\2026-05-21\\factory_ai_replan_1779338875665.json"
+        ]
+      },
+      "artifacts": {
+        "skillJsonCount": 22,
+        "dryRunReportCount": 6,
+        "appConfigCount": 6,
+        "runtimeReportCount": 16,
+        "graphCount": 5
+      },
+      "evidence": {
+        "referencedPathCount": 134,
+        "localPathCount": 103,
+        "missingPathCount": 31,
+        "localPngCount": 8,
+        "localSnapshotCount": 16,
+        "localFlowReportCount": 8,
+        "pngSamples": [
+          "D:\\controlphone\\MacroPilot\\evidence_bundles\\popular20_connectivity_20260521_001_1779340140429\\macro_v2\\factory\\ui_screenshots\\com.dianping.v1\\20260521_124754_136_d4272619.png",
+          "D:\\controlphone\\MacroPilot\\evidence_bundles\\popular20_connectivity_20260521_001_1779340140429\\macro_v2\\factory\\ui_screenshots\\com.dianping.v1\\20260521_124754_136_d4272619.png",
+          "D:\\controlphone\\MacroPilot\\evidence_bundles\\popular20_connectivity_20260521_001_1779340140429\\macro_v2\\factory\\ui_screenshots\\com.dianping.v1\\20260521_124756_883_d4272619.png",
+          "D:\\controlphone\\MacroPilot\\evidence_bundles\\popular20_connectivity_20260521_001_1779340140429\\macro_v2\\factory\\ui_screenshots\\com.dianping.v1\\20260521_124754_416_d4272619.png",
+          "D:\\controlphone\\MacroPilot\\evidence_bundles\\popular20_connectivity_20260521_001_1779340140429\\macro_v2\\factory\\ui_screenshots\\com.dianping.v1\\20260521_124754_136_d4272619.png"
+        ],
+        "snapshotSamples": [
+          "D:\\controlphone\\MacroPilot\\evidence_bundles\\popular20_connectivity_20260521_001_1779340140429\\macro_v2\\factory\\ui_snapshots\\com.dianping.v1\\20260521_124754_136_d4272619.json",
+          "D:\\controlphone\\MacroPilot\\evidence_bundles\\popular20_connectivity_20260521_001_1779340140429\\macro_v2\\factory\\ui_snapshots\\com.dianping.v1\\20260521_124754_136_d4272619.json",
+          "D:\\controlphone\\MacroPilot\\evidence_bundles\\popular20_connectivity_20260521_001_1779340140429\\macro_v2\\factory\\ui_snapshots\\com.dianping.v1\\20260521_124756_883_d4272619.json",
+          "D:\\controlphone\\MacroPilot\\evidence_bundles\\popular20_connectivity_20260521_001_1779340140429\\macro_v2\\factory\\ui_snapshots\\com.dianping.v1\\20260521_124754_416_d4272619.json",
+          "D:\\controlphone\\MacroPilot\\evidence_bundles\\popular20_connectivity_20260521_001_1779340140429\\macro_v2\\factory\\ui_snapshots\\com.dianping.v1\\20260521_124754_136_d4272619.json"
+        ]
+      }
+    },
+    {
+      "appName": "淘宝",
+      "packageName": "com.taobao.taobao",
+      "taskId": "taobao_search_item",
+      "instruction": "在淘宝搜索机械键盘，停在商品结果页并记录筛选、店铺、价格入口。",
+      "phoneStatus": "FAILED_GOAL_UNVERIFIED",
+      "computerVerdict": "FAIL",
+      "confidence": "HIGH",
+      "message": "报告已写入 / INFO: /data/user/0/com.macropilot.app/files/macro_v2/factory/flow_reports/com.taobao.taobao/ai_direct_flow_1779338917106.json",
+      "flowReportFile": "/data/user/0/com.macropilot.app/files/macro_v2/factory/flow_reports/com.taobao.taobao/ai_direct_flow_1779338917106.json",
+      "blockers": [
+        "Phone task status is FAILED_GOAL_UNVERIFIED.",
+        "DeepSeek/v4pro API returned HTTP 402 3 time(s)."
+      ],
+      "reasons": [
+        "AI jobs observed: 3, model(s): deepseek-v4-pro.",
+        "Generated artifacts: skillJson=22, appConfig=6."
+      ],
+      "ai": {
+        "jobCount": 3,
+        "successCount": 0,
+        "failedCount": 3,
+        "http402Count": 3,
+        "http200Count": 0,
+        "models": {
+          "deepseek-v4-pro": 3
+        },
+        "samples": [
+          "D:\\controlphone\\MacroPilot\\evidence_bundles\\popular20_connectivity_20260521_001_1779340140429\\macro_v2\\factory\\ai_jobs\\2026-05-21\\factory_ai_plan_review_1779338878432.json",
+          "D:\\controlphone\\MacroPilot\\evidence_bundles\\popular20_connectivity_20260521_001_1779340140429\\macro_v2\\factory\\ai_jobs\\2026-05-21\\factory_ai_replan_1779338890714.json",
+          "D:\\controlphone\\MacroPilot\\evidence_bundles\\popular20_connectivity_20260521_001_1779340140429\\macro_v2\\factory\\ai_jobs\\2026-05-21\\factory_ai_replan_1779338915598.json"
+        ]
+      },
+      "artifacts": {
+        "skillJsonCount": 22,
+        "dryRunReportCount": 6,
+        "appConfigCount": 6,
+        "runtimeReportCount": 20,
+        "graphCount": 5
+      },
+      "evidence": {
+        "referencedPathCount": 139,
+        "localPathCount": 109,
+        "missingPathCount": 30,
+        "localPngCount": 8,
+        "localSnapshotCount": 18,
+        "localFlowReportCount": 8,
+        "pngSamples": [
+          "D:\\controlphone\\MacroPilot\\evidence_bundles\\popular20_connectivity_20260521_001_1779340140429\\macro_v2\\factory\\ui_screenshots\\com.taobao.taobao\\20260521_124834_221_65eea136.png",
+          "D:\\controlphone\\MacroPilot\\evidence_bundles\\popular20_connectivity_20260521_001_1779340140429\\macro_v2\\factory\\ui_screenshots\\com.taobao.taobao\\20260521_124834_221_65eea136.png",
+          "D:\\controlphone\\MacroPilot\\evidence_bundles\\popular20_connectivity_20260521_001_1779340140429\\macro_v2\\factory\\ui_screenshots\\com.taobao.taobao\\20260521_124836_818_65eea136.png",
+          "D:\\controlphone\\MacroPilot\\evidence_bundles\\popular20_connectivity_20260521_001_1779340140429\\macro_v2\\factory\\ui_screenshots\\com.taobao.taobao\\20260521_124834_442_65eea136.png",
+          "D:\\controlphone\\MacroPilot\\evidence_bundles\\popular20_connectivity_20260521_001_1779340140429\\macro_v2\\factory\\ui_screenshots\\com.taobao.taobao\\20260521_124834_221_65eea136.png"
+        ],
+        "snapshotSamples": [
+          "D:\\controlphone\\MacroPilot\\evidence_bundles\\popular20_connectivity_20260521_001_1779340140429\\macro_v2\\factory\\ui_snapshots\\com.taobao.taobao\\20260521_124834_221_65eea136.json",
+          "D:\\controlphone\\MacroPilot\\evidence_bundles\\popular20_connectivity_20260521_001_1779340140429\\macro_v2\\factory\\ui_snapshots\\com.taobao.taobao\\20260521_124834_221_65eea136.json",
+          "D:\\controlphone\\MacroPilot\\evidence_bundles\\popular20_connectivity_20260521_001_1779340140429\\macro_v2\\factory\\ui_snapshots\\com.taobao.taobao\\20260521_124836_818_65eea136.json",
+          "D:\\controlphone\\MacroPilot\\evidence_bundles\\popular20_connectivity_20260521_001_1779340140429\\macro_v2\\factory\\ui_snapshots\\com.taobao.taobao\\20260521_124834_442_65eea136.json",
+          "D:\\controlphone\\MacroPilot\\evidence_bundles\\popular20_connectivity_20260521_001_1779340140429\\macro_v2\\factory\\ui_snapshots\\com.taobao.taobao\\20260521_124834_221_65eea136.json"
+        ]
+      }
+    },
+    {
+      "appName": "京东",
+      "packageName": "com.jingdong.app.mall",
+      "taskId": "jd_search_item",
+      "instruction": "在京东搜索耳机，停在商品结果页并记录筛选、店铺、价格入口。",
+      "phoneStatus": "FAILED_GOAL_UNVERIFIED",
+      "computerVerdict": "FAIL",
+      "confidence": "HIGH",
+      "message": "报告已写入 / INFO: /data/user/0/com.macropilot.app/files/macro_v2/factory/flow_reports/com.jingdong.app.mall/ai_direct_flow_1779339039803.json",
+      "flowReportFile": "/data/user/0/com.macropilot.app/files/macro_v2/factory/flow_reports/com.jingdong.app.mall/ai_direct_flow_1779339039803.json",
+      "blockers": [
+        "Phone task status is FAILED_GOAL_UNVERIFIED.",
+        "DeepSeek/v4pro API returned HTTP 402 3 time(s)."
+      ],
+      "reasons": [
+        "AI jobs observed: 3, model(s): deepseek-v4-pro.",
+        "Generated artifacts: skillJson=22, appConfig=6."
+      ],
+      "ai": {
+        "jobCount": 3,
+        "successCount": 0,
+        "failedCount": 3,
+        "http402Count": 3,
+        "http200Count": 0,
+        "models": {
+          "deepseek-v4-pro": 3
+        },
+        "samples": [
+          "D:\\controlphone\\MacroPilot\\evidence_bundles\\popular20_connectivity_20260521_001_1779340140429\\macro_v2\\factory\\ai_jobs\\2026-05-21\\factory_ai_plan_review_1779338918214.json",
+          "D:\\controlphone\\MacroPilot\\evidence_bundles\\popular20_connectivity_20260521_001_1779340140429\\macro_v2\\factory\\ai_jobs\\2026-05-21\\factory_ai_replan_1779338949512.json",
+          "D:\\controlphone\\MacroPilot\\evidence_bundles\\popular20_connectivity_20260521_001_1779340140429\\macro_v2\\factory\\ai_jobs\\2026-05-21\\factory_ai_replan_1779339037977.json"
+        ]
+      },
+      "artifacts": {
+        "skillJsonCount": 22,
+        "dryRunReportCount": 6,
+        "appConfigCount": 6,
+        "runtimeReportCount": 20,
+        "graphCount": 5
+      },
+      "evidence": {
+        "referencedPathCount": 136,
+        "localPathCount": 105,
+        "missingPathCount": 31,
+        "localPngCount": 8,
+        "localSnapshotCount": 14,
+        "localFlowReportCount": 8,
+        "pngSamples": [
+          "D:\\controlphone\\MacroPilot\\evidence_bundles\\popular20_connectivity_20260521_001_1779340140429\\macro_v2\\factory\\ui_screenshots\\com.jingdong.app.mall\\20260521_125035_965_17373f87.png",
+          "D:\\controlphone\\MacroPilot\\evidence_bundles\\popular20_connectivity_20260521_001_1779340140429\\macro_v2\\factory\\ui_screenshots\\com.jingdong.app.mall\\20260521_125035_965_17373f87.png",
+          "D:\\controlphone\\MacroPilot\\evidence_bundles\\popular20_connectivity_20260521_001_1779340140429\\macro_v2\\factory\\ui_screenshots\\com.jingdong.app.mall\\20260521_125039_209_17373f87.png",
+          "D:\\controlphone\\MacroPilot\\evidence_bundles\\popular20_connectivity_20260521_001_1779340140429\\macro_v2\\factory\\ui_screenshots\\com.jingdong.app.mall\\20260521_125036_652_17373f87.png",
+          "D:\\controlphone\\MacroPilot\\evidence_bundles\\popular20_connectivity_20260521_001_1779340140429\\macro_v2\\factory\\ui_screenshots\\com.jingdong.app.mall\\20260521_125035_965_17373f87.png"
+        ],
+        "snapshotSamples": [
+          "D:\\controlphone\\MacroPilot\\evidence_bundles\\popular20_connectivity_20260521_001_1779340140429\\macro_v2\\factory\\ui_snapshots\\com.jingdong.app.mall\\20260521_125035_965_17373f87.json",
+          "D:\\controlphone\\MacroPilot\\evidence_bundles\\popular20_connectivity_20260521_001_1779340140429\\macro_v2\\factory\\ui_snapshots\\com.jingdong.app.mall\\20260521_125035_965_17373f87.json",
+          "D:\\controlphone\\MacroPilot\\evidence_bundles\\popular20_connectivity_20260521_001_1779340140429\\macro_v2\\factory\\ui_snapshots\\com.jingdong.app.mall\\20260521_125039_209_17373f87.json",
+          "D:\\controlphone\\MacroPilot\\evidence_bundles\\popular20_connectivity_20260521_001_1779340140429\\macro_v2\\factory\\ui_snapshots\\com.jingdong.app.mall\\20260521_125036_652_17373f87.json",
+          "D:\\controlphone\\MacroPilot\\evidence_bundles\\popular20_connectivity_20260521_001_1779340140429\\macro_v2\\factory\\ui_snapshots\\com.jingdong.app.mall\\20260521_125035_965_17373f87.json"
+        ]
+      }
+    },
+    {
+      "appName": "拼多多",
+      "packageName": "com.xunmeng.pinduoduo",
+      "taskId": "pdd_search_item",
+      "instruction": "在拼多多搜索纸巾，停在结果页并记录筛选、店铺、价格入口。",
+      "phoneStatus": "FAILED_GOAL_UNVERIFIED",
+      "computerVerdict": "FAIL",
+      "confidence": "HIGH",
+      "message": "报告已写入 / INFO: /data/user/0/com.macropilot.app/files/macro_v2/factory/flow_reports/com.xunmeng.pinduoduo/ai_direct_flow_1779339083708.json",
+      "flowReportFile": "/data/user/0/com.macropilot.app/files/macro_v2/factory/flow_reports/com.xunmeng.pinduoduo/ai_direct_flow_1779339083708.json",
+      "blockers": [
+        "Phone task status is FAILED_GOAL_UNVERIFIED.",
+        "DeepSeek/v4pro API returned HTTP 402 3 time(s)."
+      ],
+      "reasons": [
+        "AI jobs observed: 3, model(s): deepseek-v4-pro.",
+        "Generated artifacts: skillJson=22, appConfig=6."
+      ],
+      "ai": {
+        "jobCount": 3,
+        "successCount": 0,
+        "failedCount": 3,
+        "http402Count": 3,
+        "http200Count": 0,
+        "models": {
+          "deepseek-v4-pro": 3
+        },
+        "samples": [
+          "D:\\controlphone\\MacroPilot\\evidence_bundles\\popular20_connectivity_20260521_001_1779340140429\\macro_v2\\factory\\ai_jobs\\2026-05-21\\factory_ai_plan_review_1779339041561.json",
+          "D:\\controlphone\\MacroPilot\\evidence_bundles\\popular20_connectivity_20260521_001_1779340140429\\macro_v2\\factory\\ai_jobs\\2026-05-21\\factory_ai_replan_1779339053562.json",
+          "D:\\controlphone\\MacroPilot\\evidence_bundles\\popular20_connectivity_20260521_001_1779340140429\\macro_v2\\factory\\ai_jobs\\2026-05-21\\factory_ai_replan_1779339081183.json"
+        ]
+      },
+      "artifacts": {
+        "skillJsonCount": 22,
+        "dryRunReportCount": 6,
+        "appConfigCount": 6,
+        "runtimeReportCount": 16,
+        "graphCount": 5
+      },
+      "evidence": {
+        "referencedPathCount": 128,
+        "localPathCount": 107,
+        "missingPathCount": 21,
+        "localPngCount": 2,
+        "localSnapshotCount": 26,
+        "localFlowReportCount": 8,
+        "pngSamples": [
+          "D:\\controlphone\\MacroPilot\\evidence_bundles\\popular20_connectivity_20260521_001_1779340140429\\macro_v2\\factory\\ui_screenshots\\com.tencent.mm\\20260521_125118_393_a8bda563.png",
+          "D:\\controlphone\\MacroPilot\\evidence_bundles\\popular20_connectivity_20260521_001_1779340140429\\macro_v2\\factory\\ui_screenshots\\com.tencent.mm\\20260521_125118_393_a8bda563.png"
+        ],
+        "snapshotSamples": [
+          "D:\\controlphone\\MacroPilot\\evidence_bundles\\popular20_connectivity_20260521_001_1779340140429\\macro_v2\\factory\\ui_snapshots\\com.tencent.mm\\20260521_125118_393_a8bda563.json",
+          "D:\\controlphone\\MacroPilot\\evidence_bundles\\popular20_connectivity_20260521_001_1779340140429\\macro_v2\\factory\\ui_snapshots\\com.tencent.mm\\20260521_125118_393_a8bda563.json",
+          "D:\\controlphone\\MacroPilot\\evidence_bundles\\popular20_connectivity_20260521_001_1779340140429\\macro_v2\\factory\\ui_snapshots\\com.xunmeng.pinduoduo\\20260521_125112_920_579dbc54.json",
+          "D:\\controlphone\\MacroPilot\\evidence_bundles\\popular20_connectivity_20260521_001_1779340140429\\macro_v2\\factory\\ui_snapshots\\com.xunmeng.pinduoduo\\20260521_125110_668_7d6de2ef.json",
+          "D:\\controlphone\\MacroPilot\\evidence_bundles\\popular20_connectivity_20260521_001_1779340140429\\macro_v2\\factory\\ui_snapshots\\com.xunmeng.pinduoduo\\20260521_125109_637_744c01ec.json"
+        ]
+      }
+    },
+    {
+      "appName": "知乎",
+      "packageName": "com.zhihu.android",
+      "taskId": "zhihu_search_question",
+      "instruction": "在知乎搜索人工智能，停在综合结果页并记录回答、文章、用户分区。",
+      "phoneStatus": "FAILED_TIMEOUT",
+      "computerVerdict": "FAIL",
+      "confidence": "HIGH",
+      "message": "单任务超过 300s 未完成，已记录超时；下一轮应缩短计划或先补 UI 图谱。",
+      "flowReportFile": "",
+      "blockers": [
+        "Task timed out before writing a flow report.",
+        "DeepSeek/v4pro API returned HTTP 402 3 time(s)."
+      ],
+      "reasons": [
+        "AI jobs observed: 5, model(s): deepseek-v4-pro.",
+        "Generated artifacts: skillJson=5, appConfig=1."
+      ],
+      "ai": {
+        "jobCount": 5,
+        "successCount": 3,
+        "failedCount": 4,
+        "http402Count": 3,
+        "http200Count": 3,
+        "models": {
+          "deepseek-v4-pro": 5
+        },
+        "samples": [
+          "D:\\controlphone\\MacroPilot\\evidence_bundles\\popular20_connectivity_20260521_001_1779340140429\\macro_v2\\factory\\ai_jobs\\2026-05-21\\factory_ai_plan_review_1779339085802.json",
+          "D:\\controlphone\\MacroPilot\\evidence_bundles\\popular20_connectivity_20260521_001_1779340140429\\macro_v2\\factory\\ai_jobs\\2026-05-21\\factory_ai_replan_1779339147569.json",
+          "D:\\controlphone\\MacroPilot\\evidence_bundles\\popular20_connectivity_20260521_001_1779340140429\\macro_v2\\factory\\ai_jobs\\2026-05-21\\factory_ai_replan_1779339263198.json",
+          "D:\\controlphone\\MacroPilot\\evidence_bundles\\popular20_connectivity_20260521_001_1779340140429\\macro_v2\\factory\\ai_jobs\\2026-05-21\\factory_ai_replan_1779339337311.json",
+          "D:\\controlphone\\MacroPilot\\evidence_bundles\\popular20_connectivity_20260521_001_1779340140429\\macro_v2\\factory\\ai_jobs\\2026-05-21\\factory_ai_replan_1779339386769.json"
+        ]
+      },
+      "artifacts": {
+        "skillJsonCount": 5,
+        "dryRunReportCount": 5,
+        "appConfigCount": 1,
+        "runtimeReportCount": 16,
+        "graphCount": 1
+      },
+      "evidence": {
+        "referencedPathCount": 37,
+        "localPathCount": 37,
+        "missingPathCount": 0,
+        "localPngCount": 0,
+        "localSnapshotCount": 0,
+        "localFlowReportCount": 3,
+        "pngSamples": [],
+        "snapshotSamples": []
+      }
+    },
+    {
+      "appName": "网易云音乐",
+      "packageName": "com.netease.cloudmusic",
+      "taskId": "music_search_song",
+      "instruction": "在网易云音乐搜索周杰伦，停在歌曲结果页并记录单曲、歌单、用户分区。",
+      "phoneStatus": "FAILED_TIMEOUT",
+      "computerVerdict": "FAIL",
+      "confidence": "HIGH",
+      "message": "单任务超过 300s 未完成，已记录超时；下一轮应缩短计划或先补 UI 图谱。",
+      "flowReportFile": "",
+      "blockers": [
+        "Task timed out before writing a flow report."
+      ],
+      "reasons": [
+        "AI jobs observed: 4, model(s): deepseek-v4-pro.",
+        "Generated artifacts: skillJson=5, appConfig=1."
+      ],
+      "ai": {
+        "jobCount": 4,
+        "successCount": 3,
+        "failedCount": 1,
+        "http402Count": 0,
+        "http200Count": 2,
+        "models": {
+          "deepseek-v4-pro": 4
+        },
+        "samples": [
+          "D:\\controlphone\\MacroPilot\\evidence_bundles\\popular20_connectivity_20260521_001_1779340140429\\macro_v2\\factory\\ai_jobs\\2026-05-21\\factory_ai_plan_review_1779339445210.json",
+          "D:\\controlphone\\MacroPilot\\evidence_bundles\\popular20_connectivity_20260521_001_1779340140429\\macro_v2\\factory\\ai_jobs\\2026-05-21\\factory_ai_replan_1779339572506.json",
+          "D:\\controlphone\\MacroPilot\\evidence_bundles\\popular20_connectivity_20260521_001_1779340140429\\macro_v2\\factory\\ai_jobs\\2026-05-21\\factory_ai_replan_1779339739191.json",
+          "D:\\controlphone\\MacroPilot\\evidence_bundles\\popular20_connectivity_20260521_001_1779340140429\\macro_v2\\factory\\ai_jobs\\2026-05-21\\factory_ai_replan_1779339862517.json"
+        ]
+      },
+      "artifacts": {
+        "skillJsonCount": 5,
+        "dryRunReportCount": 5,
+        "appConfigCount": 1,
+        "runtimeReportCount": 14,
+        "graphCount": 1
+      },
+      "evidence": {
+        "referencedPathCount": 35,
+        "localPathCount": 35,
+        "missingPathCount": 0,
+        "localPngCount": 0,
+        "localSnapshotCount": 0,
+        "localFlowReportCount": 3,
+        "pngSamples": [],
+        "snapshotSamples": []
+      }
+    },
+    {
+      "appName": "百度地图",
+      "packageName": "com.baidu.BaiduMap",
+      "taskId": "baidumap_search_place",
+      "instruction": "在百度地图搜索上海站，停在地点结果页并记录路线、收藏、电话入口。",
+      "phoneStatus": "SUCCESS",
+      "computerVerdict": "PASS",
+      "confidence": "MEDIUM",
+      "message": "报告已写入 / INFO: /data/user/0/com.macropilot.app/files/macro_v2/factory/flow_reports/com.baidu.baidumap/ai_direct_flow_1779339630368.json",
+      "flowReportFile": "/data/user/0/com.macropilot.app/files/macro_v2/factory/flow_reports/com.baidu.baidumap/ai_direct_flow_1779339630368.json",
+      "blockers": [],
+      "reasons": [
+        "Phone flow reports success with goal/verification text and local screenshot evidence.",
+        "AI jobs observed: 2, model(s): deepseek-v4-pro.",
+        "Generated artifacts: skillJson=32, appConfig=6."
+      ],
+      "ai": {
+        "jobCount": 2,
+        "successCount": 2,
+        "failedCount": 0,
+        "http402Count": 0,
+        "http200Count": 1,
+        "models": {
+          "deepseek-v4-pro": 2
+        },
+        "samples": [
+          "D:\\controlphone\\MacroPilot\\evidence_bundles\\popular20_connectivity_20260521_001_1779340140429\\macro_v2\\factory\\ai_jobs\\2026-05-21\\factory_ai_plan_review_1779339509886.json",
+          "D:\\controlphone\\MacroPilot\\evidence_bundles\\popular20_connectivity_20260521_001_1779340140429\\macro_v2\\factory\\ai_jobs\\2026-05-21\\factory_ai_replan_1779339593468.json"
+        ]
+      },
+      "artifacts": {
+        "skillJsonCount": 32,
+        "dryRunReportCount": 6,
+        "appConfigCount": 6,
+        "runtimeReportCount": 14,
+        "graphCount": 5
+      },
+      "evidence": {
+        "referencedPathCount": 120,
+        "localPathCount": 113,
+        "missingPathCount": 7,
+        "localPngCount": 4,
+        "localSnapshotCount": 24,
+        "localFlowReportCount": 8,
+        "pngSamples": [
+          "D:\\controlphone\\MacroPilot\\evidence_bundles\\popular20_connectivity_20260521_001_1779340140429\\macro_v2\\factory\\ui_screenshots\\com.baidu.baidumap\\20260521_130008_306_480c76e4.png",
+          "D:\\controlphone\\MacroPilot\\evidence_bundles\\popular20_connectivity_20260521_001_1779340140429\\macro_v2\\factory\\ui_screenshots\\com.baidu.baidumap\\20260521_130007_857_480c76e4.png",
+          "D:\\controlphone\\MacroPilot\\evidence_bundles\\popular20_connectivity_20260521_001_1779340140429\\macro_v2\\factory\\ui_screenshots\\com.baidu.baidumap\\20260521_130008_306_480c76e4.png",
+          "D:\\controlphone\\MacroPilot\\evidence_bundles\\popular20_connectivity_20260521_001_1779340140429\\macro_v2\\factory\\ui_screenshots\\com.baidu.baidumap\\20260521_130007_857_480c76e4.png"
+        ],
+        "snapshotSamples": [
+          "D:\\controlphone\\MacroPilot\\evidence_bundles\\popular20_connectivity_20260521_001_1779340140429\\macro_v2\\factory\\ui_snapshots\\com.baidu.baidumap\\20260521_130010_996_480c76e4.json",
+          "D:\\controlphone\\MacroPilot\\evidence_bundles\\popular20_connectivity_20260521_001_1779340140429\\macro_v2\\factory\\ui_snapshots\\com.baidu.baidumap\\20260521_130010_929_480c76e4.json",
+          "D:\\controlphone\\MacroPilot\\evidence_bundles\\popular20_connectivity_20260521_001_1779340140429\\macro_v2\\factory\\ui_snapshots\\com.baidu.baidumap\\20260521_130010_875_480c76e4.json",
+          "D:\\controlphone\\MacroPilot\\evidence_bundles\\popular20_connectivity_20260521_001_1779340140429\\macro_v2\\factory\\ui_snapshots\\com.baidu.baidumap\\20260521_130010_412_480c76e4.json",
+          "D:\\controlphone\\MacroPilot\\evidence_bundles\\popular20_connectivity_20260521_001_1779340140429\\macro_v2\\factory\\ui_snapshots\\com.baidu.baidumap\\20260521_130010_342_480c76e4.json"
+        ]
+      }
+    },
+    {
+      "appName": "高德地图",
+      "packageName": "com.autonavi.minimap",
+      "taskId": "amap_search_place",
+      "instruction": "在高德地图搜索上海站，停在地点结果页并记录路线、收藏、电话入口。",
+      "phoneStatus": "BLOCKED_APP_NOT_INSTALLED",
+      "computerVerdict": "UNKNOWN",
+      "confidence": "HIGH",
+      "message": "目标 App 未安装或包名未匹配。",
+      "flowReportFile": "",
+      "blockers": [
+        "Target app is not installed or package name did not resolve."
+      ],
+      "reasons": [],
+      "ai": {
+        "jobCount": 0,
+        "successCount": 0,
+        "failedCount": 0,
+        "http402Count": 0,
+        "http200Count": 0,
+        "models": {},
+        "samples": []
+      },
+      "artifacts": {
+        "skillJsonCount": 0,
+        "dryRunReportCount": 0,
+        "appConfigCount": 0,
+        "runtimeReportCount": 0,
+        "graphCount": 0
+      },
+      "evidence": {
+        "referencedPathCount": 0,
+        "localPathCount": 0,
+        "missingPathCount": 0,
+        "localPngCount": 0,
+        "localSnapshotCount": 0,
+        "localFlowReportCount": 0,
+        "pngSamples": [],
+        "snapshotSamples": []
+      }
+    },
+    {
+      "appName": "支付宝",
+      "packageName": "com.eg.android.AlipayGphone",
+      "taskId": "alipay_home_icons",
+      "instruction": "打开支付宝首页，识别扫一扫、收付款、出行、卡包、生活缴费等图形化入口，不进入付款确认。",
+      "phoneStatus": "BLOCKED_HIGH_RISK_GUARD_ONLY",
+      "computerVerdict": "PASS",
+      "confidence": "HIGH",
+      "message": "高风险任务已按安全策略停止：popular_app_guard_alipay_home_icons_1779339630531.json",
+      "flowReportFile": "/data/user/0/com.macropilot.app/files/macro_v2/factory/flow_reports/com.eg.android.alipaygphone/popular_app_guard_alipay_home_icons_1779339630531.json",
+      "blockers": [],
+      "reasons": [
+        "High-risk payment/trade task was safely blocked."
+      ],
+      "ai": {
+        "jobCount": 0,
+        "successCount": 0,
+        "failedCount": 0,
+        "http402Count": 0,
+        "http200Count": 0,
+        "models": {},
+        "samples": []
+      },
+      "artifacts": {
+        "skillJsonCount": 0,
+        "dryRunReportCount": 0,
+        "appConfigCount": 0,
+        "runtimeReportCount": 0,
+        "graphCount": 0
+      },
+      "evidence": {
+        "referencedPathCount": 3,
+        "localPathCount": 3,
+        "missingPathCount": 0,
+        "localPngCount": 0,
+        "localSnapshotCount": 0,
+        "localFlowReportCount": 3,
+        "pngSamples": [],
+        "snapshotSamples": []
+      }
+    },
+    {
+      "appName": "云闪付",
+      "packageName": "com.unionpay",
+      "taskId": "unionpay_home_icons",
+      "instruction": "打开云闪付首页，识别扫一扫、收付款、乘车码、信用卡等入口，不进入付款确认。",
+      "phoneStatus": "BLOCKED_HIGH_RISK_GUARD_ONLY",
+      "computerVerdict": "PASS",
+      "confidence": "HIGH",
+      "message": "高风险任务已按安全策略停止：popular_app_guard_unionpay_home_icons_1779339630536.json",
+      "flowReportFile": "/data/user/0/com.macropilot.app/files/macro_v2/factory/flow_reports/com.unionpay/popular_app_guard_unionpay_home_icons_1779339630536.json",
+      "blockers": [],
+      "reasons": [
+        "High-risk payment/trade task was safely blocked."
+      ],
+      "ai": {
+        "jobCount": 0,
+        "successCount": 0,
+        "failedCount": 0,
+        "http402Count": 0,
+        "http200Count": 0,
+        "models": {},
+        "samples": []
+      },
+      "artifacts": {
+        "skillJsonCount": 0,
+        "dryRunReportCount": 0,
+        "appConfigCount": 0,
+        "runtimeReportCount": 0,
+        "graphCount": 0
+      },
+      "evidence": {
+        "referencedPathCount": 3,
+        "localPathCount": 3,
+        "missingPathCount": 0,
+        "localPngCount": 0,
+        "localSnapshotCount": 0,
+        "localFlowReportCount": 3,
+        "pngSamples": [],
+        "snapshotSamples": []
+      }
+    },
+    {
+      "appName": "同花顺",
+      "packageName": "com.hexin.plat.android",
+      "taskId": "hexin_search_stock",
+      "instruction": "在同花顺搜索贵州茅台，停在股票详情页并记录盘口、K线、资讯入口，不交易。",
+      "phoneStatus": "FAILED_TIMEOUT",
+      "computerVerdict": "FAIL",
+      "confidence": "HIGH",
+      "message": "单任务超过 300s 未完成，已记录超时；下一轮应缩短计划或先补 UI 图谱。",
+      "flowReportFile": "",
+      "blockers": [
+        "Task timed out before writing a flow report."
+      ],
+      "reasons": [
+        "AI jobs observed: 2, model(s): deepseek-v4-pro.",
+        "Generated artifacts: skillJson=3, appConfig=1."
+      ],
+      "ai": {
+        "jobCount": 2,
+        "successCount": 1,
+        "failedCount": 1,
+        "http402Count": 0,
+        "http200Count": 1,
+        "models": {
+          "deepseek-v4-pro": 2
+        },
+        "samples": [
+          "D:\\controlphone\\MacroPilot\\evidence_bundles\\popular20_connectivity_20260521_001_1779340140429\\macro_v2\\factory\\ai_jobs\\2026-05-21\\factory_ai_plan_review_1779339757842.json",
+          "D:\\controlphone\\MacroPilot\\evidence_bundles\\popular20_connectivity_20260521_001_1779340140429\\macro_v2\\factory\\ai_jobs\\2026-05-21\\factory_ai_replan_1779339903049.json"
+        ]
+      },
+      "artifacts": {
+        "skillJsonCount": 3,
+        "dryRunReportCount": 3,
+        "appConfigCount": 1,
+        "runtimeReportCount": 6,
+        "graphCount": 1
+      },
+      "evidence": {
+        "referencedPathCount": 17,
+        "localPathCount": 17,
+        "missingPathCount": 0,
+        "localPngCount": 0,
+        "localSnapshotCount": 0,
+        "localFlowReportCount": 0,
+        "pngSamples": [],
+        "snapshotSamples": []
+      }
+    },
+    {
+      "appName": "钉钉",
+      "packageName": "com.alibaba.android.rimet",
+      "taskId": "dingtalk_login_state",
+      "instruction": "打开钉钉，识别登录状态、手机号登录、扫码登录和协议提示，不输入密码。",
+      "phoneStatus": "PARTIAL_TIMEOUT",
+      "computerVerdict": "FAIL",
+      "confidence": "MEDIUM",
+      "message": "UI 图谱读取完成：status=PARTIAL_TIMEOUT screens=16 edges=30 report=popular_app_ui_task_dingtalk_login_state_1779340047381.json",
+      "flowReportFile": "/data/user/0/com.macropilot.app/files/macro_v2/factory/flow_reports/com.alibaba.android.rimet/popular_app_ui_task_dingtalk_login_state_1779340047381.json",
+      "blockers": [
+        "UI graph exploration timed out or was partial."
+      ],
+      "reasons": [],
+      "ai": {
+        "jobCount": 0,
+        "successCount": 0,
+        "failedCount": 0,
+        "http402Count": 0,
+        "http200Count": 0,
+        "models": {},
+        "samples": []
+      },
+      "artifacts": {
+        "skillJsonCount": 0,
+        "dryRunReportCount": 0,
+        "appConfigCount": 0,
+        "runtimeReportCount": 0,
+        "graphCount": 3
+      },
+      "evidence": {
+        "referencedPathCount": 123,
+        "localPathCount": 5,
+        "missingPathCount": 118,
+        "localPngCount": 0,
+        "localSnapshotCount": 0,
+        "localFlowReportCount": 2,
+        "pngSamples": [],
+        "snapshotSamples": []
+      }
+    }
+  ]
+}

@@ -1,0 +1,164 @@
+# MacroPilot Progress
+
+## Completed
+
+- Created independent app at `D:\controlphone\MacroPilot`.
+- Added Accessibility service with window-content and gesture capabilities.
+- Added NodeInspector, CapabilityProfiler, TrainingSampleStore, and a first native debug UI.
+- Added risk/red-line document.
+- Built, installed, and launched first debug APK.
+- Verified current device has not enabled MacroPilot accessibility service yet; runtime correctly blocks at capability D.
+
+## Current Implementation Pass
+
+- Added AppUiModule, UiScreenModule, UiElementSpec, CoordinatePack, MacroTemplate, MacroAtom, VerifyRule, SkillCandidate, and SkillTestReport models.
+- Added RuntimeGate so Runtime refuses non-approved skills, D capability, missing input, missing verification, and dangerous actions.
+- Added ScreenClassifier, ElementResolver, MacroVerifier.
+- Added separate ApprovedKnowledgeStore and CandidateKnowledgeStore roots.
+- Added SafeActionPolicy shared by Runtime and Factory.
+- Added PromotionGate and safe TrialRunner skeleton for Factory mode.
+- Added DeviceActions for node click, structured text input, scroll, and normalized-coordinate tap fallback.
+- Added MacroTimeoutPolicy, MacroComposer, and MacroExecutor preflight gate.
+- Added AppUiModuleStore and MacroTemplateStore for approved knowledge serialization.
+- Rebuilt and reinstalled the expanded APK.
+- Enabled MacroPilot Runtime through the visible Android accessibility permission flow.
+- Verified real node capture on MacroPilot itself: B level, medium verification, no text input channel.
+- Added debug-only sample broadcast receiver so target apps can stay foreground during sampling.
+- Verified background sampling on Android Settings: A level, `SET_TEXT`, high verification.
+- Added basic privacy redaction before samples are written.
+- Removed unredacted test samples generated during bring-up.
+- Added approved knowledge JSON loading for AppUiModule and MacroTemplate.
+- Added built-in approved Android Settings module and `settings_search` template.
+- Added first executable Runtime v0 path: OpenApp, EnsureScreen, TypeText, Verify.
+- Added RunLogStore for structured execution results.
+- Verified `settings_search` with `ACTION_SET_TEXT` and high-confidence verification.
+- Strengthened redaction for privacy keywords and mixed account tokens.
+- Added SkillTestRunner and SkillTestReportStore.
+- Ran first repeated Settings test: 3/3 success, HIGH confidence, avg 258 ms, p95 260 ms.
+- Added LocalDataGovernanceStore inventory and deletion controls for training samples, Factory artifacts, and run logs.
+- Added UI buttons for inventory, sample deletion, Factory cleanup, run-log cleanup, and architecture self-check.
+- Added debug-only cleanup broadcasts for training samples, Factory artifacts, and run logs.
+- Added ArchitectureSelfCheck to verify core red lines in executable code.
+- Verified ArchitectureSelfCheck on device: 6/6 checks passed.
+- Raised Settings repeated test to 10 runs: 10/10 success, HIGH confidence, latest avg 272 ms, p95 332 ms.
+- Saved PromotionGate decision in the Factory test report: `APPROVED_A`, without writing a new Approved skill.
+- Implemented `SelectItem` and `ScrollUntilVisible` Runtime atoms.
+- Added click-by-visible-text with clickable-parent fallback.
+- Added goal-oriented RecoveryPolicy using per-screen recover actions.
+- Added JSON persistence for `recoverActions` and `CoordinatePack`.
+- Verified Settings recovery from Bluetooth Settings subpage: SUCCESS, HIGH.
+- Verified Settings `ScrollUntilVisible` with `显示与亮度`: SUCCESS, HIGH.
+- Verified Settings `SelectItem` with `WLAN`: SUCCESS, HIGH.
+- Added AppUiModule package aliases for ROM-specific Settings packages such as `com.oplus.wirelesssettings`.
+- Tightened Settings home signature to require the search view resource and avoid subpage false positives.
+- Added training export preview and explicit local JSONL export.
+- Verified export preview: 5/5 samples redacted, export allowed, no upload path.
+- Added CoordinateCalibrationStore for local CoordinatePack candidates.
+- Added coordinate candidate cleanup and inventory counters.
+- Verified coordinate candidate save: one redacted Settings EditText candidate, stored outside Approved.
+- Verified local JSONL export file generation and export cleanup controls.
+- Rebuilt `MainActivity` as a product-style native UI instead of the earlier debug console.
+- Default landing page is now the app/module list: launchable app icons, package/version details, module status, skill counts, and expandable per-app skill sections.
+- Added app-level skill actions in the expanded app row: delete approved skills, add built-in Settings examples, and save redacted samples.
+- Added Apps-page search/filter by app label or package name.
+- Added safe arbitrary-app `+ 添加` behavior: it writes a Factory `SkillCandidateRequest` with `PENDING_RECORDING` status instead of creating an Approved Runtime skill.
+- Fixed the Apps page scope tabs so `主机`, `模块`, and `Skill` are real clickable filters instead of static labels.
+- Made Skill cards expandable. Tapping a Skill now reveals package, params, final verification, side-effect level, idempotency, and atom sequence.
+- Added bottom navigation pages for `Home`, `Apps`, `Skill`, `History`, and `Settings`.
+- Moved previous Runtime/Factory controls into their natural pages:
+  - Home: user command input, current capability profile, sample capture.
+  - Apps: application list, module ownership, per-app skills.
+  - Skill: approved skill library grouped by package.
+  - History: run logs and confidence/duration.
+  - Settings: accessibility, self-check, export preview/export, coordinate candidates, and cleanup.
+- Switched the app theme to dark status/navigation bars to match the new UI.
+- Rebuilt, installed, and screenshot-tested the rewritten UI on device.
+- Verified expanded app rows display app-local skill controls under the selected app.
+- Re-ran ArchitectureSelfCheck: 6/6 checks passed.
+- Confirmed regression gate behavior while Accessibility was disabled: Settings tests were rejected instead of producing false success.
+- Re-enabled MacroPilot AccessibilityService through ADB for test automation and re-ran Settings regression: 10/10 success, p95 281 ms, `APPROVED_A`.
+- Re-verified after adding Apps search and candidate requests: Settings regression 10/10 success, p95 318 ms, `APPROVED_A`; ArchitectureSelfCheck 6/6.
+- Verified a non-Settings app add action creates `files/macro_v2/factory/candidate_skills/candidate_request_1777708654347.json` and does not write Approved knowledge.
+- Verified the `模块` and `Skill` filters open on device and reduce the Apps list to the expected 1 item.
+- Verified tapping a Skill under the Settings app expands its details on device.
+- Re-verified after the clickability fix: Settings regression 10/10 success, p95 326 ms, `APPROVED_A`; ArchitectureSelfCheck 6/6.
+- Added `API_PROBE_APP_CAPABILITY` and `AppCapabilityProbe` so Factory can open a target package, wait for the foreground app, collect a redacted node snapshot, and return A/B/C/D, input capability, verification capability, and node highlights.
+- Fixed the probe to reject foreground-package mismatches instead of returning MacroPilot's own UI as a target-app success.
+- Verified Settings probe on device: `com.android.settings`, 85 nodes, 15 clickable, 1 editable, `A / SET_TEXT / HIGH`.
+- Verified WeChat probe on device: `com.tencent.mm/.ui.LauncherUI`, 1 empty node, 0 clickable, 0 editable, `C / NONE / LOW`; `uiautomator dump` confirmed the same one-node tree. No WeChat skill was promoted because there is no reliable input channel yet.
+- Added AI Assist provider selection with `OPENAI_RESPONSES` support. Factory AI can now target `https://api.openai.com/v1/responses`; Runtime AI remains blocked by policy.
+- Verified AI config API: provider saves as `OPENAI_RESPONSES`, missing API key returns `DISABLED/config incomplete`, and Runtime-path AI requests return `BLOCKED`.
+- Added a Factory tab to the native UI showing AI status, WeChat/Settings probe buttons, AI Patch entry, candidate patch/skill/module counts, test reports, and AI logs.
+- Rebuilt, installed, and screenshot-tested the Factory tab.
+- Added `DASHSCOPE_COMPAT_CHAT` provider for Qwen/DashScope OpenAI-compatible chat-completions APIs.
+- Added `inputJsonBase64` to `AI_REQUEST` so complex node-tree JSON is not broken by ADB shell quoting.
+- Configured the user-provided third-party AI key locally on device. Exact `qwen3-vl` returned HTTP 404 `model_not_found`; changing the model to `qwen3-vl-plus` succeeded with HTTP 200 and parsed JSON output.
+- Re-verified Runtime AI boundary after enabling Qwen provider: `runtimePath=true` still returns `BLOCKED`.
+- Hardened `UiState` package consistency by adding `NodeSample.packageName`; probes now require node package/resource evidence and no longer trust stale event package alone.
+- Re-ran WeChat probe after package consistency hardening: reliable result is `C / NONE / LOW` when MacroPilot IME is not selected.
+- Added `AI_SUGGEST_UI_PATCH` evidence gating: if the current node tree has no usable nodes, model output is saved but `candidateUsable=false`.
+- Verified Qwen generated a WeChat-looking patch from an empty tree, and ReviewGate rejected it. This confirms the hallucination guard is working.
+- Added `WeChatCalibrationRequest` generation in Factory, saved as non-executable pending skill with required calibration targets for search entry, search input, contact result, chat input, and send button.
+- Added a minimal `MacroPilotImeService` and verified Android lists it as an input method.
+- Enabled and selected MacroPilot IME through ADB. Status now reports `inputCapability=CUSTOM_IME` when no editable node exists.
+- Re-ran WeChat probe with MacroPilot IME selected: `C / CUSTOM_IME / LOW`; text input blocker is reduced, but coordinate calibration and low-confidence verification are still required.
+- Re-tested the user-provided DashScope/Qwen model name: exact `qwen3-vl` returns HTTP 404 `model_not_found`; `qwen3-vl-plus` returns HTTP 200 and parsed JSON. The saved device config is restored to `qwen3-vl-plus`.
+- Re-verified AI Runtime boundary after the Qwen test: `runtimePath=true` is still `BLOCKED`.
+- Added `MacroAtom.FocusTextInput` for C-level coordinate/IME flows. It taps the target input coordinate, optionally taps text/keyboard toggles, and waits for MacroPilot IME to receive an input connection before `TypeText`.
+- Hardened Runtime preflight so `TypeText`, `SearchInApp`, and `FocusTextInput` require a real input channel. Runtime now treats selected MacroPilot IME as `CUSTOM_IME` inside the executor, not only in the status UI.
+- Hardened current-screen candidate skills: if a template does not start with `OpenApp`, Runtime requires the current foreground package to match the AppUiModule package before any coordinate action is allowed.
+- Rebuilt and installed after the WeChat focus/input changes.
+- Rebuilt the WeChat current-chat type-draft candidate with bottom input coordinates (`chat_input` around `x=0.45`, `y=0.927`) and added low-confidence `keyboard_toggle` / `voice_toggle` coordinate candidates.
+- Dry-run for `wechat_type_current_chat_candidate` now passes with the new `FocusTextInput + TypeText` atoms.
+- Testing is currently blocked by device state, not code: after reinstall the device is `interactive=false`, `keyguardLocked=true`, current package is `com.android.systemui`. Runtime correctly refuses to execute while locked.
+- Added API status fields `macroPilotImeSelected` and `macroPilotImeReady` to distinguish "IME selected" from "input connection active".
+
+## 2026-05-05 Skill Factory v0 Pass
+
+- Added Factory-only fine-grained Skill JSON storage under `files/macro_v2/factory/skill_json_candidates/{package}`.
+- Added `SkillJsonRuleGenerator` for WeChat current-chat v0 candidates:
+  - `wechat.chat.find_chat_input`
+  - `wechat.chat.type_chat_input`
+  - `wechat.chat.find_send_button`
+  - `wechat.chat.click_send_button`
+  - `wechat.chat.verify_message_sent`
+  - `wechat.chat.send_in_current_chat`
+- Added `SkillJsonDryRunEngine` for static checks: schema/kind/status, no fake `APPROVED`, required `implements`, action, verify, resultPolicy, input channel requirements, coordinate pack validity, macro `UseSkill` references, and safety policy.
+- Fixed dry-run safety scanning so `safety.forbiddenTexts` metadata itself does not falsely reject every safe candidate.
+- Added `SkillJsonExporter` to export a single GKD-like but richer `app_config` JSON with `screens`, `elements`, `atomicSkills`, `macroSkills`, `reactiveRules`, `runtimePolicy`, and `factoryReports`.
+- Added Factory-visible AI job pipeline. `FactoryAiPipeline` calls the existing OpenAI-compatible AI client with `runtimePath=false`, saves prompt/raw response/parsed intent/generated candidate IDs/model/baseUrlHost, and never writes `APPROVED`.
+- Hardened the AI path: if the AI request is disabled/blocked/failed, the AI instruction entry records the failed job and does not pretend to generate candidates. Rule-only generation remains a separate Factory action.
+- Added broadcast API actions:
+  - `API_FACTORY_AI_INSTRUCTION`
+  - `API_GENERATE_WECHAT_SKILL_JSON`
+  - `API_LIST_SKILL_JSON`
+  - `API_DRY_RUN_SKILL_JSON`
+  - `API_TEST_SKILL_JSON`
+  - `API_PROMOTE_SKILL_JSON`
+  - `API_LIST_APPROVED_SKILL_JSON`
+  - `API_EXPORT_APP_CONFIG_JSON`
+  - `API_FACTORY_DASHBOARD`
+  - `API_FACTORY_SELF_TEST`
+- Updated the Factory UI to show Skill JSON counts, dry-run reports, test reports, runtime-approved JSON, app config exports, and Factory AI jobs. The Factory page now has actions for AI instruction generation, rule-based WeChat JSON generation, dry-run all, app_config export, self-test, WeChat probe, and AI patch.
+- Updated the Apps UI so each app row includes Factory Skill JSON candidates. Tapping a JSON skill reveals `kind`, `implements`, `status`, `action`, `verify`, `resultPolicy`, and `factory` metadata.
+- Added per-Skill JSON UI actions: dry-run, safe test, and PromotionGate.
+- Added `SkillJsonExecutor` and `SkillJsonTestRunner` for Factory-mode JSON tests. Tests write reports and do not fake success when the service/device state is unavailable.
+- Added side-effect gating for JSON tests: send/submit-like skills are blocked unless `allowSideEffect=true`.
+- Added `SkillJsonPromotionGate`. JSON promotion now requires dry-run, enough test runs, success/confidence thresholds, verification rules, safe action text, and no input-channel failure.
+- Added runtime-approved JSON isolation under `files/macro_v2/runtime/approved/apps/{package}/skills`; PromotionGate copies approved JSON there and refreshes `config.json`.
+- Added `SkillFactorySelfTest`, callable from the Factory UI and `API_FACTORY_SELF_TEST`, to validate rule generation, dry-run rejection of fake `APPROVED`, and PromotionGate thresholds without Maven/JUnit dependencies.
+- Added correct Chinese dangerous-action keywords to `SafeActionPolicy` while preserving the existing legacy strings.
+- Verified build with `:app:assembleDebug`. Device-level broadcast/UI testing is currently blocked because `adb devices` returns no connected devices.
+- Attempted JVM unit tests with JUnit, but Maven returned HTTP 403 for `junit:junit:4.13.2`; external test dependency was removed and replaced with the built-in self-test path.
+
+## Next
+
+- Unlock the device and keep it on WeChat File Transfer Assistant; then rerun the type-draft candidate. Do not test send yet.
+- When the device is back online, run the new Factory API smoke sequence: `API_FACTORY_SELF_TEST`, generate WeChat Skill JSON, list Skill JSON, dry-run all, safe-test `wechat.chat.type_chat_input`, PromotionGate, export approved `app_config`, then run `API_FACTORY_DASHBOARD`.
+- If type-draft succeeds, run 10-20 low-confidence draft-input tests from controlled current-chat start states.
+- Only after draft-input reliability is proven, add a separate send-button candidate with explicit side-effect gating.
+- Add API-key entry/testing for AI Assist in the Settings/Factory UI, not only via broadcast.
+- Add visual coordinate calibration editor instead of single best-node candidate capture.
+- Expand start-state coverage for Settings and add recovery tests from a wrong Settings subpage.
+- Add retention metadata for exports and coordinate candidates.
+- Add a real manual skill creation form that saves candidates, not just the built-in Settings seed path.

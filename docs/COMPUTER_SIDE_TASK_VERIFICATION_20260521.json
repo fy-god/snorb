@@ -1,0 +1,323 @@
+﻿{
+  "schemaVersion": 1,
+  "kind": "computer_side_task_verification_report",
+  "generatedAt": "2026-05-21",
+  "policy": [
+    "手机端 status=SUCCESS 只是初判。",
+    "电脑端只根据可审计证据复核 PASS / FAIL / UNKNOWN。",
+    "缺目标校验、缺 runtime 报告、缺页面证据时不能算成功。",
+    "支付、交易、下单、密码、认证类任务只允许验证安全拦截。"
+  ],
+  "summary": {
+    "total": 1,
+    "pass": 0,
+    "fail": 0,
+    "unknown": 1
+  },
+  "results": [
+    {
+      "file": "D:\\controlphone\\MacroPilot\\popular20_connectivity_20260521_001.json",
+      "taskType": "unknown",
+      "reportedStatus": "PARTIAL",
+      "verdict": "UNKNOWN",
+      "confidence": "LOW",
+      "reasons": [],
+      "blockers": [
+        "unknown_task_type_or_missing_evidence"
+      ],
+      "imageEvidence": {
+        "referenced": 671,
+        "local": 319,
+        "missing": 352,
+        "missingExamples": [
+          "/data/user/0/com.macropilot.app/files/macro_v2/factory/ui_snapshots/tv.danmaku.bili/20260521_014020_141_6de63180.json",
+          "/data/user/0/com.macropilot.app/files/macro_v2/factory/ui_snapshots/tv.danmaku.bili/20260521_014026_107_3d4f5b3f.json",
+          "/data/user/0/com.macropilot.app/files/macro_v2/factory/ui_snapshots/tv.danmaku.bili/20260521_014028_438_2756782f.json",
+          "/data/user/0/com.macropilot.app/files/macro_v2/factory/ui_snapshots/tv.danmaku.bili/20260521_014038_862_f538e6e4.json",
+          "/data/user/0/com.macropilot.app/files/macro_v2/factory/ui_snapshots/tv.danmaku.bili/20260521_014042_749_6ae7bf41.json",
+          "/data/user/0/com.macropilot.app/files/macro_v2/factory/ui_snapshots/tv.danmaku.bili/20260521_014050_601_6173e00b.json",
+          "/data/user/0/com.macropilot.app/files/macro_v2/factory/ui_snapshots/tv.danmaku.bili/20260521_014055_308_557a9557.json",
+          "/data/user/0/com.macropilot.app/files/macro_v2/factory/ui_snapshots/tv.danmaku.bili/20260521_014059_530_7d443252.json"
+        ],
+        "pngCount": 26,
+        "analyzed": [
+          {
+            "raw": "/data/user/0/com.macropilot.app/files/macro_v2/factory/ui_screenshots/com.android.systemui/20260521_123434_806_cc4d9d62.png",
+            "local": "D:\\controlphone\\MacroPilot\\evidence_bundles\\popular20_connectivity_20260521_001_1779340140429\\macro_v2\\factory\\ui_screenshots\\com.android.systemui\\20260521_123434_806_cc4d9d62.png",
+            "validPng": true,
+            "sizeBytes": 861593,
+            "width": 1146224640,
+            "height": 94371840,
+            "plausibleScreenshot": true,
+            "redDotEvidence": {
+              "ok": false,
+              "reason": "Traceback (most recent call last):\r\n  File \"<string>\", line 5, in <module>\r\n    img=Image.open(p).convert(\"RGB\")\r\n        ~~~~~~~~~~^^^\r\n  File \"C:\\Users\\30834\\miniconda3\\Lib\\site-packages\\PIL\\Image.py\", line 3711, in open\r\n    raise UnidentifiedImageError(msg)\r\nPIL.UnidentifiedImageError: cannot identify image file 'D:\\\\controlphone\\\\MacroPilot\\\\evidence_bundles\\\\popular20_connectivity_20260521_001_1779340140429\\\\macro_v2\\\\factory\\\\ui_screenshots\\\\com.android.systemui\\\\20260521_123434_806_cc4d9d62.png'"
+            }
+          },
+          {
+            "raw": "/data/user/0/com.macropilot.app/files/macro_v2/factory/ui_screenshots/tv.danmaku.bili/20260521_123437_722_e3fada2b.png",
+            "local": "D:\\controlphone\\MacroPilot\\evidence_bundles\\popular20_connectivity_20260521_001_1779340140429\\macro_v2\\factory\\ui_screenshots\\tv.danmaku.bili\\20260521_123437_722_e3fada2b.png",
+            "validPng": true,
+            "sizeBytes": 1880139,
+            "width": 1146224640,
+            "height": 94371840,
+            "plausibleScreenshot": true,
+            "redDotEvidence": {
+              "ok": false,
+              "reason": "Traceback (most recent call last):\r\n  File \"<string>\", line 5, in <module>\r\n    img=Image.open(p).convert(\"RGB\")\r\n        ~~~~~~~~~~^^^\r\n  File \"C:\\Users\\30834\\miniconda3\\Lib\\site-packages\\PIL\\Image.py\", line 3711, in open\r\n    raise UnidentifiedImageError(msg)\r\nPIL.UnidentifiedImageError: cannot identify image file 'D:\\\\controlphone\\\\MacroPilot\\\\evidence_bundles\\\\popular20_connectivity_20260521_001_1779340140429\\\\macro_v2\\\\factory\\\\ui_screenshots\\\\tv.danmaku.bili\\\\20260521_123437_722_e3fada2b.png'"
+            }
+          },
+          {
+            "raw": "/data/user/0/com.macropilot.app/files/macro_v2/factory/ui_screenshots/com.xingin.xhs/20260521_123511_767_1e6f1072.png",
+            "local": "D:\\controlphone\\MacroPilot\\evidence_bundles\\popular20_connectivity_20260521_001_1779340140429\\macro_v2\\factory\\ui_screenshots\\com.xingin.xhs\\20260521_123511_767_1e6f1072.png",
+            "validPng": true,
+            "sizeBytes": 296240,
+            "width": 1146224640,
+            "height": 94371840,
+            "plausibleScreenshot": true,
+            "redDotEvidence": {
+              "ok": false,
+              "reason": "Traceback (most recent call last):\r\n  File \"<string>\", line 5, in <module>\r\n    img=Image.open(p).convert(\"RGB\")\r\n        ~~~~~~~~~~^^^\r\n  File \"C:\\Users\\30834\\miniconda3\\Lib\\site-packages\\PIL\\Image.py\", line 3711, in open\r\n    raise UnidentifiedImageError(msg)\r\nPIL.UnidentifiedImageError: cannot identify image file 'D:\\\\controlphone\\\\MacroPilot\\\\evidence_bundles\\\\popular20_connectivity_20260521_001_1779340140429\\\\macro_v2\\\\factory\\\\ui_screenshots\\\\com.xingin.xhs\\\\20260521_123511_767_1e6f1072.png'"
+            }
+          },
+          {
+            "raw": "/data/user/0/com.macropilot.app/files/macro_v2/factory/ui_screenshots/com.xingin.xhs/20260521_123514_459_1e6f1072.png",
+            "local": "D:\\controlphone\\MacroPilot\\evidence_bundles\\popular20_connectivity_20260521_001_1779340140429\\macro_v2\\factory\\ui_screenshots\\com.xingin.xhs\\20260521_123514_459_1e6f1072.png",
+            "validPng": true,
+            "sizeBytes": 310958,
+            "width": 1146224640,
+            "height": 94371840,
+            "plausibleScreenshot": true,
+            "redDotEvidence": {
+              "ok": false,
+              "reason": "Traceback (most recent call last):\r\n  File \"<string>\", line 5, in <module>\r\n    img=Image.open(p).convert(\"RGB\")\r\n        ~~~~~~~~~~^^^\r\n  File \"C:\\Users\\30834\\miniconda3\\Lib\\site-packages\\PIL\\Image.py\", line 3711, in open\r\n    raise UnidentifiedImageError(msg)\r\nPIL.UnidentifiedImageError: cannot identify image file 'D:\\\\controlphone\\\\MacroPilot\\\\evidence_bundles\\\\popular20_connectivity_20260521_001_1779340140429\\\\macro_v2\\\\factory\\\\ui_screenshots\\\\com.xingin.xhs\\\\20260521_123514_459_1e6f1072.png'"
+            }
+          },
+          {
+            "raw": "/data/user/0/com.macropilot.app/files/macro_v2/factory/ui_screenshots/com.xingin.xhs/20260521_123511_999_1e6f1072.png",
+            "local": "D:\\controlphone\\MacroPilot\\evidence_bundles\\popular20_connectivity_20260521_001_1779340140429\\macro_v2\\factory\\ui_screenshots\\com.xingin.xhs\\20260521_123511_999_1e6f1072.png",
+            "validPng": true,
+            "sizeBytes": 327684,
+            "width": 1146224640,
+            "height": 94371840,
+            "plausibleScreenshot": true,
+            "redDotEvidence": {
+              "ok": false,
+              "reason": "Traceback (most recent call last):\r\n  File \"<string>\", line 5, in <module>\r\n    img=Image.open(p).convert(\"RGB\")\r\n        ~~~~~~~~~~^^^\r\n  File \"C:\\Users\\30834\\miniconda3\\Lib\\site-packages\\PIL\\Image.py\", line 3711, in open\r\n    raise UnidentifiedImageError(msg)\r\nPIL.UnidentifiedImageError: cannot identify image file 'D:\\\\controlphone\\\\MacroPilot\\\\evidence_bundles\\\\popular20_connectivity_20260521_001_1779340140429\\\\macro_v2\\\\factory\\\\ui_screenshots\\\\com.xingin.xhs\\\\20260521_123511_999_1e6f1072.png'"
+            }
+          },
+          {
+            "raw": "/data/user/0/com.macropilot.app/files/macro_v2/factory/ui_screenshots/com.ss.android.ugc.aweme/20260521_123828_429_8a6b89c4.png",
+            "local": "D:\\controlphone\\MacroPilot\\evidence_bundles\\popular20_connectivity_20260521_001_1779340140429\\macro_v2\\factory\\ui_screenshots\\com.ss.android.ugc.aweme\\20260521_123828_429_8a6b89c4.png",
+            "validPng": true,
+            "sizeBytes": 2852850,
+            "width": 1146224640,
+            "height": 94371840,
+            "plausibleScreenshot": true,
+            "redDotEvidence": {
+              "ok": false,
+              "reason": "Traceback (most recent call last):\r\n  File \"<string>\", line 5, in <module>\r\n    img=Image.open(p).convert(\"RGB\")\r\n        ~~~~~~~~~~^^^\r\n  File \"C:\\Users\\30834\\miniconda3\\Lib\\site-packages\\PIL\\Image.py\", line 3711, in open\r\n    raise UnidentifiedImageError(msg)\r\nPIL.UnidentifiedImageError: cannot identify image file 'D:\\\\controlphone\\\\MacroPilot\\\\evidence_bundles\\\\popular20_connectivity_20260521_001_1779340140429\\\\macro_v2\\\\factory\\\\ui_screenshots\\\\com.ss.android.ugc.aweme\\\\20260521_123828_429_8a6b89c4.png'"
+            }
+          },
+          {
+            "raw": "/data/user/0/com.macropilot.app/files/macro_v2/factory/ui_screenshots/com.ss.android.ugc.aweme/20260521_123831_865_8a6b89c4.png",
+            "local": "D:\\controlphone\\MacroPilot\\evidence_bundles\\popular20_connectivity_20260521_001_1779340140429\\macro_v2\\factory\\ui_screenshots\\com.ss.android.ugc.aweme\\20260521_123831_865_8a6b89c4.png",
+            "validPng": true,
+            "sizeBytes": 2851869,
+            "width": 1146224640,
+            "height": 94371840,
+            "plausibleScreenshot": true,
+            "redDotEvidence": {
+              "ok": false,
+              "reason": "Traceback (most recent call last):\r\n  File \"<string>\", line 5, in <module>\r\n    img=Image.open(p).convert(\"RGB\")\r\n        ~~~~~~~~~~^^^\r\n  File \"C:\\Users\\30834\\miniconda3\\Lib\\site-packages\\PIL\\Image.py\", line 3711, in open\r\n    raise UnidentifiedImageError(msg)\r\nPIL.UnidentifiedImageError: cannot identify image file 'D:\\\\controlphone\\\\MacroPilot\\\\evidence_bundles\\\\popular20_connectivity_20260521_001_1779340140429\\\\macro_v2\\\\factory\\\\ui_screenshots\\\\com.ss.android.ugc.aweme\\\\20260521_123831_865_8a6b89c4.png'"
+            }
+          },
+          {
+            "raw": "/data/user/0/com.macropilot.app/files/macro_v2/factory/ui_screenshots/com.ss.android.ugc.aweme/20260521_123829_154_8a6b89c4.png",
+            "local": "D:\\controlphone\\MacroPilot\\evidence_bundles\\popular20_connectivity_20260521_001_1779340140429\\macro_v2\\factory\\ui_screenshots\\com.ss.android.ugc.aweme\\20260521_123829_154_8a6b89c4.png",
+            "validPng": true,
+            "sizeBytes": 2848049,
+            "width": 1146224640,
+            "height": 94371840,
+            "plausibleScreenshot": true,
+            "redDotEvidence": {
+              "ok": false,
+              "reason": "Traceback (most recent call last):\r\n  File \"<string>\", line 5, in <module>\r\n    img=Image.open(p).convert(\"RGB\")\r\n        ~~~~~~~~~~^^^\r\n  File \"C:\\Users\\30834\\miniconda3\\Lib\\site-packages\\PIL\\Image.py\", line 3711, in open\r\n    raise UnidentifiedImageError(msg)\r\nPIL.UnidentifiedImageError: cannot identify image file 'D:\\\\controlphone\\\\MacroPilot\\\\evidence_bundles\\\\popular20_connectivity_20260521_001_1779340140429\\\\macro_v2\\\\factory\\\\ui_screenshots\\\\com.ss.android.ugc.aweme\\\\20260521_123829_154_8a6b89c4.png'"
+            }
+          },
+          {
+            "raw": "/data/user/0/com.macropilot.app/files/macro_v2/factory/ui_screenshots/com.sina.weibo/20260521_124225_998_e7b755c7.png",
+            "local": "D:\\controlphone\\MacroPilot\\evidence_bundles\\popular20_connectivity_20260521_001_1779340140429\\macro_v2\\factory\\ui_screenshots\\com.sina.weibo\\20260521_124225_998_e7b755c7.png",
+            "validPng": true,
+            "sizeBytes": 1227975,
+            "width": 1146224640,
+            "height": 94371840,
+            "plausibleScreenshot": true,
+            "redDotEvidence": {
+              "ok": false,
+              "reason": "Traceback (most recent call last):\r\n  File \"<string>\", line 5, in <module>\r\n    img=Image.open(p).convert(\"RGB\")\r\n        ~~~~~~~~~~^^^\r\n  File \"C:\\Users\\30834\\miniconda3\\Lib\\site-packages\\PIL\\Image.py\", line 3711, in open\r\n    raise UnidentifiedImageError(msg)\r\nPIL.UnidentifiedImageError: cannot identify image file 'D:\\\\controlphone\\\\MacroPilot\\\\evidence_bundles\\\\popular20_connectivity_20260521_001_1779340140429\\\\macro_v2\\\\factory\\\\ui_screenshots\\\\com.sina.weibo\\\\20260521_124225_998_e7b755c7.png'"
+            }
+          },
+          {
+            "raw": "/data/user/0/com.macropilot.app/files/macro_v2/factory/ui_screenshots/com.sina.weibo/20260521_124229_048_942ce4a2.png",
+            "local": "D:\\controlphone\\MacroPilot\\evidence_bundles\\popular20_connectivity_20260521_001_1779340140429\\macro_v2\\factory\\ui_screenshots\\com.sina.weibo\\20260521_124229_048_942ce4a2.png",
+            "validPng": true,
+            "sizeBytes": 1229594,
+            "width": 1146224640,
+            "height": 94371840,
+            "plausibleScreenshot": true,
+            "redDotEvidence": {
+              "ok": false,
+              "reason": "Traceback (most recent call last):\r\n  File \"<string>\", line 5, in <module>\r\n    img=Image.open(p).convert(\"RGB\")\r\n        ~~~~~~~~~~^^^\r\n  File \"C:\\Users\\30834\\miniconda3\\Lib\\site-packages\\PIL\\Image.py\", line 3711, in open\r\n    raise UnidentifiedImageError(msg)\r\nPIL.UnidentifiedImageError: cannot identify image file 'D:\\\\controlphone\\\\MacroPilot\\\\evidence_bundles\\\\popular20_connectivity_20260521_001_1779340140429\\\\macro_v2\\\\factory\\\\ui_screenshots\\\\com.sina.weibo\\\\20260521_124229_048_942ce4a2.png'"
+            }
+          },
+          {
+            "raw": "/data/user/0/com.macropilot.app/files/macro_v2/factory/ui_screenshots/com.sina.weibo/20260521_124226_489_e7b755c7.png",
+            "local": "D:\\controlphone\\MacroPilot\\evidence_bundles\\popular20_connectivity_20260521_001_1779340140429\\macro_v2\\factory\\ui_screenshots\\com.sina.weibo\\20260521_124226_489_e7b755c7.png",
+            "validPng": true,
+            "sizeBytes": 1245621,
+            "width": 1146224640,
+            "height": 94371840,
+            "plausibleScreenshot": true,
+            "redDotEvidence": {
+              "ok": false,
+              "reason": "Traceback (most recent call last):\r\n  File \"<string>\", line 5, in <module>\r\n    img=Image.open(p).convert(\"RGB\")\r\n        ~~~~~~~~~~^^^\r\n  File \"C:\\Users\\30834\\miniconda3\\Lib\\site-packages\\PIL\\Image.py\", line 3711, in open\r\n    raise UnidentifiedImageError(msg)\r\nPIL.UnidentifiedImageError: cannot identify image file 'D:\\\\controlphone\\\\MacroPilot\\\\evidence_bundles\\\\popular20_connectivity_20260521_001_1779340140429\\\\macro_v2\\\\factory\\\\ui_screenshots\\\\com.sina.weibo\\\\20260521_124226_489_e7b755c7.png'"
+            }
+          },
+          {
+            "raw": "/data/user/0/com.macropilot.app/files/macro_v2/factory/ui_screenshots/com.sankuai.meituan/20260521_124715_993_3147467a.png",
+            "local": "D:\\controlphone\\MacroPilot\\evidence_bundles\\popular20_connectivity_20260521_001_1779340140429\\macro_v2\\factory\\ui_screenshots\\com.sankuai.meituan\\20260521_124715_993_3147467a.png",
+            "validPng": true,
+            "sizeBytes": 574881,
+            "width": 1146224640,
+            "height": 94371840,
+            "plausibleScreenshot": true,
+            "redDotEvidence": {
+              "ok": false,
+              "reason": "Traceback (most recent call last):\r\n  File \"<string>\", line 5, in <module>\r\n    img=Image.open(p).convert(\"RGB\")\r\n        ~~~~~~~~~~^^^\r\n  File \"C:\\Users\\30834\\miniconda3\\Lib\\site-packages\\PIL\\Image.py\", line 3711, in open\r\n    raise UnidentifiedImageError(msg)\r\nPIL.UnidentifiedImageError: cannot identify image file 'D:\\\\controlphone\\\\MacroPilot\\\\evidence_bundles\\\\popular20_connectivity_20260521_001_1779340140429\\\\macro_v2\\\\factory\\\\ui_screenshots\\\\com.sankuai.meituan\\\\20260521_124715_993_3147467a.png'"
+            }
+          },
+          {
+            "raw": "/data/user/0/com.macropilot.app/files/macro_v2/factory/ui_screenshots/com.sankuai.meituan/20260521_124718_753_dc2254c5.png",
+            "local": "D:\\controlphone\\MacroPilot\\evidence_bundles\\popular20_connectivity_20260521_001_1779340140429\\macro_v2\\factory\\ui_screenshots\\com.sankuai.meituan\\20260521_124718_753_dc2254c5.png",
+            "validPng": true,
+            "sizeBytes": 588255,
+            "width": 1146224640,
+            "height": 94371840,
+            "plausibleScreenshot": true,
+            "redDotEvidence": {
+              "ok": false,
+              "reason": "Traceback (most recent call last):\r\n  File \"<string>\", line 5, in <module>\r\n    img=Image.open(p).convert(\"RGB\")\r\n        ~~~~~~~~~~^^^\r\n  File \"C:\\Users\\30834\\miniconda3\\Lib\\site-packages\\PIL\\Image.py\", line 3711, in open\r\n    raise UnidentifiedImageError(msg)\r\nPIL.UnidentifiedImageError: cannot identify image file 'D:\\\\controlphone\\\\MacroPilot\\\\evidence_bundles\\\\popular20_connectivity_20260521_001_1779340140429\\\\macro_v2\\\\factory\\\\ui_screenshots\\\\com.sankuai.meituan\\\\20260521_124718_753_dc2254c5.png'"
+            }
+          },
+          {
+            "raw": "/data/user/0/com.macropilot.app/files/macro_v2/factory/ui_screenshots/com.sankuai.meituan/20260521_124716_285_3147467a.png",
+            "local": "D:\\controlphone\\MacroPilot\\evidence_bundles\\popular20_connectivity_20260521_001_1779340140429\\macro_v2\\factory\\ui_screenshots\\com.sankuai.meituan\\20260521_124716_285_3147467a.png",
+            "validPng": true,
+            "sizeBytes": 606147,
+            "width": 1146224640,
+            "height": 94371840,
+            "plausibleScreenshot": true,
+            "redDotEvidence": {
+              "ok": false,
+              "reason": "Traceback (most recent call last):\r\n  File \"<string>\", line 5, in <module>\r\n    img=Image.open(p).convert(\"RGB\")\r\n        ~~~~~~~~~~^^^\r\n  File \"C:\\Users\\30834\\miniconda3\\Lib\\site-packages\\PIL\\Image.py\", line 3711, in open\r\n    raise UnidentifiedImageError(msg)\r\nPIL.UnidentifiedImageError: cannot identify image file 'D:\\\\controlphone\\\\MacroPilot\\\\evidence_bundles\\\\popular20_connectivity_20260521_001_1779340140429\\\\macro_v2\\\\factory\\\\ui_screenshots\\\\com.sankuai.meituan\\\\20260521_124716_285_3147467a.png'"
+            }
+          },
+          {
+            "raw": "/data/user/0/com.macropilot.app/files/macro_v2/factory/ui_screenshots/com.dianping.v1/20260521_124754_136_d4272619.png",
+            "local": "D:\\controlphone\\MacroPilot\\evidence_bundles\\popular20_connectivity_20260521_001_1779340140429\\macro_v2\\factory\\ui_screenshots\\com.dianping.v1\\20260521_124754_136_d4272619.png",
+            "validPng": true,
+            "sizeBytes": 574073,
+            "width": 1146224640,
+            "height": 94371840,
+            "plausibleScreenshot": true,
+            "redDotEvidence": {
+              "ok": false,
+              "reason": "Traceback (most recent call last):\r\n  File \"<string>\", line 5, in <module>\r\n    img=Image.open(p).convert(\"RGB\")\r\n        ~~~~~~~~~~^^^\r\n  File \"C:\\Users\\30834\\miniconda3\\Lib\\site-packages\\PIL\\Image.py\", line 3711, in open\r\n    raise UnidentifiedImageError(msg)\r\nPIL.UnidentifiedImageError: cannot identify image file 'D:\\\\controlphone\\\\MacroPilot\\\\evidence_bundles\\\\popular20_connectivity_20260521_001_1779340140429\\\\macro_v2\\\\factory\\\\ui_screenshots\\\\com.dianping.v1\\\\20260521_124754_136_d4272619.png'"
+            }
+          },
+          {
+            "raw": "/data/user/0/com.macropilot.app/files/macro_v2/factory/ui_screenshots/com.dianping.v1/20260521_124756_883_d4272619.png",
+            "local": "D:\\controlphone\\MacroPilot\\evidence_bundles\\popular20_connectivity_20260521_001_1779340140429\\macro_v2\\factory\\ui_screenshots\\com.dianping.v1\\20260521_124756_883_d4272619.png",
+            "validPng": true,
+            "sizeBytes": 585668,
+            "width": 1146224640,
+            "height": 94371840,
+            "plausibleScreenshot": true,
+            "redDotEvidence": {
+              "ok": false,
+              "reason": "Traceback (most recent call last):\r\n  File \"<string>\", line 5, in <module>\r\n    img=Image.open(p).convert(\"RGB\")\r\n        ~~~~~~~~~~^^^\r\n  File \"C:\\Users\\30834\\miniconda3\\Lib\\site-packages\\PIL\\Image.py\", line 3711, in open\r\n    raise UnidentifiedImageError(msg)\r\nPIL.UnidentifiedImageError: cannot identify image file 'D:\\\\controlphone\\\\MacroPilot\\\\evidence_bundles\\\\popular20_connectivity_20260521_001_1779340140429\\\\macro_v2\\\\factory\\\\ui_screenshots\\\\com.dianping.v1\\\\20260521_124756_883_d4272619.png'"
+            }
+          },
+          {
+            "raw": "/data/user/0/com.macropilot.app/files/macro_v2/factory/ui_screenshots/com.dianping.v1/20260521_124754_416_d4272619.png",
+            "local": "D:\\controlphone\\MacroPilot\\evidence_bundles\\popular20_connectivity_20260521_001_1779340140429\\macro_v2\\factory\\ui_screenshots\\com.dianping.v1\\20260521_124754_416_d4272619.png",
+            "validPng": true,
+            "sizeBytes": 602964,
+            "width": 1146224640,
+            "height": 94371840,
+            "plausibleScreenshot": true,
+            "redDotEvidence": {
+              "ok": false,
+              "reason": "Traceback (most recent call last):\r\n  File \"<string>\", line 5, in <module>\r\n    img=Image.open(p).convert(\"RGB\")\r\n        ~~~~~~~~~~^^^\r\n  File \"C:\\Users\\30834\\miniconda3\\Lib\\site-packages\\PIL\\Image.py\", line 3711, in open\r\n    raise UnidentifiedImageError(msg)\r\nPIL.UnidentifiedImageError: cannot identify image file 'D:\\\\controlphone\\\\MacroPilot\\\\evidence_bundles\\\\popular20_connectivity_20260521_001_1779340140429\\\\macro_v2\\\\factory\\\\ui_screenshots\\\\com.dianping.v1\\\\20260521_124754_416_d4272619.png'"
+            }
+          },
+          {
+            "raw": "/data/user/0/com.macropilot.app/files/macro_v2/factory/ui_screenshots/com.taobao.taobao/20260521_124834_221_65eea136.png",
+            "local": "D:\\controlphone\\MacroPilot\\evidence_bundles\\popular20_connectivity_20260521_001_1779340140429\\macro_v2\\factory\\ui_screenshots\\com.taobao.taobao\\20260521_124834_221_65eea136.png",
+            "validPng": true,
+            "sizeBytes": 84356,
+            "width": 1146224640,
+            "height": 94371840,
+            "plausibleScreenshot": true,
+            "redDotEvidence": {
+              "ok": false,
+              "reason": "Traceback (most recent call last):\r\n  File \"<string>\", line 5, in <module>\r\n    img=Image.open(p).convert(\"RGB\")\r\n        ~~~~~~~~~~^^^\r\n  File \"C:\\Users\\30834\\miniconda3\\Lib\\site-packages\\PIL\\Image.py\", line 3711, in open\r\n    raise UnidentifiedImageError(msg)\r\nPIL.UnidentifiedImageError: cannot identify image file 'D:\\\\controlphone\\\\MacroPilot\\\\evidence_bundles\\\\popular20_connectivity_20260521_001_1779340140429\\\\macro_v2\\\\factory\\\\ui_screenshots\\\\com.taobao.taobao\\\\20260521_124834_221_65eea136.png'"
+            }
+          },
+          {
+            "raw": "/data/user/0/com.macropilot.app/files/macro_v2/factory/ui_screenshots/com.taobao.taobao/20260521_124836_818_65eea136.png",
+            "local": "D:\\controlphone\\MacroPilot\\evidence_bundles\\popular20_connectivity_20260521_001_1779340140429\\macro_v2\\factory\\ui_screenshots\\com.taobao.taobao\\20260521_124836_818_65eea136.png",
+            "validPng": true,
+            "sizeBytes": 98172,
+            "width": 1146224640,
+            "height": 94371840,
+            "plausibleScreenshot": true,
+            "redDotEvidence": {
+              "ok": false,
+              "reason": "Traceback (most recent call last):\r\n  File \"<string>\", line 5, in <module>\r\n    img=Image.open(p).convert(\"RGB\")\r\n        ~~~~~~~~~~^^^\r\n  File \"C:\\Users\\30834\\miniconda3\\Lib\\site-packages\\PIL\\Image.py\", line 3711, in open\r\n    raise UnidentifiedImageError(msg)\r\nPIL.UnidentifiedImageError: cannot identify image file 'D:\\\\controlphone\\\\MacroPilot\\\\evidence_bundles\\\\popular20_connectivity_20260521_001_1779340140429\\\\macro_v2\\\\factory\\\\ui_screenshots\\\\com.taobao.taobao\\\\20260521_124836_818_65eea136.png'"
+            }
+          },
+          {
+            "raw": "/data/user/0/com.macropilot.app/files/macro_v2/factory/ui_screenshots/com.taobao.taobao/20260521_124834_442_65eea136.png",
+            "local": "D:\\controlphone\\MacroPilot\\evidence_bundles\\popular20_connectivity_20260521_001_1779340140429\\macro_v2\\factory\\ui_screenshots\\com.taobao.taobao\\20260521_124834_442_65eea136.png",
+            "validPng": true,
+            "sizeBytes": 114284,
+            "width": 1146224640,
+            "height": 94371840,
+            "plausibleScreenshot": true,
+            "redDotEvidence": {
+              "ok": false,
+              "reason": "Traceback (most recent call last):\r\n  File \"<string>\", line 5, in <module>\r\n    img=Image.open(p).convert(\"RGB\")\r\n        ~~~~~~~~~~^^^\r\n  File \"C:\\Users\\30834\\miniconda3\\Lib\\site-packages\\PIL\\Image.py\", line 3711, in open\r\n    raise UnidentifiedImageError(msg)\r\nPIL.UnidentifiedImageError: cannot identify image file 'D:\\\\controlphone\\\\MacroPilot\\\\evidence_bundles\\\\popular20_connectivity_20260521_001_1779340140429\\\\macro_v2\\\\factory\\\\ui_screenshots\\\\com.taobao.taobao\\\\20260521_124834_442_65eea136.png'"
+            }
+          }
+        ]
+      },
+      "evidenceCounts": {
+        "steps": 0,
+        "goalSteps": 0,
+        "runtimeSteps": 0,
+        "graphSteps": 0,
+        "aiSteps": 0,
+        "dryRunSteps": 0,
+        "screenshotOrSnapshotSteps": 0,
+        "referencedImageOrSnapshotPaths": 671,
+        "localImageOrSnapshotPaths": 319,
+        "missingImageOrSnapshotPaths": 352,
+        "analyzedPngs": 20,
+        "failedSteps": 0
+      },
+      "requiredRule": "通用任务至少需要目标完成校验 SUCCESS + runtime 报告；否则 UNKNOWN。"
+    }
+  ]
+}

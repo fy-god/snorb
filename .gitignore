@@ -1,0 +1,51 @@
+# Local machine / Android Studio
+.gradle/
+.idea/
+local.properties
+*.iml
+
+# Build outputs
+build/
+**/build/
+captures/
+outputs/
+*.apk
+*.aab
+
+# Runtime/test artifacts kept outside source control
+/*.png
+/*.jpg
+/*.jpeg
+/*.webp
+/*.gif
+/*.mp4
+/*.xml
+/*.json
+/*.json5
+/*.zip
+/*_base.apk
+
+# Large local evidence directories
+/douyin_final_caps_*/
+/douyin_retest_caps_*/
+/douyin_run_*/
+/douyin_verify_caps_*/
+/evidence_bundles/
+/hupu_retest_caps_*/
+/popular20_qwen_evidence_*/
+/qwen_retest_*/
+/single_task_bili_check_*/
+/test_artifacts/
+/wechat_after_patch_images/
+/wechat_moments_test/
+/wechat_snapshots*/
+/rollback/
+
+# Logs and temp files
+*.log
+*.tmp
+*.bak
+*.orig
+*.encoding_fix_backup_*
+/.DS_Store
+/Thumbs.db
