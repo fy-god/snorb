@@ -8,6 +8,8 @@ MacroPilot is an Android automation prototype focused on app-side AI planning, S
 - `docs/` - architecture notes, verification reports, and task catalogs.
 - `tools/` - local evidence and verification helper scripts.
 - `gradle/` - Gradle wrapper files.
+- `docs/CURRENT_TEST_RESULTS_20260819.md` - latest auditable test outcomes and blockers.
+- `docs/evidence/` - small curated examples; bulk device artifacts stay local and are ignored.
 
 ## Build
 
@@ -16,3 +18,5 @@ MacroPilot is an Android automation prototype focused on app-side AI planning, S
 ```
 
 Local files such as `local.properties`, build outputs, APKs, screenshots, flow reports, and device evidence artifacts are intentionally excluded from Git.
+
+The repository is intentionally source-first. Use the current test report for evidence instead of treating generated APKs or raw device caches as project source.

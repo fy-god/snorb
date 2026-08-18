@@ -1,4 +1,36 @@
-# Intentionally broad: this repository keeps local evidence artifacts,
-# reports, screenshots, generated APKs, and build outputs for archival upload.
-#
-# Git's own .git directory is never tracked.
+# Local machine configuration and build output.
+local.properties
+/.gradle/
+/app/build/
+*.apk
+*.aab
+*.hprof
+
+# Root-level device captures and generated reports. Curated evidence belongs
+# under docs/evidence/ and is intentionally tracked there.
+/*.png
+/*.jpg
+/*.jpeg
+/*.webp
+/*.gif
+/*.json
+/*.json5
+/*.xml
+/*.zip
+
+# Bulk runtime archives and exploratory output.
+/test_artifacts/
+/evidence_bundles/
+/controlphone_root_extras/
+/rollback/
+/douyin_*/
+/hupu_retest_caps_*/
+/wechat_snapshots*/
+/wechat_moments_test/
+/wechat_after_patch_images/
+/popular20_qwen_evidence_*/
+/qwen_retest_*/
+/single_task_bili_check_*/
+/third_party_*/
+/ui_diverse_*/
+/popular_app_*/
